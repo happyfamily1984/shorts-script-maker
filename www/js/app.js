@@ -7,7 +7,7 @@ const CAT = Object.fromEntries(CATEGORIES.map(c => [c.id, c]));
 const FMT = Object.fromEntries(FORMATS.map(f => [f.id, f]));
 const HOOK = Object.fromEntries(HOOKS.map(h => [h.id, h]));
 const CTA = Object.fromEntries(CTAS.map(c => [c.id, c]));
-const APP_VERSION = '1.3.0';
+const APP_VERSION = '1.4.0';
 
 const store = {
   get(k, d) { try { const v = localStorage.getItem('ssm.' + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
@@ -316,18 +316,17 @@ function sortedCats(by = settings.sort) {
 }
 const metricTags = m => [m.pop >= 4 && '조회수 높음', m.rpm >= 4 && '광고 단가 높음', m.ease >= 4 && '시작 쉬움', m.comp >= 4 && '경쟁 적음', !m.face && '얼굴 없이 가능'].filter(Boolean);
 const dots = v => `<span class="dots" aria-label="5점 중 ${v}점">${[1, 2, 3, 4, 5].map(i => `<i class="${i <= v ? 'on' : ''}"></i>`).join('')}</span>`;
-const TRAITS = [['pet', '반려동물이 있어요'], ['kids', '아이를 키워요'], ['game', '게임을 자주 해요'], ['cook', '요리를 자주 해요'], ['beauty', '꾸미는 걸 좋아해요'], ['money', '돈 관리에 관심 많아요']];
+const TRAITS = [['kids', '아이를 키워요'], ['money', '돈 관리에 관심 많아요'], ['fit', '운동을 꾸준히 해요'], ['media', '책·영화를 즐겨 봐요'], ['story', '이야기를 재밌게 해요'], ['shop', '물건 사기 전 비교를 잘해요'], ['grow', '공부·자기계발을 해요'], ['info', '생활 꿀팁을 잘 알아요']];
 function recommend(p) {
   const goal = p.goal || 'views', face = p.face ?? 1, place = p.place ?? 0, tr = p.tr || [];
   const W = { views: { pop: 3, rpm: .5, ease: 1, comp: 1 }, money: { pop: 1, rpm: 3, ease: 1, comp: 1 }, long: { pop: 1, rpm: 1, ease: 2, comp: 2 } }[goal];
   const max = Object.values(W).reduce((a, w) => a + w * 5, 0) + 4;
-  const bonus = { pet: 'pet', kids: 'kids', game: 'game', food: 'cook', beauty: 'beauty', money: 'money' };
+  const bonus = { kids: 'kids', money: 'money', fit: 'fit', media: 'media', story: 'story', shop: 'shop', grow: 'grow', info: 'info' };
   return CATEGORIES.map(c => {
     const m = M(c.id); let s = Object.entries(W).reduce((a, [k, w]) => a + m[k] * w, 0);
     if (!face && m.face) s -= 5;
     if (!place && m.out) s -= 5;
     if (bonus[c.id] && tr.includes(bonus[c.id])) s += 4;
-    if (c.id === 'pet' && !tr.includes('pet')) s -= 8;
     if (c.id === 'kids' && !tr.includes('kids')) s -= 4;
     return { c, m, s, pct: Math.max(5, Math.min(99, Math.round(s / max * 100))) };
   }).sort((a, b) => b.s - a.s);
@@ -655,7 +654,6 @@ V.pick = p => {
     ${pageHead({ eyebrow: '나에게 맞는 분야', eicon: 'target', title: '어떤 분야가 좋을까요?', lead: '목표와 촬영 여건을 고르면 바로 아래에 맞는 분야가 정렬됩니다.', icon: 'target', hue: 350 })}
     <div class="sec"><span class="lab">${ic('flame')}가장 원하는 것</span>${seg('p_goal', [['views', '빠른 조회수'], ['money', '수익'], ['long', '오래 가는 채널']], goal)}</div>
     <div class="sec"><span class="lab">${ic('camera')}얼굴 노출</span>${seg('p_face', [[1, '괜찮아요'], [0, '안 할래요']], face)}</div>
-    <div class="sec"><span class="lab">${ic('pin')}촬영 장소</span>${seg('p_place', [[0, '집에서만'], [1, '밖에서도']], place)}</div>
     <div class="sec"><span class="lab">${ic('check')}해당하는 것 (여러 개 선택)</span><div class="chips wrap">${TRAITS.map(([v, l]) => `<button class="chip ${tr.includes(v) ? 'on' : ''}" data-act="ptr" data-v="${v}">${tr.includes(v) ? ic('check') : ''}${l}</button>`).join('')}</div></div>
     <div class="sec">${h2('crown', '추천 분야 TOP 5')}
       <div class="list">${res.map((r, i) => { const mine = settings.myCats.includes(r.c.id); return `<div class="row" role="button" tabindex="0" data-act="go" data-v="category" data-id="${r.c.id}"><span class="rk num inline ${i < 3 ? 'top' : ''}">${i + 1}</span>${glyph(r.c)}<span class="grow"><b>${r.c.name}</b><span class="tagline">${metricTags(r.m).slice(0, 3).map(t => `<span class="tag">${t}</span>`).join('')}</span></span><span class="pct num">${r.pct}%</span><button class="ib sm star ${mine ? 'on' : ''}" data-act="myCat" data-id="${r.c.id}" aria-label="내 분야로 고정">${ic('star')}</button></div>`; }).join('')}</div>
@@ -799,7 +797,7 @@ function importBackup(text) {
   try {
     const data = JSON.parse(text), arr = Array.isArray(data) ? data : data.scripts; if (!Array.isArray(arr)) throw 0;
     const ids = new Set(scripts.map(s => s.id)); let n = 0;
-    arr.forEach(s => { if (s && s.id && !ids.has(s.id) && CAT[s.cat] && FMT[s.format] && Array.isArray(s.beats)) { scripts.push(s); n++; } });
+    arr.forEach(s => { if (s && s.id && !ids.has(s.id) && FMT[s.format] && Array.isArray(s.beats)) { if (!CAT[s.cat]) s.cat = 'info'; scripts.push(s); n++; } });
     saveScripts(); toast(n ? `대본 ${n}편을 불러왔습니다` : '새로 추가할 대본이 없습니다'); render();
   } catch (e) { toast('백업 파일을 읽지 못했습니다'); }
 }
@@ -916,6 +914,8 @@ document.addEventListener('pointerdown', e => {
 
 /* ---------- 시작 ---------- */
 applyTheme();
+if (Array.isArray(scripts) && scripts.some(s => !CAT[s.cat])) { scripts.forEach(s => { if (!CAT[s.cat]) s.cat = 'info'; }); saveScripts(); }
+settings.myCats = settings.myCats.filter(id => CAT[id]);
 if (scripts === null) {
   const s = generate(Object.assign({ tone: 0, stage: 0 }, SAMPLE)); s.sample = true; s.title = '자취방 곰팡이, 이것만은 하지 마세요';
   scripts = [s]; saveScripts();

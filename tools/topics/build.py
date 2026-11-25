@@ -2,7 +2,7 @@ import json, os
 D = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data') + '/'
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'www', 'js', 'topics.js')
 N = {'list3': 3, 'problem': 4, 'before': 4, 'story': 4, 'myth': 4, 'howto': 5, 'versus': 4, 'test': 5, 'pov': 3, 'review': 5, 'routine': 4, 'news': 4, 'quiz': 3, 'recap': 4}
-ORDER = ['info', 'money', 'food', 'eat', 'beauty', 'fit', 'story', 'vlog', 'game', 'tech', 'grow', 'kids', 'travel', 'pet', 'media', 'shop']
+ORDER = ['info', 'money', 'fit', 'story', 'grow', 'kids', 'media', 'shop']
 out, total = {}, 0
 for c in ORDER:
     f = D + c + '.json'

@@ -5,6 +5,7 @@ N = {'list3': 3, 'problem': 4, 'before': 4, 'story': 4, 'myth': 4, 'howto': 5, '
 LEN = {'info': 30, 'money': 45, 'food': 30, 'eat': 30, 'beauty': 30, 'fit': 30, 'story': 45, 'vlog': 30, 'game': 30, 'tech': 45, 'grow': 30, 'kids': 45, 'travel': 30, 'pet': 20, 'media': 60, 'shop': 30}
 RANGE = {20: (70, 105), 30: (120, 165), 45: (180, 240), 60: (240, 320)}
 cat = sys.argv[1]
+MIN = int(sys.argv[2]) if len(sys.argv) > 2 else 0
 data = json.load(open(D + cat + '.json'))
 lo, hi = RANGE[LEN[cat]]
 errs, warn, titles, flows = [], [], set(), {}
@@ -27,7 +28,7 @@ for i, t in enumerate(data):
     elif total < lo * 0.8: errs.append(f'{tag}: 전체 {total}자, 최소 {lo}자에 한참 못 미침')
     if re.search(r'안녕|반갑', hook): errs.append(f'{tag}: 훅에 인사말')
 n = len(data)
-pass
+if n < MIN: errs.append(f'주제 수 {n}개, {MIN}개 필요')
 top = max(flows.values()) if flows else 0
 if len(flows) < 4: errs.append(f'흐름 종류 {len(flows)}개, 4개 이상 필요')
 if n and top / n > 0.42: errs.append(f'한 흐름이 {top}/{n}개로 너무 많음')
