@@ -188,7 +188,7 @@ public class MainActivity extends Activity {
                 String text = "";
                 HttpURLConnection c = null;
                 try {
-                    if (!url.startsWith("https://generativelanguage.googleapis.com/")) throw new IllegalArgumentException("blocked host");
+                    if (!url.startsWith("https://generativelanguage.googleapis.com/") && !url.startsWith("https://raw.githubusercontent.com/") && !url.startsWith("https://gist.githubusercontent.com/")) throw new IllegalArgumentException("blocked host");
                     c = (HttpURLConnection) new URL(url).openConnection();
                     c.setRequestMethod(method);
                     c.setConnectTimeout(15000);

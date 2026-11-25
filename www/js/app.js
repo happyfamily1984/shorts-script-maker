@@ -3,19 +3,16 @@
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const CAT = Object.fromEntries(CATEGORIES.map(c => [c.id, c]));
-const FMT = Object.fromEntries(FORMATS.map(f => [f.id, f]));
-const HOOK = Object.fromEntries(HOOKS.map(h => [h.id, h]));
-const CTA = Object.fromEntries(CTAS.map(c => [c.id, c]));
-const APP_VERSION = '1.4.0';
+const TH = Object.fromEntries(THEMES.map(t => [t.id, t]));
+const APP_VERSION = '2.0.0';
 
 const store = {
-  get(k, d) { try { const v = localStorage.getItem('ssm.' + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
-  set(k, v) { try { localStorage.setItem('ssm.' + k, JSON.stringify(v)); } catch (e) {} }
+  get(k, d) { try { const v = localStorage.getItem('sdm.' + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem('sdm.' + k, JSON.stringify(v)); } catch (e) {} }
 };
-let settings = Object.assign({ theme: 'light', cps: 6, stage: 0, checks: [], sort: 'pop', myCats: [] }, store.get('settings', {}));
-let scripts = store.get('scripts', null);
-const saveScripts = () => store.set('scripts', scripts);
+let settings = Object.assign({ theme: 'light', mode: 'kr', style: 'real', castKr: CAST_DEFAULT.kr, castEn: CAST_DEFAULT.en, checks: [], myThemes: [], aiKeys: '', aiModel: '', hitsUrl: '' }, store.get('settings', {}));
+let projects = store.get('projects', []);
+const saveProjects = () => store.set('projects', projects);
 const saveSettings = () => { store.set('settings', settings); applyTheme(); };
 function applyTheme() {
   const r = document.documentElement;
@@ -23,6 +20,10 @@ function applyTheme() {
   const dk = settings.theme === 'dark' || (settings.theme === 'system' && matchMedia('(prefers-color-scheme: dark)').matches);
   try { if (window.AndroidBridge && window.AndroidBridge.setDark) window.AndroidBridge.setDark(dk); } catch (e) {}
 }
+const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+const dateStr = (t = Date.now()) => { const d = new Date(t); return `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, '0')}.${String(d.getDate()).padStart(2, '0')}`; };
+const tc = s => { s = Math.max(0, s); const m = Math.floor(s / 60), r = s - m * 60; return m + ':' + (r < 10 ? '0' : '') + r; };
+const words = t => String(t || '').trim().split(/\s+/).filter(Boolean).length;
 
 const ICON = {
   home: '<path d="M4 11l8-7 8 7v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/>',
@@ -79,137 +80,155 @@ const ICON = {
   list: '<path d="M9 6h11M9 12h11M9 18h11M4.5 6h.01M4.5 12h.01M4.5 18h.01"/>',
   shield: '<path d="M12 3l8 3v6c0 4.5-3.5 8-8 9-4.5-1-8-4.5-8-9V6z"/>',
   sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/>',
+  heart: '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>',
+  key: '<circle cx="8" cy="14" r="4"/><path d="M11 11l9-9M16 6l3 3M14 8l2 2"/>',
+  scale: '<path d="M12 3v18M7 21h10M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/>',
+  gift: '<rect x="4" y="9" width="16" height="11" rx="1.5"/><path d="M3 9h18M12 9v11M12 9c-2 0-4.5-.5-4.5-3S11 4 12 9zM12 9c2 0 4.5-.5 4.5-3S13 4 12 9z"/>',
+  eye: '<path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+  users: '<circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0M16 5.2a3.2 3.2 0 0 1 0 5.6M17.5 14.5A6 6 0 0 1 21 20"/>',
+  user: '<circle cx="12" cy="8" r="3.6"/><path d="M5 20a7 7 0 0 1 14 0"/>',
+  refresh: '<path d="M20 11a8 8 0 0 0-14.5-4M4 4v4h4M4 13a8 8 0 0 0 14.5 4M20 20v-4h-4"/>',
+  globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>',
+  trophy: '<path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8.5 20h7M10 17h4"/>',
+  link: '<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3A4 4 0 0 0 11 18.700l1-1"/>',
   exit: '<path d="M14 4h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-5M10 8l-4 4 4 4M6 12h10"/>'
 };
 const ic = n => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ICON[n] || ''}</svg>`;
 
-/* ---------- 한글 조사 ---------- */
+/* ---------- 모드(국내용·해외용)와 대본 ---------- */
+const MODE = () => settings.mode === 'en' ? 'en' : 'kr';
+const isEn = () => MODE() === 'en';
+const sfx = m => (m || MODE()) === 'kr' ? 'k' : 'e';
+const dramasOf = id => (typeof DRAMAS !== 'undefined' && DRAMAS[id]) || [];
+const DRAMA_COUNT = THEMES.reduce((a, t) => a + dramasOf(t.id).length, 0);
+
+function toProject(s, theme, src) {
+  const now = Date.now();
+  return { id: uid(), theme, src: src || '', tk: s[0], te: s[1], lk: s[2], le: s[3],
+    chars: s[4].map(c => ({ r: c[0], nk: c[1], ne: c[2], dk: c[3], de: c[4] })),
+    shots: s[5].map(x => ({ pk: x[0], pe: x[1], ak: x[2], ae: x[3], sp: x[4], dk: x[5], de: x[6], cam: x[7], sec: 5 })),
+    style: settings.style, ep: 1, subs: {}, over: {}, memo: '', fav: false, created: now, updated: now };
+}
+const blankProject = theme => toProject(['새 숏드라마', 'New Short Drama', '', '',
+  [['H', '주인공', 'Hero', '', ''], ['V', '악역', 'Villain', '', '']],
+  BEATS.map((b, i) => ['', '', '', '', -1, '', '', ['cz', 'ms', 'cu', 'low', 'cu', 'pi'][i]])], theme || 'hidden', '');
+const T = (p, m) => p['t' + sfx(m)] || p.tk || p.te;
+const LG = (p, m) => p['l' + sfx(m)] || p.lk || p.le;
+const cname = (c, m) => c['n' + sfx(m)] || c.nk || c.ne;
+const clook = (c, m) => c['d' + sfx(m)] || '';
+const totalSec = p => p.shots.reduce((a, s) => a + (+s.sec || 5), 0);
+const beatOf = (p, i) => BEATS[Math.min(BEATS.length - 1, p.shots.length === BEATS.length ? i : Math.round(i * (BEATS.length - 1) / Math.max(1, p.shots.length - 1)))];
+
+/* ---------- 프롬프트 생성 ---------- */
 function josa(word, j) {
-  const pairs = { '을': ['을', '를'], '이': ['이', '가'], '은': ['은', '는'], '과': ['과', '와'], '으로': ['으로', '로'] };
-  const p = pairs[j]; if (!p) return j;
-  const ch = String(word).trim().replace(/[^가-힣0-9a-zA-Z]+$/, '').slice(-1);
-  let batchim = false, code = ch.charCodeAt(0);
-  if (code >= 0xAC00 && code <= 0xD7A3) { const jong = (code - 0xAC00) % 28; batchim = jong !== 0; if (j === '으로' && jong === 8) batchim = false; }
-  else if (/[0-9]/.test(ch)) batchim = /[013678]/.test(ch);
-  else batchim = /[lmnrLMNR]/.test(ch);
+  const pairs = { '을': ['을', '를'], '이': ['이', '가'], '은': ['은', '는'] }, p = pairs[j]; if (!p) return j;
+  const ch = String(word).trim().slice(-1), code = ch.charCodeAt(0);
+  const batchim = code >= 0xAC00 && code <= 0xD7A3 ? (code - 0xAC00) % 28 !== 0 : /[013678lmnrLMNR]/.test(ch);
   return batchim ? p[0] : p[1];
 }
-const fill = (tpl, ctx) => tpl.replace(/\{(\w+)(?::([^}]+))?\}/g, (_, k, j) => {
-  const v = ctx[k] ?? ''; return j ? v + josa(v, j) : v;
-});
 
-/* ---------- 시간 계산 ---------- */
-const spoken = t => String(t || '').replace(/\([^)]*\)/g, '').replace(/[〔〕\s.,!?…~"'·:;\-]/g, '');
-const est = t => spoken(t).length / settings.cps;
-const tc = s => { s = Math.max(0, s); const m = Math.floor(s / 60), r = s - m * 60; return m + ':' + (r < 10 ? '0' : '') + (Number.isInteger(r) ? r : r.toFixed(1)); };
-const fmtSec = s => (Math.round(s * 10) / 10) + '초';
-const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
-const dateStr = (t = Date.now()) => { const d = new Date(t); return `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, '0')}.${String(d.getDate()).padStart(2, '0')}`; };
+const castOf = m => String(m === 'kr' ? settings.castKr : settings.castEn).trim();
+const styleOf = (p, m) => (STYLES[p.style] || STYLES.real)[m === 'kr' ? 1 : 2];
+const MOODS = [
+  ['긴장감 있는 공개적인 굴욕의 순간', 'Tense moment of public humiliation'],
+  ['비웃음과 조롱 속에서도 주인공은 흔들리지 않는다', 'Mockery all around while the hero stays unshaken'],
+  ['조용한 긴장, 무언가 뒤집히기 직전의 공기', 'Quiet tension, the air just before everything turns'],
+  ['충격의 정적, 모두가 얼어붙는다', 'Stunned silence, everyone freezes'],
+  ['통쾌한 순간, 악역의 표정이 무너진다', 'Satisfying payoff, the villain\'s composure collapses'],
+  ['여운과 새로운 궁금증을 남기는 마지막 컷', 'A lingering final beat that leaves a new question']
+];
+const TONES = { H: ['낮고 침착하게, 단호하게', 'low, calm and firm'], V: ['거만하고 날카롭게', 'arrogant and sharp'], A: ['다급하고 공손하게', 'urgent and deferential'], X: ['놀란 목소리로', 'shocked'] };
+const moodOf = (p, i, m) => MOODS[BEATS.indexOf(beatOf(p, i))][m === 'kr' ? 0 : 1];
+function inShot(p, sh) {
+  const idx = new Set();
+  p.chars.forEach((c, i) => { if ((c.nk && (sh.ak || '').includes(c.nk)) || (c.ne && (sh.ae || '').includes(c.ne))) idx.add(i); });
+  if (sh.sp >= 0 && p.chars[sh.sp]) idx.add(sh.sp);
+  return [...idx].sort();
+}
+const refList = (p, ids, m) => ids.map(i => m === 'kr' ? `${cname(p.chars[i], m)} = 참조 이미지 ${i + 1}` : `${cname(p.chars[i], m)} = reference image ${i + 1}`).join(', ');
+const legend = (p, m) => p.chars.map((c, i) => m === 'kr' ? `${cname(c, m)}(참조 이미지 ${i + 1}: ${castOf(m)} ${clook(c, m)})` : `${cname(c, m)} (reference image ${i + 1}: ${castOf(m)} ${clook(c, m)})`).join('; ');
 
-/* ---------- 대본 생성 ---------- */
-function makeCtx(o) {
-  const ti = o.tone === 1 ? 1 : 0, t = (o.topic || '').trim();
-  return {
-    ti, t, who: (o.who || '').trim() || '초보자',
-    p1: (o.p1 || '').trim() || '〔포인트 1〕', p2: (o.p2 || '').trim() || '〔포인트 2〕', p3: (o.p3 || '').trim() || '〔포인트 3〕',
-    gain: (o.gain || '').trim() || (t + josa(t, '은') + (ti ? ' 이것부터 하면 돼' : ' 이것부터 하면 됩니다')).replace(/[.]$/, '')
-  };
+function charPrompt(p, i, m, kind) {
+  const c = p.chars[i], who = `${castOf(m)} ${clook(c, m)}`.trim(), st = styleOf(p, m);
+  if (m === 'kr') return kind === 'face'
+    ? `영상 제작용 인물 얼굴 기준 이미지.\n인물: ${who}.\n어깨 위 정면 얼굴 클로즈업, 자연스럽고 차분한 표정, 시선은 카메라.\n배경은 밝은 회색 단색, 부드럽고 고른 조명.\n${st}.\n9:16 세로. 글자·워터마크·로고 없음, 한 사람만.`
+    : `영상 제작용 전신 캐릭터 기준 이미지.\n인물: ${who}.\n정면을 보고 똑바로 선 자세, 팔은 자연스럽게 내리고, 머리끝부터 신발까지 전신이 화면에 모두 보이게.\n복장은 설명 그대로, 로고나 글자 없음.\n배경은 밝은 회색 단색 스튜디오, 부드럽고 고른 조명.\n${st}.\n9:16 세로. 글자·워터마크 없음, 한 사람만.`;
+  return kind === 'face'
+    ? `Face reference image of a character for video production.\nCharacter: ${who}.\nFront-facing head-and-shoulders close-up, natural calm expression, eyes to camera.\nPlain light-gray background, soft even lighting.\nStyle: ${st}.\nVertical 9:16. No text, no watermark, no logos, one person only.`
+    : `Full-body character reference image for video production.\nCharacter: ${who}.\nStanding straight and facing the camera, arms relaxed at the sides, the entire body visible from head to shoes.\nOutfit exactly as described, no logos or lettering.\nPlain light-gray studio background, soft even lighting.\nStyle: ${st}.\nVertical 9:16. No text, no watermark, one person only.`;
 }
-function shortCap(t) {
-  let c = String(t || '').replace(/[〔〕]/g, '').split(/[.!?…,]/)[0].trim();
-  if (c.length > 14) { c = c.slice(0, 13); const sp = c.lastIndexOf(' '); if (sp > 5) c = c.slice(0, sp); }
-  return c;
+function framePrompt(p, i, m) {
+  const sh = p.shots[i], ids = inShot(p, sh), cam = (CAMS[sh.cam] || CAMS.ms)[m === 'kr' ? 1 : 2], st = styleOf(p, m);
+  if (m === 'kr') return `세로 9:16 드라마 스틸 컷 한 장 (샷 ${i + 1}의 첫 프레임).\n장소: ${sh.pk}.\n장면: ${sh.ak}.\n등장인물: ${ids.length ? refList(p, ids, m) : '없음'}.\n구도: ${cam}.\n분위기: ${moodOf(p, i, m)}.\n${st}.\n첨부한 인물 기준 이미지와 얼굴·머리·복장을 똑같이 유지한다. 화면 속 글자·자막·워터마크 없음.`;
+  return `One vertical 9:16 cinematic drama still (first frame of shot ${i + 1}).\nLocation: ${sh.pe}.\nMoment: ${sh.ae}.\nCharacters: ${ids.length ? refList(p, ids, m) : 'none'}.\nFraming: ${cam}.\nMood: ${moodOf(p, i, m)}.\nStyle: ${st}.\nKeep faces, hair and outfits identical to the attached character reference images. No on-screen text, subtitles or watermark.`;
 }
-function generate(o) {
-  const cat = CAT[o.cat], f = FMT[o.format], ctx = makeCtx(o), ti = ctx.ti;
-  let hookId = o.hook && o.hook !== 'auto' ? o.hook : cat.hook;
-  if ((!o.hook || o.hook === 'auto') && hookId === 'result' && ['review', 'news', 'myth'].includes(o.format)) hookId = 'proof';
-  const ctaId = o.cta && o.cta !== 'auto' ? o.cta : STAGE_META[o.stage].cta;
-  const ready = Array.isArray(o.lines);
-  let len = o.len, hookSec = len <= 20 ? 2 : 3, rest = len - hookSec, li = 0;
-  const sumP = f.beats.reduce((a, b) => a + (b.p || 0), 0);
-  let used = hookSec;
-  let beats = f.beats.map((b, i) => {
-    let sec, say, cap, type = 'body';
-    if (b.hook) { type = 'hook'; sec = hookSec; say = ready ? o.hookLine : fill(HOOK[hookId].tpl[ti], ctx); cap = ready ? shortCap(o.title || ctx.t) : ctx.t; }
-    else if (ready && !b.cta) { say = o.lines[li++] || ''; cap = b.cap && !b.cap.includes('{') ? b.cap : shortCap(say); sec = 0; }
-    else {
-      sec = Math.max(1.5, Math.round(rest * b.p / sumP * 2) / 2);
-      if (i === f.beats.length - 1) sec = Math.max(1.5, len - used);
-      used += i === f.beats.length - 1 ? 0 : sec;
-      if (b.cta) { type = 'cta'; say = fill(CTA[ctaId].tpl[ti], ctx); cap = CTA[ctaId].name; }
-      else { say = fill(b.tpl[ti], ctx); cap = fill(b.cap || '', ctx); }
-    }
-    return { k: b.k, type, sec, say, cap, shot: b.shot || '' };
+function klingPrompt(p, i, m) {
+  const sh = p.shots[i], ids = inShot(p, sh), cam = (CAMS[sh.cam] || CAMS.ms)[m === 'kr' ? 1 : 2], st = styleOf(p, m), n = p.shots.length;
+  const sp = sh.sp >= 0 ? p.chars[sh.sp] : null, line = m === 'kr' ? sh.dk : sh.de, tone = sp ? (TONES[sp.r] || TONES.X)[m === 'kr' ? 0 : 1] : '';
+  if (m === 'kr') return `[샷 ${i + 1}/${n} · ${sh.sec || 5}초 · 세로 9:16]\n장소: ${sh.pk}.\n카메라: ${cam}.\n동작: ${sh.ak}.\n${sp && line ? `대사: ${cname(sp, m)}${josa(cname(sp, m), '이')} 한국어로 ${tone} 말한다. "${line}" 입 모양을 대사에 정확히 맞춘다.` : '대사 없음. 표정과 시선으로만 연기한다.'}\n분위기: ${moodOf(p, i, m)}.\n화면: ${st}.\n인물의 얼굴·머리·복장은 참조 이미지와 똑같이 유지한다${ids.length ? ` (${refList(p, ids, m)})` : ''}. 자막이나 화면 속 글자를 넣지 않는다.`;
+  return `[Shot ${i + 1}/${n} · ${sh.sec || 5}s · vertical 9:16]\nLocation: ${sh.pe}.\nCamera: ${cam}.\nAction: ${sh.ae}.\n${sp && line ? `Dialogue: ${cname(sp, m)} says in English, ${tone}: "${line}" Lip-sync the line precisely.` : 'No dialogue. Acting through expression and eye contact only.'}\nMood: ${moodOf(p, i, m)}.\nLook: ${st}.\nKeep every character's face, hair and outfit identical to the reference images${ids.length ? ` (${refList(p, ids, m)})` : ''}. No subtitles and no on-screen text.`;
+}
+function multiPrompt(p, m, from, to) {
+  const part = p.shots.slice(from, to), st = styleOf(p, m); let t = 0;
+  const total = part.reduce((a, s) => a + (+s.sec || 5), 0);
+  const lines = part.map((sh, k) => {
+    const a = t; t += (+sh.sec || 5); const sp = sh.sp >= 0 ? p.chars[sh.sp] : null, line = m === 'kr' ? sh.dk : sh.de, cam = (CAMS[sh.cam] || CAMS.ms)[m === 'kr' ? 1 : 2];
+    return m === 'kr'
+      ? `샷 ${k + 1} (${a}~${t}초): ${sh.pk}. ${cam}. ${sh.ak}.${sp && line ? ` ${cname(sp, m)}${josa(cname(sp, m), '이')} 한국어로 말한다: "${line}"` : ' 대사 없음.'}`
+      : `Shot ${k + 1} (${a}-${t}s): ${sh.pe}. ${cam}. ${sh.ae}.${sp && line ? ` ${cname(sp, m)} says in English: "${line}"` : ' No dialogue.'}`;
   });
-  if (ready) {
-    beats.forEach(b => { b.sec = Math.max(b.type === 'hook' ? 2 : 1.5, Math.ceil(est(b.say) * 2) / 2 + (b.type === 'hook' ? 0 : .5)); });
-    len = beats.reduce((a, b) => a + b.sec, 0);
-  }
-  const seed = [...ctx.t].reduce((a, c) => a + c.charCodeAt(0), 0);
-  const titles = Array.from({ length: 5 }, (_, i) => fill(TITLES[(seed + i * 5) % TITLES.length], ctx));
-  if (o.title) titles.unshift(o.title), titles.pop();
-  const tags = [...new Set([...cat.tags.slice(0, 3), ...ctx.t.split(/\s+/).filter(w => w.length > 1).slice(0, 2)])].map(x => '#' + x.replace(/[^가-힣0-9a-zA-Z]/g, ''));
-  return {
-    id: uid(), cat: o.cat, format: o.format, hook: hookId, cta: ctaId, len, tone: ti, stage: o.stage,
-    title: titles[0], topic: ctx.t, input: { who: o.who || '', p1: o.p1 || '', p2: o.p2 || '', p3: o.p3 || '', gain: o.gain || '' },
-    beats, titles, tags, pin: ti ? `너는 ${ctx.t} 어떻게 하고 있어?` : `여러분은 ${ctx.t} 어떻게 하고 계세요?`,
-    memo: '', fav: false, created: Date.now(), updated: Date.now()
-  };
+  return m === 'kr'
+    ? `세로 9:16 숏드라마, 총 ${total}초, ${part.length}개 샷으로 이어지는 한 편.\n화면: ${st}.\n인물: ${legend(p, m)}.\n모든 샷에서 인물의 얼굴·머리·복장을 똑같이 유지한다. 대사는 입 모양을 맞춘다. 자막이나 화면 속 글자 없음.\n\n${lines.join('\n')}`
+    : `Vertical 9:16 short drama, ${total} seconds total, one continuous episode in ${part.length} shots.\nLook: ${st}.\nCharacters: ${legend(p, m)}.\nKeep every character's face, hair and outfit identical across all shots. Lip-sync all dialogue. No subtitles or on-screen text.\n\n${lines.join('\n')}`;
 }
-function scoreOf(s) {
-  const h = s.beats.find(b => b.type === 'hook') || s.beats[0], c = s.beats.filter(b => b.type === 'cta').pop();
-  const total = s.beats.reduce((a, b) => a + est(b.say), 0), all = s.beats.map(b => b.say).join(' ');
-  const longest = Math.max(0, ...all.split(/[.?!]\s*/).map(x => spoken(x).length));
-  const items = [
-    [est(h.say) <= 3.3, '훅이 3초 안에 읽힌다', `지금 ${fmtSec(est(h.say))}. 길면 단어를 줄이세요.`],
-    [/[0-9?]|마세요|하지 마|절대|아직도|왜|결론|직접|손해|의외/.test(h.say), '훅에 숫자·질문·경고가 있다', '첫 문장에 궁금증을 만드는 장치를 넣으세요.'],
-    [!/안녕|반갑/.test(all), '인사말로 시작하지 않는다', '인사와 자기소개는 빼는 편이 좋습니다.'],
-    [total <= s.len * 1.05 && total >= s.len * 0.55, '읽기 시간이 목표 길이에 맞는다', total > s.len ? `읽는 데 ${fmtSec(total)}, 목표 ${s.len}초. 문장을 줄이세요.` : `읽는 데 ${fmtSec(total)}, 목표 ${s.len}초. 내용을 보태거나 길이를 줄이세요.`],
-    [s.beats.every(b => est(b.say) <= b.sec + 0.6), '구간마다 시간이 넘치지 않는다', '빨간 시간으로 표시된 구간의 문장을 줄이세요.'],
-    [!/〔/.test(all), '빈칸을 모두 채웠다', '〔포인트〕 자리에 내 내용을 넣으세요.'],
-    [longest <= 38, '한 문장이 한 호흡에 읽힌다', `가장 긴 문장이 ${longest}자입니다. 둘로 나누세요.`],
-    [s.beats.every(b => (b.cap || '').length <= 16), '자막이 짧다', '자막은 한 줄 12자 안팎이 읽기 좋습니다.'],
-    [s.beats.every(b => (b.shot || '').trim()), '모든 구간에 장면 지시가 있다', '무엇을 화면에 보여 줄지 적어 두세요.'],
-    [!!c && est(c.say) <= 4.2, '마무리 요청이 한 문장이다', '마지막은 짧게 끝내야 완주율이 유지됩니다.']
-  ].map(([ok, label, tip]) => ({ ok, label, tip }));
-  return { total, items, score: Math.round(items.filter(i => i.ok).length / items.length * 100) };
-}
+/* 수정한 프롬프트는 over 에 따로 보관한다 */
+const PROMPTS = {
+  c: (p, a, m) => charPrompt(p, +a[0], m, a[1]),
+  f: (p, a, m) => framePrompt(p, +a[0], m),
+  k: (p, a, m) => klingPrompt(p, +a[0], m),
+  m: (p, a, m) => multiPrompt(p, m, +a[0], +a[1]),
+  n: (p, a, m) => NEG[m]
+};
+function promptText(p, key, m) { m = m || MODE(); const ov = p.over && p.over[key + ':' + m]; if (ov != null) return ov; const a = key.split(':'); return PROMPTS[a[0]](p, a.slice(1), m); }
+const promptBase = (p, key, m) => { const a = key.split(':'); return PROMPTS[a[0]](p, a.slice(1), m || MODE()); };
 
-/* ---------- 내보내기 형식 ---------- */
-const metaLine = s => `분야: ${CAT[s.cat].name} · 흐름: ${FMT[s.format].name} · 길이: ${s.len}초 · 단계: ${STAGE_META[s.stage].name}`;
-function spans(s) { let t = 0; return s.beats.map(b => { const a = t; t += b.sec; return [a, t]; }); }
-function toText(s) {
-  const sp = spans(s);
-  return [`[${s.title}]`, metaLine(s), '────────────────',
-    ...s.beats.map((b, i) => `${tc(sp[i][0])}–${tc(sp[i][1])}  ${b.k}\n말: ${b.say}\n자막: ${b.cap || '-'}\n장면: ${b.shot || '-'}\n`),
-    '────────────────', '제목 후보', ...s.titles.map(t => '- ' + t), '', '해시태그: ' + s.tags.join(' '), '고정 댓글: ' + s.pin,
-    s.memo ? '\n메모: ' + s.memo : ''].join('\n').trim() + '\n';
+/* ---------- 자막·업로드·내보내기 ---------- */
+function subLines(p, lang) { return lang === 'ko' ? p.shots.map(s => s.dk) : lang === 'en' ? p.shots.map(s => s.de) : (p.subs && p.subs[lang]) || null; }
+function toSrt(p, lang) {
+  const lines = subLines(p, lang); if (!lines) return '';
+  const f = x => { const ms = Math.round(x * 1000), h = Math.floor(ms / 3600000), mi = Math.floor(ms / 60000) % 60, se = Math.floor(ms / 1000) % 60; return `${String(h).padStart(2, '0')}:${String(mi).padStart(2, '0')}:${String(se).padStart(2, '0')},${String(ms % 1000).padStart(3, '0')}`; };
+  let t = 0, n = 0; const out = [];
+  p.shots.forEach((s, i) => { const a = t; t += (+s.sec || 5); const tx = (lines[i] || '').trim(); if (tx) out.push(`${++n}\n${f(a + 0.4)} --> ${f(t - 0.3)}\n${tx}\n`); });
+  return out.join('\n');
 }
-const toSay = s => s.beats.map(b => b.say).join('\n');
-function toCue(s) {
-  const sp = spans(s), c = x => String(x || '-').replace(/\|/g, '/').replace(/\n/g, ' ');
-  return [`# ${s.title}`, '', metaLine(s), '', '| 시간 | 구간 | 말 | 자막 | 장면 |', '|---|---|---|---|---|',
-    ...s.beats.map((b, i) => `| ${tc(sp[i][0])}–${tc(sp[i][1])} | ${b.k} | ${c(b.say)} | ${c(b.cap)} | ${c(b.shot)} |`),
-    '', '## 제목 후보', ...s.titles.map(t => '- ' + t), '', '## 해시태그', s.tags.join(' '), '', '## 고정 댓글', s.pin, ''].join('\n');
+function uploadKit(p, m) {
+  const th = TH[p.theme] || THEMES[0], ep = p.ep || 1;
+  if (m === 'kr') return { title: `${T(p, m)} | EP.${ep}`, desc: `${LG(p, m)}\n\n다음 화가 궁금하다면 팔로우하고 기다려 주세요.\n\n#숏드라마 #참교육 #사이다 #${th.name.replace(/[^가-힣0-9a-zA-Z]/g, '')} #shortdrama`, pin: '이 장면 속 시원했다면 댓글에 "다음 화" 남겨 주세요!' };
+  return { title: `${T(p, m)} | EP.${ep}`, desc: `${LG(p, m)}\n\nFollow for the next episode.\n\n#shortdrama #drama #${th.tags.join(' #')} #fyp`, pin: 'Comment "NEXT" if you want Part 2!' };
 }
-function toSrt(s) {
-  const f = x => { const ms = Math.round(x * 1000), h = Math.floor(ms / 3600000), m = Math.floor(ms / 60000) % 60, se = Math.floor(ms / 1000) % 60; return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(se).padStart(2, '0')},${String(ms % 1000).padStart(3, '0')}`; };
-  return spans(s).map(([a, b], i) => `${i + 1}\n${f(a)} --> ${f(b)}\n${s.beats[i].say.replace(/\([^)]*\)\s*/g, '')}\n`).join('\n');
+function toScriptText(p, m) {
+  let t = 0;
+  return [`[${T(p, m)}]`, LG(p, m), `주제: ${(TH[p.theme] || {}).name || ''} · ${p.shots.length}샷 · ${totalSec(p)}초 · ${m === 'kr' ? '국내용' : '해외용'}`, '────────────────', '등장인물',
+    ...p.chars.map(c => `- ${cname(c, m)} (${ROLE_NAME[c.r] || ''}): ${clook(c, m)}`), '────────────────',
+    ...p.shots.map((s, i) => { const a = t; t += (+s.sec || 5); const sp = s.sp >= 0 ? p.chars[s.sp] : null;
+      return `${tc(a)}–${tc(t)}  샷 ${i + 1} · ${beatOf(p, i)[0]}\n장소: ${s['p' + sfx(m)]}\n화면: ${s['a' + sfx(m)]}\n대사: ${sp && s['d' + sfx(m)] ? `${cname(sp, m)}: ${s['d' + sfx(m)]}` : '-'}\n카메라: ${(CAMS[s.cam] || CAMS.ms)[0]}\n`; })].join('\n').trim() + '\n';
+}
+function toPack(p, m) {
+  const k = uploadKit(p, m), half = Math.ceil(p.shots.length / 2), bar = '\n════════════════════\n';
+  return [toScriptText(p, m), bar + '① 인물 이미지 프롬프트 (그록·챗GPT 등에 붙여넣기)\n',
+    ...p.chars.map((c, i) => `▶ ${cname(c, m)} · 전신\n${promptText(p, `c:${i}:full`, m)}\n\n▶ ${cname(c, m)} · 얼굴\n${promptText(p, `c:${i}:face`, m)}\n`),
+    bar + '② 샷별 프롬프트 (첫 프레임 이미지 → 클링 영상)\n',
+    ...p.shots.map((s, i) => `▶ 샷 ${i + 1} 첫 프레임\n${promptText(p, `f:${i}`, m)}\n\n▶ 샷 ${i + 1} 클링 영상\n${promptText(p, `k:${i}`, m)}\n`),
+    bar + '③ 클링 멀티샷 프롬프트\n', `▶ 전체\n${promptText(p, `m:0:${p.shots.length}`, m)}\n`, `▶ 앞부분\n${promptText(p, `m:0:${half}`, m)}\n`, `▶ 뒷부분\n${promptText(p, `m:${half}:${p.shots.length}`, m)}\n`,
+    `▶ 제외 프롬프트\n${promptText(p, 'n', m)}\n`, bar + '④ 업로드\n', `제목: ${k.title}\n\n설명:\n${k.desc}\n\n고정 댓글: ${k.pin}\n`].join('\n');
 }
 const EXPORTS = [
-  { id: 'txt', name: '대본 텍스트', sub: '시간·말·자막·장면이 모두 담긴 글', ext: 'txt', mime: 'text/plain', one: toText, join: '\n\n════════════════\n\n' },
-  { id: 'say', name: '대사만', sub: '읽을 문장만 줄바꿈으로', ext: 'txt', mime: 'text/plain', one: s => `[${s.title}]\n${toSay(s)}\n`, join: '\n\n' },
-  { id: 'cue', name: '촬영 큐시트', sub: '표로 정리된 마크다운 문서', ext: 'md', mime: 'text/markdown', one: toCue, join: '\n\n---\n\n' },
-  { id: 'srt', name: '자막 파일 (SRT)', sub: '편집 앱에 바로 넣는 자막, 한 편씩', ext: 'srt', mime: 'application/x-subrip', one: toSrt, single: true },
-  { id: 'json', name: '백업 파일 (JSON)', sub: '다른 기기로 옮기거나 복원할 때', ext: 'json', mime: 'application/json', all: list => JSON.stringify({ app: 'shorts-script-maker', version: 1, scripts: list }, null, 2) }
+  { id: 'pack', name: '제작 팩 전체', sub: '대본, 인물·샷·클링 프롬프트, 업로드 문구', ext: 'txt', mime: 'text/plain', one: p => toPack(p, MODE()), join: '\n\n████████████████████\n\n' },
+  { id: 'script', name: '대본만', sub: '인물과 샷별 대본', ext: 'txt', mime: 'text/plain', one: p => toScriptText(p, MODE()), join: '\n\n════════════════\n\n' },
+  { id: 'srt', name: '자막 파일 (SRT)', sub: '지금 모드의 언어, 한 편씩', ext: 'srt', mime: 'application/x-subrip', one: p => toSrt(p, isEn() ? 'en' : 'ko'), single: true },
+  { id: 'json', name: '백업 파일 (JSON)', sub: '다른 기기로 옮기거나 복원할 때', ext: 'json', mime: 'application/json', all: list => JSON.stringify({ app: 'short-drama-maker', version: 2, projects: list }, null, 2) }
 ];
-function buildExport(fmt, list) {
-  if (fmt.all) return fmt.all(list);
-  if (list.length === 1) return fmt.one(list[0]);
-  const groups = {}; list.forEach(s => (groups[s.cat] = groups[s.cat] || []).push(s));
-  return Object.entries(groups).map(([c, arr]) => `■ ${CAT[c].name} (${arr.length}편)\n\n` + arr.map(fmt.one).join(fmt.join)).join(fmt.join);
-}
+const buildExport = (fmt, list) => fmt.all ? fmt.all(list) : list.map(fmt.one).join(fmt.join || '\n\n');
 const Native = {
   has: () => typeof window.AndroidBridge !== 'undefined',
   share(title, text) {
@@ -230,21 +249,25 @@ function copyText(text, msg = '복사했습니다') {
   const fallback = () => { const ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch (e) {} ta.remove(); done(); };
   if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, fallback); else fallback();
 }
+const fileName = (label, ext) => `숏드라마_${String(label).replace(/[^가-힣0-9a-zA-Z]+/g, '_').slice(0, 24)}_${dateStr().replace(/\./g, '')}.${ext}`;
+function outSheet(title, text, name, mime) {
+  sheet(title, [['복사하기', '클립보드에 복사', () => copyText(text)], ['공유하기', '메신저, 메일, 메모 앱으로 보내기', () => Native.share(title, text)], ['파일로 저장', name, () => Native.save(name, mime || 'text/plain', text)]]);
+}
+function exportFlow(list, label) {
+  if (!list.length) return toast('내보낼 대본이 없습니다');
+  sheet(`${label} 내보내기`, EXPORTS.filter(f => !(f.single && list.length > 1)).map(f => [f.name, f.sub, () => outSheet(f.name, buildExport(f, list), fileName(label, f.ext), f.mime)]));
+}
 
 /* ---------- 화면 전환과 뒤로가기 ---------- */
 let stack = [{ v: 'home', p: {} }], overlays = [], exiting = false;
-let draft = null, dirty = false, sel = null, form = null, promptTimer = null;
+let draft = null, dirty = false, sel = null, aiToken = null;
 const cur = () => stack[stack.length - 1];
-function go(v, p = {}, replace = false) {
-  if (replace) stack.pop();
-  stack.push({ v, p }); render(true);
-}
+function go(v, p = {}, replace = false) { if (replace) stack.pop(); stack.push({ v, p }); render(true); }
 function tab(v) { stack = v === 'home' ? [{ v: 'home', p: {} }] : [{ v: 'home', p: {} }, { v, p: {} }]; sel = null; render(true); }
 function pop() { if (stack.length > 1) stack.pop(); render(true); }
 function onBack() {
   if (overlays.length) return closeLayer();
   const c = cur();
-  if (c.v === 'prompter') { stopPrompter(); return pop(); }
   if (c.v === 'library' && sel) { sel = null; return render(); }
   if (c.v === 'editor' && dirty) {
     return dialog('수정한 내용을 저장할까요?', '저장하지 않으면 바뀐 내용이 사라집니다.', [
@@ -254,17 +277,15 @@ function onBack() {
   dialog('앱을 종료하겠습니까?', '', [['아니오', null], ['예', () => Native.exit(), 'pri']]);
 }
 window.onAndroidBack = onBack;
-history.pushState({ ssm: 1 }, '');
-window.addEventListener('popstate', () => { if (exiting) return; history.pushState({ ssm: 1 }, ''); onBack(); });
+history.pushState({ sdm: 1 }, '');
+window.addEventListener('popstate', () => { if (exiting) return; history.pushState({ sdm: 1 }, ''); onBack(); });
 
-function layer(html, center) {
-  const L = $('#layer'); L.className = center ? 'center' : ''; L.innerHTML = html; overlays.push(1);
-}
-function closeLayer() { if (aiToken) { aiToken.cancel = true; aiToken = null; } overlays.pop(); $('#layer').innerHTML = ''; layerActs = {}; }
 let layerActs = {};
+function layer(html, center) { const L = $('#layer'); L.className = center ? 'center' : ''; L.innerHTML = html; overlays.push(1); }
+function closeLayer() { if (aiToken) { aiToken.cancel = true; aiToken = null; } overlays.pop(); $('#layer').innerHTML = ''; layerActs = {}; }
 function dialog(title, body, acts) {
   layerActs = {};
-  layer(`<div class="dialog" role="alertdialog" aria-label="${esc(title)}"><span class="di">${ic(/종료/.test(title) ? 'exit' : /삭제/.test(title) ? 'trash' : 'info')}</span><h3>${esc(title)}</h3>${body ? `<p>${esc(body)}</p>` : ''}<div class="acts">${acts.map(([l, fn, c], i) => { layerActs['d' + i] = fn; return `<button class="btn ${c || ''}" data-lact="d${i}">${esc(l)}</button>`; }).join('')}</div></div>`, true);
+  layer(`<div class="dialog" role="alertdialog" aria-label="${esc(title)}"><span class="di">${ic(/종료/.test(title) ? 'exit' : /삭제|지울/.test(title) ? 'trash' : 'info')}</span><h3>${esc(title)}</h3>${body ? `<p>${esc(body)}</p>` : ''}<div class="acts">${acts.map(([l, fn, c], i) => { layerActs['d' + i] = fn; return `<button class="btn ${c || ''}" data-lact="d${i}">${esc(l)}</button>`; }).join('')}</div></div>`, true);
 }
 function sheet(title, rows) {
   layerActs = {};
@@ -277,84 +298,6 @@ $('#layer').addEventListener('click', e => {
 });
 let toastT;
 function toast(m) { const t = $('#toast'); t.innerHTML = ic('checkc') + esc(m); t.classList.add('on'); clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('on'), 1900); }
-
-/* ---------- 공통 조각 ---------- */
-const CICON = { info: 'bulb', money: 'chart', food: 'chef', eat: 'pin', beauty: 'sparkle', fit: 'bolt', story: 'laugh', vlog: 'camera', game: 'game', tech: 'cpu', grow: 'rocket', kids: 'baby', travel: 'plane', pet: 'paw', media: 'film', shop: 'bag' };
-let artN = 0;
-function art(icon, h = 218) {
-  const n = ++artN, bars = [[14, 58, 24], [25, 46, 44], [36, 38, 60], [47, 50, 36], [58, 42, 52]];
-  return `<svg class="art" viewBox="0 0 170 130" aria-hidden="true"><defs>
-  <linearGradient id="ag${n}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="hsl(${h} 95% 72%)"/><stop offset="1" stop-color="hsl(${h + 14} 88% 50%)"/></linearGradient>
-  <radialGradient id="ab${n}"><stop offset="0" stop-color="hsl(${h} 95% 80%)" stop-opacity=".75"/><stop offset="1" stop-color="hsl(${h} 95% 80%)" stop-opacity="0"/></radialGradient></defs>
-  <circle cx="108" cy="62" r="64" fill="url(#ab${n})"/>
-  <g fill="hsl(${h} 90% 70%)" opacity=".5">${bars.map(([x, y, hh]) => `<rect x="${x}" y="${y}" width="7" height="${hh}" rx="3.5"/>`).join('')}</g>
-  <ellipse cx="114" cy="118" rx="44" ry="8" fill="hsl(${h} 60% 50%)" opacity=".16"/>
-  <rect x="74" y="20" width="80" height="80" rx="27" fill="url(#ag${n})"/>
-  <rect x="81" y="25" width="66" height="30" rx="16" fill="#fff" opacity=".24"/>
-  <g transform="translate(90 36) scale(2)" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${ICON[icon]}</g>
-  <path d="M155 12l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#FFC53D"/>
-  <path d="M68 14l1.7 3.8 3.8 1.7-3.8 1.7L68 25l-1.7-3.8-3.8-1.7 3.8-1.7z" fill="#FFC53D" opacity=".85"/></svg>`;
-}
-const tlBar = s => `<div class="tl" aria-hidden="true">${s.beats.map(b => `<i class="${b.type === 'hook' ? 'h' : b.type === 'cta' ? 'c' : ''}" style="flex:${b.sec}"></i>`).join('')}</div>`;
-const glyph = (c, big) => `<span class="glyph${big ? ' big' : ''}" style="--h:${c.hue}">${ic(CICON[c.id])}</span>`;
-const chev = `<span class="chev">${ic('chevron')}</span>`;
-const h2 = (icon, text, right = '') => `<h2 class="h2"><span class="hi">${ic(icon)}</span>${text}<span class="sp"></span>${right}</h2>`;
-const scriptRow = (s, extra) => `<div class="row" role="button" tabindex="0" data-act="open" data-id="${s.id}">${extra || glyph(CAT[s.cat])}<span class="grow"><b>${esc(s.title)}</b><small>${CAT[s.cat].name} · ${FMT[s.format].name} · ${s.len}초 · ${dateStr(s.updated)}</small></span>${s.sample ? '<span class="tag pur">예시</span>' : ''}${extra ? '' : `<button class="ib sm star ${s.fav ? 'on' : ''}" data-act="fav" data-id="${s.id}" aria-label="즐겨찾기">${ic('star')}</button><button class="ib sm" data-act="rowMenu" data-id="${s.id}" aria-label="더보기">${ic('more')}</button>`}</div>`;
-const stepsOf = f => `<span class="steps">${f.beats.map(b => `<span>${b.k}</span>`).join('')}</span>`;
-const seg = (name, opts, val) => `<div class="seg" role="group">${opts.map(([v, l, i]) => `<button data-act="set" data-k="${name}" data-v="${v}" class="${String(v) === String(val) ? 'on' : ''}">${i ? ic(i) : ''}${l}</button>`).join('')}</div>`;
-const pageHead = o => `<div class="phead"><div class="ph-t">${o.eyebrow ? `<span class="eyebrow">${ic(o.eicon || 'sparkle')}${o.eyebrow}</span>` : ''}${o.title ? `<h2>${o.title}</h2>` : ''}${o.lead ? `<p>${o.lead}</p>` : ''}</div>${art(o.icon, o.hue)}</div>`;
-
-/* 분야 정렬·추천 */
-const SORTS = [['pop', '조회수순', 'flame'], ['rpm', '수익순', 'chart'], ['ease', '쉬운순', 'bolt'], ['base', '기본순', 'grid']];
-const SORT_NOTE = { pop: '조회수와 시청자 규모가 큰 분야부터 보여 줍니다.', rpm: '광고 단가와 수익화가 유리한 분야부터 보여 줍니다.', ease: '혼자, 폰 하나로 시작하기 쉬운 분야부터 보여 줍니다.', base: '기본 순서입니다.' };
-const M = id => CAT_METRICS[id];
-function sortedCats(by = settings.sort) {
-  const mine = settings.myCats, arr = CATEGORIES.slice();
-  if (by !== 'base') arr.sort((a, b) => (M(b.id)[by] - M(a.id)[by]) || (M(b.id).pop - M(a.id).pop) || (M(b.id).rpm - M(a.id).rpm) || (M(b.id).ease - M(a.id).ease));
-  const rank = {}; arr.forEach((c, i) => rank[c.id] = i + 1);
-  return { list: [...arr.filter(c => mine.includes(c.id)), ...arr.filter(c => !mine.includes(c.id))], rank };
-}
-const metricTags = m => [m.pop >= 4 && '조회수 높음', m.rpm >= 4 && '광고 단가 높음', m.ease >= 4 && '시작 쉬움', m.comp >= 4 && '경쟁 적음', !m.face && '얼굴 없이 가능'].filter(Boolean);
-const dots = v => `<span class="dots" aria-label="5점 중 ${v}점">${[1, 2, 3, 4, 5].map(i => `<i class="${i <= v ? 'on' : ''}"></i>`).join('')}</span>`;
-const TRAITS = [['kids', '아이를 키워요'], ['money', '돈 관리에 관심 많아요'], ['fit', '운동을 꾸준히 해요'], ['media', '책·영화를 즐겨 봐요'], ['story', '이야기를 재밌게 해요'], ['shop', '물건 사기 전 비교를 잘해요'], ['grow', '공부·자기계발을 해요'], ['info', '생활 꿀팁을 잘 알아요']];
-function recommend(p) {
-  const goal = p.goal || 'views', face = p.face ?? 1, place = p.place ?? 0, tr = p.tr || [];
-  const W = { views: { pop: 3, rpm: .5, ease: 1, comp: 1 }, money: { pop: 1, rpm: 3, ease: 1, comp: 1 }, long: { pop: 1, rpm: 1, ease: 2, comp: 2 } }[goal];
-  const max = Object.values(W).reduce((a, w) => a + w * 5, 0) + 4;
-  const bonus = { kids: 'kids', money: 'money', fit: 'fit', media: 'media', story: 'story', shop: 'shop', grow: 'grow', info: 'info' };
-  return CATEGORIES.map(c => {
-    const m = M(c.id); let s = Object.entries(W).reduce((a, [k, w]) => a + m[k] * w, 0);
-    if (!face && m.face) s -= 5;
-    if (!place && m.out) s -= 5;
-    if (bonus[c.id] && tr.includes(bonus[c.id])) s += 4;
-    if (c.id === 'kids' && !tr.includes('kids')) s -= 4;
-    return { c, m, s, pct: Math.max(5, Math.min(99, Math.round(s / max * 100))) };
-  }).sort((a, b) => b.s - a.s);
-}
-
-/* ---------- 대본 주제 ---------- */
-const HAS_TOPICS = typeof TOPICS !== 'undefined';
-const topicsOf = id => (HAS_TOPICS && TOPICS[id]) || [];
-const TOPIC_COUNT = CATEGORIES.reduce((a, c) => a + topicsOf(c.id).length, 0);
-const doneTopics = () => new Set(scripts.map(s => s.fromTopic).filter(Boolean));
-function topicRow(cat, i, showCat, done) {
-  const t = topicsOf(cat)[i], c = CAT[cat], key = cat + ':' + i;
-  return `<div class="row trow" role="button" tabindex="0" data-act="openTopic" data-cat="${cat}" data-i="${i}">${glyph(c)}<span class="grow"><b>${esc(t[0])}</b><small>${showCat ? c.name + ' · ' : ''}${FMT[t[1]].name} · “${esc(t[2])}”</small></span>${done && done.has(key) ? '<span class="tag ok">작성함</span>' : ''}${chev}</div>`;
-}
-function openTopic(cat, i) {
-  const t = topicsOf(cat)[i]; if (!t) return;
-  draft = generate({ cat, format: t[1], topic: t[0], title: t[0], hookLine: t[2], lines: t.slice(3), tone: 0, stage: settings.stage, hook: 'auto', cta: 'auto', len: CAT[cat].len });
-  draft.fromTopic = cat + ':' + i; dirty = true; go('editor');
-}
-function dailyTopics(n, seed) {
-  const cats = settings.myCats.length ? settings.myCats : sortedCats().list.slice(0, 8).map(c => c.id), out = [];
-  const day = Math.floor(Date.now() / 864e5) + (seed || 0) * 7;
-  for (let k = 0; out.length < n && k < n * 6; k++) {
-    const cat = cats[(day + k) % cats.length], list = topicsOf(cat); if (!list.length) continue;
-    const i = (day * 13 + k * 29) % list.length; if (!out.some(([c, j]) => c === cat && j === i)) out.push([cat, i]);
-  }
-  return out;
-}
 
 /* ---------- AI (Gemini) ---------- */
 const AI_DEFAULT_MODEL = 'gemini-2.5-flash';
@@ -378,14 +321,10 @@ function aiErr(r, ki) {
   if (r.status >= 500) return 'Gemini 서버가 혼잡합니다. 잠시 후 다시 시도하세요.';
   return `${who} 요청 실패 (${r.status}) ${msg.slice(0, 80)}`;
 }
-const AI_SYS = `너는 유튜브 쇼츠 대본 전문 작가다. 조회수가 터지는 쇼츠의 원리를 반드시 지킨다.
-- 첫 문장은 3초 안에 읽히고 궁금증을 만든다 (숫자, 질문, 경고, 결과 먼저 보여 주기 중 하나).
-- 인사, 자기소개, 채널 소개는 쓰지 않는다. 한 영상에는 약속 하나만 담는다.
-- 한 문장은 한 호흡에 읽히게 짧게 쓴다. 같은 표현을 구간끼리 반복하지 않는다.
-- 뻔한 말 대신 구체적인 숫자, 사례, 감각 표현을 쓴다. 확실하지 않은 수치나 사실은 지어내지 말고 일반적인 표현을 쓴다.
-- 자막(cap)은 화면에 띄울 핵심어로 12자 이내, 장면(shot)은 촬영·편집 지시로 20자 안팎으로 쓴다.
-- 마지막 구간은 시청자에게 행동 하나만 짧게 요청하고, 가능하면 첫 문장으로 자연스럽게 이어지게 한다.
-- 한국어로만 쓰고 JSON만 출력한다.`;
+const AI_SYS = `You are a top short-drama (vertical micro-drama) screenwriter in the style of global hits on ReelShort and DramaBox. You write ORIGINAL scripts only; never copy an existing drama's title, names or dialogue.
+Every script is exactly a sequence of 5-second shots following this hit formula: 1) HOOK: start mid-conflict with public humiliation and a cruel line. 2) ESCALATION: the villain crosses the line, the hero stays calm. 3) HINT: one small clue of the coming reversal. 4) REVEAL: the true identity or truth lands in one sentence. 5) PAYBACK: the villain's face collapses and pays a price. 6) CLIFFHANGER: one new question, then cut.
+Rules: one visible action per shot, at most one short line per shot (Korean up to 28 characters, English up to 14 words). The villain is hateful, the hero dignified. Settings must work in any country. Payback comes through status, law, evidence or public exposure, never violence. No blood, weapons, sexual content, real people or real brands (AI video generators reject them).
+Korean fields are natural Korean with Korean names; English fields are natural native English with Western names and contain no Korean. Character looks describe age range, gender, hair, outfit and impression without ethnicity. Output JSON only.`;
 async function gemini(prompt, schema, token) {
   const keys = aiKeys(); if (!keys.length) throw new Error('설정에서 Gemini API 키를 먼저 넣어 주세요.');
   const body = JSON.stringify({ systemInstruction: { parts: [{ text: AI_SYS }] }, contents: [{ role: 'user', parts: [{ text: prompt }] }],
@@ -396,7 +335,7 @@ async function gemini(prompt, schema, token) {
     if (token.cancel) throw new Error('cancel');
     const r = await httpReq(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(aiModel())}:generateContent`, { method: 'POST', headers: { 'Content-Type': 'application/json', 'x-goog-api-key': keys[ki] }, body });
     if (r.status === 200) {
-      settings.aiNext = (ki + 1) % keys.length; saveSettings();
+      settings.aiNext = (ki + 1) % keys.length; store.set('settings', settings);
       let text = ''; try { text = JSON.parse(r.text).candidates[0].content.parts.map(p => p.text || '').join(''); } catch (e) {}
       text = text.replace(/^\s*```(?:json)?/i, '').replace(/```\s*$/, '');
       try { return JSON.parse(text); } catch (e) { errs.push('AI 응답을 읽지 못했습니다. 다시 시도하세요.'); continue; }
@@ -408,67 +347,67 @@ async function gemini(prompt, schema, token) {
   }
   throw new Error(errs.length > 1 ? `모든 키가 실패했습니다.\n${errs.join('\n')}` : errs[0]);
 }
-const S_STR = { type: 'STRING' }, S_BEAT = { type: 'OBJECT', properties: { say: S_STR, cap: S_STR, shot: S_STR }, required: ['say', 'cap', 'shot'] };
-function aiContext(s) {
-  const c = CAT[s.cat], f = FMT[s.format], st = STAGE_META[s.stage], h = HOOK[s.hook], ct = CTA[s.cta], inp = s.input || {};
-  return `주제: ${s.topic}
-분야: ${c.name} (${c.why})
-스크립트 흐름: ${f.name} (${f.sum})
-타깃 시청자: ${inp.who || '주제에 맞게 판단'}
-핵심 포인트: 1) ${inp.p1 || '직접 채울 것'} 2) ${inp.p2 || '직접 채울 것'} 3) ${inp.p3 || '직접 채울 것'}
-시청자가 얻는 것: ${inp.gain || '직접 정할 것'}
-말투: ${s.tone ? '반말 (친구에게 말하듯)' : '존댓말 (~요 체)'}
-채널 단계: ${st.name}, ${st.focus}
-훅 유형: ${h.name} (${h.why})
-마무리 유형: ${ct.name} (${ct.why})
-목표 길이: ${s.len}초, 초당 약 ${settings.cps}자로 읽음
-추가 요청: ${(s.aiReq || '').trim() || '없음'}`;
+const S_STR = { type: 'STRING' }, S_INT = { type: 'INTEGER' };
+const S_CHAR = { type: 'OBJECT', properties: { r: S_STR, nk: S_STR, ne: S_STR, dk: S_STR, de: S_STR }, required: ['r', 'nk', 'ne', 'dk', 'de'] };
+const S_SHOT = { type: 'OBJECT', properties: { pk: S_STR, pe: S_STR, ak: S_STR, ae: S_STR, sp: S_INT, dk: S_STR, de: S_STR, cam: S_STR }, required: ['pk', 'pe', 'ak', 'ae', 'sp', 'dk', 'de', 'cam'] };
+const S_SCRIPT = { type: 'OBJECT', properties: { tk: S_STR, te: S_STR, lk: S_STR, le: S_STR, chars: { type: 'ARRAY', items: S_CHAR }, shots: { type: 'ARRAY', items: S_SHOT } }, required: ['tk', 'te', 'lk', 'le', 'chars', 'shots'] };
+const AI_FIELDS = `JSON fields: tk/te = Korean/English title; lk/le = Korean/English one-line logline; chars[] = {r: role code H hero, V villain, A ally who reveals the truth, X other; nk/ne = Korean/English name; dk/de = Korean/English look and outfit}; shots[] = {pk/pe = Korean/English place; ak/ae = Korean/English visible action; sp = speaker index into chars or -1 for no line; dk/de = Korean/English line or empty; cam = one of ${Object.keys(CAMS).join(', ')}}.`;
+const draftJson = p => JSON.stringify({ tk: p.tk, te: p.te, lk: p.lk, le: p.le, chars: p.chars, shots: p.shots.map(s => ({ pk: s.pk, pe: s.pe, ak: s.ak, ae: s.ae, sp: s.sp, dk: s.dk, de: s.de, cam: s.cam })) });
+function applyScript(p, r) {
+  if (!r || !Array.isArray(r.shots) || !r.shots.length) return false;
+  ['tk', 'te', 'lk', 'le'].forEach(k => { if (r[k]) p[k] = String(r[k]); });
+  if (Array.isArray(r.chars) && r.chars.length) p.chars = r.chars.slice(0, 4).map(c => ({ r: ROLE_NAME[c.r] ? c.r : 'X', nk: String(c.nk || ''), ne: String(c.ne || ''), dk: String(c.dk || ''), de: String(c.de || '') }));
+  p.shots = r.shots.slice(0, 10).map(s => ({ pk: String(s.pk || ''), pe: String(s.pe || ''), ak: String(s.ak || ''), ae: String(s.ae || ''), sp: Number.isInteger(s.sp) && s.sp >= 0 && s.sp < p.chars.length ? s.sp : -1, dk: String(s.dk || ''), de: String(s.de || ''), cam: CAMS[s.cam] ? s.cam : 'ms', sec: 5 }));
+  p.over = {}; p.subs = {}; return true;
 }
-const beatLine = (b, i) => `${i + 1}. ${b.k} (${fmtSec(b.sec)}, 대사 최대 ${Math.max(6, Math.floor(b.sec * settings.cps))}자)`;
-const draftLines = s => s.beats.map((b, i) => `${i + 1}. [${b.k}] ${b.say} / 자막: ${b.cap} / 장면: ${b.shot}`).join('\n');
-let aiToken = null;
 function aiRun(label, job, apply) {
-  if (!aiKeys().length) return dialog('Gemini API 키가 필요합니다', '설정에서 키를 넣으면 AI로 대본을 쓸 수 있습니다.', [['닫기', null], ['설정 열기', () => go('settings'), 'pri']]);
-  const token = { cancel: false }; aiToken = token; layerActs = { c0: () => { token.cancel = true; } };
-  layer(`<div class="dialog" role="alertdialog" aria-label="${esc(label)}"><span class="spin" aria-hidden="true"></span><h3>${esc(label)}</h3><p>Gemini · ${esc(aiModel())}<br>보통 10~30초 걸립니다.</p><div class="acts"><button class="btn" data-lact="c0">취소</button></div></div>`, true);
+  if (!aiKeys().length) return dialog('Gemini API 키가 필요합니다', '설정에서 키를 넣으면 AI 기능을 쓸 수 있습니다.', [['닫기', null], ['설정 열기', () => go('settings'), 'pri']]);
+  const token = { cancel: false }; layerActs = { c0: () => { token.cancel = true; } };
+  layer(`<div class="dialog" role="alertdialog" aria-label="${esc(label)}"><span class="spin" aria-hidden="true"></span><h3>${esc(label)}</h3><p>Gemini · ${esc(aiModel())}\n보통 10~40초 걸립니다.</p><div class="acts"><button class="btn" data-lact="c0">취소</button></div></div>`, true);
+  aiToken = token;
   job(token).then(res => { if (token.cancel) return; aiToken = null; closeLayer(); apply(res); },
     e => { if (token.cancel) return; aiToken = null; closeLayer(); dialog('AI 생성에 실패했습니다', e.message, [['닫기', null], ['설정 열기', () => go('settings')]]); });
 }
-function aiWriteAll() {
-  const s = draft;
-  aiRun('AI가 대본을 쓰는 중', token => gemini(`${aiContext(s)}
-
-아래 구간의 순서와 개수(${s.beats.length}개)를 그대로 지켜 각 구간의 say(읽을 대사), cap(화면 자막), shot(촬영·편집 지시)을 써라. 대사는 구간별 글자 수 한도를 넘기지 마라.
-${s.beats.map(beatLine).join('\n')}
-
-titles에는 쇼츠 제목 5개 (40자 이내, 앞쪽에 검색어), tags에는 해시태그 4~5개 (# 포함), pin에는 댓글을 부르는 고정 댓글 질문 1개를 써라.
-
-현재 초안 (참고만 하고 더 좋게 바꿔라):
-${draftLines(s)}`, { type: 'OBJECT', properties: { beats: { type: 'ARRAY', items: S_BEAT }, titles: { type: 'ARRAY', items: S_STR }, tags: { type: 'ARRAY', items: S_STR }, pin: S_STR }, required: ['beats', 'titles', 'tags', 'pin'] }, token),
+function aiNew(themeId, idea) {
+  const th = TH[themeId];
+  aiRun('AI가 새 대본을 쓰는 중', token => gemini(`Write one original 6-shot short-drama script.\nTheme: ${th.en} (${th.name}). The satisfying payoff of this theme: ${th.punch}.\nCreator's idea (may be Korean): ${idea || 'none, invent a fresh premise'}.\n${AI_FIELDS}`, S_SCRIPT, token),
+    r => { const p = blankProject(themeId); if (!applyScript(p, r)) return toast('AI 응답이 비어 있습니다'); p.ai = true; draft = p; dirty = true; go('editor', {}, cur().v === 'aiNew'); toast('AI가 대본을 썼습니다'); });
+}
+function aiRewriteAll() {
+  const p = draft, th = TH[p.theme] || THEMES[0];
+  aiRun('AI가 대본을 다시 쓰는 중', token => gemini(`Rewrite this short-drama script to be far more gripping while keeping the same premise, the same number of shots (${p.shots.length}) and the same characters unless the request says otherwise.\nTheme: ${th.en}. Payoff: ${th.punch}.\nCreator's request (may be Korean): ${(p.aiReq || '').trim() || 'none'}.\n${AI_FIELDS}\nCurrent script JSON:\n${draftJson(p)}`, S_SCRIPT, token),
+    r => { const undo = draftJson(p); if (!applyScript(p, r)) return toast('AI 응답이 비어 있습니다'); p._undo = undo; p.ai = true; dirty = true; render(); toast('AI가 대본을 다시 썼습니다'); });
+}
+function aiShot(i) {
+  const p = draft, sh = p.shots[i];
+  aiRun(`AI가 샷 ${i + 1}을 다시 쓰는 중`, token => gemini(`Here is a short-drama script JSON:\n${draftJson(p)}\n\nRewrite ONLY shot ${i + 1} (role in the formula: ${beatOf(p, i)[1]}) in 3 clearly different ways. Keep continuity with the other shots and the same characters.\n${AI_FIELDS}`,
+    { type: 'OBJECT', properties: { options: { type: 'ARRAY', items: S_SHOT } }, required: ['options'] }, token),
   r => {
-    if (!Array.isArray(r.beats) || !r.beats.length) return toast('AI 응답이 비어 있습니다');
-    draft._undo = JSON.stringify({ beats: draft.beats, titles: draft.titles, tags: draft.tags, pin: draft.pin, title: draft.title });
-    r.beats.slice(0, draft.beats.length).forEach((nb, i) => { const b = draft.beats[i]; b.say = String(nb.say || b.say).trim(); b.cap = String(nb.cap || '').trim(); b.shot = String(nb.shot || b.shot).trim(); });
-    if (Array.isArray(r.titles) && r.titles.length) { draft.titles = r.titles.slice(0, 5).map(String); draft.title = draft.titles[0]; }
-    if (Array.isArray(r.tags) && r.tags.length) draft.tags = r.tags.slice(0, 5).map(t => '#' + String(t).replace(/^#+/, '').replace(/\s+/g, ''));
-    if (r.pin) draft.pin = String(r.pin);
-    draft.ai = true; dirty = true; render(); toast('AI가 대본을 썼습니다');
+    const opts = (r.options || []).filter(o => o && (o.ak || o.ae)).slice(0, 3); if (!opts.length) return toast('AI 응답이 비어 있습니다');
+    const k = sfx();
+    sheet(`샷 ${i + 1} · 마음에 드는 안을 고르세요`, opts.map((o, n) => [`${n + 1}안 · ${o['a' + k]}`, o['d' + k] ? `대사: ${o['d' + k]}` : '대사 없음', () => {
+      Object.assign(sh, { pk: o.pk || sh.pk, pe: o.pe || sh.pe, ak: o.ak || sh.ak, ae: o.ae || sh.ae, dk: o.dk || '', de: o.de || '', sp: Number.isInteger(o.sp) && o.sp >= 0 && o.sp < p.chars.length ? o.sp : -1, cam: CAMS[o.cam] ? o.cam : sh.cam });
+      ['f', 'k'].forEach(x => ['kr', 'en'].forEach(m => delete p.over[`${x}:${i}:${m}`])); dirty = true; render(); toast(`${n + 1}안으로 바꿨습니다`); }]));
   });
 }
-function aiRewriteBeat(i) {
-  const s = draft, b = s.beats[i];
-  aiRun(`AI가 "${b.k}" 구간을 쓰는 중`, token => gemini(`${aiContext(s)}
-
-전체 대본:
-${draftLines(s)}
-
-이 중 ${i + 1}번 구간 "${b.k}" (${fmtSec(b.sec)}, 대사 최대 ${Math.max(6, Math.floor(b.sec * settings.cps))}자)만 서로 다른 방향으로 3가지 다시 써라. 앞뒤 구간과 자연스럽게 이어져야 하고 다른 구간의 표현을 반복하지 마라.`,
-  { type: 'OBJECT', properties: { options: { type: 'ARRAY', items: S_BEAT } }, required: ['options'] }, token),
-  r => {
-    const opts = (r.options || []).filter(o => o && o.say).slice(0, 3);
-    if (!opts.length) return toast('AI 응답이 비어 있습니다');
-    sheet(`${b.k} · 마음에 드는 안을 고르세요`, opts.map((o, n) => [`${n + 1}안 · ${o.say}`, `자막: ${o.cap || '-'} · 장면: ${o.shot || '-'}`, () => { b.say = String(o.say).trim(); b.cap = String(o.cap || b.cap).trim(); b.shot = String(o.shot || b.shot).trim(); dirty = true; render(); toast(`${n + 1}안으로 바꿨습니다`); }]));
-  });
+function aiSync() {
+  const p = draft, from = MODE(), toName = from === 'kr' ? 'natural native English (Western names)' : 'natural Korean (Korean names)', f = sfx(from), t = from === 'kr' ? 'e' : 'k';
+  const src = { title: p['t' + f], logline: p['l' + f], chars: p.chars.map(c => ({ name: c['n' + f], look: c['d' + f] })), shots: p.shots.map(s => ({ place: s['p' + f], action: s['a' + f], line: s['d' + f] })) };
+  const S = { type: 'OBJECT', properties: { title: S_STR, logline: S_STR, chars: { type: 'ARRAY', items: { type: 'OBJECT', properties: { name: S_STR, look: S_STR }, required: ['name', 'look'] } }, shots: { type: 'ARRAY', items: { type: 'OBJECT', properties: { place: S_STR, action: S_STR, line: S_STR }, required: ['place', 'action', 'line'] } } }, required: ['title', 'logline', 'chars', 'shots'] };
+  aiRun(from === 'kr' ? '한국어 내용을 영어판에 반영하는 중' : '영어 내용을 한국어판에 반영하는 중', token => gemini(`Adapt this short-drama script into ${toName}. Keep the same order and number of characters (${src.chars.length}) and shots (${src.shots.length}). Keep lines short and punchy; an empty line stays empty. Do not translate literally.\n${JSON.stringify(src)}`, S, token),
+    r => {
+      if (!r || !Array.isArray(r.shots)) return toast('AI 응답이 비어 있습니다');
+      p['t' + t] = r.title || p['t' + t]; p['l' + t] = r.logline || p['l' + t];
+      (r.chars || []).slice(0, p.chars.length).forEach((c, i) => { p.chars[i]['n' + t] = c.name || p.chars[i]['n' + t]; p.chars[i]['d' + t] = c.look || p.chars[i]['d' + t]; });
+      r.shots.slice(0, p.shots.length).forEach((s, i) => { const sh = p.shots[i]; sh['p' + t] = s.place || sh['p' + t]; sh['a' + t] = s.action || sh['a' + t]; sh['d' + t] = sh['d' + f] ? (s.line || sh['d' + t]) : ''; });
+      dirty = true; render(); toast(from === 'kr' ? '영어판에 반영했습니다' : '한국어판에 반영했습니다');
+    });
+}
+function aiSubs(lang) {
+  const p = draft, name = (SUB_LANGS.find(l => l[0] === lang) || [])[1] || lang;
+  aiRun(`${name} 자막을 만드는 중`, token => gemini(`Translate these short-drama subtitle lines into the language with code "${lang}" (${name}). Natural, punchy subtitle style. Return exactly ${p.shots.length} items in the same order; an empty input stays an empty string.\nKorean: ${JSON.stringify(p.shots.map(s => s.dk))}\nEnglish: ${JSON.stringify(p.shots.map(s => s.de))}`,
+    { type: 'OBJECT', properties: { lines: { type: 'ARRAY', items: S_STR } }, required: ['lines'] }, token),
+    r => { if (!r || !Array.isArray(r.lines)) return toast('AI 응답이 비어 있습니다'); p.subs = p.subs || {}; p.subs[lang] = p.shots.map((s, i) => String(r.lines[i] || '')); dirty = true; render(); toast(`${name} 자막을 만들었습니다`); });
 }
 async function aiTest() {
   const keys = aiKeys(); if (!keys.length) return toast('API 키를 먼저 넣어 주세요');
@@ -487,424 +426,458 @@ async function aiTest() {
   const ok = lines.filter(l => l[0]).length; toast(ok ? `키 ${keys.length}개 중 ${ok}개 사용 가능` : '사용 가능한 키가 없습니다');
 }
 
+/* ---------- 히트작 벤치마킹 (깃허브 저장소에서 읽기) ---------- */
+const hitsUrl = () => String(settings.hitsUrl || '').trim() || HITS_URL_DEFAULT;
+const validScript = s => Array.isArray(s) && s.length === 6 && Array.isArray(s[4]) && s[4].length >= 2 && Array.isArray(s[5]) && s[5].length >= 3 && s[5].every(x => Array.isArray(x) && x.length === 8) && s[4].every(c => Array.isArray(c) && c.length === 5);
+const validHit = h => h && typeof h.id === 'string' && validScript(h.script);
+function allHits() {
+  const map = new Map();
+  ((typeof HITS_LOCAL !== 'undefined' && HITS_LOCAL.items) || []).filter(validHit).forEach(h => map.set(h.id, h));
+  ((store.get('hits', {}).items) || []).filter(validHit).forEach(h => map.set(h.id, h));
+  return [...map.values()];
+}
+async function fetchHits() {
+  toast('저장소에서 불러오는 중…');
+  const r = await httpReq(hitsUrl() + (hitsUrl().includes('?') ? '&' : '?') + 't=' + Date.now());
+  if (r.status !== 200) return dialog('저장소를 읽지 못했습니다', r.status === 404 ? '주소에 파일이 없습니다. 저장소가 비공개이거나 파일이 아직 올라가지 않았을 수 있습니다. 아래 주소를 확인하세요.' : r.status === 0 ? '인터넷 연결을 확인하세요.' : `응답 코드 ${r.status}`, [['닫기', null]]);
+  try {
+    const data = JSON.parse(r.text), items = (Array.isArray(data) ? data : data.items || []).filter(validHit);
+    store.set('hits', { items, updated: data.updated || '', fetched: Date.now() }); render(); toast(`벤치마킹 ${items.length}편을 불러왔습니다`);
+  } catch (e) { dialog('파일 형식이 올바르지 않습니다', 'hits.json 이 올바른 JSON인지 확인하세요.', [['닫기', null]]); }
+}
+function researchPrompt(n, platform) {
+  return `너는 숏드라마(세로형 마이크로 드라마) 시장 조사원이자 작가다. 아래 순서대로 작업해라.
+
+[1] 조사
+- ${platform || 'ReelShort, DramaBox, ShortMax, 유튜브 쇼츠, 틱톡'}에서 조회수 5천만~1억 이상으로 보도되었거나 플랫폼 인기 순위 최상위에 오른 숏드라마 ${n}편을 찾는다.
+- 작품마다 제목, 플랫폼, 조회수·순위 근거(출처 주소 포함)를 확인한다. 확인하지 못한 수치는 지어내지 말고 "확인 불가"라고 적는다.
+
+[2] 분석 (공식만 뽑는다)
+- 작품마다 "왜 터졌는지"를 2~3문장으로 정리한다: 첫 3초 훅, 굴욕과 반전의 구조, 통쾌한 지점, 다음 화로 넘기는 방식.
+- 원작의 대사, 인물 이름, 제목, 고유한 장면을 옮겨 적지 않는다. 구조와 공식만 가져온다.
+
+[3] 새 대본 쓰기 (오리지널)
+- 분석한 공식만 빌려서 인물, 직업, 배경, 대사, 제목이 모두 다른 새 6샷 대본을 한국어·영어로 쓴다. 원작과 나란히 놓았을 때 같은 작품으로 보이면 안 된다.
+- 6샷 순서: 훅·굴욕 → 고조 → 복선 → 반전 공개 → 참교육 → 클리프행어. 샷마다 눈에 보이는 동작 하나, 대사는 한 줄(한국어 28자, 영어 14단어 이내).
+- 피, 흉기, 성적 묘사, 실존 인물, 실제 브랜드는 쓰지 않는다(AI 영상 생성이 거부된다). 응징은 지위·법·증거·공개 망신으로 한다.
+- 설정은 한국과 해외 어디서나 통해야 한다. 한국어 칸은 한국 이름, 영어 칸은 서양 이름을 쓴다.
+
+[4] 저장 형식
+깃허브 저장소의 hits/hits.json 파일에 있는 "items" 배열 끝에 아래 형식으로 추가한다. 기존 항목은 지우지 않는다. "updated"는 오늘 날짜로 바꾼다.
+{
+  "id": "영문-소문자-고유값",
+  "src": { "title": "참고한 작품 제목", "platform": "플랫폼", "note": "조회수·순위 근거 한 줄", "url": "출처 주소" },
+  "formula": "왜 터졌는지 분석 2~3문장 (한국어)",
+  "theme": "${THEMES.map(t => t.id).join(' | ')} 중 하나",
+  "script": [
+    "한국어 제목", "English Title", "한국어 한 줄 줄거리", "English logline",
+    [["H", "한국 이름", "English name", "한국어 외형·복장", "English look and outfit"], ["V", "…", "…", "…", "…"]],
+    [["한국어 장소", "English place", "한국어 화면 묘사", "English visible action", 화자번호(인물 순번, 없으면 -1), "한국어 대사", "English line", "카메라코드"], … 정확히 6개]
+  ]
+}
+- 역할코드: H 주인공, V 악역, A 조력자, X 기타. 카메라코드: ${Object.keys(CAMS).join(', ')}.
+- 저장 전에 JSON 문법 오류가 없는지 확인한다.`;
+}
+
+/* ---------- 공통 조각 ---------- */
+let artN = 0;
+function art(icon, h = 218) {
+  const n = ++artN, bars = [[14, 58, 24], [25, 46, 44], [36, 38, 60], [47, 50, 36], [58, 42, 52]];
+  return `<svg class="art" viewBox="0 0 170 130" aria-hidden="true"><defs>
+  <linearGradient id="ag${n}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="hsl(${h} 95% 72%)"/><stop offset="1" stop-color="hsl(${h + 14} 88% 50%)"/></linearGradient>
+  <radialGradient id="ab${n}"><stop offset="0" stop-color="hsl(${h} 95% 80%)" stop-opacity=".75"/><stop offset="1" stop-color="hsl(${h} 95% 80%)" stop-opacity="0"/></radialGradient></defs>
+  <circle cx="108" cy="62" r="64" fill="url(#ab${n})"/>
+  <g fill="hsl(${h} 90% 70%)" opacity=".5">${bars.map(([x, y, hh]) => `<rect x="${x}" y="${y}" width="7" height="${hh}" rx="3.5"/>`).join('')}</g>
+  <ellipse cx="114" cy="118" rx="44" ry="8" fill="hsl(${h} 60% 50%)" opacity=".16"/>
+  <rect x="74" y="20" width="80" height="80" rx="27" fill="url(#ag${n})"/>
+  <rect x="81" y="25" width="66" height="30" rx="16" fill="#fff" opacity=".24"/>
+  <g transform="translate(90 36) scale(2)" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${ICON[icon]}</g>
+  <path d="M155 12l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#FFC53D"/>
+  <path d="M68 14l1.7 3.8 3.8 1.7-3.8 1.7L68 25l-1.7-3.8-3.8-1.7 3.8-1.7z" fill="#FFC53D" opacity=".85"/></svg>`;
+}
+const glyph = (t, big) => `<span class="glyph${big ? ' big' : ''}" style="--h:${t.hue}">${ic(t.icon)}</span>`;
+const chev = `<span class="chev">${ic('chevron')}</span>`;
+const h2 = (icon, text, right = '') => `<h2 class="h2"><span class="hi">${ic(icon)}</span>${text}<span class="sp"></span>${right}</h2>`;
+const seg = (name, opts, val) => `<div class="seg" role="group">${opts.map(([v, l, i]) => `<button data-act="set" data-k="${name}" data-v="${v}" class="${String(v) === String(val) ? 'on' : ''}">${i ? ic(i) : ''}${l}</button>`).join('')}</div>`;
+const pageHead = o => `<div class="phead"><div class="ph-t">${o.eyebrow ? `<span class="eyebrow">${ic(o.eicon || 'sparkle')}${o.eyebrow}</span>` : ''}${o.title ? `<h2>${o.title}</h2>` : ''}${o.lead ? `<p>${o.lead}</p>` : ''}</div>${art(o.icon, o.hue)}</div>`;
+const modeSeg = () => `<div class="mode" role="group" aria-label="제작 대상">${[['kr', '국내용'], ['en', '해외용']].map(([v, l]) => `<button data-act="mode" data-v="${v}" class="${MODE() === v ? 'on' : ''}">${v === 'en' ? ic('globe') : ''}${l}</button>`).join('')}</div>`;
+const doneSet = () => new Set(projects.map(p => p.src).filter(Boolean));
+function dramaRow(theme, i, showTheme, done) {
+  const s = dramasOf(theme)[i], t = TH[theme], k = isEn() ? 1 : 0;
+  return `<div class="row trow" role="button" tabindex="0" data-act="openDrama" data-th="${theme}" data-i="${i}">${glyph(t)}<span class="grow"><b>${esc(s[k])}</b><small>${showTheme ? t.name + ' · ' : ''}${esc(s[2 + k])}</small></span>${done && done.has(theme + ':' + i) ? '<span class="tag ok">작업함</span>' : ''}${chev}</div>`;
+}
+const projRow = (p, extra) => { const t = TH[p.theme] || THEMES[0]; return `<div class="row" role="button" tabindex="0" data-act="open" data-id="${p.id}">${extra || glyph(t)}<span class="grow"><b>${esc(T(p))}</b><small>${t.name} · ${p.shots.length}샷 · ${totalSec(p)}초 · ${dateStr(p.updated)}</small></span>${extra ? '' : `<button class="ib sm star ${p.fav ? 'on' : ''}" data-act="fav" data-id="${p.id}" aria-label="즐겨찾기">${ic('star')}</button><button class="ib sm" data-act="rowMenu" data-id="${p.id}" aria-label="더보기">${ic('more')}</button>`}</div>`; };
+function openDrama(theme, i) { const s = dramasOf(theme)[i]; if (!s) return; draft = toProject(s, theme, theme + ':' + i); dirty = true; go('editor'); }
+function openProject(id) { const p = projects.find(x => x.id === id); if (!p) return; draft = JSON.parse(JSON.stringify(p)); dirty = false; go('editor'); }
+function saveDraft() {
+  draft.updated = Date.now(); const c = JSON.parse(JSON.stringify(draft)); delete c._undo;
+  const i = projects.findIndex(x => x.id === c.id); if (i >= 0) projects[i] = c; else projects.unshift(c);
+  saveProjects(); dirty = false; toast('보관함에 저장했습니다');
+}
+function dailyDramas(n, seed) {
+  const ths = (settings.myThemes.length ? settings.myThemes : THEMES.map(t => t.id)).filter(id => dramasOf(id).length), out = [];
+  if (!ths.length) return out;
+  const day = Math.floor(Date.now() / 864e5) + (seed || 0) * 7;
+  for (let k = 0; out.length < n && k < n * 6; k++) { const th = ths[(day * 3 + k * 7) % ths.length], list = dramasOf(th), i = (day * 13 + k * 29) % list.length; if (!out.some(([a, b]) => a === th && b === i)) out.push([th, i]); }
+  return out;
+}
+const BAN_RE = /피를|칼로|총을|살인|blood|knife|\bgun\b|kill|murder|naked/i;
+function scoreOf(p) {
+  const m = MODE(), k = sfx(m), spoken = p.shots.filter(s => s.sp >= 0 && s['d' + k]).length, roles = p.chars.map(c => c.r), tot = totalSec(p);
+  const lineOk = s => m === 'kr' ? (s.dk || '').length <= 30 : words(s.de) <= 15, actOk = s => m === 'kr' ? (s.ak || '').length <= 50 : words(s.ae) <= 24;
+  const items = [
+    [p.shots[0] && p.shots[0].sp >= 0 && !!p.shots[0]['d' + k], '1샷이 대사로 시작한다 (훅)', '첫 샷에 악역의 독한 대사를 넣으세요.'],
+    [spoken >= Math.min(4, p.shots.length), '대사 있는 샷이 4개 이상이다', '대사가 너무 적으면 사건이 전달되지 않습니다.'],
+    [p.shots.every(lineOk), '모든 대사가 5초 안에 끝난다', m === 'kr' ? '대사는 28자 이내로 줄이세요.' : '대사는 14단어 이내로 줄이세요.'],
+    [p.shots.every(actOk), '샷마다 동작이 하나다', '화면 묘사가 길면 5초 영상에 담기지 않습니다.'],
+    [roles.includes('H') && roles.includes('V'), '주인공과 악역이 있다', '인물 탭에서 역할을 정하세요.'],
+    [p.shots.every(s => s['p' + k] && s['a' + k]), '모든 샷에 장소와 화면 묘사가 있다', '비어 있는 샷을 채우세요.'],
+    [p.chars.every(c => (c['d' + k] || '').length >= (m === 'kr' ? 12 : 25)), '인물 외형 설명이 충분하다', '나이대, 성별, 머리, 옷, 인상을 적으세요.'],
+    [p.shots.length >= 5 && p.shots.length <= 8, '샷이 5~8개다', '한 편은 6샷이 가장 안정적입니다.'],
+    [tot >= 20 && tot <= 60, '전체 길이가 20~60초다', `지금 ${tot}초입니다.`],
+    [!BAN_RE.test(p.shots.map(s => s.ak + s.ae + s.dk + s.de).join(' ')), '생성이 거부될 표현이 없다', '폭력·흉기·노출 표현을 순화하세요.']
+  ].map(([ok, label, tip]) => ({ ok, label, tip }));
+  return { items, score: Math.round(items.filter(i => i.ok).length / items.length * 100) };
+}
+const scoreList = sc => sc.items.map(i => `<li><span class="m ${i.ok ? '' : 'x'}">${ic(i.ok ? 'check' : 'x')}</span><span>${i.label}${i.ok ? '' : `<small>${i.tip}</small>`}</span></li>`).join('');
+function promptBox(p, key, title) {
+  const m = MODE(), ov = p.over && p.over[key + ':' + m] != null;
+  return `<div class="pbox"><div class="ph"><b>${title}</b><span class="sp"></span>${ov ? `<button class="pbtn" data-act="resetP" data-k="${key}">${ic('refresh')}원래대로</button>` : ''}<button class="pbtn blue" data-act="copyP" data-k="${key}">${ic('copy')}복사</button></div>
+    <textarea class="ag ptx" data-ov="${key}" spellcheck="false" aria-label="${title}">${esc(promptText(p, key, m))}</textarea>
+    ${m === 'en' ? `<details class="kox"><summary>${ic('info')}한국어 설명 보기</summary><p>${esc(promptBase(p, key, 'kr'))}</p></details>` : ''}</div>`;
+}
+
 /* ---------- 화면들 ---------- */
 const V = {};
-V.home = () => {
-  const st = STAGE_META[settings.stage], recent = [...scripts].sort((a, b) => b.updated - a.updated).slice(0, 3);
-  const day = Math.floor(Date.now() / 864e5), h = HOOKS[day % HOOKS.length], c = CATEGORIES[day % CATEGORIES.length], cats = sortedCats();
-  return { nav: 'home', top: `<div class="brand"><img src="img/icon.png" alt="">쇼츠 대본메이커</div><button class="ib" data-act="go" data-v="settings" aria-label="설정">${ic('gear')}</button>`,
+V.home = p => {
+  const recent = [...projects].sort((a, b) => b.updated - a.updated).slice(0, 3), d = doneSet(), daily = dailyDramas(5, p.seed);
+  return { nav: 'home', top: `<div class="brand"><img src="img/icon.png" alt="">숏드라마 메이커</div>${modeSeg()}<button class="ib" data-act="go" data-v="settings" aria-label="설정">${ic('gear')}</button>`,
     html: `
     <section class="hero card">
-      <div class="ph-t"><span class="eyebrow">${ic('flame')}완성 대본 ${TOPIC_COUNT.toLocaleString()}개</span><h2>분야만 고르면<br><em>대본</em>이 나와요.</h2></div>${art('mic', 218)}
-      <div class="go"><div class="search grow1">${ic('search')}<input class="in" id="quick" type="search" placeholder="주제 검색 (예: 곰팡이, 전세, 스쿼트)" enterkeyhint="search" maxlength="40"></div><button class="btn pri" data-act="quick">찾기</button></div>
-      <button class="linkbtn" data-act="tab" data-v="create">${ic('edit')}원하는 주제가 없으면 직접 만들기</button>
+      <div class="ph-t"><span class="eyebrow">${ic('flame')}완성 대본 ${DRAMA_COUNT.toLocaleString()}편</span><h2>30초 안에<br><em>도파민</em>이 터진다.</h2></div>${art('film', 350)}
+      <div class="go"><div class="search grow1">${ic('search')}<input class="in" id="quick" type="search" placeholder="대본 검색 (예: 청소부, 결혼식, 면접)" enterkeyhint="search" maxlength="40"></div><button class="btn pri" data-act="quick">찾기</button></div>
+      <p class="modehint">${ic(isEn() ? 'globe' : 'home')}${isEn() ? '<b>해외용</b> · 영어 프롬프트, 서양권 인물로 만듭니다. 프롬프트마다 한국어 설명이 붙습니다.' : '<b>국내용</b> · 한국어 프롬프트, 한국 인물로 만듭니다.'}</p>
     </section>
-    <section class="sec">${h2('sparkle', '오늘 찍기 좋은 주제', `<button class="pbtn" data-act="reshuffle">${ic('layers')}다른 주제</button>`)}
-      <div class="list">${(() => { const d = doneTopics(); return dailyTopics(5, cur().p.seed).map(([c, i]) => topicRow(c, i, true, d)).join(''); })()}</div>
-      <p class="hint">${settings.myCats.length ? '☆ 고정한 내 분야에서 골랐습니다.' : '조회수가 잘 나오는 분야에서 골랐습니다. 분야 화면에서 ☆로 내 분야를 고정하면 그 분야 위주로 나옵니다.'} 누르면 완성된 대본이 열리고, 고쳐서 저장하면 됩니다.</p>
+    <section class="sec">${h2('layers', '제작 순서')}
+      <div class="card steps4">${[['list', '대본 고르기'], ['user', '인물 이미지'], ['film', '클링 영상'], ['caption', '자막·업로드']].map(([i, l], n) => `<div><span class="glyph" style="--h:${[350, 262, 218, 150][n]}">${ic(i)}</span><b>${n + 1}. ${l}</b></div>`).join('')}</div>
     </section>
-    <section class="sec">${h2('road', '내 채널 단계')}
-      <div class="card stagebox">${seg('stage', STAGE_META.map(s => [s.id, s.name]), settings.stage)}
-        <p><b>${st.range} · ${st.key}</b>${st.focus}</p></div>
+    ${daily.length ? `<section class="sec">${h2('sparkle', '오늘 만들기 좋은 대본', `<button class="pbtn" data-act="reshuffle">${ic('refresh')}다른 대본</button>`)}
+      <div class="list">${daily.map(([th, i]) => dramaRow(th, i, true, d)).join('')}</div></section>` : ''}
+    <section class="sec">${h2('flame', '도파민 주제 20')}
+      <div class="card"><div class="cats">${THEMES.map((t, n) => `<button class="cat" data-act="go" data-v="theme" data-id="${t.id}"><span class="gw">${glyph(t, 1)}${settings.myThemes.includes(t.id) ? `<span class="mine">${ic('star')}</span>` : `<span class="rk num ${n < 3 ? 'top' : ''}">${n + 1}</span>`}</span>${t.name}<small class="cnt num">${dramasOf(t.id).length}편</small></button>`).join('')}</div></div>
     </section>
-    <section class="sec">${h2('layers', '분야 고르기', `<button class="pbtn blue" data-act="go" data-v="pick">${ic('target')}분야 추천받기</button>`)}
-      <div class="chips">${SORTS.map(([v, l, i]) => `<button class="chip ${settings.sort === v ? 'on' : ''}" data-act="set" data-k="sort" data-v="${v}">${ic(i)}${l}</button>`).join('')}</div>
-      <div class="card"><div class="cats">${cats.list.map(c => `<button class="cat" data-act="go" data-v="category" data-id="${c.id}"><span class="gw">${glyph(c, 1)}${settings.myCats.includes(c.id) ? `<span class="mine" title="내 분야">${ic('star')}</span>` : settings.sort !== 'base' ? `<span class="rk num ${cats.rank[c.id] <= 3 ? 'top' : ''}">${cats.rank[c.id]}</span>` : ''}</span>${c.name}<small class="cnt num">대본 ${topicsOf(c.id).length}</small></button>`).join('')}</div>
-        <p class="hint" style="margin-top:16px">${SORT_NOTE[settings.sort]} 순위는 일반적인 경향을 바탕으로 한 추정치이며, 분야 화면에서 ☆를 누른 내 분야는 맨 앞에 옵니다.</p></div>
-    </section>
-    <section class="sec">${h2('clock', '최근 대본', `<button class="pbtn" data-act="tab" data-v="library">전체 보기${ic('chevron')}</button>`)}
-      ${recent.length ? `<div class="list">${recent.map(s => scriptRow(s)).join('')}</div>` : `<div class="card empty"><b>아직 대본이 없습니다</b>위에 주제를 적고 만들기를 눌러 보세요.</div>`}
-    </section>
-    <section class="sec">${h2('crown', '오늘의 훅')}
-      <div class="card"><span class="tag a">${ic('flame')}${h.name}</span><p class="quote">“${esc(c.hooks[day % c.hooks.length])}”</p><p class="hint">${h.why}</p>
-      <button class="btn sm blue" style="margin-top:14px" data-act="useHook" data-id="${h.id}">${ic('edit')}이 훅으로 대본 만들기</button></div>
+    <section class="sec">${h2('clock', '최근 작업', `<button class="pbtn" data-act="tab" data-v="library">전체 보기${ic('chevron')}</button>`)}
+      ${recent.length ? `<div class="list">${recent.map(x => projRow(x)).join('')}</div>` : `<div class="card empty"><b>아직 작업한 대본이 없습니다</b>주제를 골라 대본을 열고 저장해 보세요.</div>`}
     </section>` };
 };
 
-function newForm(p = {}) {
-  form = Object.assign({ topic: '', cat: 'info', format: null, hook: 'auto', cta: 'auto', len: null, tone: 0, stage: settings.stage, who: '', p1: '', p2: '', p3: '', gain: '' }, p);
-  if (!form.format) form.format = CAT[form.cat].flows[0][0];
-  if (!form.len) form.len = CAT[form.cat].len;
-}
-V.create = () => {
-  if (!form) newForm();
-  const c = CAT[form.cat], rec = c.flows.map(f => f[0]), order = [...rec, ...FORMATS.map(f => f.id).filter(id => !rec.includes(id))];
-  const showAll = cur().p.all;
-  return { nav: 'create', title: '대본 만들기', back: true, flush: true, html: `
-    ${pageHead({ eyebrow: '새 대본', title: '무엇을 찍을까요?', lead: '주제와 흐름만 고르면 시간별 대본이 나옵니다.', icon: 'clapper', hue: 222 })}
-    <div class="field"><label for="f_topic">${ic('edit')}주제</label><input class="in" id="f_topic" data-f="topic" value="${esc(form.topic)}" placeholder="예: 자취방 곰팡이 제거" maxlength="40"></div>
-    <div class="sec"><span class="lab">${ic('layers')}분야</span><div class="chips">${sortedCats().list.map(x => `<button class="chip ${x.id === form.cat ? 'on' : ''}" style="--h:${x.hue}" data-act="set" data-k="cat" data-v="${x.id}">${ic(CICON[x.id])}${x.name}</button>`).join('')}</div></div>
-    <div class="sec">${h2('clapper', '스크립트 흐름', `<button class="pbtn" data-act="allFlows">${showAll ? '추천만 보기' : '전체 14개 보기'}</button>`)}
-      <div class="list">${(showAll ? order : rec.includes(form.format) ? rec : [form.format, ...rec]).map(id => { const f = FMT[id], r = c.flows.find(x => x[0] === id), on = id === form.format;
-        return `<button class="flow ${on ? 'on' : ''}" data-act="set" data-k="format" data-v="${id}"><span class="fh"><b>${f.name}</b>${r ? `<span class="tag a">${ic('flame')}이 분야 추천</span>` : ''}</span><small>${r ? esc(r[1]) + ' · ' : ''}${f.sum}</small>${stepsOf(f)}${on ? `<span class="okc">${ic('check')}</span>` : ''}</button>`; }).join('')}</div></div>
-    <div class="sec"><span class="lab">${ic('crown')}첫 문장 (훅)</span><div class="chips"><button class="chip ${form.hook === 'auto' ? 'on' : ''}" data-act="set" data-k="hook" data-v="auto">${ic('sparkle')}자동 · ${HOOK[c.hook].name}</button>${HOOKS.map(h => `<button class="chip ${h.id === form.hook ? 'on' : ''}" data-act="set" data-k="hook" data-v="${h.id}">${h.name}</button>`).join('')}</div>
-      <div class="card" style="padding:14px 16px"><span class="tag">미리 보기</span><p style="margin:8px 0 0;font-weight:650;font-size:15.5px">${esc(fill(HOOK[form.hook === 'auto' ? c.hook : form.hook].tpl[form.tone], makeCtx(Object.assign({}, form, { topic: form.topic || '주제' }))))}</p></div></div>
-    <div class="sec"><span class="lab">${ic('clock')}길이</span>${seg('len', [[15, '15초'], [20, '20초'], [30, '30초'], [45, '45초'], [60, '60초']], form.len)}<p class="hint">${c.name} 분야는 ${c.len}초 안팎이 다루기 좋습니다.</p></div>
-    <div class="sec"><span class="lab">${ic('chat')}말투</span>${seg('tone', [[0, '존댓말'], [1, '반말']], form.tone)}</div>
-    <div class="sec"><span class="lab">${ic('road')}채널 단계</span>${seg('fstage', STAGE_META.map(s => [s.id, s.name]), form.stage)}<p class="hint">${STAGE_META[form.stage].focus}</p></div>
-    <div class="sec"><span class="lab">${ic('target')}마무리</span><div class="chips"><button class="chip ${form.cta === 'auto' ? 'on' : ''}" data-act="set" data-k="cta" data-v="auto">${ic('sparkle')}자동 · ${CTA[STAGE_META[form.stage].cta].name}</button>${CTAS.map(x => `<button class="chip ${x.id === form.cta ? 'on' : ''}" data-act="set" data-k="cta" data-v="${x.id}">${x.name}</button>`).join('')}</div></div>
-    <details class="more" ${form.p1 || form.who ? 'open' : ''}><summary>${ic('list')}내용 미리 채우기</summary><div class="body">
-      <p class="hint">비워 두면 대본에 〔포인트〕 빈칸이 생기고, 편집 화면에서 채울 수 있습니다.</p>
-      <div class="field"><label for="f_who">누가 보는 영상인가요</label><input class="in" id="f_who" data-f="who" value="${esc(form.who)}" placeholder="예: 자취생"></div>
-      ${[1, 2, 3].map(i => `<div class="field"><label for="f_p${i}">핵심 포인트 ${i}</label><input class="in" id="f_p${i}" data-f="p${i}" value="${esc(form['p' + i])}" placeholder="${['원인, 첫 번째 방법, 3위 등', '해결책, 두 번째 방법, 2위 등', '결과, 가장 중요한 것, 1위 등'][i - 1]}"></div>`).join('')}
-      <div class="field"><label for="f_gain">시청자가 얻는 것 한 줄</label><input class="in" id="f_gain" data-f="gain" value="${esc(form.gain)}" placeholder="예: 곰팡이는 말리는 게 먼저예요"></div>
-    </div></details>
-    <div class="sticky">${aiKeys().length ? `<button class="btn" data-act="generate">${ic('list')}공식으로</button><button class="btn pri" data-act="generateAi">${ic('sparkle')}AI로 대본 생성</button>` : `<button class="btn pri block" data-act="generate">${ic('sparkle')}대본 생성</button>`}</div>` };
-};
-
-function beatCard(b, i, sp) {
-  const e = est(b.say), over = e > b.sec + 0.6, cls = b.type === 'hook' ? 'h' : b.type === 'cta' ? 'c' : '';
-  return `<div class="beat ${cls}" data-i="${i}">
-    <div class="tc num"><span class="pdot">${ic('play')}</span><b>${tc(sp[0])}</b><small>${fmtSec(b.sec)}</small></div>
-    <div class="box card"><div class="hd"><span class="pill">${esc(b.k)}</span><span class="sp"></span><span class="tag ${over ? 'a' : 'ok'} num" data-est>${ic('clock')}${fmtSec(e)}</span>${b.type === 'hook' ? '<button class="pbtn" data-act="swapHook">다른 훅</button>' : b.type === 'cta' ? '<button class="pbtn" data-act="swapCta">다른 마무리</button>' : ''}<button class="ib sm" data-act="beatMenu" aria-label="${esc(b.k)} 메뉴">${ic('more')}</button></div>
-      <textarea rows="1" class="ag" data-b="say" aria-label="${esc(b.k)} 대사" placeholder="여기에 대사를 적으세요">${esc(b.say)}</textarea>
-      <div class="sub"><span>${ic('caption')}자막</span><input data-b="cap" value="${esc(b.cap)}" placeholder="화면에 띄울 글자" aria-label="자막"><span>${ic('scene')}장면</span><input data-b="shot" value="${esc(b.shot)}" placeholder="무엇을 보여 줄지" aria-label="장면"></div>
-    </div></div>`;
-}
-V.editor = () => {
-  const s = draft, sc = scoreOf(s), sp = spans(s), st = STAGE_META[s.stage];
-  return { title: CAT[s.cat].name + ' · ' + FMT[s.format].name, back: true, flush: true,
-    acts: `<button class="ib" data-act="exportOne" aria-label="내보내기">${ic('share')}</button>`,
-    html: `
-    <div class="ehead"><div class="tline"><span class="playdot">${ic('play')}</span><textarea class="titlein ag" rows="1" data-s="title" aria-label="대본 제목">${esc(s.title)}</textarea></div>${art('mic', 218)}</div>
-    <div>${tlBar(s)}<div class="tlmeta num"><span>0:00 훅</span><span>본론</span><span>마무리 ${tc(s.len)}</span></div></div>
-    <div class="stats num"><div class="stat t1"><span class="v">${ic('target')}${s.len}초</span><small>목표 길이</small></div><div class="stat t2 ${sc.total > s.len * 1.05 ? 'bad' : ''}" id="stTotal"><span class="v">${ic('clock')}<b>${fmtSec(sc.total)}</b></span><small>읽기 시간</small></div><div class="stat t3" id="stScore"><span class="v">${ic('checkc')}<b>${sc.score}점</b></span><small>완성도</small></div></div>
-    <div class="card aicard"><div class="aih"><span class="glyph" style="--h:262">${ic('sparkle')}</span><span class="grow"><b>AI로 대본 쓰기</b><small>${aiKeys().length ? `Gemini · ${esc(aiModel())} · 키 ${aiKeys().length}개` : '설정에서 Gemini API 키를 넣으면 쓸 수 있습니다'}</small></span>${s.ai ? `<span class="tag pur">${ic('sparkle')}AI 작성</span>` : ''}</div>
-      ${aiKeys().length ? `<input class="in" id="ai_req" data-s="aiReq" value="${esc(s.aiReq || '')}" placeholder="추가 요청 (선택) 예: 더 웃기게, 가게 이름 넣어서">` : ''}
-      <div class="aiacts">${s._undo ? `<button class="btn sm" data-act="aiUndo">${ic('back')}AI 전으로</button>` : ''}<button class="btn sm blue" data-act="${aiKeys().length ? 'aiWrite' : 'settings'}">${ic('sparkle')}${aiKeys().length ? 'AI로 전체 대본 쓰기' : 'API 키 넣으러 가기'}</button></div>
-      ${aiKeys().length ? `<p class="hint">구간별로 다시 쓰려면 각 구간의 ⋮ 메뉴를 누르세요.</p>` : ''}</div>
-    <div class="sec beats" id="beats">${s.beats.map((b, i) => beatCard(b, i, sp[i])).join('')}
-      <button class="btn sm" data-act="addBeat">${ic('plus')}구간 추가</button></div>
-    <div class="sec">${h2('checkc', '완성도 점검')}<div class="card score"><ul id="scoreList">${scoreList(sc)}</ul></div></div>
-    <div class="sec">${h2('road', st.name + ' 단계 조언')}<div class="card advice">${glyph(CAT[s.cat])}<div><p>${st.focus}</p><p class="hint" style="margin-top:6px">${CAT[s.cat].name}: ${CAT[s.cat].stages[s.stage].content}</p></div></div></div>
-    <div class="sec">${h2('edit', '제목 후보')}<div class="card kv">${s.titles.map((t, i) => `<div class="item"><p>${esc(t)}</p><button class="pbtn blue" data-act="useTitle" data-i="${i}">제목으로</button></div>`).join('')}</div></div>
-    <div class="sec">${h2('hash', '올릴 때 쓸 것')}<div class="card kv">
-      <div class="item"><p><span class="lab">해시태그</span>${esc(s.tags.join(' '))}</p><button class="pbtn" data-act="copy" data-t="${esc(s.tags.join(' '))}">${ic('copy')}복사</button></div>
-      <div class="item"><p><span class="lab">고정 댓글</span>${esc(s.pin)}</p><button class="pbtn" data-act="copy" data-t="${esc(s.pin)}">${ic('copy')}복사</button></div></div></div>
-    <div class="field"><label for="memo">${ic('caption')}메모</label><textarea class="in" id="memo" rows="2" data-s="memo" placeholder="촬영 장소, 준비물 등">${esc(s.memo)}</textarea></div>
-    <div class="sticky"><button class="btn" data-act="prompter">${ic('screen')}프롬프터</button><button class="btn" data-act="copySay">${ic('copy')}대사 복사</button><button class="btn pri" data-act="save">${ic('check')}저장</button></div>` };
-};
-const scoreList = sc => sc.items.map(i => `<li><span class="m ${i.ok ? '' : 'x'}">${ic(i.ok ? 'check' : 'x')}</span><span>${i.label}${i.ok ? '' : `<small>${i.tip}</small>`}</span></li>`).join('');
-function refreshEditor() {
-  const sc = scoreOf(draft);
-  $('#stTotal').classList.toggle('bad', sc.total > draft.len * 1.05); $('#stTotal b').textContent = fmtSec(sc.total);
-  $('#stScore b').textContent = sc.score + '점'; $('#scoreList').innerHTML = scoreList(sc);
-  $$('#beats .beat').forEach((el, i) => { const b = draft.beats[i], e = est(b.say), t = $('[data-est]', el); t.innerHTML = ic('clock') + fmtSec(e); t.className = 'tag num ' + (e > b.sec + 0.6 ? 'a' : 'ok'); });
-}
-function saveDraft() {
-  draft.updated = Date.now(); delete draft.sample;
-  const i = scripts.findIndex(x => x.id === draft.id);
-  if (i >= 0) scripts[i] = draft; else scripts.unshift(draft);
-  saveScripts(); dirty = false; toast(`${CAT[draft.cat].name} 보관함에 저장했습니다`);
-}
-function openScript(id) { const s = scripts.find(x => x.id === id); if (!s) return; draft = JSON.parse(JSON.stringify(s)); dirty = false; go('editor'); }
-
-V.category = p => {
-  const c = CAT[p.id], t = p.tab || (topicsOf(c.id).length ? 'topics' : 'flow');
-  let body = '';
-  if (t === 'topics') {
-    const all = topicsOf(c.id), ff = p.ff || '', d = doneTopics(), fl = [...new Set(all.map(x => x[1]))];
-    const groups = fl.map(f => all.map((x, i) => i).filter(i => all[i][1] === f)), mixed = [];
-    for (let r = 0; mixed.length < all.length; r++) groups.forEach(g => { if (g[r] !== undefined) mixed.push(g[r]); });
-    const idx = ff ? all.map((x, i) => i).filter(i => all[i][1] === ff) : mixed;
-    body = `<div class="chips"><button class="chip ${!ff ? 'on' : ''}" data-act="set" data-k="p_ff" data-v="">전체 ${all.length}</button>${fl.map(f => `<button class="chip ${ff === f ? 'on' : ''}" data-act="set" data-k="p_ff" data-v="${f}">${FMT[f].name} ${all.filter(x => x[1] === f).length}</button>`).join('')}</div>
-      <div class="list">${idx.map(i => topicRow(c.id, i, false, d)).join('')}</div>
-      <p class="hint">주제를 누르면 훅부터 마무리까지 완성된 대본이 열립니다. 내 경험에 맞게 고치고 저장하세요.</p>`;
-  }
-  if (t === 'flow') body = `<div class="list">${c.flows.map(([id, name], n) => { const f = FMT[id]; return `<div class="artc"><div class="ah"><span class="no num">${n + 1}</span><h3>${esc(name)}</h3></div><p>${f.name} · ${f.sum}</p>${stepsOf(f)}<span><button class="pbtn blue" data-act="startFlow" data-cat="${c.id}" data-id="${id}">${ic('edit')}이 흐름으로 만들기</button></span></div>`; }).join('')}</div>
-    <p class="hint">이 분야에서 널리 쓰이는 구성입니다. 채널 반응을 보며 하나를 골라 반복하세요.</p>`;
-  if (t === 'road') body = `<div class="road">${c.stages.map((s, i) => { const m = STAGE_META[i], txt = `[${c.name} ${m.name}] 목표: ${s.goal} / 콘텐츠: ${s.content} / 볼 지표: ${s.kpi} / 바꿀 점: ${s.shift}`;
-    return `<div class="st s${i}"><div class="rail"><span class="dot num">${i + 1}</span>${i === settings.stage ? '<span class="now">지금</span>' : ''}</div>
-      <div class="card stc"><h3>${m.name}<small>${m.range}</small></h3><p class="hint" style="margin-top:-6px">${m.key}</p>
-      <dl><dt>목표</dt><dd>${s.goal}</dd><dt>콘텐츠</dt><dd>${s.content}</dd><dt>볼 지표</dt><dd>${s.kpi}</dd><dt>바꿀 점</dt><dd>${s.shift}</dd></dl>
-      <div class="stacts"><button class="pbtn" data-act="copy" data-t="${esc(txt)}">${ic('copy')}복사</button>${i === settings.stage ? '' : `<button class="pbtn" data-act="setStage" data-v="${i}">${ic('check')}내 단계로</button>`}<button class="pbtn blue" data-act="startStage" data-cat="${c.id}" data-v="${i}">${ic('edit')}이 단계 대본</button></div></div></div>`; }).join('')}</div>`;
-  if (t === 'hook') body = `<div class="list">${c.hooks.map(h => `<div class="row"><span class="glyph" style="--h:${c.hue}">${ic('crown')}</span><span class="grow"><b style="white-space:normal">${esc(h)}</b></span><button class="pbtn" data-act="copy" data-t="${esc(h)}">${ic('copy')}복사</button></div>`).join('')}</div>
-    <div class="card"><span class="tag a">${ic('flame')}추천 훅 · ${HOOK[c.hook].name}</span><p style="margin:10px 0 0">${HOOK[c.hook].why}</p></div>`;
-  const m = M(c.id), mine = settings.myCats.includes(c.id), pr = sortedCats('pop').rank[c.id];
-  return { title: c.name, back: true, acts: `<button class="ib star ${mine ? 'on' : ''}" data-act="myCat" data-id="${c.id}" aria-label="${mine ? '내 분야에서 빼기' : '내 분야로 고정'}">${ic('star')}</button>`, html: `
-    ${pageHead({ lead: c.why, icon: CICON[c.id], hue: c.hue })}
-    <div class="chips">${[['topics', `대본 주제 ${topicsOf(c.id).length}`, 'list'], ['flow', '스크립트 흐름', 'clapper'], ['road', '분석·로드맵', 'star'], ['hook', '훅 예시', 'crown']].filter(x => x[0] !== 'topics' || topicsOf(c.id).length).map(([v, l, i]) => `<button class="chip ${t === v ? 'on' : ''}" data-act="set" data-k="ctab" data-v="${v}">${ic(i)}${l}</button>`).join('')}</div>
-    <div class="card metric" ${t === 'road' ? '' : 'hidden'}><div class="mhd"><span class="tag ${pr <= 3 ? 'a' : ''}">${ic('flame')}조회수 순위 ${pr}위 / ${CATEGORIES.length}</span>${mine ? `<span class="tag warn">${ic('star')}내 분야</span>` : ''}</div>
-      ${[['pop', '조회수·시청자'], ['rpm', '수익성 (광고 단가)'], ['ease', '시작 쉬움'], ['comp', '경쟁 여유']].map(([k, l]) => `<div class="mrow"><span>${l}</span>${dots(m[k])}</div>`).join('')}
-      <p class="hint">${m.note}</p></div>
-    <div class="chips wrap" ${t === 'road' ? '' : 'hidden'}><span class="chip hash">${ic('clock')}추천 길이 ${c.len}초</span>${c.tags.map(x => `<span class="chip hash">#${x}</span>`).join('')}</div>
-
-    ${body}
-    <button class="btn pri block" data-act="startFlow" data-cat="${c.id}" data-id="${c.flows[0][0]}">${ic('sparkle')}${c.name} 대본 만들기</button>` };
+V.theme = p => {
+  const t = TH[p.id], all = dramasOf(t.id), q = (p.q || '').trim(), d = doneSet(), mine = settings.myThemes.includes(t.id);
+  const idx = all.map((s, i) => i).filter(i => !q || all[i].slice(0, 4).join(' ').toLowerCase().includes(q.toLowerCase()));
+  return { title: t.name, back: true, acts: `${modeSeg()}<button class="ib star ${mine ? 'on' : ''}" data-act="myTheme" data-id="${t.id}" aria-label="내 주제로 고정">${ic('star')}</button>`, html: `
+    ${pageHead({ eyebrow: t.en, eicon: 'globe', lead: `통쾌한 지점: ${t.punch}.`, icon: t.icon, hue: t.hue })}
+    <div class="card formula"><b>${ic('flame')}이 주제의 6샷 공식</b><ol>${BEATS.map(b => `<li><span>${b[0]}</span>${b[2]}</li>`).join('')}</ol></div>
+    <div class="search">${ic('search')}<input class="in" id="tq" type="search" data-q="1" placeholder="이 주제 안에서 찾기" value="${esc(q)}" aria-label="검색">${q ? `<button class="ib sm" data-act="qclear" aria-label="검색어 지우기">${ic('x')}</button>` : ''}</div>
+    <div class="sec">${h2('list', `대본 ${idx.length}편`)}
+      ${idx.length ? `<div class="list">${idx.map(i => dramaRow(t.id, i, false, d)).join('')}</div>` : `<div class="card empty"><b>${all.length ? '찾는 대본이 없습니다' : '대본을 준비 중입니다'}</b>${all.length ? '다른 단어로 찾아보세요.' : '곧 추가됩니다.'}</div>`}
+      <p class="hint">대본을 누르면 인물, 샷, 프롬프트가 모두 채워진 작업 화면이 열립니다.</p></div>` };
 };
 
 V.browse = p => {
-  const q = (p.q || '').trim(), cf = p.cat || '', d = doneTopics(), res = [];
-  for (const c of sortedCats().list) {
-    if (cf && c.id !== cf) continue;
-    topicsOf(c.id).forEach((t, i) => { if (!q || t.join(' ').includes(q)) res.push([c.id, i]); });
-  }
+  const q = (p.q || '').trim().toLowerCase(), tf = p.th || '', d = doneSet(), res = [];
+  for (const t of THEMES) { if (tf && t.id !== tf) continue; dramasOf(t.id).forEach((s, i) => { if (!q || s.slice(0, 4).join(' ').toLowerCase().includes(q)) res.push([t.id, i]); }); }
   const shown = res.slice(0, 150);
-  return { title: '대본 주제 찾기', back: true, html: `
-    <div class="search">${ic('search')}<input class="in" id="bq" type="search" data-q="1" placeholder="주제나 단어로 찾기" value="${esc(q)}" aria-label="주제 검색">${q ? `<button class="ib sm" data-act="bclear" aria-label="검색어 지우기">${ic('x')}</button>` : ''}</div>
-    <div class="chips"><button class="chip ${!cf ? 'on' : ''}" data-act="set" data-k="p_cat" data-v="">전체</button>${sortedCats().list.map(c => `<button class="chip ${cf === c.id ? 'on' : ''}" style="--h:${c.hue}" data-act="set" data-k="p_cat" data-v="${c.id}">${ic(CICON[c.id])}${c.name}</button>`).join('')}</div>
-    <div class="sec">${h2('list', `${q ? `“${esc(q)}” ` : ''}${res.length}개`)}
-    ${shown.length ? `<div class="list">${shown.map(([c, i]) => topicRow(c, i, true, d)).join('')}</div>${res.length > shown.length ? `<p class="hint">앞의 ${shown.length}개만 보여 줍니다. 검색어나 분야로 좁혀 보세요.</p>` : ''}`
-      : `<div class="card empty"><b>맞는 주제가 없습니다</b>다른 단어로 찾거나, 직접 주제를 넣어 만들어 보세요.<div style="margin-top:14px"><button class="btn sm blue" data-act="quickMake" data-q="${esc(q)}">${ic('edit')}“${esc(q)}”로 직접 만들기</button></div></div>`}</div>` };
+  return { title: '대본 찾기', back: true, acts: modeSeg(), html: `
+    <div class="search">${ic('search')}<input class="in" id="bq" type="search" data-q="1" placeholder="제목이나 줄거리로 찾기" value="${esc(p.q || '')}" aria-label="대본 검색">${q ? `<button class="ib sm" data-act="qclear" aria-label="검색어 지우기">${ic('x')}</button>` : ''}</div>
+    <div class="chips"><button class="chip ${!tf ? 'on' : ''}" data-act="set" data-k="p_th" data-v="">전체</button>${THEMES.map(t => `<button class="chip ${tf === t.id ? 'on' : ''}" style="--h:${t.hue}" data-act="set" data-k="p_th" data-v="${t.id}">${ic(t.icon)}${t.name}</button>`).join('')}</div>
+    <div class="sec">${h2('list', `${res.length}편`)}
+    ${shown.length ? `<div class="list">${shown.map(([th, i]) => dramaRow(th, i, true, d)).join('')}</div>${res.length > shown.length ? `<p class="hint">앞의 ${shown.length}편만 보여 줍니다. 검색어나 주제로 좁혀 보세요.</p>` : ''}` : `<div class="card empty"><b>맞는 대본이 없습니다</b>다른 단어로 찾거나 AI로 새 대본을 만들어 보세요.<div style="margin-top:14px"><button class="btn sm blue" data-act="go" data-v="aiNew">${ic('sparkle')}AI로 새 대본 만들기</button></div></div>`}</div>` };
 };
 
-V.pick = p => {
-  const goal = p.goal || 'views', face = p.face ?? 1, place = p.place ?? 0, tr = p.tr || [], res = recommend(p).slice(0, 5);
-  return { title: '분야 추천받기', back: true, html: `
-    ${pageHead({ eyebrow: '나에게 맞는 분야', eicon: 'target', title: '어떤 분야가 좋을까요?', lead: '목표와 촬영 여건을 고르면 바로 아래에 맞는 분야가 정렬됩니다.', icon: 'target', hue: 350 })}
-    <div class="sec"><span class="lab">${ic('flame')}가장 원하는 것</span>${seg('p_goal', [['views', '빠른 조회수'], ['money', '수익'], ['long', '오래 가는 채널']], goal)}</div>
-    <div class="sec"><span class="lab">${ic('camera')}얼굴 노출</span>${seg('p_face', [[1, '괜찮아요'], [0, '안 할래요']], face)}</div>
-    <div class="sec"><span class="lab">${ic('check')}해당하는 것 (여러 개 선택)</span><div class="chips wrap">${TRAITS.map(([v, l]) => `<button class="chip ${tr.includes(v) ? 'on' : ''}" data-act="ptr" data-v="${v}">${tr.includes(v) ? ic('check') : ''}${l}</button>`).join('')}</div></div>
-    <div class="sec">${h2('crown', '추천 분야 TOP 5')}
-      <div class="list">${res.map((r, i) => { const mine = settings.myCats.includes(r.c.id); return `<div class="row" role="button" tabindex="0" data-act="go" data-v="category" data-id="${r.c.id}"><span class="rk num inline ${i < 3 ? 'top' : ''}">${i + 1}</span>${glyph(r.c)}<span class="grow"><b>${r.c.name}</b><span class="tagline">${metricTags(r.m).slice(0, 3).map(t => `<span class="tag">${t}</span>`).join('')}</span></span><span class="pct num">${r.pct}%</span><button class="ib sm star ${mine ? 'on' : ''}" data-act="myCat" data-id="${r.c.id}" aria-label="내 분야로 고정">${ic('star')}</button></div>`; }).join('')}</div>
-      <p class="hint">%는 고른 조건에 대한 적합도입니다. 일반적인 경향을 바탕으로 한 추천이니 내 채널 반응을 보며 조정하세요. ☆를 누르면 홈 맨 앞에 고정됩니다.</p></div>
-    <button class="btn pri block" data-act="startFlow" data-cat="${res[0].c.id}" data-id="${res[0].c.flows[0][0]}">${ic('sparkle')}1위 ${res[0].c.name} 대본 만들기</button>` };
+V.aiNew = p => {
+  const th = p.th || 'hidden';
+  return { title: 'AI로 새 대본', back: true, html: `
+    ${pageHead({ eyebrow: 'Gemini', title: '아이디어 한 줄이면 됩니다', lead: '주제의 히트 공식에 맞춰 6샷 대본을 한국어·영어로 함께 씁니다.', icon: 'sparkle', hue: 262 })}
+    <div class="sec"><span class="lab">${ic('flame')}주제</span><div class="chips wrap">${THEMES.map(t => `<button class="chip ${th === t.id ? 'on' : ''}" style="--h:${t.hue}" data-act="set" data-k="p_th" data-v="${t.id}">${ic(t.icon)}${t.name}</button>`).join('')}</div></div>
+    <div class="field"><label for="ai_idea">${ic('edit')}아이디어 (비워도 됩니다)</label><textarea class="in" id="ai_idea" rows="3" data-p="idea" placeholder="예: 고급 식당에서 무시당한 배달원이 사실 그 건물 주인">${esc(p.idea || '')}</textarea></div>
+    <button class="btn pri block" data-act="aiNewGo">${ic('sparkle')}${aiKeys().length ? '대본 만들기' : 'API 키 넣으러 가기'}</button>
+    <button class="btn block" data-act="blankNew">${ic('edit')}빈 대본으로 직접 쓰기</button>` };
 };
 
-V.learn = p => {
-  const t = p.tab || 'principle', tabs = [...LEARN.map(l => [l.id, l.name]), ['hooks', '훅 공식']];
-  const tIcon = { principle: 'bulb', retention: 'target', edit: 'camera', title: 'hash', hooks: 'crown' };
-  let body;
-  if (t === 'hooks') body = `<div class="list">${HOOKS.map((h, n) => `<div class="artc"><div class="ah"><span class="no num">${n + 1}</span><h3>${h.name}</h3></div><p>${h.why}</p><div class="ex">${ic('bulb')}<span>${esc(fill(h.tpl[0], makeCtx({ topic: '아침 루틴' })))}</span></div><span><button class="pbtn blue" data-act="useHook" data-id="${h.id}">${ic('edit')}이 훅으로 만들기</button></span></div>`).join('')}</div>
-    ${h2('target', '마무리 공식')}<div class="list">${CTAS.map((c, n) => `<div class="artc"><div class="ah"><span class="no num">${n + 1}</span><h3>${c.name}</h3></div><p>${c.why}</p><div class="ex">${ic('bulb')}<span>${esc(fill(c.tpl[0], { t: '아침 루틴' }))}</span></div></div>`).join('')}</div>`;
-  else body = `<div class="list">${LEARN.find(l => l.id === t).items.map(([h, d, ex], n) => `<div class="artc"><div class="ah"><span class="no num">${n + 1}</span><h3>${h}</h3></div><p>${d}</p><div class="ex">${ic('bulb')}<span>${ex}</span></div></div>`).join('')}</div>`;
-  return { nav: 'learn', title: '터지는 쇼츠의 원리', ticon: 'book', html: `${pageHead({ eyebrow: '원리와 기법', eicon: 'flame', lead: '조회수가 나오는 영상에는 공통된 구조가 있습니다. 하나씩 대본에 적용해 보세요.', icon: 'rocket', hue: 262 })}
-    <div class="chips">${tabs.map(([id, n]) => `<button class="chip ${id === t ? 'on' : ''}" data-act="ltab" data-v="${id}">${ic(tIcon[id])}${n}</button>`).join('')}</div>${body}` };
+/* ----- 편집: 대본 / 인물 / 영상 / 자막·업로드 ----- */
+const ETABS = [['script', '대본', 'list'], ['cast', '인물', 'user'], ['video', '영상', 'film'], ['sub', '자막·업로드', 'caption']];
+function shotCard(p, i, start) {
+  const s = p.shots[i], k = sfx(), en = isEn(), b = beatOf(p, i), cls = i === 0 ? 'h' : i === p.shots.length - 1 ? 'c' : '';
+  return `<div class="beat ${cls}" data-i="${i}">
+    <div class="tc num"><span class="pdot">${ic('play')}</span><b>${tc(start)}</b><small>${s.sec || 5}초</small></div>
+    <div class="box card"><div class="hd"><span class="pill">${i + 1} · ${b[0]}</span><span class="sp"></span><select class="sel" data-sf="${i}:cam" aria-label="카메라">${Object.entries(CAMS).map(([c, v]) => `<option value="${c}" ${s.cam === c ? 'selected' : ''}>${v[0]}</option>`).join('')}</select><button class="ib sm" data-act="shotMenu" aria-label="샷 ${i + 1} 메뉴">${ic('more')}</button></div>
+      <div class="frow"><span>${ic('pin')}장소</span><input data-sf="${i}:p${k}" value="${esc(s['p' + k])}" placeholder="${en ? 'e.g. corporate lobby' : '예: 회사 로비'}" aria-label="장소"></div>
+      <textarea rows="1" class="ag" data-sf="${i}:a${k}" aria-label="화면 묘사" placeholder="${en ? 'One visible action' : '화면에 보이는 동작 하나'}">${esc(s['a' + k])}</textarea>
+      ${en ? `<div class="ko"><span>한국어 설명</span><textarea rows="1" class="ag" data-sf="${i}:ak" aria-label="화면 묘사 한국어 설명">${esc(s.ak)}</textarea></div>` : ''}
+      <div class="say"><select class="sel" data-sf="${i}:sp" aria-label="말하는 인물"><option value="-1">대사 없음</option>${p.chars.map((c, n) => `<option value="${n}" ${s.sp === n ? 'selected' : ''}>${esc(cname(c))}</option>`).join('')}</select>
+        <textarea rows="1" class="ag line" data-sf="${i}:d${k}" aria-label="대사" placeholder="${en ? 'Line (max 14 words)' : '대사 (28자 이내)'}" ${s.sp < 0 ? 'disabled' : ''}>${esc(s['d' + k])}</textarea></div>
+      ${en && s.sp >= 0 ? `<div class="ko"><span>대사 한국어</span><textarea rows="1" class="ag" data-sf="${i}:dk" aria-label="대사 한국어">${esc(s.dk)}</textarea></div>` : ''}
+    </div></div>`;
+}
+function tabScript(p) {
+  const sc = scoreOf(p), k = sfx(), en = isEn(); let t = 0;
+  return `
+    <div class="stats num"><div class="stat t1"><span class="v">${ic('film')}${p.shots.length}샷</span><small>샷 수</small></div><div class="stat t2"><span class="v">${ic('clock')}${totalSec(p)}초</span><small>전체 길이</small></div><div class="stat t3"><span class="v">${ic('checkc')}${sc.score}점</span><small>완성도</small></div></div>
+    <div class="card aicard"><div class="aih"><span class="glyph" style="--h:262">${ic('sparkle')}</span><span class="grow"><b>AI로 다시 쓰기</b><small>${aiKeys().length ? `Gemini · ${esc(aiModel())} · 키 ${aiKeys().length}개` : '설정에서 Gemini API 키를 넣으면 쓸 수 있습니다'}</small></span>${p.ai ? `<span class="tag pur">AI 작성</span>` : ''}</div>
+      ${aiKeys().length ? `<input class="in" id="ai_req" data-pf="aiReq" value="${esc(p.aiReq || '')}" placeholder="요청 (선택) 예: 배경을 병원으로, 반전을 더 세게">` : ''}
+      <div class="aiacts">${p._undo ? `<button class="btn sm" data-act="aiUndo">${ic('back')}AI 전으로</button>` : ''}<button class="btn sm" data-act="${aiKeys().length ? 'aiSync' : 'settings'}">${ic('globe')}${en ? '한국어판에 반영' : '영어판에 반영'}</button><button class="btn sm blue" data-act="${aiKeys().length ? 'aiAll' : 'settings'}">${ic('sparkle')}${aiKeys().length ? '전체 다시 쓰기' : 'API 키 넣기'}</button></div>
+      <p class="hint">${en ? '영어 칸이 프롬프트에 들어갑니다. 영어를 고친 뒤 "한국어판에 반영"을 누르면 한국어 설명도 맞춰집니다.' : '한국어 칸이 프롬프트에 들어갑니다. 해외용으로도 쓸 대본이면 고친 뒤 "영어판에 반영"을 누르세요.'}</p></div>
+    <div class="sec beats" id="beats">${p.shots.map((s, i) => { const a = t; t += (+s.sec || 5); return shotCard(p, i, a); }).join('')}
+      <button class="btn sm" data-act="addShot">${ic('plus')}샷 추가</button></div>
+    <div class="sec">${h2('checkc', '완성도 점검')}<div class="card score"><ul>${scoreList(sc)}</ul></div></div>
+    <div class="field"><label for="memo">${ic('caption')}메모</label><textarea class="in" id="memo" rows="2" data-pf="memo" placeholder="시리즈 계획, 다음 화 아이디어 등">${esc(p.memo || '')}</textarea></div>`;
+}
+function tabCast(p) {
+  const k = sfx(), en = isEn(), open = cur().p.cp || {};
+  return `
+    <div class="card guide"><b>${ic('info')}인물 이미지 만드는 법</b><p>인물마다 "전신 프롬프트"를 눌러 복사한 뒤 그록이나 챗GPT 이미지 생성에 붙여넣으세요. 나온 이미지를 저장해 두고 클링에서 인물 참조 이미지로 씁니다. 같은 인물은 끝까지 같은 이미지를 쓰세요.</p>
+      <div class="frow wide"><span>${ic('globe')}인물 분위기</span><input data-set="${en ? 'castEn' : 'castKr'}" value="${esc(castOf(MODE()))}" aria-label="인물 분위기" placeholder="${en ? 'American' : '한국인'}"></div>
+      <p class="hint">${en ? '해외용은 서양권 인물로 만듭니다. British, Latina처럼 바꿀 수 있습니다.' : '국내용은 한국 인물로 만듭니다.'} 모든 인물 프롬프트 앞에 붙습니다.</p></div>
+    ${p.chars.map((c, i) => `<div class="card ccard" data-ci="${i}">
+      <div class="chd"><span class="glyph" style="--h:${{ H: 218, V: 350, A: 150, X: 42 }[c.r] || 42}">${ic('user')}</span><input class="cname" data-cf="${i}:n${k}" value="${esc(c['n' + k])}" aria-label="이름" placeholder="${en ? 'Name' : '이름'}"><select class="sel" data-cf="${i}:r" aria-label="역할">${Object.entries(ROLE_NAME).map(([r, n]) => `<option value="${r}" ${c.r === r ? 'selected' : ''}>${n}</option>`).join('')}</select><button class="ib sm" data-act="delChar" data-i="${i}" aria-label="인물 삭제">${ic('trash')}</button></div>
+      <div class="field"><label>${ic('edit')}외형·복장 설명 ${en ? '(영어, 프롬프트에 그대로 들어갑니다)' : '(프롬프트에 그대로 들어갑니다)'}</label><textarea class="in ag" rows="2" data-cf="${i}:d${k}" placeholder="${en ? 'woman in her 30s, long black coat, ...' : '예: 30대 여성, 검은 롱코트, 긴 생머리, 차가운 눈빛'}">${esc(c['d' + k])}</textarea></div>
+      ${en ? `<div class="ko"><span>한국어 설명</span><textarea rows="1" class="ag" data-cf="${i}:dk" aria-label="외형 한국어 설명">${esc(c.dk)}</textarea></div><div class="ko"><span>한국어 이름</span><input data-cf="${i}:nk" value="${esc(c.nk)}" aria-label="한국어 이름"></div>` : ''}
+      <div class="aiacts"><button class="btn sm blue" data-act="genChar" data-i="${i}" data-kind="full">${ic('user')}전신 프롬프트</button><button class="btn sm" data-act="genChar" data-i="${i}" data-kind="face">${ic('camera')}얼굴 프롬프트</button></div>
+      ${open[`${i}:full`] ? promptBox(p, `c:${i}:full`, `${esc(cname(c))} · 전신 이미지 프롬프트`) : ''}${open[`${i}:face`] ? promptBox(p, `c:${i}:face`, `${esc(cname(c))} · 얼굴 이미지 프롬프트`) : ''}
+    </div>`).join('')}
+    <div class="aiacts"><button class="btn sm" data-act="addChar">${ic('plus')}인물 추가</button><button class="btn sm" data-act="copyAllChars">${ic('copy')}전신 프롬프트 모두 복사</button></div>`;
+}
+function tabVideo(p) {
+  const vt = cur().p.vt || 'shot', half = Math.ceil(p.shots.length / 2), k = sfx();
+  return `
+    <div class="card guide"><b>${ic('film')}클링으로 영상 만드는 순서</b><ol><li>인물 탭에서 만든 인물 이미지를 클링의 참조 이미지(Elements)로 올립니다. 번호는 인물 순서와 같습니다: ${p.chars.map((c, i) => `${i + 1} = ${esc(cname(c))}`).join(', ')}.</li><li>샷마다 "첫 프레임 프롬프트"로 장면 이미지를 만들면 구도가 고정됩니다. (건너뛰어도 됩니다)</li><li>"클링 영상 프롬프트"를 붙여넣고 길이 5초, 비율 9:16으로 생성합니다.</li><li>6샷을 편집 앱에서 이어 붙이고 자막 탭의 자막 파일을 넣습니다.</li></ol></div>
+    <div class="sec"><span class="lab">${ic('sparkle')}영상 스타일</span><div class="chips">${Object.entries(STYLES).map(([id, v]) => `<button class="chip ${(p.style || 'real') === id ? 'on' : ''}" data-act="pstyle" data-v="${id}">${v[0]}</button>`).join('')}</div></div>
+    ${seg('p_vt', [['shot', '샷별 프롬프트', 'list'], ['multi', '멀티샷', 'layers']], vt)}
+    ${vt === 'shot' ? p.shots.map((s, i) => `<div class="card vcard"><div class="vh"><span class="pill">${i + 1} · ${beatOf(p, i)[0]}</span><small>${esc(s['a' + k])}</small></div>${promptBox(p, `f:${i}`, '첫 프레임 이미지 프롬프트')}${promptBox(p, `k:${i}`, '클링 영상 프롬프트')}</div>`).join('')
+      : `<p class="hint">멀티샷을 지원하는 클링 모델에 통째로 붙여넣습니다. 한 번에 만들 수 있는 길이가 짧은 모델은 앞부분과 뒷부분을 따로 만드세요.</p>
+        <div class="card vcard">${promptBox(p, `m:0:${p.shots.length}`, `전체 ${p.shots.length}샷 · ${totalSec(p)}초`)}</div>
+        <div class="card vcard">${promptBox(p, `m:0:${half}`, `앞부분 (샷 1~${half})`)}${promptBox(p, `m:${half}:${p.shots.length}`, `뒷부분 (샷 ${half + 1}~${p.shots.length})`)}</div>`}
+    <div class="card vcard">${promptBox(p, 'n', '제외 프롬프트 (Negative prompt)')}</div>
+    <button class="btn block" data-act="exportPack">${ic('share')}제작 팩 전체 내보내기</button>`;
+}
+function tabSub(p) {
+  const sl = cur().p.sl || (isEn() ? 'en' : 'ko'), srt = toSrt(p, sl), has = !!subLines(p, sl), name = (SUB_LANGS.find(l => l[0] === sl) || [])[1], kit = uploadKit(p, MODE());
+  return `
+    <div class="sec">${h2('caption', '언어별 자막')}
+      <div class="chips">${SUB_LANGS.map(([id, n]) => `<button class="chip ${sl === id ? 'on' : ''}" data-act="set" data-k="p_sl" data-v="${id}">${n}${subLines(p, id) ? '' : ' +'}</button>`).join('')}</div>
+      ${has ? `<div class="card vcard"><div class="ph"><b>${name} 자막 (SRT)</b><span class="sp"></span><button class="pbtn" data-act="subOut" data-v="${sl}">${ic('share')}내보내기</button><button class="pbtn blue" data-act="copy" data-t="${esc(srt)}">${ic('copy')}복사</button></div><pre class="srt">${esc(srt) || '대사가 없습니다'}</pre></div>`
+        : `<div class="card empty"><b>${name} 자막이 아직 없습니다</b>한국어·영어 대사를 바탕으로 AI가 번역합니다.<div style="margin-top:14px"><button class="btn sm blue" data-act="${aiKeys().length ? 'aiSubs' : 'settings'}" data-v="${sl}">${ic('sparkle')}${aiKeys().length ? `${name} 자막 만들기` : 'API 키 넣으러 가기'}</button></div></div>`}
+      <p class="hint">한국어와 영어 자막은 대본에서 바로 나옵니다. "+" 표시가 붙은 언어는 Gemini로 번역합니다. 자막 시간은 샷 길이에 맞춰져 있습니다.</p></div>
+    <div class="sec">${h2('share', `업로드 문구 (${isEn() ? '해외용' : '국내용'})`)}
+      <div class="card kv"><div class="frow wide"><span>${ic('hash')}회차 (EP)</span><input type="number" min="1" max="999" data-pf="ep" value="${p.ep || 1}" aria-label="회차"></div>
+        ${[['제목', kit.title], ['설명', kit.desc], ['고정 댓글', kit.pin]].map(([l, v]) => `<div class="item"><p><span class="lab">${l}</span><span class="pre">${esc(v)}</span></p><button class="pbtn" data-act="copy" data-t="${esc(v)}">${ic('copy')}복사</button></div>`).join('')}</div>
+      <p class="hint">업로드할 때 AI 생성 콘텐츠 표시를 켜세요. 자세한 내용은 안내 메뉴의 채널 운영에 있습니다.</p></div>`;
+}
+V.editor = () => {
+  const p = draft, t = TH[p.theme] || THEMES[0], et = cur().p.tab || 'script', k = sfx(), en = isEn();
+  return { title: t.name, back: true, flush: true, acts: `${modeSeg()}<button class="ib" data-act="exportOne" aria-label="내보내기">${ic('share')}</button>`, html: `
+    <div class="ehead"><div class="tline"><span class="playdot">${ic('play')}</span><textarea class="titlein ag" rows="1" data-pf="t${k}" aria-label="제목">${esc(p['t' + k])}</textarea></div>${art(t.icon, t.hue)}</div>
+    <textarea class="logline ag" rows="1" data-pf="l${k}" aria-label="한 줄 줄거리" placeholder="${en ? 'One-line logline' : '한 줄 줄거리'}">${esc(p['l' + k])}</textarea>
+    ${en ? `<div class="ko top"><span>한국어 제목·줄거리</span><p>${esc(p.tk)} · ${esc(p.lk)}</p></div>` : ''}
+    <div class="chips etabs">${ETABS.map(([v, l, i]) => `<button class="chip ${et === v ? 'on' : ''}" data-act="set" data-k="p_tab" data-v="${v}">${ic(i)}${l}</button>`).join('')}</div>
+    ${{ script: tabScript, cast: tabCast, video: tabVideo, sub: tabSub }[et](p)}
+    <div class="sticky"><button class="btn" data-act="exportOne">${ic('share')}내보내기</button><button class="btn pri" data-act="save">${ic('check')}저장</button></div>` };
+};
+
+V.hits = p => {
+  const items = allHits(), meta = store.get('hits', {}), q = (p.q || '').trim().toLowerCase(), n = p.n || 10, k = isEn() ? 1 : 0;
+  const list = items.filter(h => !q || (h.script.slice(0, 4).join(' ') + (h.formula || '') + ((h.src || {}).title || '')).toLowerCase().includes(q));
+  const rp = researchPrompt(n, p.pf || '');
+  return { nav: 'hits', title: '히트작 벤치마킹', ticon: 'trophy', big: true, acts: modeSeg(), html: `
+    ${pageHead({ eyebrow: '세계 히트 숏드라마', eicon: 'globe', lead: '크게 터진 작품의 공식만 분석해 새로 쓴 대본입니다. 대사와 인물은 모두 새로 만든 것이라 그대로 제작할 수 있습니다.', icon: 'trophy', hue: 42 })}
+    <div class="card guide"><b>${ic('link')}저장소에서 불러오기</b><p>깃허브 저장소의 hits.json 파일을 읽습니다. 저장소에 새 분석을 추가한 뒤 새로고침을 누르면 목록에 반영됩니다.</p>
+      <div class="frow wide"><span>주소</span><input class="mono" data-set="hitsUrl" value="${esc(settings.hitsUrl || '')}" placeholder="${esc(HITS_URL_DEFAULT)}" aria-label="hits.json 주소" autocapitalize="off" spellcheck="false"></div>
+      <div class="aiacts"><button class="btn sm blue" data-act="hitsFetch">${ic('refresh')}새로고침</button><button class="btn sm" data-act="hitsOut">${ic('share')}목록 내보내기</button></div>
+      <p class="hint">${meta.fetched ? `마지막으로 불러온 날: ${dateStr(meta.fetched)} · ` : ''}비워 두면 기본 주소를 씁니다. 비공개 저장소는 읽을 수 없습니다.</p></div>
+    <div class="search">${ic('search')}<input class="in" id="hq" type="search" data-q="1" placeholder="제목, 원작, 공식으로 찾기" value="${esc(p.q || '')}" aria-label="검색">${q ? `<button class="ib sm" data-act="qclear" aria-label="검색어 지우기">${ic('x')}</button>` : ''}</div>
+    <div class="sec">${h2('trophy', `벤치마킹 대본 ${list.length}편`)}
+      ${list.length ? list.map(h => { const t = TH[h.theme] || THEMES[0], s = h.src || {}; return `<div class="card hit" role="button" tabindex="0" data-act="openHit" data-id="${esc(h.id)}"><div class="aih">${glyph(t)}<span class="grow"><b>${esc(h.script[k])}</b><small>${esc(h.script[2 + k])}</small></span>${chev}</div>
+        ${s.title ? `<p class="src">${ic('film')}참고한 히트작: <b>${esc(s.title)}</b>${s.platform ? ` · ${esc(s.platform)}` : ''}${s.note ? ` · ${esc(s.note)}` : ''}</p>` : ''}${h.formula ? `<p class="fx">${ic('flame')}${esc(h.formula)}</p>` : ''}</div>`; }).join('')
+        : `<div class="card empty"><b>${items.length ? '찾는 대본이 없습니다' : '아직 벤치마킹 대본이 없습니다'}</b>${items.length ? '다른 단어로 찾아보세요.' : '아래 조사 지시 프롬프트로 AI에게 조사를 시키고, 결과를 저장소에 넣은 뒤 새로고침을 누르세요.'}</div>`}</div>
+    <div class="sec">${h2('edit', '조사 지시 프롬프트')}
+      <div class="card guide"><p>이 프롬프트를 다른 AI(클로드, 챗GPT, 제미나이 등)에 붙여넣으면 히트작을 조사하고, 공식만 분석해, 새 대본을 저장소 형식으로 만들어 줍니다. 결과를 저장소의 hits/hits.json에 넣으세요.</p>
+        <span class="lab">조사할 작품 수</span>${seg('p_n', [[5, '5편'], [10, '10편'], [20, '20편']], n)}
+        <div class="frow wide"><span>플랫폼</span><input data-p="pf" value="${esc(p.pf || '')}" placeholder="비우면 ReelShort, DramaBox, 쇼츠, 틱톡" aria-label="조사할 플랫폼"></div>
+        <textarea class="ptx tall" readonly aria-label="조사 지시 프롬프트">${esc(rp)}</textarea>
+        <div class="aiacts"><button class="btn sm blue" data-act="copy" data-t="${esc(rp)}">${ic('copy')}복사하기</button><button class="btn sm" data-act="rpOut">${ic('share')}내보내기</button></div></div></div>` };
 };
 
 V.library = p => {
-  const q = (p.q || '').trim(), catF = p.cat || null;
-  let list = scripts.filter(s => (!catF || s.cat === catF) && (!q || (s.title + s.topic + toSay(s)).includes(q)) && (!p.fav || s.fav));
-  list.sort((a, b) => b.updated - a.updated);
-  const counts = {}; scripts.forEach(s => counts[s.cat] = (counts[s.cat] || 0) + 1);
+  const q = (p.q || '').trim().toLowerCase(), tf = p.th || '';
+  const list = projects.filter(x => (!tf || x.theme === tf) && (!p.fav || x.fav) && (!q || (x.tk + x.te + x.lk + x.le).toLowerCase().includes(q))).sort((a, b) => b.updated - a.updated);
+  const counts = {}; projects.forEach(x => counts[x.theme] = (counts[x.theme] || 0) + 1);
   if (sel) return { nav: 'library', title: `${sel.size}개 선택`, back: true, flush: true, acts: `<button class="tb" data-act="selAll">${ic('check')}전체 선택</button>`, html: `
-    <div class="list">${list.map(s => scriptRow(s, `<span class="ck ${sel.has(s.id) ? 'on' : ''}">${ic('check')}</span>`)).join('')}</div>
-    <div class="sticky"><button class="btn" data-act="selDelete">${ic('trash')}삭제</button><button class="btn" data-act="selMove">${ic('folder')}이동</button><button class="btn pri" data-act="selExport">${ic('share')}내보내기</button></div>` };
-  const folders = CATEGORIES.filter(c => counts[c.id]);
-  return { nav: 'library', title: '보관함', ticon: 'folder', big: true, acts: scripts.length ? `<button class="tb" data-act="selStart">${ic('check')}선택</button>` : '', html: `
-    <div class="search">${ic('search')}<input class="in" id="lq" type="search" placeholder="제목이나 대사로 찾기" value="${esc(q)}" aria-label="검색">${q ? `<button class="ib sm" data-act="lclear" aria-label="검색어 지우기">${ic('x')}</button>` : ''}</div>
-    <div class="chips"><button class="chip ${!catF && !p.fav ? 'on' : ''}" data-act="lcat" data-v="">${ic('grid')}전체 ${scripts.length}</button><button class="chip ${p.fav ? 'on' : ''}" style="--h:40" data-act="lfav">${ic('star')}즐겨찾기</button>${folders.map(c => `<button class="chip ${catF === c.id ? 'on' : ''}" style="--h:${c.hue}" data-act="lcat" data-v="${c.id}">${ic(CICON[c.id])}${c.name} ${counts[c.id]}</button>`).join('')}</div>
-    ${!catF && !q && !p.fav && folders.length > 1 ? `<div class="card fold">${h2('folder', '분야별 보관')}<div class="rows">${folders.map(c => `<button class="row" data-act="lcat" data-v="${c.id}">${glyph(c)}<span class="grow"><b>${c.name}</b><small>대본 ${counts[c.id]}편</small></span>${chev}</button>`).join('')}</div></div>` : ''}
-    <div class="sec">${h2('clock', catF ? CAT[catF].name : p.fav ? '즐겨찾기' : '모든 대본', list.length ? `<button class="pbtn blue" data-act="exportShown">${ic('share')}이 목록 내보내기</button>` : '')}
-    ${list.length ? `<div class="list">${list.map(s => scriptRow(s)).join('')}</div><p class="hintpill">${ic('info')}대본을 길게 누르면 여러 개를 골라 한 번에 내보낼 수 있습니다.</p>` : `<div class="card empty"><b>${scripts.length ? '찾는 대본이 없습니다' : '보관된 대본이 없습니다'}</b>${scripts.length ? '검색어나 분야를 바꿔 보세요.' : '대본을 만들고 저장하면 분야별로 모입니다.'}</div>`}</div>` };
+    <div class="list">${list.map(x => projRow(x, `<span class="ck ${sel.has(x.id) ? 'on' : ''}">${ic('check')}</span>`)).join('')}</div>
+    <div class="sticky"><button class="btn" data-act="selDelete">${ic('trash')}삭제</button><button class="btn pri" data-act="selExport">${ic('share')}내보내기</button></div>` };
+  return { nav: 'library', title: '보관함', ticon: 'folder', big: true, acts: `${modeSeg()}${projects.length ? `<button class="tb" data-act="selStart">${ic('check')}선택</button>` : ''}`, html: `
+    <div class="search">${ic('search')}<input class="in" id="lq" type="search" data-q="1" placeholder="제목이나 줄거리로 찾기" value="${esc(p.q || '')}" aria-label="검색">${q ? `<button class="ib sm" data-act="qclear" aria-label="검색어 지우기">${ic('x')}</button>` : ''}</div>
+    <div class="chips"><button class="chip ${!tf && !p.fav ? 'on' : ''}" data-act="lth" data-v="">${ic('grid')}전체 ${projects.length}</button><button class="chip ${p.fav ? 'on' : ''}" style="--h:40" data-act="lfav">${ic('star')}즐겨찾기</button>${THEMES.filter(t => counts[t.id]).map(t => `<button class="chip ${tf === t.id ? 'on' : ''}" style="--h:${t.hue}" data-act="lth" data-v="${t.id}">${ic(t.icon)}${t.name} ${counts[t.id]}</button>`).join('')}</div>
+    <div class="sec">${h2('clock', tf ? TH[tf].name : p.fav ? '즐겨찾기' : '모든 작업', list.length ? `<button class="pbtn blue" data-act="exportShown">${ic('share')}이 목록 내보내기</button>` : '')}
+    ${list.length ? `<div class="list">${list.map(x => projRow(x)).join('')}</div><p class="hintpill">${ic('info')}길게 누르면 여러 개를 골라 한 번에 내보낼 수 있습니다.</p>` : `<div class="card empty"><b>${projects.length ? '찾는 작업이 없습니다' : '보관된 작업이 없습니다'}</b>${projects.length ? '검색어나 주제를 바꿔 보세요.' : '대본을 열고 저장하면 주제별로 모입니다.'}</div>`}</div>` };
 };
 
-const TOOLS = [
-  ['hookgen', '훅 생성기', '주제 하나로 첫 문장 18가지', 'crown', 350], ['titlegen', '제목 생성기', '주제 하나로 제목 12가지', 'edit', 218],
-  ['angle', '주제 확장기', '한 주제를 12가지 각도로', 'layers', 262], ['diag', '대본 진단', '써 둔 대본의 길이와 약점', 'checkc', 150],
-  ['check', '업로드 점검표', '올리기 전 12가지 확인', 'list', 28], ['learn', '원리와 기법', '터지는 쇼츠의 원리 모음', 'book', 196]
-];
-V.tools = () => ({ nav: 'tools', title: '도구', ticon: 'tool', big: true, html: `${pageHead({ eyebrow: '대본 작업 도구', eicon: 'tool', lead: '훅과 제목을 뽑고, 써 둔 대본을 진단하고, 올리기 전에 점검하세요.', icon: 'bolt', hue: 28 })}
-  <div class="toolgrid">${TOOLS.map(([id, n, d, i, h]) => `<button class="card tool" data-act="${id === 'learn' ? 'tab' : 'go'}" data-v="${id}"><span class="glyph" style="--h:${h}">${ic(i)}</span><b>${n}</b><small>${d}</small></button>`).join('')}</div>
-  <div class="sec">${h2('layers', '분야 바로 가기')}<div class="chips wrap">${CATEGORIES.map(c => `<button class="chip" style="--h:${c.hue}" data-act="go" data-v="category" data-id="${c.id}">${ic(CICON[c.id])}${c.name}</button>`).join('')}</div></div>` });
-
-const genTool = (title, id, icon, hue, ph, make) => p => {
-  const t = (p.t || '').trim(), tone = p.tone || 0, out = t ? make(makeCtx({ topic: t, who: p.who, tone }), tone) : [];
-  return { title, back: true, html: `${pageHead({ lead: { hookgen: '주제 하나를 넣으면 18가지 훅 공식으로 첫 문장을 만듭니다.', titlegen: '검색과 클릭을 부르는 제목 공식 12가지로 제목을 뽑습니다.', angle: '같은 주제도 각도를 바꾸면 새 영상이 됩니다.' }[id], icon, hue })}
-    <div class="field"><label for="g_t">${ic('edit')}주제</label><input class="in" id="g_t" data-p="t" value="${esc(p.t || '')}" placeholder="${ph}"></div>
-    <div class="field"><label for="g_w">${ic('target')}누가 보는 영상인가요 (선택)</label><input class="in" id="g_w" data-p="who" value="${esc(p.who || '')}" placeholder="예: 직장인"></div>
-    ${id !== 'titlegen' ? seg('ptone', [[0, '존댓말'], [1, '반말']], tone) : ''}
-    <button class="btn pri block" data-act="rerender">${ic('sparkle')}만들기</button>
-    ${out.length ? `<div class="list">${out.map(([tag, text, act]) => `<div class="row"><span class="grow"><small>${tag}</small><b style="white-space:normal">${esc(text)}</b></span>${act || `<button class="pbtn" data-act="copy" data-t="${esc(text)}">${ic('copy')}복사</button>`}</div>`).join('')}</div>` : `<p class="hint">주제를 적고 만들기를 누르세요.</p>`}` };
-};
-V.hookgen = genTool('훅 생성기', 'hookgen', 'crown', 350, '예: 전세 계약', (ctx, tone) => HOOKS.map(h => [h.name, fill(h.tpl[tone], ctx), `<button class="pbtn blue" data-act="hookTo" data-id="${h.id}">대본으로</button>`]));
-V.titlegen = genTool('제목 생성기', 'titlegen', 'edit', 218, '예: 전세 계약', ctx => TITLES.map((t, i) => ['제목 ' + (i + 1), fill(t, ctx)]));
-V.angle = genTool('주제 확장기', 'angle', 'layers', 262, '예: 전세 계약', ctx => ANGLES.map(([n, t]) => [n, fill(t, ctx)]));
-
-V.diag = p => {
-  const text = p.text || ''; let res = '';
-  if (text.trim()) {
-    const sents = text.split(/[.?!\n]+/).map(x => x.trim()).filter(Boolean), first = sents[0] || '', total = est(text);
-    const longest = Math.max(...sents.map(x => spoken(x).length)), fill_ = (text.match(/그래서|사실|약간|진짜|이제|그니까|그러니까|여러분/g) || []).length;
-    const rows = [
-      [true, `읽기 시간 ${fmtSec(total)} · ${spoken(text).length}자 · ${sents.length}문장`, total > 60 ? '60초를 넘습니다. 쇼츠 하나에는 약속 하나만 남기세요.' : `초당 ${settings.cps}자 기준입니다.`],
-      [est(first) <= 3.3, '첫 문장이 3초 안에 읽힌다', `지금 ${fmtSec(est(first))}입니다.`],
-      [/[0-9?]|마세요|하지 마|절대|아직도|왜/.test(first), '첫 문장에 숫자·질문·경고가 있다', '궁금증을 만드는 장치를 넣어 보세요.'],
-      [!/안녕|반갑/.test(first), '인사말로 시작하지 않는다', '인사는 빼고 바로 본론으로.'],
-      [longest <= 38, '문장이 한 호흡에 읽힌다', `가장 긴 문장이 ${longest}자입니다.`],
-      [fill_ <= 2, '군더더기 말이 적다', `그래서·사실·진짜 같은 말이 ${fill_}번 나옵니다.`],
-      [/구독|댓글|저장|공유|좋아요|다음 편/.test(text), '마무리 요청이 있다', '원하는 행동 하나를 한 문장으로 요청하세요.']
-    ];
-    res = `<div class="card score"><ul>${rows.map(([ok, l, tip], i) => `<li><span class="m ${ok ? '' : 'x'}">${ic(ok ? 'check' : 'x')}</span><span>${l}${!ok || i === 0 ? `<small>${tip}</small>` : ''}</span></li>`).join('')}</ul></div>`;
-  }
-  return { title: '대본 진단', back: true, html: `${pageHead({ lead: '써 둔 대본을 붙여 넣으면 길이와 약한 곳을 찾아 줍니다.', icon: 'checkc', hue: 150 })}<div class="field"><label for="d_t">${ic('caption')}대본 붙여넣기</label><textarea class="in" id="d_t" rows="8" data-p="text" placeholder="써 둔 대본을 여기에 붙여 넣으세요.">${esc(text)}</textarea></div><button class="btn pri block" data-act="rerender">${ic('checkc')}진단하기</button>${res}` };
+V.info = p => {
+  const t = p.tab || 'channel', sec = INFO.find(x => x.id === t);
+  return { nav: 'info', title: '안내', ticon: 'book', big: true, html: `
+    ${pageHead({ eyebrow: '시작 전에 읽기', eicon: 'info', lead: '채널을 안전하게 키우는 방법, 터지는 숏드라마의 공식, 클링 제작 순서를 정리했습니다.', icon: 'book', hue: 196 })}
+    <div class="chips">${[INFO[2], INFO[0], INFO[1]].map(x => `<button class="chip ${x.id === t ? 'on' : ''}" data-act="set" data-k="p_tab" data-v="${x.id}">${ic(x.icon)}${x.name}</button>`).join('')}<button class="chip" data-act="go" data-v="check">${ic('list')}업로드 점검표</button></div>
+    <div class="list">${sec.items.map(([h, d, ex], n) => `<div class="artc"><div class="ah"><span class="no num">${n + 1}</span><h3>${h}</h3></div><p>${d}</p><div class="ex">${ic('bulb')}<span>${ex}</span></div></div>`).join('')}</div>
+    ${t === 'channel' ? '<p class="hint">플랫폼 정책과 수치는 자주 바뀝니다. 여기 적힌 내용은 일반적인 운영 원칙이며, 업로드 전에 각 플랫폼의 공식 안내를 확인하세요.</p>' : ''}` };
 };
 V.check = () => ({ title: '업로드 전 점검표', back: true, html: `${pageHead({ eyebrow: `${settings.checks.length} / ${CHECKLIST.length} 확인`, eicon: 'check', lead: '올리기 전에 하나씩 눌러 확인하세요.', icon: 'list', hue: 28 })}<div class="list">${CHECKLIST.map((c, i) => `<button class="row" data-act="check" data-i="${i}"><span class="ck ${settings.checks.includes(i) ? 'on' : ''}">${ic('check')}</span><span class="grow"><b style="white-space:normal">${c}</b></span></button>`).join('')}</div><button class="btn block" data-act="checkReset">${ic('trash')}모두 지우기</button>` });
 
 const setRow = (icon, hue, title, sub, act, right = chev) => `<button class="row" data-act="${act}"><span class="glyph" style="--h:${hue}">${ic(icon)}</span><span class="grow"><b>${title}</b>${sub ? `<small>${sub}</small>` : ''}</span>${right}</button>`;
 V.settings = () => ({ title: '설정', back: true, html: `
+  <div class="sec"><span class="lab">${ic('globe')}제작 대상</span>${seg('mode', [['kr', '국내용 (한국어·한국 인물)'], ['en', '해외용 (영어·서양 인물)']], MODE())}</div>
+  <div class="sec"><span class="lab">${ic('user')}인물 분위기</span><div class="card kv"><div class="frow wide"><span>국내용</span><input data-set="castKr" value="${esc(settings.castKr)}" aria-label="국내용 인물 분위기"></div><div class="frow wide"><span>해외용</span><input data-set="castEn" value="${esc(settings.castEn)}" aria-label="해외용 인물 분위기"></div></div><p class="hint">인물 이미지 프롬프트 앞에 붙는 말입니다. 해외용은 American, British, Latina 등으로 바꿀 수 있습니다.</p></div>
+  <div class="sec"><span class="lab">${ic('sparkle')}기본 영상 스타일</span><div class="chips wrap">${Object.entries(STYLES).map(([id, v]) => `<button class="chip ${settings.style === id ? 'on' : ''}" data-act="set" data-k="style" data-v="${id}">${v[0]}</button>`).join('')}</div></div>
   <div class="sec"><span class="lab">${ic('sun')}화면 테마</span>${seg('theme', [['light', '밝게'], ['dark', '어둡게'], ['system', '기기 설정']], settings.theme)}</div>
-  <div class="sec"><span class="lab">${ic('mic')}말하는 속도</span>${seg('cps', [[5, '차분하게'], [6, '보통'], [7, '빠르게']], settings.cps)}<p class="hint">초당 ${settings.cps}자로 읽기 시간을 계산합니다.</p></div>
-  <div class="sec"><span class="lab">${ic('road')}내 채널 단계</span>${seg('stage', STAGE_META.map(s => [s.id, s.name]), settings.stage)}</div>
-  <div class="sec">${h2('sparkle', 'AI 대본 (Gemini)')}<div class="card aibox">
+  <div class="sec">${h2('sparkle', 'AI (Gemini)')}<div class="card aibox">
     <div class="field"><label for="ai_keys">${ic('shield')}API 키 <span class="tag">${aiKeys().length}개</span></label><textarea class="in mono" id="ai_keys" rows="3" data-set="aiKeys" placeholder="AIza... , AIza... (쉼표로 여러 개)" autocomplete="off" autocapitalize="off" spellcheck="false">${esc(settings.aiKeys || '')}</textarea></div>
-    <p class="hint">쉼표로 여러 개를 넣으면 요청마다 번갈아 쓰고, 한도가 찼거나 막힌 키는 건너뛰고 다음 키로 넘어갑니다. 키는 aistudio.google.com 에서 발급받을 수 있습니다.</p>
+    <p class="hint">쉼표로 여러 개를 넣으면 번갈아 쓰고, 한도가 찬 키는 건너뜁니다. 새 대본 쓰기, 다시 쓰기, 언어판 맞추기, 자막 번역에 씁니다.</p>
     <div class="field"><label for="ai_model">${ic('cpu')}모델</label><input class="in mono" id="ai_model" data-set="aiModel" value="${esc(aiModel())}" autocomplete="off" autocapitalize="off" spellcheck="false"></div>
     ${(settings.aiModels || []).length ? `<div class="chips wrap">${settings.aiModels.map(m => `<button class="chip ${m === aiModel() ? 'on' : ''}" data-act="aiPick" data-v="${esc(m)}">${esc(m)}</button>`).join('')}</div>` : ''}
     <div class="aiacts"><button class="btn sm" data-act="aiClear">${ic('trash')}키 지우기</button><button class="btn sm blue" data-act="aiTest">${ic('checkc')}키 확인·모델</button></div>
     <div id="aiStatus" class="aistat">${(settings.aiCheck || []).map(([ok, t]) => `<div class="${ok ? 'ok' : 'bad'}">${ic(ok ? 'checkc' : 'x')}<span>${esc(t)}</span></div>`).join('')}</div>
     <p class="hint">키는 이 기기에만 저장되며, AI 기능을 쓸 때 대본 내용과 함께 Google Gemini API로만 전송됩니다.</p></div></div>
   <div class="sec">${h2('shield', '백업')}<div class="list">
-    ${setRow('download', 218, '모든 대본 백업하기', `대본 ${scripts.length}편을 파일 하나로 저장`, 'backup')}
-    ${setRow('folder', 150, '백업 파일 불러오기', '같은 대본은 건너뛰고 새 대본만 추가', 'restore')}</div></div>
+    ${setRow('download', 218, '모든 작업 백업하기', `작업 ${projects.length}편을 파일 하나로 저장`, 'backup')}
+    ${setRow('folder', 150, '백업 파일 불러오기', '같은 작업은 건너뛰고 새 작업만 추가', 'restore')}</div></div>
   <div class="sec">${h2('info', '정보')}<div class="list">
     ${setRow('shield', 262, '개인정보 처리방침', '', 'privacy')}
     <div class="row"><span class="glyph" style="--h:196">${ic('info')}</span><span class="grow"><b>버전</b></span><span class="chev num">${APP_VERSION}</span></div></div></div>` });
-V.privacy = () => ({ title: '개인정보 처리방침', back: true, html: `${pageHead({ lead: '쇼츠 대본메이커는 개인정보를 수집하지 않습니다.', icon: 'shield', hue: 262 })}<div class="card" style="display:flex;flex-direction:column;gap:10px">
+V.privacy = () => ({ title: '개인정보 처리방침', back: true, html: `${pageHead({ lead: '숏드라마 메이커는 개인정보를 수집하지 않습니다.', icon: 'shield', hue: 262 })}<div class="card" style="display:flex;flex-direction:column;gap:10px">
   <p style="margin:0">작성한 대본, 설정, Gemini API 키는 이 기기 안에만 저장됩니다. 앱을 삭제하면 함께 지워집니다.</p>
-  <p style="margin:0">AI 기능은 사용자가 직접 넣은 Gemini API 키로 동작합니다. AI 버튼을 누를 때만 대본 주제와 내용이 Google Gemini API로 전송되며, 이 전송에는 Google의 약관과 개인정보 처리방침이 적용됩니다. 앱 제작자의 서버로는 아무것도 전송되지 않습니다.</p>
-  <p style="margin:0">내보내기와 공유는 사용자가 직접 선택한 곳으로만 전달됩니다.</p>
+  <p style="margin:0">AI 기능은 사용자가 직접 넣은 Gemini API 키로 동작합니다. AI 버튼을 누를 때만 대본 내용이 Google Gemini API로 전송되며, 이 전송에는 Google의 약관과 개인정보 처리방침이 적용됩니다.</p>
+  <p style="margin:0">히트작 벤치마킹의 새로고침은 설정된 깃허브 주소에서 공개 파일을 읽어 올 뿐, 기기의 정보를 보내지 않습니다. 앱 제작자의 서버로는 아무것도 전송되지 않습니다.</p>
   <p style="margin:0">문의: happyfamily1984.3@gmail.com</p></div>` });
 
-/* ---------- 프롬프터 ---------- */
-let pr = { size: 34, speed: 3, on: false };
-V.prompter = () => ({ raw: true, html: `<div class="prompter"><div class="guide"></div><div class="scr" id="scr" style="font-size:${pr.size}px">${draft.beats.map(b => `<p><small>${esc(b.k)}</small>${esc(b.say)}</p>`).join('')}</div>
-  <div class="ctl"><button data-act="back">닫기</button><button data-act="prSize" data-d="-4" aria-label="글자 작게">가−</button><button data-act="prSize" data-d="4" aria-label="글자 크게">가+</button><button data-act="prSpeed" aria-label="속도">속도 ${pr.speed}</button><button class="play" data-act="prPlay">${pr.on ? '멈춤' : '시작'}</button></div></div>` });
-function stopPrompter() { pr.on = false; cancelAnimationFrame(promptTimer); }
-function runPrompter() {
-  let last = performance.now(), acc = 0;
-  const step = now => { if (!pr.on) return; const el = $('#scr'); if (!el) return stopPrompter();
-    acc += (now - last) / 1000 * pr.speed * 14; last = now; const d = Math.floor(acc); if (d) { el.scrollTop += d; acc -= d; }
-    if (el.scrollTop + el.clientHeight >= el.scrollHeight - 2) { pr.on = false; return render(); }
-    promptTimer = requestAnimationFrame(step); };
-  promptTimer = requestAnimationFrame(step);
-}
-
 /* ---------- 그리기 ---------- */
-const NAV = [['home', '홈', 'home'], ['learn', '원리', 'book'], ['create', '만들기', 'plus'], ['library', '보관함', 'folder'], ['tools', '도구', 'tool']];
+const NAV = [['home', '홈', 'home'], ['hits', '히트작', 'trophy'], ['aiNew', '만들기', 'plus'], ['library', '보관함', 'folder'], ['info', '안내', 'book']];
 function render(resetScroll) {
   const c = cur(), r = V[c.v](c.p), view = $('#view'), keep = view.scrollTop;
-  const raw = !!r.raw;
-  $('#top').hidden = raw; $('#nav').hidden = raw || !!r.back;
+  $('#nav').hidden = !!r.back;
   $('#top').innerHTML = r.top || `${r.back ? `<button class="ib" data-act="back" aria-label="뒤로">${ic('back')}</button>` : ''}<h1 class="${r.big ? 'big' : ''}">${r.ticon ? `<span class="ticon">${ic(r.ticon)}</span>` : ''}${esc(r.title || '')}</h1>${r.acts || ''}`;
   view.className = r.flush ? 'flush' : ''; view.innerHTML = r.html;
-  $('#nav').innerHTML = NAV.map(([v, l, i]) => v === 'create' ? `<button class="nav make" data-act="tab" data-v="create" aria-label="대본 만들기"><span>${ic(i)}</span><em>${l}</em></button>` : `<button class="nav ${r.nav === v ? 'on' : ''}" data-act="tab" data-v="${v}">${ic(i)}${l}</button>`).join('');
+  $('#nav').innerHTML = NAV.map(([v, l, i]) => v === 'aiNew' ? `<button class="nav make" data-act="make" aria-label="새 대본 만들기"><span>${ic(i)}</span><em>${l}</em></button>` : `<button class="nav ${r.nav === v ? 'on' : ''}" data-act="tab" data-v="${v}">${ic(i)}${l}</button>`).join('');
   view.scrollTop = resetScroll ? 0 : keep;
   $$('textarea.ag', view).forEach(autoGrow);
 }
 const autoGrow = ta => { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; };
 
-/* ---------- 내보내기 흐름 ---------- */
-function exportFlow(list, label) {
-  if (!list.length) return toast('내보낼 대본이 없습니다');
-  const fmts = EXPORTS.filter(f => !(f.single && list.length > 1));
-  sheet(`${label} 내보내기`, fmts.map(f => [f.name, f.sub, () => {
-    const text = buildExport(f, list), name = `쇼츠대본_${label.replace(/[^가-힣0-9a-zA-Z]+/g, '_').slice(0, 20)}_${dateStr().replace(/\./g, '')}.${f.ext}`;
-    sheet(f.name, [['공유하기', '메신저, 메일, 메모 앱으로 보내기', () => Native.share(label, text)], ['파일로 저장', name, () => Native.save(name, f.mime, text)], ['복사하기', '클립보드에 복사', () => copyText(text)]]);
-  }]));
-}
 function importBackup(text) {
   try {
-    const data = JSON.parse(text), arr = Array.isArray(data) ? data : data.scripts; if (!Array.isArray(arr)) throw 0;
-    const ids = new Set(scripts.map(s => s.id)); let n = 0;
-    arr.forEach(s => { if (s && s.id && !ids.has(s.id) && FMT[s.format] && Array.isArray(s.beats)) { if (!CAT[s.cat]) s.cat = 'info'; scripts.push(s); n++; } });
-    saveScripts(); toast(n ? `대본 ${n}편을 불러왔습니다` : '새로 추가할 대본이 없습니다'); render();
+    const data = JSON.parse(text), arr = Array.isArray(data) ? data : data.projects; if (!Array.isArray(arr)) throw 0;
+    const ids = new Set(projects.map(p => p.id)); let n = 0;
+    arr.forEach(p => { if (p && p.id && !ids.has(p.id) && Array.isArray(p.shots) && Array.isArray(p.chars)) { if (!TH[p.theme]) p.theme = 'hidden'; projects.push(p); n++; } });
+    saveProjects(); toast(n ? `작업 ${n}편을 불러왔습니다` : '새로 추가할 작업이 없습니다'); render();
   } catch (e) { toast('백업 파일을 읽지 못했습니다'); }
 }
 $('#importFile').addEventListener('change', e => { const f = e.target.files[0]; if (!f) return; const r = new FileReader(); r.onload = () => importBackup(r.result); r.readAsText(f); e.target.value = ''; });
 
-/* ---------- 이벤트 ---------- */
+/* ---------- 동작 ---------- */
+const touch = () => { dirty = true; };
 const A = {
   back: () => onBack(),
   go: d => go(d.v, d.id ? { id: d.id } : {}),
-  tab: d => { if (d.v === 'create') { if (!form) newForm(); return go('create'); } tab(d.v); },
-  quick: () => { const t = $('#quick').value.trim(); go('browse', { q: t }); },
-  quickMake: d => { newForm({ topic: d.q || '' }); go('create'); },
-  openTopic: d => openTopic(d.cat, +d.i),
+  tab: d => tab(d.v),
+  mode: d => { settings.mode = d.v; saveSettings(); render(); toast(d.v === 'en' ? '해외용: 영어 프롬프트, 서양권 인물' : '국내용: 한국어 프롬프트, 한국 인물'); },
+  make: () => sheet('새 대본 만들기', [['주제에서 고르기', `완성 대본 ${DRAMA_COUNT.toLocaleString()}편에서 찾기`, () => go('browse')], ['AI로 새 대본 쓰기', '아이디어 한 줄로 6샷 대본 만들기', () => go('aiNew')], ['빈 대본으로 시작', '처음부터 직접 쓰기', () => A.blankNew()], ['히트작 벤치마킹', '세계 히트작의 공식으로 쓴 대본', () => tab('hits')]]),
+  quick: () => go('browse', { q: $('#quick').value.trim() }),
   reshuffle: () => { cur().p.seed = (cur().p.seed || 0) + 1; render(); },
-  bclear: () => { cur().p.q = ''; render(); },
-  useHook: d => { newForm(Object.assign({}, form && form.topic ? form : {}, { hook: d.id })); go('create'); },
-  hookTo: d => { const p = cur().p; newForm({ topic: p.t || '', who: p.who || '', tone: p.tone || 0, hook: d.id }); go('create'); },
-  startFlow: d => { newForm({ cat: d.cat, format: d.id, topic: form ? form.topic : '' }); go('create'); },
-  allFlows: () => { cur().p.all = !cur().p.all; render(); },
+  qclear: () => { cur().p.q = ''; render(); },
+  openDrama: d => openDrama(d.th, +d.i),
+  open: d => { if (sel) { sel.has(d.id) ? sel.delete(d.id) : sel.add(d.id); return render(); } openProject(d.id); },
+  openHit: d => { const h = allHits().find(x => x.id === d.id); if (!h) return; draft = toProject(h.script, TH[h.theme] ? h.theme : 'hidden', 'hit:' + h.id); draft.memo = h.src && h.src.title ? `벤치마킹 참고: ${h.src.title}${h.formula ? '\n공식: ' + h.formula : ''}` : ''; dirty = true; go('editor'); },
+  myTheme: d => { const a = settings.myThemes, on = a.includes(d.id); if (on) a.splice(a.indexOf(d.id), 1); else a.push(d.id); saveSettings(); render(); toast(on ? '내 주제에서 뺐습니다' : '내 주제로 고정했습니다'); },
   set: d => {
-    const k = d.k, v = /^\d+$/.test(d.v) ? +d.v : d.v;
-    if (k === 'stage') { settings.stage = v; saveSettings(); }
-    else if (k === 'theme' || k === 'cps') { settings[k] = v; saveSettings(); }
-    else if (k === 'sort') { settings.sort = v; saveSettings(); }
+    const k = d.k, v = /^-?\d+$/.test(d.v) ? +d.v : d.v;
+    if (k === 'mode') return A.mode({ v });
+    if (k === 'theme' || k === 'style') { settings[k] = v; saveSettings(); }
     else if (k.startsWith('p_')) cur().p[k.slice(2)] = v;
-    else if (k === 'ctab') cur().p.tab = v;
-    else if (k === 'ptone') cur().p.tone = v;
-    else if (k === 'fstage') form.stage = v;
-    else if (k === 'cat') { form.cat = v; form.format = CAT[v].flows[0][0]; form.len = CAT[v].len; }
-    else form[k] = v;
-    render();
+    render(k === 'p_tab');
   },
-  generate: () => {
-    if (!form.topic.trim()) { toast('주제를 적어 주세요'); $('#f_topic').focus(); return; }
-    draft = generate(form); dirty = true; form = null; go('editor', {}, true);
-  },
-  open: d => { if (sel) { sel.has(d.id) ? sel.delete(d.id) : sel.add(d.id); return render(); } openScript(d.id); },
+  aiNewGo: () => { if (!aiKeys().length) return go('settings'); const p = cur().p; aiNew(p.th || 'hidden', (p.idea || '').trim()); },
+  blankNew: () => { draft = blankProject((cur().p && cur().p.th) || 'hidden'); dirty = true; go('editor', {}, cur().v === 'aiNew'); },
   save: () => { saveDraft(); render(); },
   copy: d => copyText(d.t),
-  copySay: () => copyText(toSay(draft), '대사를 복사했습니다'),
-  exportOne: () => exportFlow([draft], draft.title),
-  prompter: () => { pr.on = false; go('prompter'); },
-  useTitle: d => { draft.title = draft.titles[+d.i]; dirty = true; render(); toast('제목을 바꿨습니다'); },
-  swapHook: () => { const i = HOOKS.findIndex(h => h.id === draft.hook), h = HOOKS[(i + 1) % HOOKS.length]; draft.hook = h.id;
-    draft.beats.find(b => b.type === 'hook').say = fill(h.tpl[draft.tone], makeCtx(Object.assign({ topic: draft.topic, tone: draft.tone }, draft.input))); dirty = true; render(); toast(h.name); },
-  swapCta: () => { const i = CTAS.findIndex(h => h.id === draft.cta), c = CTAS[(i + 1) % CTAS.length]; draft.cta = c.id; const b = draft.beats.filter(x => x.type === 'cta').pop();
-    b.say = fill(c.tpl[draft.tone], { t: draft.topic }); b.cap = c.name; dirty = true; render(); toast(c.name); },
-  beatMenu: (d, el) => { const i = +el.closest('.beat').dataset.i, b = draft.beats[i];
-    sheet(b.k, [['AI로 이 구간 다시 쓰기', aiKeys().length ? '3가지 안 중에서 고르기' : '설정에서 Gemini API 키를 넣어야 합니다', () => aiRewriteBeat(i)], ['1초 늘리기', `지금 ${fmtSec(b.sec)}`, () => { b.sec += 1; draft.len += 1; dirty = true; render(); }], ['1초 줄이기', '', () => { if (b.sec > 1.5) { b.sec -= 1; draft.len -= 1; dirty = true; } render(); }],
-      ['위로 옮기기', '', () => { if (i > 1) { draft.beats.splice(i - 1, 0, draft.beats.splice(i, 1)[0]); dirty = true; } render(); }], ['이 구간 삭제', '', () => { draft.len -= b.sec; draft.beats.splice(i, 1); dirty = true; render(); }]]); },
-  addBeat: () => { const i = draft.beats.length - (draft.beats[draft.beats.length - 1].type === 'cta' ? 1 : 0); draft.beats.splice(i, 0, { k: '추가 구간', type: 'body', sec: 3, say: '', cap: '', shot: '' }); draft.len += 3; dirty = true; render(); },
-  ltab: d => { cur().p.tab = d.v; render(true); },
-  lcat: d => { const p = cur().p; p.cat = d.v || null; p.fav = false; render(true); },
-  lfav: () => { const p = cur().p; p.fav = !p.fav; p.cat = null; render(true); },
-  selStart: () => { sel = new Set(); render(); },
-  selAll: () => { const all = $$('#view [data-act="open"]').map(e => e.dataset.id); sel = new Set(sel.size === all.length ? [] : all); render(); },
-  selDelete: () => { if (!sel.size) return toast('대본을 선택하세요'); dialog(`대본 ${sel.size}편을 삭제할까요?`, '삭제한 대본은 되돌릴 수 없습니다.', [['취소', null], ['삭제', () => { scripts = scripts.filter(s => !sel.has(s.id)); saveScripts(); sel = null; render(); toast('삭제했습니다'); }, 'pri']]); },
-  selMove: () => { if (!sel.size) return toast('대본을 선택하세요'); sheet('어느 분야로 옮길까요', CATEGORIES.map(c => [c.name, '', () => { scripts.forEach(s => { if (sel.has(s.id)) s.cat = c.id; }); saveScripts(); sel = null; render(); toast(`${c.name}(으)로 옮겼습니다`); }])); },
-  selExport: () => { if (!sel.size) return toast('대본을 선택하세요'); exportFlow(scripts.filter(s => sel.has(s.id)), `선택 ${sel.size}편`); },
-  exportShown: () => { const ids = $$('#view [data-act="open"]').map(e => e.dataset.id), p = cur().p; exportFlow(scripts.filter(s => ids.includes(s.id)), p.cat ? CAT[p.cat].name : '전체'); },
-  rerender: () => render(),
-  privacy: () => go('privacy'),
   settings: () => go('settings'),
-  aiWrite: () => aiWriteAll(),
-  aiUndo: () => { if (!draft._undo) return; Object.assign(draft, JSON.parse(draft._undo)); delete draft._undo; draft.ai = false; dirty = true; render(); toast('AI 전으로 되돌렸습니다'); },
+  privacy: () => go('privacy'),
+  exportOne: () => exportFlow([draft], T(draft)),
+  exportPack: () => outSheet('제작 팩', toPack(draft, MODE()), fileName(T(draft), 'txt')),
+  pstyle: d => { draft.style = d.v; touch(); render(); },
+  genChar: d => { const key = `${d.i}:${d.kind}`, o = cur().p.cp = cur().p.cp || {}; o[key] = 1; render(); copyText(promptText(draft, `c:${d.i}:${d.kind}`), '프롬프트를 만들어 복사했습니다. 그록·챗GPT에 붙여넣으세요'); },
+  copyAllChars: () => copyText(draft.chars.map((c, i) => `[${cname(c)}]\n${promptText(draft, `c:${i}:full`)}`).join('\n\n'), '모든 인물 프롬프트를 복사했습니다'),
+  copyP: d => copyText(promptText(draft, d.k), '프롬프트를 복사했습니다'),
+  resetP: d => { delete draft.over[d.k + ':' + MODE()]; touch(); render(); },
+  addChar: () => { if (draft.chars.length >= 4) return toast('인물은 4명까지입니다'); draft.chars.push({ r: 'X', nk: '새 인물', ne: 'New Character', dk: '', de: '' }); touch(); render(); },
+  delChar: d => { const i = +d.i; if (draft.chars.length <= 2) return toast('인물은 최소 2명입니다'); dialog('이 인물을 삭제할까요?', cname(draft.chars[i]), [['취소', null], ['삭제', () => { draft.chars.splice(i, 1); draft.shots.forEach(s => { if (s.sp === i) { s.sp = -1; s.dk = s.de = ''; } else if (s.sp > i) s.sp--; }); draft.over = {}; touch(); render(); }, 'pri']]); },
+  addShot: () => { if (draft.shots.length >= 10) return toast('샷은 10개까지입니다'); draft.shots.splice(Math.max(1, draft.shots.length - 1), 0, { pk: '', pe: '', ak: '', ae: '', sp: -1, dk: '', de: '', cam: 'ms', sec: 5 }); draft.over = {}; touch(); render(); },
+  shotMenu: (d, el) => { const i = +el.closest('.beat').dataset.i, s = draft.shots[i], mv = n => { draft.shots.splice(i + n, 0, draft.shots.splice(i, 1)[0]); draft.over = {}; touch(); render(); };
+    sheet(`샷 ${i + 1} · ${beatOf(draft, i)[0]}`, [['AI로 이 샷 다시 쓰기', aiKeys().length ? '3가지 안 중에서 고르기' : '설정에서 Gemini API 키를 넣어야 합니다', () => aiShot(i)],
+      [`길이 ${s.sec === 10 ? '5초로' : '10초로'} 바꾸기`, `지금 ${s.sec || 5}초`, () => { s.sec = s.sec === 10 ? 5 : 10; touch(); render(); }],
+      ['위로 옮기기', '', () => { if (i > 0) mv(-1); }], ['아래로 옮기기', '', () => { if (i < draft.shots.length - 1) mv(1); }],
+      ['이 샷 삭제', '', () => { if (draft.shots.length <= 3) return toast('샷은 최소 3개입니다'); draft.shots.splice(i, 1); draft.over = {}; touch(); render(); }]]); },
+  aiAll: () => aiRewriteAll(),
+  aiSync: () => aiSync(),
+  aiSubs: d => aiSubs(d.v),
+  aiUndo: () => { if (!draft._undo) return; applyScript(draft, JSON.parse(draft._undo)); delete draft._undo; draft.ai = false; touch(); render(); toast('AI 전으로 되돌렸습니다'); },
   aiTest: () => aiTest(),
   aiPick: d => { settings.aiModel = d.v; saveSettings(); render(); toast(`모델을 ${d.v}로 바꿨습니다`); },
   aiClear: () => dialog('API 키를 모두 지울까요?', '이 기기에 저장된 키만 지워집니다.', [['취소', null], ['지우기', () => { settings.aiKeys = ''; settings.aiCheck = []; saveSettings(); render(); toast('키를 지웠습니다'); }, 'pri']]),
-  generateAi: () => { if (!form.topic.trim()) { toast('주제를 적어 주세요'); $('#f_topic').focus(); return; } draft = generate(form); dirty = true; form = null; go('editor', {}, true); aiWriteAll(); },
-  myCat: d => { const a = settings.myCats, on = a.includes(d.id); if (on) a.splice(a.indexOf(d.id), 1); else a.push(d.id); saveSettings(); render(); toast(on ? `${CAT[d.id].name}${josa(CAT[d.id].name, "을")} 내 분야에서 뺐습니다` : `${CAT[d.id].name}${josa(CAT[d.id].name, "을")} 내 분야로 고정했습니다`); },
-  ptr: d => { const p = cur().p, a = p.tr = p.tr || []; a.includes(d.v) ? a.splice(a.indexOf(d.v), 1) : a.push(d.v); render(); },
-  lclear: () => { cur().p.q = ''; render(); },
-  setStage: d => { settings.stage = +d.v; saveSettings(); render(); toast(`내 단계를 ${STAGE_META[+d.v].name}로 바꿨습니다`); },
-  startStage: d => { newForm({ cat: d.cat, stage: +d.v }); go('create'); },
-  fav: d => { const s = scripts.find(x => x.id === d.id); if (!s) return; s.fav = !s.fav; saveScripts(); render(); toast(s.fav ? '즐겨찾기에 넣었습니다' : '즐겨찾기에서 뺐습니다'); },
-  rowMenu: d => { const s = scripts.find(x => x.id === d.id); if (!s) return;
-    sheet(s.title, [['열기', '대본 편집 화면으로', () => openScript(s.id)], [s.fav ? '즐겨찾기 해제' : '즐겨찾기', '', () => A.fav(d)],
-      ['복제', '같은 내용으로 새 대본 만들기', () => { const c = JSON.parse(JSON.stringify(s)); c.id = uid(); c.title += ' (복사본)'; c.created = c.updated = Date.now(); delete c.sample; scripts.unshift(c); saveScripts(); render(); toast('복제했습니다'); }],
-      ['내보내기', '공유, 파일 저장, 복사', () => exportFlow([s], s.title)],
-      ['삭제', '되돌릴 수 없습니다', () => dialog('이 대본을 삭제할까요?', s.title, [['취소', null], ['삭제', () => { scripts = scripts.filter(x => x.id !== s.id); saveScripts(); render(); toast('삭제했습니다'); }, 'pri']])]]); },
+  subOut: d => outSheet('자막 파일', toSrt(draft, d.v), fileName(T(draft) + '_' + d.v, 'srt'), 'application/x-subrip'),
+  hitsFetch: () => fetchHits(),
+  hitsOut: () => outSheet('벤치마킹 목록', JSON.stringify({ version: 1, updated: dateStr().replace(/\./g, '-'), items: allHits() }, null, 2), 'hits.json', 'application/json'),
+  rpOut: () => outSheet('조사 지시 프롬프트', researchPrompt(cur().p.n || 10, cur().p.pf || ''), fileName('조사지시프롬프트', 'txt')),
+  lth: d => { const p = cur().p; p.th = d.v || ''; p.fav = false; render(true); },
+  lfav: () => { const p = cur().p; p.fav = !p.fav; p.th = ''; render(true); },
+  fav: d => { const p = projects.find(x => x.id === d.id); if (!p) return; p.fav = !p.fav; saveProjects(); render(); toast(p.fav ? '즐겨찾기에 넣었습니다' : '즐겨찾기에서 뺐습니다'); },
+  rowMenu: d => { const p = projects.find(x => x.id === d.id); if (!p) return;
+    sheet(T(p), [['열기', '작업 화면으로', () => openProject(p.id)], [p.fav ? '즐겨찾기 해제' : '즐겨찾기', '', () => A.fav(d)],
+      ['복제', '같은 내용으로 새 작업 만들기 (다음 화용)', () => { const c = JSON.parse(JSON.stringify(p)); c.id = uid(); c.ep = (p.ep || 1) + 1; c.created = c.updated = Date.now(); projects.unshift(c); saveProjects(); render(); toast('복제했습니다'); }],
+      ['내보내기', '제작 팩, 대본, 자막, 백업', () => exportFlow([p], T(p))],
+      ['삭제', '되돌릴 수 없습니다', () => dialog('이 작업을 삭제할까요?', T(p), [['취소', null], ['삭제', () => { projects = projects.filter(x => x.id !== p.id); saveProjects(); render(); toast('삭제했습니다'); }, 'pri']])]]); },
+  selStart: () => { sel = new Set(); render(); },
+  selAll: () => { const all = $$('#view [data-act="open"]').map(e => e.dataset.id); sel = new Set(sel.size === all.length ? [] : all); render(); },
+  selDelete: () => { if (!sel.size) return toast('작업을 선택하세요'); dialog(`작업 ${sel.size}편을 삭제할까요?`, '삭제한 작업은 되돌릴 수 없습니다.', [['취소', null], ['삭제', () => { projects = projects.filter(p => !sel.has(p.id)); saveProjects(); sel = null; render(); toast('삭제했습니다'); }, 'pri']]); },
+  selExport: () => { if (!sel.size) return toast('작업을 선택하세요'); exportFlow(projects.filter(p => sel.has(p.id)), `선택 ${sel.size}편`); },
+  exportShown: () => { const ids = $$('#view [data-act="open"]').map(e => e.dataset.id); exportFlow(projects.filter(p => ids.includes(p.id)), '보관함'); },
   check: d => { const i = +d.i, a = settings.checks; a.includes(i) ? a.splice(a.indexOf(i), 1) : a.push(i); saveSettings(); render(); },
   checkReset: () => { settings.checks = []; saveSettings(); render(); },
-  backup: () => exportFlow(scripts, '전체'),
-  restore: () => $('#importFile').click(),
-  prSize: d => { pr.size = Math.min(64, Math.max(22, pr.size + +d.d)); $('#scr').style.fontSize = pr.size + 'px'; },
-  prSpeed: (d, el) => { pr.speed = pr.speed % 6 + 1; el.textContent = '속도 ' + pr.speed; },
-  prPlay: (d, el) => { pr.on = !pr.on; el.textContent = pr.on ? '멈춤' : '시작'; if (pr.on) runPrompter(); else stopPrompter(); }
+  backup: () => exportFlow(projects, '전체'),
+  restore: () => $('#importFile').click()
 };
+let pressT, pressFired = false;
 document.addEventListener('click', e => {
   if (e.target.closest('#layer')) return;
   const el = e.target.closest('[data-act]'); if (!el) return;
   if (pressFired) { pressFired = false; return; }
+  if (el.tagName !== 'BUTTON' && e.target.closest('input,textarea,select')) return;
   const fn = A[el.dataset.act]; if (fn) fn(el.dataset, el);
 });
-document.addEventListener('input', e => {
-  const t = e.target, d = t.dataset;
-  if (d.f) form[d.f] = t.value;
+function onField(e) {
+  const t = e.target, d = t.dataset, isSel = t.tagName === 'SELECT';
+  const grow = () => { if (t.classList.contains('ag')) autoGrow(t); };
+  if (d.pf) { draft[d.pf] = d.pf === 'ep' ? Math.max(1, parseInt(t.value) || 1) : t.value; touch(); grow(); if (d.pf === 'ep' && e.type === 'change') render(); }
+  else if (d.sf) { const [i, f] = d.sf.split(':'), s = draft.shots[+i]; s[f] = f === 'sp' ? +t.value : t.value; if (f === 'sp' && s.sp < 0) s.dk = s.de = ''; ['f', 'k'].forEach(x => ['kr', 'en'].forEach(m => delete draft.over[`${x}:${i}:${m}`])); touch(); grow(); if (isSel) render(); }
+  else if (d.cf) { const [i, f] = d.cf.split(':'); draft.chars[+i][f] = t.value; touch(); grow(); if (isSel) render(); }
+  else if (d.ov) { draft.over[d.ov + ':' + MODE()] = t.value; touch(); grow(); }
+  else if (d.set) { settings[d.set] = t.value; store.set('settings', settings); }
   else if (d.p) cur().p[d.p] = t.value;
-  else if (d.set) { settings[d.set] = t.value; saveSettings(); }
-  else if (d.s) { draft[d.s] = t.value; dirty = true; if (t.classList.contains('ag')) autoGrow(t); }
-  else if (d.b) { draft.beats[+t.closest('.beat').dataset.i][d.b] = t.value; dirty = true; if (t.classList.contains('ag')) autoGrow(t); refreshEditor(); }
   else if (d.q) { cur().p.q = t.value; clearTimeout(t._t); const id = t.id; t._t = setTimeout(() => { render(); const n = $('#' + id); if (n) { n.focus(); n.setSelectionRange(n.value.length, n.value.length); } }, 350); }
-  else if (t.id === 'lq') { cur().p.q = t.value; clearTimeout(t._t); t._t = setTimeout(() => { render(); const n = $('#lq'); n.focus(); n.setSelectionRange(n.value.length, n.value.length); }, 350); }
+}
+document.addEventListener('input', onField);
+document.addEventListener('change', e => { if (e.target.dataset.pf === 'ep') onField(e); });
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && e.target.id === 'quick') A.quick();
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.getAttribute('role') === 'button') { e.preventDefault(); e.target.click(); }
+  if (e.key === 'Escape') onBack();
 });
-document.addEventListener('keydown', e => { if (e.key === 'Enter' && e.target.id === 'quick') A.quick(); if ((e.key === 'Enter' || e.key === ' ') && e.target.getAttribute('role') === 'button') { e.preventDefault(); e.target.click(); } if (e.key === 'Escape') onBack(); });
-/* 보관함에서 길게 누르면 선택 모드 */
-let pressT, pressFired = false;
 document.addEventListener('pointerdown', e => {
   pressFired = false;
   const row = e.target.closest('[data-act="open"]'); if (!row || cur().v !== 'library' || sel) return;
@@ -914,10 +887,4 @@ document.addEventListener('pointerdown', e => {
 
 /* ---------- 시작 ---------- */
 applyTheme();
-if (Array.isArray(scripts) && scripts.some(s => !CAT[s.cat])) { scripts.forEach(s => { if (!CAT[s.cat]) s.cat = 'info'; }); saveScripts(); }
-settings.myCats = settings.myCats.filter(id => CAT[id]);
-if (scripts === null) {
-  const s = generate(Object.assign({ tone: 0, stage: 0 }, SAMPLE)); s.sample = true; s.title = '자취방 곰팡이, 이것만은 하지 마세요';
-  scripts = [s]; saveScripts();
-}
 render(true);
