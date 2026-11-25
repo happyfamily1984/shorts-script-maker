@@ -605,7 +605,9 @@ V.category = p => {
   let body = '';
   if (t === 'topics') {
     const all = topicsOf(c.id), ff = p.ff || '', d = doneTopics(), fl = [...new Set(all.map(x => x[1]))];
-    const idx = all.map((x, i) => i).filter(i => !ff || all[i][1] === ff);
+    const groups = fl.map(f => all.map((x, i) => i).filter(i => all[i][1] === f)), mixed = [];
+    for (let r = 0; mixed.length < all.length; r++) groups.forEach(g => { if (g[r] !== undefined) mixed.push(g[r]); });
+    const idx = ff ? all.map((x, i) => i).filter(i => all[i][1] === ff) : mixed;
     body = `<div class="chips"><button class="chip ${!ff ? 'on' : ''}" data-act="set" data-k="p_ff" data-v="">전체 ${all.length}</button>${fl.map(f => `<button class="chip ${ff === f ? 'on' : ''}" data-act="set" data-k="p_ff" data-v="${f}">${FMT[f].name} ${all.filter(x => x[1] === f).length}</button>`).join('')}</div>
       <div class="list">${idx.map(i => topicRow(c.id, i, false, d)).join('')}</div>
       <p class="hint">주제를 누르면 훅부터 마무리까지 완성된 대본이 열립니다. 내 경험에 맞게 고치고 저장하세요.</p>`;
