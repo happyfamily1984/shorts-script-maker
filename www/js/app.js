@@ -7,7 +7,7 @@ const CAT = Object.fromEntries(CATEGORIES.map(c => [c.id, c]));
 const FMT = Object.fromEntries(FORMATS.map(f => [f.id, f]));
 const HOOK = Object.fromEntries(HOOKS.map(h => [h.id, h]));
 const CTA = Object.fromEntries(CTAS.map(c => [c.id, c]));
-const APP_VERSION = '1.2.0';
+const APP_VERSION = '1.3.0';
 
 const store = {
   get(k, d) { try { const v = localStorage.getItem('ssm.' + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
@@ -115,17 +115,24 @@ function makeCtx(o) {
     gain: (o.gain || '').trim() || (t + josa(t, '은') + (ti ? ' 이것부터 하면 돼' : ' 이것부터 하면 됩니다')).replace(/[.]$/, '')
   };
 }
+function shortCap(t) {
+  let c = String(t || '').replace(/[〔〕]/g, '').split(/[.!?…,]/)[0].trim();
+  if (c.length > 14) { c = c.slice(0, 13); const sp = c.lastIndexOf(' '); if (sp > 5) c = c.slice(0, sp); }
+  return c;
+}
 function generate(o) {
   const cat = CAT[o.cat], f = FMT[o.format], ctx = makeCtx(o), ti = ctx.ti;
   let hookId = o.hook && o.hook !== 'auto' ? o.hook : cat.hook;
   if ((!o.hook || o.hook === 'auto') && hookId === 'result' && ['review', 'news', 'myth'].includes(o.format)) hookId = 'proof';
   const ctaId = o.cta && o.cta !== 'auto' ? o.cta : STAGE_META[o.stage].cta;
-  const len = o.len, hookSec = len <= 20 ? 2 : 3, rest = len - hookSec;
+  const ready = Array.isArray(o.lines);
+  let len = o.len, hookSec = len <= 20 ? 2 : 3, rest = len - hookSec, li = 0;
   const sumP = f.beats.reduce((a, b) => a + (b.p || 0), 0);
   let used = hookSec;
-  const beats = f.beats.map((b, i) => {
+  let beats = f.beats.map((b, i) => {
     let sec, say, cap, type = 'body';
-    if (b.hook) { type = 'hook'; sec = hookSec; say = fill(HOOK[hookId].tpl[ti], ctx); cap = ctx.t; }
+    if (b.hook) { type = 'hook'; sec = hookSec; say = ready ? o.hookLine : fill(HOOK[hookId].tpl[ti], ctx); cap = ready ? shortCap(o.title || ctx.t) : ctx.t; }
+    else if (ready && !b.cta) { say = o.lines[li++] || ''; cap = b.cap && !b.cap.includes('{') ? b.cap : shortCap(say); sec = 0; }
     else {
       sec = Math.max(1.5, Math.round(rest * b.p / sumP * 2) / 2);
       if (i === f.beats.length - 1) sec = Math.max(1.5, len - used);
@@ -135,8 +142,13 @@ function generate(o) {
     }
     return { k: b.k, type, sec, say, cap, shot: b.shot || '' };
   });
+  if (ready) {
+    beats.forEach(b => { b.sec = Math.max(b.type === 'hook' ? 2 : 1.5, Math.ceil(est(b.say) * 2) / 2 + (b.type === 'hook' ? 0 : .5)); });
+    len = beats.reduce((a, b) => a + b.sec, 0);
+  }
   const seed = [...ctx.t].reduce((a, c) => a + c.charCodeAt(0), 0);
   const titles = Array.from({ length: 5 }, (_, i) => fill(TITLES[(seed + i * 5) % TITLES.length], ctx));
+  if (o.title) titles.unshift(o.title), titles.pop();
   const tags = [...new Set([...cat.tags.slice(0, 3), ...ctx.t.split(/\s+/).filter(w => w.length > 1).slice(0, 2)])].map(x => '#' + x.replace(/[^가-힣0-9a-zA-Z]/g, ''));
   return {
     id: uid(), cat: o.cat, format: o.format, hook: hookId, cta: ctaId, len, tone: ti, stage: o.stage,
@@ -321,6 +333,30 @@ function recommend(p) {
   }).sort((a, b) => b.s - a.s);
 }
 
+/* ---------- 대본 주제 ---------- */
+const HAS_TOPICS = typeof TOPICS !== 'undefined';
+const topicsOf = id => (HAS_TOPICS && TOPICS[id]) || [];
+const TOPIC_COUNT = CATEGORIES.reduce((a, c) => a + topicsOf(c.id).length, 0);
+const doneTopics = () => new Set(scripts.map(s => s.fromTopic).filter(Boolean));
+function topicRow(cat, i, showCat, done) {
+  const t = topicsOf(cat)[i], c = CAT[cat], key = cat + ':' + i;
+  return `<div class="row trow" role="button" tabindex="0" data-act="openTopic" data-cat="${cat}" data-i="${i}">${glyph(c)}<span class="grow"><b>${esc(t[0])}</b><small>${showCat ? c.name + ' · ' : ''}${FMT[t[1]].name} · “${esc(t[2])}”</small></span>${done && done.has(key) ? '<span class="tag ok">작성함</span>' : ''}${chev}</div>`;
+}
+function openTopic(cat, i) {
+  const t = topicsOf(cat)[i]; if (!t) return;
+  draft = generate({ cat, format: t[1], topic: t[0], title: t[0], hookLine: t[2], lines: t.slice(3), tone: 0, stage: settings.stage, hook: 'auto', cta: 'auto', len: CAT[cat].len });
+  draft.fromTopic = cat + ':' + i; dirty = true; go('editor');
+}
+function dailyTopics(n, seed) {
+  const cats = settings.myCats.length ? settings.myCats : sortedCats().list.slice(0, 8).map(c => c.id), out = [];
+  const day = Math.floor(Date.now() / 864e5) + (seed || 0) * 7;
+  for (let k = 0; out.length < n && k < n * 6; k++) {
+    const cat = cats[(day + k) % cats.length], list = topicsOf(cat); if (!list.length) continue;
+    const i = (day * 13 + k * 29) % list.length; if (!out.some(([c, j]) => c === cat && j === i)) out.push([cat, i]);
+  }
+  return out;
+}
+
 /* ---------- AI (Gemini) ---------- */
 const AI_DEFAULT_MODEL = 'gemini-2.5-flash';
 const aiKeys = () => String(settings.aiKeys || '').split(/[,\s\n]+/).map(k => k.trim()).filter(Boolean);
@@ -460,8 +496,13 @@ V.home = () => {
   return { nav: 'home', top: `<div class="brand"><img src="img/icon.png" alt="">쇼츠 대본메이커</div><button class="ib" data-act="go" data-v="settings" aria-label="설정">${ic('gear')}</button>`,
     html: `
     <section class="hero card">
-      <div class="ph-t"><span class="eyebrow">${ic('flame')}터지는 쇼츠 공식</span><h2>첫 <em>3초</em>부터<br>마지막 문장까지.</h2></div>${art('mic', 218)}
-      <div class="go"><input class="in" id="quick" placeholder="오늘 찍을 주제 (예: 자취방 곰팡이)" enterkeyhint="go" maxlength="40"><button class="btn pri" data-act="quick">${ic('sparkle')}만들기</button></div>
+      <div class="ph-t"><span class="eyebrow">${ic('flame')}완성 대본 ${TOPIC_COUNT.toLocaleString()}개</span><h2>분야만 고르면<br><em>대본</em>이 나와요.</h2></div>${art('mic', 218)}
+      <div class="go"><div class="search grow1">${ic('search')}<input class="in" id="quick" type="search" placeholder="주제 검색 (예: 곰팡이, 전세, 스쿼트)" enterkeyhint="search" maxlength="40"></div><button class="btn pri" data-act="quick">찾기</button></div>
+      <button class="linkbtn" data-act="tab" data-v="create">${ic('edit')}원하는 주제가 없으면 직접 만들기</button>
+    </section>
+    <section class="sec">${h2('sparkle', '오늘 찍기 좋은 주제', `<button class="pbtn" data-act="reshuffle">${ic('layers')}다른 주제</button>`)}
+      <div class="list">${(() => { const d = doneTopics(); return dailyTopics(5, cur().p.seed).map(([c, i]) => topicRow(c, i, true, d)).join(''); })()}</div>
+      <p class="hint">${settings.myCats.length ? '☆ 고정한 내 분야에서 골랐습니다.' : '조회수가 잘 나오는 분야에서 골랐습니다. 분야 화면에서 ☆로 내 분야를 고정하면 그 분야 위주로 나옵니다.'} 누르면 완성된 대본이 열리고, 고쳐서 저장하면 됩니다.</p>
     </section>
     <section class="sec">${h2('road', '내 채널 단계')}
       <div class="card stagebox">${seg('stage', STAGE_META.map(s => [s.id, s.name]), settings.stage)}
@@ -469,7 +510,7 @@ V.home = () => {
     </section>
     <section class="sec">${h2('layers', '분야 고르기', `<button class="pbtn blue" data-act="go" data-v="pick">${ic('target')}분야 추천받기</button>`)}
       <div class="chips">${SORTS.map(([v, l, i]) => `<button class="chip ${settings.sort === v ? 'on' : ''}" data-act="set" data-k="sort" data-v="${v}">${ic(i)}${l}</button>`).join('')}</div>
-      <div class="card"><div class="cats">${cats.list.map(c => `<button class="cat" data-act="go" data-v="category" data-id="${c.id}"><span class="gw">${glyph(c, 1)}${settings.myCats.includes(c.id) ? `<span class="mine" title="내 분야">${ic('star')}</span>` : settings.sort !== 'base' ? `<span class="rk num ${cats.rank[c.id] <= 3 ? 'top' : ''}">${cats.rank[c.id]}</span>` : ''}</span>${c.name}</button>`).join('')}</div>
+      <div class="card"><div class="cats">${cats.list.map(c => `<button class="cat" data-act="go" data-v="category" data-id="${c.id}"><span class="gw">${glyph(c, 1)}${settings.myCats.includes(c.id) ? `<span class="mine" title="내 분야">${ic('star')}</span>` : settings.sort !== 'base' ? `<span class="rk num ${cats.rank[c.id] <= 3 ? 'top' : ''}">${cats.rank[c.id]}</span>` : ''}</span>${c.name}<small class="cnt num">대본 ${topicsOf(c.id).length}</small></button>`).join('')}</div>
         <p class="hint" style="margin-top:16px">${SORT_NOTE[settings.sort]} 순위는 일반적인 경향을 바탕으로 한 추정치이며, 분야 화면에서 ☆를 누른 내 분야는 맨 앞에 옵니다.</p></div>
     </section>
     <section class="sec">${h2('clock', '최근 대본', `<button class="pbtn" data-act="tab" data-v="library">전체 보기${ic('chevron')}</button>`)}
@@ -560,8 +601,15 @@ function saveDraft() {
 function openScript(id) { const s = scripts.find(x => x.id === id); if (!s) return; draft = JSON.parse(JSON.stringify(s)); dirty = false; go('editor'); }
 
 V.category = p => {
-  const c = CAT[p.id], t = p.tab || 'flow';
+  const c = CAT[p.id], t = p.tab || (topicsOf(c.id).length ? 'topics' : 'flow');
   let body = '';
+  if (t === 'topics') {
+    const all = topicsOf(c.id), ff = p.ff || '', d = doneTopics(), fl = [...new Set(all.map(x => x[1]))];
+    const idx = all.map((x, i) => i).filter(i => !ff || all[i][1] === ff);
+    body = `<div class="chips"><button class="chip ${!ff ? 'on' : ''}" data-act="set" data-k="p_ff" data-v="">전체 ${all.length}</button>${fl.map(f => `<button class="chip ${ff === f ? 'on' : ''}" data-act="set" data-k="p_ff" data-v="${f}">${FMT[f].name} ${all.filter(x => x[1] === f).length}</button>`).join('')}</div>
+      <div class="list">${idx.map(i => topicRow(c.id, i, false, d)).join('')}</div>
+      <p class="hint">주제를 누르면 훅부터 마무리까지 완성된 대본이 열립니다. 내 경험에 맞게 고치고 저장하세요.</p>`;
+  }
   if (t === 'flow') body = `<div class="list">${c.flows.map(([id, name], n) => { const f = FMT[id]; return `<div class="artc"><div class="ah"><span class="no num">${n + 1}</span><h3>${esc(name)}</h3></div><p>${f.name} · ${f.sum}</p>${stepsOf(f)}<span><button class="pbtn blue" data-act="startFlow" data-cat="${c.id}" data-id="${id}">${ic('edit')}이 흐름으로 만들기</button></span></div>`; }).join('')}</div>
     <p class="hint">이 분야에서 널리 쓰이는 구성입니다. 채널 반응을 보며 하나를 골라 반복하세요.</p>`;
   if (t === 'road') body = `<div class="road">${c.stages.map((s, i) => { const m = STAGE_META[i], txt = `[${c.name} ${m.name}] 목표: ${s.goal} / 콘텐츠: ${s.content} / 볼 지표: ${s.kpi} / 바꿀 점: ${s.shift}`;
@@ -574,13 +622,29 @@ V.category = p => {
   const m = M(c.id), mine = settings.myCats.includes(c.id), pr = sortedCats('pop').rank[c.id];
   return { title: c.name, back: true, acts: `<button class="ib star ${mine ? 'on' : ''}" data-act="myCat" data-id="${c.id}" aria-label="${mine ? '내 분야에서 빼기' : '내 분야로 고정'}">${ic('star')}</button>`, html: `
     ${pageHead({ lead: c.why, icon: CICON[c.id], hue: c.hue })}
-    <div class="card metric"><div class="mhd"><span class="tag ${pr <= 3 ? 'a' : ''}">${ic('flame')}조회수 순위 ${pr}위 / ${CATEGORIES.length}</span>${mine ? `<span class="tag warn">${ic('star')}내 분야</span>` : ''}</div>
+    <div class="chips">${[['topics', `대본 주제 ${topicsOf(c.id).length}`, 'list'], ['flow', '스크립트 흐름', 'clapper'], ['road', '분석·로드맵', 'star'], ['hook', '훅 예시', 'crown']].filter(x => x[0] !== 'topics' || topicsOf(c.id).length).map(([v, l, i]) => `<button class="chip ${t === v ? 'on' : ''}" data-act="set" data-k="ctab" data-v="${v}">${ic(i)}${l}</button>`).join('')}</div>
+    <div class="card metric" ${t === 'road' ? '' : 'hidden'}><div class="mhd"><span class="tag ${pr <= 3 ? 'a' : ''}">${ic('flame')}조회수 순위 ${pr}위 / ${CATEGORIES.length}</span>${mine ? `<span class="tag warn">${ic('star')}내 분야</span>` : ''}</div>
       ${[['pop', '조회수·시청자'], ['rpm', '수익성 (광고 단가)'], ['ease', '시작 쉬움'], ['comp', '경쟁 여유']].map(([k, l]) => `<div class="mrow"><span>${l}</span>${dots(m[k])}</div>`).join('')}
       <p class="hint">${m.note}</p></div>
-    <div class="chips wrap"><span class="chip hash">${ic('clock')}추천 길이 ${c.len}초</span>${c.tags.map(x => `<span class="chip hash">#${x}</span>`).join('')}</div>
-    ${seg('ctab', [['flow', '스크립트 흐름', 'clapper'], ['road', '성장 로드맵', 'star'], ['hook', '훅 예시', 'crown']], t)}
+    <div class="chips wrap" ${t === 'road' ? '' : 'hidden'}><span class="chip hash">${ic('clock')}추천 길이 ${c.len}초</span>${c.tags.map(x => `<span class="chip hash">#${x}</span>`).join('')}</div>
+
     ${body}
     <button class="btn pri block" data-act="startFlow" data-cat="${c.id}" data-id="${c.flows[0][0]}">${ic('sparkle')}${c.name} 대본 만들기</button>` };
+};
+
+V.browse = p => {
+  const q = (p.q || '').trim(), cf = p.cat || '', d = doneTopics(), res = [];
+  for (const c of sortedCats().list) {
+    if (cf && c.id !== cf) continue;
+    topicsOf(c.id).forEach((t, i) => { if (!q || t.join(' ').includes(q)) res.push([c.id, i]); });
+  }
+  const shown = res.slice(0, 150);
+  return { title: '대본 주제 찾기', back: true, html: `
+    <div class="search">${ic('search')}<input class="in" id="bq" type="search" data-q="1" placeholder="주제나 단어로 찾기" value="${esc(q)}" aria-label="주제 검색">${q ? `<button class="ib sm" data-act="bclear" aria-label="검색어 지우기">${ic('x')}</button>` : ''}</div>
+    <div class="chips"><button class="chip ${!cf ? 'on' : ''}" data-act="set" data-k="p_cat" data-v="">전체</button>${sortedCats().list.map(c => `<button class="chip ${cf === c.id ? 'on' : ''}" style="--h:${c.hue}" data-act="set" data-k="p_cat" data-v="${c.id}">${ic(CICON[c.id])}${c.name}</button>`).join('')}</div>
+    <div class="sec">${h2('list', `${q ? `“${esc(q)}” ` : ''}${res.length}개`)}
+    ${shown.length ? `<div class="list">${shown.map(([c, i]) => topicRow(c, i, true, d)).join('')}</div>${res.length > shown.length ? `<p class="hint">앞의 ${shown.length}개만 보여 줍니다. 검색어나 분야로 좁혀 보세요.</p>` : ''}`
+      : `<div class="card empty"><b>맞는 주제가 없습니다</b>다른 단어로 찾거나, 직접 주제를 넣어 만들어 보세요.<div style="margin-top:14px"><button class="btn sm blue" data-act="quickMake" data-q="${esc(q)}">${ic('edit')}“${esc(q)}”로 직접 만들기</button></div></div>`}</div>` };
 };
 
 V.pick = p => {
@@ -744,7 +808,11 @@ const A = {
   back: () => onBack(),
   go: d => go(d.v, d.id ? { id: d.id } : {}),
   tab: d => { if (d.v === 'create') { if (!form) newForm(); return go('create'); } tab(d.v); },
-  quick: () => { const t = $('#quick').value.trim(); newForm({ topic: t }); go('create'); },
+  quick: () => { const t = $('#quick').value.trim(); go('browse', { q: t }); },
+  quickMake: d => { newForm({ topic: d.q || '' }); go('create'); },
+  openTopic: d => openTopic(d.cat, +d.i),
+  reshuffle: () => { cur().p.seed = (cur().p.seed || 0) + 1; render(); },
+  bclear: () => { cur().p.q = ''; render(); },
   useHook: d => { newForm(Object.assign({}, form && form.topic ? form : {}, { hook: d.id })); go('create'); },
   hookTo: d => { const p = cur().p; newForm({ topic: p.t || '', who: p.who || '', tone: p.tone || 0, hook: d.id }); go('create'); },
   startFlow: d => { newForm({ cat: d.cat, format: d.id, topic: form ? form.topic : '' }); go('create'); },
@@ -831,6 +899,7 @@ document.addEventListener('input', e => {
   else if (d.set) { settings[d.set] = t.value; saveSettings(); }
   else if (d.s) { draft[d.s] = t.value; dirty = true; if (t.classList.contains('ag')) autoGrow(t); }
   else if (d.b) { draft.beats[+t.closest('.beat').dataset.i][d.b] = t.value; dirty = true; if (t.classList.contains('ag')) autoGrow(t); refreshEditor(); }
+  else if (d.q) { cur().p.q = t.value; clearTimeout(t._t); const id = t.id; t._t = setTimeout(() => { render(); const n = $('#' + id); if (n) { n.focus(); n.setSelectionRange(n.value.length, n.value.length); } }, 350); }
   else if (t.id === 'lq') { cur().p.q = t.value; clearTimeout(t._t); t._t = setTimeout(() => { render(); const n = $('#lq'); n.focus(); n.setSelectionRange(n.value.length, n.value.length); }, 350); }
 });
 document.addEventListener('keydown', e => { if (e.key === 'Enter' && e.target.id === 'quick') A.quick(); if ((e.key === 'Enter' || e.key === ' ') && e.target.getAttribute('role') === 'button') { e.preventDefault(); e.target.click(); } if (e.key === 'Escape') onBack(); });
