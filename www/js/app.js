@@ -7,7 +7,7 @@ const CAT = Object.fromEntries(CATEGORIES.map(c => [c.id, c]));
 const FMT = Object.fromEntries(FORMATS.map(f => [f.id, f]));
 const HOOK = Object.fromEntries(HOOKS.map(h => [h.id, h]));
 const CTA = Object.fromEntries(CTAS.map(c => [c.id, c]));
-const APP_VERSION = '1.1.0';
+const APP_VERSION = '1.2.0';
 
 const store = {
   get(k, d) { try { const v = localStorage.getItem('ssm.' + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
@@ -117,7 +117,8 @@ function makeCtx(o) {
 }
 function generate(o) {
   const cat = CAT[o.cat], f = FMT[o.format], ctx = makeCtx(o), ti = ctx.ti;
-  const hookId = o.hook && o.hook !== 'auto' ? o.hook : cat.hook;
+  let hookId = o.hook && o.hook !== 'auto' ? o.hook : cat.hook;
+  if ((!o.hook || o.hook === 'auto') && hookId === 'result' && ['review', 'news', 'myth'].includes(o.format)) hookId = 'proof';
   const ctaId = o.cta && o.cta !== 'auto' ? o.cta : STAGE_META[o.stage].cta;
   const len = o.len, hookSec = len <= 20 ? 2 : 3, rest = len - hookSec;
   const sumP = f.beats.reduce((a, b) => a + (b.p || 0), 0);
@@ -247,7 +248,7 @@ window.addEventListener('popstate', () => { if (exiting) return; history.pushSta
 function layer(html, center) {
   const L = $('#layer'); L.className = center ? 'center' : ''; L.innerHTML = html; overlays.push(1);
 }
-function closeLayer() { overlays.pop(); $('#layer').innerHTML = ''; layerActs = {}; }
+function closeLayer() { if (aiToken) { aiToken.cancel = true; aiToken = null; } overlays.pop(); $('#layer').innerHTML = ''; layerActs = {}; }
 let layerActs = {};
 function dialog(title, body, acts) {
   layerActs = {};
@@ -320,6 +321,137 @@ function recommend(p) {
   }).sort((a, b) => b.s - a.s);
 }
 
+/* ---------- AI (Gemini) ---------- */
+const AI_DEFAULT_MODEL = 'gemini-2.5-flash';
+const aiKeys = () => String(settings.aiKeys || '').split(/[,\s\n]+/).map(k => k.trim()).filter(Boolean);
+const aiModel = () => String(settings.aiModel || AI_DEFAULT_MODEL).replace(/^models\//, '').trim() || AI_DEFAULT_MODEL;
+const maskKey = k => k.length > 10 ? k.slice(0, 4) + '…' + k.slice(-4) : '••••';
+const httpWait = {}, keyRest = {};
+window.__nativeHttp = (id, status, text) => { const f = httpWait[id]; delete httpWait[id]; if (f) f({ status, text }); };
+function httpReq(url, { method = 'GET', headers = {}, body = '' } = {}) {
+  if (Native.has() && window.AndroidBridge.http) return new Promise(res => { const id = uid(); httpWait[id] = res; window.AndroidBridge.http(id, url, method, JSON.stringify(headers), body || ''); });
+  return fetch(url, { method, headers, body: body || undefined }).then(async r => ({ status: r.status, text: await r.text() }), () => ({ status: 0, text: '' }));
+}
+function aiErr(r, ki) {
+  let msg = ''; try { msg = JSON.parse(r.text).error.message || ''; } catch (e) {}
+  const who = `${ki + 1}번 키`;
+  if (r.status === 0) return '인터넷에 연결되지 않았습니다. 연결을 확인하고 다시 시도하세요.';
+  if (r.status === 400 && /API key/i.test(msg)) return `${who}가 올바르지 않습니다.`;
+  if (r.status === 429) return `${who}의 사용 한도가 찼습니다.`;
+  if (r.status === 403) return `${who}에 이 API 사용 권한이 없습니다.`;
+  if (r.status === 404) return `모델 "${aiModel()}"을 찾을 수 없습니다. 설정에서 모델 목록을 불러와 다른 모델을 고르세요.`;
+  if (r.status >= 500) return 'Gemini 서버가 혼잡합니다. 잠시 후 다시 시도하세요.';
+  return `${who} 요청 실패 (${r.status}) ${msg.slice(0, 80)}`;
+}
+const AI_SYS = `너는 유튜브 쇼츠 대본 전문 작가다. 조회수가 터지는 쇼츠의 원리를 반드시 지킨다.
+- 첫 문장은 3초 안에 읽히고 궁금증을 만든다 (숫자, 질문, 경고, 결과 먼저 보여 주기 중 하나).
+- 인사, 자기소개, 채널 소개는 쓰지 않는다. 한 영상에는 약속 하나만 담는다.
+- 한 문장은 한 호흡에 읽히게 짧게 쓴다. 같은 표현을 구간끼리 반복하지 않는다.
+- 뻔한 말 대신 구체적인 숫자, 사례, 감각 표현을 쓴다. 확실하지 않은 수치나 사실은 지어내지 말고 일반적인 표현을 쓴다.
+- 자막(cap)은 화면에 띄울 핵심어로 12자 이내, 장면(shot)은 촬영·편집 지시로 20자 안팎으로 쓴다.
+- 마지막 구간은 시청자에게 행동 하나만 짧게 요청하고, 가능하면 첫 문장으로 자연스럽게 이어지게 한다.
+- 한국어로만 쓰고 JSON만 출력한다.`;
+async function gemini(prompt, schema, token) {
+  const keys = aiKeys(); if (!keys.length) throw new Error('설정에서 Gemini API 키를 먼저 넣어 주세요.');
+  const body = JSON.stringify({ systemInstruction: { parts: [{ text: AI_SYS }] }, contents: [{ role: 'user', parts: [{ text: prompt }] }],
+    generationConfig: { temperature: 0.9, responseMimeType: 'application/json', responseSchema: schema } });
+  const start = (settings.aiNext || 0) % keys.length, errs = [], now = Date.now();
+  const order = keys.map((_, i) => (start + i) % keys.length).sort((a, b) => ((keyRest[keys[a]] || 0) > now) - ((keyRest[keys[b]] || 0) > now));
+  for (const ki of order) {
+    if (token.cancel) throw new Error('cancel');
+    const r = await httpReq(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(aiModel())}:generateContent`, { method: 'POST', headers: { 'Content-Type': 'application/json', 'x-goog-api-key': keys[ki] }, body });
+    if (r.status === 200) {
+      settings.aiNext = (ki + 1) % keys.length; saveSettings();
+      let text = ''; try { text = JSON.parse(r.text).candidates[0].content.parts.map(p => p.text || '').join(''); } catch (e) {}
+      text = text.replace(/^\s*```(?:json)?/i, '').replace(/```\s*$/, '');
+      try { return JSON.parse(text); } catch (e) { errs.push('AI 응답을 읽지 못했습니다. 다시 시도하세요.'); continue; }
+    }
+    errs.push(aiErr(r, ki));
+    if (r.status === 429) keyRest[keys[ki]] = Date.now() + 60e3;
+    else if (r.status === 400 || r.status === 403) keyRest[keys[ki]] = Date.now() + 600e3;
+    if (r.status === 404 || r.status === 0) break;
+  }
+  throw new Error(errs.length > 1 ? `모든 키가 실패했습니다.\n${errs.join('\n')}` : errs[0]);
+}
+const S_STR = { type: 'STRING' }, S_BEAT = { type: 'OBJECT', properties: { say: S_STR, cap: S_STR, shot: S_STR }, required: ['say', 'cap', 'shot'] };
+function aiContext(s) {
+  const c = CAT[s.cat], f = FMT[s.format], st = STAGE_META[s.stage], h = HOOK[s.hook], ct = CTA[s.cta], inp = s.input || {};
+  return `주제: ${s.topic}
+분야: ${c.name} (${c.why})
+스크립트 흐름: ${f.name} (${f.sum})
+타깃 시청자: ${inp.who || '주제에 맞게 판단'}
+핵심 포인트: 1) ${inp.p1 || '직접 채울 것'} 2) ${inp.p2 || '직접 채울 것'} 3) ${inp.p3 || '직접 채울 것'}
+시청자가 얻는 것: ${inp.gain || '직접 정할 것'}
+말투: ${s.tone ? '반말 (친구에게 말하듯)' : '존댓말 (~요 체)'}
+채널 단계: ${st.name}, ${st.focus}
+훅 유형: ${h.name} (${h.why})
+마무리 유형: ${ct.name} (${ct.why})
+목표 길이: ${s.len}초, 초당 약 ${settings.cps}자로 읽음
+추가 요청: ${(s.aiReq || '').trim() || '없음'}`;
+}
+const beatLine = (b, i) => `${i + 1}. ${b.k} (${fmtSec(b.sec)}, 대사 최대 ${Math.max(6, Math.floor(b.sec * settings.cps))}자)`;
+const draftLines = s => s.beats.map((b, i) => `${i + 1}. [${b.k}] ${b.say} / 자막: ${b.cap} / 장면: ${b.shot}`).join('\n');
+let aiToken = null;
+function aiRun(label, job, apply) {
+  if (!aiKeys().length) return dialog('Gemini API 키가 필요합니다', '설정에서 키를 넣으면 AI로 대본을 쓸 수 있습니다.', [['닫기', null], ['설정 열기', () => go('settings'), 'pri']]);
+  const token = { cancel: false }; aiToken = token; layerActs = { c0: () => { token.cancel = true; } };
+  layer(`<div class="dialog" role="alertdialog" aria-label="${esc(label)}"><span class="spin" aria-hidden="true"></span><h3>${esc(label)}</h3><p>Gemini · ${esc(aiModel())}<br>보통 10~30초 걸립니다.</p><div class="acts"><button class="btn" data-lact="c0">취소</button></div></div>`, true);
+  job(token).then(res => { if (token.cancel) return; aiToken = null; closeLayer(); apply(res); },
+    e => { if (token.cancel) return; aiToken = null; closeLayer(); dialog('AI 생성에 실패했습니다', e.message, [['닫기', null], ['설정 열기', () => go('settings')]]); });
+}
+function aiWriteAll() {
+  const s = draft;
+  aiRun('AI가 대본을 쓰는 중', token => gemini(`${aiContext(s)}
+
+아래 구간의 순서와 개수(${s.beats.length}개)를 그대로 지켜 각 구간의 say(읽을 대사), cap(화면 자막), shot(촬영·편집 지시)을 써라. 대사는 구간별 글자 수 한도를 넘기지 마라.
+${s.beats.map(beatLine).join('\n')}
+
+titles에는 쇼츠 제목 5개 (40자 이내, 앞쪽에 검색어), tags에는 해시태그 4~5개 (# 포함), pin에는 댓글을 부르는 고정 댓글 질문 1개를 써라.
+
+현재 초안 (참고만 하고 더 좋게 바꿔라):
+${draftLines(s)}`, { type: 'OBJECT', properties: { beats: { type: 'ARRAY', items: S_BEAT }, titles: { type: 'ARRAY', items: S_STR }, tags: { type: 'ARRAY', items: S_STR }, pin: S_STR }, required: ['beats', 'titles', 'tags', 'pin'] }, token),
+  r => {
+    if (!Array.isArray(r.beats) || !r.beats.length) return toast('AI 응답이 비어 있습니다');
+    draft._undo = JSON.stringify({ beats: draft.beats, titles: draft.titles, tags: draft.tags, pin: draft.pin, title: draft.title });
+    r.beats.slice(0, draft.beats.length).forEach((nb, i) => { const b = draft.beats[i]; b.say = String(nb.say || b.say).trim(); b.cap = String(nb.cap || '').trim(); b.shot = String(nb.shot || b.shot).trim(); });
+    if (Array.isArray(r.titles) && r.titles.length) { draft.titles = r.titles.slice(0, 5).map(String); draft.title = draft.titles[0]; }
+    if (Array.isArray(r.tags) && r.tags.length) draft.tags = r.tags.slice(0, 5).map(t => '#' + String(t).replace(/^#+/, '').replace(/\s+/g, ''));
+    if (r.pin) draft.pin = String(r.pin);
+    draft.ai = true; dirty = true; render(); toast('AI가 대본을 썼습니다');
+  });
+}
+function aiRewriteBeat(i) {
+  const s = draft, b = s.beats[i];
+  aiRun(`AI가 "${b.k}" 구간을 쓰는 중`, token => gemini(`${aiContext(s)}
+
+전체 대본:
+${draftLines(s)}
+
+이 중 ${i + 1}번 구간 "${b.k}" (${fmtSec(b.sec)}, 대사 최대 ${Math.max(6, Math.floor(b.sec * settings.cps))}자)만 서로 다른 방향으로 3가지 다시 써라. 앞뒤 구간과 자연스럽게 이어져야 하고 다른 구간의 표현을 반복하지 마라.`,
+  { type: 'OBJECT', properties: { options: { type: 'ARRAY', items: S_BEAT } }, required: ['options'] }, token),
+  r => {
+    const opts = (r.options || []).filter(o => o && o.say).slice(0, 3);
+    if (!opts.length) return toast('AI 응답이 비어 있습니다');
+    sheet(`${b.k} · 마음에 드는 안을 고르세요`, opts.map((o, n) => [`${n + 1}안 · ${o.say}`, `자막: ${o.cap || '-'} · 장면: ${o.shot || '-'}`, () => { b.say = String(o.say).trim(); b.cap = String(o.cap || b.cap).trim(); b.shot = String(o.shot || b.shot).trim(); dirty = true; render(); toast(`${n + 1}안으로 바꿨습니다`); }]));
+  });
+}
+async function aiTest() {
+  const keys = aiKeys(); if (!keys.length) return toast('API 키를 먼저 넣어 주세요');
+  const box = $('#aiStatus'); if (box) box.innerHTML = `<span class="spin sm"></span> 키 ${keys.length}개 확인 중…`;
+  const lines = []; let models = [];
+  for (let i = 0; i < keys.length; i++) {
+    const r = await httpReq('https://generativelanguage.googleapis.com/v1beta/models?pageSize=200', { headers: { 'x-goog-api-key': keys[i] } });
+    if (r.status === 200) {
+      lines.push([true, `${i + 1}번 키 ${maskKey(keys[i])} 사용 가능`]);
+      if (!models.length) try { models = JSON.parse(r.text).models.filter(m => (m.supportedGenerationMethods || []).includes('generateContent')).map(m => m.name.replace(/^models\//, '')).filter(n => /^gemini/.test(n) && !/(embed|image|tts|audio|live|vision|aqa|robotics|computer)/i.test(n)); } catch (e) {}
+    } else lines.push([false, `${i + 1}번 키 ${maskKey(keys[i])}: ${aiErr(r, i)}`]);
+  }
+  settings.aiModels = models.slice(0, 16);
+  if (models.length && !models.includes(aiModel())) settings.aiModel = models.find(n => n === AI_DEFAULT_MODEL) || models.find(n => /flash/.test(n) && !/lite|preview|exp/.test(n)) || models[0];
+  settings.aiCheck = lines; saveSettings(); render();
+  const ok = lines.filter(l => l[0]).length; toast(ok ? `키 ${keys.length}개 중 ${ok}개 사용 가능` : '사용 가능한 키가 없습니다');
+}
+
 /* ---------- 화면들 ---------- */
 const V = {};
 V.home = () => {
@@ -377,14 +509,14 @@ V.create = () => {
       ${[1, 2, 3].map(i => `<div class="field"><label for="f_p${i}">핵심 포인트 ${i}</label><input class="in" id="f_p${i}" data-f="p${i}" value="${esc(form['p' + i])}" placeholder="${['원인, 첫 번째 방법, 3위 등', '해결책, 두 번째 방법, 2위 등', '결과, 가장 중요한 것, 1위 등'][i - 1]}"></div>`).join('')}
       <div class="field"><label for="f_gain">시청자가 얻는 것 한 줄</label><input class="in" id="f_gain" data-f="gain" value="${esc(form.gain)}" placeholder="예: 곰팡이는 말리는 게 먼저예요"></div>
     </div></details>
-    <div class="sticky"><button class="btn pri block" data-act="generate">${ic('sparkle')}대본 생성</button></div>` };
+    <div class="sticky">${aiKeys().length ? `<button class="btn" data-act="generate">${ic('list')}공식으로</button><button class="btn pri" data-act="generateAi">${ic('sparkle')}AI로 대본 생성</button>` : `<button class="btn pri block" data-act="generate">${ic('sparkle')}대본 생성</button>`}</div>` };
 };
 
 function beatCard(b, i, sp) {
   const e = est(b.say), over = e > b.sec + 0.6, cls = b.type === 'hook' ? 'h' : b.type === 'cta' ? 'c' : '';
   return `<div class="beat ${cls}" data-i="${i}">
     <div class="tc num"><span class="pdot">${ic('play')}</span><b>${tc(sp[0])}</b><small>${fmtSec(b.sec)}</small></div>
-    <div class="box card"><div class="hd"><span class="pill">${esc(b.k)}</span><span class="sp"></span><span class="tag ${over ? 'a' : 'ok'} num" data-est>읽기 ${fmtSec(e)}</span>${b.type === 'hook' ? '<button class="pbtn" data-act="swapHook">다른 훅</button>' : b.type === 'cta' ? '<button class="pbtn" data-act="swapCta">다른 마무리</button>' : ''}<button class="ib sm" data-act="beatMenu" aria-label="${esc(b.k)} 메뉴">${ic('more')}</button></div>
+    <div class="box card"><div class="hd"><span class="pill">${esc(b.k)}</span><span class="sp"></span><span class="tag ${over ? 'a' : 'ok'} num" data-est>${ic('clock')}${fmtSec(e)}</span>${b.type === 'hook' ? '<button class="pbtn" data-act="swapHook">다른 훅</button>' : b.type === 'cta' ? '<button class="pbtn" data-act="swapCta">다른 마무리</button>' : ''}<button class="ib sm" data-act="beatMenu" aria-label="${esc(b.k)} 메뉴">${ic('more')}</button></div>
       <textarea rows="1" class="ag" data-b="say" aria-label="${esc(b.k)} 대사" placeholder="여기에 대사를 적으세요">${esc(b.say)}</textarea>
       <div class="sub"><span>${ic('caption')}자막</span><input data-b="cap" value="${esc(b.cap)}" placeholder="화면에 띄울 글자" aria-label="자막"><span>${ic('scene')}장면</span><input data-b="shot" value="${esc(b.shot)}" placeholder="무엇을 보여 줄지" aria-label="장면"></div>
     </div></div>`;
@@ -397,6 +529,10 @@ V.editor = () => {
     <div class="ehead"><div class="tline"><span class="playdot">${ic('play')}</span><textarea class="titlein ag" rows="1" data-s="title" aria-label="대본 제목">${esc(s.title)}</textarea></div>${art('mic', 218)}</div>
     <div>${tlBar(s)}<div class="tlmeta num"><span>0:00 훅</span><span>본론</span><span>마무리 ${tc(s.len)}</span></div></div>
     <div class="stats num"><div class="stat t1"><span class="v">${ic('target')}${s.len}초</span><small>목표 길이</small></div><div class="stat t2 ${sc.total > s.len * 1.05 ? 'bad' : ''}" id="stTotal"><span class="v">${ic('clock')}<b>${fmtSec(sc.total)}</b></span><small>읽기 시간</small></div><div class="stat t3" id="stScore"><span class="v">${ic('checkc')}<b>${sc.score}점</b></span><small>완성도</small></div></div>
+    <div class="card aicard"><div class="aih"><span class="glyph" style="--h:262">${ic('sparkle')}</span><span class="grow"><b>AI로 대본 쓰기</b><small>${aiKeys().length ? `Gemini · ${esc(aiModel())} · 키 ${aiKeys().length}개` : '설정에서 Gemini API 키를 넣으면 쓸 수 있습니다'}</small></span>${s.ai ? `<span class="tag pur">${ic('sparkle')}AI 작성</span>` : ''}</div>
+      ${aiKeys().length ? `<input class="in" id="ai_req" data-s="aiReq" value="${esc(s.aiReq || '')}" placeholder="추가 요청 (선택) 예: 더 웃기게, 가게 이름 넣어서">` : ''}
+      <div class="aiacts">${s._undo ? `<button class="btn sm" data-act="aiUndo">${ic('back')}AI 전으로</button>` : ''}<button class="btn sm blue" data-act="${aiKeys().length ? 'aiWrite' : 'settings'}">${ic('sparkle')}${aiKeys().length ? 'AI로 전체 대본 쓰기' : 'API 키 넣으러 가기'}</button></div>
+      ${aiKeys().length ? `<p class="hint">구간별로 다시 쓰려면 각 구간의 ⋮ 메뉴를 누르세요.</p>` : ''}</div>
     <div class="sec beats" id="beats">${s.beats.map((b, i) => beatCard(b, i, sp[i])).join('')}
       <button class="btn sm" data-act="addBeat">${ic('plus')}구간 추가</button></div>
     <div class="sec">${h2('checkc', '완성도 점검')}<div class="card score"><ul id="scoreList">${scoreList(sc)}</ul></div></div>
@@ -413,7 +549,7 @@ function refreshEditor() {
   const sc = scoreOf(draft);
   $('#stTotal').classList.toggle('bad', sc.total > draft.len * 1.05); $('#stTotal b').textContent = fmtSec(sc.total);
   $('#stScore b').textContent = sc.score + '점'; $('#scoreList').innerHTML = scoreList(sc);
-  $$('#beats .beat').forEach((el, i) => { const b = draft.beats[i], e = est(b.say), t = $('[data-est]', el); t.textContent = '읽기 ' + fmtSec(e); t.className = 'tag num ' + (e > b.sec + 0.6 ? 'a' : 'ok'); });
+  $$('#beats .beat').forEach((el, i) => { const b = draft.beats[i], e = est(b.say), t = $('[data-est]', el); t.innerHTML = ic('clock') + fmtSec(e); t.className = 'tag num ' + (e > b.sec + 0.6 ? 'a' : 'ok'); });
 }
 function saveDraft() {
   draft.updated = Date.now(); delete draft.sample;
@@ -536,6 +672,14 @@ V.settings = () => ({ title: '설정', back: true, html: `
   <div class="sec"><span class="lab">${ic('sun')}화면 테마</span>${seg('theme', [['light', '밝게'], ['dark', '어둡게'], ['system', '기기 설정']], settings.theme)}</div>
   <div class="sec"><span class="lab">${ic('mic')}말하는 속도</span>${seg('cps', [[5, '차분하게'], [6, '보통'], [7, '빠르게']], settings.cps)}<p class="hint">초당 ${settings.cps}자로 읽기 시간을 계산합니다.</p></div>
   <div class="sec"><span class="lab">${ic('road')}내 채널 단계</span>${seg('stage', STAGE_META.map(s => [s.id, s.name]), settings.stage)}</div>
+  <div class="sec">${h2('sparkle', 'AI 대본 (Gemini)')}<div class="card aibox">
+    <div class="field"><label for="ai_keys">${ic('shield')}API 키 <span class="tag">${aiKeys().length}개</span></label><textarea class="in mono" id="ai_keys" rows="3" data-set="aiKeys" placeholder="AIza... , AIza... (쉼표로 여러 개)" autocomplete="off" autocapitalize="off" spellcheck="false">${esc(settings.aiKeys || '')}</textarea></div>
+    <p class="hint">쉼표로 여러 개를 넣으면 요청마다 번갈아 쓰고, 한도가 찼거나 막힌 키는 건너뛰고 다음 키로 넘어갑니다. 키는 aistudio.google.com 에서 발급받을 수 있습니다.</p>
+    <div class="field"><label for="ai_model">${ic('cpu')}모델</label><input class="in mono" id="ai_model" data-set="aiModel" value="${esc(aiModel())}" autocomplete="off" autocapitalize="off" spellcheck="false"></div>
+    ${(settings.aiModels || []).length ? `<div class="chips wrap">${settings.aiModels.map(m => `<button class="chip ${m === aiModel() ? 'on' : ''}" data-act="aiPick" data-v="${esc(m)}">${esc(m)}</button>`).join('')}</div>` : ''}
+    <div class="aiacts"><button class="btn sm" data-act="aiClear">${ic('trash')}키 지우기</button><button class="btn sm blue" data-act="aiTest">${ic('checkc')}키 확인·모델</button></div>
+    <div id="aiStatus" class="aistat">${(settings.aiCheck || []).map(([ok, t]) => `<div class="${ok ? 'ok' : 'bad'}">${ic(ok ? 'checkc' : 'x')}<span>${esc(t)}</span></div>`).join('')}</div>
+    <p class="hint">키는 이 기기에만 저장되며, AI 기능을 쓸 때 대본 내용과 함께 Google Gemini API로만 전송됩니다.</p></div></div>
   <div class="sec">${h2('shield', '백업')}<div class="list">
     ${setRow('download', 218, '모든 대본 백업하기', `대본 ${scripts.length}편을 파일 하나로 저장`, 'backup')}
     ${setRow('folder', 150, '백업 파일 불러오기', '같은 대본은 건너뛰고 새 대본만 추가', 'restore')}</div></div>
@@ -543,7 +687,8 @@ V.settings = () => ({ title: '설정', back: true, html: `
     ${setRow('shield', 262, '개인정보 처리방침', '', 'privacy')}
     <div class="row"><span class="glyph" style="--h:196">${ic('info')}</span><span class="grow"><b>버전</b></span><span class="chev num">${APP_VERSION}</span></div></div></div>` });
 V.privacy = () => ({ title: '개인정보 처리방침', back: true, html: `${pageHead({ lead: '쇼츠 대본메이커는 개인정보를 수집하지 않습니다.', icon: 'shield', hue: 262 })}<div class="card" style="display:flex;flex-direction:column;gap:10px">
-  <p style="margin:0">작성한 대본과 설정은 이 기기 안에만 저장되며 서버로 전송되지 않습니다. 앱을 삭제하면 함께 지워집니다.</p>
+  <p style="margin:0">작성한 대본, 설정, Gemini API 키는 이 기기 안에만 저장됩니다. 앱을 삭제하면 함께 지워집니다.</p>
+  <p style="margin:0">AI 기능은 사용자가 직접 넣은 Gemini API 키로 동작합니다. AI 버튼을 누를 때만 대본 주제와 내용이 Google Gemini API로 전송되며, 이 전송에는 Google의 약관과 개인정보 처리방침이 적용됩니다. 앱 제작자의 서버로는 아무것도 전송되지 않습니다.</p>
   <p style="margin:0">내보내기와 공유는 사용자가 직접 선택한 곳으로만 전달됩니다.</p>
   <p style="margin:0">문의: happyfamily1984.3@gmail.com</p></div>` });
 
@@ -633,7 +778,7 @@ const A = {
   swapCta: () => { const i = CTAS.findIndex(h => h.id === draft.cta), c = CTAS[(i + 1) % CTAS.length]; draft.cta = c.id; const b = draft.beats.filter(x => x.type === 'cta').pop();
     b.say = fill(c.tpl[draft.tone], { t: draft.topic }); b.cap = c.name; dirty = true; render(); toast(c.name); },
   beatMenu: (d, el) => { const i = +el.closest('.beat').dataset.i, b = draft.beats[i];
-    sheet(b.k, [['1초 늘리기', `지금 ${fmtSec(b.sec)}`, () => { b.sec += 1; draft.len += 1; dirty = true; render(); }], ['1초 줄이기', '', () => { if (b.sec > 1.5) { b.sec -= 1; draft.len -= 1; dirty = true; } render(); }],
+    sheet(b.k, [['AI로 이 구간 다시 쓰기', aiKeys().length ? '3가지 안 중에서 고르기' : '설정에서 Gemini API 키를 넣어야 합니다', () => aiRewriteBeat(i)], ['1초 늘리기', `지금 ${fmtSec(b.sec)}`, () => { b.sec += 1; draft.len += 1; dirty = true; render(); }], ['1초 줄이기', '', () => { if (b.sec > 1.5) { b.sec -= 1; draft.len -= 1; dirty = true; } render(); }],
       ['위로 옮기기', '', () => { if (i > 1) { draft.beats.splice(i - 1, 0, draft.beats.splice(i, 1)[0]); dirty = true; } render(); }], ['이 구간 삭제', '', () => { draft.len -= b.sec; draft.beats.splice(i, 1); dirty = true; render(); }]]); },
   addBeat: () => { const i = draft.beats.length - (draft.beats[draft.beats.length - 1].type === 'cta' ? 1 : 0); draft.beats.splice(i, 0, { k: '추가 구간', type: 'body', sec: 3, say: '', cap: '', shot: '' }); draft.len += 3; dirty = true; render(); },
   ltab: d => { cur().p.tab = d.v; render(true); },
@@ -647,6 +792,13 @@ const A = {
   exportShown: () => { const ids = $$('#view [data-act="open"]').map(e => e.dataset.id), p = cur().p; exportFlow(scripts.filter(s => ids.includes(s.id)), p.cat ? CAT[p.cat].name : '전체'); },
   rerender: () => render(),
   privacy: () => go('privacy'),
+  settings: () => go('settings'),
+  aiWrite: () => aiWriteAll(),
+  aiUndo: () => { if (!draft._undo) return; Object.assign(draft, JSON.parse(draft._undo)); delete draft._undo; draft.ai = false; dirty = true; render(); toast('AI 전으로 되돌렸습니다'); },
+  aiTest: () => aiTest(),
+  aiPick: d => { settings.aiModel = d.v; saveSettings(); render(); toast(`모델을 ${d.v}로 바꿨습니다`); },
+  aiClear: () => dialog('API 키를 모두 지울까요?', '이 기기에 저장된 키만 지워집니다.', [['취소', null], ['지우기', () => { settings.aiKeys = ''; settings.aiCheck = []; saveSettings(); render(); toast('키를 지웠습니다'); }, 'pri']]),
+  generateAi: () => { if (!form.topic.trim()) { toast('주제를 적어 주세요'); $('#f_topic').focus(); return; } draft = generate(form); dirty = true; form = null; go('editor', {}, true); aiWriteAll(); },
   myCat: d => { const a = settings.myCats, on = a.includes(d.id); if (on) a.splice(a.indexOf(d.id), 1); else a.push(d.id); saveSettings(); render(); toast(on ? `${CAT[d.id].name}${josa(CAT[d.id].name, "을")} 내 분야에서 뺐습니다` : `${CAT[d.id].name}${josa(CAT[d.id].name, "을")} 내 분야로 고정했습니다`); },
   ptr: d => { const p = cur().p, a = p.tr = p.tr || []; a.includes(d.v) ? a.splice(a.indexOf(d.v), 1) : a.push(d.v); render(); },
   lclear: () => { cur().p.q = ''; render(); },
@@ -676,6 +828,7 @@ document.addEventListener('input', e => {
   const t = e.target, d = t.dataset;
   if (d.f) form[d.f] = t.value;
   else if (d.p) cur().p[d.p] = t.value;
+  else if (d.set) { settings[d.set] = t.value; saveSettings(); }
   else if (d.s) { draft[d.s] = t.value; dirty = true; if (t.classList.contains('ag')) autoGrow(t); }
   else if (d.b) { draft.beats[+t.closest('.beat').dataset.i][d.b] = t.value; dirty = true; if (t.classList.contains('ag')) autoGrow(t); refreshEditor(); }
   else if (t.id === 'lq') { cur().p.q = t.value; clearTimeout(t._t); t._t = setTimeout(() => { render(); const n = $('#lq'); n.focus(); n.setSelectionRange(n.value.length, n.value.length); }, 350); }

@@ -165,6 +165,30 @@ svg.art{width:132px;height:auto;flex:none;overflow:visible}
 .stagebox p b{color:var(--ink);display:block;margin-bottom:2px}
 .cats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px 6px}
 .cat{display:flex;flex-direction:column;align-items:center;gap:7px;font-size:12.5px;font-weight:650;color:var(--ink2);text-align:center;line-height:1.25}
+.beat .hd{flex-wrap:nowrap}
+.beat .hd .tag svg.i{width:14px;height:14px}
+.beat .hd .pbtn{padding:6px 11px}
+.aicard,.aibox{display:flex;flex-direction:column;gap:12px}
+.aicard{background:linear-gradient(135deg,var(--surface),var(--pur-soft))}
+.aih{display:flex;align-items:center;gap:12px}
+.aih .grow{flex:1;min-width:0}
+.aih b{display:block;font-weight:780;font-size:16px}
+.aih small{display:block;color:var(--muted);font-size:12.5px}
+.aiacts{display:flex;gap:8px;flex-wrap:wrap}
+.aiacts .btn{flex:1}
+.mono{font-family:ui-monospace,"SFMono-Regular",Menlo,monospace;font-size:14px!important;word-break:break-all}
+.aistat{display:flex;flex-direction:column;gap:6px;font-size:13.5px}
+.aistat:empty{display:none}
+.aistat div{display:flex;gap:7px;align-items:flex-start}
+.aistat svg.i{width:17px;height:17px;margin-top:1px}
+.aistat .ok{color:var(--ok)}
+.aistat .bad{color:var(--red)}
+.spin{display:inline-block;align-self:center;width:44px;height:44px;border-radius:50%;border:4px solid var(--blue-soft);border-top-color:var(--blue);animation:spin .9s linear infinite;margin-bottom:8px}
+.spin.sm{width:16px;height:16px;border-width:2px;margin:0 6px -3px 0}
+@keyframes spin{to{transform:rotate(360deg)}}
+.sheet .row b{white-space:normal}
+.sheet .row small{white-space:normal}
+.dialog p{white-space:pre-line}
 .cat .gw{position:relative;display:block}
 .rk{position:absolute;top:-7px;left:-7px;min-width:24px;height:24px;padding:0 6px;border-radius:99px;background:var(--surface);color:var(--ink2);font-size:12.5px;font-weight:820;display:grid;place-items:center;box-shadow:var(--shadow-s);border:1px solid var(--line)}
 .rk.top{background:linear-gradient(135deg,var(--pink),var(--red));color:#fff;border-color:transparent}

@@ -20,7 +20,14 @@ import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import android.window.OnBackInvokedDispatcher;
 
+import org.json.JSONObject;
+
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.Iterator;
 import java.nio.charset.StandardCharsets;
 
 public class MainActivity extends Activity {
@@ -172,6 +179,44 @@ public class MainActivity extends Activity {
         @JavascriptInterface
         public void setDark(boolean d) {
             runOnUiThread(() -> { dark = d; applyBars(); });
+        }
+
+        @JavascriptInterface
+        public void http(String id, String url, String method, String headersJson, String body) {
+            new Thread(() -> {
+                int status = 0;
+                String text = "";
+                HttpURLConnection c = null;
+                try {
+                    if (!url.startsWith("https://generativelanguage.googleapis.com/")) throw new IllegalArgumentException("blocked host");
+                    c = (HttpURLConnection) new URL(url).openConnection();
+                    c.setRequestMethod(method);
+                    c.setConnectTimeout(15000);
+                    c.setReadTimeout(120000);
+                    JSONObject h = new JSONObject(headersJson);
+                    Iterator<String> it = h.keys();
+                    while (it.hasNext()) { String k = it.next(); c.setRequestProperty(k, h.getString(k)); }
+                    if (body != null && !body.isEmpty()) {
+                        c.setDoOutput(true);
+                        try (OutputStream os = c.getOutputStream()) { os.write(body.getBytes(StandardCharsets.UTF_8)); }
+                    }
+                    status = c.getResponseCode();
+                    InputStream in = status >= 400 ? c.getErrorStream() : c.getInputStream();
+                    if (in != null) {
+                        ByteArrayOutputStream bo = new ByteArrayOutputStream();
+                        byte[] buf = new byte[8192]; int n;
+                        while ((n = in.read(buf)) > 0) bo.write(buf, 0, n);
+                        in.close();
+                        text = bo.toString("UTF-8");
+                    }
+                } catch (Exception e) {
+                    status = 0;
+                } finally {
+                    if (c != null) c.disconnect();
+                }
+                final String js = "window.__nativeHttp && window.__nativeHttp(" + JSONObject.quote(id) + "," + status + "," + JSONObject.quote(text) + ")";
+                runOnUiThread(() -> web.evaluateJavascript(js, null));
+            }).start();
         }
 
         @JavascriptInterface
