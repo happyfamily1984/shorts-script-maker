@@ -393,4 +393,25 @@ const CHECKLIST = [
 ];
 
 /* 처음 실행했을 때 보여 주는 예시 대본 */
+/* 분야 지표 (1~5): pop 조회수·시청자 규모, rpm 광고 단가, ease 시작 쉬움, comp 경쟁 여유
+   face 얼굴·몸 노출이 유리, out 밖에서 촬영 필요. 일반적인 경향을 바탕으로 한 추정치 */
+const CAT_METRICS = {
+  story:  { pop: 5, rpm: 2, ease: 4, comp: 2, face: 0, out: 0, note: '댓글과 공유가 많아 노출이 빠릅니다. 광고 단가는 낮은 편입니다.' },
+  eat:    { pop: 5, rpm: 3, ease: 3, comp: 2, face: 1, out: 1, note: '시청자층이 넓고 지역 검색 유입이 꾸준합니다. 밖에서 촬영해야 합니다.' },
+  game:   { pop: 5, rpm: 2, ease: 4, comp: 1, face: 0, out: 0, note: '시청자가 가장 많은 편이지만 채널도 많아 경쟁이 셉니다.' },
+  pet:    { pop: 5, rpm: 2, ease: 3, comp: 3, face: 0, out: 0, note: '반복 시청과 공유가 많습니다. 반려동물이 있어야 시작할 수 있습니다.' },
+  food:   { pop: 4, rpm: 3, ease: 3, comp: 2, face: 0, out: 0, note: '완성 화면만으로 시선을 끕니다. 손과 소리만으로도 촬영할 수 있습니다.' },
+  info:   { pop: 4, rpm: 3, ease: 5, comp: 3, face: 0, out: 0, note: '얼굴 없이 폰 하나로 시작하기 가장 쉽고 저장이 많이 일어납니다.' },
+  media:  { pop: 4, rpm: 2, ease: 4, comp: 2, face: 0, out: 0, note: '조회수는 잘 나오지만 원본 영상 사용은 저작권에 주의해야 합니다.' },
+  beauty: { pop: 4, rpm: 4, ease: 3, comp: 1, face: 1, out: 0, note: '광고와 협찬 단가가 높지만 경쟁 채널이 많습니다.' },
+  fit:    { pop: 4, rpm: 4, ease: 3, comp: 2, face: 1, out: 0, note: '광고 단가가 높고 저장이 많습니다. 몸이나 동작을 보여 줘야 합니다.' },
+  vlog:   { pop: 3, rpm: 2, ease: 4, comp: 2, face: 1, out: 0, note: '팬이 생기면 오래가지만 초반 노출은 느린 편입니다.' },
+  money:  { pop: 3, rpm: 5, ease: 4, comp: 3, face: 0, out: 0, note: '광고 단가가 가장 높은 분야입니다. 정확한 정보와 출처가 중요합니다.' },
+  tech:   { pop: 3, rpm: 5, ease: 3, comp: 3, face: 0, out: 0, note: '광고 단가가 높고 구매 전에 찾아보는 시청자가 많습니다.' },
+  shop:   { pop: 3, rpm: 5, ease: 4, comp: 3, face: 0, out: 0, note: '쇼핑 연결로 수익화가 빠릅니다. 광고 표기를 꼭 지켜야 합니다.' },
+  grow:   { pop: 3, rpm: 4, ease: 5, comp: 2, face: 0, out: 0, note: '얼굴 없이도 가능하고 단가도 괜찮지만 비슷한 채널이 많습니다.' },
+  kids:   { pop: 3, rpm: 4, ease: 3, comp: 4, face: 0, out: 0, note: '부모 시청자의 저장이 많고 경쟁이 덜합니다. 아이 노출 기준을 정해야 합니다.' },
+  travel: { pop: 3, rpm: 3, ease: 2, comp: 3, face: 0, out: 1, note: '광고 단가는 괜찮지만 이동과 촬영 비용이 듭니다.' }
+};
+
 const SAMPLE = { topic:'자취방 곰팡이 제거', who:'자취생', p1:'환기를 안 해서 습기가 갇혀요', p2:'락스 대신 과탄산소다를 따뜻한 물에 풀어 뿌리세요', p3:'2주째 다시 안 생깁니다', gain:'곰팡이는 닦는 것보다 말리는 게 먼저예요', cat:'info', format:'problem', hook:'neg', len:30 };

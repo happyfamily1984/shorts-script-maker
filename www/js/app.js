@@ -7,13 +7,13 @@ const CAT = Object.fromEntries(CATEGORIES.map(c => [c.id, c]));
 const FMT = Object.fromEntries(FORMATS.map(f => [f.id, f]));
 const HOOK = Object.fromEntries(HOOKS.map(h => [h.id, h]));
 const CTA = Object.fromEntries(CTAS.map(c => [c.id, c]));
-const APP_VERSION = '1.0.0';
+const APP_VERSION = '1.1.0';
 
 const store = {
   get(k, d) { try { const v = localStorage.getItem('ssm.' + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
   set(k, v) { try { localStorage.setItem('ssm.' + k, JSON.stringify(v)); } catch (e) {} }
 };
-let settings = Object.assign({ theme: 'light', cps: 6, stage: 0, checks: [] }, store.get('settings', {}));
+let settings = Object.assign({ theme: 'light', cps: 6, stage: 0, checks: [], sort: 'pop', myCats: [] }, store.get('settings', {}));
 let scripts = store.get('scripts', null);
 const saveScripts = () => store.set('scripts', scripts);
 const saveSettings = () => { store.set('settings', settings); applyTheme(); };
@@ -291,11 +291,40 @@ const stepsOf = f => `<span class="steps">${f.beats.map(b => `<span>${b.k}</span
 const seg = (name, opts, val) => `<div class="seg" role="group">${opts.map(([v, l, i]) => `<button data-act="set" data-k="${name}" data-v="${v}" class="${String(v) === String(val) ? 'on' : ''}">${i ? ic(i) : ''}${l}</button>`).join('')}</div>`;
 const pageHead = o => `<div class="phead"><div class="ph-t">${o.eyebrow ? `<span class="eyebrow">${ic(o.eicon || 'sparkle')}${o.eyebrow}</span>` : ''}${o.title ? `<h2>${o.title}</h2>` : ''}${o.lead ? `<p>${o.lead}</p>` : ''}</div>${art(o.icon, o.hue)}</div>`;
 
+/* 분야 정렬·추천 */
+const SORTS = [['pop', '조회수순', 'flame'], ['rpm', '수익순', 'chart'], ['ease', '쉬운순', 'bolt'], ['base', '기본순', 'grid']];
+const SORT_NOTE = { pop: '조회수와 시청자 규모가 큰 분야부터 보여 줍니다.', rpm: '광고 단가와 수익화가 유리한 분야부터 보여 줍니다.', ease: '혼자, 폰 하나로 시작하기 쉬운 분야부터 보여 줍니다.', base: '기본 순서입니다.' };
+const M = id => CAT_METRICS[id];
+function sortedCats(by = settings.sort) {
+  const mine = settings.myCats, arr = CATEGORIES.slice();
+  if (by !== 'base') arr.sort((a, b) => (M(b.id)[by] - M(a.id)[by]) || (M(b.id).pop - M(a.id).pop) || (M(b.id).rpm - M(a.id).rpm) || (M(b.id).ease - M(a.id).ease));
+  const rank = {}; arr.forEach((c, i) => rank[c.id] = i + 1);
+  return { list: [...arr.filter(c => mine.includes(c.id)), ...arr.filter(c => !mine.includes(c.id))], rank };
+}
+const metricTags = m => [m.pop >= 4 && '조회수 높음', m.rpm >= 4 && '광고 단가 높음', m.ease >= 4 && '시작 쉬움', m.comp >= 4 && '경쟁 적음', !m.face && '얼굴 없이 가능'].filter(Boolean);
+const dots = v => `<span class="dots" aria-label="5점 중 ${v}점">${[1, 2, 3, 4, 5].map(i => `<i class="${i <= v ? 'on' : ''}"></i>`).join('')}</span>`;
+const TRAITS = [['pet', '반려동물이 있어요'], ['kids', '아이를 키워요'], ['game', '게임을 자주 해요'], ['cook', '요리를 자주 해요'], ['beauty', '꾸미는 걸 좋아해요'], ['money', '돈 관리에 관심 많아요']];
+function recommend(p) {
+  const goal = p.goal || 'views', face = p.face ?? 1, place = p.place ?? 0, tr = p.tr || [];
+  const W = { views: { pop: 3, rpm: .5, ease: 1, comp: 1 }, money: { pop: 1, rpm: 3, ease: 1, comp: 1 }, long: { pop: 1, rpm: 1, ease: 2, comp: 2 } }[goal];
+  const max = Object.values(W).reduce((a, w) => a + w * 5, 0) + 4;
+  const bonus = { pet: 'pet', kids: 'kids', game: 'game', food: 'cook', beauty: 'beauty', money: 'money' };
+  return CATEGORIES.map(c => {
+    const m = M(c.id); let s = Object.entries(W).reduce((a, [k, w]) => a + m[k] * w, 0);
+    if (!face && m.face) s -= 5;
+    if (!place && m.out) s -= 5;
+    if (bonus[c.id] && tr.includes(bonus[c.id])) s += 4;
+    if (c.id === 'pet' && !tr.includes('pet')) s -= 8;
+    if (c.id === 'kids' && !tr.includes('kids')) s -= 4;
+    return { c, m, s, pct: Math.max(5, Math.min(99, Math.round(s / max * 100))) };
+  }).sort((a, b) => b.s - a.s);
+}
+
 /* ---------- 화면들 ---------- */
 const V = {};
 V.home = () => {
   const st = STAGE_META[settings.stage], recent = [...scripts].sort((a, b) => b.updated - a.updated).slice(0, 3);
-  const day = Math.floor(Date.now() / 864e5), h = HOOKS[day % HOOKS.length], c = CATEGORIES[day % CATEGORIES.length];
+  const day = Math.floor(Date.now() / 864e5), h = HOOKS[day % HOOKS.length], c = CATEGORIES[day % CATEGORIES.length], cats = sortedCats();
   return { nav: 'home', top: `<div class="brand"><img src="img/icon.png" alt="">쇼츠 대본메이커</div><button class="ib" data-act="go" data-v="settings" aria-label="설정">${ic('gear')}</button>`,
     html: `
     <section class="hero card">
@@ -306,8 +335,10 @@ V.home = () => {
       <div class="card stagebox">${seg('stage', STAGE_META.map(s => [s.id, s.name]), settings.stage)}
         <p><b>${st.range} · ${st.key}</b>${st.focus}</p></div>
     </section>
-    <section class="sec">${h2('layers', '분야별 흐름과 성장 로드맵')}
-      <div class="card"><div class="cats">${CATEGORIES.map(c => `<button class="cat" data-act="go" data-v="category" data-id="${c.id}">${glyph(c, 1)}${c.name}</button>`).join('')}</div></div>
+    <section class="sec">${h2('layers', '분야 고르기', `<button class="pbtn blue" data-act="go" data-v="pick">${ic('target')}분야 추천받기</button>`)}
+      <div class="chips">${SORTS.map(([v, l, i]) => `<button class="chip ${settings.sort === v ? 'on' : ''}" data-act="set" data-k="sort" data-v="${v}">${ic(i)}${l}</button>`).join('')}</div>
+      <div class="card"><div class="cats">${cats.list.map(c => `<button class="cat" data-act="go" data-v="category" data-id="${c.id}"><span class="gw">${glyph(c, 1)}${settings.myCats.includes(c.id) ? `<span class="mine" title="내 분야">${ic('star')}</span>` : settings.sort !== 'base' ? `<span class="rk num ${cats.rank[c.id] <= 3 ? 'top' : ''}">${cats.rank[c.id]}</span>` : ''}</span>${c.name}</button>`).join('')}</div>
+        <p class="hint" style="margin-top:16px">${SORT_NOTE[settings.sort]} 순위는 일반적인 경향을 바탕으로 한 추정치이며, 분야 화면에서 ☆를 누른 내 분야는 맨 앞에 옵니다.</p></div>
     </section>
     <section class="sec">${h2('clock', '최근 대본', `<button class="pbtn" data-act="tab" data-v="library">전체 보기${ic('chevron')}</button>`)}
       ${recent.length ? `<div class="list">${recent.map(s => scriptRow(s)).join('')}</div>` : `<div class="card empty"><b>아직 대본이 없습니다</b>위에 주제를 적고 만들기를 눌러 보세요.</div>`}
@@ -330,7 +361,7 @@ V.create = () => {
   return { nav: 'create', title: '대본 만들기', back: true, flush: true, html: `
     ${pageHead({ eyebrow: '새 대본', title: '무엇을 찍을까요?', lead: '주제와 흐름만 고르면 시간별 대본이 나옵니다.', icon: 'clapper', hue: 222 })}
     <div class="field"><label for="f_topic">${ic('edit')}주제</label><input class="in" id="f_topic" data-f="topic" value="${esc(form.topic)}" placeholder="예: 자취방 곰팡이 제거" maxlength="40"></div>
-    <div class="sec"><span class="lab">${ic('layers')}분야</span><div class="chips">${CATEGORIES.map(x => `<button class="chip ${x.id === form.cat ? 'on' : ''}" style="--h:${x.hue}" data-act="set" data-k="cat" data-v="${x.id}">${ic(CICON[x.id])}${x.name}</button>`).join('')}</div></div>
+    <div class="sec"><span class="lab">${ic('layers')}분야</span><div class="chips">${sortedCats().list.map(x => `<button class="chip ${x.id === form.cat ? 'on' : ''}" style="--h:${x.hue}" data-act="set" data-k="cat" data-v="${x.id}">${ic(CICON[x.id])}${x.name}</button>`).join('')}</div></div>
     <div class="sec">${h2('clapper', '스크립트 흐름', `<button class="pbtn" data-act="allFlows">${showAll ? '추천만 보기' : '전체 14개 보기'}</button>`)}
       <div class="list">${(showAll ? order : rec.includes(form.format) ? rec : [form.format, ...rec]).map(id => { const f = FMT[id], r = c.flows.find(x => x[0] === id), on = id === form.format;
         return `<button class="flow ${on ? 'on' : ''}" data-act="set" data-k="format" data-v="${id}"><span class="fh"><b>${f.name}</b>${r ? `<span class="tag a">${ic('flame')}이 분야 추천</span>` : ''}</span><small>${r ? esc(r[1]) + ' · ' : ''}${f.sum}</small>${stepsOf(f)}${on ? `<span class="okc">${ic('check')}</span>` : ''}</button>`; }).join('')}</div></div>
@@ -404,12 +435,30 @@ V.category = p => {
       <div class="stacts"><button class="pbtn" data-act="copy" data-t="${esc(txt)}">${ic('copy')}복사</button>${i === settings.stage ? '' : `<button class="pbtn" data-act="setStage" data-v="${i}">${ic('check')}내 단계로</button>`}<button class="pbtn blue" data-act="startStage" data-cat="${c.id}" data-v="${i}">${ic('edit')}이 단계 대본</button></div></div></div>`; }).join('')}</div>`;
   if (t === 'hook') body = `<div class="list">${c.hooks.map(h => `<div class="row"><span class="glyph" style="--h:${c.hue}">${ic('crown')}</span><span class="grow"><b style="white-space:normal">${esc(h)}</b></span><button class="pbtn" data-act="copy" data-t="${esc(h)}">${ic('copy')}복사</button></div>`).join('')}</div>
     <div class="card"><span class="tag a">${ic('flame')}추천 훅 · ${HOOK[c.hook].name}</span><p style="margin:10px 0 0">${HOOK[c.hook].why}</p></div>`;
-  return { title: c.name, back: true, html: `
+  const m = M(c.id), mine = settings.myCats.includes(c.id), pr = sortedCats('pop').rank[c.id];
+  return { title: c.name, back: true, acts: `<button class="ib star ${mine ? 'on' : ''}" data-act="myCat" data-id="${c.id}" aria-label="${mine ? '내 분야에서 빼기' : '내 분야로 고정'}">${ic('star')}</button>`, html: `
     ${pageHead({ lead: c.why, icon: CICON[c.id], hue: c.hue })}
+    <div class="card metric"><div class="mhd"><span class="tag ${pr <= 3 ? 'a' : ''}">${ic('flame')}조회수 순위 ${pr}위 / ${CATEGORIES.length}</span>${mine ? `<span class="tag warn">${ic('star')}내 분야</span>` : ''}</div>
+      ${[['pop', '조회수·시청자'], ['rpm', '수익성 (광고 단가)'], ['ease', '시작 쉬움'], ['comp', '경쟁 여유']].map(([k, l]) => `<div class="mrow"><span>${l}</span>${dots(m[k])}</div>`).join('')}
+      <p class="hint">${m.note}</p></div>
     <div class="chips wrap"><span class="chip hash">${ic('clock')}추천 길이 ${c.len}초</span>${c.tags.map(x => `<span class="chip hash">#${x}</span>`).join('')}</div>
     ${seg('ctab', [['flow', '스크립트 흐름', 'clapper'], ['road', '성장 로드맵', 'star'], ['hook', '훅 예시', 'crown']], t)}
     ${body}
     <button class="btn pri block" data-act="startFlow" data-cat="${c.id}" data-id="${c.flows[0][0]}">${ic('sparkle')}${c.name} 대본 만들기</button>` };
+};
+
+V.pick = p => {
+  const goal = p.goal || 'views', face = p.face ?? 1, place = p.place ?? 0, tr = p.tr || [], res = recommend(p).slice(0, 5);
+  return { title: '분야 추천받기', back: true, html: `
+    ${pageHead({ eyebrow: '나에게 맞는 분야', eicon: 'target', title: '어떤 분야가 좋을까요?', lead: '목표와 촬영 여건을 고르면 바로 아래에 맞는 분야가 정렬됩니다.', icon: 'target', hue: 350 })}
+    <div class="sec"><span class="lab">${ic('flame')}가장 원하는 것</span>${seg('p_goal', [['views', '빠른 조회수'], ['money', '수익'], ['long', '오래 가는 채널']], goal)}</div>
+    <div class="sec"><span class="lab">${ic('camera')}얼굴 노출</span>${seg('p_face', [[1, '괜찮아요'], [0, '안 할래요']], face)}</div>
+    <div class="sec"><span class="lab">${ic('pin')}촬영 장소</span>${seg('p_place', [[0, '집에서만'], [1, '밖에서도']], place)}</div>
+    <div class="sec"><span class="lab">${ic('check')}해당하는 것 (여러 개 선택)</span><div class="chips wrap">${TRAITS.map(([v, l]) => `<button class="chip ${tr.includes(v) ? 'on' : ''}" data-act="ptr" data-v="${v}">${tr.includes(v) ? ic('check') : ''}${l}</button>`).join('')}</div></div>
+    <div class="sec">${h2('crown', '추천 분야 TOP 5')}
+      <div class="list">${res.map((r, i) => { const mine = settings.myCats.includes(r.c.id); return `<div class="row" role="button" tabindex="0" data-act="go" data-v="category" data-id="${r.c.id}"><span class="rk num inline ${i < 3 ? 'top' : ''}">${i + 1}</span>${glyph(r.c)}<span class="grow"><b>${r.c.name}</b><span class="tagline">${metricTags(r.m).slice(0, 3).map(t => `<span class="tag">${t}</span>`).join('')}</span></span><span class="pct num">${r.pct}%</span><button class="ib sm star ${mine ? 'on' : ''}" data-act="myCat" data-id="${r.c.id}" aria-label="내 분야로 고정">${ic('star')}</button></div>`; }).join('')}</div>
+      <p class="hint">%는 고른 조건에 대한 적합도입니다. 일반적인 경향을 바탕으로 한 추천이니 내 채널 반응을 보며 조정하세요. ☆를 누르면 홈 맨 앞에 고정됩니다.</p></div>
+    <button class="btn pri block" data-act="startFlow" data-cat="${res[0].c.id}" data-id="${res[0].c.flows[0][0]}">${ic('sparkle')}1위 ${res[0].c.name} 대본 만들기</button>` };
 };
 
 V.learn = p => {
@@ -559,6 +608,8 @@ const A = {
     const k = d.k, v = /^\d+$/.test(d.v) ? +d.v : d.v;
     if (k === 'stage') { settings.stage = v; saveSettings(); }
     else if (k === 'theme' || k === 'cps') { settings[k] = v; saveSettings(); }
+    else if (k === 'sort') { settings.sort = v; saveSettings(); }
+    else if (k.startsWith('p_')) cur().p[k.slice(2)] = v;
     else if (k === 'ctab') cur().p.tab = v;
     else if (k === 'ptone') cur().p.tone = v;
     else if (k === 'fstage') form.stage = v;
@@ -596,6 +647,8 @@ const A = {
   exportShown: () => { const ids = $$('#view [data-act="open"]').map(e => e.dataset.id), p = cur().p; exportFlow(scripts.filter(s => ids.includes(s.id)), p.cat ? CAT[p.cat].name : '전체'); },
   rerender: () => render(),
   privacy: () => go('privacy'),
+  myCat: d => { const a = settings.myCats, on = a.includes(d.id); if (on) a.splice(a.indexOf(d.id), 1); else a.push(d.id); saveSettings(); render(); toast(on ? `${CAT[d.id].name}${josa(CAT[d.id].name, "을")} 내 분야에서 뺐습니다` : `${CAT[d.id].name}${josa(CAT[d.id].name, "을")} 내 분야로 고정했습니다`); },
+  ptr: d => { const p = cur().p, a = p.tr = p.tr || []; a.includes(d.v) ? a.splice(a.indexOf(d.v), 1) : a.push(d.v); render(); },
   lclear: () => { cur().p.q = ''; render(); },
   setStage: d => { settings.stage = +d.v; saveSettings(); render(); toast(`내 단계를 ${STAGE_META[+d.v].name}로 바꿨습니다`); },
   startStage: d => { newForm({ cat: d.cat, stage: +d.v }); go('create'); },
