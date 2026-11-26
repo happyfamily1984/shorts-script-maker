@@ -417,7 +417,8 @@
           0.22,
           1
         ]
-      }
+      },
+      "optional": true
     },
     {
       "do": "click",

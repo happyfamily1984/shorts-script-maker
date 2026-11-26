@@ -141,7 +141,8 @@
       ],
       "until": {
         "desc": "Generated Image"
-      }
+      },
+      "optional": true
     },
     {
       "do": "waitFor",

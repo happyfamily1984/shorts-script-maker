@@ -419,7 +419,8 @@ const KLING_FLOW_DEFAULT = {
      0.22,
      1
     ]
-   }
+   },
+   "optional": true
   },
   {
    "do": "click",
@@ -1042,7 +1043,8 @@ const GROK_FLOW_DEFAULT = {
    ],
    "until": {
     "desc": "Generated Image"
-   }
+   },
+   "optional": true
   },
   {
    "do": "waitFor",
