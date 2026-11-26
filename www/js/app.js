@@ -521,6 +521,8 @@ function researchPrompt(n, platform) {
 
 /* ---------- 클링 자동 입력 (접근성 서비스) ---------- */
 const flowNow = () => (settings.klingFlow && Array.isArray(settings.klingFlow.shot)) ? settings.klingFlow : KLING_FLOW_DEFAULT;
+const grokFlow = () => (settings.grokFlow && Array.isArray(settings.grokFlow.shot)) ? settings.grokFlow : GROK_FLOW_DEFAULT;
+const gInfo = () => { if (!Native.has() || !window.AndroidBridge.autoInfo) return null; try { return JSON.parse(window.AndroidBridge.autoInfo('grok', grokFlow().package || '')); } catch (e) { return null; } };
 const flowUrl = () => String(settings.klingFlowUrl || '').trim() || KLING_FLOW_URL_DEFAULT;
 const kInfo = () => { if (!Native.has() || !window.AndroidBridge.klingInfo) return null; try { return JSON.parse(window.AndroidBridge.klingInfo(flowNow().package || '')); } catch (e) { return null; } };
 async function buildKlingJob(p, range) {
@@ -536,7 +538,7 @@ async function buildKlingJob(p, range) {
 }
 function klingNeedSetup(info) {
   if (!Native.has()) return dialog('안드로이드 앱에서만 됩니다', '클링 자동 입력은 휴대폰에 설치한 앱에서 동작합니다.', [['닫기', null]]), true;
-  if (!info || !info.on) return dialog('클링 자동 입력을 켜 주세요', '접근성 설정 > 설치된 앱 > "숏드라마 메이커 · 클링 자동 입력"을 켜야 합니다. 켜지지 않고 회색이면 앱 정보 > 오른쪽 위 ⋮ > "제한된 설정 허용"을 먼저 누르세요.', [['앱 정보', () => window.AndroidBridge.openAppInfo()], ['접근성 설정', () => window.AndroidBridge.openAccessibility(), 'pri']]), true;
+  if (!info || !info.on) return dialog('자동 입력을 켜 주세요', '접근성 설정 > 설치된 앱 > "숏드라마 메이커 · 자동 입력"을 켜야 합니다. 켜지지 않고 회색이면 앱 정보 > 오른쪽 위 ⋮ > "제한된 설정 허용"을 먼저 누르세요.', [['앱 정보', () => window.AndroidBridge.openAppInfo()], ['접근성 설정', () => window.AndroidBridge.openAccessibility(), 'pri']]), true;
   if (!info.pkg) return dialog('클링 앱을 찾지 못했습니다', '클링 앱이 설치되어 있는지 확인하세요.', [['닫기', null]]), true;
   return false;
 }
@@ -555,14 +557,60 @@ function klingSend() {
 }
 async function fetchFlow() {
   toast('순서를 불러오는 중…');
-  const r = await httpReq(flowUrl() + (flowUrl().includes('?') ? '&' : '?') + 't=' + Date.now());
-  if (r.status !== 200) return dialog('순서를 불러오지 못했습니다', r.status === 404 ? '주소에 파일이 없습니다. 저장소가 비공개이거나 아직 main 브랜치에 올라가지 않았을 수 있습니다.' : r.status === 0 ? '인터넷 연결을 확인하세요.' : `응답 코드 ${r.status}`, [['닫기', null]]);
-  try { const f = JSON.parse(r.text); if (!Array.isArray(f.shot)) throw 0; settings.klingFlow = f; saveSettings(); render(); toast(`순서 ${f.version || ''}를 받았습니다`); }
-  catch (e) { dialog('파일 형식이 올바르지 않습니다', 'flow.json 이 올바른 JSON인지 확인하세요.', [['닫기', null]]); }
+  const got = [], bad = [];
+  for (const [key, url, name] of [['klingFlow', flowUrl(), '클링'], ['grokFlow', String(settings.grokFlowUrl || '').trim() || GROK_FLOW_URL_DEFAULT, '그록']]) {
+    const r = await httpReq(url + (url.includes('?') ? '&' : '?') + 't=' + Date.now());
+    try { if (r.status !== 200) throw r.status; const f = JSON.parse(r.text); if (!Array.isArray(f.shot)) throw 0; settings[key] = f; got.push(`${name} ${f.version || ''}`); }
+    catch (e) { bad.push(`${name}: ${e === 404 ? '파일 없음 (저장소 비공개이거나 main 브랜치에 없음)' : e === 0 && r.status === 0 ? '인터넷 연결 확인' : '읽지 못함'}`); }
+  }
+  saveSettings(); render();
+  if (bad.length) dialog(got.length ? '일부만 받았습니다' : '순서를 불러오지 못했습니다', [got.length ? '받음: ' + got.join(', ') : '', ...bad].filter(Boolean).join('\n'), [['닫기', null]]);
+  else toast(`순서를 받았습니다: ${got.join(', ')}`);
+}
+
+/* ---------- 그록으로 인물 이미지 만들기 ---------- */
+const GROK_PREFIX = { kr: '아래 설명대로 이미지 한 장을 만들어 줘.\n\n', en: 'Generate one image exactly as described below.\n\n' };
+function grokMake(ctx, ref, kind) {
+  const c = charTarget(ctx, ref); if (!c) return;
+  if (!Native.has()) return dialog('안드로이드 앱에서만 됩니다', '그록 자동 생성은 휴대폰에 설치한 앱에서 동작합니다.', [['닫기', null]]);
+  const info = gInfo();
+  if (!info || !info.on) return dialog('자동 입력을 켜 주세요', '접근성 설정 > 설치된 앱 > "숏드라마 메이커 · 자동 입력"을 켜야 합니다. 회색으로 막혀 있으면 앱 정보 > ⋮ > "제한된 설정 허용"을 먼저 누르세요.', [['앱 정보', () => window.AndroidBridge.openAppInfo()], ['접근성 설정', () => window.AndroidBridge.openAccessibility(), 'pri']]);
+  if (!info.pkg) return dialog('그록 앱을 찾지 못했습니다', '그록 앱이 설치되어 있는지 확인하세요.', [['닫기', null]]);
+  if (info.running) return toast('이미 자동 입력이 진행 중입니다');
+  if (!window.AndroidBridge.hasMediaPerm()) return dialog('사진 접근을 허용해 주세요', '그록이 저장한 이미지를 이 앱이 가져와 첨부하려면 사진 접근 권한이 필요합니다. "모두 허용"을 골라 주세요.', [['취소', null], ['허용하기', () => window.AndroidBridge.requestMediaPerm(), 'pri']]);
+  const m = MODE(), prompt = GROK_PREFIX[m] + (ctx === 'd' ? promptText(draft, `c:${ref}:${kind}`, m) : charPrompt(libProj(c), 0, m, kind));
+  dialog(`그록으로 ${KIND_NAME[kind]} 이미지 만들기`, `그록 앱을 열어 프롬프트를 넣고 이미지를 만든 뒤 저장하고 돌아옵니다. 진행 중에는 화면을 만지지 마세요.${grokFlow().verified ? '' : '\n\n아직 그록 화면에 맞춰지지 않은 순서라 중간에 멈출 수 있습니다. 멈추면 위쪽 막대의 "이 화면 기록"을 눌러 보내 주세요.'}`, [['취소', null], ['시작', () => {
+    const pend = { ctx, ref: String(ref), kind, since: Date.now(), pid: draft ? draft.id : '' };
+    store.set('pendingGrok', pend);
+    const r = window.AndroidBridge.startAuto('grok', JSON.stringify({ shots: [{ prompt, images: [] }], doneMsg: '그록 이미지를 저장했습니다. 숏드라마 메이커로 돌아갑니다.' }), JSON.stringify(grokFlow()));
+    if (r !== 'ok') { store.set('pendingGrok', null); dialog('그록 자동 생성을 시작하지 못했습니다', r, [['닫기', null]]); }
+  }, 'pri']]);
+}
+async function grokCollect(manual) {
+  const pend = store.get('pendingGrok', null); if (!pend || !Native.has()) return;
+  const info = gInfo(); if (info && info.running) return;
+  const url = window.AndroidBridge.latestImageSince(pend.since);
+  const c = pend.ctx === 'd' ? (draft && draft.id === pend.pid ? draft.chars[+pend.ref] : null) : charLib.find(x => x.id === pend.ref);
+  if (!url) {
+    if (!manual) return dialog('그록 이미지를 찾지 못했습니다', `${info && info.status ? info.status + '\n\n' : ''}그록에서 이미지를 저장했다면 "다시 찾기"를 누르세요. 아니면 사진 칸을 눌러 직접 첨부하세요.`, [['그만두기', () => store.set('pendingGrok', null)], ['다시 찾기', () => grokCollect(true), 'pri']]);
+    return toast('아직 새 이미지가 없습니다');
+  }
+  store.set('pendingGrok', null);
+  if (!c) return toast('이미지를 받았지만 넣을 인물이 없습니다. 대본을 다시 열어 직접 첨부하세요');
+  try {
+    const id = await imgPut(await shrinkDataUrl(url, pend.kind === 'full' ? 1400 : 1000));
+    c[pend.kind === 'full' ? 'imgFull' : 'imgFace'] = id;
+    if (pend.ctx === 'd') dirty = true; else { c.updated = Date.now(); saveCharLib(); }
+    render(); toast(`그록 이미지를 ${KIND_NAME[pend.kind]} 사진에 첨부했습니다`);
+  } catch (e) { toast('이미지를 저장하지 못했습니다'); }
+}
+function shrinkDataUrl(url, max) {
+  return fetch(url).then(r => r.blob()).then(b => shrinkImage(new File([b], 'grok.jpg', { type: b.type || 'image/jpeg' }), max));
 }
 const klingDumps = () => { if (!Native.has() || !window.AndroidBridge.readKlingDumps) return []; try { return JSON.parse(window.AndroidBridge.readKlingDumps() || '[]'); } catch (e) { return []; } };
 let seenStatus = '', seenDumps = 0;
 window.onAppResume = () => {
+  if (store.get('pendingGrok', null)) setTimeout(() => grokCollect(false), 600);
   const info = kInfo(); if (!info) return;
   if (info.status && info.status !== seenStatus && !info.running) { seenStatus = info.status; toast(info.status.slice(0, 60)); }
   const d = klingDumps().length;
@@ -595,7 +643,8 @@ const modeSeg = () => `<div class="mode" role="group" aria-label="제작 대상"
 const doneSet = () => new Set(projects.map(p => p.src).filter(Boolean));
 function dramaRow(theme, i, showTheme, done) {
   const s = dramasOf(theme)[i], t = TH[theme], k = isEn() ? 1 : 0;
-  return `<div class="row trow" role="button" tabindex="0" data-act="openDrama" data-th="${theme}" data-i="${i}">${glyph(t)}<span class="grow"><b>${esc(s[k])}</b><small>${showTheme ? t.name + ' · ' : ''}${esc(s[2 + k])}</small></span>${done && done.has(theme + ':' + i) ? '<span class="tag ok">작업함</span>' : ''}${chev}</div>`;
+  const side = t.sides && s[6] && s[6].side ? (t.sides.find(x => x[0] === s[6].side) || [])[1] : '';
+  return `<div class="row trow" role="button" tabindex="0" data-act="openDrama" data-th="${theme}" data-i="${i}">${glyph(t)}<span class="grow"><b>${esc(s[k])}</b><small>${showTheme ? t.name + ' · ' : ''}${side ? side + ' · ' : ''}${esc(s[2 + k])}</small></span>${done && done.has(theme + ':' + i) ? '<span class="tag ok">작업함</span>' : ''}${chev}</div>`;
 }
 const projRow = (p, extra) => { const t = TH[p.theme] || THEMES[0]; return `<div class="row" role="button" tabindex="0" data-act="open" data-id="${p.id}">${extra || glyph(t)}<span class="grow"><b>${esc(T(p))}</b><small>${t.name} · ${p.shots.length}샷 · ${totalSec(p)}초 · ${dateStr(p.updated)}</small></span>${extra ? '' : `<button class="ib sm star ${p.fav ? 'on' : ''}" data-act="fav" data-id="${p.id}" aria-label="즐겨찾기">${ic('star')}</button><button class="ib sm" data-act="rowMenu" data-id="${p.id}" aria-label="더보기">${ic('more')}</button>`}</div>`; };
 function openDrama(theme, i) { const s = dramasOf(theme)[i]; if (!s) return; draft = toProject(s, theme, theme + ':' + i); dirty = true; go('editor'); }
@@ -661,6 +710,7 @@ function viewChar(p) {
   const f = (k, l, ph, ta) => `<div class="field"><label>${l}</label>${ta ? `<textarea class="in ag" rows="2" data-lc="${c.id}:${k}" placeholder="${ph}">${esc(c[k])}</textarea>` : `<input class="in" data-lc="${c.id}:${k}" value="${esc(c[k])}" placeholder="${ph}">`}</div>`;
   return { title: cname(c) || '내 캐릭터', back: true, acts: `${modeSeg()}<button class="ib" data-act="delLibChar" data-id="${c.id}" aria-label="캐릭터 삭제">${ic('trash')}</button>`, html: `
     <div class="slots big">${imgSlot('l', c.id, c, 'full')}${imgSlot('l', c.id, c, 'face')}</div>
+    <div class="aiacts"><button class="btn sm grok" data-act="grokMake" data-ctx="l" data-ref="${c.id}" data-kind="full">${ic('sparkle')}그록으로 전신 생성</button><button class="btn sm grok" data-act="grokMake" data-ctx="l" data-ref="${c.id}" data-kind="face">${ic('sparkle')}그록으로 얼굴 생성</button></div>
     <div class="card ccard">
       <div class="field"><label>역할</label><select class="sel" data-lc="${c.id}:r">${Object.entries(ROLE_NAME).map(([r, n]) => `<option value="${r}" ${c.r === r ? 'selected' : ''}>${n}</option>`).join('')}</select></div>
       ${f('nk', '이름 (국내용)', '예: 서윤')}${f('ne', '이름 (해외용)', 'e.g. Grace')}
@@ -692,7 +742,7 @@ V.home = p => {
     </section>
     ${daily.length ? `<section class="sec">${h2('sparkle', '오늘 만들기 좋은 대본', `<button class="pbtn" data-act="reshuffle">${ic('refresh')}다른 대본</button>`)}
       <div class="list">${daily.map(([th, i]) => dramaRow(th, i, true, d)).join('')}</div></section>` : ''}
-    ${[['flame', '도파민 주제', THEMES.filter(t => !t.group)], ['bike', '직업 숏드라마', THEMES.filter(t => t.group === 'job')]].filter(g => g[2].length).map(([icon, title, list]) => `<section class="sec">${h2(icon, `${title} ${list.length}`)}
+    ${[['flame', '도파민 주제', THEMES.filter(t => !t.group)], ['sparkle', '추가 주제', THEMES.filter(t => t.group === 'extra')]].filter(g => g[2].length).map(([icon, title, list]) => `<section class="sec">${h2(icon, `${title} ${list.length}`)}
       <div class="card"><div class="cats">${list.map(t => { const n = THEMES.indexOf(t); return `<button class="cat" data-act="go" data-v="theme" data-id="${t.id}"><span class="gw">${glyph(t, 1)}${settings.myThemes.includes(t.id) ? `<span class="mine">${ic('star')}</span>` : `<span class="rk num ${n < 3 ? 'top' : ''}">${n + 1}</span>`}</span>${t.name}<small class="cnt num">${dramasOf(t.id).length ? dramasOf(t.id).length + '편' : '준비 중'}</small></button>`; }).join('')}</div></div></section>`).join('')}
     <section class="sec">${h2('clock', '최근 작업', `<button class="pbtn" data-act="tab" data-v="library">전체 보기${ic('chevron')}</button>`)}
       ${recent.length ? `<div class="list">${recent.map(x => projRow(x)).join('')}</div>` : `<div class="card empty"><b>아직 작업한 대본이 없습니다</b>주제를 골라 대본을 열고 저장해 보세요.</div>`}
@@ -701,11 +751,13 @@ V.home = p => {
 
 V.theme = p => {
   const t = TH[p.id], all = dramasOf(t.id), q = (p.q || '').trim(), d = doneSet(), mine = settings.myThemes.includes(t.id);
-  const idx = all.map((s, i) => i).filter(i => !q || all[i].slice(0, 4).join(' ').toLowerCase().includes(q.toLowerCase()));
+  const sd = t.sides ? (p.side || '') : '', sideOf = s => (s[6] && s[6].side) || '';
+  const idx = all.map((s, i) => i).filter(i => (!sd || sideOf(all[i]) === sd) && (!q || all[i].slice(0, 4).join(' ').toLowerCase().includes(q.toLowerCase())));
   return { title: t.name, back: true, acts: `${modeSeg()}<button class="ib star ${mine ? 'on' : ''}" data-act="myTheme" data-id="${t.id}" aria-label="내 주제로 고정">${ic('star')}</button>`, html: `
     ${pageHead({ eyebrow: t.en, eicon: 'globe', lead: `통쾌한 지점: ${t.punch}.`, icon: t.icon, hue: t.hue })}
     <div class="card formula"><b>${ic('flame')}이 주제의 6샷 공식</b><ol>${BEATS.map(b => `<li><span>${b[0]}</span>${b[2]}</li>`).join('')}</ol></div>
     <div class="search">${ic('search')}<input class="in" id="tq" type="search" data-q="1" placeholder="이 주제 안에서 찾기" value="${esc(q)}" aria-label="검색">${q ? `<button class="ib sm" data-act="qclear" aria-label="검색어 지우기">${ic('x')}</button>` : ''}</div>
+    ${t.sides ? `<div class="chips"><button class="chip ${!sd ? 'on' : ''}" data-act="set" data-k="p_side" data-v="">전체 ${all.length}</button>${t.sides.map(([v, l]) => `<button class="chip ${sd === v ? 'on' : ''}" data-act="set" data-k="p_side" data-v="${v}">${l} ${all.filter(x => sideOf(x) === v).length}</button>`).join('')}</div>` : ''}
     <div class="sec">${h2('list', `대본 ${idx.length}편`)}
       ${idx.length ? `<div class="list">${idx.map(i => dramaRow(t.id, i, false, d)).join('')}</div>` : `<div class="card empty"><b>${all.length ? '찾는 대본이 없습니다' : '대본을 준비 중입니다'}</b>${all.length ? '다른 단어로 찾아보세요.' : '곧 추가됩니다.'}</div>`}
       <p class="hint">대본을 누르면 인물, 샷, 프롬프트가 모두 채워진 작업 화면이 열립니다.</p></div>` };
@@ -763,7 +815,7 @@ function tabScript(p) {
 function tabCast(p) {
   const k = sfx(), en = isEn(), open = cur().p.cp || {};
   return `
-    <div class="card guide"><b>${ic('info')}인물 이미지 만드는 법</b><ol><li>"전신 프롬프트"를 누르고 그록이나 챗GPT 앱을 골라 보냅니다.</li><li>만들어진 이미지를 휴대폰에 저장한 뒤 "전신 사진" 칸에 첨부합니다. 얼굴도 같은 방법으로 만듭니다.</li><li>"내 캐릭터에 저장"을 누르면 설정과 사진이 앱에 남아 다른 대본에서도 불러올 수 있습니다.</li></ol>
+    <div class="card guide"><b>${ic('info')}인물 이미지 만드는 법</b><ol><li><b>원클릭:</b> "그록으로 전신 생성"을 누르면 그록 앱에서 이미지를 만들고 저장해 돌아와 사진 칸에 자동으로 넣습니다. (설정에서 자동 입력을 켜야 합니다)</li><li><b>직접:</b> "전신 프롬프트"로 그록·챗GPT에 보내 이미지를 만들고, 저장한 이미지를 사진 칸에 첨부합니다.</li><li>"내 캐릭터에 저장"을 누르면 설정과 사진이 앱에 남아 다른 대본에서도 불러올 수 있습니다.</li></ol>
       <button class="btn sm" data-act="loadChar">${ic('users')}내 캐릭터 불러오기${charLib.length ? ` (${charLib.length})` : ''}</button>
       <div class="frow wide"><span>${ic('globe')}인물 분위기</span><input data-set="${en ? 'castEn' : 'castKr'}" value="${esc(castOf(MODE()))}" aria-label="인물 분위기" placeholder="${en ? 'American' : '한국인'}"></div>
       <p class="hint">${en ? '해외용은 서양권 인물로 만듭니다. British, Latina처럼 바꿀 수 있습니다.' : '국내용은 한국 인물로 만듭니다.'} 모든 인물 프롬프트 앞에 붙습니다.</p></div>
@@ -773,6 +825,7 @@ function tabCast(p) {
       ${en ? `<div class="ko"><span>한국어 설명</span><textarea rows="1" class="ag" data-cf="${i}:dk" aria-label="외형 한국어 설명">${esc(c.dk)}</textarea></div><div class="ko"><span>한국어 이름</span><input data-cf="${i}:nk" value="${esc(c.nk)}" aria-label="한국어 이름"></div>` : ''}
       <div class="aiacts"><button class="btn sm blue" data-act="genChar" data-i="${i}" data-kind="full">${ic('share')}전신 프롬프트</button><button class="btn sm" data-act="genChar" data-i="${i}" data-kind="face">${ic('share')}얼굴 프롬프트</button></div>
       <div class="slots">${imgSlot('d', i, c, 'full')}${imgSlot('d', i, c, 'face')}</div>
+      <div class="aiacts"><button class="btn sm grok" data-act="grokMake" data-ctx="d" data-ref="${i}" data-kind="full">${ic('sparkle')}그록으로 전신 생성</button><button class="btn sm grok" data-act="grokMake" data-ctx="d" data-ref="${i}" data-kind="face">${ic('sparkle')}그록으로 얼굴 생성</button></div>
       <button class="btn sm ${c.libId ? '' : 'blue'}" data-act="saveChar" data-i="${i}">${ic(c.libId ? 'check' : 'download')}${c.libId ? '내 캐릭터에 저장됨 · 다시 저장' : '내 캐릭터에 저장'}</button>
       ${open[`${i}:full`] ? promptBox(p, `c:${i}:full`, `${esc(cname(c))} · 전신 이미지 프롬프트`) : ''}${open[`${i}:face`] ? promptBox(p, `c:${i}:face`, `${esc(cname(c))} · 얼굴 이미지 프롬프트`) : ''}
     </div>`).join('')}
@@ -888,14 +941,17 @@ V.settings = () => ({ title: '설정', back: true, html: `
     <div class="aiacts"><button class="btn sm" data-act="aiClear">${ic('trash')}키 지우기</button><button class="btn sm blue" data-act="aiTest">${ic('checkc')}키 확인·모델</button></div>
     <div id="aiStatus" class="aistat">${(settings.aiCheck || []).map(([ok, t]) => `<div class="${ok ? 'ok' : 'bad'}">${ic(ok ? 'checkc' : 'x')}<span>${esc(t)}</span></div>`).join('')}</div>
     <p class="hint">키는 이 기기에만 저장되며, AI 기능을 쓸 때 대본 내용과 함께 Google Gemini API로만 전송됩니다.</p></div></div>
-  <div class="sec">${h2('bolt', '클링 자동 입력')}${(() => { const info = kInfo(), f = flowNow(), nd = klingDumps().length; return `<div class="card aibox">
-    <div class="aistat">${Native.has() ? `<div class="${info && info.on ? 'ok' : 'bad'}">${ic(info && info.on ? 'checkc' : 'x')}<span>접근성 서비스 ${info && info.on ? '켜짐' : '꺼짐'}</span></div><div class="${info && info.pkg ? 'ok' : 'bad'}">${ic(info && info.pkg ? 'checkc' : 'x')}<span>${info && info.pkg ? `클링 앱: ${esc(info.label || info.pkg)}` : '클링 앱을 찾지 못함'}</span></div>` : '<div class="bad">' + ic('x') + '<span>휴대폰 앱에서만 쓸 수 있습니다</span></div>'}
-      <div class="${f.verified ? 'ok' : 'bad'}">${ic(f.verified ? 'checkc' : 'info')}<span>동작 순서 ${esc(f.version || '')}${f.verified ? '' : ' · 아직 일부만 클링 화면에 맞춰짐'}</span></div></div>
+  <div class="sec">${h2('bolt', '자동 입력 (클링·그록)')}${(() => { const info = kInfo(), gi = gInfo(), f = flowNow(), g = grokFlow(), nd = klingDumps().length, row = (ok, t) => `<div class="${ok ? 'ok' : 'bad'}">${ic(ok ? 'checkc' : 'x')}<span>${t}</span></div>`; return `<div class="card aibox">
+    <div class="aistat">${Native.has() ? row(info && info.on, `접근성 서비스 ${info && info.on ? '켜짐' : '꺼짐'}`) + row(info && info.pkg, info && info.pkg ? `클링 앱: ${esc(info.label || info.pkg)}` : '클링 앱을 찾지 못함') + row(gi && gi.pkg, gi && gi.pkg ? `그록 앱: ${esc(gi.label || gi.pkg)}` : '그록 앱을 찾지 못함') + row(window.AndroidBridge.hasMediaPerm && window.AndroidBridge.hasMediaPerm(), '사진 접근 권한 (그록 이미지 가져오기)') : '<div class="bad">' + ic('x') + '<span>휴대폰 앱에서만 쓸 수 있습니다</span></div>'}
+      <div class="${f.verified ? 'ok' : 'bad'}">${ic(f.verified ? 'checkc' : 'info')}<span>클링 순서 ${esc(f.version || '')}${f.verified ? '' : ' · 아직 일부만 맞춰짐'}</span></div>
+      <div class="${g.verified ? 'ok' : 'bad'}">${ic(g.verified ? 'checkc' : 'info')}<span>그록 순서 ${esc(g.version || '')}${g.verified ? '' : ' · 아직 그록 화면에 맞춰지지 않음'}</span></div></div>
+    ${Native.has() && window.AndroidBridge.hasMediaPerm && !window.AndroidBridge.hasMediaPerm() ? `<button class="btn sm" data-act="mediaPerm">${ic('shield')}사진 접근 허용하기</button>` : ''}
     <div class="aiacts"><button class="btn sm blue" data-act="openAcc">${ic('gear')}접근성 설정</button><button class="btn sm" data-act="openAppInfo">${ic('info')}앱 정보</button></div>
-    <p class="hint">켜는 방법: 접근성 설정 > 설치된 앱 > "숏드라마 메이커 · 클링 자동 입력" 켜기. 회색으로 막혀 있으면 앱 정보 > 오른쪽 위 ⋮ > "제한된 설정 허용"을 먼저 누르세요.</p>
-    <div class="aiacts"><button class="btn sm" data-act="flowFetch">${ic('refresh')}순서 업데이트</button><button class="btn sm" data-act="inspect">${ic('camera')}클링 화면 기록</button></div>
+    <p class="hint">켜는 방법: 접근성 설정 > 설치된 앱 > "숏드라마 메이커 · 자동 입력" 켜기. 회색으로 막혀 있으면 앱 정보 > 오른쪽 위 ⋮ > "제한된 설정 허용"을 먼저 누르세요.</p>
+    <div class="aiacts"><button class="btn sm" data-act="flowFetch">${ic('refresh')}순서 업데이트</button></div>
+    <div class="aiacts"><button class="btn sm" data-act="inspect" data-t="kling">${ic('camera')}클링 화면 기록</button><button class="btn sm" data-act="inspect" data-t="grok">${ic('camera')}그록 화면 기록</button></div>
     ${nd ? `<button class="btn sm blue" data-act="dumpOut">${ic('download')}기록한 화면 ${nd}개 파일로 저장</button>` : ''}
-    <p class="hint">"클링 화면 기록"을 누르면 클링 앱이 열리고 위쪽에 막대가 뜹니다. 만들기 화면, 모드 메뉴, 사진 고르는 화면, 생성 뒤 화면에서 각각 "이 화면 기록"을 누른 뒤 "끝내기"를 누르세요. 저장한 파일을 보내 주시면 순서를 맞춰 드립니다.</p>
+    <p class="hint">"화면 기록"을 누르면 그 앱이 열리고 위쪽에 막대가 뜹니다. 클링은 만들기 화면, 모드 메뉴, 사진 고르는 화면, 생성 뒤 화면에서, 그록은 첫 화면, 프롬프트를 보낸 뒤 이미지가 나온 화면, 이미지를 눌러 연 화면(저장 버튼이 보이는 화면)에서 각각 "이 화면 기록"을 누른 뒤 "끝내기"를 누르세요. 저장한 파일을 보내 주시면 순서를 맞춰 드립니다.</p>
     <p class="hint">클링 앱 화면을 대신 누르는 기능이라 클링 앱이 업데이트되면 멈출 수 있고, 클링 이용약관상 자동 조작이 문제가 될 수 있습니다. 본인 계정에서 본인 책임으로 쓰세요.</p></div>`; })()}</div>
   <div class="sec">${h2('shield', '백업')}<div class="list">
     ${setRow('download', 218, '모든 작업 백업하기', `작업 ${projects.length}편을 파일 하나로 저장`, 'backup')}
@@ -1024,7 +1080,9 @@ const A = {
   openAcc: () => { if (Native.has()) window.AndroidBridge.openAccessibility(); else toast('휴대폰 앱에서만 됩니다'); },
   openAppInfo: () => { if (Native.has()) window.AndroidBridge.openAppInfo(); else toast('휴대폰 앱에서만 됩니다'); },
   flowFetch: () => fetchFlow(),
-  inspect: () => { const info = kInfo(); if (klingNeedSetup(info)) return; window.AndroidBridge.clearKlingDumps(); seenDumps = 0; const r = window.AndroidBridge.startKlingInspect(flowNow().package || ''); if (r !== 'ok') toast(r); },
+  inspect: d => { const info = kInfo(); if (!Native.has() || !info || !info.on) return klingNeedSetup(info); window.AndroidBridge.clearKlingDumps(); seenDumps = 0; const t = d.t === 'grok' ? 'grok' : 'kling'; const r = window.AndroidBridge.startAutoInspect(t, (t === 'grok' ? grokFlow() : flowNow()).package || ''); if (r !== 'ok') toast(r); },
+  grokMake: d => grokMake(d.ctx, d.ref, d.kind),
+  mediaPerm: () => window.AndroidBridge.requestMediaPerm(),
   dumpOut: () => { const d = klingDumps(); if (!d.length) return toast('기록한 화면이 없습니다'); Native.save(`kling_screens_${dateStr().replace(/\./g, '')}.json`, 'application/json', JSON.stringify({ app: 'short-drama-maker', flow: flowNow().version, screens: d })); },
   hitsOut: () => outSheet('벤치마킹 목록', JSON.stringify({ version: 1, updated: dateStr().replace(/\./g, '-'), items: allHits() }, null, 2), 'hits.json', 'application/json'),
   rpOut: () => outSheet('조사 지시 프롬프트', researchPrompt(cur().p.n || 10, cur().p.pf || ''), fileName('조사지시프롬프트', 'txt')),

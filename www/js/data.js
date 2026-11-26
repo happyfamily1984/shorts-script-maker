@@ -24,8 +24,10 @@ const THEMES = [
   { id:'frame', name:'누명 벗기', en:'Framed No More', icon:'scale', hue:222, punch:'몰아세우던 사람이 화면 속 진범이다', tags:['framed','truth','justice'] },
   { id:'audition', name:'면접·오디션 실력 한 방', en:'They Laughed Until', icon:'mic', hue:96, punch:'비웃던 심사위원이 일어나 박수 친다', tags:['audition','talent','underdog'] },
   { id:'test', name:'위장 테스트', en:'The Undercover Boss', icon:'search', hue:186, punch:'친절했던 한 사람만 보상받는다', tags:['undercoverboss','test','kindness'] },
-  /* 직업 숏드라마 (group:'job'). 주인공의 직업이 고정되고 도파민 공식은 위 주제들을 섞어 쓴다 */
-  { id:'rider', group:'job', name:'배달라이더', en:'The Delivery Rider', icon:'bike', hue:24, punch:'무시당하던 배달라이더가 정체·실력·정의로 판을 뒤집는다', tags:['deliveryrider','delivery','karma'] }
+  /* 추가 주제 (group:'extra'). 21번부터. sides 가 있으면 입장별로 나눠 쓴다 */
+  { id:'rider', group:'extra', name:'라이더', en:'The Delivery Rider', icon:'bike', hue:24, punch:'무시당하던 배달라이더가 정체·실력·정의로 판을 뒤집는다', tags:['deliveryrider','delivery','karma'] },
+  { id:'gender', group:'extra', name:'남녀갈등', en:'Battle of the Sexes', icon:'chat', hue:275, punch:'혐오와 편견을 쏟아낸 사람이 증거와 실력 앞에서 무너진다', tags:['genderwar','karma','justice'],
+    sides:[['M', '남자 입장'], ['F', '여자 입장']] }
 ];
 
 /* 6샷 구조 이름과 역할 */
@@ -117,3 +119,4 @@ const CHECKLIST = [
 /* 히트작 벤치마킹 기본 주소 (설정에서 바꿀 수 있다) */
 const HITS_URL_DEFAULT = 'https://raw.githubusercontent.com/happyfamily1984/shorts-script-maker/main/hits/hits.json';
 const KLING_FLOW_URL_DEFAULT = 'https://raw.githubusercontent.com/happyfamily1984/shorts-script-maker/main/kling/flow.json';
+const GROK_FLOW_URL_DEFAULT = 'https://raw.githubusercontent.com/happyfamily1984/shorts-script-maker/main/grok/flow.json';

@@ -299,7 +299,7 @@ public class MainActivity extends Activity {
         @JavascriptInterface
         public String startKling(String jobJson, String flowJson) {
             try {
-                if (!KlingService.isOn()) return "접근성 설정에서 '숏드라마 메이커 · 클링 자동 입력'을 켜 주세요.";
+                if (!KlingService.isOn()) return "접근성 설정에서 '숏드라마 메이커 · 자동 입력'을 켜 주세요.";
                 JSONObject job = new JSONObject(jobJson), flow = new JSONObject(flowJson);
                 String pk = KlingService.findKling(MainActivity.this, flow.optString("package"));
                 if (pk.isEmpty()) return "클링 앱을 찾지 못했습니다. 클링 앱이 설치되어 있는지 확인하세요.";
@@ -310,7 +310,7 @@ public class MainActivity extends Activity {
 
         @JavascriptInterface
         public String startKlingInspect(String preferredPkg) {
-            if (!KlingService.isOn()) return "접근성 설정에서 '숏드라마 메이커 · 클링 자동 입력'을 켜 주세요.";
+            if (!KlingService.isOn()) return "접근성 설정에서 '숏드라마 메이커 · 자동 입력'을 켜 주세요.";
             String pk = KlingService.findKling(MainActivity.this, preferredPkg);
             runOnUiThread(() -> {
                 KlingService.self.startInspect();
@@ -318,6 +318,85 @@ public class MainActivity extends Activity {
                 if (li != null) { li.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); startActivity(li); }
             });
             return pk.isEmpty() ? "클링 앱을 찾지 못해 기록 막대만 띄웁니다. 클링 앱을 직접 여세요." : "ok";
+        }
+
+        /* ---------- 그록 등 다른 앱 (target: kling | grok) ---------- */
+        private String findTarget(String target, String preferred) {
+            return "grok".equals(target) ? KlingService.findGrok(MainActivity.this, preferred) : KlingService.findKling(MainActivity.this, preferred);
+        }
+
+        @JavascriptInterface
+        public String autoInfo(String target, String preferredPkg) {
+            try {
+                JSONObject o = new JSONObject();
+                o.put("on", KlingService.isOn());
+                o.put("running", KlingService.self != null && KlingService.self.isRunning());
+                String pk = findTarget(target, preferredPkg);
+                o.put("pkg", pk);
+                if (!pk.isEmpty()) o.put("label", String.valueOf(getPackageManager().getApplicationLabel(getPackageManager().getApplicationInfo(pk, 0))));
+                o.put("status", KlingService.lastStatus);
+                return o.toString();
+            } catch (Exception e) { return "{}"; }
+        }
+
+        @JavascriptInterface
+        public String startAuto(String target, String jobJson, String flowJson) {
+            try {
+                if (!KlingService.isOn()) return "접근성 설정에서 '숏드라마 메이커 · 자동 입력'을 켜 주세요.";
+                JSONObject job = new JSONObject(jobJson), flow = new JSONObject(flowJson);
+                String pk = findTarget(target, flow.optString("package"));
+                if (pk.isEmpty()) return ("grok".equals(target) ? "그록" : "클링") + " 앱을 찾지 못했습니다. 설치되어 있는지 확인하세요.";
+                job.put("package", pk);
+                return KlingService.self.startJob(job, flow) ? "ok" : "이미 자동 입력이 진행 중입니다.";
+            } catch (Exception e) { return "자동 입력을 시작하지 못했습니다: " + e.getMessage(); }
+        }
+
+        @JavascriptInterface
+        public String startAutoInspect(String target, String preferredPkg) {
+            if (!KlingService.isOn()) return "접근성 설정에서 '숏드라마 메이커 · 자동 입력'을 켜 주세요.";
+            String pk = findTarget(target, preferredPkg);
+            runOnUiThread(() -> {
+                KlingService.self.startInspect();
+                Intent li = pk.isEmpty() ? null : getPackageManager().getLaunchIntentForPackage(pk);
+                if (li != null) { li.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); startActivity(li); }
+            });
+            return pk.isEmpty() ? "앱을 찾지 못해 기록 막대만 띄웁니다. 앱을 직접 여세요." : "ok";
+        }
+
+        /* ---------- 갤러리에서 방금 저장된 사진 가져오기 ---------- */
+        private String mediaPerm() { return Build.VERSION.SDK_INT >= 33 ? "android.permission.READ_MEDIA_IMAGES" : "android.permission.READ_EXTERNAL_STORAGE"; }
+
+        @JavascriptInterface
+        public boolean hasMediaPerm() { return checkSelfPermission(mediaPerm()) == android.content.pm.PackageManager.PERMISSION_GRANTED; }
+
+        @JavascriptInterface
+        public void requestMediaPerm() { runOnUiThread(() -> requestPermissions(new String[]{mediaPerm()}, 21)); }
+
+        /* sinceMs 이후 추가된 가장 최근 사진(이 앱이 저장한 참조 사진은 제외)을 줄여서 data URL 로 */
+        @JavascriptInterface
+        public String latestImageSince(double sinceMs) {
+            String[] proj = {MediaStore.Images.Media._ID, MediaStore.Images.Media.DISPLAY_NAME};
+            String sel = MediaStore.Images.Media.DATE_ADDED + ">=?";
+            String[] args = {String.valueOf((long) (sinceMs / 1000) - 2)};
+            try (android.database.Cursor c = getContentResolver().query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, proj, sel, args, MediaStore.Images.Media.DATE_ADDED + " DESC")) {
+                while (c != null && c.moveToNext()) {
+                    String name = c.getString(1);
+                    if (name != null && name.startsWith("kling_ref_")) continue;
+                    Uri u = android.content.ContentUris.withAppendedId(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, c.getLong(0));
+                    android.graphics.BitmapFactory.Options o = new android.graphics.BitmapFactory.Options();
+                    o.inJustDecodeBounds = true;
+                    try (java.io.InputStream in = getContentResolver().openInputStream(u)) { android.graphics.BitmapFactory.decodeStream(in, null, o); }
+                    int s = 1; while (Math.max(o.outWidth, o.outHeight) / (s * 2) >= 1600) s *= 2;
+                    android.graphics.BitmapFactory.Options o2 = new android.graphics.BitmapFactory.Options(); o2.inSampleSize = s;
+                    android.graphics.Bitmap bm;
+                    try (java.io.InputStream in = getContentResolver().openInputStream(u)) { bm = android.graphics.BitmapFactory.decodeStream(in, null, o2); }
+                    if (bm == null) continue;
+                    ByteArrayOutputStream bo = new ByteArrayOutputStream();
+                    bm.compress(android.graphics.Bitmap.CompressFormat.JPEG, 90, bo);
+                    return "data:image/jpeg;base64," + Base64.encodeToString(bo.toByteArray(), Base64.NO_WRAP);
+                }
+            } catch (Exception ignored) { }
+            return "";
         }
 
         @JavascriptInterface

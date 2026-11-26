@@ -469,3 +469,5 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display
 .imgview .acts{display:flex;gap:8px}
 .imgview .acts .btn{flex:1;min-height:48px;font-size:14.5px}
 .kling{background:linear-gradient(135deg,var(--surface),var(--red-soft))}
+.btn.grok{background:linear-gradient(120deg,#1d1f27,#3a3f52);color:#fff;border-color:transparent}
+.btn.grok svg.i{color:#FFC53D}

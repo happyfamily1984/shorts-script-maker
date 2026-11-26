@@ -76,14 +76,16 @@ public class KlingService extends AccessibilityService {
     boolean isRunning() { return running; }
 
     /* ---------- 클링 앱 찾기 ---------- */
-    static String findKling(Context c, String preferred) {
+    static String findKling(Context c, String preferred) { return findApp(c, preferred, new String[]{"kling", "클링", "可灵"}); }
+    static String findGrok(Context c, String preferred) { return findApp(c, preferred, new String[]{"grok", "그록"}); }
+    static String findApp(Context c, String preferred, String[] keys) {
         PackageManager pm = c.getPackageManager();
         if (preferred != null && !preferred.isEmpty() && pm.getLaunchIntentForPackage(preferred) != null) return preferred;
         Intent i = new Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_LAUNCHER);
         for (ResolveInfo r : pm.queryIntentActivities(i, 0)) {
             String label = String.valueOf(r.loadLabel(pm)).toLowerCase(), pk = r.activityInfo.packageName;
             if (pk.equals(c.getPackageName())) continue;
-            if (label.contains("kling") || label.contains("클링") || label.contains("可灵") || pk.toLowerCase().contains("kling")) return pk;
+            for (String k : keys) if (label.contains(k) || pk.toLowerCase().contains(k)) return pk;
         }
         return "";
     }
@@ -158,9 +160,10 @@ public class KlingService extends AccessibilityService {
                 runSteps(flow.optJSONArray("shot"), sh, i, n);
                 if (i < n - 1) runSteps(flow.optJSONArray("between"), sh, i, n);
             }
-            runSteps(flow.optJSONArray("end"), null, n - 1, n);
-            status("끝났습니다. " + n + "개 입력. " + (job.optBoolean("autoGenerate") ? "클링에서 생성 결과를 확인하세요." : "클링에서 내용을 확인하고 생성을 누르세요."));
-            showPanel(null, null, "닫기", this::hidePanel);
+            runSteps(flow.optJSONArray("end"), shots != null && n > 0 ? shots.getJSONObject(n - 1) : null, n - 1, n);
+            job.put("returned", flow.toString().contains("\"returnApp\""));
+            status(job.optString("doneMsg", "끝났습니다. " + n + "개 입력. " + (job.optBoolean("autoGenerate") ? "클링에서 생성 결과를 확인하세요." : "클링에서 내용을 확인하고 생성을 누르세요.")));
+            if (!job.optBoolean("returned")) showPanel(null, null, "닫기", this::hidePanel);
         } catch (Exception e) {
             String m = e instanceof StepFail ? e.getMessage() : "오류: " + e;
             status("멈춤 · " + m);
@@ -247,6 +250,13 @@ public class KlingService extends AccessibilityService {
                 return find(f, 600) != null;
             }
             case "back": return performGlobalAction(GLOBAL_ACTION_BACK);
+            case "returnApp": {
+                Intent ri = new Intent(this, MainActivity.class);
+                ri.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                startActivity(ri);
+                hidePanel();
+                return true;
+            }
             default: return false;
         }
     }
