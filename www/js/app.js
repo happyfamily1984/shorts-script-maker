@@ -1082,7 +1082,7 @@ V.settings = () => ({ title: '설정', back: true, html: `
     <div class="aiacts"><button class="btn sm" data-act="flowFetch">${ic('refresh')}순서 업데이트</button></div>
     <div class="aiacts"><button class="btn sm" data-act="inspect" data-t="kling">${ic('camera')}클링 화면 기록</button><button class="btn sm" data-act="inspect" data-t="grok">${ic('camera')}그록 화면 기록</button><button class="btn sm" data-act="inspect" data-t="pickle">${ic('camera')}피클 화면 기록</button></div>
     ${nd ? `<button class="btn sm blue" data-act="dumpOut">${ic('download')}기록한 화면 ${nd}개 파일로 저장</button>` : ''}
-    <p class="hint">"화면 기록"을 누르면 그 앱이 열리고 위쪽에 막대가 뜹니다. 클링은 만들기 화면, 모드 메뉴, 사진 고르는 화면, 생성 뒤 화면에서, 그록은 첫 화면, 프롬프트를 보낸 뒤 이미지가 나온 화면, 이미지를 눌러 연 화면(저장 버튼이 보이는 화면), 피클은 채팅 화면(지시문을 입력한 상태)에서 각각 "이 화면 기록"을 누른 뒤 "끝내기"를 누르세요. 저장한 파일을 보내 주시면 순서를 맞춰 드립니다.</p>
+    <p class="hint">"화면 기록"을 누르면 그 앱이 열리고 위쪽에 막대가 뜹니다. 클링은 만들기 화면, 모드 메뉴, 사진 고르는 화면, 생성 뒤 화면에서, 그록은 첫 화면, 프롬프트를 보낸 뒤 이미지가 나온 화면, 이미지를 눌러 연 화면(저장 버튼이 보이는 화면), 피클은 채팅 화면(지시문을 입력한 상태)에서 각각 "이 화면 기록"을 누른 뒤 "끝내기"를 누르세요. 누를 때마다 내 파일 > 다운로드 > ShortDramaMaker 폴더의 kling_screens_….json 파일에 자동 저장되니, 그 파일을 보내 주시면 순서를 맞춰 드립니다.</p>
     <p class="hint">클링 앱 화면을 대신 누르는 기능이라 클링 앱이 업데이트되면 멈출 수 있고, 클링 이용약관상 자동 조작이 문제가 될 수 있습니다. 본인 계정에서 본인 책임으로 쓰세요.</p></div>`; })()}</div>
   <div class="sec">${h2('shield', '백업')}<div class="list">
     ${setRow('download', 218, '모든 작업 백업하기', `작업 ${projects.length}편을 파일 하나로 저장`, 'backup')}

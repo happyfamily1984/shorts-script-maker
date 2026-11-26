@@ -1,7 +1,7 @@
 {
-  "version": "0.6-partial",
+  "version": "0.7-partial",
   "verified": false,
-  "note": "홈 '창작 시작'은 스크린샷으로, 만들기 화면은 2026-11-26 화면 기록(kling.ai.video.chat)으로 확인: 사진 추가 id kling_omni_asset_add, 모드 '비디오 생성·4.0'(omni_edit_preview_cur_model), 길이·화질 omni_edit_ratio_value, 생성 버튼 id omni_edit_preview_submit(글자 없이 크레딧 숫자만). 사진 고르기 화면, 생성 뒤 애셋 화면은 아직 추측. 2026-11-26 기록 3: '창작 시작' 뒤 화면('기본 창작')은 입력칸이 접힌 상태(omni_edit_preview_text)라 눌러서 펼쳐야 '+'와 프롬프트 칸이 나온다. 같은 화면 위쪽에 작품 목록('작품 없음')이 있다. 기록 4: 클링이 이미 '기본 창작' 화면에서 열리면 '창작 시작'이 없다. 만들기 화면 표시는 id omni_edit_preview_submit(접힘·펼침 모두 있음).",
+  "note": "홈 '창작 시작'은 스크린샷으로, 만들기 화면은 2026-11-26 화면 기록(kling.ai.video.chat)으로 확인: 사진 추가 id kling_omni_asset_add, 모드 '비디오 생성·4.0'(omni_edit_preview_cur_model), 길이·화질 omni_edit_ratio_value, 생성 버튼 id omni_edit_preview_submit(글자 없이 크레딧 숫자만). 사진 고르기 화면, 생성 뒤 애셋 화면은 아직 추측. 2026-11-26 기록 3: '창작 시작' 뒤 화면('기본 창작')은 입력칸이 접힌 상태(omni_edit_preview_text)라 눌러서 펼쳐야 '+'와 프롬프트 칸이 나온다. 같은 화면 위쪽에 작품 목록('작품 없음')이 있다. 기록 4: 클링이 이미 '기본 창작' 화면에서 열리면 '창작 시작'이 없다. 만들기 화면 표시는 id omni_edit_preview_submit(접힘·펼침 모두 있음). 기록 5: 사진을 고르면 '사용' 버튼(글자 '사용', 아래쪽 넓은 버튼)이 있는 확인 화면이 뜬다. 사진은 한 장씩: + → 사진 → 사용 을 장수만큼 반복. 사진 목록 화면 자체는 아직 기록 없음(추측).",
   "package": "kling.ai.video.chat",
   "after": 900,
   "start": [
@@ -187,63 +187,73 @@
       ]
     },
     {
-      "do": "click",
-      "say": "사진 넣기(+) 누르기",
-      "find": {
-        "id": "kling_omni_asset_add"
-      },
-      "orTap": {
-        "x": 0.13,
-        "y": 0.336
-      },
-      "timeout": 3000,
-      "if": "imageCount"
-    },
-    {
-      "do": "wait",
-      "ms": 1800,
-      "if": "imageCount"
-    },
-    {
-      "do": "clickEach",
-      "say": "방금 저장한 사진 고르기",
-      "find": {
-        "cls": "ImageView",
-        "area": [
-          0,
-          0.12,
-          1,
-          0.95
-        ],
-        "minW": 60
-      },
+      "do": "repeat",
+      "say": "사진 넣기",
       "count": "${imageCount}",
-      "timeout": 8000,
-      "if": "imageCount"
-    },
-    {
-      "do": "click",
-      "say": "사진 선택 마치기",
-      "find": {
-        "any": [
-          "=완료",
-          "=추가",
-          "=확인",
-          "=선택",
-          "=Done",
-          "=Add",
-          "=Select",
-          "=OK"
-        ]
-      },
-      "timeout": 5000,
-      "optional": true,
-      "if": "imageCount"
-    },
-    {
-      "do": "wait",
-      "ms": 2500,
-      "if": "imageCount"
+      "if": "imageCount",
+      "steps": [
+        {
+          "do": "click",
+          "say": "사진 넣기(+) 누르기",
+          "find": {
+            "id": "kling_omni_asset_add"
+          },
+          "orTap": {
+            "x": 0.13,
+            "y": 0.336
+          },
+          "timeout": 5000
+        },
+        {
+          "do": "wait",
+          "ms": 2000
+        },
+        {
+          "do": "click",
+          "say": "방금 저장한 사진 고르기",
+          "find": {
+            "cls": "ImageView",
+            "area": [
+              0,
+              0.12,
+              1,
+              0.95
+            ],
+            "minW": 60,
+            "index": "${rk}"
+          },
+          "timeout": 8000
+        },
+        {
+          "do": "wait",
+          "ms": 1800
+        },
+        {
+          "do": "click",
+          "say": "사용 누르기",
+          "find": {
+            "any": [
+              "=사용",
+              "=Use",
+              "=완료",
+              "=확인",
+              "=선택",
+              "=추가",
+              "=Done",
+              "=OK"
+            ]
+          },
+          "orTap": {
+            "x": 0.5,
+            "y": 0.88
+          },
+          "timeout": 6000
+        },
+        {
+          "do": "wait",
+          "ms": 2200
+        }
+      ]
     },
     {
       "do": "setText",

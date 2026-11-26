@@ -63,6 +63,8 @@ public class KlingService extends AccessibilityService {
     private Runnable actRun, stopRun;
     private volatile boolean running = false, cancel = false;
     private JSONArray dumps = new JSONArray();
+    private Uri dumpUri; private String dumpName;
+    private int repK = 0, repN = 0;
     private JSONObject job, flow;
 
     static class StepFail extends Exception { StepFail(String m) { super(m); } }
@@ -209,7 +211,8 @@ public class KlingService extends AccessibilityService {
         return s.replace("${prompt}", sh != null ? sh.optString("prompt") : "").replace("${neg}", job.optString("neg"))
                 .replace("${shot}", String.valueOf(i + 1)).replace("${total}", String.valueOf(n)).replace("${imageCount}", String.valueOf(imgs))
                 .replace("${duration}", sh != null ? sh.optString("sec", "5") : "5")
-                .replace("${i0}", String.valueOf(Math.max(i, 0))).replace("${ri}", String.valueOf(Math.max(0, n - 1 - i)));
+                .replace("${i0}", String.valueOf(Math.max(i, 0))).replace("${ri}", String.valueOf(Math.max(0, n - 1 - i)))
+                .replace("${k}", String.valueOf(repK)).replace("${rk}", String.valueOf(Math.max(0, repN - 1 - repK)));
     }
     private boolean exec(JSONObject st, JSONObject sh, int i, int n) throws Exception {
         String d = st.optString("do");
@@ -234,6 +237,13 @@ public class KlingService extends AccessibilityService {
                 if (nd != null) return clickNode(nd);
                 JSONObject t = st.optJSONObject("orTap");
                 return t != null && tap((float) t.optDouble("x", .5) * dm.widthPixels, (float) t.optDouble("y", .5) * dm.heightPixels);
+            }
+            case "repeat": {
+                int cnt = parseInt(expand(st.optString("count", "1"), sh, i, n), 1);
+                int sk = repK, sn = repN;
+                try { repN = cnt; for (repK = 0; repK < cnt; repK++) runSteps(st.optJSONArray("steps"), sh, i, n); }
+                finally { repK = sk; repN = sn; }
+                return true;
             }
             case "unless": {
                 if (find(f, st.optInt("timeout", 1500)) != null) return true;
@@ -389,7 +399,8 @@ public class KlingService extends AccessibilityService {
 
     /* ---------- 화면 기록 ---------- */
     void startInspect() {
-        dumps = new JSONArray();
+        dumps = new JSONArray(); dumpUri = null;
+        dumpName = "kling_screens_" + new java.text.SimpleDateFormat("yyyyMMdd_HHmmss", java.util.Locale.US).format(new java.util.Date()) + ".json";
         status("클링에서 기록할 화면을 띄운 뒤 '이 화면 기록'을 누르세요. 화면마다 한 번씩.");
         showPanel("이 화면 기록", this::dumpScreen, "끝내기", this::finishInspect);
     }
@@ -402,8 +413,9 @@ public class KlingService extends AccessibilityService {
             for (AccessibilityNodeInfo r : roots()) walk(r, 0, nodes);
             s.put("nodes", nodes); dumps.put(s);
             panelVisible(true);
-            status("화면 " + dumps.length() + "개 기록함. 다음 화면으로 가서 또 누르거나 '끝내기'를 누르세요.");
             writeDumps();
+            boolean saved = saveDumpsToDownloads();
+            status("화면 " + dumps.length() + "개 기록함" + (saved ? " · 다운로드/ShortDramaMaker/" + dumpName + " 에 저장됨" : "") + ". 다음 화면으로 가서 또 누르거나 '끝내기'를 누르세요.");
         } catch (Exception e) { panelVisible(true); status("기록 실패: " + e); }
     }
     private void walk(AccessibilityNodeInfo n, int depth, JSONArray out) throws Exception {
@@ -425,6 +437,24 @@ public class KlingService extends AccessibilityService {
         try (FileOutputStream os = new FileOutputStream(new File(getFilesDir(), DUMP_FILE))) {
             os.write(dumps.toString().getBytes(StandardCharsets.UTF_8));
         } catch (Exception ignored) { }
+    }
+    /* 기록할 때마다 다운로드/ShortDramaMaker 폴더의 파일 하나에 이번 기록 전체를 덮어쓴다 */
+    private boolean saveDumpsToDownloads() {
+        if (Build.VERSION.SDK_INT < 29) return false;
+        try {
+            if (dumpUri == null) {
+                ContentValues v = new ContentValues();
+                v.put(MediaStore.Downloads.DISPLAY_NAME, dumpName);
+                v.put(MediaStore.Downloads.MIME_TYPE, "application/json");
+                v.put(MediaStore.Downloads.RELATIVE_PATH, Environment.DIRECTORY_DOWNLOADS + "/ShortDramaMaker");
+                dumpUri = getContentResolver().insert(MediaStore.Downloads.EXTERNAL_CONTENT_URI, v);
+                if (dumpUri == null) return false;
+            }
+            JSONObject o = new JSONObject();
+            o.put("app", "short-drama-maker"); o.put("flow", flow != null ? flow.optString("version") : ""); o.put("screens", dumps);
+            try (OutputStream os = getContentResolver().openOutputStream(dumpUri, "wt")) { os.write(o.toString().getBytes(StandardCharsets.UTF_8)); }
+            return true;
+        } catch (Exception e) { dumpUri = null; return false; }
     }
     private void finishInspect() {
         writeDumps(); hidePanel();
