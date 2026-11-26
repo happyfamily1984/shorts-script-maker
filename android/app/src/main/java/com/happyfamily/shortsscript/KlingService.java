@@ -179,6 +179,7 @@ public class KlingService extends AccessibilityService {
         } catch (Exception e) {
             String m = e instanceof StepFail ? e.getMessage() : "오류: " + e;
             status("멈춤 · " + m);
+            newDumpSession();
             showPanel("이 화면 기록", this::dumpScreen, "닫기", this::finishInspect);
         } finally { running = false; }
     }
@@ -404,23 +405,26 @@ public class KlingService extends AccessibilityService {
 
     /* ---------- 화면 기록 ---------- */
     void startInspect() {
-        dumps = new JSONArray(); dumpUri = null;
-        dumpName = "kling_screens_" + new java.text.SimpleDateFormat("yyyyMMdd_HHmmss", java.util.Locale.US).format(new java.util.Date()) + ".json";
+        newDumpSession();
         status("클링에서 기록할 화면을 띄운 뒤 '이 화면 기록'을 누르세요. 화면마다 한 번씩.");
         showPanel("이 화면 기록", this::dumpScreen, "끝내기", this::finishInspect);
+    }
+    private void newDumpSession() {
+        dumps = new JSONArray(); dumpUri = null;
+        dumpName = "kling_screens_" + new java.text.SimpleDateFormat("yyyyMMdd_HHmmss", java.util.Locale.US).format(new java.util.Date()) + ".json";
     }
     private void dumpScreen() {
         try {
             panelVisible(false); Thread.sleep(300);
             JSONObject s = new JSONObject(); JSONArray nodes = new JSONArray();
             DisplayMetrics dm = getResources().getDisplayMetrics();
-            s.put("time", System.currentTimeMillis()); s.put("w", dm.widthPixels); s.put("h", dm.heightPixels);
+            s.put("time", System.currentTimeMillis()); if (lastStatus != null) s.put("status", lastStatus); s.put("w", dm.widthPixels); s.put("h", dm.heightPixels);
             for (AccessibilityNodeInfo r : roots()) walk(r, 0, nodes);
             s.put("nodes", nodes); dumps.put(s);
             panelVisible(true);
             writeDumps();
             boolean saved = saveDumpsToDownloads();
-            status("화면 " + dumps.length() + "개 기록함" + (saved ? " · 다운로드/ShortDramaMaker/" + dumpName + " 에 저장됨" : "") + ". 다음 화면으로 가서 또 누르거나 '끝내기'를 누르세요.");
+            status("화면 " + dumps.length() + "개 기록함" + (saved ? " · 다운로드/ShortDramaMaker/" + dumpName + " 에 저장됨" : " · 파일 저장 실패(설정에서 파일로 저장하세요)") + ". 다음 화면으로 가서 또 누르거나 '끝내기'를 누르세요.");
         } catch (Exception e) { panelVisible(true); status("기록 실패: " + e); }
     }
     private void walk(AccessibilityNodeInfo n, int depth, JSONArray out) throws Exception {
