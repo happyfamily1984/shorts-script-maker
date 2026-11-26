@@ -114,3 +114,4 @@ const CHECKLIST = [
 
 /* 히트작 벤치마킹 기본 주소 (설정에서 바꿀 수 있다) */
 const HITS_URL_DEFAULT = 'https://raw.githubusercontent.com/happyfamily1984/shorts-script-maker/main/hits/hits.json';
+const KLING_FLOW_URL_DEFAULT = 'https://raw.githubusercontent.com/happyfamily1984/shorts-script-maker/main/kling/flow.json';

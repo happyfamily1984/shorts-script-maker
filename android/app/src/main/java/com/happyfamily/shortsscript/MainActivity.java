@@ -100,6 +100,12 @@ public class MainActivity extends Activity {
         else web.loadUrl("file:///android_asset/index.html");
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (web != null) web.evaluateJavascript("window.onAppResume && window.onAppResume()", null);
+    }
+
     private void handleBack() {
         web.evaluateJavascript("window.onAndroidBack ? (window.onAndroidBack(), 1) : 0", null);
     }
@@ -272,6 +278,65 @@ public class MainActivity extends Activity {
                 final String js = "window.__nativeHttp && window.__nativeHttp(" + JSONObject.quote(id) + "," + status + "," + JSONObject.quote(text) + ")";
                 runOnUiThread(() -> web.evaluateJavascript(js, null));
             }).start();
+        }
+
+        /* ---------- 클링 자동 입력 ---------- */
+        @JavascriptInterface
+        public String klingInfo(String preferredPkg) {
+            try {
+                JSONObject o = new JSONObject();
+                o.put("on", KlingService.isOn());
+                o.put("running", KlingService.self != null && KlingService.self.isRunning());
+                String pk = KlingService.findKling(MainActivity.this, preferredPkg);
+                o.put("pkg", pk);
+                if (!pk.isEmpty()) o.put("label", String.valueOf(getPackageManager().getApplicationLabel(getPackageManager().getApplicationInfo(pk, 0))));
+                o.put("status", KlingService.lastStatus);
+                o.put("sdk", Build.VERSION.SDK_INT);
+                return o.toString();
+            } catch (Exception e) { return "{}"; }
+        }
+
+        @JavascriptInterface
+        public String startKling(String jobJson, String flowJson) {
+            try {
+                if (!KlingService.isOn()) return "접근성 설정에서 '숏드라마 메이커 · 클링 자동 입력'을 켜 주세요.";
+                JSONObject job = new JSONObject(jobJson), flow = new JSONObject(flowJson);
+                String pk = KlingService.findKling(MainActivity.this, flow.optString("package"));
+                if (pk.isEmpty()) return "클링 앱을 찾지 못했습니다. 클링 앱이 설치되어 있는지 확인하세요.";
+                job.put("package", pk);
+                return KlingService.self.startJob(job, flow) ? "ok" : "이미 자동 입력이 진행 중입니다.";
+            } catch (Exception e) { return "자동 입력을 시작하지 못했습니다: " + e.getMessage(); }
+        }
+
+        @JavascriptInterface
+        public String startKlingInspect(String preferredPkg) {
+            if (!KlingService.isOn()) return "접근성 설정에서 '숏드라마 메이커 · 클링 자동 입력'을 켜 주세요.";
+            String pk = KlingService.findKling(MainActivity.this, preferredPkg);
+            runOnUiThread(() -> {
+                KlingService.self.startInspect();
+                Intent li = pk.isEmpty() ? null : getPackageManager().getLaunchIntentForPackage(pk);
+                if (li != null) { li.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); startActivity(li); }
+            });
+            return pk.isEmpty() ? "클링 앱을 찾지 못해 기록 막대만 띄웁니다. 클링 앱을 직접 여세요." : "ok";
+        }
+
+        @JavascriptInterface
+        public String readKlingDumps() {
+            try { return new String(java.nio.file.Files.readAllBytes(new java.io.File(getFilesDir(), KlingService.DUMP_FILE).toPath()), StandardCharsets.UTF_8); }
+            catch (Exception e) { return ""; }
+        }
+
+        @JavascriptInterface
+        public void clearKlingDumps() { new java.io.File(getFilesDir(), KlingService.DUMP_FILE).delete(); }
+
+        @JavascriptInterface
+        public void openAccessibility() {
+            runOnUiThread(() -> { try { startActivity(new Intent(android.provider.Settings.ACTION_ACCESSIBILITY_SETTINGS)); } catch (Exception ignored) { } });
+        }
+
+        @JavascriptInterface
+        public void openAppInfo() {
+            runOnUiThread(() -> { try { startActivity(new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:" + getPackageName()))); } catch (Exception ignored) { } });
         }
 
         @JavascriptInterface

@@ -468,3 +468,4 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display
 .imgview img{width:100%;max-height:70vh;object-fit:contain;border-radius:18px;background:#000}
 .imgview .acts{display:flex;gap:8px}
 .imgview .acts .btn{flex:1;min-height:48px;font-size:14.5px}
+.kling{background:linear-gradient(135deg,var(--surface),var(--red-soft))}

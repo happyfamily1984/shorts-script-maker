@@ -168,7 +168,7 @@ function inShot(p, sh) {
   if (sh.sp >= 0 && p.chars[sh.sp]) idx.add(sh.sp);
   return [...idx].sort();
 }
-const refList = (p, ids, m) => ids.map(i => m === 'kr' ? `${cname(p.chars[i], m)} = 참조 이미지 ${i + 1}` : `${cname(p.chars[i], m)} = reference image ${i + 1}`).join(', ');
+const refList = (p, ids, m, local) => ids.map((i, n) => { const no = local ? n + 1 : i + 1; return m === 'kr' ? `${cname(p.chars[i], m)} = 참조 이미지 ${no}` : `${cname(p.chars[i], m)} = reference image ${no}`; }).join(', ');
 const legend = (p, m) => p.chars.map((c, i) => m === 'kr' ? `${cname(c, m)}(참조 이미지 ${i + 1}: ${castOf(m)} ${clook(c, m)})` : `${cname(c, m)} (reference image ${i + 1}: ${castOf(m)} ${clook(c, m)})`).join('; ');
 
 function charPrompt(p, i, m, kind) {
@@ -185,11 +185,11 @@ function framePrompt(p, i, m) {
   if (m === 'kr') return `세로 9:16 드라마 스틸 컷 한 장 (샷 ${i + 1}의 첫 프레임).\n장소: ${sh.pk}.\n장면: ${sh.ak}.\n등장인물: ${ids.length ? refList(p, ids, m) : '없음'}.\n구도: ${cam}.\n분위기: ${moodOf(p, i, m)}.\n${st}.\n첨부한 인물 기준 이미지와 얼굴·머리·복장을 똑같이 유지한다. 화면 속 글자·자막·워터마크 없음.`;
   return `One vertical 9:16 cinematic drama still (first frame of shot ${i + 1}).\nLocation: ${sh.pe}.\nMoment: ${sh.ae}.\nCharacters: ${ids.length ? refList(p, ids, m) : 'none'}.\nFraming: ${cam}.\nMood: ${moodOf(p, i, m)}.\nStyle: ${st}.\nKeep faces, hair and outfits identical to the attached character reference images. No on-screen text, subtitles or watermark.`;
 }
-function klingPrompt(p, i, m) {
-  const sh = p.shots[i], ids = inShot(p, sh), cam = (CAMS[sh.cam] || CAMS.ms)[m === 'kr' ? 1 : 2], st = styleOf(p, m), n = p.shots.length;
+function klingPrompt(p, i, m, local) {
+  const sh = p.shots[i], ids0 = inShot(p, sh), ids = Array.isArray(local) ? local : ids0, cam = (CAMS[sh.cam] || CAMS.ms)[m === 'kr' ? 1 : 2], st = styleOf(p, m), n = p.shots.length;
   const sp = sh.sp >= 0 ? p.chars[sh.sp] : null, line = m === 'kr' ? sh.dk : sh.de, tone = sp ? (TONES[sp.r] || TONES.X)[m === 'kr' ? 0 : 1] : '';
-  if (m === 'kr') return `[샷 ${i + 1}/${n} · ${sh.sec || 5}초 · 세로 9:16]\n장소: ${sh.pk}.\n카메라: ${cam}.\n동작: ${sh.ak}.\n${sp && line ? `대사: ${cname(sp, m)}${josa(cname(sp, m), '이')} 한국어로 ${tone} 말한다. "${line}" 입 모양을 대사에 정확히 맞춘다.` : '대사 없음. 표정과 시선으로만 연기한다.'}\n분위기: ${moodOf(p, i, m)}.\n화면: ${st}.\n인물의 얼굴·머리·복장은 참조 이미지와 똑같이 유지한다${ids.length ? ` (${refList(p, ids, m)})` : ''}. 자막이나 화면 속 글자를 넣지 않는다.`;
-  return `[Shot ${i + 1}/${n} · ${sh.sec || 5}s · vertical 9:16]\nLocation: ${sh.pe}.\nCamera: ${cam}.\nAction: ${sh.ae}.\n${sp && line ? `Dialogue: ${cname(sp, m)} says in English, ${tone}: "${line}" Lip-sync the line precisely.` : 'No dialogue. Acting through expression and eye contact only.'}\nMood: ${moodOf(p, i, m)}.\nLook: ${st}.\nKeep every character's face, hair and outfit identical to the reference images${ids.length ? ` (${refList(p, ids, m)})` : ''}. No subtitles and no on-screen text.`;
+  if (m === 'kr') return `[샷 ${i + 1}/${n} · ${sh.sec || 5}초 · 세로 9:16]\n장소: ${sh.pk}.\n카메라: ${cam}.\n동작: ${sh.ak}.\n${sp && line ? `대사: ${cname(sp, m)}${josa(cname(sp, m), '이')} 한국어로 ${tone} 말한다. "${line}" 입 모양을 대사에 정확히 맞춘다.` : '대사 없음. 표정과 시선으로만 연기한다.'}\n분위기: ${moodOf(p, i, m)}.\n화면: ${st}.\n인물의 얼굴·머리·복장은 참조 이미지와 똑같이 유지한다${ids.length ? ` (${refList(p, ids, m, !!local)})` : ''}. 자막이나 화면 속 글자를 넣지 않는다.`;
+  return `[Shot ${i + 1}/${n} · ${sh.sec || 5}s · vertical 9:16]\nLocation: ${sh.pe}.\nCamera: ${cam}.\nAction: ${sh.ae}.\n${sp && line ? `Dialogue: ${cname(sp, m)} says in English, ${tone}: "${line}" Lip-sync the line precisely.` : 'No dialogue. Acting through expression and eye contact only.'}\nMood: ${moodOf(p, i, m)}.\nLook: ${st}.\nKeep every character's face, hair and outfit identical to the reference images${ids.length ? ` (${refList(p, ids, m, !!local)})` : ''}. No subtitles and no on-screen text.`;
 }
 function multiPrompt(p, m, from, to) {
   const part = p.shots.slice(from, to), st = styleOf(p, m); let t = 0;
@@ -518,6 +518,57 @@ function researchPrompt(n, platform) {
 - 저장 전에 JSON 문법 오류가 없는지 확인한다.`;
 }
 
+/* ---------- 클링 자동 입력 (접근성 서비스) ---------- */
+const flowNow = () => (settings.klingFlow && Array.isArray(settings.klingFlow.shot)) ? settings.klingFlow : KLING_FLOW_DEFAULT;
+const flowUrl = () => String(settings.klingFlowUrl || '').trim() || KLING_FLOW_URL_DEFAULT;
+const kInfo = () => { if (!Native.has() || !window.AndroidBridge.klingInfo) return null; try { return JSON.parse(window.AndroidBridge.klingInfo(flowNow().package || '')); } catch (e) { return null; } };
+async function buildKlingJob(p, range) {
+  const m = MODE(), pick = c => c.imgFull || c.imgFace, miss = new Set(), shots = [];
+  const imgsFor = async ids => { const out = []; for (const i of ids) { const v = await imgGet(pick(p.chars[i])); if (v) out.push(v); else miss.add(cname(p.chars[i], m)); } return out; };
+  if (range === 'multi') shots.push({ prompt: promptText(p, `m:0:${p.shots.length}`, m), images: await imgsFor(p.chars.map((c, i) => i)), sec: totalSec(p) });
+  else for (const i of (range === 'all' ? p.shots.map((x, n) => n) : [+range])) {
+    const ov = p.over && p.over[`k:${i}:${m}`];
+    const ids = inShot(p, p.shots[i]), has = []; for (const c of ids) if (await imgGet(pick(p.chars[c]))) has.push(c);
+    shots.push({ prompt: ov != null ? ov : klingPrompt(p, i, m, has), images: await imgsFor(ids), sec: p.shots[i].sec || 5 });
+  }
+  return { job: { shots, neg: promptText(p, 'n', m), mode: m }, miss: [...miss] };
+}
+function klingNeedSetup(info) {
+  if (!Native.has()) return dialog('안드로이드 앱에서만 됩니다', '클링 자동 입력은 휴대폰에 설치한 앱에서 동작합니다.', [['닫기', null]]), true;
+  if (!info || !info.on) return dialog('클링 자동 입력을 켜 주세요', '접근성 설정 > 설치된 앱 > "숏드라마 메이커 · 클링 자동 입력"을 켜야 합니다. 켜지지 않고 회색이면 앱 정보 > 오른쪽 위 ⋮ > "제한된 설정 허용"을 먼저 누르세요.', [['앱 정보', () => window.AndroidBridge.openAppInfo()], ['접근성 설정', () => window.AndroidBridge.openAccessibility(), 'pri']]), true;
+  if (!info.pkg) return dialog('클링 앱을 찾지 못했습니다', '클링 앱이 설치되어 있는지 확인하세요.', [['닫기', null]]), true;
+  return false;
+}
+function klingSend() {
+  const p = draft, info = kInfo(); if (klingNeedSetup(info)) return;
+  if (info.running) return toast('이미 자동 입력이 진행 중입니다');
+  const go2 = range => buildKlingJob(p, range).then(({ job, miss }) => {
+    const start = auto => { job.autoGenerate = auto; settings.klingAuto = auto; store.set('settings', settings); const r = window.AndroidBridge.startKling(JSON.stringify(job), JSON.stringify(flowNow())); if (r !== 'ok') dialog('자동 입력을 시작하지 못했습니다', r, [['닫기', null]]); };
+    const confirm = () => dialog('클링에 자동으로 입력합니다', `${job.shots.length}개를 차례로 입력합니다. 진행 중에는 화면을 만지지 마세요. 멈추려면 위쪽 막대의 "중지"를 누르세요.${flowNow().verified ? '' : '\n\n아직 클링 화면에 완전히 맞춰지지 않은 순서라 중간에 멈출 수 있습니다. 멈추면 그 화면을 기록해 보내 주세요.'}`,
+      [['입력만', () => start(false)], ['생성까지', () => start(true), 'pri']]);
+    if (miss.length) dialog('사진이 없는 인물이 있습니다', `${miss.join(', ')}의 사진이 없습니다. 인물 탭에서 사진을 첨부하면 얼굴이 일정하게 나옵니다.`, [['취소', null], ['사진 없이 진행', confirm, 'pri']]);
+    else confirm();
+  });
+  sheet('클링으로 보내기', [[`전체 ${p.shots.length}샷을 차례로`, '샷마다 사진·프롬프트를 넣고 생성', () => go2('all')], ['멀티샷 한 번에', '모든 샷을 한 프롬프트로 (멀티샷 지원 모델)', () => go2('multi')],
+    ...p.shots.map((x, i) => [`${i + 1}번 샷만`, `${beatOf(p, i)[0]} · ${x['a' + sfx()] || ''}`, () => go2(i)])]);
+}
+async function fetchFlow() {
+  toast('순서를 불러오는 중…');
+  const r = await httpReq(flowUrl() + (flowUrl().includes('?') ? '&' : '?') + 't=' + Date.now());
+  if (r.status !== 200) return dialog('순서를 불러오지 못했습니다', r.status === 404 ? '주소에 파일이 없습니다. 저장소가 비공개이거나 아직 main 브랜치에 올라가지 않았을 수 있습니다.' : r.status === 0 ? '인터넷 연결을 확인하세요.' : `응답 코드 ${r.status}`, [['닫기', null]]);
+  try { const f = JSON.parse(r.text); if (!Array.isArray(f.shot)) throw 0; settings.klingFlow = f; saveSettings(); render(); toast(`순서 ${f.version || ''}를 받았습니다`); }
+  catch (e) { dialog('파일 형식이 올바르지 않습니다', 'flow.json 이 올바른 JSON인지 확인하세요.', [['닫기', null]]); }
+}
+const klingDumps = () => { if (!Native.has() || !window.AndroidBridge.readKlingDumps) return []; try { return JSON.parse(window.AndroidBridge.readKlingDumps() || '[]'); } catch (e) { return []; } };
+let seenStatus = '', seenDumps = 0;
+window.onAppResume = () => {
+  const info = kInfo(); if (!info) return;
+  if (info.status && info.status !== seenStatus && !info.running) { seenStatus = info.status; toast(info.status.slice(0, 60)); }
+  const d = klingDumps().length;
+  if (d && d !== seenDumps) { seenDumps = d; dialog(`클링 화면 ${d}개를 기록했습니다`, '이 파일을 보내 주시면 자동 입력 순서를 클링 화면에 맞춰 고칠 수 있습니다.', [['나중에', null], ['파일로 저장', () => A.dumpOut(), 'pri']]); }
+  if (cur().v === 'settings') render();
+};
+
 /* ---------- 공통 조각 ---------- */
 let artN = 0;
 function art(icon, h = 218) {
@@ -728,8 +779,11 @@ function tabCast(p) {
     <div class="aiacts"><button class="btn sm" data-act="addChar">${ic('plus')}인물 추가</button><button class="btn sm" data-act="shareAllChars">${ic('share')}전신 프롬프트 모두 내보내기</button></div>`;
 }
 function tabVideo(p) {
-  const vt = cur().p.vt || 'shot', half = Math.ceil(p.shots.length / 2), k = sfx();
+  const vt = cur().p.vt || 'shot', half = Math.ceil(p.shots.length / 2), k = sfx(), info = kInfo();
   return `
+    <div class="card aicard kling"><div class="aih"><span class="glyph" style="--h:350">${ic('bolt')}</span><span class="grow"><b>클링으로 보내기</b><small>${!Native.has() ? '휴대폰 앱에서 쓸 수 있습니다' : !info || !info.on ? '설정에서 클링 자동 입력을 켜야 합니다' : !info.pkg ? '클링 앱을 찾지 못했습니다' : `${esc(info.label || '클링')} 앱에 사진과 프롬프트를 자동으로 넣습니다`}</small></span>${flowNow().verified ? '' : '<span class="tag warn">시험 중</span>'}</div>
+      <button class="btn pri block" data-act="klingSend">${ic('bolt')}클링으로 보내기</button>
+      <p class="hint">인물 탭에 첨부한 사진을 샷마다 골라 올리고, 지금 모드(${isEn() ? '해외용 영어' : '국내용 한국어'}) 프롬프트를 입력합니다. 켜는 방법과 순서 업데이트는 설정에 있습니다.</p></div>
     <div class="card guide"><b>${ic('film')}클링으로 영상 만드는 순서</b><ol><li>인물 탭에서 만든 인물 이미지를 클링의 참조 이미지(Elements)로 올립니다. 번호는 인물 순서와 같습니다: ${p.chars.map((c, i) => `${i + 1} = ${esc(cname(c))}`).join(', ')}.</li><li>샷마다 "첫 프레임 프롬프트"로 장면 이미지를 만들면 구도가 고정됩니다. (건너뛰어도 됩니다)</li><li>"클링 영상 프롬프트"를 붙여넣고 길이 5초, 비율 9:16으로 생성합니다.</li><li>6샷을 편집 앱에서 이어 붙이고 자막 탭의 자막 파일을 넣습니다.</li></ol></div>
     <div class="sec"><span class="lab">${ic('sparkle')}영상 스타일</span><div class="chips">${Object.entries(STYLES).map(([id, v]) => `<button class="chip ${(p.style || 'real') === id ? 'on' : ''}" data-act="pstyle" data-v="${id}">${v[0]}</button>`).join('')}</div></div>
     ${seg('p_vt', [['shot', '샷별 프롬프트', 'list'], ['multi', '멀티샷', 'layers']], vt)}
@@ -834,6 +888,15 @@ V.settings = () => ({ title: '설정', back: true, html: `
     <div class="aiacts"><button class="btn sm" data-act="aiClear">${ic('trash')}키 지우기</button><button class="btn sm blue" data-act="aiTest">${ic('checkc')}키 확인·모델</button></div>
     <div id="aiStatus" class="aistat">${(settings.aiCheck || []).map(([ok, t]) => `<div class="${ok ? 'ok' : 'bad'}">${ic(ok ? 'checkc' : 'x')}<span>${esc(t)}</span></div>`).join('')}</div>
     <p class="hint">키는 이 기기에만 저장되며, AI 기능을 쓸 때 대본 내용과 함께 Google Gemini API로만 전송됩니다.</p></div></div>
+  <div class="sec">${h2('bolt', '클링 자동 입력')}${(() => { const info = kInfo(), f = flowNow(), nd = klingDumps().length; return `<div class="card aibox">
+    <div class="aistat">${Native.has() ? `<div class="${info && info.on ? 'ok' : 'bad'}">${ic(info && info.on ? 'checkc' : 'x')}<span>접근성 서비스 ${info && info.on ? '켜짐' : '꺼짐'}</span></div><div class="${info && info.pkg ? 'ok' : 'bad'}">${ic(info && info.pkg ? 'checkc' : 'x')}<span>${info && info.pkg ? `클링 앱: ${esc(info.label || info.pkg)}` : '클링 앱을 찾지 못함'}</span></div>` : '<div class="bad">' + ic('x') + '<span>휴대폰 앱에서만 쓸 수 있습니다</span></div>'}
+      <div class="${f.verified ? 'ok' : 'bad'}">${ic(f.verified ? 'checkc' : 'info')}<span>동작 순서 ${esc(f.version || '')}${f.verified ? '' : ' · 아직 일부만 클링 화면에 맞춰짐'}</span></div></div>
+    <div class="aiacts"><button class="btn sm blue" data-act="openAcc">${ic('gear')}접근성 설정</button><button class="btn sm" data-act="openAppInfo">${ic('info')}앱 정보</button></div>
+    <p class="hint">켜는 방법: 접근성 설정 > 설치된 앱 > "숏드라마 메이커 · 클링 자동 입력" 켜기. 회색으로 막혀 있으면 앱 정보 > 오른쪽 위 ⋮ > "제한된 설정 허용"을 먼저 누르세요.</p>
+    <div class="aiacts"><button class="btn sm" data-act="flowFetch">${ic('refresh')}순서 업데이트</button><button class="btn sm" data-act="inspect">${ic('camera')}클링 화면 기록</button></div>
+    ${nd ? `<button class="btn sm blue" data-act="dumpOut">${ic('download')}기록한 화면 ${nd}개 파일로 저장</button>` : ''}
+    <p class="hint">"클링 화면 기록"을 누르면 클링 앱이 열리고 위쪽에 막대가 뜹니다. 만들기 화면, 모드 메뉴, 사진 고르는 화면, 생성 뒤 화면에서 각각 "이 화면 기록"을 누른 뒤 "끝내기"를 누르세요. 저장한 파일을 보내 주시면 순서를 맞춰 드립니다.</p>
+    <p class="hint">클링 앱 화면을 대신 누르는 기능이라 클링 앱이 업데이트되면 멈출 수 있고, 클링 이용약관상 자동 조작이 문제가 될 수 있습니다. 본인 계정에서 본인 책임으로 쓰세요.</p></div>`; })()}</div>
   <div class="sec">${h2('shield', '백업')}<div class="list">
     ${setRow('download', 218, '모든 작업 백업하기', `작업 ${projects.length}편을 파일 하나로 저장`, 'backup')}
     ${setRow('folder', 150, '백업 파일 불러오기', '같은 작업은 건너뛰고 새 작업만 추가', 'restore')}</div></div>
@@ -957,6 +1020,12 @@ const A = {
   aiClear: () => dialog('API 키를 모두 지울까요?', '이 기기에 저장된 키만 지워집니다.', [['취소', null], ['지우기', () => { settings.aiKeys = ''; settings.aiCheck = []; saveSettings(); render(); toast('키를 지웠습니다'); }, 'pri']]),
   subOut: d => outSheet('자막 파일', toSrt(draft, d.v), fileName(T(draft) + '_' + d.v, 'srt'), 'application/x-subrip'),
   hitsFetch: () => fetchHits(),
+  klingSend: () => klingSend(),
+  openAcc: () => { if (Native.has()) window.AndroidBridge.openAccessibility(); else toast('휴대폰 앱에서만 됩니다'); },
+  openAppInfo: () => { if (Native.has()) window.AndroidBridge.openAppInfo(); else toast('휴대폰 앱에서만 됩니다'); },
+  flowFetch: () => fetchFlow(),
+  inspect: () => { const info = kInfo(); if (klingNeedSetup(info)) return; window.AndroidBridge.clearKlingDumps(); seenDumps = 0; const r = window.AndroidBridge.startKlingInspect(flowNow().package || ''); if (r !== 'ok') toast(r); },
+  dumpOut: () => { const d = klingDumps(); if (!d.length) return toast('기록한 화면이 없습니다'); Native.save(`kling_screens_${dateStr().replace(/\./g, '')}.json`, 'application/json', JSON.stringify({ app: 'short-drama-maker', flow: flowNow().version, screens: d })); },
   hitsOut: () => outSheet('벤치마킹 목록', JSON.stringify({ version: 1, updated: dateStr().replace(/\./g, '-'), items: allHits() }, null, 2), 'hits.json', 'application/json'),
   rpOut: () => outSheet('조사 지시 프롬프트', researchPrompt(cur().p.n || 10, cur().p.pf || ''), fileName('조사지시프롬프트', 'txt')),
   lth: d => { const p = cur().p; p.th = d.v || ''; p.fav = false; render(true); },
