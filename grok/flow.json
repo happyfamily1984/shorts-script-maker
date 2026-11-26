@@ -1,25 +1,32 @@
 {
-  "version": "0.1-guess",
+  "version": "0.2",
   "verified": false,
-  "note": "그록 앱 화면을 보지 않고 쓴 추측 순서. 화면 기록 파일을 받으면 실제 버튼에 맞춰 고친다.",
-  "package": "",
+  "note": "2026-11-26 사용자 화면 기록(ai.x.grok)으로 채팅 화면 확인: 입력칸 id chat_text_input, 새 채팅 '새 채팅 시작하기', 결과 이미지는 설명 'Generated Image'인 View. 이미지를 연 뒤 저장 버튼 화면은 아직 기록 없음(추측).",
+  "package": "ai.x.grok",
   "after": 900,
   "start": [
     { "do": "launch", "say": "그록 앱 여는 중" },
     { "do": "wait", "ms": 3500 },
-    { "do": "click", "say": "새 대화 열기", "find": { "any": ["새 대화", "새 채팅", "New chat", "New Chat"] }, "timeout": 4000, "optional": true },
-    { "do": "wait", "ms": 1200 }
+    { "do": "click", "say": "새 채팅 열기", "find": { "any": ["새 채팅 시작하기", "새 채팅", "New chat", "New Chat"] }, "timeout": 4000, "optional": true },
+    { "do": "wait", "ms": 1500 }
   ],
   "shot": [
     { "do": "setText", "say": "이미지 프롬프트 입력", "find": { "editable": true }, "value": "${prompt}", "timeout": 10000 },
+    { "do": "wait", "ms": 600 },
     { "do": "click", "say": "보내기 누르기", "find": { "any": ["보내기", "전송", "Send", "Submit"] }, "timeout": 5000 },
     { "do": "wait", "ms": 4000 },
-    { "do": "waitFor", "say": "이미지가 만들어지길 기다리는 중", "find": { "cls": "ImageView", "minW": 180, "area": [0, 0.08, 1, 0.92] }, "timeout": 120000 },
-    { "do": "wait", "ms": 2500 },
-    { "do": "click", "say": "만들어진 이미지 열기", "find": { "cls": "ImageView", "minW": 180, "area": [0, 0.08, 1, 0.92], "index": -1 }, "timeout": 5000 },
-    { "do": "wait", "ms": 1500 },
+    { "do": "waitFor", "say": "이미지가 만들어지길 기다리는 중", "find": { "desc": "Generated Image" }, "timeout": 150000 },
+    { "do": "wait", "ms": 4000 },
+    { "do": "click", "say": "만들어진 이미지 열기", "find": { "desc": "Generated Image", "index": -1 }, "timeout": 5000 },
+    { "do": "wait", "ms": 2000 },
+    { "do": "unless", "say": "저장 버튼 찾는 중", "find": { "any": ["다운로드", "저장", "Download", "Save"] }, "timeout": 3000, "steps": [
+      { "do": "back", "say": "채팅 화면으로" },
+      { "do": "wait", "ms": 1200 },
+      { "do": "longClick", "say": "이미지 길게 누르기", "find": { "desc": "Generated Image", "index": -1 }, "timeout": 5000, "optional": true },
+      { "do": "wait", "ms": 1500 }
+    ] },
     { "do": "click", "say": "이미지 저장", "find": { "any": ["다운로드", "저장", "Download", "Save"] }, "timeout": 6000 },
-    { "do": "wait", "ms": 3000 }
+    { "do": "wait", "ms": 3500 }
   ],
   "between": [],
   "end": [

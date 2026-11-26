@@ -520,10 +520,12 @@ function researchPrompt(n, platform) {
 }
 
 /* ---------- 클링 자동 입력 (접근성 서비스) ---------- */
-const flowNow = () => (settings.klingFlow && Array.isArray(settings.klingFlow.shot)) ? settings.klingFlow : KLING_FLOW_DEFAULT;
-const grokFlow = () => (settings.grokFlow && Array.isArray(settings.grokFlow.shot)) ? settings.grokFlow : GROK_FLOW_DEFAULT;
+/* 저장된 순서가 앱에 든 기본 순서보다 오래됐으면 기본 순서를 쓴다 */
+const newerFlow = (saved, def) => saved && Array.isArray(saved.shot) && (parseFloat(saved.version) || 0) >= (parseFloat(def.version) || 0) ? saved : def;
+const flowNow = () => newerFlow(settings.klingFlow, KLING_FLOW_DEFAULT);
+const grokFlow = () => newerFlow(settings.grokFlow, GROK_FLOW_DEFAULT);
 const gInfo = () => { if (!Native.has() || !window.AndroidBridge.autoInfo) return null; try { return JSON.parse(window.AndroidBridge.autoInfo('grok', grokFlow().package || '')); } catch (e) { return null; } };
-const pickleFlow = () => (settings.pickleFlow && Array.isArray(settings.pickleFlow.shot)) ? settings.pickleFlow : PICKLE_FLOW_DEFAULT;
+const pickleFlow = () => newerFlow(settings.pickleFlow, PICKLE_FLOW_DEFAULT);
 const pInfo = () => { if (!Native.has() || !window.AndroidBridge.autoInfo) return null; try { return JSON.parse(window.AndroidBridge.autoInfo('pickle', pickleFlow().package || '')); } catch (e) { return null; } };
 const flowUrl = () => String(settings.klingFlowUrl || '').trim() || KLING_FLOW_URL_DEFAULT;
 const kInfo = () => { if (!Native.has() || !window.AndroidBridge.klingInfo) return null; try { return JSON.parse(window.AndroidBridge.klingInfo(flowNow().package || '')); } catch (e) { return null; } };
