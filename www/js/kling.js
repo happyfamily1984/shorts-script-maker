@@ -294,9 +294,9 @@ const KLING_FLOW_DEFAULT = {
  ]
 };
 const GROK_FLOW_DEFAULT = {
- "version": "0.2",
+ "version": "0.3",
  "verified": false,
- "note": "2026-11-26 사용자 화면 기록(ai.x.grok)으로 채팅 화면 확인: 입력칸 id chat_text_input, 새 채팅 '새 채팅 시작하기', 결과 이미지는 설명 'Generated Image'인 View. 이미지를 연 뒤 저장 버튼 화면은 아직 기록 없음(추측).",
+ "note": "2026-11-26 사용자 화면 기록(ai.x.grok) 두 장으로 확인: 채팅 화면(입력칸 id chat_text_input, '새 채팅 시작하기', 결과 이미지 'Generated Image'), 이미지 화면('닫기', '다운로드', '공유'). 그록이 이미지 화면에서 열려도 닫고 채팅으로 돌아간다.",
  "package": "ai.x.grok",
  "after": 900,
  "start": [
@@ -307,6 +307,50 @@ const GROK_FLOW_DEFAULT = {
   {
    "do": "wait",
    "ms": 3500
+  },
+  {
+   "do": "unless",
+   "say": "채팅 화면 확인",
+   "find": {
+    "id": "chat_text_input"
+   },
+   "timeout": 2500,
+   "steps": [
+    {
+     "do": "click",
+     "say": "이미지 화면 닫기",
+     "find": {
+      "any": [
+       "=닫기",
+       "=Close"
+      ]
+     },
+     "timeout": 2000,
+     "optional": true
+    },
+    {
+     "do": "wait",
+     "ms": 1200
+    },
+    {
+     "do": "unless",
+     "say": "채팅 화면 확인",
+     "find": {
+      "id": "chat_text_input"
+     },
+     "timeout": 2000,
+     "steps": [
+      {
+       "do": "back",
+       "say": "이전 화면으로"
+      },
+      {
+       "do": "wait",
+       "ms": 1200
+      }
+     ]
+    }
+   ]
   },
   {
    "do": "click",
@@ -332,7 +376,7 @@ const GROK_FLOW_DEFAULT = {
    "do": "setText",
    "say": "이미지 프롬프트 입력",
    "find": {
-    "editable": true
+    "id": "chat_text_input"
    },
    "value": "${prompt}",
    "timeout": 10000
@@ -384,58 +428,37 @@ const GROK_FLOW_DEFAULT = {
    "ms": 2000
   },
   {
-   "do": "unless",
-   "say": "저장 버튼 찾는 중",
-   "find": {
-    "any": [
-     "다운로드",
-     "저장",
-     "Download",
-     "Save"
-    ]
-   },
-   "timeout": 3000,
-   "steps": [
-    {
-     "do": "back",
-     "say": "채팅 화면으로"
-    },
-    {
-     "do": "wait",
-     "ms": 1200
-    },
-    {
-     "do": "longClick",
-     "say": "이미지 길게 누르기",
-     "find": {
-      "desc": "Generated Image",
-      "index": -1
-     },
-     "timeout": 5000,
-     "optional": true
-    },
-    {
-     "do": "wait",
-     "ms": 1500
-    }
-   ]
-  },
-  {
    "do": "click",
-   "say": "이미지 저장",
+   "say": "이미지 다운로드",
    "find": {
     "any": [
-     "다운로드",
-     "저장",
-     "Download",
-     "Save"
+     "=다운로드",
+     "=Download",
+     "=저장",
+     "=Save"
     ]
    },
-   "timeout": 6000
+   "timeout": 8000
   },
   {
    "do": "wait",
    "ms": 3500
+  },
+  {
+   "do": "click",
+   "say": "이미지 화면 닫기",
+   "find": {
+    "any": [
+     "=닫기",
+     "=Close"
+    ]
+   },
+   "timeout": 3000,
+   "optional": true
+  },
+  {
+   "do": "wait",
+   "ms": 800
   }
  ],
  "between": [],
