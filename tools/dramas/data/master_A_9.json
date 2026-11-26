@@ -1,0 +1,192 @@
+[
+  [
+    "정수장의 밸브",
+    "The Valve at the Water Plant",
+    "수돗물에서 이상한 냄새가 났다. 정수장 청소부가 밸브를 짚었다.",
+    "The tap water smells wrong. The plant cleaner points at a valve.",
+    [
+      ["H", "곽철복", "Royce Marsden", "50대 남성, 회색 작업복, 짧은 흰머리, 굵은 손, 조용한 눈", "man in his 50s, gray work clothes, short white hair, thick hands, quiet eyes"],
+      ["V", "선미란", "Freya Dutton", "40대 여성, 검은 정장, 긴 머리, 찬 눈매", "woman in her 40s, black suit, long hair, cold eyes"],
+      ["A", "고순분", "Cora Wexler", "60대 여성, 베이지 재킷, 흰 머리, 안경, 단호한 입", "woman in her 60s, beige jacket, white hair, glasses, firm mouth"]
+    ],
+    [
+      ["정수장", "water plant", "선미란이 바닥을 닦던 곽철복의 어깨를 잡아 세운다", "Miran pulls the cleaner up by the shoulder", 1, "청소부가 수질을 논해?", "A cleaner talking water quality?", "cz"],
+      ["정수장", "water plant", "선미란이 곽철복의 양동이를 발로 차 넘어뜨린다", "Miran kicks his bucket over", 1, "민원은 내가 처리해. 나가.", "I handle the complaints. Get out.", "ms"],
+      ["정수장", "water plant", "곽철복이 배관 옆 밸브의 손잡이에 손을 얹고 눈을 감는다", "Cheolbok rests a hand on the valve handle and closes his eyes", -1, "", "", "cu"],
+      ["정수장", "water plant", "고순분이 설계 도면의 서명을 손가락으로 짚는다", "Sunbun points at a signature on the plant blueprint", 2, "이 도면, 이 사람이 그린 거예요.", "This man drew these plans.", "low"],
+      ["정수장", "water plant", "선미란의 출입증이 경비원 손에 넘어간다", "Miran's access card is collected by a guard", 0, "이 밸브는 누가 열었습니다. 사람이요.", "Someone opened this valve. On purpose.", "cu"],
+      ["정수장", "water plant", "고순분이 밸브 옆의 손자국을 손전등으로 비춘다", "Sunbun shines a light on a fresh handprint beside the valve", 2, "이 자국, 오늘 아침 것이에요.", "This print is from this morning.", "pi"]
+    ]
+  ],
+  [
+    "재활을 거부한 수의사",
+    "The Vet Who Gave Up",
+    "재활 치료가 막혔다. 사육장을 닦던 여자가 개 앞에 앉았다.",
+    "The rehab stalls. The woman who cleans the kennels sits down by the dog.",
+    [
+      ["H", "제춘분", "Josie Blunt", "30대 여성, 청록 작업복, 묶은 머리, 주근깨, 밝은 눈", "woman in her 30s, teal work suit, tied hair, freckles, bright eyes"],
+      ["V", "표민재", "Viggo Teague", "40대 남성, 흰 의사복, 짧은 머리, 찡그린 얼굴", "man in his 40s, white doctor's coat, short hair, scowling face"],
+      ["A", "심화란", "Mara Bourne", "50대 여성, 회색 정장, 짧은 단발, 온화한 눈", "woman in her 50s, gray suit, short bob, gentle eyes"]
+    ],
+    [
+      ["동물병원 재활실", "animal clinic rehab room", "표민재가 개를 쓰다듬던 제춘분의 손을 치운다", "Minjae brushes her hand away from the dog", 1, "사육장 닦는 사람이 치료를 해?", "A kennel cleaner doing therapy?", "cz"],
+      ["동물병원 재활실", "animal clinic rehab room", "표민재가 제춘분의 목줄을 걸이에서 풀어 바닥에 던진다", "Minjae unhooks her leash and throws it on the floor", 1, "이 개는 이제 못 걸어. 포기해.", "This dog won't walk again. Give up.", "ms"],
+      ["동물병원 재활실", "animal clinic rehab room", "제춘분이 개의 뒷다리를 손바닥으로 받치고 천천히 눌러 본다", "Chunbun cups the dog's hind leg and presses slowly", -1, "", "", "cu"],
+      ["동물병원 재활실", "animal clinic rehab room", "심화란이 교재의 한 페이지를 펼쳐 들고 일어선다", "Hwaran stands holding a textbook page open", 2, "이 치료법, 이 사람이 만든 거예요.", "She created this therapy.", "low"],
+      ["동물병원 재활실", "animal clinic rehab room", "표민재의 진료 과장 명패가 책상에서 치워진다", "Minjae's department head nameplate is removed from the desk", 0, "이 개는 걸을 겁니다. 제 손에서요.", "This dog will walk. Under my hands.", "cu"],
+      ["동물병원 재활실", "animal clinic rehab room", "심화란이 개의 목덜미 상처를 살피며 고개를 든다", "Hwaran checks a mark on the dog's neck and looks up", 2, "이 상처, 누가 일부러 낸 것 같아요.", "This wound looks deliberate.", "pi"]
+    ]
+  ],
+  [
+    "영사실의 필름",
+    "The Projectionist's Reel",
+    "개봉관 시사회 30분 전, 필름이 끊겼다. 영사기사가 릴을 들었다.",
+    "Thirty minutes before the premiere, the film breaks. The projectionist lifts a reel.",
+    [
+      ["H", "마정수", "Gus Kestrel", "60대 남성, 남색 작업복, 흰 머리, 두꺼운 안경, 차분한 눈", "man in his 60s, navy work clothes, white hair, thick glasses, calm eyes"],
+      ["V", "주수빈", "Kira Pettit", "30대 여성, 검은 정장, 짧은 단발, 날카로운 눈", "woman in her 30s, black suit, short bob, sharp eyes"],
+      ["A", "안길란", "Ingrid Dean", "70대 여성, 짙은 자주색 드레스, 흰 머리, 깊은 눈", "woman in her 70s, deep plum dress, white hair, deep eyes"]
+    ],
+    [
+      ["영사실", "projection booth", "주수빈이 릴을 감던 마정수의 팔을 잡아 돌려세운다", "Subin spins the projectionist around by the arm", 1, "영사기 닦는 사람이 손대지 마.", "Don't touch the projector, cleaner.", "cz"],
+      ["영사실", "projection booth", "주수빈이 마정수의 필름 조각을 바닥에 떨어뜨린다", "Subin knocks his film scraps to the floor", 1, "이 영화는 디지털로 틀어. 나가.", "We screen digital tonight. Get out.", "ms"],
+      ["영사실", "projection booth", "마정수가 끊긴 필름의 구멍을 손끝으로 세며 고개를 끄덕인다", "Jeongsu counts the sprocket holes and nods to himself", -1, "", "", "cu"],
+      ["영사실", "projection booth", "안길란이 낡은 인터뷰 신문을 펼쳐 보인다", "Gillan opens an old interview clipping", 2, "이 사람이 내 첫 영화를 살렸어요.", "This man saved my first film.", "low"],
+      ["영사실", "projection booth", "주수빈이 영사기 열쇠를 내려놓고 물러선다", "Subin sets down the projector key and steps back", 0, "필름은 제가 잇습니다. 디지털은 미루세요.", "I'll splice the film. Hold the digital.", "cu"],
+      ["영사실", "projection booth", "마정수가 릴 끝에서 정체불명의 장면을 발견하고 손을 멈춘다", "At the reel's end he finds a scene no one filmed and stops", 2, "이 장면, 대본에 없어요.", "This scene isn't in the script.", "pi"]
+    ]
+  ],
+  [
+    "시계탑을 감는 사람",
+    "The Man Who Wound the Clock",
+    "예식 한 시간 전, 시계탑이 멈췄다. 태엽을 감던 노인이 올라갔다.",
+    "An hour before the wedding, the clock tower stops. The old winder climbs up.",
+    [
+      ["H", "여만복", "Orson Corliss", "70대 남성, 회색 작업복, 흰 머리, 마른 체격, 조용한 눈", "man in his 70s, gray work clothes, white hair, thin frame, quiet eyes"],
+      ["V", "허미란", "Adela Gable", "40대 여성, 검은 코트, 짧은 머리, 서린 눈매", "woman in her 40s, black coat, short hair, sharp eyes"],
+      ["A", "노복란", "Selma Stack", "60대 여성, 연두 드레스, 흰 머리, 온화한 눈", "woman in her 60s, light green dress, white hair, gentle eyes"]
+    ],
+    [
+      ["시계탑 아래", "base of the clock tower", "허미란이 사다리를 오르던 여만복의 다리를 잡아 내린다", "Miran pulls the winder down off the ladder", 1, "태엽 감는 사람이 시계를 고쳐?", "A winder repairing the clock?", "cz"],
+      ["시계탑 아래", "base of the clock tower", "허미란이 여만복의 태엽 열쇠를 바닥에 던진다", "Miran throws his winding key to the ground", 1, "이 탑은 폐쇄야. 예식은 취소해.", "This tower is closed. Cancel the wedding.", "ms"],
+      ["시계탑 안", "inside the clock tower", "여만복이 톱니 사이에 낀 먼지를 손끝으로 털어 낸다", "Manbok flicks dust from between the gears with his fingertip", -1, "", "", "cu"],
+      ["시계탑 안", "inside the clock tower", "노복란이 벽의 명단을 손전등으로 비추며 일어선다", "Bokran rises and lights a list on the wall", 2, "이 사람, 40년째 이 탑을 감았어요.", "He has wound this tower for forty years.", "low"],
+      ["시계탑 아래", "base of the clock tower", "허미란이 출입 금지 테이프를 걷어 내고 옆으로 비켜선다", "Miran tears down the closure tape and steps aside", 0, "이 탑은 제가 다시 세웁니다.", "I'll get this tower running.", "cu"],
+      ["시계탑 안", "inside the clock tower", "노복란이 명단에서 긁혀 지운 이름을 가리킨다", "Bokran points at a name scratched out on the list", 2, "이 이름만 지워져 있어요.", "Only this one name is scratched out.", "pi"]
+    ]
+  ],
+  [
+    "폐기 직전의 우유 탱크",
+    "A Tank About to Be Dumped",
+    "납품 검사에서 우유가 반려됐다. 탱크를 닦던 남자가 손을 들었다.",
+    "A milk delivery is rejected at inspection. The man who cleans the tank raises his hand.",
+    [
+      ["H", "석광달", "Emmett Peak", "40대 남성, 흰 위생복, 짧은 흑발, 구레나룻, 차분한 눈", "man in his 40s, white sanitary coat, short black hair, sideburns, calm eyes"],
+      ["V", "천병석", "Stanley Pettit", "50대 남성, 회색 정장, 안경, 얇은 입술", "man in his 50s, gray suit, glasses, thin lips"],
+      ["A", "류옥분", "Ruth Vance", "50대 여성, 베이지 재킷, 흰 단발, 단호한 눈", "woman in her 50s, beige jacket, white bob, firm eyes"]
+    ],
+    [
+      ["낙농 공장", "dairy plant", "천병석이 탱크를 닦던 석광달의 어깨를 밀어 벽 쪽으로 보낸다", "Byeongseok pushes the tank cleaner toward the wall", 1, "탱크나 닦는 사람이 검사를 해?", "A tank cleaner running inspections?", "cz"],
+      ["낙농 공장", "dairy plant", "천병석이 석광달의 온도 기록지를 찢는다", "Byeongseok tears up his temperature log", 1, "폐기야. 전부 폐기해.", "Dump it. Dump the whole batch.", "ms"],
+      ["낙농 공장", "dairy plant", "석광달이 탱크 뚜껑을 열고 안쪽 벽의 물방울을 손끝에 묻힌다", "Gwangdal opens the tank and touches a bead of water inside", -1, "", "", "cu"],
+      ["낙농 공장", "dairy plant", "류옥분이 벽에 걸린 품질 대상 상장을 가리킨다", "Okbun points at a quality award on the wall", 2, "이 상, 이 사람 이름으로 받은 거예요.", "That award has his name on it.", "low"],
+      ["낙농 공장", "dairy plant", "천병석의 검사관 배지가 책상 위에 놓인다", "Byeongseok's inspector badge is set down on the desk", 0, "폐기 아닙니다. 탱크를 바꿔야죠.", "Don't dump it. Change the tank.", "cu"],
+      ["낙농 공장", "dairy plant", "류옥분이 탱크 옆의 이름표를 떼어 뒤집어 본다", "Okbun peels the label off the tank and turns it over", 2, "이 탱크, 이름표가 바뀌었어요.", "The label on this tank was switched.", "pi"]
+    ]
+  ],
+  [
+    "결승전 라켓의 장력",
+    "Tension Before the Final",
+    "결승 20분 전, 라켓 줄이 끊겼다. 줄을 매던 노인이 작업대에 앉았다.",
+    "Twenty minutes before the final, a string snaps. The old stringer sits at his bench.",
+    [
+      ["H", "표영식", "Vernon Farris", "60대 남성, 흰 작업복, 흰 머리, 안경, 가는 손", "man in his 60s, white work clothes, white hair, glasses, slender hands"],
+      ["V", "진예나", "Hilda Farris", "40대 여성, 검은 트레이닝복, 묶은 머리, 날카로운 눈", "woman in her 40s, black training suit, tied hair, sharp eyes"],
+      ["A", "서유나", "Nadia Tanager", "20대 여성, 흰 테니스복, 긴 머리, 반듯한 눈", "woman in her 20s, white tennis outfit, long hair, steady eyes"]
+    ],
+    [
+      ["라켓 작업실", "racket workshop", "진예나가 줄을 매던 표영식의 손에서 라켓을 빼앗는다", "Yena takes the racket from the stringer's hands", 1, "줄이나 매는 사람이 뭘 알아.", "A stringer who knows what?", "cz"],
+      ["라켓 작업실", "racket workshop", "진예나가 표영식의 줄 뭉치를 쓰레기통에 밀어 넣는다", "Yena shoves his string spools into a bin", 1, "결승은 내가 준비해. 나가.", "I prepare the final. Get out.", "ms"],
+      ["라켓 작업실", "racket workshop", "표영식이 라켓 프레임의 균형을 손끝으로 재 본다", "Yeongsik balances the racket frame on his fingertips", -1, "", "", "cu"],
+      ["라켓 작업실", "racket workshop", "서유나가 표영식의 이름을 부르며 작업대 앞에 선다", "Yuna stands at his bench and says his name", 2, "제 라켓은 이분이 매 주세요.", "I want him stringing my racket.", "low"],
+      ["라켓 작업실", "racket workshop", "진예나의 코치 명찰이 가방에 밀어 넣어진다", "Yena's coach badge is shoved into a bag", 0, "장력은 제가 맞춥니다. 손대지 마세요.", "I'll set the tension. Don't touch it.", "cu"],
+      ["라켓 작업실", "racket workshop", "서유나가 그립을 감싼 테이프 아래 글자를 발견한다", "Yuna finds letters under the tape on the grip", 2, "그립 안에 이름이 적혀 있어요.", "There's a name written under the grip.", "pi"]
+    ]
+  ],
+  [
+    "그린을 읽는 캐디",
+    "The Caddie's Read",
+    "마지막 홀에서 프로가 퍼팅을 놓쳤다. 캐디가 그린에 엎드렸다.",
+    "The pro misses a putt on the last hole. The caddie kneels on the green.",
+    [
+      ["H", "한덕순", "Myrna Leach", "50대 여성, 흰 캐디복, 짧은 흰머리, 그을린 얼굴, 잔잔한 눈", "woman in her 50s, white caddie uniform, short white hair, sun-darkened face, steady eyes"],
+      ["V", "오규민", "Lars Coyne", "30대 남성, 분홍 셔츠, 짧은 머리, 비웃는 얼굴", "man in his 30s, pink shirt, short hair, sneering face"],
+      ["A", "정미자", "Flora Corliss", "60대 여성, 베이지 재킷, 흰 머리, 온화한 눈", "woman in her 60s, beige jacket, white hair, gentle eyes"]
+    ],
+    [
+      ["골프장 그린", "golf green", "오규민이 그린에 엎드린 한덕순의 가방을 발로 밀어 옆으로 보낸다", "Gyumin kicks her bag aside as she kneels", 1, "캐디가 그린을 읽어?", "A caddie reading the green?", "cz"],
+      ["골프장 그린", "golf green", "오규민이 한덕순의 거리 수첩을 집어 던진다", "Gyumin throws her yardage book away", 1, "여긴 프로가 판단하는 곳이야.", "Pros make the calls here.", "ms"],
+      ["골프장 그린", "golf green", "한덕순이 잔디 결을 손바닥으로 쓸며 고개를 끄덕인다", "Deoksun sweeps the grass grain with her palm and nods", -1, "", "", "cu"],
+      ["골프장 그린", "golf green", "정미자가 클럽하우스의 우승 명판을 가리키며 일어선다", "Mija rises and points at the champions board", 2, "이 사람, 이 코스 챔피언이었어요.", "She was champion on this course.", "low"],
+      ["골프장 그린", "golf green", "오규민의 회원증이 접수처로 반납된다", "Gyumin's membership card is handed back at the desk", 0, "이 퍼팅, 제가 읽어 드리죠.", "Let me read this putt for you.", "cu"],
+      ["클럽하우스", "clubhouse", "정미자가 우승 명판의 이름을 손끝으로 문지른다", "Mija rubs a name on the champions board with her thumb", 2, "이 명판, 누가 이름을 바꿨어요.", "Someone changed the name on this board.", "pi"]
+    ]
+  ],
+  [
+    "보트하우스의 노",
+    "The Boathouse Keeper",
+    "결승 10분 전, 보트 옆구리가 갈라졌다. 보트지기가 노를 들었다.",
+    "Ten minutes before the final, the shell splits. The boathouse keeper picks up an oar.",
+    [
+      ["H", "황가을", "Una Coyne", "40대 여성, 남색 작업복, 짧은 흑발, 단단한 팔, 조용한 눈", "woman in her 40s, navy work clothes, short black hair, strong arms, quiet eyes"],
+      ["V", "남정식", "Dara Farris", "50대 남성, 흰 폴로셔츠, 짧은 머리, 찡그린 얼굴", "man in his 50s, white polo shirt, short hair, scowling face"],
+      ["A", "임광복", "Simon Kettle", "60대 남성, 회색 재킷, 흰 머리, 무거운 눈", "man in his 60s, gray jacket, white hair, heavy eyes"]
+    ],
+    [
+      ["보트하우스", "boathouse", "남정식이 보트를 닦던 황가을의 손에서 걸레를 뺏는다", "Jeongsik takes the rag from her hands", 1, "보트나 닦는 사람이 뭘 알아.", "A boat cleaner who knows what?", "cz"],
+      ["보트하우스", "boathouse", "남정식이 황가을의 수리함을 발로 차 문밖으로 밀어낸다", "Jeongsik kicks her repair box out the door", 1, "이 배는 못 나가. 기권해.", "This boat can't race. Withdraw.", "ms"],
+      ["보트하우스", "boathouse", "황가을이 갈라진 옆구리에 손을 대고 결을 따라 훑는다", "Gaeul runs her hand along the split hull", -1, "", "", "cu"],
+      ["보트하우스", "boathouse", "임광복이 벽의 낡은 팀 사진을 가리키며 일어선다", "Gwangbok rises and points at an old team photo", 2, "이 배, 이 사람 이름으로 진수했어요.", "This boat was launched under her name.", "low"],
+      ["보트하우스", "boathouse", "남정식의 클럽 회장 명패가 벽에서 떼어진다", "Jeongsik's club president plaque is taken off the wall", 0, "이 배는 나갑니다. 제 손으로 고쳐서.", "This boat races. I'll fix it myself.", "cu"],
+      ["보트하우스", "boathouse", "임광복이 보트 선수 이름을 손으로 문질러 본다", "Gwangbok rubs the boat's painted name with his hand", 2, "이 배, 원래 이름이 따로 있어요.", "This boat had a different name once.", "pi"]
+    ]
+  ],
+  [
+    "왼쪽으로 쏠린 화살",
+    "Every Arrow Drifted Left",
+    "국가대표 선발전, 화살이 모두 왼쪽으로 쏠렸다. 과녁지기가 손을 들었다.",
+    "At the national trials every arrow drifts left. The target keeper raises his hand.",
+    [
+      ["H", "왕영철", "Perrin Corliss", "50대 남성, 회색 작업복, 짧은 흰머리, 안경, 차분한 눈", "man in his 50s, gray work clothes, short white hair, glasses, calm eyes"],
+      ["V", "차소율", "Briar Kroll", "40대 여성, 빨간 트레이닝복, 묶은 머리, 날카로운 눈", "woman in her 40s, red training suit, tied hair, sharp eyes"],
+      ["A", "구명달", "Iona Kettle", "60대 남성, 남색 재킷, 흰 머리, 잔잔한 눈", "man in his 60s, navy jacket, white hair, calm eyes"]
+    ],
+    [
+      ["양궁장", "archery range", "차소율이 과녁을 세우던 왕영철의 팔을 잡아 돌려세운다", "Soyul spins the target keeper around by the arm", 1, "과녁이나 세우는 사람이 뭘 알아.", "A target keeper who knows what?", "cz"],
+      ["양궁장", "archery range", "차소율이 왕영철의 줄자를 발로 밟아 끊는다", "Soyul snaps his measuring tape under her shoe", 1, "선수 탓이야. 과녁은 그대로.", "It's the archers. The targets stay.", "ms"],
+      ["양궁장", "archery range", "왕영철이 조준기의 나사를 손끝으로 돌려 보며 고개를 갸웃한다", "Yeongcheol turns a sight screw and tilts his head", -1, "", "", "cu"],
+      ["양궁장", "archery range", "구명달이 기록 게시판의 한 줄을 손가락으로 짚는다", "Myeongdal points at a line on the record board", 2, "이 사람, 이 대회 기록 보유자예요.", "He holds the record at this range.", "low"],
+      ["양궁장", "archery range", "차소율의 감독 배지가 탁자 위에 내려놓인다", "Soyul's coach badge is set down on the table", 0, "과녁은 그대로였습니다. 조준기가 틀었어요.", "The targets were fine. The sight was off.", "cu"],
+      ["양궁장", "archery range", "왕영철이 과녁 뒤편의 자국을 손전등으로 비춘다", "Yeongcheol lights up marks behind the target face", 2, "과녁이 밤새 움직였어요.", "Someone moved the targets overnight.", "pi"]
+    ]
+  ],
+  [
+    "소방서의 저녁밥",
+    "The Firehouse Cook",
+    "창고 화재 진압이 막혔다. 소방서 밥을 하던 노인이 도면을 폈다.",
+    "A warehouse fire stalls. The old station cook unfolds a floor plan.",
+    [
+      ["H", "명봉식", "Wendell Ashe", "60대 남성, 흰 앞치마, 흰 머리, 굵은 팔, 조용한 눈", "man in his 60s, white apron, white hair, thick arms, quiet eyes"],
+      ["V", "유세아", "Zane Dunne", "40대 여성, 소방 제복, 짧은 머리, 성난 얼굴", "woman in her 40s, fire uniform, short hair, angry face"],
+      ["A", "천정자", "Estelle Marsden", "60대 여성, 회색 코트, 흰 머리, 놀란 눈", "woman in her 60s, gray coat, white hair, startled eyes"]
+    ],
+    [
+      ["소방서", "fire station", "유세아가 도면을 펴던 명봉식의 손에서 종이를 빼앗는다", "Seah takes the floor plan from his hands", 1, "밥 하는 사람이 진압을 지휘해?", "The cook directing a fire?", "cz"],
+      ["소방서", "fire station", "유세아가 명봉식의 앞치마를 벗겨 의자에 던진다", "Seah strips off his apron and throws it on a chair", 1, "여긴 내 지휘다. 나가 있어.", "This is my command. Stay out.", "ms"],
+      ["소방서", "fire station", "명봉식이 도면의 한 지점을 손가락으로 짚고 벽 쪽을 본다", "Bongsik taps a point on the plan and looks at the wall", -1, "", "", "cu"],
+      ["소방서", "fire station", "천정자가 벽에 걸린 낡은 헬멧의 번호를 가리킨다", "Jeongja points at the number on an old helmet on the wall", 2, "이 사람, 이 소방서 초대 대장이에요.", "He was the first chief of this station.", "low"],
+      ["소방서", "fire station", "유세아가 지휘봉을 내려놓고 도면 앞에 선다", "Seah sets down the command baton and stands at the plan", 0, "창고 뒤편에 사람이 있어요. 저기부터.", "Someone's behind that wall. Start there.", "cu"],
+      ["소방서", "fire station", "천정자가 창고 쪽에서 올라오는 연기를 손으로 가리킨다", "Jeongja points at smoke rising from the warehouse", 2, "이 연기, 기름 냄새가 나요.", "This smoke smells like fuel.", "pi"]
+    ]
+  ]
+]

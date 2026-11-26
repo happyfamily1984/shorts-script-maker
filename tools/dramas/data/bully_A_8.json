@@ -1,0 +1,912 @@
+[
+ [
+  "물고기 먹이 주던 관장",
+  "The Fish Feeder Runs It",
+  "단체 관람을 무료로 요구하며 관장을 조롱한 기획자. 대관을 결정하는 사람이 그녀였다.",
+  "A planner demands a free corporate party and sneers at the fish feeder. She approves the booking.",
+  [
+   [
+    "H",
+    "설원",
+    "Freya",
+    "40대 여성, 남색 정장에 수족관 배지, 짧은 머리, 차분한 눈",
+    "woman in her 40s, navy suit and aquarium badge, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "선제",
+    "Lars",
+    "50대 남성, 밝은 회색 정장, 흰 머리, 비웃는 입매",
+    "man in his 50s, light gray suit, white hair, sneering mouth"
+   ],
+   [
+    "A",
+    "서현",
+    "Emil",
+    "30대 남성, 수족관 직원 조끼, 무전기, 긴장한 표정",
+    "man in his 30s, aquarium staff vest, radio, tense face"
+   ]
+  ],
+  [
+   [
+    "수족관 수조 앞",
+    "aquarium tank",
+    "선제가 관람 안내판을 밀어 바닥에 떨어뜨린다",
+    "Lars shoves a visitor sign onto the floor",
+    1,
+    "물고기 먹이 주던 애가 관장이야?",
+    "The fish feeder runs this aquarium?",
+    "cz"
+   ],
+   [
+    "수족관 수조 앞",
+    "aquarium tank",
+    "선제가 대관 신청서를 찢어 수조 유리 앞에 던진다",
+    "He tears the venue booking and throws it by the tank glass",
+    1,
+    "우리 회사 송년회, 여기서 해. 무료로.",
+    "Our company party is here. For free.",
+    "ms"
+   ],
+   [
+    "수족관 수조 앞",
+    "aquarium tank",
+    "설원이 찢어진 신청서를 주워 날짜를 확인한다",
+    "Freya picks up the torn form and checks the date",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "수족관 사무실",
+    "aquarium office",
+    "서현이 관람 일정표를 들고 와 설원 옆에 선다",
+    "Emil brings the visiting schedule and stands beside her",
+    2,
+    "관장님, 그날은 야간 개장 행사가 있습니다.",
+    "Director, we have a night opening that day.",
+    "low"
+   ],
+   [
+    "수족관 수조 앞",
+    "aquarium tank",
+    "선제가 손에서 명함을 떨어뜨린다",
+    "Lars drops his business card",
+    0,
+    "대관은 안 됩니다. 다음 분기로 미루세요.",
+    "No booking. Try next quarter.",
+    "cu"
+   ],
+   [
+    "수족관 수조 앞",
+    "aquarium tank",
+    "서현이 수조 앞에 선 낯선 남자를 가리킨다",
+    "Emil points at a stranger standing by the tank",
+    2,
+    "저분, 아까부터 관장님을 찾고 있습니다.",
+    "That man has been asking for you.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "전단지 찍던 사장",
+  "The Man Who Printed Flyers",
+  "창립전 인쇄를 맡기며 사장을 전단지 담당으로 부른 홍보팀장. 납기를 결정하는 사람이 그였다.",
+  "A marketing chief sneers at the flyer printer while demanding a launch print run. He sets the deadline.",
+  [
+   [
+    "H",
+    "서한",
+    "Felix",
+    "40대 남성, 잉크 묻은 작업복, 안경, 차분한 눈",
+    "man in his 40s, ink-stained work clothes, glasses, calm eyes"
+   ],
+   [
+    "V",
+    "다빈",
+    "Marlowe",
+    "40대 여성, 흰 블라우스와 금장 구두, 긴 머리, 비웃는 표정",
+    "woman in her 40s, white blouse and gold heels, long hair, sneering face"
+   ],
+   [
+    "A",
+    "도은",
+    "Kendall",
+    "30대 남성, 인쇄소 직원, 앞치마, 당황한 얼굴",
+    "man in his 30s, print shop staff, apron, flustered face"
+   ]
+  ],
+  [
+   [
+    "인쇄소",
+    "print shop",
+    "다빈이 시안을 인쇄기 위에 던진다",
+    "Marlowe throws the proof onto the press",
+    1,
+    "전단지 찍던 애가 우리 인쇄를 맡아?",
+    "The flyer printer handles our launch?",
+    "cz"
+   ],
+   [
+    "인쇄소",
+    "print shop",
+    "다빈이 발주서를 찢어 서한 앞에 뿌린다",
+    "She tears the order and scatters it in front of him",
+    1,
+    "창립전 인쇄, 오늘 밤까지 끝내.",
+    "Print the launch by tonight.",
+    "ms"
+   ],
+   [
+    "인쇄소",
+    "print shop",
+    "서한이 찢어진 발주서를 주워 색 번호를 확인한다",
+    "Felix gathers the torn order and checks the color codes",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "인쇄소",
+    "print shop",
+    "도은이 납기 확인서를 들고 와 서한에게 건넨다",
+    "Kendall brings a delivery confirmation and hands it over",
+    2,
+    "대표님, 이 발주는 지난주에 취소됐습니다.",
+    "Sir, this order was cancelled last week.",
+    "low"
+   ],
+   [
+    "인쇄소",
+    "print shop",
+    "다빈이 시안을 도로 집어 든다",
+    "Marlowe snatches the proof back",
+    0,
+    "인쇄는 못 합니다. 다른 곳에 맡기세요.",
+    "We can't print this. Take it elsewhere.",
+    "cu"
+   ],
+   [
+    "인쇄소",
+    "print shop",
+    "도은이 발주서 끝의 서명을 가리킨다",
+    "Kendall points at the signature at the bottom of the order",
+    2,
+    "이 서명, 대표님 것이 아닙니다.",
+    "This isn't your signature.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "훈련생이 된 옛 선배",
+  "The Trainee Who Tormented Her",
+  "승무원 교육생이 된 옛 선배가 교관의 평가표를 접어 종이비행기로 날린다. 수료 서명권은 그녀에게 있었다.",
+  "A trainee folds his instructor's evaluation into a paper plane, not knowing she signs off his graduation.",
+  [
+   [
+    "H",
+    "설빈",
+    "Astrid",
+    "30대 여성, 남색 교관 제복, 단정한 올림머리, 서늘한 눈",
+    "woman in her 30s, navy instructor uniform, neat bun, cool eyes"
+   ],
+   [
+    "V",
+    "규범",
+    "Quentin",
+    "30대 남성, 흰 셔츠와 검은 바지, 풀린 넥타이, 비웃는 얼굴",
+    "man in his 30s, white shirt and black trousers, loose tie, sneering face"
+   ],
+   [
+    "A",
+    "서유",
+    "Ewan",
+    "30대 남성, 교관 조끼, 평가표, 긴장한 표정",
+    "man in his 30s, instructor vest, evaluation sheet, tense face"
+   ]
+  ],
+  [
+   [
+    "승무원 훈련원",
+    "cabin crew academy",
+    "규범이 설빈의 평가표를 빼앗아 종이비행기로 접는다",
+    "Quentin snatches Astrid's evaluation sheet and folds it into a plane",
+    1,
+    "너가 날 평가해? 웃기지 마.",
+    "You're grading me? That's rich.",
+    "cz"
+   ],
+   [
+    "승무원 훈련원",
+    "cabin crew academy",
+    "규범이 비행기를 설빈 발치로 날리고 훈련생들이 웃는다",
+    "He sails the plane at her feet as trainees laugh",
+    1,
+    "옛날처럼 뒤에 서 있어. 조용히.",
+    "Stand in the back like before. Quietly.",
+    "rx"
+   ],
+   [
+    "승무원 훈련원",
+    "cabin crew academy",
+    "설빈이 종이비행기를 펴서 주름을 손으로 눌러 편다",
+    "Astrid unfolds the plane and presses the creases flat",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "승무원 훈련원",
+    "cabin crew academy",
+    "서유가 평가표를 들고 나와 규범 앞에 선다",
+    "Ewan steps forward with the sheet and faces Quentin",
+    2,
+    "수료 서명권은 교관님에게만 있습니다.",
+    "Only the instructor can sign off your graduation.",
+    "low"
+   ],
+   [
+    "승무원 훈련원",
+    "cabin crew academy",
+    "규범이 고개를 숙이고 훈련생들이 조용해진다",
+    "Quentin lowers his head as the trainees fall silent",
+    0,
+    "오늘 훈련은 여기까지. 내일 다시 평가합니다.",
+    "Training ends here. I'll grade you again tomorrow.",
+    "cu"
+   ],
+   [
+    "승무원 훈련원",
+    "cabin crew academy",
+    "서유가 평가표 아래 접힌 서류를 조용히 빼낸다",
+    "Ewan quietly pulls a folded document from under the sheet",
+    2,
+    "지원서 경력이... 두 개가 겹칩니다.",
+    "Two entries on his resume overlap.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "반찬 만지던 원장",
+  "The Chef They Called a Side Dish",
+  "지점장 교육 인증을 요구하며 원장을 조롱한 프랜차이즈 대표. 인증을 결정하는 사람이 그였다.",
+  "A franchise owner sneers at the culinary school director while demanding certification. He signs it.",
+  [
+   [
+    "H",
+    "리안",
+    "Terence",
+    "30대 남성, 흰 조리복, 짧은 머리, 담담한 눈",
+    "man in his 30s, white chef coat, short hair, level eyes"
+   ],
+   [
+    "V",
+    "서월",
+    "Petra",
+    "40대 여성, 회색 정장, 짧은 단발, 날카로운 눈썹",
+    "woman in her 40s, gray suit, short bob, sharp brows"
+   ],
+   [
+    "A",
+    "동은",
+    "Micah",
+    "30대 남성, 학원 직원, 서류철, 공손한 태도",
+    "man in his 30s, school staff, case file, deferential manner"
+   ]
+  ],
+  [
+   [
+    "요리 학원 주방",
+    "culinary school kitchen",
+    "서월이 리안의 조리 도구를 쓸어 떨어뜨린다",
+    "Petra sweeps Terence's kitchen tools off the counter",
+    1,
+    "반찬 만지던 애가 원장이야?",
+    "The side-dish kid runs this school?",
+    "cz"
+   ],
+   [
+    "요리 학원 주방",
+    "culinary school kitchen",
+    "서월이 교육 신청서를 찢어 리안 앞에 던진다",
+    "She tears the training application and throws it at him",
+    1,
+    "우리 지점장들, 이번 주에 수료시켜.",
+    "Certify my managers this week.",
+    "ms"
+   ],
+   [
+    "요리 학원 주방",
+    "culinary school kitchen",
+    "리안이 찢어진 신청서를 주워 이름을 확인한다",
+    "Terence picks up the torn application and checks the names",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "요리 학원 사무실",
+    "culinary school office",
+    "동은이 지점 명단을 들고 와 리안에게 건넨다",
+    "Micah brings the branch list and hands it to Terence",
+    2,
+    "원장님, 이 지점은 인증 없이 문을 열었습니다.",
+    "Director, this branch opened without certification.",
+    "low"
+   ],
+   [
+    "요리 학원 주방",
+    "culinary school kitchen",
+    "서월이 명단을 빼앗아 들고 입을 다문다",
+    "Petra takes the list and closes her mouth",
+    0,
+    "수료는 못 내 드립니다. 교육부터 받으세요.",
+    "No certificates. Send them to training first.",
+    "cu"
+   ],
+   [
+    "요리 학원 주방",
+    "culinary school kitchen",
+    "동은이 명단 아래 사진을 꺼내 보여 준다",
+    "Micah takes a photo from under the list",
+    2,
+    "이 주방, 우리가 모르는 조리장입니다.",
+    "That kitchen has a chef we never trained.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "술이나 따르던 애",
+  "The Girl Who Poured Drinks",
+  "접대 자리에서 바 오너를 조롱하고 잔을 쏟는 손님. 그 바의 주인이자 세계 대회 우승자가 그였다.",
+  "A client mocks the bar owner and spills his drink. The owner is a world champion behind that bar.",
+  [
+   [
+    "H",
+    "마루",
+    "Elias",
+    "30대 남성, 검은 조끼와 셔츠, 짧은 머리, 무표정한 눈",
+    "man in his 30s, black vest and shirt, short hair, expressionless eyes"
+   ],
+   [
+    "V",
+    "서호",
+    "Dorian",
+    "40대 남성, 밝은 정장에 금시계, 젖은 머리, 거만한 웃음",
+    "man in his 40s, bright suit with a gold watch, wet hair, smug laugh"
+   ],
+   [
+    "A",
+    "서안",
+    "Mira",
+    "30대 여성, 바 직원 유니폼, 쟁반, 난처한 표정",
+    "woman in her 30s, bar staff uniform, tray, awkward face"
+   ]
+  ],
+  [
+   [
+    "칵테일 바",
+    "cocktail bar",
+    "서호가 잔을 마루 앞으로 밀며 손가락을 튕긴다",
+    "Dorian slides a glass toward Elias and snaps his fingers",
+    1,
+    "술이나 따르던 애가 오너야? 웃기네.",
+    "The kid who poured drinks owns this bar?",
+    "cz"
+   ],
+   [
+    "칵테일 바",
+    "cocktail bar",
+    "서호가 잔을 기울여 마루의 신발 앞에 쏟는다",
+    "He tips the glass and pours it at Elias's shoes",
+    1,
+    "이 바, 오늘 내가 접대한다. 나가 있어.",
+    "I'm hosting clients here tonight. Get lost.",
+    "ms"
+   ],
+   [
+    "칵테일 바",
+    "cocktail bar",
+    "마루가 쏟아진 자리를 닦고 새 잔을 조용히 올린다",
+    "Elias wipes the spill and sets a fresh glass on the bar",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "칵테일 바",
+    "cocktail bar",
+    "서안이 벽의 액자를 가리키며 손님들 쪽으로 고개를 돌린다",
+    "Mira points at a framed award and turns to the guests",
+    2,
+    "세계 대회 우승자입니다. 이 바 주인이요.",
+    "World champion. He owns this bar.",
+    "low"
+   ],
+   [
+    "칵테일 바",
+    "cocktail bar",
+    "서호가 잔을 내려놓고 손님들 시선을 피한다",
+    "Dorian sets down his glass and avoids the guests' eyes",
+    0,
+    "접대는 다른 데서 하세요. 예약 취소됐습니다.",
+    "Host your clients elsewhere. Your table is cancelled.",
+    "cu"
+   ],
+   [
+    "칵테일 바",
+    "cocktail bar",
+    "서안이 예약 명단을 내밀며 한 이름을 짚는다",
+    "Mira holds out the reservation list and taps a name",
+    2,
+    "이 손님, 옛 선배라고 하던데요.",
+    "This guest says he's an old senior of yours.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "꽃 배달하던 그녀",
+  "The Flower Delivery Girl",
+  "개막식 꽃 300개를 내일 아침까지 요구하며 조롱한 행사 총괄. 계약을 쥔 사람이 그녀였다.",
+  "An event director demands three hundred bouquets by morning and jeers at the delivery girl. She holds the contract.",
+  [
+   [
+    "H",
+    "설율",
+    "Willa",
+    "30대 여성, 앞치마에 꽃가위, 묶은 머리, 맑은 눈",
+    "woman in her 30s, apron with floral shears, tied-back hair, clear eyes"
+   ],
+   [
+    "V",
+    "서백",
+    "Bram",
+    "50대 남성, 검은 코트, 흰 수염, 거만하게 든 턱",
+    "man in his 50s, black coat, white beard, arrogant lifted chin"
+   ],
+   [
+    "A",
+    "서훈",
+    "Nils",
+    "30대 남성, 플라워숍 직원, 꽃 상자, 긴장한 표정",
+    "man in his 30s, flower shop staff, flower crate, tense face"
+   ]
+  ],
+  [
+   [
+    "꽃가게",
+    "flower shop",
+    "서백이 꽃다발을 카운터에 던져 꽃잎을 흩뜨린다",
+    "Bram throws a bouquet on the counter, scattering petals",
+    1,
+    "꽃 배달하던 애가 꽃을 만들어?",
+    "The flower delivery girl does arrangements?",
+    "cz"
+   ],
+   [
+    "꽃가게",
+    "flower shop",
+    "서백이 주문서를 찢어 설율 앞에 뿌린다",
+    "He tears the order and scatters it in front of her",
+    1,
+    "개막식 꽃 300개, 내일 아침까지.",
+    "Three hundred bouquets for the opening. By morning.",
+    "ms"
+   ],
+   [
+    "꽃가게",
+    "flower shop",
+    "설율이 찢어진 주문서를 주워 수량을 확인한다",
+    "Willa gathers the torn order and checks the numbers",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "꽃가게",
+    "flower shop",
+    "서훈이 냉장고 문을 열어 빈 선반을 보여 준다",
+    "Nils opens the cooler and shows the empty shelves",
+    2,
+    "대표님, 이번 주 물량은 이미 다 나갔습니다.",
+    "Boss, this week's stock is already gone.",
+    "low"
+   ],
+   [
+    "꽃가게",
+    "flower shop",
+    "서백이 흩어진 꽃잎을 내려다본다",
+    "Bram looks down at the scattered petals",
+    0,
+    "주문은 못 받습니다. 다른 꽃집을 보세요.",
+    "We can't take it. Try another florist.",
+    "cu"
+   ],
+   [
+    "꽃가게",
+    "flower shop",
+    "서훈이 주문서 뒤에 적힌 이름을 가리킨다",
+    "Nils points at a name written on the back of the order",
+    2,
+    "이 주문, 다른 꽃집에도 들어갔습니다.",
+    "This order went to another florist too.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "생선 만지던 경매사",
+  "The Fish Market Auctioneer",
+  "맨 앞자리를 요구하며 경매사를 조롱한 도매업자. 입찰 자격을 정하는 사람이 그였다.",
+  "A wholesaler demands first pick and sneers at the auctioneer. He decides who may bid.",
+  [
+   [
+    "H",
+    "규서",
+    "Arlo",
+    "40대 남성, 고무 앞치마에 장화, 짧은 머리, 무표정한 눈",
+    "man in his 40s, rubber apron and boots, short hair, expressionless eyes"
+   ],
+   [
+    "V",
+    "새결",
+    "Brielle",
+    "30대 여성, 검은 정장에 장갑, 긴 머리, 비웃는 입",
+    "woman in her 30s, black suit and gloves, long hair, sneering mouth"
+   ],
+   [
+    "A",
+    "서인",
+    "Asa",
+    "30대 남성, 공판장 직원, 경매표, 조용한 태도",
+    "man in his 30s, market staff, auction slip, quiet manner"
+   ]
+  ],
+  [
+   [
+    "수산 공판장",
+    "fish market auction floor",
+    "새결이 상자 위에 손을 얹고 규서를 내려다본다",
+    "Brielle rests a hand on a crate and looks down at Arlo",
+    1,
+    "생선 만지던 애가 경매를 해?",
+    "The fish handler runs the auction?",
+    "cz"
+   ],
+   [
+    "수산 공판장",
+    "fish market auction floor",
+    "새결이 경매표를 찢어 물기 있는 바닥에 던진다",
+    "She tears the auction slip and throws it on the wet floor",
+    1,
+    "내 물량부터 맨 앞에 올려.",
+    "My lot goes first.",
+    "ms"
+   ],
+   [
+    "수산 공판장",
+    "fish market auction floor",
+    "규서가 젖은 경매표를 주워 번호를 확인한다",
+    "Arlo picks up the wet slip and checks the lot number",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "수산 공판장",
+    "fish market auction floor",
+    "서인이 입찰 명부를 들고 와 규서 옆에 선다",
+    "Asa brings the bidder list and stands beside him",
+    2,
+    "경매사님, 이 업체는 지난달에 자격 정지됐습니다.",
+    "Auctioneer, this buyer was suspended last month.",
+    "low"
+   ],
+   [
+    "수산 공판장",
+    "fish market auction floor",
+    "새결이 장갑을 벗어 들고 한 걸음 물러선다",
+    "Brielle peels off a glove and steps back",
+    0,
+    "오늘 입찰은 못 하십니다. 나가 주세요.",
+    "You can't bid today. Please leave.",
+    "cu"
+   ],
+   [
+    "수산 공판장",
+    "fish market auction floor",
+    "서인이 상자 옆의 거래 명세서를 집어 든다",
+    "Asa picks up the trading sheet beside the crate",
+    2,
+    "이 거래처, 지난달에도 문제였습니다.",
+    "This buyer caused trouble last month too.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "매트나 깔던 원장",
+  "Just a Mat Roller",
+  "강사 인증을 요구하며 요가 원장을 조롱한 회원. 인증을 결정하는 사람이 그였다.",
+  "A member sneers at the yoga director while demanding instructor certification. He signs it.",
+  [
+   [
+    "H",
+    "서재",
+    "Patrick",
+    "40대 남성, 회색 반팔에 요가 바지, 짧은 머리, 고요한 눈",
+    "man in his 40s, gray tee and yoga pants, short hair, serene eyes"
+   ],
+   [
+    "V",
+    "설미",
+    "Delphine",
+    "40대 여성, 분홍 운동복, 긴 머리, 비웃는 입",
+    "woman in her 40s, pink workout clothes, long hair, sneering mouth"
+   ],
+   [
+    "A",
+    "서솔",
+    "Otis",
+    "30대 남성, 스튜디오 직원, 수강 명부, 난처한 표정",
+    "man in his 30s, studio staff, enrollment list, awkward face"
+   ]
+  ],
+  [
+   [
+    "요가 스튜디오",
+    "yoga studio",
+    "설미가 매트를 발로 밀어 서재 앞에서 멈춘다",
+    "Delphine kicks a mat so it stops in front of Patrick",
+    1,
+    "매트나 깔던 애가 원장이야?",
+    "The mat roller runs this studio?",
+    "cz"
+   ],
+   [
+    "요가 스튜디오",
+    "yoga studio",
+    "설미가 수강 신청서를 찢어 서재 앞에 뿌린다",
+    "She tears the enrollment form and scatters it before him",
+    1,
+    "내 스튜디오 강사들, 오늘 인증해.",
+    "Certify my instructors today.",
+    "ms"
+   ],
+   [
+    "요가 스튜디오",
+    "yoga studio",
+    "서재가 찢어진 신청서를 주워 이름을 확인한다",
+    "Patrick gathers the torn form and checks the names",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "요가 스튜디오",
+    "yoga studio",
+    "서솔이 강사 명단을 들고 와 서재에게 건넨다",
+    "Otis brings the instructor list and hands it over",
+    2,
+    "원장님, 이분들은 필수 교육을 안 받았습니다.",
+    "Director, none of them took the required course.",
+    "low"
+   ],
+   [
+    "요가 스튜디오",
+    "yoga studio",
+    "설미가 매트 위에 서서 팔짱을 푼다",
+    "Delphine stands on the mat and unfolds her arms",
+    0,
+    "인증은 안 됩니다. 교육부터 받으세요.",
+    "No certification. Take the course first.",
+    "cu"
+   ],
+   [
+    "요가 스튜디오",
+    "yoga studio",
+    "서솔이 명부 아래 신청서를 꺼내 보여 준다",
+    "Otis pulls an application from under the list",
+    2,
+    "이 신청서, 다른 스튜디오 이름입니다.",
+    "This application is under another studio's name.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "몸 약하던 애가 치료사",
+  "The Therapist He Mocked",
+  "재활 치료를 받으러 온 옛 선배가 치료 도구를 쓸어버린다. 이 프로토콜을 만든 사람이 그녀였다.",
+  "An old classmate sweeps her therapy tools off the table. She wrote the protocol his recovery runs on.",
+  [
+   [
+    "H",
+    "서이",
+    "Maeve",
+    "30대 여성, 흰 유니폼, 묶은 머리, 차분하고 단단한 눈",
+    "woman in her 30s, white uniform, tied-back hair, calm firm eyes"
+   ],
+   [
+    "V",
+    "서단",
+    "Rory",
+    "30대 남성, 운동복, 목 보호대, 짜증 난 얼굴",
+    "man in his 30s, tracksuit, neck brace, irritated face"
+   ],
+   [
+    "A",
+    "서혜",
+    "Saskia",
+    "30대 여성, 데스크 유니폼, 진료 예약표, 곤란한 표정",
+    "woman in her 30s, front desk uniform, appointment board, troubled face"
+   ]
+  ],
+  [
+   [
+    "재활센터 치료실",
+    "rehab therapy room",
+    "서단이 서이의 치료 도구를 쓸어 탁자 아래로 떨어뜨린다",
+    "Rory sweeps Maeve's therapy tools off the table",
+    1,
+    "몸 약하던 애가 내 재활을 해?",
+    "The weak kid is handling my recovery?",
+    "cz"
+   ],
+   [
+    "재활센터 치료실",
+    "rehab therapy room",
+    "서단이 치료 일정표를 찢어 서이 앞에 던진다",
+    "He tears the schedule and throws it at her",
+    1,
+    "다른 치료사 불러. 너 말고.",
+    "Get me another therapist. Not you.",
+    "ms"
+   ],
+   [
+    "재활센터 치료실",
+    "rehab therapy room",
+    "서이가 떨어진 도구를 주워 정리하고 기록지를 편다",
+    "Maeve gathers the tools and opens the chart",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "재활센터 치료실",
+    "rehab therapy room",
+    "서혜가 문을 열고 원장 서명이 담긴 지시서를 읽는다",
+    "Saskia opens the door and reads a directive with the director's signature",
+    2,
+    "프로토콜 만든 분이에요. 교체는 안 됩니다.",
+    "She wrote this protocol. No replacements.",
+    "low"
+   ],
+   [
+    "재활센터 치료실",
+    "rehab therapy room",
+    "서단이 목 보호대를 만지며 의자에 앉는다",
+    "Rory touches his neck brace and sits down",
+    0,
+    "치료는 받겠습니다. 순서는 제가 정하죠.",
+    "I'll take the therapy. I set the order.",
+    "cu"
+   ],
+   [
+    "재활센터 치료실",
+    "rehab therapy room",
+    "서이가 기록지 사이에서 옛 사진을 꺼내 본다",
+    "Maeve pulls an old photo from between the charts",
+    0,
+    "이 사진... 아직 갖고 있었네요.",
+    "You kept this photo all along.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "조문객이 된 옛 선배",
+  "The Mourner From Her Past",
+  "장례식장에서 장례지도사를 장의사로 부르며 방명록을 밀어내는 조문객. 유족이 그에게 전권을 맡겼다.",
+  "A mourner pushes the guest book at the funeral director and jeers. The family gave him full charge.",
+  [
+   [
+    "H",
+    "서완",
+    "Levi",
+    "40대 남성, 검은 정장, 흰 장갑, 조용하고 단정한 태도",
+    "man in his 40s, black suit, white gloves, quiet composed manner"
+   ],
+   [
+    "V",
+    "서예",
+    "Giselle",
+    "40대 여성, 검은 원피스에 큰 선글라스, 치켜든 턱",
+    "woman in her 40s, black dress and big sunglasses, lifted chin"
+   ],
+   [
+    "A",
+    "서전",
+    "Wes",
+    "30대 남성, 상조회사 직원, 방명록, 조용한 목소리",
+    "man in his 30s, funeral staff, guest book, quiet voice"
+   ]
+  ],
+  [
+   [
+    "장례식장",
+    "funeral home",
+    "서예가 방명록을 서완 앞으로 밀며 선글라스를 올린다",
+    "Giselle pushes the guest book at Levi and lifts her sunglasses",
+    1,
+    "장의사가 뭘 이렇게 잘 알아? 웃기네.",
+    "A funeral hand knows this much? Funny.",
+    "cz"
+   ],
+   [
+    "장례식장",
+    "funeral home",
+    "서예가 서완의 장갑을 집어 바닥에 떨어뜨린다",
+    "She flicks his white glove onto the floor",
+    1,
+    "이 자리, 내가 주도할 거야. 늘 그랬듯이.",
+    "I'm running this service. Like always.",
+    "ms"
+   ],
+   [
+    "장례식장",
+    "funeral home",
+    "서완이 장갑을 주워 끼고 유족석 쪽을 조용히 가리킨다",
+    "Levi puts the glove back on and points quietly to the family seats",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "장례식장",
+    "funeral home",
+    "서전이 유족의 위임장을 들고 와 서완에게 건넨다",
+    "Wes brings a family authorization and hands it to Levi",
+    2,
+    "유족 대표님이 장례 전반을 이분께 맡기셨습니다.",
+    "The family put him in charge of the service.",
+    "low"
+   ],
+   [
+    "장례식장",
+    "funeral home",
+    "서예가 선글라스를 다시 쓰고 문 쪽으로 돌아선다",
+    "Giselle puts her sunglasses back on and turns toward the door",
+    0,
+    "조문은 예절대로. 자리는 안내해 드릴게요.",
+    "Mourn with manners. I'll show you your seat.",
+    "cu"
+   ],
+   [
+    "장례식장",
+    "funeral home",
+    "서전이 방명록의 한 줄을 짚으며 서완을 본다",
+    "Wes points at a line in the guest book and looks at Levi",
+    2,
+    "같은 반 이름이... 셋 더 있습니다.",
+    "Three more names from that class are in here.",
+    "pi"
+   ]
+  ]
+ ]
+]

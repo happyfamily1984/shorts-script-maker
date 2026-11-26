@@ -1,0 +1,172 @@
+[
+[
+ "체격이 안 맞는다던 노", "Wrong Build for the Boat",
+ "코치가 체격을 이유로 노를 빼앗는다. 그 보트의 조 기록 세 번은 그녀의 이름으로 남아 있었다.", "A coach takes an oar away over her build. That boat's three course records carry her name.",
+ [
+  ["H", "유정", "Hollis", "30대 여성, 조정 유니폼, 짧은 머리, 단단한 어깨", "woman in her 30s, rowing kit, short hair, solid shoulders"],
+  ["V", "인수", "Coach Vane", "40대 남성, 조정 코치 점퍼, 모자, 굳은 얼굴", "man in his 40s, rowing coach jacket, cap, stiff face"],
+  ["A", "지완", "Mr. Oakes", "40대 남성, 조정 협회 정장, 서류철, 차분한 태도", "man in his 40s, rowing association suit, folder, calm manner"]
+ ],
+ [
+  ["조정 보트하우스", "rowing boathouse", "인수가 다인의 노를 보트에서 빼낸다", "Coach Vane pulls Hollis's oar out of the boat", 1, "이 체격으론 노를 못 잡아요.", "That frame can't hold an oar.", "ms"],
+  ["조정 보트하우스", "rowing boathouse", "인수가 장신 선수를 보트에 앉힌다", "Coach Vane seats a taller rower in the shell", 1, "배는 힘으로 젓는 거예요.", "Boats are rowed with power.", "cz"],
+  ["조정 보트하우스", "rowing boathouse", "다인이 보트 명판과 조 기록판을 손끝으로 짚는다", "Hollis points at the boat's plate and the course record board", -1, "", "", "cu"],
+  ["조정 보트하우스", "rowing boathouse", "지완이 기록판과 명판을 나란히 본다", "Mr. Oakes compares the record board with the boat's plate", 2, "이 배, 다인 씨 조로 세 번 이겼습니다.", "This boat won three times with her crew.", "ots"],
+  ["조정 보트하우스", "rowing boathouse", "인수가 노를 두 손으로 건넨다", "Coach Vane holds the oar out with both hands", 0, "배는 힘이 아니라 박자로 나갑니다.", "A boat moves on rhythm, not muscle.", "cu"],
+  ["조정 보트하우스 부두", "boathouse dock", "지완이 다인에게 대표팀 문서를 건넨다", "Mr. Oakes hands Hollis a national team letter", 2, "대표팀에서도 부른다는데요.", "The national team has asked for you.", "pi"]
+ ]
+],
+[
+ "나이 많다던 서퍼", "Too Old for the Wave",
+ "심판이 나이를 이유로 참가증을 뺏는다. 대회 규정집엔 연령 제한이 한 줄도 없었다.", "A judge takes a surfer's entry over his age. The contest rulebook lists no age limit at all.",
+ [
+  ["H", "성구", "Moe", "50대 남성, 낡은 보드, 소금 묻은 머리, 웃는 눈", "man in his 50s, weathered board, salt-stiff hair, smiling eyes"],
+  ["V", "세진", "Judge Kerr", "30대 남성, 대회 심판 조끼, 선글라스, 비뚤어진 입", "man in his 30s, contest judge vest, sunglasses, crooked mouth"],
+  ["A", "해나", "Ms. Wren", "30대 여성, 대회 운영 정장, 클립보드, 단호한 태도", "woman in her 30s, contest official suit, clipboard, firm manner"]
+ ],
+ [
+  ["서핑 해변", "surf beach", "세진이 종수의 보드를 뒤집어 모래에 세운다", "Judge Kerr flips Moe's board into the sand", 1, "이 나이에 파도를 타요?", "You still ride waves at your age?", "ms"],
+  ["서핑 해변", "surf beach", "세진이 자기 보드를 들고 물로 나간다", "Judge Kerr walks his own board into the water", 1, "심사는 우리가 해요.", "We do the judging here.", "cz"],
+  ["서핑 해변 운영 천막", "beach tent", "종수가 규정집의 참가 자격 조항을 펼친다", "Moe opens the entry rules page of the rulebook", -1, "", "", "cu"],
+  ["서핑 해변 운영 천막", "beach tent", "소이가 규정집을 넘기며 고개를 젓는다", "Ms. Vale flips the pages and shakes her head", 2, "연령 제한은 없습니다. 규정에 없어요.", "There's no age limit in the rules.", "low"],
+  ["서핑 해변", "surf beach", "세진의 심사 결과지가 찢겨 바람에 날린다", "Judge Kerr's score sheet is torn and blown away", 0, "파도는 나이를 묻지 않아요.", "Waves don't ask your age.", "cu"],
+  ["서핑 해변", "surf beach", "바다 위로 큰 파도가 밀려온다", "A long set rolls in across the water", -1, "", "", "pi"]
+ ]
+],
+[
+ "고기나 굽는다던 셰프", "Just a Guy With a Grill",
+ "셰프가 훈연기를 밀어내고 자기 기술을 자랑한다. 훈연 기록 장부엔 그의 서명이 먼저였다.", "A chef shoves a pitmaster aside to show her technique. His signature is first in the cook log.",
+ [
+  ["H", "덕배", "Deke", "40대 남성, 가죽 앞치마, 짧은 수염, 순한 눈", "man in his 40s, leather apron, short beard, mild eyes"],
+  ["V", "미란", "Chef Holt", "40대 여성, 흰 셰프 재킷, 단발, 날카로운 눈", "woman in her 40s, white chef jacket, bob cut, sharp eyes"],
+  ["A", "가영", "Ms. Stow", "40대 여성, 대회 심사 정장, 안경, 꼼꼼한 표정", "woman in her 40s, contest judge suit, glasses, meticulous look"]
+ ],
+ [
+  ["바비큐 대회장", "barbecue ground", "미란이 필성의 그릴 덮개를 닫아 버린다", "Chef Holt slams Deke's grill lid shut", 1, "고기 굽는 건 셰프 일이 아니에요.", "Grilling isn't chef work.", "ms"],
+  ["바비큐 대회장", "barbecue ground", "미란이 자기 훈연기를 자랑하듯 두드린다", "Chef Holt taps her smoker like a trophy", 1, "이게 기술이죠.", "This is technique.", "cz"],
+  ["바비큐 대회장", "barbecue ground", "필성이 훈연 기록 장부에서 자기 서명을 짚는다", "Deke points at his own signature in the smoke log", -1, "", "", "cu"],
+  ["바비큐 대회 심사석", "judges' bench", "가영이 장부와 온도 기록을 나란히 비교한다", "Ms. Stow compares the log with the temperature chart", 2, "이 온도, 필성 씨 기록이 먼저예요.", "His log has that temperature first.", "low"],
+  ["바비큐 대회장", "barbecue ground", "미란의 훈연기가 대회장 밖으로 밀려난다", "Chef Holt's smoker is wheeled off the contest ground", 0, "불은 성실하게 키우는 거예요.", "Fire is raised with patience.", "cu"],
+  ["바비큐 대회장 입구", "contest entrance", "줄이 입구에서 대회장 안으로 길게 늘어선다", "A long queue curls from the entrance into the ground", -1, "", "", "pi"]
+ ]
+],
+[
+ "페인트칠이라던 벽화가", "Just a House Painter",
+ "심사위원이 노인의 스케치를 벽에서 떼어 낸다. 그 벽 밑엔 그의 밑그림이 그대로 남아 있었다.", "A judge peels an old painter's sketch off the wall. His underpainting still sits beneath her work.",
+ [
+  ["H", "정필", "Amos", "60대 남성, 페인트 묻은 작업복, 흰머리, 조용한 눈", "man in his 60s, paint-stained overalls, white hair, quiet eyes"],
+  ["V", "정아", "Ms. Sena", "40대 여성, 벽화가 작업복, 짧은 머리, 날선 눈", "woman in her 40s, muralist overalls, short hair, sharp eyes"],
+  ["A", "미현", "Mr. Cray", "40대 남성, 공모전 심사 정장, 태블릿, 성실한 얼굴", "man in his 40s, contest judge suit, tablet, earnest face"]
+ ],
+ [
+  ["벽화 공모 현장", "mural site", "정아가 정필의 스케치를 벽에서 떼어 낸다", "Ms. Sena peels Amos's sketch off the wall", 1, "페인트칠과 벽화는 달라요.", "House paint isn't mural work.", "ms"],
+  ["벽화 공모 현장", "mural site", "정아가 자기 벽면에 서명을 크게 그린다", "Ms. Sena paints her signature large on her wall", 1, "이건 예술이에요.", "This is art.", "cz"],
+  ["벽화 공모 현장", "mural site", "정필이 벽의 갈라진 틈에서 자기 밑그림을 보여 준다", "Amos peels a flake open to reveal his underpainting", -1, "", "", "cu"],
+  ["벽화 공모 현장", "mural site", "도경이 스케치와 정아의 벽면을 나란히 비교한다", "Mr. Cray holds the sketch up against her wall", 2, "이 벽 밑에 정필 씨 그림이 그대로 있습니다.", "His painting is still under this wall.", "ots"],
+  ["벽화 공모 현장", "mural site", "정아의 도료가 벽에서 긁혀 나간다", "Ms. Sena's paint is scraped off the wall", 0, "벽은 지워도 순서는 남아요.", "Walls get painted over. Order stays.", "cu"],
+  ["벽화 광장", "mural square", "사람들이 광장에 모여 벽을 올려다본다", "People gather in the square and look up at the wall", -1, "", "", "pi"]
+ ]
+],
+[
+ "유행 모른다던 메이크업", "She Doesn't Know Trends",
+ "수석이 지원자의 브러시를 뺏는다. 콘택트 시트의 촬영 기록엔 그녀의 작업이 먼저였다.", "A head artist takes an applicant's brush. The contact sheet shows her work was shot first.",
+ [
+  ["H", "하늘", "Lila", "20대 여성, 메이크업 벨트, 짧은 머리, 차분한 눈", "woman in her 20s, makeup belt, short hair, calm eyes"],
+  ["V", "미경", "Ms. Vogt", "50대 여성, 수석 메이크업 정장, 진한 립, 날선 눈", "woman in her 50s, head makeup artist suit, dark lip, sharp eyes"],
+  ["A", "주안", "Mr. Fenn", "40대 남성, 사진작가 셔츠, 카메라, 무뚝뚝한 얼굴", "man in his 40s, photographer shirt, camera, deadpan face"]
+ ],
+ [
+  ["촬영 스튜디오", "photo studio", "미경이 하늘의 브러시를 벨트에서 뽑아 낸다", "Ms. Vogt pulls a brush from Lila's belt", 1, "유행을 모르면 못 해요.", "No trend sense, no job.", "ms"],
+  ["촬영 스튜디오", "photo studio", "미경이 자기 제자에게 모델을 맡긴다", "Ms. Vogt hands the model to her own assistant", 1, "이 얼굴은 감각이 필요해요.", "This face needs instinct.", "cz"],
+  ["촬영 스튜디오", "photo studio", "하늘이 콘택트 시트에서 자기 작업 사진을 짚는다", "Lila points at her own work on the contact sheet", -1, "", "", "cu"],
+  ["촬영 스튜디오", "photo studio", "시온이 콘택트 시트와 촬영 기록을 펼친다", "Mr. Renn opens the contact sheet beside the call sheet", 2, "이 화보, 하늘 씨 작업이에요.", "This editorial is her work.", "low"],
+  ["촬영 스튜디오", "photo studio", "새 인쇄물에 하늘의 이름이 크레딧으로 찍힌다", "A fresh print comes out with Lila's name in the credits", 0, "얼굴은 유행이 아니라 사람을 봅니다.", "A face isn't a trend. It's a person.", "cu"],
+  ["촬영 스튜디오 문가", "studio door", "잡지 편집자가 문가에서 명함을 꺼낸다", "A magazine editor takes out a card at the door", -1, "", "", "pi"]
+ ]
+],
+[
+ "이혼한 사람은 안 된다던 대표", "Divorced? Then No",
+ "대표가 이혼 이력을 이유로 플래너를 뺀다. 예식 장부의 서른 건이 모두 그녀의 이름이었다.", "A director drops a planner over a divorce. All thirty weddings in the ledger were hers.",
+ [
+  ["H", "보라", "Gwen", "40대 여성, 남색 정장, 짧은 단발, 밝은 눈", "woman in her 40s, navy suit, short bob, bright eyes"],
+  ["V", "수미", "Ms. Arden", "30대 여성, 웨딩 업체 대표, 흰 정장, 차가운 미소", "woman in her 30s, wedding firm director, white suit, cold smile"],
+  ["A", "혜진", "Ms. Pike", "30대 여성, 신부 드레스, 긴 머리, 차분한 목소리", "woman in her 30s, bridal gown, long hair, calm voice"]
+ ],
+ [
+  ["웨딩홀 상담실", "wedding hall office", "수미가 보라의 이력서를 탁자에 덮는다", "Ms. Arden lays Gwen's resume face down", 1, "이혼한 사람은 못 해요.", "Divorced people can't do this job.", "ms"],
+  ["웨딩홀 상담실", "wedding hall office", "수미가 자기 지인에게 예식장 열쇠를 건넨다", "Ms. Arden hands the hall keys to her own friend", 1, "결혼을 지킨 사람이 필요해요.", "We need someone who's kept a marriage.", "cz"],
+  ["웨딩홀 상담실", "wedding hall office", "보라가 예약 장부에서 자기 이름이 적힌 줄을 짚는다", "Gwen points at the rows of her own name in the booking ledger", -1, "", "", "cu"],
+  ["웨딩홀 상담실", "wedding hall office", "소율이 고객 후기 장부를 펴고 서명을 가리킨다", "Ms. Pike opens the review book and taps the signatures", 2, "작년 예식 서른 건, 전부 보라 씨였어요.", "All thirty weddings last year were hers.", "low"],
+  ["웨딩홀 상담실", "wedding hall office", "수미가 보라 앞에서 고개를 숙인다", "Ms. Arden bows her head in front of Gwen", 0, "예식을 지키는 건 결혼이 아니라 준비예요.", "Weddings are kept by planning, not by marriage.", "cu"],
+  ["웨딩홀 입구", "wedding hall entrance", "예식장 문이 열리고 신부가 들어온다", "The hall doors open and a bride walks in", -1, "", "", "pi"]
+ ]
+],
+[
+ "나이 많다던 컨시어지", "Too Old for the Desk",
+ "지배인이 밤 근무를 이유로 이름표를 뗀다. 예약 장부의 단골들이 그의 이름을 찾고 있었다.", "A manager takes the name tag off the night concierge. The regulars in the ledger ask for him by name.",
+ [
+  ["H", "종철", "Hugh", "50대 남성, 검은 정장, 흰 머리, 온화한 눈", "man in his 50s, black suit, white hair, gentle eyes"],
+  ["V", "준혁", "Mr. Sayre", "30대 남성, 지배인 정장, 나비넥타이, 얇은 미소", "man in his 30s, manager suit, bow tie, thin smile"],
+  ["A", "나영", "Ms. Ott", "50대 여성, 호텔 오너 정장, 진주 목걸이, 차분한 목소리", "woman in her 50s, hotel owner suit, pearl necklace, calm voice"]
+ ],
+ [
+  ["호텔 프런트", "hotel front desk", "준혁이 종철의 이름표를 프런트에서 떼어 낸다", "Mr. Sayre unpins Hugh's name tag at the desk", 1, "나이 많으면 밤 근무는 무리죠.", "Night shifts are hard at your age.", "ms"],
+  ["호텔 프런트", "hotel front desk", "준혁이 젊은 지원자를 카운터에 세운다", "Mr. Sayre positions a young applicant at the counter", 1, "우린 젊은 얼굴이 필요해요.", "We need a younger face.", "cz"],
+  ["호텔 프런트", "hotel front desk", "종철이 예약 장부의 단골 이름들을 손끝으로 짚는다", "Hugh traces the regulars' names in the reservation book", -1, "", "", "cu"],
+  ["호텔 프런트", "hotel front desk", "도경이 오래된 예약 장부를 펴고 메모를 보여 준다", "Ms. Ott opens an old reservation book and shows the notes", 2, "이 손님들, 종철 씨 이름을 찾아요.", "These guests ask for him by name.", "low"],
+  ["호텔 프런트", "hotel front desk", "프런트 명패에서 준혁 이름이 지워지고 종철 이름이 걸린다", "Hugh's name goes up on the desk plate in his place", 0, "기억은 나이가 아니라 정성으로 남아요.", "Guests remember care, not age.", "cu"],
+  ["호텔 로비", "hotel lobby", "로비 문이 열리고 옛 단골이 종철에게 손을 든다", "An old regular enters the lobby and raises a hand to Hugh", -1, "", "", "pi"]
+ ]
+],
+[
+ "공장 출신이라던 세공사", "From the Factory Bench",
+ "심사위원이 공장 출신 세공사의 트레이를 옆으로 민다. 작품 밑면의 각인은 그녀의 등록 번호였다.", "A judge pushes a factory jeweller's tray aside. The stamp under the piece is her registered number.",
+ [
+  ["H", "채원", "Iris", "30대 여성, 작업복, 확대경, 차분한 눈", "woman in her 30s, work clothes, loupe, calm eyes"],
+  ["V", "성호", "Mr. Brant", "50대 남성, 세공 심사 정장, 확대경, 얇은 입", "man in his 50s, jewellery judge suit, loupe, thin mouth"],
+  ["A", "정환", "Mr. Kest", "40대 남성, 감정사 정장, 안경, 꼼꼼한 태도", "man in his 40s, appraiser suit, glasses, meticulous manner"]
+ ],
+ [
+  ["보석 세공 공모장", "jewellery bench", "성호가 채원의 작업 트레이를 옆으로 민다", "Mr. Brant pushes Iris's work tray aside", 1, "공장 출신은 손이 거칠어요.", "Factory hands are too rough.", "ms"],
+  ["보석 세공 공모장", "jewellery bench", "성호가 자기 작품을 확대경 아래 세운다", "Mr. Brant sets his own piece under the loupe", 1, "이게 세공이죠.", "This is real setting.", "cz"],
+  ["보석 세공 공모장", "jewellery bench", "채원이 각인 등록 대장에서 자기 도안 번호를 짚는다", "Iris points at her design number in the stamp registry", -1, "", "", "cu"],
+  ["보석 세공 심사대", "judging table", "지완이 대장과 작품 밑면 각인을 맞춰 본다", "Mr. Kest matches the registry to the stamp beneath the piece", 2, "이 각인, 채원 씨 등록 번호입니다.", "That stamp is her registered number.", "low"],
+  ["보석 세공 심사대", "judging table", "성호의 감정대 의자가 비워진다", "Mr. Brant's chair at the appraisal stand is left empty", 0, "손은 거친 게 아니라 정확한 겁니다.", "These hands aren't rough. They're exact.", "cu"],
+  ["보석 세공 전시장", "jewellery fair", "문이 열리고 해외 바이어가 들어온다", "The doors open and an overseas buyer walks in", -1, "", "", "pi"]
+ ]
+],
+[
+ "이름 없다던 신발 디자이너", "No Name in the Industry",
+ "브랜드 책임자가 도면을 서랍에 넣는다. 시제품 혀 안쪽엔 그의 손글씨가 그대로 있었다.", "A brand director files an unknown designer's drawing. His handwriting is still inside the sample's tongue.",
+ [
+  ["H", "도하", "Jae", "20대 남성, 낡은 스니커즈, 후드티, 조용한 눈", "man in his 20s, worn sneakers, hoodie, quiet eyes"],
+  ["V", "수지", "Ms. Frey", "40대 여성, 브랜드 책임자 정장, 안경, 날선 눈", "woman in her 40s, brand director suit, glasses, sharp eyes"],
+  ["A", "보미", "Ms. Lund", "30대 여성, 디자인 등록 심사관 정장, 서류철, 단호한 태도", "woman in her 30s, design registrar suit, folder, firm manner"]
+ ],
+ [
+  ["신발 브랜드 쇼룸", "shoe showroom", "혜원이 도하의 도면을 접어 서랍에 넣는다", "Ms. Frey folds Jae's drawing into a drawer", 1, "이름 없는 사람은 못 써요.", "We can't use a nobody.", "ms"],
+  ["신발 브랜드 쇼룸", "shoe showroom", "혜원이 자기 이름으로 된 시제품을 내민다", "Ms. Frey presents a sample under her own name", 1, "브랜드는 이름으로 팔려요.", "Brands sell on names.", "cz"],
+  ["신발 브랜드 쇼룸", "shoe showroom", "도하가 시제품 혀 안쪽의 자기 필기를 짚는다", "Jae points at his own writing inside the shoe tongue", -1, "", "", "cu"],
+  ["신발 브랜드 쇼룸", "shoe showroom", "보미가 도면 여백과 시제품 혀를 나란히 놓는다", "Ms. Lund lays the drawing margin beside the shoe tongue", 2, "이 필기, 도하 씨 도면 여백과 같습니다.", "This matches the margin notes on his drawing.", "ots"],
+  ["신발 브랜드 쇼룸", "shoe showroom", "혜원의 시제품이 상자에 담긴다", "Ms. Frey's sample is packed into a box", 0, "이름은 나중에 붙어도 돼요. 설계는 먼저니까.", "Names come later. The design came first.", "cu"],
+  ["신발 브랜드 쇼룸", "shoe showroom", "유리문 밖에 사람들이 몰려든다", "A crowd gathers outside the showroom glass", -1, "", "", "pi"]
+ ]
+],
+[
+ "목수일 뿐이라던 의자", "Just a Carpenter's Chair",
+ "디렉터가 노목수의 의자를 전시대 구석으로 옮긴다. 의자 밑면의 각인이 그의 작업실 이름이었다.", "A director moves an old carpenter's chair to a corner. The base carries her workshop's stamp.",
+ [
+  ["H", "순임", "Mabel", "60대 여성, 목공 앞치마, 짧은 흰머리, 단단한 눈", "woman in her 60s, woodwork apron, short white hair, firm eyes"],
+  ["V", "홍석", "Mr. Shore", "40대 남성, 브랜드 디렉터 정장, 안경, 얇은 입", "man in his 40s, brand director suit, glasses, thin mouth"],
+  ["A", "지숙", "Ms. Warren", "40대 여성, 가구 공모 심사 정장, 태블릿, 꼼꼼한 태도", "woman in her 40s, furniture judge suit, tablet, meticulous manner"]
+ ],
+ [
+  ["가구 공모 전시장", "furniture fair", "홍석이 순임의 의자를 전시대 구석으로 옮긴다", "Mr. Shore drags Mabel's chair into the corner", 1, "목수일과 디자인은 달라요.", "Carpentry isn't design.", "ms"],
+  ["가구 공모 전시장", "furniture fair", "홍석이 자기 의자에 이름 팻말을 세운다", "Mr. Shore plants his name card on his own chair", 1, "이게 브랜드죠.", "This is a brand.", "cz"],
+  ["가구 공모 전시장", "furniture fair", "순임이 의자 밑면의 각인과 연도를 짚는다", "Mabel points at the stamp and year under the chair", -1, "", "", "cu"],
+  ["가구 공모 전시장", "furniture fair", "도경이 각인과 접수증을 맞춰 본다", "Ms. Warren matches the stamp to the entry receipt", 2, "이 각인, 순임 씨 작업실 겁니다.", "That stamp is her workshop's.", "ots"],
+  ["가구 공모 전시장", "furniture fair", "홍석의 의자가 구석으로 밀리고 순임의 의자가 중앙에 선다", "Her chair takes the centre as his is pushed to the corner", 0, "의자는 앉아 보면 다들 알아요.", "Sit in a chair and you know.", "cu"],
+  ["가구 공모 전시장 입구", "fair entrance", "관람객들이 입구로 몰려온다", "Visitors stream in through the fair entrance", -1, "", "", "pi"]
+ ]
+]
+]

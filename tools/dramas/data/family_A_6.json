@@ -1,0 +1,912 @@
+[
+ [
+  "그 정원은 내 설계였습니다",
+  "That Garden Was My Design",
+  "큰어머니가 저택 정원을 망쳤다며 정원사를 쫓아낸다. 그 정원 설계의 주인이 바로 그였다.",
+  "The aunt blames the gardener for ruining the mansion garden. The garden design belongs to him.",
+  [
+   [
+    "H",
+    "지환",
+    "Ethan",
+    "30대 남성, 흙 묻은 작업복, 짧은 머리, 조용한 눈빛",
+    "man in his 30s, muddy work clothes, short hair, quiet eyes"
+   ],
+   [
+    "V",
+    "희숙",
+    "Vivian",
+    "50대 여성, 보라색 원피스, 진주 목걸이, 얕보는 눈빛",
+    "woman in her 50s, purple dress, pearl necklace, dismissive eyes"
+   ],
+   [
+    "A",
+    "류 변호사",
+    "Mr. Vance",
+    "40대 남성, 회색 정장, 서류 가방, 단호한 표정",
+    "man in his 40s, gray suit, briefcase, firm expression"
+   ]
+  ],
+  [
+   [
+    "저택 정원",
+    "mansion garden",
+    "희숙이 지환이 심은 꽃을 발로 밟는다",
+    "Vivian grinds her heel into the flowers Ethan planted",
+    1,
+    "네가 심은 꽃이 내 정원을 망쳤어.",
+    "Your flowers ruined my garden.",
+    "ms"
+   ],
+   [
+    "저택 정원",
+    "mansion garden",
+    "희숙이 지환의 장갑을 담 밖으로 던진다",
+    "Vivian throws Ethan's gloves over the garden wall",
+    1,
+    "오늘 짐 싸. 월급도 없어.",
+    "Pack today. No pay either.",
+    "ots"
+   ],
+   [
+    "저택 정원",
+    "mansion garden",
+    "지환이 밟힌 꽃 옆에서 낡은 설계 도면을 펼친다",
+    "Ethan opens an old design plan beside the crushed flowers",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "저택 정원",
+    "mansion garden",
+    "류 변호사가 등록증을 희숙 앞에 내민다",
+    "Mr. Vance holds out a registration certificate to Vivian",
+    2,
+    "이 정원, 도면 등록자가 지환 씨로 나옵니다.",
+    "The garden plan is registered to Ethan.",
+    "low"
+   ],
+   [
+    "저택 정원",
+    "mansion garden",
+    "희숙이 등록증을 두 손으로 받아 든다",
+    "Vivian takes the certificate with both hands",
+    0,
+    "제 정원에서 오늘 안에 나가세요.",
+    "Leave my garden by tonight.",
+    "cu"
+   ],
+   [
+    "저택 대문 앞",
+    "mansion gate",
+    "낯선 남자가 같은 도면을 펼친다",
+    "A stranger at the gate unfolds the same plan",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "직원 할인으로 명품을 산 사촌",
+  "The Cousin Who Used Her Staff Discount",
+  "사촌은 백화점 직원인 그녀에게 명품을 직원 할인으로 사고 값을 안 준다. 구매 기록이 할인을 끊었다.",
+  "The cousin buys designer goods on her staff discount and never pays. The purchase record cut it off.",
+  [
+   [
+    "H",
+    "수현",
+    "Tessa",
+    "20대 후반 여성, 백화점 제복, 단정한 올림머리, 차분한 눈빛",
+    "woman in her late 20s, department store uniform, neat bun, calm eyes"
+   ],
+   [
+    "V",
+    "정태",
+    "Gregory",
+    "40대 남성, 밝은 정장, 손목시계, 비웃는 입매",
+    "man in his 40s, light suit, wristwatch, sneering mouth"
+   ],
+   [
+    "A",
+    "남 매니저",
+    "Mr. Quaid",
+    "50대 남성, 검은 정장, 금색 명찰, 꼿꼿한 자세",
+    "man in his 50s, black suit, gold badge, upright posture"
+   ]
+  ],
+  [
+   [
+    "백화점 매장",
+    "department store floor",
+    "정태가 수현의 명찰을 떼어 진열대에 올린다",
+    "Gregory pulls off Tessa's name tag and sets it on a display",
+    1,
+    "옷이나 개는 애가 뭘 알아.",
+    "A clothes folder knows what?",
+    "cz"
+   ],
+   [
+    "백화점 매장",
+    "department store floor",
+    "정태가 명품 가방 네 개를 계산대에 쌓는다",
+    "Gregory piles four designer bags on the counter",
+    1,
+    "직원 할인으로 해 줘. 가족이니까.",
+    "Use your staff discount. Family.",
+    "trk"
+   ],
+   [
+    "백화점 매장",
+    "department store floor",
+    "수현이 구매 기록의 할인란을 확인한다",
+    "Tessa checks the discount column in the purchase record",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "백화점 매장",
+    "department store floor",
+    "남 매니저가 구매 기록을 정태 앞에 놓는다",
+    "Mr. Quaid sets the purchase record before Gregory",
+    2,
+    "직원 할인은 가족 한 명까지입니다.",
+    "Staff discount covers one family member only.",
+    "pi"
+   ],
+   [
+    "백화점 매장",
+    "department store floor",
+    "정태가 가방을 계산대에 도로 내려놓는다",
+    "Gregory sets the bags back on the counter",
+    0,
+    "할인은 오늘로 끝입니다.",
+    "Your discount ends today.",
+    "ms"
+   ],
+   [
+    "매장 입구",
+    "store entrance",
+    "여자가 같은 가방을 들고 서 있다",
+    "A woman at the entrance stands holding the same bag",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "렌치를 든 사람이 비행기를 세웠다",
+  "The Wrench That Grounded a Plane",
+  "처남은 가족 비행기 정비를 무료로 시키고 렌치나 돌린다며 웃는다. 감항 기록은 전부 그의 서명이었다.",
+  "The brother-in-law gets free maintenance and calls him a wrench turner. Every airworthiness record is his.",
+  [
+   [
+    "H",
+    "도경",
+    "Miles",
+    "30대 남성, 회색 작업복, 기름때 밴드, 무뚝뚝한 얼굴",
+    "man in his 30s, gray overalls, greasy headband, blunt face"
+   ],
+   [
+    "V",
+    "영달",
+    "Curtis",
+    "40대 남성, 흰 셔츠, 금테 안경, 거만한 턱",
+    "man in his 40s, white shirt, gold-rim glasses, arrogant chin"
+   ],
+   [
+    "A",
+    "탁 실장",
+    "Ms. Ferris",
+    "30대 여성, 항공사 제복, 클립보드, 단호한 눈빛",
+    "woman in her 30s, airline uniform, clipboard, firm eyes"
+   ]
+  ],
+  [
+   [
+    "공항 격납고",
+    "airport hangar",
+    "영달이 도경의 공구함을 발로 밀어 놓는다",
+    "Curtis kicks Miles's toolbox out of reach",
+    1,
+    "이 비행기, 네가 손댈 거 아니야.",
+    "Don't touch this plane.",
+    "ms"
+   ],
+   [
+    "공항 격납고",
+    "airport hangar",
+    "영달이 정비 서류에 사인을 요구하며 손가락을 튕긴다",
+    "Curtis snaps his fingers for a signature on the papers",
+    1,
+    "공짜로 해. 어차피 심심하잖아.",
+    "Do it free. You've got time.",
+    "cz"
+   ],
+   [
+    "공항 격납고",
+    "airport hangar",
+    "도경이 정비 일지의 마지막 서명란을 넘긴다",
+    "Miles turns to the last signature line in the log",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "공항 격납고",
+    "airport hangar",
+    "탁 실장이 점검 기록을 펼쳐 영달 앞에 든다",
+    "Ms. Ferris holds the inspection logs open before Curtis",
+    2,
+    "서명이 없으면 이 비행기는 못 뜹니다.",
+    "Without his signature, this plane can't fly.",
+    "low"
+   ],
+   [
+    "공항 격납고",
+    "airport hangar",
+    "영달이 서류를 떨어뜨리고 뒷걸음친다",
+    "Curtis drops the papers and steps back",
+    0,
+    "다음 비행은 취소하세요.",
+    "Cancel your next flight.",
+    "cu"
+   ],
+   [
+    "활주로 끝",
+    "end of the runway",
+    "검은 차에서 내린 남자가 정비사 배지를 내민다",
+    "A man steps from the black car and shows a mechanic badge",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "초대장을 찢은 이모의 전시",
+  "The Show She Couldn't Open",
+  "이모는 조카를 무료 해설로 부르고 안내나 한다며 무시한다. 그림의 진짜 주인이 누구인지 드러난다.",
+  "The aunt books her as a free event guide and sneers at her job. Then the paintings' true owner appears.",
+  [
+   [
+    "H",
+    "나윤",
+    "Iris",
+    "20대 여성, 남색 유니폼, 낮게 묶은 머리, 또렷한 눈매",
+    "woman in her 20s, navy uniform, low ponytail, sharp eyes"
+   ],
+   [
+    "V",
+    "미란",
+    "Camille",
+    "50대 여성, 금색 숄, 큰 반지, 고개 든 태도",
+    "woman in her 50s, gold shawl, large rings, head held high"
+   ],
+   [
+    "A",
+    "편 관장",
+    "Mr. Ashby",
+    "60대 남성, 짙은 정장, 나비넥타이, 온화한 얼굴",
+    "man in his 60s, dark suit, bow tie, gentle face"
+   ]
+  ],
+  [
+   [
+    "미술관 로비",
+    "museum lobby",
+    "미란이 나윤의 명찰을 떼어 바닥에 놓는다",
+    "Camille pulls off Iris's badge and drops it on the floor",
+    1,
+    "해설은 그만해. 넌 안내만.",
+    "Stop explaining. Just point.",
+    "cz"
+   ],
+   [
+    "미술관 로비",
+    "museum lobby",
+    "미란이 초대장을 나윤 얼굴 앞에서 찢는다",
+    "Camille tears an invitation in front of Iris's face",
+    1,
+    "가족 행사에 네 얼굴은 필요 없어.",
+    "Your face isn't needed at family events.",
+    "ms"
+   ],
+   [
+    "미술관 전시장",
+    "museum gallery",
+    "나윤이 액자 옆 소장 표시를 손끝으로 짚는다",
+    "Iris traces the lender label beside the frame",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "미술관 전시장",
+    "museum gallery",
+    "편 관장이 소장 이력 서류를 들어 보인다",
+    "Mr. Ashby raises the loan history documents",
+    2,
+    "이 그림들, 나윤 씨가 맡긴 겁니다.",
+    "These paintings are on loan from Iris.",
+    "slo"
+   ],
+   [
+    "미술관 로비",
+    "museum lobby",
+    "미란의 손에서 찢긴 초대장 조각이 떨어진다",
+    "Torn invitation pieces slip from Camille's fingers",
+    0,
+    "초대전은 제 서명 없이는 못 엽니다.",
+    "The show opens only with my signature.",
+    "rx"
+   ],
+   [
+    "미술관 밖",
+    "outside the museum",
+    "남자가 같은 그림 사진을 든다",
+    "A man outside holds up a photo of the same painting",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "급식 조리사를 쫓아낸 학부모",
+  "The Cook the Parents Tried to Fire",
+  "사촌은 급식 조리사를 국이나 끓인다며 깎아내리고 시식회를 무료로 시킨다. 인증서의 주인이 조리사였다.",
+  "The cousin belittles the school cook and orders a free tasting day. The hygiene award is in her name.",
+  [
+   [
+    "H",
+    "은결",
+    "Clara",
+    "40대 여성, 흰 조리복, 위생모, 부드러운 눈빛",
+    "woman in her 40s, white chef coat, hairnet, gentle eyes"
+   ],
+   [
+    "V",
+    "혜정",
+    "Brenda",
+    "30대 여성, 분홍 니트, 명품 가방, 비웃는 입",
+    "woman in her 30s, pink knit, designer bag, mocking mouth"
+   ],
+   [
+    "A",
+    "표 팀장",
+    "Ms. Novak",
+    "40대 여성, 교육청 배지, 서류철, 무표정",
+    "woman in her 40s, school board badge, file folder, blank face"
+   ]
+  ],
+  [
+   [
+    "학교 급식실",
+    "school kitchen",
+    "혜정이 시식 접시를 밀어내며 얼굴을 찌푸린다",
+    "Brenda pushes the tasting plate away and frowns",
+    1,
+    "우리 애가 이 국을 먹었다고?",
+    "My child ate this soup?",
+    "ws"
+   ],
+   [
+    "학교 급식실",
+    "school kitchen",
+    "혜정이 학부모 명단을 은결 앞에 던진다",
+    "Brenda tosses the parent list in front of Clara",
+    1,
+    "시식회든 뭐든, 무료로 해.",
+    "The tasting? Free, of course.",
+    "ots"
+   ],
+   [
+    "학교 급식실",
+    "school kitchen",
+    "은결이 위생 인증서의 발급 번호를 확인한다",
+    "Clara checks the issue number on the certificate",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "학교 급식실",
+    "school kitchen",
+    "표 팀장이 인증서와 표창장을 펼친다",
+    "Ms. Novak opens the certificate and the award",
+    2,
+    "인증서 주인은 은결 씨, 취소 권한도 그분입니다.",
+    "The certificate is Clara's, and so is the right to revoke it.",
+    "low"
+   ],
+   [
+    "학교 급식실",
+    "school kitchen",
+    "혜정이 명단을 주워 얼굴을 가린다",
+    "Brenda picks up the list and covers her face",
+    0,
+    "위원 자리는 교육청에 넘겼어요.",
+    "Your committee seat ends today.",
+    "cu"
+   ],
+   [
+    "학교 복도",
+    "school hallway",
+    "교장 뒤로 교육청 감사관이 걸어 들어온다",
+    "A school board inspector walks in behind the principal",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "동생 가게에서 와인을 훔쳐 간 형",
+  "The Brother Who Emptied the Cellar",
+  "형은 동생이 관리하는 와인을 파티마다 가져가고 병이나 딴다며 무시한다. 재고 장부에 이름이 남아 있었다.",
+  "The brother takes bottles to every party and mocks his job. The stock ledger kept every name.",
+  [
+   [
+    "H",
+    "규현",
+    "Owen",
+    "30대 남성, 검은 조끼, 짧은 머리, 차분한 눈",
+    "man in his 30s, black vest, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "광현",
+    "Frank",
+    "40대 남성, 밝은 셔츠, 선글라스, 큰 웃음",
+    "man in his 40s, bright shirt, sunglasses, loud laugh"
+   ],
+   [
+    "A",
+    "진 감독",
+    "Ms. Pruitt",
+    "40대 여성, 정장, 태블릿, 차가운 시선",
+    "woman in her 40s, suit, tablet, cold stare"
+   ]
+  ],
+  [
+   [
+    "레스토랑 바",
+    "restaurant bar",
+    "광현이 와인 선반에서 가장 비싼 병을 뽑는다",
+    "Frank pulls the priciest bottle from the wine shelf",
+    1,
+    "제일 비싼 거 내놔. 네가 뭘 알겠어.",
+    "Give me the best. What would you know?",
+    "ms"
+   ],
+   [
+    "레스토랑 바",
+    "restaurant bar",
+    "광현이 와인 두 상자를 들고 나가며 어깨를 으쓱한다",
+    "Frank carries out two cases of wine, shrugging",
+    1,
+    "파티 끝나고 계산하자.",
+    "We'll settle after the party.",
+    "trk"
+   ],
+   [
+    "레스토랑 바",
+    "restaurant bar",
+    "규현이 장부의 미결제 표시를 손가락으로 짚는다",
+    "Owen points at the unpaid marks in the ledger",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "레스토랑 홀",
+    "restaurant dining room",
+    "진 감독이 장부와 청구서를 광현 앞에 놓는다",
+    "Ms. Pruitt sets the ledger and a bill before Frank",
+    2,
+    "미결제 와인 마흔세 병, 전부 광현 씨 이름입니다.",
+    "Forty-three unpaid bottles, all under Owen.",
+    "low"
+   ],
+   [
+    "레스토랑 홀",
+    "restaurant dining room",
+    "광현이 상자를 도로 내려놓는다",
+    "Frank lowers the cases back down",
+    0,
+    "오늘 파티는 물로 드세요.",
+    "Serve water at your party tonight.",
+    "cz"
+   ],
+   [
+    "레스토랑 입구",
+    "restaurant entrance",
+    "입구에서 남자가 빈 와인 상자에 이름표를 붙인다",
+    "A man at the entrance labels an empty wine crate",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "장인의 구두를 신고 값을 안 준 삼촌",
+  "The Shoes He Never Paid For",
+  "삼촌은 조카가 만든 구두를 신고 다니며 값을 안 준다. 브랜드와의 계약서에 조카 서명이 있었다.",
+  "The uncle wears the shoes his nephew makes and never pays. The brand contract carries his signature.",
+  [
+   [
+    "H",
+    "보민",
+    "Hugo",
+    "30대 남성, 가죽 앞치마, 짧은 수염, 온화한 눈",
+    "man in his 30s, leather apron, short beard, gentle eyes"
+   ],
+   [
+    "V",
+    "창수",
+    "Gerald",
+    "60대 남성, 카키 재킷, 낡은 모자, 거만한 걸음",
+    "man in his 60s, khaki jacket, worn hat, arrogant walk"
+   ],
+   [
+    "A",
+    "베이커 씨",
+    "Ms. Boyd",
+    "30대 여성, 흰 셔츠, 샘플 가방, 또렷한 말투",
+    "woman in her 30s, white shirt, sample bag, crisp speech"
+   ]
+  ],
+  [
+   [
+    "수제화 공방",
+    "shoe workshop",
+    "창수가 새 구두를 신고 발을 들어 보인다",
+    "Gerald lifts his foot to show off new shoes",
+    1,
+    "이거 신어 볼게. 새 거로.",
+    "I'll take these. New ones.",
+    "cz"
+   ],
+   [
+    "수제화 공방",
+    "shoe workshop",
+    "창수가 자기 신발을 상자에 담아 나가려 한다",
+    "Gerald boxes up another pair to take away",
+    1,
+    "가족한테 값을 받아?",
+    "You charge family?",
+    "ots"
+   ],
+   [
+    "수제화 공방",
+    "shoe workshop",
+    "보민이 신발 안쪽의 제작 번호를 확인한다",
+    "Hugo checks the maker's number inside a shoe",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "수제화 공방",
+    "shoe workshop",
+    "베이커가 계약서를 펼쳐 창수 앞에 세운다",
+    "Ms. Boyd opens the contract in front of Gerald",
+    2,
+    "이 라인은 전부 보민 씨 설계입니다.",
+    "Every shoe in this line is Hugo's design.",
+    "slo"
+   ],
+   [
+    "수제화 공방",
+    "shoe workshop",
+    "창수가 상자를 바닥에 내려놓는다",
+    "Gerald sets the box down on the floor",
+    0,
+    "그 구두, 벗어서 두고 가세요.",
+    "Take those off before you go.",
+    "cu"
+   ],
+   [
+    "공방 유리문 밖",
+    "outside the shop window",
+    "유리문에 새 브랜드 간판이 걸린다",
+    "A new brand sign goes up on the workshop window",
+    -1,
+    "",
+    "",
+    "ms"
+   ]
+  ]
+ ],
+ [
+  "조율사 이름을 지운 고모의 공연",
+  "The Recital She Couldn't Play",
+  "고모는 학원 공연마다 조카를 불러 피아노를 공짜로 맞추게 한다. 콘서트홀 계약서가 그를 기다렸다.",
+  "The aunt makes her nephew tune the academy pianos free. A concert hall contract was waiting for him.",
+  [
+   [
+    "H",
+    "시온",
+    "Theo",
+    "20대 후반 남성, 회색 니트, 둥근 안경, 조용한 표정",
+    "man in his late 20s, gray knit, round glasses, quiet face"
+   ],
+   [
+    "V",
+    "순임",
+    "Sylvia",
+    "50대 여성, 보라색 재킷, 짧은 파마, 날카로운 눈",
+    "woman in her 50s, purple jacket, short perm, sharp eyes"
+   ],
+   [
+    "A",
+    "문 팀장",
+    "Mr. Hale",
+    "40대 남성, 검은 정장, 무선 이어폰, 단호한 얼굴",
+    "man in his 40s, black suit, wireless earbuds, firm face"
+   ]
+  ],
+  [
+   [
+    "음악학원",
+    "music academy",
+    "순임이 시온의 조율 도구를 치우며 손을 젓는다",
+    "Sylvia sweeps away Theo's tuning tools and waves him off",
+    1,
+    "건반은 건드리지 마. 더러워져.",
+    "Don't touch the keys. You'll dirty them.",
+    "ms"
+   ],
+   [
+    "음악학원",
+    "music academy",
+    "순임이 공연 포스터를 시온 앞에서 뒤집는다",
+    "Sylvia flips the recital poster away from Theo",
+    1,
+    "포스터에 네 이름은 빼.",
+    "Your name stays off the poster.",
+    "cz"
+   ],
+   [
+    "콘서트홀 무대",
+    "concert hall stage",
+    "시온이 무대 옆 계약서의 조율사란을 본다",
+    "Theo looks at the tuner line on the stage contract",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "콘서트홀 무대",
+    "concert hall stage",
+    "문 팀장이 계약서를 들어 순임 앞에 놓는다",
+    "Mr. Hale holds the contract out before Sylvia",
+    2,
+    "조율사 등록은 시온 씨 한 명뿐입니다.",
+    "Only Theo is registered as the tuner.",
+    "low"
+   ],
+   [
+    "음악학원",
+    "music academy",
+    "순임이 뒤집힌 포스터를 다시 세우지 못하고 멈춘다",
+    "Sylvia freezes, unable to put the poster back up",
+    0,
+    "학원 공연은 다음 달로 미루세요.",
+    "Move your academy recital to next month.",
+    "rx"
+   ],
+   [
+    "콘서트홀 뒤편",
+    "behind the concert hall",
+    "홀 뒤편에서 여자가 다른 조율 도구를 꺼낸다",
+    "A woman behind the hall opens a different tuning kit",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "손님에게 일일권을 판 이모부",
+  "The Uncle Who Sold Fake Day Passes",
+  "이모부는 조카가 지키는 수영장 일일권을 찍어 팔고 무시한다. 발권 대장에 없는 번호가 드러났다.",
+  "The uncle prints and sells day passes at his nephew's pool. A number missing from the log exposes him.",
+  [
+   [
+    "H",
+    "태린",
+    "Lena",
+    "20대 여성, 빨간 구조 유니폼, 묶은 머리, 선명한 눈",
+    "woman in her 20s, red lifeguard uniform, tied hair, bright eyes"
+   ],
+   [
+    "V",
+    "대웅",
+    "Bruce",
+    "50대 남성, 하와이 셔츠, 선글라스, 큰 목소리",
+    "man in his 50s, Hawaiian shirt, sunglasses, loud voice"
+   ],
+   [
+    "A",
+    "오 지배인",
+    "Mr. Ott",
+    "40대 남성, 흰 제복, 금색 명찰, 무뚝뚝한 얼굴",
+    "man in his 40s, white uniform, gold badge, blunt face"
+   ]
+  ],
+  [
+   [
+    "리조트 수영장",
+    "resort pool",
+    "대웅이 태린의 호루라기를 낚아채 물에 던진다",
+    "Bruce snatches Lena's whistle and throws it in the water",
+    1,
+    "호루라기나 부는 애가 뭘 안다고.",
+    "A whistle blower knows nothing.",
+    "cz"
+   ],
+   [
+    "리조트 수영장",
+    "resort pool",
+    "대웅이 손님들에게 직접 찍은 일일권을 나눠 준다",
+    "Bruce hands out day passes he printed himself",
+    1,
+    "내가 표를 만들었어. 조용히 해.",
+    "I print the passes. Keep quiet.",
+    "trk"
+   ],
+   [
+    "리조트 안내판",
+    "resort board",
+    "태린이 발권 대장의 번호를 한 장씩 넘긴다",
+    "Lena flips through the ticket numbers in the log",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "리조트 수영장",
+    "resort pool",
+    "오 지배인이 표를 대장과 한 장씩 대조한다",
+    "Mr. Ott checks a pass against the log line by line",
+    2,
+    "이 번호, 발권 대장에 없습니다.",
+    "This number isn't in the ticket log.",
+    "pi"
+   ],
+   [
+    "리조트 수영장",
+    "resort pool",
+    "대웅이 손님들에게서 표를 거둬 간다",
+    "Bruce collects the passes back from his guests",
+    0,
+    "판 돈은 돌려주고 나가세요.",
+    "Refund them and leave.",
+    "cu"
+   ],
+   [
+    "수영장 입구",
+    "pool entrance",
+    "게시판에서 경비가 대웅의 사진을 떼어 낸다",
+    "Security pulls Bruce's photo off the pool board",
+    -1,
+    "",
+    "",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "집들이 선물로 가져간 유리 작품",
+  "The Housewarming Gift He Stole",
+  "사촌은 조카의 유리 작품을 집들이 선물로 가져가고 값을 안 준다. 작품 보증서에 일련번호가 남아 있었다.",
+  "The cousin takes glass art as a housewarming gift and never pays. The certificate kept every serial number.",
+  [
+   [
+    "H",
+    "하람",
+    "Wren",
+    "20대 여성, 내열 장갑, 짧은 단발, 집중한 눈빛",
+    "woman in her 20s, heat gloves, short bob, focused eyes"
+   ],
+   [
+    "V",
+    "기훈",
+    "Dennis",
+    "40대 남성, 베이지 코트, 머플러, 얕보는 웃음",
+    "man in his 40s, beige coat, scarf, condescending smile"
+   ],
+   [
+    "A",
+    "조 관장",
+    "Ms. Orton",
+    "50대 여성, 검은 원피스, 안경, 차분한 목소리",
+    "woman in her 50s, black dress, glasses, calm voice"
+   ]
+  ],
+  [
+   [
+    "유리 공방",
+    "glass studio",
+    "기훈이 선반의 유리 화병을 들어 빛에 비춘다",
+    "Dennis lifts a glass vase to the light",
+    1,
+    "이 화병, 우리 집에 어울려.",
+    "This vase fits my place.",
+    "ws"
+   ],
+   [
+    "유리 공방",
+    "glass studio",
+    "기훈이 작품 세 점을 상자에 담는다",
+    "Dennis packs three pieces into a box",
+    1,
+    "선물이야. 값은 생각하지 마.",
+    "It's a gift. Don't think about money.",
+    "ms"
+   ],
+   [
+    "유리 공방",
+    "glass studio",
+    "하람이 작품 밑면의 일련번호를 손끝으로 만진다",
+    "Wren runs her finger over a serial number on a base",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "유리 공방",
+    "glass studio",
+    "조 관장이 보증서를 펼쳐 기훈 앞에 놓는다",
+    "Ms. Orton opens a certificate before Dennis",
+    2,
+    "그 번호는 하람 씨 작품으로 등록돼 있습니다.",
+    "That serial number is registered to Wren.",
+    "low"
+   ],
+   [
+    "유리 공방",
+    "glass studio",
+    "기훈이 상자를 내려놓고 한 걸음 물러난다",
+    "Dennis sets the box down and steps back",
+    0,
+    "그 세 점, 그대로 두세요.",
+    "Leave those three pieces where they are.",
+    "cu"
+   ],
+   [
+    "공방 문 앞",
+    "outside the studio",
+    "남자가 같은 유리 조각을 든다",
+    "A man at the door holds up a matching piece of glass",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ]
+]

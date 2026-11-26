@@ -1,0 +1,912 @@
+[
+ [
+  "유산 회의에서 막내를 뺀 큰형",
+  "The Brother Left Out of the Will",
+  "큰형은 유산 회의에서 회계사인 동생을 숫자나 세는 애라며 빼놓는다. 주주 명부의 첫 줄이 동생 이름이었다.",
+  "The older brother shuts the accountant out of the inheritance meeting. The shareholder list starts with the younger brother's name.",
+  [
+   [
+    "H",
+    "상현",
+    "Eli",
+    "30대 남성, 감색 정장, 무테 안경, 담담한 표정",
+    "man in his 30s, navy suit, rimless glasses, level expression"
+   ],
+   [
+    "V",
+    "병국",
+    "Gregory",
+    "50대 남성, 갈색 정장, 반지, 큰 목소리",
+    "man in his 50s, brown suit, ring, loud voice"
+   ],
+   [
+    "A",
+    "백 변호사",
+    "Ms. Klein",
+    "40대 여성, 검은 정장, 서류철, 차가운 말투",
+    "woman in her 40s, black suit, document case, cool tone"
+   ]
+  ],
+  [
+   [
+    "식당 룸",
+    "restaurant private room",
+    "병국이 상현의 의자를 문가로 밀어 놓는다",
+    "Gregory pushes Eli's chair toward the door",
+    1,
+    "넌 계산이나 해. 말은 우리가 해.",
+    "You do the math. We'll talk.",
+    "cz"
+   ],
+   [
+    "식당 룸",
+    "restaurant private room",
+    "병국이 상현 앞에 계산서를 밀어 놓는다",
+    "Gregory slides the dinner bill in front of Eli",
+    1,
+    "이 밥값은 네가 내. 막내니까.",
+    "You get dinner. You're the youngest.",
+    "ots"
+   ],
+   [
+    "식당 룸",
+    "restaurant private room",
+    "상현이 서류 가방에서 주주 명부를 꺼낸다",
+    "Eli takes the shareholder list from his briefcase",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "식당 룸",
+    "restaurant private room",
+    "백 변호사가 명부를 병국 앞에 돌려 세운다",
+    "Ms. Klein turns the list around to face Gregory",
+    2,
+    "회사 지분 삼십 퍼센트는 상현 씨 것입니다.",
+    "Thirty percent of the company is Eli's.",
+    "low"
+   ],
+   [
+    "식당 룸",
+    "restaurant private room",
+    "병국이 명부를 붙든 채 일어서지 못한다",
+    "Gregory grips the list, unable to stand",
+    0,
+    "사내이사 자리, 내일까지 비우세요.",
+    "Vacate your board seat by tomorrow.",
+    "cu"
+   ],
+   [
+    "식당 주차장",
+    "restaurant parking lot",
+    "여자가 회사 인장이 찍힌 봉투를 건넨다",
+    "A woman in the lot hands over a stamped envelope",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "가족 여행에서 지운 이름",
+  "The Name Cut From the Trip",
+  "사촌들은 사촌을 여행에서 빼고 그가 일하는 펜션을 몰래 예약한다. 예약 명의가 그의 이름이었다.",
+  "The cousins cut him from the trip and secretly book the guesthouse where he works. The booking is in his name.",
+  [
+   [
+    "H",
+    "미르",
+    "Nora",
+    "30대 여성, 청록 작업복, 짧은 머리, 무던한 얼굴",
+    "woman in her 30s, teal work clothes, short hair, steady face"
+   ],
+   [
+    "V",
+    "옥란",
+    "Loretta",
+    "40대 여성, 꽃무늬 원피스, 밀짚모자, 큰 웃음",
+    "woman in her 40s, floral dress, straw hat, loud laugh"
+   ],
+   [
+    "A",
+    "엄 소장",
+    "Mr. Sutter",
+    "50대 남성, 남색 조끼, 열쇠 꾸러미, 무뚝뚝함",
+    "man in his 50s, navy vest, key ring, blunt manner"
+   ]
+  ],
+  [
+   [
+    "펜션 마당",
+    "guesthouse yard",
+    "옥란이 미르의 손에서 빗자루를 빼앗아 던진다",
+    "Loretta snatches the broom from Nora and tosses it",
+    1,
+    "청소든 뭐든, 평생 그렇게 살아.",
+    "Sweep floors. That's your life.",
+    "ms"
+   ],
+   [
+    "펜션 마당",
+    "guesthouse yard",
+    "옥란이 가족 단체 사진에서 미르를 손으로 가린다",
+    "Loretta covers Nora in the group photo with her hand",
+    1,
+    "단체 사진? 넌 빠져.",
+    "Group photo? Not you.",
+    "trk"
+   ],
+   [
+    "펜션 사무실",
+    "guesthouse office",
+    "미르가 예약 장부에서 자기 이름을 찾는다",
+    "Nora finds her own name in the booking ledger",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "펜션 마당",
+    "guesthouse yard",
+    "엄 소장이 예약 확인서를 옥란 앞에 놓는다",
+    "Mr. Sutter sets the booking confirmation before Loretta",
+    2,
+    "이 예약은 미르 씨 명의로만 유효합니다.",
+    "This booking is valid only under Nora's name.",
+    "ms"
+   ],
+   [
+    "펜션 마당",
+    "guesthouse yard",
+    "옥란이 밀짚모자를 벗어 가슴에 안는다",
+    "Loretta pulls off her straw hat and clutches it",
+    0,
+    "짐 싸서 오늘 안에 나가세요.",
+    "Pack up and leave by tonight.",
+    "cu"
+   ],
+   [
+    "펜션 입구",
+    "guesthouse entrance",
+    "버스에서 내린 손님이 미르에게 예약서를 건넨다",
+    "A guest steps off the bus and hands Nora a booking slip",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "선실 여덟 개를 달라던 고모",
+  "Eight Cabins, Zero Paid",
+  "고모는 크루즈 주방장인 조카를 국이나 끓인다며 무시하고 선실을 공짜로 요구한다. 승선 명단에 없었다.",
+  "The aunt demands free cabins from her nephew, the cruise chef. Her name is not on the passenger list.",
+  [
+   [
+    "H",
+    "채린",
+    "June",
+    "30대 여성, 흰 셰프 재킷, 묶은 머리, 단단한 눈빛",
+    "woman in her 30s, white chef jacket, tied hair, steady eyes"
+   ],
+   [
+    "V",
+    "동철",
+    "Walter",
+    "60대 남성, 파란 재킷, 구두, 거만한 자세",
+    "man in his 60s, blue blazer, dress shoes, arrogant stance"
+   ],
+   [
+    "A",
+    "방 지배인",
+    "Ms. Rivas",
+    "40대 여성, 흰 제복, 명찰, 정중하지만 단호함",
+    "woman in her 40s, white uniform, name tag, polite but firm"
+   ]
+  ],
+  [
+   [
+    "크루즈 갑판",
+    "cruise deck",
+    "동철이 채린의 셰프 모자를 벗겨 바람에 날린다",
+    "Walter flicks off June's chef hat into the wind",
+    1,
+    "이 배에서 넌 주방이나 해.",
+    "On this ship, stay in the kitchen.",
+    "ws"
+   ],
+   [
+    "크루즈 갑판",
+    "cruise deck",
+    "동철이 일행 여덟 명을 가리키며 손가락을 편다",
+    "Walter spreads his fingers for his eight friends",
+    1,
+    "선실 여덟 개. 가족이니까.",
+    "Eight cabins. Family rate.",
+    "cz"
+   ],
+   [
+    "크루즈 복도",
+    "cruise corridor",
+    "채린이 승선 명단에서 결제된 선실을 짚는다",
+    "June points at the paid cabins on the list",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "크루즈 갑판",
+    "cruise deck",
+    "방 지배인이 명단과 계약서를 동철 앞에 든다",
+    "Ms. Rivas holds the list and a contract before Walter",
+    2,
+    "결제된 선실은 하나, 이름은 채린 씨입니다.",
+    "One cabin is paid, under June's name.",
+    "slo"
+   ],
+   [
+    "크루즈 갑판",
+    "cruise deck",
+    "동철이 일행을 돌아보며 말을 잇지 못한다",
+    "Walter turns to his friends and says nothing",
+    0,
+    "일행은 다음 배로 타세요.",
+    "Your group takes the next ship.",
+    "rx"
+   ],
+   [
+    "부두",
+    "dock",
+    "여자가 선장 제복을 입고 걸어온다",
+    "A woman in a captain's uniform walks up the dock",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "행사 음악을 훔친 사촌",
+  "The Gala That Lost Its Music",
+  "사촌은 창립 기념식에 조카의 노래를 쓰고 값은 안 준다. 저작권 등록증에 조카 이름이 찍혀 있었다.",
+  "The cousin uses his song at a company gala and pays nothing. The copyright filing carries his name.",
+  [
+   [
+    "H",
+    "연우",
+    "Felix",
+    "20대 후반 남성, 후드티, 헤드폰, 부스러기 많은 책상",
+    "man in his late 20s, hoodie, headphones, cluttered desk"
+   ],
+   [
+    "V",
+    "은자",
+    "Paula",
+    "40대 여성, 흰 팬츠 수트, 짧은 금발, 날선 눈",
+    "woman in her 40s, white pantsuit, short blonde hair, sharp eyes"
+   ],
+   [
+    "A",
+    "차 관장",
+    "Ms. Adler",
+    "50대 남성, 회색 정장, 태블릿, 조용한 목소리",
+    "man in his 50s, gray suit, tablet, quiet voice"
+   ]
+  ],
+  [
+   [
+    "행사장 무대 뒤",
+    "backstage of the venue",
+    "은자가 연우의 악보를 바닥에 떨어뜨린다",
+    "Paula knocks Felix's sheet music to the floor",
+    1,
+    "무대 뒤에서 대기나 해.",
+    "Wait backstage. That's all.",
+    "cz"
+   ],
+   [
+    "행사장 무대 뒤",
+    "backstage of the venue",
+    "은자가 연우에게 이름 없는 출입증을 건넨다",
+    "Paula hands Felix a badge with no name on it",
+    1,
+    "노래 하나 쓴다고 무슨.",
+    "It's one song. Relax.",
+    "ms"
+   ],
+   [
+    "행사장 무대",
+    "venue stage",
+    "연우가 곡의 저작권 번호를 수첩에 적는다",
+    "Felix writes down the song's copyright number",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "행사장 무대",
+    "venue stage",
+    "차 관장이 등록증을 은자 앞에 펼친다",
+    "Ms. Adler opens the copyright filing before Paula",
+    2,
+    "이 곡 등록자는 연우 씨 한 사람입니다.",
+    "This song is registered to Felix alone.",
+    "low"
+   ],
+   [
+    "행사장 무대",
+    "venue stage",
+    "은자가 무대 음향 스위치에서 손을 뗀다",
+    "Paula pulls her hand off the stage sound switch",
+    0,
+    "행사 음악은 여기서 끄겠습니다.",
+    "The event music stops here.",
+    "cu"
+   ],
+   [
+    "행사장 로비",
+    "venue lobby",
+    "로비 스크린에 곡 옆 새 이름이 뜬다",
+    "A new name appears beside the song on the lobby screen",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "특허를 베낀 처남의 공장",
+  "The Factory That Copied Him",
+  "처남은 조카의 발명품을 공장에서 찍어 내고 기계나 만지는 애라며 웃는다. 특허증이 공장 문을 닫게 했다.",
+  "The brother-in-law mass-produces his invention and mocks him. The patent filing shuts the factory line down.",
+  [
+   [
+    "H",
+    "주안",
+    "Simon",
+    "30대 남성, 회색 작업복, 보호 안경, 차분한 눈",
+    "man in his 30s, gray overalls, safety glasses, calm eyes"
+   ],
+   [
+    "V",
+    "만복",
+    "Norman",
+    "50대 남성, 갈색 점퍼, 거친 수염, 큰 손",
+    "man in his 50s, brown jacket, loud hands, smug grin"
+   ],
+   [
+    "A",
+    "하 팀장",
+    "Mr. Boone",
+    "40대 남성, 정장, 서류 가방, 무표정",
+    "man in his 40s, suit, briefcase, blank face"
+   ]
+  ],
+  [
+   [
+    "공장 라인",
+    "factory floor",
+    "만복이 주안의 설계 도면을 밟고 서 있다",
+    "Norman stands on Simon's design drawings",
+    1,
+    "이 도면, 이제 우리 거야.",
+    "These drawings are ours now.",
+    "ms"
+   ],
+   [
+    "공장 라인",
+    "factory floor",
+    "만복이 완성품 상자를 주안 앞에서 찬다",
+    "Norman kicks a finished-product box toward Simon",
+    1,
+    "네 몫? 없어. 알겠지.",
+    "Your cut? There isn't one.",
+    "ots"
+   ],
+   [
+    "공장 사무실",
+    "factory office",
+    "주안이 특허 출원 번호를 도면과 맞춰 본다",
+    "Simon matches the patent number to his drawing",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "공장 라인",
+    "factory floor",
+    "하 팀장이 특허증 원본을 만복 앞에 놓는다",
+    "Mr. Boone sets the original patent before Norman",
+    2,
+    "이 제품 특허권자는 주안 씨입니다.",
+    "The patent holder for this product is Simon.",
+    "pi"
+   ],
+   [
+    "공장 라인",
+    "factory floor",
+    "만복이 라인 정지 스위치 앞에서 손을 내린다",
+    "Norman lowers his hand from the line stop switch",
+    0,
+    "라인은 오늘로 멈춥니다.",
+    "The line stops today.",
+    "cz"
+   ],
+   [
+    "공장 정문",
+    "factory gate",
+    "남자가 특허증 사본을 정문에 붙인다",
+    "A man pins a copy of the patent on the factory gate",
+    -1,
+    "",
+    "",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "벌통에서 꿀을 퍼간 삼촌",
+  "The Honey He Never Paid For",
+  "삼촌은 조카의 벌통에서 꿀을 가져가고 값을 안 준다. 유기농 인증서와 납품 계약이 그를 기다렸다.",
+  "The uncle takes honey from his nephew's hives and never pays. The organic certification was waiting for him.",
+  [
+   [
+    "H",
+    "지선",
+    "Maren",
+    "30대 여성, 흰 방진복, 긴 머리 묶음, 밝은 눈",
+    "woman in her 30s, white beekeeper suit, tied long hair, bright eyes"
+   ],
+   [
+    "V",
+    "만길",
+    "Roy",
+    "60대 남성, 남색 작업복, 장갑, 거친 웃음",
+    "man in his 60s, navy work clothes, gloves, rough laugh"
+   ],
+   [
+    "A",
+    "민 감독",
+    "Ms. Hobbs",
+    "40대 여성, 흰 셔츠, 태블릿, 또박또박한 말",
+    "woman in her 40s, white shirt, tablet, measured speech"
+   ]
+  ],
+  [
+   [
+    "양봉장",
+    "apiary",
+    "만길이 지선의 벌통 뚜껑을 열고 꿀을 퍼낸다",
+    "Roy opens a hive and scoops out the honey",
+    1,
+    "꿀 좀 쓴다고 뭘 그러냐.",
+    "It's just honey. Relax.",
+    "cz"
+   ],
+   [
+    "양봉장",
+    "apiary",
+    "만길이 꿀통 세 개를 차에 싣는다",
+    "Roy loads three honey drums into his car",
+    1,
+    "가족 몫이야. 다음에 갚을게.",
+    "Family share. I'll pay you later.",
+    "trk"
+   ],
+   [
+    "양봉장",
+    "apiary",
+    "지선이 인증서의 농가 번호를 확인한다",
+    "Maren checks the farm number on the certificate",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "양봉장",
+    "apiary",
+    "민 감독이 인증서와 계약서를 만길 앞에 든다",
+    "Ms. Hobbs holds the certificate and contract before Roy",
+    2,
+    "이 납품 계약, 인증 농가 지선 씨 것입니다.",
+    "This supply contract belongs to Maren's certified farm.",
+    "low"
+   ],
+   [
+    "양봉장",
+    "apiary",
+    "만길이 꿀통을 도로 내려놓는다",
+    "Roy sets the drums back down",
+    0,
+    "이 꿀은 계약된 물량이에요.",
+    "This honey is already contracted.",
+    "cu"
+   ],
+   [
+    "양봉장 입구",
+    "apiary entrance",
+    "유기농 마크가 찍힌 트럭이 들어온다",
+    "An organic-marked truck turns into the apiary",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "말 주인을 마구간에 세운 이모부",
+  "The Rider Who Owned Nothing",
+  "이모부는 조카가 기르는 말을 대회에 내고 강사는 말이나 닦는 애라 부른다. 말 등기와 출전 명단이 뒤집힌다.",
+  "The uncle enters his nephew's horse in a show and calls him a barn hand. The horse's papers flip the list.",
+  [
+   [
+    "H",
+    "우현",
+    "Cole",
+    "20대 후반 남성, 승마 바지, 헬멧, 조용한 눈",
+    "man in his late 20s, riding breeches, helmet, quiet eyes"
+   ],
+   [
+    "V",
+    "석구",
+    "Harris",
+    "50대 남성, 승마 재킷, 채찍, 거만한 턱",
+    "man in his 50s, riding jacket, crop, arrogant chin"
+   ],
+   [
+    "A",
+    "노 대회장",
+    "Ms. Banning",
+    "50대 여성, 정장, 클립보드, 무표정",
+    "woman in her 50s, suit, clipboard, blank face"
+   ]
+  ],
+  [
+   [
+    "승마장",
+    "equestrian arena",
+    "석구가 우현의 헬멧 끈을 잡아당긴다",
+    "Harris yanks the strap of Cole's helmet",
+    1,
+    "넌 말이나 닦아. 대회는 내가 나가.",
+    "Groom the horse. I ride.",
+    "ms"
+   ],
+   [
+    "승마장",
+    "equestrian arena",
+    "석구가 출전 명단에서 우현 이름을 지운다",
+    "Harris erases Cole's name from the entry list",
+    1,
+    "명단에 네 이름은 없어.",
+    "Your name isn't on the list.",
+    "cz"
+   ],
+   [
+    "마구간",
+    "barn",
+    "우현이 말 등기 서류의 소유자란을 확인한다",
+    "Cole checks the owner line on the horse's papers",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "승마장",
+    "equestrian arena",
+    "노 대회장이 등기 서류를 석구 앞에 펼친다",
+    "Ms. Banning opens the registration papers before Harris",
+    2,
+    "이 말 주인도 기수도 우현 씨입니다.",
+    "The horse and its rider are both Cole.",
+    "slo"
+   ],
+   [
+    "승마장",
+    "equestrian arena",
+    "석구가 채찍을 내려놓고 출전 게이트에서 물러난다",
+    "Harris drops his crop and backs off the gate",
+    0,
+    "오늘 출전은 취소하세요.",
+    "Scratch your entry for today.",
+    "cu"
+   ],
+   [
+    "관중석",
+    "grandstand",
+    "여자가 출전 명단을 접어 든다",
+    "A woman in the stands folds up the entry list",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "코치를 공 줍는 애라 부른 큰아버지",
+  "The Coach Who Was Called a Ball Boy",
+  "큰아버지는 조카 코치에게 무료 레슨을 받고 공이나 줍는 애라 부른다. 코치 계약서가 레슨을 끊었다.",
+  "The uncle takes free lessons from his nephew and calls him a ball boy. The coach contract ends the lessons.",
+  [
+   [
+    "H",
+    "혜인",
+    "Ada",
+    "30대 여성, 흰 테니스 셔츠, 스포츠 바이저, 단단한 눈",
+    "woman in her 30s, white tennis shirt, sports visor, firm eyes"
+   ],
+   [
+    "V",
+    "정한",
+    "Gerald",
+    "50대 남성, 빨간 폴로, 선글라스, 큰 몸짓",
+    "man in his 50s, red polo, sunglasses, big gestures"
+   ],
+   [
+    "A",
+    "석 팀장",
+    "Mr. Pryce",
+    "40대 남성, 클럽 유니폼, 명찰, 정중한 태도",
+    "man in his 40s, club uniform, name tag, polite manner"
+   ]
+  ],
+  [
+   [
+    "테니스 코트",
+    "tennis court",
+    "정한이 혜인의 라켓을 코트 밖으로 밀어낸다",
+    "Gerald shoves Ada's racket off the court",
+    1,
+    "레슨? 너한테 배울 게 뭐 있어.",
+    "Lessons from you? Please.",
+    "ws"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "정한이 지인들에게 손짓하며 코트를 내준다",
+    "Gerald waves his friends onto the court",
+    1,
+    "오늘 코트는 내가 쓴다.",
+    "I'm taking the court today.",
+    "ots"
+   ],
+   [
+    "클럽 접수처",
+    "club front desk",
+    "혜인이 코치 계약서의 코트 배정표를 확인한다",
+    "Ada checks the court schedule on her contract",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "석 팀장이 계약서를 정한 앞에 놓는다",
+    "Mr. Pryce lays the contract in front of Gerald",
+    2,
+    "코트 배정은 계약 코치 혜인 씨 몫입니다.",
+    "Court time belongs to contracted coach Ada.",
+    "low"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "정한이 라켓을 챙겨 네트 옆으로 물러난다",
+    "Gerald gathers his racket and steps past the net",
+    0,
+    "오늘 레슨은 여기까지예요.",
+    "Your lessons end here today.",
+    "rx"
+   ],
+   [
+    "클럽 정문",
+    "club entrance",
+    "남자가 새 코치 명패를 든다",
+    "A man at the gate carries a new coach nameplate",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "원두에 다른 라벨을 붙인 사촌",
+  "The Cousin Who Relabeled the Beans",
+  "사촌은 조카가 볶은 원두에 자기 라벨을 붙여 비싸게 판다. 원산지 증명이 라벨을 떼게 했다.",
+  "The cousin relabels her beans and sells them as luxury imports. The origin record tore the labels off.",
+  [
+   [
+    "H",
+    "다온",
+    "Ruby",
+    "20대 여성, 갈색 앞치마, 짧은 머리, 또렷한 눈",
+    "woman in her 20s, brown apron, short hair, clear eyes"
+   ],
+   [
+    "V",
+    "재복",
+    "Cliff",
+    "40대 남성, 검은 셔츠, 금목걸이, 비웃는 얼굴",
+    "man in his 40s, black shirt, gold chain, sneering face"
+   ],
+   [
+    "A",
+    "피터스 씨",
+    "Mr. Reyes",
+    "50대 남성, 흰 셔츠, 서류 가방, 온화한 눈",
+    "man in his 50s, white shirt, briefcase, gentle eyes"
+   ]
+  ],
+  [
+   [
+    "카페 카운터",
+    "cafe counter",
+    "재복이 다온의 원두 봉투를 바닥에 떨어뜨린다",
+    "Cliff drops Ruby's bean bags on the floor",
+    1,
+    "콩 볶는 솜씨로 뭘 하겠어.",
+    "Roasting beans. That's your skill?",
+    "cz"
+   ],
+   [
+    "카페 카운터",
+    "cafe counter",
+    "재복이 자기 상표 라벨을 원두 봉투에 붙인다",
+    "Cliff sticks his own label over the bean bags",
+    1,
+    "이제 이건 명품 원두야.",
+    "These are luxury beans now.",
+    "ms"
+   ],
+   [
+    "로스터리",
+    "roastery",
+    "다온이 원산지 증명서와 봉투 라벨을 맞춰 본다",
+    "Ruby compares the origin certificate with the bag label",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "카페 카운터",
+    "cafe counter",
+    "피터스가 증명서를 재복 앞에 놓는다",
+    "Mr. Reyes sets the certificate before Cliff",
+    2,
+    "이 봉투 원두는 다온 씨 농장산입니다.",
+    "The beans in this bag come from Ruby's farm.",
+    "pi"
+   ],
+   [
+    "카페 카운터",
+    "cafe counter",
+    "재복이 라벨을 한 장씩 떼어 낸다",
+    "Cliff peels the labels off one by one",
+    0,
+    "라벨은 오늘 다 떼세요.",
+    "Strip every label today.",
+    "ms"
+   ],
+   [
+    "카페 창밖",
+    "outside the cafe window",
+    "창밖 트럭에서 새 원두 봉투가 내려진다",
+    "New bean bags come off a truck outside",
+    -1,
+    "",
+    "",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "잔금 없는 드레스를 입으려던 올케",
+  "The Dress She Didn't Pay For",
+  "올케는 조카가 만든 드레스를 결혼식에 쓰고 잔금은 안 낸다. 주문 계약서가 드레스를 붙잡고 있었다.",
+  "The sister-in-law wears the dress she never paid for. The order contract holds the dress back.",
+  [
+   [
+    "H",
+    "은설",
+    "Mae",
+    "30대 여성, 재봉 앞치마, 안경, 차분한 눈",
+    "woman in her 30s, sewing apron, glasses, calm eyes"
+   ],
+   [
+    "V",
+    "말순",
+    "Denise",
+    "40대 여성, 크림색 원피스, 진주 귀걸이, 얕보는 웃음",
+    "woman in her 40s, cream dress, pearl earrings, condescending smile"
+   ],
+   [
+    "A",
+    "민 실장",
+    "Ms. Barrow",
+    "40대 여성, 검은 정장, 일정표, 단호한 말투",
+    "woman in her 40s, black suit, schedule, firm tone"
+   ]
+  ],
+  [
+   [
+    "드레스 아틀리에",
+    "dress atelier",
+    "말순이 은설의 바늘을 치우며 드레스를 집어 든다",
+    "Denise sweeps away Mae's needle and lifts the dress",
+    1,
+    "이 드레스, 내가 입을 거야.",
+    "I'm wearing this dress.",
+    "ms"
+   ],
+   [
+    "드레스 아틀리에",
+    "dress atelier",
+    "말순이 잔금 서류를 찢어 쓰레기통에 넣는다",
+    "Denise tears the balance sheet and drops it in the bin",
+    1,
+    "잔금? 가족 드레스에 웬 돈.",
+    "A balance? It's a family dress.",
+    "trk"
+   ],
+   [
+    "아틀리에 작업대",
+    "atelier workbench",
+    "은설이 주문 계약서의 잔금 조항을 짚는다",
+    "Mae points at the balance clause on the order",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "예식장 대기실",
+    "wedding hall dressing room",
+    "민 실장이 계약서를 말순 앞에 펼친다",
+    "Ms. Barrow opens the contract before Denise",
+    2,
+    "잔금 미납이면 드레스는 인도되지 않습니다.",
+    "No balance, no dress handover.",
+    "low"
+   ],
+   [
+    "예식장 대기실",
+    "wedding hall dressing room",
+    "말순이 드레스 지퍼를 붙든 채 굳는다",
+    "Denise freezes, gripping the dress zipper",
+    0,
+    "입으실 거면 잔금부터요.",
+    "Pay first if you want to wear it.",
+    "cu"
+   ],
+   [
+    "예식장 복도",
+    "wedding hall corridor",
+    "여자가 빈 옷걸이를 들고 서 있다",
+    "A woman in the corridor stands holding an empty hanger",
+    -1,
+    "",
+    "",
+    "ws"
+   ]
+  ]
+ ]
+]

@@ -1,0 +1,919 @@
+[
+ [
+  "굶은 아이에게 도시락을 준 조리사",
+  "The Lunchbox She Gave Away",
+  "도시락을 잃은 아이에게 자기 밥을 준 조리사. 그 아이 엄마가 급식 사업 단장이었다.",
+  "A cook gives her own lunch to a boy who lost his. His mother runs the city meal program.",
+  [
+   [
+    "H",
+    "수아",
+    "Sophie",
+    "40대 여성, 흰 조리복, 머리망, 통통한 볼, 다정한 눈",
+    "woman in her 40s, white cook's coat, hairnet, round cheeks, kind eyes"
+   ],
+   [
+    "V",
+    "황보 원장",
+    "Mrs. Garrity",
+    "50대 여성, 원장 정장, 짧은 파마, 굳은 입매",
+    "woman in her 50s, director's suit, short perm, tight mouth"
+   ],
+   [
+    "A",
+    "지안",
+    "Naomi",
+    "30대 여성, 베이지 재킷, 긴 머리, 또렷한 눈",
+    "woman in her 30s, beige jacket, long hair, clear eyes"
+   ],
+   [
+    "X",
+    "하온",
+    "Rory",
+    "6세 남아, 노란 티셔츠, 짧은 머리, 앞니가 빠진 웃음",
+    "boy of six, yellow t-shirt, short hair, gap-toothed smile"
+   ]
+  ],
+  [
+   [
+    "어린이집 주방",
+    "daycare kitchen",
+    "황보 원장이 수아의 도시락을 쓰레기통에 버린다",
+    "Mrs. Garrity drops Sophie's lunchbox into the bin",
+    1,
+    "아이 밥을 왜 네가 챙겨?",
+    "Why are you feeding someone else's child?",
+    "cz"
+   ],
+   [
+    "어린이집 주방",
+    "daycare kitchen",
+    "황보 원장이 수아의 앞치마를 벗겨 문고리에 건다",
+    "Mrs. Garrity hangs Sophie's apron on the door",
+    1,
+    "이번 주까지만 나와.",
+    "Work until the end of this week.",
+    "ms"
+   ],
+   [
+    "어린이집 교실",
+    "daycare classroom",
+    "하온이 수아에게 크레파스 그림을 건넨다",
+    "Rory hands Sophie a crayon drawing",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "어린이집 현관",
+    "daycare entrance",
+    "지안이 서류를 펴 들고 원장 앞에 선다",
+    "Naomi holds up a document in front of Mrs. Garrity",
+    2,
+    "이 아이 엄마입니다. 이 조리사를 모시겠습니다.",
+    "I'm his mother. We're hiring this cook.",
+    "low"
+   ],
+   [
+    "어린이집 주방",
+    "daycare kitchen",
+    "황보 원장의 식자재 장부가 바닥에 떨어진다",
+    "Mrs. Garrity's food ledger slides to the floor",
+    0,
+    "아이 한 끼가 그렇게 아까웠습니까?",
+    "Was one child's meal that precious?",
+    "cu"
+   ],
+   [
+    "어린이집 주방",
+    "daycare kitchen",
+    "지안이 수아에게 새 위탁 계약서를 건넨다",
+    "Naomi hands Sophie a new program contract",
+    2,
+    "다음 달부터 이 주방을 맡아 주세요.",
+    "Run this kitchen from next month.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "목걸이 하나로 바뀐 가게 주인",
+  "The Collar That Named Her",
+  "거리에서 떠돌던 개를 씻겨 준 미용사. 그 개 주인이 이 건물을 가진 배우였다.",
+  "A groomer washes a stray for free. Its owner is the actress who owns the building.",
+  [
+   [
+    "H",
+    "지민",
+    "Vivian",
+    "20대 여성, 앞치마 위에 털 묻은 셔츠, 묶은 머리, 맑은 눈",
+    "woman in her 20s, fur-dusted shirt over an apron, tied hair, clear eyes"
+   ],
+   [
+    "V",
+    "태윤",
+    "Derek",
+    "40대 남성, 애견미용실 사장, 검은 조끼, 짧은 머리",
+    "man in his 40s, pet salon owner, black vest, short hair"
+   ],
+   [
+    "A",
+    "서연",
+    "Claire",
+    "30대 여성, 흰 니트에 선글라스, 긴 생머리, 부드러운 눈",
+    "woman in her 30s, white knit and sunglasses, long hair, soft eyes"
+   ]
+  ],
+  [
+   [
+    "애견미용실",
+    "pet grooming salon",
+    "태윤이 지민의 손에서 가위를 빼앗아 던진다",
+    "Derek snatches the scissors from Vivian and throws them",
+    1,
+    "떠돌이 개에 우리 약을 써?",
+    "Using our products on a stray?",
+    "ms"
+   ],
+   [
+    "애견미용실",
+    "pet grooming salon",
+    "태윤이 지민의 작업 앞치마를 벗겨 바닥에 던진다",
+    "Derek pulls off her work apron and throws it down",
+    1,
+    "가위 놓고 나가.",
+    "Put the scissors down and go.",
+    "ots"
+   ],
+   [
+    "애견미용실 벽",
+    "pet salon wall",
+    "벽의 사진 속 개가 씻긴 개와 같은 목걸이를 하고 있다",
+    "The dog in a wall photo wears the same collar as the stray",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "애견미용실",
+    "pet grooming salon",
+    "서연이 개를 안고 지민 앞에 선다",
+    "Claire holds the dog and stands beside Vivian",
+    2,
+    "제 개를 씻긴 사람입니다. 이 건물도 제 겁니다.",
+    "She washed my dog. This building is mine too.",
+    "slo"
+   ],
+   [
+    "애견미용실",
+    "pet grooming salon",
+    "태윤의 임대 계약서가 카운터에 떨어진다",
+    "Derek's lease slips onto the counter",
+    0,
+    "털 한 줌이 그렇게 아까웠습니까?",
+    "Was one handful of fur that precious?",
+    "cu"
+   ],
+   [
+    "애견미용실",
+    "pet grooming salon",
+    "서연이 지민에게 새 간판을 건넨다",
+    "Claire hands Vivian a new shop sign",
+    2,
+    "이 가게는 이제 당신 이름으로 해요.",
+    "Put your name on this shop now.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "마감 뒤 온 남자에게 상자를 준 봉사자",
+  "The Box She Saved After Closing",
+  "마감 뒤 온 남자에게 식료품 상자를 준 봉사자. 그가 이 푸드뱅크에 기부하는 회장이었다.",
+  "A volunteer saves a food box for a latecomer. He is the chairman who funds the bank.",
+  [
+   [
+    "H",
+    "나은",
+    "Helen",
+    "30대 여성, 초록 봉사 조끼, 짧은 머리, 피곤하지만 밝은 눈",
+    "woman in her 30s, green volunteer vest, short hair, tired bright eyes"
+   ],
+   [
+    "V",
+    "정순",
+    "Ruth",
+    "60대 여성, 봉사 단체 점퍼, 흰 파마, 얇은 입술",
+    "woman in her 60s, charity jacket, white perm, thin lips"
+   ],
+   [
+    "A",
+    "상우",
+    "Peter",
+    "50대 남성, 낡은 코트, 흰 머리, 구부정한 어깨",
+    "man in his 50s, worn coat, white hair, stooped shoulders"
+   ]
+  ],
+  [
+   [
+    "푸드뱅크 창고",
+    "food bank warehouse",
+    "정순이 나은이 남겨 둔 상자를 발로 밀어낸다",
+    "Ruth kicks aside the box Helen set apart",
+    1,
+    "마감 뒤에 누가 와?",
+    "Who comes after closing?",
+    "ms"
+   ],
+   [
+    "푸드뱅크 창고",
+    "food bank warehouse",
+    "정순이 나은의 봉사 명찰을 떼어 간다",
+    "Ruth pulls off Helen's volunteer badge",
+    1,
+    "봉사 명찰 반납해.",
+    "Hand in your volunteer badge.",
+    "cz"
+   ],
+   [
+    "푸드뱅크 창고",
+    "food bank warehouse",
+    "상우가 상자 안의 손편지를 꺼내 읽는다",
+    "Peter takes the handwritten note from the box",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "푸드뱅크 사무실",
+    "food bank office",
+    "상우가 손편지를 들어 정순 앞에 선다",
+    "Peter holds up the note in front of Ruth",
+    2,
+    "상자를 준 분입니다. 제가 이 은행에 기부합니다.",
+    "She gave me this box. I fund this bank.",
+    "slo"
+   ],
+   [
+    "푸드뱅크 창고",
+    "food bank warehouse",
+    "정순의 재고 장부가 바닥에 떨어진다",
+    "Ruth's inventory book drops to the floor",
+    0,
+    "손편지 한 장이 그렇게 무거웠습니까?",
+    "Was one handwritten note that heavy?",
+    "cu"
+   ],
+   [
+    "푸드뱅크 사무실",
+    "food bank office",
+    "상우가 나은에게 새 사무실 열쇠를 건넨다",
+    "Peter puts the office keys in Helen's hand",
+    2,
+    "다음 달부터 이 은행은 당신이 맡아요.",
+    "You run this bank from next month.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "값을 못 내는 회원을 가르친 트레이너",
+  "The Sessions He Gave for Free",
+  "수업료를 못 내는 회원을 무료로 가르친 트레이너. 그가 새 예능을 만드는 피디였다.",
+  "A trainer coaches a member who cannot pay. The man produces a new TV show.",
+  [
+   [
+    "H",
+    "준서",
+    "Simon",
+    "30대 남성, 헬스장 유니폼, 짧은 머리, 단단한 어깨, 반듯한 눈",
+    "man in his 30s, gym uniform, short hair, solid shoulders, steady eyes"
+   ],
+   [
+    "V",
+    "미정",
+    "Rita",
+    "50대 여성, 헬스장 원장, 검은 트레이닝복, 짧은 파마",
+    "woman in her 50s, gym owner, black tracksuit, short perm"
+   ],
+   [
+    "A",
+    "성민",
+    "Owen",
+    "40대 남성, 후드티에 큰 체구, 짧은 수염, 부드러운 눈",
+    "man in his 40s, hoodie, big frame, short beard, soft eyes"
+   ]
+  ],
+  [
+   [
+    "헬스장",
+    "gym",
+    "미정이 준서의 회원 수첩을 빼앗아 찢는다",
+    "Rita snatches and tears Simon's client notebook",
+    1,
+    "돈 안 내는 회원은 내 회원 아니야.",
+    "A member who doesn't pay isn't mine.",
+    "cz"
+   ],
+   [
+    "헬스장",
+    "gym",
+    "미정이 준서의 강사증을 벗겨 카운터에 놓는다",
+    "Rita unpins his trainer badge onto the counter",
+    1,
+    "강사증 반납해.",
+    "Hand in your trainer badge.",
+    "trk"
+   ],
+   [
+    "헬스장",
+    "gym",
+    "성민이 가방에서 방송국 출입증을 꺼낸다",
+    "Owen pulls a TV studio pass from his bag",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "헬스장",
+    "gym",
+    "성민이 준서 옆에 서서 미정을 본다",
+    "Owen stands by Simon and faces Rita",
+    2,
+    "이 사람이 제 프로그램 첫 트레이너입니다.",
+    "He's the first trainer on my new show.",
+    "low"
+   ],
+   [
+    "헬스장",
+    "gym",
+    "미정의 지점 계약서가 바닥에 떨어진다",
+    "Rita's franchise contract slips to the floor",
+    0,
+    "한 달 수업이 그렇게 아까웠습니까?",
+    "Was one month of sessions that costly?",
+    "cu"
+   ],
+   [
+    "헬스장",
+    "gym",
+    "성민이 준서에게 촬영 일정표를 건넨다",
+    "Owen hands Simon the taping schedule",
+    2,
+    "첫 촬영은 다음 주 월요일이에요.",
+    "First taping is next Monday.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "면접 앞둔 남자의 머리를 잘라 준 이발사",
+  "The Haircut He Gave for Free",
+  "면접을 앞둔 남자를 무료로 잘라 준 이발사. 그 남자가 이 가게를 인수하러 온 사장이었다.",
+  "A barber cuts a nervous man's hair for free. The man came to buy the shop.",
+  [
+   [
+    "H",
+    "하율",
+    "Emily",
+    "20대 여성, 검은 이발사 앞치마, 묶은 머리, 조용한 눈",
+    "woman in her 20s, black barber apron, tied hair, quiet eyes"
+   ],
+   [
+    "V",
+    "경자",
+    "Elsa",
+    "50대 여성, 이발소 주인, 꽃무늬 셔츠, 짧은 파마",
+    "woman in her 50s, shop owner, floral shirt, short perm"
+   ],
+   [
+    "A",
+    "태린",
+    "Miles",
+    "30대 남성, 회색 정장, 단정한 머리, 반듯한 얼굴",
+    "man in his 30s, gray suit, neat hair, clean-cut face"
+   ]
+  ],
+  [
+   [
+    "이발소",
+    "barber shop",
+    "경자가 하율의 가위를 빼앗아 서랍에 넣는다",
+    "Elsa takes Emily's scissors and locks them in a drawer",
+    1,
+    "면접비도 안 받고 잘라 줘?",
+    "A free haircut for an interview?",
+    "cz"
+   ],
+   [
+    "이발소",
+    "barber shop",
+    "경자가 하율의 앞치마를 벗겨 의자에 던진다",
+    "Elsa throws Emily's apron onto the chair",
+    1,
+    "의자 치우고 나가.",
+    "Clear your chair and go.",
+    "ms"
+   ],
+   [
+    "이발소 앞",
+    "outside the barber shop",
+    "태린이 유리문에 붙은 가게 매물 공고를 손끝으로 짚는다",
+    "Miles taps the sale notice taped to the glass",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "이발소",
+    "barber shop",
+    "태린이 하율에게 명함을 건넨다",
+    "Miles hands Emily his card",
+    2,
+    "머리를 잘라 준 분입니다. 이 가게 제가 삽니다.",
+    "She cut my hair. I'm buying this shop.",
+    "slo"
+   ],
+   [
+    "이발소",
+    "barber shop",
+    "경자의 금전출납부가 바닥에 펼쳐진다",
+    "Elsa's cash ledger falls open on the floor",
+    0,
+    "가위 한 번이 그렇게 아까웠습니까?",
+    "Was one haircut that expensive?",
+    "cu"
+   ],
+   [
+    "이발소",
+    "barber shop",
+    "태린이 하율에게 새 가게 열쇠를 건넨다",
+    "Miles puts the shop keys in Emily's hand",
+    2,
+    "다음 주부터 여기는 당신 가게예요.",
+    "From next week this shop is yours.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "떨리는 손을 잡아 준 도예가를 자른 관장",
+  "The Bowl They Finished Together",
+  "손이 떨리는 노인 대신 흙을 잡아 준 도예가. 그가 도자 공모전 심사위원이었다.",
+  "A potter steadies an old man's shaking hands. He judges the national ceramics prize.",
+  [
+   [
+    "H",
+    "채원",
+    "Marta",
+    "30대 여성, 흙 묻은 앞치마, 묶은 머리, 차분한 눈",
+    "woman in her 30s, clay-stained apron, tied hair, calm eyes"
+   ],
+   [
+    "V",
+    "명숙",
+    "Dora",
+    "50대 여성, 공방 관장, 검은 원피스, 짧은 단발",
+    "woman in her 50s, studio director, black dress, short bob"
+   ],
+   [
+    "A",
+    "현우",
+    "Gideon",
+    "60대 남성, 회색 작업복, 흰 수염, 떨리는 손",
+    "man in his 60s, gray work clothes, white beard, trembling hands"
+   ]
+  ],
+  [
+   [
+    "도예 공방",
+    "pottery studio",
+    "명숙이 채원의 물레를 발로 멈춘다",
+    "Dora stops Marta's wheel with her foot",
+    1,
+    "남의 흙으로 뭘 만들어?",
+    "Whose clay are you using?",
+    "cz"
+   ],
+   [
+    "도예 공방",
+    "pottery studio",
+    "명숙이 채원의 사발을 선반에서 내려 바닥에 둔다",
+    "Dora lifts Marta's bowl off the shelf and sets it on the floor",
+    1,
+    "물레 끄고 나가.",
+    "Turn off the wheel and go.",
+    "ms"
+   ],
+   [
+    "도예 공방",
+    "pottery studio",
+    "현우가 사발 바닥의 도장을 손끝으로 만진다",
+    "Gideon runs a finger over the stamp on the bowl's base",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "도예 공방",
+    "pottery studio",
+    "현우가 사발을 들어 채원에게 건넨다",
+    "Gideon lifts the bowl and holds it out to Marta",
+    2,
+    "이 사발은 이 사람 작품입니다. 공모전에 올립니다.",
+    "This bowl is her work. I'll enter the prize.",
+    "low"
+   ],
+   [
+    "도예 공방",
+    "pottery studio",
+    "명숙의 가마 사용 장부가 바닥에 떨어진다",
+    "Dora's kiln log slides to the floor",
+    0,
+    "흙 한 덩이로 다 잃으셨네요.",
+    "One lump of clay cost you everything.",
+    "cu"
+   ],
+   [
+    "도예 공방",
+    "pottery studio",
+    "현우가 채원에게 공방 열쇠를 건넨다",
+    "Gideon hands Marta the studio keys",
+    2,
+    "내년 레지던시는 당신 자리입니다.",
+    "Next year's residency is yours.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "건반 하나가 부른 연주홀",
+  "The Untuned Piano",
+  "동네 아이들을 위해 피아노를 무료로 고친 조율사. 그 소리를 들은 피아니스트가 그를 찾았다.",
+  "A tuner fixes a piano free so neighborhood kids can play. A pianist hears it and comes looking.",
+  [
+   [
+    "H",
+    "하은",
+    "Nora",
+    "40대 여성, 회색 작업복, 안경, 짧은 머리, 조용한 눈",
+    "woman in her 40s, gray work clothes, glasses, short hair, quiet eyes"
+   ],
+   [
+    "V",
+    "영미",
+    "Stella",
+    "50대 여성, 조율 회사 팀장, 검은 정장, 날카로운 눈",
+    "woman in her 50s, tuning firm manager, black suit, sharp eyes"
+   ],
+   [
+    "A",
+    "예성",
+    "Iris",
+    "30대 여성, 검은 코트, 긴 머리, 깊은 눈",
+    "woman in her 30s, black coat, long hair, deep eyes"
+   ]
+  ],
+  [
+   [
+    "동네 복지관",
+    "community center",
+    "영미가 하은의 공구 가방을 발로 차 넘어뜨린다",
+    "Stella kicks over Nora's tool bag",
+    1,
+    "공짜로 조율해? 회사 돈으로?",
+    "Free tuning? On company money?",
+    "ms"
+   ],
+   [
+    "동네 복지관",
+    "community center",
+    "영미가 하은의 작업 지시서를 찢는다",
+    "Stella tears up Nora's work order",
+    1,
+    "지시서 찢고 나가.",
+    "Tear up the order and go.",
+    "ots"
+   ],
+   [
+    "복지관 강당",
+    "community hall",
+    "예성이 낡은 피아노의 건반을 하나씩 눌러 본다",
+    "Iris presses the old keys one by one",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "복지관 강당",
+    "community hall",
+    "예성이 하은에게 연주회 초대장을 건넨다",
+    "Iris holds out a recital invitation",
+    2,
+    "이 소리를 듣고 왔습니다. 제 홀을 맡아 주세요.",
+    "I came for this sound. Tune my hall.",
+    "low"
+   ],
+   [
+    "복지관 사무실",
+    "community center office",
+    "영미의 정산서가 책상에서 떨어진다",
+    "Stella's invoice slips off the desk",
+    0,
+    "건반 하나가 그렇게 아까웠습니까?",
+    "Was one key that precious to you?",
+    "cu"
+   ],
+   [
+    "연주홀",
+    "recital hall",
+    "예성이 하은에게 조율실 열쇠를 건넨다",
+    "Iris gives Nora the keys to the tuning room",
+    2,
+    "내일부터 여기 피아노는 당신 겁니다.",
+    "From tomorrow these pianos are yours.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "아이 자전거를 고친 수리공을 자른 사장",
+  "The Chain He Fixed for a Boy",
+  "아이 자전거 체인을 무료로 고쳐 준 수리공. 그 아이 아버지가 사이클 팀 감독이었다.",
+  "A mechanic fixes a boy's bike chain for free. The boy's father coaches a racing team.",
+  [
+   [
+    "H",
+    "민혁",
+    "Luke",
+    "20대 남성, 기름 묻은 작업복, 짧은 머리, 부지런한 눈",
+    "man in his 20s, grease-stained overalls, short hair, diligent eyes"
+   ],
+   [
+    "V",
+    "동하",
+    "Ralph",
+    "40대 남성, 자전거 가게 사장, 검은 조끼, 굳은 얼굴",
+    "man in his 40s, bike shop owner, black vest, hard face"
+   ],
+   [
+    "A",
+    "재훈",
+    "Claude",
+    "40대 남성, 사이클 팀 재킷, 짧은 머리, 선한 눈",
+    "man in his 40s, cycling team jacket, short hair, kind eyes"
+   ]
+  ],
+  [
+   [
+    "자전거 수리점",
+    "bike shop",
+    "동하가 민혁의 공구를 발로 밀어낸다",
+    "Ralph kicks Luke's tools aside",
+    1,
+    "공짜로 체인 갈아 줘?",
+    "A free chain replacement?",
+    "cz"
+   ],
+   [
+    "자전거 수리점",
+    "bike shop",
+    "동하가 민혁의 앞치마를 벗긴다",
+    "Ralph pulls off Luke's apron",
+    1,
+    "공구함 들고 나가.",
+    "Take your toolbox and go.",
+    "ots"
+   ],
+   [
+    "자전거 수리점 앞",
+    "outside the bike shop",
+    "재훈이 아이의 자전거 페달을 돌려 본다",
+    "Claude spins the pedal on the boy's bike",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "자전거 수리점",
+    "bike shop",
+    "재훈이 민혁의 어깨를 잡고 동하를 본다",
+    "Claude grips Luke's shoulder and looks at Ralph",
+    2,
+    "이 사람이 우리 팀 정비사입니다. 계약은 끝입니다.",
+    "He's our team mechanic. Your contract ends here.",
+    "low"
+   ],
+   [
+    "자전거 수리점",
+    "bike shop",
+    "동하의 부품 주문서가 바닥에 흩어진다",
+    "Ralph's parts orders scatter on the floor",
+    0,
+    "아이 자전거가 그렇게 거슬렸습니까?",
+    "Did a boy's bike bother you that much?",
+    "cu"
+   ],
+   [
+    "자전거 수리점",
+    "bike shop",
+    "재훈이 민혁에게 팀 유니폼을 건넨다",
+    "Claude hands Luke a team jersey",
+    2,
+    "다음 달 대회, 우리 팀으로 오세요.",
+    "Join our team for next month's race.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "아이 안고 갇힌 여자의 문을 연 열쇠공",
+  "The Door He Opened at No Charge",
+  "아이를 안고 집 밖에 갇힌 여자의 문을 열어 준 열쇠공. 그녀가 이 건물 주인이었다.",
+  "A locksmith opens a door for a mother locked out with her baby. She owns the building.",
+  [
+   [
+    "H",
+    "진영",
+    "Hugo",
+    "50대 남성, 회색 작업 점퍼, 짧은 회색 머리, 무뚝뚝한 눈",
+    "man in his 50s, gray work jacket, short gray hair, blunt eyes"
+   ],
+   [
+    "V",
+    "상미",
+    "Vera",
+    "40대 여성, 관리사무소 유니폼, 묶은 머리, 날선 눈",
+    "woman in her 40s, building office uniform, tied hair, sharp eyes"
+   ],
+   [
+    "A",
+    "은서",
+    "Julia",
+    "30대 여성, 흰 셔츠에 아기를 안고, 긴 머리, 지친 눈",
+    "woman in her 30s, white shirt, holding a baby, long hair, tired eyes"
+   ]
+  ],
+  [
+   [
+    "아파트 복도",
+    "apartment hallway",
+    "상미가 은서 앞을 막아서며 진영을 손가락으로 가리킨다",
+    "Vera blocks Julia and points at Hugo",
+    1,
+    "이 사람이 문을 뜯었어요.",
+    "This man broke the door open.",
+    "cz"
+   ],
+   [
+    "아파트 복도",
+    "apartment hallway",
+    "상미가 진영의 공구함을 발로 차 계단으로 굴린다",
+    "Vera kicks his tool box down the stairs",
+    1,
+    "경비실로 가요.",
+    "Security office. Now.",
+    "trk"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "은서가 아기를 안은 채 관리비 고지서 뭉치를 꺼낸다",
+    "Julia, holding her baby, pulls out a stack of building bills",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "은서가 고지서를 상미 앞에 내민다",
+    "Julia holds the bills up in front of Vera",
+    2,
+    "이 건물 주인입니다. 이분은 제가 부릅니다.",
+    "I own this building. He works for me.",
+    "slo"
+   ],
+   [
+    "아파트 복도",
+    "apartment hallway",
+    "상미의 관리 사무소 열쇠가 바닥에 떨어진다",
+    "Vera's office keys drop to the floor",
+    0,
+    "아이 안은 손을 못 보셨습니까?",
+    "Could you not see the arms holding a baby?",
+    "cu"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "은서가 진영에게 건물 열쇠 꾸러미를 건넨다",
+    "Julia puts the building's master keys in his hand",
+    2,
+    "이 건물 열쇠는 이제 당신이 맡아요.",
+    "These keys are yours to keep now.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "홀로 온 남자 곁을 지킨 장례지도사",
+  "The Man Who Came Alone",
+  "아내를 떠나보내고 홀로 온 남자 곁을 지킨 장례지도사. 그가 이 회사를 세운 사람이었다.",
+  "A funeral attendant stays with a man who came alone. He founded the funeral home.",
+  [
+   [
+    "H",
+    "정희",
+    "Miriam",
+    "50대 여성, 검은 장례복, 단정한 묶은 머리, 조용한 눈",
+    "woman in her 50s, black funeral suit, neat tied hair, quiet eyes"
+   ],
+   [
+    "V",
+    "옥자",
+    "Sybil",
+    "60대 여성, 장례식장 실장, 검은 정장, 굳은 얼굴",
+    "woman in her 60s, funeral director, black suit, rigid face"
+   ],
+   [
+    "A",
+    "지호",
+    "Elias",
+    "70대 남성, 낡은 검은 코트, 흰 머리, 지팡이",
+    "man in his 70s, worn black coat, white hair, walking stick"
+   ]
+  ],
+  [
+   [
+    "장례식장",
+    "funeral home",
+    "옥자가 정희가 놓은 국화꽃을 쓰레기통에 버린다",
+    "Sybil throws the chrysanthemums Miriam laid into the bin",
+    1,
+    "빈소 하나에 꽃까지?",
+    "Flowers for one empty room?",
+    "cz"
+   ],
+   [
+    "장례식장",
+    "funeral home",
+    "옥자가 정희의 명찰을 떼어 낸다",
+    "Sybil pulls off Miriam's name tag",
+    1,
+    "명찰 떼고 나가.",
+    "Take off your badge and go.",
+    "ots"
+   ],
+   [
+    "장례식장 복도",
+    "funeral home hallway",
+    "지호가 정희가 써 준 편지를 손에 쥐고 서 있다",
+    "Elias stands holding the letter Miriam wrote for him",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "장례식장 홀",
+    "funeral home hall",
+    "지호가 편지를 들어 옥자 앞에 선다",
+    "Elias raises the letter in front of Sybil",
+    2,
+    "이 회사를 세운 사람입니다. 이분은 제가 모십니다.",
+    "I founded this home. She comes with me.",
+    "low"
+   ],
+   [
+    "장례식장 사무실",
+    "funeral home office",
+    "옥자의 비용 명세서가 바닥에 흩어진다",
+    "Sybil's price sheets scatter on the floor",
+    0,
+    "홀로 온 사람이 그렇게 거슬렸습니까?",
+    "Did a man alone bother you that much?",
+    "cu"
+   ],
+   [
+    "장례식장 정원",
+    "funeral home garden",
+    "지호가 정희에게 사무실 열쇠를 건넨다",
+    "Elias hands Miriam the office keys",
+    2,
+    "내일부터 이 회사는 당신이 이끌어요.",
+    "You lead this home from tomorrow.",
+    "pi"
+   ]
+  ]
+ ]
+]

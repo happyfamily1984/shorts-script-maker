@@ -1,0 +1,912 @@
+[
+ [
+  "들러리 옷을 비웃은 사촌",
+  "The Cousin Who Mocked My Dress",
+  "들러리 옷이 싸다고 비웃는 사촌. 그녀는 신부가 다니는 회사의 대표였다.",
+  "A cousin jeers at her cheap bridesmaid dress, not knowing she runs the bride's company.",
+  [
+   [
+    "H",
+    "김지오",
+    "Nora Bell",
+    "30대 여성, 낡은 베이지 카디건, 검은 단발, 차분한 눈빛",
+    "woman in her 30s, worn beige cardigan, black bob, calm eyes"
+   ],
+   [
+    "V",
+    "박세라",
+    "Celia Vance",
+    "30대 여성, 하늘색 원피스, 올림머리, 새침한 눈매",
+    "woman in her 30s, sky-blue dress, hair in an updo, sharp eyes"
+   ],
+   [
+    "A",
+    "류하윤",
+    "Tess Harrow",
+    "20대 후반 여성, 흰 웨딩드레스, 긴 웨이브 머리, 밝은 미소",
+    "woman in her late 20s, long wavy hair, white wedding gown, bright smile"
+   ]
+  ],
+  [
+   [
+    "신부 대기실",
+    "bridal suite",
+    "세라가 지오의 낡은 카디건을 두 손으로 집어 든다",
+    "Celia lifts Nora's worn cardigan between two fingers",
+    1,
+    "들러리가 그 옷이야? 사진에서 빼.",
+    "A bridesmaid in that? Cut her from the photos.",
+    "cz"
+   ],
+   [
+    "신부 대기실",
+    "bridal suite",
+    "세라가 지오의 이름표를 떼어 맨 끝자리에 붙인다",
+    "Celia peels off Nora's name card and sticks it on the last seat",
+    1,
+    "네 자리는 저기, 맨 끝.",
+    "Your seat is over there. The last one.",
+    "ms"
+   ],
+   [
+    "신부 대기실",
+    "bridal suite",
+    "지오의 휴대폰에 대표님 입장 준비 문자가 뜬다",
+    "A text lights up Nora's phone: the CEO is ready to enter",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "예식장 홀",
+    "wedding hall",
+    "하윤이 마이크를 잡고 지오를 상석으로 안내한다",
+    "Tess takes the mic and walks Nora to the head table",
+    2,
+    "이분이 저희 회사 대표님이세요.",
+    "This is my boss. She runs our company.",
+    "low"
+   ],
+   [
+    "예식장 홀",
+    "wedding hall",
+    "지오가 무대에 올라 마이크를 잡자 세라가 굳는다",
+    "Nora steps onto the stage and takes the mic as Celia freezes",
+    0,
+    "제 자리는 맨 끝이 아니라 무대예요.",
+    "My seat isn't the last row. It's the stage.",
+    "cu"
+   ],
+   [
+    "예식장 입구",
+    "wedding entrance",
+    "낯선 남자가 지오에게 두꺼운 봉투를 건넨다",
+    "A stranger hands Nora a thick envelope at the door",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "기장을 이코노미로 보낸 라운지",
+  "The Lounge That Sent the Captain Away",
+  "낡은 후드집업을 보고 아래층으로 보낸 라운지. 그는 오늘 밤 이 비행기의 기장이었다.",
+  "A lounge clerk sends a hoodie man downstairs. He is flying the plane tonight.",
+  [
+   [
+    "H",
+    "윤도헌",
+    "Elliot Ward",
+    "40대 남성, 낡은 회색 후드집업, 짧은 머리, 무표정한 얼굴",
+    "man in his 40s, faded gray hoodie, short hair, blank face"
+   ],
+   [
+    "V",
+    "서나린",
+    "Tessa Moore",
+    "20대 후반 여성, 빨간 라운지 유니폼, 높은 포니테일, 도도한 인상",
+    "woman in her late 20s, red lounge uniform, high ponytail, haughty look"
+   ],
+   [
+    "A",
+    "표서준",
+    "Martin Grove",
+    "50대 남성, 검은 정장, 흰 머리, 곧은 자세",
+    "man in his 50s, black suit, white hair, straight posture"
+   ]
+  ],
+  [
+   [
+    "공항 라운지 입구",
+    "airport lounge entrance",
+    "나린이 도헌의 캐리어를 발끝으로 밀어낸다",
+    "Tessa nudges Elliot's suitcase aside with her foot",
+    1,
+    "여긴 회원만 들어와요.",
+    "Members only in here.",
+    "cz"
+   ],
+   [
+    "공항 라운지",
+    "airport lounge",
+    "나린이 회원 전용 팻말을 도헌 앞에 세운다",
+    "Tessa plants a members-only sign right in front of him",
+    1,
+    "이코노미는 아래층입니다.",
+    "Economy is downstairs.",
+    "ms"
+   ],
+   [
+    "공항 라운지 창가",
+    "lounge window",
+    "도헌이 가방에서 제복 상의를 꺼내 어깨 계급장을 매다",
+    "Elliot pulls a uniform jacket from his bag and pins the stripes",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "공항 라운지 카운터",
+    "lounge counter",
+    "서준이 뛰어와 도헌 앞에 두 손을 모으고 선다",
+    "Martin rushes over and stands before Elliot with his hands together",
+    2,
+    "기장님, 브리핑 준비됐습니다.",
+    "Captain, the briefing is ready.",
+    "low"
+   ],
+   [
+    "공항 라운지",
+    "airport lounge",
+    "나린이 쟁반을 놓치고 도헌이 그 앞에 선다",
+    "Tessa fumbles her tray as Elliot steps in front of her",
+    0,
+    "제 자리는 아래층이 아니라 조종석입니다.",
+    "My seat isn't downstairs. It's the cockpit.",
+    "cu"
+   ],
+   [
+    "탑승구",
+    "boarding gate",
+    "승무원이 명단을 보다가 도헌을 불러 세운다",
+    "A flight attendant scans the list and stops Elliot at the gate",
+    2,
+    "기장님, 이 명단에 낯익은 이름이 있습니다.",
+    "Captain, there's a familiar name on this list.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "옛 졸업사진 속 후원자",
+  "The Patron in the Old Yearbook Photo",
+  "취미반이나 가라던 상담 실장. 복도 사진 속 그녀가 이 학원의 후원자였다.",
+  "A counselor sends her to the hobby class. The woman in the old photo funds the school.",
+  [
+   [
+    "H",
+    "문예담",
+    "Doris Hale",
+    "50대 여성, 낡은 트위드 재킷, 은발 단발, 큰 천 가방",
+    "woman in her 50s, worn tweed jacket, silver bob, big canvas bag"
+   ],
+   [
+    "V",
+    "강채온",
+    "Brooke Slater",
+    "30대 여성, 검은 정장, 날카로운 눈매, 높은 구두",
+    "woman in her 30s, black suit, sharp eyes, tall heels"
+   ],
+   [
+    "A",
+    "배서한",
+    "Victor Lang",
+    "60대 남성, 회색 정장, 둥근 안경, 온화한 인상",
+    "man in his 60s, gray suit, round glasses, gentle face"
+   ]
+  ],
+  [
+   [
+    "미술 학원 상담실",
+    "art academy office",
+    "채온이 예담의 천 가방을 힐끗 보고 서류를 민다",
+    "Brooke eyes the canvas bag and slides a form across the desk",
+    1,
+    "취미반은 3층에 있어요.",
+    "The hobby class is on the third floor.",
+    "cz"
+   ],
+   [
+    "미술 학원 상담실",
+    "art academy office",
+    "채온이 수강료 표를 예담 앞에 밀어 놓는다",
+    "Brooke pushes the tuition sheet in front of Doris",
+    1,
+    "여긴 작가 지망생만 와요.",
+    "Only serious artists study here.",
+    "ms"
+   ],
+   [
+    "미술 학원 복도",
+    "academy hallway",
+    "예담이 벽의 30년 전 단체사진 앞에 멈춰 선다",
+    "Doris stops in front of a class photo taken thirty years ago",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "미술 학원 복도",
+    "academy hallway",
+    "서한이 뛰어나와 예담 앞에 허리를 숙인다",
+    "Victor hurries out and bows low in front of Doris",
+    2,
+    "선생님, 30년 만이시죠.",
+    "Teacher, it's been thirty years.",
+    "low"
+   ],
+   [
+    "미술 학원 상담실",
+    "art academy office",
+    "채온의 서류가 바닥에 흩어지고 예담이 의자에 앉는다",
+    "Brooke's papers scatter as Doris takes the chair",
+    0,
+    "장학생 한 명, 제 이름으로 뽑죠.",
+    "Add one scholarship. In my name.",
+    "cu"
+   ],
+   [
+    "미술 학원 상담실",
+    "art academy office",
+    "서한이 사진 뒤에서 낡은 스케치북을 꺼낸다",
+    "Victor pulls a worn sketchbook from behind the framed photo",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "라켓도 없이 온 코치",
+  "The Coach Who Came Without a Racket",
+  "라켓도 없다며 코트에서 밀어낸 회원. 그는 이 클럽이 초청한 코치였다.",
+  "A member shoves him off the court for having no racket. He is the club's new coach.",
+  [
+   [
+    "H",
+    "임하결",
+    "Owen Pryce",
+    "30대 후반 남성, 헌 후드티, 짧은 머리, 편안한 미소",
+    "man in his late 30s, faded hoodie, short hair, easy smile"
+   ],
+   [
+    "V",
+    "권세온",
+    "Damon Frost",
+    "40대 남성, 흰 테니스복, 선글라스, 치켜든 턱",
+    "man in his 40s, white tennis kit, sunglasses, chin raised"
+   ],
+   [
+    "A",
+    "이도담",
+    "Paula Reyes",
+    "30대 여성, 네이비 블레이저, 묶은 머리, 또렷한 눈",
+    "woman in her 30s, navy blazer, tied-back hair, clear eyes"
+   ]
+  ],
+  [
+   [
+    "테니스 클럽 입구",
+    "tennis club gate",
+    "세온이 하결의 운동화를 내려다보며 손바닥을 든다",
+    "Damon looks down at Owen's sneakers and raises a palm",
+    1,
+    "회원 아니시죠? 출입구는 저쪽.",
+    "You're not a member. Door's that way.",
+    "cz"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "세온이 빌려준 라켓을 도로 가방에 넣고 자물쇠를 채운다",
+    "Damon locks the spare racket back in the bag",
+    1,
+    "라켓 없인 코트 못 들어와요.",
+    "No racket, no court.",
+    "ms"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "하결이 흰 테니스복으로 갈아입고 서브를 넣는다",
+    "Owen, now in white tennis gear, serves a perfect ball",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "도담이 뛰어와 하결 옆에 서서 고개를 숙인다",
+    "Paula runs over and bows beside Owen",
+    2,
+    "코치님, 회원들 다 모였습니다.",
+    "Coach, the members are all here.",
+    "low"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "하결이 세온의 회원증을 집어 든다",
+    "Owen picks up Damon's membership card",
+    0,
+    "레슨도 회원 자격도 다시 심사하죠.",
+    "Let's recheck your lessons and your membership.",
+    "cu"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "하결의 가방에서 금메달이 흘러나와 코트에 떨어진다",
+    "A gold medal slips from Owen's bag and lands on the court",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "지휘봉을 든 신입",
+  "The Newcomer With the Baton",
+  "박자도 못 맞춘다며 뒤로 보낸 단원. 그녀는 오늘부터 이 합창단의 지휘자였다.",
+  "A soloist sends the newcomer to the back row. She is the choir's new conductor.",
+  [
+   [
+    "H",
+    "문하결",
+    "Clara Baird",
+    "30대 여성, 낡은 회색 니트, 안경, 낮게 묶은 머리",
+    "woman in her 30s, worn gray knit, glasses, low tied hair"
+   ],
+   [
+    "V",
+    "오라희",
+    "Renee Sutton",
+    "40대 여성, 보라색 원피스, 치켜 올린 눈썹, 진주 목걸이",
+    "woman in her 40s, purple dress, arched brows, pearl necklace"
+   ],
+   [
+    "A",
+    "최기석",
+    "Harold Pike",
+    "60대 남성, 회색 수트, 나비넥타이, 넓은 이마",
+    "man in his 60s, gray suit, bow tie, broad forehead"
+   ]
+  ],
+  [
+   [
+    "합창 연습실",
+    "choir rehearsal room",
+    "라희가 하결의 악보를 바닥에 떨어뜨린다",
+    "Renee drops Clara's sheet music on the floor",
+    1,
+    "신입은 맨 뒤에 서요.",
+    "Newcomers stand in the back.",
+    "cz"
+   ],
+   [
+    "합창 연습실",
+    "choir rehearsal room",
+    "라희가 손뼉을 쳐 단원들을 돌아보게 한다",
+    "Renee claps once and makes the choir turn around",
+    1,
+    "박자도 못 맞추는 사람이 왔네요.",
+    "Look who can't even keep time.",
+    "ms"
+   ],
+   [
+    "합창 연습실",
+    "choir rehearsal room",
+    "하결이 검은 정장을 입고 단상에 올라 지휘봉을 든다",
+    "Clara steps onto the podium in a black suit, baton raised",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "합창 연습실",
+    "choir rehearsal room",
+    "기석이 단원들 앞에서 하결을 두 손으로 가리킨다",
+    "Harold points at Clara with both hands before the choir",
+    2,
+    "오늘부터 우리 지휘자십니다.",
+    "She is your conductor from today.",
+    "low"
+   ],
+   [
+    "합창 연습실",
+    "choir rehearsal room",
+    "라희의 악보가 손에서 미끄러지고 하결이 단원들을 세운다",
+    "Renee's music slips from her hands as Clara cues the choir",
+    0,
+    "솔로는 다음 주부터 다른 분이 맡습니다.",
+    "Someone else takes the solo from next week.",
+    "cu"
+   ],
+   [
+    "합창 연습실",
+    "choir rehearsal room",
+    "하결이 악보 여백의 작은 서명을 손끝으로 짚는다",
+    "Clara traces a small signature in the sheet music margin",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "시향지에 이름을 남긴 손님",
+  "The Customer Who Signed the Blotter",
+  "3만 원대밖에 못 쓴다며 밀어낸 점원. 그 손님은 이 향수를 만든 조향사였다.",
+  "A clerk pushes her toward cheap scents. She is the perfumer behind the whole line.",
+  [
+   [
+    "H",
+    "진소온",
+    "Vera Lind",
+    "30대 여성, 낡은 코트, 민얼굴, 짧은 검은 머리",
+    "woman in her 30s, worn coat, bare face, short black hair"
+   ],
+   [
+    "V",
+    "곽미르",
+    "Chloe Barrow",
+    "20대 여성, 검은 매장 유니폼, 하이힐, 또렷한 화장",
+    "woman in her 20s, black store uniform, heels, bold makeup"
+   ],
+   [
+    "A",
+    "명시율",
+    "Simon Vail",
+    "40대 남성, 회색 정장, 짧은 머리, 차분한 목소리",
+    "man in his 40s, gray suit, short hair, calm voice"
+   ]
+  ],
+  [
+   [
+    "백화점 향수 매장",
+    "department perfume counter",
+    "미르가 소온의 손목에 시향지를 문지른다",
+    "Chloe rubs a test strip on Vera's wrist",
+    1,
+    "이건 3만 원대예요.",
+    "This one is the cheap line.",
+    "cz"
+   ],
+   [
+    "백화점 향수 매장",
+    "department perfume counter",
+    "미르가 소온을 계산대 옆으로 밀어 세운다",
+    "Chloe nudges Vera aside beside the register",
+    1,
+    "테스터는 한 번만 맡는 거예요.",
+    "You get one sniff per tester.",
+    "ms"
+   ],
+   [
+    "백화점 향수 매장",
+    "department perfume counter",
+    "소온이 빈 시향지에 펜으로 이름을 적는다",
+    "Vera writes a name on a blank test strip",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "백화점 향수 매장",
+    "department perfume counter",
+    "시율이 그 시향지를 집어 들고 소온을 본다",
+    "Simon picks up the strip and stares at Vera",
+    2,
+    "이 배합, 조향사님 맞죠.",
+    "This blend. You're the perfumer.",
+    "low"
+   ],
+   [
+    "백화점 향수 매장",
+    "department perfume counter",
+    "미르가 진열장의 병을 내리다 손을 멈춘다",
+    "Chloe freezes mid-motion, a bottle in her hand",
+    0,
+    "이 매장 진열은 오늘로 끝내죠.",
+    "This counter's display ends today.",
+    "cu"
+   ],
+   [
+    "백화점 밖",
+    "outside the store",
+    "소온이 가방에서 이름표 없는 향수병을 꺼낸다",
+    "Vera takes out an unlabeled bottle from her bag",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "작가를 바꿔 달란 손님",
+  "The Client Who Wanted Another Photographer",
+  "차림을 보고 작가를 바꿔 달라던 손님. 사진관 주인이 이 잡지의 표지 작가였다.",
+  "A bride demands another photographer. The studio owner shot that magazine cover.",
+  [
+   [
+    "H",
+    "고유담",
+    "Nora Finch",
+    "30대 후반 여성, 낡은 청바지, 회색 후드티, 짧은 머리",
+    "woman in her late 30s, old jeans, gray hoodie, short hair"
+   ],
+   [
+    "V",
+    "전지유",
+    "Lily Doyle",
+    "20대 후반 여성, 흰 원피스, 긴 생머리, 새침한 표정",
+    "woman in her late 20s, white dress, long straight hair, pouty face"
+   ],
+   [
+    "A",
+    "마준서",
+    "Marco Diaz",
+    "30대 남성, 앞치마, 짧은 수염, 밝은 눈",
+    "man in his 30s, apron, short beard, bright eyes"
+   ]
+  ],
+  [
+   [
+    "사진관",
+    "photo studio",
+    "지유가 유담의 후드티를 훑어보고 의자를 밀어낸다",
+    "Lily scans Nora's hoodie and shoves the chair back",
+    1,
+    "작가님, 다른 분으로 바꿔 주세요.",
+    "Get me a different photographer.",
+    "cz"
+   ],
+   [
+    "사진관",
+    "photo studio",
+    "지유가 예약금 봉투를 카운터에 던진다",
+    "Lily tosses the deposit envelope on the counter",
+    1,
+    "이런 데서 찍을 생각은 없어요.",
+    "I won't be photographed in a place like this.",
+    "ms"
+   ],
+   [
+    "사진관",
+    "photo studio",
+    "유담이 벽의 표지를 향해 카메라 셔터를 누른다",
+    "Nora raises her camera and presses the shutter at the cover",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "사진관",
+    "photo studio",
+    "준서가 표지를 가리키며 지유를 돌아보게 한다",
+    "Marco points at the cover and turns Lily toward it",
+    2,
+    "이 표지, 저희 대표 작품이에요.",
+    "Our boss shot that cover.",
+    "low"
+   ],
+   [
+    "사진관",
+    "photo studio",
+    "지유가 봉투를 도로 집어 들고 고개를 숙인다",
+    "Lily picks the envelope back up and lowers her head",
+    0,
+    "촬영은 다음 분께 부탁하시죠.",
+    "Find someone else for the session.",
+    "cu"
+   ],
+   [
+    "사진관 밖",
+    "outside the studio",
+    "유담의 휴대폰에 잡지사 편집장 전화가 걸려 온다",
+    "Nora's phone rings. The magazine's editor is calling.",
+    -1,
+    "",
+    "",
+    "cu"
+   ]
+  ]
+ ],
+ [
+  "안경 다리에 새겨진 이름",
+  "The Name Inside the Frame",
+  "싸구려 안경이라며 무시한 점원. 그 손님은 이 안경 브랜드의 디자이너였다.",
+  "A clerk sneers at his cheap glasses. He designs the frames the store sells.",
+  [
+   [
+    "H",
+    "설하솔",
+    "Felix Marsh",
+    "40대 남성, 낡은 점퍼, 둥근 안경, 짧은 수염",
+    "man in his 40s, worn jacket, round glasses, short beard"
+   ],
+   [
+    "V",
+    "표재온",
+    "Priya Nair",
+    "20대 여성, 흰 셔츠, 묶은 머리, 얇은 눈썹",
+    "woman in her 20s, white shirt, tied hair, thin brows"
+   ],
+   [
+    "A",
+    "금지안",
+    "Peter Hollis",
+    "50대 남성, 남색 정장, 흰 머리, 낮은 목소리",
+    "man in his 50s, navy suit, white hair, low voice"
+   ]
+  ],
+  [
+   [
+    "안경 매장",
+    "eyewear store",
+    "재온이 하솔의 안경을 집어 렌즈를 닦는다",
+    "Priya takes Felix's glasses and wipes the lenses",
+    1,
+    "이건 저희 제품 아니에요.",
+    "These aren't ours.",
+    "cz"
+   ],
+   [
+    "안경 매장",
+    "eyewear store",
+    "재온이 가장 싼 안경대를 하솔 앞에 놓는다",
+    "Priya sets the cheapest frame in front of Felix",
+    1,
+    "예산에 맞는 걸로 보여 드릴게요.",
+    "I'll show you something in your budget.",
+    "ms"
+   ],
+   [
+    "안경 매장",
+    "eyewear store",
+    "하솔이 자기 안경 다리 안쪽을 재온에게 보여 준다",
+    "Felix turns the inside of his temple toward Priya",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "안경 매장",
+    "eyewear store",
+    "지안이 다가와 안경을 받아 들고 각인을 읽는다",
+    "Peter takes the glasses and reads the engraving",
+    2,
+    "이건 대표님 설계 도면이에요.",
+    "This is the designer's own mark.",
+    "low"
+   ],
+   [
+    "안경 매장",
+    "eyewear store",
+    "재온이 안경대를 놓치고 하솔이 계산대를 정리한다",
+    "Priya drops the frame as Felix straightens the counter",
+    0,
+    "이 매장 판매는 본사가 다시 봅니다.",
+    "This store's license is under review.",
+    "cu"
+   ],
+   [
+    "안경 매장 밖",
+    "outside the store",
+    "하솔이 새 도면 봉투를 꺼내 지안에게 건넨다",
+    "Felix hands Peter an envelope of new designs",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "생방송에 나온 소설가",
+  "The Novelist on Live Radio",
+  "초대받은 작가를 청취자로 오해한 진행자. 생방송에서 그녀의 이름이 확인된다.",
+  "A host mistakes the invited author for a listener. Live on air, her name appears.",
+  [
+   [
+    "H",
+    "한보늬",
+    "Evelyn Shore",
+    "50대 여성, 낡은 목도리, 회색 머리, 잔잔한 눈빛",
+    "woman in her 50s, worn scarf, gray hair, quiet eyes"
+   ],
+   [
+    "V",
+    "봉대현",
+    "Troy Mercer",
+    "30대 남성, 헤드셋, 밝은 넥타이, 자신만만한 미소",
+    "man in his 30s, headset, bright tie, smug smile"
+   ],
+   [
+    "A",
+    "구시온",
+    "Dana Fields",
+    "40대 여성, 이어폰, 서류를 낀 채 빠른 걸음",
+    "woman in her 40s, earpiece, papers in hand, quick steps"
+   ]
+  ],
+  [
+   [
+    "방송국 로비",
+    "radio station lobby",
+    "대현이 보늬의 목도리를 보고 고개를 젓는다",
+    "Troy looks at Evelyn's scarf and shakes his head",
+    1,
+    "청취자분은 저쪽 대기실이에요.",
+    "Listeners wait over there.",
+    "cz"
+   ],
+   [
+    "라디오 스튜디오",
+    "radio studio",
+    "대현이 보늬를 게스트 의자 대신 벽 쪽 의자에 앉힌다",
+    "Troy seats Evelyn by the wall, not in the guest chair",
+    1,
+    "오늘 게스트는 유명한 분이거든요.",
+    "Today's guest is somebody famous.",
+    "ms"
+   ],
+   [
+    "라디오 스튜디오",
+    "radio studio",
+    "보늬가 가방에서 낡은 원고 뭉치를 꺼낸다",
+    "Evelyn takes a worn stack of manuscript from her bag",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "라디오 스튜디오",
+    "radio studio",
+    "시온이 방송 화면에 보늬의 이름과 책 표지를 띄운다",
+    "Dana puts Evelyn's name and book cover on the live screen",
+    2,
+    "선생님, 마이크 앞으로 오세요.",
+    "Ms. Shore, come to the mic.",
+    "low"
+   ],
+   [
+    "라디오 스튜디오",
+    "radio studio",
+    "대현이 헤드셋을 벗고 손등으로 이마를 닦는다",
+    "Troy pulls off his headset and wipes his forehead",
+    0,
+    "이름은 화면에 뜨는데 사람은 못 알아보시네요.",
+    "My name was on your screen. I wasn't.",
+    "cu"
+   ],
+   [
+    "라디오 스튜디오",
+    "radio studio",
+    "시온이 다음 주 게스트 명단을 보늬에게 건넨다",
+    "Dana hands Evelyn next week's guest list",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "강사증을 숨긴 다이버",
+  "The Diver Without a Badge",
+  "장비도 없다며 물에 못 들어가게 한 강사. 그녀는 다이빙 협회의 심사관이었다.",
+  "An instructor blocks her from the water for having no gear. She inspects his school.",
+  [
+   [
+    "H",
+    "노미르",
+    "Kai Navarro",
+    "30대 여성, 헌 래시가드, 묶은 머리, 선탠한 피부",
+    "woman in her 30s, faded rash guard, tied hair, tanned skin"
+   ],
+   [
+    "V",
+    "배준영",
+    "Jake Sweeney",
+    "20대 남성, 오렌지 반팔, 선글라스, 장난스러운 미소",
+    "man in his 20s, orange tee, sunglasses, playful grin"
+   ],
+   [
+    "A",
+    "임태호",
+    "Alan Reed",
+    "50대 남성, 흰 셔츠, 짧은 머리, 반듯한 자세",
+    "man in his 50s, white shirt, short hair, upright stance"
+   ]
+  ],
+  [
+   [
+    "다이빙 강습장",
+    "dive school dock",
+    "준영이 미르의 래시가드를 손가락으로 튕긴다",
+    "Jake flicks a finger at Kai's rash guard",
+    1,
+    "그 장비로 바다에 들어갈 생각이에요?",
+    "You're diving in that?",
+    "cz"
+   ],
+   [
+    "다이빙 강습장",
+    "dive school dock",
+    "준영이 장비 창고 문을 닫고 열쇠를 돌린다",
+    "Jake shuts the gear room and turns the key",
+    1,
+    "장비 없으면 강습 못 받아요.",
+    "No gear, no lesson.",
+    "ms"
+   ],
+   [
+    "다이빙 강습장",
+    "dive school dock",
+    "미르가 목걸이를 꺼내 강사증을 손바닥에 올린다",
+    "Kai pulls a badge from her necklace onto her palm",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "다이빙 강습장",
+    "dive school dock",
+    "태호가 강사증을 받아 들고 준영을 돌아본다",
+    "Alan takes the badge and turns to Jake",
+    2,
+    "협회 심사관이십니다.",
+    "She's the association inspector.",
+    "low"
+   ],
+   [
+    "다이빙 강습장",
+    "dive school dock",
+    "준영이 열쇠를 떨어뜨리고 미르가 그것을 집는다",
+    "Jake drops the key and Kai picks it up",
+    0,
+    "강습 자격은 다음 심사 때 다시 보죠.",
+    "We'll review your license at the next audit.",
+    "cu"
+   ],
+   [
+    "다이빙 강습장",
+    "dive school dock",
+    "미르가 수첩에 준영의 이름을 또박또박 적는다",
+    "Kai writes Jake's name carefully in her notebook",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ]
+]

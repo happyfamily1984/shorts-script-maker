@@ -1,0 +1,912 @@
+[
+ [
+  "개장 첫날 리프트가 멈췄다",
+  "The Lift Stopped on Opening Day",
+  "개장 첫날 리프트가 멈춘다. 안전 검사 서명자는 리프트를 고치던 전 남편이었다.",
+  "She mocked his lift repairs. He is the inspector who must sign before opening.",
+  [
+   [
+    "H",
+    "권도현",
+    "Angus",
+    "40대 남성, 빨간 정비 점퍼, 짧은 머리, 무뚝뚝한 얼굴",
+    "man in his 40s, red maintenance jacket, short hair, blunt face"
+   ],
+   [
+    "V",
+    "신재아",
+    "Erika",
+    "40대 여성, 흰 스키 재킷, 긴 생머리, 차가운 눈",
+    "woman in her 40s, white ski jacket, long straight hair, cold eyes"
+   ],
+   [
+    "A",
+    "황재현",
+    "Fennimore",
+    "50대 남성, 리조트 정장, 명찰, 무표정",
+    "man in his 50s, resort suit, name badge, blank face"
+   ]
+  ],
+  [
+   [
+    "리프트 승강장",
+    "ski lift platform",
+    "재아가 도현의 공구 가방을 발로 밀어낸다",
+    "Erika pushes Angus's tool bag aside with her foot",
+    1,
+    "여기 올라올 사람 아니야.",
+    "You don't come up here.",
+    "cz"
+   ],
+   [
+    "리프트 승강장",
+    "ski lift platform",
+    "재아가 곤돌라를 손바닥으로 툭툭 친다",
+    "Erika taps a gondola with her palm",
+    1,
+    "리프트나 만지던 사람이 뭘 알아? 오늘 개장이야.",
+    "You fix lifts. What do you know? We open today.",
+    "ms"
+   ],
+   [
+    "리프트 승강장",
+    "ski lift platform",
+    "도현이 점검 기록판을 펼친다",
+    "Angus opens the inspection log",
+    0,
+    "케이블이 닳았어요. 기록에 있어요.",
+    "The cable is worn. It's in the log.",
+    "cu"
+   ],
+   [
+    "리조트 본부",
+    "resort office",
+    "본부장이 기록판을 넘기며 고개를 젓는다",
+    "Fennimore flips the log and shakes his head",
+    2,
+    "안전 검사 서명이 없습니다. 개장 못 합니다.",
+    "No safety signature. We can't open.",
+    "low"
+   ],
+   [
+    "리프트 승강장",
+    "ski lift platform",
+    "도현이 점검 기록판을 가슴에 안고 내려간다",
+    "Angus takes the log under his arm and walks down",
+    0,
+    "개장은 다음 주로 미루세요.",
+    "Push the opening to next week.",
+    "cu"
+   ],
+   [
+    "슬로프 위",
+    "top of the slope",
+    "곤돌라 한 대가 선로 위에 멈춰 서고 구조대가 달려간다",
+    "One gondola stops on the line and the rescue team runs over",
+    -1,
+    "",
+    "",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "회원 자격이 박탈됐다",
+  "Struck From the List",
+  "결혼 상담실에서 회원 자격이 박탈된다. 신원 조회 결과를 쥔 사람은 전처였다.",
+  "He divorced her for being dull. She is holding the background check on his profile.",
+  [
+   [
+    "H",
+    "이재린",
+    "Coco",
+    "30대 여성, 회색 정장, 묶은 머리, 조용한 눈",
+    "woman in her 30s, gray suit, tied hair, quiet eyes"
+   ],
+   [
+    "V",
+    "정재원",
+    "Lionel",
+    "30대 남성, 밝은 정장, 짧은 머리, 자신만만한 미소",
+    "man in his 30s, light suit, short hair, confident smile"
+   ],
+   [
+    "A",
+    "박도훈",
+    "Gledhill",
+    "40대 여성, 회사 유니폼, 태블릿, 무표정",
+    "woman in her 40s, company uniform, tablet, blank face"
+   ]
+  ],
+  [
+   [
+    "결혼정보회사 상담실",
+    "matchmaking office",
+    "재원이 재린의 서류를 뒤로 밀어낸다",
+    "Lionel pushes Coco's papers away",
+    1,
+    "내 프로필은 내가 정해. 넌 상담자야.",
+    "My profile is my call. You just advise.",
+    "cz"
+   ],
+   [
+    "결혼정보회사 상담실",
+    "matchmaking office",
+    "재원이 거울을 보며 넥타이를 고쳐 맨다",
+    "Lionel fixes his tie in the mirror",
+    1,
+    "성격도 없는 사람이 남의 결혼을 주선해?",
+    "No personality of your own, matching others?",
+    "ms"
+   ],
+   [
+    "결혼정보회사 상담실",
+    "matchmaking office",
+    "재린이 봉투에서 조회 결과를 꺼낸다",
+    "Coco takes the records from an envelope",
+    0,
+    "신원 조회, 두 번 했어요.",
+    "I ran the check twice.",
+    "cu"
+   ],
+   [
+    "결혼정보회사 상담실",
+    "matchmaking office",
+    "지점장이 태블릿에 결과를 띄운다",
+    "Gledhill brings it up on her tablet",
+    2,
+    "혼인 기록이 있습니다. 회원 자격 박탈입니다.",
+    "There's a marriage on file. Membership revoked.",
+    "low"
+   ],
+   [
+    "결혼정보회사 상담실",
+    "matchmaking office",
+    "재린이 조회 결과를 가방에 넣고 일어난다",
+    "Coco slips the records into her bag and stands",
+    0,
+    "혼인 기록은 못 숨겨요.",
+    "You can't hide a marriage record.",
+    "cu"
+   ],
+   [
+    "결혼정보회사 유리문",
+    "matchmaking office door",
+    "유리문 밖에서 약혼자가 서류를 들고 들어온다",
+    "Outside the glass door, a fiancée walks in holding papers",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "생방송 중에 바뀐 화면",
+  "The Feed Changed Live",
+  "생방송 도중 화면이 바뀐다. 감춘 계약서를 올린 사람은 카메라를 들던 전 남편이었다.",
+  "She said he only held a camera. On live air, the contract she hid filled the screen.",
+  [
+   [
+    "H",
+    "문재현",
+    "Caleb",
+    "40대 남성, 검은 셔츠, 짧은 머리, 무표정한 눈",
+    "man in his 40s, black shirt, short hair, blank eyes"
+   ],
+   [
+    "V",
+    "윤서아",
+    "Vivian",
+    "40대 여성, 밝은 재킷, 단정한 머리, 날카로운 눈",
+    "woman in her 40s, light jacket, neat hair, sharp eyes"
+   ],
+   [
+    "A",
+    "남시우",
+    "Hawley",
+    "50대 남성, 뉴스룸 정장, 이어피스, 무표정",
+    "man in his 50s, newsroom suit, earpiece, blank face"
+   ]
+  ],
+  [
+   [
+    "뉴스 스튜디오",
+    "news studio",
+    "서아가 재현의 헤드셋을 집어 카메라 옆에 던진다",
+    "Vivian grabs Caleb's headset and tosses it by the camera",
+    1,
+    "여긴 앵커 자리야. 나가.",
+    "This is the anchor desk. Out.",
+    "cz"
+   ],
+   [
+    "뉴스 스튜디오",
+    "news studio",
+    "서아가 대본을 들어 카메라 앞에서 흔든다",
+    "Vivian lifts her script and waves it at the camera",
+    1,
+    "카메라나 들던 사람이 뉴스를 알아?",
+    "You hold a camera. News isn't yours.",
+    "ms"
+   ],
+   [
+    "뉴스 스튜디오",
+    "news studio",
+    "재현이 모니터에 자료 화면을 띄운다",
+    "Caleb brings up a document on the monitor",
+    0,
+    "자료 화면, 준비됐습니다.",
+    "The document is ready.",
+    "cu"
+   ],
+   [
+    "뉴스 스튜디오",
+    "news studio",
+    "국장이 모니터를 보다가 의자에서 일어난다",
+    "Hawley looks at the monitor and rises",
+    2,
+    "이 계약서, 앵커 서명이네요. 하차하세요.",
+    "That contract has your signature. Step down.",
+    "low"
+   ],
+   [
+    "뉴스 스튜디오",
+    "news studio",
+    "재현이 모니터를 끄고 자리에서 물러난다",
+    "Caleb switches off the monitor and steps back",
+    0,
+    "제가 올렸어요. 생방송이니까.",
+    "I put it up. We're live.",
+    "cu"
+   ],
+   [
+    "뉴스 스튜디오",
+    "news studio",
+    "스튜디오 문이 열리고 감사팀이 서류를 들고 들어온다",
+    "The studio door opens and the audit team walks in",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "탑승이 거부됐다",
+  "Denied at the Gate",
+  "탑승 카운터에서 탑승이 거절된다. 비자를 철회한 사람은 지상직이던 전처였다.",
+  "He sneered at her airport job. She was the sponsor who pulled his work visa.",
+  [
+   [
+    "H",
+    "김시연",
+    "Mila",
+    "30대 여성, 항공사 유니폼, 묶은 머리, 담담한 눈",
+    "woman in her 30s, airline uniform, tied hair, calm eyes"
+   ],
+   [
+    "V",
+    "이재우",
+    "Duncan",
+    "40대 남성, 밝은 정장, 짧은 머리, 들뜬 표정",
+    "man in his 40s, light suit, short hair, elated face"
+   ],
+   [
+    "A",
+    "배시온",
+    "Ingleby",
+    "40대 여성, 지점장 정장, 명찰, 무표정",
+    "woman in her 40s, manager suit, badge, blank face"
+   ]
+  ],
+  [
+   [
+    "공항 카운터",
+    "airport check-in counter",
+    "재우가 시연의 손에서 탑승권을 빼앗는다",
+    "Duncan takes the boarding pass from Mila's hand",
+    1,
+    "여기 왜 서 있어? 탑승권도 없잖아.",
+    "Why are you in line? You have no ticket.",
+    "cz"
+   ],
+   [
+    "공항 카운터",
+    "airport check-in counter",
+    "재우가 줄 뒤 사람들을 돌아보며 웃는다",
+    "Duncan looks back at the queue and laughs",
+    1,
+    "지상직이나 하던 사람이 뭘 알아.",
+    "You did check-in. That's all.",
+    "ms"
+   ],
+   [
+    "공항 카운터",
+    "airport check-in counter",
+    "시연이 서류를 단말기에 올린다",
+    "Mila scans a document into the terminal",
+    0,
+    "비자 서류, 확인해 볼게요.",
+    "Let me check the visa file.",
+    "cu"
+   ],
+   [
+    "공항 카운터",
+    "airport check-in counter",
+    "지점장이 화면을 확인하고 탑승권을 회수한다",
+    "Ingleby checks the screen and takes back the pass",
+    2,
+    "보증이 철회됐습니다. 탑승 불가입니다.",
+    "The sponsorship is withdrawn. You can't board.",
+    "low"
+   ],
+   [
+    "공항 카운터",
+    "airport check-in counter",
+    "시연이 탑승권을 접어 카운터에 놓는다",
+    "Mila folds the boarding pass and sets it down",
+    0,
+    "보증인은 저였어요.",
+    "I was your sponsor.",
+    "cu"
+   ],
+   [
+    "탑승구",
+    "boarding gate",
+    "안내 방송이 흐르고 시연이 게이트를 지나간다",
+    "An announcement plays as Mila walks past the gate",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "부품이 가짜였다",
+  "The Parts Were Fake",
+  "딜러 자격이 취소된다. 가짜 부품 내역이 찍힌 견적서를 낸 사람은 전 남편이었다.",
+  "She said he only held wrenches. The quote she sent lists counterfeit parts.",
+  [
+   [
+    "H",
+    "오재현",
+    "Bruno",
+    "40대 남성, 남색 정비복, 짧은 머리, 무표정한 얼굴",
+    "man in his 40s, navy overalls, short hair, blank face"
+   ],
+   [
+    "V",
+    "최유하",
+    "Delphine",
+    "40대 여성, 흰 코트, 긴 생머리, 차가운 눈",
+    "woman in her 40s, white coat, long straight hair, cold eyes"
+   ],
+   [
+    "A",
+    "정도현",
+    "Kirkham",
+    "50대 남성, 회색 정장, 서류철, 무표정",
+    "man in his 50s, gray suit, folder, blank face"
+   ]
+  ],
+  [
+   [
+    "자동차 정비소",
+    "car repair shop",
+    "유하가 재현의 공구 상자를 발로 밀어낸다",
+    "Delphine pushes Bruno's tool box aside",
+    1,
+    "내 차는 네가 못 만져.",
+    "You don't touch my car.",
+    "cz"
+   ],
+   [
+    "자동차 정비소",
+    "car repair shop",
+    "유하가 차 키를 들어 재현 앞에서 흔든다",
+    "Delphine lifts the key and dangles it",
+    1,
+    "공구나 만지던 사람이 뭘 알아.",
+    "You turn wrenches. What do you know?",
+    "ms"
+   ],
+   [
+    "자동차 정비소",
+    "car repair shop",
+    "재현이 견적서를 펼친다",
+    "Bruno unfolds the quote",
+    0,
+    "견적서, 확인해 보세요.",
+    "Take a look at this quote.",
+    "cu"
+   ],
+   [
+    "자동차 정비소",
+    "car repair shop",
+    "감사가 부품 상자를 열어 라벨을 확인한다",
+    "Kirkham opens a parts box and checks the label",
+    2,
+    "정품이 아닙니다. 딜러 자격 취소입니다.",
+    "Not genuine. Your dealer license is revoked.",
+    "low"
+   ],
+   [
+    "자동차 정비소",
+    "car repair shop",
+    "재현이 견적서를 접어 작업복 주머니에 넣는다",
+    "Bruno folds the quote into his overalls",
+    0,
+    "가짜 부품, 견적서에 다 적혀 있어요.",
+    "The fakes are all listed in that quote.",
+    "cu"
+   ],
+   [
+    "정비소 앞 도로",
+    "road outside the shop",
+    "견인차가 정비소 앞에 멈추고 기사가 내린다",
+    "A tow truck stops outside and the driver climbs down",
+    -1,
+    "",
+    "",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "호텔 식기의 주인",
+  "The Plates Only She Could Make",
+  "호텔 개관 연회의 식기가 바뀐다. 그릇을 빚던 전처가 작품을 회수한다.",
+  "He said she only played with clay. Every plate at the hotel opening is hers.",
+  [
+   [
+    "H",
+    "한도경",
+    "Ada",
+    "40대 여성, 흙 묻은 앞치마, 짧은 머리, 차분한 눈",
+    "woman in her 40s, clay-stained apron, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "구재현",
+    "Vernon",
+    "40대 남성, 회색 정장, 짧은 머리, 비웃는 입",
+    "man in his 40s, gray suit, short hair, sneering mouth"
+   ],
+   [
+    "A",
+    "신도경",
+    "Merriman",
+    "50대 여성, 호텔 정장, 명찰, 단호한 얼굴",
+    "woman in her 50s, hotel suit, badge, firm face"
+   ]
+  ],
+  [
+   [
+    "도예 공방",
+    "pottery studio",
+    "재현이 도경의 그릇을 탁자 아래로 밀어 떨어뜨린다",
+    "Vernon shoves Ada's bowl off the table",
+    1,
+    "이 그릇, 내일이면 필요 없어.",
+    "After tomorrow these bowls are worthless.",
+    "cz"
+   ],
+   [
+    "도예 공방",
+    "pottery studio",
+    "재현이 진흙 묻은 손을 털며 웃는다",
+    "Vernon dusts off his clay-stained hands and laughs",
+    1,
+    "흙이나 빚던 사람이 뭘 알아.",
+    "You play with clay. What do you know?",
+    "ms"
+   ],
+   [
+    "도예 공방",
+    "pottery studio",
+    "도경이 작품 인증서를 꺼낸다",
+    "Ada takes out a maker's certificate",
+    0,
+    "이 그릇, 제 인증서 있어요.",
+    "These bowls have my certificate.",
+    "cu"
+   ],
+   [
+    "호텔 연회장",
+    "hotel ballroom",
+    "총지배인이 식기를 확인하고 고개를 젓는다",
+    "Merriman checks the tableware and shakes her head",
+    2,
+    "식기 전부 한도경 님 작품입니다. 대체 불가입니다.",
+    "Every plate is Ada's work. Nothing can replace it.",
+    "low"
+   ],
+   [
+    "호텔 연회장",
+    "hotel ballroom",
+    "도경이 인증서를 가방에 넣고 공방을 나선다",
+    "Ada puts the certificate away and leaves the studio",
+    0,
+    "납품 계약서에 제 서명이 있어요.",
+    "The supply contract carries my signature.",
+    "cu"
+   ],
+   [
+    "도예 공방 문",
+    "pottery studio door",
+    "문가에 서 있던 바이어가 도경에게 명함을 내민다",
+    "A buyer at the door offers Ada a card",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "개관 전날 비워진 수조",
+  "The Tank Went Empty",
+  "개관 전시에서 수조가 빈다. 희귀종을 기증한 사람은 물고기만 보던 전 남편이었다.",
+  "She said he only stared at fish. Every rare species in the new aquarium is his gift.",
+  [
+   [
+    "H",
+    "황시우",
+    "Boris",
+    "40대 남성, 물빛 작업복, 짧은 머리, 온순한 눈",
+    "man in his 40s, blue work clothes, short hair, gentle eyes"
+   ],
+   [
+    "V",
+    "서유하",
+    "Helena",
+    "40대 여성, 흰 정장, 긴 생머리, 날카로운 눈",
+    "woman in her 40s, white suit, long straight hair, sharp eyes"
+   ],
+   [
+    "A",
+    "임도경",
+    "Norbury",
+    "60대 남성, 감색 정장, 안경, 무표정",
+    "man in his 60s, navy suit, glasses, blank face"
+   ]
+  ],
+  [
+   [
+    "수족관 전시홀",
+    "aquarium hall",
+    "유하가 시우의 장갑을 손에서 빼앗는다",
+    "Helena pulls the gloves off Boris's hands",
+    1,
+    "여기 손대지 마. 내 전시야.",
+    "Hands off. This is my exhibit.",
+    "cz"
+   ],
+   [
+    "수족관 전시홀",
+    "aquarium hall",
+    "유하가 수조 유리를 손바닥으로 닦는다",
+    "Helena wipes the tank glass with her palm",
+    1,
+    "물고기만 보던 사람이 관장을 해?",
+    "You stare at fish. You'd be director?",
+    "ms"
+   ],
+   [
+    "수족관 사무실",
+    "aquarium office",
+    "시우가 기증 등록증을 펼친다",
+    "Boris opens the donation record",
+    0,
+    "기증 등록증, 제 이름이에요.",
+    "The donation record has my name.",
+    "cu"
+   ],
+   [
+    "수족관 사무실",
+    "aquarium office",
+    "의장이 등록증을 읽고 유하를 본다",
+    "Norbury reads it and looks at Helena",
+    2,
+    "기증 조건은 임시 관장 해임입니다.",
+    "The gift is conditional on the acting director's removal.",
+    "low"
+   ],
+   [
+    "수족관 사무실",
+    "aquarium office",
+    "시우가 기증 등록증을 접어 주머니에 넣는다",
+    "Boris folds the donation record into his pocket",
+    0,
+    "기증은 제가 결정해요.",
+    "I decide where my gift goes.",
+    "cu"
+   ],
+   [
+    "수족관 입구",
+    "aquarium entrance",
+    "개관식 안내판에 새 이름이 인쇄되어 걸린다",
+    "A new name is printed on the opening sign",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "택배기사가 사장이었다",
+  "The Courier Owns the Route",
+  "배송 계약이 해지된다. 구역 배송권은 짐을 나르던 전처 명의였다.",
+  "He mocked her for hauling boxes. The delivery contract for his district is hers.",
+  [
+   [
+    "H",
+    "이도경",
+    "Mabel",
+    "40대 여성, 택배 유니폼, 짧은 머리, 담담한 눈",
+    "woman in her 40s, courier uniform, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "차시우",
+    "Gareth",
+    "40대 남성, 회색 정장, 짧은 머리, 비웃는 입",
+    "man in his 40s, gray suit, short hair, sneering mouth"
+   ],
+   [
+    "A",
+    "서재현",
+    "Pargeter",
+    "50대 남성, 물류센터 유니폼, 서류철, 무표정",
+    "man in his 50s, logistics uniform, folder, blank face"
+   ]
+  ],
+  [
+   [
+    "물류센터",
+    "logistics hub",
+    "시우가 도경의 택배 카트를 옆으로 민다",
+    "Gareth shoves Mabel's cart aside",
+    1,
+    "여기 들어올 사람 아니야.",
+    "You don't come in here.",
+    "cz"
+   ],
+   [
+    "물류센터",
+    "logistics hub",
+    "시우가 상자 위에 손을 얹고 어깨를 으쓱한다",
+    "Gareth rests a hand on a box and shrugs",
+    1,
+    "짐이나 나르던 사람이 뭘 알아.",
+    "You carry boxes. What do you know?",
+    "ms"
+   ],
+   [
+    "물류센터",
+    "logistics hub",
+    "도경이 배송 계약서를 펼친다",
+    "Mabel unfolds the delivery contract",
+    0,
+    "이 구역 배송권, 제 명의예요.",
+    "This district's route is in my name.",
+    "cu"
+   ],
+   [
+    "물류센터",
+    "logistics hub",
+    "지점장이 계약서를 확인하고 도장을 덮는다",
+    "Pargeter checks it and closes his stamp",
+    2,
+    "계약 해지입니다. 내일부터 배송 없습니다.",
+    "Contract terminated. No deliveries from tomorrow.",
+    "low"
+   ],
+   [
+    "물류센터",
+    "logistics hub",
+    "도경이 배송 계약서를 들고 센터를 나선다",
+    "Mabel takes the contract and walks out of the hub",
+    0,
+    "다른 회사 찾으세요.",
+    "Find another carrier.",
+    "cu"
+   ],
+   [
+    "물류센터 정문",
+    "logistics hub gate",
+    "다른 회사 트럭이 들어와 도경 옆에 선다",
+    "Another company's truck rolls in and stops beside Mabel",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "희귀본의 주인",
+  "The Book Nobody Can Borrow",
+  "희귀본 전시가 취소된다. 기증자는 책만 읽던 전처였다.",
+  "He mocked her for reading. The rare book he shows off was donated by her.",
+  [
+   [
+    "H",
+    "윤도겸",
+    "Iris",
+    "40대 여성, 베이지 니트, 안경, 조용한 눈",
+    "woman in her 40s, beige knit, glasses, quiet eyes"
+   ],
+   [
+    "V",
+    "문시현",
+    "Crawford",
+    "50대 남성, 검은 정장, 짧은 머리, 거만한 턱",
+    "man in his 50s, black suit, short hair, proud chin"
+   ],
+   [
+    "A",
+    "김도경",
+    "Sedgewick",
+    "50대 여성, 도서관 유니폼, 장갑, 무표정",
+    "woman in her 50s, library uniform, gloves, blank face"
+   ]
+  ],
+  [
+   [
+    "도서관 열람실",
+    "library reading room",
+    "시현이 도겸의 열람증을 낚아채 옆 탁자에 던진다",
+    "Crawford snatches Iris's card and tosses it on a table",
+    1,
+    "여긴 열람실이야. 나가.",
+    "This is a reading room. Out.",
+    "cz"
+   ],
+   [
+    "도서관 열람실",
+    "library reading room",
+    "시현이 유리 진열장을 손바닥으로 가리킨다",
+    "Crawford gestures at the glass case",
+    1,
+    "책이나 읽던 사람이 뭘 안다고.",
+    "You read books. What would you know?",
+    "ms"
+   ],
+   [
+    "도서관 열람실",
+    "library reading room",
+    "도겸이 기증 등록증을 꺼내 보인다",
+    "Iris holds out the donation record",
+    0,
+    "이 책, 제가 기증했어요.",
+    "I donated this book.",
+    "cu"
+   ],
+   [
+    "도서관 열람실",
+    "library reading room",
+    "관장이 장갑을 끼고 등록증을 확인한다",
+    "Sedgewick pulls on gloves and checks it",
+    2,
+    "기증자는 윤도겸 님입니다. 대여 불가입니다.",
+    "The donor is Iris. It cannot be lent.",
+    "low"
+   ],
+   [
+    "도서관 열람실",
+    "library reading room",
+    "도겸이 기증 등록증을 접어 가방에 넣는다",
+    "Iris folds the donation record into her bag",
+    0,
+    "기증을 철회할게요. 오늘로.",
+    "I'm withdrawing the donation. Today.",
+    "cu"
+   ],
+   [
+    "도서관 열람실",
+    "library reading room",
+    "관장이 봉투에서 또 다른 목록을 꺼낸다",
+    "The librarian takes another list from an envelope",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "철거 전날의 지정서",
+  "Listed the Night Before",
+  "철거 전날 공사가 멈춘다. 보존 지정서를 낸 사람은 옛것을 그리던 전처였다.",
+  "He laughed at her old drawings. The building due for demolition is now protected.",
+  [
+   [
+    "H",
+    "송가온",
+    "Elsa",
+    "30대 여성, 카키 코트, 짧은 단발, 단단한 눈",
+    "woman in her 30s, khaki coat, short bob, firm eyes"
+   ],
+   [
+    "V",
+    "장도겸",
+    "Conrad",
+    "50대 남성, 검은 점퍼, 짧은 머리, 비웃는 입",
+    "man in his 50s, black jacket, short hair, sneering mouth"
+   ],
+   [
+    "A",
+    "최시우",
+    "Tulliver",
+    "60대 남성, 회색 정장, 서류철, 무표정",
+    "man in his 60s, gray suit, folder, blank face"
+   ]
+  ],
+  [
+   [
+    "철거 현장",
+    "demolition site",
+    "도겸이 가온의 도면을 발로 밟는다",
+    "Conrad steps on Elsa's drawings",
+    1,
+    "여긴 공사장이야. 나가.",
+    "This is a site. Get out.",
+    "cz"
+   ],
+   [
+    "철거 현장",
+    "demolition site",
+    "도겸이 낡은 건물을 손바닥으로 가리킨다",
+    "Conrad gestures at the old building",
+    1,
+    "옛것이나 그리던 사람이 뭘 알아.",
+    "You draw old things. What do you know?",
+    "ms"
+   ],
+   [
+    "철거 현장",
+    "demolition site",
+    "가온이 보존 지정서를 펼친다",
+    "Elsa unfolds the preservation notice",
+    0,
+    "어젯밤에 지정됐어요.",
+    "It was listed last night.",
+    "cu"
+   ],
+   [
+    "철거 현장",
+    "demolition site",
+    "심의위원이 지정서를 확인하고 굴착기를 세운다",
+    "Tulliver checks it and stops the excavator",
+    2,
+    "보존 지정 확정입니다. 철거 중단입니다.",
+    "Protection confirmed. Demolition stops here.",
+    "low"
+   ],
+   [
+    "철거 현장",
+    "demolition site",
+    "가온이 지정서를 들고 현장을 나선다",
+    "Elsa takes the notice and walks off the site",
+    0,
+    "공사비는 당신 몫이에요.",
+    "The delay is on your bill.",
+    "cu"
+   ],
+   [
+    "철거 현장 담장",
+    "demolition fence",
+    "담장 너머에서 낯선 남자가 건물 사진을 찍는다",
+    "Beyond the fence, a stranger photographs the building",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ]
+]

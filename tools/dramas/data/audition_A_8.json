@@ -1,0 +1,173 @@
+[
+[
+ "리그 경력 없다던 골리", "No League, No Goalie",
+ "감독이 동호회 골리를 링크에서 쫓아낸다. 링크 옆 우승 사진 속 골리가 바로 그 사람이었다.", "A coach throws a club goalie off the ice. In the championship photo on the wall, the goalie is him.",
+ [
+  ["H", "덕현", "Sims", "30대 남성, 낡은 골리 장비, 짧은 수염, 조용한 눈", "man in his 30s, worn goalie gear, short beard, quiet eyes"],
+  ["V", "재천", "Coach Berg", "50대 남성, 검은 감독 점퍼, 클립보드, 굳은 얼굴", "man in his 50s, black coach jacket, clipboard, stiff face"],
+  ["A", "예준", "Mr. Aldo", "40대 남성, 구단 정장, 서류철, 차분한 태도", "man in his 40s, club suit, folder, composed manner"]
+ ],
+ [
+  ["아이스하키 링크", "hockey rink", "재천이 덕현의 골리 스틱을 빼앗아 얼음에 던진다", "Coach Berg rips away Sims's stick and throws it on the ice", 1, "동호회 골리는 필요 없어요.", "We don't need club goalies.", "ms"],
+  ["아이스하키 링크", "hockey rink", "재천이 자기 제자를 골대 앞에 세운다", "Coach Berg plants his own goalie in the crease", 1, "여긴 리그 선수만 와요.", "Only league players skate here.", "cz"],
+  ["아이스하키 링크", "hockey rink", "덕현이 링크 옆 우승 사진 속 골리를 손끝으로 짚는다", "Sims points at the goalie in the championship photo", -1, "", "", "cu"],
+  ["아이스하키 벤치", "hockey bench", "예준이 사진과 옛 기사를 들고 벤치로 온다", "Mr. Aldo reaches the bench with the photo and an old article", 2, "이 사진, 덕현 씨 팀입니다.", "That photo is his team.", "low"],
+  ["아이스하키 링크", "hockey rink", "지명 명단에서 재천의 제자 이름이 지워진다", "Coach Berg's goalie is scratched from the draft list", 0, "골대는 경력이 아니라 막는 손이 지켜요.", "A crease is held by hands, not by records.", "cu"],
+  ["아이스하키 링크 입구", "rink tunnel", "예준이 덕현에게 다른 구단 명함을 건넨다", "Mr. Aldo hands Sims another club's card", 2, "다른 구단에서도 연락이 왔습니다.", "Another club has called about you.", "pi"]
+ ]
+],
+[
+ "체격 안 맞는다던 치어리더", "Not Built for the Squad",
+ "감독이 체격을 이유로 지원자를 뺀다. 대회 영상 속 마지막 대형에 그녀가 서 있었다.", "A coach cuts an applicant over her build. In the last formation of the finals video, she is standing.",
+ [
+  ["H", "새벽", "Mina", "20대 여성, 응원단 유니폼, 긴 생머리, 밝은 눈", "woman in her 20s, cheer uniform, long hair, bright eyes"],
+  ["V", "다은", "Coach Wren", "30대 여성, 검은 코치 점퍼, 휘슬, 날선 눈", "woman in her 30s, black coach jacket, whistle, sharp eyes"],
+  ["A", "가온", "Ms. Ellis", "30대 여성, 협회 심사 정장, 클립보드, 단호한 태도", "woman in her 30s, association judge suit, clipboard, firm manner"],
+  ["X", "호준", "Coach Pike", "30대 남성, 회색 점퍼, 휘슬, 무뚝뚝한 얼굴", "man in his 30s, gray jacket, whistle, deadpan face"]
+ ],
+ [
+  ["응원단 연습실", "cheer gym", "다은이 새벽의 유니폼을 접어 돌려준다", "Coach Wren folds Mina's uniform and hands it back", 1, "체격이 안 맞아요.", "You're not built for this squad.", "ms"],
+  ["응원단 연습실", "cheer gym", "다은이 무거운 지원자를 팀 맨 앞에 세운다", "Coach Wren puts a heavier recruit at the front", 1, "들어 올릴 수 있어야지.", "You have to lift your partner.", "cz"],
+  ["응원단 연습실", "cheer gym", "새벽이 벽의 대회 영상에서 마지막에 서 있는 자신을 본다", "Mina watches herself hold the last formation in the finals video", -1, "", "", "cu"],
+  ["응원단 연습실", "cheer gym", "가온이 영상을 멈추고 마지막 대형을 가리킨다", "Ms. Ellis pauses the video and points at the final formation", 2, "마지막에 서 있던 사람, 새벽 씨예요.", "The one holding the last lift was her.", "ots"],
+  ["응원단 연습실", "cheer gym", "다은이 새벽의 유니폼을 두 손으로 건넨다", "Coach Wren holds out Mina's uniform with both hands", 0, "무게는 체격이 아니라 중심이 버팁니다.", "Weight is carried by balance, not bulk.", "cu"],
+  ["응원단 연습실 복도", "gym corridor", "호준이 새벽 앞에 명함을 내민다", "Coach Pike offers Mina a business card", 3, "다음 달 우리 팀에 빈자리가 있어요.", "We have an open spot next month.", "pi"]
+ ]
+],
+[
+ "지방 식당 출신이라던 셰프", "A Small Town Kitchen",
+ "심사위원이 지방 식당 주인을 예선에서 자른다. 그의 접시에 올린 기름은 심사위원이 산 것이었다.", "A judge cuts a small-town cook in the qualifier. The oil on his plate was bought by the judge.",
+ [
+  ["H", "장우", "Emil", "40대 남성, 흰 셰프 재킷, 짧은 머리, 소박한 얼굴", "man in his 40s, white chef jacket, short hair, plain face"],
+  ["V", "정민", "Chef Sloane", "40대 여성, 붉은 셰프 재킷, 단발, 날선 눈", "woman in her 40s, red chef jacket, bob cut, sharp eyes"],
+  ["A", "세준", "Mr. Tobin", "40대 남성, 대회 운영위원 정장, 배지, 꼼꼼한 태도", "man in his 40s, contest committee suit, badge, meticulous manner"]
+ ],
+ [
+  ["파스타 대회 주방", "pasta contest kitchen", "정민이 장우의 접시를 심사대에서 내린다", "Chef Sloane takes Emil's plate off the judges' table", 1, "지방 식당은 예선에서 끝이에요.", "Small-town kitchens stop at the qualifier.", "ms"],
+  ["파스타 대회 주방", "pasta contest kitchen", "정민이 장우의 올리브유 병을 자기 자리로 가져간다", "Chef Sloane carries Emil's olive oil to her own station", 1, "이건 제 겁니다. 아까부터.", "That's mine. It has been all along.", "cz"],
+  ["파스타 대회 주방", "pasta contest kitchen", "장우가 병 라벨과 영수증을 나란히 놓는다", "Emil sets the bottle label beside his receipt", -1, "", "", "cu"],
+  ["파스타 대회 주방", "pasta contest kitchen", "민혁이 영수증과 대회 규정집을 펼친다", "Mr. Tobin opens the receipt and the contest rulebook", 2, "규정상 재료는 본인 명의로 사야 합니다.", "Rules say ingredients must be bought in your own name.", "low"],
+  ["파스타 대회 주방", "pasta contest kitchen", "정민의 접시가 심사대에서 치워진다", "Chef Sloane's plate is cleared from the judges' table", 0, "제 가게 이름이 라벨에 있어요.", "My shop's name is on the label.", "cu"],
+  ["파스타 대회장 입구", "contest entrance", "손님들이 입구에서 장우에게 손을 흔든다", "Regulars wave to Emil from the entrance", -1, "", "", "pi"]
+ ]
+],
+[
+ "여자는 온도를 못 다룬다던 남자", "The Woman Who Couldn't Handle Heat",
+ "쇼콜라티에가 여성 지원자의 작업대를 치운다. 그녀의 온도 기록지에 그의 박스 수치가 남아 있었다.", "A chocolatier clears a woman's bench. Her temperature log recorded his box running too warm.",
+ [
+  ["H", "가을", "Tess", "30대 여성, 흰 쇼콜라티에 재킷, 단발, 침착한 눈", "woman in her 30s, white chocolatier jacket, bob cut, calm eyes"],
+  ["V", "성욱", "Mr. Dorn", "40대 남성, 검은 앞치마, 짧은 수염, 비웃는 입", "man in his 40s, black apron, short beard, sneering mouth"],
+  ["A", "윤슬", "Ms. Rhea", "40대 여성, 기술위원 정장, 안경, 꼼꼼한 표정", "woman in her 40s, technical judge suit, glasses, meticulous look"]
+ ],
+ [
+  ["초콜릿 대회 부스", "chocolate booth", "성욱이 가을의 초콜릿 통을 옆 탁자로 민다", "Mr. Dorn shoves Tess's chocolate tub onto the side table", 1, "여자는 온도를 못 다뤄요.", "Women can't hold a temperature.", "ms"],
+  ["초콜릿 대회 부스", "chocolate booth", "성욱이 자기 초콜릿을 자르며 웃는다", "Mr. Dorn snaps his chocolate bar and smirks", 1, "이건 손이 아니라 감각이에요.", "This is instinct, not hands.", "cz"],
+  ["초콜릿 대회 부스", "chocolate booth", "가을이 온도 기록지에서 두 수치를 맞춰 본다", "Tess lines up two readings on the temperature logs", -1, "", "", "cu"],
+  ["초콜릿 대회 심사대", "judges' table", "윤슬이 기록지 두 장을 나란히 들고 선다", "Ms. Rhea stands holding both temperature logs", 2, "이 박스, 온도가 기준을 넘었습니다.", "This box ran above the limit.", "low"],
+  ["초콜릿 대회 심사대", "judges' table", "성욱의 부스 앞에 실격 안내판이 세워진다", "A disqualification sign is planted at Mr. Dorn's booth", 0, "온도는 성별이 아니라 숫자로 말해요.", "Temperature speaks in numbers, not gender.", "cu"],
+  ["초콜릿 대회 부스", "chocolate booth", "관객들이 부스 뒤에서 손뼉을 친다", "The crowd behind the booths applauds", 2, "내년 심사도 맡아 주시겠어요?", "Will you judge again next year?", "pi"]
+ ]
+],
+[
+ "취미로 한다던 정원사", "Just a Hobby Gardener",
+ "조경가가 노인의 정원 설계를 허수아비라며 내린다. 그 정원의 수목 대장은 그의 서명으로 차 있었다.", "A landscape architect dismisses an old man's garden plan. The tree registry for that park bears his name.",
+ [
+  ["H", "종수", "Abel", "60대 남성, 낡은 정원 작업복, 밀짚모자, 순한 눈", "man in his 60s, worn garden clothes, straw hat, mild eyes"],
+  ["V", "현주", "Ms. Garr", "50대 여성, 조경가 정장, 짧은 머리, 차가운 눈", "woman in her 50s, landscape architect suit, short hair, cold eyes"],
+  ["A", "준서", "Mr. Han", "40대 남성, 공원 관리과장 점퍼, 서류, 성실한 얼굴", "man in his 40s, park office jacket, papers, earnest face"]
+ ],
+ [
+  ["정원 부지", "garden site", "현주가 종수의 설계 도면을 발로 밀어 흙에 떨어뜨린다", "Ms. Garr kicks Abel's plan into the dirt", 1, "취미로 하시는 분은 여기까지예요.", "Hobby gardeners stop here.", "ms"],
+  ["정원 부지", "garden site", "현주가 자기 도면을 세워 놓고 팔짱을 낀다", "Ms. Garr props up her own plan and folds her arms", 1, "이게 진짜 설계죠.", "This is real design.", "cz"],
+  ["정원 부지", "garden site", "종수가 수목 대장에서 자기 서명을 짚는다", "Abel points at his own signature in the tree registry", -1, "", "", "cu"],
+  ["정원 부지", "garden site", "준서가 관리 대장과 도면을 맞춰 본다", "Mr. Han compares the registry with the plan", 2, "이 정원, 종수 씨가 심은 나무예요.", "Every tree here was planted by him.", "ots"],
+  ["정원 부지", "garden site", "현주의 도면이 심사 게시판에서 떼어진다", "Ms. Garr's plan is pulled off the judging board", 0, "나무는 이름을 남깁니다. 도면도요.", "Trees keep a name. So do plans.", "cu"],
+  ["정원 입구", "garden gate", "방문객들이 입구로 몰려든다", "Visitors crowd toward the garden gate", -1, "", "", "pi"]
+ ]
+],
+[
+ "체격이 작다던 구조대", "Too Small to Rescue",
+ "팀장이 체격을 이유로 지원자를 뺀다. 출동 일지엔 그가 구한 사람 수가 적혀 있었다.", "A team leader cuts an applicant for his size. The rescue log lists how many people he has carried out.",
+ [
+  ["H", "은오", "Rory", "30대 남성, 구조대 작업복, 짧은 머리, 단단한 눈", "man in his 30s, rescue work suit, short hair, hard eyes"],
+  ["V", "두식", "Mr. Kade", "40대 남성, 구조대 점퍼, 무전기, 무뚝뚝한 얼굴", "man in his 40s, rescue jacket, radio, deadpan face"],
+  ["A", "우주", "Chief Hallam", "50대 남성, 서장 정장, 흰머리, 느린 목소리", "man in his 50s, chief's suit, white hair, slow voice"]
+ ],
+ [
+  ["구조 훈련장", "rescue yard", "두식이 은오의 헬멧을 벗겨 바닥에 놓는다", "Mr. Kade takes off Rory's helmet and sets it down", 1, "이 몸으로 사람을 업어요?", "You'd carry someone out with that frame?", "cz"],
+  ["구조 훈련장", "rescue yard", "두식이 다른 지원자들을 줄 세운다", "Mr. Kade lines up the other applicants", 1, "구조는 힘으로 하는 거예요.", "Rescue is about strength.", "ms"],
+  ["구조 훈련장 사무실", "rescue office", "은오가 출동 일지에서 자기 이름과 인원을 짚는다", "Rory points at his name and the headcount in the call log", -1, "", "", "cu"],
+  ["구조 훈련장", "rescue yard", "우주가 일지를 넘기며 은오를 부른다", "Chief Hallam flips the log and calls Rory over", 2, "이 사람, 지난해 열두 명 구했습니다.", "He pulled twelve people out last year.", "low"],
+  ["구조 훈련장", "rescue yard", "두식의 무전기가 서장 손에 넘어간다", "Mr. Kade's radio is handed to the chief", 0, "사람은 힘이 아니라 순서로 업습니다.", "You carry people by method, not muscle.", "cu"],
+  ["구조 훈련탑", "rescue tower", "은오가 탑 위에서 손을 들어 신호를 보낸다", "Rory raises a hand from the top of the tower", -1, "", "", "pi"]
+ ]
+],
+[
+ "클럽 선수라던 코치", "A Club Player, He Said",
+ "코치가 클럽 선수의 라켓을 압수한다. 라켓 손잡이엔 대표팀 시절 번호가 남아 있었다.", "A coach confiscates a club player's racket. The grip still carries his national team number.",
+ [
+  ["H", "유찬", "Nate", "40대 남성, 클럽 유니폼, 반바지, 무뚝뚝한 눈", "man in his 40s, club uniform, shorts, deadpan eyes"],
+  ["V", "명석", "Coach Orr", "40대 남성, 대표팀 점퍼, 모자, 얇은 입", "man in his 40s, team jacket, cap, thin mouth"],
+  ["A", "현수", "Mr. Suh", "30대 남성, 협회 전무 정장, 태블릿, 단호한 태도", "man in his 30s, association suit, tablet, firm manner"]
+ ],
+ [
+  ["배드민턴 경기장", "badminton court", "명석이 유찬의 라켓을 빼앗아 네트 너머로 던진다", "Coach Orr takes Nate's racket and throws it over the net", 1, "클럽 선수는 대표 명단에 없어요.", "Club players don't make the team list.", "ms"],
+  ["배드민턴 경기장", "badminton court", "명석이 자기 제자에게 셔틀콕을 건넨다", "Coach Orr hands a shuttle to his own player", 1, "여긴 실업팀만 오는 곳이에요.", "Only pro teams train here.", "cz"],
+  ["배드민턴 경기장", "badminton court", "유찬이 라켓 손잡이의 옛 번호를 손끝으로 확인한다", "Nate checks the old number under the grip tape", -1, "", "", "cu"],
+  ["배드민턴 경기장", "badminton court", "태건이 등록 대장에서 그 번호를 찾는다", "Mr. Suh finds that number in the registration book", 2, "이 번호, 대표팀 시절 겁니다.", "That's a national team number.", "ots"],
+  ["배드민턴 경기장", "badminton court", "명석 제자의 등록 응시표가 찢긴다", "Coach Orr's player's entry form is torn up", 0, "라켓은 경력이 아니라 코트가 증명하죠.", "The court proves a racket, not a file.", "cu"],
+  ["배드민턴 경기장 관중석", "court stands", "어린 선수들이 유찬의 이름을 외친다", "Young players chant Nate's name from the stands", -1, "", "", "pi"]
+ ]
+],
+[
+ "남자 네일은 안 된다던 원장", "No Male Nail Artists",
+ "원장이 남자 지원자의 도구를 치운다. 단골 장부엔 그의 이름이 가장 많았다.", "A salon owner pulls a male artist off a booked client. His name fills the most lines in the ledger.",
+ [
+  ["H", "도원", "Denny", "20대 남성, 검은 앞치마, 짧은 머리, 부드러운 눈", "man in his 20s, black apron, short hair, gentle eyes"],
+  ["V", "정숙", "Ms. Paik", "50대 여성, 매장 원장 정장, 짧은 파마, 날선 눈", "woman in her 50s, salon manager suit, short perm, sharp eyes"],
+  ["A", "다인", "Ms. Chae", "40대 여성, 매장 오너 정장, 긴 머리, 차분한 태도", "woman in her 40s, salon owner suit, long hair, calm manner"]
+ ],
+ [
+  ["네일숍", "nail salon", "정숙이 이든의 도구 트레이를 카운터 아래로 치운다", "Ms. Paik clears Milo's tool tray under the counter", 1, "남자는 손님으로만 와요.", "Men only come here as clients.", "ms"],
+  ["네일숍", "nail salon", "정숙이 여성 지원자를 시술대에 앉힌다", "Ms. Paik seats a female applicant at the table", 1, "손님도 여자 손이 편하죠.", "Clients prefer a woman's hands.", "cz"],
+  ["네일숍", "nail salon", "이든이 예약 장부에서 자기 이름이 가장 많은 줄을 짚는다", "Milo points at the longest run of his name in the booking ledger", -1, "", "", "cu"],
+  ["네일숍", "nail salon", "다인이 장부를 펴고 자기 예약을 가리킨다", "Ms. Chae opens the ledger and taps her own booking", 2, "제 예약은 늘 이든 씨였는데요.", "My bookings were always with him.", "low"],
+  ["네일숍", "nail salon", "정숙이 이든의 앞치마를 두 손으로 건넨다", "Ms. Paik holds out Milo's apron with both hands", 0, "손님은 제가 고릅니다. 예약대로요.", "I take my clients as booked.", "cu"],
+  ["네일숍 유리문", "salon window", "유리문 밖에 예약 손님들이 줄을 서 있다", "Booked clients queue outside the glass door", -1, "", "", "pi"]
+ ]
+],
+[
+ "나이 많은 여자는 역할이 없다더니", "There's No Part for Your Age",
+ "연출가가 예순의 배우를 대본에서 지운다. 대본 여백엔 그 배우가 쓴 배역 메모가 빽빽했다.", "A director erases a sixty-year-old actress from the script. The margins are full of her notes.",
+ [
+  ["H", "정님", "Vera", "60대 여성, 남색 원피스, 짧은 흰머리, 또렷한 눈", "woman in her 60s, navy dress, short white hair, clear eyes"],
+  ["V", "기웅", "Mr. Doran", "40대 남성, 검은 니트, 안경, 무심한 입", "man in his 40s, black knit, glasses, indifferent mouth"],
+  ["A", "하린", "Ms. Boe", "30대 여성, 극작가 셔츠, 노트, 부드러운 눈", "woman in her 30s, playwright shirt, notebook, soft eyes"]
+ ],
+ [
+  ["연극 연습실", "theatre rehearsal room", "기웅이 정님의 대본을 덮고 책상에 놓는다", "Mr. Doran closes Vera's script and sets it down", 1, "이 나이에 할 역할이 없어요.", "There's no part for your age.", "cz"],
+  ["연극 연습실", "theatre rehearsal room", "기웅이 젊은 배우에게 대사를 넘긴다", "Mr. Doran hands the lines to a younger actor", 1, "관객은 젊은 얼굴을 봐요.", "Audiences pay for young faces.", "ms"],
+  ["연극 연습실", "theatre rehearsal room", "정님이 대본 여백의 배역 메모를 손끝으로 짚는다", "Vera traces the character notes crowding the margin", -1, "", "", "cu"],
+  ["연극 연습실", "theatre rehearsal room", "하린이 대본을 펴고 메모의 필체를 확인한다", "Ms. Boe opens the script and studies the handwriting", 2, "이 메모, 정님 씨가 쓴 거죠?", "These notes are yours, aren't they?", "low"],
+  ["연극 연습실", "theatre rehearsal room", "기웅의 연출가 명패가 벽에서 내려온다", "Mr. Doran's director plate is lifted off the wall", 0, "이 배역은 제가 썼습니다. 나이도 제가 정했죠.", "I wrote this part. I set her age.", "cu"],
+  ["연극 극장 객석", "theatre seats", "객석 조명이 켜지고 관계자들이 일어난다", "The house lights come up as the producers rise", -1, "", "", "pi"]
+ ]
+],
+[
+ "대역은 대사도 없다던 감독", "Doubles Don't Speak",
+ "감독이 대역 배우를 대사 없이 세운다. 그 낙하 장면의 안전 동선은 대역이 설계한 것이었다.", "A director gives the stunt double no lines. The double designed the fall everyone is about to film.",
+ [
+  ["H", "무진", "Cody", "30대 남성, 낡은 보호대, 짧은 머리, 조용한 눈", "man in his 30s, worn pads, short hair, quiet eyes"],
+  ["V", "태근", "Mr. Vick", "50대 남성, 검은 액션 점퍼, 모자, 무뚝뚝한 얼굴", "man in his 50s, black action jacket, cap, deadpan face"],
+  ["A", "다희", "Ms. Han", "40대 여성, 제작사 정장, 헤드셋, 단호한 태도", "woman in her 40s, production suit, headset, firm manner"]
+ ],
+ [
+  ["액션 촬영장", "action set", "태근이 무진의 대본을 빼앗아 바닥에 던진다", "Mr. Vick snatches Cody's script and throws it down", 1, "대역은 대사도 없어요.", "Doubles don't get lines.", "ms"],
+  ["액션 촬영장", "action set", "태근이 주연 배우를 와이어 앞에 세운다", "Mr. Vick positions the lead actor at the wire", 1, "떨어지는 건 주연이 해요.", "The star takes the fall.", "cz"],
+  ["액션 촬영장", "action set", "무진이 안전 점검표의 자기 서명을 짚는다", "Cody points at his own signature on the safety sheet", -1, "", "", "cu"],
+  ["액션 촬영장", "action set", "다희가 점검표와 촬영 계획을 나란히 편다", "Ms. Han opens the safety sheet beside the scene plan", 2, "이 낙하 동선, 무진 씨가 설계했습니다.", "He designed this fall line.", "low"],
+  ["액션 촬영장", "action set", "태근의 촬영 계획서가 두 동강 난다", "Mr. Vick's scene plan is torn in half", 0, "대역은 대사를 안 해도 장면은 만듭니다.", "Doubles skip lines. They still build the scene.", "cu"],
+  ["액션 촬영장", "action set", "와이어가 무진 쪽으로 당겨진다", "The wire rig is pulled toward Cody", -1, "", "", "pi"]
+ ]
+]
+]

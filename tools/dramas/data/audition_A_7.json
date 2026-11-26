@@ -1,0 +1,172 @@
+[
+[
+ "세 번째 순번을 건너뛴 교장", "The Principal Who Skipped Number Three",
+ "교장이 학원 강사 출신 지원자의 차례를 건너뛴다. 접수 대장엔 원래 순번이 그대로 남아 있었다.", "A principal skips the tutor's turn at a teaching demo. The entry ledger still shows her number three.",
+ [
+  ["H", "세빈", "Clara", "30대 여성, 낡은 재킷, 안경, 또박또박한 눈", "woman in her 30s, worn blazer, glasses, precise eyes"],
+  ["V", "상욱", "Mr. Hall", "50대 남성, 회색 정장, 교장 배지, 무표정", "man in his 50s, gray suit, principal badge, blank face"],
+  ["A", "미주", "Ms. Park", "40대 여성, 장학사 정장, 서류철, 차분한 태도", "woman in her 40s, school inspector suit, folder, calm manner"]
+ ],
+ [
+  ["수업 시연 교실", "demo classroom", "상욱이 세빈의 지도안을 접어 서류 더미 밑에 민다", "Mr. Hall folds Clara's lesson plan and slides it under a stack", 1, "학원 강사는 교단에 못 서요.", "Tutors don't stand at a blackboard.", "cz"],
+  ["수업 시연 교실", "demo classroom", "상욱이 다음 지원자를 부르며 세빈의 순번을 넘긴다", "Mr. Hall calls the next candidate and skips her turn", 1, "세빈 씨는 다음에 기회가 있겠죠.", "There's always next year for you.", "ms"],
+  ["수업 시연 교실", "demo classroom", "세빈이 접수 대장과 시연 시간표를 나란히 펴 본다", "Clara opens the entry ledger beside the demo schedule", -1, "", "", "cu"],
+  ["수업 시연 교실", "demo classroom", "미주가 시간표 원본을 꺼내 순번을 짚는다", "Ms. Park pulls out the original schedule and points at the order", 2, "세빈 씨는 원래 세 번째 순번입니다.", "She was third on the original schedule.", "ots"],
+  ["수업 시연 교실", "demo classroom", "미주가 교장 지인 지원자의 채점표를 봉투에 넣는다", "Ms. Park seals the principal's favourite candidate's score sheet", 0, "규정대로 다시 하죠. 세 번째 순번부터.", "Let's restart by the rules. From number three.", "cu"],
+  ["수업 시연 교실 복도", "school corridor", "학부모들이 교실 문가에 서서 안을 들여다본다", "Parents gather at the classroom door and peer inside", -1, "", "", "pi"]
+ ]
+],
+[
+ "10년 공백이라던 간호사", "Ten Years Off, They Said",
+ "인사팀장이 경력 단절 간호사의 지원서를 반으로 접는다. 병원 시험지의 약물 용량이 틀려 있었다.", "An HR manager folds a returning nurse's application in half. The hospital's own test sheet has the wrong dose.",
+ [
+  ["H", "옥희", "Nadia", "40대 여성, 남색 정장, 단정한 묶은 머리, 차분한 눈", "woman in her 40s, navy suit, neat bun, calm eyes"],
+  ["V", "지영", "Ms. Cole", "30대 여성, 인사팀장 정장, 안경, 얇은 미소", "woman in her 30s, HR manager suit, glasses, thin smile"],
+  ["A", "기훈", "Dr. Nam", "60대 남성, 흰 가운, 안경, 느린 목소리", "man in his 60s, white coat, glasses, slow voice"]
+ ],
+ [
+  ["병원 면접실", "hospital interview room", "지영이 옥희의 지원서를 반으로 접어 서류 더미에 꽂는다", "Ms. Cole folds Nadia's application and files it away", 1, "10년 쉬면 감각이 죽어요.", "Ten years off and the instinct dies.", "ms"],
+  ["병원 면접실", "hospital interview room", "지영이 시험지를 옥희 앞에 밀며 턱을 든다", "Ms. Cole slides a test sheet toward Nadia and lifts her chin", 1, "이것부터 다시 공부하세요.", "Start by studying this again.", "cz"],
+  ["병원 면접실", "hospital interview room", "옥희가 시험지의 용량 계산을 손끝으로 짚는다", "Nadia traces the dose calculation with her fingertip", -1, "", "", "cu"],
+  ["병원 면접실", "hospital interview room", "기훈이 시험지 두 장을 나란히 놓고 답안을 맞춘다", "Dr. Nam lays two test sheets side by side and compares them", 2, "답안이 틀렸다면, 출제자가 틀린 겁니다.", "If the answer is wrong, the examiner is wrong.", "low"],
+  ["병원 면접실", "hospital interview room", "지영의 출제 파일이 봉인 봉투에 담긴다", "Ms. Cole's question file is sealed into an evidence envelope", 0, "환자 앞에 서본 사람은 감각을 잊지 않아요.", "Hands that stood at a bedside never forget.", "cu"],
+  ["병원 면접실 복도", "hospital corridor", "유리문 밖에서 간호사들이 옥희를 보며 박수를 친다", "Nurses outside the glass doors clap for Nadia", -1, "", "", "pi"]
+ ]
+],
+[
+ "목소리 늙었다던 낭독자", "The Voice They Called Old",
+ "PD가 예순의 낭독자를 내보낸다. 그 출판사 낭독 시리즈 전편이 이 사람의 목소리였다.", "A producer cuts a sixty-year-old narrator. His voice recorded every title in the publisher's catalogue.",
+ [
+  ["H", "기남", "Arlo", "60대 남성, 낡은 트위드 재킷, 흰머리, 깊은 목소리", "man in his 60s, worn tweed jacket, white hair, deep voice"],
+  ["V", "재이", "Mr. Lund", "40대 남성, 검은 후드, 헤드폰, 무심한 표정", "man in his 40s, black hoodie, headphones, indifferent face"],
+  ["A", "명옥", "Ms. Yang", "50대 여성, 출판사 대표 정장, 짧은 머리, 반가운 눈", "woman in her 50s, publisher's suit, short hair, glad eyes"]
+ ],
+ [
+  ["녹음 스튜디오", "recording studio", "재이가 기남의 헤드폰을 벗겨 책상에 놓는다", "Mr. Lund pulls off Arlo's headphones and drops them on the desk", 1, "목소리가 너무 늙었어요.", "Your voice sounds too old.", "cz"],
+  ["녹음 스튜디오", "recording studio", "재이가 대본을 덮고 다음 지원자 이름을 부른다", "Mr. Lund closes the script and calls the next reader", 1, "낭독은 젊은 사람 몫이죠.", "Audiobooks are for young voices.", "ms"],
+  ["녹음 스튜디오", "recording studio", "기남이 낡은 CD 케이스 안쪽의 크레딧을 연다", "Arlo opens the inner credits of an old CD case", -1, "", "", "cu"],
+  ["녹음 스튜디오", "recording studio", "명옥이 케이스를 받아 들고 스피커를 켠다", "Ms. Yang takes the case and switches on the speakers", 2, "이 시리즈 전편이 이 목소리예요.", "That voice narrates our whole series.", "low"],
+  ["녹음 스튜디오", "recording studio", "명옥이 재이의 출연 계약서를 반으로 접는다", "Ms. Yang folds Mr. Lund's contract in half", 0, "목소리는 나이를 먹어도 늙지 않습니다.", "A voice ages. It doesn't grow old.", "cu"],
+  ["녹음 스튜디오 유리벽", "studio glass wall", "유리벽 너머 직원들이 기남에게 손을 든다", "Staff beyond the glass raise their hands to Arlo", -1, "", "", "pi"]
+ ]
+],
+[
+ "하프를 나르던 여자", "The Woman Who Carried the Harp",
+ "수석이 악기 운송 기사를 무대에서 내보낸다. 그 하프는 십 년 전 그녀가 극장에 빌려준 악기였다.", "The principal harpist sends the instrument courier offstage. Ten years ago she lent the hall that harp.",
+ [
+  ["H", "유하", "Lena", "30대 여성, 작업 장갑, 청바지, 묶은 머리, 조용한 눈", "woman in her 30s, work gloves, jeans, tied hair, quiet eyes"],
+  ["V", "혜란", "Ms. Weiss", "50대 여성, 검은 오디션 정장, 목걸이, 차가운 눈", "woman in her 50s, black audition suit, necklace, cold eyes"],
+  ["A", "시완", "Mr. Bodt", "40대 남성, 작업 조끼, 열쇠 꾸러미, 무뚝뚝한 얼굴", "man in his 40s, work vest, ring of keys, deadpan face"]
+ ],
+ [
+  ["콘서트홀 무대", "concert hall stage", "혜란이 유하가 든 하프를 가리키며 손을 젓는다", "Ms. Weiss waves the harp courier away from the platform", 1, "운반은 뒷문으로 하세요.", "Deliveries use the back door.", "ms"],
+  ["콘서트홀 무대", "concert hall stage", "혜란이 무대 중앙을 손가락으로 그으며 웃는다", "Ms. Weiss draws a circle in the air and laughs", 1, "여기서 연주하는 사람은 따로 있어요.", "Performers here aren't delivery staff.", "cz"],
+  ["콘서트홀 무대", "concert hall stage", "유하가 하프 안쪽의 명판을 손끝으로 닦는다", "Lena wipes the maker's plate inside the harp", -1, "", "", "cu"],
+  ["콘서트홀 무대", "concert hall stage", "시완이 악기 대장을 펴고 명판 번호를 확인한다", "Mr. Bodt checks the plate number against the instrument ledger", 2, "이 하프, 유하 씨가 빌려준 거예요.", "She lent us this harp.", "low"],
+  ["콘서트홀 무대", "concert hall stage", "혜란의 제자가 하프에서 손을 떼고 무대를 내려온다", "Ms. Weiss's student lifts her hands off the harp and walks off", 0, "악기는 제가 나릅니다. 연주도 제가 하죠.", "I carry the harp. I play it too.", "cu"],
+  ["콘서트홀 무대 뒤", "backstage", "지휘자가 유하를 향해 고개를 끄덕인다", "The conductor nods to Lena from the wings", -1, "", "", "pi"]
+ ]
+],
+[
+ "운으로 이겼다던 우승자", "Luck, They Called It",
+ "협회 이사가 지난해 우승자를 심사에서 밀어낸다. 그녀가 든 기준표는 협회가 채택한 공식이었다.", "An association director pushes last year's winner off the panel. Her criteria sheet is the official one.",
+ [
+  ["H", "다올", "Yara", "40대 여성, 회색 정장, 낮게 묶은 머리, 단단한 눈", "woman in her 40s, gray suit, low ponytail, firm eyes"],
+  ["V", "광석", "Mr. Renn", "50대 남성, 남색 정장, 협회 배지, 거만한 턱", "man in his 50s, navy suit, association badge, arrogant chin"],
+  ["A", "하빈", "Mr. Cho", "30대 남성, 베스트 차림, 태블릿, 당황한 표정", "man in his 30s, vest and tie, tablet, flustered look"]
+ ],
+ [
+  ["협회 심사실", "association judging room", "광석이 다올의 위촉장을 탁자 끝으로 민다", "Mr. Renn slides Yara's appointment letter to the far edge", 1, "한 번 이긴 사람이 무슨 심사.", "One win doesn't make you a judge.", "ms"],
+  ["협회 심사실", "association judging room", "광석이 다른 심사위원들에게 어깨를 으쓱한다", "Mr. Renn shrugs at the other judges", 1, "우승은 운이었어요.", "That win was luck.", "ots"],
+  ["협회 심사실", "association judging room", "다올이 협회 공문과 기준표 첫 장을 펼친다", "Yara opens the association notice and the first page of the criteria", -1, "", "", "cu"],
+  ["협회 심사실", "association judging room", "하빈이 태블릿 화면을 돌려 보여 준다", "Mr. Cho turns his tablet toward the table", 2, "이 기준표, 협회가 채택한 겁니다.", "The association adopted that criteria sheet.", "low"],
+  ["협회 심사실", "association judging room", "광석의 위촉장이 봉투에 들어간다", "Mr. Renn's own appointment letter is slipped into an envelope", 0, "운으로 만든 기준표는 없습니다.", "Nobody writes criteria with luck.", "cu"],
+  ["협회 심사실", "association judging room", "문이 열리고 새 이사장이 서류를 들고 들어온다", "The door opens and the new chair walks in with a file", -1, "", "", "pi"]
+ ]
+],
+[
+ "동호회 출신이라던 스킵", "Not From a Real Team",
+ "코치가 동호회 스킵의 전술 노트를 가져간다. 얼음 위에 남은 노트의 필체가 그녀의 것이었다.", "A coach takes a club skip's strategy notebook. The handwriting left on the ice is hers.",
+ [
+  ["H", "노을", "Dana", "40대 여성, 동호회 점퍼, 짧은 머리, 차분한 눈", "woman in her 40s, club jacket, short hair, calm eyes"],
+  ["V", "건희", "Mr. Ott", "30대 남성, 대표팀 패딩, 헤드밴드, 비뚤어진 입", "man in his 30s, team puffer, headband, crooked mouth"],
+  ["A", "옥련", "Judge Ferro", "50대 여성, 심판 정장, 짧은 파마, 매서운 눈", "woman in her 50s, judge's suit, short perm, stern eyes"]
+ ],
+ [
+  ["컬링장", "curling rink", "건희가 노을의 전술 노트를 빼앗아 가방에 넣는다", "Mr. Ott snatches Dana's strategy notebook and bags it", 1, "동호회 출신은 필요 없어요.", "We don't need club players.", "cz"],
+  ["컬링장", "curling rink", "건희가 노트를 펴 자기 전술판에 옮겨 적는다", "Mr. Ott copies the notebook onto his own tactic board", 1, "이건 이제 우리 전술이에요.", "This is our strategy now.", "ms"],
+  ["컬링장", "curling rink", "노을이 전술판 옆에 놓인 자기 노트를 알아본다", "Dana looks at the handwriting beside the board on the ice", -1, "", "", "cu"],
+  ["컬링장", "curling rink", "옥련이 노트와 전술판을 나란히 놓고 비교한다", "Judge Ferro sets the notebook beside the board", 2, "필체가 같은데요. 이건 노을 씨 노트입니다.", "Same handwriting. This notebook is hers.", "ots"],
+  ["컬링장", "curling rink", "건희의 전술판이 얼음 밖으로 밀려난다", "Mr. Ott's tactic board is pushed off the ice", 0, "전술은 빌려도 팀은 못 빌려요.", "Borrow a strategy, not a team.", "cu"],
+  ["컬링장 관중석", "curling stands", "관중석의 아이들이 노을의 이름표를 흔든다", "Kids in the stands wave a sign with Dana's name", -1, "", "", "pi"]
+ ]
+],
+[
+ "군 출신 아니라던 관제사", "No Uniform, No Seat",
+ "교관이 민간 출신 지원자를 시뮬레이터에서 끌어낸다. 비상 절차 매뉴얼은 그가 쓴 것이었다.", "An instructor pulls a civilian applicant from the simulator. He wrote the emergency manual they train on.",
+ [
+  ["H", "이안", "Ravi", "30대 남성, 흰 셔츠, 짧은 머리, 침착한 눈", "man in his 30s, white shirt, short hair, composed eyes"],
+  ["V", "무영", "Mr. Slate", "40대 남성, 교관 점퍼, 무전기, 굳은 얼굴", "man in his 40s, instructor jacket, radio, stiff face"],
+  ["A", "하윤", "Ms. Feld", "40대 여성, 훈련원장 정장, 서류철, 단호한 태도", "woman in her 40s, training director suit, folder, firm manner"]
+ ],
+ [
+  ["관제 시뮬레이터실", "air traffic simulator room", "무영이 이안의 헤드셋을 벗겨 콘솔에 던진다", "Mr. Slate pulls Ravi's headset off and throws it on the console", 1, "군 출신이 아니면 여기 못 앉아요.", "No military service, no seat.", "ms"],
+  ["관제 시뮬레이터실", "air traffic simulator room", "무영이 시뮬레이터 화면을 꺼 버린다", "Mr. Slate shuts off the simulator display", 1, "민간 출신은 위기에서 무너져요.", "Civilians freeze in a crisis.", "cz"],
+  ["관제 시뮬레이터실", "air traffic simulator room", "이안이 매뉴얼 3장의 개정 이력을 펼친다", "Ravi opens the revision history on page three of the manual", -1, "", "", "cu"],
+  ["관제 시뮬레이터실", "air traffic simulator room", "하윤이 매뉴얼을 넘기며 작성자 이름을 확인한다", "Ms. Feld checks the author line on the manual", 2, "이 절차, 이안 씨가 쓴 겁니다.", "He wrote this procedure.", "low"],
+  ["관제 시뮬레이터실", "air traffic simulator room", "무영이 시뮬레이터 문을 열어 이안을 들여보낸다", "Mr. Slate opens the simulator door and lets Ravi in", 0, "위기에서 무너지는 건 출신이 아니라 준비예요.", "Crises break the unprepared, not the untrained.", "cu"],
+  ["관제 시뮬레이터실", "air traffic simulator room", "시뮬레이터 화면에 새 교관 이름이 뜬다", "A new instructor's name appears on the simulator screen", -1, "", "", "pi"]
+ ]
+],
+[
+ "공장 출신이라던 유리", "Glass From a Factory Floor",
+ "심사위원이 공장 출신 유리공의 작품을 탁자 밑에 내린다. 그가 자기 출품이라 내민 것은 그 작품이었다.", "A judge drops a factory glassblower's piece under the table. The entry he claims as his own is that piece.",
+ [
+  ["H", "연화", "Ines", "50대 여성, 두꺼운 팔 보호대, 앞치마, 부드러운 눈", "woman in her 50s, thick arm guards, apron, gentle eyes"],
+  ["V", "태석", "Mr. Voss", "40대 남성, 검은 재킷, 비단 스카프, 비웃는 입", "man in his 40s, black jacket, silk scarf, sneering mouth"],
+  ["A", "승민", "Mr. Ahn", "30대 남성, 큐레이터 정장, 안경, 꼼꼼한 태도", "man in his 30s, curator suit, glasses, meticulous manner"]
+ ],
+ [
+  ["유리 공예 전시장", "glass art hall", "태석이 연화의 작품을 탁자 아래로 내려놓는다", "Mr. Voss lowers Ines's piece beneath the table", 1, "공장에서 찍어 낸 건 예술이 아니에요.", "Factory work isn't art.", "ms"],
+  ["유리 공예 전시장", "glass art hall", "태석이 자기 이름표를 그 작품 앞에 세운다", "Mr. Voss plants his own name card beside the piece", 1, "이건 제 출품작입니다.", "This piece is my entry.", "cz"],
+  ["유리 공예 전시장", "glass art hall", "연화가 작품 바닥의 봉인과 연도를 손끝으로 짚는다", "Ines touches the seal and year stamped on the piece's base", -1, "", "", "cu"],
+  ["유리 공예 전시장", "glass art hall", "지완이 접수 목록과 봉인 번호를 맞춰 본다", "Mr. Ahn checks the seal number against the entry list", 2, "봉인 번호가 연화 씨 접수증과 같습니다.", "The seal number matches her receipt.", "low"],
+  ["유리 공예 전시장", "glass art hall", "태석의 이름표가 작품 앞에서 떼어진다", "Mr. Voss's name card is lifted from the piece", 0, "유리는 숨지 않아요. 이름도 마찬가지죠.", "Glass hides nothing. Neither does a name.", "cu"],
+  ["유리 공예 전시장", "glass art hall", "유리문에 심사 결과지가 붙는다", "The judging result is posted on the glass doors", -1, "", "", "pi"]
+ ]
+],
+[
+ "남자는 안 된다던 스타일리스트", "They Wanted a Woman",
+ "에디터가 남자 스타일리스트의 포트폴리오를 덮는다. 그 화보의 크레딧엔 그의 이름이 박혀 있었다.", "An editor closes a male stylist's portfolio. The cover shoot credits his name, not hers.",
+ [
+  ["H", "유겸", "Theo", "30대 남성, 검은 니트, 짧은 머리, 반듯한 눈", "man in his 30s, black knit, short hair, level eyes"],
+  ["V", "지수", "Ms. Crane", "40대 여성, 패션 에디터 정장, 진한 립, 날선 눈", "woman in her 40s, fashion editor suit, dark lip, sharp eyes"],
+  ["A", "기현", "Mr. Rhee", "30대 남성, 잡지사 편집장, 안경, 무뚝뚝한 얼굴", "man in his 30s, magazine editor, glasses, deadpan face"]
+ ],
+ [
+  ["패션 스튜디오", "fashion studio", "지수가 유겸의 포트폴리오를 덮고 옆으로 민다", "Ms. Crane closes Theo's portfolio and slides it aside", 1, "남자 스타일리스트는 안 써요.", "We don't hire male stylists.", "cz"],
+  ["패션 스튜디오", "fashion studio", "지수가 여성 지원자에게 스타일링 테이블을 넘긴다", "Ms. Crane hands the styling table to a female applicant", 1, "우린 여자 손이 필요해요.", "We need a woman's hands.", "ms"],
+  ["패션 스튜디오", "fashion studio", "유겸이 화보 크레딧의 자기 이름을 짚는다", "Theo points at his own name in the photo credits", -1, "", "", "cu"],
+  ["패션 스튜디오", "fashion studio", "도담이 그 화보를 들고 지수에게 보여 준다", "Mr. Rhee holds up the cover photo for Ms. Crane", 2, "이 화보, 크레딧이 유겸 씨인데요.", "This cover credits him, not you.", "ots"],
+  ["패션 스튜디오", "fashion studio", "지수의 채점표가 찢겨 바구니에 들어간다", "Ms. Crane's score sheet is torn into the bin", 0, "손은 성별이 아니라 결과로 증명합니다.", "Hands prove themselves by results.", "cu"],
+  ["패션 스튜디오 문가", "studio door", "모델들이 복도에 줄을 서서 유겸을 기다린다", "Models line the corridor waiting for Theo", -1, "", "", "pi"]
+ ]
+],
+[
+ "학생 작품이라던 감독", "Just a Student Film",
+ "심사위원장이 학생 감독의 상영을 끊는다. 원본 파일의 촬영 날짜는 학생이 먼저였다.", "A jury chair cuts a student's screening. The copied master file is dated before his own footage.",
+ [
+  ["H", "누리", "Juno", "20대 여성, 후드티, 모자, 진지한 눈", "woman in her 20s, hoodie, cap, serious eyes"],
+  ["V", "원석", "Mr. Vance", "50대 남성, 검은 재킷, 안경, 무표정", "man in his 50s, black jacket, glasses, blank face"],
+  ["A", "태건", "Mr. Ivo", "30대 남성, 영화제 프로그래머, 배지, 성실한 얼굴", "man in his 30s, festival programmer, badge, earnest face"]
+ ],
+ [
+  ["영화제 상영관", "festival theatre", "원석이 무대 마이크를 끄고 누리를 내보낸다", "Mr. Vance cuts the stage mic and waves Juno off", 1, "학생 작품은 본선에 못 올려요.", "Student films don't reach the finals.", "ms"],
+  ["영화제 상영관", "festival theatre", "원석이 상영 정지 신호를 보낸다", "Mr. Vance signals the projectionist to stop", 1, "다음 작품 올려 주세요.", "Roll the next film.", "cz"],
+  ["영화제 상영관 부스", "projection booth", "누리가 노트북의 파일 정보 창을 연다", "Juno opens the file details window on her laptop", -1, "", "", "cu"],
+  ["영화제 상영관", "festival theatre", "태건이 두 파일의 촬영 날짜를 나란히 띄운다", "Mr. Ivo puts both films' dates side by side", 2, "촬영 날짜가 누리 씨가 먼저예요.", "Her footage is dated before his.", "low"],
+  ["영화제 상영관", "festival theatre", "원석의 상패가 무대에서 회수된다", "Mr. Vance's trophy is taken back from the stage", 0, "카메라는 거짓말을 안 하죠.", "Cameras don't lie.", "cu"],
+  ["영화제 상영관", "festival theatre", "뒤편의 한 사람이 일어나 누리에게 박수를 보낸다", "One person in the back row stands and claps for Juno", -1, "", "", "pi"]
+ ]
+]
+]

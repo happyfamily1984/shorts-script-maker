@@ -1,0 +1,912 @@
+[
+ [
+  "재혼식장 주인이 전처였다",
+  "The Hall Belongs to His Ex",
+  "재혼식 날, 예식장 지배인이 홀 사용을 거절한다. 건물주는 무재주라던 전처였다.",
+  "He divorced her for having no talent. On his wedding day, she bars him from the hall.",
+  [
+   [
+    "H",
+    "배우진",
+    "Vera",
+    "40대 여성, 회색 트위드 재킷, 짧은 단발, 차분한 눈빛",
+    "woman in her 40s, gray tweed jacket, short bob, calm eyes"
+   ],
+   [
+    "V",
+    "강태오",
+    "Derek",
+    "40대 남성, 베이지 정장, 뒤로 넘긴 머리, 비웃는 입꼬리",
+    "man in his 40s, beige suit, slicked-back hair, sneering mouth"
+   ],
+   [
+    "A",
+    "오세린",
+    "Odile",
+    "50대 여성, 검은 예복, 흰 장갑, 무표정한 얼굴",
+    "woman in her 50s, black formal coat, white gloves, blank face"
+   ]
+  ],
+  [
+   [
+    "예식장 로비",
+    "wedding hall lobby",
+    "태오가 배우진 앞으로 초대장을 찢어 던진다",
+    "Derek tears an invitation and throws it at Vera",
+    1,
+    "초대도 안 한 사람이 왜 와?",
+    "Who invited you here?",
+    "cz"
+   ],
+   [
+    "예식장 로비",
+    "wedding hall lobby",
+    "태오가 두 팔을 벌려 홀 전체를 가리킨다",
+    "Derek spreads both arms toward the whole hall",
+    1,
+    "뒤치다꺼리만 하던 사람이, 이 자리 부럽지?",
+    "You only cleaned up after me. Jealous now?",
+    "ms"
+   ],
+   [
+    "예식장 로비",
+    "wedding hall lobby",
+    "배우진이 손짓으로 지배인을 불러 세운다",
+    "Vera signals the hall manager over with one hand",
+    0,
+    "오 지배인, 오늘 홀 예약 확인해 주세요.",
+    "Odile, check today's hall booking.",
+    "pi"
+   ],
+   [
+    "예식장 로비",
+    "wedding hall lobby",
+    "지배인이 태오 앞에서 예약 장부를 덮는다",
+    "Odile closes the booking book in front of Derek",
+    2,
+    "이 홀은 배우진 님 소유입니다. 사용 불가입니다.",
+    "This hall belongs to Vera. It is not available.",
+    "low"
+   ],
+   [
+    "예식장 로비",
+    "wedding hall lobby",
+    "태오가 식장 의자에 힘없이 주저앉는다",
+    "Derek sinks down onto a wedding chair",
+    0,
+    "내 건물에서 내 이름으로 결혼하지 마요.",
+    "Don't marry under my roof, in my name.",
+    "cu"
+   ],
+   [
+    "예식장 주차장",
+    "wedding hall parking lot",
+    "검은 승용차에서 내린 남자가 배우진에게 서류 봉투를 건넨다",
+    "A man steps from a black car and hands Vera an envelope",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "개업식 날 문을 닫았다",
+  "Closed on Opening Night",
+  "그가 새로 연 바의 개업식. 주류 면허 명의자는 술이나 따르던 전처로 남아 있었다.",
+  "He left her for pouring drinks. His new bar's liquor license works only under her name.",
+  [
+   [
+    "H",
+    "서지오",
+    "Marisol",
+    "30대 여성, 크림색 셔츠, 긴 생머리, 담담한 눈",
+    "woman in her 30s, cream shirt, long straight hair, calm eyes"
+   ],
+   [
+    "V",
+    "민재우",
+    "Grant",
+    "30대 남성, 검은 조끼, 짧은 머리, 굳은 턱",
+    "man in his 30s, black vest, short hair, tight jaw"
+   ],
+   [
+    "A",
+    "노아린",
+    "Kroll",
+    "40대 여성, 회색 정장, 안경, 서류 가방",
+    "woman in her 40s, gray suit, glasses, document bag"
+   ]
+  ],
+  [
+   [
+    "칵테일바",
+    "cocktail bar",
+    "재우가 지오의 손에서 잔을 빼앗아 카운터에 놓는다",
+    "Grant snatches a glass from Marisol's hand and sets it down",
+    1,
+    "오늘부로 여기서 일하지 마.",
+    "As of today, you don't work here.",
+    "cz"
+   ],
+   [
+    "칵테일바",
+    "cocktail bar",
+    "재우가 손님들 쪽으로 잔을 들어 올린다",
+    "Grant lifts his glass toward the seated guests",
+    1,
+    "술이나 따르던 사람이 주인 노릇은.",
+    "A pourer playing boss. Funny.",
+    "ms"
+   ],
+   [
+    "칵테일바",
+    "cocktail bar",
+    "지오가 벽에 걸린 면허증을 휴대폰으로 찍는다",
+    "Marisol photographs the license framed on the wall",
+    0,
+    "벽에 걸린 그 종이, 잘 보세요.",
+    "Take a good look at that paper.",
+    "pi"
+   ],
+   [
+    "칵테일바",
+    "cocktail bar",
+    "노아린이 서류를 펼쳐 카운터에 놓는다",
+    "Kroll opens a document and lays it on the counter",
+    2,
+    "주류 면허 명의자는 서지오 님입니다.",
+    "The liquor license is in Marisol's name.",
+    "low"
+   ],
+   [
+    "칵테일바",
+    "cocktail bar",
+    "재우가 카운터를 짚고 고개를 떨군다",
+    "Grant grips the counter and lowers his head",
+    0,
+    "면허 정지예요. 내일부터 문 닫아요.",
+    "Your license is suspended. Closed tomorrow.",
+    "cu"
+   ],
+   [
+    "칵테일바 출입문",
+    "cocktail bar entrance",
+    "문가에 서 있던 여자가 명함을 테이블에 놓고 나간다",
+    "A woman by the door leaves a card and walks out",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "숨긴 계좌는 그가 찾았다",
+  "The Accounts She Hid",
+  "위자료 합의서에 사인하려던 순간, 감정서에 그녀가 숨긴 계좌 세 개가 찍혀 나온다.",
+  "She mocked him for knowing nothing about money. The audit finds three accounts she hid.",
+  [
+   [
+    "H",
+    "유건우",
+    "Emmett",
+    "40대 남성, 회색 니트, 둥근 안경, 조용한 눈",
+    "man in his 40s, gray knit sweater, round glasses, quiet eyes"
+   ],
+   [
+    "V",
+    "정하람",
+    "Camille",
+    "40대 여성, 흰 블라우스, 묶은 머리, 날카로운 눈매",
+    "woman in her 40s, white blouse, tied hair, sharp eyes"
+   ],
+   [
+    "A",
+    "심지호",
+    "Halstead",
+    "50대 남성, 어두운 정장, 서류철을 든 손",
+    "man in his 50s, dark suit, holding a file folder"
+   ]
+  ],
+  [
+   [
+    "변호사 사무실",
+    "lawyer's office",
+    "하람이 합의서를 건우 앞으로 밀어낸다",
+    "Camille slides the settlement across to Emmett",
+    1,
+    "사인해. 넌 계산도 못 하잖아.",
+    "Sign it. You can't even count.",
+    "cz"
+   ],
+   [
+    "변호사 사무실",
+    "lawyer's office",
+    "하람이 서류 위에 펜을 던지고 팔짱을 낀다",
+    "Camille tosses a pen onto the papers and folds her arms",
+    1,
+    "10년 밥 해 준 값이면 충분해.",
+    "Ten years of cooking is payment enough.",
+    "ms"
+   ],
+   [
+    "변호사 사무실",
+    "lawyer's office",
+    "건우가 가방에서 두꺼운 봉투를 꺼내 펼친다",
+    "Emmett pulls a thick envelope from his bag",
+    0,
+    "감정 결과가 방금 나왔어요.",
+    "The audit came back an hour ago.",
+    "pi"
+   ],
+   [
+    "변호사 사무실",
+    "lawyer's office",
+    "감정인이 명세서를 테이블에 펼쳐 놓는다",
+    "Halstead spreads the statements across the table",
+    2,
+    "이 세 계좌, 전부 정하람 님 명의입니다.",
+    "These three accounts are all in Camille's name.",
+    "low"
+   ],
+   [
+    "변호사 사무실",
+    "lawyer's office",
+    "하람이 서류를 쥔 손을 떨며 의자에 기댄다",
+    "Camille's hand trembles as she sinks back in the chair",
+    0,
+    "절반은 제 겁니다. 처음부터 다시 하죠.",
+    "Half is mine. Let's start over.",
+    "cu"
+   ],
+   [
+    "변호사 사무실 복도",
+    "lawyer's office hallway",
+    "문가에 서 있던 남자가 뒤돌아 계단으로 사라진다",
+    "A man at the door turns and disappears down the stairs",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "신혼여행 첫날 쫓겨났다",
+  "Evicted on Their Honeymoon",
+  "신혼여행 첫날 밤 예약이 취소된다. 펜션 주인은 집이나 고치던 전 남편이었다.",
+  "She left him for fixing houses. The honeymoon pension she booked belongs to him.",
+  [
+   [
+    "H",
+    "하시우",
+    "Silas",
+    "30대 남성, 남색 작업복, 짧은 머리, 무뚝뚝한 표정",
+    "man in his 30s, navy work clothes, cropped hair, flat face"
+   ],
+   [
+    "V",
+    "구예란",
+    "Nadia",
+    "30대 여성, 흰 원피스, 긴 웨이브 머리, 비웃는 눈",
+    "woman in her 30s, white dress, long wavy hair, mocking eyes"
+   ],
+   [
+    "A",
+    "탁예서",
+    "Dunmore",
+    "20대 여성, 펜션 유니폼, 묶은 머리, 당황한 얼굴",
+    "woman in her 20s, pension uniform, tied hair, flustered face"
+   ]
+  ],
+  [
+   [
+    "펜션 마당",
+    "pension garden",
+    "예란이 짐을 든 하시우 앞을 손바닥으로 막는다",
+    "Nadia blocks Silas with one palm as he carries luggage",
+    1,
+    "집이나 고치는 사람이 여기는 왜?",
+    "Why is a handyman on my honeymoon?",
+    "cz"
+   ],
+   [
+    "펜션 마당",
+    "pension garden",
+    "예란이 새 남편 팔짱을 끼고 고개를 젓는다",
+    "Nadia hooks arms with her new husband and shakes her head",
+    1,
+    "좀 더 품위 있는 곳으로 갈 걸 그랬어.",
+    "We should have booked somewhere classy.",
+    "ms"
+   ],
+   [
+    "펜션 카운터",
+    "pension desk",
+    "하시우가 카운터 뒤에서 예약 장부를 펼친다",
+    "Silas opens the booking book behind the desk",
+    0,
+    "3호실 예약, 오늘 도착으로 되어 있네요.",
+    "Room three. Arriving today, it says.",
+    "pi"
+   ],
+   [
+    "펜션 카운터",
+    "pension desk",
+    "예서가 두 사람 앞에 객실 열쇠를 내려놓는다",
+    "Dunmore sets the room keys down in front of them",
+    2,
+    "이 펜션 주인은 하시우 님입니다.",
+    "This pension belongs to Silas.",
+    "low"
+   ],
+   [
+    "펜션 마당",
+    "pension garden",
+    "예란이 캐리어 손잡이를 쥔 채 그대로 굳는다",
+    "Nadia freezes with her hand on the suitcase handle",
+    0,
+    "예약은 제가 취소해요. 짐 싸세요.",
+    "I'm canceling your booking. Pack up.",
+    "cu"
+   ],
+   [
+    "펜션 주차장",
+    "pension parking lot",
+    "검은 승용차가 들어오고 뒷좌석 문이 열린다",
+    "A black car pulls in and its rear door opens",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "내 일기가 베스트셀러가 됐다",
+  "My Diary, His Bestseller",
+  "사인회장에서 베스트셀러를 자랑하는 그. 책은 버림받은 아내의 일기장을 옮긴 것이었다.",
+  "He mocked her scribbling. His new bestseller is her diary, copied almost line for line.",
+  [
+   [
+    "H",
+    "진서아",
+    "Corinne",
+    "30대 여성, 베이지 코트, 어깨까지 오는 흑발, 조용한 눈",
+    "woman in her 30s, beige coat, shoulder-length black hair, quiet eyes"
+   ],
+   [
+    "V",
+    "편시우",
+    "Desmond",
+    "30대 남성, 흰 셔츠, 짧은 머리, 들뜬 표정",
+    "man in his 30s, white shirt, short hair, elated face"
+   ],
+   [
+    "A",
+    "백가언",
+    "Quill",
+    "40대 여성, 검은 재킷, 짧은 머리, 단호한 표정",
+    "woman in her 40s, black jacket, short hair, firm face"
+   ]
+  ],
+  [
+   [
+    "출판사 사인회장",
+    "publisher's signing hall",
+    "시우가 서아에게 책을 밀어내며 손을 젓는다",
+    "Desmond pushes a book aside and waves Corinne away",
+    1,
+    "여기서 뭐 해. 사인 줄은 저쪽이야.",
+    "What are you doing here? The line is over there.",
+    "cz"
+   ],
+   [
+    "출판사 사인회장",
+    "publisher's signing hall",
+    "시우가 책을 들어 독자들 앞에서 흔든다",
+    "Desmond lifts the book and waves it at the readers",
+    1,
+    "이게 내 10년의 기록이야.",
+    "Ten years of my life, right here.",
+    "ms"
+   ],
+   [
+    "출판사 사인회장",
+    "publisher's signing hall",
+    "서아가 낡은 공책을 테이블에 조용히 올린다",
+    "Corinne quietly sets a worn notebook on the table",
+    0,
+    "그 10년, 제 공책에 있어요.",
+    "Those ten years are in my notebook.",
+    "cu"
+   ],
+   [
+    "출판사 사인회장",
+    "publisher's signing hall",
+    "편집장이 공책과 책을 나란히 펼쳐 든다",
+    "Quill holds the notebook and the book side by side",
+    2,
+    "한 줄도 안 다릅니다. 저작권은 서아 님 겁니다.",
+    "Not one line differs. The rights belong to Corinne.",
+    "low"
+   ],
+   [
+    "출판사 사인회장",
+    "publisher's signing hall",
+    "시우가 책을 내려놓고 독자들이 일어난다",
+    "Desmond sets the book down as readers rise",
+    0,
+    "오늘 사인회는 여기까지예요.",
+    "This signing ends here.",
+    "rx"
+   ],
+   [
+    "출판사 사인회장",
+    "publisher's signing hall",
+    "맨 뒤에 서 있던 남자가 서아에게 고개를 숙인다",
+    "A man at the back bows quietly to Corinne",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "내가 지은 이름, 내가 못 쓴다",
+  "The Name He Can't Use",
+  "새 카페 간판을 걸던 날, 본부 직원이 상표 등록증을 든다. 이름은 전처가 등록했다.",
+  "He said naming things was nothing. His new cafe sign is a trademark she registered.",
+  [
+   [
+    "H",
+    "권민서",
+    "Lena",
+    "30대 여성, 청바지에 흰 티, 갈색 어깨머리, 차분한 얼굴",
+    "woman in her 30s, jeans and white tee, brown shoulder hair, calm face"
+   ],
+   [
+    "V",
+    "황도현",
+    "Felix",
+    "30대 남성, 분홍 셔츠, 짧은 머리, 자신만만한 미소",
+    "man in his 30s, pink shirt, short hair, confident smile"
+   ],
+   [
+    "A",
+    "임도현",
+    "Ferrand",
+    "40대 남성, 정장에 사원증, 서류 가방",
+    "man in his 40s, suit with a staff badge, document bag"
+   ]
+  ],
+  [
+   [
+    "카페 앞",
+    "in front of the cafe",
+    "도현이 간판 아래에서 민서를 손바닥으로 막는다",
+    "Felix blocks Lena with his palm under the new sign",
+    1,
+    "여긴 내 가게 앞이야. 구경 왔어?",
+    "This is my shop front. Here to look?",
+    "cz"
+   ],
+   [
+    "카페 앞",
+    "in front of the cafe",
+    "도현이 간판을 손등으로 툭툭 친다",
+    "Felix taps the sign with the back of his hand",
+    1,
+    "이름 하나 지어서 카페 차렸다고?",
+    "You think a name makes a business?",
+    "ms"
+   ],
+   [
+    "카페 앞",
+    "in front of the cafe",
+    "민서가 휴대폰 화면을 도현 쪽으로 돌린다",
+    "Lena turns her phone screen toward Felix",
+    0,
+    "그 이름, 제가 등록해 뒀어요.",
+    "I registered that name a year ago.",
+    "pi"
+   ],
+   [
+    "카페 앞",
+    "in front of the cafe",
+    "본부 직원이 등록증을 펼쳐 간판 아래에 세운다",
+    "Ferrand holds a certificate under the sign",
+    2,
+    "이 상표는 권민서 님 명의입니다.",
+    "This trademark is registered to Lena.",
+    "low"
+   ],
+   [
+    "카페 앞",
+    "in front of the cafe",
+    "도현이 간판을 올려다보며 뒷걸음친다",
+    "Felix steps back, staring up at his own sign",
+    0,
+    "간판 내려요. 가맹도 오늘로 끝이에요.",
+    "Take the sign down. Your franchise ends today.",
+    "cu"
+   ],
+   [
+    "카페 앞",
+    "in front of the cafe",
+    "구경하던 여자가 사진을 찍어 누군가에게 보낸다",
+    "A woman in the crowd takes a photo and sends it",
+    -1,
+    "",
+    "",
+    "rx"
+   ]
+  ]
+ ],
+ [
+  "내 포도나무로 만든 와인",
+  "Wine From Her Vines",
+  "와이너리 시음회에서 수입상이 계약을 접는다. 포도나무는 전부 전처가 접붙인 것이었다.",
+  "He left her for playing in dirt. Every vine in his winery was grafted by her.",
+  [
+   [
+    "H",
+    "여도경",
+    "Greta",
+    "30대 여성, 작업용 앞치마, 묶은 갈색 머리, 차분한 눈",
+    "woman in her 30s, work apron, tied brown hair, calm eyes"
+   ],
+   [
+    "V",
+    "문시언",
+    "Dorian",
+    "30대 남성, 회색 재킷, 짧은 머리, 얇게 비웃는 입",
+    "man in his 30s, gray jacket, short hair, thin sneer"
+   ],
+   [
+    "A",
+    "남기훈",
+    "Renner",
+    "40대 남성, 베이지 정장, 서류 가방, 무뚝뚝한 얼굴",
+    "man in his 40s, beige suit, document bag, blunt face"
+   ]
+  ],
+  [
+   [
+    "와이너리 시음장",
+    "winery tasting room",
+    "시언이 도경의 잔을 빼앗아 테이블에 놓는다",
+    "Dorian takes Greta's glass and sets it on the table",
+    1,
+    "손님 자리는 정해져 있어. 나가.",
+    "Guest seats are assigned. Get out.",
+    "cz"
+   ],
+   [
+    "와이너리 시음장",
+    "winery tasting room",
+    "시언이 잔을 들어 손님들 앞에서 돌린다",
+    "Dorian lifts the glass and turns it before the guests",
+    1,
+    "흙 만지던 손으로 와인을 논해?",
+    "You talk wine with dirt-stained hands?",
+    "ms"
+   ],
+   [
+    "와이너리 시음장",
+    "winery tasting room",
+    "도경이 나무 이름표를 손끝으로 만진다",
+    "Greta runs her fingertip over a wooden vine tag",
+    0,
+    "이 나무들, 제가 접붙인 거예요.",
+    "I grafted every one of these vines.",
+    "cu"
+   ],
+   [
+    "와이너리 시음장",
+    "winery tasting room",
+    "남기훈이 계약서를 펼쳐 테이블에 놓는다",
+    "Renner opens a contract on the table",
+    2,
+    "이 품종, 도경 님 허락 없이는 못 씁니다.",
+    "This grape needs Greta's written consent.",
+    "low"
+   ],
+   [
+    "와이너리 시음장",
+    "winery tasting room",
+    "시언이 잔을 내려놓고 손님들이 일어난다",
+    "Dorian sets the glass down as guests rise",
+    0,
+    "수입 계약, 오늘부로 끝이에요.",
+    "Your import deal ends today.",
+    "rx"
+   ],
+   [
+    "와이너리 마당",
+    "winery yard",
+    "낯선 여자가 병 하나를 들고 도경에게 다가온다",
+    "A stranger walks up to Greta holding one bottle",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "두고 간 개가 챔피언이 됐다",
+  "The Dog He Left Behind",
+  "대회 챔피언이 된 개를 팔려는 순간, 등록된 소유자는 개를 두고 간 전 남편이었다.",
+  "She left him for loving the dog more. Now that dog is a champion, and she wants to sell it.",
+  [
+   [
+    "H",
+    "정유겸",
+    "Theo",
+    "30대 남성, 초록 야구 점퍼, 짧은 머리, 온순한 눈",
+    "man in his 30s, green bomber jacket, short hair, gentle eyes"
+   ],
+   [
+    "V",
+    "강예솔",
+    "Bianca",
+    "30대 여성, 검은 원피스, 긴 생머리, 얇은 입술",
+    "woman in her 30s, black dress, long straight hair, thin lips"
+   ],
+   [
+    "A",
+    "추하영",
+    "Kessler",
+    "50대 여성, 회색 정장, 안경, 대회 명찰",
+    "woman in her 50s, gray suit, glasses, show badge"
+   ]
+  ],
+  [
+   [
+    "도그쇼 링 사이드",
+    "dog show ringside",
+    "예솔이 유겸의 어깨를 손바닥으로 민다",
+    "Bianca pushes Theo back with her palm",
+    1,
+    "그 개는 내 거야. 여기 왜 왔어?",
+    "That dog is mine. Why are you here?",
+    "cz"
+   ],
+   [
+    "도그쇼 링 사이드",
+    "dog show ringside",
+    "예솔이 링 위의 개를 손가락으로 가리킨다",
+    "Bianca points at the dog in the ring",
+    1,
+    "개한테 정 붙이는 남자라서 질렸어.",
+    "I got tired of a man who loves a dog more.",
+    "ms"
+   ],
+   [
+    "도그쇼 접수처",
+    "dog show desk",
+    "유겸이 목걸이의 등록 칩을 손끝으로 확인한다",
+    "Theo checks the registry chip on the collar",
+    0,
+    "이 개 등록증, 제 이름이에요.",
+    "This dog's papers have my name.",
+    "pi"
+   ],
+   [
+    "도그쇼 접수처",
+    "dog show desk",
+    "심사위원이 등록 대장을 펼쳐 예솔 앞에 세운다",
+    "Kessler opens the registry book in front of Bianca",
+    2,
+    "등록된 소유자는 정유겸 님입니다.",
+    "The registered owner is Theo.",
+    "low"
+   ],
+   [
+    "도그쇼 링 사이드",
+    "dog show ringside",
+    "예솔이 입찰표를 구겨 쥔다",
+    "Bianca crumples her bidding slip",
+    0,
+    "그 개, 주인 없이는 못 팔아요.",
+    "You can't sell a dog that isn't yours.",
+    "cu"
+   ],
+   [
+    "도그쇼 링 사이드",
+    "dog show ringside",
+    "낙찰을 기다리던 남자가 유겸에게 명함을 내민다",
+    "A waiting bidder steps over and offers Theo a card",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "그의 투자자는 전처였다",
+  "His Investor Was His Ex",
+  "해외 투자 유치를 앞둔 그. 회사를 살려 온 익명 투자자가 전처였다는 통보가 온다.",
+  "He said she had no head for business. The silent investor keeping him afloat was her.",
+  [
+   [
+    "H",
+    "유서진",
+    "Ivy",
+    "30대 여성, 검은 트렌치코트, 단발, 서늘한 눈",
+    "woman in her 30s, black trench coat, short hair, cool eyes"
+   ],
+   [
+    "V",
+    "남주원",
+    "Nolan",
+    "30대 남성, 밝은 회색 정장, 짧은 머리, 들뜬 얼굴",
+    "man in his 30s, light gray suit, short hair, elated face"
+   ],
+   [
+    "A",
+    "김예강",
+    "Barrow",
+    "40대 남성, 검은 정장, 서류 가방, 무표정",
+    "man in his 40s, black suit, document bag, blank face"
+   ]
+  ],
+  [
+   [
+    "공항 라운지",
+    "airport lounge",
+    "주원이 서진의 좌석 옆에서 나가라는 손짓을 한다",
+    "Nolan stands by Ivy's seat and gestures for her to leave",
+    1,
+    "여긴 비즈니스 클래스야. 나가 줄래?",
+    "Business class only. Mind leaving?",
+    "cz"
+   ],
+   [
+    "공항 라운지",
+    "airport lounge",
+    "주원이 잔을 들어 창밖 비행기를 가리킨다",
+    "Nolan raises his glass toward a jet outside",
+    1,
+    "사업은 원래 남자들 하는 거야.",
+    "Business was never your thing.",
+    "ms"
+   ],
+   [
+    "공항 라운지",
+    "airport lounge",
+    "서진이 계약서에 조용히 서명해 건넨다",
+    "Ivy signs a contract and hands it over",
+    0,
+    "이번 분기, 회수하세요.",
+    "Call it in. This quarter.",
+    "cu"
+   ],
+   [
+    "공항 라운지",
+    "airport lounge",
+    "비서가 계약서 첫 장을 주원 앞에 펼친다",
+    "Barrow opens the first page in front of Nolan",
+    2,
+    "투자자 유서진 님입니다. 회수 결정서입니다.",
+    "The investor is Ivy. Here is the recall notice.",
+    "low"
+   ],
+   [
+    "공항 라운지",
+    "airport lounge",
+    "주원이 계약서를 쥐고 자리에 걸터앉는다",
+    "Nolan grips the contract and sinks into a chair",
+    0,
+    "자금은 오늘로 끝이에요.",
+    "Your funding ends today.",
+    "cu"
+   ],
+   [
+    "공항 탑승구",
+    "airport gate",
+    "안내판에 유서진의 이름이 뜨고 직원이 허리를 숙인다",
+    "Ivy's name flashes on the gate screen as staff bow",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "특허는 그의 것이었다",
+  "The Patent Was His First",
+  "특허 소송 조정실. 원출원 기록의 이름을 확인하자 소송이 무너진다.",
+  "She called him a company drone. The patent her firm sued over was originally filed by him.",
+  [
+   [
+    "H",
+    "김서준",
+    "Reed",
+    "40대 남성, 회색 정장, 짧은 머리, 담담한 얼굴",
+    "man in his 40s, gray suit, short hair, calm face"
+   ],
+   [
+    "V",
+    "윤시온",
+    "Renata",
+    "40대 여성, 흰 정장, 긴 생머리, 날카로운 눈",
+    "woman in her 40s, white suit, long straight hair, sharp eyes"
+   ],
+   [
+    "A",
+    "장태린",
+    "Tallis",
+    "50대 여성, 검은 법복, 안경, 무표정",
+    "woman in her 50s, black robe, glasses, blank face"
+   ]
+  ],
+  [
+   [
+    "중재실",
+    "arbitration room",
+    "시온이 서류를 서준 앞으로 밀며 고개를 젓는다",
+    "Renata pushes the file across to Reed and shakes her head",
+    1,
+    "회사원 하던 사람이 특허를 논해?",
+    "A company drone talking patents?",
+    "cz"
+   ],
+   [
+    "중재실",
+    "arbitration room",
+    "시온이 양손을 펼쳐 방 안을 가리킨다",
+    "Renata spreads both hands to take in the room",
+    1,
+    "이 자리는 우리 회사가 만든 거야.",
+    "My company built this case.",
+    "ms"
+   ],
+   [
+    "중재실",
+    "arbitration room",
+    "서준이 출원 기록 사본을 조용히 꺼낸다",
+    "Reed quietly takes out a copy of the filing record",
+    0,
+    "출원 기록, 날짜부터 보시죠.",
+    "Start with the filing date.",
+    "pi"
+   ],
+   [
+    "중재실",
+    "arbitration room",
+    "중재인이 두 서류를 나란히 놓고 손가락으로 짚는다",
+    "Tallis lays both files side by side and points",
+    2,
+    "원출원인은 김서준 님입니다. 소송은 무효입니다.",
+    "The original filer is Reed. The claim fails.",
+    "low"
+   ],
+   [
+    "중재실",
+    "arbitration room",
+    "시온이 의자 팔걸이를 짚고 일어선다",
+    "Renata grips the armrest and rises",
+    0,
+    "이제 제가 청구할 차례네요.",
+    "Now it's my turn to file.",
+    "cu"
+   ],
+   [
+    "중재실 복도",
+    "arbitration hallway",
+    "복도 끝에서 서류 가방을 든 남자가 서준을 기다린다",
+    "A man with a briefcase waits for Reed down the hall",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ]
+]

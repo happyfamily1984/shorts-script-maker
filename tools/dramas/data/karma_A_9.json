@@ -1,0 +1,912 @@
+[
+ [
+  "액자 하나가 데려간 전시 감독",
+  "Frame by Frame",
+  "무거운 액자를 대신 들어 준 설치 기사. 그 여자가 아트페어의 새 감독이었다.",
+  "An art installer carries a heavy frame for a stranger. She is the art fair's new director.",
+  [
+   [
+    "H",
+    "도윤",
+    "Daniel",
+    "30대 남성, 회색 작업복, 작업 장갑, 짧은 머리, 차분한 눈",
+    "man in his 30s, gray work jumpsuit, work gloves, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "혜진",
+    "Cynthia",
+    "40대 여성, 검은 폴로 셔츠, 빡빡한 포니테일, 날선 눈",
+    "woman in her 40s, black polo shirt, tight ponytail, sharp eyes"
+   ],
+   [
+    "A",
+    "윤서",
+    "Lena",
+    "40대 여성, 흰 블라우스, 긴 머리, 조용하고 깊은 눈",
+    "woman in her 40s, white blouse, long hair, quiet deep eyes"
+   ]
+  ],
+  [
+   [
+    "아트페어 입구",
+    "art fair entrance",
+    "혜진이 도윤의 드릴을 빼앗아 부스 옆에 놓는다",
+    "Cynthia takes Daniel's drill and sets it by the booth",
+    1,
+    "네가 관장님 액자를 들어?",
+    "You're carrying the director's frame?",
+    "cz"
+   ],
+   [
+    "부스 뒤편",
+    "behind the booth",
+    "혜진이 도윤의 작업 장갑을 벗겨 바닥에 던진다",
+    "Cynthia strips off his work gloves and throws them down",
+    1,
+    "부스에서 나가.",
+    "Get out of my booth.",
+    "ms"
+   ],
+   [
+    "아트페어 입구",
+    "art fair entrance",
+    "윤서가 부스 앞에서 액자 모서리를 받친다",
+    "Lena steadies the frame's corner in front of the booth",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "전시홀",
+    "exhibition hall",
+    "윤서가 액자를 세우고 혜진을 본다",
+    "Lena sets the frame upright and faces Cynthia",
+    2,
+    "제가 부탁한 액자입니다. 이 부스는 이분 겁니다.",
+    "That frame is mine. This booth is his.",
+    "pi"
+   ],
+   [
+    "부스 뒤편",
+    "behind the booth",
+    "혜진의 작업 배치표가 바닥에 떨어진다",
+    "Cynthia's work schedule slips to the floor",
+    0,
+    "액자 한 점이 그렇게 무거웠습니까?",
+    "Was one frame that heavy to carry?",
+    "cu"
+   ],
+   [
+    "전시홀",
+    "exhibition hall",
+    "윤서가 도윤에게 전시 계획서를 건넨다",
+    "Lena hands Daniel the exhibition plan",
+    2,
+    "다음 달 아트페어, 당신 이름으로 겁니다.",
+    "Next month's art fair goes under your name.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "상한 와인을 바꿔 준 소믈리에 보조",
+  "The Bottle She Replaced",
+  "코르크 냄새가 난 와인을 조용히 바꿔 준 보조. 그 손님이 최고의 평론가였다.",
+  "An assistant quietly replaces a corked bottle. The guest is the country's top wine critic.",
+  [
+   [
+    "H",
+    "유나",
+    "Kate",
+    "20대 여성, 검은 조끼, 와인 오프너, 포니테일, 조심스러운 눈",
+    "woman in her 20s, black vest, wine key, ponytail, careful eyes"
+   ],
+   [
+    "V",
+    "태식",
+    "Randall",
+    "40대 남성, 수석 소믈리에, 검은 정장, 번들거리는 머리",
+    "man in his 40s, head sommelier, black suit, slick hair"
+   ],
+   [
+    "A",
+    "정은",
+    "Harriet",
+    "50대 여성, 초록 드레스, 은발 단발, 얇은 안경",
+    "woman in her 50s, emerald dress, silver bob, thin glasses"
+   ]
+  ],
+  [
+   [
+    "레스토랑",
+    "restaurant",
+    "태식이 유나의 손에서 와인잔을 빼앗아 쏟아 버린다",
+    "Randall takes the glass from Kate and pours it out",
+    1,
+    "네가 무슨 판단이야?",
+    "Who made you the judge of that?",
+    "cz"
+   ],
+   [
+    "레스토랑 주방 입구",
+    "restaurant kitchen door",
+    "태식이 유나의 앞치마를 벗긴다",
+    "Randall pulls off Kate's apron",
+    1,
+    "잔 닦지 말고 나가.",
+    "Stop polishing glasses and go.",
+    "ots"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "정은이 빈 병의 코르크를 집어 냄새를 맡는다",
+    "Harriet picks up the cork and smells it",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "정은이 유나를 가리키며 태식을 본다",
+    "Harriet points at Kate and looks at Randall",
+    2,
+    "이 병을 바꿔 준 사람입니다. 제 지면에 씁니다.",
+    "She changed my bottle. I'll write it in my column.",
+    "low"
+   ],
+   [
+    "레스토랑 카운터",
+    "restaurant counter",
+    "태식의 재고 장부가 바닥에 떨어진다",
+    "Randall's stock book drops to the floor",
+    0,
+    "상한 향을 못 알아보셨죠?",
+    "You couldn't taste the cork, could you?",
+    "cu"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "정은이 유나에게 새 명함을 건넨다",
+    "Harriet hands Kate a new business card",
+    2,
+    "내달 시음회, 당신이 진행해요.",
+    "You'll host next month's tasting.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "초콜릿 한 알이 띄운 가게",
+  "Sweetness at the Counter",
+  "엄마 선물을 사러 온 아이에게 초콜릿을 준 점원. 그 아이 엄마가 방송 진행자였다.",
+  "A clerk gives a boy chocolate for his mother. The boy's mother hosts a TV show.",
+  [
+   [
+    "H",
+    "소율",
+    "Lucy",
+    "20대 여성, 갈색 앞치마, 묶은 머리, 동그란 눈",
+    "woman in her 20s, brown apron, tied hair, round eyes"
+   ],
+   [
+    "V",
+    "경희",
+    "Nadine",
+    "50대 여성, 매장 매니저, 검은 셔츠, 짧은 파마, 굳은 입",
+    "woman in her 50s, store manager, black shirt, short perm, tight mouth"
+   ],
+   [
+    "A",
+    "예린",
+    "Bianca",
+    "30대 여성, 빨간 코트, 긴 웨이브 머리, 밝은 눈",
+    "woman in her 30s, red coat, long wavy hair, bright eyes"
+   ]
+  ],
+  [
+   [
+    "초콜릿 가게",
+    "chocolate shop",
+    "경희가 소율의 손에서 초콜릿 상자를 빼앗는다",
+    "Nadine snatches the chocolate box from Lucy's hand",
+    1,
+    "돈도 안 냈잖아.",
+    "He didn't even pay.",
+    "cz"
+   ],
+   [
+    "초콜릿 가게",
+    "chocolate shop",
+    "경희가 소율의 명찰을 떼어 카운터에 놓는다",
+    "Nadine unpins Lucy's badge onto the counter",
+    1,
+    "카운터에서 나가.",
+    "Get out from behind my counter.",
+    "ms"
+   ],
+   [
+    "가게 앞",
+    "shop front",
+    "예린이 아이 손에 든 빈 포장지를 본다",
+    "Bianca notices the empty wrapper in the boy's hand",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "초콜릿 가게",
+    "chocolate shop",
+    "예린이 소율의 어깨를 잡고 경희를 본다",
+    "Bianca puts a hand on Lucy's shoulder and faces Nadine",
+    2,
+    "우리 아이 선물이에요. 방송에 이 가게를 틀게요.",
+    "That was my son's gift. I'm airing this shop.",
+    "slo"
+   ],
+   [
+    "초콜릿 가게",
+    "chocolate shop",
+    "경희의 폐기 장부가 바닥에 떨어진다",
+    "Nadine's waste ledger drops to the floor",
+    0,
+    "엄마 선물이 그렇게 아까웠습니까?",
+    "Was a gift for his mother that costly?",
+    "cu"
+   ],
+   [
+    "초콜릿 가게",
+    "chocolate shop",
+    "예린이 소율에게 촬영 명단을 건넨다",
+    "Bianca hands Lucy the taping list",
+    2,
+    "다음 주 촬영, 당신 가게에서 해요.",
+    "Next week's taping happens in your shop.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "멈춘 회중시계를 고쳐 준 수리공",
+  "The Watch He Fixed for Free",
+  "남편의 회중시계를 무료로 고쳐 준 수리공. 그 여자가 이 건물을 가진 소설가였다.",
+  "A watchmaker repairs a widow's pocket watch free. She owns the arcade he works in.",
+  [
+   [
+    "H",
+    "건우",
+    "Hugh",
+    "60대 남성, 돋보기 안경, 갈색 작업복, 흰 수염, 온순한 눈",
+    "man in his 60s, loupe glasses, brown work coat, white beard, gentle eyes"
+   ],
+   [
+    "V",
+    "길순",
+    "Doris",
+    "60대 여성, 시계방 주인, 보랏빛 니트, 짧은 파마",
+    "woman in her 60s, watch shop owner, violet knit, short perm"
+   ],
+   [
+    "A",
+    "지우",
+    "Margot",
+    "40대 여성, 검은 코트, 어깨까지 오는 머리, 잔잔한 눈",
+    "woman in her 40s, black coat, shoulder-length hair, still eyes"
+   ]
+  ],
+  [
+   [
+    "시계 수리점",
+    "watch repair shop",
+    "길순이 건우의 루페를 빼앗아 서랍에 넣는다",
+    "Doris takes Hugh's loupe and locks it away",
+    1,
+    "공짜로 고쳐? 그럼 네 월급에서 빼.",
+    "Fixing it for free? It comes out of your pay.",
+    "cz"
+   ],
+   [
+    "시계 수리점",
+    "watch repair shop",
+    "길순이 건우의 작업대 서랍을 비운다",
+    "Doris empties the drawers of his workbench",
+    1,
+    "루페 반납하고 나가.",
+    "Hand in your loupe and go.",
+    "ms"
+   ],
+   [
+    "시계 수리점",
+    "watch repair shop",
+    "지우이 회중시계 뚜껑 안의 사진을 본다",
+    "Margot looks at the photo inside the watch lid",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "시계 수리점",
+    "watch repair shop",
+    "지우이 시계를 들어 길순 앞에 선다",
+    "Margot raises the watch in front of Doris",
+    2,
+    "남편 시계입니다. 이 건물 임대인도 제예요.",
+    "My husband's watch. I lease this arcade too.",
+    "pi"
+   ],
+   [
+    "시계 수리점",
+    "watch repair shop",
+    "길순의 임대 계약서가 카운터에 떨어진다",
+    "Doris's lease slips onto the counter",
+    0,
+    "멈춘 시계가 그렇게 거슬렸습니까?",
+    "Did a stopped watch bother you that much?",
+    "cu"
+   ],
+   [
+    "시계 수리점",
+    "watch repair shop",
+    "지우이 건우에게 새 간판을 건넨다",
+    "Margot hands Hugh a new shop sign",
+    2,
+    "이 가게 이름, 당신 이름으로 거세요.",
+    "Put your own name on this shop.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "헌옷 입은 손님께 반지를 보여 준 직원",
+  "The Ring He Let Him Try",
+  "남루한 옷의 손님에게 반지를 보여 준 직원. 그가 이 거리의 건물주였다.",
+  "A clerk lets a shabbily dressed man try on a ring. He owns half the street.",
+  [
+   [
+    "H",
+    "나래",
+    "Elise",
+    "20대 여성, 검은 매장 정장, 단정한 묶은 머리, 또렷한 눈",
+    "woman in her 20s, black store suit, neat tied hair, clear eyes"
+   ],
+   [
+    "V",
+    "영숙",
+    "Irene",
+    "50대 여성, 매장 지배인, 회색 정장, 짧은 단발, 차가운 눈",
+    "woman in her 50s, store manager, gray suit, short bob, cold eyes"
+   ],
+   [
+    "A",
+    "덕수",
+    "Conrad",
+    "70대 남성, 낡은 트위드 재킷, 흰 머리, 주름진 얼굴",
+    "man in his 70s, worn tweed jacket, white hair, lined face"
+   ]
+  ],
+  [
+   [
+    "보석 매장",
+    "jewelry store",
+    "영숙이 나래의 손에서 반지 트레이를 빼앗는다",
+    "Irene snatches the ring tray from Elise's hands",
+    1,
+    "이분한테 뭘 보여 줘?",
+    "What are you showing him?",
+    "ms"
+   ],
+   [
+    "보석 매장",
+    "jewelry store",
+    "영숙이 나래를 카운터 밖으로 밀어낸다",
+    "Irene pushes Elise out from behind the counter",
+    1,
+    "카운터 밖으로 나가.",
+    "Step out from behind the counter.",
+    "trk"
+   ],
+   [
+    "매장 유리창",
+    "shop window",
+    "덕수가 주머니에서 지갑 대신 열쇠 꾸러미를 꺼낸다",
+    "Conrad pulls a ring of keys from his pocket, not a wallet",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "보석 매장",
+    "jewelry store",
+    "덕수가 열쇠 꾸러미를 카운터에 올려놓는다",
+    "Conrad sets the keys on the counter",
+    2,
+    "이 거리 건물 열쇠입니다. 임대인이 저입니다.",
+    "These keys are the street's. I lease this store.",
+    "slo"
+   ],
+   [
+    "보석 매장",
+    "jewelry store",
+    "영숙의 재고 목록이 바닥에 떨어진다",
+    "Irene's stock list drops to the floor",
+    0,
+    "손님의 옷차림이 그렇게 중요합니까?",
+    "Does a customer's coat matter that much?",
+    "cu"
+   ],
+   [
+    "보석 매장",
+    "jewelry store",
+    "덕수가 나래에게 새 매장 등록 서류를 건넨다",
+    "Conrad hands Elise the store's new registration",
+    2,
+    "이 매장은 이제 당신 이름으로 등록했어요.",
+    "This store is registered in your name now.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "퇴근 후 한 통의 전화",
+  "One Call After Hours",
+  "퇴근 뒤까지 늙은 손님과 통화한 상담원. 그 손님이 이 회사 최대 고객사의 회장이었다.",
+  "An agent stays on the line past her shift. The old caller chairs the biggest client.",
+  [
+   [
+    "H",
+    "하윤",
+    "Nina",
+    "30대 여성, 회색 블레이저, 헤드셋, 묶은 머리, 참을성 있는 눈",
+    "woman in her 30s, gray blazer, headset, tied hair, patient eyes"
+   ],
+   [
+    "V",
+    "소연",
+    "Carol",
+    "40대 여성, 팀장 자켓, 짧은 머리, 날카로운 눈",
+    "woman in her 40s, team leader jacket, short hair, sharp eyes"
+   ],
+   [
+    "A",
+    "명호",
+    "Edwin",
+    "70대 남성, 짙은 회색 정장, 흰 머리, 지팡이",
+    "man in his 70s, dark gray suit, white hair, walking stick"
+   ]
+  ],
+  [
+   [
+    "콜센터",
+    "call center",
+    "소연이 하윤의 헤드셋을 빼앗는다",
+    "Carol pulls off Nina's headset",
+    1,
+    "퇴근 시간 지났어.",
+    "Your shift ended an hour ago.",
+    "cz"
+   ],
+   [
+    "콜센터",
+    "call center",
+    "소연이 좌석표에서 하윤의 이름을 지운다",
+    "Carol erases Nina's name from the seating chart",
+    1,
+    "좌석표에서 네 이름 지웠어.",
+    "I erased your name from the board.",
+    "trk"
+   ],
+   [
+    "콜센터 창가",
+    "call center window",
+    "명호가 수첩에 하윤의 사번을 적는다",
+    "Edwin writes her employee number in a notebook",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "콜센터 로비",
+    "call center lobby",
+    "명호가 소연 앞에 서서 하윤을 가리킨다",
+    "Edwin stands before Carol and points at Nina",
+    2,
+    "우리 회사 계약, 이 상담원 없으면 없던 일입니다.",
+    "Our contract would not exist without her.",
+    "slo"
+   ],
+   [
+    "콜센터",
+    "call center",
+    "소연의 근태 기록이 바닥에 떨어진다",
+    "Carol's attendance log slips to the floor",
+    0,
+    "한 통의 전화가 그렇게 아까웠습니까?",
+    "Was one phone call that expensive?",
+    "cu"
+   ],
+   [
+    "콜센터 로비",
+    "call center lobby",
+    "명호가 하윤에게 새 계약서를 건넨다",
+    "Edwin hands Nina a fresh contract",
+    2,
+    "다음 달부터 우리 계정은 당신이 맡아요.",
+    "Our account is yours from next month.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "밤에 서류를 다시 배달한 라이더",
+  "The Rider Who Went Back",
+  "주소를 잘못 듣고 밤에 다시 달려간 라이더. 그 봉투를 기다린 사람이 창업자였다.",
+  "A rider races back with a misheard delivery. The man waiting for it is a founder.",
+  [
+   [
+    "H",
+    "민준",
+    "Jake",
+    "20대 남성, 배달 재킷, 헬멧, 짧은 머리, 부지런한 눈",
+    "man in his 20s, courier jacket, helmet, short hair, diligent eyes"
+   ],
+   [
+    "V",
+    "판석",
+    "Marv",
+    "40대 남성, 배달소 관리자, 검은 조끼, 굳은 얼굴",
+    "man in his 40s, depot manager, black vest, hardened face"
+   ],
+   [
+    "A",
+    "지훈",
+    "Theo",
+    "30대 남성, 셔츠에 넥타이, 짧은 머리, 피곤한 눈",
+    "man in his 30s, shirt and tie, short hair, tired eyes"
+   ]
+  ],
+  [
+   [
+    "골목",
+    "alley",
+    "판석이 민준의 배달 가방을 밀어 넘어뜨린다",
+    "Marv shoves Jake's delivery bag off his back",
+    1,
+    "한 건에 왜 두 번 가?",
+    "Why two trips for one delivery?",
+    "cz"
+   ],
+   [
+    "배달소",
+    "courier depot",
+    "판석이 민준의 배차표를 찢는다",
+    "Marv tears up Jake's route sheet",
+    1,
+    "배차표 없어. 나가.",
+    "No route for you. Get out.",
+    "ots"
+   ],
+   [
+    "빌딩 로비",
+    "office lobby",
+    "지훈이 시계를 보며 봉투를 손에 쥐고 서 있다",
+    "Theo checks his watch, envelope in hand",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "빌딩 로비",
+    "office lobby",
+    "지훈이 봉투를 들어 판석 앞에 보인다",
+    "Theo holds up the envelope in front of Marv",
+    2,
+    "이 봉투가 계약을 살렸습니다. 이분이 가져왔어요.",
+    "This envelope saved the deal. He brought it.",
+    "low"
+   ],
+   [
+    "배달소",
+    "courier depot",
+    "판석의 정산표가 바닥에 흩어진다",
+    "Marv's payout sheets scatter on the floor",
+    0,
+    "한 번 더 달린 게 그렇게 손해입니까?",
+    "Was one extra trip such a loss?",
+    "cu"
+   ],
+   [
+    "빌딩 로비",
+    "office lobby",
+    "지훈이 민준에게 제안서를 건넨다",
+    "Theo hands Jake a proposal",
+    2,
+    "우리 물류, 당신이 맡아 주세요.",
+    "Take over our logistics.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "길 잃은 대표를 안내한 통역사",
+  "The Voice in the Hallway",
+  "연설을 앞두고 길을 잃은 대표를 안내한 통역사. 그가 이번 총회의 기조 연설자였다.",
+  "An interpreter guides a lost delegate to his hall. He gives the keynote that morning.",
+  [
+   [
+    "H",
+    "다은",
+    "Alice",
+    "30대 여성, 회색 정장, 이어피스, 짧은 머리, 재빠른 눈",
+    "woman in her 30s, gray suit, earpiece, short hair, quick eyes"
+   ],
+   [
+    "V",
+    "은주",
+    "Paula",
+    "40대 여성, 통역사 협회 코디네이터, 검은 정장, 뾰족한 안경",
+    "woman in her 40s, agency coordinator, black suit, pointed glasses"
+   ],
+   [
+    "A",
+    "시우",
+    "Martin",
+    "50대 남성, 짙은 정장, 은발, 두꺼운 연설문 뭉치",
+    "man in his 50s, dark suit, silver hair, a thick sheaf of speech pages"
+   ]
+  ],
+  [
+   [
+    "컨벤션 복도",
+    "convention hallway",
+    "은주가 다은의 이어피스를 낚아챈다",
+    "Paula snatches the earpiece from Alice",
+    1,
+    "배정도 안 된 통역이 왜 나서?",
+    "An unassigned interpreter, stepping in?",
+    "cz"
+   ],
+   [
+    "컨벤션 복도",
+    "convention hallway",
+    "은주가 다은의 출입증을 떼어 간다",
+    "Paula takes Alice's badge",
+    1,
+    "배정 취소야. 나가.",
+    "You're unassigned. Get out.",
+    "ms"
+   ],
+   [
+    "무대 뒤",
+    "backstage",
+    "시우가 연설문 뭉치를 안고 좁은 복도를 서성인다",
+    "Martin paces the narrow hallway clutching his speech",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "무대",
+    "stage",
+    "시우가 연단에서 다은을 손으로 가리킨다",
+    "Martin points at Alice from the podium",
+    2,
+    "오늘 이 연설, 이 사람 목소리로 전해졌습니다.",
+    "Today's speech came through her voice.",
+    "slo"
+   ],
+   [
+    "컨벤션 복도",
+    "convention hallway",
+    "은주의 배정표가 바닥에 떨어진다",
+    "Paula's assignment sheet slips to the floor",
+    0,
+    "통역 한마디가 그렇게 거슬렸습니까?",
+    "Did one interpreted sentence bother you?",
+    "cu"
+   ],
+   [
+    "무대 뒤",
+    "backstage",
+    "시우가 다은에게 국제 회의 배지를 건넨다",
+    "Martin hands Alice an international forum badge",
+    2,
+    "내일 본회의, 당신이 제 통역입니다.",
+    "Tomorrow's session, you interpret for me.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "잃어버린 인형을 찾아 준 지상직 직원",
+  "The Toy She Found Before Boarding",
+  "아이 인형을 찾아 준 지상직 직원. 그 아이 아버지가 항공사 운항 본부장이었다.",
+  "A ground agent finds a child's lost toy before boarding. The father runs airline operations.",
+  [
+   [
+    "H",
+    "하람",
+    "Beth",
+    "20대 여성, 항공사 스카프, 단정한 올림머리, 밝은 눈",
+    "woman in her 20s, airline scarf, neat bun, bright eyes"
+   ],
+   [
+    "V",
+    "연숙",
+    "Rhoda",
+    "40대 여성, 지상직 슈퍼바이저, 남색 정장, 날선 눈",
+    "woman in her 40s, ground supervisor, navy suit, sharp eyes"
+   ],
+   [
+    "A",
+    "재성",
+    "Howard",
+    "40대 남성, 남색 정장, 짧은 머리, 안도한 얼굴",
+    "man in his 40s, navy suit, short hair, relieved face"
+   ]
+  ],
+  [
+   [
+    "탑승구",
+    "boarding gate",
+    "연숙이 하람의 검색대를 치우며 장갑을 던진다",
+    "Rhoda clears Beth's station and throws down her gloves",
+    1,
+    "탑승 끝났어.",
+    "Boarding is over.",
+    "ms"
+   ],
+   [
+    "탑승구",
+    "boarding gate",
+    "연숙이 하람의 근무표를 찢는다",
+    "Rhoda tears up Beth's shift sheet",
+    1,
+    "게이트에서 나가.",
+    "Get off my gate.",
+    "cz"
+   ],
+   [
+    "게이트 의자",
+    "gate seating",
+    "재성이 인형을 아이 손에 쥐여 준다",
+    "Howard puts the toy into his daughter's hands",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "탑승구",
+    "boarding gate",
+    "재성이 연숙 앞에 서서 하람을 가리킨다",
+    "Howard stands before Rhoda and points at Beth",
+    2,
+    "이 직원이 아니면 제 딸은 이 비행기를 못 탔어요.",
+    "Without her, my daughter misses this flight.",
+    "pi"
+   ],
+   [
+    "게이트 카운터",
+    "gate counter",
+    "연숙의 좌석 배정표가 바닥에 떨어진다",
+    "Rhoda's seat chart slips to the floor",
+    0,
+    "아이 손에 쥔 게 그렇게 하찮았습니까?",
+    "Was what a child held that worthless?",
+    "cu"
+   ],
+   [
+    "탑승구",
+    "boarding gate",
+    "재성이 하람에게 새 배지를 건넨다",
+    "Howard hands Beth a new badge",
+    2,
+    "내일부터 우리 본부에서 일하세요.",
+    "Work at our operations desk from tomorrow.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "계약서를 읽어 준 중개 보조를 자른 대표",
+  "The Contract She Read Aloud",
+  "글씨가 작아 못 읽는 노인에게 계약서를 읽어 준 보조. 그 노인이 이 건물 주인이었다.",
+  "An agency assistant reads a contract aloud to an old man. He owns the building.",
+  [
+   [
+    "H",
+    "다현",
+    "Gwen",
+    "30대 여성, 남색 사무복, 안경, 묶은 머리, 차분한 눈",
+    "woman in her 30s, navy office wear, glasses, tied hair, calm eyes"
+   ],
+   [
+    "V",
+    "판수",
+    "Curt",
+    "50대 남성, 부동산 대표, 갈색 정장, 굵은 목소리",
+    "man in his 50s, agency owner, brown suit, booming voice"
+   ],
+   [
+    "A",
+    "종호",
+    "Levi",
+    "70대 남성, 밀짚모자, 베이지 재킷, 주름진 얼굴",
+    "man in his 70s, straw hat, beige jacket, lined face"
+   ]
+  ],
+  [
+   [
+    "부동산 사무소",
+    "real estate office",
+    "판수가 다현의 손에서 계약서를 빼앗는다",
+    "Curt snatches the contract from Gwen's hands",
+    1,
+    "네가 읽어 줘?",
+    "You read it to him?",
+    "cz"
+   ],
+   [
+    "부동산 사무소",
+    "real estate office",
+    "판수가 다현의 책상 위 서류를 상자에 쓸어 담는다",
+    "Curt sweeps her desk into a box",
+    1,
+    "서류 챙겨 나가.",
+    "Gather your papers and go.",
+    "ms"
+   ],
+   [
+    "사무소 앞",
+    "office front",
+    "종호가 주머니에서 등기 서류를 꺼낸다",
+    "Levi takes a property deed from his pocket",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "부동산 사무소",
+    "real estate office",
+    "종호가 등기 서류를 판수 앞에 놓는다",
+    "Levi sets the deed down in front of Curt",
+    2,
+    "이 건물 주인입니다. 이 중개소 계약은 끝났습니다.",
+    "I own this building. I'm ending your lease.",
+    "low"
+   ],
+   [
+    "부동산 사무소",
+    "real estate office",
+    "판수의 독점 계약서가 바닥에 흩어진다",
+    "Curt's exclusive listings scatter on the floor",
+    0,
+    "작은 글씨를 못 읽는 게 죄입니까?",
+    "Is small print a crime to you?",
+    "cu"
+   ],
+   [
+    "부동산 사무소",
+    "real estate office",
+    "종호가 다현에게 새 사무실 열쇠를 건넨다",
+    "Levi puts the office keys in Gwen's hand",
+    2,
+    "이 사무실, 다음 달부터 당신 거예요.",
+    "This office is yours from next month.",
+    "pi"
+   ]
+  ]
+ ]
+]

@@ -1,0 +1,912 @@
+[
+ [
+  "보호자로 몰린 발레 감독",
+  "The Ballet Director They Took for a Parent",
+  "보호자는 로비에 있으라던 심사위원. 그녀는 오늘부터 이 발레단의 예술감독이었다.",
+  "A judge sends her to the lobby. She is the company's new artistic director.",
+  [
+   [
+    "H",
+    "윤정아",
+    "Nadia Frey",
+    "50대 여성, 낡은 코트, 짧은 은발, 곧은 등",
+    "woman in her 50s, worn coat, short silver hair, straight back"
+   ],
+   [
+    "V",
+    "문아람",
+    "Elsa Grange",
+    "40대 여성, 원로 발레리나, 검은 터틀넥, 치켜든 턱",
+    "woman in her 40s, former ballerina, black turtleneck, chin up"
+   ],
+   [
+    "A",
+    "엄다인",
+    "Clara Bass",
+    "30대 여성, 발레단 매니저, 회색 정장, 서류철",
+    "woman in her 30s, company manager, gray suit, file folder"
+   ]
+  ],
+  [
+   [
+    "발레 오디션장",
+    "ballet audition hall",
+    "아람이 정아의 낡은 코트를 의자에 던진다",
+    "Elsa tosses Nadia's worn coat onto a chair",
+    1,
+    "보호자는 로비에서 기다리세요.",
+    "Parents wait in the lobby.",
+    "cz"
+   ],
+   [
+    "발레 오디션장",
+    "ballet audition hall",
+    "아람이 정아의 심사 의자를 맨 끝으로 옮긴다",
+    "Elsa drags Nadia's chair to the far end of the table",
+    1,
+    "심사는 우리가 합니다.",
+    "We do the judging.",
+    "ms"
+   ],
+   [
+    "발레 오디션장",
+    "ballet audition hall",
+    "정아가 자기 이름이 새겨진 명패를 무대 옆에 세운다",
+    "Nadia stands her own nameplate beside the stage",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "발레 오디션장",
+    "ballet audition hall",
+    "다인이 명패를 들고 무대에 올라 정아를 부른다",
+    "Clara carries the nameplate on stage and calls Nadia",
+    2,
+    "예술감독님, 심사 시작하겠습니다.",
+    "Director, we're ready to begin judging.",
+    "low"
+   ],
+   [
+    "발레 오디션장",
+    "ballet audition hall",
+    "아람이 심사표를 놓고 정아가 심사석으로 간다",
+    "Elsa drops her score sheet as Nadia walks to the panel",
+    0,
+    "심사위원 자리는 제가 정하죠.",
+    "I decide who sits on this panel.",
+    "cu"
+   ],
+   [
+    "무대 뒤",
+    "backstage",
+    "무대 뒤에서 검은 정장 남자가 정아에게 서류를 건넨다",
+    "A man in a black suit hands Nadia papers backstage",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "작곡가를 무대 아래로 보낸 배우",
+  "The Star Who Sent the Composer Below",
+  "작곡가는 따로 오라던 주연 배우. 그가 무대 아래로 보낸 사람이 이 작품의 작곡가였다.",
+  "A lead actor sends the composer below the stage. He wrote every song in the show.",
+  [
+   [
+    "H",
+    "원도율",
+    "Caleb Foss",
+    "30대 남성, 낡은 니트, 안경, 얇은 체격",
+    "man in his 30s, worn knit, glasses, thin build"
+   ],
+   [
+    "V",
+    "소대건",
+    "Vance Coyle",
+    "40대 남성, 주연 배우, 화려한 셔츠, 선글라스",
+    "man in his 40s, lead actor, flashy shirt, sunglasses"
+   ],
+   [
+    "A",
+    "신채온",
+    "Margot Fenn",
+    "50대 여성, 제작사 대표, 밝은 재킷, 짧은 머리",
+    "woman in her 50s, producer, bright jacket, short hair"
+   ]
+  ],
+  [
+   [
+    "뮤지컬 오디션장",
+    "musical audition hall",
+    "대건이 도율의 악보를 바닥에 떨어뜨린다",
+    "Vance knocks Caleb's score to the floor",
+    1,
+    "작곡가는 따로 와요.",
+    "Composers come separately.",
+    "cz"
+   ],
+   [
+    "뮤지컬 오디션장",
+    "musical audition hall",
+    "대건이 도율의 의자를 무대 아래로 치운다",
+    "Vance shoves Caleb's chair below the stage",
+    1,
+    "무대는 배우 자리예요.",
+    "The stage is for actors.",
+    "ms"
+   ],
+   [
+    "뮤지컬 오디션장",
+    "musical audition hall",
+    "도율이 피아노 위에 자기 악보 뭉치를 펼친다",
+    "Caleb spreads his own score across the piano",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "뮤지컬 오디션장",
+    "musical audition hall",
+    "채온이 공고문을 보고 도율을 무대로 부른다",
+    "Margot reads the notice and calls Caleb to the stage",
+    2,
+    "이 작품 작곡가십니다.",
+    "He wrote this show.",
+    "low"
+   ],
+   [
+    "뮤지컬 오디션장",
+    "musical audition hall",
+    "대건이 대본을 놓고 도율이 피아노에 앉는다",
+    "Vance drops the script as Caleb sits at the piano",
+    0,
+    "이 배역, 다시 오디션 보시죠.",
+    "Let's re-audition for your role.",
+    "cu"
+   ],
+   [
+    "뮤지컬 오디션장 밖",
+    "outside the hall",
+    "도율이 새 배역표를 게시판에 붙인다",
+    "Caleb pins a new cast list on the board",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "발표회 단상에서 밀려난 투자자",
+  "The Investor Pushed Off the Stage",
+  "단상은 제작진 것이라던 감독. 그가 내려보낸 사람이 이 드라마의 투자자였다.",
+  "A director clears the stage for his crew. The woman he pushes off funds the drama.",
+  [
+   [
+    "H",
+    "선예강",
+    "Vera Slade",
+    "40대 여성, 낡은 패딩, 안경, 낮게 묶은 머리",
+    "woman in her 40s, worn puffer, glasses, low tied hair"
+   ],
+   [
+    "V",
+    "김유겸",
+    "Dirk Maas",
+    "30대 남성, 감독, 모자에 헤드폰, 예민한 눈",
+    "man in his 30s, director, cap and headphones, tense eyes"
+   ],
+   [
+    "A",
+    "박서한",
+    "Ryan Odell",
+    "30대 남성, 제작, 검은 후드, 무전기",
+    "man in his 30s, producer, black hoodie, radio"
+   ]
+  ],
+  [
+   [
+    "제작발표회장",
+    "press conference hall",
+    "유겸이 예강의 의자를 단상 아래로 치운다",
+    "Dirk shoves Vera's chair below the stage",
+    1,
+    "여긴 감독 자리예요.",
+    "That's the director's chair.",
+    "cz"
+   ],
+   [
+    "제작발표회장",
+    "press conference hall",
+    "유겸이 예강의 서류를 포토존 옆으로 밀어 둔다",
+    "Dirk pushes Vera's papers beside the photo wall",
+    1,
+    "발표는 제작진이 합니다.",
+    "The crew does the talking here.",
+    "ms"
+   ],
+   [
+    "제작발표회장",
+    "press conference hall",
+    "예강이 모니터 옆에 투자 계약서 사본을 펼친다",
+    "Vera opens a copy of the investment contract by the monitor",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "제작발표회장",
+    "press conference hall",
+    "서한이 계약서를 읽고 유겸을 돌아본다",
+    "Ryan reads the contract and turns to Dirk",
+    2,
+    "이 작품 투자사 대표님이십니다.",
+    "She heads the company funding us.",
+    "low"
+   ],
+   [
+    "제작발표회장",
+    "press conference hall",
+    "유겸이 마이크를 내려놓고 예강이 단상에 오른다",
+    "Dirk sets the mic down as Vera climbs the stage",
+    0,
+    "발표는 여기서 마치죠.",
+    "This announcement ends here.",
+    "cu"
+   ],
+   [
+    "발표회장 밖",
+    "outside the hall",
+    "예강이 새 작품 편성표를 들고 계단을 내려간다",
+    "Vera walks down the steps holding a new lineup sheet",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "조각가를 관람객으로 부른 공원",
+  "The Park That Took Me for a Tourist",
+  "관람객은 입구에서 기다리라던 관장. 그 흙 묻은 사람이 이 작품의 작가였다.",
+  "A curator seats him with the tourists. His hands made the sculpture behind her.",
+  [
+   [
+    "H",
+    "이지완",
+    "Emil Roth",
+    "50대 남성, 흙 묻은 작업복, 짧은 수염, 굵은 손",
+    "man in his 50s, clay-stained work clothes, short beard, thick hands"
+   ],
+   [
+    "V",
+    "정하율",
+    "Petra Hesse",
+    "40대 여성, 관장, 검은 원피스, 긴 목걸이",
+    "woman in her 40s, curator, black dress, long necklace"
+   ],
+   [
+    "A",
+    "강예운",
+    "Iris Bolt",
+    "30대 여성, 큐레이터, 베이지 재킷, 태블릿",
+    "woman in her 30s, curator, beige jacket, tablet"
+   ]
+  ],
+  [
+   [
+    "조각 공원 입구",
+    "sculpture park gate",
+    "하율이 지완의 작업복에 묻은 흙을 손가락으로 가리킨다",
+    "Petra points a finger at the clay on Emil's work clothes",
+    1,
+    "관람객은 입구에서 기다리세요.",
+    "Visitors wait at the gate.",
+    "cz"
+   ],
+   [
+    "조각 공원",
+    "sculpture park",
+    "하율이 지완 앞에 안내 팸플릿만 놓는다",
+    "Petra sets only a guide pamphlet in front of Emil",
+    1,
+    "작품 설명은 도슨트가 해요.",
+    "The docent gives the tour.",
+    "ms"
+   ],
+   [
+    "조각 공원",
+    "sculpture park",
+    "지완이 작업복 소매로 명판의 흙을 닦아 낸다",
+    "Emil wipes the clay off the plate with his sleeve",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "조각 공원",
+    "sculpture park",
+    "예운이 명판을 읽고 하율을 돌아본다",
+    "Iris reads the plate and turns to Petra",
+    2,
+    "이 작품 작가 이름이에요.",
+    "That's the artist's name.",
+    "low"
+   ],
+   [
+    "조각 공원",
+    "sculpture park",
+    "하율이 팸플릿을 거두고 지완이 작품 앞에 선다",
+    "Petra gathers the pamphlets as Emil stands by his work",
+    0,
+    "이 전시, 오늘로 닫죠.",
+    "This exhibition closes today.",
+    "cu"
+   ],
+   [
+    "조각 공원 밖",
+    "outside the park",
+    "지완이 새 작품 위에 흰 천을 덮는다",
+    "Emil drapes a white cloth over a new piece",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "그림체를 비웃은 편집자",
+  "The Editor Who Mocked My Drawing",
+  "이 그림체로는 안 된다던 편집자. 그 작가는 플랫폼 1위 작품을 그리고 있었다.",
+  "An editor rejects her drawing style. Her series is number one on the platform.",
+  [
+   [
+    "H",
+    "조시현",
+    "Lily Nord",
+    "20대 후반 여성, 후드티, 짧은 머리, 손목에 연습 자국",
+    "woman in her late 20s, hoodie, short hair, pencil marks on her wrist"
+   ],
+   [
+    "V",
+    "윤담온",
+    "Nate Fitch",
+    "30대 남성, 편집자, 카디건, 얇은 안경",
+    "man in his 30s, editor, cardigan, thin glasses"
+   ],
+   [
+    "A",
+    "백로하",
+    "Rita Kraus",
+    "20대 여성, 플랫폼 담당, 파란 사원증, 태블릿",
+    "woman in her 20s, platform staff, blue badge, tablet"
+   ]
+  ],
+  [
+   [
+    "웹툰 편집실",
+    "webtoon office",
+    "담온이 시현의 원고를 책상 아래로 민다",
+    "Nate pushes Lily's pages under his desk",
+    1,
+    "이 그림체로는 안 돼요.",
+    "That art style won't work.",
+    "cz"
+   ],
+   [
+    "웹툰 편집실",
+    "webtoon office",
+    "담온이 다음 작가 원고를 시현 위에 올린다",
+    "Nate stacks another artist's pages on top of hers",
+    1,
+    "연재는 다음 생에 하세요.",
+    "Try serializing in your next life.",
+    "ms"
+   ],
+   [
+    "웹툰 편집실",
+    "webtoon office",
+    "시현이 자기 작품 화면을 로하에게로 돌린다",
+    "Lily turns her series page toward Rita",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "웹툰 편집실",
+    "webtoon office",
+    "로하가 화면을 보고 담온을 부른다",
+    "Rita sees the screen and calls Nate over",
+    2,
+    "이 작품, 우리 플랫폼 1위예요.",
+    "That series is number one on our platform.",
+    "low"
+   ],
+   [
+    "웹툰 편집실",
+    "webtoon office",
+    "담온이 원고를 도로 꺼내고 시현이 가방을 멘다",
+    "Nate pulls the pages back out as Lily shoulders her bag",
+    0,
+    "연재는 다른 편집자와 하죠.",
+    "I'll serialize with another editor.",
+    "cu"
+   ],
+   [
+    "편집실 밖",
+    "outside the office",
+    "시현이 새 작품의 표지를 그린다",
+    "Lily sketches the cover of a new series",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "설계자를 도면만 보내라던 현장",
+  "The Site That Sent the Architect Home",
+  "설계자는 도면만 보내라던 시행사 사장. 그가 내보낸 사람이 이 건물을 설계했다.",
+  "A developer tells the architect to stay home. He drew every line of the tower.",
+  [
+   [
+    "H",
+    "권해든",
+    "Frank Ballard",
+    "40대 남성, 안전모, 낡은 작업점퍼, 안경",
+    "man in his 40s, hard hat, worn work jacket, glasses"
+   ],
+   [
+    "V",
+    "남도현",
+    "Roger Stint",
+    "50대 남성, 시행사 사장, 고급 점퍼, 금시계",
+    "man in his 50s, developer, expensive jacket, gold watch"
+   ],
+   [
+    "A",
+    "심가온",
+    "Greta Pohl",
+    "30대 여성, 현장 소장, 형광 조끼, 도면",
+    "woman in her 30s, site manager, hi-vis vest, plans"
+   ]
+  ],
+  [
+   [
+    "현장 사무실",
+    "site office",
+    "도현이 해든의 안전모를 탁자에 내려놓는다",
+    "Roger sets Frank's hard hat down on the table",
+    1,
+    "설계자는 도면만 보내면 돼요.",
+    "Architects just send drawings.",
+    "cz"
+   ],
+   [
+    "건설 현장",
+    "construction site",
+    "도현이 해든의 도면을 말아 옆에 세운다",
+    "Roger rolls up Frank's plans and stands them aside",
+    1,
+    "현장은 우리가 지휘해요.",
+    "We run this site.",
+    "ms"
+   ],
+   [
+    "현장 사무실",
+    "site office",
+    "해든이 모형의 기둥을 뽑아 도현 앞에 세운다",
+    "Frank pulls a column from the model and sets it before Roger",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "건설 현장",
+    "construction site",
+    "가온이 모형을 보고 도현을 돌아본다",
+    "Greta looks at the model and turns to Roger",
+    2,
+    "이 설계자 이름이 도면에 있어요.",
+    "This is the name on every drawing.",
+    "low"
+   ],
+   [
+    "건설 현장",
+    "construction site",
+    "도현이 모형을 도로 세우고 해든이 안전모를 쓴다",
+    "Roger rights the model as Frank puts his hard hat on",
+    0,
+    "시공은 여기서 멈추죠.",
+    "Work stops here.",
+    "cu"
+   ],
+   [
+    "건설 현장 밖",
+    "outside the site",
+    "해든이 새 설계 도면을 펼쳐 본다",
+    "Frank unrolls a fresh set of plans",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "취향을 무시한 인테리어 의뢰인",
+  "The Client Who Threw Out My Colors",
+  "업자는 치수만 재라던 의뢰인. 그녀는 이 집을 꾸민 잡지 화보의 디자이너였다.",
+  "A client tells her to just measure. She designed the home in the magazine spread.",
+  [
+   [
+    "H",
+    "장소민",
+    "Mia Dane",
+    "30대 여성, 낡은 셔츠, 견본 책, 짧은 머리",
+    "woman in her 30s, worn shirt, sample book, short hair"
+   ],
+   [
+    "V",
+    "전새별",
+    "Dana Wolff",
+    "40대 여성, 고급 원피스, 긴 목걸이, 새침한 입",
+    "woman in her 40s, fine dress, long necklace, pinched mouth"
+   ],
+   [
+    "A",
+    "김온조",
+    "Peter Noll",
+    "30대 남성, 시공 팀장, 작업복, 줄자",
+    "man in his 30s, site foreman, work clothes, tape measure"
+   ]
+  ],
+  [
+   [
+    "빈 집 거실",
+    "empty living room",
+    "새별이 소민의 견본 책을 바닥에 내려놓는다",
+    "Dana sets Mia's sample book down on the floor",
+    1,
+    "업자는 치수만 재고 가세요.",
+    "Tradespeople just measure and go.",
+    "cz"
+   ],
+   [
+    "빈 집 거실",
+    "empty living room",
+    "새별이 소민의 컬러 칩을 쓰레기통에 버린다",
+    "Dana drops Mia's color chips into the bin",
+    1,
+    "취향은 제가 정해요.",
+    "I choose the taste here.",
+    "ms"
+   ],
+   [
+    "빈 집 거실",
+    "empty living room",
+    "소민이 화보를 벽에서 떼어 새별 앞에 놓는다",
+    "Mia peels the magazine page off the wall and lays it down",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "빈 집 거실",
+    "empty living room",
+    "온조가 화보를 보고 새별을 돌아본다",
+    "Peter looks at the spread and turns to Dana",
+    2,
+    "이 집, 이 디자이너 작품이에요.",
+    "This house is her design.",
+    "low"
+   ],
+   [
+    "빈 집 거실",
+    "empty living room",
+    "새별이 칩을 도로 주워 오고 소민이 가방을 맨다",
+    "Dana picks the chips back up as Mia shoulders her bag",
+    0,
+    "공사는 다른 팀에 맡기죠.",
+    "Give the job to another team.",
+    "cu"
+   ],
+   [
+    "빈 집 창가",
+    "empty room window",
+    "소민이 새 도면을 창가에 펼친다",
+    "Mia spreads a new plan by the window",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "협연자를 뒤로 보낸 악장",
+  "The Concertmaster Who Sent the Soloist Back",
+  "협연자는 따로 대기하라던 악장. 그가 뒤로 보낸 사람이 오늘 무대 앞에 설 바이올리니스트였다.",
+  "A concertmaster benches the soloist. She is the violinist the whole hall came to hear.",
+  [
+   [
+    "H",
+    "이보라",
+    "Anna Grell",
+    "30대 여성, 낡은 검은 원피스, 바이올린 켘이 든 손, 긴 머리",
+    "woman in her 30s, old black dress, violin case in hand, long hair"
+   ],
+   [
+    "V",
+    "박규온",
+    "Stefan Orth",
+    "50대 남성, 연주복, 활을 든 손, 좁은 눈",
+    "man in his 50s, concert dress, bow in hand, narrow eyes"
+   ],
+   [
+    "A",
+    "최시율",
+    "Hugo Paley",
+    "60대 남성, 지휘자, 검은 연미복, 흰 머리",
+    "man in his 60s, conductor, black tailcoat, white hair"
+   ]
+  ],
+  [
+   [
+    "공연장 대기실",
+    "concert hall green room",
+    "규온이 보라의 바이올린 케이스를 발로 민다",
+    "Stefan nudges Anna's violin case with his foot",
+    1,
+    "협연자는 따로 대기해요.",
+    "Soloists wait elsewhere.",
+    "cz"
+   ],
+   [
+    "공연장",
+    "concert hall",
+    "규온이 보라의 의자를 오케스트라 뒤로 옮긴다",
+    "Stefan moves Anna's chair behind the orchestra",
+    1,
+    "무대 앞은 우리 자리예요.",
+    "The front of the stage is ours.",
+    "ms"
+   ],
+   [
+    "공연장",
+    "concert hall",
+    "보라가 자기 케이스에서 프로그램을 꺼내 든다",
+    "Anna takes the program from her own case",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "공연장",
+    "concert hall",
+    "시율이 프로그램을 보고 보라를 무대로 부른다",
+    "Hugo checks the program and calls Anna to the stage",
+    2,
+    "오늘 협연자십니다.",
+    "She is tonight's soloist.",
+    "low"
+   ],
+   [
+    "공연장",
+    "concert hall",
+    "규온이 활을 내리고 보라가 무대 앞에 선다",
+    "Stefan lowers his bow as Anna steps to the front",
+    0,
+    "제 자리는 여기예요.",
+    "My place is right here.",
+    "cu"
+   ],
+   [
+    "공연장 문",
+    "concert hall door",
+    "보라가 악장석 이름표를 새 이름으로 바꾼다",
+    "Anna swaps the nameplate on the concertmaster's chair",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "단장을 관객석으로 보낸 곡예사",
+  "The Acrobat Who Sent the Director Away",
+  "단장은 사무실에 있으라던 곡예사. 그가 관객석으로 보낸 사람이 새 단장이었다.",
+  "A star acrobat sends the director to the seats. She runs the whole circus now.",
+  [
+   [
+    "H",
+    "정아린",
+    "Rita Hobbs",
+    "40대 여성, 낡은 재킷, 짧은 머리, 단단한 어깨",
+    "woman in her 40s, worn jacket, short hair, strong shoulders"
+   ],
+   [
+    "V",
+    "강도담",
+    "Boone Stagg",
+    "30대 남성, 곡예사, 몸에 붙는 공연복, 근육질",
+    "man in his 30s, acrobat, tight stage costume, muscular"
+   ],
+   [
+    "A",
+    "조예결",
+    "Nina Burr",
+    "20대 여성, 무대 감독, 헤드셋, 검은 작업복",
+    "woman in her 20s, stage manager, headset, black work clothes"
+   ]
+  ],
+  [
+   [
+    "서커스 공연장",
+    "circus tent",
+    "도담이 아린의 낡은 재킷을 집어 든다",
+    "Boone lifts Rita's worn jacket between two fingers",
+    1,
+    "단장은 사무실에 계세요.",
+    "The director stays in the office.",
+    "cz"
+   ],
+   [
+    "서커스 공연장",
+    "circus tent",
+    "도담이 아린의 의자를 관객석으로 옮긴다",
+    "Boone moves Rita's chair out into the audience",
+    1,
+    "무대는 우리가 지켜요.",
+    "We own this ring.",
+    "ms"
+   ],
+   [
+    "서커스 공연장",
+    "circus tent",
+    "아린이 포스터를 접어 단장 이름만 남긴다",
+    "Rita folds the poster down to just the director's name",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "서커스 공연장",
+    "circus tent",
+    "예결이 포스터를 보고 아린을 링 위로 부른다",
+    "Nina checks the poster and calls Rita into the ring",
+    2,
+    "새 단장님이십니다.",
+    "Meet the new director.",
+    "low"
+   ],
+   [
+    "서커스 공연장",
+    "circus tent",
+    "도담이 팔짱을 풀고 아린이 링 가운데에 선다",
+    "Boone uncrosses his arms as Rita stands mid-ring",
+    0,
+    "이번 시즌 명단에서 빠지세요.",
+    "You're out of this season's lineup.",
+    "cu"
+   ],
+   [
+    "서커스 공연장 밖",
+    "outside the tent",
+    "아린이 새 시즌 티켓을 매표 창구에 쌓는다",
+    "Rita stacks new season tickets at the box office",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "그림에 손대지 말라던 소장가",
+  "The Collector Who Said Don't Touch",
+  "이 그림엔 손대지 말라던 소장가. 그가 밀어낸 사람이 이 그림의 진위를 가리는 복원가였다.",
+  "A collector bars him from the canvas. He is the restorer who can read its secrets.",
+  [
+   [
+    "H",
+    "윤지솔",
+    "Otto Grieve",
+    "50대 남성, 낡은 조끼, 흰 장갑, 돋보기",
+    "man in his 50s, worn vest, white gloves, loupe"
+   ],
+   [
+    "V",
+    "백하윤",
+    "Helene Trask",
+    "40대 여성, 고급 정장, 짧은 금발, 차가운 눈",
+    "woman in her 40s, fine suit, short blonde hair, cold eyes"
+   ],
+   [
+    "A",
+    "신온유",
+    "Marco Wren",
+    "30대 남성, 감정사, 회색 정장, 서류 가방",
+    "man in his 30s, appraiser, gray suit, document bag"
+   ]
+  ],
+  [
+   [
+    "화랑",
+    "gallery",
+    "하윤이 지솔의 작업 가방을 발로 밀어낸다",
+    "Helene pushes Otto's work bag out of the way",
+    1,
+    "이 그림엔 손대지 마세요.",
+    "Don't touch this painting.",
+    "cz"
+   ],
+   [
+    "화랑",
+    "gallery",
+    "하윤이 지솔의 흰 장갑을 탁자에서 집어 던진다",
+    "Helene snatches Otto's white gloves off the table",
+    1,
+    "복원은 우리가 정한 사람이 해요.",
+    "My restorer is the one I chose.",
+    "ms"
+   ],
+   [
+    "화랑",
+    "gallery",
+    "지솔이 적외선 촬영 사진을 꺼내 그림 옆에 세운다",
+    "Otto sets an infrared scan beside the painting",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "화랑",
+    "gallery",
+    "온유가 사진을 보고 하윤을 돌아본다",
+    "Marco studies the scan and turns to Helene",
+    2,
+    "이 그림, 밑그림이 따로 있어요.",
+    "There's another painting under this one.",
+    "low"
+   ],
+   [
+    "화랑",
+    "gallery",
+    "하윤이 그림 앞에서 손을 떼고 지솔이 사진을 정리한다",
+    "Helene backs away from the canvas as Otto gathers his scans",
+    0,
+    "이 거래, 취소하시죠.",
+    "Cancel this sale.",
+    "cu"
+   ],
+   [
+    "화랑 밖",
+    "outside the gallery",
+    "지솔이 밑그림의 서명을 돋보기로 확대해 본다",
+    "Otto brings the hidden signature into focus",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ]
+]

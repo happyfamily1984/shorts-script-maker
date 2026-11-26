@@ -1,0 +1,912 @@
+[
+ [
+  "우리 앱이 남의 앱이 된 날",
+  "Our App, Their Code",
+  "개발을 맡긴 회사가 남의 코드를 그대로 냈다, 저장 기록 한 줄이 계약을 끝낸다.",
+  "A studio delivers someone else's code as an original build, and the commit history ends the deal.",
+  [
+   [
+    "H",
+    "도결",
+    "Mr. Ormerod",
+    "30대 남성, 무채색 셔츠, 노트북, 조용하고 신중한 눈",
+    "man in his 30s, plain shirt, laptop, quiet careful eyes"
+   ],
+   [
+    "V",
+    "명주",
+    "Ms. Pemberly",
+    "40대 여성, 검은 티셔츠, 금시계, 자신만만한 입",
+    "woman in her 40s, black tee, gold watch, confident mouth"
+   ],
+   [
+    "A",
+    "규정",
+    "Ms. Standish",
+    "30대 여성, 투자사 배지, 코드 대조표, 단호한 눈",
+    "woman in her 30s, investor badge, code comparison sheet, firm eyes"
+   ]
+  ],
+  [
+   [
+    "회의실",
+    "meeting room",
+    "명주가 시연 화면을 띄우며 완성품이라고 말한다",
+    "Pemberly opens a demo screen and calls it finished",
+    1,
+    "석 달 만에 다 만들었어요.",
+    "Built it all in three months.",
+    "cz"
+   ],
+   [
+    "회의실",
+    "meeting room",
+    "명주가 잔금 청구서를 도결 앞에 밀어 놓는다",
+    "Pemberly slides the final invoice across the table",
+    1,
+    "잔금 넣으면 소스 넘겨 드려요.",
+    "Pay the balance and the source is yours.",
+    "ms"
+   ],
+   [
+    "회의실",
+    "meeting room",
+    "도결이 앱 설정 화면 구석의 낯선 회사 로고를 짚는다",
+    "Ormerod points at an unknown logo in the app settings",
+    0,
+    "여기, 다른 회사 이름이 있어요.",
+    "There's another company's name here.",
+    "cu"
+   ],
+   [
+    "회의실",
+    "meeting room",
+    "규정이 저장 기록을 펼쳐 오래된 커밋 날짜를 가리킨다",
+    "Standish opens the commits and points at an old date",
+    2,
+    "이 코드는 삼 년 전에 올라왔어요.",
+    "This code was committed three years ago.",
+    "low"
+   ],
+   [
+    "회의실",
+    "meeting room",
+    "명주가 노트북을 덮고 의자에 앉는다",
+    "Pemberly shuts the laptop and sinks into her chair",
+    0,
+    "잔금 없어요. 계약은 여기서 끝입니다.",
+    "No balance. This contract ends here.",
+    "cu"
+   ],
+   [
+    "회의실 화면",
+    "meeting room screen",
+    "회의실 문이 열리고 다른 창업자가 같은 앱 화면을 든다",
+    "Another founder walks in holding the same app",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "이름만 빌려준 기술자",
+  "A License for Rent",
+  "자격증만 빌려 간 현장, 사장은 그 이름으로 공사를 따내고 기술자는 몰랐다.",
+  "A builder rents a technician's license to win contracts, and the technician finds out at the site.",
+  [
+   [
+    "H",
+    "도재",
+    "Mr. Thornbury",
+    "40대 남성, 안전모, 작업 점퍼, 무뚝뚝한 눈",
+    "man in his 40s, hard hat, work jacket, blunt eyes"
+   ],
+   [
+    "V",
+    "명철",
+    "Mr. Vickers",
+    "50대 남성, 값비싼 정장, 자격증 사본, 능글맞은 입",
+    "man in his 50s, expensive suit, license copies, oily mouth"
+   ],
+   [
+    "A",
+    "연규",
+    "Ms. Wrottesley",
+    "40대 여성, 국토부 배지, 기록 대조표, 단호한 눈",
+    "woman in her 40s, ministry badge, record comparison, firm eyes"
+   ]
+  ],
+  [
+   [
+    "건설 현장",
+    "construction site",
+    "명철이 도재의 자격증 사본을 들고 웃는다",
+    "Vickers grins, holding a copy of Thornbury's license",
+    1,
+    "이름만 빌려주면 매달 돈 드려요.",
+    "Lend me your name and I pay monthly.",
+    "cz"
+   ],
+   [
+    "건설 현장",
+    "construction site",
+    "명철이 게시판에 도재의 이름과 사진을 붙인다",
+    "Vickers pins Thornbury's name and photo to the site board",
+    1,
+    "이 현장, 당신 이름으로 따냈어요.",
+    "I won this site under your name.",
+    "ms"
+   ],
+   [
+    "건설 현장",
+    "construction site",
+    "도재가 게시판 앞에서 자기 이름을 떼어 낸다",
+    "Thornbury pulls his own name off the board",
+    0,
+    "제가 여기 온 적이 없는데요.",
+    "I've never set foot on this site.",
+    "cu"
+   ],
+   [
+    "건설 현장 사무실",
+    "site office",
+    "연규가 보험 기록과 출근 기록을 나란히 펼친다",
+    "Wrottesley sets insurance and attendance records side by side",
+    2,
+    "이분, 다른 현장 출근 기록이 있어요.",
+    "He was logged at another site that day.",
+    "low"
+   ],
+   [
+    "건설 현장",
+    "construction site",
+    "명철이 게시판 사진을 지우려다 손을 멈춘다",
+    "Vickers reaches for the board photo and stops",
+    0,
+    "이름은 오늘 반납, 현장은 멈춰요.",
+    "My name comes off today. This site stops.",
+    "cu"
+   ],
+   [
+    "사무실 서랍",
+    "office drawer",
+    "다른 기술자 이름의 자격증 사본이 수십 장 들어 있다",
+    "Dozens of licenses in other technicians' names fill the drawer",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "리필 병에 남은 손때",
+  "Refilled Bottles, Sold as New",
+  "정품이라던 리필 화장품, 용기의 생산 번호가 삼 년 전 것으로 나온다.",
+  "A shop refills used cosmetic bottles as new, but the batch numbers are three years old.",
+  [
+   [
+    "H",
+    "연담",
+    "Ms. Younghusband",
+    "30대 여성, 흰 가운, 로트 번호표, 차분한 눈",
+    "woman in her 30s, white coat, batch number chart, calm eyes"
+   ],
+   [
+    "V",
+    "명화",
+    "Ms. Abercrombie",
+    "40대 여성, 검은 원피스, 진열 장갑, 서늘한 미소",
+    "woman in her 40s, black dress, display gloves, cold smile"
+   ],
+   [
+    "A",
+    "연호",
+    "Mr. Ballantyne",
+    "30대 남성, 식약처 배지, 회수 기록, 단호한 눈",
+    "man in his 30s, food safety badge, recall records, firm eyes"
+   ]
+  ],
+  [
+   [
+    "화장품 편집숍",
+    "cosmetics shop",
+    "명화가 병에 새 뚜껑을 씌워 진열한다",
+    "Abercrombie caps a bottle and sets it on display",
+    1,
+    "새 제품이에요. 오늘 들어왔어요.",
+    "Brand new. It came in today.",
+    "cz"
+   ],
+   [
+    "화장품 편집숍 뒷방",
+    "shop back room",
+    "명화가 쓰던 병을 물로 헹궈 말린다",
+    "Abercrombie rinses a used bottle and dries it",
+    1,
+    "병은 그대로 써도 티가 안 나요.",
+    "Reuse the bottle. Nobody notices.",
+    "ms"
+   ],
+   [
+    "화장품 편집숍",
+    "cosmetics shop",
+    "연담이 병 바닥의 생산 번호를 확대해 읽는다",
+    "Younghusband magnifies the batch number on the bottle base",
+    0,
+    "이 번호, 삼 년 전 거예요.",
+    "This batch is three years old.",
+    "cu"
+   ],
+   [
+    "식약처 사무실",
+    "food safety office",
+    "연호가 회수 기록과 매장 재고를 대조해 같은 번호를 짚는다",
+    "Ballantyne matches the recall list to store stock",
+    2,
+    "이미 회수된 병입니다.",
+    "This bottle was already recalled.",
+    "low"
+   ],
+   [
+    "화장품 편집숍",
+    "cosmetics shop",
+    "명화가 진열대 병을 상자에 담기 시작한다",
+    "Abercrombie starts boxing the display bottles",
+    0,
+    "판매 중지, 환불은 영수증 없이도 해 주세요.",
+    "Stop selling. Refund with or without receipts.",
+    "cu"
+   ],
+   [
+    "뒷방 선반",
+    "back room shelf",
+    "다른 브랜드의 빈 병이 상자째 쌓여 있다",
+    "Empty bottles of another brand fill a whole box",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "사진과 다른 만남",
+  "The Profile That Wasn't Him",
+  "회원권을 판 업체가 보낸 상대는 사진 속 사람이 아니었다, 프로필 대조가 계약을 끝낸다.",
+  "A matchmaking agency sends stand-ins for dates, until members compare the photos to the faces.",
+  [
+   [
+    "H",
+    "명유",
+    "Mr. Carmichael",
+    "40대 남성, 회색 니트, 회원 카드, 조용한 눈",
+    "man in his 40s, gray knit, member card, quiet eyes"
+   ],
+   [
+    "V",
+    "도화",
+    "Ms. Drummond",
+    "50대 여성, 진주 귀걸이, 프로필 앨범, 얕보는 미소",
+    "woman in her 50s, pearl earrings, profile album, dismissive smile"
+   ],
+   [
+    "A",
+    "서심",
+    "Ms. Erskine",
+    "30대 여성, 공정위 배지, 계약서 철, 단호한 눈",
+    "woman in her 30s, fair trade badge, contract folder, firm eyes"
+   ]
+  ],
+  [
+   [
+    "결혼정보 상담실",
+    "matchmaking office",
+    "도화가 앨범을 펼쳐 조건 좋은 상대를 가리킨다",
+    "Drummond opens an album and points at a promising match",
+    1,
+    "이분이 딱 맞아요. 회원권부터.",
+    "He's perfect for you. Membership first.",
+    "cz"
+   ],
+   [
+    "결혼정보 상담실",
+    "matchmaking office",
+    "도화가 계약서에 도장을 찍고 앨범을 닫는다",
+    "Drummond stamps the contract and closes the album",
+    1,
+    "소개는 저희가 정해요. 고르지 마세요.",
+    "We choose the matches. Not you.",
+    "ms"
+   ],
+   [
+    "카페",
+    "cafe",
+    "명유가 소개받은 사람의 사진과 실제 얼굴을 번갈아 본다",
+    "Carmichael looks from the photo to the face across the table",
+    0,
+    "사진 속 사람이 아니잖아요.",
+    "You aren't the man in this photo.",
+    "cu"
+   ],
+   [
+    "공정위 사무실",
+    "fair trade office",
+    "서심이 사진과 모델 계약서를 나란히 놓는다",
+    "Erskine sets the photo beside a modeling contract",
+    2,
+    "이 사진, 모델 계약 사진이에요.",
+    "These are catalog model photos.",
+    "low"
+   ],
+   [
+    "결혼정보 상담실",
+    "matchmaking office",
+    "도화가 앨범을 서랍에 넣고 자리에서 일어난다",
+    "Drummond shuts the album in a drawer and stands",
+    0,
+    "회원권 환불, 등록은 취소될 거예요.",
+    "Refund the membership. Your license goes next.",
+    "cu"
+   ],
+   [
+    "상담실 대기실",
+    "office waiting room",
+    "다른 회원이 같은 앨범 사진을 펼쳐 들고 앉아 있다",
+    "Another member sits holding the same album photo",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "사흘 맡긴 강아지",
+  "Three Days at the Pet Hotel",
+  "맡긴 반려견이 사흘 만에 달라져 돌아왔다, 사장이 지운 영상이 사무실에 남아 있었다.",
+  "A dog comes back changed after three days, and a deleted camera file survives on the office drive.",
+  [
+   [
+    "H",
+    "연민",
+    "Ms. Fairbairn",
+    "30대 여성, 카키 점퍼, 반려견 목줄, 단단한 눈",
+    "woman in her 30s, khaki jacket, dog leash, steady eyes"
+   ],
+   [
+    "V",
+    "명조",
+    "Mr. Guthrie",
+    "40대 남성, 호텔 유니폼, 사료 통, 무뚝뚝한 입",
+    "man in his 40s, hotel uniform, feed bin, curt mouth"
+   ],
+   [
+    "A",
+    "연백",
+    "Ms. Haverford",
+    "30대 여성, 동물보호 배지, 복구 노트북, 단호한 눈",
+    "woman in her 30s, animal welfare badge, recovery laptop, firm eyes"
+   ]
+  ],
+  [
+   [
+    "펫호텔",
+    "pet hotel",
+    "명조가 강아지를 연민에게 건네며 웃는다",
+    "Guthrie hands the dog back to Fairbairn with a smile",
+    1,
+    "잘 먹고 잘 놀았어요. 걱정 마세요.",
+    "Ate well, played well. Don't worry.",
+    "cz"
+   ],
+   [
+    "펫호텔",
+    "pet hotel",
+    "연민이 구석에 웅크린 강아지를 보고 명조가 어깨를 으쓱한다",
+    "Fairbairn sees the cowering dog as Guthrie shrugs",
+    1,
+    "낯을 가리는 거예요. 흔한 일이죠.",
+    "He's just shy. Very common.",
+    "ms"
+   ],
+   [
+    "펫호텔 로비",
+    "pet hotel lobby",
+    "연민이 로비 화면의 사흘 빈 기록을 본다",
+    "Fairbairn stares at three days of missing footage",
+    0,
+    "이 사흘, 영상이 없네요.",
+    "Three days of footage is gone.",
+    "cu"
+   ],
+   [
+    "펫호텔 사무실",
+    "pet hotel office",
+    "연백이 복구한 영상을 재생해 화면을 돌려 보인다",
+    "Haverford plays a recovered video on her laptop",
+    2,
+    "삭제된 영상이 남아 있었어요.",
+    "The deleted file was still there.",
+    "low"
+   ],
+   [
+    "펫호텔 로비",
+    "pet hotel lobby",
+    "명조가 모니터를 끄고 사무실 문을 닫는다",
+    "Guthrie switches off the monitor and closes the office",
+    0,
+    "영업 정지, 다른 손님들도 다 알게 될 거예요.",
+    "You're suspended. Every owner will know.",
+    "cu"
+   ],
+   [
+    "펫호텔 창고",
+    "pet hotel storeroom",
+    "호텔 문 앞에 강아지를 안은 손님이 서성이고 있다",
+    "A guest holding a dog waits at the hotel door",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "노후를 약속한 홍보관",
+  "The Retirement Home That Was Never Built",
+  "노후를 약속한 실버타운, 인허가 기록에 그런 건물은 없었다.",
+  "A sales office promises a retirement village, but no permit was ever filed for it.",
+  [
+   [
+    "H",
+    "연심",
+    "Mrs. Jardine",
+    "60대 여성, 회색 코트, 돋보기, 또렷한 눈",
+    "woman in her 60s, gray coat, reading glasses, sharp eyes"
+   ],
+   [
+    "V",
+    "명완",
+    "Mr. Kincaid",
+    "40대 남성, 밝은 정장, 조감도, 매끄러운 말투",
+    "man in his 40s, light suit, site rendering, smooth talk"
+   ],
+   [
+    "A",
+    "연재",
+    "Ms. Macallister",
+    "30대 여성, 지자체 배지, 인허가 대장, 단호한 눈",
+    "woman in her 30s, city office badge, permit ledger, firm eyes"
+   ]
+  ],
+  [
+   [
+    "분양 홍보관",
+    "sales gallery",
+    "명완이 조감도를 가리키며 계약금을 재촉한다",
+    "Kincaid points at the rendering and pushes for a deposit",
+    1,
+    "여기 들어가면 평생 걱정 없어요.",
+    "Move in here and never worry again.",
+    "cz"
+   ],
+   [
+    "분양 홍보관",
+    "sales gallery",
+    "명완이 계약금 봉투를 받아 금고에 넣는다",
+    "Kincaid takes the deposit envelope and locks it away",
+    1,
+    "자리는 먼저 오신 분들 거예요.",
+    "Units go to whoever comes first.",
+    "ms"
+   ],
+   [
+    "분양 홍보관",
+    "sales gallery",
+    "연심이 조감도 아래 작은 글씨의 사업 번호를 적는다",
+    "Jardine writes down the permit number in small print",
+    0,
+    "번호를 하나 적어 둘게요.",
+    "Let me write this number down.",
+    "cu"
+   ],
+   [
+    "지자체 사무실",
+    "city office",
+    "연재가 인허가 대장을 펼쳐 빈칸을 가리킨다",
+    "Macallister opens the permit ledger and points at a blank",
+    2,
+    "이 주소에는 허가 신청이 없어요.",
+    "No permit was ever filed for this address.",
+    "low"
+   ],
+   [
+    "분양 홍보관",
+    "sales gallery",
+    "명완이 조감도를 내리고 홍보관 조명을 끈다",
+    "Kincaid takes the rendering down and switches off the lights",
+    0,
+    "계약금은 오늘 다 돌려받을 거예요.",
+    "Every deposit comes back today.",
+    "cu"
+   ],
+   [
+    "홍보관 옆 건물",
+    "next door to the gallery",
+    "같은 조감도를 건 다른 분양소의 간판이 보인다",
+    "The same rendering hangs at another sales office next door",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "심은 지 한 달 만에 죽은 나무",
+  "The Trees That Died in a Month",
+  "정원에 심은 나무가 한 달 만에 죽었다, 뿌리 검사가 묘목의 출처를 밝힌다.",
+  "The trees planted in his garden die within weeks, and a root check traces their origin.",
+  [
+   [
+    "H",
+    "도명",
+    "Mr. Nairn",
+    "50대 남성, 카디건, 정원 장갑, 조용한 눈",
+    "man in his 50s, cardigan, garden gloves, quiet eyes"
+   ],
+   [
+    "V",
+    "도휘",
+    "Mr. Ogilvie",
+    "40대 남성, 조경 작업복, 삽, 큰 목소리",
+    "man in his 40s, landscaping overalls, shovel, loud voice"
+   ],
+   [
+    "A",
+    "규성",
+    "Mr. Pitcairn",
+    "30대 남성, 산림청 배지, 검역 기록, 단호한 눈",
+    "man in his 30s, forestry badge, quarantine record, firm eyes"
+   ]
+  ],
+  [
+   [
+    "정원",
+    "garden",
+    "도휘가 나무를 심으며 흙을 다진다",
+    "Ogilvie plants a tree and pats the soil down",
+    1,
+    "이 나무, 백 년은 살아요.",
+    "These trees will live a hundred years.",
+    "cz"
+   ],
+   [
+    "정원",
+    "garden",
+    "도휘가 빈 화분을 트럭에 싣고 서둘러 떠난다",
+    "Ogilvie loads empty pots and drives off quickly",
+    1,
+    "관리는 알아서 하세요. 난 끝났어요.",
+    "You water them. I'm done.",
+    "ms"
+   ],
+   [
+    "정원",
+    "garden",
+    "도명이 죽은 나무를 뽑아 뿌리의 흙을 털어 본다",
+    "Nairn pulls up a dead tree and shakes out its roots",
+    0,
+    "뿌리가 아예 없네요.",
+    "There's barely any root here.",
+    "cu"
+   ],
+   [
+    "산림청 사무실",
+    "forestry office",
+    "규성이 묘목 검역 기록을 펼쳐 병해 표시를 짚는다",
+    "Pitcairn opens the quarantine log and points at a disease mark",
+    2,
+    "이 묘목, 반입 금지 품목이었어요.",
+    "These saplings were banned from entry.",
+    "low"
+   ],
+   [
+    "정원",
+    "garden",
+    "도휘가 트럭 문을 닫으려다 도명이 서류를 건넨다",
+    "Ogilvie starts to shut the truck door as Nairn hands him papers",
+    0,
+    "환불하고, 이 묘목 다 걷어 가세요.",
+    "Refund me and haul every tree back.",
+    "cu"
+   ],
+   [
+    "트럭 적재함",
+    "truck bed",
+    "트럭 옆에서 같은 묘목을 든 정원사가 명판을 내민다",
+    "A gardener by the truck holds out another sign",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "도수가 다른 안경",
+  "Glasses With the Wrong Prescription",
+  "처방대로 맞췄다던 안경, 렌즈 도수가 달라 눈이 더 나빠졌다. 검안 기록이 답이었다.",
+  "A shop sells glasses that do not match the prescription, and the fitting record proves it.",
+  [
+   [
+    "H",
+    "서여",
+    "Ms. Taggart",
+    "30대 여성, 회색 재킷, 안경 케이스, 단단한 눈",
+    "woman in her 30s, gray blazer, glasses case, steady eyes"
+   ],
+   [
+    "V",
+    "명로",
+    "Mr. Urwin",
+    "50대 남성, 안경점 앞치마, 렌즈 통, 능청스러운 입",
+    "man in his 50s, optician apron, lens tray, sly mouth"
+   ],
+   [
+    "A",
+    "연오",
+    "Ms. Wemyss",
+    "40대 여성, 검안사 가운, 검안 기록, 단호한 눈",
+    "woman in her 40s, optometrist coat, fitting record, firm eyes"
+   ]
+  ],
+  [
+   [
+    "안경점",
+    "optician shop",
+    "명로가 안경을 건네며 도수를 확인하라고 한다",
+    "Urwin hands over the glasses and tells her to check",
+    1,
+    "처방 그대로 맞췄어요. 그대로 써요.",
+    "Made to your prescription. Just wear them.",
+    "cz"
+   ],
+   [
+    "안경점",
+    "optician shop",
+    "명로가 처방전을 서랍에 넣고 다른 렌즈 통을 집는다",
+    "Urwin locks the prescription away and takes another tray",
+    1,
+    "이 렌즈, 남는 거라 싸게 드릴게요.",
+    "Leftover lenses. Cheap for you.",
+    "ms"
+   ],
+   [
+    "아파트 계단",
+    "apartment stairway",
+    "서여가 안경을 쓰고 계단에서 휘청이며 벽을 짚는다",
+    "Taggart wobbles on the stairs and steadies herself on the wall",
+    0,
+    "글씨가 더 흐려졌어요.",
+    "Everything is blurrier now.",
+    "cu"
+   ],
+   [
+    "검안실",
+    "exam room",
+    "연오가 렌즈 도수를 측정해 처방전 숫자와 나란히 쓴다",
+    "Wemyss measures the lenses and writes them beside the numbers",
+    2,
+    "도수가 두 단계 낮아요.",
+    "These lenses are two steps too weak.",
+    "low"
+   ],
+   [
+    "안경점",
+    "optician shop",
+    "명로가 서랍의 렌즈 통을 꺼내 카운터에 내려놓는다",
+    "Urwin sets the lens tray on the counter",
+    0,
+    "환불하고, 처방전대로 다시 맞춰 주세요.",
+    "Refund me and remake them to my prescription.",
+    "cu"
+   ],
+   [
+    "매장 뒷선반",
+    "back shelf",
+    "다른 손님 처방전이 담긴 상자들이 쌓여 있다",
+    "Boxes holding other customers' prescriptions sit stacked",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "반값 요금제의 함정",
+  "The Half-Price Phone Plan",
+  "반값 요금제라던 대리점, 석 달 뒤 청구서에는 본사에 없는 요금이 붙어 있었다.",
+  "A phone shop sells a half-price plan, but the bill lists charges the carrier never made.",
+  [
+   [
+    "H",
+    "도초",
+    "Mr. Yeoman",
+    "20대 남성, 회색 후드, 스마트폰, 무심한 눈",
+    "man in his 20s, gray hoodie, smartphone, deadpan eyes"
+   ],
+   [
+    "V",
+    "명찬",
+    "Mr. Abernethy",
+    "30대 남성, 대리점 유니폼, 요금표, 큰 웃음",
+    "man in his 30s, shop uniform, rate sheet, big laugh"
+   ],
+   [
+    "A",
+    "규상",
+    "Ms. Baillie",
+    "30대 여성, 통신사 배지, 요금 목록, 단호한 눈",
+    "woman in her 30s, carrier badge, plan list, firm eyes"
+   ]
+  ],
+  [
+   [
+    "휴대폰 대리점",
+    "phone shop",
+    "명찬이 요금표에 펜으로 동그라미를 친다",
+    "Abernethy circles a rate on the plan sheet",
+    1,
+    "이 요금제, 반값이에요. 오늘만.",
+    "Half price. Today only.",
+    "cz"
+   ],
+   [
+    "휴대폰 대리점",
+    "phone shop",
+    "명찬이 도초의 휴대폰을 받아 개통 화면을 넘긴다",
+    "Abernethy takes the phone and scrolls the setup screen",
+    1,
+    "부가 서비스는 제가 알아서 넣어 둘게요.",
+    "I'll add the extras for you.",
+    "ms"
+   ],
+   [
+    "도초의 집",
+    "Docho's apartment",
+    "도초가 청구서의 낯선 항목을 손가락으로 짚는다",
+    "Yeoman points at a line he never signed up for",
+    0,
+    "이 요금, 신청한 적 없는데요.",
+    "I never signed up for this charge.",
+    "cu"
+   ],
+   [
+    "통신사 지점",
+    "carrier branch",
+    "규상이 본사 요금 목록을 펼쳐 같은 이름이 없음을 보여 준다",
+    "Baillie opens the carrier list without that plan on it",
+    2,
+    "이 요금제는 본사에 없습니다.",
+    "This plan doesn't exist at the carrier.",
+    "low"
+   ],
+   [
+    "휴대폰 대리점",
+    "phone shop",
+    "명찬이 요금표를 떼어 내고 계산대를 정리한다",
+    "Abernethy pulls the rate sheet down and clears the counter",
+    0,
+    "부가 요금 전부 취소, 점장은 교체요.",
+    "Cancel every add-on. And you're replaced.",
+    "cu"
+   ],
+   [
+    "대리점 벽면",
+    "shop wall",
+    "같은 요금표가 다른 지점 이름으로도 붙어 있다",
+    "The same rate sheet hangs under another branch's name",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "기성복에 붙은 맞춤표",
+  "A Ready-Made Suit Called Custom",
+  "석 달 기다려 받은 맞춤 정장, 안감 라벨에는 공장 제품 번호가 찍혀 있었다.",
+  "He waits three months for a custom suit, and the lining label shows a factory batch code.",
+  [
+   [
+    "H",
+    "도근",
+    "Mr. Chisholm",
+    "30대 남성, 회색 니트, 정장 가방, 조용한 눈",
+    "man in his 30s, gray knit, suit bag, quiet eyes"
+   ],
+   [
+    "V",
+    "명제",
+    "Mr. Dalgleish",
+    "50대 남성, 조끼 정장, 줄자, 큰 목소리",
+    "man in his 50s, vest and tie, tape measure, loud voice"
+   ],
+   [
+    "A",
+    "규일",
+    "Mr. Elphinstone",
+    "40대 남성, 원단 수입사 배지, 견본 철, 반듯한 자세",
+    "man in his 40s, fabric importer badge, swatch folder, upright posture"
+   ]
+  ],
+  [
+   [
+    "맞춤 정장점",
+    "tailor shop",
+    "명제가 줄자로 도근의 어깨를 재며 고개를 끄덕인다",
+    "Dalgleish measures Chisholm's shoulder and nods",
+    1,
+    "이건 손으로 다 짓는 거예요.",
+    "Every stitch here is done by hand.",
+    "cz"
+   ],
+   [
+    "맞춤 정장점",
+    "tailor shop",
+    "명제가 치수를 적은 종이를 서랍에 넣고 창고 문을 연다",
+    "Dalgleish locks the measurements away and opens the storeroom",
+    1,
+    "석 달 걸려요. 기다리세요.",
+    "Three months. Wait for it.",
+    "ms"
+   ],
+   [
+    "맞춤 정장점",
+    "tailor shop",
+    "도근이 받은 정장 안감에서 공장 라벨을 발견한다",
+    "Chisholm finds a factory label inside the lining",
+    0,
+    "이 라벨, 공장 거예요.",
+    "This is a factory label.",
+    "cu"
+   ],
+   [
+    "원단 수입사",
+    "fabric importer",
+    "규일이 원단 견본과 라벨 번호를 대조해 고개를 젓는다",
+    "Elphinstone checks the swatch against the label and shakes his head",
+    2,
+    "이 원단은 저희가 납품한 적 없어요.",
+    "We never supplied this fabric.",
+    "low"
+   ],
+   [
+    "맞춤 정장점",
+    "tailor shop",
+    "명제가 재단대 위 천을 걷어 내린다",
+    "Dalgleish sweeps the cloth off the cutting table",
+    0,
+    "값 차액 돌려주고, 이 정장 반품이에요.",
+    "Refund the difference. I'm returning this suit.",
+    "cu"
+   ],
+   [
+    "정장점 창고",
+    "tailor shop storeroom",
+    "같은 라벨이 붙은 정장 수십 벌이 걸려 있다",
+    "Dozens of suits with the same label hang in the back",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ]
+]

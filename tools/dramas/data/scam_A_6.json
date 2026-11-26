@@ -1,0 +1,912 @@
+[
+ [
+  "변호사라고 믿은 남자",
+  "The Lawyer Who Never Passed",
+  "돈을 뜯으며 조언하던 가짜 변호사, 의뢰인이 켜 둔 녹음이 사무실을 끝낸다.",
+  "A fake lawyer drains a restaurant owner's savings, until the recording left running ends his office.",
+  [
+   [
+    "H",
+    "도관",
+    "Mr. Costain",
+    "50대 남성, 낡은 앞치마, 짧은 회색 머리, 조용한 눈",
+    "man in his 50s, worn apron, short gray hair, quiet eyes"
+   ],
+   [
+    "V",
+    "명오",
+    "Mr. Hobbins",
+    "30대 남성, 값비싼 정장, 반짝이는 구두, 자신만만한 입",
+    "man in his 30s, expensive suit, shiny shoes, confident mouth"
+   ],
+   [
+    "A",
+    "서란",
+    "Ms. Prendergast",
+    "40대 여성, 검은 정장, 조사 수첩, 단호한 눈",
+    "woman in her 40s, black suit, investigation notebook, firm eyes"
+   ]
+  ],
+  [
+   [
+    "법률 사무소 상담실",
+    "law office consulting room",
+    "명오가 도관 앞의 수임료 봉투를 손가락으로 끌어당긴다",
+    "Hobbins slides the retainer envelope toward himself",
+    1,
+    "선임료부터. 이기면 따로야.",
+    "Retainer first. Winning costs extra.",
+    "cz"
+   ],
+   [
+    "법률 사무소 상담실",
+    "law office consulting room",
+    "명오가 서류를 찢어 통에 버리고 도관이 굳은 얼굴로 본다",
+    "Hobbins tears the papers into the bin while Costain stares",
+    1,
+    "이 정도 증거로는 아무도 안 도와줘.",
+    "With this evidence, no one will help you.",
+    "ms"
+   ],
+   [
+    "법률 사무소 상담실",
+    "law office consulting room",
+    "도관이 주머니 속 휴대폰의 녹음 화면을 몰래 확인한다",
+    "Costain quietly checks the recording screen in his pocket",
+    0,
+    "진작 켜 뒀습니다. 처음부터.",
+    "It's been on since the start.",
+    "cu"
+   ],
+   [
+    "법률 사무소 상담실",
+    "law office consulting room",
+    "서란이 문을 열고 들어와 명오 앞에 조회 화면을 내민다",
+    "Prendergast walks in and holds up a registry screen",
+    2,
+    "이 번호로 등록된 변호사는 없어요.",
+    "No lawyer is registered under this number.",
+    "low"
+   ],
+   [
+    "법률 사무소 상담실",
+    "law office consulting room",
+    "명오가 서류 가방을 챙겨 일어나고 도관이 문 앞을 막는다",
+    "Hobbins grabs his briefcase as Costain blocks the doorway",
+    0,
+    "가방은 두고 가세요. 경찰이 옵니다.",
+    "Leave the bag. The police are coming.",
+    "cu"
+   ],
+   [
+    "법률 사무소 정문 앞",
+    "outside the law office",
+    "검은 차에서 내린 남자가 서란에게 이름이 빽빽한 명단을 건넨다",
+    "A man steps from a black car and hands Prendergast a long name list",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "장례 보증서가 휴지가 된 날",
+  "The Funeral Plan That Vanished",
+  "십 년 낸 상조회비, 쓸 날이 오자 만료라 한다. 할머니의 영수증 뭉치가 답이 된다.",
+  "Ten years of funeral payments, and on the day she needs them the plan has expired.",
+  [
+   [
+    "H",
+    "연옥",
+    "Mrs. Barwick",
+    "60대 여성, 꽃무늬 저고리, 짧은 곱슬머리, 또렷한 눈",
+    "woman in her 60s, floral jacket, short curly hair, sharp eyes"
+   ],
+   [
+    "V",
+    "도혜",
+    "Ms. Tulloch",
+    "40대 여성, 진주 목걸이, 회색 정장, 얕보는 미소",
+    "woman in her 40s, pearl necklace, gray suit, dismissive smile"
+   ],
+   [
+    "A",
+    "서문",
+    "Mr. Marchmont",
+    "30대 남성, 남색 정장, 감사 배지, 반듯한 자세",
+    "man in his 30s, navy suit, audit badge, upright posture"
+   ]
+  ],
+  [
+   [
+    "상조 사무실",
+    "funeral plan office",
+    "도혜가 연옥의 보증서를 집어 반으로 접는다",
+    "Tulloch picks up the certificate and folds it in half",
+    1,
+    "이건 만료됐어요. 다시 드세요.",
+    "This one expired. Buy a new plan.",
+    "cz"
+   ],
+   [
+    "상조 사무실",
+    "funeral plan office",
+    "도혜가 보증서를 서랍에 넣고 손사래를 친다",
+    "Tulloch locks the paper away and waves her off",
+    1,
+    "증명할 서류? 없으면 그냥 나가요.",
+    "No paperwork? Then just leave.",
+    "ms"
+   ],
+   [
+    "상조 사무실",
+    "funeral plan office",
+    "연옥이 봉투에서 두툼한 영수증 묶음을 꺼내 탁자에 놓는다",
+    "Barwick lays a thick stack of receipts on the desk",
+    0,
+    "열 해치, 한 장도 안 버렸어요.",
+    "Ten years of receipts. I kept every one.",
+    "cu"
+   ],
+   [
+    "상조 사무실",
+    "funeral plan office",
+    "서문이 들어와 노트북 화면을 돌려 장부를 보여 준다",
+    "Marchmont enters and turns his laptop screen toward them",
+    2,
+    "본사 장부에 이 계약은 없습니다.",
+    "This contract isn't in our system.",
+    "low"
+   ],
+   [
+    "상조 사무실",
+    "funeral plan office",
+    "도혜가 서랍을 열다 영수증 뭉치를 떨어뜨린다",
+    "Tulloch yanks the drawer open and drops a bundle of receipts",
+    0,
+    "환불금, 오늘 안에 다 채워 넣으세요.",
+    "Refund every penny by tonight.",
+    "cu"
+   ],
+   [
+    "상조 사무실 유리창 밖",
+    "outside the office window",
+    "검은 양복 남자가 유리창 너머로 다른 피해자 명단을 들어 보인다",
+    "A man in black lifts a list of other victims toward the window",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "선금만 받고 사라진 목수",
+  "Paid Upfront, Left Unfinished",
+  "공사비 절반을 받고 잠적한 업자, 집주인의 도면과 자재 라벨이 그의 말을 벗긴다.",
+  "A contractor takes half the money and vanishes, but the owner's drawings and labels expose him.",
+  [
+   [
+    "H",
+    "규하",
+    "Ms. Dunleavy",
+    "30대 여성, 회색 니트, 안전모를 든 손, 차분한 눈",
+    "woman in her 30s, gray knit, holding a hard hat, calm eyes"
+   ],
+   [
+    "V",
+    "도천",
+    "Mr. Fallow",
+    "40대 남성, 먼지 묻은 작업복, 굵은 팔, 큰 목소리",
+    "man in his 40s, dusty work clothes, thick arms, loud voice"
+   ],
+   [
+    "A",
+    "명서",
+    "Mr. Grendon",
+    "30대 남성, 흰 셔츠, 보증 서류철, 반듯한 자세",
+    "man in his 30s, white shirt, warranty folder, upright posture"
+   ]
+  ],
+  [
+   [
+    "아파트 공사 현장",
+    "apartment under renovation",
+    "도천이 벽에서 뜯은 벽지를 바닥에 던진다",
+    "Fallow rips wallpaper off the wall and throws it down",
+    1,
+    "자재값 올랐어. 천만 원 더 줘.",
+    "Materials went up. Ten thousand more.",
+    "cz"
+   ],
+   [
+    "아파트 공사 현장",
+    "apartment under renovation",
+    "도천이 사다리를 걷어차고 나가고 규하가 빈 방에 선다",
+    "Fallow kicks the ladder and leaves Dunleavy alone in the room",
+    1,
+    "안 되면 못 해. 나는 간다.",
+    "Pay, or I walk out right now.",
+    "ms"
+   ],
+   [
+    "아파트 공사 현장",
+    "apartment under renovation",
+    "규하가 뜯긴 자재를 들어 라벨을 손끝으로 짚는다",
+    "Dunleavy lifts a torn panel and touches its label",
+    0,
+    "이 라벨, 견적서와 다른데.",
+    "This label isn't on the quote.",
+    "cu"
+   ],
+   [
+    "아파트 공사 현장",
+    "apartment under renovation",
+    "명서가 서류를 펼쳐 보증보험 특약 조항을 가리킨다",
+    "Grendon opens a file and points to the warranty clause",
+    2,
+    "보증보험에 들어 있어요. 업체 몫입니다.",
+    "He is bonded. The insurer pays.",
+    "low"
+   ],
+   [
+    "아파트 공사 현장",
+    "apartment under renovation",
+    "명서가 등록 말소 통지서를 도천 앞에 내려놓는다",
+    "Grendon sets a license revocation notice in front of Fallow",
+    0,
+    "현장은 내가 지켜요. 등록은 오늘 끝.",
+    "I keep the site. Your license ends today.",
+    "cu"
+   ],
+   [
+    "완공된 거실",
+    "finished living room",
+    "새 목수가 도면을 펴다 구석에 연필로 적힌 메모를 발견한다",
+    "A new carpenter unfolds the drawing and finds a penciled note",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "월 천만 원 부업 강의의 정체",
+  "The Side-Hustle Guru's Fake Screenshots",
+  "수익 인증 사진으로 수강생을 모은 강사, 그 사진의 원본은 남의 계좌 화면이었다.",
+  "A guru sells a side-hustle course with stolen earnings screenshots, until one student checks.",
+  [
+   [
+    "H",
+    "태온",
+    "Callum Pellow",
+    "20대 후반 남성, 회색 후드티, 배낭, 피곤하지만 또렷한 눈",
+    "man in his late 20s, gray hoodie, backpack, tired but clear eyes"
+   ],
+   [
+    "V",
+    "도찬",
+    "Mr. Sallow",
+    "30대 남성, 흰 셔츠에 금시계, 번들거리는 머리, 들뜬 목소리",
+    "man in his 30s, white shirt, gold watch, slick hair, hyped voice"
+   ],
+   [
+    "A",
+    "서람",
+    "Ms. Twining",
+    "30대 여성, 검은 재킷, 태블릿, 단정한 묶음 머리",
+    "woman in her 30s, black jacket, tablet, neat tied hair"
+   ]
+  ],
+  [
+   [
+    "강의 스튜디오",
+    "online course studio",
+    "도찬이 카메라 앞에서 손가락으로 계좌 화면을 두드린다",
+    "Sallow taps the account screen in front of the camera",
+    1,
+    "이 계좌, 한 달에 천만 원이야.",
+    "This account made ten thousand last month.",
+    "cz"
+   ],
+   [
+    "강의 스튜디오",
+    "online course studio",
+    "태온이 채팅창에 환불을 적고 도찬이 창을 닫는다",
+    "Sallow closes the chat window as Callum types for a refund",
+    1,
+    "환불은 없어. 네가 못 따라온 거지.",
+    "No refunds. You just couldn't keep up.",
+    "ms"
+   ],
+   [
+    "강의 스튜디오",
+    "online course studio",
+    "태온이 인증 사진을 확대해 구석의 시계 시간을 본다",
+    "Callum zooms the screenshot to the clock in its corner",
+    0,
+    "이 사진, 세 강의에 똑같이 쓰였어요.",
+    "Same screenshot. Three different courses.",
+    "cu"
+   ],
+   [
+    "강의 스튜디오",
+    "online course studio",
+    "서람이 노트북을 돌려 정산 계좌의 이름을 보여 준다",
+    "Twining turns her laptop to show the account holder's name",
+    2,
+    "이 계좌는 다른 강사 겁니다.",
+    "That account belongs to another teacher.",
+    "low"
+   ],
+   [
+    "강의 스튜디오",
+    "online course studio",
+    "도찬의 채널 화면이 회색이 되고 그가 의자에 주저앉는다",
+    "Sallow's channel goes gray and he slumps into his chair",
+    0,
+    "환불은 오늘부터. 전원에게.",
+    "Refunds start today. Everyone gets one.",
+    "cu"
+   ],
+   [
+    "닫힌 스튜디오 문 앞",
+    "outside the closed studio",
+    "복도 끝에서 낯선 여자가 같은 강의 교재를 들고 걸어온다",
+    "A woman down the hall walks over holding the same course workbook",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "피부관리실이 문을 닫은 날",
+  "The Clinic That Closed Overnight",
+  "백 회를 선불로 낸 회원, 원장은 폐업 하루 전까지 새 회원을 받고 있었다.",
+  "A member pays for a hundred sessions, days before the clinic locks its doors for good.",
+  [
+   [
+    "H",
+    "명아",
+    "Ms. Harkaway",
+    "40대 여성, 회색 정장, 서류 가방, 지친 듯 또렷한 눈",
+    "woman in her 40s, gray suit, briefcase, tired sharp eyes"
+   ],
+   [
+    "V",
+    "도월",
+    "Ms. Vellacott",
+    "40대 여성, 분홍 가운, 짧게 염색한 머리, 서늘한 미소",
+    "woman in her 40s, pink gown, short dyed hair, cold smile"
+   ],
+   [
+    "A",
+    "서신",
+    "Mr. Quarrie",
+    "30대 남성, 구청 유니폼, 점검표, 반듯한 자세",
+    "man in his 30s, city office uniform, checklist, upright posture"
+   ]
+  ],
+  [
+   [
+    "피부관리실",
+    "skin care clinic",
+    "도월이 명아의 예약표를 찢어 쓰레기통에 넣는다",
+    "Vellacott tears Harkaway's booking sheet into the bin",
+    1,
+    "이번 주까지만 해요. 건물이 팔렸거든요.",
+    "This week only. The building sold.",
+    "cz"
+   ],
+   [
+    "피부관리실",
+    "skin care clinic",
+    "도월이 명아의 회원증을 계산대에 던지고 등을 돌린다",
+    "Vellacott tosses the membership card back and turns away",
+    1,
+    "소송하려면 변호사부터 구해요.",
+    "Sue me. Go find a lawyer first.",
+    "ms"
+   ],
+   [
+    "피부관리실",
+    "skin care clinic",
+    "명아가 휴대폰으로 회원 장부를 찍어 날짜를 확인한다",
+    "Harkaway photographs the member ledger and its dates",
+    0,
+    "제 이름 옆에 날짜가 다 있네요.",
+    "Every date is right beside my name.",
+    "cu"
+   ],
+   [
+    "피부관리실",
+    "skin care clinic",
+    "서신이 폐업 신고서 사본을 꺼내 명아에게 보여 준다",
+    "Quarrie holds out a copy of the closure filing",
+    2,
+    "두 달 전에 폐업 신고가 들어왔어요.",
+    "The closure was filed two months ago.",
+    "low"
+   ],
+   [
+    "피부관리실",
+    "skin care clinic",
+    "도월이 서류를 챙겨 뒷문 앞에서 멈춰 선다",
+    "Vellacott gathers papers and freezes at the back door",
+    0,
+    "환불금, 회원 수대로 계산해 두세요.",
+    "Refund every member. Count them twice.",
+    "cu"
+   ],
+   [
+    "폐업한 가게 앞",
+    "in front of the closed shop",
+    "폐업 안내문 위로 같은 번호를 쓴 다른 가게 간판이 보인다",
+    "A second shop sign with the same phone number hangs above",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "혈통서를 든 강아지",
+  "The Puppy With a Forged Pedigree",
+  "명품 견종이라던 분양업자, 혈통서 번호 한 줄에 그의 장부가 드러난다.",
+  "A breeder sells a purebred puppy with a forged pedigree, and one number ends him.",
+  [
+   [
+    "H",
+    "연봄",
+    "Ms. Colquhoun",
+    "30대 여성, 베이지 코트, 반려견 가방, 단단한 눈",
+    "woman in her 30s, beige coat, dog carrier, steady eyes"
+   ],
+   [
+    "V",
+    "명봉",
+    "Mr. Struthers",
+    "50대 남성, 값싼 셔츠, 목에 건 수건, 능청스러운 입",
+    "man in his 50s, cheap shirt, towel on his neck, sly mouth"
+   ],
+   [
+    "A",
+    "서숙",
+    "Ms. Cairncross",
+    "30대 여성, 검은 재킷, 등록 대장, 단정한 단발",
+    "woman in her 30s, black jacket, registry book, neat bob"
+   ]
+  ],
+  [
+   [
+    "반려견 분양 매장",
+    "puppy sales shop",
+    "명봉이 강아지 앞에서 혈통서를 흔들어 보인다",
+    "Struthers waves the pedigree paper over the puppy",
+    1,
+    "이 혈통서면 값이 두 배야.",
+    "With this pedigree, the price doubles.",
+    "cz"
+   ],
+   [
+    "반려견 분양 매장",
+    "puppy sales shop",
+    "명봉이 연봄의 돈을 세며 서류비를 더 요구한다",
+    "Struthers counts her money and asks for paper fees",
+    1,
+    "등록은 따로야. 서류비 오십.",
+    "Registration is extra. Fifty for papers.",
+    "ms"
+   ],
+   [
+    "반려견 분양 매장",
+    "puppy sales shop",
+    "연봄이 혈통서 번호를 입력하고 화면이 붉게 뜬다",
+    "Colquhoun types the pedigree number and the screen turns red",
+    0,
+    "이 번호, 조회가 안 되네요.",
+    "This number doesn't come up.",
+    "cu"
+   ],
+   [
+    "반려견 분양 매장",
+    "puppy sales shop",
+    "서숙이 등록 대장을 펼쳐 같은 번호 옆 다른 이름을 짚는다",
+    "Cairncross opens the registry and points to a second name",
+    2,
+    "이 번호는 세 마리에 쓰였어요.",
+    "This number was used on three dogs.",
+    "low"
+   ],
+   [
+    "반려견 분양 매장",
+    "puppy sales shop",
+    "명봉이 계산대 서랍을 닫으며 뒷걸음친다",
+    "Struthers shuts the register drawer and steps back",
+    0,
+    "등록 취소, 영업 정지예요. 오늘부터.",
+    "License revoked. Closed as of today.",
+    "cu"
+   ],
+   [
+    "매장 유리창",
+    "shop window",
+    "유리창에 임대 문의 스티커, 옆에 다른 매장 주소 전단이 붙어 있다",
+    "A lease sign fills the window, next to another shop's flyer",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "1++라던 고기",
+  "The Beef That Was Never Prime",
+  "1++ 등급이라던 정육점, 판정서 한 장이 위조였다는 사실이 계산대에서 드러난다.",
+  "A butcher stamps prime grade on cheap cuts, until one forged certificate is checked.",
+  [
+   [
+    "H",
+    "명예",
+    "Mrs. Thistlewood",
+    "50대 여성, 꽃무늬 블라우스, 장바구니, 또렷한 눈",
+    "woman in her 50s, floral blouse, shopping basket, sharp eyes"
+   ],
+   [
+    "V",
+    "도태",
+    "Mr. Braithwaite",
+    "40대 남성, 기름 묻은 앞치마, 짧은 머리, 큰 목소리",
+    "man in his 40s, stained apron, short hair, loud voice"
+   ],
+   [
+    "A",
+    "명한",
+    "Mr. Ludlow",
+    "40대 남성, 등급 판정 유니폼, 조회기, 단호한 눈",
+    "man in his 40s, grading uniform, scanner, resolute eyes"
+   ]
+  ],
+  [
+   [
+    "정육점",
+    "butcher shop",
+    "도태가 고기 팩 위에 1++ 라벨을 붙인다",
+    "Braithwaite sticks a prime-grade label on a meat pack",
+    1,
+    "이건 최고 등급이야. 묻지 마.",
+    "Top grade. No need to ask.",
+    "cz"
+   ],
+   [
+    "정육점",
+    "butcher shop",
+    "도태가 고기 팩을 명예 앞으로 밀어 놓는다",
+    "Braithwaite shoves the meat pack toward Myeongye",
+    0,
+    "안 믿으면 나가. 여긴 내 가게야.",
+    "Don't believe it? Get out. My shop.",
+    "ms"
+   ],
+   [
+    "정육점",
+    "butcher shop",
+    "명예가 라벨을 떼어 도장을 살피고 이력 번호를 적는다",
+    "Myeongye peels the label, studies the stamp, and notes the trace number",
+    0,
+    "이 도장, 원본과 달라요. 번호 확인할게요.",
+    "This stamp isn't right. I'll check the number.",
+    "cu"
+   ],
+   [
+    "정육점",
+    "butcher shop",
+    "명한이 판정서 원본과 라벨을 나란히 놓고 본다",
+    "Ludlow sets the original certificate beside the label",
+    2,
+    "이 도장, 우리 원본이 아닙니다.",
+    "That stamp isn't ours.",
+    "low"
+   ],
+   [
+    "정육점",
+    "butcher shop",
+    "도태가 라벨 통을 뒤집어 쏟고 명예가 계산대 앞에 선다",
+    "Braithwaite spills the label box as Thistlewood steps to the counter",
+    0,
+    "영업 정지요. 손님들 앞에서 말할게요.",
+    "You're shut down. I'll say it out loud.",
+    "cu"
+   ],
+   [
+    "정육점 진열대",
+    "butcher counter",
+    "다른 손님이 같은 판정서를 들고 가게로 들어온다",
+    "Another customer walks in holding the same certificate",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "행사 도시락의 원산지",
+  "Catering With Borrowed Labels",
+  "회사 행사 도시락의 라벨을 바꿔 붙인 업체, 총무의 사진 한 장이 계약을 끝낸다.",
+  "A caterer swaps the origin labels on company lunches, and one photo ends the contract.",
+  [
+   [
+    "H",
+    "서채",
+    "Ms. Penhallow",
+    "30대 여성, 남색 재킷, 사원증, 침착한 눈",
+    "woman in her 30s, navy blazer, staff badge, composed eyes"
+   ],
+   [
+    "V",
+    "도모",
+    "Mr. Trelawney",
+    "40대 남성, 위생모, 앞치마, 재빠른 손",
+    "man in his 40s, hairnet, apron, quick hands"
+   ],
+   [
+    "A",
+    "연순",
+    "Ms. Merriweather",
+    "30대 여성, 식품위생 점검복, 위생 점검표, 단호한 눈",
+    "woman in her 30s, hygiene inspector uniform, checklist, firm eyes"
+   ]
+  ],
+  [
+   [
+    "회사 행사장",
+    "company event hall",
+    "도모가 도시락 뚜껑에 새 원산지 라벨을 붙인다",
+    "Trelawney presses a new origin label on a lunch box",
+    1,
+    "라벨만 바꾸면 값이 두 배야.",
+    "New label, double the price.",
+    "cz"
+   ],
+   [
+    "회사 행사장",
+    "company event hall",
+    "도모가 서채 손에서 상자를 빼앗아 자기 쪽에 놓는다",
+    "Trelawney pulls the box from her hands",
+    1,
+    "라벨은 우리가 붙여. 손대지 마.",
+    "We put the labels on. Hands off.",
+    "ms"
+   ],
+   [
+    "회사 행사장",
+    "company event hall",
+    "서채가 뚜껑을 열어 라벨 밑의 옛 스티커를 찾는다",
+    "Seochae opens the lid and finds an older sticker underneath",
+    0,
+    "밑에 다른 라벨이 붙어 있네요.",
+    "There's another label underneath.",
+    "cu"
+   ],
+   [
+    "회사 행사장",
+    "company event hall",
+    "연순이 냉장 온도 기록을 펼쳐 지난달 적발 건을 짚는다",
+    "Merriweather opens the temperature log and a prior citation",
+    2,
+    "이 업체, 지난달에도 적발됐어요.",
+    "This kitchen was cited last month too.",
+    "low"
+   ],
+   [
+    "회사 행사장",
+    "company event hall",
+    "도모가 빈 상자를 들고 행사장을 가로질러 나간다",
+    "Trelawney carries empty boxes out across the hall",
+    0,
+    "계약은 해지예요. 남은 도시락 회수하세요.",
+    "The contract is void. Take back every box.",
+    "cu"
+   ],
+   [
+    "행사장 뒤편",
+    "behind the event hall",
+    "회수 상자 사이로 다른 회사 로고가 찍힌 라벨 뭉치가 보인다",
+    "A stack of labels with another company's logo sits in the boxes",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "국제 자격증의 주인",
+  "A Certificate From a Made-Up Board",
+  "국제 자격증을 보장한다던 학원, 발급 기관은 그 학원이 만든 이름이었다.",
+  "An academy guarantees an international certificate, but the board exists only on its wall.",
+  [
+   [
+    "H",
+    "린아",
+    "Miss Cottrell",
+    "20대 후반 여성, 단정한 니트, 수강증, 조용한 눈",
+    "woman in her late 20s, neat knit, class pass, quiet eyes"
+   ],
+   [
+    "V",
+    "도학",
+    "Mr. Ashdown",
+    "40대 남성, 회색 정장, 금테 안경, 자신만만한 입",
+    "man in his 40s, gray suit, gold glasses, confident mouth"
+   ],
+   [
+    "A",
+    "연설",
+    "Ms. Larkspur",
+    "30대 여성, 교육청 유니폼, 사원증, 단호한 눈",
+    "woman in her 30s, education office uniform, badge, firm eyes"
+   ]
+  ],
+  [
+   [
+    "학원 상담실",
+    "academy office",
+    "도학이 벽의 액자를 손으로 톡톡 두드린다",
+    "Ashdown taps the framed certificate on the wall",
+    1,
+    "이 자격증, 해외에서도 통해.",
+    "This certificate works abroad too.",
+    "cz"
+   ],
+   [
+    "학원 상담실",
+    "academy office",
+    "도학이 등록금 봉투를 받아 서랍에 넣는다",
+    "Ashdown takes the tuition envelope and locks it away",
+    1,
+    "시험은 우리가 봐 줘. 걱정 마.",
+    "We run the exam ourselves. Relax.",
+    "ms"
+   ],
+   [
+    "학원 상담실",
+    "academy office",
+    "린아가 액자 속 발급 기관 이름을 휴대폰에 적는다",
+    "Cottrell writes down the issuer's name from the frame",
+    0,
+    "발급처 이름이 낯설어서요.",
+    "I've never heard of this issuer.",
+    "cu"
+   ],
+   [
+    "학원 상담실",
+    "academy office",
+    "연설이 조회 화면을 돌려 발급 기관 주소를 보여 준다",
+    "Larkspur turns the lookup screen toward them",
+    2,
+    "발급 기관 주소가 이 건물이에요.",
+    "The issuer's address is this building.",
+    "low"
+   ],
+   [
+    "학원 로비",
+    "academy lobby",
+    "도학이 액자를 벽에서 떼고 수강생들이 문밖에 서 있다",
+    "Ashdown lifts the frame off the wall as students gather",
+    0,
+    "등록 취소, 전원 환불. 제가 확인했어요.",
+    "Revoked and refunded. I checked it myself.",
+    "cu"
+   ],
+   [
+    "건물 로비 게시판",
+    "building lobby board",
+    "다른 학원 이름으로 같은 액자가 게시판에 걸려 있다",
+    "The same certificate hangs under a different academy's name",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "좌석 번호가 없는 티켓",
+  "A Ticket to a Missing Seat",
+  "공연 앞 암표상이 판 티켓, 좌석표에 없는 번호가 입구에서 드러난다.",
+  "A scalper sells a last-minute ticket, but its seat number does not exist in the hall.",
+  [
+   [
+    "H",
+    "해무",
+    "Joss Wrenfield",
+    "20대 남성, 검은 후드, 응원봉, 단단한 눈",
+    "man in his 20s, black hoodie, light stick, steady eyes"
+   ],
+   [
+    "V",
+    "도혁",
+    "Mr. Roddam",
+    "30대 남성, 가죽 재킷, 목에 건 선글라스, 능글맞은 입",
+    "man in his 30s, leather jacket, sunglasses on chain, oily mouth"
+   ],
+   [
+    "A",
+    "명전",
+    "Ms. Kidwelly",
+    "40대 여성, 공연장 유니폼, 좌석 배치도, 단호한 눈",
+    "woman in her 40s, venue uniform, seating chart, firm eyes"
+   ]
+  ],
+  [
+   [
+    "공연장 앞",
+    "outside the concert hall",
+    "도혁이 해무 손에 티켓을 쥐여 주고 손바닥을 편다",
+    "Roddam presses a ticket into Joss's hand and holds out his palm",
+    1,
+    "정가의 세 배. 안 사면 못 들어가.",
+    "Triple the price. Or you don't get in.",
+    "cz"
+   ],
+   [
+    "공연장 앞",
+    "outside the concert hall",
+    "해무가 지갑을 열어 현금을 세고 도혁이 등을 돌린다",
+    "Joss counts cash from his wallet as Roddam turns away",
+    1,
+    "환불? 웃기지 마.",
+    "A refund? Don't make me laugh.",
+    "ms"
+   ],
+   [
+    "공연장 입구",
+    "concert hall gate",
+    "해무가 티켓 바코드를 게이트에 대고 화면이 붉게 뜬다",
+    "Joss scans the barcode and the gate flashes red",
+    0,
+    "이 바코드, 두 번 찍혔대요.",
+    "This barcode was already scanned.",
+    "cu"
+   ],
+   [
+    "공연장 입구",
+    "concert hall gate",
+    "명전이 좌석 배치도를 펼쳐 티켓 번호를 짚는다",
+    "Kidwelly opens the seating chart and points at the number",
+    2,
+    "이 번호 좌석은 없어요. 복도 자리죠.",
+    "That seat doesn't exist. That's the aisle.",
+    "low"
+   ],
+   [
+    "공연장 로비",
+    "concert hall lobby",
+    "도혁이 사람들 사이로 빠져나가려다 경비 앞에서 멈춘다",
+    "Roddam tries to slip through the crowd and stops at a guard",
+    0,
+    "내 돈부터 돌려주고 가세요.",
+    "My money first. Then you can go.",
+    "cu"
+   ],
+   [
+    "매표소 옆 줄",
+    "beside the box office line",
+    "경비가 도혁의 주머니에서 이름이 적힌 명단을 꺼낸다",
+    "A guard pulls a name list from Roddam's pocket",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ]
+]

@@ -1,0 +1,912 @@
+[
+ [
+  "송년회에서 재생된 목소리",
+  "The Voice on the Speaker",
+  "회장 앞에서 전처를 조롱한 그. 자기 목소리가 스피커로 흘러나오는 걸 듣는다.",
+  "He divorced her for saying nothing. At the company party, his own words play over the speakers.",
+  [
+   [
+    "H",
+    "이서율",
+    "Talia",
+    "30대 여성, 남색 원피스, 묶은 머리, 차분한 미소",
+    "woman in her 30s, navy dress, tied hair, calm smile"
+   ],
+   [
+    "V",
+    "최유찬",
+    "Marcus",
+    "30대 남성, 검은 정장, 짧은 머리, 거만한 턱",
+    "man in his 30s, black suit, short hair, arrogant chin"
+   ],
+   [
+    "A",
+    "문가민",
+    "Ashmore",
+    "60대 남성, 짙은 정장, 은발, 꼿꼿한 자세",
+    "man in his 60s, dark suit, silver hair, upright posture"
+   ]
+  ],
+  [
+   [
+    "회사 송년회장",
+    "company party hall",
+    "유찬이 서율의 어깨를 손등으로 밀어낸다",
+    "Marcus pushes Talia back with the back of his hand",
+    1,
+    "초대 명단에 네 이름은 없어.",
+    "Your name isn't on the list.",
+    "cz"
+   ],
+   [
+    "회사 송년회장",
+    "company party hall",
+    "유찬이 손님들 쪽으로 잔을 들어 보인다",
+    "Marcus raises his glass toward the guests",
+    1,
+    "말 한마디 못 하던 사람이 여기 와서.",
+    "The woman who never spoke, here of all places.",
+    "ms"
+   ],
+   [
+    "회사 송년회장",
+    "company party hall",
+    "서율이 회장 앞 테이블에 휴대폰을 올려놓는다",
+    "Talia sets her phone on the table in front of the chairman",
+    0,
+    "회장님, 이거 한 번만 들어 주세요.",
+    "Chairman, please listen to this once.",
+    "cu"
+   ],
+   [
+    "회사 송년회장",
+    "company party hall",
+    "스피커에서 유찬의 목소리가 흘러나오고 회장이 일어선다",
+    "Marcus's voice comes from the speakers and Ashmore rises",
+    1,
+    "그 여자 몫까지 내가 챙길 거야.",
+    "I'll take her share as well.",
+    "low"
+   ],
+   [
+    "회사 송년회장",
+    "company party hall",
+    "서율이 잔을 내려놓고 유찬을 똑바로 본다",
+    "Talia sets her glass down and looks straight at Marcus",
+    0,
+    "녹음은 제가 했어요. 이제 그쪽이 설명하세요.",
+    "I made the recording. Now you explain it.",
+    "cu"
+   ],
+   [
+    "회사 송년회장",
+    "company party hall",
+    "문이 열리고 감사팀이 서류철을 들고 들어온다",
+    "The door opens and the audit team walks in with folders",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "계약서 한 줄을 읽지 않았다",
+  "One Clause He Never Read",
+  "신제품 발표회장에서 경업금지 조항이 걸린다. 조항을 만든 회사는 전처의 것이었다.",
+  "She said he couldn't run a shop. His launch breaks a non-compete clause she wrote.",
+  [
+   [
+    "H",
+    "박지후",
+    "Colin",
+    "30대 남성, 회색 후드, 짧은 머리, 담담한 눈",
+    "man in his 30s, gray hoodie, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "신하윤",
+    "Delia",
+    "30대 여성, 흰 재킷, 긴 생머리, 날카로운 눈",
+    "woman in her 30s, white jacket, long straight hair, sharp eyes"
+   ],
+   [
+    "A",
+    "구시현",
+    "Oxley",
+    "40대 남성, 검은 정장, 안경, 서류 가방",
+    "man in his 40s, black suit, glasses, document bag"
+   ]
+  ],
+  [
+   [
+    "신제품 발표회장",
+    "product launch hall",
+    "하윤이 지후의 앞을 가로막고 손바닥을 든다",
+    "Delia steps in front of Colin and raises her palm",
+    1,
+    "여긴 우리 발표회장이야. 나가.",
+    "This is my launch. Get out.",
+    "cz"
+   ],
+   [
+    "신제품 발표회장",
+    "product launch hall",
+    "하윤이 무대 위 제품을 손가락으로 툭 친다",
+    "Delia taps the product on stage with one finger",
+    1,
+    "가게 하나 접은 사람이 뭘 발표해?",
+    "You closed one shop. What are you launching?",
+    "ms"
+   ],
+   [
+    "신제품 발표회장",
+    "product launch hall",
+    "지후가 계약서 사본을 펼쳐 한 조항을 짚는다",
+    "Colin opens a contract copy and points at one clause",
+    0,
+    "3조, 읽어 보셨어요?",
+    "Clause three. Did you read it?",
+    "pi"
+   ],
+   [
+    "신제품 발표회장",
+    "product launch hall",
+    "변호사가 계약서를 들어 무대 옆에 선다",
+    "Oxley holds up the contract beside the stage",
+    2,
+    "경업금지 위반입니다. 납품 전면 중단입니다.",
+    "This breaks the non-compete. All supply stops.",
+    "low"
+   ],
+   [
+    "신제품 발표회장",
+    "product launch hall",
+    "지후가 계약서를 접어 가방에 넣는다",
+    "Colin folds the contract and puts it in his bag",
+    0,
+    "그 조항, 그쪽 계약서에 있던 거예요.",
+    "That clause came from your own contract.",
+    "cu"
+   ],
+   [
+    "신제품 발표회장",
+    "product launch hall",
+    "무대 뒤에서 직원이 뛰어 들어와 하윤에게 귀띔한다",
+    "A staffer runs in from backstage and whispers to Delia",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "회사 계정 주인이 따로 있었다",
+  "The Account Was Never His",
+  "데모데이 무대에 오른 그. 회사 계정의 소유자가 전처임이 화면에 뜬다.",
+  "He mocked her for tapping at computers. Every company account is in her name.",
+  [
+   [
+    "H",
+    "조하윤",
+    "Anya",
+    "30대 여성, 어두운 니트, 안경, 짧은 단발",
+    "woman in her 30s, dark knit, glasses, short bob"
+   ],
+   [
+    "V",
+    "황시온",
+    "Blaine",
+    "30대 남성, 흰 셔츠, 짧은 머리, 들뜬 미소",
+    "man in his 30s, white shirt, short hair, eager smile"
+   ],
+   [
+    "A",
+    "노도현",
+    "Vestry",
+    "40대 여성, 검은 정장, 태블릿을 든 손",
+    "woman in her 40s, black suit, holding a tablet"
+   ]
+  ],
+  [
+   [
+    "데모데이 무대",
+    "demo day stage",
+    "시온이 하윤의 소매를 잡아 무대 아래로 끌어당긴다",
+    "Blaine grabs Anya's sleeve and pulls her off stage",
+    1,
+    "여긴 투자자들 앞이야. 내려가.",
+    "Investors are watching. Get down.",
+    "cz"
+   ],
+   [
+    "데모데이 무대",
+    "demo day stage",
+    "시온이 스크린을 등지고 팔짱을 낀다",
+    "Blaine stands with his back to the screen, arms folded",
+    1,
+    "컴퓨터나 만지던 사람이 사업을 알아?",
+    "You tap at computers. What do you know?",
+    "ms"
+   ],
+   [
+    "데모데이 무대",
+    "demo day stage",
+    "하윤이 노트북을 돌려 계정 소유자 화면을 띄운다",
+    "Anya turns her laptop to show the account owner page",
+    0,
+    "이 계정, 제 이름으로 열렸어요.",
+    "This account was opened in my name.",
+    "cu"
+   ],
+   [
+    "데모데이 무대",
+    "demo day stage",
+    "심사위원이 태블릿을 들어 화면을 확인한다",
+    "Vestry lifts her tablet and checks the screen",
+    2,
+    "도메인 소유자는 조하윤 님입니다.",
+    "The domain belongs to Anya.",
+    "low"
+   ],
+   [
+    "데모데이 무대",
+    "demo day stage",
+    "하윤이 노트북을 덮고 자리에서 일어난다",
+    "Anya closes the laptop and rises",
+    0,
+    "계정은 돌려드릴게요. 값부터 치르세요.",
+    "You can have it back. Pay for it first.",
+    "cu"
+   ],
+   [
+    "데모데이 객석",
+    "demo day seating",
+    "맨 앞줄의 여자가 손을 들고 자리에서 일어난다",
+    "A woman in the front row raises her hand and stands",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "커밋 시간은 거짓말을 안 한다",
+  "The Commits Don't Lie",
+  "해커톤 대상 발표 순간, 심사위원이 첫 커밋의 작성자를 확인한다.",
+  "She called his coding a hobby. The first commit on his winning code carries her name.",
+  [
+   [
+    "H",
+    "신도현",
+    "Owen",
+    "20대 남성, 후드티, 짧은 머리, 피곤한 눈",
+    "man in his 20s, hoodie, short hair, tired eyes"
+   ],
+   [
+    "V",
+    "박세온",
+    "Tessa",
+    "20대 여성, 흰 셔츠, 긴 생머리, 새침한 표정",
+    "woman in her 20s, white shirt, long straight hair, prim face"
+   ],
+   [
+    "A",
+    "최도아",
+    "Sorley",
+    "40대 여성, 회색 정장, 가슴에 명찰",
+    "woman in her 40s, gray suit, name badge on her chest"
+   ]
+  ],
+  [
+   [
+    "해커톤 시상식",
+    "hackathon awards",
+    "세온이 도현의 노트북을 손으로 덮는다",
+    "Tessa shuts Owen's laptop with one hand",
+    1,
+    "여기 무대야. 상 받는 사람만 올라와.",
+    "This is a stage. Winners only.",
+    "cz"
+   ],
+   [
+    "해커톤 시상식",
+    "hackathon awards",
+    "세온이 트로피를 들어 관객석에 보인다",
+    "Tessa lifts the trophy toward the audience",
+    1,
+    "취미로 코딩하던 사람이 상을 받아?",
+    "A hobby coder winning a prize?",
+    "ms"
+   ],
+   [
+    "해커톤 시상식",
+    "hackathon awards",
+    "도현이 노트북을 열어 커밋 기록을 띄운다",
+    "Owen opens the laptop and shows the commit history",
+    0,
+    "첫 커밋부터 보시죠.",
+    "Start from the first commit.",
+    "pi"
+   ],
+   [
+    "해커톤 시상식",
+    "hackathon awards",
+    "심사위원이 화면 앞으로 다가가 날짜를 짚는다",
+    "Sorley steps to the screen and points at a date",
+    2,
+    "첫 커밋 작성자는 신도현 님입니다.",
+    "The first commit is his.",
+    "low"
+   ],
+   [
+    "해커톤 시상식",
+    "hackathon awards",
+    "도현이 노트북을 닫고 무대를 내려간다",
+    "Owen closes the laptop and walks off the stage",
+    0,
+    "커밋 기록은 못 지워요.",
+    "Commit records don't disappear.",
+    "cu"
+   ],
+   [
+    "해커톤 시상식",
+    "hackathon awards",
+    "관객석 남자가 일어나 천천히 손뼉을 친다",
+    "A man in the audience stands and claps slowly",
+    -1,
+    "",
+    "",
+    "rx"
+   ]
+  ]
+ ],
+ [
+  "노래는 내가 만들었다",
+  "She Wrote the Song",
+  "공개방송에 나온 히트곡. 저작권 등록증의 이름은 흥얼거리던 전처였다.",
+  "He called her humming a waste. The hit he is singing is registered in her name.",
+  [
+   [
+    "H",
+    "김도린",
+    "Faye",
+    "30대 여성, 카키 재킷, 어깨머리, 조용한 눈",
+    "woman in her 30s, khaki jacket, shoulder-length hair, quiet eyes"
+   ],
+   [
+    "V",
+    "장세원",
+    "Rex",
+    "30대 남성, 은색 재킷, 짧은 머리, 들뜬 표정",
+    "man in his 30s, silver jacket, short hair, elated face"
+   ],
+   [
+    "A",
+    "이시온",
+    "Mott",
+    "40대 남성, 헤드폰을 목에 건 검은 셔츠",
+    "man in his 40s, black shirt with headphones around his neck"
+   ]
+  ],
+  [
+   [
+    "라디오 공개방송",
+    "live radio show",
+    "세원이 도린의 마이크를 손으로 가린다",
+    "Rex covers Faye's microphone with his hand",
+    1,
+    "여기 마이크 앞이야. 관객들 보여?",
+    "This is a live mic. See the crowd?",
+    "cz"
+   ],
+   [
+    "라디오 공개방송",
+    "live radio show",
+    "세원이 손을 흔들어 관객의 박수를 받는다",
+    "Rex waves a hand and takes the crowd's applause",
+    1,
+    "노래나 흥얼거리던 사람이 작곡을?",
+    "You hummed. That's not writing music.",
+    "ms"
+   ],
+   [
+    "라디오 공개방송",
+    "live radio show",
+    "도린이 봉투에서 저작권 등록증을 꺼낸다",
+    "Faye takes a copyright certificate from an envelope",
+    0,
+    "이 곡, 제 이름으로 등록됐어요.",
+    "This song is registered under my name.",
+    "cu"
+   ],
+   [
+    "라디오 공개방송",
+    "live radio show",
+    "PD가 등록증을 받아 들고 방송 화면을 내린다",
+    "Mott takes the certificate and cuts the feed",
+    2,
+    "저작권자는 김도린 님입니다. 방송 중단합니다.",
+    "The rights holder is Faye. We're off air.",
+    "low"
+   ],
+   [
+    "라디오 공개방송",
+    "live radio show",
+    "도린이 헤드폰을 벗어 스탠드에 걸어 둔다",
+    "Dorin takes off her headphones and hangs them on the stand",
+    0,
+    "한 곡이 아니라, 제가 쓴 전부예요.",
+    "Not one song. Everything you sang.",
+    "cu"
+   ],
+   [
+    "라디오 공개방송",
+    "live radio show",
+    "관객석 여자가 일어나 도린을 향해 박수를 친다",
+    "A woman in the crowd stands and claps for Faye",
+    -1,
+    "",
+    "",
+    "rx"
+   ]
+  ]
+ ],
+ [
+  "표지 사진의 주인",
+  "The Photo He Didn't Own",
+  "잡지 표지가 바뀐다. 촬영자는 카메라나 들고 다니던 전 남편이었다.",
+  "She said he just carried a camera. Her magazine cover was shot by him, unpaid.",
+  [
+   [
+    "H",
+    "문예강",
+    "Miles",
+    "30대 남성, 검은 후드, 짧은 머리, 무표정한 눈",
+    "man in his 30s, black hoodie, short hair, blank eyes"
+   ],
+   [
+    "V",
+    "오재린",
+    "Blair",
+    "30대 여성, 분홍 원피스, 긴 웨이브, 차가운 눈",
+    "woman in her 30s, pink dress, long wavy hair, cold eyes"
+   ],
+   [
+    "A",
+    "김재아",
+    "Pellam",
+    "40대 여성, 베이지 트렌치, 짧은 머리, 단호한 얼굴",
+    "woman in her 40s, beige trench, short hair, firm face"
+   ]
+  ],
+  [
+   [
+    "화보 촬영장",
+    "photo studio",
+    "재린이 예강의 카메라를 손으로 눌러 내린다",
+    "Blair pushes down on Miles's camera with one hand",
+    1,
+    "카메라 내려놔. 여긴 내 화보야.",
+    "Put the camera down. This cover is mine.",
+    "cz"
+   ],
+   [
+    "화보 촬영장",
+    "photo studio",
+    "재린이 스튜디오 조명 아래에서 포즈를 잡는다",
+    "Blair strikes a pose under the studio lights",
+    1,
+    "취미로 찍는 사진을 표지에 쓸 줄 알았어?",
+    "Did you think hobby photos make a cover?",
+    "ms"
+   ],
+   [
+    "화보 촬영장",
+    "photo studio",
+    "예강이 메모리카드를 편집장에게 건넨다",
+    "Miles hands a memory card to the editor",
+    0,
+    "원본 파일, 여기 있습니다.",
+    "The original files are here.",
+    "pi"
+   ],
+   [
+    "화보 촬영장",
+    "photo studio",
+    "편집장이 모니터에 원본 정보를 띄운다",
+    "Pellam pulls the file details onto the monitor",
+    2,
+    "이 표지 원본, 문예강 님 것입니다.",
+    "This cover file belongs to Miles.",
+    "low"
+   ],
+   [
+    "화보 촬영장",
+    "photo studio",
+    "예강이 카메라 가방을 메고 스튜디오를 나선다",
+    "Miles shoulders his camera bag and leaves the studio",
+    0,
+    "촬영비는 사용료보다 싸요.",
+    "The session fee is cheaper than the usage fee.",
+    "cu"
+   ],
+   [
+    "화보 촬영장",
+    "photo studio",
+    "스튜디오 문이 열리고 경쟁 잡지 편집자가 들어온다",
+    "The studio door opens and a rival editor walks in",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "유언장에 남은 이름",
+  "The Name in the Will",
+  "유언 검인 자리. 20년 돌본 노신사가 남긴 집행인 이름이 전처였다.",
+  "He mocked her for having no family. She is executor for the old man she cared for.",
+  [
+   [
+    "H",
+    "황예린",
+    "Coralie",
+    "40대 여성, 회색 원피스, 낮게 묶은 머리, 부드러운 눈",
+    "woman in her 40s, gray dress, low bun, gentle eyes"
+   ],
+   [
+    "V",
+    "여서준",
+    "Victor",
+    "40대 남성, 세 줄 무늬 정장, 짧은 머리, 탐욕스러운 눈",
+    "man in his 40s, pinstripe suit, short hair, greedy eyes"
+   ],
+   [
+    "A",
+    "백시우",
+    "Rathbone",
+    "50대 남성, 검은 정장, 서류철, 무표정",
+    "man in his 50s, black suit, file folder, blank face"
+   ]
+  ],
+  [
+   [
+    "법률 사무실",
+    "law office",
+    "서준이 예린 앞으로 유산 목록을 밀어낸다",
+    "Victor slides the estate list toward Coralie",
+    1,
+    "이 유산은 우리 집안 거야. 넌 남이야.",
+    "This estate is family. You're an outsider.",
+    "cz"
+   ],
+   [
+    "법률 사무실",
+    "law office",
+    "서준이 손가락으로 예린을 가리키며 웃는다",
+    "Victor points at Coralie and laughs",
+    1,
+    "남의 집 대소변 받아 주던 사람이 뭘 안다고.",
+    "You cleaned up after an old man. What do you know?",
+    "ms"
+   ],
+   [
+    "법률 사무실",
+    "law office",
+    "예린이 봉인된 봉투를 조용히 꺼낸다",
+    "Coralie quietly takes out a sealed envelope",
+    0,
+    "할아버지가 남긴 봉투예요.",
+    "The old man left this for me.",
+    "cu"
+   ],
+   [
+    "법률 사무실",
+    "law office",
+    "변호사가 봉투를 열어 유언장을 펼친다",
+    "Rathbone opens the envelope and unfolds the will",
+    2,
+    "집행인은 황예린 님입니다. 이름이 적혀 있습니다.",
+    "The executor is Coralie. Her name is written here.",
+    "low"
+   ],
+   [
+    "법률 사무실",
+    "law office",
+    "예린이 유언장을 접어 봉투에 넣는다",
+    "Coralie folds the will back into the envelope",
+    0,
+    "할아버지가 직접 쓰셨어요.",
+    "He wrote it himself.",
+    "cu"
+   ],
+   [
+    "법률 사무실",
+    "law office",
+    "봉투 안에서 또 다른 작은 봉투가 미끄러진다",
+    "A smaller envelope slides out of the first one",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "보험금 청구가 거절됐다",
+  "He Couldn't Claim a Cent",
+  "사업 중단 보험금을 청구하러 온 그. 수익자 이름이 전처로 찍혀 있다.",
+  "She said he couldn't manage a policy. The payout names her, not him.",
+  [
+   [
+    "H",
+    "구도현",
+    "Neil",
+    "40대 남성, 회색 셔츠, 짧은 머리, 담담한 얼굴",
+    "man in his 40s, gray shirt, short hair, calm face"
+   ],
+   [
+    "V",
+    "최시언",
+    "Nina",
+    "40대 여성, 검은 블라우스, 긴 생머리, 날카로운 눈",
+    "woman in her 40s, black blouse, long straight hair, sharp eyes"
+   ],
+   [
+    "A",
+    "임가윤",
+    "Salkeld",
+    "30대 여성, 지점 유니폼, 명찰, 무표정",
+    "woman in her 30s, branch uniform, name badge, blank face"
+   ]
+  ],
+  [
+   [
+    "보험사 지점",
+    "insurance branch",
+    "시언이 시현의 서류를 낚아채 창구에 던진다",
+    "Nina snatches Neil's papers and throws them on the desk",
+    1,
+    "여기 왜 와? 보험금은 내 거야.",
+    "Why are you here? The payout is mine.",
+    "cz"
+   ],
+   [
+    "보험사 지점",
+    "insurance branch",
+    "시언이 창구 직원 쪽으로 몸을 돌려 손을 젓는다",
+    "Nina turns to the clerk and waves him off",
+    1,
+    "보험 하나 제대로 못 드는 사람이 뭘 알아.",
+    "He can't even keep a policy straight.",
+    "ms"
+   ],
+   [
+    "보험사 지점",
+    "insurance branch",
+    "도현이 봉투에서 수익자 지정서를 꺼낸다",
+    "Neil takes a beneficiary form from his envelope",
+    0,
+    "수익자 지정서, 확인해 주세요.",
+    "Please check the beneficiary form.",
+    "cu"
+   ],
+   [
+    "보험사 지점",
+    "insurance branch",
+    "직원이 지정서를 스캔해 화면에 띄운다",
+    "Salkeld scans the form and shows it on screen",
+    2,
+    "수익자는 구도현 님입니다. 청구는 무효입니다.",
+    "The beneficiary is Neil. This claim is void.",
+    "low"
+   ],
+   [
+    "보험사 지점",
+    "insurance branch",
+    "도현이 영수증 묶음을 창구에 올려놓는다",
+    "Neil sets a bundle of receipts on the counter",
+    0,
+    "보험료는 10년 동안 제가 냈어요.",
+    "I paid those premiums for ten years.",
+    "cu"
+   ],
+   [
+    "보험사 지점",
+    "insurance branch",
+    "지점장실 문이 열리고 조사관 두 명이 나온다",
+    "The manager's door opens and two investigators step out",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "낙찰은 취소됐다",
+  "The Bid He Lost",
+  "경매에서 집을 사려던 그. 채권자 명단에 전처 이름이 있다.",
+  "He said she only did housework. The debt on the house he is bidding for is hers.",
+  [
+   [
+    "H",
+    "남예솔",
+    "Hattie",
+    "40대 여성, 아이보리 재킷, 긴 생머리, 차분한 눈",
+    "woman in her 40s, ivory jacket, long straight hair, calm eyes"
+   ],
+   [
+    "V",
+    "조은결",
+    "Mack",
+    "40대 남성, 감색 정장, 짧은 머리, 비웃는 입",
+    "man in his 40s, navy suit, short hair, sneering mouth"
+   ],
+   [
+    "A",
+    "권도훈",
+    "Tarn",
+    "50대 남성, 검은 조끼, 경매봉, 무표정",
+    "man in his 50s, black vest, auction gavel, blank face"
+   ]
+  ],
+  [
+   [
+    "경매장",
+    "auction hall",
+    "은결이 예솔의 의자 등받이를 손으로 두드린다",
+    "Mack taps the back of Hattie's chair with his hand",
+    1,
+    "여긴 앉을 자리 아니야. 나가.",
+    "This isn't your seat. Get out.",
+    "cz"
+   ],
+   [
+    "경매장",
+    "auction hall",
+    "은결이 앞줄 사람들과 눈을 맞추고 어깨를 으쓱한다",
+    "Mack shares a look with the front row and shrugs",
+    1,
+    "집안일이나 하던 사람이 경매를 알아?",
+    "Housework was your job. Auctions?",
+    "ms"
+   ],
+   [
+    "경매장",
+    "auction hall",
+    "예솔이 채권 서류를 조용히 펼친다",
+    "Hattie quietly opens a creditor document",
+    0,
+    "이 물건 채권자, 접수해 두었어요.",
+    "I filed as creditor on this property.",
+    "cu"
+   ],
+   [
+    "경매장",
+    "auction hall",
+    "경매사가 서류를 확인하고 봉을 내려놓는다",
+    "Tarn checks the file and sets the gavel down",
+    2,
+    "채권자는 남예솔 님입니다. 입찰은 무효입니다.",
+    "The creditor is Hattie. This bid is void.",
+    "low"
+   ],
+   [
+    "경매장",
+    "auction hall",
+    "예솔이 의자에서 일어나 가방을 집어 든다",
+    "Hattie rises from her chair and picks up her bag",
+    0,
+    "보증금은 제가 돌려드릴게요.",
+    "I'll return your deposit myself.",
+    "cu"
+   ],
+   [
+    "경매장 출입구",
+    "auction hall entrance",
+    "검은 양복 남자가 문가에서 예솔에게 고개를 숙인다",
+    "A man in a black suit bows to Hattie at the door",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "입찰 자격이 취소됐다",
+  "Banned From the Bid",
+  "입찰 설명회에서 담합 서류가 돌아간다. 낸 사람은 촌놈이라던 전처였다.",
+  "She called him a country bumpkin. At the bid briefing, she drops proof of his price fixing.",
+  [
+   [
+    "H",
+    "임하준",
+    "Roy",
+    "40대 남성, 회색 작업재킷, 짧은 머리, 굳은 표정",
+    "man in his 40s, gray work jacket, short hair, set face"
+   ],
+   [
+    "V",
+    "최서린",
+    "Ursula",
+    "40대 여성, 흰 정장, 묶은 머리, 얇은 미소",
+    "woman in her 40s, white suit, tied hair, thin smile"
+   ],
+   [
+    "A",
+    "탁하온",
+    "Halloway",
+    "50대 남성, 시청 유니폼, 서류철, 무표정",
+    "man in his 50s, city hall uniform, folder, blank face"
+   ]
+  ],
+  [
+   [
+    "시청 회의실",
+    "city hall meeting room",
+    "도아가 하준의 명패를 뒤집어 놓는다",
+    "Ursula flips Roy's nameplate face down",
+    1,
+    "여긴 우리 회사 자리야. 나가.",
+    "This seat is my company's. Leave.",
+    "cz"
+   ],
+   [
+    "시청 회의실",
+    "city hall meeting room",
+    "도아가 옆 사람과 눈을 맞추고 손을 턱에 댄다",
+    "Ursula catches her neighbor's eye and rests her chin on her hand",
+    1,
+    "촌에서 올라온 사람이 입찰을 논해?",
+    "A country boy talking bids?",
+    "ms"
+   ],
+   [
+    "시청 회의실",
+    "city hall meeting room",
+    "하준이 봉투에서 인쇄된 메시지 묶음을 꺼낸다",
+    "Roy takes a stack of printed messages from an envelope",
+    0,
+    "이 문자들, 보실 분 계세요?",
+    "Anyone want to see these messages?",
+    "cu"
+   ],
+   [
+    "시청 회의실",
+    "city hall meeting room",
+    "담당자가 메시지를 넘기며 고개를 젓는다",
+    "Halloway flips through the messages and shakes his head",
+    2,
+    "담합 정황입니다. 입찰 자격을 취소합니다.",
+    "This is collusion. Your bid is disqualified.",
+    "low"
+   ],
+   [
+    "시청 회의실",
+    "city hall meeting room",
+    "하준이 휴대폰을 들어 화면을 보여 준다",
+    "Roy lifts his phone and shows the screen",
+    0,
+    "그 문자, 당신이 보낸 거예요.",
+    "Those messages came from your phone.",
+    "cu"
+   ],
+   [
+    "시청 회의실",
+    "city hall meeting room",
+    "문이 열리고 취재 기자가 카메라를 든 채 들어온다",
+    "The door opens and a reporter walks in with a camera",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ]
+]

@@ -1,0 +1,912 @@
+[
+ [
+  "후드티 차림의 광고주",
+  "The Client in the Hoodie",
+  "택배인 줄 알고 내보낸 대행사. 그는 이 캠페인을 발주한 회사의 임원이었다.",
+  "An agency takes him for a delivery man. He signs off on their biggest campaign.",
+  [
+   [
+    "H",
+    "소다온",
+    "Nina Brooks",
+    "30대 여성, 낡은 회색 셔츠, 안경, 묶은 머리",
+    "woman in her 30s, worn gray shirt, glasses, tied hair"
+   ],
+   [
+    "V",
+    "국라온",
+    "Gavin Tate",
+    "30대 남성, 검은 정장, 세운 머리, 비웃는 입매",
+    "man in his 30s, black suit, hair swept up, sneering mouth"
+   ],
+   [
+    "A",
+    "서상민",
+    "Ellis Crane",
+    "40대 남성, 베이지 재킷, 서류 가방, 무거운 눈",
+    "man in his 40s, beige jacket, document bag, heavy eyes"
+   ]
+  ],
+  [
+   [
+    "광고 대행사 로비",
+    "agency lobby",
+    "라온이 다온의 어깨를 밀어 문가로 돌린다",
+    "Gavin shoves Nina's shoulder and turns her toward the door",
+    1,
+    "택배는 1층에서 받아요.",
+    "Deliveries go to the first floor.",
+    "cz"
+   ],
+   [
+    "회의실",
+    "meeting room",
+    "라온이 다온을 벽 의자에 앉히고 발표를 시작한다",
+    "Gavin seats Nina by the wall and starts his pitch",
+    1,
+    "발표는 우리가 합니다.",
+    "We'll handle the pitch.",
+    "ms"
+   ],
+   [
+    "회의실",
+    "meeting room",
+    "발표 자료 사이에서 다온의 명함이 미끄러져 떨어진다",
+    "A business card slips out of the deck and lands by Nina",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "회의실",
+    "meeting room",
+    "상민이 명함을 집어 들고 라온을 돌아본다",
+    "Ellis picks up the card and turns to Gavin",
+    2,
+    "이분이 우리 발주처 담당이십니다.",
+    "She is our client's decision maker.",
+    "low"
+   ],
+   [
+    "회의실",
+    "meeting room",
+    "라온이 발표 자료를 덮고 다온이 의자에서 일어난다",
+    "Gavin closes his deck as Nina rises from the chair",
+    0,
+    "이 캠페인, 다른 곳에 맡기죠.",
+    "We'll place this campaign elsewhere.",
+    "cu"
+   ],
+   [
+    "회의실 문",
+    "meeting room door",
+    "상민이 계약서를 가방에 넣고 다온을 따라 나선다",
+    "Ellis slides the contract into his bag and follows Nina out",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "보호자로 몰린 첫 투자자",
+  "The Angel Investor They Took for a Guest",
+  "설명회장에서 보호자로 몰린 노신사. 그는 이 회사의 첫 투자자였다.",
+  "A startup usher seats an old man with the guests. He wrote their first check.",
+  [
+   [
+    "H",
+    "한도담",
+    "Walter Nash",
+    "50대 남성, 낡은 갈색 재킷, 흰 머리, 졸린 눈",
+    "man in his 50s, old brown jacket, white hair, sleepy eyes"
+   ],
+   [
+    "V",
+    "성시온",
+    "Ryan Kell",
+    "30대 남성, 몸에 붙는 정장, 번들거리는 머리, 얇은 미소",
+    "man in his 30s, tight suit, slick hair, thin smile"
+   ],
+   [
+    "A",
+    "송예운",
+    "Simone Vega",
+    "30대 여성, 회색 블레이저, 짧은 머리, 또렷한 목소리",
+    "woman in her 30s, gray blazer, short hair, crisp voice"
+   ]
+  ],
+  [
+   [
+    "투자 설명회장 입구",
+    "pitch hall entrance",
+    "시온이 도담의 초대장을 접어 돌려준다",
+    "Ryan folds Walter's invitation and hands it back",
+    1,
+    "보호자 좌석은 뒤쪽입니다.",
+    "Guest seats are in the back.",
+    "cz"
+   ],
+   [
+    "투자 설명회장",
+    "pitch hall",
+    "시온이 도담 앞에 안내 팸플릿만 놓고 돌아선다",
+    "Ryan drops a brochure in front of Walter and walks off",
+    1,
+    "질문은 받지 않습니다.",
+    "No questions from the floor.",
+    "ms"
+   ],
+   [
+    "투자 설명회장",
+    "pitch hall",
+    "도담이 수첩에서 20년 된 주주 명부를 펼쳐 든다",
+    "Walter opens a twenty-year-old shareholder list from his notebook",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "단상",
+    "stage",
+    "예운이 화면에 주주 명부를 띄우고 도담을 가리킨다",
+    "Simone puts the shareholder list on screen and points at Walter",
+    2,
+    "첫 투자자가 여기 계십니다.",
+    "Our first investor is sitting right there.",
+    "low"
+   ],
+   [
+    "단상",
+    "stage",
+    "시온의 마이크가 떨리고 도담이 일어선다",
+    "Ryan's mic shakes as Walter rises to his feet",
+    0,
+    "이사회를 소집하죠. 오늘 안으로.",
+    "Call a board meeting. Today.",
+    "cu"
+   ],
+   [
+    "설명회장 복도",
+    "hall corridor",
+    "도담이 수첩에서 오래된 수표 한 장을 꺼낸다",
+    "Walter takes an old check from his notebook",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "면접관이 몰라본 지원자",
+  "The Applicant Nobody Recognized",
+  "나이 들었다며 서류를 밀어낸 면접관. 지원자는 다른 호텔의 전 총지배인이었다.",
+  "An interviewer dismisses him as too old. He ran the finest hotel in the city.",
+  [
+   [
+    "H",
+    "노태성",
+    "Gerald Pitt",
+    "50대 남성, 낡은 회색 정장, 짧은 흰 수염, 깊은 주름",
+    "man in his 50s, worn gray suit, short white beard, deep lines"
+   ],
+   [
+    "V",
+    "가현우",
+    "Caleb Rowe",
+    "30대 남성, 인사팀장, 밝은 파란 넥타이, 자신만만한 턱",
+    "man in his 30s, HR manager, bright blue tie, confident chin"
+   ],
+   [
+    "A",
+    "장민재",
+    "Marion Ellis",
+    "40대 여성, 검은 원피스, 낮게 묶은 머리, 서늘한 눈",
+    "woman in her 40s, black dress, low tied hair, cool eyes"
+   ]
+  ],
+  [
+   [
+    "호텔 면접실",
+    "hotel interview room",
+    "현우가 태성의 이력서를 반쯤 접어 옆으로 민다",
+    "Caleb folds Gerald's resume in half and slides it aside",
+    1,
+    "나이가 좀 많으시네요.",
+    "You're a bit old for this.",
+    "cz"
+   ],
+   [
+    "호텔 면접실",
+    "hotel interview room",
+    "현우가 다음 지원자 서류를 태성 위에 올린다",
+    "Caleb stacks the next applicant's file on top of his",
+    1,
+    "여긴 젊은 사람들 자리예요.",
+    "This floor is for young people.",
+    "ms"
+   ],
+   [
+    "호텔 면접실",
+    "hotel interview room",
+    "태성이 자기 이력서 사본을 꺼내 탁자에 펼친다",
+    "Gerald lays his own copy of the resume open on the table",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "호텔 면접실",
+    "hotel interview room",
+    "민재가 이력서를 집어 들고 현우를 돌아본다",
+    "Marion picks up the resume and turns to Caleb",
+    2,
+    "이분, 그 호텔 총지배인이에요.",
+    "He ran the Grand. He was their general manager.",
+    "low"
+   ],
+   [
+    "호텔 면접실",
+    "hotel interview room",
+    "현우가 의자에서 반쯤 일어나고 태성이 서류를 정리한다",
+    "Caleb half rises as Gerald squares the papers",
+    0,
+    "면접 태도부터 감사에 맡기죠.",
+    "Audit will review your interview manners.",
+    "cu"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "민재가 태성에게 새 총지배인 명패를 건넨다",
+    "Marion hands Gerald a new general manager nameplate",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "청바지 변호사를 막아선 사무장",
+  "The Clerk Who Blocked the Lawyer",
+  "상담은 예약제라며 막아선 사무장. 그녀는 상대측 소송 대리인이었다.",
+  "A clerk stops her at the desk for wearing jeans. She represents the other side.",
+  [
+   [
+    "H",
+    "편태윤",
+    "Harper Quinn",
+    "30대 후반 여성, 청바지, 낡은 재킷, 뿔테 안경",
+    "woman in her late 30s, jeans, worn blazer, thick glasses"
+   ],
+   [
+    "V",
+    "용정우",
+    "Dennis Orr",
+    "40대 남성, 사무장, 회색 조끼, 반들반들한 머리",
+    "man in his 40s, office manager, gray vest, slicked hair"
+   ],
+   [
+    "A",
+    "소아람",
+    "Sofia Lange",
+    "30대 여성, 검은 정장, 서류철을 낀 손, 빠른 걸음",
+    "woman in her 30s, black suit, file folder in hand, quick steps"
+   ]
+  ],
+  [
+   [
+    "법무법인 로비",
+    "law firm lobby",
+    "정우가 태윤의 청바지를 손가락으로 가리킨다",
+    "Dennis points a finger at Harper's jeans",
+    1,
+    "상담은 예약한 사람만 됩니다.",
+    "We only see scheduled clients.",
+    "cz"
+   ],
+   [
+    "법무법인 로비",
+    "law firm lobby",
+    "정우가 안내판을 태윤 앞으로 돌려세운다",
+    "Dennis spins the directory board toward Harper",
+    1,
+    "여긴 사람 찾아오는 곳이 아니에요.",
+    "This isn't a place to drop by.",
+    "ms"
+   ],
+   [
+    "법무법인 로비",
+    "law firm lobby",
+    "태윤이 상대측 준비 서류를 탁자에 내려놓는다",
+    "Harper sets the opposing side's court papers on the desk",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "법무법인 로비",
+    "law firm lobby",
+    "아람이 계단을 내려와 태윤 앞에 선다",
+    "Sofia comes down the stairs and stops before Harper",
+    2,
+    "선배님, 상대측 대리인입니다.",
+    "She's opposing counsel, everyone.",
+    "low"
+   ],
+   [
+    "법무법인 로비",
+    "law firm lobby",
+    "정우의 손에서 안내판이 미끄러지고 태윤이 서류를 건넨다",
+    "The board slips from Dennis's hands as Harper serves the papers",
+    0,
+    "수임 취소 서류입니다.",
+    "Here is your notice of withdrawal.",
+    "cu"
+   ],
+   [
+    "회의실 문",
+    "meeting room door",
+    "아람이 태윤에게 다른 사건 파일을 건넨다",
+    "Sofia hands Harper another case file",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "부스 직원으로 몰린 주최자",
+  "The Booth Worker Who Ran the Fair",
+  "부스나 치우라던 경쟁사 담당. 그녀는 이 박람회를 여는 협회장이었다.",
+  "A rival tells her to clear her booth. She chairs the association running the fair.",
+  [
+   [
+    "H",
+    "조아영",
+    "Margot Dunne",
+    "60대 여성, 낡은 트렌치코트, 짧은 은발, 큰 안경",
+    "woman in her 60s, worn trench coat, short silver hair, big glasses"
+   ],
+   [
+    "V",
+    "노민재",
+    "Cole Harker",
+    "30대 남성, 흰 셔츠, 회사 명찰, 비웃는 입",
+    "man in his 30s, white shirt, company badge, sneering mouth"
+   ],
+   [
+    "A",
+    "국세준",
+    "Ruben Sosa",
+    "40대 남성, 검은 베스트, 헤드셋, 행사 진행",
+    "man in his 40s, black vest, headset, event host"
+   ]
+  ],
+  [
+   [
+    "박람회 부스",
+    "expo booth",
+    "민재가 아영의 부스 팻말을 손으로 밀어 넘어뜨린다",
+    "Cole pushes Margot's booth sign over with one hand",
+    1,
+    "이 부스 자리 비켜 주세요.",
+    "Clear this booth space.",
+    "cz"
+   ],
+   [
+    "박람회 부스",
+    "expo booth",
+    "민재가 자기 회사 브로슈어를 아영 책상에 쌓는다",
+    "Cole stacks his company brochures on Margot's desk",
+    1,
+    "여기선 우리가 대세예요.",
+    "We're the name here.",
+    "ms"
+   ],
+   [
+    "박람회 부스",
+    "expo booth",
+    "무대 옆 모니터에 아영의 이름이 연설자로 뜬다",
+    "Margot's name appears on the stage monitor as speaker",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "개막 무대",
+    "opening stage",
+    "세준이 무대에서 아영의 이름을 또박또박 호명한다",
+    "Ruben calls Margot's name from the stage",
+    2,
+    "협회장님, 개막 연설 부탁드립니다.",
+    "Chairwoman, the opening speech is yours.",
+    "low"
+   ],
+   [
+    "박람회 부스",
+    "expo booth",
+    "민재가 브로슈어를 쓸어 담고 아영이 명단을 접는다",
+    "Cole sweeps up his brochures as Margot folds the list",
+    0,
+    "이 부스, 오늘로 철거하죠.",
+    "This booth comes down today.",
+    "cu"
+   ],
+   [
+    "전시장 입구",
+    "expo entrance",
+    "아영이 내년 참가 신청서를 두 번 접어 찢는다",
+    "Margot folds next year's application and tears it in two",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "강단 명패를 못 본 조교",
+  "The Assistant Who Missed the Nameplate",
+  "학생인 줄 알고 뒤로 보낸 조교. 강단에 선 사람은 세계 학회의 수상자였다.",
+  "A teaching assistant sends him to a back seat. He is the scholar giving the lecture.",
+  [
+   [
+    "H",
+    "모건우",
+    "Leonard Ashe",
+    "60대 남성, 낡은 트렌치, 둥근 안경, 구부정한 어깨",
+    "man in his 60s, worn trench coat, round glasses, stooped shoulders"
+   ],
+   [
+    "V",
+    "안준서",
+    "Toby Geller",
+    "20대 남성, 후드집업, 이어폰, 무심한 눈",
+    "man in his 20s, hoodie, earbuds, indifferent eyes"
+   ],
+   [
+    "A",
+    "은영호",
+    "Nigel Cross",
+    "50대 남성, 트위드 재킷, 팔꿈치 패치, 온화한 미소",
+    "man in his 50s, tweed jacket, elbow patches, kind smile"
+   ]
+  ],
+  [
+   [
+    "대학 강의실",
+    "lecture hall",
+    "준서가 건우의 가방을 문가에 내려놓는다",
+    "Toby sets Leonard's bag down by the door",
+    1,
+    "학생은 뒤쪽에 앉으세요.",
+    "Students sit in the back.",
+    "cz"
+   ],
+   [
+    "대학 강의실",
+    "lecture hall",
+    "준서가 출석부를 건우 앞에 밀어 놓는다",
+    "Toby slides the attendance sheet in front of Leonard",
+    1,
+    "이름부터 적어 주세요.",
+    "Write your name first.",
+    "ms"
+   ],
+   [
+    "대학 강의실",
+    "lecture hall",
+    "건우가 자기 이름이 적힌 초청장을 강단에 놓는다",
+    "Leonard sets his invitation, name side up, on the lectern",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "대학 강의실",
+    "lecture hall",
+    "영호가 문을 열고 들어와 강단을 가리킨다",
+    "Nigel comes through the door and points at the lectern",
+    2,
+    "오늘 강의는 이분이 하십니다.",
+    "Today's lecture is his.",
+    "low"
+   ],
+   [
+    "대학 강의실",
+    "lecture hall",
+    "준서가 출석부를 떨어뜨리고 건우가 강단에 선다",
+    "Toby drops the attendance sheet as Leonard takes the lectern",
+    0,
+    "출석은 제가 확인하죠.",
+    "I'll check attendance myself.",
+    "cu"
+   ],
+   [
+    "대학 강의실 창가",
+    "lecture hall window",
+    "건우가 강의 노트에서 오래된 사진을 꺼낸다",
+    "Leonard pulls an old photograph from his lecture notes",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "라벨을 못 읽은 진행 요원",
+  "The Dresser Who Never Read the Label",
+  "모델로 오해하고 쫓아낸 진행 요원. 그녀는 이 브랜드의 수석 재단사였다.",
+  "A backstage runner mistakes her for a model. She sews every dress in the show.",
+  [
+   [
+    "H",
+    "권준서",
+    "Ada Winters",
+    "40대 여성, 낡은 앞치마, 은발 섞인 짧은 머리, 굳은손",
+    "woman in her 40s, worn apron, short graying hair, calloused hands"
+   ],
+   [
+    "V",
+    "용유담",
+    "Bella Hoyt",
+    "20대 여성, 올블랙, 헤드셋, 날카로운 눈썹",
+    "woman in her 20s, all black, headset, sharp brows"
+   ],
+   [
+    "A",
+    "은기범",
+    "Julian Poe",
+    "30대 남성, 흰 셔츠, 얇은 안경, 급한 걸음",
+    "man in his 30s, white shirt, thin glasses, hurried steps"
+   ]
+  ],
+  [
+   [
+    "패션쇼 백스테이지",
+    "backstage",
+    "유담이 준서의 앞치마를 잡아당겨 옆으로 민다",
+    "Bella grabs Ada's apron and pulls her aside",
+    1,
+    "모델은 저쪽 줄로 가요.",
+    "Models line up over there.",
+    "cz"
+   ],
+   [
+    "패션쇼 백스테이지",
+    "backstage",
+    "유담이 준서의 바늘 케이스를 바닥에 내려놓는다",
+    "Bella sets Ada's needle case down on the floor",
+    1,
+    "여기서 바느질하지 마세요.",
+    "No sewing back here.",
+    "ms"
+   ],
+   [
+    "패션쇼 백스테이지",
+    "backstage",
+    "준서가 드레스 라벨을 뒤집어 기범에게 보여 준다",
+    "Ada flips the dress label over for Julian to see",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "패션쇼 백스테이지",
+    "backstage",
+    "기범이 드레스를 받아 들고 라벨을 확인한다",
+    "Julian lifts the dress and checks the label",
+    2,
+    "이 라벨, 우리 수석 재단사 서명이에요.",
+    "That's our head seamstress's signature.",
+    "low"
+   ],
+   [
+    "패션쇼 백스테이지",
+    "backstage",
+    "유담이 헤드셋을 벗고 준서가 바늘을 집는다",
+    "Bella pulls off her headset as Ada picks up a needle",
+    0,
+    "쇼 진행은 다른 사람이 보죠.",
+    "Let someone else run the show.",
+    "cu"
+   ],
+   [
+    "무대 옆",
+    "wings of the stage",
+    "준서가 마지막 드레스의 실밥을 조용히 뜯는다",
+    "Ada quietly picks the loose thread from the final dress",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "통역사를 의전이 밀어낸 회의",
+  "The Summit That Benched Its Interpreter",
+  "이어폰을 빌리러 온 줄 안 의전 담당. 그녀는 이 회의의 수석 통역사였다.",
+  "Protocol hands her a spare earpiece. She is the summit's lead interpreter.",
+  [
+   [
+    "H",
+    "간광민",
+    "Fiona Blake",
+    "30대 여성, 수수한 회색 원피스, 안경, 단정한 묶은 머리",
+    "woman in her 30s, plain gray dress, glasses, neat tied hair"
+   ],
+   [
+    "V",
+    "백서율",
+    "Grant Mosley",
+    "40대 남성, 검은 정장, 은색 넥타이, 곧은 자세",
+    "man in his 40s, black suit, silver tie, rigid posture"
+   ],
+   [
+    "A",
+    "신영호",
+    "Robert Neal",
+    "50대 남성, 회의 의장, 흰 머리, 두꺼운 서류",
+    "man in his 50s, summit chair, white hair, thick papers"
+   ]
+  ],
+  [
+   [
+    "회의장 입구",
+    "summit entrance",
+    "서율이 광민의 이어폰을 빼앗아 자기 귀에 꽂는다",
+    "Grant takes Fiona's earpiece and fits it in his own ear",
+    1,
+    "장비는 등록된 사람만 써요.",
+    "Only registered staff use the headsets.",
+    "cz"
+   ],
+   [
+    "회의장",
+    "summit hall",
+    "서율이 광민을 맨 뒷줄 의자로 안내한다",
+    "Grant steers Fiona to a chair in the last row",
+    1,
+    "통역 부스는 저 위에 있어요.",
+    "The interpreter booth is up there.",
+    "ms"
+   ],
+   [
+    "회의장",
+    "summit hall",
+    "광민이 목에 건 명찰을 손으로 뒤집는다",
+    "Fiona flips the badge hanging around her neck",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "단상",
+    "stage",
+    "영호가 마이크를 잡고 광민의 이름을 부른다",
+    "Robert takes the mic and calls Fiona's name",
+    2,
+    "수석 통역사님, 부스로 와 주십시오.",
+    "Lead interpreter, to the booth, please.",
+    "low"
+   ],
+   [
+    "회의장",
+    "summit hall",
+    "서율이 넥타이를 고쳐 매고 광민이 부스 계단을 오른다",
+    "Grant straightens his tie as Fiona climbs to the booth",
+    0,
+    "제 목소리는 등록 없이도 들리네요.",
+    "My voice needs no registration.",
+    "cu"
+   ],
+   [
+    "통역 부스",
+    "interpreter booth",
+    "광민이 다음 세션 명단에서 서율의 이름을 지운다",
+    "Fiona crosses Grant's name off the next session list",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "시식 알바로 몰린 브랜드 주인",
+  "The Sample Lady Who Owned the Brand",
+  "시식 알바라며 막아선 MD. 그 여자는 이 마트에 들어온 브랜드의 주인이었다.",
+  "A store manager scolds her like a temp. She owns the brand he just delisted.",
+  [
+   [
+    "H",
+    "탁하율",
+    "Ruth Calder",
+    "50대 여성, 앞치마, 머릿수건, 상기된 볼",
+    "woman in her 50s, apron, head scarf, flushed cheeks"
+   ],
+   [
+    "V",
+    "장기범",
+    "Doug Pemberton",
+    "40대 남성, 마트 MD, 셔츠에 명찰, 좁은 눈",
+    "man in his 40s, store buyer, shirt and badge, narrow eyes"
+   ],
+   [
+    "A",
+    "어승현",
+    "Ethan Ross",
+    "30대 남성, 흰 셔츠, 서류 가방, 단정한 머리",
+    "man in his 30s, white shirt, document bag, neat hair"
+   ]
+  ],
+  [
+   [
+    "마트 시식 코너",
+    "store sample corner",
+    "기범이 하율의 시식 접시를 치워 옆으로 민다",
+    "Doug pushes Ruth's sample tray aside",
+    1,
+    "알바는 손님한테 설명하지 마요.",
+    "Temps don't talk to customers.",
+    "cz"
+   ],
+   [
+    "마트 시식 코너",
+    "store sample corner",
+    "기범이 하율의 앞치마를 벗겨 의자에 걸친다",
+    "Doug pulls off Ruth's apron and hangs it on a chair",
+    1,
+    "이 브랜드 내일 퇴출이에요.",
+    "This brand is out tomorrow.",
+    "ms"
+   ],
+   [
+    "마트 시식 코너",
+    "store sample corner",
+    "하율이 앞치마 주머니에서 납품 계약서를 꺼낸다",
+    "Ruth takes a supply contract from her apron pocket",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "마트 시식 코너",
+    "store sample corner",
+    "승현이 계약서를 펴 들고 기범을 돌아본다",
+    "Ethan opens the contract and turns to Doug",
+    2,
+    "이 브랜드 대표님이십니다.",
+    "She owns this brand.",
+    "low"
+   ],
+   [
+    "마트 시식 코너",
+    "store sample corner",
+    "기범이 명찰을 떼고 하율이 앞치마를 다시 맨다",
+    "Doug unpins his badge as Ruth ties her apron back on",
+    0,
+    "내일 퇴출은 당신 쪽이네요.",
+    "Tomorrow's delisting is yours.",
+    "cu"
+   ],
+   [
+    "마트 입구",
+    "store entrance",
+    "승현이 새 진열대 도면을 하율에게 펼친다",
+    "Ethan spreads a new display plan for Ruth",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "계약서를 모르는 편집자",
+  "The Editor Who Forgot the Contract",
+  "신인이라며 원고를 밀어낸 편집자. 그녀는 그 작가의 계약을 쥔 에이전트였다.",
+  "An editor dismisses her manuscript. She holds the contract for his best author.",
+  [
+   [
+    "H",
+    "부나린",
+    "Zoe Ashby",
+    "30대 여성, 낡은 코트, 큰 가방, 짧은 단발",
+    "woman in her 30s, worn coat, big bag, short bob"
+   ],
+   [
+    "V",
+    "남채원",
+    "Martin Quill",
+    "40대 남성, 카디건, 안경, 얇은 입술",
+    "man in his 40s, cardigan, glasses, thin lips"
+   ],
+   [
+    "A",
+    "금경수",
+    "Stanley Irons",
+    "60대 남성, 회색 정장, 흰 수염, 느린 말투",
+    "man in his 60s, gray suit, white beard, slow speech"
+   ]
+  ],
+  [
+   [
+    "출판사 편집실",
+    "publisher's office",
+    "채원이 나린의 원고 봉투를 밀어 돌려준다",
+    "Martin shoves Zoe's manuscript envelope back at her",
+    1,
+    "신인 원고는 이메일로만 받아요.",
+    "New writers submit by email only.",
+    "cz"
+   ],
+   [
+    "출판사 편집실",
+    "publisher's office",
+    "채원이 봉투를 서류 더미 위에 던진다",
+    "Martin tosses the envelope onto a pile of papers",
+    1,
+    "다음엔 형식부터 맞춰 오세요.",
+    "Format it properly next time.",
+    "ms"
+   ],
+   [
+    "출판사 편집실",
+    "publisher's office",
+    "나린이 가방에서 도장 찍힌 계약서를 꺼낸다",
+    "Zoe takes out a stamped contract from her bag",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "출판사 편집실",
+    "publisher's office",
+    "경수가 계약서를 받아 들고 채원을 돌아본다",
+    "Stanley takes the contract and looks at Martin",
+    2,
+    "이 작가, 우리 회사 전속입니다.",
+    "That author is exclusive to us.",
+    "low"
+   ],
+   [
+    "출판사 편집실",
+    "publisher's office",
+    "채원이 안경을 벗고 나린이 봉투를 도로 집어 든다",
+    "Martin removes his glasses as Zoe picks the envelope back up",
+    0,
+    "원고는 다른 편집자에게 가죠.",
+    "This manuscript goes to another editor.",
+    "cu"
+   ],
+   [
+    "출판사 밖",
+    "outside the publisher",
+    "나린이 엘리베이터에서 다른 출판사 명함을 꺼낸다",
+    "In the elevator, Zoe takes out another publisher's card",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ]
+]

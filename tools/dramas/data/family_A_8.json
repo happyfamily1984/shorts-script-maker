@@ -1,0 +1,912 @@
+[
+ [
+  "조카 도장을 빼앗은 삼촌",
+  "The Uncle Who Took the Seal",
+  "삼촌은 은행원 조카를 창구나 서는 애라 부르고 가족 돈을 맡긴다. 명의 신탁 계약서가 남아 있었다.",
+  "The uncle has his banker nephew hold family money and calls him a window clerk. A nominee agreement was on file.",
+  [
+   [
+    "H",
+    "건우",
+    "Milo",
+    "30대 남성, 은행 제복, 짧은 머리, 정돈된 태도",
+    "man in his 30s, bank uniform, short hair, tidy manner"
+   ],
+   [
+    "V",
+    "갑수",
+    "Stanley",
+    "50대 남성, 회색 점퍼, 금반지, 큰 목소리",
+    "man in his 50s, gray jacket, gold ring, loud voice"
+   ],
+   [
+    "A",
+    "김 지점장",
+    "Mr. Stahl",
+    "50대 남성, 감색 정장, 안경, 무표정",
+    "man in his 50s, navy suit, glasses, blank face"
+   ]
+  ],
+  [
+   [
+    "은행 창구",
+    "bank counter",
+    "갑수가 건우의 창구 번호판을 손으로 돌려놓는다",
+    "Stanley spins the number sign on Milo's counter",
+    1,
+    "이 도장, 내가 맡아 둘게.",
+    "I'll hold on to this seal.",
+    "cz"
+   ],
+   [
+    "은행 창구",
+    "bank counter",
+    "갑수가 건우의 도장을 빼앗아 주머니에 넣는다",
+    "Stanley snatches Milo's seal and pockets it",
+    1,
+    "네 이름으로 된 돈도 내 거야.",
+    "Money in your name is still mine.",
+    "ots"
+   ],
+   [
+    "은행 창구",
+    "bank counter",
+    "건우가 명의 신탁 계약서의 서명란을 펼친다",
+    "Milo opens the signature page of the nominee agreement",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "은행 창구",
+    "bank counter",
+    "김 지점장이 계약서를 갑수 앞에 놓는다",
+    "Mr. Stahl sets the agreement before Stanley",
+    2,
+    "이 예금의 실제 주인은 건우 씨입니다.",
+    "The true owner of this deposit is Milo.",
+    "slo"
+   ],
+   [
+    "은행 창구",
+    "bank counter",
+    "갑수가 주머니에서 도장을 꺼내 창구에 놓는다",
+    "Stanley pulls the seal out and sets it on the counter",
+    0,
+    "대출 심사는 제가 합니다.",
+    "I decide your loan approval.",
+    "cu"
+   ],
+   [
+    "은행 로비",
+    "bank lobby",
+    "남자가 지점장실 문을 열고 들어간다",
+    "A man opens the branch manager's door and walks in",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "유산을 혼자 챙긴 이모의 조서",
+  "The Estate She Took Alone",
+  "이모는 유언 집행 조카를 서류나 나르는 애라 부르고 유산을 혼자 챙긴다. 검인 조서가 지분을 뒤집었다.",
+  "The aunt calls the estate executor a paper carrier and takes everything. The probate record redraws the shares.",
+  [
+   [
+    "H",
+    "서진",
+    "Nora",
+    "40대 여성, 회색 정장, 낮은 구두, 차분한 눈",
+    "woman in her 40s, gray suit, low heels, calm eyes"
+   ],
+   [
+    "V",
+    "순옥",
+    "Loretta",
+    "60대 여성, 자주색 트위드 재킷, 큰 가방",
+    "woman in her 60s, plum jacket, large handbag, sharp tongue"
+   ],
+   [
+    "A",
+    "류 서기",
+    "Ms. Rowan",
+    "30대 여성, 법원 제복, 서류철, 무뚝뚝함",
+    "woman in her 30s, court uniform, file, blunt manner"
+   ]
+  ],
+  [
+   [
+    "법원 복도",
+    "courthouse hallway",
+    "순옥이 서진의 서류 가방을 바닥에 내팽개친다",
+    "Loretta flings Nora's document bag to the floor",
+    1,
+    "넌 서류만 들고 따라와.",
+    "Carry the papers and follow.",
+    "ms"
+   ],
+   [
+    "법원 복도",
+    "courthouse hallway",
+    "순옥이 서진의 이름표를 떼어 쓰레기통에 버린다",
+    "Loretta tears off Nora's name tag and bins it",
+    1,
+    "상속? 넌 아무것도 없어.",
+    "Inheritance? You get nothing.",
+    "cz"
+   ],
+   [
+    "법원 복도",
+    "courthouse hallway",
+    "서진이 유언 검인 조서의 지분 표를 넘긴다",
+    "Nora turns to the share table in the probate record",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "법정",
+    "courtroom",
+    "류 서기가 조서를 순옥 앞에 펼친다",
+    "Ms. Rowan opens the record before Loretta",
+    2,
+    "검인 결과, 순옥 씨 지분은 영입니다.",
+    "Probate shows Loretta's share is zero.",
+    "low"
+   ],
+   [
+    "법정",
+    "courtroom",
+    "순옥이 가방을 바닥에 떨어뜨린다",
+    "Loretta lets her handbag fall to the floor",
+    0,
+    "집 열쇠는 오늘 반납하세요.",
+    "Return the house keys today.",
+    "rx"
+   ],
+   [
+    "법원 정문",
+    "courthouse steps",
+    "계단에서 남자가 유언장 사본을 든다",
+    "A man on the steps holds a copy of the will",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "약물 오류를 뒤집어쓴 간호사",
+  "The Nurse Who Took the Blame",
+  "시누이는 약물 오류를 간호사에게 뒤집어씌우고 주사나 놓는 애라 부른다. 투약 기록이 시간을 되돌려 놓았다.",
+  "The sister-in-law pins a medication error on the nurse and mocks her. The medication log turns back the clock.",
+  [
+   [
+    "H",
+    "유진",
+    "Clara",
+    "30대 여성, 하늘색 간호복, 묶은 머리, 단단한 눈",
+    "woman in her 30s, light blue scrubs, tied hair, firm eyes"
+   ],
+   [
+    "V",
+    "미옥",
+    "Brenda",
+    "50대 여성, 카키 코트, 큰 귀걸이, 날선 목소리",
+    "woman in her 50s, khaki coat, big earrings, sharp voice"
+   ],
+   [
+    "A",
+    "안 과장",
+    "Ms. Voight",
+    "40대 여성, 흰 가운, 태블릿, 차가운 말투",
+    "woman in her 40s, white coat, tablet, cold tone"
+   ]
+  ],
+  [
+   [
+    "병원 병동",
+    "hospital ward",
+    "미옥이 유진의 손에서 투약 트레이를 낚아챈다",
+    "Brenda snatches the medication tray from Clara's hands",
+    1,
+    "이 약, 네가 잘못 놨어.",
+    "You gave the wrong dose.",
+    "ws"
+   ],
+   [
+    "병원 병동",
+    "hospital ward",
+    "미옥이 복도 사람들에게 유진을 손가락질한다",
+    "Brenda points at Clara for everyone in the hallway",
+    1,
+    "여기 사람들 다 들어 봐.",
+    "Everyone here should hear this.",
+    "trk"
+   ],
+   [
+    "병원 병동",
+    "hospital ward",
+    "유진이 투약 기록의 시간과 병동을 확인한다",
+    "Clara checks the time and ward in the medication log",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "병원 병동",
+    "hospital ward",
+    "안 과장이 투약 기록을 미옥 앞에 돌린다",
+    "Ms. Voight turns the medication log toward Brenda",
+    2,
+    "그 시간, 유진 씨는 다른 병동에 있었습니다.",
+    "At that hour, Clara was in another ward.",
+    "pi"
+   ],
+   [
+    "병원 병동",
+    "hospital ward",
+    "미옥이 사람들 사이에서 뒷걸음친다",
+    "Brenda backs away through the crowd",
+    0,
+    "명예훼손으로 접수하겠습니다.",
+    "I'm filing a defamation report.",
+    "cu"
+   ],
+   [
+    "병원 로비",
+    "hospital lobby",
+    "여자가 간호부장 배지를 내민다",
+    "A woman in the lobby shows a head nurse badge",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "후원 명단을 달라던 고모부",
+  "The Donor With No Money",
+  "고모부는 사육사 조카를 짐승이나 먹이는 애라 부르고 후원 명단을 요구한다. 그 명단에 자기 이름이 있었다.",
+  "The uncle demands the zoo donor list and calls him an animal feeder. His own name was on that list.",
+  [
+   [
+    "H",
+    "한별",
+    "Miles",
+    "20대 남성, 사육사 작업복, 짧은 머리, 부드러운 눈",
+    "man in his 20s, zookeeper uniform, short hair, soft eyes"
+   ],
+   [
+    "V",
+    "봉출",
+    "Harris",
+    "60대 남성, 체크 재킷, 지팡이, 큰 웃음",
+    "man in his 60s, check jacket, cane, loud laugh"
+   ],
+   [
+    "A",
+    "사육 팀장",
+    "Mr. Farley",
+    "50대 남성, 초록 작업복, 무전기, 무뚝뚝함",
+    "man in his 50s, green work clothes, radio, blunt manner"
+   ]
+  ],
+  [
+   [
+    "동물원 우리 앞",
+    "zoo enclosure",
+    "봉출이 한별의 먹이 양동이를 발로 차 넘어뜨린다",
+    "Harris kicks over Miles's feed bucket",
+    1,
+    "짐승 먹이는 일이 그렇게 대단해?",
+    "Feeding animals is a career?",
+    "cz"
+   ],
+   [
+    "동물원 우리 앞",
+    "zoo enclosure",
+    "봉출이 후원 명단을 달라며 손바닥을 내민다",
+    "Harris holds out his palm for the donor list",
+    1,
+    "후원 명단 맨 위에 내 이름 써.",
+    "Put my name at the top.",
+    "ms"
+   ],
+   [
+    "동물원 사무실",
+    "zoo office",
+    "한별이 후원 명단의 미납 칸을 확인한다",
+    "Miles checks the unpaid column on the donor list",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "동물원 우리 앞",
+    "zoo enclosure",
+    "사육 팀장이 명단 사본을 봉출 앞에 놓는다",
+    "The head keeper sets a copy of the list before Harris",
+    2,
+    "후원금 삼 년치 미납, 봉출 씨 이름입니다.",
+    "Three years of pledges unpaid, all under Harris.",
+    "low"
+   ],
+   [
+    "동물원 우리 앞",
+    "zoo enclosure",
+    "봉출이 지팡이를 놓치고 관람객 사이로 물러난다",
+    "Harris drops his cane and shrinks back through visitors",
+    0,
+    "후원 명단에서 빼겠습니다.",
+    "I'm removing your name from the donors.",
+    "cu"
+   ],
+   [
+    "동물원 입구",
+    "zoo entrance",
+    "여자가 새끼 사슴 우리 열쇠를 든다",
+    "A woman at the gate holds the fawn enclosure key",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "지분을 가로챈 사촌의 회의",
+  "The Shares He Took",
+  "사촌은 개발자 조카를 코드나 짜는 애라 부르고 지분을 가로챈다. 창업 계약서가 사촌을 사외로 밀어냈다.",
+  "The cousin calls the developer a code monkey and grabs his shares. The founder agreement pushed the cousin out.",
+  [
+   [
+    "H",
+    "가온",
+    "Julian",
+    "20대 후반 남성, 회색 후드, 안경, 조용한 표정",
+    "man in his late 20s, gray hoodie, glasses, quiet face"
+   ],
+   [
+    "V",
+    "창근",
+    "Frank",
+    "40대 남성, 흰 셔츠, 커프스 버튼, 거만한 미소",
+    "man in his 40s, white shirt, cufflinks, arrogant smirk"
+   ],
+   [
+    "A",
+    "투자자",
+    "Ms. Yost",
+    "40대 여성, 검은 수트, 태블릿, 단호한 말투",
+    "woman in her 40s, black suit, tablet, firm tone"
+   ]
+  ],
+  [
+   [
+    "스타트업 사무실",
+    "startup office",
+    "창근이 가온의 노트북 덮개를 탁 닫는다",
+    "Frank slams Julian's laptop shut",
+    1,
+    "회사 얘기는 개발자한테 묻지 마.",
+    "Don't ask developers about the company.",
+    "ms"
+   ],
+   [
+    "스타트업 사무실",
+    "startup office",
+    "창근이 가온의 출입 카드를 부러뜨린다",
+    "Frank snaps Julian's access card in half",
+    1,
+    "출입증은 내가 회수한다.",
+    "I'm taking your access card.",
+    "ots"
+   ],
+   [
+    "스타트업 사무실",
+    "startup office",
+    "가온이 창업 지분 계약서의 조항을 넘긴다",
+    "Julian turns through the founder agreement",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "스타트업 회의실",
+    "startup meeting room",
+    "투자자가 계약서를 창근 앞에 놓는다",
+    "The investor lays the agreement before Frank",
+    2,
+    "지분 이십오 퍼센트는 가온 씨 것입니다.",
+    "Twenty-five percent belongs to Julian.",
+    "slo"
+   ],
+   [
+    "스타트업 회의실",
+    "startup meeting room",
+    "창근이 회의실 책상 모서리에 손을 짚고 멈춘다",
+    "Frank grips the table edge and stops",
+    0,
+    "이사회에서 뵙겠습니다.",
+    "See you at the board meeting.",
+    "cz"
+   ],
+   [
+    "사무실 창가",
+    "office window",
+    "회의실 유리문 밖에서 남자가 지분 서류를 흔든다",
+    "A man outside the glass shakes a share document",
+    -1,
+    "",
+    "",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "공연 수익을 독차지한 이모",
+  "The Show That Went Dark",
+  "이모는 무대 감독인 조카를 막이나 치는 애라 부리고 공연 수익을 독차지한다. 공연 계약서가 무대를 닫았다.",
+  "The aunt calls the stage manager a curtain puller and keeps the ticket money. The venue contract closed the stage.",
+  [
+   [
+    "H",
+    "하율",
+    "Mara",
+    "30대 여성, 검은 작업복, 무전기, 또렷한 눈",
+    "woman in her 30s, black work clothes, radio, clear eyes"
+   ],
+   [
+    "V",
+    "말자",
+    "Sylvia",
+    "60대 여성, 보랏빛 드레스, 긴 목걸이, 거만한 웃음",
+    "woman in her 60s, violet dress, long necklace, haughty laugh"
+   ],
+   [
+    "A",
+    "극장장",
+    "Mr. Baird",
+    "50대 남성, 나비넥타이, 서류철, 온화한 얼굴",
+    "man in his 50s, bow tie, file, gentle face"
+   ]
+  ],
+  [
+   [
+    "극장 무대 뒤",
+    "theater backstage",
+    "말자가 하율의 무전기를 빼앗아 소파에 던진다",
+    "Sylvia takes Mara's radio and tosses it on a sofa",
+    1,
+    "무대는 내 거야. 넌 조명이나 봐.",
+    "The stage is mine. Watch the lights.",
+    "cz"
+   ],
+   [
+    "극장 무대 뒤",
+    "theater backstage",
+    "말자가 무대 인력 명단에서 하율을 지운다",
+    "Sylvia erases Mara from the crew list",
+    1,
+    "수익은 내 몫. 가족이니까.",
+    "The profit is mine. Family.",
+    "trk"
+   ],
+   [
+    "극장 사무실",
+    "theater office",
+    "하율이 공연 계약서의 감독 서명란을 확인한다",
+    "Mara checks the manager's signature line",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "극장 무대",
+    "theater stage",
+    "극장장이 계약서를 말자 앞에 펼친다",
+    "The theater manager opens the contract before Sylvia",
+    2,
+    "무대 사용은 감독 하율 씨 서명이 필요합니다.",
+    "Stage use requires manager Mara's signature.",
+    "low"
+   ],
+   [
+    "극장 무대",
+    "theater stage",
+    "말자가 무대 조명 스위치에서 손을 뗀다",
+    "Sylvia takes her hand off the stage light switch",
+    0,
+    "오늘 공연은 열리지 않습니다.",
+    "Tonight's show does not open.",
+    "rx"
+   ],
+   [
+    "극장 로비",
+    "theater lobby",
+    "로비 포스터에 새 감독 이름이 인쇄된다",
+    "The lobby poster is reprinted with a new director's name",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "지분을 넘기라던 큰아버지",
+  "Forty Percent, Signed Away",
+  "큰아버지는 양조자인 조카를 포도나 밟는 애라 부르고 지분을 넘긴다. 등기된 지분이 조카 이름으로 돌아왔다.",
+  "The uncle sells off his winemaker nephew's stake and mocks him. The registered shares return to the nephew.",
+  [
+   [
+    "H",
+    "이든",
+    "Anton",
+    "30대 남성, 흙 묻은 앞치마, 짧은 수염, 조용한 눈",
+    "man in his 30s, dusty apron, short beard, quiet eyes"
+   ],
+   [
+    "V",
+    "덕만",
+    "Norman",
+    "60대 남성, 승마 바지, 카디건, 거만한 걸음",
+    "man in his 60s, riding trousers, cardigan, arrogant walk"
+   ],
+   [
+    "A",
+    "그리어 씨",
+    "Ms. Greer",
+    "40대 여성, 회색 정장, 서류 가방, 단호한 표정",
+    "woman in her 40s, gray suit, briefcase, firm expression"
+   ]
+  ],
+  [
+   [
+    "와이너리 저장고",
+    "winery cellar",
+    "덕만이 이든의 잔을 배럴 위에서 밀어 떨어뜨린다",
+    "Norman pushes Anton's glass off a barrel",
+    1,
+    "이 와이너리, 이제 내가 정리해.",
+    "I'm settling this winery now.",
+    "ms"
+   ],
+   [
+    "와이너리 저장고",
+    "winery cellar",
+    "덕만이 지분 매각 서류에 사인을 요구한다",
+    "Norman demands a signature on the share sale",
+    1,
+    "지분 서류에 사인해. 조용히.",
+    "Sign the shares over. Quietly.",
+    "cz"
+   ],
+   [
+    "와이너리 사무실",
+    "winery office",
+    "이든이 지분 등기 사본의 이름을 확인한다",
+    "Anton checks the name on the share registration",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "와이너리 저장고",
+    "winery cellar",
+    "그리어가 등기부를 덕만 앞에 펼친다",
+    "Ms. Greer opens the register before Norman",
+    2,
+    "지분 사십 퍼센트, 이든 씨 명의로 등기됐습니다.",
+    "Forty percent is registered to Anton.",
+    "pi"
+   ],
+   [
+    "와이너리 저장고",
+    "winery cellar",
+    "덕만이 매각 서류를 배럴 위에 내려놓는다",
+    "Norman sets the sale papers on a barrel",
+    0,
+    "매각은 취소됐습니다.",
+    "The sale is cancelled.",
+    "cu"
+   ],
+   [
+    "와이너리 입구",
+    "winery entrance",
+    "값비싼 차에서 남자가 내려 이든에게 손을 내민다",
+    "A man steps from the fine car and offers Anton his hand",
+    -1,
+    "",
+    "",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "화물을 공짜로 맡긴 처남",
+  "The Cargo He Couldn't Move",
+  "처남은 창고 관리자 조카에게 회사 화물을 공짜로 맡기고 상자나 나르는 애라 부른다. 장부가 인도를 막았다.",
+  "The brother-in-law stores company freight free and calls him a box mover. The inventory ledger blocked delivery.",
+  [
+   [
+    "H",
+    "선우",
+    "Ben",
+    "30대 남성, 노란 안전 조끼, 짧은 머리, 무던한 얼굴",
+    "man in his 30s, yellow safety vest, short hair, steady face"
+   ],
+   [
+    "V",
+    "인복",
+    "Dennis",
+    "50대 남성, 회색 정장, 무전기, 큰 걸음",
+    "man in his 50s, gray suit, radio, heavy stride"
+   ],
+   [
+    "A",
+    "고 주임",
+    "Ms. Voss",
+    "30대 여성, 창고 유니폼, 태블릿, 무표정",
+    "woman in her 30s, warehouse uniform, tablet, blank face"
+   ]
+  ],
+  [
+   [
+    "물류 창고",
+    "logistics warehouse",
+    "인복이 선우의 재고 스캐너를 바닥에 던진다",
+    "Dennis throws Ben's inventory scanner to the floor",
+    1,
+    "이 팔레트, 우리 회사 거야.",
+    "These pallets are my company's.",
+    "ws"
+   ],
+   [
+    "물류 창고",
+    "logistics warehouse",
+    "인복이 화물 팔레트에 자기 회사 표를 붙인다",
+    "Dennis sticks his company label on a pallet",
+    1,
+    "보관료? 나중에 얘기하자.",
+    "Storage fees? Later.",
+    "ms"
+   ],
+   [
+    "물류 창고",
+    "logistics warehouse",
+    "선우가 재고 장부의 보관 기간을 확인한다",
+    "Ben checks the storage term in the inventory ledger",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "물류 창고",
+    "logistics warehouse",
+    "고 주임이 장부를 인복 앞에 돌린다",
+    "Ms. Voss turns the ledger toward Dennis",
+    2,
+    "보관료 미납, 이 화물은 인도할 수 없습니다.",
+    "Storage unpaid. This cargo cannot be released.",
+    "pi"
+   ],
+   [
+    "물류 창고",
+    "logistics warehouse",
+    "인복이 팔레트 라벨을 떼어 내려놓는다",
+    "Dennis peels off the pallet label and sets it down",
+    0,
+    "오늘 출고는 없습니다.",
+    "No shipments go out today.",
+    "cu"
+   ],
+   [
+    "창고 정문",
+    "warehouse gate",
+    "여자가 압류 안내문을 붙인다",
+    "A woman pastes a lien notice on the gate",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "무료 수업을 요구한 올케",
+  "The Class She Couldn't Join",
+  "올케는 필라테스 강사인 조카에게 무료 수업을 받고 몸이나 푼다며 무시한다. 강사 계약서가 수업을 끊었다.",
+  "The sister-in-law takes free classes and sneers at her job. The instructor contract closed the studio door.",
+  [
+   [
+    "H",
+    "가은",
+    "Lila",
+    "20대 후반 여성, 연보라 운동복, 묶은 머리, 밝은 눈",
+    "woman in her late 20s, lavender athletic wear, tied hair, bright eyes"
+   ],
+   [
+    "V",
+    "정례",
+    "Rita",
+    "40대 여성, 분홍 요가복, 큰 물병, 얕보는 웃음",
+    "woman in her 40s, pink yoga wear, big bottle, condescending smile"
+   ],
+   [
+    "A",
+    "피어스 씨",
+    "Mr. Speer",
+    "50대 남성, 검은 폴로, 클립보드, 단호한 태도",
+    "man in his 50s, black polo, clipboard, firm manner"
+   ]
+  ],
+  [
+   [
+    "필라테스 스튜디오",
+    "pilates studio",
+    "정례가 가은의 매트를 발로 밀어 접는다",
+    "Rita kicks Lila's mat shut",
+    1,
+    "매트 하나로 뭘 가르친다고.",
+    "A mat and you call it teaching?",
+    "cz"
+   ],
+   [
+    "필라테스 스튜디오",
+    "pilates studio",
+    "정례가 지인 다섯 명을 데리고 예약 없이 들어온다",
+    "Rita walks in with five friends and no booking",
+    1,
+    "우리 여섯 명, 오늘 끼워 줘.",
+    "Fit six of us in today.",
+    "ots"
+   ],
+   [
+    "스튜디오 접수대",
+    "studio desk",
+    "가은이 강사 계약서의 수업 배정표를 본다",
+    "Lila reads the class schedule on her contract",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "필라테스 스튜디오",
+    "pilates studio",
+    "피어스가 계약서를 정례 앞에 놓는다",
+    "Mr. Speer lays the contract before Rita",
+    2,
+    "수업 배정은 강사 가은 씨 권한입니다.",
+    "Class slots belong to instructor Lila.",
+    "low"
+   ],
+   [
+    "필라테스 스튜디오",
+    "pilates studio",
+    "정례가 물병을 들고 문가로 물러난다",
+    "Rita picks up her bottle and retreats to the door",
+    0,
+    "오늘 수업은 없습니다.",
+    "There is no class today.",
+    "cu"
+   ],
+   [
+    "스튜디오 유리문",
+    "studio glass door",
+    "문이 열리고 새 강사가 가방을 내려놓는다",
+    "The door opens and a new instructor sets her bag down",
+    -1,
+    "",
+    "",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "차 열 대를 맡긴 형의 회사",
+  "Ten Cars, No Payment",
+  "형은 호텔 발렛인 동생에게 회사 차량 열 대를 맡기고 값을 안 준다. 대여 계약서에 동생 이름이 있었다.",
+  "The brother leaves ten company cars with his valet sibling and pays nothing. The rental contract is in his name.",
+  [
+   [
+    "H",
+    "민재",
+    "Sam",
+    "30대 남성, 호텔 발렛 제복, 짧은 머리, 차분한 눈",
+    "man in his 30s, hotel valet uniform, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "진호",
+    "Bruce",
+    "40대 남성, 검은 코트, 선글라스, 큰 목소리",
+    "man in his 40s, black coat, sunglasses, loud voice"
+   ],
+   [
+    "A",
+    "모건 매니저",
+    "Ms. Pruitt",
+    "40대 여성, 호텔 제복, 태블릿, 정중한 말투",
+    "woman in her 40s, hotel uniform, tablet, polite tone"
+   ]
+  ],
+  [
+   [
+    "호텔 주차장",
+    "hotel parking",
+    "진호가 민재의 발렛 열쇠함을 통째로 비운다",
+    "Bruce empties Sam's valet key box",
+    1,
+    "이 차들, 오늘부터 우리가 쓴다.",
+    "We use these cars from today.",
+    "ms"
+   ],
+   [
+    "호텔 주차장",
+    "hotel parking",
+    "진호가 회사 차량 열 대에 자기 회사 스티커를 붙인다",
+    "Bruce sticks his company logo on ten cars",
+    1,
+    "열쇠는 내가 갖고 있으면 돼.",
+    "I'll just keep the keys.",
+    "trk"
+   ],
+   [
+    "호텔 주차장",
+    "hotel parking",
+    "민재가 차량 대여 계약서의 목록을 확인한다",
+    "Sam checks the car list on the rental contract",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "모건 매니저가 계약서를 진호 앞에 든다",
+    "Ms. Pruitt holds the contract before Bruce",
+    2,
+    "차량 대여 명의는 민재 씨입니다.",
+    "The rental is under Sam's name.",
+    "slo"
+   ],
+   [
+    "호텔 주차장",
+    "hotel parking",
+    "진호가 차 키를 민재 손에 쥐여 준다",
+    "Bruce drops the keys into Sam's hand",
+    0,
+    "키는 오늘 회수합니다.",
+    "I'm taking the keys back today.",
+    "rx"
+   ],
+   [
+    "호텔 정문",
+    "hotel entrance",
+    "남자가 새 차 키를 들고 온다",
+    "A man at the entrance arrives with a new set of keys",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ]
+]

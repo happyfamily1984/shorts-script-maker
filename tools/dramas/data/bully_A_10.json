@@ -1,0 +1,912 @@
+[
+ [
+  "링크나 닦던 코치",
+  "The Coach Who Swept the Rink",
+  "출전 등록을 요구하며 코치를 링크 정리 담당으로 부른 회원. 등록을 결정하는 사람이 그였다.",
+  "A member demands competition entry and calls the coach a rink sweeper. He signs the entry.",
+  [
+   [
+    "H",
+    "규율",
+    "Cameron",
+    "30대 남성, 검은 코치 점퍼, 짧은 머리, 차분한 눈",
+    "man in his 30s, black coach jacket, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "다림",
+    "Janice",
+    "30대 여성, 하늘색 원피스, 긴 머리, 비웃는 입",
+    "woman in her 30s, sky-blue dress, long hair, sneering mouth"
+   ],
+   [
+    "A",
+    "서염",
+    "Mario",
+    "30대 남성, 링크 직원, 신청서, 공손한 태도",
+    "man in his 30s, rink staff, entry form, deferential manner"
+   ]
+  ],
+  [
+   [
+    "아이스링크",
+    "ice rink",
+    "다림이 스케이트를 밀어 규율 앞에서 멈춘다",
+    "Janice pushes a skate so it stops in front of Cameron",
+    1,
+    "링크나 닦던 애가 코치야?",
+    "The rink sweeper is a coach?",
+    "cz"
+   ],
+   [
+    "아이스링크",
+    "ice rink",
+    "다림이 출전 신청서를 찢어 얼음 위에 던진다",
+    "She tears the entry form and throws it on the ice",
+    1,
+    "내 출전, 오늘 접수해.",
+    "Enter me today.",
+    "ms"
+   ],
+   [
+    "아이스링크",
+    "ice rink",
+    "규율이 얼음 위의 신청서를 주워 이름을 확인한다",
+    "Cameron picks the form off the ice and checks the name",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "아이스링크",
+    "ice rink",
+    "서염이 코치 명단을 들고 와 규율 옆에 선다",
+    "Mario brings the coach roster and stands beside Cameron",
+    2,
+    "코치님, 이분은 기술 평가를 통과 못 했습니다.",
+    "Coach, she failed the required skills test.",
+    "low"
+   ],
+   [
+    "아이스링크",
+    "ice rink",
+    "다림이 스케이트를 발로 돌리며 입을 다문다",
+    "Janice spins a skate with her foot and says nothing",
+    0,
+    "출전 등록은 반려입니다. 다음 대회를 보세요.",
+    "Entry denied. Try the next competition.",
+    "cu"
+   ],
+   [
+    "아이스링크",
+    "ice rink",
+    "서염이 신청서 뒷장의 코치 이름을 가리킨다",
+    "Mario points at a coach name on the back",
+    2,
+    "이 신청서, 다른 코치 이름으로 올라왔습니다.",
+    "This entry came in under another coach.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "바느질하던 재단사",
+  "The Tailor They Mocked",
+  "취임식 양복을 하루 만에 요구하며 재단사를 조롱한 회장. 그 양복을 지을 사람이 그였다.",
+  "A chairwoman demands an inauguration suit overnight and sneers at the tailor. He is the one who can make it.",
+  [
+   [
+    "H",
+    "바름",
+    "Alex",
+    "50대 남성, 재단사 앞치마에 줄자, 흰 머리, 조용한 눈",
+    "man in his 50s, tailor's apron and tape measure, white hair, quiet eyes"
+   ],
+   [
+    "V",
+    "봄날",
+    "Jill",
+    "50대 여성, 검은 정장, 큰 목걸이, 치켜든 턱",
+    "woman in her 50s, black suit, large necklace, lifted chin"
+   ],
+   [
+    "A",
+    "서총",
+    "Carl",
+    "30대 남성, 양복점 직원, 옷걸이, 조심스러운 손",
+    "man in his 30s, shop assistant, clothes hanger, careful hands"
+   ]
+  ],
+  [
+   [
+    "맞춤 양복점",
+    "tailor shop",
+    "봄날이 재단 가위를 집어 탁자에 내려놓는다",
+    "Jill picks up the shears and sets them on the table",
+    1,
+    "바느질하던 애가 회장님 옷을 짓는다고?",
+    "The seamster makes the chairwoman's suits?",
+    "cz"
+   ],
+   [
+    "맞춤 양복점",
+    "tailor shop",
+    "봄날이 주문서를 찢어 바름 앞에 던진다",
+    "She tears the order and throws it at him",
+    1,
+    "취임식 양복, 내일 아침까지.",
+    "The inauguration suit. By morning.",
+    "ms"
+   ],
+   [
+    "맞춤 양복점",
+    "tailor shop",
+    "바름이 찢어진 주문서를 주워 치수를 확인한다",
+    "Alex gathers the torn order and checks the measurements",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "맞춤 양복점",
+    "tailor shop",
+    "서총이 거래 장부를 들고 와 바름에게 건넨다",
+    "Carl brings the account book and hands it over",
+    2,
+    "원장님, 이 회사는 지난 분기 외상이 남았습니다.",
+    "Master, this company still owes last quarter.",
+    "low"
+   ],
+   [
+    "맞춤 양복점",
+    "tailor shop",
+    "봄날이 목걸이를 만지며 한 걸음 물러선다",
+    "Jill touches her necklace and steps back",
+    0,
+    "양복은 못 짓습니다. 다른 곳에 맡기세요.",
+    "I can't make it. Take your order elsewhere.",
+    "cu"
+   ],
+   [
+    "맞춤 양복점",
+    "tailor shop",
+    "서총이 옷 안감에 붙은 라벨을 가리킨다",
+    "Carl points at a label sewn into the lining",
+    2,
+    "이 라벨, 다른 재단사 겁니다.",
+    "This label belongs to another tailor.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "벽 타는 애라던 관장",
+  "The Climbing Wall Owner",
+  "촬영 허가를 요구하며 관장을 벽 타는 애로 부른 인플루언서. 촬영을 정하는 사람이 그녀였다.",
+  "An influencer demands a filming permit and calls the gym owner a wall rat. She approves the shoot.",
+  [
+   [
+    "H",
+    "겨울",
+    "Amy",
+    "50대 여성, 검은 운동복, 짧은 회색 머리, 단단한 눈",
+    "woman in her 50s, black sportswear, short gray hair, firm eyes"
+   ],
+   [
+    "V",
+    "라율",
+    "Fred",
+    "40대 남성, 형광 재킷, 카메라, 거만한 웃음",
+    "man in his 40s, neon jacket, camera, smug laugh"
+   ],
+   [
+    "A",
+    "다움",
+    "Anne",
+    "30대 여성, 클라이밍장 직원, 하네스, 긴장한 표정",
+    "woman in her 30s, gym staff, harness, tense face"
+   ]
+  ],
+  [
+   [
+    "클라이밍장",
+    "climbing gym",
+    "라율이 홀드 하나를 떼어 바닥에 던진다",
+    "Fred pries a hold off the wall and throws it down",
+    1,
+    "벽 타는 애가 관장이야? 웃기네.",
+    "The wall rat runs this gym? Funny.",
+    "cz"
+   ],
+   [
+    "클라이밍장",
+    "climbing gym",
+    "라율이 촬영 허가서를 찢어 겨울 앞에 던진다",
+    "He tears the filming permit and throws it at her",
+    1,
+    "내 영상, 오늘 여기서 찍어.",
+    "I'm filming here today.",
+    "ms"
+   ],
+   [
+    "클라이밍장",
+    "climbing gym",
+    "겨울이 떨어진 홀드를 주워 벽에 다시 끼운다",
+    "Amy picks up the fallen hold and fits it back on the wall",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "클라이밍장",
+    "climbing gym",
+    "다움이 안전 점검표를 들고 와 겨울 옆에 선다",
+    "Anne brings the safety checklist and stands beside her",
+    2,
+    "관장님, 이 구역은 안전 점검 전입니다.",
+    "Director, this section isn't safety-checked.",
+    "low"
+   ],
+   [
+    "클라이밍장",
+    "climbing gym",
+    "라율이 카메라를 내리고 벽에서 물러난다",
+    "Fred lowers his camera and backs away from the wall",
+    0,
+    "촬영은 안 됩니다. 나가 주세요.",
+    "No filming. Please leave.",
+    "cu"
+   ],
+   [
+    "클라이밍장",
+    "climbing gym",
+    "다움이 문가에 선 남자를 보며 겨울에게 말한다",
+    "Anne looks at a man in the doorway and speaks to Amy",
+    2,
+    "방금 오신 분이 촬영 허가를 냈다고 합니다.",
+    "The man at the door says he filed the permit.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "개찰구 지키던 역장",
+  "The Ticket Gate Keeper",
+  "광장 공연을 오늘 승인하라며 역장을 개찰구 담당으로 부른 기획자. 대관을 정하는 사람이 그녀였다.",
+  "A promoter demands plaza concert approval today and sneers at the stationmaster. She decides the venue.",
+  [
+   [
+    "H",
+    "여린",
+    "Annie",
+    "40대 여성, 역무 제복, 단정한 머리, 서늘한 눈",
+    "woman in her 40s, station uniform, neat hair, cool eyes"
+   ],
+   [
+    "V",
+    "부경",
+    "Dan",
+    "50대 남성, 값비싼 코트, 매끈한 머리, 비웃는 입",
+    "man in his 50s, expensive coat, sleek hair, sneering mouth"
+   ],
+   [
+    "A",
+    "잎새",
+    "Beth",
+    "30대 여성, 역무원, 무전기, 다급한 표정",
+    "woman in her 30s, station staff, radio, urgent face"
+   ]
+  ],
+  [
+   [
+    "기차역 광장",
+    "station plaza",
+    "부경이 공연 현수막을 밀어 바닥에 떨어뜨린다",
+    "Dan shoves a concert banner onto the ground",
+    1,
+    "개찰구나 지키던 애가 허가를 해?",
+    "The ticket gate keeper issues permits?",
+    "cz"
+   ],
+   [
+    "기차역 광장",
+    "station plaza",
+    "부경이 대관 신청서를 찢어 여린 앞에 던진다",
+    "He tears the venue application and throws it at her",
+    1,
+    "광장 공연, 오늘 승인해.",
+    "Approve my plaza concert today.",
+    "ms"
+   ],
+   [
+    "기차역 광장",
+    "station plaza",
+    "여린이 찢어진 신청서를 주워 날짜를 확인한다",
+    "Annie picks up the torn application and checks the date",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "기차역 광장",
+    "station plaza",
+    "잎새가 역무 일정표를 들고 와 여린 옆에 선다",
+    "Beth brings the station schedule and stands beside her",
+    2,
+    "역장님, 그날은 선로 공사가 잡혀 있습니다.",
+    "Stationmaster, track work is scheduled that day.",
+    "low"
+   ],
+   [
+    "기차역 광장",
+    "station plaza",
+    "부경이 현수막을 접어 들고 물러선다",
+    "Dan folds the banner and steps back",
+    0,
+    "공연은 안 됩니다. 다른 장소를 보세요.",
+    "No concert. Find another venue.",
+    "cu"
+   ],
+   [
+    "기차역 광장",
+    "station plaza",
+    "잎새가 신청서 아래 다른 역의 도장을 가리킨다",
+    "Beth points at another station's stamp under the form",
+    2,
+    "이 신청서, 다른 역에서도 반려됐습니다.",
+    "Another station already rejected this.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "책 정리하던 서점 주인",
+  "The Bookshop Keeper",
+  "사인회를 이번 주말로 잡으라며 서점 주인을 책 정리 담당으로 부른 작가. 행사를 정하는 사람이 그였다.",
+  "An author demands a weekend signing and sneers at the bookshop keeper. He runs the store and its events.",
+  [
+   [
+    "H",
+    "해밀",
+    "Nick",
+    "30대 남성, 회색 니트에 앞치마, 짧은 머리, 조용한 눈",
+    "man in his 30s, gray sweater and apron, short hair, quiet eyes"
+   ],
+   [
+    "V",
+    "도란",
+    "Janet",
+    "30대 여성, 분홍 정장, 태블릿, 비웃는 입",
+    "woman in her 30s, pink suit, tablet, sneering mouth"
+   ],
+   [
+    "A",
+    "해온",
+    "Phil",
+    "30대 남성, 서점 직원, 책 수레, 긴장한 표정",
+    "man in his 30s, bookshop staff, book cart, tense face"
+   ]
+  ],
+  [
+   [
+    "서점",
+    "bookshop",
+    "도란이 진열된 책을 밀어 바닥에 떨어뜨린다",
+    "Janet shoves a stack of books off the table",
+    1,
+    "책이나 정리하던 애가 사인회를 열어?",
+    "The shelf stocker hosts a signing?",
+    "cz"
+   ],
+   [
+    "서점",
+    "bookshop",
+    "도란이 행사 신청서를 찢어 해밀 앞에 던진다",
+    "She tears the event request and throws it at him",
+    1,
+    "내 책 사인회, 이번 주말로 잡아.",
+    "Book my signing this weekend.",
+    "ms"
+   ],
+   [
+    "서점",
+    "bookshop",
+    "해밀이 떨어진 책을 주워 진열대에 세운다",
+    "Nick picks up the fallen books and stands them on the shelf",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "서점",
+    "bookshop",
+    "해온이 행사 일정표를 들고 와 해밀 옆에 선다",
+    "Phil brings the event schedule and stands beside him",
+    2,
+    "사장님, 그 주말은 이미 낭독회가 있습니다.",
+    "Boss, that weekend is already booked.",
+    "low"
+   ],
+   [
+    "서점",
+    "bookshop",
+    "도란이 태블릿을 가슴에 안고 물러선다",
+    "Janet hugs her tablet and steps back",
+    0,
+    "사인회는 안 됩니다. 다음 달을 보세요.",
+    "No signing. Try next month.",
+    "cu"
+   ],
+   [
+    "서점",
+    "bookshop",
+    "해온이 책 뒤표지의 출판사 이름을 가리킨다",
+    "Phil points at the publisher's name on the back cover",
+    2,
+    "이 책, 다른 서점에서도 반품됐습니다.",
+    "Another shop returned this book too.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "향을 맡아보지도 못한 대표",
+  "The Scent He Never Noticed",
+  "향료를 섞던 직원을 웃어넘긴 브랜드 대표. 신제품 향의 배합을 쥔 사람이 그녀였다.",
+  "A brand owner laughs off the girl who mixed scents. She holds the formula for his new perfume.",
+  [
+   [
+    "H",
+    "새론",
+    "Betty",
+    "30대 여성, 흰 셔츠에 앞치마, 묶은 머리, 차분한 눈",
+    "woman in her 30s, white shirt and apron, tied-back hair, calm eyes"
+   ],
+   [
+    "V",
+    "강산",
+    "Rob",
+    "40대 남성, 검은 터틀넥에 금시계, 짧은 머리, 거만한 웃음",
+    "man in his 40s, black turtleneck and gold watch, short hair, smug laugh"
+   ],
+   [
+    "A",
+    "맑음",
+    "Cathy",
+    "30대 여성, 스튜디오 직원, 시향지, 당황한 표정",
+    "woman in her 30s, studio staff, scent strips, flustered face"
+   ]
+  ],
+  [
+   [
+    "조향 스튜디오",
+    "perfume studio",
+    "강산이 시향지를 새론 앞에 던지고 코웃음 친다",
+    "Rob throws a scent strip at Betty and scoffs",
+    1,
+    "향이나 섞던 애가 브랜드를 만들어?",
+    "The girl who mixed scents runs a brand?",
+    "cz"
+   ],
+   [
+    "조향 스튜디오",
+    "perfume studio",
+    "강산이 새론의 조향 노트를 찢어 바닥에 뿌린다",
+    "He tears her formula notebook and scatters the pages",
+    1,
+    "내 신제품 향, 오늘 안에 맞춰.",
+    "Match my new scent by tonight.",
+    "ms"
+   ],
+   [
+    "조향 스튜디오",
+    "perfume studio",
+    "새론이 찢어진 노트를 주워 배합 번호를 다시 적는다",
+    "Betty gathers the pages and rewrites the formula numbers",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "조향 스튜디오",
+    "perfume studio",
+    "맑음이 태블릿을 들고 들어와 새론 옆에 선다",
+    "Cathy enters with a tablet and stands beside Betty",
+    2,
+    "이 향, 계약 상대가 이분으로 지정했습니다.",
+    "The client named her as the perfumer.",
+    "low"
+   ],
+   [
+    "조향 스튜디오",
+    "perfume studio",
+    "강산이 금시계를 만지며 입을 다문다",
+    "Rob touches his gold watch and closes his mouth",
+    0,
+    "향은 드릴 수 없습니다. 배합도 제 것이니까.",
+    "You can't have the scent. The formula is mine.",
+    "cu"
+   ],
+   [
+    "조향 스튜디오",
+    "perfume studio",
+    "문이 열리고 낯선 남자가 탁자 위 시향지를 집어 든다",
+    "The door opens and a stranger picks up a scent strip",
+    2,
+    "방금 오신 분이... 이 향을 만들었다고 합니다.",
+    "The man who just came in says he made this scent.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "기름 넣던 사장",
+  "The Gas Station Girl",
+  "렌터카 전부를 외상으로 넣으라며 주유소 사장을 조롱한 회장. 급유 계약을 쥔 사람이 그녀였다.",
+  "A rental fleet owner demands credit and sneers at the pump girl. She holds his fuel contract.",
+  [
+   [
+    "H",
+    "파랑",
+    "Dawn",
+    "30대 여성, 주유소 유니폼, 짧은 머리, 조용한 눈",
+    "woman in her 30s, gas station uniform, short hair, quiet eyes"
+   ],
+   [
+    "V",
+    "너울",
+    "Ron",
+    "40대 남성, 검은 코트, 매끈한 머리, 비웃는 입",
+    "man in his 40s, black coat, sleek hair, sneering mouth"
+   ],
+   [
+    "A",
+    "새미",
+    "Deb",
+    "30대 여성, 주유소 직원, 정산표, 난처한 표정",
+    "woman in her 30s, station staff, invoice, awkward face"
+   ]
+  ],
+  [
+   [
+    "주유소",
+    "gas station",
+    "너울이 주유 건을 탁자에 내던진다",
+    "Ron throws a fuel nozzle onto the counter",
+    1,
+    "기름 넣던 애가 계약을 해?",
+    "The pump girl handles our contract?",
+    "cz"
+   ],
+   [
+    "주유소",
+    "gas station",
+    "너울이 정산서를 찢어 파랑 앞에 던진다",
+    "He tears the invoice and throws it at her",
+    1,
+    "우리 렌터카 전부, 외상으로 넣어.",
+    "Fuel my whole fleet on credit.",
+    "ms"
+   ],
+   [
+    "주유소",
+    "gas station",
+    "파랑이 찢어진 정산서를 주워 번호를 확인한다",
+    "Dawn gathers the torn invoice and checks the numbers",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "주유소",
+    "gas station",
+    "새미가 차량 명부를 들고 와 파랑에게 건넨다",
+    "Deb brings the vehicle list and hands it to Dawn",
+    2,
+    "사장님, 이 회사는 석 달째 미납입니다.",
+    "Boss, this company hasn't paid in three months.",
+    "low"
+   ],
+   [
+    "주유소",
+    "gas station",
+    "너울이 코트깃을 여미고 발끝을 돌린다",
+    "Ron clutches his coat and turns to leave",
+    0,
+    "외상은 안 됩니다. 현금으로 넣으세요.",
+    "No credit. Pay cash or leave.",
+    "cu"
+   ],
+   [
+    "주유소",
+    "gas station",
+    "새미가 정산서 아래 주유 기록을 가리킨다",
+    "Deb points at a fueling log under the invoice",
+    2,
+    "이 차량, 기록이 두 배로 찍혔습니다.",
+    "This car's fuel log is doubled.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "약 봉지 접던 약사",
+  "The Pharmacist They Sneered At",
+  "신약을 맨 앞에 두라며 약사를 조롱한 영업이사. 진열을 결정하는 사람이 그였다.",
+  "A drug sales director demands the front shelf and sneers at the pharmacist. He sets the display.",
+  [
+   [
+    "H",
+    "산들",
+    "Steve",
+    "30대 남성, 흰 가운, 짧은 머리, 차분한 눈",
+    "man in his 30s, white coat, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "하나래",
+    "Donna",
+    "40대 여성, 빨간 원피스, 큰 선글라스, 짜증 난 얼굴",
+    "woman in her 40s, red dress, oversized sunglasses, annoyed face"
+   ],
+   [
+    "A",
+    "타래",
+    "Erica",
+    "30대 여성, 약국 직원, 재고 장부, 긴장한 표정",
+    "woman in her 30s, pharmacy staff, stock ledger, tense face"
+   ]
+  ],
+  [
+   [
+    "약국",
+    "pharmacy",
+    "하나래가 약 상자를 카운터에 밀어 떨어뜨린다",
+    "Donna shoves a medicine box off the counter",
+    1,
+    "약 봉지 접던 애가 진열을 정해?",
+    "The pill bagger decides my shelf?",
+    "cz"
+   ],
+   [
+    "약국",
+    "pharmacy",
+    "하나래가 신제품 신청서를 찢어 산들 앞에 던진다",
+    "She tears the new product request and throws it at him",
+    1,
+    "내 신약, 맨 앞에 놓아.",
+    "Put my new product up front.",
+    "ms"
+   ],
+   [
+    "약국",
+    "pharmacy",
+    "산들이 찢어진 신청서를 주워 성분표를 확인한다",
+    "Steve gathers the torn request and checks the ingredients",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "약국",
+    "pharmacy",
+    "타래가 재고 장부를 들고 와 산들 옆에 선다",
+    "Erica brings the stock ledger and stands beside him",
+    2,
+    "대표님, 이 약은 반품 이력이 있습니다.",
+    "Boss, this medicine has a return history.",
+    "low"
+   ],
+   [
+    "약국",
+    "pharmacy",
+    "하나래가 선글라스를 벗고 카운터를 짚는다",
+    "Donna takes off her sunglasses and grips the counter",
+    0,
+    "진열은 안 됩니다. 성분표부터 다시 오세요.",
+    "No shelf space. Bring proper data first.",
+    "cu"
+   ],
+   [
+    "약국",
+    "pharmacy",
+    "문이 열리고 낯선 남자가 약 상자를 가리킨다",
+    "The door opens and a stranger points at the medicine box",
+    2,
+    "이 약, 제가 신고한 겁니다.",
+    "That medicine is what I reported.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "안경 닦던 검안사",
+  "The Optometrist They Mocked",
+  "합격 도장을 요구하며 검안사를 조롱한 회장. 시력 검사에 서명하는 사람이 그녀였다.",
+  "A chairman demands a passing stamp and sneers at the optometrist. Her signature renews his license.",
+  [
+   [
+    "H",
+    "자람",
+    "Eva",
+    "40대 여성, 흰 가운, 짧은 머리, 단단한 눈",
+    "woman in her 40s, white coat, short hair, firm eyes"
+   ],
+   [
+    "V",
+    "기담",
+    "Ted",
+    "40대 남성, 검은 정장에 금시계, 매끈한 머리, 거만한 웃음",
+    "man in his 40s, black suit and gold watch, sleek hair, smug laugh"
+   ],
+   [
+    "A",
+    "언덕",
+    "Jane",
+    "30대 여성, 안경점 직원, 검사 기록, 긴장한 표정",
+    "woman in her 30s, optician staff, exam record, tense face"
+   ]
+  ],
+  [
+   [
+    "안경점",
+    "optician",
+    "기담이 검사 의자를 발로 밀어 젖힌다",
+    "Ted kicks the exam chair back",
+    1,
+    "안경 닦던 애가 시력을 재?",
+    "The lens wiper tests my eyes?",
+    "cz"
+   ],
+   [
+    "안경점",
+    "optician",
+    "기담이 검사 기록을 찢어 자람 앞에 던진다",
+    "He tears the exam record and throws it at her",
+    1,
+    "합격 도장만 찍어. 오늘 안에.",
+    "Just stamp me passed. Today.",
+    "ms"
+   ],
+   [
+    "안경점",
+    "optician",
+    "자람이 찢어진 기록을 주워 수치를 확인한다",
+    "Eva gathers the torn record and checks the numbers",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "안경점",
+    "optician",
+    "언덕이 검안 장비를 밀어 오며 자람에게 말한다",
+    "Jane rolls in the vision equipment and speaks to Eva",
+    2,
+    "원장님, 이 검사는 이분 서명으로 확정됩니다.",
+    "Doctor, this exam is final with her signature.",
+    "low"
+   ],
+   [
+    "안경점",
+    "optician",
+    "기담이 금시계를 만지며 입을 다문다",
+    "Ted touches his gold watch and stays silent",
+    0,
+    "도장은 못 찍습니다. 검사부터 받으세요.",
+    "I won't stamp it. Take the test.",
+    "cu"
+   ],
+   [
+    "안경점",
+    "optician",
+    "언덕이 이전 검사 기록에서 같은 이름을 가리킨다",
+    "Jane points at the same name in an older record",
+    2,
+    "이전 기록에... 같은 이름이 두 개입니다.",
+    "There are two records under this name.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "바이올린을 맡기러 온 그녀",
+  "The Violin She Left Behind",
+  "나무만 깎던 남자라며 악기를 밀어붙인 연주자. 그 바이올린을 20년 전에 만든 사람이 그였다.",
+  "A soloist shoves her violin at him, calling him a wood carver. He built that violin twenty years ago.",
+  [
+   [
+    "H",
+    "규람",
+    "Tom",
+    "50대 남성, 나무 부스러기 묻은 앞치마, 안경, 조용한 눈",
+    "man in his 50s, apron dusted with wood shavings, glasses, quiet eyes"
+   ],
+   [
+    "V",
+    "솔빛",
+    "Lorelei",
+    "30대 여성, 검은 콘서트 드레스, 긴 머리, 치켜든 턱",
+    "woman in her 30s, black concert dress, long hair, lifted chin"
+   ],
+   [
+    "A",
+    "선겸",
+    "Zach",
+    "30대 남성, 공방 조수, 바이올린 케이스, 조심스러운 손",
+    "man in his 30s, workshop assistant, violin case, careful hands"
+   ]
+  ],
+  [
+   [
+    "바이올린 공방",
+    "violin workshop",
+    "솔빛이 케이스를 열어 규람 앞에 밀어 놓는다",
+    "Lorelei opens the case and pushes it toward Tom",
+    1,
+    "이걸 고쳐. 연주회가 내일이야.",
+    "Fix this. My recital is tomorrow.",
+    "cz"
+   ],
+   [
+    "바이올린 공방",
+    "violin workshop",
+    "솔빛이 규람의 공구를 밀어 바닥에 떨어뜨린다",
+    "She sweeps his tools off the bench",
+    1,
+    "나무만 깎던 애가 뭘 알겠어. 빨리 해.",
+    "The wood carver knows nothing. Just hurry.",
+    "ms"
+   ],
+   [
+    "바이올린 공방",
+    "violin workshop",
+    "규람이 공구를 주워 정리하고 악기를 들어 올린다",
+    "Tom gathers his tools and lifts the violin to the light",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "바이올린 공방",
+    "violin workshop",
+    "선겸이 명패를 가리키며 솔빛에게 조용히 말한다",
+    "Zach points at the plaque and speaks quietly to Lorelei",
+    2,
+    "이 악기, 이분이 만든 겁니다. 20년 전에.",
+    "He built this violin. Twenty years ago.",
+    "low"
+   ],
+   [
+    "바이올린 공방",
+    "violin workshop",
+    "솔빛이 케이스 뚜껑을 붙잡고 굳어 선다",
+    "Lorelei grips the case lid and freezes",
+    0,
+    "수리는 못 해 드립니다. 악기는 두고 가세요.",
+    "I can't repair it. Leave the violin.",
+    "cu"
+   ],
+   [
+    "바이올린 공방",
+    "violin workshop",
+    "선겸이 악기 안쪽 라벨을 손전등으로 비춘다",
+    "Zach shines a light on the label inside the violin",
+    2,
+    "라벨에... 다른 이름이 겹쳐 있습니다.",
+    "There's another name beneath the label.",
+    "pi"
+   ]
+  ]
+ ]
+]

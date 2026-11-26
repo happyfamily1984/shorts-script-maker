@@ -1,0 +1,912 @@
+[
+ [
+  "좌석을 팔았다는 탑승구 직원",
+  "The Gate Agent Who Sold Seats",
+  "오버부킹 사고가 나자 계약직 탑승구 직원이 좌석을 팔았다고 몰린다. 배정 로그에 지점장 사번이 찍혀 있었다.",
+  "A flight is overbooked and a contract gate agent is blamed for selling seats. The seat log carries the station chief's number.",
+  [
+   [
+    "H",
+    "도하",
+    "Emmet",
+    "20대 후반 남성, 항공사 조끼, 짧은 머리, 피곤하지만 또렷한 눈",
+    "man in his late 20s, airline vest, short hair, tired but steady eyes"
+   ],
+   [
+    "V",
+    "만석",
+    "Mr. Dorsey",
+    "50대 남성, 회색 정장, 넥타이핀, 턱을 든 거만한 자세",
+    "man in his 50s, gray suit, tie pin, chin raised in contempt"
+   ],
+   [
+    "A",
+    "수경",
+    "Ms. Vaughn",
+    "40대 여성, 검은 코트, 사원증, 서류 가방을 든 본사 감사",
+    "woman in her 40s, black coat, staff badge, carrying an audit case"
+   ]
+  ],
+  [
+   [
+    "공항 탑승구",
+    "airport gate",
+    "만석이 탑승 줄 앞에서 도하의 조끼를 잡아당긴다",
+    "Mr. Dorsey yanks Emmet's vest in front of the boarding line",
+    1,
+    "계약직 도하, 앞으로 나와.",
+    "Temp agent Emmet, step up here.",
+    "cz"
+   ],
+   [
+    "공항 탑승구",
+    "airport gate",
+    "만석이 도하의 단말기를 빼앗아 카펫에 던진다",
+    "Mr. Dorsey snatches Emmet's terminal and throws it on the carpet",
+    1,
+    "오늘부로 이 게이트 출입 금지야.",
+    "You're barred from this gate today.",
+    "ms"
+   ],
+   [
+    "탑승구 카운터",
+    "gate counter",
+    "도하가 단말기를 주워 좌석 배정 기록을 연다",
+    "Emmet picks up the terminal and opens the seat log",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "탑승구 카운터",
+    "gate counter",
+    "수경이 로그의 사번 칸을 손끝으로 짚는다",
+    "Ms. Vaughn taps the employee number on the log",
+    2,
+    "이 사번, 지점장님 것이네요.",
+    "This employee number is yours, Mr. Dorsey.",
+    "low"
+   ],
+   [
+    "공항 탑승구",
+    "airport gate",
+    "만석이 사원증을 떼어 카운터에 내려놓는다",
+    "Mr. Dorsey unclips his badge and sets it on the counter",
+    0,
+    "이 좌석, 제가 판 적 없습니다.",
+    "I never sold that seat.",
+    "cu"
+   ],
+   [
+    "공항 탑승구",
+    "airport gate",
+    "검은 코트의 여자가 탑승구에서 도하 앞에 멈춘다",
+    "A woman in a black coat stops in front of Emmet",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "은식기를 훔쳤다는 크루즈 웨이터",
+  "The Steward Accused of Stealing Silver",
+  "귀빈의 은식기 세트가 사라지자 크루즈 웨이터가 몰린다. 반납 스캔 수량이 총괄의 실수를 증명한다.",
+  "A VIP's silver set vanishes and the cruise steward takes the blame. The return scan proves the food chief's mistake.",
+  [
+   [
+    "H",
+    "하슬",
+    "Wren",
+    "20대 여성, 흰 서빙 셔츠, 묶은 머리, 굳게 다문 입",
+    "woman in her 20s, white serving shirt, tied hair, firmly set mouth"
+   ],
+   [
+    "V",
+    "상철",
+    "Mr. Calder",
+    "50대 남성, 흰 제복, 금 단추, 배에 힘을 준 자세",
+    "man in his 50s, white uniform, gold buttons, chest pushed out"
+   ],
+   [
+    "A",
+    "정옥",
+    "Rosa",
+    "60대 여성, 남색 정장, 선내 감사 배지, 무뚝뚝한 얼굴",
+    "woman in her 60s, navy suit, ship auditor badge, blunt face"
+   ]
+  ],
+  [
+   [
+    "크루즈 다이닝룸",
+    "cruise dining room",
+    "상철이 빈 식기 트레이를 하슬 앞으로 밀어 놓는다",
+    "Mr. Calder shoves an empty silver tray at Wren",
+    1,
+    "한 세트가 없어졌어. 네 구역이야.",
+    "A set is missing. Your section.",
+    "ms"
+   ],
+   [
+    "크루즈 다이닝룸",
+    "cruise dining room",
+    "상철이 하슬의 앞치마를 벗겨 구경꾼 쪽으로 던진다",
+    "Mr. Calder rips off Wren's apron and tosses it at the onlookers",
+    1,
+    "웨이터가 손님 접시를 세?",
+    "A waiter counting guest plates?",
+    "ws"
+   ],
+   [
+    "식기 세척실",
+    "dish station",
+    "하슬이 떨어진 앞치마를 주우며 접시 스캐너를 본다",
+    "Wren picks up her apron and eyes the plate scanner",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "크루즈 사무실",
+    "cruise office",
+    "정옥이 태블릿의 반납 수량표를 돌려 세운다",
+    "Rosa turns the tablet's return count toward the table",
+    2,
+    "반납은 아홉 세트, 서명은 총괄님.",
+    "Nine sets returned. Signed by the chief.",
+    "pi"
+   ],
+   [
+    "크루즈 사무실",
+    "cruise office",
+    "정옥이 상철의 선내 직위증을 회수한다",
+    "Rosa takes back his ship officer card",
+    0,
+    "총괄님 접시부터 세어 보시죠.",
+    "Start by counting your own plates.",
+    "ots"
+   ],
+   [
+    "크루즈 다이닝룸",
+    "cruise dining room",
+    "선장이 식당으로 내려와 하슬에게만 고개를 숙인다",
+    "The captain comes down and bows only to Wren",
+    -1,
+    "",
+    "",
+    "cz"
+   ]
+  ]
+ ],
+ [
+  "기록을 조작했다는 심판 보조",
+  "The Timekeeper They Framed",
+  "우승 기록이 조작되자 자원봉사 심판 보조가 몰린다. 칩 기록이 우승자의 코스 이탈을 보여 준다.",
+  "A winning time is questioned and a volunteer timekeeper is blamed. The timing chip shows where the winner left the course.",
+  [
+   [
+    "H",
+    "시담",
+    "Bram",
+    "30대 남성, 형광 조끼, 야구모자, 반쯤 감긴 눈",
+    "man in his 30s, neon vest, baseball cap, half-lidded eyes"
+   ],
+   [
+    "V",
+    "대웅",
+    "Mr. Rourke",
+    "50대 남성, 흰 폴로 셔츠, 선글라스, 큰 목소리",
+    "man in his 50s, white polo shirt, sunglasses, loud voice"
+   ],
+   [
+    "A",
+    "미주",
+    "Delia",
+    "30대 여성, 검은 후드, 노트북 가방, 빠른 말투",
+    "woman in her 30s, black hoodie, laptop bag, fast talker"
+   ]
+  ],
+  [
+   [
+    "결승선",
+    "finish line",
+    "대웅이 시담의 손에서 클립보드를 낚아챈다",
+    "Mr. Rourke snatches the clipboard from Bram's hand",
+    1,
+    "기록은 심판만 만지는 거야.",
+    "Only officials touch the times.",
+    "ots"
+   ],
+   [
+    "결승선",
+    "finish line",
+    "대웅이 시담의 조끼에 실격 스티커를 붙인다",
+    "Mr. Rourke sticks a disqualification sticker on Bram's vest",
+    1,
+    "기자들 앞에서 해명해 봐.",
+    "Explain it to the press.",
+    "trk"
+   ],
+   [
+    "결승선 매트",
+    "finish mat",
+    "시담이 결승 매트 밑의 케이블을 손끝으로 만진다",
+    "Bram runs his fingers under the finish mat's cable",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "기록 심판소",
+    "timing tent",
+    "미주가 오 킬로 구간 기록을 노트북에 띄운다",
+    "Delia pulls the five-kilometer split onto her laptop",
+    2,
+    "우승자 칩, 여기서 꺼졌어요.",
+    "The winner's chip went dark here.",
+    "low"
+   ],
+   [
+    "결승선",
+    "finish line",
+    "대회 직원이 대웅의 운영위 배지를 뗀다",
+    "A race official unpins Mr. Rourke's committee badge",
+    0,
+    "실격은 제가 아니라, 저 사람 몫입니다.",
+    "The disqualification isn't mine.",
+    "cu"
+   ],
+   [
+    "결승선",
+    "finish line",
+    "대회장 스피커에서 우승자 대신 다른 이름이 흐른다",
+    "The speaker announces a name that isn't the winner's",
+    -1,
+    "",
+    "",
+    "slo"
+   ]
+  ]
+ ],
+ [
+  "와인을 바꿔치기한 소믈리에",
+  "The Sommelier and the Swapped Bottle",
+  "귀빈의 와인이 값싼 병으로 바뀌자 여성 소믈리에가 몰린다. 수입사 병입 번호가 오너의 손을 가리킨다.",
+  "A VIP's bottle is swapped for a cheap one and the sommelier is blamed. The importer's bottle code points at the owner.",
+  [
+   [
+    "H",
+    "예설",
+    "Petra",
+    "30대 여성, 검은 조끼, 짧은 단발, 차분한 눈",
+    "woman in her 30s, black vest, short bob, calm eyes"
+   ],
+   [
+    "V",
+    "재홍",
+    "Mr. Draper",
+    "50대 남성, 베이지 재킷, 금 시계, 웃음기 없는 얼굴",
+    "man in his 50s, beige jacket, gold watch, humorless face"
+   ],
+   [
+    "A",
+    "하영",
+    "Ms. Sorrel",
+    "40대 여성, 회색 코트, 서류철, 단호한 말투",
+    "woman in her 40s, gray coat, document folder, firm manner"
+   ]
+  ],
+  [
+   [
+    "레스토랑 셀러",
+    "restaurant cellar",
+    "재홍이 빈 와인병을 예설 앞 테이블에 세운다",
+    "Mr. Draper plants an empty bottle in front of Petra",
+    1,
+    "이 병, 누가 열었어?",
+    "Who opened this bottle?",
+    "cz"
+   ],
+   [
+    "레스토랑 홀",
+    "restaurant floor",
+    "재홍이 예설의 소믈리에 배지를 떼어 주머니에 넣는다",
+    "Mr. Draper unpins Petra's sommelier badge and pockets it",
+    1,
+    "와인은 남자가 고르는 거야.",
+    "Men choose the wine.",
+    "slo"
+   ],
+   [
+    "레스토랑 셀러",
+    "restaurant cellar",
+    "예설이 같은 라벨 병을 꺼내 병입 번호를 확인한다",
+    "Petra lifts the same label and checks the bottle code",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "레스토랑 테이블",
+    "restaurant table",
+    "하영이 수입사 서류의 병입 번호를 펼친다",
+    "Ms. Sorrel spreads the importer's bottle records",
+    2,
+    "이 번호는 오너님 개인 주문입니다.",
+    "This code is your personal order.",
+    "pi"
+   ],
+   [
+    "레스토랑 홀",
+    "restaurant floor",
+    "하영이 수입사 계약서를 접어 가방에 넣는다",
+    "Ms. Sorrel folds the supply contract into her bag",
+    0,
+    "제 배지는 제가 답니다.",
+    "My badge stays with me.",
+    "low"
+   ],
+   [
+    "레스토랑 홀",
+    "restaurant floor",
+    "수입사 대표가 예설에게만 명함을 건넨다",
+    "The importer hands her card only to Petra",
+    -1,
+    "",
+    "",
+    "cu"
+   ]
+  ]
+ ],
+ [
+  "알레르기 라벨을 빠뜨린 야간조",
+  "The Night Shift and the Missing Label",
+  "알레르기 표기가 빠진 빵이 나가자 야간 포장조가 몰린다. 인쇄 큐 기록에 반장의 지시가 남아 있다.",
+  "A missing allergy label gets a night-shift packer blamed. The print queue shows the foreman's order to skip it.",
+  [
+   [
+    "H",
+    "다원",
+    "Nico",
+    "20대 후반 남성, 위생 모자, 흰 작업복, 창백한 얼굴",
+    "man in his late 20s, hairnet, white work coat, pale face"
+   ],
+   [
+    "V",
+    "길수",
+    "Mr. Renn",
+    "50대 남성, 흰 셔츠, 볼펜 꽂은 주머니, 험한 눈매",
+    "man in his 50s, white shirt, pen in pocket, hard eyes"
+   ],
+   [
+    "A",
+    "채운",
+    "Ingrid",
+    "30대 여성, 흰 가운, 클립보드, 무표정",
+    "woman in her 30s, white coat, clipboard, blank expression"
+   ]
+  ],
+  [
+   [
+    "제빵 공장 포장 라인",
+    "bakery packing line",
+    "길수가 불량 봉투를 다원의 가슴에 밀어 붙인다",
+    "Mr. Renn presses a bad packet against Nico's chest",
+    1,
+    "야간조, 전부 정지.",
+    "Night shift, all suspended.",
+    "low"
+   ],
+   [
+    "제빵 공장 포장 라인",
+    "bakery packing line",
+    "길수가 다원의 위생 모자를 벗겨 라인 위에 던진다",
+    "Mr. Renn pulls off Nico's hairnet and throws it on the line",
+    1,
+    "야간조는 책임도 못 저.",
+    "Night shift can't carry blame either.",
+    "ms"
+   ],
+   [
+    "포장 라인 프린터",
+    "line printer",
+    "다원이 프린터의 인쇄 큐 기록을 넘긴다",
+    "Nico scrolls the printer's job queue",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "품질 사무실",
+    "quality office",
+    "채운이 큐 기록의 지시 칸을 확대한다",
+    "Ingrid zooms in on the order field of the queue",
+    2,
+    "표기 생략 지시, 반장님 아이디예요.",
+    "The skip order carries your ID, foreman.",
+    "slo"
+   ],
+   [
+    "포장 라인",
+    "packing line",
+    "채운이 길수의 반장 명패를 라인에 내려놓는다",
+    "Ingrid sets the foreman's nameplate down on the line",
+    0,
+    "라벨은 기계가 찍습니다. 지시는 사람이 하죠.",
+    "The machine prints. People give orders.",
+    "cz"
+   ],
+   [
+    "공장 회의실",
+    "plant meeting room",
+    "공장 안내 방송이 야간조를 회의실로 부른다",
+    "The plant speaker calls the night shift in",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "취재원 명단을 흘린 신입 기자",
+  "The Rookie Reporter and the Leaked List",
+  "취재원 명단이 유출되자 인턴 출신 신입 기자가 몰린다. 예약 발송 시각이 국장의 메일을 가리킨다.",
+  "A source list leaks and the rookie reporter is blamed. The scheduled send time points to the editor in chief.",
+  [
+   [
+    "H",
+    "이든",
+    "Silas",
+    "20대 후반 남성, 낡은 트렌치코트, 안경, 마른 얼굴",
+    "man in his late 20s, worn trench coat, glasses, thin face"
+   ],
+   [
+    "V",
+    "두한",
+    "Mr. Prewitt",
+    "50대 남성, 어두운 정장, 은테 안경, 무거운 눈",
+    "man in his 50s, dark suit, silver-rimmed glasses, heavy eyes"
+   ],
+   [
+    "A",
+    "유경",
+    "Ms. Cobb",
+    "40대 여성, 회색 후드, 마스크, 낮게 깔린 목소리",
+    "woman in her 40s, gray hoodie, mask, low quiet voice"
+   ]
+  ],
+  [
+   [
+    "편집국 회의실",
+    "newsroom meeting room",
+    "두한이 명단 출력지를 이든 앞에 흩뿌린다",
+    "Mr. Prewitt scatters the printed source list at Silas",
+    1,
+    "이 명단, 네 손에서 나갔어.",
+    "This list left your hands.",
+    "trk"
+   ],
+   [
+    "편집국 회의실",
+    "newsroom meeting room",
+    "두한이 이든의 출입카드를 가위로 잘라 버린다",
+    "Mr. Prewitt cuts Silas's access card in half with scissors",
+    1,
+    "인턴 출신이 기사를 써?",
+    "An intern writing stories?",
+    "ms"
+   ],
+   [
+    "편집국 데스크",
+    "newsroom desk",
+    "이든이 자기 메일의 예약 발송 시각을 연다",
+    "Silas opens the scheduled send time on his mail",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "편집국 회의실",
+    "newsroom meeting room",
+    "유경이 받은 메일 원문을 테이블에 놓는다",
+    "Ms. Cobb lays the original email on the table",
+    2,
+    "새벽 두 시, 전부 국장님 계정입니다.",
+    "Two in the morning. All from your account.",
+    "low"
+   ],
+   [
+    "편집국 회의실",
+    "newsroom meeting room",
+    "유경이 사퇴서를 두한 앞에 밀어 놓는다",
+    "Ms. Cobb slides a resignation letter toward him",
+    0,
+    "제 기사는 내일도 나갑니다.",
+    "My story runs tomorrow.",
+    "ots"
+   ],
+   [
+    "편집국 회의실",
+    "newsroom meeting room",
+    "회의실 문이 열리고 다른 신문사 기자가 같은 명단을 든다",
+    "A rival reporter walks in with the same list",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "금지곡을 튼 심야 DJ",
+  "The Midnight DJ and the Banned Song",
+  "방송 금지곡이 전파를 타자 무명 심야 DJ가 몰린다. 큐시트 로그에 팀장의 원격 조작이 남아 있다.",
+  "A banned song goes on air and the unknown midnight DJ is blamed. The cue log records the team leader's remote edit.",
+  [
+   [
+    "H",
+    "라온",
+    "Ezra",
+    "20대 후반 남성, 큰 헤드폰, 회색 후드, 졸린 눈",
+    "man in his late 20s, large headphones, gray hoodie, sleepy eyes"
+   ],
+   [
+    "V",
+    "만호",
+    "Mr. Sable",
+    "40대 남성, 체크 셔츠, 커피잔, 신경질적인 손",
+    "man in his 40s, check shirt, coffee cup, jittery hands"
+   ],
+   [
+    "A",
+    "미르",
+    "Ms. Odell",
+    "30대 여성, 검은 후드, 태블릿, 또렷한 말투",
+    "woman in her 30s, black hoodie, tablet, crisp speech"
+   ]
+  ],
+  [
+   [
+    "라디오 부스",
+    "radio booth",
+    "만호가 방송 로그를 라온 앞에 던진다",
+    "Mr. Sable throws the broadcast log at Ezra",
+    1,
+    "이 곡, 누가 틀었어?",
+    "Who put this on air?",
+    "pi"
+   ],
+   [
+    "라디오 부스",
+    "radio booth",
+    "만호가 라온의 헤드폰을 뽑아 의자에 걸어 둔다",
+    "Mr. Sable unplugs Ezra's headphones and hangs them on the chair",
+    1,
+    "이름도 없는 DJ가 곡을 골라?",
+    "A nobody DJ picking songs?",
+    "ws"
+   ],
+   [
+    "라디오 콘솔",
+    "radio console",
+    "라온이 큐시트의 변경 기록을 넘긴다",
+    "Ezra scrolls the cue sheet's edit history",
+    -1,
+    "",
+    "",
+    "trk"
+   ],
+   [
+    "방송 기술실",
+    "broadcast tech room",
+    "미르가 원격 접속 시각을 화면에 띄운다",
+    "Ms. Odell puts the remote login time on screen",
+    2,
+    "이 시각, 팀장님 계정 로그인이에요.",
+    "That time is your account, team leader.",
+    "low"
+   ],
+   [
+    "라디오 부스",
+    "radio booth",
+    "미르가 만호의 출입카드를 단말에서 지운다",
+    "Ms. Odell deletes Mr. Sable's access card",
+    0,
+    "로그는 지워지지 않습니다.",
+    "That log doesn't erase.",
+    "cu"
+   ],
+   [
+    "라디오 부스",
+    "radio booth",
+    "부스 유리 너머로 낯선 남자가 손을 흔든다",
+    "A stranger waves through the booth glass",
+    -1,
+    "",
+    "",
+    "cz"
+   ]
+  ]
+ ],
+ [
+  "데이터를 조작했다는 연구원",
+  "The Lab Assistant and the Fake Data",
+  "논문 데이터가 조작됐다며 학부 출신 연구원이 몰린다. 장비 로그의 시각이 교수의 실험을 증명한다.",
+  "Fake data surfaces and a junior researcher is blamed. The machine log's timestamp proves who ran the experiment.",
+  [
+   [
+    "H",
+    "세인",
+    "Mabel",
+    "20대 여성, 흰 실험복, 동그란 안경, 창백한 얼굴",
+    "woman in her 20s, white lab coat, round glasses, pale face"
+   ],
+   [
+    "V",
+    "교수",
+    "Professor Wexler",
+    "50대 남성, 트위드 재킷, 서류 뭉치, 높은 코",
+    "man in his 50s, tweed jacket, stack of papers, high nose"
+   ],
+   [
+    "A",
+    "조사위원",
+    "Dr. Ferris",
+    "40대 여성, 검은 정장, 폴더, 냉정한 눈",
+    "woman in her 40s, black suit, folder, cool eyes"
+   ]
+  ],
+  [
+   [
+    "대학 연구실",
+    "university lab",
+    "교수가 논문 출력본을 세인 앞에 던진다",
+    "Professor Wexler throws the printed paper at Mabel",
+    1,
+    "이 숫자, 누가 만들었어?",
+    "Who made these numbers?",
+    "cz"
+   ],
+   [
+    "대학 연구실",
+    "university lab",
+    "교수가 세인의 실험복을 벗겨 의자에 걸어 둔다",
+    "He pulls off Mabel's lab coat and drapes it on a chair",
+    1,
+    "학부 출신이 데이터를 만져?",
+    "An undergrad touching our data?",
+    "trk"
+   ],
+   [
+    "실험 장비",
+    "lab machine",
+    "세인이 장비 로그의 실행 시각을 들여다본다",
+    "Mabel studies the run time on the machine log",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "연구실 회의실",
+    "lab meeting room",
+    "조사위원이 로그의 사용자 칸을 짚는다",
+    "Dr. Ferris taps the user field on the log",
+    2,
+    "이 실험, 교수님 카드로 돌았습니다.",
+    "This run used your card, Professor.",
+    "slo"
+   ],
+   [
+    "대학 연구실",
+    "university lab",
+    "조사위원이 교수실 열쇠를 회수한다",
+    "Dr. Ferris takes back the professor's office key",
+    0,
+    "데이터는 남습니다. 이름도요.",
+    "The data stays. So does the name on it.",
+    "low"
+   ],
+   [
+    "실험 노트",
+    "lab notebook",
+    "노트 맨 뒤에 없던 실험 한 줄이 더 적혀 있다",
+    "One more experiment is written at the back of the notebook",
+    -1,
+    "",
+    "",
+    "cu"
+   ]
+  ]
+ ],
+ [
+  "철근 누락을 뒤집어쓴 기사",
+  "The Engineer and the Missing Rebar",
+  "철근이 빠진 채 벽이 올라가자 여성 구조 기사가 몰린다. 자재 스캔 수량이 소장의 지시를 증명한다.",
+  "A wall goes up without rebar and a young female engineer is blamed. The material scan count proves the site chief's order.",
+  [
+   [
+    "H",
+    "해든",
+    "Bridget",
+    "30대 여성, 흰 안전모, 안전 조끼, 짧은 머리, 단단한 눈",
+    "woman in her 30s, white hard hat, safety vest, short hair, steady eyes"
+   ],
+   [
+    "V",
+    "소장",
+    "Mr. Dugan",
+    "50대 남성, 회색 안전모, 기름때 밴 재킷, 두꺼운 목소리",
+    "man in his 50s, gray helmet, oil-stained jacket, thick voice"
+   ],
+   [
+    "A",
+    "감리",
+    "Ms. Baird",
+    "40대 여성, 정장 위 안전모, 태블릿, 무표정",
+    "woman in her 40s, hard hat over a suit, tablet, blank face"
+   ]
+  ],
+  [
+   [
+    "현장 사무실",
+    "site office",
+    "소장이 도면을 해든의 가슴에 밀어 붙인다",
+    "Mr. Dugan shoves the drawing against Bridget's chest",
+    1,
+    "이 벽, 누가 세웠어?",
+    "Who poured this wall?",
+    "ms"
+   ],
+   [
+    "건설 현장",
+    "construction site",
+    "소장이 해든의 안전모를 벗겨 자재 위에 던진다",
+    "Mr. Dugan pulls off her helmet and throws it on the rebar",
+    1,
+    "여자가 도면을 그려?",
+    "A woman drawing plans?",
+    "pi"
+   ],
+   [
+    "자재 스캔대",
+    "material scanner",
+    "해든이 반입 수량표를 펼쳐 한 줄을 짚는다",
+    "Bridget spreads the delivery count and taps one line",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "시공사 감리실",
+    "supervision office",
+    "감리가 스캔 수량과 도면 수량을 나란히 놓는다",
+    "Ms. Baird sets the scanned count beside the plan",
+    2,
+    "삼십 톤이 비어 있어요. 소장님 지시로요.",
+    "Thirty tons short. On your order.",
+    "low"
+   ],
+   [
+    "건설 현장",
+    "construction site",
+    "감리가 소장의 출입증을 회수한다",
+    "Ms. Baird takes the site chief's pass",
+    0,
+    "제 도면은 서 있습니다.",
+    "My drawing still stands.",
+    "ots"
+   ],
+   [
+    "현장 입구",
+    "site gate",
+    "현장 입구에 감독관 차량 두 대가 멈춘다",
+    "Two inspector cars stop at the site gate",
+    -1,
+    "",
+    "",
+    "slo"
+   ]
+  ]
+ ],
+ [
+  "신부 목걸이를 훔쳤다는 서버",
+  "The Banquet Server and the Bride's Necklace",
+  "신부의 목걸이가 사라지자 파트타임 연회 서버가 몰린다. 사진작가의 사진이 지배인의 소매를 찍었다.",
+  "The bride's necklace vanishes and a part-time banquet server is blamed. The photographer's shot catches the manager's sleeve.",
+  [
+   [
+    "H",
+    "새봄",
+    "Celia",
+    "20대 여성, 검은 조끼, 흰 셔츠, 묶은 머리, 겁먹지 않은 눈",
+    "woman in her 20s, black vest, white shirt, tied hair, fearless eyes"
+   ],
+   [
+    "V",
+    "지배인",
+    "Mr. Carrow",
+    "40대 남성, 검은 정장, 나비넥타이, 매끈한 웃음",
+    "man in his 40s, black suit, bow tie, sleek smile"
+   ],
+   [
+    "A",
+    "사진작가",
+    "Ms. Lowell",
+    "30대 여성, 카메라 두 대, 검은 셔츠, 빠른 손",
+    "woman in her 30s, two cameras, black shirt, quick hands"
+   ]
+  ],
+  [
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "지배인이 목걸이 케이스를 새봄 앞에 탁 놓는다",
+    "Mr. Carrow slams the necklace case down in front of Celia",
+    1,
+    "이 케이스, 네 손이었어.",
+    "This case was in your hands.",
+    "low"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "지배인이 새봄의 트레이를 뒤집어 잔을 쏟는다",
+    "Mr. Carrow flips her tray and spills the glasses",
+    1,
+    "알바가 손님 케이스를 만져?",
+    "A temp touching a guest's case?",
+    "trk"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "새봄이 사진작가의 카메라를 손끝으로 가리킨다",
+    "Celia points at the photographer's camera",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "사진작가가 확대한 사진을 테이블에 내려놓는다",
+    "Ms. Lowell lays an enlarged photo on the table",
+    2,
+    "케이스를 든 소매, 지배님 정장이에요.",
+    "The sleeve holding the case is yours.",
+    "pi"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "사진작가가 지배인의 이름표를 떼어 낸다",
+    "Ms. Lowell unpins the manager's name tag",
+    0,
+    "잔은 제가 나릅니다. 목걸이는 아니에요.",
+    "I serve glasses. Not necklaces.",
+    "ms"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "신부가 새봄의 손에 봉투를 쥐여 준다",
+    "The bride presses an envelope into Celia's hand",
+    -1,
+    "",
+    "",
+    "cz"
+   ]
+  ]
+ ]
+]

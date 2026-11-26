@@ -1,0 +1,912 @@
+[
+ [
+  "말 더듬던 재판장",
+  "The Judge Who Stuttered",
+  "법원 복도에서 옛 피해자를 말더듬이로 조롱한 원고. 서류를 받아 든 그녀가 재판장석에 앉았다.",
+  "A plaintiff mocks an old classmate in the courthouse hallway, then watches her take the judge's bench.",
+  [
+   [
+    "H",
+    "규연",
+    "Avery",
+    "40대 여성, 검은 법복, 낮게 묶은 올림머리, 서늘한 눈매",
+    "woman in her 40s, black judge robe, low bun, cold steady eyes"
+   ],
+   [
+    "V",
+    "대은",
+    "Declan",
+    "40대 남성, 밝은 회색 정장, 기름진 머리, 비웃는 입매",
+    "man in his 40s, light gray suit, greasy hair, sneering mouth"
+   ],
+   [
+    "A",
+    "도빈",
+    "Callum",
+    "30대 남성, 검은 정장, 법원 서기 배지, 반듯한 태도",
+    "man in his 30s, black suit, court clerk badge, upright posture"
+   ]
+  ],
+  [
+   [
+    "법원 복도",
+    "courthouse hallway",
+    "대은이 규연의 팔에 서류 뭉치를 밀어 넣는다",
+    "Declan shoves a stack of papers into Avery's arms",
+    1,
+    "이거 재판장한테 갖다 줘. 말더듬이.",
+    "Take this to the judge. Stutter girl.",
+    "cz"
+   ],
+   [
+    "법원 복도",
+    "courthouse hallway",
+    "대은이 규연의 어깨를 툭 치고 지나가며 웃는다",
+    "He taps her shoulder as he passes and laughs",
+    1,
+    "넌 아직도 말 걸면 얼어붙지?",
+    "You still freeze when people talk to you?",
+    "ms"
+   ],
+   [
+    "법원 복도",
+    "courthouse hallway",
+    "규연이 서류를 고쳐 들고 법복이 걸린 문을 연다",
+    "She straightens the papers and opens the door where a robe hangs",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "법정",
+    "courtroom",
+    "도빈이 일어나 규연이 재판장석에 앉는 것을 안내한다",
+    "Callum rises and announces as Avery takes the bench",
+    2,
+    "재판장님 입장. 모두 기립.",
+    "The court stands. Presiding judge entering.",
+    "low"
+   ],
+   [
+    "법정",
+    "courtroom",
+    "대은이 자리에서 반쯤 일어나다 털썩 주저앉는다",
+    "Declan half rises from his seat and drops back down",
+    0,
+    "소장은 잘 받았습니다. 모욕죄는 따로 접수하죠.",
+    "I have your complaint. Contempt is a separate filing.",
+    "cu"
+   ],
+   [
+    "법정",
+    "courtroom",
+    "도빈이 대은의 뒤쪽 문을 가리키며 낮게 말한다",
+    "Callum gestures to the door behind Declan and speaks low",
+    2,
+    "원고 측 증인 한 분이 아직 대기 중입니다.",
+    "One more witness for the plaintiff is still waiting.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "부두 관리인이라던 소장",
+  "The Dock Hand Who Owned the Marina",
+  "요트 밧줄을 발치에 던지며 소장을 부두 관리인으로 부른 선주. 정박을 배정하는 사람이 그녀였다.",
+  "A yacht owner tosses a rope at the marina director's feet. She decides which berth he gets.",
+  [
+   [
+    "H",
+    "보윤",
+    "Sloane",
+    "40대 여성, 남색 마리나 제복, 낮게 묶은 머리, 서늘한 눈",
+    "woman in her 40s, navy marina uniform, low bun, cool eyes"
+   ],
+   [
+    "V",
+    "백호",
+    "Rhys",
+    "50대 남성, 흰 리넨 셔츠에 금시계, 그을린 얼굴, 거만한 웃음",
+    "man in his 50s, white linen shirt and gold watch, tanned face, smug laugh"
+   ],
+   [
+    "A",
+    "선율",
+    "Merritt",
+    "30대 남성, 정박 관리 직원, 배정표, 당황한 얼굴",
+    "man in his 30s, berth staff, allocation chart, flustered face"
+   ]
+  ],
+  [
+   [
+    "마리나 부두",
+    "marina dock",
+    "백호가 밧줄을 보윤의 발치에 던지고 웃는다",
+    "Rhys throws a mooring rope at Sloane's feet and laughs",
+    1,
+    "부두 관리인이 배를 알아? 비켜.",
+    "The dock hand knows boats? Move.",
+    "cz"
+   ],
+   [
+    "마리나 부두",
+    "marina dock",
+    "백호가 정박 신청서를 찢어 물 위에 던진다",
+    "He tears the berth application and throws it into the water",
+    1,
+    "내 자리, 오늘 안에 만들어. 그때처럼.",
+    "My spot, by today. Like back then.",
+    "ms"
+   ],
+   [
+    "마리나 부두",
+    "marina dock",
+    "보윤이 물에 뜬 종이를 건져 펴서 서명란을 본다",
+    "Sloane fishes the paper out of the water and checks the signature line",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "마리나 사무실",
+    "marina office",
+    "선율이 정박 배정표를 들고 와 보윤 옆에 선다",
+    "Merritt brings the berth chart and stands beside her",
+    2,
+    "소장님, 이 요트는 안전 검사 미필입니다.",
+    "Director, his yacht never passed safety inspection.",
+    "low"
+   ],
+   [
+    "마리나 부두",
+    "marina dock",
+    "백호가 밧줄을 움켜쥐고 아무 말 없이 서 있다",
+    "Rhys grips the rope and stands without a word",
+    0,
+    "정박은 안 됩니다. 검사부터 받으세요.",
+    "No berth. Get inspected first.",
+    "cu"
+   ],
+   [
+    "마리나 부두",
+    "marina dock",
+    "선율이 등록증을 넘겨 다른 이름을 가리킨다",
+    "Merritt flips the registration and points at another name",
+    2,
+    "이 배 주인... 다른 분입니다.",
+    "This yacht belongs to someone else.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "액자나 닦던 복원사",
+  "The Frame Polisher",
+  "복원 중인 그림 위에 가방을 올려놓고 복원사를 조롱한 소장품 주인. 감정 서명을 쥔 사람이 그였다.",
+  "A collector drops her bag on a painting being restored and sneers at the restorer. He signs its valuation.",
+  [
+   [
+    "H",
+    "민율",
+    "Rowan",
+    "30대 남성, 흰 작업복에 앞치마, 짧은 머리, 조용한 눈",
+    "man in his 30s, white work coat and apron, short hair, quiet eyes"
+   ],
+   [
+    "V",
+    "선채",
+    "Delaney",
+    "50대 여성, 보랏빛 원피스, 큰 진주 목걸이, 치켜든 턱",
+    "woman in her 50s, violet dress, large pearl necklace, lifted chin"
+   ],
+   [
+    "A",
+    "서림",
+    "Wren",
+    "30대 여성, 복원 스튜디오 직원, 감정 의뢰서, 당황한 표정",
+    "woman in her 30s, studio staff, valuation request, flustered face"
+   ]
+  ],
+  [
+   [
+    "복원 스튜디오",
+    "restoration studio",
+    "선채가 복원 중인 그림 위에 가방을 올려놓는다",
+    "Delaney sets her bag on the painting being restored",
+    1,
+    "액자나 닦던 애가 복원을 해?",
+    "The frame polisher does restoration?",
+    "cz"
+   ],
+   [
+    "복원 스튜디오",
+    "restoration studio",
+    "선채가 복원 기록지를 찢어 민율 앞에 던진다",
+    "She tears the restoration log and throws it at him",
+    1,
+    "내 그림, 오늘 값부터 다시 매겨.",
+    "Revalue my painting. Today.",
+    "ms"
+   ],
+   [
+    "복원 스튜디오",
+    "restoration studio",
+    "민율이 찢어진 기록지를 주워 조각을 맞춘다",
+    "Rowan picks up the torn log and fits the pieces together",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "복원 스튜디오",
+    "restoration studio",
+    "서림이 감정 의뢰서를 들고 와 민율에게 건넨다",
+    "Wren brings a valuation request and hands it to Rowan",
+    2,
+    "이 그림 값은 이분 서명으로 정해집니다.",
+    "His signature settles this painting's value.",
+    "low"
+   ],
+   [
+    "복원 스튜디오",
+    "restoration studio",
+    "선채가 가방을 그림 위에서 급히 들어 올린다",
+    "Delaney hurriedly lifts her bag off the painting",
+    0,
+    "복원은 못 맡습니다. 그림부터 회수하세요.",
+    "I won't restore it. Take the painting back.",
+    "cu"
+   ],
+   [
+    "복원 스튜디오",
+    "restoration studio",
+    "서림이 기록지 사이에서 옛 사진을 꺼낸다",
+    "Wren pulls an old photo from between the log pages",
+    2,
+    "이 그림, 20년 전에도 우리가 손댔습니다.",
+    "We restored this painting twenty years ago too.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "논문 못 쓴 애가 심사위원",
+  "The Professor Who Failed Him",
+  "재임용 심사를 받는 강사가 옛 후배를 조롱한다. 심사위원장 명패 앞에 앉은 사람이 그녀였다.",
+  "A lecturer sneers at an old classmate on his review panel, then sees her take the chair.",
+  [
+   [
+    "H",
+    "다율",
+    "Cassidy",
+    "40대 여성, 베이지 트위드 재킷, 안경, 또렷한 눈매",
+    "woman in her 40s, beige tweed jacket, glasses, sharp clear eyes"
+   ],
+   [
+    "V",
+    "근우",
+    "Gareth",
+    "40대 남성, 주름진 셔츠, 단추 풀린 재킷, 땀맺힌 이마",
+    "man in his 40s, wrinkled shirt, unbuttoned jacket, sweating forehead"
+   ],
+   [
+    "A",
+    "단아",
+    "Noor",
+    "30대 여성, 검은 원피스, 조교 명찰, 꼿꼿한 자세",
+    "woman in her 30s, black dress, assistant badge, upright posture"
+   ]
+  ],
+  [
+   [
+    "대학 세미나실",
+    "university seminar room",
+    "근우가 다율의 자료를 밀어내고 자기 논문을 펼친다",
+    "Gareth pushes her materials aside and spreads out his paper",
+    1,
+    "네가 심사위원이라고? 논문도 못 쓰던 애가.",
+    "You're on my review panel? You never finished a paper.",
+    "cz"
+   ],
+   [
+    "대학 세미나실",
+    "university seminar room",
+    "근우가 다율의 명패를 집어 책상 아래로 던진다",
+    "He picks up her nameplate and tosses it under the desk",
+    1,
+    "이 자리엔 교수만 앉는 거야.",
+    "Only professors sit here.",
+    "ms"
+   ],
+   [
+    "대학 세미나실",
+    "university seminar room",
+    "다율이 명패를 주워 닦아 제자리에 세운다",
+    "Cassidy picks up the nameplate, wipes it and sets it back",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "대학 세미나실",
+    "university seminar room",
+    "단아가 문을 열고 심사위원 명단을 벽 화면에 띄운다",
+    "Noor opens the door and puts the panel list on the screen",
+    2,
+    "재임용 심사 위원장은 이분입니다.",
+    "She chairs your reappointment review.",
+    "low"
+   ],
+   [
+    "대학 세미나실",
+    "university seminar room",
+    "근우가 의자 팔걸이를 붙잡고 천천히 앉는다",
+    "Gareth grips the armrest and sinks slowly into his chair",
+    0,
+    "심사는 규정대로 하죠. 발언도 기록에 남기고.",
+    "We'll follow procedure. Your comments go on record.",
+    "cu"
+   ],
+   [
+    "대학 세미나실",
+    "university seminar room",
+    "단아가 근우의 논문 첫 장을 넘기다 손을 멈춘다",
+    "Noor turns the first page of his paper and stops",
+    2,
+    "교수님, 이 데이터 각주가 이상합니다.",
+    "Professor, this data footnote doesn't match.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "기름때를 비웃은 회장",
+  "The Chairman Who Mocked Grease",
+  "내 차를 공짜로 고치라며 정비소 대표를 조롱한 회장. 보증 수리를 쥔 사람이 그였다.",
+  "A chairman demands a free repair and sneers at the mechanic's greasy hands. Only he can do the warranty work.",
+  [
+   [
+    "H",
+    "서찬",
+    "Ivo",
+    "40대 남성, 남색 작업복, 기름때 밴 손, 짧은 머리, 담담한 눈",
+    "man in his 40s, navy work overalls, grease-stained hands, short hair, level eyes"
+   ],
+   [
+    "V",
+    "담우",
+    "Sten",
+    "50대 남성, 검은 코트, 금목걸이, 거만한 웃음",
+    "man in his 50s, black coat, gold chain, smug laugh"
+   ],
+   [
+    "A",
+    "규진",
+    "Anders",
+    "30대 남성, 정비소 직원, 공구함, 긴장한 표정",
+    "man in his 30s, garage staff, toolbox, tense face"
+   ]
+  ],
+  [
+   [
+    "자동차 정비소",
+    "car workshop",
+    "담우가 서찬의 공구를 걷어차 굴러가게 한다",
+    "Sten kicks Ivo's wrench so it skids across the floor",
+    1,
+    "기름 묻은 손으로 내 차를 만져?",
+    "Greasy hands on my car?",
+    "cz"
+   ],
+   [
+    "자동차 정비소",
+    "car workshop",
+    "담우가 견적서를 찢어 서찬의 가슴에 던진다",
+    "He tears the estimate and throws it at Ivo's chest",
+    1,
+    "공짜로 고쳐. 학교 때처럼.",
+    "Fix it free. Like in school.",
+    "ms"
+   ],
+   [
+    "자동차 정비소",
+    "car workshop",
+    "서찬이 찢어진 견적서를 주워 부품 번호를 확인한다",
+    "Ivo gathers the estimate and checks the part numbers",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "자동차 정비소",
+    "car workshop",
+    "규진이 제조사 지정 서비스 인증서를 들고 나온다",
+    "Anders brings out the maker's authorized service certificate",
+    2,
+    "이 차 보증 수리는 저희만 됩니다.",
+    "Only we can do warranty work on this car.",
+    "low"
+   ],
+   [
+    "자동차 정비소",
+    "car workshop",
+    "담우가 차 키를 쥔 채 뒷걸음친다",
+    "Sten clutches his keys and steps back",
+    0,
+    "수리는 안 합니다. 차는 끌고 가세요.",
+    "No repair. Tow it out.",
+    "cu"
+   ],
+   [
+    "자동차 정비소",
+    "car workshop",
+    "규진이 계기판 기록을 가리키며 서찬을 본다",
+    "Anders points at the odometer log and looks at Ivo",
+    2,
+    "이 차, 주행 기록이 두 개입니다.",
+    "This car has two mileage logs.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "신고하러 온 그 선배",
+  "The Bully Who Came to Report",
+  "신고 접수를 하러 온 옛 가해자가 담당 형사를 알아보고 코웃음 친다. 그녀가 그 사건의 담당이었다.",
+  "An old bully arrives to file a report and scoffs at the detective in charge. It's the girl he tormented.",
+  [
+   [
+    "H",
+    "하겸",
+    "Teagan",
+    "30대 여성, 남색 정장과 어깨 총집, 묶은 머리, 무표정한 눈",
+    "woman in her 30s, navy suit and shoulder holster, tied-back hair, blank eyes"
+   ],
+   [
+    "V",
+    "이겸",
+    "Jude",
+    "40대 남성, 주름진 코트, 헝클어진 머리, 신경질적인 턱",
+    "man in his 40s, wrinkled coat, messy hair, twitchy jaw"
+   ],
+   [
+    "A",
+    "도예",
+    "Odette",
+    "30대 여성, 경찰 유니폼, 서류철, 차분한 태도",
+    "woman in her 30s, police uniform, case folder, composed manner"
+   ]
+  ],
+  [
+   [
+    "경찰서 민원실",
+    "police station lobby",
+    "이겸이 하겸의 탁자에 손바닥을 내려놓고 허리를 숙인다",
+    "Jude slams his palm on Teagan's desk and leans in",
+    1,
+    "너 같은 애가 형사라고? 웃기지 마.",
+    "A kid like you, a detective? Don't make me laugh.",
+    "cz"
+   ],
+   [
+    "경찰서 민원실",
+    "police station lobby",
+    "이겸이 하겸의 명패를 손가락으로 밀어 떨어뜨린다",
+    "He flicks her nameplate off the desk",
+    1,
+    "옛날처럼 조용히 있어. 신고만 접수해.",
+    "Stay quiet, like old times. Just take my report.",
+    "ms"
+   ],
+   [
+    "경찰서 민원실",
+    "police station lobby",
+    "하겸이 명패를 주워 세우고 서류를 펼친다",
+    "Teagan picks up the nameplate, sets it upright and opens a file",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "경찰서 민원실",
+    "police station lobby",
+    "도예가 이겸의 이름이 적힌 다른 서류를 건넨다",
+    "Odette hands over a second file bearing Jude's name",
+    2,
+    "이분 이름, 접근금지 신청에 올라 있습니다.",
+    "His name is on a restraining order request.",
+    "low"
+   ],
+   [
+    "경찰서 민원실",
+    "police station lobby",
+    "이겸이 의자를 밀고 일어나다 휘청한다",
+    "Jude shoves his chair back and staggers",
+    0,
+    "신고는 접수했어요. 나가실 땐 조용히.",
+    "Your report is filed. Leave quietly.",
+    "cu"
+   ],
+   [
+    "경찰서 민원실",
+    "police station lobby",
+    "도예가 하겸의 귀에 대고 아주 낮게 말한다",
+    "Odette leans close to Teagan and whispers",
+    2,
+    "신청인 이름이... 같은 반이었대요.",
+    "The applicant says she was in your class.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "원두만 나르던 로스터",
+  "The Bean Carrier",
+  "원두 자루를 발등에 떨어뜨리며 납품서를 찢은 카페 체인 대표. 배합을 쥔 로스터가 그였다.",
+  "A cafe chain owner drops a bean sack on his foot and tears the order. He holds her blend.",
+  [
+   [
+    "H",
+    "규담",
+    "Silas",
+    "40대 남성, 가죽 앞치마에 흰 셔츠, 수염, 편안한 눈",
+    "man in his 40s, leather apron over white shirt, beard, easy eyes"
+   ],
+   [
+    "V",
+    "나임",
+    "Paloma",
+    "40대 여성, 빨간 재킷, 짧은 단발, 날카롭게 치켜뜬 눈썹",
+    "woman in her 40s, red jacket, short bob, sharply arched brows"
+   ],
+   [
+    "A",
+    "서리",
+    "Ingrid",
+    "30대 여성, 로스터리 직원, 납품 장부, 다급한 표정",
+    "woman in her 30s, roastery staff, delivery ledger, urgent face"
+   ]
+  ],
+  [
+   [
+    "커피 로스터리",
+    "coffee roastery",
+    "나임이 원두 자루를 밀어 규담의 발등에 떨어뜨린다",
+    "Paloma shoves a bean sack so it lands on Silas's foot",
+    1,
+    "원두나 나르던 애가 로스팅을 해?",
+    "The bean carrier does the roasting?",
+    "cz"
+   ],
+   [
+    "커피 로스터리",
+    "coffee roastery",
+    "나임이 납품서를 찢어 로스터 위에 뿌린다",
+    "She tears the delivery note and scatters it over the roaster",
+    1,
+    "내 매장 물량, 오늘부터 두 배로.",
+    "Double my volume. Starting today.",
+    "ms"
+   ],
+   [
+    "커피 로스터리",
+    "coffee roastery",
+    "규담이 찢어진 납품서를 모아 배합표와 맞춘다",
+    "Silas gathers the torn note and checks it against the blend sheet",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "커피 로스터리",
+    "coffee roastery",
+    "서리가 태블릿을 들고 와 규담 옆에 선다",
+    "Ingrid brings a tablet and stands beside Silas",
+    2,
+    "대표님, 이번 계약은 이분 서명이 필요합니다.",
+    "Boss, this contract needs his signature.",
+    "low"
+   ],
+   [
+    "커피 로스터리",
+    "coffee roastery",
+    "나임이 원두 자루에서 손을 뗀다",
+    "Paloma pulls her hand off the bean sack",
+    0,
+    "물량은 못 늘려요. 다른 곳을 찾으세요.",
+    "No extra volume. Find another roaster.",
+    "cu"
+   ],
+   [
+    "커피 로스터리",
+    "coffee roastery",
+    "서리가 원두 봉투를 들고 라벨을 뒤집어 본다",
+    "Ingrid lifts a bean bag and turns its label over",
+    2,
+    "이 원두, 우리가 보낸 게 아닙니다.",
+    "We never sent this coffee.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "구두 빌려주던 사장",
+  "The Shoe Rental Kid",
+  "볼링화를 던지며 사장을 구두 대여 담당으로 부른 동호회 회장. 대관을 정하는 사람이 그녀였다.",
+  "A club president throws bowling shoes at the owner and calls her the shoe girl. She books the lanes.",
+  [
+   [
+    "H",
+    "설연",
+    "Linnea",
+    "40대 여성, 남색 폴로셔츠에 앞치마, 낮게 묶은 머리, 서늘한 미소",
+    "woman in her 40s, navy polo and apron, low bun, cool smile"
+   ],
+   [
+    "V",
+    "석희",
+    "Otto",
+    "50대 남성, 형광 볼링셔츠, 손목 보호대, 큰 금반지",
+    "man in his 50s, neon bowling shirt, wrist guard, big gold ring"
+   ],
+   [
+    "A",
+    "보명",
+    "Ansel",
+    "30대 남성, 볼링장 직원, 대관 일정표, 공손한 태도",
+    "man in his 30s, bowling alley staff, booking sheet, deferential manner"
+   ]
+  ],
+  [
+   [
+    "볼링장",
+    "bowling alley",
+    "석희가 볼링화를 설연 앞에 던진다",
+    "Otto throws a pair of bowling shoes at Linnea",
+    1,
+    "구두 빌려주던 애가 사장이야?",
+    "The shoe rental kid owns this place?",
+    "cz"
+   ],
+   [
+    "볼링장",
+    "bowling alley",
+    "석희가 대관 신청서를 찢어 레인 위에 뿌린다",
+    "He tears the lane booking and scatters it on the lane",
+    1,
+    "동호회 대회, 여기서 해. 무료로.",
+    "Our club tournament is here. For free.",
+    "ms"
+   ],
+   [
+    "볼링장",
+    "bowling alley",
+    "설연이 찢어진 신청서를 주워 레인 번호를 확인한다",
+    "Linnea picks up the torn form and checks the lane numbers",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "볼링장",
+    "bowling alley",
+    "보명이 대관 일정표를 들고 와 설연 옆에 선다",
+    "Ansel brings the booking schedule and stands beside her",
+    2,
+    "사장님, 그 주는 이미 대회가 잡혀 있습니다.",
+    "Boss, that week is already booked.",
+    "low"
+   ],
+   [
+    "볼링장",
+    "bowling alley",
+    "석희가 볼링공을 내려놓고 손을 든다",
+    "Otto sets down the ball and raises his hands",
+    0,
+    "대관은 안 됩니다. 다음 달을 보세요.",
+    "No booking. Try next month.",
+    "cu"
+   ],
+   [
+    "볼링장",
+    "bowling alley",
+    "보명이 신청서 뒷장의 서명을 가리킨다",
+    "Ansel points at a signature on the back of the form",
+    2,
+    "이 서명... 다른 동호회 겁니다.",
+    "This signature is from another club.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "네가 원장이야?",
+  "You Own This Salon?",
+  "예약 손님으로 온 옛 동창이 가위를 빼앗으며 원장을 조롱한다. 그 가위의 주인이 이 매장 사장이었다.",
+  "A client snatches the scissors and sneers at the owner of the salon, not knowing the chair is his.",
+  [
+   [
+    "H",
+    "규훈",
+    "Miles",
+    "30대 남성, 검은 셔츠와 가죽 앞치마, 가위집, 무심한 눈",
+    "man in his 30s, black shirt and leather apron, scissor holster, detached eyes"
+   ],
+   [
+    "V",
+    "다예",
+    "Tessa",
+    "30대 여성, 분홍 트렌치코트, 긴 웨이브 머리, 비웃는 입",
+    "woman in her 30s, pink trench coat, long wavy hair, sneering mouth"
+   ],
+   [
+    "A",
+    "새별",
+    "Zara",
+    "30대 여성, 검은 유니폼, 예약 장부, 난처한 얼굴",
+    "woman in her 30s, black uniform, appointment book, awkward face"
+   ]
+  ],
+  [
+   [
+    "미용실",
+    "hair salon",
+    "다예가 규훈의 가위를 집어 내려놓으며 소파에 앉는다",
+    "Tessa picks up Miles's scissors, sets them down and sits",
+    1,
+    "이 머리 망치면 네 월급으로 물어내.",
+    "Ruin my hair and you'll pay with your salary.",
+    "cz"
+   ],
+   [
+    "미용실",
+    "hair salon",
+    "다예가 옛 반 단체사진을 꺼내 규훈에게 보여 준다",
+    "She pulls out an old class photo and shows it to him",
+    1,
+    "이때도 넌 머리 만지는 애였잖아.",
+    "Even back then, you were the hair guy.",
+    "ms"
+   ],
+   [
+    "미용실",
+    "hair salon",
+    "규훈이 사진을 잠깐 보고는 가위를 다시 집어 든다",
+    "Miles glances at the photo and picks his scissors back up",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "미용실",
+    "hair salon",
+    "새별이 태블릿을 들고 와 화면을 다예에게 돌린다",
+    "Zara brings a tablet and turns the screen to Tessa",
+    2,
+    "원장님, 패션위크 백스테이지 요청입니다.",
+    "Boss, fashion week wants you backstage.",
+    "low"
+   ],
+   [
+    "미용실",
+    "hair salon",
+    "다예가 소파에서 일어나며 코트깃을 여민다",
+    "Tessa rises from the sofa and clutches her coat collar",
+    0,
+    "오늘 예약은 취소할게요. 다음 분 모셔야죠.",
+    "Your appointment is cancelled. I have other clients.",
+    "cu"
+   ],
+   [
+    "미용실",
+    "hair salon",
+    "새별이 예약 장부를 넘기다 손가락을 멈춘다",
+    "Zara flips the appointment book and stops",
+    2,
+    "다음 주 예약자요. 같은 반이라고 적혀 있어요.",
+    "Next week's client wrote she's from your class.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "짐꾼이라 부른 수입업자",
+  "The Importer Who Called Him Cargo",
+  "컨테이너를 발치에 밀어붙이며 세관 심사관을 짐꾼이라 부른 수입업자. 반출을 결정하는 사람이 그였다.",
+  "An importer calls the customs officer a cargo hand and demands release. He signs the release.",
+  [
+   [
+    "H",
+    "선하",
+    "Nathaniel",
+    "30대 남성, 세관 제복, 짧은 머리, 무표정한 눈",
+    "man in his 30s, customs uniform, short hair, expressionless eyes"
+   ],
+   [
+    "V",
+    "서후",
+    "Hugo",
+    "30대 남성, 값비싼 캐주얼, 금테 안경, 짜증 난 얼굴",
+    "man in his 30s, expensive casual clothes, gold-rimmed glasses, annoyed face"
+   ],
+   [
+    "A",
+    "나봄",
+    "Veda",
+    "30대 여성, 세관 직원, 서류철, 차분한 태도",
+    "woman in her 30s, customs staff, case folder, composed manner"
+   ]
+  ],
+  [
+   [
+    "화물 검사장",
+    "cargo inspection yard",
+    "서후가 상자를 밀어 선하의 발치에 떨어뜨린다",
+    "Hugo shoves a crate so it drops at Nathaniel's feet",
+    1,
+    "짐 나르던 애가 검사를 해?",
+    "The cargo hand inspects my goods?",
+    "cz"
+   ],
+   [
+    "화물 검사장",
+    "cargo inspection yard",
+    "서후가 신고서를 찢어 컨베이어 위에 던진다",
+    "He tears the declaration and throws it on the conveyor",
+    1,
+    "내 컨테이너, 오늘 빼 줘.",
+    "Release my container today.",
+    "ms"
+   ],
+   [
+    "화물 검사장",
+    "cargo inspection yard",
+    "선하가 찢어진 신고서를 주워 품목 번호를 확인한다",
+    "Nathaniel picks up the torn declaration and checks the item codes",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "화물 검사장",
+    "cargo inspection yard",
+    "나봄이 서류철을 들고 와 선하에게 건넨다",
+    "Veda brings a file and hands it to Nathaniel",
+    2,
+    "선생님, 이 화물은 정밀 검사 대상입니다.",
+    "Sir, this shipment needs a full inspection.",
+    "low"
+   ],
+   [
+    "화물 검사장",
+    "cargo inspection yard",
+    "서후가 컨테이너 쪽을 보다 한 걸음 물러선다",
+    "Hugo glances at his container and steps back",
+    0,
+    "반출은 안 됩니다. 검사부터 받으세요.",
+    "No release. Inspection first.",
+    "cu"
+   ],
+   [
+    "화물 검사장",
+    "cargo inspection yard",
+    "나봄이 다른 컨테이너 번호를 가리킨다",
+    "Veda points at a second container number",
+    2,
+    "같은 이름으로... 두 개가 더 들어왔습니다.",
+    "Two more came in under the same name.",
+    "pi"
+   ]
+  ]
+ ]
+]
