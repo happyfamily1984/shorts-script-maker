@@ -1,0 +1,182 @@
+[
+[
+ "몸집으로 캠페인을 막아선 매장", "The Store That Blocked the Campaign",
+ "체형을 보고 캠페인 모델은 무리라던 점원. 그녀는 이 브랜드의 캠페인 캐스팅을 정하는 사람이었다.",
+ "A clerk says her body can't front a campaign. She casts every campaign for the brand.",
+ [
+  ["H", "미주", "Fern", "30대 여성, 헐렁한 셔츠, 묶은 머리, 단단한 눈빛", "woman in her 30s, loose shirt, tied hair, steady eyes"],
+  ["V", "재승", "Spencer", "30대 남성, 매장 유니폼, 젤 바른 머리, 비웃는 얼굴", "man in his 30s, store uniform, gelled hair, sneering face"],
+  ["A", "컨 실장", "Ms. Kern", "40대 여성, 검은 정장, 태블릿, 단호한 표정", "woman in her 40s, black suit, tablet, firm look"]
+ ],
+ [
+  ["스포츠웨어 매장", "sportswear store", "재승이 미주에게 큰 사이즈 옷만 걸어 준다", "Jaeseung holds out only the biggest sizes for Miju", 1, "이 라인은 몸이 받쳐 줘야 해요.", "This line needs the right body.", "ms"],
+  ["스포츠웨어 매장", "sportswear store", "재승이 미주를 탈의실 맨 끝으로 보낸다", "Jaeseung points Miju to the last fitting room", 1, "캠페인 모델은 따로 있어요.", "We already have campaign models.", "ots"],
+  ["스포츠웨어 매장", "sportswear store", "미주가 캐스팅 명단을 꺼낸다", "Miju takes out a casting list", -1, "", "", "cu"],
+  ["스포츠웨어 매장", "sportswear store", "컨이 명단을 들고 재승 앞에 선다", "Ms. Kern holds the list before Jaeseung", 2, "이번 캠페인 캐스팅, 미주 님 담당입니다.", "Miju casts this campaign.", "low"],
+  ["촬영장", "studio set", "미주가 모델의 옷매무새를 고쳐 주고 재승이 굳는다", "Miju adjusts the model's outfit as Jaeseung freezes", 0, "캠페인 얼굴은 제가 정해요.", "I decide the faces here.", "rx"],
+  ["매장 밖", "outside the store", "매장 밖에서 여자가 미주에게 손을 흔든다", "Outside the store, a woman waves to Miju", -1, "", "", "pi"]
+ ]
+],
+[
+ "가짜라며 내보낸 주얼리 매장", "The Jeweler Who Called It Fake",
+ "낡은 옷을 보고 가짜라며 내보낸 직원. 그 손님은 이 매장의 보석 감정서를 쓰는 사람이었다.",
+ "A clerk waves off a shabby man and calls his ring fake. He writes the store's gem certificates.",
+ [
+  ["H", "한별", "Emmett", "50대 남성, 낡은 회색 코트, 짧은 흰머리, 차분한 얼굴", "man in his 50s, worn gray coat, short white hair, calm face"],
+  ["V", "소윤", "Lacey", "20대 후반 여성, 검은 유니폼, 긴 머리, 새침한 얼굴", "woman in her late 20s, black uniform, long hair, prim face"],
+  ["A", "피치 매니저", "Ms. Fitch", "40대 여성, 짙은 정장, 안경, 냉정한 표정", "woman in her 40s, dark suit, glasses, cool expression"]
+ ],
+ [
+  ["주얼리 매장", "jewelry boutique", "소윤이 한별의 반지를 손끝으로 집어 든다", "Soyun lifts Hanbyeol's ring with two fingers", 1, "이건 저희가 취급 안 해요.", "We don't handle pieces like this.", "ms"],
+  ["주얼리 매장", "jewelry boutique", "소윤이 한별을 매장 밖으로 손짓한다", "Soyun waves Hanbyeol out of the shop", 1, "감정은 다른 데서 하세요.", "Get it appraised somewhere else.", "ots"],
+  ["주얼리 매장", "jewelry boutique", "한별이 감정서와 루페를 꺼낸다", "Hanbyeol takes out an appraisal report and a loupe", -1, "", "", "cu"],
+  ["주얼리 매장", "jewelry boutique", "피치가 감정서를 들고 소윤 앞에 선다", "Ms. Fitch holds the report before Soyun", 2, "이 매장 보석 감정, 한별 님 담당입니다.", "Hanbyeol appraises every piece in this store.", "low"],
+  ["주얼리 매장", "jewelry boutique", "소윤이 반지를 두 손으로 받쳐 든다", "Soyun cups the ring in both hands", 0, "판매는 감정서부터 다시 쓰죠.", "Sales start with a new certificate.", "rx"],
+  ["매장 밖", "outside the boutique", "매장 밖에서 여자가 한별에게 손을 든다", "Outside the boutique, a woman raises a hand to Hanbyeol", -1, "", "", "pi"]
+ ]
+],
+[
+ "낡은 차를 뺀 발렛 직원", "The Valet Who Hid My Old Car",
+ "낡은 차를 보고 뒷골목에 세우라던 발렛 직원. 그 손님은 오늘 취임한 호텔 총지배인이었다.",
+ "A valet parks his old car in the back alley. The driver is the hotel's new general manager.",
+ [
+  ["H", "경민", "Nils", "40대 남성, 낡은 정장, 짧은 머리, 무표정", "man in his 40s, worn suit, short hair, blank face"],
+  ["V", "두현", "Jax", "20대 후반 남성, 발렛 유니폼, 모자, 거만한 얼굴", "man in his late 20s, valet uniform, cap, smug face"],
+  ["A", "프레스콧 이사", "Ms. Prescott", "50대 여성, 검은 정장, 은발, 단호한 표정", "woman in her 50s, black suit, silver hair, firm look"]
+ ],
+ [
+  ["호텔 정문", "hotel entrance", "두현이 경민의 차 키를 받아 주머니에 넣는다", "Duhyeon takes Gyeongmin's keys and pockets them", 1, "이 차는 뒷골목에 세워 둘게요.", "I'll put this in the back alley.", "ms"],
+  ["호텔 정문", "hotel entrance", "두현이 경민을 직원 출입구 쪽으로 보낸다", "Duhyeon points Gyeongmin to the staff entrance", 1, "정문은 귀빈 전용이에요.", "The front door is for VIPs.", "ots"],
+  ["호텔 정문", "hotel entrance", "경민이 총지배인 명패를 꺼낸다", "Gyeongmin takes out a general manager's nameplate", -1, "", "", "cu"],
+  ["호텔 로비", "hotel lobby", "프레스콧이 명패를 들고 두현 앞에 선다", "Ms. Prescott holds the nameplate before Duhyeon", 2, "오늘 취임한 총지배인, 경민 님입니다.", "Our new general manager is Gyeongmin.", "low"],
+  ["호텔 정문", "hotel entrance", "두현이 차 키를 두 손으로 돌려준다", "Duhyeon returns the keys with both hands", 0, "제 차는 정문에 세워 주세요.", "Park my car at the front.", "rx"],
+  ["호텔 회전문", "hotel revolving door", "회전문으로 여자가 들어온다", "A woman comes through the revolving door", -1, "", "", "pi"]
+ ]
+],
+[
+ "배낭 하나로 문전박대한 리조트", "The Resort That Judged My Backpack",
+ "배낭 하나로 문전박대한 프런트. 그 손님은 이 리조트를 인수한 사람이었다.",
+ "The front desk turns away a man with a backpack. He just bought the resort.",
+ [
+  ["H", "태랑", "Rowan", "30대 남성, 배낭을 멘 캐주얼 차림, 짧은 머리, 담담한 눈빛", "man in his 30s, backpack and casual clothes, short hair, composed eyes"],
+  ["V", "지숙", "Denise", "40대 여성, 리조트 유니폼, 묶은 머리, 까다로운 얼굴", "woman in her 40s, resort uniform, tied hair, fussy face"],
+  ["A", "포크 이사", "Mr. Falk", "50대 남성, 회색 정장, 서류철, 정중한 태도", "man in his 50s, gray suit, document folder, courteous manner"]
+ ],
+ [
+  ["리조트 프런트", "resort front desk", "지숙이 태랑의 예약 확인서를 접는다", "Jisuk folds Taerang's booking confirmation", 1, "단체는 뒷문으로 들어오세요.", "Groups use the back door.", "ms"],
+  ["리조트 프런트", "resort front desk", "지숙이 태랑을 로비 밖으로 손짓한다", "Jisuk waves Taerang out of the lobby", 1, "여긴 투숙객 전용이에요.", "This area is for guests only.", "ots"],
+  ["리조트 프런트", "resort front desk", "태랑이 인수 계약서를 꺼낸다", "Taerang takes out the acquisition contract", -1, "", "", "cu"],
+  ["리조트 프런트", "resort front desk", "포크가 계약서를 들고 지숙 앞에 선다", "Mr. Falk holds the contract before Jisuk", 2, "이 리조트 인수자, 태랑 님입니다.", "The new owner of this resort is Taerang.", "low"],
+  ["리조트 프런트", "resort front desk", "지숙이 예약 확인서를 두 손으로 고친다", "Jisuk straightens the confirmation with both hands", 0, "예약은 제가 다시 잡을게요.", "I'll rebook myself properly.", "rx"],
+  ["로비 창가", "lobby window", "로비 창가에서 여자가 태랑에게 손을 든다", "At the lobby window, a woman raises a hand to Taerang", -1, "", "", "pi"]
+ ]
+],
+[
+ "케이크 값을 깎아 부른 제과점", "The Bakery That Bargained My Cake",
+ "밀가루 묻은 앞치마를 보고 값을 깎아 부른 점원. 그녀는 호텔 케이크를 만드는 셰프였다.",
+ "A clerk cuts the price at the sight of a floury apron. She designs the hotel's cakes.",
+ [
+  ["H", "유정", "Elsie", "30대 여성, 밀가루 묻은 앞치마, 묶은 머리, 밝은 눈빛", "woman in her 30s, flour-dusted apron, tied hair, bright eyes"],
+  ["V", "명수", "Curt", "40대 남성, 앞치마, 짧은 머리, 비웃는 얼굴", "man in his 40s, apron, short hair, sneering face"],
+  ["A", "렌 매니저", "Ms. Wren", "30대 여성, 검은 정장, 클립보드, 단호한 표정", "woman in her 30s, black suit, clipboard, firm look"]
+ ],
+ [
+  ["제과점", "bakery", "명수가 유정에게 진열된 케이크 값을 손가락으로 깎아 적는다", "Myeongsu scribbles a lower price on the cake tag", 1, "이 정도면 되죠?", "This should be fair, right?", "ms"],
+  ["제과점", "bakery", "명수가 유정의 밀가루 묻은 앞치마를 털어낸다", "Myeongsu brushes flour off Yujeong's apron", 1, "여기선 앞치마 벗으세요.", "Take the apron off in here.", "ots"],
+  ["제과점", "bakery", "유정이 케이크 도안을 꺼낸다", "Yujeong takes out a cake design sketch", -1, "", "", "cu"],
+  ["호텔 연회장", "hotel banquet hall", "렌이 도안을 들고 명수 앞에 선다", "Ms. Wren holds the sketch before Myeongsu", 2, "호텔 케이크 도안, 유정 님 작품입니다.", "The hotel cake design is Yujeong's.", "low"],
+  ["제과점", "bakery", "명수가 케이크를 진열대에 조심히 올린다", "Myeongsu lifts the cake carefully onto the shelf", 0, "예약은 다른 데서 받으세요.", "Take your orders elsewhere.", "rx"],
+  ["가게 밖", "outside the shop", "가게 밖에서 여자가 유정에게 손을 흔든다", "Outside the shop, a woman waves to Yujeong", -1, "", "", "pi"]
+ ]
+],
+[
+ "작업복 손님을 따라다닌 매장", "The Store That Followed Me Around",
+ "작업복 차림을 따라다니며 만지지 말라던 점원. 그 손님은 이 가구를 디자인한 사람이었다.",
+ "A clerk trails him around the showroom. He designed every piece in it.",
+ [
+  ["H", "상엽", "Dexter", "40대 남성, 카키 작업복, 짧은 수염, 무표정", "man in his 40s, khaki work clothes, short beard, blank face"],
+  ["V", "현주", "Marla", "30대 여성, 검은 정장, 하이힐, 얕보는 미소", "woman in her 30s, black suit, high heels, condescending smile"],
+  ["A", "케이드 실장", "Mr. Cade", "40대 남성, 베이지 재킷, 안경, 정중한 태도", "man in his 40s, beige jacket, glasses, courteous manner"]
+ ],
+ [
+  ["가구 매장", "furniture store", "현주가 상엽의 손을 막아 소파에서 떼어 놓는다", "Hyeonju blocks Sangyeop's hand and pulls him from the sofa", 1, "만지지 마세요.", "Please don't touch.", "ms"],
+  ["가구 매장", "furniture store", "현주가 상엽을 매장 밖으로 따라 나가며 손짓한다", "Hyeonju follows Sangyeop out, waving him off", 1, "구경은 밖에서 하세요.", "Browse from outside.", "ots"],
+  ["가구 매장", "furniture store", "상엽이 가구 도면을 꺼낸다", "Sangyeop takes out furniture drawings", -1, "", "", "cu"],
+  ["가구 매장", "furniture store", "케이드가 도면을 들고 현주 앞에 선다", "Mr. Cade holds the drawings before Hyeonju", 2, "이 소파 디자이너, 상엽 님입니다.", "The designer of this sofa is Sangyeop.", "low"],
+  ["가구 매장", "furniture store", "현주가 소파 쿠션을 정리하며 굳는다", "Hyeonju fluffs the sofa cushion, frozen", 0, "주문은 다음 달에 받죠.", "Your order can wait till next month.", "rx"],
+  ["매장 밖", "outside the store", "매장 밖에서 남자가 상엽에게 손을 흔든다", "Outside the store, a man waves to Sangyeop", -1, "", "", "pi"]
+ ]
+],
+[
+ "장비부터 바꾸라던 클라이밍장", "The Climbing Gym That Sized My Shoes",
+ "헌 암벽화를 보고 장비부터 바꾸라던 강사. 그는 이 벽의 루트를 짜는 사람이었다.",
+ "An instructor tells him to buy new shoes. He sets the routes on this wall.",
+ [
+  ["H", "무열", "Finn", "20대 후반 남성, 낡은 반팔, 헌 암벽화, 무심한 눈빛", "man in his late 20s, worn T-shirt, old climbing shoes, indifferent eyes"],
+  ["V", "광태", "Chaz", "30대 남성, 타이트한 반팔, 근육질, 비웃는 얼굴", "man in his 30s, tight T-shirt, muscular, sneering face"],
+  ["A", "오트 매니저", "Ms. Ott", "40대 여성, 검은 정장, 태블릿, 단호한 표정", "woman in her 40s, black suit, tablet, firm look"]
+ ],
+ [
+  ["클라이밍장", "climbing gym", "광태가 무열의 암벽화를 가리키며 웃는다", "Gwangtae points at Muyeol's shoes and laughs", 1, "그 신발로는 한 칸도 못 올라가요.", "You won't clear one move in those.", "ms"],
+  ["클라이밍장", "climbing gym", "광태가 무열의 초크백을 빼앗아 옆에 건다", "Gwangtae takes Muyeol's chalk bag and hangs it aside", 1, "장비부터 바꾸고 오세요.", "Come back with real gear.", "ots"],
+  ["클라이밍장", "climbing gym", "무열이 루트 도면을 꺼낸다", "Muyeol takes out a route map", -1, "", "", "cu"],
+  ["클라이밍장", "climbing gym", "오트가 도면을 들고 광태 앞에 선다", "Ms. Ott holds the map before Gwangtae", 2, "이 벽 루트 세터, 무열 님입니다.", "The route setter on this wall is Muyeol.", "low"],
+  ["클라이밍장", "climbing gym", "무열이 벽을 올라 마지막 홀드를 잡는다", "Muyeol climbs the wall and takes the final hold", 0, "강사 자격, 다시 심사하죠.", "Let's re-check your instructor license.", "rx"],
+  ["매트 옆", "beside the mat", "매트 옆에서 여자가 무열에게 박수를 친다", "Beside the mat, a woman applauds Muyeol", -1, "", "", "pi"]
+ ]
+],
+[
+ "후드티 관중을 내보낸 경기장", "The Arena That Threw Out My Hoodie",
+ "후드티 차림 관중을 내보낸 경기장 직원. 그는 이 팀의 새 감독이었다.",
+ "An arena steward throws out a man in a hoodie. He is the team's new head coach.",
+ [
+  ["H", "도율", "Kai", "30대 남성, 회색 후드티, 모자, 무표정", "man in his 30s, gray hoodie, cap, blank face"],
+  ["V", "세진", "Reggie", "20대 후반 남성, 경기장 유니폼, 이어피스, 거만한 얼굴", "man in his late 20s, arena uniform, earpiece, smug face"],
+  ["A", "헨드리 단장", "Ms. Hendry", "40대 여성, 검은 정장, 서류철, 단호한 표정", "woman in her 40s, black suit, document folder, firm look"]
+ ],
+ [
+  ["e스포츠 경기장", "esports arena", "세진이 도율의 관중석 표를 접어 돌려준다", "Sejin folds Doyul's seat ticket and hands it back", 1, "여긴 관계자석이에요.", "These seats are for staff.", "ms"],
+  ["e스포츠 경기장", "esports arena", "세진이 도율을 통로 밖으로 밀어낸다", "Sejin pushes Doyul out of the aisle", 1, "후드티 입고 여기 앉지 마세요.", "No hoodies in these seats.", "ots"],
+  ["e스포츠 경기장", "esports arena", "도율이 감독 계약서를 꺼낸다", "Doyul takes out a coach's contract", -1, "", "", "cu"],
+  ["e스포츠 경기장", "esports arena", "헨드리가 계약서를 들고 세진 앞에 선다", "Ms. Hendry holds the contract before Sejin", 2, "새 감독, 도율 님입니다.", "Our new head coach is Doyul.", "low"],
+  ["e스포츠 경기장", "esports arena", "도율이 후드티를 벗어 팀 재킷을 입는다", "Doyul pulls off the hoodie and puts on a team jacket", 0, "선수 영입은 제가 정합니다.", "I decide who we sign.", "rx"],
+  ["경기장 입구", "arena entrance", "경기장 입구에서 여자가 도율에게 손을 흔든다", "At the arena entrance, a woman waves to Doyul", -1, "", "", "pi"]
+ ]
+],
+[
+ "헌 점퍼를 쫓아낸 아이스링크", "The Ice Rink That Sent Me Out",
+ "헌 점퍼 차림을 보고 쫓아낸 링크 직원. 그녀는 올림픽에서 점수를 매기던 심판이었다.",
+ "A rink attendant sends out a woman in an old jacket. She scored at the Olympics.",
+ [
+  ["H", "연희", "Margo", "50대 여성, 헌 점퍼, 짧은 흰머리, 단단한 눈빛", "woman in her 50s, worn padded jacket, short white hair, steady eyes"],
+  ["V", "기철", "Dirk", "40대 남성, 링크 유니폼, 모자, 거만한 얼굴", "man in his 40s, rink uniform, cap, smug face"],
+  ["A", "파브르 위원", "Ms. Fabre", "40대 여성, 회색 정장, 안경, 냉정한 표정", "woman in her 40s, gray suit, glasses, cool expression"]
+ ],
+ [
+  ["아이스링크", "ice rink", "기철이 연희의 스케이트를 대여대에 돌려놓는다", "Gicheol puts Yeonhui's skates back on the rental rack", 1, "그 옷으론 링크에 못 들어와요.", "Not on this ice in that jacket.", "ms"],
+  ["아이스링크", "ice rink", "기철이 연희를 관중석 밖으로 손짓한다", "Gicheol waves Yeonhui out of the stands", 1, "오늘은 대관 행사예요.", "The rink is booked today.", "ots"],
+  ["아이스링크", "ice rink", "연희가 심판 명단을 꺼낸다", "Yeonhui takes out a judges roster", -1, "", "", "cu"],
+  ["아이스링크", "ice rink", "파브르가 명단을 들고 기철 앞에 선다", "Ms. Fabre holds the roster before Gicheol", 2, "올림픽 심판, 연희 님입니다.", "An Olympic judge — Yeonhui.", "low"],
+  ["아이스링크", "ice rink", "연희가 링크에 올라 빙판을 한 바퀴 돈다", "Yeonhui steps onto the ice and glides a full lap", 0, "채점은 제가 하던 일이죠.", "Scoring was my job.", "rx"],
+  ["관중석", "the stands", "관중석에서 여자가 연희에게 박수를 친다", "In the stands, a woman applauds Yeonhui", -1, "", "", "pi"]
+ ]
+],
+[
+ "자리 없다던 시사회 입구", "The Premiere That Had No Seat",
+ "자리가 없다며 시사회에서 내보낸 직원. 그 손님은 이 영화를 수입한 배급사 대표였다.",
+ "An usher turns him away from the premiere. He is the distributor who brought the film in.",
+ [
+  ["H", "준영", "Barry", "40대 남성, 낡은 니트, 안경, 조용한 눈빛", "man in his 40s, worn knit, glasses, quiet eyes"],
+  ["V", "소담", "Trish", "20대 후반 여성, 영화관 유니폼, 높은 포니테일, 새침한 얼굴", "woman in her late 20s, cinema uniform, high ponytail, prim face"],
+  ["A", "보스 실장", "Mr. Voss", "50대 남성, 짙은 정장, 서류 가방, 무표정", "man in his 50s, dark suit, briefcase, blank face"]
+ ],
+ [
+  ["영화관", "cinema", "소담이 준영의 초대장을 들여다보고 고개를 젓는다", "Sodam checks Junyeong's invitation and shakes her head", 1, "이 초대장은 효력이 없어요.", "This invitation isn't valid.", "ms"],
+  ["영화관", "cinema", "소담이 준영을 상영관 밖으로 밀어낸다", "Sodam pushes Junyeong out of the theater", 1, "자리 없으니 나가 주세요.", "No seats. Please leave.", "ots"],
+  ["영화관", "cinema", "준영이 배급 계약서를 꺼낸다", "Junyeong takes out a distribution contract", -1, "", "", "cu"],
+  ["영화관", "cinema", "보스가 계약서를 들고 소담 앞에 선다", "Mr. Voss holds the contract before Sodam", 2, "이 영화 배급사 대표, 준영 님입니다.", "The distributor of this film is Junyeong.", "low"],
+  ["영화관", "cinema", "소담이 초대장을 두 손으로 돌려준다", "Sodam returns the invitation with both hands", 0, "상영관 계약, 다시 보죠.", "Let's revisit your screening contract.", "rx"],
+  ["상영관 입구", "theater entrance", "상영관 입구에서 감독이 준영에게 손을 흔든다", "At the entrance, the director waves to Junyeong", -1, "", "", "pi"]
+ ]
+]
+]

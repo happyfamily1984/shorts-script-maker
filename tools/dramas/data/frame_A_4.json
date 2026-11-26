@@ -1,0 +1,182 @@
+[
+[
+ "그림을 깬 운송 요원", "The Art Handler and the Cracked Frame",
+ "경매를 앞두고 그림이 파손되자 운송 요원이 몰린다. 상자 충격 센서가 진범을 찍었다.",
+ "A painting is damaged before the auction and the art handler is blamed. The crate's impact sensor names the culprit.",
+ [
+  ["H", "도경", "Sam", "30대 남성, 검은 작업복, 짧은 머리, 무표정", "man in his 30s, black work clothes, short hair, deadpan face"],
+  ["V", "윤재", "Mr. Blanch", "50대 남성, 짙은 정장, 안경, 권위적인 태도", "man in his 50s, dark suit, glasses, overbearing manner"],
+  ["A", "감정사", "Ms. Terrell", "40대 여성, 흰 장갑, 돋보기, 냉정한 표정", "woman in her 40s, white gloves, loupe, cool expression"]
+ ],
+ [
+  ["경매장", "auction house", "윤재가 금이 간 그림을 도경 앞에 세운다", "Mr. Blanch stands the cracked painting in front of Sam", 1, "네가 마지막으로 옮겼어.", "You moved it last.", "cz"],
+  ["경매장", "auction house", "윤재가 도경의 운송 일지를 찢어 바닥에 버린다", "Mr. Blanch tears up Sam's shipping log and drops it", 1, "이 그림값 평생 갚아.", "You'll be paying for this for life.", "ms"],
+  ["경매장", "auction house", "도경이 운송 상자의 센서를 손끝으로 짚는다", "Sam taps the sensor on the shipping crate", -1, "", "", "pi"],
+  ["경매장", "auction house", "감정사가 센서 기록의 시각을 읽는다", "Ms. Terrell reads the timestamp off the sensor log", 2, "센서가 충격 시각을 전부 기억해요.", "The sensor remembers the exact time.", "low"],
+  ["경매장", "auction house", "윤재가 안경을 벗고 한 걸음 물러난다", "Mr. Blanch takes off his glasses and steps back", 0, "그 충격, 경매사님 손이었죠.", "That impact came from your hand.", "cu"],
+  ["경매장 문", "auction room door", "감정사가 그림 뒤에서 두 번째 서명을 찾아낸다", "The appraiser finds a second signature behind the painting", -1, "", "", "cz"]
+ ]
+],
+[
+ "개찰구를 부쉈다는 역무원", "The Station Clerk and the Broken Gate",
+ "개찰구가 부서지자 역무원이 몰린다. 게이트 기록이 시설 팀장의 시험 운전을 찍었다.",
+ "A ticket gate breaks and the station clerk is blamed. The gate log catches the facilities manager's test.",
+ [
+  ["H", "현수", "Rory", "20대 후반 남성, 남색 역무원 제복, 짧은 머리, 순한 얼굴", "man in his late 20s, navy station uniform, short hair, gentle face"],
+  ["V", "두식", "Mr. Kade", "50대 남성, 주황 안전 조끼, 무전기, 무뚝뚝한 얼굴", "man in his 50s, orange safety vest, radio, stony face"],
+  ["A", "역장", "Ms. Fenn", "40대 여성, 남색 제복과 모자, 단호한 태도", "woman in her 40s, navy uniform and cap, firm manner"]
+ ],
+ [
+  ["개찰구", "ticket gates", "두식이 부서진 게이트 문을 가리킨다", "Mr. Kade points at the broken gate flap", 1, "네 근무 시간에 부서졌어.", "It broke on your shift.", "cz"],
+  ["개찰구", "ticket gates", "두식이 현수를 개찰구 밖으로 밀어 세운다", "Mr. Kade pushes Rory out past the ticket gate", 1, "배상하고 나가.", "Pay for it and get out.", "ms"],
+  ["개찰구", "ticket gates", "현수가 게이트 옆 점검 표시를 들여다본다", "Rory studies the inspection sticker beside the gate", -1, "", "", "pi"],
+  ["역무실", "station office", "역장이 태블릿 기록을 돌려 카드 번호를 보여 준다", "Ms. Fenn turns the tablet to show a card number", 2, "게이트 로그에 팀장님 카드가 남았습니다.", "The gate log kept your card, sir.", "low"],
+  ["개찰구", "ticket gates", "두식이 무전기를 내려놓는다", "Mr. Kade sets his radio down", 0, "모자는 제 겁니다. 배상은 팀장님 몫.", "My cap. The damages are yours.", "cu"],
+  ["역 안내 방송", "station speakers", "안내 방송이 현수의 이름을 또렷하게 부른다", "The station announcement calls Rory's name clearly", -1, "", "", "cu"]
+ ]
+],
+[
+ "방송 사고를 낸 음향 기사", "The Sound Engineer and the Dead Air",
+ "생방송이 끊기자 음향 기사가 몰린다. 콘솔 녹음 파일이 PD의 조작을 찍었다.",
+ "Live radio cuts out and the sound engineer is blamed. The console recording catches the producer's hand.",
+ [
+  ["H", "민혁", "Nate", "30대 남성, 검은 후드, 목에 건 헤드폰, 무표정", "man in his 30s, black hoodie, headphones around his neck, blank face"],
+  ["V", "지숙", "Ms. Coyle", "40대 여성, 짙은 재킷, 헤드셋, 신경질적인 얼굴", "woman in her 40s, dark jacket, headset, tense face"],
+  ["A", "기술 팀장", "Mr. Barrow", "50대 남성, 회색 셔츠, 안경, 침착한 태도", "man in his 50s, gray shirt, glasses, composed manner"]
+ ],
+ [
+  ["방송실", "radio control room", "지숙이 민혁의 헤드폰을 벗겨 책상에 놓는다", "Ms. Coyle pulls off Nate's headphones and sets them down", 1, "방송이 삼 분 날아갔어.", "We lost three minutes of air.", "cz"],
+  ["방송실", "radio control room", "지숙이 민혁의 이름을 근무표에서 지운다", "Ms. Coyle crosses Nate's name off the shift board", 1, "오늘로 해고야.", "You're fired as of today.", "ms"],
+  ["방송실", "radio control room", "민혁이 콘솔의 채널 기록을 연다", "Nate opens the channel history on the console", -1, "", "", "pi"],
+  ["방송실", "radio control room", "기술 팀장이 파형을 확대해 손을 가리킨다", "Mr. Barrow enlarges the waveform and points at a hand", 2, "콘솔 기록에 PD님 손이 남았어요.", "The console log kept your hand.", "low"],
+  ["방송실", "radio control room", "지숙이 헤드셋을 벗어 내려놓는다", "Ms. Coyle takes off her headset and sets it down", 0, "헤드폰은 제 거예요. 방송은 다시 켜죠.", "My headphones. And we go live again.", "cu"],
+  ["문자 수신함", "text messages", "청취자 문자가 지숙과 다른 방송사를 함께 쓴다", "A listener's text names Ms. Coyle and a rival station", -1, "", "", "cu"]
+ ]
+],
+[
+ "소품을 훔쳤다는 소품 담당", "The Prop Master and the Missing Award",
+ "촬영 소품 상이 사라지자 소품 담당이 몰린다. 녹화 영상이 조연출의 가방을 찍었다.",
+ "A prop award vanishes and the prop master is blamed. The studio recording catches the assistant director's bag.",
+ [
+  ["H", "은솔", "Willa", "20대 후반 여성, 검은 후드, 묶은 머리, 조용한 눈빛", "woman in her late 20s, black hoodie, tied hair, quiet eyes"],
+  ["V", "상민", "Mr. Ruddy", "30대 남성, 체크 셔츠, 무전기, 비웃는 얼굴", "man in his 30s, plaid shirt, radio in hand, sneering face"],
+  ["A", "제작 PD", "Ms. Hark", "40대 여성, 검은 셔츠, 클립보드, 냉정한 표정", "woman in her 40s, black shirt, clipboard, cool face"]
+ ],
+ [
+  ["세트장", "studio set", "상민이 빈 소품함을 은솔 앞에 연다", "Mr. Ruddy opens the empty prop case in front of Willa", 1, "네 열쇠로 잠갔지.", "You locked this with your key.", "cz"],
+  ["세트장", "studio set", "상민이 은솔의 이름을 제작 명단에서 지운다", "Mr. Ruddy crosses Willa's name off the crew list", 1, "경찰 부를게. 나가.", "I'm calling the police. Get out.", "ots"],
+  ["영상실", "video booth", "은솔이 모니터의 녹화 영상을 되감는다", "Willa rewinds the studio recording on the monitor", -1, "", "", "pi"],
+  ["세트장", "studio set", "제작 PD가 화면을 멈추고 가방을 확대한다", "Ms. Hark freezes the frame and zooms on a bag", 2, "녹화 영상에 그 가방이 찍혔어요.", "The studio recording shows that bag.", "low"],
+  ["세트장", "studio set", "상민이 무전기를 만지며 뒷걸음친다", "Mr. Ruddy fumbles with his radio and backs away", 0, "열쇠는 제가 챙길게요. 소품도요.", "I'll keep my keys. And the props.", "cu"],
+  ["소품함", "prop case", "소품함 안에서 두 번째 상이 또 나온다", "A second prop award turns up inside the same case", -1, "", "", "cz"]
+ ]
+],
+[
+ "필름을 망쳤다는 조명 기사", "The Lighting Tech and the Ruined Take",
+ "촬영분이 망가지자 조명 기사가 몰린다. 카메라 타임코드가 진범의 그림자를 찍었다.",
+ "A whole take is ruined and the lighting tech is blamed. The camera timecode catches the culprit's shadow.",
+ [
+  ["H", "기태", "Bo", "30대 남성, 검은 후드와 조명 장갑, 짧은 머리, 무표정", "man in his 30s, black hoodie, lighting gloves, short hair, blank face"],
+  ["V", "우찬", "Mr. Dyer", "40대 남성, 낡은 모자, 감독 의자, 거만한 태도", "man in his 40s, worn cap, director's chair, arrogant manner"],
+  ["A", "촬영 감독", "Ms. Vale", "40대 여성, 검은 셔츠, 모니터, 냉정한 표정", "woman in her 40s, black shirt, monitor, cool expression"]
+ ],
+ [
+  ["촬영장", "film set", "우찬이 모니터를 기태 앞으로 돌린다", "Mr. Dyer swings the monitor around toward Bo", 1, "네 조명 때문에 다 날아갔어.", "Your lighting ruined the whole take.", "cz"],
+  ["촬영장", "film set", "우찬이 기태의 조명 대본을 찢어 버린다", "Mr. Dyer tears up Bo's lighting script", 1, "이 작품에서 나가.", "Get off this production.", "ms"],
+  ["촬영장", "film set", "기태가 카메라의 타임코드 기록을 연다", "Bo opens the camera's timecode log", -1, "", "", "pi"],
+  ["촬영장", "film set", "촬영 감독이 프레임의 그림자를 확대한다", "Ms. Vale zooms in on a shadow in the frame", 2, "타임코드가 그 그림자를 찍었습니다.", "The timecode caught that shadow.", "low"],
+  ["촬영장", "film set", "우찬이 모자를 벗어 의자에 놓는다", "Mr. Dyer takes off his cap and lays it on the chair", 0, "촬영은 다시 하면 돼요.", "We can film the whole take again.", "cu"],
+  ["모니터", "monitor", "모니터에 다른 감독의 이름이 떠오른다", "Another director's name appears on the monitor", -1, "", "", "cu"]
+ ]
+],
+[
+ "귀빈 가방을 턴 벨보이", "The Bellboy and the Missing Suitcase",
+ "귀빈 가방이 사라지자 벨보이가 몰린다. 엘리베이터 카메라가 지배인의 손을 찍었다.",
+ "A VIP's suitcase disappears and the bellboy is blamed. The elevator camera catches the manager's hand.",
+ [
+  ["H", "태호", "Benny", "20대 후반 남성, 벨보이 제복, 짧은 머리, 순한 얼굴", "man in his late 20s, bellboy uniform, short hair, gentle face"],
+  ["V", "국현", "Mr. Hurd", "50대 남성, 검은 정장, 나비넥타이, 권위적인 태도", "man in his 50s, black suit, bow tie, overbearing manner"],
+  ["A", "보안 요원", "Ms. Rook", "30대 여성, 검은 정장, 무전기, 무표정", "woman in her 30s, black suit, radio in hand, blank face"]
+ ],
+ [
+  ["호텔 로비", "hotel lobby", "국현이 태호의 카트를 붙잡고 가방 자리를 가리킨다", "Mr. Hurd grabs Benny's cart and points at the empty spot", 1, "이 가방은 네가 나르지 않았나.", "Didn't you carry this bag up?", "cz"],
+  ["호텔 로비", "hotel lobby", "국현이 태호의 카트를 로비 밖으로 끌어낸다", "Mr. Hurd drags Benny's cart out of the lobby", 1, "오늘로 끝이야.", "You're finished today.", "ms"],
+  ["호텔 로비", "hotel lobby", "태호가 엘리베이터 위쪽 카메라를 올려다본다", "Benny looks up at the elevator camera", -1, "", "", "pi"],
+  ["보안실", "security room", "보안 요원이 영상을 돌려 가방을 든 손을 확대한다", "Ms. Rook replays the footage and zooms on a hand", 2, "엘리베이터 카메라에 그 손이 있어요.", "The elevator camera has that hand.", "low"],
+  ["호텔 로비", "hotel lobby", "국현이 나비넥타이를 풀며 물러난다", "Mr. Hurd loosens his bow tie and steps back", 0, "가방은 제가 찾아올게요. 지배인 없이.", "I'll fetch the bag. Without you.", "cu"],
+  ["호텔 정문", "hotel entrance", "가방 안에서 귀빈의 이름이 적힌 봉투가 나온다", "An envelope with the VIP's name is found inside the bag", -1, "", "", "cz"]
+ ]
+],
+[
+ "기름값을 떼먹었다는 주유원", "The Attendant and the Free Tank",
+ "무단 주유로 몰린 주유원. 결제 시각과 차량 번호가 점장의 차를 가리켰다.",
+ "A free tank of fuel is pinned on the attendant. The payment log and plate number point at the manager's car.",
+ [
+  ["H", "선우", "Cody", "20대 후반 남성, 주유소 조끼, 짧은 머리, 억울한 눈빛", "man in his late 20s, gas station vest, short hair, wronged eyes"],
+  ["V", "명호", "Mr. Ganz", "40대 남성, 흰 셔츠, 좁은 넥타이, 무뚝뚝한 얼굴", "man in his 40s, white shirt, narrow tie, stony face"],
+  ["A", "본사 슈퍼바이저", "Ms. Ives", "30대 여성, 회색 정장, 태블릿, 단호한 태도", "woman in her 30s, gray suit, tablet, firm manner"]
+ ],
+ [
+  ["주유소", "gas station", "명호가 영수증 묶음을 선우 앞에 던진다", "Mr. Ganz throws a bundle of receipts down in front of Cody", 1, "어제 새벽 주유, 네 근무야.", "That fuel at dawn was on your shift.", "cz"],
+  ["주유소", "gas station", "명호가 선우의 조끼를 벗겨 계산대에 걸어 둔다", "Mr. Ganz strips off Cody's vest and hangs it at the till", 1, "월급에서 뺄게.", "I'll take it out of your pay.", "ms"],
+  ["주유소", "gas station", "선우가 단말의 결제 시각과 번호판을 본다", "Cody looks at the payment time and plate number", -1, "", "", "pi"],
+  ["주유소", "gas station", "슈퍼바이저가 태블릿 화면의 번호판을 짚는다", "Ms. Ives taps the plate number on her tablet", 2, "결제 시각과 번호판이 그 차를 가리켜요.", "The time and the plate point at your car.", "low"],
+  ["주유소", "gas station", "명호가 넥타이를 고쳐 매며 뒷걸음친다", "Mr. Ganz straightens his tie and backs away", 0, "기름값은 점장님이 내세요.", "You can pay for your own fuel.", "cu"],
+  ["주유소 입구", "station entrance", "본사 점검 차량이 예고 없이 들어온다", "A head office inspection van pulls in unannounced", -1, "", "", "ws"]
+ ]
+],
+[
+ "차를 긁었다는 세차 직원", "The Car Wash Kid and the Scratch",
+ "세차 후 차가 긁혔다며 직원이 몰린다. 세차 라인 카메라가 사장 아들의 손을 찍었다.",
+ "A car comes out of the wash scratched and the kid is blamed. The line camera catches the owner's son.",
+ [
+  ["H", "재민", "Denny", "20대 후반 남성, 세차 작업복, 짧은 머리, 겁먹은 눈빛", "man in his late 20s, car wash overalls, short hair, frightened eyes"],
+  ["V", "병두", "Mr. Rask", "50대 남성, 회색 점퍼, 팔짱, 무뚝뚝한 얼굴", "man in his 50s, gray jacket, arms crossed, stony face"],
+  ["A", "차주", "Ms. Teague", "40대 여성, 흰 코트, 선글라스, 날카로운 눈", "woman in her 40s, white coat, sunglasses, sharp eyes"]
+ ],
+ [
+  ["세차장", "car wash", "병두가 긁힌 차 문을 손가락으로 가리킨다", "Mr. Rask points a finger at the scratched car door", 1, "네가 마지막으로 닦았어.", "You were the last one to wipe it.", "cz"],
+  ["세차장", "car wash", "병두가 재민의 작업복을 벗겨 물통에 던진다", "Mr. Rask pulls off Denny's overalls and throws them in a bucket", 1, "수리비 네가 내.", "You're paying for the repair.", "ms"],
+  ["세차장", "car wash", "재민이 라인 위쪽의 카메라를 올려다본다", "Denny looks up at the camera above the line", -1, "", "", "pi"],
+  ["세차장", "car wash", "차주가 휴대폰 영상을 돌려 한 장면을 멈춘다", "Ms. Teague replays a clip on her phone and freezes it", 2, "영상에 사장님 아들 손이 찍혔어요.", "The video shows your son's hand.", "low"],
+  ["세차장", "car wash", "병두가 팔짱을 풀고 한 걸음 물러난다", "Mr. Rask uncrosses his arms and steps back", 0, "수리비는 아들분께 받으세요.", "Get the repair money from your son.", "cu"],
+  ["세차 라인", "car wash line", "라인 카메라가 저절로 다시 켜진다", "The line camera switches itself back on", -1, "", "", "cz"]
+ ]
+],
+[
+ "저울을 속였다는 정육 직원", "The Butcher and the Rigged Scale",
+ "손님 고기 무게가 모자라자 정육 직원이 몰린다. 저울 검사 기록이 점장의 조작을 찍었다.",
+ "A customer's meat comes up light and the butcher is blamed. The scale inspection log catches the shop owner.",
+ [
+  ["H", "우성", "Moe", "30대 남성, 흰 앞치마, 짧은 머리, 무표정", "man in his 30s, white apron, short hair, deadpan face"],
+  ["V", "달수", "Mr. Penn", "50대 남성, 검은 앞치마, 팔짱, 고압적인 태도", "man in his 50s, black apron, arms crossed, overbearing manner"],
+  ["A", "상인회 간사", "Ms. Okon", "60대 여성, 회색 카디건, 안경, 단호한 표정", "woman in her 60s, gray cardigan, glasses, firm expression"]
+ ],
+ [
+  ["정육점", "butcher shop", "달수가 손님 고기를 저울에 다시 올린다", "Mr. Penn puts the customer's meat back on the scale", 1, "무게가 모자라잖아. 네 짓이지.", "It's short. You did this.", "cz"],
+  ["정육점", "butcher shop", "달수가 우성의 도마를 바닥에 내던진다", "Mr. Penn throws Moe's cutting board on the floor", 1, "장사 그만해. 나가.", "You're done selling here. Out.", "ms"],
+  ["정육점", "butcher shop", "우성이 저울 밑의 봉인 스티커를 들여다본다", "Moe studies the seal sticker under the scale", -1, "", "", "pi"],
+  ["정육점", "butcher shop", "상인회 간사가 검사 기록의 서명을 읽는다", "Ms. Okon reads the signature on the inspection log", 2, "저울 검사 기록에 점장님 서명이 있어요.", "The scale inspection carries your signature.", "low"],
+  ["정육점", "butcher shop", "달수가 팔짱을 풀고 물러난다", "Mr. Penn uncrosses his arms and backs away", 0, "저울은 제가 맞출게요. 점장 월급에서.", "I'll fix the scale. Out of your pay.", "cu"],
+  ["정육점 저울", "butcher's scale", "저울이 영점으로 돌아가며 숫자가 바뀐다", "The scale resets itself and the numbers shift", -1, "", "", "cz"]
+ ]
+],
+[
+ "낙찰가를 바꾼 경매 조수", "The Auction Clerk and the Fixed Bid",
+ "낙찰가가 뒤바뀌자 경매 조수가 몰린다. 경매 단말 기록이 경매사의 손을 찍었다.",
+ "A winning bid comes out wrong and the auction clerk is blamed. The bidding terminal log catches the auctioneer.",
+ [
+  ["H", "소이", "Prue", "20대 후반 여성, 앞치마, 묶은 머리, 담담한 눈빛", "woman in her late 20s, apron, tied hair, steady eyes"],
+  ["V", "재웅", "Mr. Salter", "50대 남성, 조끼와 나비넥타이, 안경, 능글맞은 얼굴", "man in his 50s, vest and bow tie, glasses, smug face"],
+  ["A", "시장 감독", "Mr. Achebe", "40대 남성, 정장, 서류철, 침착한 태도", "man in his 40s, suit, document folder, composed manner"]
+ ],
+ [
+  ["꽃 경매장", "flower auction hall", "재웅이 낙찰표를 소이 앞에 던진다", "Mr. Salter throws the bid slip down in front of Prue", 1, "네가 입력했지. 이 가격은 말도 안 돼.", "You entered this. This price is nonsense.", "cz"],
+  ["꽃 경매장", "flower auction hall", "재웅이 소이의 경매 장갑을 빼앗는다", "Mr. Salter snatches Prue's auction gloves", 1, "오늘 경매에서 빠져.", "Stay out of today's auction.", "ms"],
+  ["꽃 경매장", "flower auction hall", "소이가 경매 단말의 입력 기록을 연다", "Prue opens the input history on the bidding terminal", -1, "", "", "pi"],
+  ["꽃 경매장", "flower auction hall", "시장 감독이 기록의 시각을 손끝으로 짚는다", "Mr. Achebe taps the timestamp on the record", 2, "단말 기록에 경매사님 수정이 남았어요.", "The terminal kept your correction.", "low"],
+  ["꽃 경매장", "flower auction hall", "재웅이 안경을 벗고 연단에서 물러난다", "Mr. Salter takes off his glasses and steps off the stand", 0, "낙찰은 다시 부르죠. 경매사 없이.", "We'll call the bids again. Without you.", "cu"],
+  ["연단 스피커", "auction speaker", "다른 경매사의 목소리가 스피커에서 나온다", "Another auctioneer's voice comes through the stand speaker", -1, "", "", "cu"]
+ ]
+]
+]

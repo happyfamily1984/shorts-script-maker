@@ -1,0 +1,912 @@
+[
+ [
+  "법정 기록을 지운 이혼",
+  "The Record Only She Could Keep",
+  "타자나 친다며 버린 아내. 그 법정의 모든 기록은 그녀 손끝에서 남았다.",
+  "He left her for being just a typist. Every record in his courtroom was kept by her.",
+  [
+   [
+    "H",
+    "소윤",
+    "Vera",
+    "30대 여성, 회색 재킷에 낮게 묶은 머리, 무표정한 눈",
+    "woman in her 30s, gray jacket, low bun, expressionless eyes"
+   ],
+   [
+    "V",
+    "민규",
+    "Gavin",
+    "40대 남성, 변호사, 검은 정장에 은색 커프스 단추, 오만한 턱",
+    "man in his 40s, lawyer, black suit, silver cufflinks, arrogant chin"
+   ],
+   [
+    "A",
+    "조 재판장",
+    "Judge Halloway",
+    "60대 남성, 검은 법복에 흰 머리, 엄정한 얼굴",
+    "man in his 60s, black robe, white hair, stern face"
+   ]
+  ],
+  [
+   [
+    "법원 복도",
+    "courthouse corridor",
+    "민규가 소윤의 속기 키보드를 바닥에 내려놓는다",
+    "Gavin sets Soyun's stenograph down on the floor",
+    1,
+    "타자나 치던 사람이 법정에?",
+    "A typist in my courtroom?",
+    "cz"
+   ],
+   [
+    "법원 복도",
+    "courthouse corridor",
+    "민규가 소윤의 기록 노트를 찢어 의뢰인에게 보이며 웃는다",
+    "Gavin tears her notes and shows them to a client, laughing",
+    1,
+    "이 기록, 이제 필요 없어.",
+    "We don't need these records.",
+    "ots"
+   ],
+   [
+    "법정",
+    "courtroom",
+    "소윤이 증인석 옆 기록 파일의 인증 도장을 본다",
+    "Soyun sees a certification stamp on the file by the stand",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "법정",
+    "courtroom",
+    "조 재판장이 파일을 들어 소윤을 부른다",
+    "Judge Halloway lifts the file and calls on Soyun",
+    2,
+    "이 기록의 공증인은 소윤 씨입니다.",
+    "Ms. Soyun certifies every record here.",
+    "slo"
+   ],
+   [
+    "법정",
+    "courtroom",
+    "조 재판장이 민규의 변론 시간을 취소하고 소윤에게 고개를 끄덕인다",
+    "Judge Halloway cancels Gavin's turn and nods to Soyun",
+    0,
+    "기록은 제가 남깁니다. 변론은 못 하시겠네요.",
+    "I keep the record. You lose your argument.",
+    "cu"
+   ],
+   [
+    "법원 로비",
+    "courthouse lobby",
+    "법원 서기가 대법원 기록관 명패를 소윤에게 건넨다",
+    "A court clerk hands Soyun a records office plate",
+    2,
+    "기록관 자리, 소윤 씨가 맡게.",
+    "The records office is yours.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "말을 모르는 승마 대회",
+  "The Horse Won't Run Without Him",
+  "말똥이나 치운다며 버린 남편. 대회에 나설 말은 그만 다룰 수 있는 사람이 없었다.",
+  "She left him for mucking stalls. Nobody else can handle the horse in her big event.",
+  [
+   [
+    "H",
+    "정호",
+    "Caleb",
+    "40대 남성, 승마 조끼에 짚 묻은 장화, 그을린 얼굴, 조용한 눈",
+    "man in his 40s, riding vest, straw-dusted boots, tanned face, quiet eyes"
+   ],
+   [
+    "V",
+    "보영",
+    "Vanessa",
+    "30대 여성, 승마 정장에 올림머리, 오만한 눈매",
+    "woman in her 30s, riding habit, updo, haughty eyes"
+   ],
+   [
+    "A",
+    "심 관장",
+    "Mrs. Lindqvist",
+    "50대 여성, 클럽 관장, 승마 모자에 검은 재킷, 위엄 있는 얼굴",
+    "woman in her 50s, club director, riding hat and black jacket, dignified"
+   ]
+  ],
+  [
+   [
+    "마구간",
+    "stable",
+    "보영이 정호의 사료 통을 발로 밀어 옆으로 치운다",
+    "Vanessa kicks Caleb's feed bucket aside",
+    1,
+    "말똥이나 치우던 사람, 끝이야.",
+    "A mucker's life is over.",
+    "ms"
+   ],
+   [
+    "마구간",
+    "stable",
+    "보영이 정호의 말 관리 수첩을 짚 위에 던진다",
+    "Vanessa throws Caleb's horse log onto the straw",
+    1,
+    "말은 네가 없어도 선다.",
+    "The horse stands without you.",
+    "cz"
+   ],
+   [
+    "마구간 출입구",
+    "stable doorway",
+    "정호가 말 고삐의 작은 이름표를 손으로 매만진다",
+    "Caleb runs a thumb over a small name tag on the halter",
+    -1,
+    "",
+    "",
+    "trk"
+   ],
+   [
+    "경기장",
+    "arena",
+    "심 관장이 말 옆에서 정호를 가리킨다",
+    "Mrs. Lindqvist points at Caleb beside the horse",
+    2,
+    "이 말은 정호 씨 없이는 안 탑니다.",
+    "This horse won't ride without Mr. Caleb.",
+    "pi"
+   ],
+   [
+    "경기장",
+    "arena",
+    "정호가 고삐를 챙겨 경기장을 나서고 보영이 관중석에 남는다",
+    "Caleb takes the reins and walks out as Vanessa stays",
+    0,
+    "말은 제가 끌고 나갑니다.",
+    "I'm walking the horse out.",
+    "rx"
+   ],
+   [
+    "경기장",
+    "arena",
+    "심 관장이 대표마 명단을 정호 앞에 펼친다",
+    "Mrs. Lindqvist opens the champion horse list for Caleb",
+    2,
+    "대표마, 정호 씨가 고르게.",
+    "Pick our next champion.",
+    "cu"
+   ]
+  ]
+ ],
+ [
+  "인형만 눕힌 남자의 교재",
+  "The Course He Can't Teach",
+  "인형이나 눕힌다며 버린 남편. 그 기업의 안전 교육 교재는 전부 그의 이름이었다.",
+  "She left him for practicing on dummies. Every safety manual at her firm is his.",
+  [
+   [
+    "H",
+    "승민",
+    "Rowan",
+    "30대 남성, 빨간 강사 조끼에 짧은 머리, 차분한 눈",
+    "man in his 30s, red instructor vest, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "나영",
+    "Petra",
+    "40대 여성, 기업 안전팀장, 회색 정장에 뾰족한 안경, 까칠한 눈",
+    "woman in her 40s, safety team head, gray suit, pointed glasses, sour eyes"
+   ],
+   [
+    "A",
+    "임 본부장",
+    "Mr. Sutter",
+    "50대 남성, 남색 정장에 태블릿, 단정한 자세",
+    "man in his 50s, navy suit, tablet in hand, neat posture"
+   ]
+  ],
+  [
+   [
+    "기업 교육장",
+    "corporate training room",
+    "나영이 승민의 인형을 탁자 아래로 밀어 넣는다",
+    "Petra shoves Seungmin's dummy under the table",
+    1,
+    "인형이나 눕히던 사람이 강사?",
+    "A dummy pusher as our instructor?",
+    "cu"
+   ],
+   [
+    "기업 교육장",
+    "corporate training room",
+    "나영이 승민의 교재를 바닥에 던지고 직원들이 지켜본다",
+    "Petra throws Seungmin's manual down as staff watch",
+    1,
+    "이 교재, 새로 만든다.",
+    "We are rewriting this manual.",
+    "ms"
+   ],
+   [
+    "기업 교육장",
+    "corporate training room",
+    "승민이 벽 인증서 아래 저자 이름을 본다",
+    "Seungmin sees the author name under the certificate",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "기업 교육장",
+    "corporate training room",
+    "임 본부장이 인증서를 벽에서 떼어 든다",
+    "Mr. Sutter lifts the certificate off the wall",
+    2,
+    "이 교재 저작권자는 승민 씨입니다.",
+    "The author of this manual is Mr. Seungmin.",
+    "low"
+   ],
+   [
+    "기업 교육장",
+    "corporate training room",
+    "임 본부장이 나영의 강사증을 회수하고 승민을 강단에 세운다",
+    "Mr. Sutter takes Petra's badge and puts Seungmin at the podium",
+    0,
+    "오늘 교육은 제가 끝냅니다.",
+    "I finish today's training.",
+    "rx"
+   ],
+   [
+    "교육장 창가",
+    "training room window",
+    "임 본부장이 전 지사 교육 일정표를 승민에게 맡긴다",
+    "Mr. Sutter hands Seungmin the branch training schedule",
+    2,
+    "전 지사 교재, 승민 씨가 새로 쓰게.",
+    "Write the new manual for every branch.",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "안경알을 자른 브랜드",
+  "The Lens They Launched Without",
+  "안경알이나 깎는다며 버린 남편. 신제품 렌즈의 설계 도면은 그의 서명이었다.",
+  "She left him for grinding lenses. Her new product's design carries his signature.",
+  [
+   [
+    "H",
+    "도훈",
+    "Milo",
+    "30대 남성, 흰 가운에 얇은 안경, 짧은 머리, 세밀한 눈",
+    "man in his 30s, white coat, thin glasses, short hair, meticulous eyes"
+   ],
+   [
+    "V",
+    "예린",
+    "Sasha",
+    "30대 여성, 브랜드 디렉터, 검은 터틀넥에 짧은 단발, 오만한 눈",
+    "woman in her 30s, brand director, black turtleneck, short bob, haughty eyes"
+   ],
+   [
+    "A",
+    "차 대표",
+    "Mr. Brandt",
+    "50대 남성, 회색 정장에 안경, 반듯한 자세",
+    "man in his 50s, gray suit, glasses, upright posture"
+   ]
+  ],
+  [
+   [
+    "안경 브랜드 쇼룸",
+    "eyewear showroom",
+    "예린이 도훈의 렌즈 케이스를 손으로 밀어 옆으로 치운다",
+    "Sasha pushes Dohoon's lens case aside",
+    1,
+    "안경알이나 깎던 사람, 나가.",
+    "Lens grinders, out.",
+    "cz"
+   ],
+   [
+    "안경 브랜드 쇼룸",
+    "eyewear showroom",
+    "예린이 도훈의 설계 도면을 바닥에 내던진다",
+    "Sasha hurls Dohoon's designs onto the floor",
+    1,
+    "이 도면, 이제 우리 거야.",
+    "These designs are ours now.",
+    "ms"
+   ],
+   [
+    "쇼룸 진열장",
+    "showroom display",
+    "도훈이 새 렌즈 옆 작은 번호를 들여다본다",
+    "Dohoon peers at a small number beside a new lens",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "안경 브랜드 쇼룸",
+    "eyewear showroom",
+    "차 대표가 렌즈를 들어 조명 앞에 세운다",
+    "Mr. Brandt holds the lens up to the light",
+    2,
+    "이 렌즈 설계 특허는 도훈 씨 겁니다.",
+    "This lens patent is Mr. Dohoon's.",
+    "pi"
+   ],
+   [
+    "안경 브랜드 쇼룸",
+    "eyewear showroom",
+    "차 대표가 출시 버튼을 끄고 도훈에게 렌즈를 건넨다",
+    "Mr. Brandt shuts the launch screen and hands Dohoon the lens",
+    0,
+    "출시는 다음 달, 제 이름으로 합니다.",
+    "The launch waits for my name.",
+    "low"
+   ],
+   [
+    "안경 브랜드 쇼룸",
+    "eyewear showroom",
+    "차 대표가 빈 렌즈 라인 도면을 도훈 앞에 놓는다",
+    "Mr. Brandt sets a blank lens line plan before Dohoon",
+    2,
+    "새 라인 이름, 도훈 씨가 붙이게.",
+    "Name the new line yourself.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "드론을 압수한 촬영장",
+  "The Shot Only He Can Fly",
+  "장난감이나 띄운다며 버린 남편. 영화의 마지막 장면은 그의 비행 허가로만 찍힌다.",
+  "She left him for flying toys. The film's final shot needs his flight permit.",
+  [
+   [
+    "H",
+    "민재",
+    "Colin",
+    "30대 남성, 검은 후드에 조종 조끼, 짧은 머리, 집중하는 눈",
+    "man in his 30s, black hoodie, pilot vest, short hair, focused eyes"
+   ],
+   [
+    "V",
+    "세아",
+    "Regina",
+    "40대 여성, 제작사 대표, 흰 팬츠 수트에 날카로운 눈매",
+    "woman in her 40s, studio CEO, white pantsuit, sharp eyes"
+   ],
+   [
+    "A",
+    "박 감독",
+    "Director Boone",
+    "60대 남성, 야구 모자에 연출봉, 주름진 얼굴, 무뚝뚝한 눈",
+    "man in his 60s, baseball cap, megaphone, lined face, blunt eyes"
+   ]
+  ],
+  [
+   [
+    "야외 촬영장",
+    "outdoor film set",
+    "세아가 민재의 드론 배터리를 뺏어 가방에 넣는다",
+    "Regina takes Colin's drone battery and bags it",
+    1,
+    "장난감 띄우는 사람은 이제 그만.",
+    "Toy pilots are done here.",
+    "ms"
+   ],
+   [
+    "야외 촬영장",
+    "outdoor film set",
+    "세아가 민재의 비행 일지를 바닥에 던진다",
+    "Regina throws Colin's flight log on the ground",
+    1,
+    "이 영화에 네 드론은 없어.",
+    "No drone of yours in this film.",
+    "ots"
+   ],
+   [
+    "촬영장",
+    "film set",
+    "민재가 감독 의자 옆 허가증의 번호를 본다",
+    "Colin reads a permit number by the director's chair",
+    -1,
+    "",
+    "",
+    "cz"
+   ],
+   [
+    "촬영장",
+    "film set",
+    "박 감독이 허가증을 들어 스태프들에게 보인다",
+    "Director Boone lifts the permit and shows the crew",
+    2,
+    "이 공역 허가는 민재 씨 이름입니다.",
+    "This airspace permit is Mr. Colin's name.",
+    "slo"
+   ],
+   [
+    "촬영장",
+    "film set",
+    "민재가 배터리를 받아 드론을 띄우고 스태프들이 올려다본다",
+    "Colin fits the battery, lifts the drone, and the crew looks up",
+    0,
+    "마지막 장면, 제가 찍습니다.",
+    "I take the final shot.",
+    "rx"
+   ],
+   [
+    "촬영장 언덕",
+    "film set hill",
+    "박 감독이 다음 작품 항공 촬영 지도를 민재에게 펼친다",
+    "Director Boone unrolls the next film's flight map",
+    2,
+    "다음 작품 항공 촬영, 민재 씨가.",
+    "Fly the next film too.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "액션을 설계한 스턴트맨",
+  "No Stunt Without Its Designer",
+  "맞고 넘어지는 게 일이라며 버린 남편. 그 액션의 모든 동선은 그가 그렸다.",
+  "She left him for taking falls. Every action beat in her film was staged by him.",
+  [
+   [
+    "H",
+    "민혁",
+    "Wade",
+    "30대 남성, 검은 셔츠에 무릎 패드, 짧은 머리, 조용한 눈",
+    "man in his 30s, black shirt, knee pads, short hair, quiet eyes"
+   ],
+   [
+    "V",
+    "아라",
+    "Colette",
+    "40대 여성, 액션 감독, 청바지에 가죽 재킷, 단발, 날카로운 눈",
+    "woman in her 40s, action director, jeans and leather jacket, sharp eyes"
+   ],
+   [
+    "A",
+    "윤 프로듀서",
+    "Producer Lund",
+    "50대 남성, 회색 니트에 스크립트, 단정한 수염",
+    "man in his 50s, gray knit, script in hand, neat beard"
+   ]
+  ],
+  [
+   [
+    "액션 연습장",
+    "stunt gym",
+    "아라가 민혁의 무릎 보호대를 발로 밀어 옆으로 치운다",
+    "Colette kicks Wade's knee pads aside",
+    1,
+    "맞고 넘어지는 게 재능이야?",
+    "Getting hit is a talent now?",
+    "cz"
+   ],
+   [
+    "액션 연습장",
+    "stunt gym",
+    "아라가 민혁의 동선 도면을 찢어 매트에 던진다",
+    "Colette tears Wade's action map onto the mat",
+    1,
+    "이 액션, 네 도면 없이 간다.",
+    "This action runs without your map.",
+    "cu"
+   ],
+   [
+    "연습장 벽",
+    "gym wall",
+    "민혁이 벽에 붙은 동선 도면의 서명을 본다",
+    "Wade sees a signature on the map pinned to the wall",
+    -1,
+    "",
+    "",
+    "trk"
+   ],
+   [
+    "액션 연습장",
+    "stunt gym",
+    "윤 프로듀서가 도면을 떼어 배우에게 보인다",
+    "Producer Lund pulls the map down and shows the star",
+    2,
+    "이 액션 설계자는 민혁 씨입니다.",
+    "This action design belongs to Mr. Wade.",
+    "pi"
+   ],
+   [
+    "액션 연습장",
+    "stunt gym",
+    "아라가 매트를 떠나고 민혁이 배우에게 동선을 그려 준다",
+    "Colette leaves the mat as Wade maps the move for the star",
+    0,
+    "이 액션은 제 이름으로 갑니다.",
+    "This action goes out under my name.",
+    "cu"
+   ],
+   [
+    "연습장 밖",
+    "outside the gym",
+    "윤 프로듀서가 새 작품 액션 시놉시스를 민혁에게 건넨다",
+    "Producer Lund hands Wade the next film's action outline",
+    2,
+    "다음 작품 액션, 민혁 씨가 연출하게.",
+    "Direct the next film's action.",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "도시락이나 싸던 셰프",
+  "The Gala That Needed Her Kitchen",
+  "도시락이나 싼다며 버린 아내. 자선 갈라의 오백인 만찬은 그녀 손에서 나왔다.",
+  "He left her for packing lunch boxes. The charity gala's five hundred plates are hers.",
+  [
+   [
+    "H",
+    "유미",
+    "Greta",
+    "40대 여성, 흰 셰프복에 짧은 단발, 단호한 눈",
+    "woman in her 40s, white chef coat, short hair, resolute eyes"
+   ],
+   [
+    "V",
+    "석훈",
+    "Dalton",
+    "40대 남성, 재단 이사장, 턱시도에 거만한 웃음",
+    "man in his 40s, foundation chair, tuxedo, arrogant smile"
+   ],
+   [
+    "A",
+    "정 총괄",
+    "Ms. Delgado",
+    "50대 여성, 검은 정장에 이어피스, 냉철한 눈",
+    "woman in her 50s, black suit, earpiece, cool eyes"
+   ]
+  ],
+  [
+   [
+    "갈라 주방",
+    "gala kitchen",
+    "석훈이 유미의 반찬 통을 탁자 아래로 밀어 넣는다",
+    "Dalton shoves Yumi's food trays under the table",
+    1,
+    "도시락 싸던 사람이 만찬을?",
+    "A lunchbox cook at a gala?",
+    "ms"
+   ],
+   [
+    "갈라 주방",
+    "gala kitchen",
+    "석훈이 유미의 조리 지시서를 바닥에 던지고 스태프들이 지켜본다",
+    "Dalton throws the prep sheet down as staff watch",
+    1,
+    "이 만찬에 네 도시락은 없어.",
+    "No lunch boxes at my gala.",
+    "cz"
+   ],
+   [
+    "주방 입구",
+    "kitchen doorway",
+    "유미가 냉장고 문의 납품 라벨에서 자기 회사 이름을 본다",
+    "Yumi sees her company name on a fridge label",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "갈라 홀",
+    "gala hall",
+    "정 총괄이 라벨을 들어 하객들 앞에 보인다",
+    "Ms. Delgado lifts the label before the guests",
+    2,
+    "이 만찬 전부 유미 씨 주방입니다.",
+    "This dinner comes from Ms. Yumi's kitchen.",
+    "low"
+   ],
+   [
+    "갈라 주방",
+    "gala kitchen",
+    "스태프들이 석훈의 이름표를 떼고 유미의 주방으로 이동한다",
+    "Staff peel off Dalton's name tag and move to Yumi's kitchen",
+    0,
+    "오늘 만찬은 제 주방에서 다시 엽니다.",
+    "Tonight's dinner restarts in my kitchen.",
+    "rx"
+   ],
+   [
+    "갈라 홀",
+    "gala hall",
+    "정 총괄이 재단 연말 행사 계획서를 유미에게 건넨다",
+    "Ms. Delgado hands Yumi the foundation's year-end plan",
+    2,
+    "연말 행사도 유미 씨 주방으로.",
+    "The year-end gala is hers too.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "트럼펫을 고친 오케스트라",
+  "The Brass Only He Can Fix",
+  "쇠붙이나 만진다며 버린 남편. 개막 공연의 트럼펫은 그의 손을 거쳐야 소리가 났다.",
+  "She left him for tinkering with brass. Her opening night horn needs his hands.",
+  [
+   [
+    "H",
+    "승호",
+    "Emil",
+    "40대 남성, 갈색 작업 앞치마에 짧은 수염, 차분한 눈",
+    "man in his 40s, brown work apron, short beard, calm eyes"
+   ],
+   [
+    "V",
+    "혜원",
+    "Adrienne",
+    "40대 여성, 오케스트라 단장, 검은 정장에 진주 목걸이, 냉정한 눈",
+    "woman in her 40s, orchestra director, black suit, pearls, cold eyes"
+   ],
+   [
+    "A",
+    "수석 최",
+    "Mr. Ferrer",
+    "30대 남성, 검은 연주복에 단정한 머리, 부드러운 눈",
+    "man in his 30s, black concert suit, neat hair, gentle eyes"
+   ]
+  ],
+  [
+   [
+    "연습실",
+    "rehearsal room",
+    "혜원이 승호의 악기 케이스를 발로 밀어 문가에 둔다",
+    "Adrienne nudges Emil's instrument case to the door",
+    1,
+    "쇠붙이나 만지던 사람, 나가요.",
+    "Metal tinkerers, leave.",
+    "cz"
+   ],
+   [
+    "연습실",
+    "rehearsal room",
+    "혜원이 승호의 수리 기록을 쓰레기통에 버린다",
+    "Adrienne tosses Emil's repair log into a bin",
+    1,
+    "이 악기, 다른 손에 맡긴다.",
+    "This horn goes to other hands.",
+    "ms"
+   ],
+   [
+    "연습실",
+    "rehearsal room",
+    "승호가 트럼펫 벨 안쪽의 각인을 들여다본다",
+    "Emil peers at a mark inside the trumpet bell",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "무대",
+    "stage",
+    "수석 최가 트럼펫을 들어 지휘자에게 보인다",
+    "Mr. Ferrer lifts the trumpet toward the conductor",
+    2,
+    "이 악기 수리 각인은 승호 씨 겁니다.",
+    "This repair mark is Mr. Emil's.",
+    "pi"
+   ],
+   [
+    "무대",
+    "stage",
+    "수석 최가 승호와 함께 무대로 올라가고 혜원이 객석에 앉는다",
+    "Mr. Ferrer walks to the stage with Emil as Adrienne sits",
+    0,
+    "개막은 제 손에서 조율된 악기로.",
+    "The premiere opens on my tuned horn.",
+    "cu"
+   ],
+   [
+    "극장 로비",
+    "theater lobby",
+    "수석 최가 내년 시즌 악기 명단을 승호에게 보인다",
+    "Mr. Ferrer shows Emil next season's instrument list",
+    2,
+    "내년 악기 관리, 승호 씨가 맡게.",
+    "Handle our instruments next season.",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "향초를 자른 플래그십",
+  "The Scent They Can't Recreate",
+  "초나 녹인다며 버린 아내. 새 매장의 시그니처 향은 그녀 배합에서 나왔다.",
+  "He left her for melting wax. The new flagship's signature scent is her blend.",
+  [
+   [
+    "H",
+    "소라",
+    "Ingrid",
+    "30대 여성, 리넨 앞치마에 묶은 머리, 부드러운 눈",
+    "woman in her 30s, linen apron, tied hair, soft eyes"
+   ],
+   [
+    "V",
+    "기태",
+    "Wesley",
+    "40대 남성, 브랜드 대표, 검은 셔츠에 번들 머리, 비웃는 입",
+    "man in his 40s, brand CEO, black shirt, glossy hair, sneering mouth"
+   ],
+   [
+    "A",
+    "본사 이사",
+    "Ms. Thatcher",
+    "50대 여성, 베이지 정장에 짧은 단발, 단정한 눈",
+    "woman in her 50s, beige suit, short bob, precise eyes"
+   ]
+  ],
+  [
+   [
+    "플래그십 매장",
+    "flagship store",
+    "기태가 소라의 향초를 진열대에서 빼 바닥에 내려놓는다",
+    "Wesley pulls Sora's candles off the shelf",
+    1,
+    "초나 녹이던 사람, 이제 필요 없어.",
+    "Candle melters aren't needed.",
+    "cz"
+   ],
+   [
+    "플래그십 매장",
+    "flagship store",
+    "기태가 소라의 배합 노트를 찢어 계산대에 던진다",
+    "Wesley tears Sora's mixing notes onto the counter",
+    1,
+    "새 향을 만든다.",
+    "We are making a new scent.",
+    "ms"
+   ],
+   [
+    "플래그십 매장",
+    "flagship store",
+    "소라가 시그니처 초 라벨 아래 작은 번호를 본다",
+    "Sora sees a small number under the signature label",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "플래그십 매장",
+    "flagship store",
+    "본사 이사가 초를 들어 라벨을 손님들에게 보인다",
+    "Ms. Thatcher lifts a candle to show its label",
+    2,
+    "이 향 배합 등록자는 소라 씨입니다.",
+    "This scent is registered to Ms. Sora.",
+    "low"
+   ],
+   [
+    "플래그십 매장",
+    "flagship store",
+    "본사 직원이 기태의 사원증을 회수하고 소라에게 열쇠를 준다",
+    "Head office staff take Wesley's badge and give Sora the keys",
+    0,
+    "이 매장 향은 제가 정합니다.",
+    "I choose this store's scent.",
+    "cu"
+   ],
+   [
+    "매장 밖",
+    "outside the store",
+    "본사 이사가 새 라인 향 이름표를 소라 앞에 놓는다",
+    "Ms. Thatcher sets a new line's label before Sora",
+    2,
+    "새 라인, 소라 씨 이름으로.",
+    "The new line carries her name.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "밧줄만 감던 선장의 요트",
+  "The Sailor They Left Ashore",
+  "밧줄이나 감는다며 버린 남편. 그 클럽 요트의 승조원 명단에는 그의 이름만 있었다.",
+  "She left him for coiling rope. Only his name on the crew list can sail her yacht.",
+  [
+   [
+    "H",
+    "도진",
+    "Finn",
+    "30대 남성, 남색 세일링 재킷에 그을린 얼굴, 짧은 머리, 조용한 눈",
+    "man in his 30s, navy sailing jacket, tanned face, short hair, quiet eyes"
+   ],
+   [
+    "V",
+    "가영",
+    "Celeste",
+    "40대 여성, 클럽 회장, 흰 팬츠에 마린 셔츠, 짧은 금발, 오만한 눈",
+    "woman in her 40s, club president, white pants, marine shirt, short blond hair"
+   ],
+   [
+    "A",
+    "레이스 위원장",
+    "Commodore Wells",
+    "60대 남성, 흰 유니폼에 은발, 위엄 있는 얼굴",
+    "man in his 60s, white uniform, silver hair, dignified face"
+   ]
+  ],
+  [
+   [
+    "마리나 선착장",
+    "marina dock",
+    "가영이 핀의 세일링 장갑을 물에서 건져 발치에 던진다",
+    "Celeste fishes Finn's gloves from the water and throws them down",
+    1,
+    "밧줄이나 감던 사람, 내려.",
+    "Rope handlers, get off.",
+    "ms"
+   ],
+   [
+    "마리나 선착장",
+    "marina dock",
+    "가영이 핀의 이름을 승조원 명단에서 지운다",
+    "Celeste crosses Finn's name off the crew list",
+    1,
+    "이 배에 네 이름은 필요 없어.",
+    "This yacht doesn't need your name.",
+    "cz"
+   ],
+   [
+    "요트 갑판",
+    "yacht deck",
+    "핀이 갑판 난간의 작은 각인을 손으로 쓸어 본다",
+    "Finn runs a hand over a small engraving on the rail",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "요트 갑판",
+    "yacht deck",
+    "레이스 위원장이 명단을 들어 참가자들에게 보인다",
+    "Commodore Wells holds the crew list up to the racers",
+    2,
+    "이 요트는 핀 씨 서명이 있어야 뜹니다.",
+    "This yacht needs Mr. Finn's signature to sail.",
+    "ws"
+   ],
+   [
+    "마리나 선착장",
+    "marina dock",
+    "핀이 밧줄을 풀고 요트가 미끄러지듯 물 위로 나간다",
+    "Finn casts off and the yacht slides out onto the water",
+    0,
+    "이 배는 제가 띄웁니다.",
+    "I'm sailing this yacht out.",
+    "rx"
+   ],
+   [
+    "마리나",
+    "marina",
+    "레이스 위원장이 클럽 요트 명단을 핀에게 보인다",
+    "Commodore Wells shows Finn the club's yacht list",
+    2,
+    "클럽 요트, 핀 씨가 지키게.",
+    "Watch over the club's yachts.",
+    "pi"
+   ]
+  ]
+ ]
+]

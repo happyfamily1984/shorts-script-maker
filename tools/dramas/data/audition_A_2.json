@@ -1,0 +1,182 @@
+[
+[
+ "무대 경력 없다고 자른 테너", "The Tenor With No Stage Credits",
+ "무대 경력이 없다며 심사위원이 테너를 자른다. 그가 직접 반주를 치고 노래하자 지휘자가 계약서를 꺼낸다.",
+ "A judge cuts the tenor for having no stage credits. He accompanies himself and sings, and the conductor reaches for a contract.",
+ [
+  ["H", "재훈", "Emil", "30대 남성, 낡은 정장, 짧은 머리, 담담한 눈빛", "man in his 30s, worn suit, short hair, steady eyes"],
+  ["V", "도현", "Mr. Kranz", "50대 남성, 검은 정장, 나비넥타이, 차가운 표정", "man in his 50s, black suit, bow tie, cold expression"],
+  ["A", "지휘자", "Maestro Dorn", "60대 남성, 검은 연미복, 흰 머리, 위엄 있는 자세", "man in his 60s, black tailcoat, white hair, commanding posture"]
+ ],
+ [
+  ["오페라 연습실", "opera rehearsal room", "도현이 재훈의 이름을 소리 내어 읽고 명단에 줄을 긋는다", "Mr. Kranz reads Emil's name aloud and strikes it off", 1, "무대 경력이 없네. 끝났어.", "No stage credits. We're done.", "cz"],
+  ["오페라 연습실", "opera rehearsal room", "도현이 문을 가리키며 다음 번호를 부른다", "Mr. Kranz points at the door and calls the next number", 1, "다음 분 들어오세요.", "Next candidate, please.", "ms"],
+  ["오페라 연습실", "opera rehearsal room", "재훈이 반주자 자리의 피아노 뚜껑을 연다", "Emil opens the piano lid at the accompanist's seat", -1, "", "", "pi"],
+  ["오페라 연습실", "opera rehearsal room", "재훈이 직접 반주하며 아리아를 부르고 모두가 굳는다", "Emil plays his own accompaniment and sings as the room freezes", 0, "반주가 없어서 제가 쳤습니다.", "There was no pianist, so I played it myself.", "low"],
+  ["오페라 연습실", "opera rehearsal room", "지휘자가 심사위원석의 의자를 치우고 계약서를 꺼낸다", "Maestro Dorn pulls the judge's chair away and draws a contract", 2, "무대는 재훈 씨 겁니다. 심사는 끝났어요.", "This stage is his. Your judging ends here.", "slo"],
+  ["무대 옆", "stage wing", "어둠 속에 다른 극장의 지휘자가 서 있는 게 보인다", "Another house's conductor stands in the dark wing", -1, "", "", "low"]
+ ]
+],
+[
+ "나이 많다며 뺀 재즈 드러머", "Too Old for the Jazz Kit",
+ "나이가 많다며 심사위원이 드러머를 뺀다. 그는 두 배 빠른 템포를 끝까지 몰고 가고 클럽 오너가 자리를 준다.",
+ "The panel drops the drummer for his age. He holds a double-speed tempo to the end, and the club owner gives him the seat.",
+ [
+  ["H", "만복", "Gus", "50대 남성, 낡은 셔츠, 짧은 회색 머리, 무뚝뚝한 얼굴", "man in his 50s, worn shirt, short gray hair, stony face"],
+  ["V", "세웅", "Mr. Teller", "30대 남성, 검은 셔츠, 선글라스, 건방진 태도", "man in his 30s, black shirt, sunglasses, cocky manner"],
+  ["A", "클럽 오너", "Ms. Vance", "50대 여성, 짙은 재킷, 짧은 머리, 단호한 표정", "woman in her 50s, dark jacket, short hair, firm expression"]
+ ],
+ [
+  ["재즈 클럽 무대", "jazz club stage", "세웅이 만복의 나이를 무대 아래까지 소리친다", "Mr. Teller shouts Gus's age to the back of the club", 1, "이 나이에 이 무대는 무리야.", "This stage is too much at your age.", "cz"],
+  ["재즈 클럽 무대", "jazz club stage", "세웅이 만복의 번호표를 접어 바닥에 떨어뜨린다", "Mr. Teller folds Gus's number and drops it", 1, "다음 분 준비하세요.", "Bring the next one in.", "ms"],
+  ["재즈 클럽 무대", "jazz club stage", "만복이 템포를 두 배로 올려 달라고 손가락으로 신호한다", "Gus signals for double tempo with his fingers", -1, "", "", "pi"],
+  ["재즈 클럽 무대", "jazz club stage", "만복이 두 배 빠른 박자를 끝까지 몰고 가고 밴드가 숨을 몰아쉰다", "Gus drives the doubled beat to the last bar as the band gasps", 0, "박자 끝까지 갔습니다.", "I made it to the last bar.", "trk"],
+  ["재즈 클럽 무대", "jazz club stage", "클럽 오너가 세웅의 스틱을 받아 만복에게 건넨다", "Ms. Vance takes Mr. Teller's sticks and hands them to Gus", 2, "이 드럼은 오늘부터 만복 씨 자리예요.", "This kit is Gus's from tonight.", "low"],
+  ["클럽 벽", "club wall", "벽에 걸린 낡은 사진 속 드러머가 만복이다", "The drummer in an old photo on the wall is Gus", -1, "", "", "cz"]
+ ]
+],
+[
+ "지방 미용실 출신이라 자른 채용", "The Stylist From a Small Town",
+ "지방 미용실 출신이라며 채용 면접에서 자른다. 그녀가 망친 염색을 고치자 모델이 사실 체인 오너였다.",
+ "They cut her at the interview for coming from a small-town salon. She rescues a botched dye job, and the model owns the chain.",
+ [
+  ["H", "은채", "Ruthie", "30대 여성, 검은 셔츠, 묶은 머리, 차분한 눈빛", "woman in her 30s, black shirt, tied hair, calm eyes"],
+  ["V", "혜원", "Ms. Toms", "30대 여성, 회색 정장, 클립보드, 차가운 미소", "woman in her 30s, gray suit, clipboard, cold smile"],
+  ["A", "모델", "Ms. Adler", "50대 여성, 흰 셔츠, 짧은 금발, 단호한 태도", "woman in her 50s, white shirt, short blond hair, firm manner"]
+ ],
+ [
+  ["미용실 면접장", "salon interview room", "혜원이 은채의 이력서를 읽지도 않고 덮는다", "Ms. Toms shuts Ruthie's resume without reading it", 1, "지방 미용실 출신은 안 뽑아.", "We don't hire from small-town salons.", "cz"],
+  ["미용실 면접장", "salon interview room", "혜원이 은채의 가위를 카운터에 내려놓는다", "Ms. Toms sets Ruthie's scissors on the counter", 1, "가위는 두고 가.", "Leave the scissors and go.", "ms"],
+  ["미용실", "hair salon", "대기하던 모델이 망친 염색 머리를 보여 준다", "A waiting model shows her ruined dye job", -1, "", "", "pi"],
+  ["미용실", "hair salon", "은채가 염색약을 다시 배합해 머리를 고친다", "Ruthie remixes the color and fixes the hair", 0, "이 색은 두 번 헹궈야 해요.", "This color needs two rinses.", "cu"],
+  ["미용실", "hair salon", "모델이 혜원의 클립보드를 받아 가방에 넣는다", "The model takes Ms. Toms's clipboard and puts it in her bag", 2, "채용은 제가 해요. 혜원 씨는 빠지세요.", "I do the hiring. You're out, Ms. Toms.", "low"],
+  ["미용실 카운터", "salon counter", "모델이 체인 명패를 혜원의 클립보드에 끼워 준다", "The model clips a chain nameplate onto Ms. Toms's board", -1, "", "", "cu"]
+ ]
+],
+[
+ "자격증 없다고 자른 소믈리에", "The Sommelier Without a Diploma",
+ "자격증이 없다며 면접에서 자른다. 그녀가 블라인드 시음에서 잘못 나간 병까지 맞히자 총지배인이 심사위원을 내보낸다.",
+ "They reject her for having no diploma. She nails the blind tasting and the misfired bottle, so the head steward sends the judge out.",
+ [
+  ["H", "하경", "Ivy", "30대 여성, 검은 조끼, 짧은 머리, 차분한 눈빛", "woman in her 30s, black vest, short hair, calm eyes"],
+  ["V", "동석", "Mr. Vane", "40대 남성, 회색 정장, 와인잔, 거만한 태도", "man in his 40s, gray suit, wine glass in hand, arrogant manner"],
+  ["A", "총지배인", "Mr. Renn", "60대 남성, 검은 정장, 흰 머리, 위엄 있는 자세", "man in his 60s, black suit, white hair, commanding posture"]
+ ],
+ [
+  ["호텔 레스토랑", "hotel restaurant", "동석이 하경의 지원서를 잔 밑에 깔아 둔다", "Mr. Vane sets Ivy's application under a glass", 1, "자격증이 없네. 끝났어.", "No diploma. We're done.", "cz"],
+  ["호텔 레스토랑", "hotel restaurant", "동석이 하경의 앞에 잔을 밀어 놓는다", "Mr. Vane pushes a glass across to Ivy", 1, "이것도 못 맞히면 나가.", "Miss this and you're out.", "ms"],
+  ["호텔 레스토랑", "hotel restaurant", "하경이 잔을 향 냄새 없이 한 모금 맛본다", "Ivy tastes a sip without smelling the glass", -1, "", "", "pi"],
+  ["호텔 레스토랑", "hotel restaurant", "하경이 산지와 해를 말하고 옆 테이블의 병을 가리킨다", "Ivy names the region and year, then points at a bottle", 0, "저 테이블엔 다른 병이 나갔어요.", "That table was served a different bottle.", "low"],
+  ["호텔 레스토랑", "hotel restaurant", "총지배인이 동석의 잔을 치우고 문을 가리킨다", "Mr. Renn clears Mr. Vane's glass and points at the door", 2, "시음 심사는 그만하시죠.", "Your tasting days here are over.", "cu"],
+  ["테이블 옆", "next table", "얼테이블 손님이 하경의 이름을 또렷하게 부른다", "A guest at the next table calls Ivy by name", -1, "", "", "cz"]
+ ]
+],
+[
+ "장비 없다고 자른 바리스타", "The Barista With No Machine",
+ "장비가 없다며 예선에서 자른다. 그가 고장 난 그라인더를 손맷돌로 대신해 더 나은 컵을 내자 기술위원이 그를 부른다.",
+ "They cut him from the qualifier for having no machine. He swaps the dead grinder for a hand mill and pours a better cup.",
+ [
+  ["H", "태이", "Jonah", "20대 후반 남성, 앞치마, 짧은 머리, 무표정", "man in his late 20s, apron, short hair, deadpan face"],
+  ["V", "진영", "Mr. Cato", "40대 남성, 검은 앞치마, 팔짱, 비웃는 얼굴", "man in his 40s, black apron, arms crossed, sneering face"],
+  ["A", "기술위원", "Ms. Beale", "50대 여성, 흰 셔츠, 클립보드, 단호한 태도", "woman in her 50s, white shirt, clipboard, firm manner"]
+ ],
+ [
+  ["대회 부스", "competition booth", "진영이 태이의 부스 번호를 게시판에서 뗀다", "Mr. Cato pulls Jonah's booth number off the board", 1, "장비도 없이 나왔어?", "You came without a machine?", "cz"],
+  ["대회 부스", "competition booth", "진영이 태이의 원두 봉지를 옆으로 밀어 버린다", "Mr. Cato shoves Jonah's bag of beans aside", 1, "실격이야. 나가.", "You're out. Leave.", "ms"],
+  ["대회 부스", "competition booth", "태이가 가방에서 작은 손맷돌을 꺼낸다", "Jonah takes a small hand grinder from his bag", -1, "", "", "pi"],
+  ["대회 부스", "competition booth", "태이가 손맷돌로 갈아 컵을 내고 심사 테이블이 조용해진다", "Jonah grinds by hand and pours as the judging table goes quiet", 0, "원두는 장비를 안 가려요.", "Good beans don't need a machine.", "slo"],
+  ["대회 부스", "competition booth", "기술위원이 진영의 심사 명패를 치우고 점수판을 세운다", "Ms. Beale removes Mr. Cato's plaque and sets down the scoreboard", 2, "1위는 태이 씨예요. 심사는 여기까지.", "Jonah takes first. The judging ends here.", "low"],
+  ["심사위원 명단", "judges' list", "명단에서 진영의 이름이 지워져 있다", "Mr. Cato's name is missing from the judges' list", -1, "", "", "cz"]
+ ]
+],
+[
+ "어리다고 자른 제과 오디션", "Too Young for the Pastry Post",
+ "어리다며 심사위원이 자른다. 무너진 케이크를 십 분에 다시 세우고, 오븐 기록이 심사위원의 방해를 찍는다.",
+ "They cut her for being too young. She rebuilds a collapsed cake in ten minutes, and the oven log catches the judge's sabotage.",
+ [
+  ["H", "소율", "Aimee", "20대 초반 여성, 흰 조리복, 짧은 머리, 단단한 눈빛", "woman in her early 20s, white chef coat, short hair, resolute eyes"],
+  ["V", "봉수", "Chef Lundy", "40대 남성, 검은 조리복, 수염, 비웃는 얼굴", "man in his 40s, black chef coat, beard, sneering face"],
+  ["A", "제과장", "Chef Ottoline", "50대 여성, 흰 조리복, 짧은 금발, 냉정한 표정", "woman in her 50s, white chef coat, short blond hair, cool face"]
+ ],
+ [
+  ["제과 실습실", "pastry kitchen", "봉수가 소율의 나이를 크게 읽고 고개를 젓는다", "Chef Lundy reads Soyul's age aloud and shakes his head", 1, "이 나이에 무슨 케이크야.", "A cake at your age?", "cz"],
+  ["제과 실습실", "pastry kitchen", "봉수가 소율의 앞치마를 벗겨 작업대에 놓는다", "Chef Lundy pulls off Soyul's apron and sets it down", 1, "집에 가. 다음 사람.", "Go home. Next.", "ms"],
+  ["제과 실습실", "pastry kitchen", "소율이 무너진 케이크 옆 오븐 표시판을 본다", "Soyul looks at the oven display beside the collapsed cake", -1, "", "", "pi"],
+  ["제과 실습실", "pastry kitchen", "소율이 십 분 만에 케이크를 다시 세우고 제과장이 다가온다", "Soyul rebuilds the cake in ten minutes as the pastry chef steps close", 0, "케이크는 아직 살아 있어요.", "The cake is still alive.", "slo"],
+  ["제과 실습실", "pastry kitchen", "제과장이 오븐 기록을 봉수 앞에 놓고 심사 명패를 거둔다", "Chef Ottoline sets the oven log before Chef Lundy and takes his plaque", 2, "오븐을 연 건 봉수 씨예요. 심사는 끝.", "You opened the oven. Your judging is over.", "cu"],
+  ["오븐 기록", "oven log", "오븐 기록이 다른 날짜로 한 장 더 넘어간다", "The oven log scrolls to another date", -1, "", "", "cu"]
+ ]
+],
+[
+ "여자라서 뺀 초밥 오디션", "No Women at the Sushi Counter",
+ "여자는 안 된다며 심사위원이 지원자를 뺀다. 그녀가 생선을 한 번에 손질하자 주인장이 앞치마를 건넨다.",
+ "The judge drops her because she is a woman. She breaks down a fish in one pass, and the owner holds out an apron.",
+ [
+  ["H", "미르", "Sana", "20대 후반 여성, 흰 조리복, 묶은 머리, 단단한 눈빛", "woman in her late 20s, white chef coat, tied hair, resolute eyes"],
+  ["V", "기석", "Mr. Ono", "50대 남성, 흰 조리복, 짧은 머리, 고압적인 태도", "man in his 50s, white chef coat, short hair, overbearing manner"],
+  ["A", "주인장", "Master Ikeda", "70대 남성, 흰 조리복, 흰 머리, 온화한 얼굴", "man in his 70s, white chef coat, white hair, gentle face"]
+ ],
+ [
+  ["초밥 카운터", "sushi counter", "기석이 미르에게 홀 자리를 가리키며 웃는다", "Mr. Ono points Sana to the serving floor, laughing", 1, "여자는 이 자리에 안 앉아.", "Women don't work this counter.", "cz"],
+  ["초밥 카운터", "sushi counter", "기석이 미르의 칼집을 집어 옆으로 밀어 버린다", "Mr. Ono picks up Sana's tool roll and pushes it aside", 1, "돌아가. 다음 사람.", "Go home. Next.", "ms"],
+  ["초밥 카운터", "sushi counter", "미르가 손을 씻고 도마 앞에 선다", "Sana washes her hands and stands at the cutting board", -1, "", "", "pi"],
+  ["초밥 카운터", "sushi counter", "미르가 생선을 한 번에 손질해 접시에 올린다", "Sana breaks the fish down in one pass and plates it", 0, "한 번에 잘라야 맛이 살아요.", "One clean cut keeps the flavor.", "slo"],
+  ["초밥 카운터", "sushi counter", "주인장이 기석의 명패를 거두고 새 앞치마를 미르에게 건넨다", "Master Ikeda takes Mr. Ono's plaque and holds out a fresh apron", 2, "이 카운터는 미르 씨 겁니다.", "This counter is Sana's now.", "low"],
+  ["카운터 명패", "counter plaque", "벽의 명패에서 다른 이름이 지워져 있다", "Another name has been crossed off the plaque", -1, "", "", "cz"]
+ ]
+],
+[
+ "무명 선생이라 자른 피아노 예선", "The Pianist With an Unknown Teacher",
+ "선생이 무명이라며 예선에서 자른다. 악보가 떨어져도 암보로 몰고 가자 감독이 심사위원의 추천을 취소한다.",
+ "They cut her because her teacher is unknown. She plays on from memory when the score falls, and the director cancels the judge's pick.",
+ [
+  ["H", "채운", "Elsa", "20대 후반 여성, 검은 원피스, 긴 머리, 차분한 눈빛", "woman in her late 20s, black dress, long hair, calm eyes"],
+  ["V", "우람", "Mr. Stroh", "50대 남성, 검은 정장, 안경, 차가운 표정", "man in his 50s, black suit, glasses, cold expression"],
+  ["A", "콩쿠르 감독", "Ms. Feld", "40대 여성, 짙은 재킷, 서류철, 단호한 태도", "woman in her 40s, dark jacket, document folder, firm manner"]
+ ],
+ [
+  ["콩쿠르 무대", "competition stage", "우람이 채운의 선생 이름을 소리 내어 비웃는다", "Mr. Stroh laughs out loud at her teacher's name", 1, "선생 이름도 모르는 사람은 안 돼.", "Nobody knows your teacher. No.", "cz"],
+  ["콩쿠르 무대", "competition stage", "우람이 채운의 악보를 덮어 버린다", "Mr. Stroh closes Chaewoon's score", 1, "다음 지원자 들어와.", "Send in the next one.", "ms"],
+  ["콩쿠르 무대", "competition stage", "채운이 건반 위에 손을 올리고 눈을 감는다", "Chaewoon rests her hands on the keys and closes her eyes", -1, "", "", "pi"],
+  ["콩쿠르 무대", "competition stage", "악보가 바닥으로 떨어져도 채운이 암보로 끝까지 친다", "The score slides to the floor as Chaewoon plays to the end from memory", 0, "악보는 필요 없어요.", "I don't need the score.", "trk"],
+  ["콩쿠르 무대", "competition stage", "감독이 우람의 추천 명단에서 두 이름을 지운다", "Ms. Feld strikes two names from Mr. Stroh's list", 2, "추천은 취소합니다. 무대는 실력으로.", "The recommendation is void. The stage decides.", "low"],
+  ["무대 위", "on stage", "남은 악보에 다른 학생의 이름이 적혀 있다", "A different student's name is written on the score", -1, "", "", "cu"]
+ ]
+],
+[
+ "너무 젊다며 뺀 지휘 오디션", "Too Young to Hold the Baton",
+ "너무 젊다며 심사위원이 뺀다. 단원들이 일부러 엉망으로 연주하자 그녀가 한 마디로 바로잡고 의장이 계약한다.",
+ "They drop her for being too young. The players deliberately play badly; she fixes it in one bar and the chairman signs her.",
+ [
+  ["H", "서린", "Marta", "20대 후반 여성, 검은 연주복, 짧은 머리, 단단한 눈빛", "woman in her late 20s, black concert wear, short hair, resolute eyes"],
+  ["V", "형탁", "Mr. Baruch", "50대 남성, 검은 정장, 나비넥타이, 고압적인 태도", "man in his 50s, black suit, bow tie, overbearing manner"],
+  ["A", "오케스트라 의장", "Mr. Salle", "60대 남성, 검은 정장, 흰 머리, 침착한 태도", "man in his 60s, black suit, white hair, composed manner"]
+ ],
+ [
+  ["콘서트홀 무대", "concert hall stage", "형탁이 서린의 나이를 단원들 앞에서 읽는다", "Mr. Baruch reads Marta's age out to the players", 1, "이 나이에 지휘는 무리야.", "Conducting is too much at your age.", "cz"],
+  ["콘서트홀 무대", "concert hall stage", "형탁이 단원들을 향해 손을 저으며 악보를 넘기라고 한다", "Mr. Baruch waves the players on to the next sheet", 1, "다음 지원자 모셔 와.", "Bring the next candidate.", "ms"],
+  ["콘서트홀 무대", "concert hall stage", "서린이 연주가 시작되자 고개를 기울인다", "Marta tilts her head as the orchestra begins", -1, "", "", "pi"],
+  ["콘서트홀 무대", "concert hall stage", "서린이 손을 멈추고 한 마디만 다시 시켜 단원들이 맞춘다", "Marta stops them and takes one bar again until they lock in", 0, "그 마디만 다시 가요.", "That bar, one more time.", "trk"],
+  ["콘서트홀 무대", "concert hall stage", "의장이 형탁의 악보를 덮고 서린의 손을 든다", "Mr. Salle closes Mr. Baruch's score and lifts Marta's hand", 2, "이분이 우리 지휘자입니다.", "This is our conductor.", "low"],
+  ["단원석", "players' seats", "단원석에서 누군가 일어나 서린을 본다", "Someone rises from the players' seats and looks at Marta", -1, "", "", "pi"]
+ ]
+],
+[
+ "역할에 안 맞는다며 자른 뮤지컬", "Not Right for the Part",
+ "역할에 안 어울린다며 연출가가 자른다. 주연 대역이 노래를 못 하자 그녀가 무대에서 부르고 작곡가가 반주를 멈춘다.",
+ "The director cuts her for not fitting the part. When the understudy fails to sing, she takes the stage and the composer stops playing.",
+ [
+  ["H", "나윤", "Della", "20대 후반 여성, 낡은 코트, 묶은 머리, 결연한 눈빛", "woman in her late 20s, worn coat, tied hair, resolute eyes"],
+  ["V", "경택", "Mr. Fenn", "40대 남성, 검은 셔츠, 모자, 고압적인 태도", "man in his 40s, black shirt, cap, overbearing manner"],
+  ["A", "작곡가", "Mr. Ash", "50대 남성, 회색 재킷, 피아노 앞, 온화한 얼굴", "man in his 50s, gray jacket, at the piano, gentle face"]
+ ],
+ [
+  ["오디션장", "audition room", "경택이 나윤의 사진을 옆으로 밀고 고개를 젓는다", "Mr. Fenn pushes Nayoon's photo aside and shakes his head", 1, "이 얼굴로 주연은 무리야.", "That face can't carry the lead.", "cz"],
+  ["오디션장", "audition room", "경택이 나윤의 번호표를 접어 바닥에 떨어뜨린다", "Mr. Fenn folds Nayoon's number and drops it", 1, "다음 분 부탁해.", "Next, please.", "ms"],
+  ["오디션장", "audition room", "무대 옆에서 대역이 노래를 시작하다 목소리가 갈라진다", "On the stage, the understudy's voice cracks mid-song", -1, "", "", "pi"],
+  ["오디션장", "audition room", "나윤이 무대로 나가 같은 소절을 이어 부른다", "Nayoon steps onto the stage and finishes the verse", 0, "그 소절, 제가 이어 부를게요.", "Let me finish that verse.", "slo"],
+  ["오디션장", "audition room", "작곡가가 경택의 감독 의자를 치우고 나윤을 가리킨다", "Mr. Ash pulls away Mr. Fenn's chair and points at Nayoon", 2, "이 역할은 나윤 씨 겁니다.", "This role is Nayoon's.", "low"],
+  ["피아노 위", "on the piano", "작곡가가 봉인된 봉투를 피아노 위에 올린다", "The composer lays a sealed envelope on the piano", -1, "", "", "cz"]
+ ]
+]
+]

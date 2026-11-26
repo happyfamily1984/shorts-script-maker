@@ -1,0 +1,912 @@
+[
+ [
+  "개업 첫날로 돌아왔다",
+  "Back to Opening Night",
+  "가게를 빼앗길 개업 첫날로 돌아왔다. 이번엔 조리법이 먼저 등록돼 있다.",
+  "He wakes on the day his brother took his restaurant, and the recipe is already his.",
+  [
+   [
+    "H",
+    "도영",
+    "Marco",
+    "30대 남성, 흰 셰프복과 앞치마, 짧은 머리, 단단한 눈",
+    "man in his 30s, white chef coat and apron, short hair, resolute eyes"
+   ],
+   [
+    "V",
+    "규태",
+    "Gerald",
+    "40대 남성, 검은 셔츠와 금 손목시계, 짧은 머리, 비뚠 입가",
+    "man in his 40s, black shirt and gold watch, short hair, twisted mouth"
+   ],
+   [
+    "A",
+    "김 세무사",
+    "Ms. Barrow",
+    "40대 여성, 회색 정장과 서류철, 안경, 무표정",
+    "woman in her 40s, gray suit and folder, glasses, blank face"
+   ]
+  ],
+  [
+   [
+    "레스토랑",
+    "restaurant",
+    "규태가 도영의 앞치마를 벗겨 손님 테이블에 던진다",
+    "Gerald tears off Marco's apron and throws it on a guest table",
+    1,
+    "주방은 내가 맡아. 넌 환이나 해.",
+    "I run the kitchen. You work the floor.",
+    "cz"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "규태가 주방 입구에 사장 전용 팻말을 걸고 도영을 밀어낸다",
+    "Gerald hangs a sign on the kitchen door and pushes Marco out",
+    1,
+    "이 가게 주인은 나야.",
+    "I own this place.",
+    "ms"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "도영이 벽 달력의 오늘 칸을 손끝으로 세 번 두드린다",
+    "Marco taps today's square on the wall calendar three times",
+    0,
+    "오늘 날짜, 제가 기억합니다.",
+    "I remember this date exactly.",
+    "cu"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "김 세무사가 개업 선물 상자를 열어 등록증을 꺼낸다",
+    "Ms. Barrow opens an opening-day gift box and takes out a filing",
+    2,
+    "이 조리법, 도영 씨 이름으로 등록됐습니다.",
+    "This recipe is registered under Mr. Marco.",
+    "low"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "규태가 팻말을 뒤집어 들고 주방으로 들어간다",
+    "Gerald flips the sign and backs into the kitchen",
+    0,
+    "첫 손님은 사장이 아니라 제가 맞죠.",
+    "I'll greet the first guests, not him.",
+    "cu"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "카운터 위 주문 벨이 처음으로 울린다",
+    "The order bell rings on the counter for the first time",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "신제품 발표일로 돌아왔다",
+  "Back to Launch Day",
+  "향을 빼앗길 발표일로 돌아왔다. 이번엔 조향 배합이 먼저 등록돼 있다.",
+  "She wakes on the day her boss stole her scent, and the formula is already registered.",
+  [
+   [
+    "H",
+    "유림",
+    "Sophie",
+    "30대 여성, 흰 블라우스와 앞치마, 묶은 머리, 섬세한 눈",
+    "woman in her 30s, white blouse and apron, tied hair, delicate eyes"
+   ],
+   [
+    "V",
+    "미소",
+    "Renee",
+    "40대 여성, 검은 원피스와 진주 귀걸이, 짧은 단발, 날선 눈",
+    "woman in her 40s, black dress and pearl earrings, short bob, sharp eyes"
+   ],
+   [
+    "A",
+    "오베르",
+    "Mr. Aubert",
+    "50대 남성, 회색 정장과 나비넥타이, 흰 머리, 무표정",
+    "man in his 50s, gray suit and bow tie, white hair, blank face"
+   ]
+  ],
+  [
+   [
+    "향수 갈라",
+    "perfume gala",
+    "미소가 유림의 시향지 더미를 펼쳐 손님 코앞에서 흔든다",
+    "Renee fans the test strips right under a guest's nose",
+    1,
+    "조수가 무대에 올라와?",
+    "An assistant on the launch stage?",
+    "cz"
+   ],
+   [
+    "향수 갈라",
+    "perfume gala",
+    "미소가 유림의 조향 노트를 가방에 넣고 무대 마이크를 켠다",
+    "Renee pockets Sophie's notes and switches on the stage mic",
+    1,
+    "이 향은 내 이름으로 나가.",
+    "This scent goes out under my name.",
+    "ms"
+   ],
+   [
+    "향수 갈라",
+    "perfume gala",
+    "유림이 시험관 라벨을 오려 조명에 비춘다",
+    "Sophie peels a vial label free and holds it to the light",
+    0,
+    "이 배합, 어제 제 이름으로 접수됐어요.",
+    "I filed this formula yesterday. In my name.",
+    "cu"
+   ],
+   [
+    "향수 갈라",
+    "perfume gala",
+    "오베르가 무대 옆 서류 봉투를 뜯어 등록 번호를 읽는다",
+    "Mr. Aubert opens an envelope at the wings and reads the filing number",
+    2,
+    "이 배합, 유림 씨 이름으로 등록됐습니다.",
+    "This formula is registered to Ms. Sophie.",
+    "low"
+   ],
+   [
+    "향수 갈라",
+    "perfume gala",
+    "미소가 향수병 마개를 닫는다",
+    "Renee caps the perfume bottle",
+    0,
+    "이 향의 이름은 제가 정합니다.",
+    "I name this scent.",
+    "cu"
+   ],
+   [
+    "향수 갈라",
+    "perfume gala",
+    "무대 스크린에 향 이름과 조향사 이름이 뜬다",
+    "The screen shows the scent and its creator",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "설계 발표일로 돌아왔다",
+  "Back to the Design Jury",
+  "설계를 빼앗길 발표일로 돌아왔다. 이번엔 제출 기록이 먼저 남아 있다.",
+  "She wakes on the day her partner stole her design, and the submission log is already stamped.",
+  [
+   [
+    "H",
+    "인성",
+    "Hugh",
+    "40대 남성, 회색 셔츠와 소매 걷은 팔, 짧은 머리, 지친 눈",
+    "man in his 40s, gray shirt with rolled sleeves, short hair, tired eyes"
+   ],
+   [
+    "V",
+    "기범",
+    "Mr. Weller",
+    "50대 남성, 검은 정장과 나비넥타이, 짧은 머리, 거만한 턱",
+    "man in his 50s, black suit and bow tie, short hair, haughty chin"
+   ],
+   [
+    "A",
+    "그린웨이",
+    "Ms. Greenway",
+    "40대 여성, 남색 정장과 서류철, 은발, 무표정",
+    "woman in her 40s, navy suit and folder, silver hair, blank face"
+   ]
+  ],
+  [
+   [
+    "설계 심사장",
+    "design jury room",
+    "기범이 인성의 모형 앞에서 손을 휘저어 조각을 흩는다",
+    "Mr. Weller brushes his hand through Hugh's model and pieces scatter",
+    1,
+    "건축가는 나 하나면 돼.",
+    "One architect is enough here. Me.",
+    "cz"
+   ],
+   [
+    "설계 심사장",
+    "design jury room",
+    "기범이 인성의 도면을 말아 서류통에 넣고 심사장 문을 가리킨다",
+    "Mr. Weller rolls up the drawings and points at the door",
+    1,
+    "이 설계는 내 이름으로 나가.",
+    "This design goes out under my name.",
+    "ms"
+   ],
+   [
+    "설계 심사장",
+    "design jury room",
+    "인성이 휴대폰 알람을 끄고 제출 시각을 심사위원에게 보인다",
+    "Hugh silences his alarm and shows the jury the filing time",
+    0,
+    "제출은 어제 끝났어요. 제 이름으로.",
+    "Filed yesterday. Under my name.",
+    "cu"
+   ],
+   [
+    "설계 심사장",
+    "design jury room",
+    "그린웨이가 제출 대장을 펴 작성자 칸을 짚는다",
+    "Ms. Greenway opens the submission log and taps the author box",
+    2,
+    "작성자와 시각이 인성 씨로 남아 있습니다.",
+    "The author and time are logged as Mr. Hugh.",
+    "low"
+   ],
+   [
+    "설계 심사장",
+    "design jury room",
+    "기범이 흩어진 모형 조각을 주머니에 넣는다",
+    "Mr. Weller pockets a broken model piece",
+    0,
+    "이 건물은 제 도면으로 섭니다.",
+    "This building rises from my drawings.",
+    "cu"
+   ],
+   [
+    "설계 심사장",
+    "design jury room",
+    "심사위원석에서 박수가 먼저 터진다",
+    "Applause starts from the jury table",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "호텔 개관 점검일로 돌아왔다",
+  "Back to the Walkthrough",
+  "호텔에서 쫓겨날 점검일로 돌아왔다. 이번엔 예약 장부 원본이 먼저 복사돼 있다.",
+  "She wakes before the owner's son fires her, and the booking ledger is already copied.",
+  [
+   [
+    "H",
+    "소현",
+    "Faye",
+    "40대 여성, 검은 지배인 정장과 배지, 단정한 묶은 머리, 차분한 눈",
+    "woman in her 40s, black manager suit and badge, neat bun, composed eyes"
+   ],
+   [
+    "V",
+    "상현",
+    "Mr. Boyd",
+    "30대 남성, 밝은 정장과 금 시계, 짧은 머리, 비웃는 입",
+    "man in his 30s, light suit and gold watch, short hair, sneering mouth"
+   ],
+   [
+    "A",
+    "이 회계사",
+    "Ms. Rourke",
+    "50대 여성, 회색 정장과 태블릿, 은발, 무표정",
+    "woman in her 50s, gray suit and tablet, silver hair, blank face"
+   ]
+  ],
+  [
+   [
+    "호텔 프런트",
+    "hotel front desk",
+    "상현이 소현의 예약 장부를 프런트 위에서 밀어 종이를 흩는다",
+    "Mr. Boyd sweeps the booking ledger and pages scatter",
+    1,
+    "지배인이 무슨 결정을 해?",
+    "Since when does the manager decide?",
+    "cz"
+   ],
+   [
+    "호텔 프런트",
+    "hotel front desk",
+    "상현이 소현의 마스터키를 뽑아 주머니에 넣고 직원을 부른다",
+    "Mr. Boyd pockets her master key and calls a clerk over",
+    1,
+    "오늘로 넌 끝이야.",
+    "You're done as of today.",
+    "ms"
+   ],
+   [
+    "호텔 프런트",
+    "hotel front desk",
+    "소현이 서랍에서 장부 사본을 꺼내 카운터 조명에 놓는다",
+    "Faye takes the ledger copy from the drawer into the counter light",
+    0,
+    "장부 원본, 제가 먼저 복사했어요.",
+    "I copied the ledger before you woke up.",
+    "cu"
+   ],
+   [
+    "호텔 프런트",
+    "hotel front desk",
+    "이 회계사가 취소 예약 목록을 넘기며 직원들을 본다",
+    "Ms. Rourke flips to the cancelled bookings and faces the clerks",
+    2,
+    "취소된 예약 값이 상현 씨 계좌로 갔습니다.",
+    "The cancelled bookings paid into Mr. Boyd's account.",
+    "low"
+   ],
+   [
+    "호텔 프런트",
+    "hotel front desk",
+    "상현이 마스터키를 카운터에 놓는다",
+    "Mr. Boyd puts the master key on the counter",
+    0,
+    "개관 첫 손님은 제가 맞습니다.",
+    "I'll greet the first guest at the opening.",
+    "cu"
+   ],
+   [
+    "호텔 프런트",
+    "hotel front desk",
+    "엘리베이터 층 표시가 하나씩 올라간다",
+    "The elevator floor numbers climb one by one",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "경매 전날로 돌아왔다",
+  "Back to the Auction Eve",
+  "원석을 바꿔치기당할 경매 전날로 돌아왔다. 이번엔 감정 봉인이 먼저 찍혀 있다.",
+  "He wakes before the gem swap at the auction, and the seals are already photographed.",
+  [
+   [
+    "H",
+    "광호",
+    "Ruben",
+    "50대 남성, 갈색 작업복과 루페, 짧은 회색 머리, 조용한 눈",
+    "man in his 50s, brown work clothes and loupe, short gray hair, quiet eyes"
+   ],
+   [
+    "V",
+    "나영",
+    "Simone",
+    "40대 여성, 흰 정장과 금 목걸이, 긴 생머리, 얇은 미소",
+    "woman in her 40s, white suit and gold necklace, long straight hair, thin smile"
+   ],
+   [
+    "A",
+    "감정사 최",
+    "Mr. Petrov",
+    "60대 남성, 검은 정장과 흰 장갑, 흰 머리, 무표정",
+    "man in his 60s, black suit and white gloves, white hair, blank face"
+   ]
+  ],
+  [
+   [
+    "경매장",
+    "auction house",
+    "나영이 광호의 원석 트레이를 경매대 위에서 엎어 돌을 굴린다",
+    "Simone upends Ruben's gem tray on the auction table",
+    1,
+    "세공사가 경매에 끼어?",
+    "A jeweler in the auction room?",
+    "cz"
+   ],
+   [
+    "경매장",
+    "auction house",
+    "나영이 광호의 루페를 빼앗아 목에 걸고 도록을 덮는다",
+    "Simone takes his loupe, hangs it on herself, and shuts the catalog",
+    1,
+    "이 원석은 내 물건이야.",
+    "These stones are mine.",
+    "ms"
+   ],
+   [
+    "경매장",
+    "auction house",
+    "광호가 봉인 사진을 펴 돌의 번호를 경매장 조명에 짚는다",
+    "Ruben spreads seal photos and taps the stone's number under the light",
+    0,
+    "봉인 번호, 제가 먼저 찍어 뒀어요.",
+    "I photographed these seals first.",
+    "cu"
+   ],
+   [
+    "경매장",
+    "auction house",
+    "최 감정사가 흰 장갑을 끼고 두 원석을 나란히 대조한다",
+    "Mr. Petrov pulls on white gloves and compares the stones side by side",
+    2,
+    "바뀐 원석은 나영 씨 쪽에서 나왔습니다.",
+    "The swapped stone came from Ms. Simone's case.",
+    "low"
+   ],
+   [
+    "경매장",
+    "auction house",
+    "나영이 루페를 진열장에 돌려놓는다",
+    "Simone returns the loupe to the case",
+    0,
+    "경매는 제 이름으로 다시 엽니다.",
+    "I'll reopen the auction under my name.",
+    "cu"
+   ],
+   [
+    "경매장",
+    "auction house",
+    "경매장 조명이 꺼지고 금고 문이 열린다",
+    "The lights drop as the vault door swings open",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "레이스 전날로 돌아왔다",
+  "Back to Race Day",
+  "차를 망칠 레이스 전날로 돌아왔다. 이번엔 엔진 로그가 먼저 백업돼 있다.",
+  "He wakes before the race his manager sold out, and the engine logs are already backed up.",
+  [
+   [
+    "H",
+    "현석",
+    "Jesse",
+    "30대 남성, 남색 정비 작업복과 모자, 짧은 머리, 기름때 밴 얼굴",
+    "man in his 30s, navy mechanic coveralls and cap, short hair, grease-smudged face"
+   ],
+   [
+    "V",
+    "드레이퍼",
+    "Mr. Draper",
+    "40대 남성, 검은 팀 재킷과 헤드셋, 짧은 머리, 능글맞은 얼굴",
+    "man in his 40s, black team jacket and headset, short hair, smug face"
+   ],
+   [
+    "A",
+    "올드리지",
+    "Ms. Aldridge",
+    "30대 여성, 흰 블라우스와 태블릿, 묶은 머리, 무표정",
+    "woman in her 30s, white blouse and tablet, tied hair, blank face"
+   ]
+  ],
+  [
+   [
+    "서킷 피트",
+    "race pit lane",
+    "드레이퍼가 현석의 공구함을 피트 바닥에 엎고 헤드셋 볼륨을 올린다",
+    "Mr. Draper tips the toolbox over and raises his headset volume",
+    1,
+    "정비소 주제에 작전에 끼어?",
+    "A garage hand in the strategy call?",
+    "cz"
+   ],
+   [
+    "서킷 피트",
+    "race pit lane",
+    "드레이퍼가 현석의 노트북을 덮고 피트 밖을 가리킨다",
+    "Mr. Draper shuts the laptop and points out of the pit",
+    1,
+    "엔진 세팅은 내가 넘겼어.",
+    "I already sold the engine setup.",
+    "ms"
+   ],
+   [
+    "서킷 피트",
+    "race pit lane",
+    "현석이 피트 벽의 스케줄표에서 오늘 칸을 짚는다",
+    "Jesse taps today's box on the pit wall schedule",
+    0,
+    "로그, 어제 백업해 뒀어요.",
+    "I backed up the logs last night.",
+    "cu"
+   ],
+   [
+    "서킷 피트",
+    "race pit lane",
+    "올드리지가 태블릿을 차 위에 올려 이체 내역을 띄운다",
+    "Ms. Aldridge sets her tablet on the car and shows the transfers",
+    2,
+    "세팅 대금이 드레이퍼 씨 계좌로 들어왔습니다.",
+    "The setup payment landed in Mr. Draper's account.",
+    "low"
+   ],
+   [
+    "서킷 피트",
+    "race pit lane",
+    "드레이퍼가 헤드셋을 내려놓고 피트를 나선다",
+    "Mr. Draper sets the headset down and walks out",
+    0,
+    "세팅은 원래 만든 사람이 하죠.",
+    "The setup belongs to the one who built it.",
+    "cu"
+   ],
+   [
+    "서킷 피트",
+    "race pit lane",
+    "정비사들이 피트 벽을 따라 늘어선다",
+    "The crew lines up along the pit wall",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "판결 전날로 돌아왔다",
+  "Back to the Verdict",
+  "증거를 빼앗길 판결 전날로 돌아왔다. 이번엔 접수증이 먼저 남아 있다.",
+  "She wakes before her colleague buried the evidence, and the filing receipt is in her bag.",
+  [
+   [
+    "H",
+    "하영",
+    "Yvonne",
+    "30대 여성, 검은 변호사 정장과 서류 가방, 단정한 묶은 머리, 단단한 눈",
+    "woman in her 30s, black lawyer suit and document bag, neat bun, hard eyes"
+   ],
+   [
+    "V",
+    "종민",
+    "Mr. Ashford",
+    "50대 남성, 짙은 정장과 금 커프스, 짧은 회색 머리, 차가운 눈",
+    "man in his 50s, dark suit and gold cufflinks, short gray hair, cold eyes"
+   ],
+   [
+    "A",
+    "서 판사",
+    "Judge Moran",
+    "40대 여성, 검은 법복, 안경, 무표정",
+    "woman in her 40s, black robe, glasses, blank face"
+   ]
+  ],
+  [
+   [
+    "법정",
+    "courtroom",
+    "종민이 하영의 서류 가방을 법정 테이블에서 쓸어 서류를 흩는다",
+    "Mr. Ashford sweeps her document bag across the table",
+    1,
+    "신참이 증거를 골라?",
+    "A junior picking the evidence?",
+    "cz"
+   ],
+   [
+    "법정",
+    "courtroom",
+    "종민이 하영의 명패를 자기 앞으로 당기고 변론석을 가로막는다",
+    "Mr. Ashford pulls her nameplate over and blocks the stand",
+    1,
+    "이 사건은 내가 맡아.",
+    "I'm taking this case.",
+    "ms"
+   ],
+   [
+    "법정",
+    "courtroom",
+    "하영이 가방 안쪽에서 접수증을 꺼내 판사 쪽으로 든다",
+    "Yvonne takes the receipt from an inner pocket and holds it to the judge",
+    0,
+    "증거, 어제 접수했어요. 제 이름으로.",
+    "Filed yesterday. In my name.",
+    "cu"
+   ],
+   [
+    "법정",
+    "courtroom",
+    "서 판사가 접수 대장을 펴 제출자를 손가락으로 짚는다",
+    "Judge Moran opens the filing log and taps the submitter",
+    2,
+    "제출 기록은 하영 씨가 먼저입니다.",
+    "The filing log shows Ms. Yvonne first.",
+    "low"
+   ],
+   [
+    "법정",
+    "courtroom",
+    "종민이 의자를 테이블에 밀어 넣는다",
+    "Mr. Ashford pushes his chair in",
+    0,
+    "변론석은 원래 제 자리였습니다.",
+    "The stand was always mine.",
+    "cu"
+   ],
+   [
+    "법정",
+    "courtroom",
+    "법정 문이 열리고 증인이 들어선다",
+    "The courtroom doors open and a witness walks in",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "인수 계약일로 돌아왔다",
+  "Back to the Vineyard Deal",
+  "라벨을 위조당할 계약일로 돌아왔다. 이번엔 원본 라벨이 먼저 확인돼 있다.",
+  "He wakes on the day the distributor forged his labels, and the originals are already checked.",
+  [
+   [
+    "H",
+    "승호",
+    "Julien",
+    "40대 남성, 남색 조끼와 소매 걷은 셔츠, 짧은 머리, 차분한 눈",
+    "man in his 40s, navy vest and rolled sleeves, short hair, composed eyes"
+   ],
+   [
+    "V",
+    "병국",
+    "Mr. Lachance",
+    "50대 남성, 베이지 정장과 파나마 모자, 짧은 수염, 비뚠 입",
+    "man in his 50s, beige suit and panama hat, short beard, twisted mouth"
+   ],
+   [
+    "A",
+    "콜",
+    "Ms. Cole",
+    "30대 여성, 흰 셔츠와 태블릿, 짧은 단발, 무표정",
+    "woman in her 30s, white shirt and tablet, short bob, blank face"
+   ]
+  ],
+  [
+   [
+    "와이너리 응접실",
+    "winery parlor",
+    "병국이 승호의 시음잔을 저장고 벽에 부딪혀 깨뜨린다",
+    "Mr. Lachance swings the glass into the cellar wall",
+    1,
+    "소믈리에가 계약서에 사인해?",
+    "A sommelier signing contracts?",
+    "cz"
+   ],
+   [
+    "와이너리 응접실",
+    "winery parlor",
+    "병국이 승호의 라벨 노트를 찢어 통 위에 뿌린다",
+    "Mr. Lachance tears the label notes over a barrel",
+    1,
+    "이 와인은 내가 유통해.",
+    "This wine ships through me.",
+    "ms"
+   ],
+   [
+    "와이너리 응접실",
+    "winery parlor",
+    "승호가 오크통 뚜껑에 병을 세우고 라벨 번호를 짚는다",
+    "Julien stands a bottle on the barrel and taps the print number",
+    0,
+    "라벨 번호, 어제 확인해 뒀어요.",
+    "I checked the print numbers yesterday.",
+    "cu"
+   ],
+   [
+    "와이너리 응접실",
+    "winery parlor",
+    "콜이 감정서를 펴 위조 라벨을 병 옆에 세운다",
+    "Ms. Cole opens the appraisal and stands the forged label beside it",
+    2,
+    "위조 라벨입니다. 원본은 승호 씨가 갖고 있어요.",
+    "This label is forged. Mr. Julien holds the originals.",
+    "low"
+   ],
+   [
+    "와이너리 응접실",
+    "winery parlor",
+    "병국이 계약서를 찢는다",
+    "Mr. Lachance tears the contract in half",
+    0,
+    "이 병은 제 이름으로 팝니다.",
+    "This bottle sells under my name.",
+    "cu"
+   ],
+   [
+    "와이너리 저장고",
+    "wine cellar",
+    "오크통 위에 놓인 병 하나가 촛불을 받는다",
+    "A bottle on the barrel catches the candlelight",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "박람회 개막일로 돌아왔다",
+  "Back to the Furniture Fair",
+  "디자인을 빼앗길 개막일로 돌아왔다. 이번엔 등록증이 먼저 나와 있다.",
+  "She wakes on the day her partner claimed her chair, and the registration is already filed.",
+  [
+   [
+    "H",
+    "지수",
+    "Maren",
+    "30대 여성, 흰 셔츠와 작업 앞치마, 묶은 머리, 또렷한 눈",
+    "woman in her 30s, white shirt and work apron, tied hair, clear eyes"
+   ],
+   [
+    "V",
+    "경수",
+    "Mr. Bexley",
+    "40대 남성, 회색 재킷과 안경, 짧은 머리, 얇은 입술",
+    "man in his 40s, gray jacket and glasses, short hair, thin lips"
+   ],
+   [
+    "A",
+    "할보르센",
+    "Mr. Halvorsen",
+    "60대 남성, 남색 정장과 나비넥타이, 흰 머리, 엄한 얼굴",
+    "man in his 60s, navy suit and bow tie, white hair, stern face"
+   ]
+  ],
+  [
+   [
+    "가구 박람회장",
+    "furniture fair",
+    "경수가 지수의 의자를 전시대에서 끌어내 넘어뜨린다",
+    "Mr. Bexley drags Maren's chair off the display and tips it",
+    1,
+    "디자이너가 심사대에 올라와?",
+    "A designer at the jury table?",
+    "cz"
+   ],
+   [
+    "가구 박람회장",
+    "furniture fair",
+    "경수가 지수의 도면을 접어 재킷에 넣고 명패를 뒤집는다",
+    "Mr. Bexley folds the drawings into his jacket and flips her sign",
+    1,
+    "이 디자인은 내가 등록했어.",
+    "I registered this design.",
+    "ms"
+   ],
+   [
+    "가구 박람회장",
+    "furniture fair",
+    "지수가 등록증 사본을 펴 접수 도장을 조명에 비춘다",
+    "Maren opens the filing copy and holds the stamp to the light",
+    0,
+    "등록, 일주일 전에 해 뒀어요.",
+    "I filed it a week ago.",
+    "cu"
+   ],
+   [
+    "가구 박람회장",
+    "furniture fair",
+    "할보르센이 등록 대장을 펴 접수 시각을 짚는다",
+    "Mr. Halvorsen opens the register and taps the filing time",
+    2,
+    "등록자는 지수 씨, 시각도 앞섭니다.",
+    "The registrant is Ms. Maren, and her time is earlier.",
+    "low"
+   ],
+   [
+    "가구 박람회장",
+    "furniture fair",
+    "경수가 의자 팔걸이를 닦는다",
+    "Mr. Bexley wipes the chair's armrest",
+    0,
+    "이 디자인은 제 서명으로 섭니다.",
+    "This design stands under my signature.",
+    "cu"
+   ],
+   [
+    "가구 박람회장",
+    "furniture fair",
+    "관람객들이 의자 앞에 멈춰 선다",
+    "Visitors stop in front of the chair",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "쇼 전날로 돌아왔다",
+  "Back to the Night Before the Show",
+  "드레스를 빼앗길 쇼 전날로 돌아왔다. 이번엔 패턴이 먼저 등록돼 있다.",
+  "She wakes the night her chief stole her dress, and the pattern is already registered.",
+  [
+   [
+    "H",
+    "아린",
+    "Elodie",
+    "30대 여성, 흰 블라우스와 재봉 앞치마, 긴 머리 묶음, 섬세한 눈",
+    "woman in her 30s, white blouse and sewing apron, long tied hair, fine eyes"
+   ],
+   [
+    "V",
+    "명자",
+    "Mrs. Sheridan",
+    "50대 여성, 검은 원피스와 진주 목걸이, 짧은 퍼머, 찬 눈",
+    "woman in her 50s, black dress and pearl necklace, short perm, cold eyes"
+   ],
+   [
+    "A",
+    "페레르",
+    "Ms. Ferrer",
+    "40대 여성, 검은 정장과 헤드셋, 짧은 단발, 무표정",
+    "woman in her 40s, black suit and headset, short bob, blank face"
+   ]
+  ],
+  [
+   [
+    "쇼장 백스테이지",
+    "show backstage",
+    "명자가 아린의 드레스를 옷걸이째 바닥에 내려놓는다",
+    "Mrs. Sheridan lowers Elodie's dress, hanger and all, to the floor",
+    1,
+    "보조가 피날레에 서?",
+    "An assistant walking the finale?",
+    "cz"
+   ],
+   [
+    "쇼장 백스테이지",
+    "show backstage",
+    "명자가 아린의 패턴 봉투를 뜯어 마네킹에 붙여 둔다",
+    "Mrs. Sheridan tears open the pattern packet and pins it on a mannequin",
+    1,
+    "이 드레스는 내 컬렉션이야.",
+    "This dress is my collection.",
+    "ms"
+   ],
+   [
+    "쇼장 백스테이지",
+    "show backstage",
+    "아린이 봉제 기록을 펴 어제 시각과 이름을 조명에 든다",
+    "Elodie opens the stitching log and holds yesterday's entry to the light",
+    0,
+    "패턴, 어제 제 이름으로 등록했어요.",
+    "I registered the pattern yesterday. In my name.",
+    "cu"
+   ],
+   [
+    "쇼장 백스테이지",
+    "show backstage",
+    "페레르가 등록증을 들어 무대 스태프들에게 보인다",
+    "Ms. Ferrer holds up the registration for the stage crew",
+    2,
+    "이 컬렉션 제작자는 아린 씨입니다.",
+    "This collection's maker is Ms. Elodie.",
+    "low"
+   ],
+   [
+    "쇼장 백스테이지",
+    "show backstage",
+    "명자가 드레스 소매를 고쳐 접는다",
+    "Mrs. Sheridan refolds the dress sleeve",
+    0,
+    "피날레는 원래 만든 사람이 걷죠.",
+    "The maker walks the finale.",
+    "cu"
+   ],
+   [
+    "쇼장 런웨이",
+    "runway",
+    "음악이 시작되고 첫 모델이 나선다",
+    "The music starts and the first model steps out",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ]
+]

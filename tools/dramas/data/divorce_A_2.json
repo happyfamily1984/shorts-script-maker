@@ -1,0 +1,912 @@
+[
+ [
+  "목소리만 남기고 떠난 남편",
+  "The Voice He Left Behind",
+  "목소리밖에 없다며 이혼한 남편이 내레이션을 바꾼다. 목소리 사용권은 아내 명의였다.",
+  "He dumped her for being just a voice, then recast her narration. The voice license is hers.",
+  [
+   [
+    "H",
+    "지우",
+    "Nora",
+    "30대 여성, 회색 후드에 헤드폰을 목에 건 차림, 단발, 담담한 눈",
+    "woman in her 30s, gray hoodie, headphones around her neck, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "도현",
+    "Marcus",
+    "40대 남성, 짙은 재킷에 무선 마이크, 넘긴 머리, 거만한 턱",
+    "man in his 40s, dark jacket with a lapel mic, slicked hair, arrogant chin"
+   ],
+   [
+    "A",
+    "오 실장",
+    "Ms. Reyes",
+    "40대 여성, 검은 정장에 안경, 단정한 묶음 머리, 냉정한 눈",
+    "woman in her 40s, black suit, glasses, neat bun, cold eyes"
+   ]
+  ],
+  [
+   [
+    "방송국 녹음실",
+    "network recording booth",
+    "도현이 지우의 헤드폰을 벗겨 책상에 놓는다",
+    "Marcus pulls the headphones off Jiwoo and sets them down",
+    1,
+    "이 목소리, 오늘로 끝이야.",
+    "That voice ends today.",
+    "cz"
+   ],
+   [
+    "방송국 녹음실",
+    "network recording booth",
+    "도현이 지우의 대본을 바닥에 던지고 직원들이 뒤에서 웃는다",
+    "Marcus throws Jiwoo's script down as staff laugh behind him",
+    1,
+    "내레이션은 새 아내가 한다.",
+    "My new wife narrates now.",
+    "ms"
+   ],
+   [
+    "방송국 복도",
+    "network hallway",
+    "도현이 새 성우와 악수하고 지우는 벽의 편성표를 올려다본다",
+    "Marcus shakes the new narrator's hand as Jiwoo looks up at the schedule board",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "방송국 녹음실",
+    "network recording booth",
+    "오 실장이 계약서 사본을 들어 조항 하나를 짚는다",
+    "Ms. Reyes lifts a contract copy and points at one clause",
+    2,
+    "이 목소리 사용권, 지우 씨 명의입니다.",
+    "The voice license is in Jiwoo's name.",
+    "low"
+   ],
+   [
+    "방송국 녹음실",
+    "network recording booth",
+    "지우가 계약서를 접어 가방에 넣고 도현의 펜을 탁자에 놓는다",
+    "Jiwoo folds the contract into her bag and sets the pen down",
+    0,
+    "사인은 안 합니다. 이혼 서류처럼요.",
+    "No signature. Same as the divorce papers.",
+    "cu"
+   ],
+   [
+    "방송국 로비",
+    "network lobby",
+    "오 실장이 지우에게 더 큰 방송사의 계약서를 펼쳐 보인다",
+    "Ms. Reyes opens a contract from a bigger network",
+    2,
+    "다음 작품은 더 큰 방송사입니다.",
+    "The next series is on a bigger network.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "조율사를 자른 콘서트홀",
+  "No Concert Without Her Tuning",
+  "건반이나 만진다며 이혼한 남편이 홀 개관 공연을 연다. 그 피아노는 아내만 조율할 수 있었다.",
+  "He left her for tinkering with keys. His hall's opening concert needs her tuning alone.",
+  [
+   [
+    "H",
+    "민아",
+    "Clara",
+    "30대 여성, 남색 작업복에 조율 공구벨트, 짧은 단발, 세심한 눈",
+    "woman in her 30s, navy work shirt, tuning tool belt, short bob, careful eyes"
+   ],
+   [
+    "V",
+    "준호",
+    "Ellis",
+    "40대 남성, 검은 턱시도, 올백 머리, 오만한 턱",
+    "man in his 40s, black tuxedo, slicked-back hair, arrogant chin"
+   ],
+   [
+    "A",
+    "백 관장",
+    "Mrs. Kessler",
+    "50대 여성, 회색 정장에 은발 단발, 단호한 눈매",
+    "woman in her 50s, gray suit, silver bob, resolute eyes"
+   ]
+  ],
+  [
+   [
+    "콘서트홀 무대",
+    "concert hall stage",
+    "준호가 피아노 위의 민아 조율 공구를 손으로 쓸어 내린다",
+    "Ellis sweeps Mina's tuning tools off the piano",
+    1,
+    "건반이나 만지던 사람이 무대에?",
+    "A piano tinkerer on my stage?",
+    "ms"
+   ],
+   [
+    "콘서트홀 무대",
+    "concert hall stage",
+    "준호가 조율 기록장을 찢어 바닥에 던진다",
+    "Ellis tears the tuning log and throws it down",
+    1,
+    "이 홀 피아노는 네 손이 필요 없어.",
+    "This hall's piano doesn't need your hands.",
+    "cz"
+   ],
+   [
+    "콘서트홀 로비",
+    "concert hall lobby",
+    "민아가 벽 명판 아래 작은 서명을 손끝으로 짚는다",
+    "Mina runs a fingertip over a small signature under the wall plaque",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "콘서트홀 무대",
+    "concert hall stage",
+    "백 관장이 연주자 앞에서 민아를 가리킨다",
+    "Mrs. Kessler points at Mina in front of the pianist",
+    2,
+    "이 피아노 조율 서명 없이는 못 엽니다.",
+    "No opening without her tuning signature.",
+    "ws"
+   ],
+   [
+    "콘서트홀 무대",
+    "concert hall stage",
+    "민아가 조율 공구를 챙겨 무대를 내려오고 준호가 손을 뻗는다",
+    "Mina packs her tools and walks off as Ellis reaches out",
+    0,
+    "이 홀 소리는 이제 제 손에 없습니다.",
+    "This hall's sound is out of my hands.",
+    "rx"
+   ],
+   [
+    "콘서트홀 로비",
+    "concert hall lobby",
+    "백 관장이 옆 도시 홀의 피아노 사진을 민아에게 보인다",
+    "Mrs. Kessler shows Mina a photo of another hall's piano",
+    2,
+    "그 홀 피아노도 민아 씨가 봐 주게.",
+    "That hall needs your hands too.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "새벽 빵을 자른 호텔 조식",
+  "No Breakfast Without Her Bread",
+  "새벽에 빵이나 굽는다며 버린 아내. 호텔 조식의 모든 빵은 그녀 반죽에서 나왔다.",
+  "He left her for baking at dawn. Every loaf on the hotel breakfast is her dough.",
+  [
+   [
+    "H",
+    "지안",
+    "Amber",
+    "30대 여성, 흰 제빵복에 밀가루 묻은 앞치마, 단발, 차분한 눈",
+    "woman in her 30s, white baker coat, flour-dusted apron, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "태오",
+    "Ronan",
+    "40대 남성, 호텔 총지배인, 짙은 정장에 나비넥타이, 비웃는 눈",
+    "man in his 40s, hotel manager, dark suit and bow tie, sneering eyes"
+   ],
+   [
+    "A",
+    "한 총주방장",
+    "Chef Duval",
+    "50대 남성, 흰 셰프복에 짧은 수염, 넓은 어깨, 진지한 눈",
+    "man in his 50s, white chef coat, short beard, broad shoulders, serious eyes"
+   ]
+  ],
+  [
+   [
+    "호텔 주방",
+    "hotel kitchen",
+    "태오가 지안의 반죽 통을 발로 밀어 옆으로 치운다",
+    "Ronan kicks Ji-an's dough tub aside",
+    1,
+    "새벽에 빵이나 굽는 인생, 끝이야.",
+    "Your dawn-baking life is over.",
+    "cz"
+   ],
+   [
+    "호텔 조식당",
+    "hotel breakfast room",
+    "태오가 빵 바구니를 쓰레기통에 쏟고 투숙객들이 지켜본다",
+    "Ronan dumps the bread basket into a bin as guests watch",
+    1,
+    "이 빵, 이제 안 나가.",
+    "This bread is off the menu.",
+    "ots"
+   ],
+   [
+    "호텔 주방",
+    "hotel kitchen",
+    "지안이 냉장고 옆 배송 명세서에서 자기 이름을 본다",
+    "Ji-an spots her own name on a delivery sheet by the fridge",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "호텔 조식당",
+    "hotel breakfast room",
+    "한 총주방장이 명세서를 들어 투숙객들 앞에 보인다",
+    "Chef Duval lifts the sheet and shows it to the guests",
+    2,
+    "조식 빵 전부 지안 씨 반죽입니다.",
+    "All the breakfast bread is Ms. Ji-an's dough.",
+    "slo"
+   ],
+   [
+    "호텔 조식당",
+    "hotel breakfast room",
+    "지안이 앞치마를 벗어 의자에 걸고 태오가 고개를 숙인다",
+    "Ji-an hangs up her apron as Ronan bows his head",
+    0,
+    "조식 손님들께 직접 설명하세요.",
+    "Explain it to the breakfast guests yourself.",
+    "cu"
+   ],
+   [
+    "호텔 정문",
+    "hotel entrance",
+    "한 총주방장이 체인 본사 계약서를 지안에게 건넨다",
+    "Chef Duval hands Ji-an a contract from the chain's head office",
+    2,
+    "체인 전체 조식, 지안 씨 반죽으로.",
+    "The whole chain runs on your dough.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "체인이나 닦던 남자의 팀",
+  "The Bike He Built Won the Race",
+  "체인이나 닦는다며 버린 남편. 그 프로팀 자전거는 전부 그의 손을 거쳤다.",
+  "She divorced him for wiping chains. Every bike on her pro team came from his hands.",
+  [
+   [
+    "H",
+    "시우",
+    "Theo",
+    "30대 남성, 회색 정비 조끼에 기름때 밴 손, 짧은 머리, 무뚝뚝한 눈",
+    "man in his 30s, gray mechanic vest, oil-stained hands, short hair, blunt eyes"
+   ],
+   [
+    "V",
+    "라희",
+    "Bianca",
+    "30대 여성, 팀 유니폼에 높은 포니테일, 날카로운 눈매",
+    "woman in her 30s, team jersey, high ponytail, sharp eyes"
+   ],
+   [
+    "A",
+    "고 감독",
+    "Coach Adler",
+    "50대 남성, 검은 재킷에 은발, 진지한 표정",
+    "man in his 50s, black jacket, silver hair, serious expression"
+   ]
+  ],
+  [
+   [
+    "대회 정비 구역",
+    "race pit area",
+    "라희가 시우의 공구함을 발로 차 옆으로 민다",
+    "Bianca kicks Theo's toolbox aside",
+    1,
+    "체인이나 닦는 사람이 여기 왜?",
+    "Why is a chain cleaner in my pit?",
+    "ms"
+   ],
+   [
+    "대회 정비 구역",
+    "race pit area",
+    "라희가 시우의 정비 수첩을 쓰레기통에 던진다",
+    "Bianca tosses Theo's repair log into a bin",
+    1,
+    "우리 팀은 새 정비사를 쓴다.",
+    "We use a new mechanic now.",
+    "cz"
+   ],
+   [
+    "대회 출발선",
+    "race start line",
+    "시우가 프레임에 새겨진 자기 서명을 손끝으로 짚는다",
+    "Theo traces his own signature etched on a frame",
+    -1,
+    "",
+    "",
+    "trk"
+   ],
+   [
+    "대회 출발선",
+    "race start line",
+    "고 감독이 심사위원에게 그 프레임을 들어 보인다",
+    "Coach Adler holds the frame up to an official",
+    2,
+    "이 팀 자전거는 전부 시우 씨 작품입니다.",
+    "Every bike on this team is Theo's work.",
+    "pi"
+   ],
+   [
+    "대회 정비 구역",
+    "race pit area",
+    "고 감독이 라희의 출전 명단을 찢고 시우에게 클립보드를 준다",
+    "Coach Adler tears Bianca's lineup sheet and hands Theo a clipboard",
+    0,
+    "팀 정비는 오늘부터 제가 합니다.",
+    "I run this team's bikes now.",
+    "rx"
+   ],
+   [
+    "대회 출발선",
+    "race start line",
+    "다른 팀 선수들이 시우 앞에 자기 자전거를 세운다",
+    "Riders from a rival team line their bikes up for Theo",
+    2,
+    "새 팀 이름, 시우 씨가 정하게.",
+    "Name the new team yourself.",
+    "cu"
+   ]
+  ]
+ ],
+ [
+  "조명을 끈 채 열린 초연",
+  "The Opening Night Without Lights",
+  "전기 줄이나 만진다며 버린 아내. 초연 무대의 조명 설계는 그녀 손끝에서 나왔다.",
+  "He left her for pulling wires. The premiere's lighting design is hers alone.",
+  [
+   [
+    "H",
+    "은비",
+    "Iris",
+    "30대 여성, 검은 작업복에 헤드램프, 묶은 머리, 집중하는 눈",
+    "woman in her 30s, black work clothes, headlamp, tied hair, focused eyes"
+   ],
+   [
+    "V",
+    "재현",
+    "Desmond",
+    "40대 남성, 검은 터틀넥에 안경, 연출가 특유의 거만한 턱",
+    "man in his 40s, black turtleneck, glasses, a director's arrogant chin"
+   ],
+   [
+    "A",
+    "서 극장장",
+    "Ms. Novak",
+    "50대 여성, 보라색 재킷에 은발 단발, 단호한 얼굴",
+    "woman in her 50s, purple jacket, silver bob, resolute face"
+   ]
+  ],
+  [
+   [
+    "극장 무대",
+    "theater stage",
+    "재현이 은비의 조명 큐 시트를 접어 자기 주머니에 넣는다",
+    "Desmond folds Eunbi's light cue sheet into his pocket",
+    1,
+    "전기 줄이나 만지는 사람은 나가.",
+    "Wire pullers get out of my theater.",
+    "cu"
+   ],
+   [
+    "극장 통제실",
+    "lighting booth",
+    "재현이 은비의 헤드셋을 벗겨 책상에 던진다",
+    "Desmond pulls off Eunbi's headset and throws it down",
+    1,
+    "무대는 이제 내가 짠다.",
+    "I run this stage now.",
+    "ms"
+   ],
+   [
+    "극장 통제실",
+    "lighting booth",
+    "은비가 콘솔 옆 스티커의 등록 번호를 본다",
+    "Eunbi looks at a registration number on a console sticker",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "극장 무대",
+    "theater stage",
+    "서 극장장이 콘솔의 번호를 가리키며 무대에 선다",
+    "Ms. Novak stands onstage pointing at the number",
+    2,
+    "이 조명 설계 저작권자, 은비 씨입니다.",
+    "The lighting design belongs to Ms. Eunbi.",
+    "low"
+   ],
+   [
+    "극장 무대",
+    "theater stage",
+    "서 극장장이 콘솔 열쇠를 은비 손에 쥐여 준다",
+    "Ms. Novak presses the console key into Eunbi's hand",
+    0,
+    "초연은 제 조명으로 엽니다.",
+    "The premiere opens on my lights.",
+    "rx"
+   ],
+   [
+    "극장 로비",
+    "theater lobby",
+    "서 극장장이 다음 작품 대본을 은비 앞에 놓는다",
+    "Ms. Novak sets the next play's script before Eunbi",
+    2,
+    "다음 작품 조명도 은비 씨가.",
+    "The next show needs your design.",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "이빨 깎는 남편의 보철",
+  "The Crown Nobody Else Can Make",
+  "이빨이나 깎는다며 버린 남편. 원장의 새 치과 개원은 그의 보철 없이는 불가능했다.",
+  "She left him for grinding teeth. Her new clinic cannot open without his crowns.",
+  [
+   [
+    "H",
+    "기범",
+    "Silas",
+    "30대 남성, 흰 작업복에 돋보기 안경, 짧은 머리, 정밀한 눈",
+    "man in his 30s, white lab coat, magnifier glasses, short hair, precise eyes"
+   ],
+   [
+    "V",
+    "유나",
+    "Delia",
+    "30대 여성, 치과 원장, 흰 가운에 묶은 머리, 냉정한 눈",
+    "woman in her 30s, dental director, white coat, tied hair, cold eyes"
+   ],
+   [
+    "A",
+    "마 원장",
+    "Dr. Ivers",
+    "50대 남성, 흰 가운에 안경, 온화한 인상",
+    "man in his 50s, white coat, glasses, gentle face"
+   ]
+  ],
+  [
+   [
+    "치과 기공실",
+    "dental lab",
+    "유나가 기범의 작업 트레이를 탁자 끝으로 민다",
+    "Delia slides Kibum's work tray to the table edge",
+    1,
+    "이빨 깎는 일이나 하던 사람.",
+    "You just grind teeth for a living.",
+    "cz"
+   ],
+   [
+    "치과 기공실",
+    "dental lab",
+    "유나가 보철 상자를 바닥에 내려놓고 직원들이 지켜본다",
+    "Delia sets the crown box on the floor as staff watch",
+    1,
+    "개원 준비는 우리끼리 해.",
+    "We will prep the opening without you.",
+    "ms"
+   ],
+   [
+    "치과 진료실",
+    "dental chair room",
+    "기범이 모형 위 보철 안쪽 각인을 손끝으로 짚는다",
+    "Kibum traces a mark inside a crown on the model",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "치과 진료실",
+    "dental chair room",
+    "마 원장이 보철을 들어 조명 아래에서 보인다",
+    "Dr. Ivers lifts the crown under the light",
+    2,
+    "이 심미 보철 특허, 김기범 씨 겁니다.",
+    "This aesthetic crown patent is Mr. Kim's.",
+    "pi"
+   ],
+   [
+    "치과 진료실",
+    "dental chair room",
+    "마 원장이 개원 허가 서류를 접어 가방에 넣는다",
+    "Dr. Ivers folds the opening permit into his bag",
+    0,
+    "제 보철 없이 환자 받지 마세요.",
+    "No patients without my crowns.",
+    "low"
+   ],
+   [
+    "치과 입구",
+    "clinic entrance",
+    "마 원장이 세 번째 지점 도면을 기범 앞에 펼친다",
+    "Dr. Ivers unrolls plans for a third clinic",
+    2,
+    "세 번째 지점도 기범 씨가.",
+    "The third clinic is yours too.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "유리 한 장에 걸린 호텔 오픈",
+  "The Glass That Held the Opening",
+  "유리나 자른다며 버린 아내. 새로 연 호텔 로비의 유리벽은 그녀 작품이었다.",
+  "He left her for cutting glass. The new hotel lobby wall is her artwork.",
+  [
+   [
+    "H",
+    "채원",
+    "Margot",
+    "30대 여성, 방열 앞치마에 작업 장갑, 짧은 단발, 차분한 눈",
+    "woman in her 30s, heat apron and work gloves, short bob, calm eyes"
+   ],
+   [
+    "V",
+    "두현",
+    "Sebastian",
+    "40대 남성, 개발사 대표, 회색 정장에 거만한 웃음",
+    "man in his 40s, developer CEO, gray suit, arrogant smile"
+   ],
+   [
+    "A",
+    "윤 지배인",
+    "Mr. Whitcomb",
+    "50대 남성, 검은 조끼에 흰 장갑, 단정한 자세",
+    "man in his 50s, black vest, white gloves, formal posture"
+   ]
+  ],
+  [
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "두현이 채원의 유리 조각을 손으로 밀어 옆으로 세운다",
+    "Sebastian pushes Chaewon's glass panel aside",
+    1,
+    "유리나 자르는 손으로 만든 거야?",
+    "You made this with glass-cutting hands?",
+    "ms"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "두현이 채원의 작업 장갑을 바닥에 던지고 하객들이 웃는다",
+    "Sebastian throws her gloves down as guests laugh",
+    1,
+    "이 로비는 내 작품이야.",
+    "This lobby is my work.",
+    "ots"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "채원이 유리벽 아래 작은 서명과 번호를 본다",
+    "Chaewon sees a small signature and number under the wall",
+    -1,
+    "",
+    "",
+    "cz"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "윤 지배인이 유리벽 옆 명판을 손바닥으로 가리킨다",
+    "Mr. Whitcomb points a palm at the plaque by the wall",
+    2,
+    "이 유리벽 작가는 채원 씨로 등록됐습니다.",
+    "This wall is registered to Ms. Chaewon.",
+    "slo"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "채원이 새 명판을 유리벽에 붙이고 하객들이 박수 친다",
+    "Chaewon fixes a new plaque on the wall as guests applaud",
+    0,
+    "이 로비에 제 이름을 다시 답니다.",
+    "My name goes back on this lobby.",
+    "rx"
+   ],
+   [
+    "호텔 정원",
+    "hotel garden",
+    "윤 지배인이 건물 전체 유리 도면을 채원에게 건넨다",
+    "Mr. Whitcomb hands Chaewon plans for all the glass",
+    2,
+    "이 건물 유리 전부, 채원 씨 작품으로.",
+    "Every pane in this building is yours.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "술이나 섞던 남자의 병",
+  "The Blend They Can't Pour",
+  "술이나 섞는다며 버린 남편. 새로 연 호텔 바의 대표 블렌드는 그의 손에서 나왔다.",
+  "She left him for mixing drinks. Her new hotel bar's signature blend is his.",
+  [
+   [
+    "H",
+    "도경",
+    "Julian",
+    "40대 남성, 베이지 조끼에 짧은 수염, 차분하고 깊은 눈",
+    "man in his 40s, beige vest, short beard, calm deep eyes"
+   ],
+   [
+    "V",
+    "세린",
+    "Camille",
+    "30대 여성, 검은 원피스에 진주 목걸이, 비웃는 입술",
+    "woman in her 30s, black dress, pearl necklace, sneering lips"
+   ],
+   [
+    "A",
+    "고 바텐더",
+    "Mr. Radford",
+    "50대 남성, 검은 조끼에 나비넥타이, 흰 장갑, 공손한 자세",
+    "man in his 50s, black vest and bow tie, white gloves, formal posture"
+   ]
+  ],
+  [
+   [
+    "호텔 바",
+    "hotel bar",
+    "세린이 도경의 블렌딩 노트를 잔 위에 던진다",
+    "Camille throws Dokyung's blending notes onto the bar",
+    1,
+    "술이나 섞던 사람, 이제 필요 없어.",
+    "We don't need a mixer anymore.",
+    "cz"
+   ],
+   [
+    "호텔 바",
+    "hotel bar",
+    "세린이 선반의 병 하나를 빼 바닥에 내려놓는다",
+    "Camille pulls a bottle down from the shelf",
+    1,
+    "이 바에 네 병은 안 놓여.",
+    "Your bottles don't pour here.",
+    "cu"
+   ],
+   [
+    "호텔 바",
+    "hotel bar",
+    "도경이 병 라벨 아래 작은 로트 번호를 본다",
+    "Dokyung sees a small lot number under the label",
+    -1,
+    "",
+    "",
+    "trk"
+   ],
+   [
+    "호텔 바",
+    "hotel bar",
+    "고 바텐더가 병을 높이 들어 손님들에게 라벨을 보인다",
+    "Mr. Radford holds the bottle up to show the guests",
+    2,
+    "이 병의 블렌딩 권리는 도경 씨 겁니다.",
+    "The blending rights are Mr. Dokyung's.",
+    "pi"
+   ],
+   [
+    "호텔 바",
+    "hotel bar",
+    "직원들이 선반의 병을 상자에 담아 들고 나간다",
+    "Staff box the bottles and carry them out",
+    0,
+    "빈 선반이 오늘의 메뉴입니다.",
+    "An empty shelf is tonight's menu.",
+    "cu"
+   ],
+   [
+    "호텔 바",
+    "hotel bar",
+    "고 바텐더가 새 라벨 도안을 도경 앞에 놓는다",
+    "Mr. Radford sets a new label design before Dokyung",
+    2,
+    "신제품 라벨에 도경 씨 이름을 넣게.",
+    "Your name goes on the new label.",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "원두를 자른 프랜차이즈",
+  "No Franchise Without Her Roast",
+  "원두나 볶는다며 버린 아내. 그 프랜차이즈 모든 매장의 원두는 그녀 로스터에서 나왔다.",
+  "He divorced her for roasting beans. Every store in his chain pours her roast.",
+  [
+   [
+    "H",
+    "아영",
+    "Helena",
+    "30대 여성, 갈색 앞치마에 로스팅 장갑, 묶은 머리, 단단한 눈",
+    "woman in her 30s, brown apron, roasting gloves, tied hair, firm eyes"
+   ],
+   [
+    "V",
+    "상혁",
+    "Damian",
+    "40대 남성, 프랜차이즈 대표, 남색 정장에 번들거리는 머리",
+    "man in his 40s, franchise CEO, navy suit, greasy hair"
+   ],
+   [
+    "A",
+    "노 이사",
+    "Mr. Kendrick",
+    "50대 남성, 회색 정장에 태블릿, 단정한 자세",
+    "man in his 50s, gray suit, tablet in hand, tidy posture"
+   ]
+  ],
+  [
+   [
+    "로스터리",
+    "coffee roastery",
+    "상혁이 아영의 생두 자루를 발로 밀어 옆으로 치운다",
+    "Damian kicks Ayoung's green bean sack aside",
+    1,
+    "원두나 볶는 여자랑은 끝이야.",
+    "I'm done with a bean roaster.",
+    "ms"
+   ],
+   [
+    "로스터리",
+    "coffee roastery",
+    "상혁이 로스팅 기록을 찢어 바닥에 던진다",
+    "Damian tears the roasting log and throws it down",
+    1,
+    "우린 새 로스터와 계약했다.",
+    "We signed a new roaster.",
+    "cz"
+   ],
+   [
+    "창업 박람회 부스",
+    "franchise expo booth",
+    "아영이 매장 지도 아래 작은 각인을 발견한다",
+    "Ayoung spots a small stamp under the store map",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "창업 박람회 부스",
+    "franchise expo booth",
+    "노 이사가 계약서를 펼쳐 지도 앞에 든다",
+    "Mr. Kendrick opens the contract before the map",
+    2,
+    "전 매장 원두 공급권은 아영 씨 겁니다.",
+    "She holds the bean rights for every store.",
+    "low"
+   ],
+   [
+    "로스터리",
+    "coffee roastery",
+    "본사 직원들이 원두 자루를 트럭에 싣고 상혁이 지켜본다",
+    "Head office staff load bean sacks as Damian watches",
+    0,
+    "내일 아침, 원두 없이 장사해 보세요.",
+    "Try opening tomorrow without beans.",
+    "rx"
+   ],
+   [
+    "창업 박람회 부스",
+    "franchise expo booth",
+    "노 이사가 새 브랜드 표지판을 아영에게 건넨다",
+    "Mr. Kendrick hands Ayoung a new brand sign",
+    2,
+    "새 브랜드 이름, 아영 씨가 정하게.",
+    "Name the new brand yourself.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "트릭을 자른 갈라쇼",
+  "The Trick He Can't Do Alone",
+  "트릭이나 부린다며 버린 남편. 갈라쇼의 피날레는 둘이 함께 만든 무대였다.",
+  "She left him for cheap tricks. The gala finale is a stage they built together.",
+  [
+   [
+    "H",
+    "건우",
+    "Felix",
+    "30대 남성, 검은 정장에 나비넥타이, 짧은 머리, 조용한 눈",
+    "man in his 30s, black suit and bow tie, short hair, quiet eyes"
+   ],
+   [
+    "V",
+    "지수",
+    "Nadia",
+    "40대 여성, 쇼 프로듀서, 빨간 재킷에 올림머리, 날카로운 눈",
+    "woman in her 40s, show producer, red jacket, updo, sharp eyes"
+   ],
+   [
+    "A",
+    "한 실장",
+    "Mr. Brooks",
+    "50대 남성, 검은 정장에 은발, 흰 장갑, 단정한 자세",
+    "man in his 50s, black suit, silver hair, white gloves, neat bearing"
+   ]
+  ],
+  [
+   [
+    "극장 무대 뒤",
+    "backstage",
+    "지수가 건우의 트릭 상자를 발로 밀어 옆으로 치운다",
+    "Nadia kicks Gunwoo's trick case aside",
+    1,
+    "트릭이나 부리는 사람은 이제 그만.",
+    "No more party tricksters.",
+    "cz"
+   ],
+   [
+    "극장 무대 뒤",
+    "backstage",
+    "지수가 건우의 소품 가방을 엎고 스태프들이 지켜본다",
+    "Nadia tips out Gunwoo's prop bag as crew watch",
+    1,
+    "피날레는 네 트릭 없이 한다.",
+    "The finale goes on without your tricks.",
+    "ms"
+   ],
+   [
+    "무대 옆",
+    "stage wing",
+    "건우가 무대 바닥의 작은 서명 테이프를 본다",
+    "Gunwoo sees a small signed tape mark on the floor",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "무대 위",
+    "onstage",
+    "한 실장이 무대 바닥의 서명을 가리킨다",
+    "Mr. Brooks points at the signature on the stage floor",
+    2,
+    "이 피날레 무대 설계는 건우 씨 겁니다.",
+    "The finale staging is Mr. Gunwoo's.",
+    "pi"
+   ],
+   [
+    "무대 위",
+    "onstage",
+    "지수가 객석으로 내려가고 건우가 무대 중앙에 선다",
+    "Nadia walks to the seats as Gunwoo takes center stage",
+    0,
+    "피날레는 제가 엽니다. 관객석에서 보세요.",
+    "I open the finale. Watch from the seats.",
+    "cu"
+   ],
+   [
+    "극장 로비",
+    "theater lobby",
+    "한 실장이 겨울 공연 포스터를 건우에게 보인다",
+    "Mr. Brooks shows Gunwoo the winter show poster",
+    2,
+    "겨울 공연, 건우 씨가 연출하게.",
+    "Direct the winter show too.",
+    "ws"
+   ]
+  ]
+ ]
+]

@@ -1,0 +1,182 @@
+[
+[
+ "작업복 출신이라 자른 재단사", "The Tailor From the Workroom",
+ "작업복 수선 출신이라며 뺀다. 그가 한 시간에 재킷을 완성하자 마스터가 자기 출품을 내린다.",
+ "They cut him for coming from an alterations bench. He finishes a jacket in an hour, and the master withdraws his own entry.",
+ [
+  ["H", "재운", "Hugh", "40대 남성, 소매 없는 셔츠, 짧은 머리, 무표정", "man in his 40s, sleeveless shirt, short hair, deadpan face"],
+  ["V", "도식", "Mr. Brunt", "50대 남성, 조끼, 목에 건 줄자, 거만한 태도", "man in his 50s, vest, tape measure at his neck, arrogant manner"],
+  ["A", "마스터 테일러", "Mr. Aubert", "70대 남성, 짙은 정장, 흰 머리, 온화한 얼굴", "man in his 70s, dark suit, white hair, gentle face"]
+ ],
+ [
+  ["콩쿠르 작업장", "contest workroom", "도식이 재운의 수선 경력을 소리 내어 읽는다", "Mr. Brunt reads Jaewoon's alterations record aloud", 1, "수선쟁이가 여기 왜 나와?", "Why is an alterations man even here?", "cz"],
+  ["콩쿠르 작업장", "contest workroom", "도식이 재운의 천을 옆으로 밀어 버린다", "Mr. Brunt shoves Jaewoon's cloth aside", 1, "나가. 다음 사람.", "Get out. Next.", "ms"],
+  ["콩쿠르 작업장", "contest workroom", "재운이 마네킹의 어깨선을 손끝으로 짚는다", "Jaewoon taps the shoulder line on the mannequin", -1, "", "", "pi"],
+  ["콩쿠르 작업장", "contest workroom", "재운이 한 시간 만에 재킷을 완성해 마네킹에 입힌다", "Jaewoon finishes a jacket in an hour and fits it to the mannequin", 0, "어깨선은 천이 정해요.", "The cloth decides the shoulder line.", "cu"],
+  ["콩쿠르 작업장", "contest workroom", "마스터가 도식의 출품 번호도 내리고 재운의 재킷을 세운다", "The master pulls Mr. Brunt's entry too and stands Jaewoon's jacket up", 2, "심사는 이 재킷으로 끝났어요.", "The judging ends with this jacket.", "low"],
+  ["마네킹", "mannequin", "마네킹 옆에 재운의 이름표가 달려 있다", "Jaewoon's name tag is pinned to the mannequin", -1, "", "", "cz"]
+ ]
+],
+[
+ "자격증 없다고 뺀 플로리스트", "The Florist Without a Certificate",
+ "자격증이 없다며 뺀다. 시든 꽃만 남은 자리에서 작품을 완성하자 체인 오너가 계약서를 꺼낸다.",
+ "They cut her for having no certificate. She builds a piece from the wilted stems left on the table, and the chain owner brings out a contract.",
+ [
+  ["H", "하늬", "Vera", "20대 후반 여성, 가죽 앞치마, 묶은 머리, 담담한 눈빛", "woman in her late 20s, leather apron, tied hair, steady eyes"],
+  ["V", "미숙", "Ms. Rehn", "50대 여성, 회색 정장, 클립보드, 차가운 표정", "woman in her 50s, gray suit, clipboard, cold expression"],
+  ["A", "체인 오너", "Ms. Danner", "50대 여성, 흰 블라우스, 단호한 태도", "woman in her 50s, white blouse, firm manner"]
+ ],
+ [
+  ["오디션장", "audition hall", "미숙이 하늬의 자격증 칸을 손끝으로 짚는다", "Ms. Rehn taps the empty certificate line", 1, "자격증이 없네. 나가.", "No certificate. Out.", "cz"],
+  ["오디션장", "audition hall", "미숙이 하늬의 가위를 빼앗아 상자에 넣는다", "Ms. Rehn takes Haneui's scissors and drops them in a box", 1, "다음 분.", "Next.", "ms"],
+  ["오디션장", "audition hall", "하늬가 테이블에 남은 시든 꽃을 본다", "Haneui looks at the wilted stems left on the table", -1, "", "", "pi"],
+  ["오디션장", "audition hall", "하늬가 시든 꽃으로 작품을 완성한다", "Haneui builds a finished piece from the wilted stems", 0, "시든 꽃도 방향이 있어요.", "Even wilted flowers have a direction.", "cu"],
+  ["오디션장", "audition hall", "체인 오너가 계약서를 꺼내 하늬 앞에 놓는다", "Ms. Danner takes out a contract and sets it before Haneui", 2, "이 자리는 하늬 씨 겁니다.", "This seat is Haneui's.", "low"],
+  ["꽃 상자", "flower box", "상자 밑에서 다른 주문서가 미끄러진다", "Another order sheet slips out from under the flower box", -1, "", "", "cu"]
+ ]
+],
+[
+ "릴 없다고 뺀 영상 감독", "The Director With No Reel",
+ "쇼릴이 없다며 뺀다. 오 분 만에 휴대폰으로 장면을 찍자 광고주가 그를 지명한다.",
+ "They cut him for having no showreel. He films a scene on his phone in five minutes, and the client names him.",
+ [
+  ["H", "도율", "Kit", "20대 후반 남성, 검은 후드, 짧은 머리, 무표정", "man in his late 20s, black hoodie, short hair, deadpan face"],
+  ["V", "명진", "Mr. Cord", "40대 남성, 흰 셔츠, 태블릿, 무심한 태도", "man in his 40s, white shirt, tablet, indifferent manner"],
+  ["A", "광고주", "Ms. Ayer", "50대 여성, 흰 정장, 냉정한 표정", "woman in her 50s, white suit, cool expression"]
+ ],
+ [
+  ["심사장", "pitch room", "명진이 도율의 릴 칸이 비었음을 지적한다", "Mr. Cord points at the empty reel line", 1, "쇼릴도 없어?", "Not even a showreel?", "cz"],
+  ["심사장", "pitch room", "명진이 도율의 카메라 가방을 옆으로 민다", "Mr. Cord pushes Doyul's camera bag aside", 1, "다음.", "Next.", "ms"],
+  ["심사장", "pitch room", "도율이 창가로 기울어 드는 빛을 본다", "Doyul looks at the light slanting in from the window", -1, "", "", "pi"],
+  ["심사장", "pitch room", "도율이 휴대폰으로 오 분 만에 장면을 찍어 보여 준다", "Doyul films a scene on his phone in five minutes and shows it", 0, "빛은 기다리면 와요.", "The light comes if you wait.", "cu"],
+  ["심사장", "pitch room", "광고주가 명진의 추천서를 접고 도율의 이름을 적는다", "Ms. Ayer folds Mr. Cord's reference and writes Doyul's name", 2, "이 광고는 도율 씨가 찍어요.", "Doyul films this commercial.", "low"],
+  ["광고주 가방", "client's bag", "광고주가 봉인된 콘티를 꺼내 도율에게 건넨다", "The client takes out a sealed storyboard and hands it to Doyul", -1, "", "", "cz"]
+ ]
+],
+[
+ "선수 경력 없다고 자른 코치", "The Coach Who Never Went Pro",
+ "선수 경력이 없다며 자른다. 그가 클럽 챔피언의 서브를 그대로 받아내자 오너가 그를 뽑는다.",
+ "They cut him for never playing pro. He returns the club champion's serve flat, and the owner hires him.",
+ [
+  ["H", "상혁", "Dov", "30대 남성, 트레이닝복, 짧은 머리, 무표정", "man in his 30s, tracksuit, short hair, deadpan face"],
+  ["V", "정태", "Mr. Sills", "40대 남성, 폴로 셔츠, 라켓을 든 채, 거만한 태도", "man in his 40s, polo shirt, racket in hand, arrogant manner"],
+  ["A", "클럽 오너", "Ms. Fenwick", "50대 여성, 흰 셔츠, 단호한 표정", "woman in her 50s, white shirt, firm expression"]
+ ],
+ [
+  ["테니스 코트", "tennis court", "정태가 상혁의 선수 경력 칸을 읽고 웃는다", "Mr. Sills reads the empty pro record and laughs", 1, "프로 경력이 없잖아.", "You never played pro.", "cz"],
+  ["테니스 코트", "tennis court", "정태가 상혁의 라켓을 펜스에 걸어 버린다", "Mr. Sills hangs Sanghyuk's racket on the fence", 1, "나가.", "Get out.", "ms"],
+  ["테니스 코트", "tennis court", "상혁이 챔피언의 서브 자세를 조용히 본다", "Sanghyuk quietly watches the champion's serve stance", -1, "", "", "pi"],
+  ["테니스 코트", "tennis court", "상혁이 챔피언의 서브를 그대로 받아내고 코트가 조용해진다", "Sanghyuk returns the champion's serve flat as the court goes quiet", 0, "서브는 읽으면 돼요.", "You just read the serve.", "slo"],
+  ["테니스 코트", "tennis court", "오너가 정태의 코치 명패를 벤치에 놓는다", "Ms. Fenwick sets Mr. Sills's coach plaque on the bench", 2, "코치는 상혁 씨예요.", "Sanghyuk is the coach now.", "low"],
+  ["코트 게시판", "court board", "게시판에 상혁의 이름이 새로 걸린다", "Sanghyuk's name goes up on the court board", -1, "", "", "cu"]
+ ]
+],
+[
+ "나이 많다며 자른 게이머", "Too Old for the Roster",
+ "나이가 많다며 명단에서 뺀다. 그가 팀 에이스에게 일대일로 이기자 감독이 계약서를 쓴다.",
+ "They drop him from the roster for his age. He beats the team ace one on one, and the coach writes his contract.",
+ [
+  ["H", "우빈", "Rex", "20대 후반 남성, 검은 후드, 짧은 머리, 무표정", "man in his late 20s, black hoodie, short hair, deadpan face"],
+  ["V", "경민", "Mr. Shade", "30대 남성, 팀 유니폼, 클립보드, 건방진 태도", "man in his 30s, team jersey, clipboard, cocky manner"],
+  ["A", "감독", "Coach Merle", "40대 남성, 팀 점퍼, 침착한 태도", "man in his 40s, team jacket, composed manner"]
+ ],
+ [
+  ["연습실", "practice room", "경민이 우빈의 나이를 팀 명단에 크게 적는다", "Mr. Shade writes Woobin's age large on the roster", 1, "스물아홉은 은퇴야.", "Twenty-nine means retired.", "cz"],
+  ["연습실", "practice room", "경민이 우빈의 의자를 옆으로 민다", "Mr. Shade pushes Woobin's chair aside", 1, "나가.", "Get out.", "ms"],
+  ["연습실", "practice room", "우빈이 스크린의 대기 화면을 본다", "Woobin looks at the standby screen", -1, "", "", "pi"],
+  ["연습실", "practice room", "우빈이 팀 에이스와 일대일에서 이긴다", "Woobin wins the one-on-one against the team ace", 0, "한 판 더 할까요?", "Shall we play another?", "cu"],
+  ["연습실", "practice room", "감독이 경민의 출입 카드를 회수하고 명단에 우빈을 쓴다", "Coach Merle takes Mr. Shade's badge and writes Woobin on the roster", 2, "이번 시즌은 우빈 씨로 가요.", "We go with Woobin this season.", "low"],
+  ["모니터", "monitor", "모니터에 다른 팀의 로고가 떠오른다", "Another team's logo appears on the monitor", -1, "", "", "cz"]
+ ]
+],
+[
+ "펜 하나로 온 만화 공모", "One Pen at the Comic Contest",
+ "작업 환경이 없다며 출품을 막는다. 그가 즉석에서 여섯 컷을 그리자 편집장이 심사위원 자격을 정지한다.",
+ "They block his entry for having no proper setup. He draws six panels on the spot, and the editor suspends the judge.",
+ [
+  ["H", "여울", "Jo", "20대 후반 여성, 회색 후드, 짧은 머리, 조용한 눈빛", "woman in her late 20s, gray hoodie, short hair, quiet eyes"],
+  ["V", "범준", "Mr. Grell", "40대 남성, 체크 셔츠, 태블릿, 비웃는 얼굴", "man in his 40s, plaid shirt, tablet, sneering face"],
+  ["A", "편집장", "Ms. Doyle", "50대 여성, 검은 재킷, 단호한 태도", "woman in her 50s, black jacket, firm manner"]
+ ],
+ [
+  ["공모전 심사장", "comic contest hall", "범준이 여울의 작업 환경 칸을 비웃는다", "Mr. Grell sneers at the empty setup line", 1, "이 정도 장비로 왔어?", "You came with that setup?", "cz"],
+  ["공모전 심사장", "comic contest hall", "범준이 여울의 펜을 집어 던진다", "Mr. Grell picks up Yeoul's pen and throws it", 1, "다음.", "Next.", "ms"],
+  ["공모전 심사장", "comic contest hall", "여울이 벽의 빈 칸 여섯 개를 본다", "Yeoul looks at the six empty panels on the wall", -1, "", "", "pi"],
+  ["공모전 심사장", "comic contest hall", "여울이 그 자리에서 여섯 컷을 그려 붙인다", "Yeoul draws six panels on the spot and pins them up", 0, "여섯 컷이면 충분해요.", "Six panels are enough.", "cu"],
+  ["공모전 심사장", "comic contest hall", "편집장이 범준의 심사권을 정지한다", "Ms. Doyle suspends Mr. Grell's judging rights", 2, "심사는 제가 다시 볼게요.", "I'll review the entries myself.", "low"],
+  ["벽의 만화 칸", "comic panels", "여섯 칸 옆에 빈 칸이 하나 더 생긴다", "A seventh blank panel appears beside the six", -1, "", "", "cz"]
+ ]
+],
+[
+ "자격증 없다고 자른 용접공", "The Welder Without Papers",
+ "자격증이 없다며 뺀다. 그가 얇은 판을 한 번에 붙이자 심사위원의 제자 시험편이 실격된다.",
+ "They cut him for having no papers. He joins a thin plate in one pass, and the judge's own apprentice fails.",
+ [
+  ["H", "만석", "Gerd", "40대 남성, 용접 가면, 가죽 앞치마, 무표정", "man in his 40s, welding mask, leather apron, deadpan face"],
+  ["V", "영달", "Mr. Slate", "50대 남성, 작업복, 클립보드, 고압적인 태도", "man in his 50s, work clothes, clipboard, overbearing manner"],
+  ["A", "기능장", "Mr. Abe", "60대 남성, 흰 작업복, 흰 머리, 온화한 얼굴", "man in his 60s, white work clothes, white hair, gentle face"]
+ ],
+ [
+  ["기능 작업장", "skills workshop", "영달이 만석의 자격증 칸을 손가락으로 친다", "Mr. Slate taps the empty papers box", 1, "자격증이 없네.", "No papers on you.", "cz"],
+  ["기능 작업장", "skills workshop", "영달이 만석의 가면을 작업대에 놓는다", "Mr. Slate sets Manseok's mask on the bench", 1, "나가.", "Out.", "ms"],
+  ["기능 작업장", "skills workshop", "만석이 얇은 판의 이음새를 눈으로 따라간다", "Manseok traces the seam of the thin plate with his eyes", -1, "", "", "pi"],
+  ["기능 작업장", "skills workshop", "만석이 한 번에 이음새를 붙여 판을 세운다", "Manseok joins the seam in one pass and stands the plate up", 0, "열은 천천히 올려야 해요.", "You bring the heat up slowly.", "cu"],
+  ["기능 작업장", "skills workshop", "기능장이 제자의 시험편을 내리고 만석의 판을 세운다", "Mr. Abe sets the apprentice's piece aside and stands Manseok's plate up", 2, "합격입니다. 이 시험편은 실격이에요.", "You pass. This test piece is disqualified.", "low"],
+  ["시험편", "test piece", "시험편 옆에 다른 이름표가 붙어 있다", "Another name tag is fixed to the test piece", -1, "", "", "cu"]
+ ]
+],
+[
+ "무명이라 자른 조향사", "The Perfumer Nobody Knew",
+ "이름이 없다며 뺀다. 그가 블라인드로 향을 조합해 심사위원들을 침묵시키자 하우스가 계약한다.",
+ "They cut him for having no name. He blends blind and silences the panel, and the house signs him.",
+ [
+  ["H", "유담", "Elio", "30대 남성, 흰 셔츠, 짧은 머리, 차분한 눈빛", "man in his 30s, white shirt, short hair, calm eyes"],
+  ["V", "미라", "Ms. Vogt", "40대 여성, 검은 정장, 시향지, 차가운 표정", "woman in her 40s, black suit, scent strip, cold expression"],
+  ["A", "하우스 조향사", "Mr. Grand", "60대 남성, 회색 정장, 온화한 얼굴", "man in his 60s, gray suit, gentle face"]
+ ],
+ [
+  ["조향실", "perfume lab", "미라가 유담의 경력 칸에 이름이 없음을 지적한다", "Ms. Vogt points out the empty name line", 1, "이름도 없는 사람이.", "And who are you exactly?", "cz"],
+  ["조향실", "perfume lab", "미라가 유담의 병을 트레이 밖으로 밀어낸다", "Ms. Vogt pushes Yudam's bottle off the tray", 1, "다음.", "Next.", "ms"],
+  ["조향실", "perfume lab", "유담이 남은 원료 병들의 라벨을 본다", "Yudam reads the labels on the remaining bottles", -1, "", "", "pi"],
+  ["조향실", "perfume lab", "유담이 블라인드로 향을 조합해 시향지에 적신다", "Yudam blends blind and dips a fresh scent strip", 0, "이 향은 이름이 없어도 돼요.", "This scent needs no name.", "slo"],
+  ["조향실", "perfume lab", "하우스 조향사가 미라의 시향지를 거두고 계약서를 꺼낸다", "Mr. Grand takes Ms. Vogt's strip away and brings out a contract", 2, "계약은 유담 씨와 해요.", "The contract goes to Yudam.", "low"],
+  ["원료 선반", "ingredient shelf", "선반에 유담의 이름이 적힌 병이 놓여 있다", "A bottle on the shelf already bears Yudam's name", -1, "", "", "cz"]
+ ]
+],
+[
+ "학위 없다고 자른 조명 디자이너", "The Lighting Designer Without a Degree",
+ "학위가 없다며 자른다. 램프 두 개로 장면을 만들자 연출가가 심사위원의 추천을 지운다.",
+ "They cut her for having no degree. She builds a scene with two lamps, and the director erases the panel's pick.",
+ [
+  ["H", "시현", "Nico", "20대 후반 여성, 검은 작업복, 묶은 머리, 조용한 눈빛", "woman in her late 20s, black work clothes, tied hair, quiet eyes"],
+  ["V", "성만", "Mr. Hoyt", "50대 남성, 검은 셔츠, 클립보드, 차가운 표정", "man in his 50s, black shirt, clipboard, cold expression"],
+  ["A", "연출가", "Ms. Rein", "40대 여성, 짙은 재킷, 단호한 태도", "woman in her 40s, dark jacket, firm manner"]
+ ],
+ [
+  ["극장 무대", "theater stage", "성만이 시현의 학위 칸을 읽고 고개를 젓는다", "Mr. Hoyt reads the empty degree line and shakes his head", 1, "학위 없는 사람은 안 돼.", "No degree, no light plot.", "cz"],
+  ["극장 무대", "theater stage", "성만이 시현의 램프를 무대 아래로 내린다", "Mr. Hoyt lowers Sihyun's lamp off the stage", 1, "다음.", "Next.", "ms"],
+  ["극장 무대", "theater stage", "시현이 무대 바닥의 그림자 위치를 본다", "Sihyun studies where the shadows fall on the stage", -1, "", "", "pi"],
+  ["극장 무대", "theater stage", "시현이 램프 두 개로 장면을 만들고 배우가 빛 안에 선다", "Sihyun builds a scene with two lamps and the actor steps into the light", 0, "빛은 두 개면 충분해요.", "Two lamps are enough.", "slo"],
+  ["극장 무대", "theater stage", "연출가가 프로그램에서 한 이름을 지운다", "Ms. Rein crosses one name off the program", 2, "조명은 시현 씨가 맡아요.", "Sihyun designs the lights.", "low"],
+  ["무대 위", "above the stage", "램프가 하나 더 저절로 켜진다", "One more lamp switches itself on above the stage", -1, "", "", "cu"]
+ ]
+],
+[
+ "장비 없다고 뺀 사진 공모전", "The Photographer With Only a Phone",
+ "휴대폰 사진이라며 출품을 막는다. 그가 이번 공모전 심사위원으로 초대된 사람이라 심사위원장이 자리에서 물러난다.",
+ "They block his entry for using a phone. He was invited as this year's judge, and the chair steps down.",
+ [
+  ["H", "도하", "Saul", "30대 남성, 낡은 재킷, 손에 든 휴대폰, 무표정", "man in his 30s, worn jacket, phone in hand, deadpan face"],
+  ["V", "정락", "Mr. Bevan", "50대 남성, 검은 정장, 안경, 거만한 태도", "man in his 50s, black suit, glasses, arrogant manner"],
+  ["A", "공모전 주최", "Ms. Hatch", "40대 여성, 흰 셔츠, 서류철, 단호한 태도", "woman in her 40s, white shirt, document folder, firm manner"]
+ ],
+ [
+  ["사진 공모전", "photo contest", "정락이 도하의 장비 칸을 보고 웃는다", "Mr. Bevan looks at the gear line and laughs", 1, "이걸로 출품했다고?", "You entered with this?", "cz"],
+  ["사진 공모전", "photo contest", "정락이 도하의 출품 번호를 바닥에 떨어뜨린다", "Mr. Bevan drops Doha's entry number on the floor", 1, "실격이야.", "Disqualified.", "ms"],
+  ["사진 공모전", "photo contest", "도하가 벽에 붙은 심사위원 명단을 본다", "Doha looks at the judges' list on the wall", -1, "", "", "pi"],
+  ["사진 공모전", "photo contest", "주최가 명단의 첫 이름을 손끝으로 짚는다", "Ms. Hatch taps the first name on the list", 2, "이번 심사위원은 도하 님입니다.", "Our judge this year is Doha.", "low"],
+  ["사진 공모전", "photo contest", "정락이 심사위원 명패를 내려놓는다", "Mr. Bevan sets his judge's plaque down", 0, "심사는 제가 볼게요.", "I'll take over the judging.", "cu"],
+  ["심사위원 명단", "judges' list", "명단에서 정락의 이름이 지워져 있다", "Mr. Bevan's name has been erased from the list", -1, "", "", "cz"]
+ ]
+]
+]

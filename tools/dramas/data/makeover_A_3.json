@@ -1,0 +1,182 @@
+[
+[
+ "낡은 코트를 막아선 공연장", "The Concert Hall That Blocked My Coat",
+ "낡은 코트 차림을 보고 로비에서 막아선 안내원. 그녀는 오늘 밤 무대에 서는 피아니스트였다.",
+ "An usher blocks a woman in an old coat in the lobby. She is the pianist performing tonight.",
+ [
+  ["H", "다원", "Vera", "30대 여성, 낡은 코트, 단정한 머리, 조용한 눈빛", "woman in her 30s, old coat, neat hair, quiet eyes"],
+  ["V", "성록", "Lionel", "50대 남성, 검은 정장, 흰 장갑, 거만한 얼굴", "man in his 50s, black suit, white gloves, smug face"],
+  ["A", "펜윅 무대 감독", "Mr. Fenwick", "40대 남성, 검은 셔츠, 이어피스, 단호한 표정", "man in his 40s, black shirt, earpiece, firm look"]
+ ],
+ [
+  ["콘서트홀 로비", "concert hall lobby", "성록이 다원의 입장권을 빼앗아 접는다", "Seongrok snatches Dawon's ticket and folds it", 1, "이 코트로는 못 들어가요.", "Not in that coat.", "cz"],
+  ["콘서트홀 로비", "concert hall lobby", "성록이 다원을 로비 밖으로 밀어낸다", "Seongrok pushes Dawon out of the lobby", 1, "초대받은 분만 들어옵니다.", "Invited guests only.", "ms"],
+  ["콘서트홀 로비", "concert hall lobby", "다원이 무대 명단을 꺼낸다", "Dawon takes out the stage roster", -1, "", "", "cu"],
+  ["콘서트홀 로비", "concert hall lobby", "펜윅이 명단을 들고 성록 앞에 선다", "Mr. Fenwick holds the roster before Seongrok", 2, "오늘 협연자, 다원 님입니다.", "Tonight's soloist is Dawon.", "low"],
+  ["콘서트홀 무대", "concert hall stage", "다원이 낡은 코트를 벗어 의자에 두고 무대 의상을 입은 채 나타난다", "Dawon leaves the old coat on a chair and appears in stage dress", 0, "무대는 제가 지키죠.", "I'll do my job on stage.", "pi"],
+  ["객석", "audience seats", "객석에서 여자가 다원에게 박수를 친다", "In the audience, a woman applauds Dawon", -1, "", "", "slo"]
+ ]
+],
+[
+ "흙 묻은 사람을 내보낸 레스토랑", "The Restaurant That Sent Me to the Back",
+ "흙 묻은 작업복을 보고 직원 식당으로 보낸 지배인. 그 손님은 이 식당의 재료를 대는 농장주였다.",
+ "A manager sends a dirt-stained man to the staff room. He grows the truffles this kitchen serves.",
+ [
+  ["H", "재이", "Otis", "40대 남성, 흙 묻은 작업복, 짧은 수염, 무표정", "man in his 40s, dirt-stained work clothes, short beard, blank face"],
+  ["V", "도석", "Rupert", "40대 남성, 검은 정장, 나비넥타이, 거만한 얼굴", "man in his 40s, black suit, bow tie, smug face"],
+  ["A", "홀로웨이 매니저", "Ms. Holloway", "40대 여성, 검은 원피스, 태블릿, 단호한 표정", "woman in her 40s, black dress, tablet, firm look"]
+ ],
+ [
+  ["고급 레스토랑", "fine dining restaurant", "도석이 재이를 직원 출입구 쪽으로 손짓한다", "Doseok waves Jaei toward the staff entrance", 1, "직원 식당은 저쪽이에요.", "The staff room is that way.", "ms"],
+  ["고급 레스토랑", "fine dining restaurant", "도석이 재이의 흙 묻은 소매를 손끝으로 집어 든다", "Doseok pinches the muddy sleeve of Jaei's jacket", 1, "이런 옷으론 홀에 못 들어와요.", "Dress like that, you can't sit in the hall.", "ots"],
+  ["고급 레스토랑", "fine dining restaurant", "재이가 공급 계약서를 꺼낸다", "Jaei takes out the supply contract", -1, "", "", "cu"],
+  ["고급 레스토랑", "fine dining restaurant", "홀로웨이가 계약서를 들고 도석 앞에 선다", "Ms. Holloway holds the contract before Doseok", 2, "트러플 공급자, 재이 님입니다.", "Our truffle supplier is Jaei.", "low"],
+  ["고급 레스토랑", "fine dining restaurant", "도석이 재이의 의자를 빼 주며 굳는다", "Doseok pulls out Jaei's chair, frozen", 0, "이번 달 트러플은 없습니다.", "No truffles this month.", "rx"],
+  ["레스토랑 입구", "restaurant entrance", "입구에서 여자가 재이에게 손을 든다", "At the entrance, a woman raises a hand to Jaei", -1, "", "", "pi"]
+ ]
+],
+[
+ "조문객을 쫓아낸 유족", "The Family Who Blocked the Mourner",
+ "낡은 재킷을 보고 아는 사람이냐며 쫓아낸 유족. 그는 고인의 동업자이자 유언 집행인이었다.",
+ "A relative blocks a man in a worn jacket at the funeral. He was the deceased's partner and executor.",
+ [
+  ["H", "인호", "Amos", "50대 남성, 낡은 검은 재킷, 짧은 흰머리, 차분한 얼굴", "man in his 50s, worn black jacket, short white hair, calm face"],
+  ["V", "준표", "Hollis", "40대 남성, 검은 정장, 굵은 반지, 험악한 얼굴", "man in his 40s, black suit, thick ring, harsh face"],
+  ["A", "고 변호사", "Ms. Ives", "40대 여성, 검은 정장, 서류 가방, 무표정", "woman in her 40s, black suit, briefcase, blank face"]
+ ],
+ [
+  ["장례식장", "funeral hall", "준표가 인호의 조문을 막아 문가로 밀어낸다", "Junpyo blocks Inho's condolence and pushes him to the door", 1, "아는 분이세요? 여기 유족 자리예요.", "Did you know him? This is for family.", "ms"],
+  ["장례식장", "funeral hall", "준표가 인호의 낡은 재킷 자락을 집어 든다", "Junpyo lifts the hem of Inho's worn jacket", 1, "그 차림으로 조문은 무슨.", "Coming to mourn in that?", "ots"],
+  ["장례식장", "funeral hall", "인호가 봉인된 유언장을 꺼낸다", "Inho takes out a sealed will", -1, "", "", "cu"],
+  ["장례식장", "funeral hall", "고 변호사가 유언장을 펴 들고 준표 앞에 선다", "Ms. Ives opens the will before Junpyo", 2, "유언 집행인, 인호 님입니다.", "The executor is Inho.", "low"],
+  ["장례식장", "funeral hall", "준표가 유언장을 읽고 얼굴이 굳는다", "Junpyo reads the will and his face hardens", 0, "상속분은 유언대로 기부됩니다.", "His share goes to charity, per the will.", "rx"],
+  ["복도 끝", "end of the corridor", "복도 끝에서 여자가 인호를 부른다", "At the end of the corridor, a woman calls to Inho", -1, "", "", "pi"]
+ ]
+],
+[
+ "월세나 알아보라던 중개사", "The Agent Who Assumed I Was Renting",
+ "트레이닝복 차림을 보고 월세나 알아보라던 중개사. 그는 이 건물을 통째로 산 사람이었다.",
+ "An agent hands him rental flyers. He bought the entire building last week.",
+ [
+  ["H", "형탁", "Wes", "30대 남성, 회색 트레이닝복, 모자, 무심한 표정", "man in his 30s, gray tracksuit, cap, indifferent face"],
+  ["V", "두만", "Rudy", "50대 남성, 베이지 재킷, 목에 건 안경, 거만한 얼굴", "man in his 50s, beige jacket, glasses on a cord, smug face"],
+  ["A", "칼더 팀장", "Ms. Calder", "30대 여성, 검은 정장, 태블릿, 단호한 표정", "woman in her 30s, black suit, tablet, firm look"]
+ ],
+ [
+  ["부동산 사무소", "real estate office", "두만이 형탁에게 월세 매물 전단을 밀어 준다", "Duman slides rental flyers toward Hyeongtak", 1, "예산이 얼마신지요?", "What's your budget?", "ms"],
+  ["부동산 사무소", "real estate office", "두만이 형탁의 어깨를 밀어 문 쪽으로 보낸다", "Duman nudges Hyeongtak toward the door", 1, "매매는 다음에 다시 오세요.", "Come back another day for a sale.", "ots"],
+  ["부동산 사무소", "real estate office", "형탁이 매입 계약서를 꺼낸다", "Hyeongtak takes out a purchase contract", -1, "", "", "cu"],
+  ["부동산 사무소", "real estate office", "칼더가 계약서를 들고 두만 앞에 선다", "Ms. Calder holds the contract before Duman", 2, "이 건물 매수자, 형탁 님입니다.", "The buyer of this building is Hyeongtak.", "low"],
+  ["부동산 사무소", "real estate office", "두만이 전단을 거두며 굳는다", "Duman gathers the flyers and freezes", 0, "중개 위임은 오늘로 끝이에요.", "Your listing ends today.", "rx"],
+  ["사무소 유리문", "office glass door", "유리문 밖에서 여자가 형탁에게 손을 흔든다", "Outside the glass door, a woman waves to Hyeongtak", -1, "", "", "pi"]
+ ]
+],
+[
+ "자세부터 고치라던 골프 프로", "The Golf Pro Who Fixed My Swing",
+ "헌 운동복 차림을 보고 자세부터 고치라던 프로. 그녀는 메이저 우승을 여러 번 한 선수였다.",
+ "A pro tells her to fix her swing. She has won majors.",
+ [
+  ["H", "태주", "Gale", "40대 여성, 헌 운동복, 짧은 머리, 단단한 눈빛", "woman in her 40s, worn sports clothes, short hair, steady eyes"],
+  ["V", "성한", "Byron", "40대 남성, 흰 골프 셔츠, 모자, 비웃는 얼굴", "man in his 40s, white golf shirt, cap, sneering face"],
+  ["A", "파르도 매니저", "Ms. Pardo", "30대 여성, 검은 정장, 클립보드, 단호한 표정", "woman in her 30s, black suit, clipboard, firm look"]
+ ],
+ [
+  ["골프 연습장", "driving range", "성한이 태주의 클럽을 빼앗아 가방에 넣는다", "Seonghan grabs Taeju's club and drops it in a bag", 1, "그 자세로는 공도 못 맞혀요.", "That swing won't even meet the ball.", "ms"],
+  ["골프 연습장", "driving range", "성한이 태주를 맨 끝 타석으로 보낸다", "Seonghan points Taeju to the last bay", 1, "거기서 연습하세요.", "Practice over there.", "ots"],
+  ["골프 연습장", "driving range", "태주가 우승 트로피 사진을 꺼낸다", "Taeju takes out a photo of a winner's trophy", -1, "", "", "cu"],
+  ["골프 연습장", "driving range", "파르도가 사진을 들고 성한 앞에 선다", "Ms. Pardo holds the photo before Seonghan", 2, "이분이 작년 우승자, 태주 님입니다.", "Last year's champion is Taeju.", "low"],
+  ["골프 연습장", "driving range", "태주가 클럽을 받아 정확한 스윙을 보여 준다", "Taeju takes the club back and hits a perfect shot", 0, "레슨은 다른 분께 받으세요.", "Get your lessons elsewhere.", "rx"],
+  ["타석 뒤", "behind the bays", "타석 뒤에서 여자가 태주에게 박수를 친다", "Behind the bays, a woman applauds Taeju", -1, "", "", "pi"]
+ ]
+],
+[
+ "회원증부터 달라던 사서", "The Librarian Who Asked for My Card",
+ "청바지 차림을 보고 회원증부터 달라던 사서. 그녀는 이 도서관에 희귀본을 기증한 사람이었다.",
+ "A librarian demands a card from the woman in jeans. She donated the library's rare books.",
+ [
+  ["H", "윤슬", "Edith", "60대 여성, 청바지와 흰 셔츠, 짧은 흰머리, 온화한 눈빛", "woman in her 60s, jeans and white shirt, short white hair, gentle eyes"],
+  ["V", "소현", "Kasey", "20대 후반 여성, 도서관 유니폼, 안경, 새침한 얼굴", "woman in her late 20s, library uniform, glasses, prim face"],
+  ["A", "애쉬비 관장", "Mr. Ashby", "50대 남성, 회색 정장, 나비넥타이, 정중한 태도", "man in his 50s, gray suit, bow tie, courteous manner"]
+ ],
+ [
+  ["도서관", "library", "소현이 윤슬의 열람 신청서를 밀어 돌려준다", "Sohyeon pushes Yunseul's reading request back", 1, "회원증부터 발급받으세요.", "Get a card first.", "ms"],
+  ["도서관", "library", "소현이 윤슬을 출입문 쪽으로 손짓한다", "Sohyeon waves Yunseul toward the exit", 1, "일반 열람은 저쪽이에요.", "General reading is over there.", "ots"],
+  ["도서관", "library", "윤슬이 기증 명판 사진을 꺼낸다", "Yunseul takes out a photo of the donor plaque", -1, "", "", "cu"],
+  ["도서관", "library", "애쉬비가 명판을 들고 소현 앞에 선다", "Mr. Ashby holds the plaque before Sohyeon", 2, "희귀본 기증자, 윤슬 님입니다.", "The rare book donor is Yunseul.", "low"],
+  ["도서관", "library", "소현이 신청서를 두 손으로 고친다", "Sohyeon straightens the request with both hands", 0, "제 책은 제가 열람할게요.", "I'll read my own books.", "rx"],
+  ["서가 사이", "between the shelves", "서가 사이에서 여자가 고개를 든다", "Between the shelves, a woman looks up", -1, "", "", "trk"]
+ ]
+],
+[
+ "우산 들고 나가라던 박물관", "The Museum That Sent Out My Umbrella",
+ "우산을 들고 있다고 쫓아낸 안내원. 그는 이 전시품을 땅에서 처음 꺼낸 사람이었다.",
+ "A guide shoos out a man with an umbrella. He is the one who first dug up the exhibit.",
+ [
+  ["H", "도진", "Abel", "40대 남성, 낡은 우비, 모자, 무심한 눈빛", "man in his 40s, worn raincoat, cap, indifferent eyes"],
+  ["V", "계순", "Darla", "50대 여성, 남색 유니폼, 짧은 머리, 까다로운 얼굴", "woman in her 50s, navy uniform, short hair, fussy face"],
+  ["A", "페리스 학예사", "Mr. Ferris", "40대 남성, 검은 정장, 안경, 단호한 표정", "man in his 40s, black suit, glasses, firm look"]
+ ],
+ [
+  ["박물관", "museum", "계순이 도진의 우산을 빼앗아 우산꽂이에 꽂는다", "Gyesun takes Dojin's umbrella and jams it into the stand", 1, "우산 들고 전시장엔 못 들어와요.", "No umbrellas in the galleries.", "ms"],
+  ["박물관", "museum", "계순이 도진을 안내 데스크 밖으로 밀어낸다", "Gyesun pushes Dojin back behind the front desk", 1, "관람은 다음에 하세요.", "Visit some other day.", "ots"],
+  ["박물관", "museum", "도진이 발굴 보고서를 꺼낸다", "Dojin takes out an excavation report", -1, "", "", "cu"],
+  ["박물관", "museum", "페리스가 보고서를 들고 계순 앞에 선다", "Mr. Ferris holds the report before Gyesun", 2, "이 유물을 발굴한 사람, 도진 님입니다.", "The man who dug up this piece is Dojin.", "low"],
+  ["박물관", "museum", "계순이 우산을 돌려주며 굳는다", "Gyesun hands the umbrella back, frozen", 0, "해설은 제가 직접 하겠습니다.", "I'll give tonight's tour myself.", "rx"],
+  ["전시장 입구", "gallery entrance", "전시장 입구에서 여자가 도진에게 박수를 친다", "At the gallery entrance, a woman applauds Dojin", -1, "", "", "pi"]
+ ]
+],
+[
+ "소액은 ATM으로라던 창구", "The Teller Who Sent Me to the ATM",
+ "작업복 차림을 보고 ATM으로 가라던 창구 직원. 그 손님은 이 지점의 최대 예금주였다.",
+ "A teller sends a man in work clothes to the ATM. He is the branch's largest depositor.",
+ [
+  ["H", "만호", "Gus", "60대 남성, 작업복, 회색 모자, 무표정", "man in his 60s, work clothes, gray cap, blank face"],
+  ["V", "재경", "April", "20대 후반 여성, 은행 유니폼, 높은 포니테일, 새침한 얼굴", "woman in her late 20s, bank uniform, high ponytail, prim face"],
+  ["A", "오즈번 지점장", "Mr. Osborne", "50대 남성, 회색 정장, 안경, 엄격한 표정", "man in his 50s, gray suit, glasses, stern face"]
+ ],
+ [
+  ["은행 지점", "bank branch", "재경이 만호의 번호표를 접어 버린다", "Jaegyeong folds Manho's queue ticket and discards it", 1, "소액은 ATM으로 가세요.", "Small amounts go to the ATM.", "ms"],
+  ["은행 지점", "bank branch", "재경이 만호를 창구 옆 줄로 보낸다", "Jaegyeong sends Manho to the side line", 1, "상담은 예약제예요.", "Consultations are by appointment.", "ots"],
+  ["은행 지점", "bank branch", "만호가 통장을 펼쳐 잔액란을 보여 준다", "Manho opens his passbook and shows the balance line", -1, "", "", "cu"],
+  ["은행 지점", "bank branch", "오즈번이 화면을 보고 재경을 부른다", "Mr. Osborne checks the screen and calls Jaegyeong", 2, "이 지점 최대 예금주, 만호 님입니다.", "Our largest depositor is Manho.", "low"],
+  ["은행 지점", "bank branch", "재경이 번호표를 새로 뽑아 두 손으로 건넨다", "Jaegyeong prints a fresh ticket and offers it with both hands", 0, "창구가 편해서 온 거예요.", "I came because the counter is easier.", "rx"],
+  ["은행 입구", "bank entrance", "은행 입구에서 남자가 만호에게 손을 흔든다", "At the entrance, a man waves to Manho", -1, "", "", "pi"]
+ ]
+],
+[
+ "아메리카노나 마시라던 로스터리", "The Roastery That Poured Me a Basic Cup",
+ "낡은 티를 보고 아메리카노나 마시라던 바리스타. 그녀는 커피 대회의 심사위원이었다.",
+ "A barista pours her a plain americano and smirks at her old tee. She judges the coffee championships.",
+ [
+  ["H", "세린", "Mona", "30대 여성, 낡은 티셔츠, 짧은 머리, 차분한 눈빛", "woman in her 30s, worn T-shirt, short hair, calm eyes"],
+  ["V", "동주", "Ryland", "30대 남성, 앞치마, 수염, 거만한 얼굴", "man in his 30s, apron, beard, smug face"],
+  ["A", "스트라우드 대회장", "Ms. Stroud", "40대 여성, 베이지 재킷, 서류철, 단호한 표정", "woman in her 40s, beige jacket, document folder, firm look"]
+ ],
+ [
+  ["커피 로스터리", "coffee roastery", "동주가 세린의 주문을 아메리카노로 바꿔 적는다", "Dongju changes Serin's order to a plain americano", 1, "이 정도면 충분하죠.", "This should be enough for you.", "ms"],
+  ["커피 로스터리", "coffee roastery", "동주가 세린의 커핑 노트를 밀어 옆에 둔다", "Dongju shoves Serin's cupping notes aside", 1, "커핑은 저희가 해요.", "We do the cupping here.", "ots"],
+  ["커피 로스터리", "coffee roastery", "세린이 커핑 노트와 심사위원 명단을 펼친다", "Serin opens her cupping notes and a judges list", -1, "", "", "cu"],
+  ["커피 로스터리", "coffee roastery", "스트라우드가 명단을 들고 동주 앞에 선다", "Ms. Stroud holds the list before Dongju", 2, "대회 심사위원, 세린 님입니다.", "A championship judge — Serin.", "low"],
+  ["커피 로스터리", "coffee roastery", "세린이 향을 맡고 한 모금 맛본 뒤 고개를 젓는다", "Serin smells the cup, tastes it, and shakes her head", 0, "이 원두는 납품 못 받겠네요.", "I can't take this bean.", "rx"],
+  ["로스터리 문 앞", "roastery door", "문 앞에서 여자가 세린에게 손을 흔든다", "At the door, a woman waves to Serin", -1, "", "", "pi"]
+ ]
+],
+[
+ "명품만 고친다던 시계 매장", "The Boutique That Only Fixes Luxury",
+ "낡은 손목시계를 보고 여긴 명품만 고친다던 직원. 그 손님은 이 브랜드의 시계 장인이었다.",
+ "A clerk sniffs at his old wristwatch. He is the master watchmaker behind the brand on her wall.",
+ [
+  ["H", "정해", "Alvin", "50대 남성, 낡은 손목시계, 회색 니트, 차분한 얼굴", "man in his 50s, old wristwatch, gray knit, calm face"],
+  ["V", "나영", "Celine", "30대 여성, 검은 유니폼, 하이힐, 거만한 얼굴", "woman in her 30s, black uniform, high heels, haughty face"],
+  ["A", "모트 매니저", "Mr. Mott", "40대 남성, 검은 정장, 안경, 정중한 태도", "man in his 40s, black suit, glasses, courteous manner"]
+ ],
+ [
+  ["시계 매장", "watch boutique", "나영이 정해의 낡은 시계를 손끝으로 집어 든다", "Nayoung lifts Jeonghae's old watch by its strap", 1, "여긴 명품만 고쳐요.", "We only service luxury pieces.", "ms"],
+  ["시계 매장", "watch boutique", "나영이 정해의 시계를 카운터에 돌려놓는다", "Nayoung sets the watch back on the counter", 1, "저희가 손댈 수 없네요.", "Nothing we can do with that.", "ots"],
+  ["시계 매장", "watch boutique", "정해가 시계 뒷면 안쪽 각인을 열어 보여 준다", "Jeonghae opens the case back and shows an engraving", -1, "", "", "cu"],
+  ["시계 매장", "watch boutique", "모트가 각인을 확인하고 나영을 부른다", "Mr. Mott checks the engraving and calls Nayoung over", 2, "브랜드 마스터 장인, 정해 님입니다.", "The brand's master watchmaker is Jeonghae.", "low"],
+  ["시계 매장", "watch boutique", "나영이 시계를 두 손으로 받쳐 든다", "Nayoung cups the watch in both hands", 0, "수리는 사양할게요.", "I'll skip the repair.", "rx"],
+  ["매장 밖", "outside the boutique", "매장 밖에서 여자가 정해에게 박수를 친다", "Outside the boutique, a woman applauds Jeonghae", -1, "", "", "pi"]
+ ]
+]
+]

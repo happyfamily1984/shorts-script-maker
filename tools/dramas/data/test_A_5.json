@@ -1,0 +1,172 @@
+[
+[
+ "안전모를 던진 운영 팀장", "The Hard Hat on the Ground",
+ "하역 인부의 안전모를 바닥에 던진 운영 팀장. 그 인부는 항구 터미널 사장이었다.", "An operations lead knocks a hat off a loader's head. The loader owns the terminal.",
+ [
+  ["H", "도경", "Neil", "30대 남성, 형광 조끼, 짧은 머리, 반듯한 인상", "man in his 30s, bright vest, short hair, tidy look"],
+  ["V", "명호", "Mr. Frayne", "50대 남성, 검은 점퍼, 무전기, 험악한 인상", "man in his 50s, black jacket, radio, harsh face"],
+  ["A", "방 사장", "Mr. Craddock", "60대 남성, 하역 작업복, 흰 머리, 주름진 얼굴", "man in his 60s, loading work clothes, white hair, weathered face"]
+ ],
+ [
+  ["항구 터미널", "port terminal", "명호가 방 사장의 안전모를 벗겨 바닥에 던진다", "Mr. Frayne knocks his hard hat to the ground", 1, "하역은 서른 명만 남아.", "Only thirty loaders stay.", "ws"],
+  ["항구 터미널", "port terminal", "명호가 사장의 이름표를 컨테이너에 붙인다", "Mr. Frayne sticks his name tag on a container", 1, "넌 오늘 마지막 순번이야.", "You're last on the list today.", "ms"],
+  ["항구 터미널", "port terminal", "도경이 안전모를 주워 씌워 주고 같은 줄에 선다", "Neil picks up the hat, sets it back, and stands in line with him", 0, "같이 하면 오늘 안에 끝나요.", "Together we finish today.", "cu"],
+  ["항구 터미널", "port terminal", "방 사장이 터미널 운영권 서류를 펼친다", "Mr. Craddock opens the terminal operating license", 2, "이 터미널, 제가 인수했습니다.", "I bought this terminal.", "low"],
+  ["항구 터미널", "port terminal", "명호가 안전모를 도경에게 건넨다", "Mr. Frayne hands his hard hat to Neil", 2, "하역 위탁은 취소. 운영 팀장은 도경 씨예요.", "Your contract is cancelled. Neil runs operations.", "rx"],
+  ["부두 끝", "end of the pier", "부두 끝에서 도경을 부르는 사람이 있다", "Someone at the end of the pier calls Neil", -1, "", "", "pi"]
+ ]
+],
+[
+ "세차권을 찢긴 회장", "The Chairman's Torn Coupon",
+ "세차권을 찢어버린 주유소 지점장. 그 손님은 주유소 체인을 인수한 회장이었다.", "A station manager tears up a wash coupon. The customer just bought the chain.",
+ [
+  ["H", "미소", "Ruth", "20대 후반 여성, 파란 작업복, 묶은 머리, 밝은 미소", "woman in her late 20s, blue work uniform, tied hair, bright smile"],
+  ["V", "철호", "Mr. Quill", "40대 남성, 회색 점퍼, 짧은 머리, 무심한 표정", "man in his 40s, gray jacket, short hair, indifferent face"],
+  ["A", "도 회장", "Mr. Fenwick", "60대 남성, 낡은 트렌치코트, 흰 머리, 조용한 얼굴", "man in his 60s, worn trench coat, white hair, quiet face"]
+ ],
+ [
+  ["주유소", "gas station", "철호가 도 회장의 차 키를 세차장 바닥에 던진다", "Mr. Quill throws his car keys on the wash floor", 1, "이 차는 손으로 닦아요.", "Wash that one by hand.", "cz"],
+  ["주유소", "gas station", "철호가 회장의 세차권을 찢는다", "Mr. Quill tears up his wash coupon", 1, "무료권은 안 통해요.", "That free coupon won't work.", "ms"],
+  ["주유소", "gas station", "미소가 키를 주워 차를 닦고 회장에게 커피를 준다", "Ruth picks up the keys, washes the car, and brings him coffee", 0, "제가 닦을게요. 앉아 계세요.", "I'll wash it. Please sit.", "cu"],
+  ["주유소", "gas station", "도 회장이 주유소 체인 인수 서류를 펼친다", "Mr. Fenwick opens the chain purchase papers", 2, "이 주유소, 오늘부터 제 겁니다.", "As of today, this station is mine.", "low"],
+  ["주유소", "gas station", "철호의 지점장 명패가 카운터에서 내려온다", "Mr. Quill's manager plate comes down off the counter", 2, "지점장은 미소 씨가 맡아요.", "Ruth takes the station.", "rx"],
+  ["주유소 앞", "outside the station", "세차된 차 위에 검은 봉투가 놓여 있다", "A black envelope rests on the washed car", -1, "", "", "pi"]
+ ]
+],
+[
+ "어두운 상영관의 손전등", "The Light in the Dark",
+ "쓰레기 봉투를 좌석에 던진 지점장. 그 정리 알바는 극장 체인 회장이었다.", "A cinema manager drops a trash bag on a seat. The cleaner bought the chain.",
+ [
+  ["H", "지후", "Hale", "20대 후반 남성, 극장 유니폼, 짧은 머리, 순한 얼굴", "man in his late 20s, cinema uniform, short hair, mild face"],
+  ["V", "남철", "Mr. Pettigrew", "50대 남성, 검은 셔츠, 안경, 무뚝뚝한 표정", "man in his 50s, black shirt, glasses, blunt face"],
+  ["A", "엄 회장", "Ms. Dunhill", "60대 여성, 청소 작업복, 짧은 은발, 차분한 눈빛", "woman in her 60s, cleaning uniform, short silver hair, steady eyes"]
+ ],
+ [
+  ["영화관 상영관", "cinema auditorium", "남철이 엄 회장의 쓰레기 봉투를 좌석에 던진다", "Mr. Pettigrew drops her trash bag on a seat", 1, "이거 다 치우고 퇴근해.", "Clear all this before you go.", "ws"],
+  ["영화관 상영관", "cinema auditorium", "남철이 회장의 손전등을 빼앗아 끈다", "Mr. Pettigrew takes her flashlight and switches it off", 1, "어두우면 그냥 더듬어.", "Feel your way in the dark.", "ms"],
+  ["영화관 상영관", "cinema auditorium", "지후가 봉투를 같이 들고 손전등을 다시 켜 준다", "Hale lifts a bag with her and turns the light back on", 0, "같이 치워요. 제 손전등 쓰세요.", "Let's clear it. Use my light.", "cu"],
+  ["영화관 로비", "cinema lobby", "엄 회장이 극장 체인 인수 계약서를 펼친다", "Ms. Dunhill opens the cinema chain purchase contract", 2, "이 극장 체인, 제가 샀습니다.", "I bought this cinema chain.", "low"],
+  ["영화관 로비", "cinema lobby", "남철이 손전등을 지후에게 건넨다", "Mr. Pettigrew hands his flashlight to Hale", 2, "지점 운영은 정지입니다. 지후 씨가 맡아요.", "Your branch is suspended. Hale takes over.", "rx"],
+  ["영화관 앞", "outside the cinema", "극장 앞에서 지후를 부르는 사람이 있다", "Someone outside the cinema calls Hale", -1, "", "", "pi"]
+ ]
+],
+[
+ "팔레트를 발로 찬 진열 팀장", "The Pallet He Kicked",
+ "팔레트를 발로 찬 진열 팀장. 그 야간 알바는 마트 회장이었다.", "An aisle lead kicks a pallet. The night stocker founded the supermarket chain.",
+ [
+  ["H", "예준", "Toby", "20대 후반 남성, 마트 앞치마, 짧은 머리, 밝은 눈", "man in his late 20s, supermarket apron, short hair, bright eyes"],
+  ["V", "광태", "Mr. Toland", "50대 남성, 빨간 조끼, 수염, 험악한 인상", "man in his 50s, red vest, beard, harsh face"],
+  ["A", "안 회장", "Mr. Corbett", "60대 남성, 마트 작업복, 흰 머리, 조용한 얼굴", "man in his 60s, store work clothes, white hair, quiet face"]
+ ],
+ [
+  ["마트 매장", "supermarket aisle", "광태가 안 회장의 팔레트를 발로 찬다", "Mr. Toland kicks the pallet he is pulling", 1, "이거 혼자 다 올려.", "Stack all this alone.", "cz"],
+  ["마트 매장", "supermarket aisle", "광태가 회장의 장갑을 빼앗아 진열대에 올린다", "Mr. Toland snatches his gloves and puts them on a shelf", 1, "신입은 맨손으로 해.", "Rookies work barehanded.", "ms"],
+  ["마트 매장", "supermarket aisle", "예준이 상자를 함께 올리고 새 장갑을 건넨다", "Toby lifts the boxes with him and hands him gloves", 0, "절반은 제가 올릴게요.", "I'll take half the stack.", "ots"],
+  ["마트 매장", "supermarket aisle", "안 회장이 매장 리뉴얼 발주서에 서명한다", "Mr. Corbett signs the store renovation order", 2, "이 마트, 제가 세운 회사입니다.", "I built this supermarket chain.", "low"],
+  ["마트 사무실", "store office", "광태가 창고 열쇠를 예준에게 던진다", "Mr. Toland throws the stockroom keys to Toby", 2, "근무 배정에서 빠집니다. 진열 팀장은 예준 씨예요.", "You're off the roster. Toby leads the aisles.", "rx"],
+  ["마트 주차장", "store parking lot", "예준의 사물함에 낯선 열쇠가 꽂혀 있다", "An unknown key sticks out of Toby's locker", -1, "", "", "pi"]
+ ]
+],
+[
+ "복사실로 보낸 대표", "The Copy Room Pitch",
+ "카피 초안을 찢고 복사실로 보낸 팀장. 그 신입은 광고회사 대표였다.", "A creative lead tears up a copy draft and sends the new hire to copy. She runs the agency.",
+ [
+  ["H", "지원", "Gwen", "20대 후반 여성, 흰 셔츠, 짧은 머리, 총명한 눈", "woman in her late 20s, white shirt, short hair, bright eyes"],
+  ["V", "현우", "Mr. Voss", "40대 남성, 검은 니트, 안경, 오만한 표정", "man in his 40s, black knit, glasses, haughty look"],
+  ["A", "표 대표", "Ms. Kirkland", "50대 여성, 남색 정장, 짧은 은발, 단호한 눈빛", "woman in her 50s, navy suit, short silver hair, firm eyes"]
+ ],
+ [
+  ["광고회사 회의실", "ad agency meeting room", "현우가 표 대표의 카피 초안을 찢는다", "Mr. Voss tears up her copy draft", 1, "신입은 아이디어 내지 마.", "Rookies don't pitch ideas.", "cz"],
+  ["광고회사 회의실", "ad agency meeting room", "현우가 대표를 복사실로 보내며 문을 닫는다", "Mr. Voss sends her to the copy room and shuts the door", 1, "복사나 해 와.", "Go make copies.", "ms"],
+  ["광고회사 회의실", "ad agency meeting room", "지원이 초안을 다시 써서 대표 앞에 놓는다", "Gwen rewrites the draft and sets it before her", 0, "제가 다시 썼어요. 같이 볼까요?", "I rewrote it. Shall we look?", "cu"],
+  ["광고회사 회의실", "ad agency meeting room", "표 대표가 회사 명패를 회의실 쪽으로 돌린다", "Ms. Kirkland turns the agency nameplate toward them", 2, "이 회사 대표, 접니다.", "I run this agency.", "low"],
+  ["광고회사 회의실", "ad agency meeting room", "현우가 회의 자료를 안고 회의실을 나선다", "Mr. Voss gathers his files and leaves the room", 2, "팀장 직무는 정지입니다. 지원 씨가 팀장이에요.", "Your lead role is suspended. Gwen heads creative.", "rx"],
+  ["회사 로비", "agency lobby", "회의실 문이 열리고 낯선 여자가 명함을 내민다", "The door opens and a stranger offers her a card", -1, "", "", "pi"]
+ ]
+],
+[
+ "차 키를 서랍에 넣은 배차 팀장", "The Keys in the Drawer",
+ "새 기사에게서 차 키를 빼앗은 배차 팀장. 그 기사는 택시 회사를 인수한 사장이었다.", "A dispatch lead locks a new driver's keys away. The driver bought the taxi company.",
+ [
+  ["H", "민규", "Wes", "30대 남성, 회색 작업복, 짧은 머리, 반듯한 인상", "man in his 30s, gray work clothes, short hair, tidy look"],
+  ["V", "승철", "Mr. Hedley", "50대 남성, 검은 조끼, 무전기, 무심한 표정", "man in his 50s, black vest, radio, indifferent face"],
+  ["A", "여 사장", "Ms. Odell", "60대 여성, 택시 기사 점퍼, 짧은 은발, 조용한 눈빛", "woman in her 60s, taxi driver jacket, short silver hair, quiet eyes"]
+ ],
+ [
+  ["택시 회사 차고", "taxi garage", "승철이 여 사장의 기사 모자를 벤치에 던진다", "Mr. Hedley throws her driver cap onto a bench", 1, "나이 많은 기사는 밤 배차 안 해.", "Older drivers don't get night shifts.", "cz"],
+  ["택시 회사 차고", "taxi garage", "승철이 차 키를 빼앗아 서랍에 넣는다", "Mr. Hedley takes her keys and locks them in a drawer", 1, "차는 내일이나 받아.", "Come back tomorrow for a car.", "ms"],
+  ["택시 회사 차고", "taxi garage", "민규가 키를 다시 꺼내 주고 차를 점검해 준다", "Wes gets the keys back out and checks the car for her", 0, "제가 점검할게요. 안전이 먼저예요.", "I'll check it. Safety first.", "cu"],
+  ["택시 회사 차고", "taxi garage", "여 사장이 회사 인수 서류와 기사 명부를 편다", "Ms. Odell opens the company purchase papers and driver list", 2, "이 회사, 제가 샀습니다.", "I bought this company.", "low"],
+  ["택시 회사 사무실", "taxi office", "승철이 차 키 꾸러미를 민규에게 건넨다", "Mr. Hedley hands the ring of car keys to Wes", 2, "배차에서 빠집니다. 민규 씨가 배차 담당이에요.", "You're off dispatch. Wes takes the board.", "rx"],
+  ["차고 밖", "outside the garage", "차고 밖에서 민규를 부르는 사람이 있다", "Someone outside the garage calls Wes", -1, "", "", "pi"]
+ ]
+],
+[
+ "셰이커를 떨어뜨린 바 매니저", "The Shaker on the Floor",
+ "셰이커를 바닥에 떨어뜨린 바 매니저. 그 새 바텐더는 이 바를 인수한 오너였다.", "A bar manager knocks a new bartender's shaker down. The bartender just bought the bar.",
+ [
+  ["H", "이레", "Mona", "20대 후반 여성, 검은 조끼, 묶은 머리, 차분한 눈", "woman in her late 20s, black vest, tied hair, calm eyes"],
+  ["V", "경수", "Mr. Ferraro", "40대 남성, 흰 셔츠, 나비넥타이, 거만한 표정", "man in his 40s, white shirt, bow tie, arrogant look"],
+  ["A", "진 오너", "Mr. Bracken", "50대 남성, 회색 재킷, 짧은 머리, 조용한 미소", "man in his 50s, gray jacket, short hair, quiet smile"]
+ ],
+ [
+  ["칵테일 바", "cocktail bar", "경수가 진 오너의 셰이커를 바닥에 떨어뜨린다", "Mr. Ferraro knocks the shaker to the floor", 1, "신입은 얼음만 채워.", "New guys just fill ice.", "cz"],
+  ["칵테일 바", "cocktail bar", "경수가 오너의 앞치마를 벗겨 걸어 둔다", "Mr. Ferraro pulls off his apron and hangs it up", 1, "카운터는 내 자리야.", "This counter is mine.", "ms"],
+  ["칵테일 바", "cocktail bar", "이레가 셰이커를 주워 닦고 오너에게 건넨다", "Mona wipes the shaker and hands it back to him", 0, "제가 옆에서 도울게요.", "I'll work beside you.", "cu"],
+  ["칵테일 바", "cocktail bar", "진 오너가 바 인수 계약서에 서명한 장을 펼친다", "Mr. Bracken opens the bar purchase papers he signed", 2, "이 바, 제가 인수했습니다.", "I bought this bar.", "slo"],
+  ["칵테일 바", "cocktail bar", "경수의 매니저 열쇠가 카운터에 놓인다", "Mr. Ferraro's manager keys land on the counter", 2, "매니저 계약은 끝입니다. 이레 씨가 맡아요.", "Your contract ends here. Mona takes over.", "rx"],
+  ["바 입구", "bar entrance", "바 간판에 이레의 이름이 새로 새겨진다", "Mona's name goes up on the bar's new sign", -1, "", "", "pi"]
+ ]
+],
+[
+ "꽃상자를 찬 경매사", "The Crate in the Aisle",
+ "꽃상자를 발로 찬 경매사. 그 정리 인부는 화훼 경매장 회장이었다.", "An auctioneer kicks a flower crate aside. The handyman built the auction house.",
+ [
+  ["H", "예솔", "Rosa", "20대 후반 여성, 초록 앞치마, 묶은 머리, 밝은 눈", "woman in her late 20s, green apron, tied hair, bright eyes"],
+  ["V", "병철", "Mr. Groat", "50대 남성, 검은 정장, 마이크, 무심한 표정", "man in his 50s, black suit, microphone, indifferent face"],
+  ["A", "한 회장", "Mr. Ambrose", "60대 남성, 작업 앞치마, 흰 머리, 조용한 얼굴", "man in his 60s, work apron, white hair, quiet face"]
+ ],
+ [
+  ["화훼 경매장", "flower auction hall", "병철이 한 회장의 꽃 상자를 발로 밀어 버린다", "Mr. Groat kicks the flower crate aside", 1, "정리 인부는 통로에 서지 마.", "Hands stay out of the aisles.", "cz"],
+  ["화훼 경매장", "flower auction hall", "병철이 회장의 앞치마를 벗겨 바닥에 던진다", "Mr. Groat throws his apron to the floor", 1, "이건 경매사만 입어.", "Only auctioneers wear these.", "trk"],
+  ["화훼 경매장", "flower auction hall", "예솔이 꽃을 다시 상자에 담고 앞치마를 건넨다", "Rosa repacks the flowers and hands the apron back", 0, "제가 같이 담을게요.", "I'll pack with you.", "cu"],
+  ["화훼 경매장", "flower auction hall", "한 회장이 경매장 운영권 서류를 펼친다", "Mr. Ambrose opens the auction house license", 2, "이 경매장, 제가 지었습니다.", "I built this auction house.", "low"],
+  ["화훼 경매장", "flower auction hall", "병철의 경매사 마이크가 꺼진다", "Mr. Groat's auction mic is switched off", 2, "경매 자격은 정지. 보조 경매사는 예솔 씨예요.", "Your license is suspended. Rosa is deputy auctioneer.", "rx"],
+  ["경매장 밖", "outside the auction hall", "경매장 입구에 꽃바구니가 도착하고 카드가 붙어 있다", "A flower basket arrives at the hall with a card", -1, "", "", "pi"]
+ ]
+],
+[
+ "당직 일지를 찢은 행정 실장", "The Night Log",
+ "당직 일지를 찢은 행정 실장. 그 야간 당직은 학교 이사장이었다.", "An office manager tears up the night duty log. The duty guard chairs the school board.",
+ [
+  ["H", "우진", "Henry", "30대 남성, 회색 셔츠, 짧은 머리, 차분한 눈", "man in his 30s, gray shirt, short hair, calm eyes"],
+  ["V", "재숙", "Ms. Pyle", "50대 여성, 검은 정장, 안경, 무뚝뚝한 표정", "woman in her 50s, black suit, glasses, blunt face"],
+  ["A", "천 이사장", "Mr. Radford", "60대 남성, 당직 점퍼, 흰 머리, 조용한 얼굴", "man in his 60s, duty jacket, white hair, quiet face"]
+ ],
+ [
+  ["학교 행정실", "school office", "재숙이 천 이사장의 당직 일지를 찢는다", "Ms. Pyle tears up his night duty log", 1, "당직은 교실에 들어가지 마세요.", "Duty staff stay out of classrooms.", "cz"],
+  ["학교 복도", "school hallway", "재숙이 이사장의 손전등을 압수해 서랍에 넣는다", "Ms. Pyle takes his flashlight and locks it away", 1, "교실 열쇠는 내가 관리해.", "I hold the classroom keys.", "ms"],
+  ["학교 복도", "school hallway", "우진이 열쇠를 빌려 함께 복도를 돈다", "Henry borrows a key and walks the halls with him", 0, "같이 돌아요. 제가 열어 드릴게요.", "Let's walk together. I'll unlock.", "cu"],
+  ["학교 행정실", "school office", "천 이사장이 이사회 명단과 법인 인감을 꺼낸다", "Mr. Radford sets out the board list and the school seal", 2, "이 학교 이사장, 접니다.", "I chair this school's board.", "low"],
+  ["학교 행정실", "school office", "재숙이 열쇠 꾸러미를 우진에게 내민다", "Ms. Pyle holds out her ring of keys to Henry", 2, "행정 실장 직무는 정지입니다. 우진 씨가 맡아요.", "Your post is suspended. Henry takes the office.", "rx"],
+  ["학교 정문", "school gate", "정문에서 우진을 부르는 사람이 있다", "Someone at the school gate calls Henry", -1, "", "", "pi"]
+ ]
+],
+[
+ "보증금 없다던 중개 지점장", "No Deposit, No Appointment",
+ "보증금도 없다며 서류를 버린 중개 지점장. 그 손님은 이 건물의 주인이었다.", "An agent bins a customer's papers over a small deposit. The customer owns the building.",
+ [
+  ["H", "태린", "Vera", "20대 후반 여성, 회색 정장, 단발, 밝은 눈", "woman in her late 20s, gray suit, bob hair, bright eyes"],
+  ["V", "인수", "Mr. Quigley", "40대 남성, 검은 정장, 안경, 고압적 태도", "man in his 40s, black suit, glasses, overbearing"],
+  ["A", "선 회장", "Mr. Fairbanks", "60대 남성, 낡은 코트, 흰 머리, 조용한 얼굴", "man in his 60s, worn coat, white hair, quiet face"]
+ ],
+ [
+  ["부동산 중개소", "real estate office", "인수가 선 회장의 임대 문의를 밀어낸다", "Mr. Quigley pushes his rental inquiry aside", 1, "보증금도 없으신 분이 왜 오세요?", "No deposit? Why come here?", "cz"],
+  ["부동산 중개소", "real estate office", "인수가 회장의 서류를 쓰레기통에 넣는다", "Mr. Quigley drops his papers in the bin", 1, "싼 매물은 없어요.", "We have nothing cheap.", "ms"],
+  ["부동산 중개소", "real estate office", "태린이 서류를 꺼내 펴고 물을 건넨다", "Vera pulls the papers out, smooths them, and brings water", 0, "제가 다시 찾아볼게요.", "Let me look again for you.", "cu"],
+  ["부동산 중개소", "real estate office", "선 회장이 건물 등기와 위탁 계약서를 펼친다", "Mr. Fairbanks opens the building deeds and agency contract", 2, "이 중개소, 제 건물입니다.", "This office is in my building.", "low"],
+  ["부동산 중개소", "real estate office", "인수의 중개 자격증이 액자에서 내려온다", "Mr. Quigley's license comes down off the wall", 2, "중개 자격은 정지입니다. 태린 씨가 지점장이에요.", "Your license is suspended. Vera runs the office.", "rx"],
+  ["중개소 앞", "outside the office", "중개소 창에 새 임대 안내문이 붙는다", "A new rental notice goes up in the office window", -1, "", "", "pi"]
+ ]
+]
+]

@@ -1,0 +1,912 @@
+[
+ [
+  "눈길에 소포를 전한 집배원",
+  "The Mailman in the Snow",
+  "폭설 속 마지막 소포를 노인에게 전한 집배원. 그 노인이 물류 회사 회장이었다.",
+  "A mailman walks the last parcel through heavy snow to an old man. The man owns a logistics firm.",
+  [
+   [
+    "H",
+    "태복",
+    "Ernest",
+    "50대 남성, 우체국 유니폼에 짧은 머리, 눈썹에 눈이 묻은 얼굴",
+    "man in his 50s, postal uniform, short hair, snow on his brows"
+   ],
+   [
+    "V",
+    "만식",
+    "Hobart",
+    "40대 남성, 집배 반장, 우체국 조끼에 안경, 까칠한 얼굴",
+    "man in his 40s, mail foreman, postal vest, glasses, sour face"
+   ],
+   [
+    "A",
+    "유 회장",
+    "Mr. Delaney",
+    "70대 남성, 짙은 코트에 흰 머리, 지팡이, 위엄 있는 얼굴",
+    "man in his 70s, dark coat, white hair, cane, dignified face"
+   ]
+  ],
+  [
+   [
+    "우체국 마당",
+    "post office yard",
+    "만식이 태복의 배달 가방을 발로 밀어 눈밭에 둔다",
+    "Hobart kicks Taebok's mail bag into the snow",
+    1,
+    "눈 오는데 산길을 가?",
+    "You're walking a mountain in this?",
+    "ms"
+   ],
+   [
+    "우체국 마당",
+    "post office yard",
+    "만식이 태복의 배달 목록을 눈 위에 던진다",
+    "Hobart throws Taebok's route list into the snow",
+    1,
+    "산길은 네가 알아서 가. 성과는 0.",
+    "Walk the mountain alone. Zero results.",
+    "cz"
+   ],
+   [
+    "산길",
+    "mountain path",
+    "태복이 눈 위에 앉은 노인에게 소포를 내민다",
+    "Taebok holds the parcel out to the old man in the snow",
+    -1,
+    "",
+    "",
+    "trk"
+   ],
+   [
+    "산길",
+    "mountain path",
+    "노인이 소포를 풀어 회사 명패를 꺼내 든다",
+    "The old man opens the parcel and takes out a company plate",
+    2,
+    "이 물류센터, 내가 세운 거요.",
+    "I built this logistics center.",
+    "pi"
+   ],
+   [
+    "우체국 마당",
+    "post office yard",
+    "태복이 배달차에 오르고 만식이 우체국 계단에 남는다",
+    "Taebok climbs into the mail van as Hobart stays on the steps",
+    0,
+    "이 구역은 내일부터 제가 돕니다.",
+    "I cover this route from tomorrow.",
+    "rx"
+   ],
+   [
+    "산길",
+    "mountain path",
+    "유 회장이 센터 배차표를 태복에게 맡긴다",
+    "Mr. Delaney hands Taebok the center's dispatch board",
+    2,
+    "첫 배차는 태복 씨가 정하게.",
+    "Set the first dispatch yourself.",
+    "cu"
+   ]
+  ]
+ ],
+ [
+  "돈 없던 손님을 태운 대리기사",
+  "The Driver Who Asked for Nothing",
+  "차비가 없다는 손님을 무료로 집까지 태워다 준 대리기사. 그 손님이 은행장이었다.",
+  "A designated driver takes a broke man home for free. The man runs a bank.",
+  [
+   [
+    "H",
+    "덕구",
+    "Bernie",
+    "40대 남성, 검은 조끼에 접이식 자전거, 짧은 머리, 순한 얼굴",
+    "man in his 40s, black vest, folding bike, short hair, kind face"
+   ],
+   [
+    "V",
+    "조세핀",
+    "Josephine",
+    "50대 여성, 대리운전 지사장, 사무실 정장에 뾰족한 안경",
+    "woman in her 50s, driver agency head, office suit, pointed glasses"
+   ],
+   [
+    "A",
+    "차 행장",
+    "Mr. Pemberton",
+    "60대 남성, 짙은 정장에 안경, 흰 머리, 온화한 눈",
+    "man in his 60s, dark suit, glasses, white hair, kind eyes"
+   ]
+  ],
+  [
+   [
+    "주차장",
+    "parking lot",
+    "조세핀이 덕구의 대리운전 표찰을 떼어 바닥에 던진다",
+    "Josephine rips off Bernie's sign and throws it down",
+    1,
+    "공짜로 태워 줬어? 미쳤어?",
+    "Drove him for free? Are you insane?",
+    "cu"
+   ],
+   [
+    "주차장",
+    "parking lot",
+    "조세핀이 덕구의 접이식 자전거를 옆으로 밀친다",
+    "Josephine shoves Bernie's folding bike aside",
+    1,
+    "무료로 태운 손님, 네가 책임져.",
+    "The free ride is your problem.",
+    "ms"
+   ],
+   [
+    "차 안",
+    "inside the car",
+    "덕구가 뒷좌석에 남은 서류 가방을 집어 든다",
+    "Bernie picks up a briefcase left on the back seat",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "은행 로비",
+    "bank lobby",
+    "차 행장이 가방을 받고 덕구에게 악수를 청한다",
+    "Mr. Pemberton takes the case and offers his hand",
+    2,
+    "우리 은행 차량 운영, 덕구 씨가 맡게.",
+    "You'll run our bank's fleet.",
+    "low"
+   ],
+   [
+    "주차장",
+    "parking lot",
+    "덕구가 검은 세단의 문을 열고 조세핀이 주차장에 남는다",
+    "Bernie opens the black sedan as Josephine stays in the lot",
+    0,
+    "이 차는 오늘부터 제가 몹니다.",
+    "I drive this car from today.",
+    "rx"
+   ],
+   [
+    "은행 앞",
+    "bank front",
+    "차 행장이 은행 지점 차량 명단을 덕구에게 건넨다",
+    "Mr. Pemberton hands Bernie the branch vehicle list",
+    2,
+    "은행 차량, 전부 덕구 씨가 부르게.",
+    "Call every bank car yourself.",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "주차를 도와준 관리원",
+  "He Parked the Chairman's Car",
+  "주차를 못 하겠다는 노인 대신 차를 세워 준 관리원. 그 노인이 주차 빌딩 회장이었다.",
+  "A parking attendant parks an old man's car for him. The man owns twelve garages.",
+  [
+   [
+    "H",
+    "달수",
+    "Otis",
+    "50대 남성, 주차 관리원 유니폼에 모자, 주름진 얼굴, 온순한 눈",
+    "man in his 50s, parking attendant uniform, cap, lined face, meek eyes"
+   ],
+   [
+    "V",
+    "경옥",
+    "Muriel",
+    "40대 여성, 주차 빌딩 지배인, 정장에 무전기, 무뚝뚝한 눈",
+    "woman in her 40s, garage manager, suit and radio, blunt eyes"
+   ],
+   [
+    "A",
+    "길 회장",
+    "Mr. Kingsley",
+    "70대 남성, 회색 코트에 흰 머리, 단정한 자세",
+    "man in his 70s, gray coat, white hair, upright bearing"
+   ]
+  ],
+  [
+   [
+    "주차장 입구",
+    "garage entrance",
+    "경옥이 달수의 무전기를 빼앗아 자기 벨트에 건다",
+    "Muriel snatches Dalsu's radio and clips it to her belt",
+    1,
+    "남의 차를 왜 운전해?",
+    "Why are you driving his car?",
+    "cz"
+   ],
+   [
+    "주차장",
+    "garage",
+    "경옥이 달수의 주차 표를 바닥에 던진다",
+    "Muriel throws Dalsu's ticket to the floor",
+    1,
+    "주차 자리 하나 못 지키는 사람.",
+    "You can't even hold one parking spot.",
+    "ms"
+   ],
+   [
+    "주차장",
+    "garage",
+    "달수가 차 키에 달린 작은 명패를 손에 올려 본다",
+    "Dalsu turns a small plate on the car key in his hand",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "주차장",
+    "garage",
+    "길 회장이 명패를 들어 경옥에게 보인다",
+    "Mr. Kingsley holds the plate up to Muriel",
+    2,
+    "이 빌딩 열두 개, 내가 주인이오.",
+    "I own twelve of these garages.",
+    "pi"
+   ],
+   [
+    "주차장",
+    "garage",
+    "달수가 초소 의자에 앉고 경옥이 무전기를 내려놓는다",
+    "Dalsu sits in the booth as Muriel sets her radio down",
+    0,
+    "이 빌딩 주차는 제가 봅니다.",
+    "I run this building's parking.",
+    "low"
+   ],
+   [
+    "주차장",
+    "garage",
+    "길 회장이 옥상 주차장 도면을 달수에게 펼친다",
+    "Mr. Kingsley unrolls a rooftop parking plan for Dalsu",
+    2,
+    "옥상 주차장도 달수 씨가.",
+    "The rooftop lot is yours too.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "마지막 손님의 머리를 빗어 준 날",
+  "The Stylist Who Stayed Late",
+  "문 닫은 뒤 울며 들어온 여자의 머리를 봐 준 미용사. 그 여자가 패션위크 위원장이었다.",
+  "A stylist stays late for a crying stranger. The woman chairs Fashion Week.",
+  [
+   [
+    "H",
+    "유정",
+    "Doreen",
+    "40대 여성, 검은 앞치마에 짧은 단발, 부드러운 눈",
+    "woman in her 40s, black apron, short bob, soft eyes"
+   ],
+   [
+    "V",
+    "재만",
+    "Lorenzo",
+    "50대 남성, 미용실 원장, 검은 셔츠에 금반지, 거만한 눈",
+    "man in his 50s, salon owner, black shirt, gold ring, haughty eyes"
+   ],
+   [
+    "A",
+    "백 위원장",
+    "Ms. Sorensen",
+    "50대 여성, 검은 정장에 은발, 단호한 얼굴",
+    "woman in her 50s, black suit, silver hair, resolute face"
+   ]
+  ],
+  [
+   [
+    "미용실",
+    "hair salon",
+    "재만이 유정의 가위를 트레이째 밀어 옆으로 치운다",
+    "Lorenzo pushes Doreen's scissors away in their tray",
+    1,
+    "마감 후 손님? 미쳤어?",
+    "A walk-in after close? Crazy.",
+    "ms"
+   ],
+   [
+    "미용실",
+    "hair salon",
+    "재만이 유정의 예약 장부를 바닥에 던진다",
+    "Lorenzo throws Doreen's appointment book down",
+    1,
+    "울면서 머리 감겨 주는 게 일이야?",
+    "Crying customers aren't the job.",
+    "ots"
+   ],
+   [
+    "미용실",
+    "hair salon",
+    "유정이 여자 가방에서 떨어진 초대장을 주워 건넨다",
+    "Doreen picks up an invitation that fell and hands it back",
+    -1,
+    "",
+    "",
+    "cz"
+   ],
+   [
+    "미용실",
+    "hair salon",
+    "백 위원장이 초대권을 유정 앞에 놓는다",
+    "Ms. Sorensen sets the pass before Doreen",
+    2,
+    "패션위크 백스테이지 헤어, 유정 씨가 맡아요.",
+    "You'll run Fashion Week's backstage hair.",
+    "slo"
+   ],
+   [
+    "미용실 앞",
+    "salon front",
+    "유정이 새 가게 간판을 걸고 재만이 빈 의자를 본다",
+    "Doreen hangs her new shop sign as Lorenzo stares at an empty chair",
+    0,
+    "제 가게는 다음 주에 엽니다.",
+    "My shop opens next week.",
+    "rx"
+   ],
+   [
+    "미용실",
+    "hair salon",
+    "백 위원장이 모델 스무 명 명단을 유정에게 보인다",
+    "Ms. Sorensen shows Doreen a list of twenty models",
+    2,
+    "모델 스무 명, 유정 씨 팀이 맡게.",
+    "Your team handles all twenty.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "동물원에서 길 잃은 노인",
+  "The Zookeeper Who Found Him",
+  "동물원에서 길을 잃은 노인을 쉬게 해 준 사육사. 그 노인이 동물원 설립자였다.",
+  "A zookeeper seats a lost old man in the staff room. The man founded the zoo.",
+  [
+   [
+    "H",
+    "현태",
+    "Toby",
+    "20대 후반 남성, 사육사 작업복에 짧은 머리, 순하고 성실한 눈",
+    "man in his late 20s, keeper work clothes, short hair, kind earnest eyes"
+   ],
+   [
+    "V",
+    "브렌다",
+    "Brenda",
+    "40대 여성, 동물원 운영팀장, 정장에 사원증, 까칠한 눈",
+    "woman in her 40s, zoo operations head, suit and badge, sour eyes"
+   ],
+   [
+    "A",
+    "홍 이사장",
+    "Mr. Fairweather",
+    "70대 남성, 베이지 재킷에 흰 머리, 인자한 얼굴",
+    "man in his 70s, beige jacket, white hair, kindly face"
+   ]
+  ],
+  [
+   [
+    "동물원 사육장 앞",
+    "zoo enclosure",
+    "브렌다가 현태의 사육 일지를 빼앗아 바닥에 던진다",
+    "Brenda snatches Hyeontae's keeper log and throws it",
+    1,
+    "관람객 챙기라고 뽑았어?",
+    "Were you hired to babysit visitors?",
+    "cz"
+   ],
+   [
+    "동물원 사육장 앞",
+    "zoo enclosure",
+    "브렌다가 현태의 출입 카드를 바닥에 떨어뜨린다",
+    "Brenda drops Hyeontae's access card to the ground",
+    1,
+    "동물은 우리 팀이 본다. 넌 청소나.",
+    "Our team handles animals. You mop.",
+    "cu"
+   ],
+   [
+    "사육사 휴게실",
+    "keeper break room",
+    "현태가 노인에게 물컵과 의자를 내준다",
+    "Hyeontae gives the old man a cup of water and a chair",
+    -1,
+    "",
+    "",
+    "trk"
+   ],
+   [
+    "사육사 휴게실",
+    "keeper break room",
+    "홍 이사장이 현태 사육사복의 휘장을 손으로 만진다",
+    "Mr. Fairweather touches the crest on Hyeontae's uniform",
+    2,
+    "이 동물원, 내가 세운 거라네.",
+    "I founded this zoo.",
+    "pi"
+   ],
+   [
+    "동물원 사육장 앞",
+    "zoo enclosure",
+    "현태가 사육장 문을 열고 새끼 동물들이 밖으로 나온다",
+    "Hyeontae opens the habitat gate and the young animals step out",
+    0,
+    "새 사육장, 내일부터 제가 엽니다.",
+    "I open the new habitat tomorrow.",
+    "cu"
+   ],
+   [
+    "동물원 정문",
+    "zoo gate",
+    "홍 이사장이 신설 구역 표지판 도안을 현태에게 준다",
+    "Mr. Fairweather hands Hyeontae a sign design for the new zone",
+    2,
+    "새 구역 이름, 현태 씨가 짓게.",
+    "Name the new zone yourself.",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "마지막 케이크를 남긴 제과점",
+  "The Last Cake on the Shelf",
+  "예약을 놓친 손님에게 마지막 케이크를 내준 제과점 직원. 그 손님이 웨딩홀 사장이었다.",
+  "A bakery clerk gives the last cake to a customer without a booking. She owns a wedding hall.",
+  [
+   [
+    "H",
+    "은지",
+    "Nell",
+    "20대 여성, 제과점 유니폼에 앞치마, 묶은 머리, 밝은 눈",
+    "woman in her 20s, bakery uniform and apron, tied hair, bright eyes"
+   ],
+   [
+    "V",
+    "봉수",
+    "Gerald",
+    "50대 남성, 제과점 점주, 흰 셔츠에 팔짱, 까칠한 얼굴",
+    "man in his 50s, bakery owner, white shirt, arms crossed, sour face"
+   ],
+   [
+    "A",
+    "정 여사",
+    "Mrs. Hollis",
+    "50대 여성, 웨딩홀 사장, 보랏빛 정장에 짧은 단발",
+    "woman in her 50s, wedding hall owner, violet suit, short bob"
+   ]
+  ],
+  [
+   [
+    "제과점 카운터",
+    "bakery counter",
+    "봉수가 은지의 계산대 앞 명단을 집어 찢는다",
+    "Gerald tears the list from Eunji's counter",
+    1,
+    "예약도 없는 손님한테 왜 팔아?",
+    "Why sell to someone without a booking?",
+    "ms"
+   ],
+   [
+    "제과점 카운터",
+    "bakery counter",
+    "봉수가 은지의 앞치마를 벗겨 카운터에 던진다",
+    "Gerald pulls off Eunji's apron and throws it down",
+    1,
+    "케이크 한 판에 홀 예약을 걸어?",
+    "One cake decides a hall booking?",
+    "cz"
+   ],
+   [
+    "제과점 카운터",
+    "bakery counter",
+    "은지가 케이크 상자 위의 예약 카드를 집어 든다",
+    "Eunji picks up a booking card on the cake box",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "웨딩홀 로비",
+    "wedding hall lobby",
+    "정 여사가 케이크를 받아 들고 은지를 부른다",
+    "Mrs. Hollis takes the cake and calls Eunji over",
+    2,
+    "우리 웨딩홀 케이크, 은지 씨가 맡아요.",
+    "You'll supply our wedding cakes.",
+    "low"
+   ],
+   [
+    "웨딩홀 로비",
+    "wedding hall lobby",
+    "은지가 케이크를 주방에 내려놓고 봉수가 로비에 남는다",
+    "Eunji sets the cake in the kitchen as Gerald stays in the lobby",
+    0,
+    "이 홀 케이크, 내일부터 제가 굽습니다.",
+    "I bake this hall's cakes now.",
+    "rx"
+   ],
+   [
+    "웨딩홀 로비",
+    "wedding hall lobby",
+    "정 여사가 다음 달 결혼식 명단을 은지에게 건넨다",
+    "Mrs. Hollis hands Eunji next month's wedding list",
+    2,
+    "결혼식 열두 건, 은지 씨 케이크로.",
+    "Twelve weddings. Your cakes.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "사십 년 된 책을 찾아 준 사서",
+  "The Book She Found After Forty Years",
+  "폐가 서고에서 사십 년 된 책을 찾아 준 사서. 그 책의 저자가 출판재단 이사장이었다.",
+  "A librarian finds a forty-year-old book in a closed stack. Its author chairs a publishing fund.",
+  [
+   [
+    "H",
+    "태호",
+    "Gordon",
+    "40대 남성, 셔츠에 조끼, 안경, 단정하고 차분한 눈",
+    "man in his 40s, shirt and vest, glasses, neat calm eyes"
+   ],
+   [
+    "V",
+    "혜란",
+    "Corinne",
+    "50대 여성, 도서관 팀장, 회색 정장에 짧은 단발, 무뚝뚝한 눈",
+    "woman in her 50s, library team head, gray suit, short bob, blunt eyes"
+   ],
+   [
+    "A",
+    "민 이사장",
+    "Mr. Carver",
+    "70대 남성, 트위드 재킷에 흰 머리, 지팡이, 온화한 얼굴",
+    "man in his 70s, tweed jacket, white hair, cane, gentle face"
+   ]
+  ],
+  [
+   [
+    "도서관 창구",
+    "library desk",
+    "혜란이 태호의 열람 신청서를 집어 바닥에 던진다",
+    "Corinne throws Taeho's request form to the floor",
+    1,
+    "폐가 서고를 뒤져? 미쳤어?",
+    "Digging in a closed stack? Crazy.",
+    "cz"
+   ],
+   [
+    "도서관 서가",
+    "library stacks",
+    "혜란이 태호의 장갑을 서가 위에 던져 놓는다",
+    "Corinne tosses Taeho's gloves onto a shelf",
+    1,
+    "이번 달로 근무 끝이야.",
+    "Your post ends this month.",
+    "ms"
+   ],
+   [
+    "도서관 서고",
+    "closed stack",
+    "태호가 먼지 쌓인 책 안쪽의 서명을 손끝으로 짚는다",
+    "Taeho traces a signature inside a dusty book",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "도서관 홀",
+    "library hall",
+    "민 이사장이 책을 받아 들고 태호 앞에 선다",
+    "Mr. Carver takes the book and stands before Taeho",
+    2,
+    "내 첫 책을 찾아 준 사람이 태호 씨군.",
+    "You found my first book, Mr. Gordon.",
+    "pi"
+   ],
+   [
+    "도서관 홀",
+    "library hall",
+    "태호가 분관 열쇠로 문을 열고 혜란이 서가에 남는다",
+    "Taeho unlocks the branch door as Corinne stays by the shelves",
+    0,
+    "분관 문은 제가 엽니다.",
+    "I open the branch.",
+    "cu"
+   ],
+   [
+    "도서관 홀",
+    "library hall",
+    "민 이사장이 분관 개관 날짜를 태호에게 묻는다",
+    "Mr. Carver asks Taeho for the branch opening date",
+    2,
+    "개관 날짜, 태호 씨가 정하게.",
+    "Set the opening date yourself.",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "그늘에 앉힌 노인을 찾아 준 안내원",
+  "The Usher Who Found His Family",
+  "어지러운 노인을 그늘에 앉히고 가족을 찾아 준 놀이공원 안내원. 그 노인이 공원 회장이었다.",
+  "A park usher seats a dizzy old man in the shade and finds his family. The man owns the park.",
+  [
+   [
+    "H",
+    "수빈",
+    "Penny",
+    "20대 여성, 놀이공원 유니폼에 묶은 머리, 밝고 다정한 눈",
+    "woman in her 20s, theme park uniform, tied hair, bright kind eyes"
+   ],
+   [
+    "V",
+    "광일",
+    "Buck",
+    "40대 남성, 운영팀장, 놀이공원 조끼에 무전기, 무뚝뚝한 눈",
+    "man in his 40s, operations head, park vest and radio, blunt eyes"
+   ],
+   [
+    "A",
+    "노 회장",
+    "Mrs. Ashworth",
+    "70대 여성, 베이지 코트에 흰 머리, 온화한 얼굴",
+    "woman in her 70s, beige coat, white hair, gentle face"
+   ]
+  ],
+  [
+   [
+    "놀이공원 광장",
+    "park plaza",
+    "광일이 수빈의 안내판을 빼앗아 바닥에 세워 둔다",
+    "Buck takes Su-bin's sign and sets it on the ground",
+    1,
+    "안내원이 손님 붙잡고 앉아 있어?",
+    "Ushers sitting with visitors now?",
+    "cz"
+   ],
+   [
+    "놀이공원 광장",
+    "park plaza",
+    "광일이 수빈의 무전기를 벤치에 던진다",
+    "Buck throws Su-bin's radio onto the bench",
+    1,
+    "그늘에서 쉬게 할 시간에 일해.",
+    "Work instead of babysitting.",
+    "ms"
+   ],
+   [
+    "놀이공원 그늘",
+    "park shade",
+    "수빈이 노인 손에 부채를 쥐여 주고 옆에 앉는다",
+    "Su-bin puts a fan in the old man's hand and sits beside him",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "놀이공원 정문",
+    "park gate",
+    "노 회장이 회원증을 꺼내 수빈에게 보인다",
+    "Mrs. Ashworth takes out a membership card and shows Su-bin",
+    2,
+    "이 공원, 내가 세운 거예요.",
+    "I built this park.",
+    "low"
+   ],
+   [
+    "놀이공원 광장",
+    "park plaza",
+    "수빈이 무전기를 차고 광장을 걸어가고 광일이 벤치에 앉는다",
+    "Su-bin clips on a radio and walks the plaza as Buck sits",
+    0,
+    "내일부터 이 광장은 제가 봅니다.",
+    "I run this plaza from tomorrow.",
+    "cu"
+   ],
+   [
+    "놀이공원 정문",
+    "park gate",
+    "노 회장이 새 구역 지도에 이름표를 붙인다",
+    "Mrs. Ashworth pins a name card on the new zone map",
+    2,
+    "새 구역 이름, 수빈 씨가 붙이게.",
+    "Name the new zone.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "잠든 노인을 깨우지 않은 영화관",
+  "The Film He Let Finish",
+  "상영관에서 잠든 노인을 깨우지 않고 기다린 영화관 직원. 그 노인이 영화제 집행위원장이었다.",
+  "A cinema usher lets a sleeping old man finish his nap. The man chairs a film festival.",
+  [
+   [
+    "H",
+    "찬영",
+    "Spencer",
+    "20대 남성, 영화관 유니폼에 짧은 머리, 순하고 차분한 눈",
+    "man in his 20s, cinema uniform, short hair, kind calm eyes"
+   ],
+   [
+    "V",
+    "정임",
+    "Verna",
+    "40대 여성, 영화관 지점장, 정장에 사원증, 날카로운 눈",
+    "woman in her 40s, cinema manager, suit and badge, sharp eyes"
+   ],
+   [
+    "A",
+    "백 집행위원장",
+    "Mr. Lang",
+    "60대 남성, 짙은 코트에 안경, 흰 머리, 품위 있는 얼굴",
+    "man in his 60s, dark coat, glasses, white hair, elegant face"
+   ]
+  ],
+  [
+   [
+    "영화관 로비",
+    "cinema lobby",
+    "정임이 찬영의 정리 수첩을 빼앗아 바닥에 던진다",
+    "Verna snatches Chanyeong's cleanup log and throws it",
+    1,
+    "손님 재우고 앉아 있었어?",
+    "You let a customer sleep?",
+    "ms"
+   ],
+   [
+    "영화관 로비",
+    "cinema lobby",
+    "정임이 찬영의 이름표를 카운터에 내려놓는다",
+    "Verna sets Chanyeong's name tag on the counter",
+    1,
+    "정리 수첩, 이제 안 봐도 돼.",
+    "You won't need that log anymore.",
+    "cz"
+   ],
+   [
+    "상영관",
+    "theater auditorium",
+    "찬영이 잠든 노인 옆자리에 조용히 앉아 기다린다",
+    "Chanyeong quietly sits beside the sleeping old man",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "영화관 로비",
+    "cinema lobby",
+    "백 집행위원장이 초청 패스를 찬영에게 건넨다",
+    "Mr. Lang hands Chanyeong a festival pass",
+    2,
+    "영화제 극장 운영, 찬영 씨가 맡게.",
+    "You'll run the festival theater.",
+    "ws"
+   ],
+   [
+    "영화관 로비",
+    "cinema lobby",
+    "찬영이 상영표를 바꿔 걸고 정임이 로비를 나간다",
+    "Chanyeong swaps the schedule board as Verna leaves the lobby",
+    0,
+    "이 상영관, 제가 끝까지 엽니다.",
+    "I keep this theater open.",
+    "rx"
+   ],
+   [
+    "영화관 앞",
+    "cinema front",
+    "백 집행위원장이 개막작 후보 목록을 찬영에게 준다",
+    "Mr. Lang hands Chanyeong the opening film candidates",
+    2,
+    "개막작은 찬영 씨가 고르게.",
+    "Choose the opening film.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "라켓을 잡아 준 테니스 코치",
+  "The Coach Who Tossed Him a Ball",
+  "공을 주우러 온 노인과 라켓을 잡아 준 테니스 코치. 그 노인이 클럽 회장이었다.",
+  "A tennis coach rallies with an old man who came to fetch a ball. The man chairs the club.",
+  [
+   [
+    "H",
+    "건태",
+    "Rusty",
+    "30대 남성, 테니스 셔츠에 짧은 머리, 그을린 얼굴, 밝은 눈",
+    "man in his 30s, tennis shirt, short hair, tanned face, bright eyes"
+   ],
+   [
+    "V",
+    "선주",
+    "Clarissa",
+    "40대 여성, 클럽 매니저, 흰 정장에 짧은 단발, 까칠한 눈",
+    "woman in her 40s, club manager, white suit, short bob, sour eyes"
+   ],
+   [
+    "A",
+    "차 회장",
+    "Mr. Bingham",
+    "70대 남성, 테니스 니트에 흰 머리, 온화한 얼굴",
+    "man in his 70s, tennis knit, white hair, gentle face"
+   ]
+  ],
+  [
+   [
+    "테니스 코트",
+    "tennis court",
+    "선주가 건태의 라켓 가방을 발로 밀어 옆으로 치운다",
+    "Clarissa kicks Guntae's racket bag aside",
+    1,
+    "노인네랑 공 치는 게 일이야?",
+    "Rallying with old men is your job?",
+    "cz"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "선주가 건태의 레슨 표를 바닥에 던진다",
+    "Clarissa throws Guntae's lesson sheet down",
+    1,
+    "이번 달 레슨, 없다.",
+    "No lessons for you this month.",
+    "ots"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "건태가 노인의 낡은 라켓 그립을 새것으로 감아 준다",
+    "Guntae rewraps the old man's worn racket grip",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "차 회장이 회원증을 꺼내 건태에게 보인다",
+    "Mr. Bingham takes out a membership card",
+    2,
+    "이 클럽, 내가 만든 거요.",
+    "I built this club.",
+    "slo"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "건태가 라켓을 들고 코트에 서고 선주가 관중석에 앉는다",
+    "Guntae takes the court with a racket as Clarissa sits",
+    0,
+    "이 코트, 내일부터 제가 가르칩니다.",
+    "I teach on this court now.",
+    "cu"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "차 회장이 클럽 대회 대진표를 건태에게 보인다",
+    "Mr. Bingham shows Guntae the club tournament draw",
+    2,
+    "결승 심판, 건태 씨가 맡게.",
+    "Referee the final yourself.",
+    "trk"
+   ]
+  ]
+ ]
+]

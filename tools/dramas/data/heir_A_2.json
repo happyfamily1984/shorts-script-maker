@@ -1,0 +1,912 @@
+[
+ [
+  "리프트를 세운 정비공",
+  "The Lift Operator They Fired",
+  "리조트 갈라에서 삽을 들고 쫓겨난 정비공. 1번 리프트는 그의 이름이었다.",
+  "Thrown out of a resort gala with his shovel, the mechanic learns lift one is in his name.",
+  [
+   [
+    "H",
+    "태경",
+    "Owen",
+    "30대 남성, 주황 방한복과 털모자, 짧은 수염, 조용한 눈",
+    "man in his 30s, orange winter jacket and fur hat, short beard, quiet eyes"
+   ],
+   [
+    "V",
+    "혜원",
+    "Nadine",
+    "40대 여성, 검은 드레스와 다이아 귀걸이, 올림머리, 얕은 미소",
+    "woman in her 40s, black dress and diamond earrings, updo, thin smile"
+   ],
+   [
+    "A",
+    "강 비서",
+    "Mr. Petrie",
+    "50대 남성, 짙은 회색 정장, 은발, 서류 봉투를 든 손",
+    "man in his 50s, dark gray suit, silver hair, holding a document envelope"
+   ]
+  ],
+  [
+   [
+    "리조트 로비",
+    "resort lobby",
+    "혜원이 샴페인 잔을 태경의 작업복에 기울여 붓는다",
+    "Nadine tips a champagne glass down his work jacket",
+    1,
+    "눈 삽 들고 들어온 사람이 어디 있어.",
+    "Who let the snow shoveler in here?",
+    "cz"
+   ],
+   [
+    "리조트 로비",
+    "resort lobby",
+    "혜원이 태경의 삽을 문밖 눈 속에 던지고 문을 닫는다",
+    "Nadine throws his shovel into the snow and shuts the door",
+    1,
+    "이 문 안은 손님만 들어와.",
+    "Only guests come through this door.",
+    "ms"
+   ],
+   [
+    "리조트 로비",
+    "resort lobby",
+    "태경이 손목의 리프트 열쇠를 풀어 손바닥에 올린다",
+    "Owen unclips the lift key from his wrist and holds it out",
+    0,
+    "1번 리프트, 아직 제 열쇠예요.",
+    "Lift one still takes my key.",
+    "cu"
+   ],
+   [
+    "리조트 로비",
+    "resort lobby",
+    "강 비서가 연단 마이크를 잡고 태경을 부른다",
+    "Mr. Petrie takes the stage mic and calls Owen forward",
+    2,
+    "회장님 유언대로 리조트는 태경 씨 것입니다.",
+    "By the will, the resort is Mr. Owen's.",
+    "low"
+   ],
+   [
+    "리조트 로비",
+    "resort lobby",
+    "혜원이 잔을 내려놓고 젖은 소매를 감춘다",
+    "Nadine sets her glass down and hides her wet sleeve",
+    0,
+    "이제 눈 치우는 사람은 당신이군요.",
+    "Looks like you'll be shoveling the snow now.",
+    "cu"
+   ],
+   [
+    "리조트 로비",
+    "resort lobby",
+    "1번 리프트가 저절로 움직이며 문이 열린다",
+    "Lift one starts moving on its own and the doors part",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "라운지 커피잔의 이니셜",
+  "The Initials on the Cup",
+  "공항 라운지 바리스타가 회원에게 쫓겨난다. 잔 밑엔 그녀의 이니셜이 있었다.",
+  "A lounge barista is thrown out by a member. Her initials are engraved under the cup.",
+  [
+   [
+    "H",
+    "미지",
+    "Piper",
+    "20대 후반 여성, 검은 앞치마와 흰 셔츠, 묶은 갈색 머리, 맑은 눈",
+    "woman in her late 20s, black apron and white shirt, tied brown hair, clear eyes"
+   ],
+   [
+    "V",
+    "정은",
+    "Sasha",
+    "40대 여성, 베이지 트렌치와 금목걸이, 긴 생머리, 찬 눈매",
+    "woman in her 40s, beige trench coat and gold necklace, long straight hair, cold eyes"
+   ],
+   [
+    "A",
+    "노 지배인",
+    "Mr. Grimes",
+    "50대 남성, 검은 정장과 나비넥타이, 은발, 곧은 자세",
+    "man in his 50s, black suit and bow tie, silver hair, upright posture"
+   ]
+  ],
+  [
+   [
+    "공항 라운지",
+    "airport lounge",
+    "정은이 미지의 이름표를 손끝으로 튕긴다",
+    "Sasha flicks the name tag on Piper's chest",
+    1,
+    "라운지에 커피 심부름꾼을 들였어?",
+    "They hired a coffee runner for the lounge?",
+    "cz"
+   ],
+   [
+    "공항 라운지",
+    "airport lounge",
+    "정은이 미지의 트레이를 안내데스크에 올려놓고 손님들에게 손짓한다",
+    "Sasha plants the tray on the desk and waves at the members",
+    1,
+    "이 사람 오늘부터 출입 금지예요.",
+    "This one is barred from today.",
+    "ms"
+   ],
+   [
+    "공항 라운지",
+    "airport lounge",
+    "미지가 잔을 들어 밑면의 각인을 조명에 비춘다",
+    "Piper lifts the cup and holds the engraving to the light",
+    0,
+    "잔 밑에 새겨진 글자, 제 이니셜이에요.",
+    "The letters under this cup are my initials.",
+    "cu"
+   ],
+   [
+    "공항 라운지",
+    "airport lounge",
+    "노 지배인이 정은의 회원 카드를 집어 가위로 자른다",
+    "Mr. Grimes picks up Sasha's member card and cuts it in half",
+    2,
+    "회원 자격 회수입니다. 이 라운지는 미지 씨 것.",
+    "Your membership is revoked. This lounge is Ms. Piper's.",
+    "low"
+   ],
+   [
+    "공항 라운지",
+    "airport lounge",
+    "정은이 잘린 카드 조각을 집어 주머니에 넣는다",
+    "Sasha picks up the cut card pieces and pockets them",
+    0,
+    "회원권은 반납하시죠. 문 앞에서.",
+    "Leave your membership at the door.",
+    "cu"
+   ],
+   [
+    "공항 라운지",
+    "airport lounge",
+    "유리문에 새 명패가 걸리고 그 앞에 검은 리무진이 선다",
+    "A new nameplate goes up on the glass as a black car pulls in",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "수술복을 든 세탁 직원",
+  "The Laundry Girl in the VIP Ward",
+  "병원 세탁실 직원이 VIP 병동에서 쫓겨난다. 신생아 손도장이 그녀를 불렀다.",
+  "A hospital laundry worker is kicked out of the VIP ward, until a newborn handprint speaks.",
+  [
+   [
+    "H",
+    "하늘",
+    "Wren",
+    "20대 후반 여성, 하늘색 세탁 유니폼, 짧은 단발, 피곤하지만 또렷한 눈",
+    "woman in her late 20s, sky-blue laundry uniform, short bob, tired but sharp eyes"
+   ],
+   [
+    "V",
+    "세라",
+    "Corinne",
+    "30대 여성, 흰 원무 유니폼과 명찰, 높게 묶은 머리, 얇은 입술",
+    "woman in her 30s, white admin uniform and badge, high ponytail, thin lips"
+   ],
+   [
+    "A",
+    "구 과장",
+    "Mr. Ferris",
+    "40대 남성, 회색 정장과 안경, 서류철을 낀 손",
+    "man in his 40s, gray suit and glasses, holding a file folder"
+   ]
+  ],
+  [
+   [
+    "병원 복도",
+    "hospital corridor",
+    "세라가 하늘의 세탁 카트에서 수술복을 뽑아 바닥에 떨어뜨린다",
+    "Corinne pulls surgical gowns off the cart and drops them",
+    1,
+    "이 층 수술복은 네가 만질 게 아니야.",
+    "These gowns aren't yours to touch.",
+    "cz"
+   ],
+   [
+    "병원 복도",
+    "hospital corridor",
+    "세라가 하늘의 출입 카드를 꺾어 카트 위에 던진다",
+    "Corinne bends Wren's access card and throws it on the cart",
+    1,
+    "오늘부로 이 층 출입 정지야.",
+    "You're off this floor as of today.",
+    "ms"
+   ],
+   [
+    "병원 복도",
+    "hospital corridor",
+    "하늘이 카드 대신 품의 종이를 펴 손도장을 보인다",
+    "Wren unfolds a paper from her pocket and shows a handprint",
+    0,
+    "이 손도장, 이 병원 신생아 기록이에요.",
+    "This handprint is from this hospital's nursery.",
+    "cu"
+   ],
+   [
+    "병원 복도",
+    "hospital corridor",
+    "구 과장이 원무과 장부를 들고 복도로 나온다",
+    "Mr. Ferris walks out with the records office ledger",
+    2,
+    "출생 기록 원본입니다. 하늘 씨가 회장님 딸이에요.",
+    "The original birth record. Ms. Wren is his daughter.",
+    "low"
+   ],
+   [
+    "병원 복도",
+    "hospital corridor",
+    "세라가 벽의 병동 안내판을 붙잡는다",
+    "Corinne grabs the ward directory on the wall",
+    0,
+    "이 병원에서 태어난 사람은 저예요.",
+    "I'm the one born in this hospital.",
+    "cu"
+   ],
+   [
+    "병원 복도",
+    "hospital corridor",
+    "병동 유리문 너머로 은발의 여성이 서서 하늘을 본다",
+    "Beyond the ward glass, a silver-haired woman watches Wren",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "낙관을 아는 경비원",
+  "The Guard Who Knew the Seal",
+  "전시 오픈식에서 쫓겨난 경비원. 주머니의 낙관이 회장의 친필이었다.",
+  "A gallery guard is thrown out of the opening, and the seal in his pocket is the chairman's.",
+  [
+   [
+    "H",
+    "종수",
+    "Walter",
+    "50대 남성, 남색 경비 제복과 모자, 흰 머리, 깊은 주름",
+    "man in his 50s, navy guard uniform and cap, white hair, deep lines"
+   ],
+   [
+    "V",
+    "아름",
+    "Stella",
+    "30대 여성, 검은 원피스와 금테 안경, 짧은 컬, 날카로운 눈",
+    "woman in her 30s, black dress and gold glasses, short curls, sharp eyes"
+   ],
+   [
+    "A",
+    "서 관장",
+    "Ms. Hewitt",
+    "60대 여성, 회색 투피스와 진주 귀걸이, 단정한 은발",
+    "woman in her 60s, gray two-piece suit and pearl earrings, neat silver hair"
+   ]
+  ],
+  [
+   [
+    "미술관 로비",
+    "gallery lobby",
+    "아름이 종수의 제복 모자를 벗겨 조각상 머리에 얹는다",
+    "Stella pulls off his guard cap and sets it on a statue's head",
+    1,
+    "경비가 감정을 논해?",
+    "A guard with a view on appraisals?",
+    "cz"
+   ],
+   [
+    "미술관 로비",
+    "gallery lobby",
+    "아름이 종수의 손전등을 꺼 어깨를 밀어 문가로 몬다",
+    "Stella switches off his flashlight and steers him to the door",
+    1,
+    "오늘 전시는 네가 없어도 돌아가.",
+    "Tonight's show runs fine without you.",
+    "ms"
+   ],
+   [
+    "미술관 로비",
+    "gallery lobby",
+    "종수가 주머니의 낙관을 꺼내 손바닥에 굴린다",
+    "Walter rolls a small stone seal around his palm",
+    0,
+    "이 돌, 회장님이 직접 새긴 거예요.",
+    "The chairman carved this stone himself.",
+    "cu"
+   ],
+   [
+    "미술관 로비",
+    "gallery lobby",
+    "서 관장이 감정 장갑을 끼고 낙관을 조명 아래 세운다",
+    "Ms. Hewitt pulls on white gloves and holds the seal to the light",
+    2,
+    "이 낙관의 주인은 종수 씨. 회장의 아들입니다.",
+    "This seal belongs to Walter, the chairman's son.",
+    "low"
+   ],
+   [
+    "미술관 로비",
+    "gallery lobby",
+    "아름이 도록을 내려놓고 두 손으로 모자를 고쳐 쓴다",
+    "Stella sets the catalog down and fixes her cap",
+    0,
+    "제 낙관, 이제 출입증이 됐네요.",
+    "My seal just became my badge.",
+    "cu"
+   ],
+   [
+    "미술관 로비",
+    "gallery lobby",
+    "비상등이 켜지고 벽 한 점이 빈 채로 빛난다",
+    "The emergency lights come on over one empty space on the wall",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "시승차를 닦던 견습생",
+  "The Intern Who Washed the Show Car",
+  "전시장에서 쫓겨난 정비 견습생. 시승차 등록증에 그의 이름이 있었다.",
+  "A trainee mechanic is thrown out of a showroom with his name on the show car's papers.",
+  [
+   [
+    "H",
+    "민규",
+    "Dustin",
+    "20대 초반 남성, 회색 작업복과 장갑, 짧은 머리, 반듯한 얼굴",
+    "man in his early 20s, gray work coveralls and gloves, short hair, clean face"
+   ],
+   [
+    "V",
+    "상혁",
+    "Brandon",
+    "40대 남성, 검은 정장과 회사 명찰, 짧은 머리, 비뚠 입가",
+    "man in his 40s, black suit and company badge, short hair, twisted mouth"
+   ],
+   [
+    "A",
+    "윤 변호사",
+    "Ms. Whitlock",
+    "30대 여성, 짙은 남색 정장, 안경, 서류 가방",
+    "woman in her 30s, dark navy suit, glasses, document case"
+   ]
+  ],
+  [
+   [
+    "자동차 전시장",
+    "car showroom",
+    "상혁이 민규의 걸레를 차 지붕에 올리고 손님들을 돌아본다",
+    "Brandon sets the rag on the car roof and looks at the guests",
+    1,
+    "견습이 쇼카를 닦으면 팔리나?",
+    "Does a trainee's rag sell this car?",
+    "cz"
+   ],
+   [
+    "자동차 전시장",
+    "car showroom",
+    "상혁이 민규의 견습증을 접어 주머니에 넣고 출입문을 가리킨다",
+    "Brandon folds the trainee pass into his pocket and points out",
+    1,
+    "짐 싸. 오늘로 끝이야.",
+    "Pack up. You're done today.",
+    "ms"
+   ],
+   [
+    "자동차 전시장",
+    "car showroom",
+    "민규가 조수석 서랍에서 등록증을 꺼내 유리창에 비춘다",
+    "Dustin takes the registration from the glovebox and holds it to the window",
+    0,
+    "이 차 주인, 제 이름이에요.",
+    "The owner on this car is me.",
+    "cu"
+   ],
+   [
+    "자동차 전시장",
+    "car showroom",
+    "윤 변호사가 전시장 조명을 켜고 서류를 손님들 쪽으로 돌린다",
+    "Ms. Whitlock raises the showroom lights and turns the papers to the guests",
+    2,
+    "회장님이 생전에 이 차를 민규 씨께 등록했습니다.",
+    "The chairman registered this car to Mr. Dustin.",
+    "low"
+   ],
+   [
+    "자동차 전시장",
+    "car showroom",
+    "상혁이 카운터의 명패를 뒤집는다",
+    "Brandon turns the counter nameplate face down",
+    0,
+    "시승은 손님이 아니라 주인이 하죠.",
+    "Test drives are for owners, not guests.",
+    "cu"
+   ],
+   [
+    "자동차 전시장",
+    "car showroom",
+    "셔터가 내려가고 무대 위 새 차에 스포트라이트가 켜진다",
+    "The shutters drop and a spotlight hits the new car on stage",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "하객석에서 쫓겨난 음향기사",
+  "The Sound Guy in the Wrong Seat",
+  "예식장에서 쫓겨난 음향기사. 회장이 남긴 사진 속 두 어머니가 그를 가리켰다.",
+  "A wedding sound tech is sent out, until a photo shows two mothers side by side.",
+  [
+   [
+    "H",
+    "도윤",
+    "Felix",
+    "30대 남성, 검은 후드와 헤드폰, 짧은 머리, 차분한 눈",
+    "man in his 30s, black hoodie and headphones, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "미영",
+    "Rosalind",
+    "40대 여성, 연보라 한복 드레스, 올림머리, 얇게 그은 눈썹",
+    "woman in her 40s, pale lavender formal dress, updo, thin eyebrows"
+   ],
+   [
+    "A",
+    "임 주례",
+    "Mr. Kaplan",
+    "50대 남성, 검은 예복과 흰 장갑, 은발, 엄숙한 얼굴",
+    "man in his 50s, black formal coat and white gloves, silver hair, solemn face"
+   ]
+  ],
+  [
+   [
+    "결혼식장",
+    "wedding hall",
+    "미영이 도윤의 헤드폰을 집어 신부 대기실 서랍에 넣는다",
+    "Rosalind takes his headphones and locks them in a drawer",
+    1,
+    "음향기사가 하객석에 앉아?",
+    "The sound man seated with the guests?",
+    "cz"
+   ],
+   [
+    "결혼식장",
+    "wedding hall",
+    "미영이 도윤의 케이블을 뽑아 발밑에 감고 예식장 문을 열어 둔다",
+    "Rosalind unplugs his cable and props the hall door open",
+    1,
+    "오늘 예식에 네 소리는 필요 없어.",
+    "We don't need your sound today.",
+    "ms"
+   ],
+   [
+    "결혼식장",
+    "wedding hall",
+    "도윤이 지갑에서 빛바랜 사진을 꺼내 미영 앞에 놓는다",
+    "Felix lays a faded photo on the table in front of her",
+    0,
+    "이 사진, 어머니 두 분이 함께예요.",
+    "Two mothers, side by side in this photo.",
+    "cu"
+   ],
+   [
+    "결혼식장",
+    "wedding hall",
+    "임 주례가 마이크 앞에 서서 유언장을 펼친다",
+    "Mr. Kaplan steps to the mic and opens the will",
+    2,
+    "회장님은 도윤 씨를 아들로 인정했습니다.",
+    "The chairman named Mr. Felix as his son.",
+    "low"
+   ],
+   [
+    "결혼식장",
+    "wedding hall",
+    "미영이 꽃장식을 고쳐 꽂는다",
+    "Rosalind rearranges the flower arrangement",
+    0,
+    "축가는 신부가 아니라 제가 부르죠.",
+    "I'll sing the wedding song, not the bride.",
+    "cu"
+   ],
+   [
+    "결혼식장",
+    "wedding hall",
+    "예식장 뒤문이 열리고 신부가 부케 없이 서 있다",
+    "The back door opens on the bride standing without her bouquet",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "헌정 도서의 서명",
+  "The Signature in the Book",
+  "동문 만찬에서 쫓겨난 사서. 회장이 기증한 책 속표지가 그녀를 딸이라 불렀다.",
+  "A librarian is thrown out of an alumni dinner. A donated book calls her the chairman's daughter.",
+  [
+   [
+    "H",
+    "지영",
+    "Audrey",
+    "40대 여성, 베이지 니트와 안경, 어깨까지 오는 머리, 온화한 눈",
+    "woman in her 40s, beige knit and glasses, shoulder-length hair, gentle eyes"
+   ],
+   [
+    "V",
+    "동철",
+    "Hugo",
+    "50대 남성, 감색 정장과 금시계, 짧은 백발, 거만한 턱",
+    "man in his 50s, navy suit and gold watch, short white hair, proud chin"
+   ],
+   [
+    "A",
+    "백 총장",
+    "President Moss",
+    "60대 여성, 검은 정장과 브로치, 단정한 은발, 깊은 눈",
+    "woman in her 60s, black suit and brooch, neat silver hair, deep eyes"
+   ]
+  ],
+  [
+   [
+    "대학 만찬장",
+    "university dinner hall",
+    "동철이 지영의 책수레를 돌려 세우고 책을 테이블보 위에 엎는다",
+    "Hugo spins her cart around and flips a book onto the tablecloth",
+    1,
+    "사서가 동문 만찬에 왜 나와?",
+    "Why is the librarian at the alumni dinner?",
+    "cz"
+   ],
+   [
+    "대학 만찬장",
+    "university dinner hall",
+    "동철이 지영의 의자를 옆 테이블로 빼놓는다",
+    "Hugo pulls her chair away to another table",
+    1,
+    "기부자 명단에 네 이름은 없어.",
+    "Your name isn't on the donor list.",
+    "ms"
+   ],
+   [
+    "대학 만찬장",
+    "university dinner hall",
+    "지영이 그 책을 펴 속표지를 만찬장 조명 쪽으로 든다",
+    "Audrey opens the book and holds the inner cover to the chandelier",
+    0,
+    "이 책, 회장님이 제게 주신 겁니다.",
+    "The chairman gave me this book himself.",
+    "cu"
+   ],
+   [
+    "대학 만찬장",
+    "university dinner hall",
+    "백 총장이 돋보기를 끼고 서명을 따라 읽는다",
+    "President Moss puts on her loupe and reads the signature",
+    2,
+    "회장 친필입니다. 지영 씨에게 남긴 유언이죠.",
+    "That's his hand. A bequest to Ms. Audrey.",
+    "low"
+   ],
+   [
+    "대학 만찬장",
+    "university dinner hall",
+    "동철이 테이블보를 고쳐 잡는다",
+    "Hugo straightens the tablecloth",
+    0,
+    "이 책 한 권이 제 신분증입니다.",
+    "One book is my ID.",
+    "cu"
+   ],
+   [
+    "대학 만찬장",
+    "university dinner hall",
+    "연단 뒤 스크린에 회장의 손글씨가 확대돼 뜬다",
+    "Behind the podium, the chairman's handwriting fills the screen",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "볼보이의 라켓 각인",
+  "The Ball Boy's Engraved Racket",
+  "클럽 챔피언십에서 쫓겨난 볼보이. 라켓 손잡이에 그의 이름이 새겨져 있었다.",
+  "A ball boy is thrown off the court, but the racket grip is engraved with his name.",
+  [
+   [
+    "H",
+    "찬영",
+    "Ronan",
+    "20대 중반 남성, 흰 테니스 셔츠와 반바지, 짧은 머리, 햇볕에 탄 피부",
+    "man in his mid 20s, white tennis shirt and shorts, short hair, sun-tanned skin"
+   ],
+   [
+    "V",
+    "병철",
+    "Wade",
+    "40대 남성, 흰 폴로와 클럽 모자, 짧은 머리, 두꺼운 목",
+    "man in his 40s, white polo and club cap, short hair, thick neck"
+   ],
+   [
+    "A",
+    "한 매니저",
+    "Ms. Ferris",
+    "30대 여성, 클럽 유니폼과 클립보드, 묶은 머리, 무표정",
+    "woman in her 30s, club uniform and clipboard, tied hair, blank face"
+   ]
+  ],
+  [
+   [
+    "테니스 코트",
+    "tennis court",
+    "병철이 찬영의 공 바구니를 코트 밖으로 걷어차고 관중석을 가리킨다",
+    "Wade kicks the ball basket off court and points at the stands",
+    1,
+    "볼보이가 코트에 들어와?",
+    "A ball boy on my court?",
+    "cz"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "병철이 찬영의 모자를 관중석에 던지고 심판석에 손을 든다",
+    "Wade throws his cap into the stands and raises a hand to the umpire",
+    1,
+    "이 소년 오늘 경기 출입 금지.",
+    "This boy is off the court today.",
+    "ms"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "찬영이 자기 라켓을 들어 그립의 각인을 병철 코앞에 세운다",
+    "Ronan lifts his racket and holds the engraved grip to Wade's face",
+    0,
+    "이 라켓, 제 이름이 새겨져 있어요.",
+    "My name is engraved on this racket.",
+    "cu"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "한 매니저가 클럽 대장을 들고 네트 앞에 선다",
+    "Ms. Ferris walks to the net with the club ledger open",
+    2,
+    "회장님이 찬영 씨를 후계자로 등록했습니다.",
+    "The chairman registered Mr. Ronan as his successor.",
+    "low"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "병철이 모자를 주워 털고 쓴다",
+    "Wade picks up his cap, dusts it, and puts it on",
+    0,
+    "이 코트, 이제 제 이름으로 부르세요.",
+    "Call this court by my name now.",
+    "cu"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "클럽하우스 문이 열리고 은 트로피가 햇빛을 받는다",
+    "The clubhouse door opens and a silver trophy catches the sun",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "1A석에 앉은 정비사",
+  "The Cleaner in First Class",
+  "퍼스트클래스에서 쫓긴 객실 정비사. 1A 좌석은 회장이 그녀 이름으로 남긴 자리였다.",
+  "An cabin cleaner is thrown out of first class, where seat 1A was left in her name.",
+  [
+   [
+    "H",
+    "소연",
+    "Fiona",
+    "30대 여성, 남색 정비 유니폼과 장갑, 낮게 묶은 머리, 단단한 눈",
+    "woman in her 30s, navy maintenance uniform and gloves, low bun, firm eyes"
+   ],
+   [
+    "V",
+    "희수",
+    "Ingrid",
+    "40대 여성, 크림색 재킷과 진주 목걸이, 짧은 금발, 차가운 눈",
+    "woman in her 40s, cream jacket and pearl necklace, short blonde hair, cold eyes"
+   ],
+   [
+    "A",
+    "차 지상직",
+    "Mr. Grimes",
+    "50대 남성, 항공사 정장과 목걸이 사원증, 은발, 무표정",
+    "man in his 50s, airline suit and lanyard badge, silver hair, blank face"
+   ]
+  ],
+  [
+   [
+    "비행기 객실",
+    "airplane cabin",
+    "희수가 소연의 청소 카트를 밀어 통로를 막고 다리를 뻗는다",
+    "Ingrid shoves the cart to block the aisle and stretches her legs",
+    1,
+    "정비사가 퍼스트에 올라와?",
+    "Maintenance up in first class?",
+    "cz"
+   ],
+   [
+    "비행기 객실",
+    "airplane cabin",
+    "희수가 소연의 장갑을 벗겨 좌석 발치에 떨어뜨리고 승무원을 부른다",
+    "Ingrid strips off her glove and waves for the crew",
+    1,
+    "이 사람 내려보내요.",
+    "Get this one off the plane.",
+    "ms"
+   ],
+   [
+    "비행기 객실",
+    "airplane cabin",
+    "소연이 1A 등받이 명판을 손바닥으로 닦아 보인다",
+    "Fiona wipes the nameplate on seat 1A and shows it to her",
+    0,
+    "1A, 회장님 영구 좌석이에요.",
+    "Seat 1A is the chairman's permanent seat.",
+    "cu"
+   ],
+   [
+    "비행기 객실",
+    "airplane cabin",
+    "차 지상직이 탑승 명단을 접어 승무원에게 건넨다",
+    "Mr. Grimes folds the manifest and hands it to the crew",
+    2,
+    "이 좌석은 소연 씨 것으로 등록돼 있습니다.",
+    "That seat is registered to Ms. Fiona.",
+    "low"
+   ],
+   [
+    "비행기 객실",
+    "airplane cabin",
+    "희수가 탑승권을 접어 가방에 넣는다",
+    "Ingrid folds her boarding pass away",
+    0,
+    "1A는 손님이 아니라 주인 자리예요.",
+    "1A isn't a guest seat. It's the owner's.",
+    "cu"
+   ],
+   [
+    "비행기 객실",
+    "airplane cabin",
+    "기내 스크린이 켜지고 회장의 영상이 흐른다",
+    "The cabin screen flickers on with the chairman's recording",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "선장 만찬의 승무원",
+  "The Steward They Sent Ashore",
+  "크루즈 선장 만찬에서 쫓긴 승무원. 이 배의 주인은 회장의 딸인 그녀였다.",
+  "A cruise steward is thrown out of the captain's dinner. The ship belongs to her.",
+  [
+   [
+    "H",
+    "가영",
+    "Marina",
+    "30대 여성, 흰 승무원 제복과 이름표, 묶은 흑발, 온화하지만 단단한 눈",
+    "woman in her 30s, white steward uniform and name tag, tied black hair, gentle firm eyes"
+   ],
+   [
+    "V",
+    "정숙",
+    "Colette",
+    "50대 여성, 보라색 실크 드레스와 다이아 목걸이, 짧은 퍼머, 얕은 웃음",
+    "woman in her 50s, purple silk dress and diamond necklace, short perm, thin smile"
+   ],
+   [
+    "A",
+    "박 선장",
+    "Captain Ellis",
+    "50대 남성, 흰 선장 제복과 금단추, 회색 머리, 무거운 눈",
+    "man in his 50s, white captain's uniform and gold buttons, gray hair, heavy eyes"
+   ]
+  ],
+  [
+   [
+    "크루즈 연회장",
+    "cruise banquet hall",
+    "정숙이 가영의 쟁반을 밀어 잔을 갑판으로 굴린다",
+    "Colette shoves the tray and glasses roll across the deck",
+    1,
+    "승무원이 선장 만찬에 앉아?",
+    "A steward at the captain's table?",
+    "cz"
+   ],
+   [
+    "크루즈 연회장",
+    "cruise banquet hall",
+    "정숙이 가영의 이름표를 떼어 자기 잔 옆에 엎어 놓는다",
+    "Colette peels off her name tag and lays it face down",
+    1,
+    "이 배에서 오늘 밤 내려.",
+    "Off this ship by tonight.",
+    "ms"
+   ],
+   [
+    "크루즈 연회장",
+    "cruise banquet hall",
+    "가영이 목의 선실 열쇠를 빼어 촛불에 비춘다",
+    "Marina lifts the cabin key from her neck to the candlelight",
+    0,
+    "이 열쇠, 회장님 유품이에요.",
+    "This key was the chairman's.",
+    "cu"
+   ],
+   [
+    "크루즈 연회장",
+    "cruise banquet hall",
+    "박 선장이 선실 명부를 펴고 일어선다",
+    "Captain Ellis opens the cabin register and stands",
+    2,
+    "회장님은 이 배를 가영 씨에게 남기셨습니다.",
+    "The chairman left this ship to Ms. Marina.",
+    "low"
+   ],
+   [
+    "크루즈 연회장",
+    "cruise banquet hall",
+    "정숙이 부채를 펴 얼굴을 가린다",
+    "Colette opens her fan over her face",
+    0,
+    "이 배의 다음 항로는 제가 정하죠.",
+    "I set this ship's next course.",
+    "cu"
+   ],
+   [
+    "크루즈 갑판",
+    "cruise deck",
+    "갑판 아래 선실 문이 열리고 낡은 여행 가방이 보인다",
+    "Below deck a cabin door swings open on an old travel bag",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ]
+]

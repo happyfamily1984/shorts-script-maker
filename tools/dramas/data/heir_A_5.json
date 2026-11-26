@@ -1,0 +1,912 @@
+[
+ [
+  "자전거 프레임의 각인",
+  "The Name on the Frame",
+  "자전거 대회 시상식에서 쫓긴 수리공. 프레임에 새겨진 이름이 그의 것이었다.",
+  "A bike mechanic is thrown off the podium. The name etched into the frame is his.",
+  [
+   [
+    "H",
+    "준서",
+    "Casey",
+    "20대 후반 남성, 기름 묻은 작업복과 모자, 짧은 머리, 밝은 눈",
+    "man in his late 20s, grease-stained work clothes and cap, short hair, bright eyes"
+   ],
+   [
+    "V",
+    "미경",
+    "Paula",
+    "40대 여성, 흰 재킷과 선글라스, 긴 생머리, 얇은 입술",
+    "woman in her 40s, white jacket and sunglasses, long straight hair, thin lips"
+   ],
+   [
+    "A",
+    "배 위원장",
+    "Mr. Lindgren",
+    "50대 남성, 회색 점퍼와 모자, 짧은 수염, 무표정",
+    "man in his 50s, gray windbreaker and cap, short beard, blank face"
+   ]
+  ],
+  [
+   [
+    "자전거 대회장",
+    "cycling arena",
+    "미경이 준서의 자전거를 관중석 앞에 눕힌다",
+    "Paula lays Casey's bike flat in front of the stands",
+    1,
+    "수리공이 시상대에 올라와?",
+    "A mechanic on the winner's podium?",
+    "cz"
+   ],
+   [
+    "자전거 대회장",
+    "cycling arena",
+    "미경이 준서의 모자를 자전거 위에 놓고 출전 명단을 찢는다",
+    "Paula drops his cap on the bike and tears the entry list",
+    1,
+    "이 사람 출전 자격 없어요.",
+    "This man has no entry.",
+    "ms"
+   ],
+   [
+    "자전거 대회장",
+    "cycling arena",
+    "준서가 눕힌 자전거를 세워 프레임 각인을 미경에게 보인다",
+    "Casey stands the bike up and shows her the frame engraving",
+    0,
+    "이 프레임, 제 이름이 새겨져 있어요.",
+    "My name is etched into this frame.",
+    "cu"
+   ],
+   [
+    "자전거 대회장",
+    "cycling arena",
+    "배 위원장이 참가 명부를 펴 관중석 쪽으로 돌린다",
+    "Mr. Lindgren opens the entry book toward the crowd",
+    2,
+    "회장님이 준서 씨를 명예 출전자로 등록했습니다.",
+    "The chairman entered Mr. Casey as an honorary rider.",
+    "low"
+   ],
+   [
+    "자전거 대회장",
+    "cycling arena",
+    "미경이 자전거 안장을 닦는다",
+    "Paula wipes the bike saddle",
+    0,
+    "자전거는 주인에게 돌아갑니다.",
+    "The bike goes back to its owner.",
+    "cu"
+   ],
+   [
+    "자전거 대회장",
+    "cycling arena",
+    "출발 신호음이 울리고 선수들이 페달을 밟는다",
+    "The start buzzer sounds and riders push off",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "낚싯대에 새긴 이름",
+  "The Name on the Rod",
+  "호숫가 시상식에서 쫓긴 낚시꾼. 낚싯대 손잡이에 회장의 각인이 남아 있었다.",
+  "An angler is thrown off the lakeside podium. The chairman's carving is on his rod handle.",
+  [
+   [
+    "H",
+    "만복",
+    "Gus",
+    "60대 남성, 낡은 방수 재킷과 밀짚모자, 흰 수염, 주름진 눈",
+    "man in his 60s, worn rain jacket and straw hat, white beard, lined eyes"
+   ],
+   [
+    "V",
+    "덕수",
+    "Mr. Hobbs",
+    "50대 남성, 값비싼 낚시 조끼와 선글라스, 짧은 머리, 거만한 턱",
+    "man in his 50s, expensive fishing vest and sunglasses, short hair, haughty chin"
+   ],
+   [
+    "A",
+    "프루이트",
+    "Ms. Pruitt",
+    "40대 여성, 회색 점퍼와 클립보드, 묶은 머리, 무표정",
+    "woman in her 40s, gray jacket and clipboard, tied hair, blank face"
+   ]
+  ],
+  [
+   [
+    "호숫가 시상식",
+    "lakeside podium",
+    "덕수가 만복의 낚싯대를 물가로 밀어 버린다",
+    "Mr. Hobbs shoves Gus's rod toward the water",
+    1,
+    "낚시꾼이 시상식에 끼어?",
+    "An angler at the trophy table?",
+    "cz"
+   ],
+   [
+    "호숫가 시상식",
+    "lakeside podium",
+    "덕수가 만복의 밀짚모자를 벗겨 트로피 테이블에 놓는다",
+    "Mr. Hobbs takes his straw hat and drops it by the trophy",
+    1,
+    "이 대회는 우리 협회 거야.",
+    "This tournament belongs to my club.",
+    "ms"
+   ],
+   [
+    "호숫가 시상식",
+    "lakeside podium",
+    "만복이 물가에서 낚싯대를 건져 손잡이 각인을 닦는다",
+    "Gus fishes the rod out of the shallows and wipes the carved grip",
+    0,
+    "이 이름, 회장님이 새긴 겁니다.",
+    "The chairman carved this name.",
+    "cu"
+   ],
+   [
+    "호숫가 시상식",
+    "lakeside podium",
+    "프루이트가 참가 명부를 클립보드에서 떼어 읽는다",
+    "Ms. Pruitt pulls the roster off her clipboard and reads",
+    2,
+    "회장님이 만복 씨를 대회 후원자로 등록했습니다.",
+    "The chairman registered Mr. Gus as the tournament's patron.",
+    "low"
+   ],
+   [
+    "호숫가 시상식",
+    "lakeside podium",
+    "덕수가 낚시 조끼 지퍼를 올린다",
+    "Mr. Hobbs zips up his fishing vest",
+    0,
+    "트로피보다 값진 걸 이미 받았죠.",
+    "I already got something worth more than the trophy.",
+    "cu"
+   ],
+   [
+    "호숫가 시상식",
+    "lakeside podium",
+    "호수 위로 흰 보트가 다가오고 갈매기가 떠오른다",
+    "A white boat nears the shore and gulls lift off the water",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "수익자가 된 설계사",
+  "The Beneficiary",
+  "보험사 시상식에서 쫓긴 설계사. 증권의 수익자란에 그녀 이름이 있었다.",
+  "An insurance agent is thrown out of the awards. The policy names her as beneficiary.",
+  [
+   [
+    "H",
+    "서아",
+    "Lila",
+    "30대 여성, 남색 정장과 사원증, 묶은 머리, 단단한 눈",
+    "woman in her 30s, navy suit and employee badge, tied hair, firm eyes"
+   ],
+   [
+    "V",
+    "병석",
+    "Mr. Radley",
+    "40대 남성, 밝은 정장과 금 시계, 짧은 머리, 능글맞은 얼굴",
+    "man in his 40s, light suit and gold watch, short hair, smug face"
+   ],
+   [
+    "A",
+    "홀리스",
+    "Ms. Hollis",
+    "50대 여성, 검은 정장과 브로치, 은발, 깊은 눈",
+    "woman in her 50s, black suit and brooch, silver hair, deep eyes"
+   ]
+  ],
+  [
+   [
+    "보험사 시상식",
+    "insurance awards",
+    "병석이 서아의 트로피를 테이블보 밑으로 밀어 넣는다",
+    "Mr. Radley slides Lila's trophy under the tablecloth",
+    1,
+    "설계사가 무슨 수상자야.",
+    "An agent winning an award?",
+    "cz"
+   ],
+   [
+    "보험사 시상식",
+    "insurance awards",
+    "병석이 서아의 사원증을 떼어 자기 재킷에 달고 무대를 가리킨다",
+    "Mr. Radley pins her badge on his jacket and points at the stage",
+    1,
+    "이 상은 우리 지점 몫이야.",
+    "That award belongs to my branch.",
+    "ms"
+   ],
+   [
+    "보험사 시상식",
+    "insurance awards",
+    "서아가 가방에서 증권을 꺼내 수익자란을 무대 조명에 든다",
+    "Lila lifts the policy from her bag and holds the beneficiary line to the lights",
+    0,
+    "이 증권, 수익자가 저예요.",
+    "I'm the beneficiary on this policy.",
+    "cu"
+   ],
+   [
+    "보험사 시상식",
+    "insurance awards",
+    "홀리스가 증권을 받아 수익자란을 손끝으로 짚는다",
+    "Ms. Hollis takes the policy and taps the beneficiary line",
+    2,
+    "회장님이 서아 씨를 수익자로 지정했습니다.",
+    "The chairman named Ms. Lila his beneficiary.",
+    "low"
+   ],
+   [
+    "보험사 시상식",
+    "insurance awards",
+    "병석이 사원증을 재킷에서 떼어 낸다",
+    "Mr. Radley unpins her badge from his jacket",
+    0,
+    "이 상은 이름 때문에 받는 겁니다.",
+    "This award is about whose name is on it.",
+    "cu"
+   ],
+   [
+    "보험사 시상식",
+    "insurance awards",
+    "무대 스크린에 수상자 명단이 뜨고 첫 줄이 바뀐다",
+    "The winners' list appears on screen with a new first line",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "피아노 뚜껑 안쪽 명판",
+  "The Plate Inside the Piano",
+  "콘서트홀 개관식에서 쫓긴 조율사. 피아노 안쪽 명판이 그를 주인이라 적었다.",
+  "A piano tuner is thrown out of the hall's opening. The plate inside names him the owner.",
+  [
+   [
+    "H",
+    "병도",
+    "Emil",
+    "50대 남성, 회색 작업복과 공구 가방, 짧은 백발, 조용한 눈",
+    "man in his 50s, gray work clothes and tool bag, short white hair, quiet eyes"
+   ],
+   [
+    "V",
+    "정욱",
+    "Mr. Castellan",
+    "40대 남성, 검은 턱시도와 나비넥타이, 짧은 머리, 날카로운 눈",
+    "man in his 40s, black tuxedo and bow tie, short hair, sharp eyes"
+   ],
+   [
+    "A",
+    "김 악장",
+    "Ms. Lind",
+    "30대 여성, 검은 연주복과 바이올린, 묶은 머리, 무표정",
+    "woman in her 30s, black concert dress and violin, tied hair, blank face"
+   ]
+  ],
+  [
+   [
+    "콘서트홀 무대",
+    "concert hall stage",
+    "정욱이 병도의 조율 망치를 피아노 위에 떨어뜨린다",
+    "Mr. Castellan drops Emil's tuning hammer on the piano",
+    1,
+    "조율사가 개관식 무대에?",
+    "A tuner on the opening stage?",
+    "cz"
+   ],
+   [
+    "콘서트홀 무대",
+    "concert hall stage",
+    "정욱이 병도의 공구 가방을 무대 옆으로 걷어차고 지휘봉을 든다",
+    "Mr. Castellan kicks the tool bag to the wings and takes up his baton",
+    1,
+    "이 피아노는 네 손이 아니야.",
+    "This piano is not yours to touch.",
+    "ms"
+   ],
+   [
+    "콘서트홀 무대",
+    "concert hall stage",
+    "병도가 피아노 뚜껑을 열고 안쪽 명판을 무대 조명에 비춘다",
+    "Emil lifts the lid and holds the inner plate to the stage light",
+    0,
+    "여기, 제 이름이 적혀 있어요.",
+    "My name is written in here.",
+    "cu"
+   ],
+   [
+    "콘서트홀 무대",
+    "concert hall stage",
+    "김 악장이 명판을 손끝으로 따라 읽는다",
+    "Ms. Lind traces the plate with her finger and reads",
+    2,
+    "회장님이 이 홀과 피아노를 병도 씨에게 남겼습니다.",
+    "The chairman left this hall and piano to Mr. Emil.",
+    "low"
+   ],
+   [
+    "콘서트홀 무대",
+    "concert hall stage",
+    "정욱이 피아노 뚜껑을 닫는다",
+    "Mr. Castellan closes the piano lid",
+    0,
+    "이 홀의 첫 음은 제가 정합니다.",
+    "I choose this hall's first note.",
+    "cu"
+   ],
+   [
+    "콘서트홀 무대",
+    "concert hall stage",
+    "커튼이 열리고 객석 조명이 하나둘 꺼진다",
+    "The curtain rises and the house lights go down, row by row",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "택시 기사의 영수증",
+  "The Taxi Receipt",
+  "기자회견장에서 쫓긴 택시 기사. 영수증 한 장이 회장의 마지막 행선지를 적고 있었다.",
+  "A cab driver is thrown out of a press conference. One receipt holds the chairman's last ride.",
+  [
+   [
+    "H",
+    "만식",
+    "Ernie",
+    "60대 남성, 회색 기사 제복과 모자, 흰 머리, 무뚝뚝한 얼굴",
+    "man in his 60s, gray driver uniform and cap, white hair, blunt face"
+   ],
+   [
+    "V",
+    "재영",
+    "Mr. Hathaway",
+    "40대 남성, 짙은 정장과 회사 배지, 짧은 머리, 차가운 눈",
+    "man in his 40s, dark suit and company badge, short hair, cold eyes"
+   ],
+   [
+    "A",
+    "오 기자",
+    "Ms. Pike",
+    "30대 여성, 베이지 코트와 마이크, 짧은 단발, 날카로운 눈",
+    "woman in her 30s, beige coat and microphone, short bob, sharp eyes"
+   ]
+  ],
+  [
+   [
+    "기자회견장",
+    "press room",
+    "재영이 만식의 모자를 연단에 놓고 탁자를 두드린다",
+    "Mr. Hathaway sets the cap on the podium and raps the desk",
+    1,
+    "택시 기사가 기자회견에?",
+    "A cab driver in the press room?",
+    "cz"
+   ],
+   [
+    "기자회견장",
+    "press room",
+    "재영이 만식의 영수증 뭉치를 받아 바닥에 뿌린다",
+    "Mr. Hathaway grabs the receipts and scatters them",
+    1,
+    "여긴 네가 올 곳이 아니야.",
+    "This is no place for you.",
+    "ms"
+   ],
+   [
+    "기자회견장",
+    "press room",
+    "만식이 바닥에서 영수증 한 장을 주워 날짜를 카메라 쪽으로 든다",
+    "Ernie picks one receipt off the floor and holds the date to the lens",
+    0,
+    "회장님이 마지막으로 병원 가신 날이에요.",
+    "This is the day the chairman last went to the hospital.",
+    "cu"
+   ],
+   [
+    "기자회견장",
+    "press room",
+    "오 기자가 영수증을 받아 카메라 렌즈 앞에 세운다",
+    "Ms. Pike takes the receipt and holds it up to the lens",
+    2,
+    "회장님을 이 회사가 마지막까지 태운 기록입니다.",
+    "This shows how this company moved him at the end.",
+    "low"
+   ],
+   [
+    "기자회견장",
+    "press room",
+    "재영이 영수증을 모아 테이블에 정리한다",
+    "Mr. Hathaway gathers the receipts into a pile",
+    0,
+    "병원 간 기록은 지워지지 않습니다.",
+    "The hospital ride stays on the record.",
+    "cu"
+   ],
+   [
+    "기자회견장",
+    "press room",
+    "취재 카메라 불빛이 연단으로 몰린다",
+    "Press camera lights swing onto the podium",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "턱받이에 놓인 자수",
+  "The Name in the Stitching",
+  "패션하우스 기념 쇼에서 쫓긴 침모. 턱받이의 자수가 회장의 딸 이름을 놓고 있었다.",
+  "A seamstress is thrown out of a fashion show. The stitching on a bib spells the chairman's daughter.",
+  [
+   [
+    "H",
+    "정옥",
+    "Edith",
+    "50대 여성, 흰 재봉 작업복과 안경, 짧은 은발, 온화한 눈",
+    "woman in her 50s, white sewing work clothes and glasses, short silver hair, warm eyes"
+   ],
+   [
+    "V",
+    "태훈",
+    "Mr. Delgado",
+    "40대 남성, 검은 정장과 실크 스카프, 짧은 머리, 비뚠 입",
+    "man in his 40s, black suit and silk scarf, short hair, twisted mouth"
+   ],
+   [
+    "A",
+    "휘트모어",
+    "Ms. Whitmore",
+    "60대 여성, 회색 투피스와 진주 목걸이, 단정한 은발",
+    "woman in her 60s, gray two-piece suit and pearls, neat silver hair"
+   ]
+  ],
+  [
+   [
+    "패션쇼 백스테이지",
+    "fashion show backstage",
+    "태훈이 정옥의 재봉 상자를 무대 옆으로 밀어 실패를 굴린다",
+    "Mr. Delgado shoves her sewing box and spools roll across the floor",
+    1,
+    "침모가 무대 뒤에 왜 있어?",
+    "A seamstress backstage at my show?",
+    "cz"
+   ],
+   [
+    "패션쇼 백스테이지",
+    "fashion show backstage",
+    "태훈이 정옥의 안경을 벗겨 마네킹 어깨에 걸어 둔다",
+    "Mr. Delgado hooks her glasses on a mannequin's shoulder",
+    1,
+    "이 옷들은 네 솜씨가 아니야.",
+    "These clothes aren't your work.",
+    "ms"
+   ],
+   [
+    "패션쇼 백스테이지",
+    "fashion show backstage",
+    "정옥이 품에서 턱받이를 꺼내 자수를 조명 아래 펼친다",
+    "Edith takes a baby bib from her pocket and holds the stitching to the light",
+    0,
+    "이 자수, 회장님이 딸 이름으로 놓으셨어요.",
+    "The chairman had this stitched with his daughter's name.",
+    "cu"
+   ],
+   [
+    "패션쇼 백스테이지",
+    "fashion show backstage",
+    "휘트모어가 턱받이를 받아 자수를 손끝으로 따라 읽는다",
+    "Ms. Whitmore takes the bib and reads the stitching letter by letter",
+    2,
+    "회장님이 이 이름으로 친딸을 찾으셨습니다.",
+    "The chairman searched for his daughter under this name.",
+    "low"
+   ],
+   [
+    "패션쇼 백스테이지",
+    "fashion show backstage",
+    "태훈이 마네킹의 안경을 내려놓는다",
+    "Mr. Delgado takes her glasses off the mannequin",
+    0,
+    "이 자수, 제가 마지막까지 놓겠습니다.",
+    "I'll finish the stitching myself.",
+    "cu"
+   ],
+   [
+    "패션쇼 런웨이",
+    "fashion runway",
+    "런웨이 조명이 켜지고 하객들이 숨을 죽인다",
+    "The runway lights rise and the guests fall silent",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "골수 기증 카드",
+  "The Marrow Match",
+  "병원 자선 갈라에서 쫓긴 간호사. 기증 카드의 번호가 회장과 일치했다.",
+  "A nurse is thrown out of a charity gala. Her donor card number matches the chairman's.",
+  [
+   [
+    "H",
+    "소미",
+    "Cora",
+    "30대 여성, 하늘색 간호 유니폼과 이름표, 묶은 머리, 맑은 눈",
+    "woman in her 30s, light blue nurse uniform and badge, tied hair, clear eyes"
+   ],
+   [
+    "V",
+    "학수",
+    "Mr. Brigham",
+    "50대 남성, 검은 정장과 금 배지, 짧은 머리, 무거운 눈",
+    "man in his 50s, black suit and gold badge, short hair, heavy eyes"
+   ],
+   [
+    "A",
+    "이 이사",
+    "Ms. Castell",
+    "40대 여성, 남색 정장과 태블릿, 단정한 머리, 무표정",
+    "woman in her 40s, navy suit and tablet, neat hair, blank face"
+   ]
+  ],
+  [
+   [
+    "병원 갈라홀",
+    "hospital gala",
+    "학수가 소미의 쟁반을 밀어 잔을 갈라홀 바닥에 쏟는다",
+    "Mr. Brigham shoves the tray and glasses shatter on the floor",
+    1,
+    "간호사가 후원 갈라에?",
+    "A nurse at the donors' gala?",
+    "cz"
+   ],
+   [
+    "병원 갈라홀",
+    "hospital gala",
+    "학수가 소미의 이름표를 떼어 테이블 꽃병에 꽂는다",
+    "Mr. Brigham sticks her name tag in a table vase",
+    1,
+    "이 자리는 기부자 자리야.",
+    "These seats are for donors.",
+    "ms"
+   ],
+   [
+    "병원 갈라홀",
+    "hospital gala",
+    "소미가 목의 기증 카드를 풀어 번호를 조명 쪽으로 든다",
+    "Cora unclips her donor card and holds the number to the light",
+    0,
+    "이 번호, 회장님과 일치했어요.",
+    "This number matched the chairman's.",
+    "cu"
+   ],
+   [
+    "병원 갈라홀",
+    "hospital gala",
+    "이 이사가 태블릿을 돌려 이식 기록을 보여 준다",
+    "Ms. Castell turns her tablet around to show the transplant record",
+    2,
+    "검사 결과, 회장님의 친딸로 확인됐습니다.",
+    "The tests confirm she is the chairman's daughter.",
+    "low"
+   ],
+   [
+    "병원 갈라홀",
+    "hospital gala",
+    "학수가 꽃병의 이름표를 뽑는다",
+    "Mr. Brigham pulls the name tag from the vase",
+    0,
+    "이 병동의 이름은 바뀌지 않습니다.",
+    "This ward keeps its name.",
+    "cu"
+   ],
+   [
+    "병원 갈라홀",
+    "hospital gala",
+    "갈라홀 문이 열리고 누군가 휠체어를 밀고 들어온다",
+    "The doors open on someone pushing a wheelchair in",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "가족력 검사 보고서",
+  "The Family History",
+  "제약사 심포지엄에서 쫓긴 약사. 가족력 검사가 그녀를 회장의 딸로 밝혔다.",
+  "A pharmacist is thrown out of a symposium. A family history test names her the chairman's daughter.",
+  [
+   [
+    "H",
+    "정임",
+    "Bette",
+    "40대 여성, 흰 약사 가운과 안경, 묶은 머리, 차분한 눈",
+    "woman in her 40s, white pharmacist coat and glasses, tied hair, calm eyes"
+   ],
+   [
+    "V",
+    "승구",
+    "Dr. Pfeiffer",
+    "60대 남성, 흰 연구 가운과 안경, 짧은 백발, 권위적인 얼굴",
+    "man in his 60s, white lab coat and glasses, short white hair, authoritative face"
+   ],
+   [
+    "A",
+    "아길라르",
+    "Ms. Aguilar",
+    "30대 여성, 회색 정장과 서류철, 단정한 머리, 무표정",
+    "woman in her 30s, gray suit and folder, neat hair, blank face"
+   ]
+  ],
+  [
+   [
+    "심포지엄장",
+    "symposium hall",
+    "승구가 정임의 보고서를 발표대 아래로 쓸어 버린다",
+    "Dr. Pfeiffer sweeps Bette's report under the podium",
+    1,
+    "약사가 심포지엄 발표를 해?",
+    "A pharmacist giving the keynote?",
+    "cz"
+   ],
+   [
+    "심포지엄장",
+    "symposium hall",
+    "승구가 정임의 명찰을 떼어 좌석에 놓고 발표대 마이크를 끈다",
+    "Dr. Pfeiffer drops her badge on a seat and cuts the podium mic",
+    1,
+    "발표는 우리 연구소 몫이야.",
+    "That presentation belongs to my lab.",
+    "ms"
+   ],
+   [
+    "심포지엄장",
+    "symposium hall",
+    "정임이 바닥에서 보고서를 주워 가족력란을 스크린 쪽으로 든다",
+    "Bette picks the report up and holds the family history to the screen",
+    0,
+    "이 가족력, 회장님과 일치해요.",
+    "This family history matches the chairman's.",
+    "cu"
+   ],
+   [
+    "심포지엄장",
+    "symposium hall",
+    "아길라르가 보고서를 스크린에 띄우고 결과 줄을 짚는다",
+    "Ms. Aguilar puts the report on screen and taps the result",
+    2,
+    "검사 결과, 정임 씨가 친딸로 확인됐습니다.",
+    "The test confirms Ms. Bette is his daughter.",
+    "low"
+   ],
+   [
+    "심포지엄장",
+    "symposium hall",
+    "승구가 마이크를 끈다",
+    "Dr. Pfeiffer switches off the mic",
+    0,
+    "다음 검사는 제 이름으로 나갑니다.",
+    "The next test goes out under my name.",
+    "cu"
+   ],
+   [
+    "심포지엄장",
+    "symposium hall",
+    "스크린에 유전자 지도가 뜨고 홀이 조용해진다",
+    "A gene map fills the screen and the hall goes quiet",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "지문으로 열린 금고",
+  "The Safe That Knew Him",
+  "저택 유산 공개에서 쫓긴 금고 기사. 금고가 그의 지문에 열렸다.",
+  "A locksmith is thrown out of an estate opening, and the safe opens at his fingerprint.",
+  [
+   [
+    "H",
+    "명호",
+    "Roger",
+    "40대 남성, 남색 작업복과 공구 벨트, 짧은 머리, 조용한 눈",
+    "man in his 40s, navy work clothes and tool belt, short hair, quiet eyes"
+   ],
+   [
+    "V",
+    "진수",
+    "Mr. Dunmore",
+    "50대 남성, 검은 정장과 흰 장갑, 짧은 백발, 얇은 입술",
+    "man in his 50s, black suit and white gloves, short white hair, thin lips"
+   ],
+   [
+    "A",
+    "서 변호사",
+    "Ms. Quill",
+    "40대 여성, 회색 정장과 서류 가방, 안경, 무표정",
+    "woman in her 40s, gray suit and document case, glasses, blank face"
+   ]
+  ],
+  [
+   [
+    "저택 서재",
+    "mansion study",
+    "진수가 명호의 공구를 서재 바닥에 쏟는다",
+    "Mr. Dunmore tips Roger's tools across the study floor",
+    1,
+    "금고 기사가 유산 공개에?",
+    "A locksmith at the estate opening?",
+    "cz"
+   ],
+   [
+    "저택 서재",
+    "mansion study",
+    "진수가 명호의 장갑을 벗겨 책상에 놓고 금고를 등지고 선다",
+    "Mr. Dunmore drops his gloves on the desk and blocks the safe",
+    1,
+    "이 금고는 네가 열 게 아니야.",
+    "This safe is not yours to open.",
+    "ms"
+   ],
+   [
+    "저택 서재",
+    "mansion study",
+    "명호가 공구를 주워 금고 지문판을 닦고 손바닥을 얹는다",
+    "Roger picks up a tool, wipes the scanner, and lays his palm on it",
+    0,
+    "제 지문으로 열립니다.",
+    "It opens to my fingerprint.",
+    "cu"
+   ],
+   [
+    "저택 서재",
+    "mansion study",
+    "서 변호사가 열린 금고에서 유언장을 꺼내 봉인을 뜯는다",
+    "Ms. Quill draws the will from the open safe and breaks the seal",
+    2,
+    "회장님이 명호 씨를 아들로 적으셨습니다.",
+    "The chairman entered Mr. Roger as his son.",
+    "low"
+   ],
+   [
+    "저택 서재",
+    "mansion study",
+    "진수가 유언장 사본을 접는다",
+    "Mr. Dunmore folds a copy of the will",
+    0,
+    "이 금고는 제 손을 기억합니다.",
+    "This safe remembers my hand.",
+    "cu"
+   ],
+   [
+    "저택 서재",
+    "mansion study",
+    "금고 안쪽에 또 다른 철문이 드러난다",
+    "Inside the safe, a second steel door comes into view",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "청첩장 속 신부 이름",
+  "The Name on the Invitation",
+  "웨딩 박람회에서 쫓긴 플래너. 회장의 첫 청첩장에 그녀의 어머니 이름이 있었다.",
+  "A wedding planner is thrown out of an expo. The chairman's first invitation names her mother.",
+  [
+   [
+    "H",
+    "보람",
+    "Cara",
+    "30대 여성, 연분홍 정장과 클립보드, 묶은 머리, 밝은 눈",
+    "woman in her 30s, pale pink suit and clipboard, tied hair, bright eyes"
+   ],
+   [
+    "V",
+    "혜정",
+    "Mrs. Blanchard",
+    "50대 여성, 검은 원피스와 진주 목걸이, 짧은 퍼머, 찬 눈",
+    "woman in her 50s, black dress and pearl necklace, short perm, cold eyes"
+   ],
+   [
+    "A",
+    "펠드",
+    "Mr. Feld",
+    "60대 남성, 회색 정장과 나비넥타이, 흰 머리, 무표정",
+    "man in his 60s, gray suit and bow tie, white hair, blank face"
+   ]
+  ],
+  [
+   [
+    "웨딩 박람회",
+    "wedding expo",
+    "혜정이 보람의 클립보드를 부스 위에 엎는다",
+    "Mrs. Blanchard flips her clipboard onto the booth counter",
+    1,
+    "플래너가 무대에 올라와?",
+    "A planner on the expo stage?",
+    "cz"
+   ],
+   [
+    "웨딩 박람회",
+    "wedding expo",
+    "혜정이 보람의 명찰을 떼어 드레스 마네킹에 달아 둔다",
+    "Mrs. Blanchard pins her badge on a dress mannequin",
+    1,
+    "이 박람회는 우리 회사 거야.",
+    "This expo belongs to my company.",
+    "ms"
+   ],
+   [
+    "웨딩 박람회",
+    "wedding expo",
+    "보람이 지갑에서 청첩장을 꺼내 신부 이름을 조명 아래 든다",
+    "Cara takes an old invitation from her bag and holds the bride's name to the light",
+    0,
+    "이 청첩장, 제 어머니 이름이에요.",
+    "That bride's name is my mother's.",
+    "cu"
+   ],
+   [
+    "웨딩 박람회",
+    "wedding expo",
+    "펠드가 청첩장을 받아 날짜와 이름을 소리 내어 읽는다",
+    "Mr. Feld takes the invitation and reads the date and names aloud",
+    2,
+    "회장님 첫 청첩장입니다. 신부가 보람 씨 어머니죠.",
+    "The chairman's first wedding. That bride was her mother.",
+    "low"
+   ],
+   [
+    "웨딩 박람회",
+    "wedding expo",
+    "혜정이 마네킹의 명찰을 뗀다",
+    "Mrs. Blanchard unpins the badge from the mannequin",
+    0,
+    "결혼식은 이름으로 남는 겁니다.",
+    "A wedding is remembered by names.",
+    "cu"
+   ],
+   [
+    "웨딩 박람회",
+    "wedding expo",
+    "박람회장 조명이 꺼지고 흰 드레스만 남아 빛난다",
+    "The expo lights drop, leaving one white dress lit",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ]
+]

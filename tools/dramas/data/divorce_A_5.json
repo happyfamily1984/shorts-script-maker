@@ -1,0 +1,912 @@
+[
+ [
+  "안전 서명을 지운 준공식",
+  "No Signature, No Opening",
+  "배관이나 만진다며 버린 남편. 그 빌딩 준공 서류의 안전 인증은 그의 서명이었다.",
+  "She left him for touching pipes. The tower's safety certificate carries his signature.",
+  [
+   [
+    "H",
+    "수혁",
+    "Duncan",
+    "40대 남성, 회색 작업복에 안전모, 짧은 머리, 무뚝뚝한 눈",
+    "man in his 40s, gray work clothes, hard hat, short hair, blunt eyes"
+   ],
+   [
+    "V",
+    "지영",
+    "Mona",
+    "30대 여성, 건설사 이사, 흰 정장에 짧은 단발, 오만한 눈",
+    "woman in her 30s, construction executive, white suit, short bob, haughty eyes"
+   ],
+   [
+    "A",
+    "감리단장 서",
+    "Mr. Corrigan",
+    "50대 남성, 안전모에 형광 조끼, 주름진 얼굴, 엄정한 눈",
+    "man in his 50s, hard hat, safety vest, lined face, stern eyes"
+   ]
+  ],
+  [
+   [
+    "신축 빌딩 로비",
+    "new tower lobby",
+    "지영이 수혁의 안전 점검표를 빼앗아 반으로 접는다",
+    "Mona snatches Suhyeok's safety sheet and folds it",
+    1,
+    "배관이나 만지던 사람, 나가.",
+    "Pipe hands, get out.",
+    "ms"
+   ],
+   [
+    "신축 빌딩 로비",
+    "new tower lobby",
+    "지영이 수혁의 안전모를 벽에 걸고 문을 가리킨다",
+    "Mona hangs Suhyeok's helmet on a hook and points at the door",
+    1,
+    "준공식은 우리끼리 한다.",
+    "We open without you.",
+    "ots"
+   ],
+   [
+    "신축 빌딩 로비",
+    "new tower lobby",
+    "수혁이 준공 서류 뭉치의 서명란을 들여다본다",
+    "Suhyeok looks at the signature line on the completion papers",
+    -1,
+    "",
+    "",
+    "cz"
+   ],
+   [
+    "신축 빌딩 로비",
+    "new tower lobby",
+    "감리단장 서가 서류를 들어 참석자들에게 보인다",
+    "Mr. Corrigan lifts the papers toward the guests",
+    2,
+    "안전 인증 서명자는 수혁 씨입니다.",
+    "The safety certification is Mr. Suhyeok's.",
+    "slo"
+   ],
+   [
+    "신축 빌딩 로비",
+    "new tower lobby",
+    "감리단장 서가 준공 테이프를 걷어 내고 수혁에게 안전모를 건넨다",
+    "Mr. Corrigan pulls down the opening ribbon and hands Suhyeok a helmet",
+    0,
+    "서명은 안전이 끝난 뒤에 하죠.",
+    "I sign when it's safe.",
+    "rx"
+   ],
+   [
+    "빌딩 옥상",
+    "tower rooftop",
+    "감리단장 서가 다음 현장 감리 서류를 수혁에게 맡긴다",
+    "Mr. Corrigan hands Suhyeok the next site's inspection file",
+    2,
+    "다음 현장 감리도 수혁 씨가.",
+    "Inspect the next site too.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "주무르던 남자의 대표팀",
+  "The Hands the Team Needs",
+  "주무르기나 한다며 버린 남편. 대표팀 선수의 컨디션은 그의 손끝에 달려 있었다.",
+  "She left him for kneading muscles. Her national team's star depends on his hands.",
+  [
+   [
+    "H",
+    "경훈",
+    "Dexter",
+    "30대 남성, 트레이닝복에 짧은 머리, 침착한 눈",
+    "man in his 30s, tracksuit, short hair, composed eyes"
+   ],
+   [
+    "V",
+    "수진",
+    "Renee",
+    "40대 여성, 대표팀 감독, 검은 트레이닝 재킷에 묶은 머리, 날카로운 눈",
+    "woman in her 40s, national coach, black training jacket, tied hair, sharp eyes"
+   ],
+   [
+    "A",
+    "주장 도윤",
+    "Captain Ramos",
+    "20대 남성, 대표팀 유니폼에 짧은 머리, 단단한 눈",
+    "man in his 20s, national team jersey, short hair, steady eyes"
+   ]
+  ],
+  [
+   [
+    "훈련장 라커룸",
+    "training room",
+    "수진이 경훈의 테이핑 롤을 발로 밀어 옆으로 치운다",
+    "Renee kicks Kyunghoon's tape roll aside",
+    1,
+    "주무르던 사람이 대표팀에?",
+    "A masseur on the national team?",
+    "cz"
+   ],
+   [
+    "훈련장 라커룸",
+    "training room",
+    "수진이 경훈의 컨디션 기록을 바닥에 던진다",
+    "Renee throws Kyunghoon's condition log down",
+    1,
+    "선수는 우리 팀 의료진이 본다.",
+    "Our staff handles the players.",
+    "cu"
+   ],
+   [
+    "훈련장 라커룸",
+    "training room",
+    "경훈이 테이프 끝의 작은 서명을 본다",
+    "Kyunghoon sees a small signature on the tape end",
+    -1,
+    "",
+    "",
+    "trk"
+   ],
+   [
+    "훈련장",
+    "training ground",
+    "주장 도윤이 테이프를 높이 들어 감독에게 보인다",
+    "Captain Ramos holds the tape up to the coach",
+    2,
+    "이 테이핑은 경훈 씨 서명이 있어야 해요.",
+    "This taping needs Mr. Kyunghoon's mark.",
+    "pi"
+   ],
+   [
+    "훈련장",
+    "training ground",
+    "경훈이 테이프를 다시 감고 수진이 라커룸을 나간다",
+    "Kyunghoon retapes the ankle as Renee leaves the room",
+    0,
+    "선수는 제 손으로 세웁니다.",
+    "I get him on his feet.",
+    "cu"
+   ],
+   [
+    "훈련장 밖",
+    "outside the ground",
+    "주장 도윤이 대표팀 유니폼을 경훈에게 건넨다",
+    "Captain Ramos hands Kyunghoon a national team jersey",
+    2,
+    "다음 대회도 경훈 씨 손으로.",
+    "Next tournament is yours too.",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "초콜릿을 자른 호텔 오픈",
+  "The Chocolate They Can't Replace",
+  "단 거나 만든다며 버린 아내. 호텔 오픈 디저트는 그녀 초콜릿 없이는 나오지 않았다.",
+  "He left her for making sweets. The hotel's opening dessert cannot happen without her.",
+  [
+   [
+    "H",
+    "다인",
+    "Sybil",
+    "30대 여성, 갈색 앞치마에 짧은 단발, 밝고 단단한 눈",
+    "woman in her 30s, brown apron, short bob, bright firm eyes"
+   ],
+   [
+    "V",
+    "동하",
+    "Russell",
+    "40대 남성, 호텔 식음료 총괄, 검은 정장에 번들 머리",
+    "man in his 40s, hotel food director, black suit, glossy hair"
+   ],
+   [
+    "A",
+    "페이스트리 셰프",
+    "Chef Adrien",
+    "40대 남성, 흰 셰프복에 짧은 수염, 온화한 눈",
+    "man in his 40s, white chef coat, short beard, gentle eyes"
+   ]
+  ],
+  [
+   [
+    "호텔 제과실",
+    "pastry kitchen",
+    "동하가 다인의 초콜릿 상자를 탁자 아래로 민다",
+    "Russell shoves Dain's chocolate box under the table",
+    1,
+    "단 거나 만들던 사람, 이제 그만.",
+    "Sugar makers are done.",
+    "ms"
+   ],
+   [
+    "호텔 제과실",
+    "pastry kitchen",
+    "동하가 다인의 배합 노트를 바닥에 던진다",
+    "Russell throws Dain's blend notes down",
+    1,
+    "이 디저트, 다른 초콜릿으로 간다.",
+    "This dessert uses other chocolate.",
+    "cz"
+   ],
+   [
+    "호텔 제과실",
+    "pastry kitchen",
+    "다인이 초콜릿 판의 각인을 손끝으로 짚는다",
+    "Dain traces a stamp on the chocolate slab",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "연회장",
+    "banquet hall",
+    "페이스트리 셰프가 초콜릿을 들어 하객들에게 보인다",
+    "Chef Adrien lifts the chocolate to the guests",
+    2,
+    "이 초콜릿 배합자는 다인 씨입니다.",
+    "This chocolate is Ms. Dain's recipe.",
+    "low"
+   ],
+   [
+    "연회장",
+    "banquet hall",
+    "다인이 초콜릿을 녹이고 동하의 쟁반이 빈 채로 남는다",
+    "Dain melts the chocolate as Russell's tray sits empty",
+    0,
+    "디저트는 제 초콜릿으로만 나갑니다.",
+    "Only my chocolate leaves this kitchen.",
+    "rx"
+   ],
+   [
+    "연회장",
+    "banquet hall",
+    "페이스트리 셰프가 신관 오픈 디저트 목록을 다인에게 보인다",
+    "Chef Adrien shows Dain the new wing's dessert list",
+    2,
+    "신관 디저트도 다인 씨 초콜릿으로.",
+    "The new wing wants her chocolate.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "붓글씨를 자른 브랜드",
+  "The Logo They Erased",
+  "붓질이나 한다며 버린 남편. 새 브랜드의 로고는 아내 붓끝에서 나온 글자였다.",
+  "He left her for brush strokes. His new brand's logo came from her brush.",
+  [
+   [
+    "H",
+    "설아",
+    "Thea",
+    "30대 여성, 먹물 묻은 셔츠에 낮게 묶은 머리, 조용한 눈",
+    "woman in her 30s, ink-stained shirt, low bun, quiet eyes"
+   ],
+   [
+    "V",
+    "재욱",
+    "Benedict",
+    "40대 남성, 브랜드 대표, 흰 셔츠에 베스트, 거만한 턱",
+    "man in his 40s, brand CEO, white shirt and vest, arrogant chin"
+   ],
+   [
+    "A",
+    "디자인 실장 윤",
+    "Ms. Alden",
+    "30대 여성, 검은 터틀넥에 안경, 단정한 눈",
+    "woman in her 30s, black turtleneck, glasses, precise eyes"
+   ]
+  ],
+  [
+   [
+    "브랜드 론칭 현장",
+    "brand launch",
+    "재욱이 설아의 붓을 종이에서 들어 옆에 놓는다",
+    "Benedict lifts Seola's brush off the paper",
+    1,
+    "붓질이나 하던 사람, 이제 끝.",
+    "Brush hands are finished here.",
+    "cz"
+   ],
+   [
+    "브랜드 론칭 현장",
+    "brand launch",
+    "재욱이 설아의 글씨 원본을 바닥에 던진다",
+    "Benedict throws Seola's original lettering down",
+    1,
+    "로고는 새로 만든다.",
+    "We are making a new logo.",
+    "ms"
+   ],
+   [
+    "브랜드 론칭 현장",
+    "brand launch",
+    "설아가 로고 아래 작은 서명을 발견한다",
+    "Seola spots a small signature under the logo",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "브랜드 론칭 현장",
+    "brand launch",
+    "디자인 실장 윤이 로고판을 들어 기자들에게 보인다",
+    "Ms. Alden lifts the logo board to the press",
+    2,
+    "이 로고 원본 작가는 설아 씨입니다.",
+    "The original lettering is Ms. Seola's.",
+    "pi"
+   ],
+   [
+    "브랜드 론칭 현장",
+    "brand launch",
+    "설아가 글씨 원본을 말아 통에 넣고 재욱이 로고판을 내린다",
+    "Seola rolls her lettering into a tube as Benedict lowers the logo board",
+    0,
+    "글자는 제 붓에서 나옵니다. 안 빌려드려요.",
+    "The letters come from my brush. Not yours.",
+    "cu"
+   ],
+   [
+    "론칭 현장",
+    "launch venue",
+    "디자인 실장 윤이 새 브랜드 이름 후보를 설아 앞에 놓는다",
+    "Ms. Alden sets new brand name options before Seola",
+    2,
+    "새 브랜드 이름, 설아 씨 붓으로.",
+    "Write the new brand name.",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "소리를 끈 아레나 공연",
+  "The Sound He Built Alone",
+  "케이블이나 감는다며 버린 남편. 아레나 투어의 음향 설계는 그의 도면이었다.",
+  "She left him for coiling cables. Her arena tour's sound design is his blueprint.",
+  [
+   [
+    "H",
+    "태윤",
+    "Bruno",
+    "40대 남성, 검은 작업복에 헤드셋, 짧은 머리, 무표정한 눈",
+    "man in his 40s, black work clothes, headset, short hair, plain face"
+   ],
+   [
+    "V",
+    "채린",
+    "Marta",
+    "30대 여성, 투어 매니저, 검은 재킷에 포니테일, 날카로운 눈",
+    "woman in her 30s, tour manager, black jacket, ponytail, sharp eyes"
+   ],
+   [
+    "A",
+    "사운드 디렉터",
+    "Mr. Kowalski",
+    "50대 남성, 회색 셔츠에 이어플러그, 진지한 눈",
+    "man in his 50s, gray shirt, earplugs, serious eyes"
+   ]
+  ],
+  [
+   [
+    "아레나 무대",
+    "arena stage",
+    "채린이 태윤의 헤드셋을 뺏어 스탠드에 걸어 둔다",
+    "Marta pulls off Taeyun's headset and hangs it up",
+    1,
+    "케이블이나 감던 사람, 나가.",
+    "Cable guys, out.",
+    "cz"
+   ],
+   [
+    "아레나 무대",
+    "arena stage",
+    "채린이 태윤의 음향 도면을 바닥에 던진다",
+    "Marta throws Taeyun's sound plan to the floor",
+    1,
+    "이 투어 소리, 우리가 잡는다.",
+    "We handle this tour's sound.",
+    "ms"
+   ],
+   [
+    "아레나 무대",
+    "arena stage",
+    "태윤이 스피커 뒤 작은 서명 각인을 발견한다",
+    "Taeyun spots a signed stamp behind the speaker",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "아레나 무대",
+    "arena stage",
+    "사운드 디렉터가 스피커를 돌려 스태프들에게 보인다",
+    "Mr. Kowalski turns the speaker to show the crew",
+    2,
+    "이 음향 설계자, 태윤 씨입니다.",
+    "This sound design is Mr. Taeyun's.",
+    "low"
+   ],
+   [
+    "아레나 무대",
+    "arena stage",
+    "태윤이 콘솔 앞에 앉고 스태프들이 채린의 헤드셋을 거둔다",
+    "Taeyun sits at the console as crew pack up Marta's headset",
+    0,
+    "무대 소리는 제가 잡습니다.",
+    "I run the stage sound.",
+    "cu"
+   ],
+   [
+    "아레나 로비",
+    "arena lobby",
+    "사운드 디렉터가 신관 극장 음향 도면을 태윤에게 펼친다",
+    "Mr. Kowalski unrolls plans for a new theater's sound",
+    2,
+    "신관 극장 음향도 태윤 씨가.",
+    "The new theater is his too.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "고물이라던 남자의 차",
+  "The Wreck He Made Priceless",
+  "고물이나 만진다며 버린 남편. 경매에 오른 최고가 차는 그의 손에서 복원됐다.",
+  "She left him for playing with junk. The top lot at her auction was restored by him.",
+  [
+   [
+    "H",
+    "두식",
+    "Clive",
+    "50대 남성, 기름때 밴 작업복에 회색 수염, 깊은 눈",
+    "man in his 50s, oil-stained coveralls, gray beard, deep eyes"
+   ],
+   [
+    "V",
+    "나미",
+    "Cheryl",
+    "40대 여성, 경매사 대표, 빨간 정장에 짧은 단발, 오만한 눈",
+    "woman in her 40s, auction house head, red suit, short bob, haughty eyes"
+   ],
+   [
+    "A",
+    "감정사 배",
+    "Mr. Sloane",
+    "50대 남성, 트위드 재킷에 돋보기, 꼼꼼한 눈",
+    "man in his 50s, tweed jacket, magnifier, meticulous eyes"
+   ]
+  ],
+  [
+   [
+    "경매 전시장",
+    "auction hall",
+    "나미가 두식의 복원 사진을 탁자 밖으로 민다",
+    "Cheryl pushes Dushik's restoration photos off the table",
+    1,
+    "고물이나 만지던 사람, 나가요.",
+    "Rust handlers, leave.",
+    "ms"
+   ],
+   [
+    "경매 전시장",
+    "auction hall",
+    "나미가 두식의 작업 인증서를 바닥에 떨어뜨린다",
+    "Cheryl drops Dushik's certification to the floor",
+    1,
+    "차는 우리가 준비한다.",
+    "We will prep the car.",
+    "cz"
+   ],
+   [
+    "경매 전시장",
+    "auction hall",
+    "두식이 차 본네트 안쪽 복원 각인을 본다",
+    "Dushik sees a restoration stamp inside the hood",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "경매 전시장",
+    "auction hall",
+    "감정사 배가 각인 사진을 입찰자들에게 보인다",
+    "Mr. Sloane shows the stamp photo to the bidders",
+    2,
+    "이 차 복원 인증자는 두식 씨입니다.",
+    "This car is certified to Mr. Dushik.",
+    "ws"
+   ],
+   [
+    "경매 전시장",
+    "auction hall",
+    "두식이 본네트를 닫고 경매 참석자들이 자리에서 일어난다",
+    "Dushik closes the hood as the bidders rise from their seats",
+    0,
+    "이 차는 제 손으로만 팝니다.",
+    "Only my hands sell this car.",
+    "rx"
+   ],
+   [
+    "경매장 밖",
+    "outside the auction hall",
+    "감정사 배가 다음 경매 출품 목록을 두식에게 보인다",
+    "Mr. Sloane shows Dushik the next auction's lots",
+    2,
+    "다음 최고가 차, 두식 씨가 복원하게.",
+    "Restore the next top lot.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "물놀이를 비웃던 리조트",
+  "The Dive He Can't Fake",
+  "물놀이나 가르친다며 버린 남편. 리조트 개장 프로그램의 인증 강사는 그뿐이었다.",
+  "She left him for teaching swimming. Only he is certified for her resort's launch.",
+  [
+   [
+    "H",
+    "강민",
+    "Nico",
+    "30대 남성, 남색 다이빙 슈트 상의에 그을린 얼굴, 짧은 머리",
+    "man in his 30s, navy dive top, tanned face, short hair"
+   ],
+   [
+    "V",
+    "예진",
+    "Doris",
+    "40대 여성, 리조트 총지배인, 흰 정장에 짧은 단발, 냉정한 눈",
+    "woman in her 40s, resort manager, white suit, short bob, cold eyes"
+   ],
+   [
+    "A",
+    "액티비티 총괄",
+    "Mr. Tanner",
+    "40대 남성, 리조트 유니폼에 선글라스, 단정한 자세",
+    "man in his 40s, resort uniform, sunglasses, neat posture"
+   ]
+  ],
+  [
+   [
+    "리조트 풀사이드",
+    "resort poolside",
+    "예진이 강민의 장비 가방을 발로 밀어 옆으로 치운다",
+    "Doris kicks Nico's gear bag aside",
+    1,
+    "물놀이나 가르치던 사람, 나가.",
+    "Swim teachers, out.",
+    "cz"
+   ],
+   [
+    "리조트 풀사이드",
+    "resort poolside",
+    "예진이 강민의 다이빙 기록을 바닥에 던진다",
+    "Doris throws Nico's dive log to the floor",
+    1,
+    "이 프로그램, 다른 강사가 맡아.",
+    "Another instructor takes this program.",
+    "ots"
+   ],
+   [
+    "리조트 풀사이드",
+    "resort poolside",
+    "강민이 산소 탱크 옆 인증 스티커를 본다",
+    "Nico sees a certification sticker on the tank",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "리조트 데크",
+    "resort deck",
+    "액티비티 총괄이 탱크를 들어 관광객들에게 보인다",
+    "Mr. Tanner lifts the tank to the tourists",
+    2,
+    "이 프로그램 인증 강사는 강민 씨입니다.",
+    "This program is certified to Mr. Nico.",
+    "slo"
+   ],
+   [
+    "리조트 데크",
+    "resort deck",
+    "강민이 장비를 메고 데크를 걸어가고 예진이 뒤에 선다",
+    "Nico shoulders his gear and walks the deck as Doris stands behind",
+    0,
+    "첫 다이빙은 제가 안내합니다.",
+    "I lead the first dive.",
+    "cu"
+   ],
+   [
+    "선착장",
+    "resort pier",
+    "액티비티 총괄이 새 리조트 프로그램 표를 강민에게 건넨다",
+    "Mr. Tanner hands Nico a new resort program sheet",
+    2,
+    "새 리조트 프로그램, 강민 씨가 열게.",
+    "Open the new resort program.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "허니문을 짜던 아내",
+  "The Honeymoon She Planned",
+  "티켓이나 끊는다며 버린 아내. 전 남편의 새 신혼여행 예약은 그녀 회사 이름이었다.",
+  "He left her for booking tickets. His new honeymoon is booked under her company.",
+  [
+   [
+    "H",
+    "소민",
+    "Rosalie",
+    "30대 여성, 베이지 블레이저에 태블릿, 낮게 묶은 머리, 차분한 눈",
+    "woman in her 30s, beige blazer, tablet, low bun, calm eyes"
+   ],
+   [
+    "V",
+    "성호",
+    "Tobias",
+    "40대 남성, 흰 셔츠에 재킷, 짧은 머리, 거만한 웃음",
+    "man in his 40s, white shirt and jacket, short hair, arrogant smile"
+   ],
+   [
+    "A",
+    "라운지 매니저",
+    "Ms. Fairchild",
+    "50대 여성, 공항 라운지 유니폼, 단정한 머리, 정중한 눈",
+    "woman in her 50s, airport lounge uniform, neat hair, courteous eyes"
+   ]
+  ],
+  [
+   [
+    "공항 라운지",
+    "airport lounge",
+    "성호가 소민의 예약 서류를 밀어 의자 밖으로 떨어뜨린다",
+    "Tobias pushes Somin's booking papers off the chair",
+    1,
+    "티켓이나 끊던 사람, 여기 왜?",
+    "A ticket clerk in the VIP lounge?",
+    "ms"
+   ],
+   [
+    "공항 라운지",
+    "airport lounge",
+    "성호가 소민의 여행 일정표를 찢는다",
+    "Tobias tears Somin's itinerary",
+    1,
+    "신혼여행은 내가 짠다.",
+    "I plan my own honeymoon.",
+    "cz"
+   ],
+   [
+    "공항 라운지",
+    "airport lounge",
+    "소민이 예약 확인서 아래 회사 이름을 본다",
+    "Somin sees a company name under the confirmation",
+    -1,
+    "",
+    "",
+    "trk"
+   ],
+   [
+    "공항 라운지",
+    "airport lounge",
+    "라운지 매니저가 확인서를 들어 신부에게 보인다",
+    "Ms. Fairchild holds the confirmation to the bride",
+    2,
+    "이 신혼여행 예약자는 소민 씨 회사입니다.",
+    "This honeymoon is booked by her company.",
+    "pi"
+   ],
+   [
+    "공항 라운지",
+    "airport lounge",
+    "소민이 예약을 취소하고 성호의 탑승권이 카운터에 남는다",
+    "Somin cancels the booking and Tobias's pass stays on the desk",
+    0,
+    "신혼여행은 다른 분이 짜 드립니다.",
+    "Someone else plans your honeymoon.",
+    "rx"
+   ],
+   [
+    "라운지 창가",
+    "lounge window",
+    "라운지 매니저가 새 단독 상품 기획서를 소민에게 건넨다",
+    "Ms. Fairchild hands Somin a new exclusive package plan",
+    2,
+    "다음 시즌 단독 상품, 소민 씨가 만드시죠.",
+    "Build next season's package yourself.",
+    "cu"
+   ]
+  ]
+ ],
+ [
+  "벌을 친다던 남자의 꿀",
+  "The Honey They Can't Fake",
+  "벌이나 친다며 버린 남편. 호텔 조식의 꿀은 전부 그의 벌통에서 나왔다.",
+  "She left him for keeping bees. Every jar of honey at her hotel comes from his hives.",
+  [
+   [
+    "H",
+    "정환",
+    "Amos",
+    "50대 남성, 흰 방진복에 그물 모자, 그을린 얼굴, 온순한 눈",
+    "man in his 50s, white bee suit, mesh hat, tanned face, gentle eyes"
+   ],
+   [
+    "V",
+    "미래",
+    "Priscilla",
+    "30대 여성, 호텔 식음료 매니저, 검은 정장에 짧은 단발, 비웃는 입",
+    "woman in her 30s, hotel food manager, black suit, short bob, sneering mouth"
+   ],
+   [
+    "A",
+    "총주방장 문",
+    "Chef Colbert",
+    "40대 남성, 흰 셰프복에 짧은 수염, 진지한 눈",
+    "man in his 40s, white chef coat, short beard, serious eyes"
+   ]
+  ],
+  [
+   [
+    "호텔 주방",
+    "hotel kitchen",
+    "미래가 정환의 꿀 단지를 탁자 아래로 민다",
+    "Priscilla shoves Junghwan's honey jar under the table",
+    1,
+    "벌이나 치던 사람, 이제 그만.",
+    "Beekeepers are done.",
+    "cu"
+   ],
+   [
+    "호텔 주방",
+    "hotel kitchen",
+    "미래가 정환의 채밀 기록을 바닥에 던진다",
+    "Priscilla throws Junghwan's harvest log down",
+    1,
+    "새 납품처를 찾았어요.",
+    "We found a new supplier.",
+    "ms"
+   ],
+   [
+    "호텔 주방",
+    "hotel kitchen",
+    "정환이 단지 뚜껑의 양봉장 번호를 손끝으로 짚는다",
+    "Junghwan traces an apiary number on the lid",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "호텔 조식당",
+    "hotel breakfast room",
+    "총주방장 문이 단지를 들어 투숙객들에게 보인다",
+    "Chef Colbert lifts the jar to the guests",
+    2,
+    "이 꿀은 정환 씨 벌통에서 온 겁니다.",
+    "This honey comes from Mr. Junghwan's hives.",
+    "low"
+   ],
+   [
+    "호텔 조식당",
+    "hotel breakfast room",
+    "정환이 단지를 조식대에 올리고 미래가 빈 쟁반을 든다",
+    "Junghwan sets the jar on the buffet as Priscilla holds an empty tray",
+    0,
+    "내일 아침 꿀은 제 벌통에서 옵니다.",
+    "Tomorrow's honey comes from my hives.",
+    "rx"
+   ],
+   [
+    "호텔 정원",
+    "hotel garden",
+    "총주방장 문이 새 호텔 조식 계획서를 정환에게 보인다",
+    "Chef Colbert shows Junghwan a new hotel's breakfast plan",
+    2,
+    "새 호텔 조식도 정환 씨 꿀로.",
+    "The new hotel wants his honey.",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "돌을 깎던 남자의 왕관",
+  "The Stone Only He Could Set",
+  "돌이나 깎는다며 버린 남편. 주얼리 하우스의 신작은 그의 세공이었다.",
+  "She left him for cutting stones. Her jewelry house's new line is his setting work.",
+  [
+   [
+    "H",
+    "도영",
+    "Emory",
+    "40대 남성, 남색 작업복에 돋보기 안경, 짧은 머리, 세밀한 눈",
+    "man in his 40s, navy work shirt, loupe glasses, short hair, fine eyes"
+   ],
+   [
+    "V",
+    "승아",
+    "Delphine",
+    "40대 여성, 주얼리 하우스 대표, 검은 원피스에 진주 귀걸이",
+    "woman in her 40s, jewelry house head, black dress, pearl earrings"
+   ],
+   [
+    "A",
+    "감정사 한",
+    "Mr. Whitaker",
+    "60대 남성, 검은 정장에 흰 장갑, 노련한 눈",
+    "man in his 60s, black suit, white gloves, seasoned eyes"
+   ]
+  ],
+  [
+   [
+    "주얼리 전시장",
+    "jewelry exhibition",
+    "승아가 도영의 세공 트레이를 유리장 밖으로 민다",
+    "Delphine pushes Doyoung's tray off the display case",
+    1,
+    "돌이나 깎던 사람, 이제 끝.",
+    "Stone cutters are finished.",
+    "cz"
+   ],
+   [
+    "주얼리 전시장",
+    "jewelry exhibition",
+    "승아가 도영의 세공 도면을 바닥에 던진다",
+    "Delphine throws Doyoung's setting plans down",
+    1,
+    "이 컬렉션, 네 손 안 거친다.",
+    "Your hands don't touch this collection.",
+    "ms"
+   ],
+   [
+    "주얼리 전시장",
+    "jewelry exhibition",
+    "도영이 목걸이 걸쇠의 작은 각인을 발견한다",
+    "Doyoung spots a small stamp on the necklace clasp",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "주얼리 전시장",
+    "jewelry exhibition",
+    "감정사 한이 목걸이를 들어 손님들에게 보인다",
+    "Mr. Whitaker lifts the necklace to the guests",
+    2,
+    "이 세공 각인은 도영 씨 겁니다.",
+    "This setting is stamped by Mr. Doyoung.",
+    "pi"
+   ],
+   [
+    "주얼리 전시장",
+    "jewelry exhibition",
+    "도영이 목걸이를 케이스에 넣고 승아의 유리장이 비워진다",
+    "Doyoung cases the necklace as Delphine's display goes empty",
+    0,
+    "이 컬렉션은 제 이름으로 다시 나옵니다.",
+    "This collection returns under my name.",
+    "low"
+   ],
+   [
+    "전시장 밖",
+    "outside the exhibition",
+    "감정사 한이 다음 컬렉션 주제를 도영에게 묻는다",
+    "Mr. Whitaker asks Doyoung for the next collection's theme",
+    2,
+    "다음 컬렉션 이름, 도영 씨가 붙이게.",
+    "Name the next collection.",
+    "trk"
+   ]
+  ]
+ ]
+]
