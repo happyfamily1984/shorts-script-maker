@@ -1,10 +1,10 @@
 /* 자동 입력 기본 순서. 저장소 kling/flow.json, grok/flow.json, pickle/flow.json 과 같은 내용 */
 'use strict';
 const KLING_FLOW_DEFAULT = {
- "version": "0.3-partial",
+ "version": "0.4-partial",
  "verified": false,
- "note": "홈 '창작 시작'과 만들기 화면(+, 프롬프트 칸, 모드 '이미지 생성·4.0', '생성')은 사용자 스크린샷으로 확인함. 모드 메뉴, 사진 고르기 화면, 생성 뒤 화면은 아직 추측. 생성 뒤 영상 내려받기(collect)는 화면을 보지 않은 추측.",
- "package": "",
+ "note": "홈 '창작 시작'은 스크린샷으로, 만들기 화면은 2026-11-26 화면 기록(kling.ai.video.chat)으로 확인: 사진 추가 id kling_omni_asset_add, 모드 '비디오 생성·4.0'(omni_edit_preview_cur_model), 길이·화질 omni_edit_ratio_value, 생성 버튼 id omni_edit_preview_submit(글자 없이 크레딧 숫자만). 사진 고르기 화면, 생성 뒤 애셋 화면은 아직 추측.",
+ "package": "kling.ai.video.chat",
  "after": 900,
  "start": [
   {
@@ -86,14 +86,7 @@ const KLING_FLOW_DEFAULT = {
    "do": "click",
    "say": "사진 넣기(+) 누르기",
    "find": {
-    "any": [
-     "=+",
-     "업로드",
-     "이미지 추가",
-     "참고 이미지",
-     "Upload",
-     "Add"
-    ]
+    "id": "kling_omni_asset_add"
    },
    "orTap": {
     "x": 0.13,
@@ -152,7 +145,8 @@ const KLING_FLOW_DEFAULT = {
    "do": "setText",
    "say": "프롬프트 입력",
    "find": {
-    "editable": true
+    "editable": true,
+    "pkg": "kling.ai.video.chat"
    },
    "value": "${prompt}",
    "timeout": 8000
@@ -161,14 +155,14 @@ const KLING_FLOW_DEFAULT = {
    "do": "click",
    "say": "생성 누르기",
    "find": {
-    "any": [
-     "=생성",
-     "=생성하기",
-     "=Generate"
-    ]
+    "id": "omni_edit_preview_submit"
    },
    "timeout": 6000,
-   "if": "autoGenerate"
+   "if": "autoGenerate",
+   "orTap": {
+    "x": 0.85,
+    "y": 0.586
+   }
   },
   {
    "do": "wait",
