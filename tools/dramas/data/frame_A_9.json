@@ -1,0 +1,912 @@
+[
+ [
+  "카드를 긁었다는 계산원",
+  "The Cashier and the Stolen Card",
+  "고객 카드가 부정 사용되자 계산원이 몰린다. 승인 기록의 단말 번호가 점장실 것을 가리킨다.",
+  "A customer's card is used fraudulently and the cashier is blamed. The approval log points at the manager's terminal.",
+  [
+   [
+    "H",
+    "정민",
+    "Sadie",
+    "40대 여성, 초록 마트 조끼, 묶은 머리, 지친 눈",
+    "woman in her 40s, green mart vest, tied hair, tired eyes"
+   ],
+   [
+    "V",
+    "태식",
+    "Mr. Penn",
+    "50대 남성, 흰 셔츠, 넥타이, 반들반들한 이마",
+    "man in his 50s, white shirt, tie, shiny forehead"
+   ],
+   [
+    "A",
+    "지혜",
+    "Ms. Pride",
+    "30대 여성, 검은 코트, 카드사 배지, 또렷한 말투",
+    "woman in her 30s, black coat, card company badge, crisp speech"
+   ]
+  ],
+  [
+   [
+    "마트 고객센터",
+    "mart service desk",
+    "태식이 카드 명세서를 정민 앞에 던진다",
+    "Mr. Penn throws the card statement at Sadie",
+    1,
+    "이 카드, 네 계산대에서 긁혔어.",
+    "This card was swiped at your till.",
+    "cz"
+   ],
+   [
+    "마트 직원 게시판",
+    "mart staff board",
+    "태식이 정민의 사진을 게시판에 붙인다",
+    "Mr. Penn pins Sadie's photo on the staff board",
+    1,
+    "파트타임이 카드를 만져?",
+    "A part-timer handling cards?",
+    "slo"
+   ],
+   [
+    "계산대",
+    "checkout lane",
+    "정민이 영수증의 단말 번호를 손끝으로 짚는다",
+    "Sadie taps the terminal number on a receipt",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "마트 사무실",
+    "mart office",
+    "지혜가 승인 기록의 단말 번호를 대조한다",
+    "Ms. Pride matches the terminal number in the approval log",
+    2,
+    "이 단말, 점장실 겁니다.",
+    "That terminal is in your office.",
+    "pi"
+   ],
+   [
+    "마트 고객센터",
+    "mart service desk",
+    "지혜가 태식의 단말 사용권을 정지한다",
+    "Ms. Pride suspends his terminal access",
+    0,
+    "계산대는 제가 지킵니다.",
+    "I watch my register.",
+    "low"
+   ],
+   [
+    "마트 사무실",
+    "mart office",
+    "카드사 직원이 태식의 사무실 문을 두드린다",
+    "The card agent knocks on his office door",
+    -1,
+    "",
+    "",
+    "cu"
+   ]
+  ]
+ ],
+ [
+  "시연폰을 감춘 판매원",
+  "The Clerk and the Missing Demo Phone",
+  "시연폰이 사라지자 신입 판매원이 몰린다. 기기 위치 기록이 매장장의 집을 가리킨다.",
+  "A demo phone vanishes and the new clerk is blamed. The device location points at the store manager's home.",
+  [
+   [
+    "H",
+    "민규",
+    "Arlo",
+    "20대 남성, 매장 유니폼, 짧은 머리, 여린 얼굴",
+    "man in his 20s, store uniform, short hair, soft face"
+   ],
+   [
+    "V",
+    "미란",
+    "Ms. Copp",
+    "40대 여성, 검은 매장 정장, 짧은 단발, 날선 눈",
+    "woman in her 40s, black store suit, short bob, sharp eyes"
+   ],
+   [
+    "A",
+    "유나",
+    "Ms. Kite",
+    "30대 여성, 본사 보안 재킷, 태블릿, 무표정",
+    "woman in her 30s, head office security jacket, tablet, blank face"
+   ]
+  ],
+  [
+   [
+    "전자제품 매장",
+    "electronics store",
+    "미란이 빈 시연대를 민규 앞에 밀어 놓는다",
+    "Ms. Copp pushes the empty display stand at Arlo",
+    1,
+    "학생 알바가 시연폰을 감춰?",
+    "A student clerk hiding a demo phone?",
+    "low"
+   ],
+   [
+    "전자제품 매장",
+    "electronics store",
+    "미란이 민규의 사물함을 비우고 입구에 세운다",
+    "Ms. Copp empties Arlo's locker and stands him by the door",
+    1,
+    "손님들 앞에서 기다려.",
+    "Wait there in front of the customers.",
+    "ms"
+   ],
+   [
+    "시연대",
+    "display stand",
+    "민규가 시연대 뒤의 보안 태그를 손끝으로 만진다",
+    "Arlo touches the security tag behind the display stand",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "매장 사무실",
+    "store office",
+    "유나가 기기 위치 기록을 지도에 띄운다",
+    "Ms. Kite puts the device's location on a map",
+    2,
+    "이 집, 매장장님 주소예요.",
+    "This house is your address.",
+    "slo"
+   ],
+   [
+    "전자제품 매장",
+    "electronics store",
+    "유나가 미란의 매장 열쇠를 회수한다",
+    "Ms. Kite takes back the store manager's keys",
+    0,
+    "시연대는 제자리에 있습니다.",
+    "The display is back where it belongs.",
+    "cz"
+   ],
+   [
+    "매장 사무실",
+    "store office",
+    "본사 직원이 민규에게 다른 매장 근무를 제안한다",
+    "Head office offers Arlo a post at another store",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "허위 청구에 가담한 사정사",
+  "The Adjuster and the False Claim",
+  "허위 보험 청구가 적발되자 계약직 사정사가 몰린다. 사진 촬영 시각이 지점장의 휴대폰을 가리킨다.",
+  "A false insurance claim surfaces and the contract adjuster is blamed. The photo time points at the branch manager's phone.",
+  [
+   [
+    "H",
+    "다예",
+    "Fern",
+    "30대 여성, 회색 정장, 낮게 묶은 머리, 차분한 눈",
+    "woman in her 30s, gray suit, low bun, calm eyes"
+   ],
+   [
+    "V",
+    "영철",
+    "Mr. Stroud",
+    "50대 남성, 감색 정장, 반지, 큰 손",
+    "man in his 50s, navy suit, ring, large hands"
+   ],
+   [
+    "A",
+    "수진",
+    "Ms. Corley",
+    "40대 여성, 검은 재킷, 준법감시 배지, 낮은 목소리",
+    "woman in her 40s, black jacket, compliance badge, low voice"
+   ]
+  ],
+  [
+   [
+    "보험 지점",
+    "insurance branch",
+    "영철이 청구 서류를 다예 앞에 흩뿌린다",
+    "Mr. Stroud scatters the claim file at Fern",
+    1,
+    "이 청구, 네가 승인했어.",
+    "You approved this claim.",
+    "trk"
+   ],
+   [
+    "보험 지점",
+    "insurance branch",
+    "영철이 다예의 사무실 출입카드를 회수한다",
+    "Mr. Stroud takes back Fern's office access card",
+    1,
+    "계약직이 청구를?",
+    "A contractor and claims?",
+    "ms"
+   ],
+   [
+    "청구 사진",
+    "claim photos",
+    "다예가 사진 파일의 촬영 시각을 확인한다",
+    "Fern checks the capture time on the photo files",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "본사 준법실",
+    "compliance office",
+    "수진이 사진 업로드 기록과 기기 번호를 띄운다",
+    "Ms. Corley brings up the upload log and device number",
+    2,
+    "이 사진, 지점장님 휴대폰에서 올라왔어요.",
+    "These photos came from your phone.",
+    "low"
+   ],
+   [
+    "보험 지점",
+    "insurance branch",
+    "다예가 영철의 승인 권한표를 회수한다",
+    "Fern takes back his approval authority sheet",
+    0,
+    "서류는 제가 봅니다. 휴대폰은 압수되겠네요.",
+    "I review the files. They'll take the phone.",
+    "ots"
+   ],
+   [
+    "보험 지점",
+    "insurance branch",
+    "다예의 책상 위에 봉인된 편지가 놓인다",
+    "A sealed letter sits on Fern's desk",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "장부를 숨긴 신입 회계사",
+  "The Junior Auditor and the Hidden Ledger",
+  "분식회계가 드러나자 지방대 출신 신입이 몰린다. 서버 접속 기록이 파트너의 삭제를 보여 준다.",
+  "Cooking the books surfaces and the junior auditor is blamed. The server log shows the partner deleting files.",
+  [
+   [
+    "H",
+    "재우",
+    "Rhys",
+    "20대 후반 남성, 남색 정장, 안경, 마른 어깨",
+    "man in his late 20s, navy suit, glasses, thin shoulders"
+   ],
+   [
+    "V",
+    "성호",
+    "Mr. Rudd",
+    "50대 남성, 고급 정장, 커프스 버튼, 두꺼운 목소리",
+    "man in his 50s, fine suit, cufflinks, thick voice"
+   ],
+   [
+    "A",
+    "동현",
+    "Mr. Ivor",
+    "40대 남성, 검은 코트, 조사관 배지, 날카로운 눈",
+    "man in his 40s, black coat, investigator badge, sharp eyes"
+   ]
+  ],
+  [
+   [
+    "회계법인 회의실",
+    "audit firm meeting room",
+    "성호가 장부 출력본을 재우 앞에 밀어 놓는다",
+    "Mr. Rudd slides the ledger printout at Rhys",
+    1,
+    "이 장부, 네가 숨겼어.",
+    "You buried this ledger.",
+    "pi"
+   ],
+   [
+    "회계법인 복도",
+    "audit firm hallway",
+    "성호가 재우의 노트북을 덮고 상자를 들려 준다",
+    "Mr. Rudd closes Rhys's laptop and hands him a box",
+    1,
+    "지방대 출신이 장부를?",
+    "A local college grad and ledgers?",
+    "ws"
+   ],
+   [
+    "서버 화면",
+    "server screen",
+    "재우가 삭제된 파일의 복원 지점을 연다",
+    "Rhys opens the restore point of a deleted file",
+    -1,
+    "",
+    "",
+    "trk"
+   ],
+   [
+    "회계법인 회의실",
+    "audit firm meeting room",
+    "동현이 서버 접속 기록의 계정을 짚는다",
+    "Mr. Ivor taps the account in the server log",
+    2,
+    "삭제 시각, 파트너님 계정입니다.",
+    "Deleted under your account, partner.",
+    "low"
+   ],
+   [
+    "회계법인 회의실",
+    "audit firm meeting room",
+    "동현이 성호의 파트너 명패를 가방에 넣는다",
+    "Mr. Ivor pockets the partner's nameplate",
+    0,
+    "숫자는 제가 맞춥니다. 서명은 파트너가 하세요.",
+    "I tie the numbers. You can sign them.",
+    "cu"
+   ],
+   [
+    "회계법인 회의실",
+    "audit firm meeting room",
+    "동현이 재우에게 다른 회사 명함을 건넨다",
+    "The investigator hands Rhys another firm's card",
+    -1,
+    "",
+    "",
+    "cz"
+   ]
+  ]
+ ],
+ [
+  "설계도를 넘긴 엔지니어",
+  "The Engineer and the Leaked Blueprint",
+  "시제품 설계가 새자 여성 엔지니어가 몰린다. 클라우드 기록이 CTO의 다운로드를 보여 준다.",
+  "The prototype design leaks and the female engineer is blamed. The cloud log shows the CTO's download.",
+  [
+   [
+    "H",
+    "소은",
+    "Juno",
+    "20대 후반 여성, 검은 후드, 안전 안경, 짧은 머리",
+    "woman in her late 20s, black hoodie, safety glasses, short hair"
+   ],
+   [
+    "V",
+    "태현",
+    "Mr. Kroll",
+    "40대 남성, 회색 니트, 스마트워치, 빠른 말투",
+    "man in his 40s, gray knit, smartwatch, fast talker"
+   ],
+   [
+    "A",
+    "하린",
+    "Ms. Brook",
+    "30대 여성, 베이지 코트, 투자사 배지, 단호한 턱",
+    "woman in her 30s, beige coat, investor badge, firm jaw"
+   ]
+  ],
+  [
+   [
+    "스타트업 회의실",
+    "startup meeting room",
+    "태현이 도면 출력본을 소은 앞에 내던진다",
+    "Mr. Kroll throws the blueprint printout at Juno",
+    1,
+    "이 도면, 경쟁사에 있어.",
+    "The rival has this drawing.",
+    "cz"
+   ],
+   [
+    "스타트업 사무실",
+    "startup office",
+    "태현이 소은의 노트북을 거둬 들고 자리를 비운다",
+    "Mr. Kroll takes Juno's laptop and clears her desk",
+    1,
+    "여자는 프로젝트 아웃이야.",
+    "Women are off this project.",
+    "trk"
+   ],
+   [
+    "공유 폴더",
+    "shared drive",
+    "소은이 자기 폴더의 공유 설정을 확인한다",
+    "Juno checks her folder's sharing settings",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "투자사 사무실",
+    "investor office",
+    "하린이 다운로드 기록의 계정과 시각을 띄운다",
+    "Ms. Brook puts the download account and time on screen",
+    2,
+    "이 다운로드, CTO 계정이고 제가 없는 날이에요.",
+    "That download is your account, on my day off.",
+    "slo"
+   ],
+   [
+    "스타트업 회의실",
+    "startup meeting room",
+    "하린이 투자 해지서를 테이블에 놓는다",
+    "Ms. Brook sets the withdrawal notice on the table",
+    0,
+    "설계는 제가 그립니다. 투자는 다시 받으세요.",
+    "I draw the design. Go win your funding back.",
+    "low"
+   ],
+   [
+    "스타트업 사무실",
+    "startup office",
+    "소은의 폰에 경쟁사 대표의 메시지가 뜬다",
+    "A message from the rival's CEO lights up Juno's phone",
+    -1,
+    "",
+    "",
+    "cu"
+   ]
+  ]
+ ],
+ [
+  "소스를 유출한 QA 담당",
+  "The Tester and the Leaked Code",
+  "신작 소스가 유출되자 QA 담당이 몰린다. 빌드 서버 기록이 팀장의 야간 접속을 보여 준다.",
+  "The new game's code leaks and the tester is blamed. The build server log shows the team leader's night session.",
+  [
+   [
+    "H",
+    "현준",
+    "Ilan",
+    "30대 남성, 후드티, 헤드셋 목에 건 채, 수염",
+    "man in his 30s, hoodie, headset around his neck, stubble"
+   ],
+   [
+    "V",
+    "민철",
+    "Mr. Drover",
+    "40대 남성, 검은 셔츠, 안경, 낮은 목소리",
+    "man in his 40s, black shirt, glasses, low voice"
+   ],
+   [
+    "A",
+    "지수",
+    "Ms. Sena",
+    "40대 여성, 보안 컨설턴트 재킷, 노트북, 차분한 태도",
+    "woman in her 40s, security consultant jacket, laptop, calm manner"
+   ]
+  ],
+  [
+   [
+    "게임사 전사 회의",
+    "game studio all-hands",
+    "민철이 유출된 코드 화면을 띄워 놓고 현준을 부른다",
+    "Mr. Drover puts the leaked code on screen and calls Ilan up",
+    1,
+    "이 코드, 네 계정에서 나갔어.",
+    "This code left your account.",
+    "ms"
+   ],
+   [
+    "게임사 사무실",
+    "studio office",
+    "민철이 현준의 계정을 잠그고 사원증을 거둔다",
+    "Mr. Drover locks Ilan's account and takes his badge",
+    1,
+    "QA가 코드를 만져?",
+    "A tester touching code?",
+    "pi"
+   ],
+   [
+    "빌드 서버",
+    "build server",
+    "현준이 야간 업로드 기록을 넘긴다",
+    "Ilan scrolls the nighttime upload log",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "보안 회의실",
+    "security room",
+    "지수가 접속 세션의 계정과 시간을 짚는다",
+    "Ms. Sena taps the session's account and time",
+    2,
+    "새벽 세 시, 팀장님 계정 세션이에요.",
+    "Three in the morning. Your session, team leader.",
+    "low"
+   ],
+   [
+    "게임사 전사 회의",
+    "game studio all-hands",
+    "민철이 안경을 벗고 연단에서 내려온다",
+    "Mr. Drover takes off his glasses and steps down",
+    0,
+    "버그는 제가 잡습니다.",
+    "I catch the bugs. You take the fall.",
+    "ots"
+   ],
+   [
+    "게임사 사무실",
+    "studio office",
+    "현준의 계정으로 로그인 알림이 다시 뜬다",
+    "A login alert fires on Ilan's account again",
+    -1,
+    "",
+    "",
+    "slo"
+   ]
+  ]
+ ],
+ [
+  "고객 정보를 흘린 상담원",
+  "The Agent and the Leaked Customer",
+  "고객 개인정보가 유출되자 계약직 상담원이 몰린다. 조회 기록이 팀장의 사번을 남겼다.",
+  "A customer's data leaks and the contract agent is blamed. The lookup record carries the team leader's staff number.",
+  [
+   [
+    "H",
+    "수아",
+    "Edie",
+    "30대 여성, 상담원 헤드셋, 흰 셔츠, 창백한 얼굴",
+    "woman in her 30s, call center headset, white shirt, pale face"
+   ],
+   [
+    "V",
+    "준호",
+    "Mr. Borland",
+    "40대 남성, 체크 셔츠, 커피잔, 신경질적인 손",
+    "man in his 40s, check shirt, coffee cup, jittery hands"
+   ],
+   [
+    "A",
+    "나영",
+    "Ms. Ines",
+    "30대 여성, 회색 정장, 감사 배지, 또렷한 눈",
+    "woman in her 30s, gray suit, audit badge, clear eyes"
+   ]
+  ],
+  [
+   [
+    "콜센터 상담석",
+    "call center floor",
+    "준호가 유출된 고객 정보를 수아 모니터에 띄운다",
+    "Mr. Borland pulls the leaked record onto Edie's screen",
+    1,
+    "이 정보, 네 아이디로 조회됐어.",
+    "This record was pulled under your ID.",
+    "low"
+   ],
+   [
+    "콜센터 상담석",
+    "call center floor",
+    "준호가 수아의 헤드셋을 빼앗아 책상에 놓는다",
+    "Mr. Borland takes Edie's headset and sets it on the desk",
+    1,
+    "계약직이 고객 정보를?",
+    "A contractor and customer data?",
+    "trk"
+   ],
+   [
+    "상담 프로그램",
+    "call center system",
+    "수아가 자기 조회 이력을 넘긴다",
+    "Edie scrolls her own lookup history",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "품질 회의실",
+    "quality room",
+    "나영이 조회 기록의 사번을 확대한다",
+    "Ms. Ines enlarges the staff number in the lookup log",
+    2,
+    "이 조회, 팀장님 사번입니다.",
+    "This lookup is your staff number.",
+    "pi"
+   ],
+   [
+    "콜센터 상담석",
+    "call center floor",
+    "나영이 준호의 사번을 단말에서 지운다",
+    "Ms. Ines deletes his staff number from the system",
+    0,
+    "고객은 제가 받습니다.",
+    "I take the calls. Not the blame.",
+    "ms"
+   ],
+   [
+    "콜센터 상담석",
+    "call center floor",
+    "수아의 헤드셋에 모르는 번호가 걸려 온다",
+    "An unknown number calls Edie's headset",
+    -1,
+    "",
+    "",
+    "cz"
+   ]
+  ]
+ ],
+ [
+  "기름값을 뺀 화물기사",
+  "The Trucker and the Fuel Card",
+  "주유 카드가 부정 사용되자 지입기사가 몰린다. 주유 승인 위치가 팀장의 차를 가리킨다.",
+  "A fuel card is misused and the owner-driver is blamed. The approval location points at the dispatcher's car.",
+  [
+   [
+    "H",
+    "기철",
+    "Ray",
+    "50대 남성, 회색 작업복, 모자, 그을린 목덜미",
+    "man in his 50s, gray work clothes, cap, sun-darkened neck"
+   ],
+   [
+    "V",
+    "미라",
+    "Ms. Delmar",
+    "40대 여성, 검은 재킷, 배차 태블릿, 짧은 말투",
+    "woman in her 40s, black jacket, dispatch tablet, clipped speech"
+   ],
+   [
+    "A",
+    "정한",
+    "Mr. Able",
+    "50대 남성, 회사 감사 조끼, 클립보드, 느린 걸음",
+    "man in his 50s, company audit vest, clipboard, slow steps"
+   ]
+  ],
+  [
+   [
+    "화물 차고",
+    "truck yard",
+    "미라가 주유 내역서를 기철의 트럭 창에 붙인다",
+    "Ms. Delmar sticks the fuel bill on Ray's truck window",
+    1,
+    "이 카드, 네가 썼어.",
+    "You used this card.",
+    "cz"
+   ],
+   [
+    "화물 차고",
+    "truck yard",
+    "미라가 기철의 주유 카드를 뽑아 가위로 자른다",
+    "Ms. Delmar cuts Ray's fuel card with scissors",
+    1,
+    "지입기사가 회사 카드를?",
+    "An owner-driver and company cards?",
+    "ms"
+   ],
+   [
+    "주유소 영수증",
+    "fuel receipt",
+    "기철이 영수증의 주유소 이름을 확인한다",
+    "Ray checks the station name on the receipt",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "회사 감사실",
+    "company audit office",
+    "정한이 승인 위치를 지도에 찍는다",
+    "Mr. Able pins the approval location on a map",
+    2,
+    "이 주유소, 팀장님 집 앞입니다.",
+    "That station is in front of your home.",
+    "low"
+   ],
+   [
+    "화물 차고",
+    "truck yard",
+    "정한이 미라의 배차 권한을 정지한다",
+    "Mr. Able suspends her dispatch authority",
+    0,
+    "기름은 제가 넣습니다. 배차는 다시 짜세요.",
+    "I fill my own tank. Rewrite the schedule.",
+    "cu"
+   ],
+   [
+    "화물 차고",
+    "truck yard",
+    "차고에 화주들이 몰려와 배차를 묻는다",
+    "Shippers crowd the yard asking about loads",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "계약금을 숨긴 중개 보조",
+  "The Broker's Aide and the Deposit",
+  "계약금이 사라지자 자격증 없는 중개 보조가 몰린다. 입금 계좌가 대표의 개인 계좌로 찍혀 있다.",
+  "A deposit vanishes and the unlicensed aide is blamed. The transfer receipt shows the owner's personal account.",
+  [
+   [
+    "H",
+    "세아",
+    "Isla",
+    "20대 여성, 흰 블라우스, 사원증, 긴 머리",
+    "woman in her 20s, white blouse, staff badge, long hair"
+   ],
+   [
+    "V",
+    "동수",
+    "Mr. Quill",
+    "50대 남성, 갈색 정장, 구두, 큰 목소리",
+    "man in his 50s, brown suit, leather shoes, loud voice"
+   ],
+   [
+    "A",
+    "은정",
+    "Ms. Karr",
+    "40대 여성, 협회 재킷, 서류철, 단호한 표정",
+    "woman in her 40s, association jacket, folder, firm look"
+   ]
+  ],
+  [
+   [
+    "부동산 사무실",
+    "real estate office",
+    "동수가 입금표를 세아 앞에 내던진다",
+    "Mr. Quill throws the deposit slip at Isla",
+    1,
+    "이 계약금, 네가 받았어.",
+    "You took this deposit.",
+    "ms"
+   ],
+   [
+    "부동산 사무실",
+    "real estate office",
+    "동수가 세아의 명함을 찢어 쓰레기통에 버린다",
+    "Mr. Quill tears Isla's name card into the bin",
+    1,
+    "중개 보조가 계약금을?",
+    "An aide handling deposits?",
+    "ws"
+   ],
+   [
+    "사무실 금고",
+    "office safe",
+    "세아가 보관하던 입금표 사본을 펼친다",
+    "Isla unfolds the copy of the deposit slip",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "협회 사무실",
+    "association office",
+    "은정이 계좌 예금주를 출력해 놓는다",
+    "Ms. Karr prints the account holder's name",
+    2,
+    "입금 계좌 예금주가 대표님입니다.",
+    "The account holder is you.",
+    "pi"
+   ],
+   [
+    "부동산 사무실",
+    "real estate office",
+    "동수가 구두 앞코를 닦으며 물러난다",
+    "Mr. Quill wipes his shoe and backs away",
+    0,
+    "계약서는 제가 씁니다. 계좌는 대표님이 설명하세요.",
+    "I write the contract. You explain the account.",
+    "ots"
+   ],
+   [
+    "부동산 사무실",
+    "real estate office",
+    "명함 뒤에 다른 주소가 적혀 있다",
+    "Another address is written on the back of the card",
+    -1,
+    "",
+    "",
+    "cz"
+   ]
+  ]
+ ],
+ [
+  "예약을 지운 리조트 직원",
+  "The Reservations Clerk and the Erased Booking",
+  "귀빈 예약이 사라지자 교대 근무 직원이 몰린다. 시스템 기록이 총지배인의 취소를 보여 준다.",
+  "A VIP booking disappears and the shift clerk is blamed. The system log shows the general manager erased it.",
+  [
+   [
+    "H",
+    "태윤",
+    "Ivo",
+    "30대 남성, 리조트 유니폼, 짧은 머리, 다크서클",
+    "man in his 30s, resort uniform, short hair, dark circles"
+   ],
+   [
+    "V",
+    "소현",
+    "Ms. Cheyne",
+    "40대 여성, 흰 정장, 긴 목걸이, 차가운 미소",
+    "woman in her 40s, white suit, long necklace, cold smile"
+   ],
+   [
+    "A",
+    "정우",
+    "Mr. Seaborn",
+    "40대 남성, 본사 재킷, 노트북, 무거운 눈",
+    "man in his 40s, head office jacket, laptop, heavy eyes"
+   ]
+  ],
+  [
+   [
+    "리조트 로비",
+    "resort lobby",
+    "소현이 빈 예약 화면을 태윤에게 보여 준다",
+    "Ms. Cheyne shows Ivo the empty booking screen",
+    1,
+    "이 예약, 네가 지웠어.",
+    "You erased this booking.",
+    "ots"
+   ],
+   [
+    "리조트 카운터",
+    "resort counter",
+    "소현이 태윤을 야간 청소 명단에 올린다",
+    "Ms. Cheyne puts Ivo on the night cleaning list",
+    1,
+    "교대 근무자가 귀빈 방을?",
+    "A shift worker and the VIP room?",
+    "trk"
+   ],
+   [
+    "예약 시스템",
+    "reservation system",
+    "태윤이 취소 기록의 아이디를 확인한다",
+    "Ivo checks the ID on the cancellation record",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "리조트 로비",
+    "resort lobby",
+    "정우가 취소 기록 전문을 출력해 건넨다",
+    "Mr. Seaborn prints the full cancellation log",
+    2,
+    "취소자 칸, 총지배인님입니다.",
+    "The canceller is you, general manager.",
+    "low"
+   ],
+   [
+    "리조트 카운터",
+    "resort counter",
+    "정우가 소현의 총지배인 명패를 떼어 온다",
+    "Mr. Seaborn carries off her general manager nameplate",
+    0,
+    "방은 제가 잡습니다. 취소는 총지배님이 하셨죠.",
+    "I book rooms. You cancelled this one.",
+    "cu"
+   ],
+   [
+    "리조트 로비",
+    "resort lobby",
+    "로비에 본사 회장이 도착한다",
+    "The group chairman arrives in the lobby",
+    -1,
+    "",
+    "",
+    "slo"
+   ]
+  ]
+ ]
+]

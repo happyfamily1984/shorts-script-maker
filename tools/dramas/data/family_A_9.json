@@ -1,0 +1,912 @@
+[
+ [
+  "반지 도둑으로 몰린 경비원",
+  "The Guard They Framed",
+  "사촌은 경비원인 조카에게 잃어버린 반지를 뒤집어씌운다. 현관 카메라가 다른 손을 찍고 있었다.",
+  "The cousin blames the security guard for her missing ring. The door camera caught another hand.",
+  [
+   [
+    "H",
+    "민준",
+    "Miles",
+    "20대 후반 남성, 경비 제복, 짧은 머리, 담담한 눈",
+    "man in his late 20s, guard uniform, short hair, level eyes"
+   ],
+   [
+    "V",
+    "복순",
+    "Dolores",
+    "50대 여성, 꽃무늬 블라우스, 큰 반지, 날선 목소리",
+    "woman in her 50s, floral blouse, large ring, sharp voice"
+   ],
+   [
+    "A",
+    "하퍼 씨",
+    "Mr. Harper",
+    "40대 남성, 검은 정장, 태블릿, 무표정",
+    "man in his 40s, black suit, tablet, blank face"
+   ]
+  ],
+  [
+   [
+    "가족 집 거실",
+    "family living room",
+    "복순이 민준의 경비 모자를 벗겨 소파에 던진다",
+    "Dolores rips off Miles's guard cap and throws it",
+    1,
+    "집에 있던 반지, 네가 가져갔지.",
+    "The ring from this house. You took it.",
+    "cz"
+   ],
+   [
+    "가족 집 거실",
+    "family living room",
+    "복순이 민준의 주머니 쪽으로 손을 뻗는다",
+    "Dolores reaches toward Miles's pockets",
+    1,
+    "주머니 비워 봐. 여기서.",
+    "Empty your pockets. Here.",
+    "ms"
+   ],
+   [
+    "가족 집 현관",
+    "family entryway",
+    "민준이 현관 위 카메라 각도를 손으로 가리킨다",
+    "Miles points at the angle of the door camera",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "가족 집 거실",
+    "family living room",
+    "하퍼가 태블릿 영상을 복순 앞에 돌린다",
+    "Mr. Harper turns the tablet footage toward Dolores",
+    2,
+    "그 시간, 다른 손이 문을 열었습니다.",
+    "At that hour, another hand opened the door.",
+    "low"
+   ],
+   [
+    "가족 집 거실",
+    "family living room",
+    "복순이 소파 팔걸이를 붙든 채 앉는다",
+    "Dolores sinks down gripping the armrest",
+    0,
+    "신고는 제가 했어요. 범인은 따로.",
+    "I filed the report. It's someone else.",
+    "cu"
+   ],
+   [
+    "가족 집 현관",
+    "family entryway",
+    "문이 열리고 사촌이 굳은 얼굴로 들어선다",
+    "The door opens and the cousin walks in, face frozen",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "장비 열 벌을 외상으로 가져간 삼촌",
+  "Ten Sets of Gear, Unpaid",
+  "삼촌은 스키 강사인 조카에게 장비를 다 맡기고 값을 안 준다. 강사 계약서가 리프트 표를 끊었다.",
+  "The uncle leaves all his gear with his instructor nephew and pays nothing. The contract cuts his lift.",
+  [
+   [
+    "H",
+    "서우",
+    "Drew",
+    "20대 남성, 빨간 스키 재킷, 고글, 밝은 눈",
+    "man in his 20s, red ski jacket, goggles, bright eyes"
+   ],
+   [
+    "V",
+    "판석",
+    "Gerald",
+    "50대 남성, 흰 스키복, 선글라스, 큰 목소리",
+    "man in his 50s, white ski suit, sunglasses, loud voice"
+   ],
+   [
+    "A",
+    "켈리 씨",
+    "Ms. Kelly",
+    "30대 여성, 리조트 제복, 클립보드, 단호한 표정",
+    "woman in her 30s, resort uniform, clipboard, firm face"
+   ]
+  ],
+  [
+   [
+    "스키장 장비실",
+    "ski rental room",
+    "판석이 서우의 장비 가방을 발로 밀어 굴린다",
+    "Gerald kicks Drew's gear bag across the floor",
+    1,
+    "강습은 무슨, 장비나 옮겨.",
+    "Forget teaching. Move the gear.",
+    "ws"
+   ],
+   [
+    "스키장 장비실",
+    "ski rental room",
+    "판석이 장비 열 벌을 계산 없이 들고 나간다",
+    "Gerald carries out ten sets of gear unpaid",
+    1,
+    "이 열 벌, 계산서는 나중에.",
+    "Ten sets. Bill me later.",
+    "ots"
+   ],
+   [
+    "스키장 강사실",
+    "ski instructor room",
+    "서우가 강사 계약서의 장비 대여 조항을 본다",
+    "Drew reads the gear rental clause on his contract",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "스키장 장비실",
+    "ski rental room",
+    "켈리가 계약서를 판석 앞에 놓는다",
+    "Ms. Kelly sets the contract before Gerald",
+    2,
+    "장비 대여는 강사 서우 씨 명의입니다.",
+    "Gear rentals are under instructor Drew.",
+    "pi"
+   ],
+   [
+    "스키장 리프트",
+    "ski lift gate",
+    "판석이 리프트 게이트에서 표를 꺼내지 못한다",
+    "Gerald fails to produce a pass at the lift gate",
+    0,
+    "오늘 리프트는 못 타세요.",
+    "No lift for you today.",
+    "cz"
+   ],
+   [
+    "리프트 아래",
+    "under the lift",
+    "여자가 새 강사 명패를 단다",
+    "A woman below the lift pins up a new instructor plate",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "케이터링 잔금을 안 준 이모",
+  "The Aunt Who Skipped the Catering Bill",
+  "이모는 파티시에인 조카에게 케이터링을 전부 맡기고 잔금을 안 준다. 계약서가 파티를 멈춰 세웠다.",
+  "The aunt leaves the whole party to her pastry chef niece and skips the balance. The contract stops the party.",
+  [
+   [
+    "H",
+    "유나",
+    "June",
+    "30대 여성, 흰 앞치마, 묶은 머리, 부드러운 눈",
+    "woman in her 30s, white apron, tied hair, gentle eyes"
+   ],
+   [
+    "V",
+    "귀남",
+    "Gwen",
+    "50대 여성, 금색 원피스, 큰 귀걸이, 얕보는 웃음",
+    "woman in her 50s, gold dress, big earrings, condescending smile"
+   ],
+   [
+    "A",
+    "브랜든 씨",
+    "Mr. Brandon",
+    "40대 남성, 정장, 서류 가방, 차분한 태도",
+    "man in his 40s, suit, briefcase, calm manner"
+   ]
+  ],
+  [
+   [
+    "파티 준비실",
+    "party prep room",
+    "귀남이 유나의 케이크 상자를 뚜껑째 눌러 내린다",
+    "Gwen presses down the lid of June's cake box",
+    1,
+    "이 케이크, 손님 수에 맞춰 늘려.",
+    "Stretch this cake for more guests.",
+    "ms"
+   ],
+   [
+    "파티 준비실",
+    "party prep room",
+    "귀남이 손님 명단을 늘리며 값을 깎는다",
+    "Gwen adds guests and cuts the price with a wave",
+    1,
+    "값은 반으로. 가족이니까.",
+    "Half the price. Family.",
+    "cz"
+   ],
+   [
+    "파티 준비실",
+    "party prep room",
+    "유나가 케이터링 계약서의 잔금 조항을 짚는다",
+    "June points at the balance clause in the catering contract",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "파티장",
+    "party hall",
+    "브랜든이 계약서를 귀남 앞에 펼친다",
+    "Mr. Brandon opens the contract before Gwen",
+    2,
+    "잔금 미납이면 음식은 나가지 않습니다.",
+    "No balance, no food leaves this kitchen.",
+    "pi"
+   ],
+   [
+    "파티장",
+    "party hall",
+    "귀남이 빈 테이블을 바라본다",
+    "Gwen stares at the empty tables",
+    0,
+    "파티는 여기서 끝이에요.",
+    "Your party ends here.",
+    "cu"
+   ],
+   [
+    "파티장 입구",
+    "party hall entrance",
+    "여자가 다른 업체 케이터링 상자를 든다",
+    "A woman at the entrance carries a rival caterer's box",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "크레딧에서 이름을 지운 큰아버지",
+  "The Credit He Stole on Air",
+  "큰아버지는 조명 감독인 조카를 전등이나 다는 애라 부르고 인터뷰를 독차지한다. 크레딧이 진실을 말했다.",
+  "The uncle calls his lighting director nephew a lamp hanger and takes the interview. The credits told the truth.",
+  [
+   [
+    "H",
+    "지호",
+    "Devin",
+    "30대 남성, 검은 후드, 무전기, 무표정",
+    "man in his 30s, black hoodie, radio, blank face"
+   ],
+   [
+    "V",
+    "두만",
+    "Harris",
+    "60대 남성, 밝은 정장, 넥타이핀, 거만한 턱",
+    "man in his 60s, light suit, tie pin, arrogant chin"
+   ],
+   [
+    "A",
+    "워커 씨",
+    "Ms. Walker",
+    "40대 여성, 방송국 배지, 태블릿, 단호한 태도",
+    "woman in her 40s, studio badge, tablet, firm manner"
+   ]
+  ],
+  [
+   [
+    "방송 스튜디오",
+    "TV studio",
+    "두만이 지호의 무전기를 빼앗아 스탠드에 놓는다",
+    "Harris takes Devin's radio and sets it on a stand",
+    1,
+    "인터뷰는 내가 한다. 넌 조명.",
+    "I do the interview. You do lights.",
+    "cz"
+   ],
+   [
+    "방송 스튜디오",
+    "TV studio",
+    "두만이 자기 이름만 크레딧에 올리라고 손짓한다",
+    "Harris gestures for only his name in the credits",
+    1,
+    "크레딧엔 내 이름만.",
+    "Only my name in the credits.",
+    "trk"
+   ],
+   [
+    "방송 스튜디오",
+    "TV studio",
+    "지호가 계약서의 조명 감독란을 확인한다",
+    "Devin checks the lighting director line in the contract",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "방송 스튜디오",
+    "TV studio",
+    "워커가 크레딧 표를 두만 앞에 띄운다",
+    "Ms. Walker pulls the credit list up before Harris",
+    2,
+    "조명 감독은 지호 씨, 계약서에 적혀 있습니다.",
+    "The contract lists Devin as lighting director.",
+    "low"
+   ],
+   [
+    "방송 스튜디오",
+    "TV studio",
+    "두만이 인터뷰 의자에서 일어난다",
+    "Harris rises from the interview chair",
+    0,
+    "오늘 인터뷰는 취소됐습니다.",
+    "Today's interview is cancelled.",
+    "rx"
+   ],
+   [
+    "스튜디오 문",
+    "studio door",
+    "여자가 새 진행자를 데려온다",
+    "A woman arrives with a new host",
+    -1,
+    "",
+    "",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "논문 이름을 지운 고모의 강의",
+  "The Paper Without Her Name",
+  "고모는 시간강사인 조카에게 논문을 대신 쓰게 하고 이름을 지운다. 임용 서류가 조카 이름을 되살렸다.",
+  "The aunt has her lecturer niece write the paper, then erases her name. The hiring file brought it back.",
+  [
+   [
+    "H",
+    "채원",
+    "Sloane",
+    "30대 여성, 베이지 재킷, 안경, 차분한 눈",
+    "woman in her 30s, beige jacket, glasses, calm eyes"
+   ],
+   [
+    "V",
+    "을순",
+    "Bettina",
+    "60대 여성, 트위드 재킷, 목도리, 날선 말투",
+    "woman in her 60s, tweed jacket, scarf, sharp tongue"
+   ],
+   [
+    "A",
+    "핀리 씨",
+    "Ms. Finley",
+    "40대 여성, 정장, 서류철, 무표정",
+    "woman in her 40s, suit, file folder, blank face"
+   ]
+  ],
+  [
+   [
+    "대학 강의실",
+    "lecture hall",
+    "을순이 채원의 강의 노트를 쓰레기통에 버린다",
+    "Bettina dumps Sloane's lecture notes into a bin",
+    1,
+    "이 논문, 내 이름으로 낼 거야.",
+    "This paper goes out under my name.",
+    "ms"
+   ],
+   [
+    "대학 강의실",
+    "lecture hall",
+    "을순이 논문 표지에서 채원 이름을 손으로 가린다",
+    "Bettina covers Sloane's name on the paper cover",
+    1,
+    "시간강사는 조용히 있어.",
+    "Temp lecturers stay quiet.",
+    "ots"
+   ],
+   [
+    "대학 사무실",
+    "university office",
+    "채원이 임용 서류의 논문 저자란을 넘긴다",
+    "Sloane turns to the author line in the hiring file",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "대학 사무실",
+    "university office",
+    "핀리가 서류를 을순 앞에 놓는다",
+    "Ms. Finley sets the file before Bettina",
+    2,
+    "이 논문 제1저자는 채원 씨입니다.",
+    "The first author of this paper is Sloane.",
+    "slo"
+   ],
+   [
+    "대학 강의실",
+    "lecture hall",
+    "을순이 강단 난간을 붙든다",
+    "Bettina grips the edge of the lectern",
+    0,
+    "다음 학기 강의는 제가 맡습니다.",
+    "I take the lectures next term.",
+    "cu"
+   ],
+   [
+    "강의실 문",
+    "lecture hall door",
+    "게시판에 새 담당 교수 이름이 붙는다",
+    "A new professor's name goes up on the board",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "배를 빌려 쓰고 값을 안 준 처남",
+  "The Boat He Borrowed Forever",
+  "처남은 어부인 조카의 배를 빌려 쓰고 값을 안 준다. 선박 등기가 출항을 멈춰 세웠다.",
+  "The brother-in-law borrows his nephew's fishing boat and never pays. The boat registry stopped the sailing.",
+  [
+   [
+    "H",
+    "태윤",
+    "Dean",
+    "30대 남성, 노란 방수복, 짧은 머리, 거친 손",
+    "man in his 30s, yellow rain gear, short hair, rough hands"
+   ],
+   [
+    "V",
+    "종대",
+    "Ronan",
+    "40대 남성, 검은 점퍼, 큰 걸음, 거만한 어깨",
+    "man in his 40s, black jacket, heavy stride, arrogant shoulders"
+   ],
+   [
+    "A",
+    "소렌슨 씨",
+    "Mr. Sorensen",
+    "50대 남성, 항만 제복, 서류철, 무뚝뚝한 얼굴",
+    "man in his 50s, harbor uniform, file, blunt face"
+   ]
+  ],
+  [
+   [
+    "부두",
+    "harbor dock",
+    "종대가 태윤의 그물을 물에 던진다",
+    "Ronan throws Dean's net into the water",
+    1,
+    "이 배, 오늘부터 내가 쓴다.",
+    "I use this boat from today.",
+    "cz"
+   ],
+   [
+    "부두",
+    "harbor dock",
+    "종대가 태윤의 배에 올라 밧줄을 끊는다",
+    "Ronan boards Dean's boat and cuts the mooring line",
+    1,
+    "그물은 네가 챙겨. 값은 없어.",
+    "You keep the nets. No pay.",
+    "ms"
+   ],
+   [
+    "배 위",
+    "on the boat",
+    "태윤이 선박 등기 사본의 소유자란을 확인한다",
+    "Dean checks the owner line on the boat registry",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "부두",
+    "harbor dock",
+    "소렌슨이 등기부를 종대 앞에 든다",
+    "Mr. Sorensen holds the registry before Ronan",
+    2,
+    "이 배 소유자는 태윤 씨입니다.",
+    "This boat is registered to Dean.",
+    "low"
+   ],
+   [
+    "부두",
+    "harbor dock",
+    "종대가 갑판에서 내려선다",
+    "Ronan steps down off the deck",
+    0,
+    "출항 허가는 제가 냅니다.",
+    "I file the sailing permit.",
+    "cu"
+   ],
+   [
+    "부두 끝",
+    "end of the dock",
+    "여자가 새 선박 번호판을 든다",
+    "A woman at the dock holds a new boat plate",
+    -1,
+    "",
+    "",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "직원 쿠폰을 긁은 시누이",
+  "The Sister-in-Law With Stolen Coupons",
+  "시누이는 테라피스트인 조카의 직원 쿠폰으로 손님 셋을 무료로 들인다. 쿠폰 사용 기록이 남았다.",
+  "The sister-in-law uses her therapist niece's staff coupons for three friends. The coupon log caught it.",
+  [
+   [
+    "H",
+    "소윤",
+    "Faye",
+    "20대 여성, 흰 스파 유니폼, 묶은 머리, 차분한 눈",
+    "woman in her 20s, white spa uniform, tied hair, calm eyes"
+   ],
+   [
+    "V",
+    "봉자",
+    "Paula",
+    "50대 여성, 목욕 가운, 큰 목걸이, 얕보는 눈",
+    "woman in her 50s, bathrobe, large necklace, dismissive eyes"
+   ],
+   [
+    "A",
+    "딜런 씨",
+    "Mr. Dillon",
+    "40대 남성, 검은 제복, 태블릿, 단호한 태도",
+    "man in his 40s, black uniform, tablet, firm manner"
+   ]
+  ],
+  [
+   [
+    "스파 라운지",
+    "spa lounge",
+    "봉자가 소윤의 오일 병을 바닥에 떨어뜨린다",
+    "Paula knocks Faye's oil bottle to the floor",
+    1,
+    "마사지나 하는 애가 뭘 알아.",
+    "A masseuse knows what?",
+    "ws"
+   ],
+   [
+    "스파 라운지",
+    "spa lounge",
+    "봉자가 소윤의 직원 쿠폰을 꺼내 셋을 긁는다",
+    "Paula takes Faye's staff coupons and scratches three",
+    1,
+    "직원 쿠폰이 있잖아. 셋만.",
+    "You have staff coupons. Just three.",
+    "trk"
+   ],
+   [
+    "스파 접수대",
+    "spa desk",
+    "소윤이 쿠폰 사용 기록을 확인한다",
+    "Faye checks the coupon log at the desk",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "스파 라운지",
+    "spa lounge",
+    "딜런이 기록을 봉자 앞에 돌린다",
+    "Mr. Dillon turns the log toward Paula",
+    2,
+    "직원 쿠폰은 본인만 쓸 수 있습니다.",
+    "Staff coupons are for the employee only.",
+    "pi"
+   ],
+   [
+    "스파 라운지",
+    "spa lounge",
+    "봉자가 남은 쿠폰을 접어 내려놓는다",
+    "Paula folds the remaining coupons and sets them down",
+    0,
+    "쿠폰은 오늘 회수합니다.",
+    "I'm collecting the coupons today.",
+    "ms"
+   ],
+   [
+    "스파 문",
+    "spa door",
+    "여자가 같은 쿠폰을 꺼내 보인다",
+    "A woman at the door holds up the same coupon",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "예약을 밀어낸 사촌의 손톱",
+  "The Cousin Who Jumped the Line",
+  "사촌은 네일 아티스트인 조카에게 무료 시술을 받고 값을 안 준다. 예약 장부가 예약을 지웠다.",
+  "The cousin takes free nail work and never pays. The booking ledger wiped her appointments.",
+  [
+   [
+    "H",
+    "다은",
+    "Ruby",
+    "20대 여성, 검은 앞치마, 긴 생머리, 밝은 눈",
+    "woman in her 20s, black apron, long hair, bright eyes"
+   ],
+   [
+    "V",
+    "막례",
+    "Marla",
+    "40대 여성, 밝은 셔츠, 큰 귀걸이, 큰 웃음",
+    "woman in her 40s, bright shirt, big earrings, loud laugh"
+   ],
+   [
+    "A",
+    "아처 씨",
+    "Ms. Archer",
+    "30대 여성, 살롱 제복, 태블릿, 정중한 태도",
+    "woman in her 30s, salon uniform, tablet, polite manner"
+   ]
+  ],
+  [
+   [
+    "네일 아틀리에",
+    "nail salon",
+    "막례가 다은의 도구 트레이를 밀어 떨어뜨린다",
+    "Marla shoves Ruby's tool tray off the table",
+    1,
+    "내 친구들 먼저. 줄 서 있어.",
+    "My friends first. Wait your turn.",
+    "ms"
+   ],
+   [
+    "네일 아틀리에",
+    "nail salon",
+    "막례가 친구 셋을 불러 순서를 바꾼다",
+    "Marla waves three friends ahead of the line",
+    1,
+    "손톱 하나에 무슨 값을.",
+    "Nails don't cost that much.",
+    "cz"
+   ],
+   [
+    "네일 아틀리에",
+    "nail salon",
+    "다은이 예약 장부의 취소 표시를 확인한다",
+    "Ruby checks the cancellations in the booking ledger",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "네일 아틀리에",
+    "nail salon",
+    "아처가 장부를 막례 앞에 돌린다",
+    "Ms. Archer turns the ledger toward Marla",
+    2,
+    "막례 씨 예약, 오늘 전부 취소됐습니다.",
+    "All of Marla's bookings are cancelled today.",
+    "pi"
+   ],
+   [
+    "네일 아틀리에",
+    "nail salon",
+    "막례가 손톱을 감싸 쥔다",
+    "Marla curls her hands around her nails",
+    0,
+    "다음 예약은 없어요.",
+    "There is no next appointment.",
+    "cu"
+   ],
+   [
+    "살롱 창밖",
+    "outside the salon window",
+    "여자가 새 예약 명단을 붙인다",
+    "A woman outside tapes up a new booking list",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "촬영 크레딧에서 빠진 메이크업",
+  "Erased From the Credits",
+  "이모부는 메이크업 아티스트인 조카를 촬영에서 빼고 이름을 지운다. 촬영 계약서가 크레딧을 되돌렸다.",
+  "The uncle cuts his makeup artist niece from the set and erases her credit. The contract restored it.",
+  [
+   [
+    "H",
+    "보경",
+    "Ada",
+    "30대 여성, 검은 앞치마, 짧은 머리, 또렷한 눈",
+    "woman in her 30s, black apron, short hair, clear eyes"
+   ],
+   [
+    "V",
+    "칠성",
+    "Norman",
+    "60대 남성, 베이지 재킷, 손수건, 큰 목소리",
+    "man in his 60s, beige jacket, handkerchief, loud voice"
+   ],
+   [
+    "A",
+    "배럿 씨",
+    "Ms. Barrett",
+    "40대 여성, 검은 정장, 서류 가방, 단호한 표정",
+    "woman in her 40s, black suit, briefcase, firm face"
+   ]
+  ],
+  [
+   [
+    "촬영 스튜디오",
+    "photo studio",
+    "칠성이 보경의 메이크업 박스를 발로 밀어낸다",
+    "Norman kicks Ada's makeup case aside",
+    1,
+    "이 촬영, 내 이름으로 간다.",
+    "This set runs under my name.",
+    "cz"
+   ],
+   [
+    "촬영 스튜디오",
+    "photo studio",
+    "칠성이 크레딧 종이에서 보경 이름을 찢는다",
+    "Norman tears Ada's name off the credit sheet",
+    1,
+    "얼굴은 네가 하고 이름은 나.",
+    "You paint faces. I take the name.",
+    "ots"
+   ],
+   [
+    "촬영 스튜디오",
+    "photo studio",
+    "보경이 촬영 계약서의 크레딧 조항을 확인한다",
+    "Ada checks the credit clause in the session contract",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "촬영 스튜디오",
+    "photo studio",
+    "배럿이 계약서를 칠성 앞에 놓는다",
+    "Ms. Barrett lays the contract before Norman",
+    2,
+    "메이크업 크레딧은 보경 씨 계약입니다.",
+    "Makeup credit is Ada's by contract.",
+    "low"
+   ],
+   [
+    "촬영 스튜디오",
+    "photo studio",
+    "칠성이 모델 앞에서 물러난다",
+    "Norman steps back from the model",
+    0,
+    "오늘 촬영은 제 진행으로 갑니다.",
+    "This set runs my way today.",
+    "rx"
+   ],
+   [
+    "스튜디오 문",
+    "studio door",
+    "새 크레딧 표가 벽에 붙는다",
+    "A new credit sheet goes up on the studio wall",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "반지를 끼고 나가려던 올케",
+  "The Ring She Tried to Keep",
+  "올케는 세공사인 조카에게 반지를 주문하고 값을 미룬다. 감정서에 주문자 이름이 남아 있었다.",
+  "The sister-in-law orders a ring and defers payment. The appraisal record kept the buyer's name.",
+  [
+   [
+    "H",
+    "혜원",
+    "Lena",
+    "30대 여성, 가죽 앞치마, 확대경, 집중한 눈",
+    "woman in her 30s, leather apron, loupe, focused eyes"
+   ],
+   [
+    "V",
+    "태복",
+    "Ruth",
+    "40대 여성, 흰 코트, 진주 목걸이, 얕보는 웃음",
+    "woman in her 40s, white coat, pearl necklace, condescending smile"
+   ],
+   [
+    "A",
+    "오웬스 씨",
+    "Mr. Owens",
+    "50대 남성, 정장, 서류 가방, 차분한 태도",
+    "man in his 50s, suit, briefcase, calm manner"
+   ]
+  ],
+  [
+   [
+    "주얼리 공방",
+    "jewelry atelier",
+    "태복이 혜원의 확대경을 집어 던진다",
+    "Ruth snatches Lena's loupe and tosses it",
+    1,
+    "이 반지, 오늘 내가 낄 거야.",
+    "I'm wearing this ring out.",
+    "ms"
+   ],
+   [
+    "주얼리 공방",
+    "jewelry atelier",
+    "태복이 완성된 반지를 손에 끼고 나가려 한다",
+    "Ruth slips the finished ring on and heads out",
+    1,
+    "대금? 다음에 정산하자.",
+    "Payment? We'll settle later.",
+    "trk"
+   ],
+   [
+    "주얼리 공방",
+    "jewelry atelier",
+    "혜원이 감정서의 주문자란을 손끝으로 짚는다",
+    "Lena points at the buyer line on the appraisal",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "주얼리 공방",
+    "jewelry atelier",
+    "오웬스가 감정서를 태복 앞에 놓는다",
+    "Mr. Owens sets the appraisal before Ruth",
+    2,
+    "이 반지 주문자는 태복 씨, 대금은 미납입니다.",
+    "Ruth ordered it, and it is unpaid.",
+    "pi"
+   ],
+   [
+    "주얼리 공방",
+    "jewelry atelier",
+    "태복이 반지를 빼어 카운터에 놓는다",
+    "Ruth pulls the ring off and sets it down",
+    0,
+    "반지는 대금 확인 후에요.",
+    "The ring leaves after payment.",
+    "cz"
+   ],
+   [
+    "공방 문",
+    "atelier door",
+    "남자가 감정서 봉투를 든다",
+    "A man at the door holds an appraisal envelope",
+    -1,
+    "",
+    "",
+    "ws"
+   ]
+  ]
+ ]
+]

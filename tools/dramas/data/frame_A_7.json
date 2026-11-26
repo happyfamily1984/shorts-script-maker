@@ -1,0 +1,912 @@
+[
+ [
+  "드레스를 망친 재단사",
+  "The Seamstress and the Ruined Dress",
+  "피날레 드레스 색이 바뀌자 지방 공장 출신 재단사가 몰린다. 작업실 영상에 디자이너의 손이 찍혀 있다.",
+  "The finale dress comes out the wrong color and the factory-trained seamstress is blamed. The atelier camera catches the designer.",
+  [
+   [
+    "H",
+    "정순",
+    "Bess",
+    "50대 여성, 회색 작업복, 흰 머리, 굵은 손마디",
+    "woman in her 50s, gray work clothes, white hair, thick knuckles"
+   ],
+   [
+    "V",
+    "린아",
+    "Nadia",
+    "30대 여성, 은색 재킷, 짧은 검은 머리, 날카로운 눈",
+    "woman in her 30s, silver jacket, short black hair, sharp eyes"
+   ],
+   [
+    "A",
+    "소담",
+    "Ms. Petrie",
+    "40대 여성, 검은 터틀넥, 헤드셋, 빠른 걸음",
+    "woman in her 40s, black turtleneck, headset, brisk walk"
+   ]
+  ],
+  [
+   [
+    "패션위크 백스테이지",
+    "fashion week backstage",
+    "린아가 엉뚱한 색 드레스를 정순 앞에 펼친다",
+    "Nadia spreads the wrong-colored dress in front of Bess",
+    1,
+    "이 색, 누가 바꿨어?",
+    "Who changed this color?",
+    "ms"
+   ],
+   [
+    "패션위크 백스테이지",
+    "fashion week backstage",
+    "린아가 정순의 재봉함을 바닥에 쏟는다",
+    "Nadia tips Bess's sewing box onto the floor",
+    1,
+    "공장 출신이 무대 옷을 만져?",
+    "A factory hand touching show pieces?",
+    "ws"
+   ],
+   [
+    "아틀리에",
+    "atelier",
+    "정순이 벽 위의 작업실 카메라를 올려다본다",
+    "Bess looks up at the atelier camera on the wall",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "쇼 연출실",
+    "show control room",
+    "소담이 작업실 영상을 멈춰 염료 통을 확대한다",
+    "Ms. Petrie freezes the atelier footage on a dye bucket",
+    2,
+    "염료를 든 손, 디자이너님 소매예요.",
+    "The hand with the dye is your sleeve.",
+    "pi"
+   ],
+   [
+    "피날레 무대 뒤",
+    "finale wing",
+    "소담이 린아의 쇼 명패를 떼어 간다",
+    "Ms. Petrie takes down Nadia's show placard",
+    0,
+    "무대에 남는 건 옷이 아니라 바느질입니다.",
+    "What lasts is the stitching, not the label.",
+    "ots"
+   ],
+   [
+    "패션위크 무대",
+    "fashion week runway",
+    "쇼가 끝난 무대에 낯선 바이어가 정순에게 다가온다",
+    "After the show, a buyer walks up to Bess",
+    -1,
+    "",
+    "",
+    "cz"
+   ]
+  ]
+ ],
+ [
+  "스코어를 조작했다는 캐디",
+  "The Caddie and the Changed Score",
+  "우승 스코어가 조작되자 캐디가 몰린다. 갤러리가 찍은 영상이 연필을 든 손을 보여 준다.",
+  "A winning score is questioned and the caddie takes the blame. A gallery video shows whose hand held the pencil.",
+  [
+   [
+    "H",
+    "미숙",
+    "Margot",
+    "40대 여성, 흰 캐디 조끼, 챙 넓은 모자, 그을린 얼굴",
+    "woman in her 40s, white caddie vest, wide-brim hat, sun-darkened face"
+   ],
+   [
+    "V",
+    "나희",
+    "Sloane",
+    "30대 여성, 분홍 골프웨어, 긴 포니테일, 얕은 미소",
+    "woman in her 30s, pink golf wear, long ponytail, thin smile"
+   ],
+   [
+    "A",
+    "정만",
+    "Mr. Vance",
+    "50대 남성, 회색 재킷, 심판 배지, 무거운 걸음",
+    "man in his 50s, gray jacket, referee badge, heavy steps"
+   ]
+  ],
+  [
+   [
+    "18번 홀 그린",
+    "18th green",
+    "나희가 스코어카드를 미숙의 모자에 꽂아 던진다",
+    "Sloane jabs the scorecard into Margot's cap",
+    1,
+    "이 카드, 누가 고쳤어?",
+    "Who changed this card?",
+    "ots"
+   ],
+   [
+    "18번 홀",
+    "18th green",
+    "나희가 미숙의 캐디 가방을 페어웨이로 밀어 버린다",
+    "Sloane shoves Margot's caddie bag onto the fairway",
+    1,
+    "캐디가 선수 숫자를 고쳐?",
+    "A caddie changing a pro's score?",
+    "trk"
+   ],
+   [
+    "갤러리 펜스",
+    "gallery fence",
+    "미숙이 관중석의 켜진 휴대폰들을 바라본다",
+    "Margot looks at the raised phones along the gallery fence",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "스코어링 룸",
+    "scoring room",
+    "정만이 갤러리 영상을 화면에 재생한다",
+    "Mr. Vance plays the gallery clip on screen",
+    2,
+    "연필을 든 손은 선수 쪽이었습니다.",
+    "The pencil was in your hand.",
+    "low"
+   ],
+   [
+    "스코어링 룸",
+    "scoring room",
+    "정만이 나희의 투어 카드를 회수한다",
+    "Mr. Vance takes back her tour card",
+    0,
+    "코스가 숫자를 말해 줄 겁니다.",
+    "The course will explain the number.",
+    "cu"
+   ],
+   [
+    "클럽하우스",
+    "clubhouse",
+    "클럽하우스 문이 열리고 다른 캐디가 카드를 내민다",
+    "Another caddie comes out holding a card",
+    -1,
+    "",
+    "",
+    "slo"
+   ]
+  ]
+ ],
+ [
+  "라켓을 훔쳤다는 볼보이",
+  "The Ball Boy and the Missing Racket",
+  "회원 라켓이 사라지자 볼보이 알바가 몰린다. 그의 슬로모 영상에 회장이 라켓을 넘기는 장면이 있다.",
+  "A member's racket vanishes and the ball boy is blamed. His slow-motion clip shows the president handing it off.",
+  [
+   [
+    "H",
+    "도담",
+    "Otto",
+    "20대 남성, 흰 볼보이 셔츠, 짧은 머리, 마른 체격",
+    "man in his 20s, white ball-boy shirt, short hair, slim build"
+   ],
+   [
+    "V",
+    "영란",
+    "Greta",
+    "60대 여성, 흰 테니스 원피스, 진주 귀걸이, 높은 목소리",
+    "woman in her 60s, white tennis dress, pearl earrings, high voice"
+   ],
+   [
+    "A",
+    "상훈",
+    "Mr. Nettle",
+    "40대 남성, 회색 정장, 클럽 감사 배지, 조용한 말투",
+    "man in his 40s, gray suit, club auditor badge, quiet voice"
+   ]
+  ],
+  [
+   [
+    "클럽 라운지",
+    "club lounge",
+    "영란이 빈 라켓 케이스를 도담 앞에 던진다",
+    "Greta throws an empty racket case at Otto",
+    1,
+    "이 옷장, 네 열쇠로 열렸어.",
+    "This locker opened with your key.",
+    "cz"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "영란이 도담의 볼보이 조끼를 벗겨 펜스에 건다",
+    "Greta strips off Otto's vest and hangs it on the fence",
+    1,
+    "볼보이가 회원 물건을 만져?",
+    "A ball boy handling members' things?",
+    "slo"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "도담이 주머니 속 자기 휴대폰을 손끝으로 만진다",
+    "Otto touches the phone in his pocket",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "클럽 사무실",
+    "club office",
+    "상훈이 슬로모 영상을 프레임마다 돌린다",
+    "Mr. Nettle steps the slow-motion clip frame by frame",
+    2,
+    "라켓을 넘긴 손, 회장님 장갑이에요.",
+    "The glove passing the racket is yours.",
+    "pi"
+   ],
+   [
+    "클럽 라운지",
+    "club lounge",
+    "영란이 회원증을 테이블에 던지고 일어난다",
+    "Greta tosses her member card on the table and stands",
+    0,
+    "공은 제가 줍습니다. 회원증은 반납하세요.",
+    "I pick up balls. Hand in your card.",
+    "low"
+   ],
+   [
+    "클럽 정문",
+    "club entrance",
+    "클럽 정문에 회장의 운전기사가 차를 세운다",
+    "The president's driver pulls up at the gate",
+    -1,
+    "",
+    "",
+    "cu"
+   ]
+  ]
+ ],
+ [
+  "보드를 부순 렌털 직원",
+  "The Surf Shack and the Broken Board",
+  "비싼 보드가 부러지자 렌털 알바가 몰린다. 해변 카메라에 인플루언서가 보드를 내던지는 장면이 있다.",
+  "A pricey board snaps and the rental kid is blamed. The beach camera shows the influencer slamming it down.",
+  [
+   [
+    "H",
+    "카이",
+    "Kai",
+    "20대 남성, 탄 해변 탱크톱, 젖은 긴 머리, 짙은 눈썹",
+    "man in his 20s, tan tank top, wet long hair, thick brows"
+   ],
+   [
+    "V",
+    "루아",
+    "Lola",
+    "20대 여성, 형광 비키니 위 셔츠, 선글라스, 긴 손톱",
+    "woman in her 20s, shirt over a bright swimsuit, sunglasses, long nails"
+   ],
+   [
+    "A",
+    "다온",
+    "Ms. Burr",
+    "30대 여성, 검은 셔츠, 서핑 브랜드 배지, 짧은 말투",
+    "woman in her 30s, black shirt, surf brand badge, clipped speech"
+   ]
+  ],
+  [
+   [
+    "해변 서핑숍",
+    "beach surf shop",
+    "루아가 부러진 보드를 카운터에 내려놓는다",
+    "Lola drops the snapped board on the counter",
+    1,
+    "이 보드, 네가 마지막으로 만졌어.",
+    "You touched this board last.",
+    "low"
+   ],
+   [
+    "해변 서핑숍",
+    "beach surf shop",
+    "루아가 카메라를 켜고 카이의 얼굴을 찍는다",
+    "Lola starts filming Kai's face for her followers",
+    1,
+    "알바 월급으로 물어낼 수 있어?",
+    "Can your wages pay for this?",
+    "ms"
+   ],
+   [
+    "해변",
+    "beach",
+    "카이가 해변 구명대 위의 카메라를 올려다본다",
+    "Kai looks up at the camera on the lifeguard tower",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "서핑숍",
+    "surf shop",
+    "다온이 해변 영상을 태블릿에 띄운다",
+    "Ms. Burr pulls the beach footage onto a tablet",
+    2,
+    "보드를 내던진 사람은 접수대 앞에 있네요.",
+    "The one who slammed it is at this counter.",
+    "slo"
+   ],
+   [
+    "해변 서핑숍",
+    "beach surf shop",
+    "다온이 협찬 해지서를 카운터에 놓는다",
+    "Ms. Burr sets the sponsorship termination on the counter",
+    0,
+    "렌털은 제가 합니다. 협찬은 다시 받으세요.",
+    "I rent boards. Go win your sponsor back.",
+    "cz"
+   ],
+   [
+    "해변 서핑숍",
+    "beach surf shop",
+    "루아의 폰에 모르는 번호의 영상 통화가 걸려 온다",
+    "An unknown number video-calls Lola's phone",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "지갑을 훔쳤다는 산장 주인",
+  "The Hut Keeper and the Lost Wallet",
+  "회원 지갑이 사라지자 산장 주인이 몰린다. 입산 기록이 회장이 먼저 혼자 왔음을 보여 준다.",
+  "A member's wallet goes missing and the hut keeper is blamed. The trail log shows the president came up alone first.",
+  [
+   [
+    "H",
+    "만복",
+    "Gideon",
+    "60대 남성, 두꺼운 니트, 흰 수염, 구부정한 어깨",
+    "man in his 60s, thick knit sweater, white beard, stooped shoulders"
+   ],
+   [
+    "V",
+    "성락",
+    "Mr. Rusk",
+    "50대 남성, 등산 재킷, 등산 스틱, 큰 체격",
+    "man in his 50s, hiking jacket, trekking pole, large build"
+   ],
+   [
+    "A",
+    "혜진",
+    "Ms. Ainsley",
+    "30대 여성, 산악 구조복, 무전기, 짧은 머리",
+    "woman in her 30s, mountain rescue uniform, radio, short hair"
+   ]
+  ],
+  [
+   [
+    "산장 식탁",
+    "mountain hut",
+    "성락이 회원들 앞에서 만복의 앞치마를 잡아당긴다",
+    "Mr. Rusk yanks Gideon's apron in front of the club",
+    1,
+    "이 산장에서 지갑이 없어졌어.",
+    "A wallet vanished in this hut.",
+    "trk"
+   ],
+   [
+    "산장 부엌",
+    "hut kitchen",
+    "성락이 쌀통을 엎어 바닥에 쏟는다",
+    "Mr. Rusk tips the rice bin across the floor",
+    1,
+    "늙은이 방부터 뒤져.",
+    "Search the old man's room first.",
+    "ms"
+   ],
+   [
+    "산장 입구",
+    "hut entrance",
+    "만복이 벽에 걸린 입산 기록판을 본다",
+    "Gideon looks at the trail log board by the door",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "산장 식탁",
+    "mountain hut",
+    "혜진이 입산 기록 사진을 식탁에 놓는다",
+    "Ms. Ainsley lays a photo of the trail log on the table",
+    2,
+    "회장님은 두 시간 전에 혼자 오셨어요.",
+    "You came up alone two hours earlier.",
+    "low"
+   ],
+   [
+    "산장 식탁",
+    "mountain hut",
+    "회원들이 성락의 등 뒤로 돌아선다",
+    "The club members turn their backs on Mr. Rusk",
+    0,
+    "산은 제가 지킵니다.",
+    "I keep the mountain.",
+    "ots"
+   ],
+   [
+    "산장 입구",
+    "hut entrance",
+    "산장 문을 두드리는 등산객이 지갑을 들고 서 있다",
+    "A hiker at the door holds up a wallet",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "밸브를 건드린 정비사",
+  "The Dive Tech and the Tampered Valve",
+  "학생 탱크 사고가 나자 여성 정비사가 몰린다. 정비 사진의 시각이 강사의 손을 보여 준다.",
+  "A student's tank fails and the female dive tech is blamed. The service photo's time shows the instructor's hand.",
+  [
+   [
+    "H",
+    "서해",
+    "Vera",
+    "30대 여성, 검은 잠수복 상의, 묶은 머리, 짙은 눈썹",
+    "woman in her 30s, black wetsuit top, tied hair, dark brows"
+   ],
+   [
+    "V",
+    "재욱",
+    "Mr. Kade",
+    "40대 남성, 흰 강사 셔츠, 선탠한 피부, 큰 웃음",
+    "man in his 40s, white instructor shirt, tanned skin, big laugh"
+   ],
+   [
+    "A",
+    "수현",
+    "Ms. Rivas",
+    "40대 여성, 해양경찰 조끼, 클립보드, 무표정",
+    "woman in her 40s, coast guard vest, clipboard, blank face"
+   ]
+  ],
+  [
+   [
+    "다이빙 숍",
+    "dive shop",
+    "재욱이 빈 탱크를 서해 앞으로 굴린다",
+    "Mr. Kade rolls an empty tank to Vera's feet",
+    1,
+    "이 탱크, 네가 마지막으로 만졌어.",
+    "You serviced this tank last.",
+    "pi"
+   ],
+   [
+    "다이빙 숍",
+    "dive shop",
+    "재욱이 서해의 공구함을 잠그고 열쇠를 챙긴다",
+    "Mr. Kade locks Vera's toolbox and pockets the key",
+    1,
+    "여자는 수리실 나가.",
+    "Women out of the workshop.",
+    "ws"
+   ],
+   [
+    "수리실",
+    "workshop",
+    "서해가 벽의 정비 사진과 탱크 각인을 맞춰 본다",
+    "Vera checks the wall of service photos against the tank's stamp",
+    -1,
+    "",
+    "",
+    "trk"
+   ],
+   [
+    "부두 사무실",
+    "dock office",
+    "수현이 정비 사진 두 장의 시각을 나란히 띄운다",
+    "Ms. Rivas puts two service photos side by side",
+    2,
+    "정비 후에 밸브가 열렸어요. 강사님 손으로요.",
+    "The valve opened after service. By your hand.",
+    "low"
+   ],
+   [
+    "다이빙 숍",
+    "dive shop",
+    "재욱이 챙긴 열쇠를 카운터에 내려놓는다",
+    "Mr. Kade sets the key he took on the counter",
+    0,
+    "공구는 돌려드릴게요. 자격은 못 돌려드립니다.",
+    "You can have the tools. Not the license.",
+    "cu"
+   ],
+   [
+    "부두",
+    "dock",
+    "부두에 해경 보트가 붙고 누군가 내린다",
+    "A coast guard boat docks and someone steps off",
+    -1,
+    "",
+    "",
+    "cz"
+   ]
+  ]
+ ],
+ [
+  "활을 망가뜨린 수리공",
+  "The Bow Maker and the Broken Limbs",
+  "대표 선수의 활이 부러지자 수리공이 몰린다. 훈련장 카메라가 감독의 손목을 찍고 있다.",
+  "The star archer's bow snaps and the repairman is blamed. The training camera catches the coach's wrist.",
+  [
+   [
+    "H",
+    "만길",
+    "Ansel",
+    "50대 남성, 가죽 앞치마, 안경, 마른 손",
+    "man in his 50s, leather apron, glasses, dry hands"
+   ],
+   [
+    "V",
+    "상현",
+    "Mr. Teague",
+    "40대 남성, 검은 트레이닝복, 손목시계, 짧은 머리",
+    "man in his 40s, black tracksuit, wristwatch, cropped hair"
+   ],
+   [
+    "A",
+    "명옥",
+    "Ms. Tull",
+    "50대 여성, 협회 재킷, 서류철, 단호한 턱",
+    "woman in her 50s, federation jacket, document folder, firm jaw"
+   ]
+  ],
+  [
+   [
+    "양궁 훈련장",
+    "archery range",
+    "상현이 부러진 활을 만길 앞에 던진다",
+    "Mr. Teague throws the broken bow at Ansel",
+    1,
+    "이 활, 누가 만졌어?",
+    "Who touched this bow?",
+    "cz"
+   ],
+   [
+    "양궁 훈련장",
+    "archery range",
+    "상현이 만길의 공구 가방을 과녁 쪽으로 밀친다",
+    "Mr. Teague shoves Ansel's tool bag toward the target wall",
+    1,
+    "선수도 아닌 사람이 활을?",
+    "You're not even an archer.",
+    "trk"
+   ],
+   [
+    "훈련장 천장",
+    "range ceiling",
+    "만길이 천장 모서리의 훈련 카메라를 본다",
+    "Ansel looks up at the training camera in the corner",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "협회 사무실",
+    "federation office",
+    "명옥이 훈련 영상을 프레임 단위로 돌린다",
+    "Ms. Tull steps the training footage frame by frame",
+    2,
+    "줄을 쥔 손목, 감독님 시계가 보여요.",
+    "The watch on that wrist is yours.",
+    "slo"
+   ],
+   [
+    "양궁 훈련장",
+    "archery range",
+    "명옥이 상현의 감독증을 회수한다",
+    "Ms. Tull takes back the coach's badge",
+    0,
+    "활은 제가 고칩니다. 감독은 누가 고발할까요.",
+    "I fix bows. Who reports the coach?",
+    "low"
+   ],
+   [
+    "양궁 훈련장",
+    "archery range",
+    "대표 선수가 만길에게 자기 활을 맡기고 간다",
+    "The star archer leaves her own bow with Ansel",
+    -1,
+    "",
+    "",
+    "cu"
+   ]
+  ]
+ ],
+ [
+  "악보를 바꾼 반주자",
+  "The Accompanist and the Swapped Score",
+  "공연 중 악보가 바뀌어 사고가 나자 반주자가 몰린다. 인쇄 기록이 지휘자의 파일을 보여 준다.",
+  "A swapped score ruins the concert and the accompanist is blamed. The print log shows the conductor's file.",
+  [
+   [
+    "H",
+    "노을",
+    "Fiona",
+    "30대 여성, 검은 연주 드레스, 낮게 묶은 머리, 창백한 손",
+    "woman in her 30s, black recital dress, low bun, pale hands"
+   ],
+   [
+    "V",
+    "정학",
+    "Maestro Brill",
+    "60대 남성, 검은 지휘 정장, 흰 머리, 매서운 눈",
+    "man in his 60s, black conducting suit, white hair, severe eyes"
+   ],
+   [
+    "A",
+    "유선",
+    "Ms. Dorn",
+    "40대 여성, 재킷, 공연 기획 배지, 조용한 목소리",
+    "woman in her 40s, blazer, concert producer badge, quiet voice"
+   ]
+  ],
+  [
+   [
+    "공연장 무대",
+    "concert hall stage",
+    "정학이 지휘봉으로 노을의 악보를 쳐서 떨어뜨린다",
+    "Maestro Brill flicks his baton and knocks Fiona's score down",
+    1,
+    "이 악보, 누가 바꿨어?",
+    "Who swapped this score?",
+    "ms"
+   ],
+   [
+    "공연장 무대",
+    "concert hall stage",
+    "정학이 떨어진 악보를 밟고 지나간다",
+    "Maestro Brill walks over the fallen score",
+    1,
+    "이름도 없는 반주자가?",
+    "An unknown accompanist?",
+    "pi"
+   ],
+   [
+    "연습실",
+    "rehearsal room",
+    "노을이 프린터 옆 휴지통의 인쇄물을 집어 든다",
+    "Fiona lifts a printed page from the bin by the printer",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "공연 기획실",
+    "concert office",
+    "유선이 프린터 기록의 사용자 이름을 띄운다",
+    "Ms. Dorn brings up the printer log's user name",
+    2,
+    "이 악보, 지휘자님 계정에서 찍혔어요.",
+    "This score was printed from your account.",
+    "low"
+   ],
+   [
+    "공연장 무대",
+    "concert hall stage",
+    "정학이 지휘봉을 악보 위에 내려놓는다",
+    "Maestro Brill lays his baton on the score",
+    0,
+    "다음 공연은 제가 칩니다.",
+    "I'll play the next concert.",
+    "ots"
+   ],
+   [
+    "공연장",
+    "concert hall",
+    "공연장 문이 열리고 다른 지휘자가 악보를 들고 들어온다",
+    "Another conductor walks in with a score",
+    -1,
+    "",
+    "",
+    "slo"
+   ]
+  ]
+ ],
+ [
+  "수익금을 숨긴 무대 조수",
+  "The Stage Assistant and the Missing Take",
+  "티켓 수익금이 비자 무대 조수가 몰린다. 단말 정산 기록이 제작자의 취소표를 보여 준다.",
+  "Ticket money is short and the stage assistant is blamed. The terminal log shows the producer's voided seats.",
+  [
+   [
+    "H",
+    "초롱",
+    "Della",
+    "20대 여성, 검은 무대복, 헤드셋, 짧은 단발",
+    "woman in her 20s, black stage clothes, headset, short bob"
+   ],
+   [
+    "V",
+    "기태",
+    "Mr. Grieve",
+    "50대 남성, 보라색 벨벳 재킷, 반지, 번들거리는 머리",
+    "man in his 50s, purple velvet jacket, rings, slicked hair"
+   ],
+   [
+    "A",
+    "정연",
+    "Ms. Barrow",
+    "40대 여성, 회색 정장, 계산기, 동그란 안경",
+    "woman in her 40s, gray suit, calculator, round glasses"
+   ]
+  ],
+  [
+   [
+    "극장 로비",
+    "theater lobby",
+    "기태가 정산 봉투를 초롱 앞에 던진다",
+    "Mr. Grieve throws the cash envelope at Della",
+    1,
+    "이 봉투, 네 손에서 나왔어.",
+    "This envelope came from you.",
+    "low"
+   ],
+   [
+    "극장 사무실",
+    "theater office",
+    "기태가 초롱의 열쇠를 빼앗아 문을 잠근다",
+    "Mr. Grieve takes Della's keys and locks the office",
+    1,
+    "조수가 극장 돈을 만져?",
+    "An assistant touching theater money?",
+    "trk"
+   ],
+   [
+    "매표소 단말",
+    "box office terminal",
+    "초롱이 단말의 정산 시각을 확인한다",
+    "Della checks the terminal's settlement time",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "극장 사무실",
+    "theater office",
+    "정연이 취소표 목록을 출력해 펼친다",
+    "Ms. Barrow prints the voided tickets and spreads them out",
+    2,
+    "취소표 전부, 제작자님 아이디로 끊겼어요.",
+    "Every void was issued under your ID.",
+    "pi"
+   ],
+   [
+    "극장 로비",
+    "theater lobby",
+    "정연이 제작자 계약서를 찢는다",
+    "Ms. Barrow tears up the producer's contract",
+    0,
+    "열쇠는 돌려받았습니다. 계산대도 제가 지킬게요.",
+    "I have my keys. I'll keep the till too.",
+    "ms"
+   ],
+   [
+    "무대 뒤 통로",
+    "backstage corridor",
+    "제작자 대신 낯선 남자가 통로로 들어온다",
+    "A stranger walks down the corridor in the producer's place",
+    -1,
+    "",
+    "",
+    "cz"
+   ]
+  ]
+ ],
+ [
+  "작품을 유출한 아카이브 담당",
+  "The Archivist and the Leaked Print",
+  "미공개 작품이 전시 전에 유출되자 아카이브 담당이 몰린다. 파일 기록이 관장의 노트북을 가리킨다.",
+  "Unreleased prints leak before the show and the archivist is blamed. The file log points at the director's laptop.",
+  [
+   [
+    "H",
+    "도율",
+    "Casper",
+    "30대 남성, 회색 니트, 안경, 조용한 목소리",
+    "man in his 30s, gray knit sweater, glasses, quiet voice"
+   ],
+   [
+    "V",
+    "유리",
+    "Ms. Vane",
+    "40대 여성, 흰 정장, 긴 목걸이, 차가운 미소",
+    "woman in her 40s, white suit, long necklace, cold smile"
+   ],
+   [
+    "A",
+    "태석",
+    "Mr. Corbin",
+    "50대 남성, 짙은 정장, 서류 가방, 낮은 목소리",
+    "man in his 50s, dark suit, briefcase, low voice"
+   ]
+  ],
+  [
+   [
+    "갤러리 오프닝",
+    "gallery opening",
+    "유리가 유출된 출력본을 도율의 가슴에 밀어 붙인다",
+    "Ms. Vane presses the leaked print against Casper's chest",
+    1,
+    "이 파일, 네 손으로 나갔어.",
+    "This file left your hands.",
+    "cz"
+   ],
+   [
+    "갤러리 사무실",
+    "gallery office",
+    "유리가 도율의 출입카드를 가방에 넣고 책상을 비운다",
+    "Ms. Vane pockets Casper's key card and clears his desk",
+    1,
+    "학예사도 아닌 사람이?",
+    "You're not even a curator.",
+    "ms"
+   ],
+   [
+    "아카이브 서버",
+    "archive server",
+    "도율이 파일의 내보내기 시각을 확인한다",
+    "Casper checks the export time on the file",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "갤러리 오프닝",
+    "gallery opening",
+    "태석이 접속 기록을 출력해 한 줄을 짚는다",
+    "Mr. Corbin prints the access log and taps a line",
+    2,
+    "이 시각, 관장님 노트북에서 열렸습니다.",
+    "That time, it opened on your laptop.",
+    "low"
+   ],
+   [
+    "갤러리 오프닝",
+    "gallery opening",
+    "유리가 벽의 작품 명패를 떼어 내린다",
+    "Ms. Vane pulls a wall label off the exhibit",
+    0,
+    "원본은 제가 지킵니다. 이름은 못 지키시죠.",
+    "I keep the originals. You keep the blame.",
+    "cu"
+   ],
+   [
+    "갤러리 아카이브",
+    "gallery archive",
+    "작가의 유족이 아카이브 문을 두드린다",
+    "A member of the artist's family knocks at the door",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ]
+]

@@ -1,0 +1,912 @@
+[
+ [
+  "어르신 반지를 훔친 조무사",
+  "The Aide and the Missing Ring",
+  "어르신의 반지가 사라지자 간호조무사가 몰린다. 야간 순찰 기록이 원장의 새벽 출입을 보여 준다.",
+  "A resident's ring goes missing and the aide is blamed. The night-round log shows the director's visit at dawn.",
+  [
+   [
+    "H",
+    "옥선",
+    "Ruth",
+    "40대 여성, 분홍 조무사복, 짧은 파마, 지친 눈",
+    "woman in her 40s, pink aide uniform, short perm, tired eyes"
+   ],
+   [
+    "V",
+    "재복",
+    "Mr. Bream",
+    "50대 남성, 흰 가운, 금테 안경, 부드러운 웃음",
+    "man in his 50s, white coat, gold glasses, soft smile"
+   ],
+   [
+    "A",
+    "명숙",
+    "Mrs. Blanchard",
+    "50대 여성, 베이지 정장, 운영위원 배지, 무거운 표정",
+    "woman in her 50s, beige suit, committee badge, grave face"
+   ]
+  ],
+  [
+   [
+    "요양원 복도",
+    "care home hallway",
+    "재복이 옥선의 사물함을 열어 물건을 복도에 쏟는다",
+    "Mr. Bream opens Ruth's locker and dumps her things in the hall",
+    1,
+    "이 방에서 반지가 없어졌어.",
+    "A ring vanished from this room.",
+    "ots"
+   ],
+   [
+    "요양원 복도",
+    "care home hallway",
+    "재복이 옥선의 명찰을 떼어 바닥에 던진다",
+    "Mr. Bream rips off Ruth's name tag and throws it down",
+    1,
+    "자격증도 없는 사람이?",
+    "You don't even have a license.",
+    "trk"
+   ],
+   [
+    "요양원 사무실",
+    "care home office",
+    "옥선이 벽에 걸린 야간 순찰표를 본다",
+    "Ruth looks at the night-round sheet on the wall",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "요양원 사무실",
+    "care home office",
+    "명숙이 순찰표의 새벽 서명을 손끝으로 짚는다",
+    "Mrs. Blanchard taps the pre-dawn signature on the sheet",
+    2,
+    "새벽 세 시, 원장님 사인입니다.",
+    "Three in the morning. Signed by you.",
+    "low"
+   ],
+   [
+    "요양원 복도",
+    "care home hallway",
+    "재복이 사무실 열쇠를 카운터에 내려놓는다",
+    "Mr. Bream sets the office keys on the counter",
+    0,
+    "반지는 제가 안 가졌습니다. 열쇠는 놓고 가세요.",
+    "I don't have the ring. Leave the keys.",
+    "cu"
+   ],
+   [
+    "요양원 방",
+    "care home room",
+    "다른 어르신의 반지함도 비어 있다",
+    "Another resident's ring box is empty too",
+    -1,
+    "",
+    "",
+    "slo"
+   ]
+  ]
+ ],
+ [
+  "구급함을 비운 대원",
+  "The Medic and the Empty Kit",
+  "구급 소모품이 비자 여성 구급대원이 몰린다. 창고 출입 기록이 대장의 야간 출입을 보여 준다.",
+  "Emergency supplies run out and the female medic is blamed. The store door log shows the captain's night visit.",
+  [
+   [
+    "H",
+    "가희",
+    "Alma",
+    "30대 여성, 구급 제복, 묶은 머리, 마른 얼굴",
+    "woman in her 30s, paramedic uniform, tied hair, thin face"
+   ],
+   [
+    "V",
+    "두식",
+    "Mr. Sanborn",
+    "50대 남성, 소방 제복, 흰 머리, 두꺼운 어깨",
+    "man in his 50s, fire service uniform, white hair, heavy shoulders"
+   ],
+   [
+    "A",
+    "지연",
+    "Ms. Neve",
+    "40대 여성, 검은 재킷, 감사 배지, 낮은 목소리",
+    "woman in her 40s, black jacket, audit badge, low voice"
+   ]
+  ],
+  [
+   [
+    "구급차 앞",
+    "outside the ambulance",
+    "두식이 빈 구급함을 가희 앞에 엎는다",
+    "Mr. Sanborn tips the empty kit out at Alma's feet",
+    1,
+    "이 구급함, 누가 비웠어?",
+    "Who emptied this kit?",
+    "cz"
+   ],
+   [
+    "소방서 차고",
+    "fire station bay",
+    "두식이 가희의 헬멧을 벗겨 선반에 올린다",
+    "Mr. Sanborn takes Alma's helmet and puts it on a shelf",
+    1,
+    "여자는 사무실 대기야.",
+    "Women sit at the desk.",
+    "slo"
+   ],
+   [
+    "창고 문",
+    "store door",
+    "가희가 창고 문 옆 센서를 손끝으로 만진다",
+    "Alma touches the sensor beside the store door",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "소방 본부",
+    "fire headquarters",
+    "지연이 창고 출입 기록을 출력해 짚는다",
+    "Ms. Neve prints the store entry log and taps a line",
+    2,
+    "새벽 두 시, 대장님 카드로 열렸어요.",
+    "Two in the morning. Opened with your card.",
+    "pi"
+   ],
+   [
+    "소방서 차고",
+    "fire station bay",
+    "지연이 두식의 대장 배지를 회수한다",
+    "Ms. Neve takes back the captain's badge",
+    0,
+    "제 몫은 제가 채웁니다. 대장 자리는 비었네요.",
+    "I restock my kit. Your seat is empty now.",
+    "low"
+   ],
+   [
+    "소방서 차고",
+    "fire station bay",
+    "본부 차량이 차고 앞에 서고 제복 남자가 내린다",
+    "A headquarters car pulls up and a uniformed man steps out",
+    -1,
+    "",
+    "",
+    "cu"
+   ]
+  ]
+ ],
+ [
+  "후원금을 숨긴 사육사",
+  "The Shelter Keeper and the Missing Donations",
+  "후원금이 사라지자 사육사 알바가 몰린다. 후원 계좌의 이체 시각이 소장의 계좌를 가리킨다.",
+  "Donations go missing and the shelter hand is blamed. The transfer time points at the director's own account.",
+  [
+   [
+    "H",
+    "도진",
+    "Hugo",
+    "20대 남성, 후드티, 앞치마, 개털 묻은 소매",
+    "man in his 20s, hoodie, apron, sleeves covered in dog hair"
+   ],
+   [
+    "V",
+    "점례",
+    "Ms. Corby",
+    "50대 여성, 카키 재킷, 짧은 머리, 날선 목소리",
+    "woman in her 50s, khaki jacket, short hair, sharp voice"
+   ],
+   [
+    "A",
+    "영자",
+    "Ms. Hollis",
+    "60대 여성, 긴 코트, 후원자 명패, 조용한 태도",
+    "woman in her 60s, long coat, donor badge, quiet manner"
+   ]
+  ],
+  [
+   [
+    "보호소 입구",
+    "shelter entrance",
+    "점례가 후원금 통을 도진 앞에 엎는다",
+    "Ms. Corby tips the donation jar out in front of Hugo",
+    1,
+    "이 후원금, 어디 갔어?",
+    "Where did this donation go?",
+    "low"
+   ],
+   [
+    "보호소 사무실",
+    "shelter office",
+    "점례가 도진의 열쇠고리를 빼앗아 견사 문을 잠근다",
+    "Ms. Corby takes Hugo's keys and locks the kennel door",
+    1,
+    "밤당번 알바가 후원금을?",
+    "A night-shift hand and donations?",
+    "ms"
+   ],
+   [
+    "보호소 사무실",
+    "shelter office",
+    "도진이 벽에 붙은 후원 장부를 넘겨 본다",
+    "Hugo flips through the donation ledger on the wall",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "보호소 마당",
+    "shelter yard",
+    "영자가 계좌 이체 내역을 출력해 건넨다",
+    "Ms. Hollis hands over the printed transfer records",
+    2,
+    "이체 시각마다 소장님 계좌로 갔어요.",
+    "Every transfer landed in your account.",
+    "slo"
+   ],
+   [
+    "보호소 입구",
+    "shelter entrance",
+    "점례의 손에서 열쇠고리가 바닥에 떨어진다",
+    "The keys slip from Ms. Corby's hand to the floor",
+    0,
+    "개들은 제가 돌봅니다. 후원금은 못 돌려드리겠네요.",
+    "I look after the dogs. Not your donations.",
+    "cz"
+   ],
+   [
+    "보호소 입구",
+    "shelter entrance",
+    "낯선 여자가 강아지를 안고 보호소 문을 연다",
+    "A woman walks in carrying a dog",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "시험지를 흘린 강사",
+  "The Teacher and the Leaked Exam",
+  "시험지가 유출되자 시간강사가 몰린다. 프린터 기록이 원장의 출력을 보여 준다.",
+  "An exam leaks and the part-time teacher is blamed. The printer log shows the director printed it himself.",
+  [
+   [
+    "H",
+    "소라",
+    "Kira",
+    "30대 여성, 남색 니트, 안경, 짧은 단발",
+    "woman in her 30s, navy knit, glasses, short bob"
+   ],
+   [
+    "V",
+    "범수",
+    "Mr. Ludlow",
+    "50대 남성, 회색 정장, 반짝이는 구두, 큰 목소리",
+    "man in his 50s, gray suit, shiny shoes, loud voice"
+   ],
+   [
+    "A",
+    "혜숙",
+    "Ms. Varley",
+    "40대 여성, 교육청 재킷, 서류 가방, 단호한 표정",
+    "woman in her 40s, education office jacket, briefcase, firm look"
+   ]
+  ],
+  [
+   [
+    "어학원 교실",
+    "language school classroom",
+    "범수가 유출된 시험지를 소라 앞에 펼친다",
+    "Mr. Ludlow spreads the leaked exam in front of Kira",
+    1,
+    "이 시험지, 네 반에서 나왔어.",
+    "This exam came from your class.",
+    "trk"
+   ],
+   [
+    "어학원 복도",
+    "language school hall",
+    "범수가 소라의 수업 자료를 상자째 복도에 버린다",
+    "Mr. Ludlow dumps Kira's teaching materials in the hall",
+    1,
+    "시간강사가 시험지를?",
+    "A part-time teacher and exam papers?",
+    "ms"
+   ],
+   [
+    "교무실 프린터",
+    "staff room printer",
+    "소라가 프린터 출력대에 남은 종이 한 장을 집는다",
+    "Kira picks a page from the printer's output tray",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "어학원 사무실",
+    "language school office",
+    "혜숙이 프린터 기록의 사용자 이름을 짚는다",
+    "Ms. Varley taps the user name in the printer log",
+    2,
+    "이 시험지, 원장님 계정에서 찍혔습니다.",
+    "This exam was printed from your account.",
+    "low"
+   ],
+   [
+    "어학원 사무실",
+    "language school office",
+    "소라가 범수의 원장 명패를 책상에 내려놓는다",
+    "Kira sets the director's nameplate on the desk",
+    0,
+    "다음 시험은 제가 출제합니다.",
+    "I'll write the next exam.",
+    "ots"
+   ],
+   [
+    "어학원 교실",
+    "classroom",
+    "교실 문이 열리고 새 원장이 들어온다",
+    "A new director walks into the classroom",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "점수를 바꾼 사정관",
+  "The Admissions Officer and the Changed Score",
+  "합격 점수가 뒤바뀌자 계약직 사정관이 몰린다. 시스템 접속 기록이 처장의 아이디를 남겼다.",
+  "A passing score is flipped and the contract admissions officer is blamed. The access log carries the director's ID.",
+  [
+   [
+    "H",
+    "시현",
+    "Emil",
+    "30대 남성, 흰 셔츠, 안경, 얇은 체격",
+    "man in his 30s, white shirt, glasses, thin build"
+   ],
+   [
+    "V",
+    "경숙",
+    "Ms. Givens",
+    "50대 여성, 짙은 정장, 진주 목걸이, 얇은 입술",
+    "woman in her 50s, dark suit, pearl necklace, thin lips"
+   ],
+   [
+    "A",
+    "현우",
+    "Mr. Cade",
+    "40대 남성, 회색 정장, 감사 배지, 조용한 걸음",
+    "man in his 40s, gray suit, audit badge, quiet steps"
+   ]
+  ],
+  [
+   [
+    "입학처 회의실",
+    "admissions meeting room",
+    "경숙이 점수 출력본을 시현 앞에 밀어 놓는다",
+    "Ms. Givens slides the score printout at Emil",
+    1,
+    "이 점수, 누가 바꿨어?",
+    "Who changed this score?",
+    "pi"
+   ],
+   [
+    "입학처 복도",
+    "admissions hallway",
+    "경숙이 경비를 불러 시현의 출입카드를 거둔다",
+    "Ms. Givens calls security and takes Emil's badge",
+    1,
+    "계약직이 점수를?",
+    "A contract officer and scores?",
+    "ws"
+   ],
+   [
+    "입학처 단말",
+    "admissions terminal",
+    "시현이 출력본의 수정 번호를 확인한다",
+    "Emil checks the revision number on the printout",
+    -1,
+    "",
+    "",
+    "trk"
+   ],
+   [
+    "감사실",
+    "audit office",
+    "현우가 접속 기록의 아이디를 화면에 띄운다",
+    "Mr. Cade puts the login ID on screen",
+    2,
+    "이 수정, 처장님 아이디로 저장됐습니다.",
+    "This revision was saved under your ID.",
+    "low"
+   ],
+   [
+    "입학처 회의실",
+    "admissions meeting room",
+    "현우가 경숙의 출입카드를 봉투에 넣는다",
+    "Mr. Cade seals her access card in an envelope",
+    0,
+    "다음 전형은 제가 봅니다.",
+    "I'll read the next round.",
+    "cu"
+   ],
+   [
+    "입학처 사무실",
+    "admissions office",
+    "처장 자리에 낯선 사람이 앉아 있다",
+    "A stranger is sitting in the director's chair",
+    -1,
+    "",
+    "",
+    "cz"
+   ]
+  ]
+ ],
+ [
+  "진료비를 뺀 수납 직원",
+  "The Cashier and the Missing Fees",
+  "진료비가 모자라자 수납 직원이 몰린다. 수납 프로그램 기록이 부원장의 삭제를 보여 준다.",
+  "The day's fees come up short and the cashier is blamed. The billing log shows the deputy director deleting receipts.",
+  [
+   [
+    "H",
+    "예지",
+    "Nina",
+    "20대 여성, 하늘색 원무복, 하나로 묶은 머리, 창백한 얼굴",
+    "woman in her 20s, light blue admin uniform, single braid, pale face"
+   ],
+   [
+    "V",
+    "상구",
+    "Mr. Ganz",
+    "50대 남성, 회색 정장, 넥타이, 젖은 머리",
+    "man in his 50s, gray suit, tie, damp hair"
+   ],
+   [
+    "A",
+    "선영",
+    "Ms. Beale",
+    "40대 여성, 검은 정장, 계산기, 날카로운 눈",
+    "woman in her 40s, black suit, calculator, sharp eyes"
+   ]
+  ],
+  [
+   [
+    "병원 수납창구",
+    "hospital cashier window",
+    "상구가 현금 서랍을 창구 위에 엎는다",
+    "Mr. Ganz tips the cash drawer onto the counter",
+    1,
+    "오늘 수납, 이십만 원이 비었어.",
+    "Today's till is short.",
+    "cz"
+   ],
+   [
+    "병원 수납창구",
+    "hospital cashier window",
+    "상구가 창구에 '업무 정지' 팻말을 세운다",
+    "Mr. Ganz plants a closed-window sign in front of her",
+    1,
+    "고졸 신입이 수납을?",
+    "A new high school grad on the till?",
+    "trk"
+   ],
+   [
+    "수납 프로그램",
+    "billing screen",
+    "예지가 삭제된 영수증 번호를 발견한다",
+    "Nina spots a deleted receipt number",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "병원 회계실",
+    "hospital accounting office",
+    "선영이 복원한 기록을 모니터에 띄운다",
+    "Ms. Beale brings the restored log onto the monitor",
+    2,
+    "삭제자 칸, 부원장님입니다.",
+    "The deleter field says deputy director.",
+    "slo"
+   ],
+   [
+    "병원 수납창구",
+    "hospital cashier window",
+    "선영이 상구의 결재 권한을 지운다",
+    "Ms. Beale revokes his approval rights",
+    0,
+    "창구는 다시 엽니다. 결산은 감사실에서 하세요.",
+    "I'll reopen the window. You close your books.",
+    "low"
+   ],
+   [
+    "병원 수납창구",
+    "cashier window",
+    "원무과 창구에 새 부원장이 서 있다",
+    "A new deputy director stands at the window",
+    -1,
+    "",
+    "",
+    "cu"
+   ]
+  ]
+ ],
+ [
+  "보철물을 깬 기공사",
+  "The Technician and the Cracked Crown",
+  "보철물이 깨진 채 도착하자 기공사가 몰린다. 의뢰서 시각이 파손 시점을 뒤집는다.",
+  "A crown arrives cracked and the lab technician is blamed. The order timestamp flips when it broke.",
+  [
+   [
+    "H",
+    "만수",
+    "Bruno",
+    "40대 남성, 흰 기공복, 확대경, 굳은 손",
+    "man in his 40s, white lab coat, loupe, calloused hands"
+   ],
+   [
+    "V",
+    "유미",
+    "Ms. Sarr",
+    "40대 여성, 검은 정장, 태블릿, 찬 눈",
+    "woman in her 40s, black suit, tablet, cold eyes"
+   ],
+   [
+    "A",
+    "기범",
+    "Mr. Wilkes",
+    "50대 남성, 회색 정장, 안경, 느린 말투",
+    "man in his 50s, gray suit, glasses, slow speech"
+   ]
+  ],
+  [
+   [
+    "치과 기공소",
+    "dental lab",
+    "유미이 깨진 보철물을 만수 앞에 탁 놓는다",
+    "Ms. Sarr slams the cracked crown down in front of Bruno",
+    1,
+    "이 보철물, 네가 깼어.",
+    "You cracked this crown.",
+    "ms"
+   ],
+   [
+    "치과 기공소",
+    "dental lab",
+    "유미이 거래 계약서를 찢어 작업대에 뿌린다",
+    "Ms. Sarr tears the supply contract and scatters it",
+    1,
+    "외주가 우리 보철물을?",
+    "An outside lab handling our crowns?",
+    "pi"
+   ],
+   [
+    "기공 작업대",
+    "lab bench",
+    "만수가 의뢰 상자의 봉인 시각을 확인한다",
+    "Bruno checks the seal time on the order case",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "네트워크 본사",
+    "clinic group office",
+    "기범이 도착 기록과 의뢰 시각을 나란히 놓는다",
+    "Mr. Wilkes sets the arrival record beside the order time",
+    2,
+    "도착 전에 이미 깨져 있었습니다.",
+    "It was cracked before it arrived.",
+    "low"
+   ],
+   [
+    "치과 기공소",
+    "dental lab",
+    "기범이 유미의 구매 권한을 정지한다",
+    "Mr. Wilkes suspends her purchasing authority",
+    0,
+    "보철물은 제가 만듭니다. 책임은 구매팀이 지세요.",
+    "I make the crown. Your team owns the damage.",
+    "ots"
+   ],
+   [
+    "기공소 입구",
+    "lab entrance",
+    "택배 상자에서 다른 치과의 보철물이 나온다",
+    "Another clinic's crown falls out of a box",
+    -1,
+    "",
+    "",
+    "slo"
+   ]
+  ]
+ ],
+ [
+  "목줄을 잃어버린 미용사",
+  "The Groomer and the Missing Collar",
+  "명품 목줄이 사라지자 신입 미용사가 몰린다. 예약 앱 체크인 사진에 목줄이 이미 없었다.",
+  "A designer dog collar vanishes and the new groomer is blamed. The check-in photo shows the dog without it.",
+  [
+   [
+    "H",
+    "라희",
+    "Effie",
+    "20대 여성, 앞치마, 털 묻은 소매, 동그란 눈",
+    "woman in her 20s, apron, fur-covered sleeves, round eyes"
+   ],
+   [
+    "V",
+    "선자",
+    "Ms. Gault",
+    "40대 여성, 검은 원피스, 긴 손톱, 날카로운 목소리",
+    "woman in her 40s, black dress, long nails, sharp voice"
+   ],
+   [
+    "A",
+    "다희",
+    "Ms. Ott",
+    "30대 여성, 본사 점퍼, 태블릿, 빠른 걸음",
+    "woman in her 30s, head office jacket, tablet, brisk walk"
+   ]
+  ],
+  [
+   [
+    "애견미용실",
+    "dog grooming salon",
+    "선자가 라희의 앞치마를 벗겨 바닥에 턴다",
+    "Ms. Gault pulls off Effie's apron and empties it",
+    1,
+    "이 목줄, 네 앞치마에서 나왔어.",
+    "This collar came from your apron.",
+    "low"
+   ],
+   [
+    "애견미용실",
+    "dog grooming salon",
+    "선자가 라희를 문밖으로 밀어내고 문을 잠근다",
+    "Ms. Gault pushes Effie out and locks the door",
+    1,
+    "신입이 손님 물건을 만져?",
+    "The new girl touching guest items?",
+    "trk"
+   ],
+   [
+    "카운터 태블릿",
+    "counter tablet",
+    "라희가 체크인 사진을 손끝으로 확대한다",
+    "Effie zooms in on the check-in photo",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "애견미용실",
+    "dog grooming salon",
+    "다희가 사진 촬영 시각과 목 상태를 짚는다",
+    "Ms. Ott taps the photo time and the dog's neck",
+    2,
+    "접수 사진에 목줄이 없어요.",
+    "There's no collar in the intake photo.",
+    "pi"
+   ],
+   [
+    "애견미용실",
+    "dog grooming salon",
+    "선자의 가방 끈에서 목줄이 흘러나온다",
+    "A collar slips out of Ms. Gault's bag strap",
+    0,
+    "가위는 제가 잡습니다. 손님 물건은 아니에요.",
+    "I hold the scissors. Not the customers' things.",
+    "ms"
+   ],
+   [
+    "애견미용실 문",
+    "salon door",
+    "문 앞에 손님이 목줄을 들고 서 있다",
+    "A customer stands at the door holding a collar",
+    -1,
+    "",
+    "",
+    "cz"
+   ]
+  ]
+ ],
+ [
+  "식중독을 뒤집어쓴 봉사자",
+  "The Volunteer and the Bad Lunch",
+  "배식 후 어르신들이 탈이 나자 봉사자가 몰린다. 조리실 온도 기록이 관장의 지시를 보여 준다.",
+  "Residents fall ill after lunch and the volunteer is blamed. The kitchen temperature log shows the director's order.",
+  [
+   [
+    "H",
+    "순자",
+    "Bette",
+    "60대 여성, 앞치마, 짧은 회색 머리, 깊은 주름",
+    "woman in her 60s, apron, short gray hair, deep wrinkles"
+   ],
+   [
+    "V",
+    "광수",
+    "Mr. Goff",
+    "50대 남성, 감색 정장, 클립보드, 큰 목소리",
+    "man in his 50s, navy suit, clipboard, loud voice"
+   ],
+   [
+    "A",
+    "혜린",
+    "Ms. Pye",
+    "30대 여성, 보건소 조끼, 체온계, 단호한 눈",
+    "woman in her 30s, health office vest, thermometer, firm eyes"
+   ]
+  ],
+  [
+   [
+    "복지관 식당",
+    "community hall dining room",
+    "광수가 빈 국그릇을 순자 앞에 놓는다",
+    "Mr. Goff sets an empty soup bowl in front of Bette",
+    1,
+    "이 국, 누가 끓였어?",
+    "Who made this soup?",
+    "cz"
+   ],
+   [
+    "복지관 부엌",
+    "community kitchen",
+    "광수가 순자의 앞치마를 벗겨 문고리에 건다",
+    "Mr. Goff hangs Bette's apron on the door handle",
+    1,
+    "무급 봉사자가 부엌을?",
+    "An unpaid volunteer in the kitchen?",
+    "ms"
+   ],
+   [
+    "복지관 부엌",
+    "community kitchen",
+    "순자가 냉장고 옆의 온도 기록지를 뜯어 든다",
+    "Bette tears the temperature sheet off the fridge",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "복지관 사무실",
+    "community hall office",
+    "혜린이 기록지의 시각과 온도를 짚는다",
+    "Ms. Pye taps the time and reading on the sheet",
+    2,
+    "이 시각 냉장고 전원이 꺼져 있었어요.",
+    "The fridge was unplugged at that time.",
+    "low"
+   ],
+   [
+    "복지관 식당",
+    "community hall dining room",
+    "혜린이 광수의 급식 책임자 명패를 뗀다",
+    "Ms. Pye unpins the food service director's plate",
+    0,
+    "국은 제가 끓입니다. 전원은 관장님이 내리셨죠.",
+    "I made the soup. You cut the power.",
+    "cu"
+   ],
+   [
+    "복지관 식당",
+    "dining room",
+    "보건소 직원이 봉인된 국그릇을 들고 온다",
+    "A health officer arrives with a sealed bowl",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "소포를 잃어버린 집배원",
+  "The Mail Carrier and the Lost Parcel",
+  "귀중품 소포가 사라지자 집배원이 몰린다. 배달 스캔 시각이 국장의 재발송을 보여 준다.",
+  "A valuable parcel disappears and the mail carrier is blamed. The scan time shows the postmaster resending it.",
+  [
+   [
+    "H",
+    "병구",
+    "Abram",
+    "50대 남성, 우체국 제복, 굵은 안경, 지친 어깨",
+    "man in his 50s, postal uniform, thick glasses, tired shoulders"
+   ],
+   [
+    "V",
+    "미영",
+    "Ms. Liddell",
+    "40대 여성, 흰 블라우스, 목걸이, 또렷한 말투",
+    "woman in her 40s, white blouse, necklace, crisp speech"
+   ],
+   [
+    "A",
+    "정식",
+    "Mr. Groat",
+    "40대 남성, 본부 감사 재킷, 서류철, 무거운 표정",
+    "man in his 40s, head office audit jacket, folder, grave face"
+   ]
+  ],
+  [
+   [
+    "우체국 창구",
+    "post office counter",
+    "미영이 소포 조회 화면을 병구 앞으로 돌린다",
+    "Ms. Liddell turns the parcel screen toward Abram",
+    1,
+    "이 소포, 네 구역에서 사라졌어.",
+    "This parcel vanished on your route.",
+    "ms"
+   ],
+   [
+    "우체국 창구",
+    "post office counter",
+    "미영이 병구의 배달 가방을 빼앗아 카운터 뒤에 둔다",
+    "Ms. Liddell takes Abram's mail bag and puts it behind the counter",
+    1,
+    "비정규가 소포를 만져?",
+    "A temp handling parcels?",
+    "ws"
+   ],
+   [
+    "우체국 단말",
+    "post office terminal",
+    "병구가 소포의 스캔 이력을 넘긴다",
+    "Abram scrolls the parcel's scan history",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "우체국 사무실",
+    "post office office",
+    "정식이 마지막 스캔 시각과 위치를 짚는다",
+    "Mr. Groat taps the last scan time and location",
+    2,
+    "제가 퇴근한 뒤에 사무실에서 찍혔어요.",
+    "It was scanned here after I clocked out.",
+    "pi"
+   ],
+   [
+    "우체국 창구",
+    "post office counter",
+    "정식이 미영의 사무실 열쇠를 회수한다",
+    "Mr. Groat takes back the postmaster's office key",
+    0,
+    "집은 제가 돕니다. 사무실 열쇠는 반납하셨죠.",
+    "I walk the route. You just lost the office key.",
+    "ots"
+   ],
+   [
+    "우체국 창구",
+    "post office counter",
+    "집배원 가방에 발신인 없는 소포가 들어 있다",
+    "A parcel with no sender sits in the mail bag",
+    -1,
+    "",
+    "",
+    "cz"
+   ]
+  ]
+ ]
+]

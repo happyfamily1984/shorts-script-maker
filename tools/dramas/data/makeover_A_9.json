@@ -1,0 +1,912 @@
+[
+ [
+  "상견례에서 무시당한 예비 며느리",
+  "The Fiancée They Snubbed at Dinner",
+  "청바지 차림이라며 문턱을 높이던 예비 시어머니. 그녀는 응급실을 지키던 의사였다.",
+  "A future mother-in-law sneers at her jeans. She was on call in the emergency room.",
+  [
+   [
+    "H",
+    "서하윤",
+    "Lena Voss",
+    "30대 여성, 청바지, 흰 셔츠, 민얼굴, 단발머리",
+    "woman in her 30s, jeans, white shirt, bare face, short bob"
+   ],
+   [
+    "V",
+    "황미란",
+    "Judith Crane",
+    "50대 여성, 검은 원피스, 진주 목걸이, 얇은 입술",
+    "woman in her 50s, black dress, pearl necklace, thin lips"
+   ],
+   [
+    "A",
+    "공태오",
+    "Paul Wexler",
+    "50대 남성, 흰 가운, 회색 머리, 안경",
+    "man in his 50s, white coat, gray hair, glasses"
+   ]
+  ],
+  [
+   [
+    "호텔 중식당",
+    "hotel dining room",
+    "미란이 하윤의 청바지 무릎을 손가락으로 가리킨다",
+    "Judith points a finger at the knees of Lena's jeans",
+    1,
+    "그 차림으로 상견례에 나왔어요?",
+    "You wore that to meet his mother?",
+    "cz"
+   ],
+   [
+    "호텔 중식당",
+    "hotel dining room",
+    "미란이 자기 옆 의자를 손으로 쓸어 비운다",
+    "Judith sweeps the chair beside her clear with one hand",
+    1,
+    "우리 집 문턱은 높아요.",
+    "Our family has standards.",
+    "ms"
+   ],
+   [
+    "호텔 중식당",
+    "hotel dining room",
+    "하윤의 휴대폰이 진동하고 화면에 응급실 번호가 뜬다",
+    "Lena's phone buzzes with the ER number on screen",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "호텔 중식당",
+    "hotel dining room",
+    "태오가 문을 열고 들어와 하윤 앞에 선다",
+    "Paul comes through the door and stops before Lena",
+    2,
+    "선생님, 수술실이 기다립니다.",
+    "Doctor, the operating room is waiting.",
+    "low"
+   ],
+   [
+    "호텔 중식당",
+    "hotel dining room",
+    "미란이 물잔을 놓치고 하윤이 일어나 의자를 정리한다",
+    "Judith fumbles her glass as Lena rises and squares her chair",
+    0,
+    "결혼, 다시 생각하겠습니다.",
+    "Let's reconsider this marriage.",
+    "cu"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "하윤이 흰 가운을 걸치고 구급차 문을 연다",
+    "Lena pulls on a white coat and opens the ambulance door",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "전 남자친구의 결혼식 축가",
+  "The Wedding Solo of His Ex",
+  "명단에 없다며 쫓아낸 신랑. 그가 막으려던 축가는 그녀의 무대였다.",
+  "A groom throws her out of his wedding. The solo he stops is hers to sing.",
+  [
+   [
+    "H",
+    "유가온",
+    "Sierra Lowe",
+    "30대 여성, 낡은 검은 원피스, 긴 생머리, 반짝이는 눈",
+    "woman in her 30s, old black dress, long straight hair, bright eyes"
+   ],
+   [
+    "V",
+    "변도훈",
+    "Chad Merrick",
+    "30대 남성, 신랑 정장, 꽃장식, 좁은 눈",
+    "man in his 30s, groom's tuxedo, boutonniere, narrow eyes"
+   ],
+   [
+    "A",
+    "심예린",
+    "Anita Vogel",
+    "20대 후반 여성, 흰 웨딩드레스, 올림머리, 부드러운 목소리",
+    "woman in her late 20s, white gown, updo, soft voice"
+   ]
+  ],
+  [
+   [
+    "예식장 입구",
+    "wedding entrance",
+    "도훈이 가온의 초대장을 빼앗아 두 번 찢는다",
+    "Chad snatches Sierra's invitation and tears it twice",
+    1,
+    "명단에 네 이름 없어.",
+    "Your name isn't on my list.",
+    "cz"
+   ],
+   [
+    "예식장",
+    "wedding hall",
+    "도훈이 경비를 불러 가온을 손가락으로 가리킨다",
+    "Chad calls the guard over and points at Sierra",
+    1,
+    "이 사람 내보내 주세요.",
+    "Remove her from the hall.",
+    "ms"
+   ],
+   [
+    "예식장",
+    "wedding hall",
+    "가온이 무대 옆 피아노에 서서 반주자와 눈을 맞춘다",
+    "Sierra stands by the piano and catches the accompanist's eye",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "예식장",
+    "wedding hall",
+    "예린이 마이크를 잡고 가온을 무대로 부른다",
+    "Anita takes the mic and calls Sierra to the stage",
+    2,
+    "축가는 제가 모신 분이 합니다.",
+    "My guest is singing for me.",
+    "low"
+   ],
+   [
+    "예식장",
+    "wedding hall",
+    "도훈이 신부 쪽을 돌아보고 가온이 무대에 오른다",
+    "Chad turns to the bride as Sierra walks to the stage",
+    0,
+    "축가는 신부님께만 드리죠.",
+    "This song is only for the bride.",
+    "cu"
+   ],
+   [
+    "예식장 뒤편",
+    "behind the hall",
+    "가온이 오래된 공연 프로그램 표지를 가방에 넣는다",
+    "Sierra tucks an old concert program into her bag",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "사진과 다르다던 친구들",
+  "The Friends Who Said I Looked Different",
+  "사진과 다르다며 비웃은 친구들. 그녀는 그들이 앉은 식당의 주인 셰프였다.",
+  "His friends mock her photo. She owns the restaurant they are eating in.",
+  [
+   [
+    "H",
+    "차보늬",
+    "Mina Kaplan",
+    "30대 여성, 낡은 셔츠, 묶은 머리, 민얼굴",
+    "woman in her 30s, worn shirt, tied hair, bare face"
+   ],
+   [
+    "V",
+    "조태규",
+    "Brett Sallow",
+    "30대 남성, 줄무늬 셔츠, 젖은 머리, 놀리는 입",
+    "man in his 30s, striped shirt, wet hair, teasing mouth"
+   ],
+   [
+    "A",
+    "백승호",
+    "Hector Ruiz",
+    "40대 남성, 흰 조리복, 앞치마, 굵은 팔",
+    "man in his 40s, white chef coat, apron, thick arms"
+   ]
+  ],
+  [
+   [
+    "레스토랑",
+    "restaurant",
+    "태규가 보늬의 사진과 얼굴을 번갈아 본다",
+    "Brett looks from Mina's photo to her face and back",
+    1,
+    "사진이랑 너무 다른데?",
+    "Your photo did all the work.",
+    "cz"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "태규가 보늬 앞의 메뉴판을 자기 쪽으로 끌어간다",
+    "Brett drags the menu from in front of Mina",
+    1,
+    "메뉴 읽을 줄은 알아요?",
+    "Can you even read a menu?",
+    "ms"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "보늬가 주방 쪽으로 고개를 돌려 눈을 맞춘다",
+    "Mina turns toward the kitchen and meets a pair of eyes",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "승호가 앞치마를 두르고 나와 보늬에게 고개를 숙인다",
+    "Hector walks out in his apron and bows to Mina",
+    2,
+    "셰프님, 오늘 메뉴 준비됐습니다.",
+    "Chef, tonight's menu is ready.",
+    "low"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "태규의 포크가 접시에 떨어지고 보늬가 일어난다",
+    "Brett's fork clatters onto the plate as Mina rises",
+    0,
+    "이 테이블 예약, 취소하세요.",
+    "Cancel this table's reservation.",
+    "cu"
+   ],
+   [
+    "레스토랑 주방",
+    "restaurant kitchen",
+    "보늬가 흰 조리복으로 갈아입고 불 앞에 선다",
+    "Mina changes into a white chef coat and faces the stove",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "생신상에서 밀려난 사위",
+  "The Son-in-Law Sent to the Side Table",
+  "트레이닝복이라며 상에서 밀어낸 동서. 그 사위는 이 생신상의 와인을 고른 소믈리에였다.",
+  "A brother-in-law demotes him to the side table. He chose every wine on her birthday.",
+  [
+   [
+    "H",
+    "윤재하",
+    "Simon Kade",
+    "40대 남성, 낡은 트레이닝복, 안경, 수줍은 미소",
+    "man in his 40s, worn tracksuit, glasses, shy smile"
+   ],
+   [
+    "V",
+    "문상철",
+    "Graham Pike",
+    "40대 남성, 밝은 정장, 금시계, 큰 목소리",
+    "man in his 40s, bright suit, gold watch, loud voice"
+   ],
+   [
+    "A",
+    "한지음",
+    "Cora Wynn",
+    "30대 여성, 호텔 유니폼, 와인 키를 찬 손",
+    "woman in her 30s, hotel uniform, wine key in hand"
+   ]
+  ],
+  [
+   [
+    "호텔 연회장",
+    "hotel banquet room",
+    "상철이 재하의 트레이닝복 소매를 집어 든다",
+    "Graham pinches the sleeve of Simon's tracksuit",
+    1,
+    "생신에 그 옷이야?",
+    "You wore that to her birthday?",
+    "cz"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet room",
+    "상철이 재하의 이름표를 옆 탁자로 옮긴다",
+    "Graham moves Simon's name card to the side table",
+    1,
+    "형은 저쪽에 앉아.",
+    "You sit over there.",
+    "ms"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet room",
+    "재하가 와인 병을 돌려 라벨을 동서 쪽으로 향한다",
+    "Simon turns the bottle so the label faces his brother-in-law",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet room",
+    "지음이 와인 병을 받아 들고 라벨을 확인한다",
+    "Cora lifts the bottle and checks the label",
+    2,
+    "이 와인, 저희 호텔 수입품이에요.",
+    "This wine is imported by our hotel.",
+    "low"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet room",
+    "재하가 자기 와인 병을 상에서 들어 낸다",
+    "Simon lifts his own bottle off the birthday table",
+    0,
+    "제가 고른 술은 제가 가져가죠.",
+    "I'll take back the wine I chose.",
+    "cu"
+   ],
+   [
+    "호텔 주차장",
+    "hotel parking",
+    "재하가 와인 상자를 트렁크에 조심히 싣는다",
+    "Simon sets the wine crate carefully in the trunk",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "교과서를 쓴 학부모",
+  "The Parent Who Wrote the Textbook",
+  "무식하다고 놀린 학부모 회장. 그 학부모는 아이들 교과서를 쓴 수학자였다.",
+  "The parents' chair mocks her brains. She wrote the math textbook their kids use.",
+  [
+   [
+    "H",
+    "김다온",
+    "Helen Pryce",
+    "40대 여성, 낡은 카디건, 안경, 낮게 묶은 머리",
+    "woman in her 40s, worn cardigan, glasses, low tied hair"
+   ],
+   [
+    "V",
+    "박정호",
+    "Edgar Sloan",
+    "40대 남성, 고급 점퍼, 세운 머리, 큰 목소리",
+    "man in his 40s, expensive jacket, hair swept up, loud voice"
+   ],
+   [
+    "A",
+    "서인호",
+    "Owen Sand",
+    "50대 남성, 교장, 회색 정장, 온화한 눈",
+    "man in his 50s, school principal, gray suit, kind eyes"
+   ]
+  ],
+  [
+   [
+    "학교 교무실",
+    "school office",
+    "정호가 다온의 서류를 밀어 돌려준다",
+    "Edgar slides Helen's papers back at her",
+    1,
+    "학부모회는 학력 있는 분들만 해요.",
+    "Our parents' board is for educated people.",
+    "cz"
+   ],
+   [
+    "학교 교무실",
+    "school office",
+    "정호가 다온의 의자를 문가로 빼놓는다",
+    "Edgar drags Helen's chair over by the door",
+    1,
+    "회의는 다음에 들으세요.",
+    "Read the minutes later.",
+    "ms"
+   ],
+   [
+    "학교 교무실",
+    "school office",
+    "다온이 아이 책가방에서 교과서를 꺼내 펼친다",
+    "Helen pulls the textbook from her child's schoolbag",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "학교 교무실",
+    "school office",
+    "인호가 교과서 표지를 보고 다온을 돌아본다",
+    "Owen reads the cover and turns to Helen",
+    2,
+    "이 책, 선생님이 쓰신 겁니다.",
+    "She wrote this book.",
+    "low"
+   ],
+   [
+    "학교 교무실",
+    "school office",
+    "정호가 명패를 내려놓고 다온이 의자를 당긴다",
+    "Edgar sets down his nameplate as Helen pulls her chair in",
+    0,
+    "회장 자리, 다시 선출하죠.",
+    "Let's re-elect the chair.",
+    "cu"
+   ],
+   [
+    "학교 복도",
+    "school hallway",
+    "다온이 게시판에 학부모회 공고를 붙인다",
+    "Helen pins a parents' board notice on the bulletin board",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "40대는 안 된다던 결혼정보사",
+  "The Matchmaker Who Said Too Old",
+  "나이 들었다며 비싼 요금만 권한 상담 실장. 그 손님은 회사가 인터뷰한 천문학자였다.",
+  "A matchmaker pushes the premium tier on an older client. She is the astronomer they profiled.",
+  [
+   [
+    "H",
+    "최윤슬",
+    "Talia Blair",
+    "40대 여성, 낡은 코트, 짧은 머리, 차분한 눈",
+    "woman in her 40s, worn coat, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "임현우",
+    "Louis Vance",
+    "30대 남성, 상담 실장, 회색 정장, 미끈한 말투",
+    "man in his 30s, senior consultant, gray suit, slippery tone"
+   ],
+   [
+    "A",
+    "장세라",
+    "Iris Kemp",
+    "30대 여성, 회사 팀장, 검은 정장, 서류철",
+    "woman in her 30s, company manager, black suit, file folder"
+   ]
+  ],
+  [
+   [
+    "결혼정보회사 상담실",
+    "matchmaking office",
+    "현우가 윤슬의 나이 칸에 동그라미를 친다",
+    "Louis circles the age box on Talia's form",
+    1,
+    "이 나이면 프리미엄만 돼요.",
+    "At your age it's premium tier only.",
+    "cz"
+   ],
+   [
+    "결혼정보회사 상담실",
+    "matchmaking office",
+    "현우가 가장 비싼 요금표를 윤슬 앞에 밀어 놓는다",
+    "Louis slides the priciest tier sheet in front of her",
+    1,
+    "예산부터 확인할게요.",
+    "Let's check your budget first.",
+    "ms"
+   ],
+   [
+    "결혼정보회사 상담실",
+    "matchmaking office",
+    "대기실 탁자의 잡지에서 윤슬의 사진이 드러난다",
+    "Talia's photo looks up from the magazine on the table",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "결혼정보회사 상담실",
+    "matchmaking office",
+    "세라가 탁자의 잡지를 집어 들고 현우를 돌아본다",
+    "Iris picks up the magazine and turns to Louis",
+    2,
+    "이분, 우리 회사가 인터뷰한 분이에요.",
+    "She's the one our magazine profiled.",
+    "low"
+   ],
+   [
+    "결혼정보회사 상담실",
+    "matchmaking office",
+    "현우가 요금표를 도로 가져가고 윤슬이 일어난다",
+    "Louis pulls the sheet back as Talia stands",
+    0,
+    "등록금은 환불로 하죠.",
+    "Refund my registration fee.",
+    "cu"
+   ],
+   [
+    "회사 밖",
+    "outside the office",
+    "윤슬이 다른 회사 명함을 꺼내 반으로 접는다",
+    "Talia takes another company's card and folds it in half",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "환갑잔치 사회를 뺏은 사촌",
+  "The Cousin Who Stole the Toast",
+  "돈 없는 척한다고 놀린 사촌. 그녀는 이 잔치를 처음부터 기획한 사람이었다.",
+  "A cousin elbows her aside at the party. She planned the whole celebration.",
+  [
+   [
+    "H",
+    "이현수",
+    "Nora Gale",
+    "30대 여성, 낡은 점퍼, 청바지, 묶은 머리",
+    "woman in her 30s, worn jacket, jeans, tied hair"
+   ],
+   [
+    "V",
+    "오세영",
+    "Robin Galt",
+    "40대 여성, 보라색 원피스, 큰 귀걸이, 치켜든 턱",
+    "woman in her 40s, purple dress, big earrings, chin raised"
+   ],
+   [
+    "A",
+    "강혜원",
+    "Diana Mork",
+    "40대 여성, 연회장 지배인, 검은 정장, 헤드셋",
+    "woman in her 40s, banquet manager, black suit, headset"
+   ]
+  ],
+  [
+   [
+    "연회장",
+    "banquet hall",
+    "세영이 현수의 낡은 구두를 발끝으로 가리킨다",
+    "Robin points a toe at Nora's worn shoes",
+    1,
+    "잔치 준비한다더니 그 꼴이야?",
+    "You planned this? Dressed like that?",
+    "cz"
+   ],
+   [
+    "연회장",
+    "banquet hall",
+    "세영이 현수 앞의 축사 순서표를 빼앗는다",
+    "Robin snatches the toast schedule from in front of her",
+    1,
+    "사회는 내가 봐.",
+    "I'm hosting now.",
+    "ms"
+   ],
+   [
+    "연회장 입구",
+    "banquet entrance",
+    "현수가 무대 옆 안내판을 돌려 세영에게 보여 준다",
+    "Nora turns the event board so Robin can read it",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "연회장",
+    "banquet hall",
+    "혜원이 안내판을 가리키며 세영을 돌아본다",
+    "Diana points at the board and turns to Robin",
+    2,
+    "총괄 이름이 여기 적혀 있는데요.",
+    "Her name is right there as director.",
+    "low"
+   ],
+   [
+    "연회장",
+    "banquet hall",
+    "세영이 순서표를 도로 놓고 현수가 무대로 간다",
+    "Robin sets the schedule down as Nora heads to the stage",
+    0,
+    "축사 순서에서 빠지세요.",
+    "You're off the toast list.",
+    "cu"
+   ],
+   [
+    "연회장 무대",
+    "banquet stage",
+    "현수가 아버지께 꽃을 건네고 마이크를 잡는다",
+    "Nora hands her father flowers and takes the mic",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "소방 점검관을 막아선 반장",
+  "The Block Captain Who Blocked the Inspector",
+  "월세 사는 사람이라며 무시한 반장. 그녀는 이 단지 소방 점검을 온 사람이었다.",
+  "A block captain dismisses her as a renter. She came to inspect the building's safety.",
+  [
+   [
+    "H",
+    "신유정",
+    "Stella Nunn",
+    "30대 여성, 소방 점검복, 짧은 머리, 단단한 눈",
+    "woman in her 30s, fire inspection uniform, short hair, steady eyes"
+   ],
+   [
+    "V",
+    "권태윤",
+    "Clive Baron",
+    "50대 남성, 반장, 점퍼에 명찰, 큰 배",
+    "man in his 50s, block captain, jacket with badge, big belly"
+   ],
+   [
+    "A",
+    "노지영",
+    "Faye Bolton",
+    "40대 여성, 소방서 동료, 같은 점검복, 점검표",
+    "woman in her 40s, fire service colleague, same uniform, checklist"
+   ]
+  ],
+  [
+   [
+    "아파트 회의실",
+    "apartment meeting room",
+    "태윤이 유정의 점검 가방을 문밖으로 밀어낸다",
+    "Clive pushes Stella's inspection bag out the door",
+    1,
+    "월세 사는 사람이 무슨 점검이야.",
+    "Renters don't inspect this building.",
+    "cz"
+   ],
+   [
+    "아파트 회의실",
+    "apartment meeting room",
+    "태윤이 유정의 점검표를 접어 주머니에 넣는다",
+    "Clive folds Stella's checklist into his pocket",
+    1,
+    "우리 단지는 우리가 알아서 해요.",
+    "We manage our own building.",
+    "ms"
+   ],
+   [
+    "아파트 회의실",
+    "apartment meeting room",
+    "유정이 점검 명찰을 목에 걸고 새 점검표를 펼친다",
+    "Stella clips on her inspection badge and unfolds a new sheet",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "아파트 회의실",
+    "apartment meeting room",
+    "지영이 들어와 명찰을 확인하고 태윤을 부른다",
+    "Faye walks in, checks the badge, and calls Clive",
+    2,
+    "소방 점검관이십니다.",
+    "She's the fire inspector.",
+    "low"
+   ],
+   [
+    "아파트 회의실",
+    "apartment meeting room",
+    "태윤이 점검표를 도로 꺼내고 유정이 서명을 받는다",
+    "Clive hands the sheet back as Stella takes his signature",
+    0,
+    "전 세대 점검, 오늘부터 하죠.",
+    "Every unit gets inspected. Starting today.",
+    "cu"
+   ],
+   [
+    "단지 복도",
+    "apartment corridor",
+    "유정이 소화전 문에 점검 스티커를 붙인다",
+    "Stella sticks an inspection label on the hydrant door",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "집주인을 업자로 본 집들이",
+  "The Housewarming That Took Me for a Handyman",
+  "공구 가방을 보고 업자라던 집주인. 그는 이 집을 설계한 건축가였다.",
+  "The host takes him for a repairman. He designed the house they are toasting.",
+  [
+   [
+    "H",
+    "문가영",
+    "June Halley",
+    "30대 여성, 공구 가방, 낡은 셔츠, 짧은 머리",
+    "woman in her 30s, tool bag, worn shirt, short hair"
+   ],
+   [
+    "V",
+    "배준호",
+    "Arnold Grist",
+    "40대 남성, 흰 니트, 금테 안경, 큰 웃음",
+    "man in his 40s, white knit, gold glasses, big laugh"
+   ],
+   [
+    "A",
+    "허지원",
+    "Rosa Dene",
+    "30대 여성, 건축사무소 직원, 도면 봉투, 단정한 차림",
+    "woman in her 30s, architecture staff, plan tube, neat clothes"
+   ]
+  ],
+  [
+   [
+    "집들이 거실",
+    "house party living room",
+    "준호가 가영의 공구 가방을 발로 밀어 문가로 보낸다",
+    "Arnold nudges June's tool bag toward the door with his foot",
+    1,
+    "업자는 뒤쪽 출입구로 다녀요.",
+    "Tradesmen use the back door.",
+    "cz"
+   ],
+   [
+    "집들이 거실",
+    "house party living room",
+    "준호가 가영의 도면 봉투를 식탁 아래로 밀어 넣는다",
+    "Arnold shoves June's plan tube under the table",
+    1,
+    "집들이에 공구는 좀 그렇죠.",
+    "Tools at a housewarming? Really.",
+    "ms"
+   ],
+   [
+    "집들이 거실",
+    "house party living room",
+    "가영이 액자 유리를 닦아 서명을 드러낸다",
+    "June wipes the glass frame clean to reveal the signature",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "집들이 거실",
+    "house party living room",
+    "지원이 액자 아래 서명을 읽고 준호를 돌아본다",
+    "Rosa reads the signature under the frame and looks at Arnold",
+    2,
+    "이 집 설계자 이름이에요.",
+    "That's the architect's name.",
+    "low"
+   ],
+   [
+    "집들이 거실",
+    "house party living room",
+    "준호가 봉투를 꺼내고 가영이 도면을 펼친다",
+    "Arnold pulls the tube out as June spreads the plans",
+    0,
+    "이 집, 제가 지었습니다.",
+    "I built this house.",
+    "cu"
+   ],
+   [
+    "집들이 베란다",
+    "house party veranda",
+    "가영이 배관 밸브를 돌려 새는 물을 잠근다",
+    "June turns the valve and stops the dripping water",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "집도의를 보호자로 부른 병실",
+  "The Surgeon They Took for a Visitor",
+  "보호자 자리를 내준 며느리. 그 낡은 점퍼의 남자는 오늘 수술을 집도한 의사였다.",
+  "A daughter-in-law seats him with the visitors. He performed today's surgery.",
+  [
+   [
+    "H",
+    "홍석현",
+    "Andrew Maas",
+    "50대 남성, 낡은 점퍼, 안경, 지친 눈",
+    "man in his 50s, worn jacket, glasses, tired eyes"
+   ],
+   [
+    "V",
+    "전미경",
+    "Mona Dreyer",
+    "40대 여성, 고급 코트, 짧은 웨이브, 날카로운 눈",
+    "woman in her 40s, fine coat, short waves, sharp eyes"
+   ],
+   [
+    "A",
+    "정대호",
+    "Ralph Ness",
+    "30대 남성, 수술복, 마스크를 턱에 내린 얼굴",
+    "man in his 30s, surgical scrubs, mask pulled under his chin"
+   ]
+  ],
+  [
+   [
+    "병실 앞",
+    "outside a hospital room",
+    "미경이 석현의 낡은 점퍼를 보고 문을 반쯤 닫는다",
+    "Mona eyes Andrew's worn jacket and half closes the door",
+    1,
+    "보호자만 들어갈 수 있어요.",
+    "Only family may enter.",
+    "cz"
+   ],
+   [
+    "병실 앞",
+    "outside a hospital room",
+    "미경이 석현 손의 과일 봉투를 옆 의자에 내려놓는다",
+    "Mona sets the fruit bag he holds on a side chair",
+    1,
+    "면회는 10분입니다.",
+    "Visiting hours are ten minutes.",
+    "ms"
+   ],
+   [
+    "병실 앞",
+    "outside a hospital room",
+    "석현이 가슴 주머니에서 집도 명패를 꺼낸다",
+    "Andrew takes his surgical badge from his chest pocket",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "병실 앞",
+    "outside a hospital room",
+    "대호가 뛰어와 석현에게 수술 기록을 건넨다",
+    "Ralph runs up and hands Andrew the surgery record",
+    2,
+    "선생님, 집도 기록 서명 부탁드립니다.",
+    "Doctor, we need your signature on the record.",
+    "low"
+   ],
+   [
+    "병실 앞",
+    "outside a hospital room",
+    "미경이 문을 활짝 열고 석현이 병실로 들어간다",
+    "Mona throws the door open as Andrew steps in",
+    0,
+    "보호자 자리는 제가 정하죠.",
+    "I decide who sits at the bedside.",
+    "cu"
+   ],
+   [
+    "병원 복도",
+    "hospital corridor",
+    "석현이 다음 수술 명단을 넘기며 걸어간다",
+    "Andrew walks on, flipping the next surgery list",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ]
+]

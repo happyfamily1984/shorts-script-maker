@@ -1,0 +1,940 @@
+[
+ [
+  "회비를 낸 사람은 나였다",
+  "I Paid for the Reunion",
+  "회비를 횡령한 반 회장이 하준을 거지 취급한다. 하준의 손엔 이미 예약금 영수증이 들려 있다.",
+  "The class president calls Julian a beggar over dues he stole. Julian already holds the deposit receipt.",
+  [
+   [
+    "H",
+    "유하준",
+    "Julian Renshaw",
+    "30대 후반 남성, 낡은 갈색 코트, 짧은 머리, 지친 듯 또렷한 눈",
+    "man in his late 30s, worn brown coat, short hair, tired but steady eyes"
+   ],
+   [
+    "V",
+    "진명호",
+    "Damon Pryce",
+    "30대 후반 남성, 값비싼 검은 정장, 번들거리는 머리, 비웃는 입매",
+    "man in his late 30s, expensive black suit, slick hair, sneering mouth"
+   ],
+   [
+    "A",
+    "여진아",
+    "Tamsin Rowntree",
+    "30대 여성, 회색 재킷, 단발머리, 조용히 웃는 얼굴",
+    "woman in her 30s, gray jacket, bob cut, quiet knowing smile"
+   ]
+  ],
+  [
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "진명호가 하준의 코트깃을 집어 올리며 웃는다",
+    "Damon lifts the collar of Julian's coat and laughs",
+    1,
+    "그 코트, 아직도 입고 다녀?",
+    "You still wearing that old coat?",
+    "cz"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "명호가 명패에서 하준의 이름표를 떼어 바닥에 던진다",
+    "Damon rips Julian's name card off the table and drops it",
+    1,
+    "회비도 안 냈으면서 무슨 동창이야",
+    "You didn't pay. You're no classmate",
+    "ms"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "하준이 주머니의 접힌 예약금 영수증을 식탁 위에 놓는다",
+    "Julian quietly sets a folded deposit receipt on the table",
+    0,
+    "잔금은 내가 치를게",
+    "I'll settle the balance",
+    "ots"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "지배인이 하준 앞에 허리 숙여 잔금 영수증을 건넨다",
+    "The banquet manager bows to Julian and hands him the receipt",
+    2,
+    "유 대표님, 잔금 영수증입니다",
+    "Mr. Renshaw, your final receipt",
+    "low"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "지배인이 명호 앞에 미납 회비 장부를 던진다",
+    "The manager throws the unpaid dues ledger at Damon",
+    0,
+    "회비는 내가 냈어. 네 몫까지",
+    "I paid the dues. Even your share",
+    "cu"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "구석 테이블의 진아가 잔을 들어 하준에게 미소 짓는다",
+    "Tamsin raises her glass from a corner table and smiles at Julian",
+    2,
+    "두 번째 인생은 어때?",
+    "How's the second life treating you?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "캐디의 스코어카드",
+  "The Caddie's Scorecard",
+  "성적 조작 누명을 쓸 캐디. 두 번째 라운드에서 시윤은 카드 원본을 먼저 찍는다.",
+  "A caddie about to take the blame for a fake score. In her second round, she photographs the card first.",
+  [
+   [
+    "H",
+    "김시윤",
+    "Nadia Jowett",
+    "30대 초반 여성, 흰 캐디 유니폼, 하나로 묶은 머리, 담담한 눈매",
+    "woman in her early 30s, white caddie uniform, hair tied back, calm eyes"
+   ],
+   [
+    "V",
+    "박성현",
+    "Blair Corrigan",
+    "30대 후반 여성, 분홍 골프웨어, 긴 웨이브 머리, 얕보는 미소",
+    "woman in her late 30s, pink golf wear, long wavy hair, dismissive smirk"
+   ],
+   [
+    "A",
+    "안재필",
+    "Mr. Harkness",
+    "50대 남성, 회색 정장, 흰 머리, 무표정한 규칙 위원",
+    "man in his 50s, gray suit, white hair, expressionless rules official"
+   ]
+  ],
+  [
+   [
+    "18번 홀 그린",
+    "18th green",
+    "성현이 클럽을 시윤의 캐디백에 내던진다",
+    "Blair hurls her club into Nadia's caddie bag",
+    1,
+    "네가 부른 라인 때문에 다 망쳤어",
+    "Your read on that line ruined everything",
+    "cz"
+   ],
+   [
+    "클럽하우스",
+    "clubhouse",
+    "성현이 규칙 위원에게 시윤을 손가락으로 가리킨다",
+    "Blair points a finger at Nadia in front of the official",
+    1,
+    "이 캐디가 내 공을 옮겼어요",
+    "This caddie moved my ball",
+    "ms"
+   ],
+   [
+    "18번 홀 그린",
+    "18th green",
+    "시윤이 조끼에서 스코어카드를 꺼내 폰으로 찍는다",
+    "Nadia takes the scorecard from her vest and photographs it",
+    0,
+    "8번 홀, 기억나요?",
+    "Remember the eighth hole?",
+    "cu"
+   ],
+   [
+    "클럽하우스",
+    "clubhouse",
+    "위원이 태블릿을 성현 쪽으로 돌린다",
+    "The official turns the tablet toward Blair",
+    2,
+    "원본은 5타입니다. 고친 건 그쪽이죠",
+    "The original says five. You changed it",
+    "low"
+   ],
+   [
+    "클럽하우스",
+    "clubhouse",
+    "위원이 성현 앞에 실격 통보서를 내민다",
+    "The official holds out a disqualification notice to Blair",
+    0,
+    "당신 자격은 오늘로 끝이야",
+    "Your tour card ends today",
+    "cu"
+   ],
+   [
+    "클럽하우스 주차장",
+    "clubhouse parking",
+    "관계자가 낡은 선수증을 시윤에게 내민다",
+    "An association officer holds out an old player card to Nadia",
+    2,
+    "이 카드, 반납된 적 없는데요",
+    "This card was never surrendered",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "생방송 3분 전",
+  "Three Minutes to Air",
+  "대본을 빼앗기고 방송에서 밀려난 작가. 다시 그 아침, 수정본은 콘솔 밑에 있다.",
+  "A writer who lost his script and his show. That morning returns, his signed revision under the console.",
+  [
+   [
+    "H",
+    "이종석",
+    "Gideon Underwood",
+    "40대 남성, 낡은 셔츠, 어수선한 머리, 피곤하지만 단단한 눈",
+    "man in his 40s, faded shirt, messy hair, tired but hard eyes"
+   ],
+   [
+    "V",
+    "장정웅",
+    "Crispin Hale",
+    "50대 남성, 화려한 트위드 재킷, 윤기 나는 머리, 능글맞은 웃음",
+    "man in his 50s, flashy tweed jacket, glossy hair, smirking laugh"
+   ],
+   [
+    "A",
+    "한순철",
+    "Casper Ellsworth",
+    "50대 남성, 헤드폰을 목에 건 방송 PD, 회색 후드, 무뚝뚝한 얼굴",
+    "man in his 50s, producer with headphones round his neck, gray hoodie, blunt face"
+   ]
+  ],
+  [
+   [
+    "라디오 부스",
+    "radio booth",
+    "정웅이 종석의 대본 첫 장을 찢어 바닥에 버린다",
+    "Crispin tears off the first page of Gideon's script and drops it",
+    1,
+    "네 대본은 내가 고쳐 쓸 거야",
+    "I'll rewrite your script myself",
+    "cz"
+   ],
+   [
+    "라디오 부스 복도",
+    "booth hallway",
+    "정웅이 종석을 어깨로 밀어 복도로 내보내고 문을 닫는다",
+    "Crispin shoves Gideon into the hallway and shuts the door",
+    1,
+    "방송은 나 혼자 한다",
+    "I can do the show alone",
+    "trk"
+   ],
+   [
+    "라디오 부스",
+    "radio booth",
+    "종석이 콘솔 아래에 자기 이니셜이 찍힌 수정본을 놓고 나온다",
+    "Gideon leaves his initialed revision under the console",
+    0,
+    "열한 번째 수정본이야",
+    "Eleventh revision",
+    "ots"
+   ],
+   [
+    "라디오 부스",
+    "radio booth",
+    "PD가 문을 열고 정웅의 빈 대본을 본다",
+    "The producer opens the door and sees Crispin's blank script",
+    2,
+    "열한 번째 수정, 이종석 씨 거죠",
+    "Eleventh revision. Yours, Mr. Underwood",
+    "pi"
+   ],
+   [
+    "라디오 부스",
+    "radio booth",
+    "PD가 해고 통보서를 콘솔 위에 올린다",
+    "The producer lays a termination notice on the console",
+    0,
+    "열한 번 고친 대본이야. 한 줄도 못 읽지",
+    "Eleven drafts. You couldn't read one line",
+    "cu"
+   ],
+   [
+    "라디오 부스",
+    "radio booth",
+    "PD가 화면의 청취자 문자를 읽는다",
+    "The producer reads a listener's message on screen",
+    2,
+    "이 대본, 십 년 전에도 들었어요",
+    "I heard this script ten years ago",
+    "cu"
+   ]
+  ]
+ ],
+ [
+  "발효 일지는 못 훔친다",
+  "You Can't Steal a Fermentation Log",
+  "레시피를 빼앗길 양조 장인. 같은 날 다시 선 석보는 날짜가 찍힌 일지를 펼친다.",
+  "A brewer about to lose his recipe. Standing on that same day again, he opens a log the dates protect.",
+  [
+   [
+    "H",
+    "윤석보",
+    "Halvar Ainsworth",
+    "60대 남성, 밀가루 묻은 앞치마, 짧은 흰머리, 조용하고 깊은 눈",
+    "man in his 60s, flour-dusted apron, short white hair, quiet deep eyes"
+   ],
+   [
+    "V",
+    "조재복",
+    "Bastian Dalgleish",
+    "30대 남성, 좁은 청록 셔츠, 옆으로 넘긴 머리, 얄팍한 미소",
+    "man in his 30s, slim teal shirt, side-parted hair, thin smirk"
+   ],
+   [
+    "A",
+    "강창복",
+    "Ansel Tremaine",
+    "50대 남성, 베이지 재킷, 안경, 서류 가방을 든 투자자",
+    "man in his 50s, beige jacket, glasses, investor with a briefcase"
+   ]
+  ],
+  [
+   [
+    "양조장",
+    "brewery floor",
+    "재복이 석보의 앞치마를 벗겨 바닥에 떨어뜨린다",
+    "Bastian pulls off Halvar's apron and drops it on the floor",
+    1,
+    "이제 이 레시피는 내 거야",
+    "This recipe is mine now",
+    "cz"
+   ],
+   [
+    "양조장",
+    "brewery floor",
+    "재복이 발효 탱크 이름표를 자기 이름으로 바꿔 붙인다",
+    "Bastian swaps the tank label for one with his own name",
+    1,
+    "노인은 창고나 지켜",
+    "Go watch the storage room, old man",
+    "ms"
+   ],
+   [
+    "양조장 사무실",
+    "brewery office",
+    "석보가 낡은 발효 일지의 접힌 페이지를 편다",
+    "Halvar opens a folded page of his old fermentation log",
+    0,
+    "날짜는 못 바꾸지",
+    "You can't change the dates",
+    "cu"
+   ],
+   [
+    "양조장 사무실",
+    "brewery office",
+    "창복이 출시 서류와 일지를 나란히 놓는다",
+    "Ansel lays the launch papers beside the log",
+    2,
+    "출시일이 이 일지보다 열흘 늦네요",
+    "The launch is ten days after this log",
+    "low"
+   ],
+   [
+    "양조장 사무실",
+    "brewery office",
+    "재복의 손에서 라벨 뭉치가 쏟아진다",
+    "A bundle of labels spills from Bastian's hands",
+    0,
+    "사흘 밤을 내가 봤어. 온도는 못 훔쳐",
+    "Three nights I watched it. You can't steal that",
+    "cu"
+   ],
+   [
+    "양조장 마당",
+    "brewery yard",
+    "창복이 먼지 쌓인 병을 들어 석보에게 보여준다",
+    "Ansel holds up a dusty bottle to Halvar",
+    2,
+    "이 맛, 이십 년 만이네요",
+    "This taste. Twenty years since I had it",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "각인은 지워지지 않는다",
+  "An Engraving Never Fades",
+  "작품을 빼앗길 전시날로 되돌아온 세공사. 반지 안쪽 각인은 이미 확인됐다.",
+  "A jeweler sent back to the day his work is taken. The engraving inside the ring is already checked.",
+  [
+   [
+    "H",
+    "백유겸",
+    "Lucas Merriweather",
+    "40대 남성, 가죽 앞치마, 짧은 검은 머리, 손끝이 굳은 장인",
+    "man in his 40s, leather apron, short black hair, craftsman's weathered hands"
+   ],
+   [
+    "V",
+    "문겸우",
+    "Rufus Tremaine",
+    "50대 남성, 회색 쓰리피스 정장, 은발, 매끈한 웃음",
+    "man in his 50s, gray three-piece suit, silver hair, smooth smile"
+   ],
+   [
+    "A",
+    "노예서",
+    "Odette Rowntree",
+    "30대 여성, 검은 원피스, 안경, 감정서를 든 감정사",
+    "woman in her 30s, black dress, glasses, appraiser holding a certificate"
+   ],
+   [
+    "X",
+    "한서연",
+    "Clara Voss",
+    "30대 여성, 검은 코트, 긴 머리, 반지를 든 손",
+    "woman in her 30s, black coat, long hair, holding a ring"
+   ]
+  ],
+  [
+   [
+    "보석 공방",
+    "jewelry workshop",
+    "겸우가 유겸의 공구함을 치워 바닥에 내려놓는다",
+    "Rufus clears Lucas's tool box onto the floor",
+    1,
+    "이건 이제 우리 브랜드 작품이야",
+    "These pieces belong to my brand now",
+    "cz"
+   ],
+   [
+    "보석 공방",
+    "jewelry workshop",
+    "겸우가 작품 명패에서 유겸의 이름을 떼어낸다",
+    "Rufus peels Lucas's name off the display plaque",
+    1,
+    "장인 이름은 안 넣어",
+    "No artisan names on my labels",
+    "ms"
+   ],
+   [
+    "보석 공방",
+    "jewelry workshop",
+    "유겸이 루페로 반지 안쪽 각인을 들여다본다",
+    "Lucas studies the engraving inside a ring through a loupe",
+    0,
+    "각인은 못 지우지",
+    "You can't erase an engraving",
+    "cu"
+   ],
+   [
+    "전시장",
+    "exhibition hall",
+    "예서가 감정서를 펼쳐 관객들 앞에 든다",
+    "Odette opens the appraisal sheet in front of the guests",
+    2,
+    "각인 번호가 유겸 씨 작업실 겁니다",
+    "This serial belongs to his workshop",
+    "low"
+   ],
+   [
+    "전시장",
+    "exhibition hall",
+    "겸우가 들고 있던 전시 목록을 떨어뜨린다",
+    "Rufus drops the catalogue he was holding",
+    0,
+    "전시는 끝이야. 반지는 주인에게",
+    "The show is over. The rings go back",
+    "cu"
+   ],
+   [
+    "전시장 입구",
+    "exhibition entrance",
+    "한 여성이 반지를 보고 유겸에게 다가온다",
+    "A woman sees the ring and walks toward Lucas",
+    3,
+    "이 반지, 우리 어머니 거예요",
+    "That ring belonged to my mother",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "처방전의 이름",
+  "The Name on the Prescription",
+  "동네 약국을 무시하는 체인 본부장. 약사 안나의 서랍엔 조제 기록 사본이 있다.",
+  "A chain director scorns a corner pharmacy. The pharmacist already keeps a copy of the dispensing log.",
+  [
+   [
+    "H",
+    "신안나",
+    "Ingrid Deverell",
+    "50대 여성, 흰 약사 가운, 단정한 짧은 머리, 차분한 눈",
+    "woman in her 50s, white pharmacist coat, neat short hair, calm eyes"
+   ],
+   [
+    "V",
+    "권혜연",
+    "Petra Quimby",
+    "40대 여성, 검은 정장, 높이 묶은 머리, 날카로운 눈썹",
+    "woman in her 40s, black suit, hair in a high knot, sharp brows"
+   ],
+   [
+    "A",
+    "황민정",
+    "Linnea Fairbanks",
+    "30대 여성, 회색 니트, 태블릿을 든 본사 감사",
+    "woman in her 30s, gray knit, head office auditor holding a tablet"
+   ],
+   [
+    "X",
+    "임재홍",
+    "Ove Vandergrift",
+    "70대 남성, 회색 정장, 은발, 지팡이",
+    "man in his 70s, gray suit, silver hair, walking stick"
+   ]
+  ],
+  [
+   [
+    "동네 약국",
+    "neighborhood pharmacy",
+    "혜연이 안나의 조제대 위 약통을 밀어 떨어뜨린다",
+    "Petra sweeps the pill cases off Ingrid's counter",
+    1,
+    "여기 약값, 우리 지점보다 비싸?",
+    "Your pills cost more than my branch?",
+    "ms"
+   ],
+   [
+    "동네 약국",
+    "neighborhood pharmacy",
+    "혜연이 조제 봉투를 찢어 쓰레기통에 넣는다",
+    "Petra tears the envelope and drops it in the bin",
+    1,
+    "이 처방은 우리 지점에서 조제해",
+    "We fill this at my branch",
+    "rx"
+   ],
+   [
+    "동네 약국",
+    "neighborhood pharmacy",
+    "안나가 조제 기록 한 장을 복사해 서랍에 넣는다",
+    "Ingrid copies one page of the log into her drawer",
+    0,
+    "기록은 두 개로 남겨",
+    "Keep two copies of everything",
+    "ots"
+   ],
+   [
+    "동네 약국",
+    "neighborhood pharmacy",
+    "민정이 태블릿을 들고 들어와 조제 기록을 띄운다",
+    "Linnea walks in and pulls the log up on her tablet",
+    2,
+    "승인 없이 조제자를 바꿨네요",
+    "You changed the dispenser without approval",
+    "low"
+   ],
+   [
+    "동네 약국",
+    "neighborhood pharmacy",
+    "혜연이 카운터 모서리를 붙잡고 굳는다",
+    "Petra grips the edge of the counter and freezes",
+    0,
+    "내 이름으로 조제한 건 안 바꿨어",
+    "Nothing went out under another name",
+    "rx"
+   ],
+   [
+    "동네 약국",
+    "neighborhood pharmacy",
+    "은발의 노신사가 문을 열고 안나를 보고 멈춘다",
+    "A silver-haired gentleman opens the door and stops at the sight of Ingrid",
+    3,
+    "옛날 그 약사, 아직 계시네요",
+    "The old pharmacist is still here",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "차 키를 돌려줘",
+  "Hand Back the Keys",
+  "사고 이력을 지운 차를 세차하라는 딜러. 송이는 키 태그 번호를 적어 두고 나섰다.",
+  "A dealer wants a crashed car washed clean. Maren starts her shift with the key tag number written down.",
+  [
+   [
+    "H",
+    "최송이",
+    "Maren Marchetti",
+    "30대 여성, 파란 작업복, 짧게 묶은 머리, 물기 어린 눈",
+    "woman in her 30s, blue overalls, short ponytail, steady wet eyes"
+   ],
+   [
+    "V",
+    "마정우",
+    "Dorian Gresham",
+    "40대 남성, 줄무늬 셔츠, 젖은 머리, 비웃는 입",
+    "man in his 40s, striped shirt, wet hair, sneering mouth"
+   ],
+   [
+    "A",
+    "국민석",
+    "Gault Kettlewell",
+    "50대 남성, 기름 묻은 정비복, 회색 수염, 무거운 눈",
+    "man in his 50s, grease-stained coveralls, gray beard, heavy eyes"
+   ],
+   [
+    "X",
+    "배수연",
+    "Sana Quarles",
+    "30대 여성, 베이지 트렌치코트, 긴 생머리, 서류를 든 구매자",
+    "woman in her 30s, beige trench coat, long hair, buyer holding papers"
+   ]
+  ],
+  [
+   [
+    "세차장",
+    "car wash bay",
+    "정우가 송이 손에서 차 키를 뺏는다",
+    "Dorian snatches the car key from Maren's hand",
+    1,
+    "여기서 만진 차가 십억짜리야",
+    "The cars here cost more than you do",
+    "cz"
+   ],
+   [
+    "세차장",
+    "car wash bay",
+    "정우가 호스로 송이의 작업복에 물을 뿌린다",
+    "Dorian sprays water over Maren's overalls",
+    1,
+    "알바는 알바답게",
+    "Know your place, part-timer",
+    "ms"
+   ],
+   [
+    "세차장 사무실",
+    "car wash office",
+    "송이가 키 태그의 번호를 수첩에 적는다",
+    "Maren writes the key tag number in her notebook",
+    0,
+    "번호는 두 번 확인해",
+    "Always check the tag twice",
+    "cu"
+   ],
+   [
+    "세차장",
+    "car wash bay",
+    "민석이 태블릿을 들고 차 앞에서 서류를 띄운다",
+    "Gault holds up a tablet showing the car's service file",
+    2,
+    "이 차, 사고 이력 지운 차야",
+    "This car had its crash history wiped",
+    "low"
+   ],
+   [
+    "세차장",
+    "car wash bay",
+    "정우가 서류 뭉치를 바닥에 떨어뜨린다",
+    "Dorian drops the stack of papers",
+    0,
+    "그 차, 손님한테 팔면 안 돼",
+    "That car can't be sold to anyone",
+    "cu"
+   ],
+   [
+    "세차장 입구",
+    "car wash entrance",
+    "한 여성이 자기 차 앞에서 서류를 집어 든다",
+    "A woman picks up a document beside her car",
+    3,
+    "이 차, 내가 산 차가 아니야",
+    "This isn't the car I bought",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "등기부에 없는 이름",
+  "The Name Missing from the Deed",
+  "건물을 빼앗으려는 임대인. 두 번째 아침, 창렬의 서랍엔 등기 사본이 있다.",
+  "A landlord moves to take the building. On the second morning, the broker's drawer holds the deed copy.",
+  [
+   [
+    "H",
+    "은창렬",
+    "Silas Underwood",
+    "40대 남성, 남색 조끼, 안경, 조용한 눈매, 서류를 든 중개인",
+    "man in his 40s, navy vest, glasses, quiet eyes, broker holding papers"
+   ],
+   [
+    "V",
+    "옥재성",
+    "Rolf Tremaine",
+    "50대 남성, 갈색 가죽 재킷, 뒤로 넘긴 머리, 거만한 턱",
+    "man in his 50s, brown leather jacket, swept-back hair, arrogant chin"
+   ],
+   [
+    "A",
+    "위성만",
+    "Fennimore Quill",
+    "40대 남성, 회색 정장, 안경, 서류 가방을 든 법무사",
+    "man in his 40s, gray suit, glasses, notary with a briefcase"
+   ]
+  ],
+  [
+   [
+    "부동산 중개소",
+    "real estate office",
+    "재성이 창렬의 책상 서랍을 비우며 서류를 쏟는다",
+    "Rolf empties Silas's drawer onto the floor",
+    1,
+    "이 건물, 내일 새 주인이 와",
+    "New owner takes this building tomorrow",
+    "cz"
+   ],
+   [
+    "부동산 중개소",
+    "real estate office",
+    "재성이 임대차 계약서를 찢어 창렬 앞에 던진다",
+    "Rolf tears the lease and throws it at him",
+    1,
+    "중개인은 오늘로 끝이야",
+    "Your brokerage ends today",
+    "ms"
+   ],
+   [
+    "부동산 중개소",
+    "real estate office",
+    "창렬이 서랍 깊은 곳에서 등기부 사본을 꺼내 편다",
+    "Silas takes a deed copy from deep in the drawer",
+    0,
+    "등기는 어제 바뀌었어",
+    "The deed changed yesterday",
+    "cu"
+   ],
+   [
+    "부동산 중개소",
+    "real estate office",
+    "성만이 서류를 펼쳐 재성 앞에 밀어 놓는다",
+    "Fennimore spreads the papers and pushes them toward Rolf",
+    2,
+    "근저당이 오늘 오전에 넘어갔습니다",
+    "The mortgage transferred this morning",
+    "low"
+   ],
+   [
+    "부동산 중개소",
+    "real estate office",
+    "재성이 의자에 주저앉는다",
+    "Rolf sinks into a chair",
+    0,
+    "새 주인은 나야. 계약서에 내 이름이 있어",
+    "I'm the new owner. My name is on it",
+    "cu"
+   ],
+   [
+    "부동산 중개소",
+    "real estate office",
+    "성만이 등기부 뒷장에서 오래된 이름을 짚는다",
+    "Fennimore points to an old name on the back of the deed",
+    2,
+    "이 이름, 창렬 씨 아버지 아닙니까?",
+    "Isn't this your father's name?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "무대 뒤의 이름",
+  "The Name Backstage",
+  "이름을 지운 수석 무용수. 무대 뒤에 다시 선 미래의 손엔 초판 프로그램이 있다.",
+  "A principal dancer erased her name. Standing backstage again, Elodie holds the first-run program.",
+  [
+   [
+    "H",
+    "전미래",
+    "Elodie Northcott",
+    "30대 여성, 낡은 연습복, 묶은 머리, 각진 어깨, 곧은 눈",
+    "woman in her 30s, worn practice clothes, tied hair, squared shoulders, straight gaze"
+   ],
+   [
+    "V",
+    "정서경",
+    "Greta Thornbury",
+    "40대 여성, 검은 레오타드, 긴 목, 얇게 웃는 입",
+    "woman in her 40s, black leotard, long neck, thin smile"
+   ],
+   [
+    "A",
+    "오지현",
+    "Rosalind Selkirk",
+    "50대 여성, 회색 블라우스, 안경, 단정한 단발, 단장",
+    "woman in her 50s, gray blouse, glasses, neat bob, ballet director"
+   ]
+  ],
+  [
+   [
+    "무대 뒤",
+    "backstage",
+    "서경이 미래의 토슈즈를 발로 밀어내며 비웃는다",
+    "Greta kicks Elodie's pointe shoes aside and laughs",
+    1,
+    "이 나이에 무슨 발레야",
+    "Ballet at your age?",
+    "ws"
+   ],
+   [
+    "무대 뒤",
+    "backstage",
+    "서경이 프로그램에서 미래의 이름을 손톱으로 긁어 지운다",
+    "Greta scratches Elodie's name off the program",
+    1,
+    "네 이름은 안 들어가",
+    "Your name doesn't go in",
+    "ms"
+   ],
+   [
+    "인쇄소",
+    "print shop",
+    "미래가 초판 프로그램을 펼쳐 자기 이름을 확인한다",
+    "Elodie opens a first-run program and finds her own name",
+    0,
+    "초판엔 내 이름이 있어",
+    "My name is in the first print",
+    "cu"
+   ],
+   [
+    "연습실",
+    "rehearsal room",
+    "지현이 초판 프로그램을 들어 서경 앞에 놓는다",
+    "Rosalind sets the first print in front of Greta",
+    2,
+    "이름 지운 건 내 승인 없이 했어",
+    "You cut that name without my approval",
+    "low"
+   ],
+   [
+    "연습실",
+    "rehearsal room",
+    "서경이 바를 놓치고 휘청인다",
+    "Greta loses the barre and stumbles",
+    0,
+    "무대는 발로 서는 거야",
+    "A stage is earned on your feet",
+    "rx"
+   ],
+   [
+    "연습실",
+    "rehearsal room",
+    "지현이 문가에서 미래의 이름을 부른다",
+    "Rosalind calls Elodie's name from the door",
+    2,
+    "새 후원자가 미래 씨를 지목했어요",
+    "Our new patron asked for you by name",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "안감에 새겨진 이름",
+  "The Name in the Lining",
+  "장인 이름을 지운 디자이너. 매장으로 돌아온 연수는 안감 각인을 먼저 확인한다.",
+  "A designer cuts a maker's name. Back in the boutique, Hedda checks the name in the lining first.",
+  [
+   [
+    "H",
+    "최연수",
+    "Hedda Ainsworth",
+    "60대 여성, 가죽 앞치마, 짧은 흰머리, 굳은손, 맑은 눈",
+    "woman in her 60s, leather apron, short white hair, worn hands, clear eyes"
+   ],
+   [
+    "V",
+    "홍문기",
+    "Casper Farrow",
+    "40대 남성, 검은 터틀넥, 짧은 머리, 얇은 금테 안경, 차가운 눈",
+    "man in his 40s, black turtleneck, short hair, thin gold glasses, cold eyes"
+   ],
+   [
+    "A",
+    "나재훈",
+    "Quillan Renshaw",
+    "50대 남성, 베이지 코트, 구두 상자를 든 유통업자",
+    "man in his 50s, beige coat, distributor holding a shoe box"
+   ],
+   [
+    "X",
+    "서유정",
+    "Marta Corrigan",
+    "30대 여성, 베이지 코트, 긴 머리, 쇼핑백을 든 손",
+    "woman in her 30s, beige coat, long hair, shopping bag in hand"
+   ]
+  ],
+  [
+   [
+    "수제화 공방",
+    "shoemaker workshop",
+    "문기가 연수의 망치를 빼앗아 작업대에 던진다",
+    "Casper takes Hedda's hammer and throws it on the bench",
+    1,
+    "이 손으로 뭘 만든다고",
+    "What can those hands make?",
+    "cz"
+   ],
+   [
+    "수제화 공방",
+    "shoemaker workshop",
+    "문기가 완성된 구두를 자기 브랜드 상자에 담는다",
+    "Casper packs the finished shoes into his brand box",
+    1,
+    "이건 내 컬렉션이야",
+    "This is my collection now",
+    "ms"
+   ],
+   [
+    "수제화 공방",
+    "shoemaker workshop",
+    "연수가 구두 안감을 뒤집어 각인을 손끝으로 짚는다",
+    "Hedda turns the lining over and traces the stamped name",
+    0,
+    "안감에 내 이름이 있어",
+    "My name is inside the lining",
+    "cu"
+   ],
+   [
+    "매장",
+    "boutique",
+    "재훈이 주문서와 구두를 나란히 놓고 사진을 찍는다",
+    "Quillan lines the order sheet beside the shoe and photographs them",
+    2,
+    "안감 각인이 장인 이름이면 계약 위반이야",
+    "A maker's stamp there breaks the contract",
+    "low"
+   ],
+   [
+    "매장",
+    "boutique",
+    "문기가 상자 뚜껑을 떨어뜨린다",
+    "Casper fumbles and drops the box lid",
+    0,
+    "내 손 버릇은 못 가져가",
+    "You can't take my hands",
+    "cu"
+   ],
+   [
+    "매장",
+    "boutique",
+    "한 여성이 구두를 들고 안감을 들여다본다",
+    "A woman lifts a shoe and peers at the lining",
+    3,
+    "내 신발, 왜 남의 이름으로 팔려",
+    "Why is my shoe sold under his name?",
+    "pi"
+   ]
+  ]
+ ]
+]

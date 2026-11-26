@@ -1,0 +1,912 @@
+[
+ [
+  "짐을 든 벨보이가 데려간 손님",
+  "The Guest the Bellboy Kept",
+  "부서진 캐리어를 대신 들어준 벨보이. 그 여자가 호텔을 인수하러 온 새 주인이었다.",
+  "A bellboy carries a broken suitcase for a stranger. She turns out to be the hotel's new owner.",
+  [
+   [
+    "H",
+    "도반",
+    "Denny",
+    "20대 남성, 남색 벨보이 제복, 모자, 단정한 머리, 순한 눈",
+    "man in his 20s, navy bellhop uniform, cap, neat hair, gentle eyes"
+   ],
+   [
+    "V",
+    "세현",
+    "Kurt",
+    "30대 남성, 검은 정장 조끼, 올백 머리, 비웃는 입꼬리",
+    "man in his 30s, black suit vest, slicked hair, sneering mouth"
+   ],
+   [
+    "A",
+    "하예린",
+    "Estella",
+    "40대 여성, 회색 트렌치코트, 짧은 단발, 서늘하고 단단한 눈",
+    "woman in her 40s, gray trench coat, short bob, cool steady eyes"
+   ]
+  ],
+  [
+   [
+    "공항 도착홀",
+    "airport arrivals",
+    "세현이 도반의 손에서 여행 가방을 밀어낸다",
+    "Kurt shoves the suitcase out of Denny's hands",
+    1,
+    "손님 짐에 손대지 마. 팁도 못 받잖아.",
+    "Don't touch guest bags. You get no tips anyway.",
+    "cz"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "세현이 도반의 모자를 벗겨 바닥에 던진다",
+    "Kurt flicks Denny's cap onto the floor",
+    1,
+    "유니폼 반납하고 오늘로 끝이야.",
+    "Hand in your uniform. You're done today.",
+    "ms"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "하예린이 가방을 열자 인수 계약서 뭉치가 쏟아진다",
+    "Estella opens the case and acquisition papers spill out",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "하예린이 도반 앞에 서서 세현을 바라본다",
+    "Estella steps in front of Denny and faces Kurt",
+    2,
+    "이 호텔은 제 겁니다. 이 직원은 제가 데려갑니다.",
+    "This hotel is mine now. This employee comes with me.",
+    "low"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "세현의 명함 케이스가 손에서 미끄러져 떨어진다",
+    "Kurt's card case slips from his fingers to the floor",
+    0,
+    "제가 든 짐은 제가 끝까지 들고 갑니다.",
+    "The bags I carry, I carry to the end.",
+    "cu"
+   ],
+   [
+    "호텔 정문",
+    "hotel entrance",
+    "검은 세단에서 내린 남자가 도반에게 명함을 건넨다",
+    "A man steps out of a black sedan and hands Denny a card",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "눈밭에 주저앉은 초보를 업은 리프트 직원",
+  "The Lift Operator She Remembered",
+  "슬로프에 주저앉은 초보를 데려다준 리프트 직원. 그녀가 새로 온 리조트 사장이었다.",
+  "A lift operator walks a terrified beginner down the slope. She turns out to be the resort's new owner.",
+  [
+   [
+    "H",
+    "하론",
+    "Teague",
+    "20대 남성, 주황 리조트 점퍼, 비니, 그을린 볼, 밝은 미소",
+    "man in his 20s, orange resort jacket, beanie, sunburnt cheeks, bright smile"
+   ],
+   [
+    "V",
+    "세인",
+    "Cordell",
+    "40대 남성, 빨간 패트롤 점퍼, 짧은 머리, 비웃는 얼굴",
+    "man in his 40s, red patrol jacket, buzz cut, mocking grin"
+   ],
+   [
+    "A",
+    "정안",
+    "Bryony",
+    "30대 여성, 흰 스키복, 긴 땋은 머리, 차분하고 날카로운 눈",
+    "woman in her 30s, white ski suit, long braid, calm sharp eyes"
+   ]
+  ],
+  [
+   [
+    "스키장 리프트 앞",
+    "ski lift line",
+    "세인이 하론을 줄 밖으로 밀어낸다",
+    "Cordell pushes Teague out of the line",
+    1,
+    "직원이 줄에 끼어? 손님부터 태워.",
+    "Staff don't stand in line. Guests go first.",
+    "cz"
+   ],
+   [
+    "슬로프 아래",
+    "bottom of the slope",
+    "세인이 눈밭에 주저앉은 정안을 손가락으로 가리킨다",
+    "Cordell points at Bryony sitting in the snow",
+    1,
+    "내일부턴 이 리프트에 서지 마.",
+    "Don't stand at my lift tomorrow.",
+    "ots"
+   ],
+   [
+    "슬로프 아래",
+    "bottom of the slope",
+    "정안이 장갑 속에서 리조트 안전 점검증을 꺼낸다",
+    "Bryony pulls a safety inspection badge from her glove",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "리프트 승강장",
+    "lift platform",
+    "정안이 눈을 털고 세인 앞에 선다",
+    "Bryony brushes off the snow and faces Cordell",
+    2,
+    "이 리조트는 제 겁니다. 이분은 제 안전 관리자.",
+    "This resort is mine. He's my safety director.",
+    "slo"
+   ],
+   [
+    "리프트 승강장",
+    "lift platform",
+    "세인의 무전기가 눈밭에 떨어진다",
+    "Cordell's radio drops into the snow",
+    0,
+    "넘어진 사람은 업어야죠. 팀장님처럼요.",
+    "Someone has to carry the fallen. Even you.",
+    "cu"
+   ],
+   [
+    "리조트 정상",
+    "resort summit",
+    "정상 전망대에 선 남자가 하론을 내려다본다",
+    "A man at the summit lookout stares down at Teague",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "그림을 설명한 경비원을 내쫓은 큐레이터",
+  "The Guard Who Described the Painting",
+  "눈이 어두운 남자에게 그림을 설명해 준 경비원. 그가 이 전시의 화가이자 후원자였다.",
+  "A guard describes a painting to a man who cannot see well. He is the artist behind the show.",
+  [
+   [
+    "H",
+    "서근",
+    "Halvard",
+    "60대 남성, 남색 경비 제복, 흰 머리, 굵은 눈썹, 따뜻한 눈",
+    "man in his 60s, navy guard uniform, white hair, thick brows, warm eyes"
+   ],
+   [
+    "V",
+    "지한",
+    "Xenia",
+    "30대 여성, 베이지 정장, 짧은 단발, 얇은 미소",
+    "woman in her 30s, beige suit, sharp bob, thin smile"
+   ],
+   [
+    "A",
+    "라겸",
+    "Aurelio",
+    "70대 남성, 물감 묻은 스카프, 흰 수염, 마른 체형",
+    "man in his 70s, paint-stained scarf, white beard, thin frame"
+   ]
+  ],
+  [
+   [
+    "미술관 전시실",
+    "museum gallery",
+    "지한이 서근의 팔을 잡아끌며 손님들 앞에서 꾸짖는다",
+    "Xenia pulls Halvard aside and scolds him before guests",
+    1,
+    "경비는 입 다물고 서 계세요.",
+    "Guards stand still and keep quiet.",
+    "cz"
+   ],
+   [
+    "미술관 사무실",
+    "museum office",
+    "지한이 서근의 근무표를 찢어 쓰레기통에 넣는다",
+    "Xenia tears up his shift sheet and drops it in the bin",
+    1,
+    "오늘로 계약 끝이에요. 나가세요.",
+    "Your contract ends today. Get out.",
+    "ms"
+   ],
+   [
+    "미술관 전시실",
+    "museum gallery",
+    "라겸이 그림 옆 명패를 만지다 서근을 돌아본다",
+    "Aurelio touches the plaque beside the painting and turns to Halvard",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "미술관 전시실",
+    "museum gallery",
+    "라겸이 서근에게 다가가 손을 내민다",
+    "Aurelio walks over to Halvard and offers his hand",
+    2,
+    "이 그림 제가 그렸습니다. 이분이 제 눈이었어요.",
+    "I painted this. He was my eyes today.",
+    "slo"
+   ],
+   [
+    "미술관 로비",
+    "museum lobby",
+    "지한의 이름이 개막식 명단에서 지워진다",
+    "Xenia watches her name get struck off the gala list",
+    0,
+    "그림은 눈이 아니라 마음으로 보는 겁니다.",
+    "Paintings are seen with the heart, not the eyes.",
+    "cu"
+   ],
+   [
+    "미술관 전시실",
+    "museum gallery",
+    "라겸이 서근에게 붓을 건넨다",
+    "Aurelio hands Halvard a paintbrush",
+    2,
+    "다음 그림은 같이 그립시다.",
+    "Let's paint the next one together.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "신랑 구두를 빌려준 음향기사",
+  "The Shoes He Lent the Groom",
+  "구두가 망가진 신랑에게 자기 구두를 빌려준 음향기사. 신랑은 이 웨딩홀 주인의 아들이었다.",
+  "A sound tech lends his shoes to a groom with ruined ones. The groom is the owner's son.",
+  [
+   [
+    "H",
+    "찬들",
+    "Kester",
+    "20대 남성, 검은 직원 폴로, 목에 건 헤드셋, 짧은 머리",
+    "man in his 20s, black staff polo, headset around his neck, short hair"
+   ],
+   [
+    "V",
+    "도해",
+    "Piers",
+    "40대 남성, 회색 정장, 번들거리는 머리, 얕보는 눈",
+    "man in his 40s, gray suit, greasy hair, dismissive eyes"
+   ],
+   [
+    "A",
+    "온조",
+    "Sullivan",
+    "30대 남성, 아이보리 턱시도, 단정한 머리, 울먹이는 미소",
+    "man in his 30s, ivory tuxedo, neat hair, teary smile"
+   ]
+  ],
+  [
+   [
+    "웨딩홀 대기실",
+    "wedding hall dressing room",
+    "도해가 찬들의 운동화를 발끝으로 밀어낸다",
+    "Piers nudges Kester's sneakers aside with his foot",
+    1,
+    "그 신발로 예식장을 걸어 다닐 셈이야?",
+    "You plan to walk my hall in those?",
+    "ms"
+   ],
+   [
+    "웨딩홀 대기실",
+    "wedding hall dressing room",
+    "도해가 찬들의 헤드셋을 낚아채 의자에 던진다",
+    "Piers snatches the headset and throws it on a chair",
+    1,
+    "음향은 다른 사람 시켜. 너는 나가.",
+    "Someone else does the sound. You're out.",
+    "cz"
+   ],
+   [
+    "웨딩홀 복도",
+    "wedding hall hallway",
+    "도해가 벽의 가족 사진을 보고 발걸음을 멈춘다",
+    "Piers stops dead in front of a family portrait",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "웨딩홀 무대",
+    "wedding hall stage",
+    "온조가 마이크를 잡고 찬들의 어깨를 감싼다",
+    "Sullivan takes the mic and puts an arm around Kester",
+    2,
+    "이 홀 주인 아들입니다. 이분은 제 파트너입니다.",
+    "I'm the owner's son. He's my partner.",
+    "low"
+   ],
+   [
+    "웨딩홀 대기실",
+    "wedding hall dressing room",
+    "도해의 손에서 대기실 열쇠가 바닥으로 떨어진다",
+    "The dressing room key falls from Piers's hand",
+    0,
+    "신발은 빌려줬어도 걸음은 제 겁니다.",
+    "I lent the shoes. The steps are mine.",
+    "cu"
+   ],
+   [
+    "웨딩홀 정원",
+    "wedding hall garden",
+    "검은 양복의 노신사가 찬들을 보며 허리를 숙인다",
+    "An older man in a black suit bows to Kester",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "꺼진 휴대폰 하나로 잘린 팀장",
+  "Dead Phone at the Lounge",
+  "휴대폰이 꺼진 남자에게 충전기를 빌려준 라운지 직원. 그가 항공사 취항 심사관이었다.",
+  "A lounge attendant lends her charger to a stranger. He audits airline routes for a living.",
+  [
+   [
+    "H",
+    "나겸",
+    "Hesper",
+    "20대 여성, 청록 라운지 조끼, 묶은 머리, 동그란 눈",
+    "woman in her 20s, teal lounge vest, tied hair, round eyes"
+   ],
+   [
+    "V",
+    "명하",
+    "Verity",
+    "30대 여성, 흰 블라우스, 빡빡한 올림머리, 차가운 눈",
+    "woman in her 30s, white blouse, tight bun, cold eyes"
+   ],
+   [
+    "A",
+    "휘서",
+    "Fenwick",
+    "50대 남성, 남색 정장, 은테 안경, 지친 온화한 얼굴",
+    "man in his 50s, navy suit, silver glasses, tired kind face"
+   ]
+  ],
+  [
+   [
+    "공항 라운지",
+    "airport lounge",
+    "명하가 나겸의 손에서 충전기를 빼앗는다",
+    "Verity snatches the charger out of Hesper's hand",
+    1,
+    "회사 물건을 손님한테 공짜로?",
+    "Company property, given away for free?",
+    "cz"
+   ],
+   [
+    "공항 라운지",
+    "airport lounge",
+    "명하가 나겸의 명찰을 떼어 카운터에 놓는다",
+    "Verity unpins Hesper's badge onto the counter",
+    1,
+    "명찰 반납하고 당장 나가요.",
+    "Hand in your badge and leave now.",
+    "trk"
+   ],
+   [
+    "라운지 창가",
+    "lounge window seat",
+    "휘서가 서류철에서 취항 심사 표지를 꺼낸다",
+    "Fenwick pulls a route audit folder from his briefcase",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "라운지 입구",
+    "lounge entrance",
+    "휘서가 나겸 앞에 서서 명하를 본다",
+    "Fenwick stands beside Hesper and faces Verity",
+    2,
+    "제 심사를 살린 직원입니다. 라운지는 끝입니다.",
+    "This attendant saved my audit. This lounge is finished.",
+    "slo"
+   ],
+   [
+    "라운지 게이트",
+    "lounge gate",
+    "명하의 출입 카드가 단말기에서 붉게 튕긴다",
+    "Verity's access card flashes red on the reader",
+    0,
+    "빌려드린 건 충전기뿐인데, 왜 다 잃으세요?",
+    "I lent a charger. Why lose everything?",
+    "cu"
+   ],
+   [
+    "탑승구",
+    "boarding gate",
+    "휘서가 나겸에게 새 명찰을 건넨다",
+    "Fenwick hands Hesper a new badge",
+    2,
+    "다음 주부터 우리 노선에서 일하세요.",
+    "Work our routes starting next week.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "담요를 덮어준 갑판원을 내보낸 사무장",
+  "The Blanket on the Cold Deck",
+  "밤 갑판에서 떨던 여자에게 담요를 준 갑판원. 그녀가 이 배의 노동 감독관이었다.",
+  "A deckhand gives his blanket to a shivering passenger. She is the ship's labor inspector.",
+  [
+   [
+    "H",
+    "도원",
+    "Lorcan",
+    "30대 남성, 남색 작업 점퍼, 짧은 머리, 그을린 얼굴, 조용한 눈",
+    "man in his 30s, navy work jacket, short hair, tanned face, quiet eyes"
+   ],
+   [
+    "V",
+    "세온",
+    "Dmitri",
+    "40대 남성, 흰 제복, 금단추, 턱을 든 거만한 자세",
+    "man in his 40s, white uniform, gold buttons, chin raised in disdain"
+   ],
+   [
+    "A",
+    "하빈",
+    "Ilona",
+    "40대 여성, 검은 코트, 낮게 묶은 머리, 차분한 눈",
+    "woman in her 40s, black coat, low bun, calm eyes"
+   ]
+  ],
+  [
+   [
+    "크루즈 갑판",
+    "cruise deck",
+    "세온이 도원이 덮어 준 담요를 난간 밖으로 던진다",
+    "Dmitri tosses the blanket Lorcan gave her over the rail",
+    1,
+    "손님 감정까지 챙길 필요 없어.",
+    "Guest feelings aren't your job.",
+    "cz"
+   ],
+   [
+    "크루즈 갑판",
+    "cruise deck",
+    "세온이 도원의 근무표에 빨간 줄을 긋는다",
+    "Dmitri draws a red line through Lorcan's roster",
+    1,
+    "다음 항구에서 내려. 끝이야.",
+    "Get off at the next port. You're done.",
+    "ots"
+   ],
+   [
+    "선실 복도",
+    "cabin corridor",
+    "하빈이 가방에서 선원 계약서 뭉치를 꺼내 든다",
+    "Ilona lifts a stack of crew contracts from her bag",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "크루즈 갑판",
+    "cruise deck",
+    "하빈이 계약서를 들어 올리며 세온을 본다",
+    "Ilona raises the contracts and looks at Dmitri",
+    2,
+    "저는 이 배 노동 감독관입니다. 제 증인입니다.",
+    "I inspect crew labor here. He is my witness.",
+    "low"
+   ],
+   [
+    "크루즈 갑판",
+    "cruise deck",
+    "세온의 견장이 바닥에 떨어진다",
+    "Dmitri's shoulder epaulette drops to the deck",
+    0,
+    "손님 하나가 그렇게 가벼웠습니까?",
+    "Was one passenger that light to you?",
+    "cu"
+   ],
+   [
+    "부두",
+    "dock",
+    "하빈이 도원에게 다른 배의 열쇠를 쥐여준다",
+    "Ilona presses the keys to another ship into his hand",
+    2,
+    "이 배는 당신이 맡으세요.",
+    "This ship is yours to run now.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "생선값이 모자란 셰프에게 상자를 준 노점",
+  "The Fish She Gave Away",
+  "돈이 모자란 손님에게 생선을 내준 노점. 그 손님이 식당 세 곳을 가진 셰프였다.",
+  "A market vendor gives fish to a customer short of cash. She owns three restaurants.",
+  [
+   [
+    "H",
+    "온해",
+    "Tobin",
+    "50대 여성, 앞치마, 흰 머리카락이 섞인 머리, 주름진 미소",
+    "woman in her 50s, apron, salt-and-pepper hair, warm wrinkled smile"
+   ],
+   [
+    "V",
+    "규헌",
+    "Bexley",
+    "30대 남성, 시장 관리 조끼, 짧은 머리, 비웃는 입",
+    "man in his 30s, market manager vest, short hair, sneering mouth"
+   ],
+   [
+    "A",
+    "서빈",
+    "Maribel",
+    "40대 여성, 흰 셰프 재킷, 짧은 머리, 단호한 눈",
+    "woman in her 40s, white chef jacket, cropped hair, firm eyes"
+   ]
+  ],
+  [
+   [
+    "수산시장 통로",
+    "fish market aisle",
+    "규헌이 온해의 진열대를 발로 차 상자를 넘어뜨린다",
+    "Bexley kicks Tobin's display stand and topples the crates",
+    1,
+    "이 자리 다음 달부터 다른 사람 거야.",
+    "This spot belongs to someone else next month.",
+    "ms"
+   ],
+   [
+    "수산시장 통로",
+    "fish market aisle",
+    "규헌이 온해의 앞치마를 벗겨 바닥에 던진다",
+    "Bexley yanks off Tobin's apron and throws it down",
+    1,
+    "앞치마 벗고 나가.",
+    "Take off that apron and go.",
+    "trk"
+   ],
+   [
+    "수산시장 통로",
+    "fish market aisle",
+    "서빈이 명함 뒤에 자기 식당 이름을 적어 건넨다",
+    "Maribel writes her restaurant's name on the back of a card",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "수산시장 입구",
+    "fish market entrance",
+    "서빈이 계약서를 펴 들고 규헌 앞에 선다",
+    "Maribel holds up a contract in front of Bexley",
+    2,
+    "이 가게 물건을 제 식당 세 곳에 납품받겠습니다.",
+    "I'll buy from this stall for all three of my restaurants.",
+    "low"
+   ],
+   [
+    "수산시장 통로",
+    "fish market aisle",
+    "규헌의 관리증이 바닥에 떨어진다",
+    "Bexley's manager badge drops to the floor",
+    0,
+    "제 자리는 제가 지킵니다. 손님과 함께요.",
+    "I keep my spot. With my customers.",
+    "cu"
+   ],
+   [
+    "수산시장 입구",
+    "fish market entrance",
+    "낯선 남자가 온해의 가게 앞에 새 간판을 세운다",
+    "A stranger plants a new sign in front of Tobin's stall",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "안경 주워 준 경매장 직원을 자른 진행자",
+  "The Glasses at the Auction",
+  "떨어진 안경을 주워 준 경매장 직원. 그 여자가 이번 경매의 출품자였다.",
+  "A porter picks up a dropped pair of glasses. She is the consignor of the whole sale.",
+  [
+   [
+    "H",
+    "무이",
+    "Anselmo",
+    "20대 남성, 회색 앞치마, 단정한 머리, 큰 눈",
+    "man in his 20s, gray porter apron, tidy hair, wide eyes"
+   ],
+   [
+    "V",
+    "시헌",
+    "Quinlan",
+    "40대 남성, 검은 정장, 뿔테 안경, 얇은 입술",
+    "man in his 40s, black suit, thick glasses, thin lips"
+   ],
+   [
+    "A",
+    "해담",
+    "Zelda",
+    "60대 여성, 낙타색 코트, 은발 단발, 두꺼운 안경",
+    "woman in her 60s, camel coat, silver bob, thick glasses"
+   ]
+  ],
+  [
+   [
+    "경매장 뒤편",
+    "auction house back room",
+    "시헌이 무이가 든 액자를 밀어 바닥에 떨어뜨린다",
+    "Quinlan shoves the frame in Anselmo's arms to the floor",
+    1,
+    "흔들면 얼마짜리인 줄 알아?",
+    "Do you know what you nearly broke?",
+    "cz"
+   ],
+   [
+    "경매장 복도",
+    "auction house hallway",
+    "시헌이 무이의 출입증을 떼어 바닥에 던진다",
+    "Quinlan rips off Anselmo's pass and throws it down",
+    1,
+    "오늘부로 출입 금지야.",
+    "You're banned from this floor today.",
+    "trk"
+   ],
+   [
+    "경매장 홀",
+    "auction hall",
+    "해담이 떨어진 안경을 줍고 무이의 팔을 짚는다",
+    "Zelda picks up her glasses and steadies herself on his arm",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "경매장 무대",
+    "auction stage",
+    "해담이 경매 망치를 들어 시헌 쪽을 본다",
+    "Zelda lifts the gavel and looks toward Quinlan",
+    2,
+    "이 경매 출품자는 저입니다. 제 손이었습니다.",
+    "I consigned this sale. He was my hands.",
+    "low"
+   ],
+   [
+    "경매장 홀",
+    "auction hall",
+    "시헌의 진행표가 바닥에 흩어진다",
+    "Quinlan's auction schedule scatters on the floor",
+    0,
+    "제 눈은 안경보다 밝습니다.",
+    "My eyes are brighter than those glasses.",
+    "cu"
+   ],
+   [
+    "경매장 입구",
+    "auction house entrance",
+    "해담이 무이에게 다음 경매 초대장을 건넨다",
+    "Zelda hands Anselmo an invitation to the next sale",
+    2,
+    "다음엔 제 옆에 서 주세요.",
+    "Stand beside me at the next one.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "젖은 서류를 말려 준 사무원을 자른 총무",
+  "The Files He Dried Overnight",
+  "비에 젖은 서류를 밤새 말려 준 사무원. 그 서류가 회사의 마지막 소송을 살렸다.",
+  "A clerk dries soaked case files overnight. They save the firm's biggest lawsuit.",
+  [
+   [
+    "H",
+    "하엽",
+    "Eldon",
+    "20대 남성, 회색 사무복, 둥근 안경, 마른 체형",
+    "man in his 20s, gray office shirt, round glasses, thin frame"
+   ],
+   [
+    "V",
+    "영린",
+    "Afton",
+    "40대 여성, 남색 카디건, 곱슬 머리, 날카로운 목소리",
+    "woman in her 40s, navy cardigan, curly hair, sharp voice"
+   ],
+   [
+    "A",
+    "찬호",
+    "Gustav",
+    "50대 남성, 짙은 정장, 은발, 피곤한 눈",
+    "man in his 50s, dark suit, silver hair, tired eyes"
+   ]
+  ],
+  [
+   [
+    "로펌 복사실",
+    "law firm copy room",
+    "영린이 하엽의 젖은 서류 뭉치를 바닥에 던진다",
+    "Afton throws his soaked stack of papers on the floor",
+    1,
+    "이걸 변호사님께 드리라고?",
+    "You planned to hand these to the partner?",
+    "ms"
+   ],
+   [
+    "로펌 복도",
+    "law firm hallway",
+    "영린이 하엽의 사원증을 떼어 가방에 넣는다",
+    "Afton pulls off his staff badge and pockets it",
+    1,
+    "책상 정리하고 나가.",
+    "Clear your desk and go.",
+    "trk"
+   ],
+   [
+    "로펌 복사실",
+    "law firm copy room",
+    "찬호가 젖은 페이지마다 하엽의 손글씨를 발견한다",
+    "Gustav finds Eldon's handwriting on every soaked page",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "로펌 회의실",
+    "law firm meeting room",
+    "찬호가 서류를 들어 올리며 하엽을 가리킨다",
+    "Gustav lifts the files and points at Eldon",
+    2,
+    "이 사건은 이 직원이 살렸습니다. 제 사람입니다.",
+    "This clerk saved the case. He's mine now.",
+    "slo"
+   ],
+   [
+    "로펌 복도",
+    "law firm hallway",
+    "영린의 출입 카드가 문에서 튕긴다",
+    "Afton's access card beeps red at the door",
+    0,
+    "젖은 종이가 이 회사를 살렸습니다.",
+    "Wet paper saved this firm.",
+    "cu"
+   ],
+   [
+    "로펌 로비",
+    "law firm lobby",
+    "찬호가 하엽에게 새 사무실 열쇠를 건넨다",
+    "Gustav puts a new office key in Eldon's hand",
+    2,
+    "첫 사건은 내가 직접 가르치지.",
+    "I'll teach you the first case myself.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "재킷을 빌려준 스태프를 쫓아낸 제작자",
+  "The Jacket on Set",
+  "젖은 재킷을 빌려준 세트 스태프. 그 재킷을 입은 배우가 이 영화의 주연이었다.",
+  "A set grip lends his jacket to a soaked actor. That actor is the star of the film.",
+  [
+   [
+    "H",
+    "건휘",
+    "Fintan",
+    "30대 남성, 검은 후드, 공구 벨트, 피곤한 눈",
+    "man in his 30s, black hoodie, tool belt, tired eyes"
+   ],
+   [
+    "V",
+    "하원",
+    "Ulrich",
+    "40대 남성, 검은 재킷, 실내 선글라스, 큰 목소리",
+    "man in his 40s, black jacket, sunglasses indoors, loud presence"
+   ],
+   [
+    "A",
+    "서해",
+    "Jarvis",
+    "50대 남성, 회색 코트, 목도리, 차분한 얼굴",
+    "man in his 50s, gray coat, scarf, calm face"
+   ]
+  ],
+  [
+   [
+    "영화 세트장",
+    "film set",
+    "하원이 건휘의 어깨에서 장비 가방을 낚아채 던진다",
+    "Ulrich rips the gear bag off Fintan's shoulder and throws it",
+    1,
+    "이 장면에 네가 왜 있어?",
+    "Why are you even on this scene?",
+    "ms"
+   ],
+   [
+    "영화 세트장",
+    "film set",
+    "하원이 건휘의 이름표를 떼어 바닥에 버린다",
+    "Ulrich tears off Fintan's name tag and drops it",
+    1,
+    "오늘로 크루 아웃이야.",
+    "You're off this crew today.",
+    "cz"
+   ],
+   [
+    "의상실",
+    "wardrobe room",
+    "서해가 재킷 안쪽 이름표를 손끝으로 만진다",
+    "Jarvis touches the name tag inside his jacket",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "영화 세트장",
+    "film set",
+    "서해가 재킷을 벗어 건휘의 어깨에 걸친다",
+    "Jarvis takes off the jacket and drapes it over Fintan",
+    2,
+    "이 사람 없으면 이 장면도 없었습니다.",
+    "Without this man there is no scene.",
+    "pi"
+   ],
+   [
+    "영화 세트장",
+    "film set",
+    "감독이 하원을 세트 밖으로 가리키고 하원의 클립보드가 떨어진다",
+    "The director points Ulrich off set as his clipboard falls",
+    0,
+    "재킷 하나가 그렇게 큰일입니까?",
+    "Does one jacket cost that much?",
+    "cu"
+   ],
+   [
+    "영화 세트장 밖",
+    "outside the film set",
+    "서해가 건휘에게 다음 작품 대본을 건넨다",
+    "Jarvis hands Fintan the script for his next film",
+    2,
+    "다음 작품, 같이 가세.",
+    "Next film, we go together.",
+    "trk"
+   ]
+  ]
+ ]
+]

@@ -1,0 +1,926 @@
+[
+ [
+  "반납한 차가 다시 나갔다",
+  "The Car Came Back Out",
+  "여성 렌터카 직원을 무시한 지점장. 서희는 주행거리 사진을 찍어 두고 그날에 다시 섰다.",
+  "A branch manager dismisses his rental clerk. Aiko stands in that day again with the odometer photographed.",
+  [
+   [
+    "H",
+    "이서희",
+    "Aiko Fenwick",
+    "30대 여성, 남색 유니폼, 묶은 머리, 사원증, 반듯한 눈",
+    "woman in her 30s, navy uniform, tied hair, staff badge, straight eyes"
+   ],
+   [
+    "V",
+    "최동준",
+    "Ravi Hargreaves",
+    "40대 남성, 흰 셔츠에 조끼, 짧은 머리, 클립보드, 비웃는 입",
+    "man in his 40s, white shirt and vest, short hair, clipboard, sneering mouth"
+   ],
+   [
+    "A",
+    "한미경",
+    "Elsa Vandergrift",
+    "50대 여성, 베이지 코트, 짧은 퍼머, 영수증을 든 고객",
+    "woman in her 50s, beige coat, short perm, customer holding a receipt"
+   ]
+  ],
+  [
+   [
+    "렌터카 지점",
+    "rental desk",
+    "지점장이 직원의 예약 장부를 빼앗아 던진다",
+    "The branch manager snatches the clerk's booking book and throws it",
+    1,
+    "계약직이 무슨 예약이야",
+    "A temp taking bookings?",
+    "ms"
+   ],
+   [
+    "렌터카 주차장",
+    "rental lot",
+    "지점장이 직원의 손에서 차 키를 빼앗는다",
+    "He takes the keys out of her hand",
+    1,
+    "차는 내가 내줘",
+    "I hand out the cars",
+    "ms"
+   ],
+   [
+    "렌터카 주차장",
+    "rental lot",
+    "직원이 반납 차의 주행거리 사진을 찍는다",
+    "She photographs the odometer of a returned car",
+    0,
+    "거리가 안 맞아",
+    "The mileage is off",
+    "cu"
+   ],
+   [
+    "렌터카 지점",
+    "rental desk",
+    "고객이 반납 영수증과 사진을 내민다",
+    "The customer holds out the return receipt and the photo",
+    2,
+    "반납한 차가 다시 나갔네요",
+    "My returned car went out again",
+    "low"
+   ],
+   [
+    "렌터카 지점",
+    "rental desk",
+    "지점장이 서류를 바닥에 떨어뜨린다",
+    "He drops the papers",
+    0,
+    "차는 사람 목숨을 태워",
+    "Cars carry people's lives",
+    "rx"
+   ],
+   [
+    "렌터카 주차장",
+    "rental lot",
+    "직원이 트렁크에서 낯선 가방을 꺼낸다",
+    "She lifts a strange bag from the trunk",
+    0,
+    "이 가방, 어제 실린 짐이 아니야",
+    "This bag wasn't in the car yesterday",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "배차 없는 밤",
+  "The Night With No Dispatch",
+  "나이 많은 기사를 밤 배차에서 뺀 실장. 일수의 주머니엔 요금 영수증이 있다.",
+  "A dispatcher sidelines an older driver. The fare receipt is already in Ove's pocket.",
+  [
+   [
+    "H",
+    "김일수",
+    "Ove Iverson",
+    "60대 남성, 회색 재킷, 짚모자, 흰 수염, 주름진 얼굴",
+    "man in his 60s, gray jacket, straw hat, white beard, lined face"
+   ],
+   [
+    "V",
+    "박정옥",
+    "Yasmin Corrigan",
+    "40대 여성, 검은 니트, 짧은 단발, 배차 마이크, 날카로운 눈",
+    "woman in her 40s, black knit, short bob, dispatch mic, sharp eyes"
+   ],
+   [
+    "A",
+    "오세진",
+    "Tove Lindqvist",
+    "30대 여성, 회색 코트, 긴 머리, 영수증을 든 승객",
+    "woman in her 30s, gray coat, long hair, passenger holding a receipt"
+   ]
+  ],
+  [
+   [
+    "택시 회사 사무실",
+    "taxi office",
+    "실장이 기사의 배차표를 찢어 버린다",
+    "The dispatcher tears up the driver's schedule",
+    1,
+    "나이 많은 기사는 밤에 안 나가",
+    "Old drivers don't take nights",
+    "cz"
+   ],
+   [
+    "택시 회사 차고",
+    "taxi garage",
+    "실장이 기사의 차 키를 뽑아 자기 책상에 던진다",
+    "She pulls his keys and tosses them on her desk",
+    1,
+    "오늘 배차 없어",
+    "No runs for you today",
+    "trk"
+   ],
+   [
+    "택시 차고",
+    "taxi garage",
+    "기사가 요금 영수증의 시각과 배차표를 맞춰 본다",
+    "He matches the fare receipt time with the dispatch sheet",
+    0,
+    "이 시간엔 내가 안 달렸어",
+    "I wasn't driving then",
+    "cu"
+   ],
+   [
+    "택시 회사 사무실",
+    "taxi office",
+    "승객이 영수증과 배차 기록을 들고 온다",
+    "The passenger arrives with the receipt and dispatch log",
+    2,
+    "이 차, 제가 탄 차가 아니에요",
+    "This isn't the cab I rode in",
+    "low"
+   ],
+   [
+    "택시 회사 사무실",
+    "taxi office",
+    "실장이 배차표를 바닥에 떨어뜨린다",
+    "She drops the schedule",
+    0,
+    "요금은 거짓말 안 해",
+    "A fare doesn't lie",
+    "cu"
+   ],
+   [
+    "택시 차고",
+    "taxi garage",
+    "승객이 영수증 뒷면의 주소를 가리킨다",
+    "The passenger points to an address on the back of the receipt",
+    2,
+    "이 주소, 제가 찾던 곳이에요",
+    "This is the address I was looking for",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "컨테이너 번호 한 자리",
+  "One Digit Off",
+  "하역 감독을 무시한 선사 이사. 재만은 컨테이너 번호를 대조해 두고 그 부두에 다시 섰다.",
+  "A shipping director scorns a dock foreman. Kettil stands on the docks again with the container number checked.",
+  [
+   [
+    "H",
+    "정재만",
+    "Kettil Jessup",
+    "50대 남성, 형광 안전조끼, 안전모, 짧은 수염, 무거운 눈",
+    "man in his 50s, neon safety vest, hard hat, short beard, heavy eyes"
+   ],
+   [
+    "V",
+    "김도헌",
+    "Tariq Underwood",
+    "40대 남성, 남색 정장, 흰 셔츠, 짧은 머리, 오만한 턱",
+    "man in his 40s, navy suit, white shirt, short hair, arrogant chin"
+   ],
+   [
+    "A",
+    "윤하늘",
+    "Rin Deverell",
+    "30대 여성, 회색 정장, 안경, 서류철을 든 관세사",
+    "woman in her 30s, gray suit, glasses, customs broker with a file"
+   ]
+  ],
+  [
+   [
+    "부두",
+    "dockside",
+    "이사가 감독의 안전모를 벗겨 바닥에 던진다",
+    "The director knocks off the foreman's helmet",
+    1,
+    "하역공이 무슨 서류야",
+    "A dockhand reading papers?",
+    "ws"
+   ],
+   [
+    "부두",
+    "dockside",
+    "이사가 감독의 적하 목록을 찢는다",
+    "He rips the loading list",
+    1,
+    "짐은 내가 정해",
+    "I say what loads",
+    "ms"
+   ],
+   [
+    "부두 사무소",
+    "dock office",
+    "감독이 컨테이너 번호와 선하증권을 대조한다",
+    "The foreman checks the container number against the bill of lading",
+    0,
+    "번호가 한 자리 달라",
+    "One digit is wrong",
+    "cu"
+   ],
+   [
+    "부두 사무소",
+    "dock office",
+    "관세사가 서류를 펼쳐 이사 앞에 놓는다",
+    "The customs broker lays the papers before the director",
+    2,
+    "신고되지 않은 컨테이너입니다",
+    "This container was never declared",
+    "low"
+   ],
+   [
+    "부두",
+    "dockside",
+    "이사가 클립보드를 바닥에 떨어뜨린다",
+    "He drops his clipboard",
+    0,
+    "짐에는 주인이 있어",
+    "Every load has an owner",
+    "cu"
+   ],
+   [
+    "부두",
+    "dockside",
+    "감독이 열린 컨테이너에서 상자를 꺼낸다",
+    "The foreman pulls a box from the opened container",
+    0,
+    "이 표식, 우리 회사 거야",
+    "This mark is my company's",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "엔진은 시간을 센다",
+  "Engines Count Their Hours",
+  "여성 요트 정비사를 무시한 클럽 회장. 지연은 엔진 로그의 시간을 외워 두었다.",
+  "A club chairman scorns his mechanic. Ilse has memorized the hours in the engine log.",
+  [
+   [
+    "H",
+    "서지연",
+    "Ilse Merriweather",
+    "30대 여성, 흰 작업복, 묶은 머리, 공구 벨트, 단단한 눈",
+    "woman in her 30s, white work clothes, tied hair, tool belt, hard eyes"
+   ],
+   [
+    "V",
+    "이명구",
+    "Gault Quinnell",
+    "60대 남성, 흰 요트 재킷, 은발, 선글라스, 거만한 입매",
+    "man in his 60s, white yacht jacket, silver hair, sunglasses, arrogant mouth"
+   ],
+   [
+    "A",
+    "최선우",
+    "Maeve Deverell",
+    "40대 여성, 크림색 원피스, 긴 머리, 요트 계약서를 든 선주",
+    "woman in her 40s, cream dress, long hair, owner holding yacht papers"
+   ]
+  ],
+  [
+   [
+    "마리나 정박지",
+    "marina dock",
+    "회장이 정비사의 공구함을 발로 차 물가로 민다",
+    "The chairman kicks the mechanic's toolbox toward the water",
+    1,
+    "엔진은 남자가 만지는 거야",
+    "Engines are men's business",
+    "ws"
+   ],
+   [
+    "마리나 정박지",
+    "marina dock",
+    "회장이 정비 일지 페이지를 찢어 바람에 날린다",
+    "He tears a page from the service log and lets it fly",
+    1,
+    "이 배는 내 거야",
+    "This yacht is mine",
+    "ms"
+   ],
+   [
+    "마리나 정박지",
+    "marina dock",
+    "정비사가 엔진 로그의 항해 시간을 확인한다",
+    "She checks the running hours in the engine log",
+    0,
+    "엔진은 시간을 세",
+    "An engine counts its hours",
+    "cu"
+   ],
+   [
+    "요트 갑판",
+    "yacht deck",
+    "새 선주가 로그 사본과 계기판을 맞춰 본다",
+    "The new owner matches the log copy to the gauges",
+    2,
+    "계기판이 일지보다 백 시간 많아요",
+    "The gauge reads a hundred hours more",
+    "low"
+   ],
+   [
+    "요트 갑판",
+    "yacht deck",
+    "회장이 난간을 붙잡고 굳는다",
+    "The chairman grips the rail and freezes",
+    0,
+    "배는 거짓말 안 해. 선장만 하지",
+    "Boats don't lie. Captains do",
+    "cu"
+   ],
+   [
+    "요트 갑판",
+    "yacht deck",
+    "새 선주가 오래된 항해 기록을 넘긴다",
+    "The new owner flips to an old voyage entry",
+    2,
+    "이 배, 어디까지 갔던 거죠?",
+    "How far did this yacht go?",
+    "slo"
+   ]
+  ]
+ ],
+ [
+  "대진표에서 지운 이름",
+  "The Name Off the Draw",
+  "코치를 무시한 클럽 회원. 사무실로 돌아온 진희는 스코어 사본을 서랍에 넣어 둔다.",
+  "A club member dismisses a coach. Back in the office, Yusuf locks the score copy in her drawer.",
+  [
+   [
+    "H",
+    "박진희",
+    "Yusuf Wainwright",
+    "40대 여성, 흰 테니스복, 짧은 머리, 라켓을 든 손, 곧은 눈",
+    "woman in her 40s, white tennis wear, short hair, racket in hand, straight eyes"
+   ],
+   [
+    "V",
+    "김혜성",
+    "Silas Thwaite",
+    "40대 남성, 남색 폴로셔츠, 짧은 머리, 금시계, 거만한 미소",
+    "man in his 40s, navy polo, short hair, gold watch, arrogant smile"
+   ],
+   [
+    "A",
+    "오민수",
+    "Hedda Pemberton",
+    "50대 여성, 회색 블라우스, 안경, 대진표를 든 총무",
+    "woman in her 50s, gray blouse, glasses, secretary holding the draw sheet"
+   ],
+   [
+    "X",
+    "최유빈",
+    "Jonas Rufford",
+    "20대 남성, 흰 셔츠, 짧은 머리, 공을 든 손",
+    "man in his 20s, white shirt, short hair, holding a ball"
+   ]
+  ],
+  [
+   [
+    "테니스 코트",
+    "tennis court",
+    "회원이 코치의 라켓을 코트 밖으로 던진다",
+    "The member throws the coach's racket off the court",
+    1,
+    "코치가 무슨 대회야",
+    "A coach entering the club draw?",
+    "ms"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "회원이 코치의 이름을 대진표에서 지운다",
+    "He wipes her name off the draw sheet",
+    1,
+    "네 이름은 안 올라가",
+    "Your name doesn't go up",
+    "rx"
+   ],
+   [
+    "클럽 사무실",
+    "club office",
+    "코치가 스코어 기록 사본을 서랍에 넣는다",
+    "She puts a copy of the score sheet in her drawer",
+    0,
+    "점수는 두 번 적어",
+    "Scores get written twice",
+    "cu"
+   ],
+   [
+    "클럽 사무실",
+    "club office",
+    "총무가 대진표와 스코어 기록을 나란히 놓는다",
+    "The secretary sets the draw beside the score sheet",
+    2,
+    "점수를 고친 흔적이 있네요",
+    "Someone changed these scores",
+    "low"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "회원이 라켓을 바닥에 떨어뜨린다",
+    "His racket drops to the court",
+    0,
+    "코트는 실력으로 서",
+    "A court is earned by playing",
+    "rx"
+   ],
+   [
+    "테니스 코트",
+    "tennis court",
+    "볼보이가 코트 옆에서 공을 내밀며 손을 든다",
+    "A ball boy holds out a ball and raises his hand",
+    3,
+    "이 공, 제가 주웠어요",
+    "I picked up this ball",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "핀 세팅 기록",
+  "The Pin-Setting Log",
+  "낡은 볼링장을 무시한 프로 볼러. 성민은 핀 세팅 기록을 봐 두고 그 레인에 다시 섰다.",
+  "A pro bowler sneers at an old alley. Knut stands on the lanes again having checked the pin-setting log.",
+  [
+   [
+    "H",
+    "장성민",
+    "Knut Ashdown",
+    "50대 남성, 회색 폴로셔츠, 짧은 머리, 볼링화, 무뚝뚝한 얼굴",
+    "man in his 50s, gray polo, short hair, bowling shoes, blunt face"
+   ],
+   [
+    "V",
+    "정미숙",
+    "Runa Hollins",
+    "30대 여성, 형광 셔츠, 묶은 머리, 자기 공, 도발적인 눈",
+    "woman in her 30s, neon shirt, tied hair, own ball, defiant eyes"
+   ],
+   [
+    "A",
+    "김일현",
+    "Iris Hollins",
+    "60대 남성, 파란 작업복, 안경, 렌치를 든 정비사",
+    "man in his 60s, blue overalls, glasses, mechanic holding a wrench"
+   ],
+   [
+    "X",
+    "박만복",
+    "Peder Trask",
+    "70대 남성, 파란 작업복, 흰 머리, 볼링공을 든 손",
+    "man in his 70s, blue overalls, white hair, holding a bowling ball"
+   ]
+  ],
+  [
+   [
+    "볼링장",
+    "bowling alley",
+    "프로가 운영자의 공을 발로 차 레인에 굴린다",
+    "The pro kicks the owner's ball down the lane",
+    1,
+    "이 레인, 대회 수준은 아니지",
+    "These lanes aren't tournament grade",
+    "cz"
+   ],
+   [
+    "볼링장",
+    "bowling alley",
+    "프로가 운영자의 이름표를 접수대에서 뗀다",
+    "She peels the owner's name off the front desk",
+    1,
+    "이 대회는 내 거야",
+    "This tournament is mine",
+    "ms"
+   ],
+   [
+    "볼링장 기계실",
+    "machine room",
+    "운영자가 장비 로그의 핀 세팅 기록을 확인한다",
+    "He checks the pin-setting log in the machine room",
+    0,
+    "핀은 기계가 기억해",
+    "The machine remembers the pins",
+    "cu"
+   ],
+   [
+    "볼링장 접수대",
+    "front desk",
+    "정비사가 로그 출력본을 심판에게 건넨다",
+    "The mechanic hands the log printout to the referee",
+    2,
+    "핀 세팅이 세 번 바뀌었어요",
+    "The pin setup changed three times",
+    "low"
+   ],
+   [
+    "볼링장",
+    "bowling alley",
+    "프로의 공이 거터로 흐른다",
+    "Her ball rolls into the gutter",
+    0,
+    "점수는 못 바꿔. 기계가 봤어",
+    "You can't change a score. The machine saw",
+    "rx"
+   ],
+   [
+    "볼링장",
+    "bowling alley",
+    "옆 레인의 노인이 자기 공을 들어 보인다",
+    "An old man on the next lane lifts his ball",
+    3,
+    "이 레인, 내가 만들었어",
+    "I built these lanes",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "구조 요청 두 시간",
+  "Two Hours Late",
+  "산장지기를 무시한 등산 클럽 회장. 명숙은 구조 일지의 빈 시간란을 기억한다.",
+  "A hiking president scorns a hut keeper. Nanna remembers the blank time column in the rescue log.",
+  [
+   [
+    "H",
+    "노명숙",
+    "Nanna Pemberton",
+    "60대 여성, 두꺼운 등산복, 짧은 흰머리, 장갑, 주름진 얼굴",
+    "woman in her 60s, thick hiking gear, short white hair, gloves, lined face"
+   ],
+   [
+    "V",
+    "최대웅",
+    "Felix Deverell",
+    "50대 남성, 빨간 등산복, 짧은 머리, 등산 스틱, 오만한 턱",
+    "man in his 50s, red hiking gear, short hair, trekking pole, arrogant chin"
+   ],
+   [
+    "A",
+    "박선영",
+    "Mio Osborne",
+    "30대 남성, 주황 구조복, 안전모, 무전기, 단단한 눈",
+    "man in his 30s, orange rescue suit, hard hat, radio, hard eyes"
+   ]
+  ],
+  [
+   [
+    "산장",
+    "mountain hut",
+    "회장이 산장지기의 장작을 발로 차 흩뜨린다",
+    "The club president kicks the keeper's firewood apart",
+    1,
+    "산장지기가 무슨 판단이야",
+    "A hut keeper making the call?",
+    "ws"
+   ],
+   [
+    "산장",
+    "mountain hut",
+    "회장이 구조 기록판을 벽에서 떼어낸다",
+    "He pulls the rescue board off the wall",
+    1,
+    "기록은 내가 써",
+    "I write the records",
+    "ms"
+   ],
+   [
+    "산장",
+    "mountain hut",
+    "지기가 낡은 구조 일지의 시간란을 짚는다",
+    "She points at the time column in the old rescue log",
+    0,
+    "출발 시간이 비어 있어",
+    "The departure time is blank",
+    "cu"
+   ],
+   [
+    "산장",
+    "mountain hut",
+    "구조대원이 일지와 무전 기록을 대조한다",
+    "The ranger checks the log against the radio record",
+    2,
+    "구조 요청은 두 시간 늦게 접수됐어요",
+    "The call came in two hours late",
+    "low"
+   ],
+   [
+    "산장",
+    "mountain hut",
+    "회장이 장갑을 바닥에 떨어뜨린다",
+    "He drops his gloves",
+    0,
+    "산은 거짓말을 안 해",
+    "The mountain doesn't lie",
+    "cu"
+   ],
+   [
+    "산장 문간",
+    "hut doorway",
+    "지기가 눈 속에서 봉투를 꺼내 든다",
+    "She lifts an envelope out of the snow",
+    0,
+    "이 편지, 십 년 전 날짜야",
+    "This letter is dated ten years ago",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "텐트 번호 하나",
+  "One Tent Number Missing",
+  "작은 캠핑장을 무시한 글램핑 대표. 현태는 텐트 번호를 맞춰 두고 그 캠핑장에 다시 섰다.",
+  "A glamping CEO scorns a small campsite. Marius stands at the campsite again with the tent numbers matched.",
+  [
+   [
+    "H",
+    "김현태",
+    "Marius Ravenscroft",
+    "40대 남성, 카키 셔츠, 짚모자, 랜턴을 든 손, 조용한 눈",
+    "man in his 40s, khaki shirt, straw hat, lantern in hand, quiet eyes"
+   ],
+   [
+    "V",
+    "이은비",
+    "Nao Thwaite",
+    "30대 여성, 흰 니트, 긴 머리, 태블릿, 얕보는 미소",
+    "woman in her 30s, white knit, long hair, tablet, dismissive smile"
+   ],
+   [
+    "A",
+    "서경아",
+    "Elsa Yeldham",
+    "40대 여성, 회색 후드, 짧은 머리, 예약 확인서를 든 손님",
+    "woman in her 40s, gray hoodie, short hair, guest holding a booking slip"
+   ]
+  ],
+  [
+   [
+    "캠핑장",
+    "campsite",
+    "대표가 주인의 랜턴을 발로 차 굴린다",
+    "The CEO kicks the owner's lantern across the ground",
+    1,
+    "이런 캠핑장이 무슨 제휴야",
+    "This little campsite partnering with us?",
+    "cz"
+   ],
+   [
+    "캠핑장",
+    "campsite",
+    "대표가 예약 장부를 찢어 불씨에 던진다",
+    "She tears the booking book toward the fire",
+    1,
+    "예약은 우리가 받아",
+    "We take the bookings now",
+    "ms"
+   ],
+   [
+    "캠핑장",
+    "campsite",
+    "주인이 예약 확인 사진과 텐트 번호를 맞춰 본다",
+    "He compares booking photos with the tent numbers",
+    0,
+    "번호가 하나 비어 있어",
+    "One number is missing",
+    "ots"
+   ],
+   [
+    "캠핑장",
+    "campsite",
+    "손님이 예약 확인서와 사진을 꺼낸다",
+    "The guest brings out a booking confirmation and photo",
+    2,
+    "제 텐트에 다른 사람이 있었어요",
+    "Someone was in my tent",
+    "low"
+   ],
+   [
+    "캠핑장",
+    "campsite",
+    "대표가 장부를 바닥에 떨어뜨린다",
+    "She drops the ledger",
+    0,
+    "불은 흔적을 남겨",
+    "Fire leaves marks",
+    "rx"
+   ],
+   [
+    "캠핑장 텐트",
+    "campsite tent",
+    "주인이 텐트 안에서 낯익은 가방을 꺼낸다",
+    "He pulls a familiar bag from inside the tent",
+    0,
+    "이 가방, 내 거야",
+    "This bag is mine",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "지워진 아이 이름",
+  "The Erased Child",
+  "수영 강사를 무시한 관장. 사무실로 돌아온 은주는 명단 사본을 결제 기록과 맞춘다.",
+  "A pool manager dismisses an instructor. Back in the office, Vera matches the list to the payments.",
+  [
+   [
+    "H",
+    "최은주",
+    "Vera Lindqvist",
+    "40대 여성, 남색 수영복, 수영모, 물안경을 올린 머리, 단단한 눈",
+    "woman in her 40s, navy swimsuit, swim cap, goggles on her head, hard eyes"
+   ],
+   [
+    "V",
+    "박기범",
+    "Farid Deverell",
+    "50대 남성, 흰 폴로셔츠, 짧은 머리, 호각, 거만한 턱",
+    "man in his 50s, white polo, short hair, whistle, arrogant chin"
+   ],
+   [
+    "A",
+    "김소희",
+    "Sora Godwin",
+    "30대 여성, 베이지 코트, 긴 머리, 결제 내역을 든 학부모",
+    "woman in her 30s, beige coat, long hair, parent holding payment records"
+   ]
+  ],
+  [
+   [
+    "수영장",
+    "pool deck",
+    "관장이 강사의 수업 명단을 물에 던진다",
+    "The manager throws the instructor's class list into the pool",
+    1,
+    "강사가 무슨 등록이야",
+    "An instructor taking registrations?",
+    "ws"
+   ],
+   [
+    "수영장",
+    "pool deck",
+    "관장이 강사의 호각을 빼앗아 관중석에 던진다",
+    "He takes her whistle and throws it at the stands",
+    1,
+    "네 반은 없어져",
+    "Your class is gone",
+    "ms"
+   ],
+   [
+    "수영장 사무실",
+    "pool office",
+    "강사가 등록 명단 사본과 결제 기록을 대조한다",
+    "She matches the list copy with the payment record",
+    0,
+    "결제는 됐는데 이름이 없어",
+    "Paid, but no name",
+    "cu"
+   ],
+   [
+    "수영장 사무실",
+    "pool office",
+    "학부모가 결제 내역과 명단을 들고 온다",
+    "A parent arrives with a payment receipt and the list",
+    2,
+    "제 아이 이름이 지워졌어요",
+    "My child's name was erased",
+    "low"
+   ],
+   [
+    "수영장",
+    "pool deck",
+    "관장이 서류를 물에 떨어뜨린다",
+    "He drops the papers into the pool",
+    0,
+    "물은 숨기지 못해",
+    "Water hides nothing",
+    "rx"
+   ],
+   [
+    "수영장 사무실",
+    "pool office",
+    "강사가 물에 젖은 명찰을 집어 든다",
+    "She lifts a soaked name tag from the desk",
+    0,
+    "이 아이, 지금 어디 있죠?",
+    "Where is this child now?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "약 이름이 다르다",
+  "The Wrong Medicine",
+  "신입 수의사를 무시한 원장. 우연의 가방엔 처방전 사본이 이미 들어 있다.",
+  "A clinic director bullies a new vet. The prescription copy is already in Hana's bag.",
+  [
+   [
+    "H",
+    "정우연",
+    "Hana Osborne",
+    "30대 여성, 흰 가운, 묶은 머리, 청진기, 차분한 눈",
+    "woman in her 30s, white coat, tied hair, stethoscope, calm eyes"
+   ],
+   [
+    "V",
+    "황민석",
+    "Magnus Deverell",
+    "50대 남성, 흰 가운, 안경, 짧은 머리, 무표정한 입",
+    "man in his 50s, white coat, glasses, short hair, expressionless mouth"
+   ],
+   [
+    "A",
+    "이정순",
+    "Ruth Fairbanks",
+    "60대 여성, 자주색 니트, 흰 머리, 강아지 목줄, 걱정스러운 눈",
+    "woman in her 60s, plum knit, white hair, dog leash, worried eyes"
+   ]
+  ],
+  [
+   [
+    "동물병원",
+    "vet clinic",
+    "원장이 수의사의 청진기를 집어 바닥에 던진다",
+    "The director throws the vet's stethoscope on the floor",
+    1,
+    "이 수술 기록, 내 이름으로 써",
+    "Put this surgery under my name",
+    "cz"
+   ],
+   [
+    "동물병원",
+    "vet clinic",
+    "원장이 진료 기록에서 수의사 이름을 지운다",
+    "He erases her name from the treatment record",
+    1,
+    "이 수술은 내가 한 거야",
+    "I did that surgery",
+    "ms"
+   ],
+   [
+    "동물병원",
+    "vet clinic",
+    "수의사가 처방전 사본과 약 봉투를 맞춰 본다",
+    "She matches the prescription copy to the medicine packet",
+    0,
+    "약 이름이 달라",
+    "The medicine name is wrong",
+    "cu"
+   ],
+   [
+    "동물병원",
+    "vet clinic",
+    "보호자가 진료비 영수증과 처방전을 내민다",
+    "The owner holds out the bill and the prescription",
+    2,
+    "우리 개는 이 약을 안 먹었어요",
+    "My dog never took this",
+    "low"
+   ],
+   [
+    "동물병원",
+    "vet clinic",
+    "원장이 서류를 바닥에 떨어뜨린다",
+    "He drops the papers",
+    0,
+    "진료는 기록으로 남아",
+    "Treatment lives in the record",
+    "cu"
+   ],
+   [
+    "동물병원 대기실",
+    "waiting room",
+    "보호자가 강아지를 안고 수의사를 본다",
+    "The owner cradles a puppy and looks at the vet",
+    2,
+    "이 아이, 우리 집에서 태어났어요",
+    "This pup was born in my house",
+    "pi"
+   ]
+  ]
+ ]
+]

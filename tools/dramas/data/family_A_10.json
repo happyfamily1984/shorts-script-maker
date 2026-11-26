@@ -1,0 +1,912 @@
+[
+ [
+  "직원인 척한 사촌의 라운지",
+  "The Cousin Who Played Staff",
+  "사촌은 라운지 직원인 척하며 손님 열 명을 들인다. 직원 명부에 그의 이름은 없었다.",
+  "The cousin poses as lounge staff and walks ten guests in. His name is not on the staff list.",
+  [
+   [
+    "H",
+    "지원",
+    "Nora",
+    "30대 여성, 공항 라운지 제복, 단정한 머리, 차분한 눈",
+    "woman in her 30s, airport lounge uniform, neat hair, calm eyes"
+   ],
+   [
+    "V",
+    "달수",
+    "Perry",
+    "40대 남성, 값비싼 트렌치코트, 선글라스, 큰 걸음",
+    "man in his 40s, pricey trench coat, sunglasses, heavy stride"
+   ],
+   [
+    "A",
+    "랭 씨",
+    "Mr. Lang",
+    "50대 남성, 공항 제복, 태블릿, 무뚝뚝한 얼굴",
+    "man in his 50s, airport uniform, tablet, blunt face"
+   ]
+  ],
+  [
+   [
+    "공항 라운지",
+    "airport lounge",
+    "달수가 지원의 명패를 떼어 자기 옷에 단다",
+    "Perry pulls off Nora's name tag and pins it on himself",
+    1,
+    "오늘은 내가 여기 직원이야.",
+    "I'm staff here today.",
+    "cz"
+   ],
+   [
+    "공항 라운지",
+    "airport lounge",
+    "달수가 손님 열 명을 앞세우고 라운지로 들어간다",
+    "Perry leads ten guests into the lounge",
+    1,
+    "다 따라와. 내가 들여줄게.",
+    "Follow me. I'll get you in.",
+    "ms"
+   ],
+   [
+    "공항 라운지",
+    "airport lounge",
+    "지원이 직원 명부의 이름을 하나씩 확인한다",
+    "Nora checks the names on the staff list",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "공항 라운지",
+    "airport lounge",
+    "랭 씨가 명부를 달수 앞에 편다",
+    "Mr. Lang opens the staff list before Perry",
+    2,
+    "직원 명부에 달수 씨 이름은 없습니다.",
+    "Perry is not on the staff list.",
+    "slo"
+   ],
+   [
+    "공항 라운지",
+    "airport lounge",
+    "달수가 명패를 떼어 카운터에 놓는다",
+    "Perry unpins the name tag and sets it down",
+    0,
+    "무단 출입으로 신고했습니다.",
+    "I reported the break-in.",
+    "cz"
+   ],
+   [
+    "라운지 입구",
+    "lounge entrance",
+    "화면에 달수 이름이 정지로 뜬다",
+    "Perry's name flashes as suspended on the entrance screen",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "기증 명패에 이름을 바꾼 고모",
+  "The Plaque With the Wrong Name",
+  "고모는 사서인 조카가 모은 희귀본을 자기 공로로 기증식에 올린다. 기증 기록이 이름을 바꿨다.",
+  "The aunt takes credit for the rare books her librarian niece collected. The donation record changed the name.",
+  [
+   [
+    "H",
+    "소민",
+    "Nell",
+    "20대 후반 여성, 회색 카디건, 둥근 안경, 조용한 눈",
+    "woman in her late 20s, gray cardigan, round glasses, quiet eyes"
+   ],
+   [
+    "V",
+    "금자",
+    "Vera",
+    "60대 여성, 모직 코트, 브로치, 거만한 미소",
+    "woman in her 60s, wool coat, brooch, haughty smile"
+   ],
+   [
+    "A",
+    "던 씨",
+    "Ms. Dunn",
+    "40대 여성, 도서관장 정장, 서류철, 차분한 태도",
+    "woman in her 40s, library director suit, file, calm manner"
+   ]
+  ],
+  [
+   [
+    "도서관 열람실",
+    "library reading room",
+    "금자가 소민의 장갑을 빼앗아 책 위에 던진다",
+    "Vera snatches Nell's gloves and throws them on a book",
+    1,
+    "이 책들, 내가 기증한 거야.",
+    "I donated these books.",
+    "ws"
+   ],
+   [
+    "도서관 로비",
+    "library lobby",
+    "금자가 기증 명패에서 소민 이름을 손으로 문지른다",
+    "Vera rubs Nell's name off the donor plaque",
+    1,
+    "명패에 내 이름을 새겨.",
+    "Carve my name on the plaque.",
+    "ots"
+   ],
+   [
+    "도서관 사무실",
+    "library office",
+    "소민이 기증 대장의 접수 번호를 확인한다",
+    "Nell checks the intake number in the donation ledger",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "도서관 로비",
+    "library lobby",
+    "던 씨가 기증 대장을 금자 앞에 편다",
+    "Ms. Dunn opens the ledger before Vera",
+    2,
+    "희귀본 기증자는 소민 씨로 접수됐습니다.",
+    "The rare books are filed under Nell.",
+    "low"
+   ],
+   [
+    "도서관 로비",
+    "library lobby",
+    "금자가 명패를 떼어 내려놓는다",
+    "Vera lifts the plaque off the wall and sets it down",
+    0,
+    "기증은 제 이름으로 철회합니다.",
+    "I withdraw the donation in my name.",
+    "cu"
+   ],
+   [
+    "열람실 문",
+    "reading room door",
+    "명패 앞에서 여자가 헌책 한 권을 내민다",
+    "A woman at the plaque holds out an old book",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "유물 복원 공로를 가로챈 삼촌",
+  "The Credit on the Artifact",
+  "삼촌은 복원가인 조카를 붓이나 칠하는 애라 부르고 공로를 가로챈다. 복원 계약서가 유물을 되돌렸다.",
+  "The uncle calls his restorer nephew a brush hand and takes the credit. The restoration contract pulled the artifacts back.",
+  [
+   [
+    "H",
+    "하영",
+    "Greta",
+    "30대 여성, 흰 장갑, 회색 앞치마, 집중한 눈",
+    "woman in her 30s, white gloves, gray apron, focused eyes"
+   ],
+   [
+    "V",
+    "상길",
+    "Harris",
+    "60대 남성, 트위드 재킷, 안경, 큰 목소리",
+    "man in his 60s, tweed jacket, glasses, loud voice"
+   ],
+   [
+    "A",
+    "코일 씨",
+    "Mr. Coyle",
+    "50대 남성, 박물관 제복, 서류철, 단호한 태도",
+    "man in his 50s, museum uniform, file, firm manner"
+   ]
+  ],
+  [
+   [
+    "박물관 보존실",
+    "museum lab",
+    "상길이 하영의 복원 도구를 상자에 쓸어 담는다",
+    "Harris sweeps Greta's tools into a box",
+    1,
+    "전시 명패엔 내 이름만.",
+    "Only my name on the label.",
+    "ms"
+   ],
+   [
+    "박물관 전시실",
+    "museum gallery",
+    "상길이 전시 명패에서 하영 이름을 손으로 가린다",
+    "Harris covers Greta's name on the exhibit label",
+    1,
+    "복원은 네가 해. 이름은 나.",
+    "You restore it. I take the name.",
+    "cz"
+   ],
+   [
+    "박물관 보존실",
+    "museum lab",
+    "하영이 복원 보고서의 서명란을 확인한다",
+    "Greta checks the signature on the restoration report",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "박물관 전시실",
+    "museum gallery",
+    "코일이 계약서를 상길 앞에 놓는다",
+    "Mr. Bauer lays the contract before Harris",
+    2,
+    "복원 책임자도 하영 씨, 반출도 그분 몫입니다.",
+    "Restoration lead is Greta. She controls the loans.",
+    "low"
+   ],
+   [
+    "박물관 전시실",
+    "museum gallery",
+    "상길이 명패를 들고 전시실로 가지 못한다",
+    "Harris lifts the label but cannot enter the gallery",
+    0,
+    "유물은 오늘 회수합니다.",
+    "The artifacts go back today.",
+    "cu"
+   ],
+   [
+    "전시실 입구",
+    "gallery entrance",
+    "반출 안내가 입구에 붙는다",
+    "A removal notice goes up at the gallery door",
+    -1,
+    "",
+    "",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "월급만 받아 가는 사촌",
+  "The Cousin on the Payroll",
+  "사촌은 회사에 이름만 올리고 월급을 받아 간다. 급여 대장에 근무 기록이 없었다.",
+  "The cousin keeps a name on the payroll and never shows up. The payroll ledger has no attendance.",
+  [
+   [
+    "H",
+    "주원",
+    "Neil",
+    "30대 남성, 흰 셔츠, 사원증, 담담한 얼굴",
+    "man in his 30s, white shirt, staff badge, level face"
+   ],
+   [
+    "V",
+    "옥분",
+    "Trudy",
+    "50대 여성, 보라색 니트, 큰 가방, 날선 목소리",
+    "woman in her 50s, purple knit, large bag, sharp voice"
+   ],
+   [
+    "A",
+    "하스 씨",
+    "Ms. Haas",
+    "40대 여성, 검은 정장, 태블릿, 차가운 말투",
+    "woman in her 40s, black suit, tablet, cold tone"
+   ]
+  ],
+  [
+   [
+    "회사 인사팀",
+    "company HR office",
+    "옥분이 주원의 사원증을 책상에 던진다",
+    "Trudy throws Neil's staff badge onto the desk",
+    1,
+    "사원증이나 찍는 애가 뭘 안다고.",
+    "A badge printer knows what?",
+    "cz"
+   ],
+   [
+    "회사 인사팀",
+    "company HR office",
+    "옥분이 빈 책상을 가리키며 월급날을 확인한다",
+    "Trudy points at an empty desk and checks payday",
+    1,
+    "이번 달 월급은 내 거야.",
+    "This month's pay is mine.",
+    "trk"
+   ],
+   [
+    "회사 인사팀",
+    "company HR office",
+    "주원이 급여 대장의 근무 기록란을 넘긴다",
+    "Neil turns to the attendance column in the payroll ledger",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "회사 인사팀",
+    "company HR office",
+    "하스가 급여 대장을 옥분 앞에 편다",
+    "Ms. Haas opens the payroll ledger before Trudy",
+    2,
+    "옥분 씨 근무 기록은 석 달째 비어 있습니다.",
+    "Trudy's attendance has been blank for three months.",
+    "pi"
+   ],
+   [
+    "회사 인사팀",
+    "company HR office",
+    "옥분이 빈 책상 서랍을 닫는다",
+    "Trudy shuts the empty desk drawer",
+    0,
+    "이번 달 급여부터 지급하지 않습니다.",
+    "No pay from this month on.",
+    "ms"
+   ],
+   [
+    "인사팀 문",
+    "HR office door",
+    "여자가 새 사원증을 들고 온다",
+    "A woman at the door holds a new staff badge",
+    -1,
+    "",
+    "",
+    "ots"
+   ]
+  ]
+ ],
+ [
+  "우유에 물을 탄 처남",
+  "The Uncle Who Watered the Milk",
+  "처남은 조카의 우유에 물을 타서 납품하고 차액을 챙긴다. 성분 검사서가 거래를 끊었다.",
+  "The brother-in-law waters down his nephew's milk and pockets the difference. A lab report ended the deal.",
+  [
+   [
+    "H",
+    "태민",
+    "Walt",
+    "30대 남성, 작업복, 흙 묻은 장화, 무던한 얼굴",
+    "man in his 30s, work clothes, muddy boots, steady face"
+   ],
+   [
+    "V",
+    "수철",
+    "Gerald",
+    "40대 남성, 청바지, 큰 모자, 큰 걸음",
+    "man in his 40s, jeans, big hat, heavy stride"
+   ],
+   [
+    "A",
+    "머서 씨",
+    "Mr. Mercer",
+    "50대 남성, 흰 셔츠, 서류 가방, 차분한 태도",
+    "man in his 50s, white shirt, briefcase, calm manner"
+   ]
+  ],
+  [
+   [
+    "목장",
+    "dairy farm",
+    "수철이 우유통에 물통을 기울여 붓는다",
+    "Gerald tips a water can into the milk",
+    1,
+    "소나 닦는 애가 값을 불러?",
+    "A cow washer quoting prices?",
+    "ws"
+   ],
+   [
+    "목장",
+    "dairy farm",
+    "수철이 물 탄 우유통을 트럭에 싣는다",
+    "Gerald loads the watered cans onto his truck",
+    1,
+    "이 정도면 아무도 몰라.",
+    "Nobody will notice this much.",
+    "ots"
+   ],
+   [
+    "목장 창고",
+    "farm shed",
+    "태민이 성분 검사서의 지방 함량을 확인한다",
+    "Walt checks the fat content on the lab report",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "목장",
+    "dairy farm",
+    "머서가 검사서를 수철 앞에 놓는다",
+    "Mr. Mercer sets the report before Gerald",
+    2,
+    "이 우유, 물이 섞였습니다. 계약 위반입니다.",
+    "This milk is watered down. That breaks the contract.",
+    "pi"
+   ],
+   [
+    "목장",
+    "dairy farm",
+    "수철이 트럭 열쇠를 내려놓는다",
+    "Gerald sets his truck keys down",
+    0,
+    "오늘부로 거래는 끝이에요.",
+    "Our deal ends today.",
+    "cu"
+   ],
+   [
+    "목장 입구",
+    "farm entrance",
+    "낯선 트럭에서 여자가 계약서를 들고 내린다",
+    "A woman steps from an unfamiliar truck holding a contract",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "첼로 수석을 뺀 시누이의 공연",
+  "The Principal Chair She Lost",
+  "시누이는 첼리스트인 조카를 뒤에서나 켜는 애라 부르고 공연에서 뺀다. 수석 명단이 자리를 되돌렸다.",
+  "The sister-in-law calls the cellist a back-row player and cuts her from the show. The roster restored her seat.",
+  [
+   [
+    "H",
+    "서하",
+    "June",
+    "20대 후반 여성, 검은 연주복, 긴 머리, 차분한 눈",
+    "woman in her late 20s, black concert dress, long hair, calm eyes"
+   ],
+   [
+    "V",
+    "말복",
+    "Paula",
+    "50대 여성, 보랏빛 드레스, 진주 목걸이, 거만한 태도",
+    "woman in her 50s, violet dress, pearl necklace, haughty manner"
+   ],
+   [
+    "A",
+    "오를로프 씨",
+    "Ms. Orlov",
+    "40대 여성, 지휘자 재킷, 악보, 단호한 눈",
+    "woman in her 40s, conductor jacket, score, firm eyes"
+   ]
+  ],
+  [
+   [
+    "연주홀 무대",
+    "concert stage",
+    "말복이 서하의 악보를 바닥에 떨어뜨린다",
+    "Paula knocks June's score to the floor",
+    1,
+    "이번 공연, 넌 빠져.",
+    "Sit this concert out.",
+    "ms"
+   ],
+   [
+    "연주홀 무대",
+    "concert stage",
+    "말복이 공연 명단에서 서하 이름을 지운다",
+    "Paula erases June's name from the concert list",
+    1,
+    "뒤에서나 켜. 무대는 내 거야.",
+    "Play in back. The stage is mine.",
+    "cz"
+   ],
+   [
+    "연주홀 대기실",
+    "concert dressing room",
+    "서하가 수석 명단의 서명란을 확인한다",
+    "June checks the signature on the principal roster",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "연주홀 무대",
+    "concert stage",
+    "오를로프가 명단을 말복 앞에 든다",
+    "Ms. Orlov holds the roster before Paula",
+    2,
+    "첼로 수석은 서하 씨, 계약에 명시됐습니다.",
+    "Principal cello is June, per contract.",
+    "slo"
+   ],
+   [
+    "연주홀 무대",
+    "concert stage",
+    "말복이 무대에서 한 걸음 물러선다",
+    "Paula takes a step back across the stage",
+    0,
+    "오늘 공연은 제가 이끕니다.",
+    "I lead tonight's concert.",
+    "rx"
+   ],
+   [
+    "객석 입구",
+    "auditorium entrance",
+    "무대 옆 명단에 새 수석 이름이 붙는다",
+    "A new principal's name goes up beside the stage",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "의상 공로를 가로챈 사촌의 퍼레이드",
+  "The Parade That Stopped",
+  "사촌은 퍼레이드 의상을 만든 조카를 꿰매는 애라 부르고 공로를 가로챈다. 저작권 등록이 퍼레이드를 멈췄다.",
+  "The cousin calls the costume maker a stitcher and takes the credit. The design filing stopped the parade.",
+  [
+   [
+    "H",
+    "은우",
+    "Felix",
+    "30대 남성, 작업 조끼, 재봉 가위, 집중한 눈",
+    "man in his 30s, work vest, sewing shears, focused eyes"
+   ],
+   [
+    "V",
+    "화자",
+    "Denise",
+    "50대 여성, 화려한 스카프, 큰 반지, 얕보는 웃음",
+    "woman in her 50s, bright scarf, large rings, condescending smile"
+   ],
+   [
+    "A",
+    "워드 씨",
+    "Ms. Ward",
+    "40대 여성, 공원 제복, 태블릿, 단호한 태도",
+    "woman in her 40s, park uniform, tablet, firm manner"
+   ]
+  ],
+  [
+   [
+    "공원 의상실",
+    "park costume room",
+    "화자가 은우의 재봉 가위를 빼앗아 탁자에 놓는다",
+    "Denise takes Felix's shears and slams them on the table",
+    1,
+    "이 의상, 내 이름으로 걸어.",
+    "Hang these costumes under my name.",
+    "cz"
+   ],
+   [
+    "공원 의상실",
+    "park costume room",
+    "화자가 의상 명패를 자기 이름으로 바꾼다",
+    "Denise swaps the costume label to her own name",
+    1,
+    "퍼레이드는 내 작품이야.",
+    "The parade is my work.",
+    "ms"
+   ],
+   [
+    "공원 의상실",
+    "park costume room",
+    "은우가 의상 라벨의 등록 번호를 확인한다",
+    "Felix checks the registration number on the costume label",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "퍼레이드 대기 구역",
+    "parade staging area",
+    "워드가 등록증을 화자 앞에 든다",
+    "Ms. Ward holds the filing before Denise",
+    2,
+    "의상 디자인 등록자는 은우 씨입니다.",
+    "The costume design is registered to Felix.",
+    "low"
+   ],
+   [
+    "퍼레이드 대기 구역",
+    "parade staging area",
+    "화자가 퍼레이드 차량 앞에서 멈춘다",
+    "Denise stops in front of the parade float",
+    0,
+    "퍼레이드는 오늘 취소입니다.",
+    "The parade is cancelled today.",
+    "cz"
+   ],
+   [
+    "퍼레이드 입구",
+    "parade entrance",
+    "퍼레이드 차량에 취소 안내판이 걸린다",
+    "A cancellation sign is hung on the parade float",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "작가 이름을 지운 큰아버지의 연재",
+  "The Series Without an Author",
+  "큰아버지는 웹툰 작가인 조카의 작품을 회사 이름으로 낸다. 연재 계약서가 이름을 되돌렸다.",
+  "The uncle publishes his comic artist niece's work under the company name. The contract restored her name.",
+  [
+   [
+    "H",
+    "가영",
+    "Ruby",
+    "20대 여성, 회색 후드티, 태블릿, 피곤한 눈",
+    "woman in her 20s, gray hoodie, tablet, tired eyes"
+   ],
+   [
+    "V",
+    "재만",
+    "Norman",
+    "60대 남성, 회색 정장, 안경, 거만한 턱",
+    "man in his 60s, gray suit, glasses, arrogant chin"
+   ],
+   [
+    "A",
+    "벤츠 씨",
+    "Mr. Bentz",
+    "40대 남성, 정장, 계약서, 무표정",
+    "man in his 40s, suit, contract, blank face"
+   ]
+  ],
+  [
+   [
+    "웹툰 스튜디오",
+    "comic studio",
+    "재만이 가영의 태블릿을 빼앗아 서랍에 넣는다",
+    "Norman takes Ruby's tablet and locks it in a drawer",
+    1,
+    "이 작품, 회사 이름으로 나가.",
+    "This series goes out as company work.",
+    "ms"
+   ],
+   [
+    "웹툰 스튜디오",
+    "comic studio",
+    "재만이 작품 표지에서 가영 이름을 지운다",
+    "Norman wipes Ruby's name off the series cover",
+    1,
+    "태블릿은 내가 보관한다.",
+    "I'm keeping your tablet.",
+    "trk"
+   ],
+   [
+    "웹툰 스튜디오",
+    "comic studio",
+    "가영이 연재 계약서의 저작자란을 확인한다",
+    "Ruby checks the author line on the serial contract",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "웹툰 스튜디오",
+    "comic studio",
+    "벤츠가 계약서를 재만 앞에 놓는다",
+    "Mr. Bentz lays the contract before Norman",
+    2,
+    "저작자는 가영 씨, 회사는 판권만 갖습니다.",
+    "The author is Ruby. The company holds print rights only.",
+    "low"
+   ],
+   [
+    "웹툰 스튜디오",
+    "comic studio",
+    "재만이 서랍에서 태블릿을 꺼내 돌려준다",
+    "Norman takes the tablet from the drawer and hands it back",
+    0,
+    "연재는 제 이름으로 갑니다.",
+    "The series runs under my name.",
+    "cz"
+   ],
+   [
+    "스튜디오 문",
+    "studio door",
+    "화면에 새 연재 표지가 뜬다",
+    "A new series cover appears on the studio screen",
+    -1,
+    "",
+    "",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "감리도 없이 공사를 끝낸 이모부",
+  "The Building With No Power",
+  "이모부는 전기 기사인 조카에게 공사를 다 맡기고 값을 안 준다. 감리 기록이 전기를 끊었다.",
+  "The uncle leaves the whole wiring job to his electrician nephew unpaid. The inspection record cut the power.",
+  [
+   [
+    "H",
+    "유빈",
+    "Sam",
+    "30대 남성, 노란 안전모, 작업복, 무던한 눈",
+    "man in his 30s, yellow hard hat, work clothes, steady eyes"
+   ],
+   [
+    "V",
+    "기동",
+    "Hank",
+    "50대 남성, 회색 점퍼, 큰 목소리, 거만한 어깨",
+    "man in his 50s, gray jacket, loud voice, arrogant shoulders"
+   ],
+   [
+    "A",
+    "실바 씨",
+    "Ms. Silva",
+    "40대 여성, 안전 조끼, 서류철, 단호한 태도",
+    "woman in her 40s, safety vest, file, firm manner"
+   ]
+  ],
+  [
+   [
+    "공사 현장",
+    "construction site",
+    "기동이 유빈의 안전모를 벗겨 바닥에 던진다",
+    "Hank knocks Sam's hard hat to the ground",
+    1,
+    "공사는 네가 해. 서명은 내가.",
+    "You do the work. I sign.",
+    "cz"
+   ],
+   [
+    "공사 현장",
+    "construction site",
+    "기동이 배전반 잠금장치를 부순다",
+    "Hank breaks the lock on the breaker panel",
+    1,
+    "잔금? 나중에 주지.",
+    "The balance? Later.",
+    "ots"
+   ],
+   [
+    "공사 현장",
+    "construction site",
+    "유빈이 감리 기록의 미승인 표시를 확인한다",
+    "Sam checks the unapproved marks in the inspection log",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "공사 현장",
+    "construction site",
+    "실바가 기록을 기동 앞에 펼친다",
+    "Ms. Silva opens the log before Hank",
+    2,
+    "미승인 공사, 전원 연결이 불가합니다.",
+    "Unapproved work. No power connection.",
+    "pi"
+   ],
+   [
+    "공사 현장",
+    "construction site",
+    "기동이 어두운 건물 안에 서 있다",
+    "Hank stands in the dark building",
+    0,
+    "전기는 제가 넣어야 들어옵니다.",
+    "The power goes on when I sign off.",
+    "cu"
+   ],
+   [
+    "현장 입구",
+    "site entrance",
+    "남자가 새 전기 계량기를 든다",
+    "A man outside the building carries a new meter",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "예약 여섯 건을 취소당한 올케",
+  "Six Cancelled Bookings",
+  "올케는 컨시어지인 조카에게 식당과 공연 예약을 다 맡기고 값을 안 준다. 미결제 예약은 전부 취소됐다.",
+  "The sister-in-law has the concierge book dinners and shows for free. The reservation ledger cancelled everything.",
+  [
+   [
+    "H",
+    "민서",
+    "Cora",
+    "20대 후반 여성, 호텔 제복, 단정한 올림머리, 차분한 눈",
+    "woman in her late 20s, hotel uniform, neat bun, calm eyes"
+   ],
+   [
+    "V",
+    "영실",
+    "Gail",
+    "40대 여성, 밝은 원피스, 큰 가방, 얕보는 웃음",
+    "woman in her 40s, bright dress, large bag, condescending smile"
+   ],
+   [
+    "A",
+    "폴리 씨",
+    "Mr. Foley",
+    "50대 남성, 검은 제복, 서류철, 무표정",
+    "man in his 50s, black uniform, file, blank face"
+   ]
+  ],
+  [
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "영실이 민서의 예약 대장을 빼앗아 바닥에 던진다",
+    "Gail snatches Cora's reservation book and throws it down",
+    1,
+    "식당도 공연도, 다 잡아 줘.",
+    "Book dinner and the show. All of it.",
+    "ws"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "영실이 식당과 공연 예약을 자기 이름으로 바꾼다",
+    "Gail switches the dinner and show bookings to her name",
+    1,
+    "내 이름으로. 값은 나중에.",
+    "In my name. Pay later.",
+    "ms"
+   ],
+   [
+    "호텔 데스크",
+    "hotel desk",
+    "민서가 예약 대장의 결제란을 확인한다",
+    "Cora checks the payment column in the ledger",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "폴리가 대장을 영실 앞에 돌린다",
+    "Mr. Foley turns the ledger toward Gail",
+    2,
+    "미결제 예약 여섯 건, 전부 취소됩니다.",
+    "Six unpaid bookings, all cancelled.",
+    "slo"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "영실이 로비 소파에 주저앉는다",
+    "Gail sinks onto a lobby sofa",
+    0,
+    "오늘 저녁 약속은 없습니다.",
+    "No plans for you tonight.",
+    "cu"
+   ],
+   [
+    "호텔 정문",
+    "hotel entrance",
+    "화면에 예약 취소 목록이 뜬다",
+    "A cancellation list fills the desk screen",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ]
+]

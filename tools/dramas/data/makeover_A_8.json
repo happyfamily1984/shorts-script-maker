@@ -1,0 +1,912 @@
+[
+ [
+  "무대 의상을 버리라던 세탁소",
+  "The Cleaner Who Threw Out the Costume",
+  "낡은 외투를 버리라던 세탁소 사장. 그 외투는 오늘 밤 무대에 서는 주연의 의상이었다.",
+  "A cleaner tells her to bin the old coat. It is the lead costume for tonight's show.",
+  [
+   [
+    "H",
+    "어시온",
+    "Ivy Sloane",
+    "30대 여성, 낡은 남색 코트, 안경, 짧은 머리",
+    "woman in her 30s, worn navy coat, glasses, short hair"
+   ],
+   [
+    "V",
+    "현성민",
+    "Roy Kessler",
+    "50대 남성, 세탁소 사장, 회색 앞치마, 굵은 팔뚝",
+    "man in his 50s, laundry owner, gray apron, thick forearms"
+   ],
+   [
+    "A",
+    "추종수",
+    "Nate Corbin",
+    "40대 남성, 검은 작업복, 줄자, 급한 걸음",
+    "man in his 40s, black work clothes, tape measure, hurried steps"
+   ]
+  ],
+  [
+   [
+    "세탁소",
+    "laundry shop",
+    "성민이 시온의 외투를 집어 창고 문을 연다",
+    "Roy picks up Ivy's coat and opens the storage room",
+    1,
+    "이건 세탁해도 못 살려요.",
+    "No wash will save this.",
+    "cz"
+   ],
+   [
+    "세탁소",
+    "laundry shop",
+    "성민이 외투를 걸레 더미에 던진다",
+    "Roy tosses the coat onto a rag pile",
+    1,
+    "버리고 새로 사세요.",
+    "Bin it and buy a new one.",
+    "ms"
+   ],
+   [
+    "세탁소",
+    "laundry shop",
+    "시온이 외투를 뒤집어 안감의 자수를 펼친다",
+    "Ivy turns the coat inside out, showing the embroidery",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "세탁소",
+    "laundry shop",
+    "종수가 뛰어들어 외투를 더미에서 꺼낸다",
+    "Nate rushes in and pulls the coat off the pile",
+    2,
+    "이건 오늘 공연 의상이에요!",
+    "That's tonight's stage costume!",
+    "low"
+   ],
+   [
+    "세탁소",
+    "laundry shop",
+    "성민이 걸레 더미 앞에서 손을 떼고 시온이 외투를 받는다",
+    "Roy backs off the rag pile as Ivy takes her coat",
+    0,
+    "극장 거래는 오늘로 끝내죠.",
+    "Your theater contract ends today.",
+    "cu"
+   ],
+   [
+    "세탁소 밖",
+    "outside the shop",
+    "시온이 외투를 펼쳐 무대 조명 아래 걸어 둔다",
+    "Ivy spreads the coat under a stage light",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "본부장을 알바로 부른 점주",
+  "The Owner Who Mistook the Head Office",
+  "돈 없으면 나가라던 점주. 그 손님은 이 편의점 본사의 운영 본부장이었다.",
+  "A store owner tells her to leave if she can't pay. She runs head office operations.",
+  [
+   [
+    "H",
+    "최하루",
+    "Nora Pike",
+    "30대 여성, 낡은 패딩, 안경, 묶은 머리",
+    "woman in her 30s, worn puffer jacket, glasses, tied hair"
+   ],
+   [
+    "V",
+    "양예솔",
+    "Gail Munro",
+    "40대 여성, 점주, 앞치마, 세운 눈썹",
+    "woman in her 40s, store owner, apron, arched brows"
+   ],
+   [
+    "A",
+    "위로운",
+    "Dean Ash",
+    "30대 남성, 본사 직원, 단정한 셔츠, 서류 가방",
+    "man in his 30s, head office staff, neat shirt, document bag"
+   ]
+  ],
+  [
+   [
+    "편의점",
+    "convenience store",
+    "예솔이 하루의 손에서 컵라면을 빼앗는다",
+    "Gail snatches the cup noodles from Nora's hand",
+    1,
+    "돈 없으면 그냥 나가요.",
+    "No money, get out.",
+    "cz"
+   ],
+   [
+    "편의점",
+    "convenience store",
+    "예솔이 하루의 장바구니를 계산대 아래로 민다",
+    "Gail shoves Nora's basket under the counter",
+    1,
+    "여기 손님 많은데 방해돼요.",
+    "You're in the way of paying customers.",
+    "ms"
+   ],
+   [
+    "편의점",
+    "convenience store",
+    "하루가 계산대 위에 본사 점검표를 펼친다",
+    "Nora lays the head office audit sheet on the counter",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "편의점",
+    "convenience store",
+    "로운이 들어와 점검표를 확인하고 고개를 숙인다",
+    "Dean walks in, checks the sheet, and bows",
+    2,
+    "본부장님, 점검 나오셨죠.",
+    "Director, you're here for the audit.",
+    "low"
+   ],
+   [
+    "편의점",
+    "convenience store",
+    "예솔이 앞치마를 움켜쥐고 하루가 계산대를 정리한다",
+    "Gail clutches her apron as Nora straightens the counter",
+    0,
+    "가맹 계약, 본사에서 다시 보겠습니다.",
+    "Head office will review your franchise.",
+    "cu"
+   ],
+   [
+    "편의점 밖",
+    "outside the store",
+    "하루가 점포 평가표에 낙제 도장을 찍는다",
+    "Nora stamps a fail mark on the store assessment",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "처방전을 의심한 약사",
+  "The Pharmacist Who Doubted the Prescription",
+  "이름도 없는 약이라던 약사. 그 손님은 이 약을 만든 연구원이었다.",
+  "A pharmacist scoffs at the name of the medicine. The woman at the counter helped create it.",
+  [
+   [
+    "H",
+    "제유나",
+    "Mara Holt",
+    "30대 여성, 낡은 점퍼, 안경, 단발머리",
+    "woman in her 30s, worn jacket, glasses, bobbed hair"
+   ],
+   [
+    "V",
+    "설유정",
+    "Hazel Krantz",
+    "40대 여성, 약사, 흰 가운, 차가운 눈",
+    "woman in her 40s, pharmacist, white coat, cold eyes"
+   ],
+   [
+    "A",
+    "성진욱",
+    "Walter Boone",
+    "50대 남성, 제약사 이사, 감색 정장, 서류철",
+    "man in his 50s, pharma executive, navy suit, file folder"
+   ]
+  ],
+  [
+   [
+    "약국",
+    "pharmacy",
+    "유정이 유나의 처방전을 손끝으로 밀어 돌려준다",
+    "Hazel slides Mara's prescription back with one finger",
+    1,
+    "이런 약은 없어요.",
+    "There's no such medicine.",
+    "cz"
+   ],
+   [
+    "약국",
+    "pharmacy",
+    "유정이 처방전을 계산대 위에 던진다",
+    "Hazel flicks the prescription onto the counter",
+    1,
+    "다른 병원에 가 보세요.",
+    "Try another clinic.",
+    "ms"
+   ],
+   [
+    "약국",
+    "pharmacy",
+    "유나가 가방에서 임상 시험 서류를 꺼낸다",
+    "Mara takes the clinical trial papers from her bag",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "약국",
+    "pharmacy",
+    "진욱이 서류를 넘겨보고 유정을 돌아본다",
+    "Walter flips through the papers and looks at Hazel",
+    2,
+    "이 약, 저희가 만든 신약입니다.",
+    "That's our new medicine.",
+    "low"
+   ],
+   [
+    "약국",
+    "pharmacy",
+    "유정이 처방전을 도로 집어 들고 유나가 서류를 정리한다",
+    "Hazel picks the prescription back up as Mara gathers her papers",
+    0,
+    "이 약국 납품은 오늘로 끝내죠.",
+    "This pharmacy's supply ends today.",
+    "cu"
+   ],
+   [
+    "약국 밖",
+    "outside the pharmacy",
+    "유나가 약 봉투에 새 이름을 적는다",
+    "Mara writes a new name on a medicine bag",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "새 입주민을 막아선 관리소장",
+  "The Manager Who Blocked the New Owner",
+  "이사 온 사람을 심부름꾼으로 본 관리소장. 그는 이 아파트를 지은 회장이었다.",
+  "A building manager takes the new resident for a mover. He built the whole complex.",
+  [
+   [
+    "H",
+    "손태성",
+    "Gerald Mott",
+    "60대 남성, 낡은 점퍼, 둥근 안경, 마른 체격",
+    "man in his 60s, worn jacket, round glasses, lean build"
+   ],
+   [
+    "V",
+    "오지민",
+    "Curtis Vale",
+    "40대 남성, 관리소장, 회색 정장, 반들반들한 머리",
+    "man in his 40s, building manager, gray suit, slicked hair"
+   ],
+   [
+    "A",
+    "엄서준",
+    "Ben Ortiz",
+    "30대 남성, 관리 직원, 파란 작업복, 명찰",
+    "man in his 30s, maintenance staff, blue coveralls, name badge"
+   ]
+  ],
+  [
+   [
+    "아파트 관리사무소",
+    "management office",
+    "지민이 태성의 서류를 밀어 돌려준다",
+    "Curtis pushes Gerald's paperwork back",
+    1,
+    "입주 신고는 다음 주에나 돼요.",
+    "Move-in reports wait until next week.",
+    "cz"
+   ],
+   [
+    "아파트 관리사무소",
+    "management office",
+    "지민이 태성을 복도 쪽으로 손짓해 내보낸다",
+    "Curtis waves Gerald back out into the hallway",
+    1,
+    "짐은 뒤쪽 계단으로 옮기세요.",
+    "Take the boxes down the back stairs.",
+    "ms"
+   ],
+   [
+    "아파트 관리사무소",
+    "management office",
+    "태성이 가방에서 분양 계약서를 꺼내 펼친다",
+    "Gerald unfolds the sale contract from his bag",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "아파트 관리사무소",
+    "management office",
+    "서준이 계약서를 보고 지민을 돌아본다",
+    "Ben reads the contract and turns to Curtis",
+    2,
+    "이 아파트 지은 회사 회장님이십니다.",
+    "He's the chairman who built this place.",
+    "low"
+   ],
+   [
+    "아파트 관리사무소",
+    "management office",
+    "지민이 의자에서 일어나고 태성이 서류를 접는다",
+    "Curtis rises from his chair as Gerald folds the papers",
+    0,
+    "관리 위탁, 이번 달로 끝내죠.",
+    "Your management contract ends this month.",
+    "cu"
+   ],
+   [
+    "단지 입구",
+    "complex gate",
+    "태성이 새 관리 업체 명패를 두 손으로 들어 보인다",
+    "Gerald holds up a new management company plaque",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "택시 기사가 손님을 쫓아낸 밤",
+  "The Cab Driver Who Threw Out His Boss",
+  "옷차림으로 손님을 쫓아낸 기사. 그 손님은 이 택시 회사의 사장이었다.",
+  "A driver refuses a shabby fare on a rainy night. She owns the taxi company.",
+  [
+   [
+    "H",
+    "맹지유",
+    "Ruth Moran",
+    "50대 여성, 낡은 코트, 큰 쇼핑백, 짧은 은발",
+    "woman in her 50s, worn coat, big shopping bag, short silver hair"
+   ],
+   [
+    "V",
+    "금윤서",
+    "Stan Kroll",
+    "50대 남성, 택시기사, 회색 점퍼, 무뚝뚝한 얼굴",
+    "man in his 50s, cab driver, gray jacket, gruff face"
+   ],
+   [
+    "A",
+    "현은오",
+    "Ivy Burch",
+    "30대 여성, 검은 정장, 우산, 빠른 걸음",
+    "woman in her 30s, black suit, umbrella, quick steps"
+   ]
+  ],
+  [
+   [
+    "택시 정류장",
+    "taxi stand",
+    "윤서가 지유의 쇼핑백을 보고 차 문을 잠근다",
+    "Stan eyes the shopping bag and locks the door",
+    1,
+    "짐 많은 손님은 안 받아요.",
+    "I don't take heavy bags.",
+    "cz"
+   ],
+   [
+    "택시 안",
+    "inside the cab",
+    "윤서가 지유의 목적지를 듣고 손을 젓는다",
+    "Stan hears the address and waves her off",
+    1,
+    "그쪽은 안 가요.",
+    "I don't go that way.",
+    "ms"
+   ],
+   [
+    "택시 안",
+    "inside the cab",
+    "지유가 명함을 꺼내 대시보드에 올린다",
+    "Ruth sets a business card on the dashboard",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "택시 정류장",
+    "taxi stand",
+    "은오가 뛰어와 뒷문을 열고 지유를 앉힌다",
+    "Ivy runs over, opens the rear door, and seats Ruth",
+    2,
+    "사장님, 차 준비했습니다.",
+    "Ma'am, your car is ready.",
+    "low"
+   ],
+   [
+    "택시 안",
+    "inside the cab",
+    "윤서가 운전대를 놓고 지유가 명함을 집어 든다",
+    "Stan lets go of the wheel as Ruth picks up her card",
+    0,
+    "기사 자격은 회사가 다시 보죠.",
+    "The company will review your license.",
+    "cu"
+   ],
+   [
+    "택시 차고지",
+    "taxi depot",
+    "지유가 배차표에서 윤서의 이름을 지운다",
+    "Ruth crosses Stan's name off the dispatch board",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "주인을 짐꾼으로 부른 이삿날",
+  "Moving Day, When the Owner Was the Help",
+  "짐꾼인 줄 알고 부려먹은 팀장. 그 사람이 이 집의 새 주인이었다.",
+  "The movers boss around a man in a cap. He just bought the apartment.",
+  [
+   [
+    "H",
+    "진재석",
+    "Evan Polk",
+    "30대 남성, 낡은 흰 티, 야구모자, 편한 차림",
+    "man in his 30s, old white tee, ball cap, casual clothes"
+   ],
+   [
+    "V",
+    "육대현",
+    "Boris Kettle",
+    "40대 남성, 이삿짐 팀장, 회색 조끼, 굵은 목소리",
+    "man in his 40s, moving crew chief, gray vest, loud voice"
+   ],
+   [
+    "A",
+    "신다현",
+    "Lena Fisk",
+    "30대 여성, 부동산 중개인, 베이지 정장, 서류 가방",
+    "woman in her 30s, realtor, beige suit, document bag"
+   ]
+  ],
+  [
+   [
+    "빈 집 거실",
+    "empty apartment",
+    "대현이 재석에게 상자 하나를 떠밀어 준다",
+    "Boris shoves a box into Evan's arms",
+    1,
+    "너도 하나 들어.",
+    "You carry one too.",
+    "cz"
+   ],
+   [
+    "빈 집 거실",
+    "empty apartment",
+    "대현이 재석의 모자를 벗겨 자기 머리에 쓴다",
+    "Boris takes Evan's cap and puts it on",
+    1,
+    "짐꾼은 모자 벗어야지.",
+    "Movers don't wear caps inside.",
+    "ms"
+   ],
+   [
+    "빈 집 현관",
+    "apartment entry",
+    "재석이 도어락 비밀번호를 눌러 문을 연다",
+    "Evan punches in the door code and opens it",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "빈 집 현관",
+    "apartment entry",
+    "다현이 들어와 재석에게 열쇠를 건넨다",
+    "Lena steps in and hands Evan the keys",
+    2,
+    "집주인님, 등기 다 됐습니다.",
+    "The title is registered. All yours.",
+    "low"
+   ],
+   [
+    "빈 집 거실",
+    "empty apartment",
+    "대현이 상자를 내려놓고 재석이 모자를 돌려받는다",
+    "Boris sets the box down as Evan takes his cap back",
+    0,
+    "이삿짐, 다른 업체로 바꾸죠.",
+    "I'll hire a different moving company.",
+    "cu"
+   ],
+   [
+    "빈 집 창가",
+    "apartment window",
+    "재석이 창밖을 보며 새 도면을 펼친다",
+    "Evan looks out the window and unfolds new plans",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "게임 크레딧을 못 본 사장",
+  "The Owner Who Never Read the Credits",
+  "자리가 없다며 내보낸 PC방 사장. 그 손님은 이 게임을 만든 개발자였다.",
+  "A PC café owner kicks out a customer for lack of seats. He built the game.",
+  [
+   [
+    "H",
+    "임라온",
+    "Sam Ferris",
+    "30대 남성, 후드티, 안경, 피곤한 눈",
+    "man in his 30s, hoodie, glasses, tired eyes"
+   ],
+   [
+    "V",
+    "채성민",
+    "Dirk Moser",
+    "30대 남성, PC방 사장, 검은 반팔, 짧은 머리",
+    "man in his 30s, PC café owner, black tee, short hair"
+   ],
+   [
+    "A",
+    "편승우",
+    "Jules Beck",
+    "20대 남성, 알바생, 앞치마, 밝은 눈",
+    "man in his 20s, café part-timer, apron, bright eyes"
+   ]
+  ],
+  [
+   [
+    "PC방 카운터",
+    "PC café counter",
+    "성민이 라온의 좌석 번호를 취소한다",
+    "Dirk cancels Sam's seat number",
+    1,
+    "자리 없어요. 나가 주세요.",
+    "No seats. Out.",
+    "cz"
+   ],
+   [
+    "PC방",
+    "PC café",
+    "성민이 라온의 헤드셋을 집어 옆자리에 던진다",
+    "Dirk tosses Sam's headset onto the next desk",
+    1,
+    "이 게임은 우리 단골만 해요.",
+    "Our regulars get this game.",
+    "ms"
+   ],
+   [
+    "PC방",
+    "PC café",
+    "라온이 게임을 다시 켜 크레딧 화면으로 넘긴다",
+    "Sam restarts the game and skips to the credits",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "PC방",
+    "PC café",
+    "승우가 화면을 보고 성민을 부른다",
+    "Jules sees the screen and calls Dirk over",
+    2,
+    "사장님, 이 게임 만든 사람이에요.",
+    "Boss, he made this game.",
+    "low"
+   ],
+   [
+    "PC방",
+    "PC café",
+    "성민이 헤드셋을 도로 건네고 라온이 일어난다",
+    "Dirk hands the headset back as Sam stands",
+    0,
+    "게임 서비스, 오늘로 끊기죠.",
+    "Your game service ends today.",
+    "cu"
+   ],
+   [
+    "PC방 밖",
+    "outside the café",
+    "라온이 새 게임의 대형 포스터를 벽에 붙인다",
+    "Sam pastes a big poster for his new game on the wall",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "작곡가를 음치로 부른 노래방",
+  "The Composer They Called Tone-Deaf",
+  "음치라며 마이크를 뺏은 사장. 그 손님은 이 노래를 만든 작곡가였다.",
+  "A karaoke owner takes the mic from a bad singer. He wrote the song being played.",
+  [
+   [
+    "H",
+    "연로운",
+    "Hugo Sperry",
+    "30대 남성, 낡은 셔츠, 모자, 수줍은 눈",
+    "man in his 30s, worn shirt, hat, shy eyes"
+   ],
+   [
+    "V",
+    "진도헌",
+    "Alan Krug",
+    "40대 남성, 노래방 사장, 나비넥타이, 좁은 눈",
+    "man in his 40s, karaoke owner, bow tie, narrow eyes"
+   ],
+   [
+    "A",
+    "위이든",
+    "Robin Sayer",
+    "20대 여성, 알바생, 앞치마, 또랑또랑한 목소리",
+    "woman in her 20s, part-timer, apron, clear voice"
+   ]
+  ],
+  [
+   [
+    "노래방 홀",
+    "karaoke hall",
+    "도헌이 로운의 손에서 마이크를 빼앗는다",
+    "Alan snatches the mic from Hugo's hand",
+    1,
+    "음치면 마이크 내려놔요.",
+    "Tone-deaf people put the mic down.",
+    "cz"
+   ],
+   [
+    "노래방 홀",
+    "karaoke hall",
+    "도헌이 로운의 방 번호를 바꿔 붙인다",
+    "Alan swaps Hugo's room number",
+    1,
+    "아무도 안 듣는 방으로 가요.",
+    "Go where nobody can hear you.",
+    "ms"
+   ],
+   [
+    "노래방 홀",
+    "karaoke hall",
+    "로운이 노래방 책자에서 자기 곡 페이지를 펼친다",
+    "Hugo opens the songbook to the page with his own song",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "노래방 홀",
+    "karaoke hall",
+    "이든이 화면을 보고 도헌을 부른다",
+    "Robin looks at the screen and calls Alan",
+    2,
+    "사장님, 이 곡 그분이 쓰셨어요.",
+    "Boss, that song is his.",
+    "low"
+   ],
+   [
+    "노래방 홀",
+    "karaoke hall",
+    "도헌이 마이크를 도로 건네고 로운이 노래를 시작한다",
+    "Alan hands the mic back and Hugo starts singing",
+    0,
+    "기기 업데이트는 다음 달부터 없어요.",
+    "Your machine updates stop next month.",
+    "cu"
+   ],
+   [
+    "노래방 밖",
+    "outside the karaoke",
+    "로운이 새 앨범 재킷을 가방에서 꺼낸다",
+    "Hugo takes a new album cover from his bag",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "개통을 거부한 대리점",
+  "The Phone Store That Said No",
+  "낡은 옷을 보고 개통을 거부한 점원. 그 손님은 통신사 본사의 임원이었다.",
+  "A clerk refuses her a new phone plan. She runs operations at the carrier's head office.",
+  [
+   [
+    "H",
+    "명지수",
+    "Tessa Dorn",
+    "40대 여성, 낡은 패딩, 안경, 낮게 묶은 머리",
+    "woman in her 40s, worn puffer, glasses, low tied hair"
+   ],
+   [
+    "V",
+    "변시훈",
+    "Jared Lomax",
+    "20대 남성, 대리점 점원, 흰 셔츠, 명찰",
+    "man in his 20s, store clerk, white shirt, name badge"
+   ],
+   [
+    "A",
+    "차예솔",
+    "Nadia Short",
+    "30대 여성, 본사 직원, 검은 재킷, 태블릿",
+    "woman in her 30s, head office staff, black jacket, tablet"
+   ]
+  ],
+  [
+   [
+    "휴대폰 대리점",
+    "phone store",
+    "시훈이 지수의 신분증을 계산대 위로 밀어 돌려준다",
+    "Jared slides Tessa's ID back across the counter",
+    1,
+    "개통은 신용 확인부터예요.",
+    "New plans start with a credit check.",
+    "cz"
+   ],
+   [
+    "휴대폰 대리점",
+    "phone store",
+    "시훈이 대기 번호표를 지수 손에 쥐여 준다",
+    "Jared presses a queue ticket into Tessa's hand",
+    1,
+    "언제 될지는 몰라요.",
+    "No idea when we'll get to you.",
+    "ms"
+   ],
+   [
+    "휴대폰 대리점",
+    "phone store",
+    "지수가 가방에서 본사 사원증을 꺼낸다",
+    "Tessa takes a head office badge from her bag",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "휴대폰 대리점",
+    "phone store",
+    "예솔이 사원증을 확인하고 시훈을 돌아본다",
+    "Nadia checks the badge and turns to Jared",
+    2,
+    "본사 운영팀장님이십니다.",
+    "She heads operations at head office.",
+    "low"
+   ],
+   [
+    "휴대폰 대리점",
+    "phone store",
+    "시훈이 번호표를 도로 가져가고 지수가 계산대에 선다",
+    "Jared takes the ticket back as Tessa steps to the counter",
+    0,
+    "이 대리점 계약, 본사가 다시 봅니다.",
+    "This branch's contract goes to review.",
+    "cu"
+   ],
+   [
+    "휴대폰 대리점 밖",
+    "outside the store",
+    "지수가 점포 평가표를 접어 가방에 넣는다",
+    "Tessa folds a store assessment sheet into her bag",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "낡은 차를 견인한 주차장",
+  "The Lot That Towed the Landlord's Car",
+  "낡은 차라며 견인한 관리소장. 그 차 주인은 이 건물의 주인이었다.",
+  "A lot manager tows an old sedan. The car belongs to the man who owns the tower.",
+  [
+   [
+    "H",
+    "고유겸",
+    "Abel Crone",
+    "50대 남성, 낡은 코트, 모자, 무뚝뚝한 얼굴",
+    "man in his 50s, worn coat, hat, stoic face"
+   ],
+   [
+    "V",
+    "신해든",
+    "Miles Rudd",
+    "40대 남성, 주차 관리소장, 형광 조끼, 무전기",
+    "man in his 40s, parking manager, hi-vis vest, radio"
+   ],
+   [
+    "A",
+    "강채윤",
+    "Elise Cantor",
+    "30대 여성, 건물 관리 직원, 네이비 정장, 서류철",
+    "woman in her 30s, building staff, navy suit, file folder"
+   ]
+  ],
+  [
+   [
+    "지하 주차장",
+    "underground lot",
+    "해든이 유겸의 차 앞에 견인 스티커를 붙인다",
+    "Miles sticks a tow sticker on Abel's car",
+    1,
+    "이 차 주인 찾으세요?",
+    "Somebody find the owner of this car?",
+    "cz"
+   ],
+   [
+    "지하 주차장",
+    "underground lot",
+    "해든이 견인차 기사에게 차 열쇠를 넘긴다",
+    "Miles hands the car key to the tow driver",
+    1,
+    "여긴 좋은 차만 세워요.",
+    "Only nice cars park here.",
+    "ms"
+   ],
+   [
+    "지하 주차장",
+    "underground lot",
+    "유겸이 차량 등록증을 꺼내 펼친다",
+    "Abel unfolds the vehicle registration",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "지하 주차장",
+    "underground lot",
+    "채윤이 뛰어와 등록증을 확인하고 해든을 부른다",
+    "Elise runs over, checks the paper, and calls Miles",
+    2,
+    "이 차, 이 건물 주인 차예요.",
+    "That's the building owner's car.",
+    "low"
+   ],
+   [
+    "지하 주차장",
+    "underground lot",
+    "해든이 견인 스티커를 도로 떼고 유겸이 열쇠를 받는다",
+    "Miles peels the sticker off as Abel takes his key",
+    0,
+    "관리 위탁, 오늘로 끝내죠.",
+    "Your service contract is over.",
+    "cu"
+   ],
+   [
+    "주차장 입구",
+    "lot entrance",
+    "유겸이 새 주차 관리 표지판을 세운다",
+    "Abel plants a new parking management sign",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ]
+]

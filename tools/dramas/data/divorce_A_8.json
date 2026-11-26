@@ -1,0 +1,912 @@
+[
+ [
+  "총지배인은 내 남편이었다",
+  "The Manager They All Bowed To",
+  "결혼기념일 리셉션. 호텔 직원 서른 명이 총지배인인 전 남편에게 허리를 숙인다.",
+  "She divorced him for being a hotel clerk. At her anniversary party, thirty staff bow to him.",
+  [
+   [
+    "H",
+    "차도윤",
+    "Alan",
+    "40대 남성, 검은 정장, 짧은 머리, 무뚝뚝한 얼굴",
+    "man in his 40s, black suit, short hair, blunt face"
+   ],
+   [
+    "V",
+    "윤재아",
+    "Sonia",
+    "30대 여성, 연분홍 드레스, 긴 웨이브, 차가운 눈",
+    "woman in her 30s, pale pink dress, long wavy hair, cold eyes"
+   ],
+   [
+    "A",
+    "백도겸",
+    "Lubin",
+    "20대 여성, 호텔 유니폼, 묶은 머리, 당황한 얼굴",
+    "woman in her 20s, hotel uniform, tied hair, flustered face"
+   ]
+  ],
+  [
+   [
+    "호텔 연회장 입구",
+    "hotel ballroom entrance",
+    "재아가 도윤의 재킷 소매를 잡아 세운다",
+    "Sonia grabs Alan's jacket sleeve and stops him",
+    1,
+    "여기 들어올 사람 아니야.",
+    "You don't belong in here.",
+    "cz"
+   ],
+   [
+    "호텔 연회장 입구",
+    "hotel ballroom entrance",
+    "재아가 연회장 안쪽을 턱으로 가리킨다",
+    "Sonia jerks her chin toward the ballroom",
+    1,
+    "호텔 지배인이라니. 웃기지도 않아.",
+    "General manager? Don't make me laugh.",
+    "ms"
+   ],
+   [
+    "호텔 연회장 입구",
+    "hotel ballroom entrance",
+    "도윤이 무전기를 꺼내 짧게 지시한다",
+    "Alan lifts a radio and gives a short order",
+    0,
+    "모든 홀, 손님 맞을 준비해요.",
+    "All halls, prepare to receive guests.",
+    "pi"
+   ],
+   [
+    "호텔 연회장",
+    "hotel ballroom",
+    "직원들이 도윤 앞에 나란히 서서 허리를 숙인다",
+    "Lubin and the staff bow before Alan",
+    2,
+    "총지배인님, 준비 완료했습니다.",
+    "General manager, we're ready.",
+    "low"
+   ],
+   [
+    "호텔 연회장",
+    "hotel ballroom",
+    "재아가 테이블 모서리를 짚고 뒷걸음친다",
+    "Sonia grips the table edge and steps back",
+    0,
+    "두 분 예약은 취소합니다. 나가 주세요.",
+    "Your booking is canceled. Please leave.",
+    "cu"
+   ],
+   [
+    "호텔 정문",
+    "hotel entrance",
+    "검은 승용차가 멈추고 뒷문이 천천히 열린다",
+    "A black car stops and its rear door opens slowly",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "이사장이 먼저 달려왔다",
+  "The Chairman Came Running",
+  "병원 로비에서 이사장이 먼저 달려온다. 그가 시중이나 든다던 간병인은 전처였다.",
+  "He mocked her for waiting on people. The old man she nursed for twenty years runs the hospital.",
+  [
+   [
+    "H",
+    "진유하",
+    "Nita",
+    "40대 여성, 간병인 조끼, 짧은 머리, 잔주름",
+    "woman in her 40s, caregiver vest, short hair, fine wrinkles"
+   ],
+   [
+    "V",
+    "심재원",
+    "Damon",
+    "40대 남성, 밝은 회색 정장, 짧은 머리, 비웃는 눈",
+    "man in his 40s, light gray suit, short hair, mocking eyes"
+   ],
+   [
+    "A",
+    "한도겸",
+    "Tremaine",
+    "70대 남성, 짙은 정장, 흰 머리, 지팡이를 든 손",
+    "man in his 70s, dark suit, white hair, hand on a cane"
+   ]
+  ],
+  [
+   [
+    "병원 로비",
+    "hospital lobby",
+    "재원이 유하의 간병 가방을 발로 밀어낸다",
+    "Damon nudges Nita's care bag aside with his foot",
+    1,
+    "남 시중이나 들던 사람이 여기 왜?",
+    "You wait on people. Why are you here?",
+    "cz"
+   ],
+   [
+    "병원 로비",
+    "hospital lobby",
+    "재원이 접수대를 손바닥으로 두드린다",
+    "Damon taps the reception desk with his palm",
+    1,
+    "소속도 없는 사람이 병원을 논해?",
+    "You belong nowhere. Talking hospitals?",
+    "ms"
+   ],
+   [
+    "병원 로비",
+    "hospital lobby",
+    "유하가 휠체어 손잡이를 조용히 잡는다",
+    "Nita quietly takes the wheelchair handle",
+    0,
+    "이사장님 내려오시는 길이에요.",
+    "The chairman is on his way down.",
+    "cu"
+   ],
+   [
+    "병원 로비",
+    "hospital lobby",
+    "이사장이 엘리베이터에서 내려 유하 앞에 선다",
+    "Tremaine steps out of the lift and stands before Nita",
+    2,
+    "유하 씨, 이 병원 후원회를 맡아 주세요.",
+    "Nita, please chair our hospital foundation.",
+    "low"
+   ],
+   [
+    "병원 로비",
+    "hospital lobby",
+    "유하가 가방을 메고 엘리베이터 쪽으로 걷는다",
+    "Nita shoulders her bag and walks toward the lift",
+    0,
+    "병원 계약, 다시 협의하죠.",
+    "We'll revisit the hospital contract.",
+    "cu"
+   ],
+   [
+    "병원 정문",
+    "hospital entrance",
+    "유리문 밖에서 서류 가방을 든 여자가 유하를 손짓해 부른다",
+    "Outside the glass door, a woman with a briefcase waves Nita over",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "익명 기부자의 이름",
+  "The Anonymous Donor",
+  "동창회 장학금 명단이 공개된다. 익명 기부자는 학위도 없다던 전 남편이었다.",
+  "She mocked his missing degree. He is the anonymous donor behind their scholarships.",
+  [
+   [
+    "H",
+    "서재원",
+    "Sonny",
+    "40대 남성, 베이지 니트, 짧은 머리, 조용한 눈",
+    "man in his 40s, beige knit, short hair, quiet eyes"
+   ],
+   [
+    "V",
+    "배하린",
+    "Shelly",
+    "40대 여성, 흰 원피스, 긴 생머리, 새침한 턱",
+    "woman in her 40s, white dress, long straight hair, prim chin"
+   ],
+   [
+    "A",
+    "오시현",
+    "Wexton",
+    "60대 남성, 감색 정장, 안경, 동창회 명찰",
+    "man in his 60s, navy suit, glasses, reunion badge"
+   ]
+  ],
+  [
+   [
+    "대학 동창회장",
+    "college reunion hall",
+    "하린이 재원의 이름표를 손가락으로 집어 든다",
+    "Shelly pinches Sonny's name tag",
+    1,
+    "학위도 없는 사람 이름표가 왜 여기 있어?",
+    "Why does a man with no degree have a tag?",
+    "cz"
+   ],
+   [
+    "대학 동창회장",
+    "college reunion hall",
+    "하린이 무대 위 마이크를 손으로 두드린다",
+    "Shelly taps the stage microphone",
+    1,
+    "이 학교 나온 사람만 무대에 올라와.",
+    "Only graduates go on that stage.",
+    "ms"
+   ],
+   [
+    "대학 동창회장",
+    "college reunion hall",
+    "재원이 봉투를 회장에게 조용히 건넨다",
+    "Sonny quietly hands an envelope to the chair",
+    0,
+    "장학금 명단, 제가 냈습니다.",
+    "I sent in the scholarship list.",
+    "pi"
+   ],
+   [
+    "대학 동창회장",
+    "college reunion hall",
+    "회장이 명단을 펼쳐 마이크에 대고 이름을 부른다",
+    "Wexton opens the list and reads a name into the mic",
+    2,
+    "올해 기부자, 서재원 님입니다.",
+    "This year's donor is Sonny.",
+    "low"
+   ],
+   [
+    "대학 동창회장",
+    "college reunion hall",
+    "재원이 앞줄 빈자리로 걸어간다",
+    "Jaewon walks to an empty seat in the front row",
+    0,
+    "제자리는 제가 찾을게요.",
+    "I'll find my own seat.",
+    "cu"
+   ],
+   [
+    "대학 동창회장",
+    "college reunion hall",
+    "맨 뒤 테이블의 남자가 일어나 재원에게 고개를 숙인다",
+    "A man at the back table rises and bows to Sonny",
+    -1,
+    "",
+    "",
+    "rx"
+   ]
+  ]
+ ],
+ [
+  "당신 자리는 없습니다",
+  "Your Seat Doesn't Exist",
+  "자선 갈라 입구에서 좌석표가 확인된다. 명단을 짠 사람이 전처였다.",
+  "He called her classless. She is the one who drew the seating chart for the gala.",
+  [
+   [
+    "H",
+    "한서린",
+    "Mimi",
+    "40대 여성, 짙은 초록 원피스, 낮게 묶은 머리, 차분한 눈",
+    "woman in her 40s, deep green dress, low bun, calm eyes"
+   ],
+   [
+    "V",
+    "노하람",
+    "Clete",
+    "40대 남성, 검은 턱시도, 짧은 머리, 비웃는 입",
+    "man in his 40s, black tuxedo, short hair, sneering mouth"
+   ],
+   [
+    "A",
+    "박서우",
+    "Burnell",
+    "30대 여성, 갈라 진행 유니폼, 이어피스, 무표정",
+    "woman in her 30s, gala staff uniform, earpiece, blank face"
+   ]
+  ],
+  [
+   [
+    "자선 갈라 입구",
+    "charity gala entrance",
+    "하람이 서린의 팔을 잡아 입구에 세운다",
+    "Clete takes Mimi by the arm and stops her at the door",
+    1,
+    "여긴 후원자만 들어와. 나가.",
+    "Donors only in here. Out.",
+    "cz"
+   ],
+   [
+    "자선 갈라 입구",
+    "charity gala entrance",
+    "하람이 초대장을 펼쳐 서린 앞에서 흔든다",
+    "Clete waves his invitation in front of Mimi",
+    1,
+    "품위라는 걸 배우고 와.",
+    "Come back when you learn some class.",
+    "ms"
+   ],
+   [
+    "자선 갈라 홀",
+    "charity gala hall",
+    "서린이 좌석표를 진행자에게 조용히 건넨다",
+    "Mimi quietly hands the seating chart to Burnell",
+    0,
+    "좌석표, 제가 짠 거예요.",
+    "I drew up this seating chart.",
+    "cu"
+   ],
+   [
+    "자선 갈라 홀",
+    "charity gala hall",
+    "진행자가 좌석표를 펼쳐 이름을 하나씩 확인한다",
+    "Burnell unfolds the chart and checks each name",
+    2,
+    "노하람 님 자리는 없습니다. 명단에 없습니다.",
+    "There's no seat for Clete. Not on the list.",
+    "low"
+   ],
+   [
+    "자선 갈라 입구",
+    "charity gala entrance",
+    "하람이 좌석표를 낚아채 첫 줄을 확인한다",
+    "Clete snatches the chart and checks the front row",
+    1,
+    "내 이름이 왜 없어?",
+    "Why is my name gone?",
+    "cu"
+   ],
+   [
+    "자선 갈라 입구",
+    "charity gala entrance",
+    "경비가 다가와 하람의 팔을 조용히 잡는다",
+    "A guard steps over and quietly takes Clete's arm",
+    0,
+    "이분은 나가 주셔야 해요.",
+    "He needs to leave now.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "전시관 절반은 내 것이다",
+  "Half the Gallery Is Hers",
+  "미술관 개관전에 빈 벽이 생긴다. 작품 절반이 취미로 모은다던 전처 소장품이다.",
+  "He laughed at her little hobby. Half the opening exhibition is on loan from her.",
+  [
+   [
+    "H",
+    "오유겸",
+    "Olive",
+    "50대 여성, 남색 코트, 짧은 흰머리, 차분한 눈",
+    "woman in her 50s, navy coat, short white hair, calm eyes"
+   ],
+   [
+    "V",
+    "장서우",
+    "Sterling",
+    "40대 남성, 회색 정장, 짧은 머리, 거만한 미소",
+    "man in his 40s, gray suit, short hair, smug smile"
+   ],
+   [
+    "A",
+    "강도영",
+    "Farrow",
+    "30대 여성, 미술관 유니폼, 안경, 단정한 태도",
+    "woman in her 30s, museum uniform, glasses, tidy manner"
+   ]
+  ],
+  [
+   [
+    "미술관 입구",
+    "museum entrance",
+    "서우가 유겸의 초대장을 손으로 밀어낸다",
+    "Sterling pushes Olive's invitation away",
+    1,
+    "여긴 개관식이야. 컬렉터만 와.",
+    "This is a preview. Collectors only.",
+    "cz"
+   ],
+   [
+    "미술관 입구",
+    "museum entrance",
+    "서우가 벽의 작품들을 손바닥으로 가리킨다",
+    "Sterling gestures at the wall of works",
+    1,
+    "취미로 모은 사람이 무슨 전시를 알아?",
+    "A hobby collector talking exhibitions?",
+    "ms"
+   ],
+   [
+    "미술관 로비",
+    "museum lobby",
+    "유겸이 대여 계약서를 큐레이터에게 건넨다",
+    "Olive hands the loan agreement to the curator",
+    0,
+    "대여 계약서, 제 서명으로 된 거예요.",
+    "That loan agreement carries my signature.",
+    "cu"
+   ],
+   [
+    "미술관 로비",
+    "museum lobby",
+    "큐레이터가 계약서를 펼쳐 작품 목록을 읽는다",
+    "Farrow opens it and reads out the works",
+    2,
+    "작품 절반이 오유겸 님 소장품입니다.",
+    "Half the show is on loan from Olive.",
+    "low"
+   ],
+   [
+    "미술관 로비",
+    "museum lobby",
+    "서우가 빈 벽을 돌아보고 큐레이터를 부른다",
+    "Sterling turns to the empty walls and calls Farrow",
+    1,
+    "작품을 내리면 전시가 뭐가 돼?",
+    "If they pull the works, what's left?",
+    "cu"
+   ],
+   [
+    "미술관 로비",
+    "museum lobby",
+    "유겸이 계약서를 접어 가방에 넣고 돌아선다",
+    "Olive folds the contract into her bag and turns away",
+    0,
+    "남는 건 빈 벽이에요.",
+    "Empty walls. That's what's left.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "안무를 베낀 단장",
+  "The Choreography He Copied",
+  "신작 발레 공연 리허설. 안무 등록증의 이름이 전처로 나온다.",
+  "He said she only danced. His new show is her registered choreography.",
+  [
+   [
+    "H",
+    "유도경",
+    "Elara",
+    "30대 여성, 검은 레오타드, 묶은 머리, 단단한 눈",
+    "woman in her 30s, black leotard, tied hair, steady eyes"
+   ],
+   [
+    "V",
+    "권재현",
+    "Rupert",
+    "40대 남성, 검은 셔츠, 짧은 머리, 얇은 입술",
+    "man in his 40s, black shirt, short hair, thin lips"
+   ],
+   [
+    "A",
+    "배도겸",
+    "Corliss",
+    "50대 여성, 회색 정장, 서류철, 단호한 얼굴",
+    "woman in her 50s, gray suit, file folder, firm face"
+   ]
+  ],
+  [
+   [
+    "발레 연습실",
+    "ballet studio",
+    "재현이 도경의 발레 슈즈를 발로 밀어낸다",
+    "Rupert pushes Elara's ballet shoes aside with his foot",
+    1,
+    "여긴 내 공연 연습실이야.",
+    "This is my rehearsal room.",
+    "cz"
+   ],
+   [
+    "발레 연습실",
+    "ballet studio",
+    "재현이 무용수들 앞에서 손뼉을 친다",
+    "Rupert claps his hands before the dancers",
+    1,
+    "춤이나 추던 사람이 안무를 논해?",
+    "You danced. Choreography is not yours.",
+    "ms"
+   ],
+   [
+    "발레 연습실",
+    "ballet studio",
+    "도경이 안무 등록증을 감독에게 건넨다",
+    "Elara hands the choreography certificate to Corliss",
+    0,
+    "이 안무, 제 이름으로 등록됐어요.",
+    "This piece is registered under my name.",
+    "cu"
+   ],
+   [
+    "발레 연습실",
+    "ballet studio",
+    "감독이 등록증을 들고 무용수들 쪽으로 돌아선다",
+    "Corliss holds it up and turns to the dancers",
+    2,
+    "이번 공연 안무자는 유도경 님입니다.",
+    "The choreographer for this show is Elara.",
+    "low"
+   ],
+   [
+    "발레 연습실",
+    "ballet studio",
+    "도경이 발레 슈즈를 신고 연습실을 나선다",
+    "Elara puts on her ballet shoes and walks out",
+    0,
+    "공연은 제 안무로만 올라가요.",
+    "My choreography or no show.",
+    "cu"
+   ],
+   [
+    "발레 연습실 문",
+    "ballet studio door",
+    "문가에 서 있던 여자가 도경에게 프로그램을 건넨다",
+    "A woman at the door hands Elara a printed program",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "초연은 무산됐다",
+  "No Premiere Without Him",
+  "연극 초연 전날, 극장주가 공연을 멈춘다. 각색 허락이 없었다.",
+  "She mocked his little plays. His premiere cannot open without her adaptation rights.",
+  [
+   [
+    "H",
+    "정가민",
+    "Gus",
+    "40대 남성, 흑갈색 재킷, 짧은 머리, 담담한 눈",
+    "man in his 40s, dark brown jacket, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "임세라",
+    "Isabel",
+    "40대 여성, 빨간 재킷, 긴 생머리, 날카로운 눈",
+    "woman in her 40s, red jacket, long straight hair, sharp eyes"
+   ],
+   [
+    "A",
+    "탁서현",
+    "Easton",
+    "60대 남성, 검은 정장, 나비넥타이, 무표정",
+    "man in his 60s, black suit, bow tie, blank face"
+   ]
+  ],
+  [
+   [
+    "연극 연습실",
+    "theatre rehearsal room",
+    "세라가 가민의 각색 원고를 바닥에 던진다",
+    "Isabel throws Gus's adaptation script to the floor",
+    1,
+    "이 원고 없어도 공연은 올라가.",
+    "The show goes up without this script.",
+    "cz"
+   ],
+   [
+    "연극 연습실",
+    "theatre rehearsal room",
+    "세라가 배우들 앞에서 원고를 발로 민다",
+    "Isabel nudges the script aside with her foot",
+    1,
+    "연극이나 하던 사람이 각색을?",
+    "You did little plays. Adaptation?",
+    "ms"
+   ],
+   [
+    "연극 연습실",
+    "theatre rehearsal room",
+    "가민이 계약서를 펼쳐 한 줄을 짚는다",
+    "Gus opens a contract and points at one line",
+    0,
+    "각색 허락, 여기 서명돼 있어요.",
+    "Her approval is signed right here.",
+    "pi"
+   ],
+   [
+    "연극 연습실",
+    "theatre rehearsal room",
+    "극장주가 계약서를 읽고 무대 쪽을 본다",
+    "Easton reads it and looks toward the stage",
+    2,
+    "허락 없이는 초연을 못 올립니다.",
+    "No approval, no premiere.",
+    "low"
+   ],
+   [
+    "연극 연습실",
+    "theatre rehearsal room",
+    "가민이 원고를 가슴에 안고 무대를 본다",
+    "Gus holds the script to his chest and looks at the stage",
+    0,
+    "각색 허락은 안 드려요.",
+    "You don't get my approval.",
+    "cu"
+   ],
+   [
+    "극장 무대",
+    "theatre stage",
+    "무대 위 막이 천천히 내려오고 객석이 어두워진다",
+    "The curtain comes down slowly and the seats go dark",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "목소리를 뺀 영화",
+  "The Voice They Erased",
+  "애니 개봉식에서 스크린이 꺼진다. 주인공 목소리 계약자가 전처였다.",
+  "He said she only talked. The lead voice needs her contract to be used.",
+  [
+   [
+    "H",
+    "진서우",
+    "Lulu",
+    "30대 여성, 노란 니트, 어깨머리, 밝은 눈",
+    "woman in her 30s, yellow knit, shoulder-length hair, bright eyes"
+   ],
+   [
+    "V",
+    "심유겸",
+    "Chet",
+    "40대 남성, 검은 후드, 짧은 머리, 굳은 얼굴",
+    "man in his 40s, black hoodie, short hair, set face"
+   ],
+   [
+    "A",
+    "황도겸",
+    "Kettering",
+    "40대 여성, 흰 셔츠, 안경, 서류 가방",
+    "woman in her 40s, white shirt, glasses, document bag"
+   ]
+  ],
+  [
+   [
+    "애니 시사회장",
+    "animation screening hall",
+    "유겸이 서우의 명찰을 떼어 무대 아래로 던진다",
+    "Chet rips Lulu's badge off and tosses it below the stage",
+    1,
+    "여긴 개봉식이야. 성우는 필요 없어.",
+    "This is a premiere. No voice actors needed.",
+    "cz"
+   ],
+   [
+    "애니 시사회장",
+    "animation screening hall",
+    "유겸이 스크린을 등지고 팔짱을 낀다",
+    "Chet folds his arms with his back to the screen",
+    1,
+    "말이나 하던 사람이 주인공을?",
+    "You talk. That's all. The lead?",
+    "ms"
+   ],
+   [
+    "애니 시사회장",
+    "animation screening hall",
+    "서우가 성우 계약서를 제작자에게 건넨다",
+    "Lulu hands the voice contract to Kettering",
+    0,
+    "주인공 목소리, 제 계약이에요.",
+    "The lead voice is under my contract.",
+    "cu"
+   ],
+   [
+    "애니 시사회장",
+    "animation screening hall",
+    "제작자가 계약서를 펼쳐 한 조항을 읽는다",
+    "Kettering opens it and reads a clause",
+    2,
+    "이 목소리, 진서우 님 허락 없이 못 씁니다.",
+    "That voice needs Lulu's permission.",
+    "low"
+   ],
+   [
+    "애니 시사회장",
+    "animation screening hall",
+    "서우가 명찰을 주워 가방에 넣는다",
+    "Lulu picks up her badge and drops it in her bag",
+    0,
+    "개봉은 제 목소리로 해요.",
+    "You open with my voice or not at all.",
+    "cu"
+   ],
+   [
+    "애니 시사회장",
+    "animation screening hall",
+    "스크린이 꺼지고 객석에서 웅성거림이 번진다",
+    "The screen goes dark and murmurs spread through the seats",
+    -1,
+    "",
+    "",
+    "rx"
+   ]
+  ]
+ ],
+ [
+  "악보를 바꾼 지휘자",
+  "The Score He Can't Conduct",
+  "공연 프로그램을 찍기 직전, 편곡 악보의 등록자는 악보나 넘기던 전 남편이었다.",
+  "She said he only turned pages. The arrangement she conducts is registered to him.",
+  [
+   [
+    "H",
+    "백도윤",
+    "Ivo",
+    "40대 남성, 검은 터틀넥, 짧은 머리, 무표정한 눈",
+    "man in his 40s, black turtleneck, short hair, blank eyes"
+   ],
+   [
+    "V",
+    "문도아",
+    "Helga",
+    "40대 여성, 검은 드레스, 올림머리, 날카로운 눈",
+    "woman in her 40s, black dress, updo, sharp eyes"
+   ],
+   [
+    "A",
+    "표시현",
+    "Loftus",
+    "50대 남성, 검은 정장, 바이올린 케이스, 단정한 인상",
+    "man in his 50s, black suit, violin case, tidy look"
+   ]
+  ],
+  [
+   [
+    "공연장 리허설",
+    "concert hall rehearsal",
+    "도아가 도윤의 악보를 집어 무대 아래로 던진다",
+    "Helga grabs Ivo's score and throws it off stage",
+    1,
+    "이 악보, 오늘부터 안 써.",
+    "We're not using this score today.",
+    "cz"
+   ],
+   [
+    "공연장 리허설",
+    "concert hall rehearsal",
+    "도아가 단원들 앞에서 지휘봉을 두드린다",
+    "Helga taps her baton before the players",
+    1,
+    "악보나 넘기던 사람이 편곡을?",
+    "You turned pages. Arranging?",
+    "ms"
+   ],
+   [
+    "공연장 리허설",
+    "concert hall rehearsal",
+    "도윤이 편곡 등록증을 악장에게 건넨다",
+    "Ivo hands the arrangement certificate to Loftus",
+    0,
+    "이 편곡, 등록번호 있어요.",
+    "This arrangement has a registration number.",
+    "cu"
+   ],
+   [
+    "공연장 리허설",
+    "concert hall rehearsal",
+    "악장이 등록증을 들고 단원들에게 보인다",
+    "Loftus holds it up to the players",
+    2,
+    "이 곡 편곡자는 백도윤 님입니다.",
+    "The arranger is Ivo.",
+    "low"
+   ],
+   [
+    "공연장 리허설",
+    "concert hall rehearsal",
+    "도윤이 악보를 주워 단원들에게 건넨다",
+    "Ivo picks up the score and hands it to the players",
+    0,
+    "프로그램에 제 이름을 넣으세요.",
+    "Put my name in the program.",
+    "cu"
+   ],
+   [
+    "공연장 로비",
+    "concert hall lobby",
+    "포스터 앞에 선 남자가 도윤의 이름을 손가락으로 짚는다",
+    "A man at the poster traces Ivo's name with one finger",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "회원 가입이 거절됐다",
+  "Membership Denied",
+  "클럽 가입 심사에서 찬성 2표, 반대 11표. 심사위원장은 골프를 못 치는 전처였다.",
+  "He sneered that she never played a round. She chairs the club's membership review.",
+  [
+   [
+    "H",
+    "심하람",
+    "Pearl",
+    "50대 여성, 아이보리 재킷, 짧은 단발, 단단한 눈",
+    "woman in her 50s, ivory jacket, short bob, firm eyes"
+   ],
+   [
+    "V",
+    "이도겸",
+    "Lance",
+    "40대 남성, 골프웨어, 짧은 머리, 자신만만한 미소",
+    "man in his 40s, golf wear, short hair, confident smile"
+   ],
+   [
+    "A",
+    "서도경",
+    "Harken",
+    "40대 남성, 클럽 유니폼, 명찰, 무표정",
+    "man in his 40s, club uniform, name badge, blank face"
+   ]
+  ],
+  [
+   [
+    "클럽하우스 입구",
+    "clubhouse entrance",
+    "도겸이 하람의 라커룸 열쇠를 손에서 빼앗는다",
+    "Lance takes the locker key from Pearl's hand",
+    1,
+    "여긴 회원만 들어와. 나가.",
+    "Members only. Get out.",
+    "cz"
+   ],
+   [
+    "클럽하우스 입구",
+    "clubhouse entrance",
+    "도겸이 클럽 로고 앞에서 어깨를 펴고 웃는다",
+    "Lance squares his shoulders and laughs by the club crest",
+    1,
+    "골프 한 번 못 쳐 본 사람이 뭘 알아?",
+    "You've never played a round. What do you know?",
+    "ms"
+   ],
+   [
+    "클럽하우스 입구",
+    "clubhouse entrance",
+    "하람이 심사 투표 용지를 매니저에게 건넨다",
+    "Pearl hands the review ballot to Harken",
+    0,
+    "가입 심사, 제가 맡고 있어요.",
+    "I chair the membership review.",
+    "cu"
+   ],
+   [
+    "클럽하우스 입구",
+    "clubhouse entrance",
+    "매니저가 투표 결과를 펼쳐 읽는다",
+    "Harken opens the vote count and reads it",
+    2,
+    "찬성 2표, 반대 11표. 가입은 거절됐습니다.",
+    "Two yes, eleven no. Membership denied.",
+    "low"
+   ],
+   [
+    "클럽하우스 입구",
+    "clubhouse entrance",
+    "하람이 라커룸 열쇠를 매니저에게 돌려준다",
+    "Pearl hands the locker key back to Harken",
+    0,
+    "보증금은 못 돌려받아요.",
+    "Your deposit stays with the club.",
+    "cu"
+   ],
+   [
+    "클럽 주차장",
+    "club parking lot",
+    "검은 차에서 내린 여자가 하람에게 골프백을 건넨다",
+    "A woman steps from a black car and hands Pearl a golf bag",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ]
+]

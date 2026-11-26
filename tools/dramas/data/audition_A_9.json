@@ -1,0 +1,172 @@
+[
+[
+ "늦깎이라던 마라토너", "Too Late to Start",
+ "감독이 마흔의 지원자를 명단에서 지운다. 압수한 기록 인증서의 번호는 대회 공식 기록이었다.", "A coach scratches a forty-year-old runner. The certificate he pockets carries an official result number.",
+ [
+  ["H", "찬영", "Caleb", "40대 남성, 낡은 러닝 셔츠, 짧은 머리, 마른 얼굴", "man in his 40s, worn running shirt, short hair, lean face"],
+  ["V", "태복", "Coach Reine", "50대 남성, 육상 감독 점퍼, 모자, 굳은 얼굴", "man in his 50s, track coach jacket, cap, stiff face"],
+  ["A", "재성", "Mr. Kessler", "30대 남성, 대회 운영 정장, 태블릿, 단호한 태도", "man in his 30s, race official suit, tablet, firm manner"]
+ ],
+ [
+  ["육상 경기장", "athletics stadium", "태복이 찬영의 기록 인증서를 접어 주머니에 넣는다", "Coach Reine folds Caleb's record certificate into his pocket", 1, "마흔이면 은퇴할 나이예요.", "Forty is retirement age.", "ms"],
+  ["육상 경기장", "athletics stadium", "태복이 젊은 선수를 출발선에 세운다", "Coach Reine places a young runner at the start line", 1, "우린 다음 대회를 봐요.", "We're building for the next meet.", "cz"],
+  ["육상 경기장 사무실", "stadium office", "찬영이 인증서 번호와 대회 공지를 맞춘다", "Caleb matches the certificate number to the race notice", -1, "", "", "cu"],
+  ["육상 경기장 사무실", "stadium office", "도담이 공식 기록표를 펼쳐 번호를 확인한다", "Mr. Kessler opens the official results and checks the number", 2, "이 번호, 공식 기록이 맞습니다.", "That number is an official result.", "low"],
+  ["육상 경기장", "athletics stadium", "명단에서 젊은 선수가 빠지고 찬영의 이름이 올라간다", "The young runner is scratched and Caleb's name goes up", 0, "기록은 나이가 아니라 시계가 남깁니다.", "Records are kept by clocks, not birthdays.", "cu"],
+  ["육상 경기장 트랙", "running track", "트랙 반대편에서 코치들이 찬영에게 손을 든다", "Coaches across the track raise a hand to Caleb", -1, "", "", "pi"]
+ ]
+],
+[
+ "여자는 못 끈다던 단장", "Women Can't Pull, He Said",
+ "단장이 여성 선수를 명단에서 뺀다. 차체 번호와 등록 대장이 같은 번호를 가리키고 있었다.", "A team manager cuts a woman from the roster. Her bike number matches the registration book.",
+ [
+  ["H", "여울", "Sage", "30대 여성, 사이클 유니폼, 헬멧, 단단한 눈", "woman in her 30s, cycling kit, helmet, hard eyes"],
+  ["V", "상철", "Mr. Bruhn", "60대 남성, 팀 단장 점퍼, 모자, 무심한 얼굴", "man in his 60s, team manager jacket, cap, cold face"],
+  ["A", "혜원", "Ms. Doan", "40대 여성, 팀 매니저 정장, 서류철, 차분한 태도", "woman in her 40s, team manager suit, folder, calm manner"]
+ ],
+ [
+  ["사이클 트랙", "velodrome", "상철이 여울의 헬멧을 핸들에서 떼어 낸다", "Mr. Bruhn pulls Sage's helmet off her handlebars", 1, "여자는 앞에서 못 끌어요.", "Women can't pull at the front.", "ms"],
+  ["사이클 트랙", "velodrome", "상철이 남자 선수를 선두에 세운다", "Mr. Bruhn lines a male rider at the front", 1, "페이스는 힘으로 만드는 거예요.", "Pace is built with strength.", "cz"],
+  ["사이클 트랙 정비실", "velodrome workshop", "여울이 차체 번호판과 등록 대장을 맞춘다", "Sage matches the frame number to the registration book", -1, "", "", "cu"],
+  ["사이클 트랙 정비실", "velodrome workshop", "혜원이 대장과 팀 명단을 나란히 편다", "Ms. Doan lays the book beside the team roster", 2, "이 차체 번호, 여울 씨 겁니다.", "This bike number is hers.", "ots"],
+  ["사이클 트랙", "velodrome", "상철의 단장 명패가 관제석에서 내려진다", "Mr. Bruhn's manager plate comes down from the stand", 0, "앞에서 끄는 건 힘이 아니라 호흡이에요.", "Pulling is rhythm, not muscle.", "cu"],
+  ["사이클 트랙 관중석", "velodrome stands", "응원 깃발이 여울의 이름을 흔든다", "A banner with Sage's name waves in the stands", -1, "", "", "pi"]
+ ]
+],
+[
+ "키가 작다던 다이버", "Too Short to Dive",
+ "코치가 키를 이유로 지원자를 뺀다. 채점표의 합계가 한 점씩 틀려 있었다.", "A coach cuts a diver for his height. Every total on the score sheet is one point off.",
+ [
+  ["H", "하준", "Remy", "20대 남성, 수영 훈련복, 젖은 머리, 또렷한 눈", "man in his 20s, swim training suit, wet hair, clear eyes"],
+  ["V", "영주", "Coach Ives", "40대 여성, 다이빙 심판 정장, 휘슬, 날선 눈", "woman in her 40s, diving judge suit, whistle, sharp eyes"],
+  ["A", "소현", "Judge Sato", "40대 여성, 심판 정장, 안경, 꼼꼼한 표정", "woman in her 40s, judge's suit, glasses, meticulous look"]
+ ],
+ [
+  ["다이빙 경기장", "diving pool", "영주가 하준의 입수 순서를 명단에서 지운다", "Coach Ives erases Remy's dive order from the list", 1, "키가 작으면 회전이 안 돼요.", "Short divers can't spin.", "cz"],
+  ["다이빙 경기장", "diving pool", "영주가 자기 제자를 다이빙대에 세운다", "Coach Ives sends her own diver up the board", 1, "저 높이서 버티는 것도 재능이에요.", "Holding that height is a gift.", "ms"],
+  ["다이빙 경기장 심판석", "diving judges' table", "하준이 채점표 합계를 손가락으로 다시 더한다", "Remy re-adds the totals with his finger", -1, "", "", "cu"],
+  ["다이빙 경기장 심판석", "diving judges' table", "윤슬이 채점표를 나란히 놓고 계산기를 두드린다", "Judge Sato sets the sheets side by side and taps a calculator", 2, "합계가 한 점씩 틀렸습니다.", "Every total is one point off.", "low"],
+  ["다이빙 경기장 심판석", "diving judges' table", "영주의 심판 배지가 회수된다", "Coach Ives's judge badge is taken back", 0, "점수는 키가 아니라 산수로 매깁니다.", "Dives are scored by math, not height.", "cu"],
+  ["다이빙 경기장", "diving pool", "하준이 다이빙대 위에서 팔을 벌린다", "Remy spreads his arms at the top of the board", -1, "", "", "pi"]
+ ]
+],
+[
+ "신장이 안 된다던 리베로", "Not Tall Enough",
+ "감독이 신장을 이유로 리베로를 뺀다. 리시브 기록 1위는 그녀의 이름이었다.", "A coach drops a libero for being short. The league's top receive record carries her name.",
+ [
+  ["H", "소율", "Pia", "20대 여성, 배구 유니폼, 무릎 보호대, 짧은 포니테일", "woman in her 20s, volleyball uniform, knee pads, short ponytail"],
+  ["V", "진수", "Coach Marr", "50대 남성, 배구 감독 점퍼, 클립보드, 굳은 얼굴", "man in his 50s, volleyball coach jacket, clipboard, stiff face"],
+  ["A", "두현", "Mr. Falk", "40대 남성, 구단 매니저 정장, 태블릿, 차분한 태도", "man in his 40s, club manager suit, tablet, composed manner"]
+ ],
+ [
+  ["배구 코트", "volleyball court", "진수가 소율의 등번호 조끼를 빼앗는다", "Coach Marr pulls off Pia's numbered jersey", 1, "신장이 안 되면 리베로도 못 해요.", "Too short, even for libero.", "ms"],
+  ["배구 코트", "volleyball court", "진수가 장신 지원자를 네트 앞에 세운다", "Coach Marr posts a tall recruit at the net", 1, "블로킹은 키가 하는 거예요.", "Blocks are made by height.", "cz"],
+  ["배구 코트 기록석", "scorer's table", "소율이 기록판에서 자기 리시브 성공률을 짚는다", "Pia points at her own receive percentage on the board", -1, "", "", "cu"],
+  ["배구 코트 기록석", "scorer's table", "예준이 기록판과 명단을 나란히 본다", "Mr. Falk compares the record board with the roster", 2, "리시브 1위, 소율 씨입니다.", "Top receiver in the league is her.", "ots"],
+  ["배구 코트", "volleyball court", "구단 직원이 진수의 지명권 서류를 가져간다", "A club officer takes Coach Marr's selection papers", 0, "리시브는 키가 아니라 발이 합니다.", "Digs are made by feet, not height.", "cu"],
+  ["배구 코트 관중석", "court stands", "유소년 선수들이 소율의 번호를 외친다", "Junior players chant Pia's number from the stands", -1, "", "", "pi"]
+ ]
+],
+[
+ "동네 탁구장이라던 선수", "Just a Rec Center Player",
+ "감독이 동네 탁구장 출신을 뺀다. 그녀가 반칙이라 몰았던 러버는 승인품이었다.", "A coach cuts a rec center player. The rubber she calls illegal is on the approved list.",
+ [
+  ["H", "국현", "Walt", "50대 남성, 탁구 유니폼, 안경, 차분한 눈", "man in his 50s, table tennis kit, glasses, calm eyes"],
+  ["V", "정연", "Ms. Seft", "40대 여성, 대표팀 점퍼, 클립보드, 날선 눈", "woman in her 40s, team jacket, clipboard, sharp eyes"],
+  ["A", "태이", "Mr. Stack", "40대 남성, 협회 검사관 정장, 배지, 꼼꼼한 태도", "man in his 40s, association inspector suit, badge, meticulous manner"]
+ ],
+ [
+  ["탁구 경기장", "table tennis hall", "정연이 국현의 라켓 러버를 손끝으로 만지작거린다", "Ms. Seft rubs the rubber on Walt's paddle", 1, "동네 탁구장 라켓이네요.", "A rec center paddle.", "ms"],
+  ["탁구 경기장 검사대", "equipment table", "정연이 국현의 라켓을 검사대에 올린다", "Ms. Seft puts Walt's paddle on the inspection table", 1, "이건 반칙이에요.", "This rubber is illegal.", "cz"],
+  ["탁구 경기장 검사대", "equipment table", "국현이 러버의 승인 마크를 손끝으로 짚는다", "Walt points at the approval mark on the rubber", -1, "", "", "cu"],
+  ["탁구 경기장 검사대", "equipment table", "태이가 검사 결과지를 들고 온다", "Mr. Rusk arrives with the inspection report", 2, "국현 씨 러버는 승인품입니다. 반대쪽이 문제죠.", "His rubber is approved. Yours isn't.", "ots"],
+  ["탁구 경기장 검사대", "equipment table", "정연의 제자 라켓이 봉인된다", "Ms. Seft's player's paddle is sealed in a bag", 0, "라켓은 규정이, 경기는 점수가 말합니다.", "Rules judge the racket. Points judge the game.", "cu"],
+  ["탁구 경기장 입구", "hall entrance", "협회 관계자가 입구에서 국현을 부른다", "An association officer calls Walt from the entrance", -1, "", "", "pi"]
+ ]
+],
+[
+ "악보 못 읽는다던 트롬본", "Can't Read, They Said",
+ "지휘자가 악보를 못 읽는다며 트롬본을 내보낸다. 그 파트보는 지휘자가 바꿔치기한 것이었다.", "A bandleader pushes a trombonist out with his chart. The part on that stand was switched by him.",
+ [
+  ["H", "은결", "Ewan", "30대 남성, 낡은 정장, 트롬본 케이스, 게으른 눈", "man in his 30s, worn suit, trombone case, lazy eyes"],
+  ["V", "문호", "Mr. Sable", "60대 남성, 검은 밴드 정장, 나비넥타이, 무뚝뚝한 얼굴", "man in his 60s, black band suit, bow tie, deadpan face"],
+  ["A", "상민", "Mr. Quill", "30대 남성, 클럽 매니저 셔츠, 태블릿, 성실한 얼굴", "man in his 30s, club manager shirt, tablet, earnest face"]
+ ],
+ [
+  ["재즈 클럽 무대", "jazz club stage", "문호가 은결의 트롬본 케이스를 발로 민다", "Mr. Sable nudges Ewan's trombone case with his foot", 1, "악보도 못 읽는 사람이 빅밴드에?", "Can't read a chart, and wants a big band?", "cz"],
+  ["재즈 클럽 무대", "jazz club stage", "문호가 악보를 은결 앞에 던진다", "Mr. Sable tosses a chart at Ewan's feet", 1, "한 마디만 불러 보세요.", "Sight-read one bar.", "ms"],
+  ["재즈 클럽 무대", "jazz club stage", "은결이 악보의 파트 표시가 지워진 자리를 짚는다", "Ewan points at where the part marking has been erased", -1, "", "", "cu"],
+  ["재즈 클럽 무대", "jazz club stage", "도담이 원본 파트보를 꺼내 나란히 놓는다", "Mr. Quin brings out the original part and sets it beside", 2, "이 파트, 은결 씨 자리로 바뀌었네요.", "This part was moved onto his chair.", "low"],
+  ["재즈 클럽 무대", "jazz club stage", "단원들이 은결을 보며 악기를 든다", "The band raises their horns toward Ewan", 0, "악보는 읽는 게 아니라 듣는 거예요.", "Charts are heard before they're read.", "cu"],
+  ["재즈 클럽 입구", "club entrance", "클럽 문이 열리고 관객들이 들어온다", "The club doors open and the audience files in", -1, "", "", "pi"]
+ ]
+],
+[
+ "타악기는 장식이라던 수석", "Percussion Is Decoration",
+ "수석이 팀파니 지원자를 무대에서 내린다. 그 무대의 팀파니 계약자는 지원자였다.", "A principal player sends a timpanist offstage. The timpani on that stage are under his contract.",
+ [
+  ["H", "경수", "Otto", "30대 남성, 검은 셔츠, 팀파니 말렛, 무표정", "man in his 30s, black shirt, timpani mallets, blank face"],
+  ["V", "필성", "Mr. Dace", "50대 남성, 오케스트라 정장, 수석 배지, 냉소", "man in his 50s, orchestra suit, principal badge, sneer"],
+  ["A", "해인", "Ms. Yule", "40대 여성, 오케스트라 매니저 정장, 서류철, 단호한 태도", "woman in her 40s, orchestra manager suit, folder, firm manner"]
+ ],
+ [
+  ["콘서트홀 무대", "concert hall stage", "필성이 준서의 말렛을 악기 위에서 쓸어 버린다", "Mr. Dace sweeps Otto's mallets off the drum", 1, "타악기는 장식이에요.", "Percussion is decoration.", "ms"],
+  ["콘서트홀 무대", "concert hall stage", "필성이 자기 제자를 팀파니 뒤에 앉힌다", "Mr. Dace seats his own player behind the timpani", 1, "박자만 세면 누구나 해요.", "Anyone can keep time.", "cz"],
+  ["콘서트홀 무대 뒤", "backstage", "준서가 조율 기록에서 자기 이름을 짚는다", "Otto points at his own name in the tuning log", -1, "", "", "cu"],
+  ["콘서트홀 무대 뒤", "backstage", "해인이 조율 기록과 악기 계약서를 편다", "Ms. Yule opens the tuning log and the instrument contract", 2, "이 무대 팀파니, 준서 씨 계약입니다.", "The timpani here are under his contract.", "ots"],
+  ["콘서트홀 무대", "concert hall stage", "필성의 이름이 연주 프로그램에서 지워진다", "Mr. Dace's name is struck from the concert program", 0, "장식은 소리를 내지 않죠.", "Decoration makes no sound.", "cu"],
+  ["콘서트홀 무대", "concert hall stage", "무대 조명이 팀파니 한 대를 비춘다", "A single spotlight finds one timpano", -1, "", "", "pi"]
+ ]
+],
+[
+ "결혼식 반주만 하던 오르간", "Only Wedding Music, They Said",
+ "음악감독이 예식장 반주자를 오르간에서 내린다. 그 오르간을 헌정한 연주회의 주인공이 그녀였다.", "A music director removes a wedding organist. She gave the recital that dedicated that organ.",
+ [
+  ["H", "말순", "Alma", "50대 여성, 남색 단정한 원피스, 짧은 파마, 온화한 눈", "woman in her 50s, neat navy dress, short perm, gentle eyes"],
+  ["V", "태호", "Mr. Weiss", "40대 남성, 검은 음악감독 정장, 안경, 얇은 입", "man in his 40s, black music director suit, glasses, thin mouth"],
+  ["A", "명주", "Ms. Lorne", "40대 여성, 공연 기획자 정장, 서류철, 차분한 목소리", "woman in her 40s, concert planner suit, folder, calm voice"]
+ ],
+ [
+  ["콘서트홀 오르간", "concert hall organ", "태호가 말순의 악보를 오르간 위에서 치운다", "Mr. Weiss clears Alma's score off the console", 1, "결혼식 반주만 하던 분이죠?", "You only played weddings, right?", "ms"],
+  ["콘서트홀 오르간", "concert hall organ", "태호가 자기 제자를 오르간 의자에 앉힌다", "Mr. Weiss seats his own student at the console", 1, "이 악기는 아무나 못 만져요.", "Not everyone touches this organ.", "cz"],
+  ["콘서트홀 오르간", "concert hall organ", "말순이 오르간 옆 헌정 명판을 손끝으로 짚는다", "Alma touches the dedication plaque beside the organ", -1, "", "", "cu"],
+  ["콘서트홀 오르간", "concert hall organ", "하윤이 명판과 옛 연주회 팸플릿을 든다", "Ms. Lorne holds the plaque photo and an old recital program", 2, "이 오르간 헌정 연주, 말순 씨였어요.", "She gave this organ's dedication recital.", "low"],
+  ["콘서트홀 오르간", "concert hall organ", "태호의 음악감독 위촉장이 봉투에 들어간다", "Mr. Weiss's director appointment goes into an envelope", 0, "건반은 예식장에서도 같은 소리를 냅니다.", "Keys sound the same in a wedding hall.", "cu"],
+  ["콘서트홀 오르간", "concert hall organ", "오르간 파이프에 조명이 켜진다", "The lights come up on the organ pipes", -1, "", "", "pi"]
+ ]
+],
+[
+ "감각 없다던 카피라이터", "No Feel for Words",
+ "디렉터가 카피 시안을 책상 아래로 떨어뜨린다. 제출 파일의 작성 시각은 그녀가 먼저였다.", "A creative director drops a copywriter's line under the desk. Her file was saved before his.",
+ [
+  ["H", "나경", "Nell", "30대 여성, 후드티, 노트북 가방, 피곤한 눈", "woman in her 30s, hoodie, laptop bag, tired eyes"],
+  ["V", "민석", "Mr. Dorsey", "40대 남성, 크리에이티브 디렉터 셔츠, 안경, 비웃는 입", "man in his 40s, creative director shirt, glasses, sneering mouth"],
+  ["A", "은주", "Ms. Howell", "40대 여성, 브랜드 매니저 정장, 태블릿, 단호한 태도", "woman in her 40s, brand manager suit, tablet, firm manner"]
+ ],
+ [
+  ["광고회사 발표장", "agency pitch room", "민석이 하린의 카피 시안을 접어 책상 아래로 떨어뜨린다", "Mr. Vance folds Nell's copy sheet and drops it by the desk", 1, "감각이 없네요.", "You've got no feel for this.", "ms"],
+  ["광고회사 발표장", "agency pitch room", "민석이 자기 시안을 스크린에 띄운다", "Mr. Vance puts his own line on the screen", 1, "카피는 재능이에요.", "Copywriting is a gift.", "cz"],
+  ["광고회사 발표장", "agency pitch room", "하린이 제출 파일의 작성 시각을 연다", "Nell opens the time stamp on her submitted file", -1, "", "", "cu"],
+  ["광고회사 발표장", "agency pitch room", "도경이 파일 기록 두 개를 나란히 띄운다", "Ms. Howell puts both file records side by side", 2, "이 문장, 하린 씨 파일이 먼저예요.", "Her file holds the line first.", "low"],
+  ["광고회사 발표장", "agency pitch room", "민석의 시안이 스크린에서 내려간다", "Mr. Vance's line drops off the screen", 0, "문장은 감각이 아니라 시간이 남깁니다.", "Time leaves a mark on a sentence.", "cu"],
+  ["광고회사 복도", "agency corridor", "회의실 문가에 다른 광고주가 서 있다", "Another client waits at the meeting room door", -1, "", "", "pi"]
+ ]
+],
+[
+ "취미 그림이라던 원화가", "Just a Hobby Artist",
+ "아트디렉터가 지원자의 태블릿을 덮는다. 원본 파일의 레이어 순서가 그의 그림과 같았다.", "An art director closes an applicant's tablet. The layer order in his file matches the director's art.",
+ [
+  ["H", "시온", "Bo", "20대 남성, 후드티, 태블릿, 졸린 눈", "man in his 20s, hoodie, drawing tablet, sleepy eyes"],
+  ["V", "재우", "Mr. Kroll", "30대 남성, 아트디렉터 셔츠, 안경, 무표정", "man in his 30s, art director shirt, glasses, blank face"],
+  ["A", "미소", "Ms. Tiller", "30대 여성, 퍼블리셔 정장, 태블릿, 꼼꼼한 태도", "woman in her 30s, publisher suit, tablet, meticulous manner"]
+ ],
+ [
+  ["게임사 발표장", "game studio room", "민혁이 시온의 태블릿을 덮는다", "Mr. Voss closes Bo's tablet", 1, "취미 그림은 포트폴리오가 아니에요.", "Hobby sketches aren't portfolios.", "ms"],
+  ["게임사 발표장", "game studio room", "민혁이 자기 팀 원화를 스크린에 띄운다", "Mr. Voss puts his team's artwork on the screen", 1, "이게 상업용이죠.", "This is commercial work.", "cz"],
+  ["게임사 발표장", "game studio room", "시온이 원본 파일의 레이어 기록을 연다", "Bo opens the layer history of his original file", -1, "", "", "cu"],
+  ["게임사 발표장", "game studio room", "보미가 두 파일의 레이어 순서를 비교한다", "Ms. Arden compares the layer order of both files", 2, "레이어 순서가 똑같습니다. 시온 씨가 먼저예요.", "Same layer order. His file is older.", "ots"],
+  ["게임사 발표장", "game studio room", "민혁의 원화가 스크린에서 사라진다", "Mr. Voss's artwork disappears from the screen", 0, "그림은 손버릇이 남습니다.", "A drawing keeps the artist's habits.", "cu"],
+  ["게임사 사무실", "studio floor", "유리벽 너머로 직원들이 모여든다", "Staff gather beyond the glass wall", -1, "", "", "pi"]
+ ]
+]
+]

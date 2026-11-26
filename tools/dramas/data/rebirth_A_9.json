@@ -1,0 +1,919 @@
+[
+ [
+  "분실물 장부",
+  "The Lost and Found Ledger",
+  "미화원을 무시한 빌딩 관리인. 소현은 분실물 장부의 빈 줄을 먼저 기억해 두었다.",
+  "A building manager scorns a cleaner. Yuki has already memorized the blank line in the lost-and-found ledger.",
+  [
+   [
+    "H",
+    "안소현",
+    "Yuki Voss",
+    "50대 여성, 회색 미화원복, 짧은 머리, 고무장갑, 조용한 눈",
+    "woman in her 50s, gray cleaner uniform, short hair, rubber gloves, quiet eyes"
+   ],
+   [
+    "V",
+    "권재우",
+    "Pavel Corrigan",
+    "40대 남성, 검은 정장, 짧은 머리, 관리인 배지, 비뚠 입",
+    "man in his 40s, black suit, short hair, building badge, crooked mouth"
+   ],
+   [
+    "A",
+    "류지혜",
+    "Rin Newbury",
+    "30대 여성, 베이지 니트, 안경, 분실물 장부를 든 담당자",
+    "woman in her 30s, beige knit, glasses, clerk holding a lost-and-found ledger"
+   ]
+  ],
+  [
+   [
+    "빌딩 로비",
+    "office lobby",
+    "관리인이 미화원의 걸레를 발로 밀어 버린다",
+    "The building manager kicks the cleaner's mop away",
+    1,
+    "여기 바닥 좀 봐. 다시 닦아",
+    "Look at this floor. Clean it again",
+    "cz"
+   ],
+   [
+    "빌딩 로비",
+    "office lobby",
+    "관리인이 미화원의 출입 카드를 꺾어 버린다",
+    "He snaps her access card",
+    1,
+    "오늘부로 나가",
+    "You're out today",
+    "ms"
+   ],
+   [
+    "분실물 보관실",
+    "lost and found",
+    "미화원이 분실물 장부의 한 줄을 손가락으로 짚는다",
+    "The cleaner points at a line in the lost-and-found ledger",
+    0,
+    "이 반지, 신고된 적 없어",
+    "No one reported this ring",
+    "ots"
+   ],
+   [
+    "분실물 보관실",
+    "lost and found",
+    "분실물 담당이 장부와 금고를 대조한다",
+    "The clerk checks the ledger against the safe",
+    2,
+    "신고 없이 사라진 물건이 세 개예요",
+    "Three items vanished unreported",
+    "low"
+   ],
+   [
+    "로비",
+    "lobby",
+    "관리인이 금고 열쇠를 바닥에 떨어뜨린다",
+    "He drops the safe key",
+    0,
+    "청소하는 사람이 제일 많이 봐",
+    "The one who cleans sees the most",
+    "cu"
+   ],
+   [
+    "분실물 보관실",
+    "lost and found",
+    "미화원이 봉투에서 낡은 반지를 꺼내 멈춘다",
+    "She takes an old ring from an envelope and stops",
+    0,
+    "이 반지, 왜 여기 있죠?",
+    "Why is this ring here?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "비상구 사진",
+  "The Photo of the Locked Exit",
+  "여성 점검관을 무시한 건물주. 보람은 비상구 사진을 찍어 두고 그 건물에 다시 섰다.",
+  "A landlord scorns a woman inspector. Ulrika stands at the building again with the exit photo timestamped.",
+  [
+   [
+    "H",
+    "김보람",
+    "Ulrika Bellamy",
+    "30대 여성, 소방 점검복, 짧은 머리, 점검판, 단호한 눈",
+    "woman in her 30s, fire inspection uniform, short hair, clipboard, firm eyes"
+   ],
+   [
+    "V",
+    "오태식",
+    "Ken Thwaite",
+    "50대 남성, 갈색 재킷, 뒤로 넘긴 머리, 금반지, 고함치는 입",
+    "man in his 50s, brown jacket, swept hair, gold ring, shouting mouth"
+   ],
+   [
+    "A",
+    "서정민",
+    "Dario Osborne",
+    "50대 남성, 소방서 제복, 흰 머리, 단정한 자세, 무거운 눈",
+    "man in his 50s, fire service uniform, white hair, upright, heavy eyes"
+   ]
+  ],
+  [
+   [
+    "건물 지하",
+    "basement",
+    "건물주가 점검관의 점검판을 빼앗아 벽에 던진다",
+    "The landlord grabs the inspector's board and throws it at the wall",
+    1,
+    "점검관은 남자여야지",
+    "Inspections are men's work",
+    "ws"
+   ],
+   [
+    "건물 지하",
+    "basement",
+    "건물주가 점검관의 카메라를 빼앗아 바닥에 놓는다",
+    "He takes her camera and sets it on the floor",
+    1,
+    "사진은 못 찍어",
+    "No photos in my building",
+    "ms"
+   ],
+   [
+    "건물 지하",
+    "basement",
+    "점검관이 비상구 사진의 촬영 시각을 확인한다",
+    "She checks the timestamp on the emergency exit photo",
+    0,
+    "이 문, 잠겨 있었어",
+    "That door was locked",
+    "cu"
+   ],
+   [
+    "건물 앞",
+    "building front",
+    "소방서장이 사진과 일지를 들고 온다",
+    "The fire chief arrives with the photo and the log",
+    2,
+    "비상구 봉인, 사용 정지 사유입니다",
+    "A sealed exit means closure",
+    "low"
+   ],
+   [
+    "건물 앞",
+    "building front",
+    "건물주가 서류를 바닥에 떨어뜨린다",
+    "The landlord drops his papers",
+    0,
+    "한 번 나가면 다시는 못 들어와",
+    "Get out once, and you don't get back in",
+    "rx"
+   ],
+   [
+    "건물 앞",
+    "building front",
+    "점검관이 사진 구석의 낯선 남자를 확대한다",
+    "She zooms in on a stranger at the edge of the photo",
+    0,
+    "이 사람, 작년에도 여기 있었어요",
+    "This man was here last year too",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "세탁표에는 날짜가 있다",
+  "Every Tag Has a Date",
+  "동네 세탁소를 무시한 호텔 매니저. 연수의 파일엔 세탁표 사본이 이미 꽂혀 있다.",
+  "A hotel manager drops a corner laundry. The tag copies are already filed in Ruth's folder.",
+  [
+   [
+    "H",
+    "정연수",
+    "Ruth Osborne",
+    "60대 여성, 흰 앞치마, 짧은 퍼머, 다림질한 손, 차분한 눈",
+    "woman in her 60s, white apron, short perm, pressed hands, calm eyes"
+   ],
+   [
+    "V",
+    "강미정",
+    "Torunn Eastleigh",
+    "40대 여성, 검은 정장, 묶은 머리, 호텔 배지, 날카로운 눈",
+    "woman in her 40s, black suit, tied hair, hotel badge, sharp eyes"
+   ],
+   [
+    "A",
+    "홍성호",
+    "Sven Bellamy",
+    "50대 남성, 남색 정장, 흰 머리, 단정한 넥타이, 총지배인",
+    "man in his 50s, navy suit, white hair, neat tie, general manager"
+   ]
+  ],
+  [
+   [
+    "세탁소",
+    "laundry",
+    "매니저가 주인의 세탁표를 찢어 던진다",
+    "The manager tears up the owner's laundry tags",
+    1,
+    "동네 세탁소가 무슨 호텔 납품이야",
+    "A corner laundry for our hotel?",
+    "ms"
+   ],
+   [
+    "세탁소",
+    "laundry",
+    "매니저가 정리된 옷 더미를 밀어 바닥에 쏟는다",
+    "She shoves a stack of folded clothes onto the floor",
+    1,
+    "납품은 오늘로 끝이야",
+    "Your contract ends today",
+    "ms"
+   ],
+   [
+    "세탁소",
+    "laundry",
+    "주인이 세탁표 사본과 영수증을 파일에 꽂는다",
+    "The owner files a tag copy with its receipt",
+    0,
+    "표에는 날짜가 찍혀",
+    "Every tag carries a date",
+    "cu"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "총지배인이 세탁표와 영수증을 들고 온다",
+    "The general manager arrives with the tags and receipts",
+    2,
+    "납품 단가가 계약보다 높게 청구됐네요",
+    "These invoices exceed the contract",
+    "low"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "매니저가 옷 더미를 놓쳐 바닥에 쏟는다",
+    "She drops the stack of clothes",
+    0,
+    "얼룩은 빼도, 기록은 못 빼",
+    "Stains come out. Records don't",
+    "cu"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "총지배인이 옷 주머니에서 편지를 꺼내 읽는다",
+    "The general manager draws a letter from a pocket and reads",
+    2,
+    "이 이름, 우리 회장님 이름인데요",
+    "This is our chairman's name",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "야간 근무표",
+  "The Night Shift",
+  "야간 알바를 무시한 점주. 현석은 마감 영수증을 모아 두고 그 편의점에 다시 섰다.",
+  "An owner waves off her night clerk. Nils stands in the store again with the closing receipts gathered.",
+  [
+   [
+    "H",
+    "최현석",
+    "Nils Kirkland",
+    "30대 남성, 편의점 유니폼, 짧은 머리, 안경, 피곤한 눈",
+    "man in his 30s, convenience store uniform, short hair, glasses, tired eyes"
+   ],
+   [
+    "V",
+    "박은정",
+    "Selma Lindqvist",
+    "50대 여성, 분홍 니트, 짧은 퍼머, 두꺼운 팔찌, 얄팍한 웃음",
+    "woman in her 50s, pink knit, short perm, thick bracelet, thin smile"
+   ],
+   [
+    "A",
+    "정도윤",
+    "Ansel Gresham",
+    "40대 남성, 남색 정장, 사원증, 태블릿을 든 본사 담당",
+    "man in his 40s, navy suit, badge, head office rep holding a tablet"
+   ]
+  ],
+  [
+   [
+    "편의점",
+    "convenience store",
+    "점주가 알바의 계산대 자리를 치우며 손을 젓는다",
+    "The owner waves the clerk away from the register",
+    1,
+    "야간 장부는 내가 본다",
+    "I check the night books",
+    "cz"
+   ],
+   [
+    "편의점",
+    "convenience store",
+    "점주가 알바의 근무표에서 이름을 지운다",
+    "She erases his name from the shift sheet",
+    1,
+    "이번 달 근무 기록은 없어",
+    "No hours for you this month",
+    "ms"
+   ],
+   [
+    "편의점",
+    "convenience store",
+    "알바가 POS 마감 영수증을 모아 봉투에 넣는다",
+    "He gathers the closing receipts into an envelope",
+    0,
+    "마감은 내가 맞춰",
+    "I balance the drawer",
+    "cu"
+   ],
+   [
+    "편의점",
+    "convenience store",
+    "본사 담당이 영수증과 근무표를 대조한다",
+    "The rep compares receipts with the shift sheet",
+    2,
+    "판매 기록과 근무 기록이 다르네요",
+    "Sales and shifts don't match",
+    "low"
+   ],
+   [
+    "편의점",
+    "convenience store",
+    "점주가 봉투를 바닥에 떨어뜨린다",
+    "She drops the envelope",
+    0,
+    "밤에 번 돈은 밤에 기록돼",
+    "Money made at night is logged at night",
+    "rx"
+   ],
+   [
+    "편의점",
+    "convenience store",
+    "본사 담당이 등록증 사본을 꺼내 본다",
+    "The rep pulls out a copy of the store registration",
+    2,
+    "이 지점, 다른 이름으로 등록돼 있어요",
+    "This branch is registered to someone else",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "발효종의 나이",
+  "The Age of the Starter",
+  "동네 빵집을 무시한 프랜차이즈 본부장. 재영의 발효종 일지엔 날짜가 빼곡하다.",
+  "A franchise head scorns a local bakery. Tomas's starter log is packed with dates.",
+  [
+   [
+    "H",
+    "김재영",
+    "Tomas Merriweather",
+    "50대 남성, 흰 제과복, 짧은 머리, 밀가루 묻은 팔, 무뚝뚝한 얼굴",
+    "man in his 50s, white baker's coat, short hair, flour-dusted arms, blunt face"
+   ],
+   [
+    "V",
+    "이혜숙",
+    "Yara Langford",
+    "40대 여성, 검은 정장, 묶은 머리, 본부장 배지, 날카로운 눈썹",
+    "woman in her 40s, black suit, tied hair, franchise badge, sharp brows"
+   ],
+   [
+    "A",
+    "조민재",
+    "Bodil Jessup",
+    "50대 여성, 회색 재킷, 안경, 서류철을 든 감사",
+    "woman in her 50s, gray jacket, glasses, auditor with a file"
+   ],
+   [
+    "X",
+    "이선영",
+    "Elsa Cawley",
+    "40대 여성, 베이지 코트, 긴 머리, 케이크 상자를 든 손",
+    "woman in her 40s, beige coat, long hair, holding a cake box"
+   ]
+  ],
+  [
+   [
+    "제과점",
+    "bakery",
+    "본부장이 장인의 반죽 볼을 밀어 떨어뜨린다",
+    "The franchise head shoves the baker's bowl off the counter",
+    1,
+    "동네 빵집이 무슨 프랜차이즈야",
+    "A local bakery joining our brand?",
+    "ms"
+   ],
+   [
+    "제과점",
+    "bakery",
+    "본부장이 장인의 이름표를 진열대에서 뗀다",
+    "She peels his name tag off the display",
+    1,
+    "이 빵은 우리 이름으로 팔아",
+    "We sell these under our name",
+    "rx"
+   ],
+   [
+    "제과점",
+    "bakery",
+    "장인이 발효종 병의 날짜표를 손가락으로 짚는다",
+    "The baker points at the date label on the starter jar",
+    0,
+    "이 발효종은 삼 년이야",
+    "This starter is three years old",
+    "cu"
+   ],
+   [
+    "제과점",
+    "bakery",
+    "감사가 발효종 병과 배양 일지를 맞춰 본다",
+    "The auditor matches the starter jar to the feeding log",
+    2,
+    "배양 기록이 납품일보다 앞서네요",
+    "The feeding log predates the delivery",
+    "low"
+   ],
+   [
+    "제과점",
+    "bakery",
+    "본부장이 장부를 바닥에 떨어뜨린다",
+    "She drops the ledger",
+    0,
+    "빵은 손이 기억해",
+    "Bread remembers hands",
+    "cu"
+   ],
+   [
+    "제과점",
+    "bakery",
+    "한 손님이 진열대의 낯선 케이크를 집어 든다",
+    "A customer picks up an unfamiliar cake from the display",
+    3,
+    "이 케이크, 우리 어머니 레시피야",
+    "This cake is my mother's recipe",
+    "slo"
+   ]
+  ]
+ ],
+ [
+  "사백 일의 치즈",
+  "Four Hundred Days of Cheese",
+  "시골 치즈 농장을 무시한 바이어. 정아는 사백 일의 숙성 기록을 손에 쥐고 있다.",
+  "A buyer scorns a farm cheesemaker. Ingrid holds four hundred days of aging records in her hand.",
+  [
+   [
+    "H",
+    "박정아",
+    "Ingrid Danforth",
+    "40대 여성, 젖은 앞치마, 묶은 머리, 굳은손, 맑은 눈",
+    "woman in her 40s, damp apron, tied hair, worn hands, clear eyes"
+   ],
+   [
+    "V",
+    "윤성호",
+    "Felix Oliphant",
+    "50대 남성, 회색 점퍼, 안경, 클립보드, 무뚝뚝한 얼굴",
+    "man in his 50s, gray jacket, glasses, clipboard, blunt face"
+   ],
+   [
+    "A",
+    "최다은",
+    "Hana Ambrose",
+    "30대 여성, 크림색 코트, 긴 머리, 검사 서류를 든 바이어",
+    "woman in her 30s, cream coat, long hair, buyer holding inspection papers"
+   ]
+  ],
+  [
+   [
+    "치즈 숙성고",
+    "cheese cellar",
+    "바이어가 장인의 앞치마를 벗겨 던진다",
+    "The buyer yanks off the cheesemaker's apron and throws it",
+    1,
+    "시골 농장이 무슨 납품이야",
+    "A farm kitchen supplying us?",
+    "ws"
+   ],
+   [
+    "치즈 숙성고",
+    "cheese cellar",
+    "바이어가 숙성 선반의 이름표를 바꾼다",
+    "He swaps the labels on the aging shelves",
+    1,
+    "이 치즈는 내 이름으로 나가",
+    "These wheels go out under my name",
+    "ms"
+   ],
+   [
+    "치즈 숙성고",
+    "cheese cellar",
+    "장인이 숙성 일지의 날짜와 온도를 짚는다",
+    "She points to the dates and temperatures in the aging log",
+    0,
+    "이 치즈는 사백 일이야",
+    "This cheese is four hundred days old",
+    "cu"
+   ],
+   [
+    "검사실",
+    "inspection room",
+    "새 바이어가 검사서와 일지를 맞춰 본다",
+    "The new buyer matches the inspection sheet to the log",
+    2,
+    "라벨 날짜가 일지보다 늦어요",
+    "The label date is after the log",
+    "low"
+   ],
+   [
+    "검사실",
+    "inspection room",
+    "바이어가 서류를 바닥에 떨어뜨린다",
+    "He drops the papers",
+    0,
+    "시간은 못 속여. 치즈도 못 속이고",
+    "You can't fake time. Or cheese",
+    "cu"
+   ],
+   [
+    "숙성고",
+    "cheese cellar",
+    "장인이 낯선 라벨이 붙은 치즈를 조명 아래로 든다",
+    "She lifts a wheel with a strange label into the light",
+    0,
+    "이 라벨, 우리 농장 게 아니야",
+    "This label isn't from our farm",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "꽃다발 속 카드",
+  "The Card in the Bouquet",
+  "촌스러운 꽃이라며 무시한 플래너. 영미는 주문서 사본을 챙겨 그 예식장에 다시 섰다.",
+  "A planner sneers at country flowers. Reidun stands in the wedding hall again with the order copy.",
+  [
+   [
+    "H",
+    "오영미",
+    "Reidun Jarvis",
+    "50대 여성, 흙 묻은 앞치마, 짧은 머리, 꽃가위를 든 손, 부드러운 눈",
+    "woman in her 50s, soil-stained apron, short hair, holding flower shears, soft eyes"
+   ],
+   [
+    "V",
+    "김보라",
+    "Nanna Quinnell",
+    "30대 여성, 검은 원피스, 긴 생머리, 태블릿, 얕보는 눈",
+    "woman in her 30s, black dress, long hair, tablet, dismissive eyes"
+   ],
+   [
+    "A",
+    "서지원",
+    "Ravi Vandergrift",
+    "20대 여성, 흰 웨딩드레스, 긴 머리, 꽃다발을 든 신부",
+    "woman in her 20s, white wedding dress, long hair, bride holding a bouquet"
+   ]
+  ],
+  [
+   [
+    "온실",
+    "greenhouse",
+    "플래너가 농장주의 꽃을 발로 차 넘어뜨린다",
+    "The planner kicks over the grower's buckets of flowers",
+    1,
+    "촌스러운 꽃이 무슨 결혼식이야",
+    "Country flowers at a wedding?",
+    "cz"
+   ],
+   [
+    "온실",
+    "greenhouse",
+    "플래너가 주문서에서 농장 이름을 지운다",
+    "She crosses the farm's name off the order",
+    1,
+    "꽃은 내가 고른다",
+    "I choose the flowers",
+    "ms"
+   ],
+   [
+    "온실",
+    "greenhouse",
+    "농장주가 송장과 주문서 사본을 바구니에 넣는다",
+    "The grower tucks the invoice and order copy into her basket",
+    0,
+    "주문은 글로 남아",
+    "Orders stay in writing",
+    "cu"
+   ],
+   [
+    "예식장",
+    "wedding hall",
+    "신부가 주문서 사본과 꽃을 대조한다",
+    "The bride compares the order copy with the bouquets",
+    2,
+    "제가 주문한 꽃이 아니에요",
+    "These aren't the flowers I ordered",
+    "low"
+   ],
+   [
+    "예식장",
+    "wedding hall",
+    "플래너가 꽃다발을 떨어뜨린다",
+    "The planner drops a bouquet",
+    0,
+    "꽃은 이름을 속이지 않아",
+    "Flowers don't fake their names",
+    "rx"
+   ],
+   [
+    "예식장",
+    "wedding hall",
+    "신부가 꽃다발 속 카드를 읽는다",
+    "The bride reads the card tucked in the bouquet",
+    2,
+    "이 이름, 우리 어머니 이름이야",
+    "This is my mother's name",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "일련번호가 다르다",
+  "The Serial Doesn't Match",
+  "낡은 시계점을 무시한 명품 지점장. 복수의 확대경엔 다른 일련번호가 비친다.",
+  "A boutique manager scorns an old watch shop. A different serial shows under Knut's loupe.",
+  [
+   [
+    "H",
+    "장복수",
+    "Knut Oliphant",
+    "70대 남성, 갈색 조끼, 돋보기, 흰 머리, 떨리는 손, 맑은 눈",
+    "man in his 70s, brown vest, loupe, white hair, trembling hands, clear eyes"
+   ],
+   [
+    "V",
+    "문경숙",
+    "Clara Yeldham",
+    "30대 여성, 검은 정장, 높은 구두, 짧은 머리, 차가운 미소",
+    "woman in her 30s, black suit, high heels, short hair, cold smile"
+   ],
+   [
+    "A",
+    "배진우",
+    "Stellan Anselm",
+    "50대 남성, 회색 코트, 안경, 시계 상자를 든 손님",
+    "man in his 50s, gray coat, glasses, customer holding a watch box"
+   ]
+  ],
+  [
+   [
+    "시계 수리점",
+    "watch shop",
+    "지점장이 시계공의 돋보기를 집어 던진다",
+    "The boutique manager flicks the watchmaker's loupe away",
+    1,
+    "손이 떨리는데 뭘 고쳐",
+    "Your hands shake. What can you fix?",
+    "ms"
+   ],
+   [
+    "시계 수리점",
+    "watch shop",
+    "지점장이 접수증을 찢어 버린다",
+    "She tears up the repair slip",
+    1,
+    "이 시계는 우리 매장 거야",
+    "This watch belongs to my store",
+    "ms"
+   ],
+   [
+    "시계 수리점",
+    "watch shop",
+    "시계공이 시계 뒷면의 일련번호를 확대경으로 확인한다",
+    "He checks the serial on the caseback through his loupe",
+    0,
+    "번호가 접수증과 달라",
+    "The number differs from the slip",
+    "cu"
+   ],
+   [
+    "매장",
+    "boutique",
+    "손님이 접수증 사본과 시계를 나란히 놓는다",
+    "The customer sets the slip copy beside the watch",
+    2,
+    "이 시계, 도난 신고된 거예요",
+    "This watch was reported stolen",
+    "low"
+   ],
+   [
+    "매장",
+    "boutique",
+    "지점장이 진열장 손잡이를 놓친다",
+    "She loses her grip on the display case",
+    0,
+    "시계는 시간을 기억해",
+    "A watch remembers every hour",
+    "cu"
+   ],
+   [
+    "시계 수리점",
+    "watch shop",
+    "시계공이 시계 안쪽에서 작은 사진을 꺼낸다",
+    "He draws a small photo from inside the watch",
+    0,
+    "이 사진, 왜 여기 들어 있었지?",
+    "Why was this photo inside?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "나무는 이름을 남긴다",
+  "Wood Keeps the Maker's Name",
+  "무명 목수를 무시한 가구 브랜드 대표. 윤재는 각인을 확인해 두고 그 매장에 다시 섰다.",
+  "A furniture CEO dismisses an unknown carpenter. Jesper stands in the store again with the mark confirmed.",
+  [
+   [
+    "H",
+    "최윤재",
+    "Jesper Isherwood",
+    "40대 남성, 가죽 앞치마, 짧은 머리, 대패를 든 손, 조용한 눈",
+    "man in his 40s, leather apron, short hair, plane in hand, quiet eyes"
+   ],
+   [
+    "V",
+    "송미라",
+    "Torunn Bellamy",
+    "40대 여성, 흰 셔츠, 검은 바지, 짧은 머리, 차가운 눈",
+    "woman in her 40s, white shirt, black trousers, short hair, cold eyes"
+   ],
+   [
+    "A",
+    "안병철",
+    "Kenji Fairbanks",
+    "60대 남성, 회색 니트, 안경, 지팡이, 의뢰서를 든 손님",
+    "man in his 60s, gray knit, glasses, cane, client holding a commission sheet"
+   ]
+  ],
+  [
+   [
+    "목공소",
+    "woodshop",
+    "대표가 목수의 대패를 작업대에서 밀어 떨어뜨린다",
+    "The CEO sweeps the carpenter's plane off the bench",
+    1,
+    "공장 아니면 우리 브랜드 아니야",
+    "No factory, no brand deal",
+    "cz"
+   ],
+   [
+    "목공소",
+    "woodshop",
+    "대표가 완성된 의자에서 목수의 각인을 떼어낸다",
+    "She pries the carpenter's mark off the finished chair",
+    1,
+    "이름은 안 새겨",
+    "No names carved here",
+    "ots"
+   ],
+   [
+    "목공소",
+    "woodshop",
+    "목수가 의뢰서와 나무 밑면의 각인을 맞춰 본다",
+    "He matches the commission sheet to the mark under the seat",
+    0,
+    "각인은 지워지지 않아",
+    "A mark doesn't sand out",
+    "cu"
+   ],
+   [
+    "브랜드 매장",
+    "brand store",
+    "의뢰인이 의뢰서와 의자를 나란히 세운다",
+    "The client lines the commission sheet up with the chair",
+    2,
+    "이건 제가 주문한 가구예요",
+    "This is the piece I commissioned",
+    "low"
+   ],
+   [
+    "브랜드 매장",
+    "brand store",
+    "대표가 의자를 놓칠 뻔한다",
+    "She nearly drops the chair",
+    0,
+    "나무는 내 손을 기억해",
+    "The wood remembers my hands",
+    "cu"
+   ],
+   [
+    "브랜드 매장",
+    "brand store",
+    "의뢰인이 의자 등받이의 옛 흠집을 쓰다듬는다",
+    "The client traces an old scar on the chair's back",
+    2,
+    "이 가구, 우리 옛 집에 있던 거야",
+    "This stood in my old house",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "유리 모서리의 표식",
+  "The Mark on the Glass",
+  "작은 유리 공방을 무시한 인테리어 대표. 세라는 판유리 모서리의 표식을 이미 봐 두었다.",
+  "An interior CEO scorns a small glass studio. Sora has already seen the mark on the pane's edge.",
+  [
+   [
+    "H",
+    "김세라",
+    "Sora Ambrose",
+    "40대 여성, 가죽 장갑, 짧은 머리, 방화복, 단단한 눈",
+    "woman in her 40s, leather gloves, short hair, heat apron, hard eyes"
+   ],
+   [
+    "V",
+    "유정한",
+    "Fabian Fenwick",
+    "40대 남성, 검은 코트, 짧은 머리, 클립보드, 비웃는 입",
+    "man in his 40s, black coat, short hair, clipboard, sneering mouth"
+   ],
+   [
+    "A",
+    "박명숙",
+    "Dagny Underwood",
+    "50대 여성, 회색 정장, 안전모, 검수 서류를 든 감리",
+    "woman in her 50s, gray suit, hard hat, supervisor holding inspection papers"
+   ]
+  ],
+  [
+   [
+    "유리 공방",
+    "glass studio",
+    "대표가 장인의 장갑을 집어 바닥에 던진다",
+    "The CEO throws the glassmaker's gloves to the floor",
+    1,
+    "공방 하나로 무슨 납품이야",
+    "One workshop for a tower lobby?",
+    "ms"
+   ],
+   [
+    "유리 공방",
+    "glass studio",
+    "대표가 견적서를 찢어 가마 옆에 버린다",
+    "He tears the quote and drops it by the furnace",
+    1,
+    "유리는 우리가 정해",
+    "We choose the glass",
+    "ms"
+   ],
+   [
+    "유리 공방",
+    "glass studio",
+    "장인이 판유리 모서리의 표식을 손전등으로 비춘다",
+    "She shines a light on the mark at a pane's edge",
+    0,
+    "이 표식은 내 공방 거야",
+    "That mark is my studio's",
+    "cu"
+   ],
+   [
+    "공사 현장",
+    "site",
+    "감리가 검수서와 유리 표식을 대조한다",
+    "The supervisor matches the inspection sheet to the mark",
+    2,
+    "납품된 유리가 견적과 다릅니다",
+    "The glass doesn't match the quote",
+    "low"
+   ],
+   [
+    "공사 현장",
+    "site",
+    "대표가 헬멧을 바닥에 떨어뜨린다",
+    "He drops his helmet",
+    0,
+    "빛은 속일 수 없어",
+    "Light doesn't lie",
+    "rx"
+   ],
+   [
+    "공사 현장",
+    "site",
+    "감리가 바닥의 유리 조각을 집어 든다",
+    "The supervisor picks up a shard from the floor",
+    2,
+    "이 유리, 예전 성당 거였어요",
+    "This glass came from an old church",
+    "pi"
+   ]
+  ]
+ ]
+]

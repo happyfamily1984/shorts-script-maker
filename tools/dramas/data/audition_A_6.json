@@ -1,0 +1,172 @@
+[
+[
+ "반주자 자리에서 일어난 여자", "The Accompanist Who Stood Up",
+ "소프라노가 반주자의 악보를 밟고 내쫓는다. 그 반주자가 이 오페라를 쓴 작곡가였다.", "A soprano throws the accompanist's score down and cuts her. The accompanist wrote the opera.",
+ [
+  ["H", "유설", "Nora", "30대 여성, 낡은 검정 원피스, 안경, 차분한 눈빛", "woman in her 30s, worn black dress, glasses, calm eyes"],
+  ["V", "하영", "Camille", "20대 여성, 흰 드레스, 긴 생머리, 새침한 표정", "woman in her 20s, white gown, long straight hair, prim face"],
+  ["A", "태강", "Mr. Vale", "50대 남성, 검은 정장, 은발, 단호한 태도", "man in his 50s, black suit, silver hair, firm manner"]
+ ],
+ [
+  ["오페라 극장 무대", "opera house stage", "하영이 유설의 악보를 바닥에 던진다", "Camille throws Nora's score onto the floor", 1, "반주는 반주일 뿐이야. 다시 쳐.", "You're just the pianist. Play it again.", "cz"],
+  ["오페라 극장 무대", "opera house stage", "하영이 발로 악보를 무대 밖으로 민다", "Camille kicks the score off the stage", 1, "이 곡은 내 무대야. 나가.", "This number is my stage. Get out.", "ms"],
+  ["오페라 극장 무대", "opera house stage", "유설이 악보를 주워 표지의 이름을 확인한다", "Nora picks up the score and reads the name on its cover", -1, "", "", "cu"],
+  ["오페라 극장 무대", "opera house stage", "태강이 무대로 올라와 악보를 받아 든다", "Mr. Vale walks onstage and takes the score from her", 2, "이 곡, 선생님이 쓰셨습니까?", "Did you write this opera, ma'am?", "low"],
+  ["오페라 극장 무대", "opera house stage", "심사위원들이 채점표를 뒤집고 하영이 뒷걸음친다", "The judges flip their score sheets as Camille steps back", 0, "제 곡의 반주는 제가 정합니다.", "I choose who plays my music.", "cu"],
+  ["오페라 극장 무대 뒤", "backstage", "직원이 유설에게 초연 지휘 봉투를 건넨다", "A stagehand hands Nora an envelope marked opening night conductor", -1, "", "", "pi"]
+ ]
+],
+[
+ "값싼 대타라던 피아노", "The Cheap Substitute at the Piano",
+ "연출가가 대타 피아니스트를 내보내고 녹음을 튼다. 그녀가 그 공연의 라이선스 조항을 쥐고 있었다.", "A director swaps the substitute pianist for a recording. She holds the clause that keeps his show licensed.",
+ [
+  ["H", "해든", "Mara", "40대 여성, 낡은 셔츠, 묶은 머리, 담담한 눈", "woman in her 40s, worn shirt, tied-back hair, steady eyes"],
+  ["V", "동혁", "Mr. Rusk", "50대 남성, 검은 터틀넥, 헤드셋, 무뚝뚝한 얼굴", "man in his 50s, black turtleneck, headset, blunt face"],
+  ["A", "나린", "Bex", "30대 여성, 무대 감독 조끼, 클립보드, 또렷한 목소리", "woman in her 30s, stage manager vest, clipboard, crisp voice"]
+ ],
+ [
+  ["뮤지컬 극장 피트", "musical theatre pit", "동혁이 해든의 악보를 덮고 마이크 선을 뽑는다", "Mr. Rusk closes Mara's score and pulls her mic cable", 1, "대타는 소리도 내지 마.", "Substitutes don't make a sound.", "ms"],
+  ["뮤지컬 극장 피트", "musical theatre pit", "동혁이 피트를 가리키며 녹음 재생을 지시한다", "Mr. Rusk points into the pit and orders the recording on", 1, "라이브는 돈 낭비야.", "Live players are a waste of money.", "ots"],
+  ["뮤지컬 극장 피트", "musical theatre pit", "해든이 악보 여백의 필기와 계약서 7조를 펼친다", "Mara opens the margin notes and clause seven of the licence", -1, "", "", "cu"],
+  ["뮤지컬 극장 피트", "musical theatre pit", "나린이 작곡가 대리인의 철회서를 들어 보인다", "Bex holds up the composer's withdrawal letter", 2, "라이브 조항 위반입니다. 공연 취소죠.", "You broke the live clause. The show is cancelled.", "low"],
+  ["뮤지컬 극장 피트", "musical theatre pit", "동혁이 대본을 떨어뜨리고 무대가 멈춘다", "Mr. Rusk drops his script as the whole stage freezes", 0, "이제 제가 반주할 차례네요.", "Then it's my turn at the piano.", "cu"],
+  ["뮤지컬 극장 무대", "musical stage", "무대 조명이 피트의 피아노 한 대를 비춘다", "The stage light finds the single piano in the pit", -1, "", "", "pi"]
+ ]
+],
+[
+ "사진만 찍고 가라던 크루", "Just Take Your Photos, Old Man",
+ "크루 리더가 마흔 살 지원자를 사진 찍는 사람으로 부른다. 그 루틴은 원래 그의 동작이었다.", "A crew leader tells a forty-year-old applicant to take photos instead. The routine was his.",
+ [
+  ["H", "무열", "Dov", "40대 남성, 낡은 트레이닝복, 무릎 보호대, 조용한 눈", "man in his 40s, worn tracksuit, knee pads, quiet eyes"],
+  ["V", "채오", "Kip", "20대 남성, 형광 후드, 금 목걸이, 비웃는 입", "man in his 20s, neon hoodie, gold chain, sneering mouth"],
+  ["A", "소이", "Rae", "30대 여성, 스튜디오 관장, 짧은 머리, 무표정", "woman in her 30s, studio owner, short hair, flat expression"]
+ ],
+ [
+  ["댄스 스튜디오", "dance studio", "채오가 무열의 어깨를 툭 밀치고 웃는다", "Kip shoves Dov's shoulder and laughs", 1, "아저씨, 사진만 찍고 가세요.", "Old man, just take your photos and go.", "cz"],
+  ["댄스 스튜디오", "dance studio", "채오가 무열의 동작을 대충 흉내 내고 크루들이 웃는다", "Kip mocks Dov's move badly while the crew laughs", 1, "그 나이엔 무릎부터 나가요.", "At your age, the knees go first.", "ms"],
+  ["댄스 스튜디오", "dance studio", "벽 스크린에 옛 대회 영상이 뜨고 무열의 동작이 나온다", "An old battle video plays on the wall showing Dov's signature move", -1, "", "", "cu"],
+  ["댄스 스튜디오", "dance studio", "소이가 리모컨으로 영상을 멈추고 채오를 본다", "Rae pauses the video with a remote and looks at Kip", 2, "그 루틴, 원래 이 사람 겁니다.", "That routine is his. All of it.", "low"],
+  ["댄스 스튜디오", "dance studio", "채오의 목걸이가 흔들리고 소이가 채점표를 찢는다", "Kip's chain swings as Rae tears up his score sheet", 0, "루틴은 빌려도 이름은 못 빌려요.", "You can borrow a routine, not a name.", "cu"],
+  ["댄스 스튜디오 복도", "studio hallway", "후원사 남자가 명함을 들고 채오 앞에 선다", "A sponsor's man steps in front of Kip holding a business card", 2, "후원은 이름 있는 쪽에 붙습니다.", "Sponsors back the name on the poster.", "pi"]
+ ]
+],
+[
+ "얼음이나 닦던 선수", "The Ice Crew Girl They Mocked",
+ "코치가 링크 정비 담당을 얼음 닦는 사람이라 부른다. 그 기록은 아직 아무도 깨지 못했다.", "A coach calls the rink's ice crew a floor mopper. Her old record still stands on the board.",
+ [
+  ["H", "여름", "Sena", "30대 여성, 회색 정비복, 짧은 단발, 담담한 표정", "woman in her 30s, gray maintenance suit, short bob, calm face"],
+  ["V", "태욱", "Coach Brant", "50대 남성, 검은 코치 점퍼, 체크 목도리, 무심한 얼굴", "man in his 50s, black coach jacket, plaid scarf, cold face"],
+  ["A", "정옥", "Judge Halden", "60대 여성, 심판 정장, 흰 단발, 꼿꼿한 자세", "woman in her 60s, judge's suit, white bob, upright posture"]
+ ],
+ [
+  ["아이스링크", "ice rink", "태욱이 여름의 손에서 얼음 삽을 빼앗아 던진다", "Coach Brant snatches the scraper from Sena and tosses it away", 1, "얼음이나 닦으라고.", "Just scrape the ice.", "ms"],
+  ["아이스링크", "ice rink", "태욱이 자기 제자를 링크로 보내며 여름을 손가락질한다", "Coach Brant sends his skater out and points at Sena", 1, "쟤는 우리 명단에 없어.", "She's not on our list.", "ots"],
+  ["아이스링크", "ice rink", "여름이 게시판의 옛 기록판에서 자기 이름을 짚는다", "Sena touches her own name on the old record board", -1, "", "", "cu"],
+  ["아이스링크", "ice rink", "정옥이 기록판 사진을 들고 링크로 걸어 나온다", "Judge Halden walks onto the ice holding a photo of the board", 2, "이 기록, 아직 안 깨졌어요.", "That record still stands.", "low"],
+  ["아이스링크", "ice rink", "태욱의 제자가 채점표를 내려놓고 링크 밖으로 나간다", "Brant's skater sets down her sheet and leaves the ice", 0, "명단은 기록이 정합니다.", "Records decide the list, not you.", "cu"],
+  ["아이스링크 관중석", "rink stands", "관중석의 남자가 손을 들어 여름을 부른다", "A man in the stands raises a hand to Sena", -1, "", "", "pi"]
+ ]
+],
+[
+ "클럽 출신은 안 된다던 감독", "No Club Coaches Allowed",
+ "감독이 클럽 출신 코치의 신청서를 찢는다. 접수 대장엔 같은 서명이 두 번 찍혀 있었다.", "A head coach tears up a club coach's entry form. The ledger holds the same signature twice.",
+ [
+  ["H", "라온", "Ivy", "30대 여성, 체조 클럽 코치, 트레이닝복, 단단한 눈빛", "woman in her 30s, gym club coach, tracksuit, hard eyes"],
+  ["V", "혜숙", "Coach Doyle", "50대 여성, 대표팀 점퍼, 짧은 파마, 날카로운 눈", "woman in her 50s, national team jacket, short perm, sharp eyes"],
+  ["A", "정후", "Mr. Park", "40대 남성, 협회 정장, 안경, 신중한 태도", "man in his 40s, association suit, glasses, careful manner"]
+ ],
+ [
+  ["체조 경기장", "gymnastics arena", "혜숙이 라온의 출전 신청서를 두 동강 낸다", "Coach Doyle tears Ivy's entry form in half", 1, "클럽 출신은 명단에 없어.", "Club coaches don't make this list.", "cz"],
+  ["체조 경기장", "gymnastics arena", "혜숙이 자기 제자를 도마 앞에 세운다", "Coach Doyle positions her own gymnast at the vault", 1, "여긴 국가대표만 오는 곳이야.", "Only national teamers belong here.", "ms"],
+  ["체조 경기장 접수처", "arena entry desk", "라온이 접수 대장에서 같은 서명 두 개를 찾는다", "Ivy finds the same signature written twice in the entry ledger", -1, "", "", "cu"],
+  ["체조 경기장 접수처", "arena entry desk", "정후가 대장을 넘겨 보며 고개를 젓는다", "Mr. Park flips through the ledger and shakes his head", 2, "이 서명, 두 번 접수됐네요.", "This signature was filed twice.", "ots"],
+  ["체조 경기장", "gymnastics arena", "혜숙의 제자가 도마에서 내려온다", "Coach Doyle's gymnast steps down from the vault", 0, "클럽 출신도 기록은 못 속여요.", "Club coaches can't fake a record either.", "cu"],
+  ["체조 경기장 심판석", "judges' table", "심판석의 여자가 일어나 라온에게 고개를 끄덕인다", "A woman at the judges' table rises and nods to Ivy", -1, "", "", "pi"]
+ ]
+],
+[
+ "동네 아줌마라던 강사", "The Neighbor Lady in Lane Four",
+ "회장 아들이 마흔아홉 살 강사를 관중석으로 보낸다. 명예의 전당엔 그녀의 기록이 걸려 있다.", "The chairman's son sends a forty-nine-year-old coach to the stands. Her record hangs in the hall.",
+ [
+  ["H", "영자", "Greta", "50대 여성, 실내 수영복, 수영모, 반짝이는 눈", "woman in her 50s, indoor swimsuit, swim cap, bright eyes"],
+  ["V", "재율", "Troy", "20대 남성, 팀 후드, 물안경 목에 건, 건방진 턱", "man in his 20s, team hoodie, goggles around neck, cocky chin"],
+  ["A", "소연", "Coach Adler", "40대 여성, 총감독 점퍼, 휘슬, 단호한 목소리", "woman in her 40s, head coach jacket, whistle, firm voice"]
+ ],
+ [
+  ["실내 수영장", "indoor pool", "재율이 영자의 라커 문을 발로 닫는다", "Troy kicks Greta's locker shut", 1, "동네 아줌마는 관중석에나 앉아요.", "Neighborhood ladies sit in the stands.", "ms"],
+  ["실내 수영장", "indoor pool", "재율이 대표 명단을 흔들며 웃는다", "Troy waves the team list and grins", 1, "내 이름 있으면 끝난 거야.", "My name's on it. That's all that matters.", "cz"],
+  ["실내 수영장 로비", "pool lobby", "영자가 벽의 명예의 전당 명판을 손끝으로 짚는다", "Greta traces her own name on the hall of fame plaque", -1, "", "", "cu"],
+  ["실내 수영장", "indoor pool", "소연이 명판 사진과 기록증을 들고 풀사이드로 온다", "Coach Adler reaches the poolside with the plaque photo and record sheet", 2, "이 기록, 아직 클럽 최고예요.", "That's still the club record.", "low"],
+  ["실내 수영장", "indoor pool", "전광판에서 재율의 이름이 지워진다", "Troy's name disappears from the scoreboard", 0, "명단은 이름이 아니라 기록으로 서요.", "Lists stand on records, not names.", "cu"],
+  ["실내 수영장 입구", "pool entrance", "옛 대표팀 감독이 문가에서 손을 흔든다", "A former national coach waves from the doorway", -1, "", "", "pi"]
+ ]
+],
+[
+ "의자나 나르던 테너", "The Tenor Who Moved Chairs",
+ "지휘자가 무대 스태프를 의자나 나르는 사람이라 부른다. 서른 해 전 프로그램 표지엔 그가 서 있다.", "A conductor calls the stagehand a chair pusher. On a thirty-year-old program cover, he is singing.",
+ [
+  ["H", "순철", "Gus", "60대 남성, 회색 작업복, 짧은 흰머리, 온화한 눈", "man in his 60s, gray work clothes, short white hair, gentle eyes"],
+  ["V", "규상", "Mr. Ferris", "40대 남성, 검은 지휘 정장, 나비넥타이, 오만한 턱", "man in his 40s, black conductor suit, bow tie, arrogant chin"],
+  ["A", "민자", "Chair Lee", "50대 여성, 합창단 이사장 정장, 진주 목걸이, 차분한 목소리", "woman in her 50s, choir chair suit, pearl necklace, calm voice"]
+ ],
+ [
+  ["시립 합창단 연습실", "city choir hall", "규상이 순철의 의자를 빼앗아 벽 쪽으로 민다", "Mr. Ferris pulls Gus's chair away and shoves it to the wall", 1, "의자나 나르세요.", "Move the chairs.", "ms"],
+  ["시립 합창단 연습실", "city choir hall", "규상이 단원들 앞에서 순철을 손가락질한다", "Mr. Ferris points at Gus in front of the whole choir", 1, "여기서 노래하는 사람은 따로 있어요.", "The choir sings. You move the chairs.", "ots"],
+  ["시립 합창단 창고", "choir storage room", "순철이 보관함에서 낡은 프로그램 한 장을 꺼낸다", "Gus takes a yellowed concert program from the storage box", -1, "", "", "cu"],
+  ["시립 합창단 연습실", "city choir hall", "민자가 프로그램 표지의 사진을 들여다본다", "Chair Lee leans in to the photo on the program cover", 2, "서른 해 전 독창자, 이분이네요.", "The soloist thirty years ago is you.", "low"],
+  ["시립 합창단 연습실", "city choir hall", "단원들이 악보를 덮고 일어나 규상을 등진다", "The choir closes their scores and turns from Mr. Ferris", 0, "의자는 제가 놓을게요. 지휘는 글쎄요.", "I'll set the chairs. The baton, I won't.", "cu"],
+  ["시립 합창단 연습실", "city choir hall", "민자가 순철에게 지휘봉을 건넨다", "Chair Lee holds the baton out to Gus", -1, "", "", "pi"]
+ ]
+],
+[
+ "구두 고치던 탭댄서", "The Cobbler With the Old Shoes",
+ "안무가가 구두 수선 할머니에게 신발이나 고치라 한다. 그가 새 작품이라 내민 안무는 그녀의 것이었다.", "A choreographer tells an old cobbler to fix shoes. The number he calls new is hers.",
+ [
+  ["H", "금자", "Edie", "60대 여성, 가죽 앞치마, 짧은 흰머리, 맑은 눈", "woman in her 60s, leather apron, short white hair, clear eyes"],
+  ["V", "경호", "Mr. Pike", "40대 남성, 검은 댄스복, 금발 염색, 비뚤어진 입", "man in his 40s, black dance wear, bleached hair, crooked mouth"],
+  ["A", "예강", "Mr. Yoon", "30대 남성, 회색 니트, 안경, 부드러운 말투", "man in his 30s, gray knit, glasses, soft voice"]
+ ],
+ [
+  ["공연 연습실", "dance rehearsal room", "경호가 금자 앞에 낡은 구두를 던진다", "Mr. Pike tosses an old pair of shoes at Edie's feet", 1, "이거나 고치고 가세요.", "Fix these and go home.", "cz"],
+  ["공연 연습실", "dance rehearsal room", "경호가 무용수들에게 새 안무를 보이며 금자를 가리킨다", "Mr. Pike shows his dancers the number and points at Edie", 1, "저 할머니가 뭘 안다고.", "What would she know?", "ms"],
+  ["공연 연습실", "dance rehearsal room", "금자가 구두 안쪽의 각인을 손끝으로 보여 준다", "Edie tilts the shoe to show the date stamped inside", -1, "", "", "cu"],
+  ["공연 연습실", "dance rehearsal room", "예강이 옛 신문 기사와 공연 사진을 펼친다", "Mr. Yoon opens an old newspaper page and a stage photo", 2, "이 안무, 원래 이분 겁니다.", "This choreography was hers.", "low"],
+  ["공연 연습실", "dance rehearsal room", "경호의 신작 계약서가 두 동강 난다", "Mr. Pike's new show contract is torn in half", 0, "내 구두는 내가 고칩니다.", "I fix my own shoes.", "cu"],
+  ["공연 극장 객석", "theatre seats", "무대 조명이 켜지고 객석의 한 사람이 박수 친다", "The stage lights rise as one person in the seats claps", -1, "", "", "pi"]
+ ]
+],
+[
+ "급식실로 돌아가라던 셰프", "The Lunch Lady's Dough",
+ "셰프가 급식 조리사를 주방 밖으로 민다. 심사위원장의 레시피 노트엔 그녀의 배합이 적혀 있었다.", "A chef pushes the school cook out of the kitchen. Her dough ratios sit in the head judge's notebook.",
+ [
+  ["H", "보늬", "Junie", "30대 여성, 흰 위생모, 밀가루 묻은 앞치마, 또렷한 눈", "woman in her 30s, white hairnet, floury apron, clear eyes"],
+  ["V", "명수", "Mr. Coyle", "40대 남성, 검은 셰프 재킷, 짧은 수염, 비웃는 얼굴", "man in his 40s, black chef jacket, short beard, sneering face"],
+  ["A", "정희", "Judge Moss", "50대 여성, 심사위원장 정장, 안경, 꼼꼼한 표정", "woman in her 50s, head judge suit, glasses, meticulous look"]
+ ],
+ [
+  ["요리 대회 주방", "contest kitchen", "명수가 보늬의 반죽 통을 옆으로 밀어 버린다", "Mr. Coyle shoves Junie's dough tub aside", 1, "급식실로 돌아가세요.", "Go back to the school cafeteria.", "ms"],
+  ["요리 대회 주방", "contest kitchen", "명수가 자기 접시를 심사대에 올리며 웃는다", "Mr. Coyle sets his plate on the judges' table and smirks", 1, "이 자리는 프로만 와요.", "This table is for professionals.", "ots"],
+  ["요리 대회 주방", "contest kitchen", "보늬가 레시피 노트에서 자기 배합표를 발견한다", "Junie finds her own dough ratios written in a recipe notebook", -1, "", "", "cu"],
+  ["요리 대회 심사대", "judges' table", "정희가 노트의 필체를 보늬의 종이와 나란히 놓는다", "Judge Moss lays the notebook beside Junie's own sheet", 2, "이 필체, 보늬 씨 거죠?", "This handwriting is yours, isn't it?", "low"],
+  ["요리 대회 심사대", "judges' table", "명수의 접시가 심사대에서 치워진다", "Mr. Coyle's plate is lifted off the judges' table", 0, "제 반죽은 제가 만들죠. 늘 그랬듯이.", "I make my own dough. I always have.", "cu"],
+  ["요리 대회장 입구", "contest hall entrance", "대회장 문이 열리고 투자자가 들어온다", "The contest doors open and an investor walks in", -1, "", "", "pi"]
+ ]
+],
+[
+ "정육점 아저씨가 심사는 무슨", "The Butcher They Took for a Contestant",
+ "셰프가 정육점 주인을 참가자로 몰아세운다. 초청 심사위원 명단 첫 줄이 그의 이름이었다.", "A chef shoves a butcher toward the contestant line. His name is first on the guest judges' list.",
+ [
+  ["H", "봉구", "Otis", "50대 남성, 흰 정육점 앞치마, 짧은 머리, 순한 눈", "man in his 50s, white butcher apron, short hair, mild eyes"],
+  ["V", "수경", "Chef Voss", "40대 여성, 붉은 셰프 재킷, 단발, 날선 눈", "woman in her 40s, red chef jacket, bob cut, sharp eyes"],
+  ["A", "승호", "Danny", "30대 남성, 대회 주최자 정장, 배지, 당황한 얼굴", "man in his 30s, contest organizer suit, badge, flustered face"]
+ ],
+ [
+  ["훈제 대회장", "smoked food hall", "수경이 봉구의 앞치마를 손끝으로 집어 든다", "Chef Voss pinches the corner of Otis's apron", 1, "참가자는 저쪽에서 기다리세요.", "Contestants wait over there.", "ms"],
+  ["훈제 대회장", "smoked food hall", "수경이 봉구의 접시를 옆 탁자로 밀어낸다", "Chef Voss slides Otis's plate onto the side table", 1, "정육점 아저씨가 심사는 무슨.", "A butcher judging this?", "cz"],
+  ["훈제 대회장 입구", "hall entrance", "봉구가 초청 명단 첫 줄의 자기 이름을 짚는다", "Otis points at his own name on the first line of the guest list", -1, "", "", "cu"],
+  ["훈제 대회 심사대", "judges' table", "이든이 심사위원 명패를 봉구 앞에 놓는다", "Mr. Quinn sets the head judge's nameplate in front of Otis", 2, "심사위원장님, 늦어서 죄송합니다.", "Head judge, I'm sorry we're late.", "low"],
+  ["훈제 대회 심사대", "judges' table", "수경의 접시에 규정 위반 딱지가 붙는다", "A violation tag is stuck onto Chef Voss's plate", 0, "온도 기록부터 보죠. 이 접시는 실격입니다.", "Start with the temperature log. This plate is out.", "cu"],
+  ["훈제 대회장", "smoked food hall", "심사대 뒤의 남자가 봉구에게 고개 숙인다", "A man behind the judges' table bows to Otis", -1, "", "", "pi"]
+ ]
+]
+]

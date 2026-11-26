@@ -1,0 +1,912 @@
+[
+ [
+  "현관에서 사인한 계약서",
+  "The Contract Signed at the Door",
+  "무료라던 정수기 설치, 사인 한 번에 오 년 할부가 붙었다. 할머니는 영수증을 다 모아 뒀다.",
+  "A free water purifier becomes a five-year loan, but the grandmother kept every receipt.",
+  [
+   [
+    "H",
+    "연복",
+    "Mrs. Cornish",
+    "70대 여성, 카디건, 손수건, 느긋하지만 또렷한 눈",
+    "woman in her 70s, cardigan, handkerchief, easy but sharp eyes"
+   ],
+   [
+    "V",
+    "도필",
+    "Mr. Pembury",
+    "30대 남성, 회사 유니폼, 계약서 가방, 재빠른 말투",
+    "man in his 30s, company uniform, contract bag, fast talker"
+   ],
+   [
+    "A",
+    "명월",
+    "Ms. Sandhurst",
+    "40대 여성, 지점장 정장, 태블릿, 단단한 눈",
+    "woman in her 40s, branch manager suit, tablet, steady eyes"
+   ]
+  ],
+  [
+   [
+    "아파트 현관",
+    "apartment doorway",
+    "도필이 계약서와 펜을 연복 손에 쥐여 준다",
+    "Pembury pushes a contract and pen into Cornish's hands",
+    1,
+    "여기 사인만 하면 평생 무료예요.",
+    "Just sign here. Free for life.",
+    "cz"
+   ],
+   [
+    "아파트 현관",
+    "apartment doorway",
+    "도필이 계약서를 접어 가방에 넣고 계단을 내려간다",
+    "Pembury folds the contract away and hurries downstairs",
+    1,
+    "확인 전화 오면 잘 샀다고 하세요.",
+    "If they call, say you're happy with it.",
+    "ms"
+   ],
+   [
+    "아파트 거실",
+    "apartment living room",
+    "연복이 봉투에서 오 년치 영수증을 꺼내 탁자에 펼친다",
+    "Cornish spreads five years of receipts across the table",
+    0,
+    "무료라면서, 매달 돈이 나갔어.",
+    "Free, and money still left my account.",
+    "cu"
+   ],
+   [
+    "렌탈 지점 사무실",
+    "rental branch office",
+    "명월이 계약서 사본과 할부 내역을 나란히 놓는다",
+    "Sandhurst sets the contract copy beside the payment history",
+    2,
+    "이 계약, 서명란이 위조됐어요.",
+    "The signature on this contract is forged.",
+    "low"
+   ],
+   [
+    "렌탈 지점 사무실",
+    "rental branch office",
+    "도필이 문가에서 서류를 받아 들고 어깨가 내려간다",
+    "Pembury takes the papers at the door, shoulders dropping",
+    0,
+    "할부는 취소요. 내 돈은 오늘 다 주세요.",
+    "Cancel the loan. Give back every payment today.",
+    "cu"
+   ],
+   [
+    "지점 벽면",
+    "branch office wall",
+    "현관 초인종이 울리고 같은 유니폼 남자가 옆집에 선다",
+    "The doorbell rings and the same uniform stands next door",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "머리카락이 자란다는 거짓말",
+  "The Bottle That Promised Hair",
+  "체험관이 권한 탈모 제품, 성분표에는 머리카락과 무관한 물질만 적혀 있었다.",
+  "A booth sells a hair-growth serum whose ingredient list has nothing to grow hair.",
+  [
+   [
+    "H",
+    "도량",
+    "Mr. Tregaskis",
+    "40대 남성, 회색 셔츠, 모자를 눌러쓴 머리, 무표정한 눈",
+    "man in his 40s, gray shirt, low cap, blank eyes"
+   ],
+   [
+    "V",
+    "도차",
+    "Mr. Pendarvis",
+    "40대 남성, 흰 가운, 반짝이는 앰플, 큰 목소리",
+    "man in his 40s, white coat, shiny ampoule, loud voice"
+   ],
+   [
+    "A",
+    "연미",
+    "Ms. Nancarrow",
+    "30대 여성, 약사 가운, 약전, 단호한 눈",
+    "woman in her 30s, pharmacist coat, reference book, firm eyes"
+   ]
+  ],
+  [
+   [
+    "제품 체험관",
+    "product booth",
+    "도차가 도량의 머리에 앰플을 바르고 사진을 찍는다",
+    "Pendarvis rubs serum on Tregaskis's scalp and takes a photo",
+    1,
+    "한 달이면 이마가 채워져요.",
+    "One month and your hairline fills in.",
+    "cz"
+   ],
+   [
+    "제품 체험관",
+    "product booth",
+    "도차가 전후 사진을 걸고 다른 남자의 사진을 가리킨다",
+    "Pendarvis hangs before-and-after photos of another man",
+    1,
+    "이 사진 보세요. 다른 분이에요.",
+    "Look at this photo. Different man.",
+    "ms"
+   ],
+   [
+    "제품 체험관",
+    "product booth",
+    "도량이 제품 뒷면 성분표를 휴대폰으로 찍는다",
+    "Tregaskis photographs the ingredient list on the bottle",
+    0,
+    "성분이 열 개뿐인데요.",
+    "There are only ten ingredients here.",
+    "cu"
+   ],
+   [
+    "제품 체험관",
+    "product booth",
+    "연미가 약전을 펼쳐 성분 두 개를 손가락으로 짚는다",
+    "Nancarrow opens the pharmacopoeia and points at two entries",
+    2,
+    "이건 향료고, 이건 물이에요.",
+    "This one is fragrance. This one is water.",
+    "low"
+   ],
+   [
+    "제품 체험관",
+    "product booth",
+    "도차가 진열대 앰플을 상자에 담기 시작한다",
+    "Pendarvis starts loading ampoules into a box",
+    0,
+    "판매 중지고, 환불은 오늘부터요.",
+    "Sales stop now. Refunds start today.",
+    "cu"
+   ],
+   [
+    "체험관 창고",
+    "booth storeroom",
+    "계산대 위에 같은 제품의 환불 요청서가 수십 장 쌓여 있다",
+    "Dozens of refund forms for the same product sit on the counter",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "존재하지 않는 학술지",
+  "A Journal That Does Not Exist",
+  "게재료만 받고 논문을 실어 준다던 학술지, 등록 번호는 어디에도 없었다.",
+  "A journal sells publication slots, but its registration number appears in no registry.",
+  [
+   [
+    "H",
+    "도유",
+    "Ms. Tallentire",
+    "30대 여성, 남색 재킷, 논문 파일, 지친 듯 또렷한 눈",
+    "woman in her 30s, navy jacket, paper file, tired sharp eyes"
+   ],
+   [
+    "V",
+    "명필",
+    "Mr. Wedderburn",
+    "50대 남성, 트위드 재킷, 명함 부채, 큰 목소리",
+    "man in his 50s, tweed jacket, fanned business cards, loud voice"
+   ],
+   [
+    "A",
+    "명혜",
+    "Ms. Ravenscroft",
+    "40대 여성, 검은 정장, 학회 대장, 단정한 단발",
+    "woman in her 40s, black suit, society ledger, neat bob"
+   ]
+  ],
+  [
+   [
+    "학술대회장",
+    "conference hall",
+    "명필이 명함을 도유 앞으로 밀어 놓는다",
+    "Wedderburn slides a business card across the table",
+    1,
+    "이번 호에 실어 드릴게요. 게재료만.",
+    "We'll publish it this issue. Just the fee.",
+    "cz"
+   ],
+   [
+    "학술대회장",
+    "conference hall",
+    "명필이 명함 뒤에 계좌번호를 적어 건넨다",
+    "Wedderburn writes an account number on the back of the card",
+    1,
+    "심사는 형식이에요. 걱정 마세요.",
+    "Review is a formality here. Don't worry.",
+    "ms"
+   ],
+   [
+    "학술대회장",
+    "conference hall",
+    "도유가 표지의 등록 번호를 휴대폰에 입력한다",
+    "Tallentire types the journal's registration number into her phone",
+    0,
+    "이 번호, 조회가 안 되는데요.",
+    "This number doesn't come up anywhere.",
+    "cu"
+   ],
+   [
+    "학술대회장",
+    "conference hall",
+    "명혜가 학회 대장을 펼쳐 같은 발행인의 옛 이름을 짚는다",
+    "Ravenscroft opens the society ledger and points to an old name",
+    2,
+    "이 발행인, 세 번 이름을 바꿨어요.",
+    "This publisher changed names three times.",
+    "low"
+   ],
+   [
+    "학술대회장",
+    "conference hall",
+    "명필이 부스 현수막을 내리려다 도유와 눈이 마주친다",
+    "Wedderburn reaches for the banner and meets Tallentire's eyes",
+    0,
+    "게재 취소하고, 제 돈 돌려주세요.",
+    "Pull my paper and refund my money.",
+    "cu"
+   ],
+   [
+    "옆 부스",
+    "next booth",
+    "같은 로고에 다른 이름을 단 학술지 현수막이 걸려 있다",
+    "A banner with the same logo and a different journal name hangs there",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "하루 매출 삼백만 원의 카페",
+  "The Café That Earned Millions a Day",
+  "본사가 보여 준 매출표는 한 지점 것을 세 번 복사한 것, 회계사 출신 창업자가 계산한다.",
+  "Headquarters shows a sales chart copied three times, and the accountant booking the café checks.",
+  [
+   [
+    "H",
+    "도준",
+    "Mr. Blakelaw",
+    "30대 남성, 무채색 니트, 계산기, 조용한 눈",
+    "man in his 30s, plain knit, calculator, quiet eyes"
+   ],
+   [
+    "V",
+    "명성",
+    "Mr. Oakhurst",
+    "40대 남성, 몸에 붙는 정장, 이어피스, 비웃는 입",
+    "man in his 40s, tight suit, earpiece, sneering mouth"
+   ],
+   [
+    "A",
+    "연제",
+    "Ms. Pengelly",
+    "30대 여성, 공정위 배지, 조사 철, 단호한 눈",
+    "woman in her 30s, fair trade badge, case folder, firm eyes"
+   ]
+  ],
+  [
+   [
+    "본사 상담실",
+    "franchise office",
+    "명성이 매출표를 도준 앞에 밀어 놓는다",
+    "Oakhurst slides a sales chart across the desk",
+    1,
+    "이 지점, 하루에 삼백만 원이에요.",
+    "This branch takes in three million a day.",
+    "cz"
+   ],
+   [
+    "본사 상담실",
+    "franchise office",
+    "명성이 가맹비 계약서에 손가락으로 밑줄을 긋는다",
+    "Oakhurst runs a finger under the franchise fee clause",
+    1,
+    "오늘 서명하면 자리 잡아 드려요.",
+    "Sign today and I hold the spot for you.",
+    "ms"
+   ],
+   [
+    "본사 상담실",
+    "franchise office",
+    "도준이 매출표 옆 지점 번호를 계산기로 두드린다",
+    "Blakelaw taps the branch codes into his calculator",
+    0,
+    "이 표, 세 지점이 똑같네요.",
+    "Three branches. Identical numbers.",
+    "cu"
+   ],
+   [
+    "본사 상담실",
+    "franchise office",
+    "연제가 신고 자료를 펼쳐 실제 매출 수치를 가리킨다",
+    "Pengelly opens the filed records and points to real sales",
+    2,
+    "신고된 매출은 이 표의 삼분의 일이에요.",
+    "Filed sales are a third of that chart.",
+    "low"
+   ],
+   [
+    "본사 상담실",
+    "franchise office",
+    "명성이 계약서를 도로 가져가며 자리에서 일어난다",
+    "Oakhurst pulls the contract back and rises from his seat",
+    0,
+    "가맹금 반환, 계약은 오늘로 끝이에요.",
+    "Refund the fee. This deal ends today.",
+    "cu"
+   ],
+   [
+    "상담실 유리벽 너머",
+    "beyond the glass wall",
+    "상담실 문이 열리고 다음 창업자가 같은 매출표를 들고 온다",
+    "The next owner walks in holding the same chart",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "숲속 캠핑장은 없었다",
+  "The Campsite That Never Existed",
+  "예약금만 받고 사라진 캠핑장 사이트, 도착한 자리엔 다른 주인의 텐트만 있었다.",
+  "An online campsite takes deposits and vanishes, leaving another owner's tents on the land.",
+  [
+   [
+    "H",
+    "별하",
+    "Ms. Sharrock",
+    "30대 여성, 등산 재킷, 텐트 가방, 단단한 눈",
+    "woman in her 30s, hiking jacket, tent bag, steady eyes"
+   ],
+   [
+    "V",
+    "도채",
+    "Mr. Stanmore",
+    "20대 후반 남성, 후드티, 노트북 가방, 들뜬 말투",
+    "man in his late 20s, hoodie, laptop bag, hyped speech"
+   ],
+   [
+    "A",
+    "명도",
+    "Mr. Wainfleet",
+    "50대 남성, 작업 모자, 장작을 든 손, 순박한 얼굴",
+    "man in his 50s, work cap, holding firewood, plain face"
+   ]
+  ],
+  [
+   [
+    "캠핑장 입구",
+    "campsite entrance",
+    "도채가 노트북으로 예약금 입금을 확인하며 웃는다",
+    "Stanmore checks a deposit on his laptop and grins",
+    1,
+    "예약 확정이요. 취소는 안 돼요.",
+    "Booking confirmed. No cancellations.",
+    "cz"
+   ],
+   [
+    "캠핑장 입구",
+    "campsite entrance",
+    "휴대폰 스피커에서 도채의 웃음소리가 새어 나온다",
+    "Stanmore's laugh spills from the phone speaker",
+    1,
+    "자리 없으면 알아서 해요. 환불은 없어요.",
+    "No spot? Deal with it. No refunds.",
+    "ms"
+   ],
+   [
+    "캠핑장 입구",
+    "campsite entrance",
+    "별하가 사이트 하단의 사업자 번호를 캡처한다",
+    "Sharrock screenshots the business number at the page bottom",
+    0,
+    "번호가 열한 자리가 아니네.",
+    "That number isn't eleven digits.",
+    "cu"
+   ],
+   [
+    "캠핑장 안쪽",
+    "inside the campsite",
+    "명도가 자기 텐트 앞에서 예약 명단을 펼쳐 보여 준다",
+    "Wainfleet shows a booking list from his own tent",
+    2,
+    "여긴 제 땅이에요. 예약은 안 받아요.",
+    "This is my land. I take no bookings.",
+    "low"
+   ],
+   [
+    "캠핑장 입구",
+    "campsite entrance",
+    "도채가 노트북을 덮고 사이트를 닫으려다 화면이 잠긴다",
+    "Stanmore shuts the laptop as the site page locks him out",
+    0,
+    "예약금 전부 환불, 사이트는 오늘 닫아요.",
+    "Refund every deposit. Close the site today.",
+    "cu"
+   ],
+   [
+    "캠핑장 주차장",
+    "campsite parking",
+    "별하의 휴대폰에 같은 사이트 이름의 다른 지역 링크가 뜬다",
+    "The same site name loads for another region on her phone",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "오백 년 된 청자",
+  "A Five-Hundred-Year-Old Fake",
+  "명품 청자라던 골동품상, 감정 장비 앞에서 유약의 나이가 드러난다.",
+  "An antique dealer swears a celadon vase is centuries old, until a lab reads its glaze.",
+  [
+   [
+    "H",
+    "명록",
+    "Mr. Wycherley",
+    "60대 남성, 무채색 점퍼, 돋보기, 조용하고 깊은 눈",
+    "man in his 60s, plain jacket, loupe, quiet deep eyes"
+   ],
+   [
+    "V",
+    "도산",
+    "Mr. Fothergill",
+    "50대 남성, 벨벳 조끼, 굵은 반지, 능청스러운 웃음",
+    "man in his 50s, velvet vest, thick rings, sly smile"
+   ],
+   [
+    "A",
+    "연혜",
+    "Ms. Gainsborough",
+    "40대 여성, 검은 정장, 감정 장비 철, 단호한 눈",
+    "woman in her 40s, black suit, appraisal gear case, firm eyes"
+   ]
+  ],
+  [
+   [
+    "골동품 상점",
+    "antique shop",
+    "도산이 청자를 명록 앞에 조심스럽게 내려놓는다",
+    "Fothergill sets the celadon vase down with care",
+    1,
+    "오백 년 전 물건이에요. 이 가격뿐.",
+    "Five hundred years old. One price only.",
+    "cz"
+   ],
+   [
+    "골동품 상점",
+    "antique shop",
+    "도산이 감정서를 펼쳐 도장을 손가락으로 누른다",
+    "Fothergill opens the certificate and presses its seal",
+    1,
+    "감정서도 있어요. 의심할 거 없죠.",
+    "Certificate included. Nothing to doubt.",
+    "ms"
+   ],
+   [
+    "골동품 상점",
+    "antique shop",
+    "명록이 청자 굽을 뒤집어 유약의 갈라진 결을 살핀다",
+    "Wycherley turns the vase over and studies the glaze lines",
+    0,
+    "이 결, 너무 고르네요.",
+    "These cracks are far too even.",
+    "cu"
+   ],
+   [
+    "골동품 상점",
+    "antique shop",
+    "연혜가 분석 그래프를 펼쳐 유약 연대를 가리킨다",
+    "Gainsborough opens a lab graph and points at the glaze date",
+    2,
+    "유약은 오 년 됐습니다.",
+    "The glaze is five years old.",
+    "low"
+   ],
+   [
+    "골동품 상점",
+    "antique shop",
+    "도산이 청자를 감싼 천을 내려놓고 명록이 감정서를 돌려준다",
+    "Fothergill drops the cloth as Wycherley returns the certificate",
+    0,
+    "매매 취소고, 이 감정서는 신고할게요.",
+    "The sale is void. I'm reporting this certificate.",
+    "cu"
+   ],
+   [
+    "상점 안쪽 선반",
+    "back shelf of the shop",
+    "창고 문이 열리고 같은 청자가 상자째 쌓여 있다",
+    "A storeroom door opens on crates of identical vases",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "한 달이면 벗겨지는 코팅",
+  "The Coating That Lasted a Month",
+  "십 년 간다던 차량 코팅, 도장 연구원의 두께 측정기에 한 달 만에 벗겨진 게 드러난다.",
+  "A ten-year coating peels in a month, and a paint engineer's gauge shows what was applied.",
+  [
+   [
+    "H",
+    "도표",
+    "Mr. Havelock",
+    "30대 남성, 카키 작업 점퍼, 측정기, 무심한 눈",
+    "man in his 30s, khaki work jacket, gauge, deadpan eyes"
+   ],
+   [
+    "V",
+    "명세",
+    "Mr. Isherwood",
+    "40대 남성, 업체 점퍼, 시험 성적서, 큰 웃음",
+    "man in his 40s, shop jacket, test report, big laugh"
+   ],
+   [
+    "A",
+    "연보",
+    "Ms. Jellicoe",
+    "30대 여성, 소비자원 배지, 시험 기록, 단호한 눈",
+    "woman in her 30s, consumer agency badge, test log, firm eyes"
+   ]
+  ],
+  [
+   [
+    "코팅 업체",
+    "coating shop",
+    "명세가 시험 성적서를 도표 앞으로 밀어 놓는다",
+    "Isherwood slides a test report across the counter",
+    1,
+    "이 제품, 십 년 보증이에요.",
+    "This product is guaranteed ten years.",
+    "cz"
+   ],
+   [
+    "코팅 업체",
+    "coating shop",
+    "명세가 차 키를 받아 작업장으로 걸어간다",
+    "Isherwood takes the keys and walks into the workshop",
+    1,
+    "값은 지금 결제하세요. 예약금이에요.",
+    "Pay now. That's the deposit.",
+    "ms"
+   ],
+   [
+    "아파트 주차장",
+    "apartment parking lot",
+    "도표가 한 달 뒤 보닛에 물방울을 떨어뜨려 번짐을 본다",
+    "A month later Havelock drips water on the hood and watches it spread",
+    0,
+    "코팅이 아니라 왁스네요.",
+    "That's wax, not coating.",
+    "cu"
+   ],
+   [
+    "소비자원 시험실",
+    "consumer test lab",
+    "연보가 두께 측정기를 대고 수치를 성적서와 나란히 적는다",
+    "Jellicoe measures the layer and writes it beside the report",
+    2,
+    "성적서 수치의 십 분의 일이에요.",
+    "A tenth of the claimed thickness.",
+    "low"
+   ],
+   [
+    "코팅 업체",
+    "coating shop",
+    "명세가 진열장의 코팅병을 뒤로 감춘다",
+    "Isherwood slides the coating bottles behind the display",
+    0,
+    "전액 환불, 제품은 회수하세요.",
+    "Full refund. Recall the product.",
+    "cu"
+   ],
+   [
+    "업체 창고",
+    "shop storeroom",
+    "작업장 벽에 같은 성적서가 다른 이름으로 붙어 있다",
+    "The same test report hangs under another brand name",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "열 번 켜진 새 노트북",
+  "A New Laptop, Switched On Four Hundred Times",
+  "새 제품이라던 중고 노트북, 사용 기록 사백 시간이 매장 계산대에서 드러난다.",
+  "A shop sells a used laptop as new, but its usage log shows four hundred hours.",
+  [
+   [
+    "H",
+    "도이",
+    "Mr. Kinsella",
+    "20대 남성, 데님 재킷, 이어폰, 무심한 눈",
+    "man in his 20s, denim jacket, earphones, blank stare"
+   ],
+   [
+    "V",
+    "명상",
+    "Mr. Loxley",
+    "40대 남성, 무늬 셔츠, 손목시계, 큰 웃음",
+    "man in his 40s, patterned shirt, wristwatch, big laugh"
+   ],
+   [
+    "A",
+    "서슬",
+    "Mr. Mortlake",
+    "30대 남성, 서비스센터 유니폼, 태블릿, 반듯한 자세",
+    "man in his 30s, service center uniform, tablet, upright posture"
+   ]
+  ],
+  [
+   [
+    "중고 매장",
+    "laptop shop",
+    "명상이 노트북 뚜껑을 닦으며 도이에게 내민다",
+    "Loxley wipes the laptop lid and holds it out",
+    1,
+    "미개봉 새 상품이에요. 한 대뿐.",
+    "Sealed and new. The last one.",
+    "cz"
+   ],
+   [
+    "중고 매장",
+    "laptop shop",
+    "명상이 새로 붙인 박스 테이프 자국을 손으로 가린다",
+    "Loxley covers the fresh tape marks with one hand",
+    1,
+    "개봉은 확인용으로 한 거예요.",
+    "I only opened it to check it.",
+    "ms"
+   ],
+   [
+    "중고 매장",
+    "laptop shop",
+    "도이가 전원을 켜고 사용 시간 화면을 연다",
+    "Kinsella powers it on and opens the usage hours screen",
+    0,
+    "사용 시간이 사백 시간이에요.",
+    "It says four hundred hours.",
+    "cu"
+   ],
+   [
+    "서비스센터",
+    "service center",
+    "서슬이 시리얼을 조회해 보증 시작일과 수리 이력을 보여 준다",
+    "Mortlake looks up the serial and shows a repair history",
+    2,
+    "이 기기, 두 번 수리됐어요.",
+    "This unit was repaired twice.",
+    "low"
+   ],
+   [
+    "중고 매장",
+    "laptop shop",
+    "명상이 박스를 도로 가져가려다 도이가 손을 얹는다",
+    "Loxley reaches for the box as Kinsella puts a hand on it",
+    0,
+    "새 제품 값은 못 받아요. 환불해요.",
+    "You don't get new prices. Refund it.",
+    "cu"
+   ],
+   [
+    "매장 뒷문",
+    "shop back door",
+    "트럭 운전수가 매장 안으로 납품 명단을 들고 들어온다",
+    "The truck driver walks in holding a delivery list",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "자격증 없는 간병인",
+  "The Caregiver With No License",
+  "수수료를 받고 보낸 간병인은 교육을 받은 적이 없었다. 아들의 조회 한 번이 업체를 끝낸다.",
+  "An agency charges a fee for an untrained caregiver, until one registry lookup ends it.",
+  [
+   [
+    "H",
+    "도익",
+    "Mr. Netherby",
+    "40대 남성, 무채색 셔츠, 서류 봉투, 지친 눈",
+    "man in his 40s, plain shirt, document envelope, tired eyes"
+   ],
+   [
+    "V",
+    "명란",
+    "Ms. Pargiter",
+    "50대 여성, 실크 블라우스, 명단 철, 얕보는 미소",
+    "woman in her 50s, silk blouse, roster folder, dismissive smile"
+   ],
+   [
+    "A",
+    "연솔",
+    "Ms. Quennell",
+    "30대 여성, 복지 담당 배지, 조회 화면, 단호한 눈",
+    "woman in her 30s, welfare badge, lookup screen, firm eyes"
+   ]
+  ],
+  [
+   [
+    "간병 매칭 사무실",
+    "care agency office",
+    "명란이 도익의 수수료를 세며 간병인 명단을 민다",
+    "Pargiter counts his fee and pushes a caregiver roster over",
+    1,
+    "이분 경력 이십 년이에요. 믿으세요.",
+    "Twenty years of experience. Trust me.",
+    "cz"
+   ],
+   [
+    "간병 매칭 사무실",
+    "care agency office",
+    "명란이 간병인 명찰을 급히 바꿔 달고 나간다",
+    "Pargiter swaps a caregiver's name tag and hurries out",
+    1,
+    "교대는 우리가 알아서 해요.",
+    "We handle the shifts ourselves.",
+    "ms"
+   ],
+   [
+    "병원 복도",
+    "hospital corridor",
+    "도익이 간병인의 자격증 사진을 찍어 조회한다",
+    "Netherby photographs the caregiver's license and looks it up",
+    0,
+    "이 번호, 등록이 안 돼요.",
+    "This number isn't registered.",
+    "cu"
+   ],
+   [
+    "복지 센터",
+    "welfare center",
+    "연솔이 교육 이수 명단을 펼쳐 같은 이름이 없음을 보여 준다",
+    "Quennell shows a training list without that name on it",
+    2,
+    "교육 기록이 아예 없습니다.",
+    "There's no training record at all.",
+    "low"
+   ],
+   [
+    "간병 매칭 사무실",
+    "care agency office",
+    "명란이 서류를 정리하며 한 걸음 물러난다",
+    "Pargiter tidies the papers and takes a step back",
+    0,
+    "등록 취소, 수수료는 전부 돌려받을게요.",
+    "Your license is gone. I want every fee back.",
+    "cu"
+   ],
+   [
+    "사무실 벽면",
+    "office wall",
+    "사무실 문이 열리고 같은 명찰을 단 간병인이 들어온다",
+    "A caregiver with the same name tag walks in",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "맡긴 짐이 사라진 창고",
+  "The Storage Unit That Emptied Itself",
+  "유학 앞두고 짐을 맡긴 창고, 돌아오니 칸은 비었고 장부엔 위조된 반출 서명이 있었다.",
+  "She stores her things before moving abroad and returns to an empty unit and a forged signature.",
+  [
+   [
+    "H",
+    "연영",
+    "Ms. Rutherglen",
+    "30대 여성, 여행 가방, 얇은 코트, 단호한 눈",
+    "woman in her 30s, travel bag, light coat, resolute eyes"
+   ],
+   [
+    "V",
+    "도항",
+    "Mr. Satterthwaite",
+    "40대 남성, 창고 작업복, 열쇠 고리, 퉁명스러운 입",
+    "man in his 40s, warehouse overalls, key ring, blunt mouth"
+   ],
+   [
+    "A",
+    "명지",
+    "Mr. Underhill",
+    "40대 남성, 본사 감사 정장, 장부, 반듯한 자세",
+    "man in his 40s, head office audit suit, ledger, upright posture"
+   ]
+  ],
+  [
+   [
+    "보관창고",
+    "storage warehouse",
+    "도항이 계약서에 도장을 찍으며 연영의 짐을 가리킨다",
+    "Satterthwaite stamps the contract and points at her boxes",
+    1,
+    "여기 있으면 아무도 안 건드려요.",
+    "Nothing here ever gets touched.",
+    "cz"
+   ],
+   [
+    "보관창고",
+    "storage warehouse",
+    "도항이 철문을 닫고 자물쇠를 두 번 돌린다",
+    "Satterthwaite shuts the steel door and turns the lock twice",
+    1,
+    "열쇠는 저만 갖습니다.",
+    "I keep the only key.",
+    "ms"
+   ],
+   [
+    "보관창고",
+    "storage warehouse",
+    "연영이 빈 칸을 열고 바닥의 테이프 자국만 본다",
+    "Rutherglen opens an empty unit and finds only tape marks",
+    0,
+    "제 짐이 다 어디 갔죠?",
+    "Where did all my boxes go?",
+    "cu"
+   ],
+   [
+    "보관창고 사무실",
+    "warehouse office",
+    "명지가 입출고 장부를 펼쳐 다른 필체의 서명을 가리킨다",
+    "Underhill opens the log and points at a forged signature",
+    2,
+    "반출 서명이 위조됐습니다.",
+    "The sign-out was forged.",
+    "low"
+   ],
+   [
+    "보관창고",
+    "storage warehouse",
+    "도항이 장부를 찢으려다 손을 멈춘다",
+    "Satterthwaite starts to tear the ledger and stops",
+    0,
+    "짐 값 전부 배상, 창고는 오늘 폐쇄예요.",
+    "Pay for every box. This place closes today.",
+    "cu"
+   ],
+   [
+    "창고 안쪽",
+    "deep inside the warehouse",
+    "다른 고객 물건에 중고 판매장 스티커가 붙어 있다",
+    "Another customer's box carries a secondhand shop sticker",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ]
+]

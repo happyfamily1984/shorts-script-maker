@@ -1,0 +1,192 @@
+[
+  [
+    "수술실 문턱을 넘은 침대지기",
+    "The Porter Who Scrubbed In",
+    "집도의 손이 떨린 수술실. 침대를 밀던 남자가 장갑을 꼈다.",
+    "The lead surgeon's hands shake mid-operation. The porter who pushes beds puts on gloves.",
+    [
+      ["H", "표만식", "Vernon Pike", "60대 남성, 회색 이송 유니폼, 짧은 흰머리, 깊게 패인 눈가", "man in his 60s, gray transport uniform, short white hair, deeply lined eyes"],
+      ["V", "권승민", "Desmond Ashby", "30대 남성, 초록 수술복, 번들거리는 머리, 비웃는 입꼬리", "man in his 30s, green scrubs, slicked-back hair, sneering mouth"],
+      ["A", "나정란", "Nadia Corliss", "40대 여성, 분홍 수간호사복, 올림머리, 단호한 눈매", "woman in her 40s, pink head-nurse uniform, hair in a bun, stern eyes"]
+    ],
+    [
+      ["수술실 앞 복도", "operating room corridor", "권승민이 침대를 미는 표만식을 팔로 막아 세운다", "Desmond blocks the porter with one arm as he pushes the bed", 1, "수술실엔 침대만 밀어 넣고 나가.", "Drop the bed and get out.", "cz"],
+      ["수술실 앞 복도", "operating room corridor", "권승민이 표만식의 이송 장갑을 바닥에 던진다", "Desmond throws Vernon's transport gloves onto the floor", 1, "손 씻는 법도 모르는 사람이지.", "You don't even know how to wash up.", "ms"],
+      ["수술실 문가", "operating room doorway", "표만식이 주머니의 낡은 확대경을 창가 빛에 비춘다", "Vernon holds an old loupe up to the window light", -1, "", "", "cu"],
+      ["수술실", "operating room", "나정란이 표만식의 확대경을 보고 숨을 삼킨다", "Nadia stares at the loupe in Vernon's hand and catches her breath", 2, "그 확대경, 논문 사진 그대로네요.", "That loupe... it's the one from your paper.", "low"],
+      ["수술실", "operating room", "권승민이 수술대 옆에서 기구 쟁반을 든다", "Desmond stands at the table holding the instrument tray", 0, "장갑은 제가 끼죠. 쟁반은 들고 있어요.", "I'll take the gloves. You hold the tray.", "cu"],
+      ["수술실 앞 복도", "operating room corridor", "원장이 차트를 들고 다급히 문을 열고 들어온다", "The director rushes in through the door holding a chart", 2, "이 환자 보호자, 병원 세운 분이에요.", "This patient's next of kin founded this hospital.", "pi"]
+    ]
+  ],
+  [
+    "명품관 앞 구두닦이",
+    "The Shoeshine Man Who Fixed a Tourbillon",
+    "명품 시계가 멈춘 매장. 복도 구두닦이가 돋보기를 꺼냈다.",
+    "A tourbillon stops in a luxury boutique. The shoeshine man in the corridor takes out his loupe.",
+    [
+      ["H", "백영달", "Gideon Pryor", "70대 남성, 갈색 앞치마, 흰 머리, 주름진 손, 담담한 눈", "man in his 70s, brown apron, white hair, wrinkled hands, calm eyes"],
+      ["V", "구승현", "Hugo Marsden", "40대 남성, 검은 양복, 짧은 머리, 비뚤어진 미소", "man in his 40s, black suit, short hair, crooked smile"],
+      ["A", "위보람", "Corinne Quill", "40대 여성, 회색 재킷, 둥근 안경, 흰 장갑, 놀란 눈", "woman in her 40s, gray jacket, round glasses, white gloves, startled eyes"]
+    ],
+    [
+      ["명품관 복도", "luxury arcade corridor", "구승현이 구두닦이 의자를 발로 밀어 옆으로 치운다", "Hugo kicks the shoeshine chair out of the way", 1, "이 층에서 닦는 소리 좀 내지 마요.", "Stop that brushing noise on this floor.", "cz"],
+      ["명품관 복도", "luxury arcade corridor", "구승현이 백영달의 솔을 집어 쓰레기통에 던진다", "Hugo tosses the old man's brush into a bin", 1, "여긴 백만 원짜리 시계 파는 곳이야.", "We sell watches worth a fortune here.", "ms"],
+      ["매장 안", "inside the boutique", "백영달이 유리 진열대 너머로 멈춘 시계를 들여다본다", "The old man peers through the glass at the stopped watch", -1, "", "", "cu"],
+      ["매장 안", "inside the boutique", "위보람이 열린 시계 뒤판의 각인을 돋보기로 확인한다", "Corinne checks an engraving on the opened caseback with a loupe", 2, "이 서명, 40년 전 그 장인이에요.", "That's the master's signature from forty years back.", "low"],
+      ["명품관 복도", "luxury arcade corridor", "구승현이 굳은 얼굴로 구두닦이 의자에 주저앉는다", "Hugo sinks into the shoeshine chair, face frozen", 0, "이제 그 자리, 당신이 닦으세요.", "That chair is yours now. Start brushing.", "cu"],
+      ["명품관 복도", "luxury arcade corridor", "백영달이 건넨 시계에서 접힌 종이 한 장이 떨어진다", "A folded slip of paper falls from the watch he hands over", 2, "각인 옆에 이름이 하나 더 있어요.", "There is one more name beside that engraving.", "pi"]
+    ]
+  ],
+  [
+    "결항을 결정한 청소부",
+    "The Cleaner Who Grounded the Fleet",
+    "출발 10분 전 기체에서 균열이 발견됐다. 청소부가 손전등을 들었다.",
+    "A crack is found ten minutes before departure. The cabin cleaner raises her flashlight.",
+    [
+      ["H", "천옥란", "Lena Marsh", "50대 여성, 청록 작업복, 묶은 머리, 각진 턱, 무뚝뚝한 눈", "woman in her 50s, teal work suit, tied-back hair, square jaw, blunt eyes"],
+      ["V", "차승현", "Perry Dunne", "40대 여성, 회색 정장, 짧은 단발, 찬 눈빛", "woman in her 40s, gray suit, short bob, cold eyes"],
+      ["A", "하영달", "Rufus Haines", "50대 남성, 흰 셔츠에 사원증, 안경, 놀란 표정", "man in his 50s, white shirt with a badge, glasses, stunned face"]
+    ],
+    [
+      ["격납고", "aircraft hangar", "차승현이 기체를 닦던 천옥란의 손전등을 빼앗는다", "Perry snatches the flashlight from the cleaner wiping the fuselage", 1, "청소부가 기체를 판정해요?", "A cleaner inspecting an aircraft?", "cz"],
+      ["격납고", "aircraft hangar", "차승현이 손전등을 바닥에 던지고 정비사들이 뒤에서 웃는다", "Perry flings the flashlight down as the mechanics laugh behind her", 1, "출발은 내가 결정해. 나가요.", "I decide the departure. Get out.", "ms"],
+      ["격납고", "aircraft hangar", "천옥란이 날개 이음새에 빛을 비스듬히 대고 눈을 좁힌다", "Cheon tilts the beam along a wing seam and narrows her eyes", -1, "", "", "cu"],
+      ["격납고", "aircraft hangar", "하영달이 서류를 들고 천옥란의 이름표를 확인한다", "Rufus checks her name tag against the papers in his hand", 2, "이 사람, 점검 교범 집필자예요.", "She wrote the inspection manual we use.", "low"],
+      ["격납고", "aircraft hangar", "차승현의 서명란이 서류에서 찢겨 나간다", "The signature page tears away from Perry's paperwork", 0, "결항은 제가 결정하죠. 서명은 취소예요.", "I ground the flight. Your signature is void.", "cu"],
+      ["격납고", "aircraft hangar", "하영달이 같은 균열이 찍힌 사진 세 장을 늘어놓는다", "Rufus lays out three photos showing the same crack", 2, "세 대 더 있어요. 같은 사람이 서명했어요.", "Three more planes. The same hand signed them off.", "pi"]
+    ]
+  ],
+  [
+    "접시 나르는 남자의 눈",
+    "The Porter Who Read Their Lips",
+    "통역이 말을 바꾼 만찬장. 접시를 나르던 남자가 손을 들었다.",
+    "An interpreter twists the words at a state dinner. The deaf porter carrying plates raises his hand.",
+    [
+      ["H", "서학수", "Casper Dutton", "40대 남성, 흰 조리복, 짧은 검은 머리, 보청기, 조용한 눈", "man in his 40s, white kitchen coat, short black hair, hearing aid, quiet eyes"],
+      ["V", "문예원", "Rosalind Vane", "30대 여성, 남색 정장, 긴 생머리, 얇은 미소", "woman in her 30s, navy suit, long straight hair, thin smile"],
+      ["A", "오세아", "Estelle Ridley", "50대 여성, 금빛 드레스, 높이 올린 머리, 위엄 있는 눈", "woman in her 50s, gold gown, hair swept up, commanding eyes"]
+    ],
+    [
+      ["대사관 연회장", "embassy banquet hall", "문예원이 쟁반을 든 서학수를 어깨로 밀어 벽 쪽으로 보낸다", "Rosalind shoulders the tray carrier toward the wall", 1, "귀머거리는 테이블에 접시만 올려요.", "The deaf one only sets plates on the table.", "cz"],
+      ["대사관 연회장", "embassy banquet hall", "문예원이 옆 사람에게 고개를 돌려 속삭인다", "Rosalind turns to the guest beside her and whispers", 1, "말 못 들으니까 편하네요.", "At least he can't hear a word.", "ms"],
+      ["대사관 연회장", "embassy banquet hall", "서학수가 쟁반을 든 채 문예원의 입 모양을 뚝바로 응시한다", "Holding the tray, Seo stares straight at Rosalind's lips", -1, "", "", "cu"],
+      ["대사관 연회장", "embassy banquet hall", "오세아가 서학수에게 손짓으로 인사를 하고 자리에서 말한다", "Estelle signs to him and speaks from her seat", 2, "이분은 정상회담을 통역한 분이에요.", "This is the man who interpreted the peace summit.", "low"],
+      ["대사관 연회장", "embassy banquet hall", "문예원의 통역 수첩이 경비원 손에 넘어간다", "A guard takes the interpreter's notebook from her hands", 0, "당신이 바꾼 말, 제가 다 읽었습니다.", "I read every word you changed.", "cu"],
+      ["대사관 연회장", "embassy banquet hall", "문예원이 끌려 나가며 오세아 쪽을 돌아본다", "Rosalind looks back at Estelle as she is led out", 1, "윗사람이 시킨 대로 했어요.", "I only said what I was told to say.", "pi"]
+    ]
+  ],
+  [
+    "종소리를 되살린 노인",
+    "The Old Man Who Brought the Bell Back",
+    "개막 전 종에 금이 갔다. 종을 닦던 노인이 망치를 들었다.",
+    "The great bell cracks before the reopening. The old man who polishes it picks up a hammer.",
+    [
+      ["H", "마정복", "Ansel Groat", "60대 남성, 베이지 작업복, 흰 머리, 두꺼운 손, 조용한 눈", "man in his 60s, beige work clothes, white hair, thick hands, quiet eyes"],
+      ["V", "표숙란", "Wanda Teague", "50대 여성, 검은 코트, 짧은 머리, 서린 눈매", "woman in her 50s, black coat, short hair, sharp eyes"],
+      ["A", "조삼수", "Basil Thorpe", "70대 남성, 회색 정장, 지팡이, 흰 수염", "man in his 70s, gray suit, a cane, white beard"]
+    ],
+    [
+      ["종루", "bell tower", "표숙란이 종을 닦던 마정복을 팔로 끌어 계단 쪽으로 민다", "Wanda pulls the polisher by the arm toward the stairs", 1, "종 닦는 사람이 종을 논해요?", "A bell polisher judging a bell?", "cz"],
+      ["종루", "bell tower", "표숙란이 마정복의 걸레를 아래층으로 던진다", "Wanda throws his rag down the stairwell", 1, "여긴 문화재, 당신은 손이 아니야.", "This is a heritage site. You are not part of it.", "ms"],
+      ["종루", "bell tower", "마정복이 작은 망치로 종을 톡톡 두드리고 귀를 기울인다", "The old man taps the bell with a small hammer and listens", -1, "", "", "cu"],
+      ["종루", "bell tower", "조삼수가 종 안쪽의 주조 표시를 손끝으로 짚는다", "Jo touches the casting mark inside the bell", 2, "이 종, 이 사람 아버지가 부었어요.", "His father cast this bell.", "low"],
+      ["종루", "bell tower", "표숙란이 계약서를 두 손으로 붙잡은 채 굳어 버린다", "Wanda freezes, gripping the contract with both hands", 0, "계약서에 이름 다시 쓰세요. 내 이름으로.", "Rewrite the contract. Put my name on it.", "cu"],
+      ["종루", "bell tower", "조삼수가 종 안쪽을 가리키며 뒤로 물러난다", "Jo steps back and points deep inside the bell", 2, "안쪽에 날짜가 하나 더 새겨져 있어요.", "There is one more date carved inside.", "pi"]
+    ]
+  ],
+  [
+    "안개 속에서 키를 잡은 여자",
+    "The Woman Who Took the Wheel",
+    "안개 속에서 배가 길을 잃었다. 그물을 깁던 여자가 키를 잡았다.",
+    "A boat loses its way in fog. The woman who mends nets takes the wheel.",
+    [
+      ["H", "소금순", "Vera Lockhart", "60대 여성, 노란 방수복, 흰 머리, 주근깨, 잔잔한 눈", "woman in her 60s, yellow rain gear, white hair, freckles, steady eyes"],
+      ["V", "우태민", "Emmett Farrow", "30대 남성, 남색 선원복, 삭발에 가까운 머리, 성난 얼굴", "man in his 30s, navy deck uniform, close-cropped hair, angry face"],
+      ["A", "장영달", "Orson Dean", "50대 남성, 해경 제복, 회색 머리, 굳은 표정", "man in his 50s, coast guard uniform, gray hair, hard face"]
+    ],
+    [
+      ["조타실", "wheelhouse", "우태민이 그물을 들고 있던 소금순의 손목을 잡아 옆으로 민다", "Taemin shoves the net mender aside by the wrist", 1, "그물이나 깁던 손으로 키를 잡아?", "A net mender grabbing the wheel?", "cz"],
+      ["갑판", "deck", "우태민이 소금순의 그물 꾸러미를 바다로 던진다", "Taemin hurls her bundle of nets over the rail", 1, "내 배에서 당신은 짐이야.", "On my boat you're cargo.", "ms"],
+      ["갑판", "deck", "소금순이 바닷물에 손가락을 담갔다가 갈매기 쪽을 올려다본다", "Geumsoon dips her fingers in the sea and looks up at the gulls", -1, "", "", "cu"],
+      ["조타실", "wheelhouse", "장영달이 무전기 너머로 소금순의 목소리를 알아듣고 일어선다", "On the radio, Youngdal recognizes her voice and stands up", 2, "그 목소리, 열두 척 살린 선장님이죠.", "That voice saved twelve boats.", "low"],
+      ["조타실", "wheelhouse", "우태민이 선장 자리에서 비켜서고 소금순이 키를 잡는다", "Taemin steps away from the helm and she takes the wheel", 0, "면허는 반납하고 갑판부터 닦아요.", "Hand in your license. Start with the deck.", "cu"],
+      ["갑판", "deck", "장영달이 꺼진 등대 쪽을 손전등으로 비춘다", "Youngdal aims his flashlight at the dark lighthouse", 2, "안개가 아니야. 누가 등대를 껐어.", "It isn't the fog. Someone shut the light off.", "pi"]
+    ]
+  ],
+  [
+    "지하 수선공의 바늘",
+    "The Basement Cobbler",
+    "무대 30분 전, 백년 된 구두가 찢어졌다. 지하 수선공이 바늘을 들었다.",
+    "Thirty minutes before the gala, a century-old shoe splits. The basement cobbler picks up his needle.",
+    [
+      ["H", "반영식", "Hiram Petty", "70대 남성, 가죽 앞치마, 흰 머리, 두꺼운 손가락, 담담한 얼굴", "man in his 70s, leather apron, white hair, thick fingers, impassive face"],
+      ["V", "구미윤", "Iona Pettit", "30대 여성, 흰 정장, 금발 단발, 날카로운 눈", "woman in her 30s, white suit, blond bob, sharp eyes"],
+      ["A", "천채윤", "Luella Marshman", "40대 여성, 보라 재킷, 안경, 흰 장갑, 놀란 입", "woman in her 40s, purple jacket, glasses, white gloves, parted lips"]
+    ],
+    [
+      ["패션하우스 지하", "fashion house basement", "구미윤이 구두를 들고 수선대 앞의 반영식을 내려다본다", "Miyun stands over the cobbler with the broken shoe in her hand", 1, "지하에서 올라온 손이 뭘 알겠어요.", "What would basement hands know?", "cz"],
+      ["패션하우스 지하", "fashion house basement", "구미윤이 찢어진 구두를 반영식 작업대에 던진다", "Miyun throws the split shoe onto his workbench", 1, "오늘 안에 못 고치면 넌 끝이야.", "Fix it tonight or you're done.", "ms"],
+      ["패션하우스 지하", "fashion house basement", "반영식이 구두 안감을 뒤집어 낙인을 손끝으로 확인한다", "The cobbler flips the lining and traces a stamp with his thumb", -1, "", "", "cu"],
+      ["패션하우스 지하", "fashion house basement", "천채윤이 안감의 낙인을 사진과 맞춰 본다", "Chae-yun holds the stamp up against a photo", 2, "이 낙인, 박물관 기록과 같아요.", "This stamp matches our museum record.", "low"],
+      ["무대 뒤", "backstage", "구미윤이 전시 명단에서 이 구두 줄을 지운다", "Miyun crosses this shoe off the exhibition list", 0, "이 신발, 내가 만든 거예요.", "I made that shoe.", "cu"],
+      ["무대 뒤", "backstage", "천채윤이 구두 안감에서 접힌 종이를 꺼내 든다", "Chae-yun pulls a folded paper from the shoe lining", 2, "안감에서 쪽지가 나왔어요.", "There's a note in the lining.", "pi"]
+    ]
+  ],
+  [
+    "가짜 지폐를 알아본 청소부",
+    "The Cleaner Who Spotted the Fake",
+    "VIP 금고에 가짜 지폐 다발이 들어왔다. 청소부가 돋보기를 꺼냈다.",
+    "A bundle of fake notes reaches the VIP vault. The cleaner takes out a loupe.",
+    [
+      ["H", "노점순", "Mildred Bourne", "50대 여성, 파란 청소복, 짧은 곱슬머리, 얇은 입술, 조용한 눈", "woman in her 50s, blue cleaner uniform, short curly hair, thin lips, quiet eyes"],
+      ["V", "황도찬", "Royce Ashe", "40대 남성, 남색 정장에 금테 안경, 번들머리, 비웃는 얼굴", "man in his 40s, navy suit, gold glasses, slick hair, mocking face"],
+      ["A", "민순희", "Edith Gable", "50대 여성, 회색 정장, 흰 머리, 단정한 태도", "woman in her 50s, gray suit, white hair, composed bearing"]
+    ],
+    [
+      ["지점장실", "branch manager's office", "황도찬이 금고 앞을 닦던 노점순의 양동이를 발로 찬다", "Dochang kicks over her bucket by the vault door", 1, "청소부가 금고 앞에 왜 서 있어?", "Why is a cleaner standing at my vault?", "cz"],
+      ["지점장실", "branch manager's office", "황도찬이 젖은 바닥을 가로질러 서류를 밟고 지나간다", "Dochang walks over the wet floor, stepping on papers", 1, "물기 하나도 안 남겨. 오늘 감사 와.", "Not one drop left. The audit is today.", "ms"],
+      ["지점장실", "branch manager's office", "노점순이 지폐 한 장을 형광등에 비스듬히 대고 손끝으로 문지른다", "Jeomsoon holds a note to the light and rubs it with her thumb", -1, "", "", "cu"],
+      ["지점장실", "branch manager's office", "민순희가 노점순의 손놀림을 보고 걸음을 멈춘다", "Soonhee freezes mid-step at the way the cleaner handles the note", 2, "이 사람, 화폐 감별반 반장이었어요.", "She ran the currency inspection team.", "low"],
+      ["지점장실", "branch manager's office", "황도찬이 벗어 둔 사원증이 책상 위에 떨어진다", "Dochang's staff badge slips from his hand to the desk", 0, "가짜는 당신 서랍에서 나왔어요.", "The fakes came out of your drawer.", "cu"],
+      ["지점장실", "branch manager's office", "민순희가 다발 속 지폐 한 장을 집어 들어 뒤집는다", "Soonhee lifts one note from the bundle and turns it over", 2, "한 장은 진짜인데, 뒷면에 글씨가 있어요.", "One note is real. There's writing on the back.", "pi"]
+    ]
+  ],
+  [
+    "세탁실에서 온 찻잎",
+    "The Laundry Woman's Blend",
+    "개점 전 찻잎이 상했다. 세탁실에서 온 여자가 통을 열었다.",
+    "The tea turns before opening day. The woman from the laundry room opens a tin.",
+    [
+      ["H", "여복순", "Olive Renn", "60대 여성, 흰 세탁 작업복, 회색 머리, 보드라운 손, 차분한 눈", "woman in her 60s, white laundry uniform, gray hair, soft hands, calm eyes"],
+      ["V", "차정란", "Margot Vick", "40대 여성, 연두 원피스, 긴 웨이브 머리, 얇은 눈썹", "woman in her 40s, light green dress, long wavy hair, thin brows"],
+      ["A", "길상달", "Bruno Tanager", "60대 남성, 회색 두루마기, 흰 수염, 안경", "man in his 60s, gray robe, white beard, glasses"]
+    ],
+    [
+      ["찻집", "tea house", "차정란이 찻잔을 들고 나른 여복순의 앞치마를 손으로 턴다", "Jeongran flicks at the laundry woman's apron", 1, "세탁실 냄새가 찻집에 배겠어요.", "That laundry smell will ruin my tea house.", "cz"],
+      ["찻집", "tea house", "차정란이 여복순이 든 통을 선반에서 밀어 떨어뜨린다", "Jeongran pushes the tin from her hands off the shelf", 1, "여긴 코가 일하는 곳이야.", "Here the nose does the work.", "ms"],
+      ["찻집", "tea house", "여복순이 떨어진 통을 주워 뚜껑 안쪽의 봉인을 손끝으로 만진다", "Boksoon picks up the fallen tin and traces the seal inside the lid", -1, "", "", "cu"],
+      ["찻집", "tea house", "길상달이 봉인을 돋보기로 들여다보고 고개를 든다", "Sangdal studies the seal through a loupe and lifts his head", 2, "이 봉인, 협회 장인 인장이에요.", "This is the guild master's seal.", "low"],
+      ["찻집", "tea house", "차정란이 벽에 걸린 개업 허가증을 떼어 내린다", "Jeongran pulls the opening license off the wall", 0, "이 배합, 내가 만든 거예요.", "I made that blend.", "cu"],
+      ["찻집", "tea house", "길상달이 통 안쪽에서 편지 한 장을 꺼낸다", "Sangdal draws a letter from deep inside the tin", 2, "통 안에 편지가 있는데, 이름이 지워졌어요.", "There's a letter inside. The name has been scratched out.", "pi"]
+    ]
+  ],
+  [
+    "폭죽 창고의 야간 당직",
+    "The Watchman's Finale",
+    "개막 불꽃이 3분 앞두고 멈췄다. 창고지기가 점화표를 집었다.",
+    "The opening fireworks stall three minutes out. The warehouse watchman picks up the firing sheet.",
+    [
+      ["H", "탁창식", "Clyde Thorpe", "40대 남성, 회색 점퍼, 짧은 머리, 그을린 얼굴, 낮은 목소리", "man in his 40s, gray jacket, short hair, soot-marked face, low voice"],
+      ["V", "기만식", "Saul Kroll", "30대 남성, 흰 셔츠에 헤드셋, 세운 머리, 조급한 눈", "man in his 30s, white shirt with a headset, spiked hair, impatient eyes"],
+      ["A", "육숙희", "Harriet Crowe", "60대 여성, 남색 코트, 흰 머리, 온화한 눈", "woman in her 60s, navy coat, white hair, gentle eyes"]
+    ],
+    [
+      ["폭죽 창고", "firework warehouse", "기만식이 점화표를 들고 창고지기 탁창식을 문밖으로 민다", "Mansik pushes the watchman out the warehouse door", 1, "상자나 지키는 사람이 뭘 알아.", "A box guard knows nothing.", "cz"],
+      ["폭죽 창고", "firework warehouse", "기만식이 창고 문을 잠그고 열쇠를 주머니에 넣는다", "Mansik locks the warehouse door and pockets the key", 1, "여기서 나오지 마. 불나면 네 탓이야.", "Stay out. If it fails, it's on you.", "ms"],
+      ["폭죽 창고", "firework warehouse", "탁창식이 문틈으로 점화 순서가 적힌 종이를 내려다본다", "Through the door gap, Changsik studies the firing order sheet", -1, "", "", "cu"],
+      ["강변 무대", "riverside stage", "육숙희가 점화표의 필체를 알아보고 무대 뒤로 뛰어간다", "Sookhee recognizes the handwriting and runs backstage", 2, "이 필체, 30년 전 그 사람 거예요.", "This handwriting is his, from thirty years ago.", "low"],
+      ["강변 무대", "riverside stage", "기만식이 헤드셋을 벗어 내려놓고 무대에서 밀려난다", "Mansik takes off his headset and is pushed off the stage", 0, "마지막 불꽃은 내가 올린다.", "I'll fire the finale myself.", "cu"],
+      ["폭죽 창고", "firework warehouse", "육숙희가 맨 아래 상자의 날짜와 이름표를 들여다본다", "Sookhee checks the date and name tag on the bottom crate", 2, "30년 전 날짜에 당신 이름이 있어요.", "This crate is dated thirty years ago. Your name is on it.", "pi"]
+    ]
+  ]
+]

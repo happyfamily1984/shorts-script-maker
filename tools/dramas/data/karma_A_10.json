@@ -1,0 +1,912 @@
+[
+ [
+  "상자 하나가 바꾼 빌딩 주인",
+  "Boxes to the Top Floor",
+  "노인의 무거운 짐을 대신 들어 준 컨시어지. 그 노인이 이 빌딩을 가진 회장이었다.",
+  "A concierge carries an old resident's heavy boxes upstairs. The man owns the building.",
+  [
+   [
+    "H",
+    "도경",
+    "Graham",
+    "40대 남성, 호텔식 컨시어지 제복, 짧은 머리, 온화한 눈",
+    "man in his 40s, hotel-style concierge uniform, short hair, gentle eyes"
+   ],
+   [
+    "V",
+    "형철",
+    "Duncan",
+    "50대 남성, 빌딩 관리 실장, 회색 정장, 굳은 얼굴",
+    "man in his 50s, building manager, gray suit, rigid face"
+   ],
+   [
+    "A",
+    "성호",
+    "Alan",
+    "60대 남성, 낡은 카디건, 흰 머리, 잔주름 많은 얼굴",
+    "man in his 60s, worn cardigan, white hair, deeply lined face"
+   ]
+  ],
+  [
+   [
+    "빌딩 로비",
+    "building lobby",
+    "형철이 도경의 손에서 상자를 밀어 떨어뜨린다",
+    "Duncan shoves the box out of Graham's hands",
+    1,
+    "택배는 경비실에 둬.",
+    "Leave deliveries at the security desk.",
+    "ms"
+   ],
+   [
+    "빌딩 로비",
+    "building lobby",
+    "형철이 도경의 명찰을 떼어 카운터에 놓는다",
+    "Duncan unpins Graham's badge onto the counter",
+    1,
+    "명찰 반납해.",
+    "Hand in your badge.",
+    "trk"
+   ],
+   [
+    "엘리베이터 앞",
+    "elevator lobby",
+    "성호가 주머니에서 옥상 전용 열쇠를 꺼낸다",
+    "Alan takes an owner's elevator key from his pocket",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "빌딩 로비",
+    "building lobby",
+    "성호가 형철 앞에 서서 도경을 가리킨다",
+    "Alan stands before Duncan and points at Graham",
+    2,
+    "이 빌딩 주인입니다. 이 사람은 제가 데려갑니다.",
+    "I own this building. He comes with me.",
+    "low"
+   ],
+   [
+    "빌딩 로비",
+    "building lobby",
+    "형철의 관리 계약서가 바닥에 떨어진다",
+    "Duncan's management contract slips to the floor",
+    0,
+    "노인의 짐이 그렇게 무거웠습니까?",
+    "Was an old man's luggage that heavy?",
+    "cu"
+   ],
+   [
+    "빌딩 로비",
+    "building lobby",
+    "성호가 도경에게 옥상 정원 열쇠를 건넨다",
+    "Alan hands Graham the rooftop garden keys",
+    2,
+    "옥상 정원, 다음 달부터 당신이 맡아요.",
+    "The rooftop garden is yours from next month.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "대신 선 당직 하나",
+  "One Shift He Covered",
+  "아픈 아이를 둔 동료 대신 당직을 선 경비원. 그 동료의 아버지가 경비 회사 회장이었다.",
+  "A guard covers a night shift for a young father. The young man's father owns the firm.",
+  [
+   [
+    "H",
+    "태성",
+    "Chuck",
+    "60대 남성, 경비 유니폼, 짧은 흰 머리, 두꺼운 눈썹, 무뚝뚝한 눈",
+    "man in his 60s, security uniform, short white hair, thick brows, blunt stare"
+   ],
+   [
+    "V",
+    "봉구",
+    "Russ",
+    "40대 남성, 경비 반장, 검은 점퍼, 짧은 머리, 험한 얼굴",
+    "man in his 40s, guard supervisor, black jacket, short hair, harsh face"
+   ],
+   [
+    "A",
+    "준영",
+    "Dean",
+    "30대 남성, 경비 유니폼, 마른 체형, 피곤한 눈",
+    "man in his 30s, security uniform, thin frame, tired eyes"
+   ]
+  ],
+  [
+   [
+    "경비실",
+    "security office",
+    "봉구가 태성의 도시락을 쓸어 바닥에 떨어뜨린다",
+    "Russ sweeps Chuck's lunch box onto the floor",
+    1,
+    "네 당직 아니야.",
+    "This shift isn't yours.",
+    "ms"
+   ],
+   [
+    "경비실",
+    "security office",
+    "봉구가 근무표에 태성 이름 위로 빨간 줄을 긋는다",
+    "Russ draws a red line through Chuck's name",
+    1,
+    "당직표에서 빼.",
+    "I'm taking you off the roster.",
+    "cz"
+   ],
+   [
+    "지하 주차장",
+    "parking garage",
+    "준영이 태성 손에 아버지의 명함을 쥐여 준다",
+    "Dean presses his father's card into Chuck's hand",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "경비실",
+    "security office",
+    "준영이 봉구 앞에 서서 태성을 가리킨다",
+    "Dean stands before Russ and points at Chuck",
+    2,
+    "아버지가 이 회사 회장입니다. 제가 모시겠습니다.",
+    "My father runs this firm. I'm taking him with me.",
+    "slo"
+   ],
+   [
+    "경비실",
+    "security office",
+    "봉구의 당직표가 바닥에 떨어진다",
+    "Russ's shift chart drops to the floor",
+    0,
+    "대신 선 밤이 그렇게 아까웠습니까?",
+    "Was one covered night that costly?",
+    "cu"
+   ],
+   [
+    "경비실",
+    "security office",
+    "준영이 태성에게 새 현장 명단을 건넨다",
+    "Dean hands Chuck the list of sites",
+    2,
+    "다음 달부터 이 현장은 당신이 맡아요.",
+    "You take this site from next month.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "갇힌 남자 곁을 지킨 점검 기사",
+  "The Hour in the Elevator",
+  "멈춘 엘리베이터에서 남자 곁을 지킨 점검 기사. 그가 이 빌딩을 사러 온 투자자였다.",
+  "An inspector stays with a man trapped in an elevator. He came to buy the building.",
+  [
+   [
+    "H",
+    "명수",
+    "Irwin",
+    "40대 남성, 점검 작업복, 공구 벨트, 짧은 머리, 차분한 눈",
+    "man in his 40s, inspection overalls, tool belt, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "상필",
+    "Wade",
+    "50대 남성, 점검 대행사 팀장, 검은 정장, 얇은 입술",
+    "man in his 50s, inspection firm chief, black suit, thin lips"
+   ],
+   [
+    "A",
+    "영달",
+    "Milton",
+    "60대 남성, 짙은 코트, 흰 머리, 서류 가방",
+    "man in his 60s, dark coat, white hair, document case"
+   ]
+  ],
+  [
+   [
+    "기계실",
+    "machine room",
+    "상필이 명수의 공구를 발로 밀어낸다",
+    "Wade kicks Irwin's tools aside",
+    1,
+    "점검 시간 넘겼어.",
+    "You're past inspection time.",
+    "ms"
+   ],
+   [
+    "기계실",
+    "machine room",
+    "상필이 명수의 점검 일지를 찢는다",
+    "Wade tears up Irwin's inspection log",
+    1,
+    "일지 찢고 나가.",
+    "Tear up your log and go.",
+    "cz"
+   ],
+   [
+    "엘리베이터 앞",
+    "elevator bank",
+    "영달이 인수 서류 가방을 명수에게 맡긴다",
+    "Milton hands his case to Irwin to hold",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "로비",
+    "lobby",
+    "영달이 상필 앞에 서서 명수를 가리킨다",
+    "Milton stands before Wade and points at Irwin",
+    2,
+    "이 빌딩을 사는 사람입니다. 계약은 이분과 합니다.",
+    "I'm buying this building. He's my inspector.",
+    "pi"
+   ],
+   [
+    "로비",
+    "lobby",
+    "상필의 점검 계약서가 바닥에 떨어진다",
+    "Wade's inspection contract slips to the floor",
+    0,
+    "갇힌 사람이 그렇게 거슬렸습니까?",
+    "Did a trapped man bother you that much?",
+    "cu"
+   ],
+   [
+    "로비",
+    "lobby",
+    "영달이 명수에게 새 점검 계약서를 건넨다",
+    "Milton hands Irwin a fresh inspection contract",
+    2,
+    "내일부터 이 빌딩 설비는 당신이 맡아요.",
+    "This building's systems are yours from tomorrow.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "창 너머로 쓰러진 여자를 살린 청소부",
+  "The Window He Looked Through",
+  "창을 닦다 쓰러진 여자를 발견한 청소부. 그 여자가 이 회사를 세운 사람이었다.",
+  "A window cleaner spots a woman collapsed inside. She founded the company.",
+  [
+   [
+    "H",
+    "하진",
+    "Colin",
+    "30대 남성, 청록 작업복, 안전 로프, 짧은 머리, 총명한 눈",
+    "man in his 30s, teal work suit, safety rope, short hair, alert eyes"
+   ],
+   [
+    "V",
+    "정한",
+    "Brock",
+    "40대 남성, 청소 용역 반장, 회색 점퍼, 짧은 머리",
+    "man in his 40s, cleaning crew chief, gray jacket, short hair"
+   ],
+   [
+    "A",
+    "윤희",
+    "Diana",
+    "50대 여성, 검은 원피스, 긴 머리, 서늘한 눈",
+    "woman in her 50s, black dress, long hair, cool eyes"
+   ]
+  ],
+  [
+   [
+    "건물 외벽",
+    "building facade",
+    "정한이 하진의 로프를 잡아당긴다",
+    "Brock yanks Colin's rope",
+    1,
+    "일 끝났어. 내려와.",
+    "Work's over. Come down.",
+    "ms"
+   ],
+   [
+    "옥상",
+    "rooftop",
+    "정한이 하진의 안전벨트를 풀어 놓는다",
+    "Brock unclips Colin's safety harness",
+    1,
+    "로프 풀고 나가.",
+    "Unclip your rope and go.",
+    "trk"
+   ],
+   [
+    "사무실 창가",
+    "office window",
+    "윤희가 바닥에 누운 채 손을 들어 창을 두드린다",
+    "Diana, lying on the floor, raises a hand and taps the glass",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "사무실",
+    "office",
+    "윤희가 담요를 두르고 정한 앞에 선다",
+    "Diana stands wrapped in a blanket before Brock",
+    2,
+    "창을 두드려 살린 사람입니다. 회사는 제 겁니다.",
+    "He tapped the glass and saved me. I own this firm.",
+    "low"
+   ],
+   [
+    "로비",
+    "lobby",
+    "정한의 작업 일지가 바닥에 떨어진다",
+    "Brock's work log slips to the floor",
+    0,
+    "창밖을 본 게 그렇게 잘못입니까?",
+    "Is looking through a window a crime?",
+    "cu"
+   ],
+   [
+    "옥상",
+    "rooftop",
+    "윤희가 하진에게 새 작업 계약서를 건넨다",
+    "Diana hands Colin a new maintenance contract",
+    2,
+    "이 건물 창은 앞으로 당신 팀이 맡아요.",
+    "Your crew takes these windows from now on.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "젖은 텐트 대신 자기 텐트를 준 관리인",
+  "The Tent He Gave Up",
+  "비에 잠긴 텐트 대신 자기 텐트를 준 관리인. 그 가족 아버지가 캠핑 브랜드 사장이었다.",
+  "A campsite manager gives his own tent to a flooded family. The father owns a camping brand.",
+  [
+   [
+    "H",
+    "은호",
+    "Desmond",
+    "40대 남성, 캠핑장 관리 조끼, 모자, 그을린 얼굴, 순한 눈",
+    "man in his 40s, campsite vest, cap, weathered face, gentle eyes"
+   ],
+   [
+    "V",
+    "재오",
+    "Mac",
+    "30대 남성, 캠핑장 지배인, 검은 패딩, 짧은 머리, 비웃는 입",
+    "man in his 30s, campsite manager, black puffer, short hair, sneering mouth"
+   ],
+   [
+    "A",
+    "성훈",
+    "Clay",
+    "40대 남성, 등산 재킷, 짧은 수염, 편안한 얼굴",
+    "man in his 40s, hiking jacket, short beard, easy face"
+   ]
+  ],
+  [
+   [
+    "캠핑장",
+    "campsite",
+    "재오가 은호의 텐트 말뚝을 뽑아 던진다",
+    "Mac pulls up the stakes of Desmond's tent",
+    1,
+    "네 텐트를 왜 손님한테 줘?",
+    "Why give your tent to a guest?",
+    "ms"
+   ],
+   [
+    "캠핑장 사무실",
+    "campsite office",
+    "재오가 은호의 근무표를 찢는다",
+    "Mac tears up Desmond's shift sheet",
+    1,
+    "근무표 찢고 나가.",
+    "Rip up your roster and go.",
+    "cz"
+   ],
+   [
+    "캠핑장",
+    "campsite",
+    "성훈이 젖은 텐트의 상표를 떼어 은호에게 보여 준다",
+    "Clay peels the brand label off the wet tent and shows it",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "캠핑장",
+    "campsite",
+    "성훈이 재오 앞에 서서 은호를 가리킨다",
+    "Clay stands before Mac and points at Desmond",
+    2,
+    "우리를 살린 분입니다. 이 브랜드는 제 겁니다.",
+    "He saved my family. This brand is mine.",
+    "low"
+   ],
+   [
+    "캠핑장 사무실",
+    "campsite office",
+    "재오의 예약 장부가 바닥에 떨어진다",
+    "Mac's booking book drops to the floor",
+    0,
+    "비 맞은 가족이 그렇게 거슬렸습니까?",
+    "Did a soaked family bother you that much?",
+    "cu"
+   ],
+   [
+    "캠핑장",
+    "campsite",
+    "성훈이 은호에게 새 사이트 계획서를 건넨다",
+    "Clay hands Desmond the plan for a new site",
+    2,
+    "내년 새 캠핑장, 당신이 총괄해요.",
+    "You'll run next year's new campsite.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "혼자 탄 아이 곁에 앉아 준 선원",
+  "The Seat Beside the Boy",
+  "혼자 배에 오른 아이 곁에 앉아 준 선원. 그 아이 엄마가 이 여객선 회사를 가진 사장이었다.",
+  "A deckhand sits with a boy traveling alone. The boy's mother owns the ferry line.",
+  [
+   [
+    "H",
+    "정우",
+    "Patrick",
+    "30대 남성, 남색 선원 복, 짧은 머리, 그을린 얼굴, 다정한 눈",
+    "man in his 30s, navy sailor uniform, short hair, tanned face, kind eyes"
+   ],
+   [
+    "V",
+    "용만",
+    "Sven",
+    "50대 남성, 흰 선장 제복, 금단추, 무거운 눈썹",
+    "man in his 50s, white captain's uniform, gold buttons, heavy brows"
+   ],
+   [
+    "A",
+    "소라",
+    "Tess",
+    "40대 여성, 회색 트렌치코트, 긴 머리, 차분한 눈",
+    "woman in her 40s, gray trench coat, long hair, calm eyes"
+   ]
+  ],
+  [
+   [
+    "갑판",
+    "ferry deck",
+    "용만이 아이 옆 의자를 발로 차 밀어낸다",
+    "Sven kicks the chair beside the boy away",
+    1,
+    "아이 보는 건 네 일이 아니야.",
+    "Watching a kid isn't your job.",
+    "ms"
+   ],
+   [
+    "갑판",
+    "ferry deck",
+    "용만이 정우의 구명조끼를 걷어찬다",
+    "Sven kicks aside Patrick's life vest",
+    1,
+    "승선 명단에서 빼.",
+    "I'm striking you off the crew list.",
+    "trk"
+   ],
+   [
+    "선실",
+    "cabin",
+    "아이가 손에 쥔 회사 명찰을 정우에게 보여 준다",
+    "The boy shows Patrick the company badge in his hand",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "선착장",
+    "ferry pier",
+    "소라가 용만 앞에 서서 정우를 가리킨다",
+    "Tess stands before Sven and points at Patrick",
+    2,
+    "이 배 회사 사장입니다. 이 사람은 제가 모십니다.",
+    "I own this ferry line. He comes with me.",
+    "low"
+   ],
+   [
+    "갑판 사무실",
+    "deck office",
+    "용만의 승무 기록이 바닥에 떨어진다",
+    "Sven's crew log slips to the floor",
+    0,
+    "혼자 온 아이가 그렇게 거슬렸습니까?",
+    "Did a boy traveling alone bother you?",
+    "cu"
+   ],
+   [
+    "선착장",
+    "ferry pier",
+    "소라가 정우에게 새 배 이름표를 건넨다",
+    "Tess hands Patrick a new ship nameplate",
+    2,
+    "다음 달부터 이 배 갑판은 당신이 맡아요.",
+    "This deck is yours from next month.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "수레를 고쳐 준 과수원 일꾼",
+  "The Cart He Fixed",
+  "무너진 수레를 고쳐 준 과수원 일꾼. 그 할머니가 이 과수원 땅의 주인이었다.",
+  "An orchard worker fixes an old woman's broken cart. She owns the land he farms.",
+  [
+   [
+    "H",
+    "광호",
+    "Clive",
+    "50대 남성, 작업 바지에 밀짚모자, 그을린 얼굴, 순박한 눈",
+    "man in his 50s, work trousers, straw hat, weathered face, simple eyes"
+   ],
+   [
+    "V",
+    "만복",
+    "Bo",
+    "50대 남성, 과수원 관리인, 검은 조끼, 굳은 얼굴",
+    "man in his 50s, orchard foreman, black vest, hard face"
+   ],
+   [
+    "A",
+    "말임",
+    "Myra",
+    "70대 여성, 꽃무늬 앞치마, 흰 머리, 잔주름진 얼굴",
+    "woman in her 70s, floral apron, white hair, deeply lined face"
+   ]
+  ],
+  [
+   [
+    "과수원",
+    "orchard",
+    "만복이 광호의 사다리를 발로 차 넘어뜨린다",
+    "Bo kicks over Clive's ladder",
+    1,
+    "네가 주인 도와? 일이나 해.",
+    "Helping the owner? Get to work.",
+    "cz"
+   ],
+   [
+    "창고",
+    "orchard barn",
+    "만복이 광호의 일당 봉투를 찢는다",
+    "Bo tears up Clive's pay envelope",
+    1,
+    "일당 없다. 나가.",
+    "No pay today. Get out.",
+    "ots"
+   ],
+   [
+    "과수원길",
+    "orchard road",
+    "말임이 수레 바퀴 옆에서 땅 문서를 꺼낸다",
+    "Myra takes a land deed from her bag by the cart wheel",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "마당",
+    "orchard yard",
+    "말임이 문서를 만복 앞에 놓는다",
+    "Myra sets the deed down in front of Bo",
+    2,
+    "이 땅 주인입니다. 내년 계약은 이 사람과 합니다.",
+    "I own this land. Next year's contract is his.",
+    "low"
+   ],
+   [
+    "창고",
+    "orchard barn",
+    "만복의 계약서가 바닥에 떨어진다",
+    "Bo's contract slips to the floor",
+    0,
+    "할머니 수레가 그렇게 거슬렸습니까?",
+    "Did an old woman's cart bother you?",
+    "cu"
+   ],
+   [
+    "마당",
+    "orchard yard",
+    "말임이 광호에게 새 계약서를 건넨다",
+    "Myra hands Clive a new contract",
+    2,
+    "내년부터 이 과수원은 당신이 맡아요.",
+    "You run this orchard from next year.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "꿀을 나눠 준 양봉가를 내보낸 주인",
+  "The Jar of Honey He Shared",
+  "디저트가 망한 셰프에게 꿀을 나눠 준 양봉가. 그 셰프가 요리 대회의 심사위원이었다.",
+  "A beekeeper shares honey with a chef whose dessert failed. She judges the cooking finals.",
+  [
+   [
+    "H",
+    "기범",
+    "Dennis",
+    "50대 남성, 양봉 보호복, 흰 수염, 그을린 얼굴, 조용한 눈",
+    "man in his 50s, beekeeper's suit, white beard, weathered face, quiet eyes"
+   ],
+   [
+    "V",
+    "두식",
+    "Sonny",
+    "50대 남성, 양봉장 주인, 밀랍 묻은 점퍼, 짧은 머리",
+    "man in his 50s, apiary owner, wax-stained jacket, short hair"
+   ],
+   [
+    "A",
+    "주리",
+    "Mina",
+    "30대 여성, 흰 셰프 재킷, 묶은 머리, 단호한 눈",
+    "woman in her 30s, white chef jacket, tied hair, firm eyes"
+   ]
+  ],
+  [
+   [
+    "양봉장",
+    "apiary",
+    "두식이 기범의 작업복 어깨를 당겨 넘어뜨린다",
+    "Sonny grabs his shoulder and pulls him down",
+    1,
+    "꿀을 왜 나눠 줘?",
+    "Why give honey away?",
+    "ms"
+   ],
+   [
+    "양봉장 창고",
+    "apiary shed",
+    "두식이 기범의 출하 장부를 찢는다",
+    "Sonny tears up the shipping ledger",
+    1,
+    "벌통 앞에서 나가.",
+    "Get away from my hives.",
+    "cz"
+   ],
+   [
+    "주방",
+    "restaurant kitchen",
+    "주리가 빈 꿀 단지를 들어 햇빛에 비춘다",
+    "Mina lifts the empty honey jar to the light",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "주방",
+    "restaurant kitchen",
+    "주리가 두식 앞에 서서 기범을 가리킨다",
+    "Mina stands before Sonny and points at Dennis",
+    2,
+    "이 꿀 없으면 제 디저트도 없죠. 제 파트너입니다.",
+    "No honey, no dessert. He's my partner.",
+    "pi"
+   ],
+   [
+    "양봉장 창고",
+    "apiary shed",
+    "두식의 납품서가 바닥에 떨어진다",
+    "Sonny's delivery invoices scatter on the floor",
+    0,
+    "꿀 한 병이 그렇게 아까웠습니까?",
+    "Was one jar of honey that costly?",
+    "cu"
+   ],
+   [
+    "주방",
+    "restaurant kitchen",
+    "주리가 기범에게 새 납품 계약서를 건넨다",
+    "Mina hands Dennis a new supply contract",
+    2,
+    "다음 달부터 제 주방은 당신 꿀로 해요.",
+    "My kitchen runs on your honey from next month.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "망가진 의자를 살린 복원가를 자른 사장",
+  "The Chair She Brought Back",
+  "결혼기념일 선물로 낡은 의자를 무료로 살린 복원가. 그 손님이 가구 회사 사장이었다.",
+  "A restorer revives an old chair for free. The customer owns a furniture brand.",
+  [
+   [
+    "H",
+    "혜원",
+    "Edie",
+    "30대 여성, 앞치마에 목공 풀, 짧은 머리, 집중하는 눈",
+    "woman in her 30s, apron flecked with wood glue, short hair, focused eyes"
+   ],
+   [
+    "V",
+    "덕현",
+    "Wes",
+    "50대 남성, 공방 사장, 갈색 작업복, 굳은 얼굴",
+    "man in his 50s, workshop owner, brown work coat, hard face"
+   ],
+   [
+    "A",
+    "문호",
+    "Roger",
+    "60대 남성, 짙은 코트, 흰 머리, 온화한 얼굴",
+    "man in his 60s, dark coat, white hair, gentle face"
+   ]
+  ],
+  [
+   [
+    "공방",
+    "workshop",
+    "덕현이 혜원의 붓을 빼앗아 작업대에 내려놓는다",
+    "Wes takes Edie's brush and sets it on the bench",
+    1,
+    "공짜로 손봐?",
+    "Fixing it for free?",
+    "cz"
+   ],
+   [
+    "공방",
+    "workshop",
+    "덕현이 혜원의 작업대 서랍을 비운다",
+    "Wes empties the drawers of her bench",
+    1,
+    "붓 놓고 나가.",
+    "Put the brush down and go.",
+    "trk"
+   ],
+   [
+    "공방",
+    "workshop",
+    "문호가 의자 밑면의 제작 표를 손끝으로 만진다",
+    "Roger runs a finger over the maker's mark under the chair",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "공방",
+    "workshop",
+    "문호가 의자를 들어 덕현 앞에 놓는다",
+    "Roger lifts the chair and sets it before Wes",
+    2,
+    "저희 가게 첫 작품입니다. 이 사람이 살렸어요.",
+    "My shop's first piece. She brought it back.",
+    "slo"
+   ],
+   [
+    "공방",
+    "workshop",
+    "덕현의 주문서가 바닥에 흩어진다",
+    "Wes's order sheets scatter on the floor",
+    0,
+    "낡은 의자가 그렇게 하찮았습니까?",
+    "Was an old chair that worthless?",
+    "cu"
+   ],
+   [
+    "공방",
+    "workshop",
+    "문호가 혜원에게 새 공방 열쇠를 건넨다",
+    "Roger puts the workshop keys in Edie's hand",
+    2,
+    "내일부터 이 공방은 당신 거예요.",
+    "This workshop is yours from tomorrow.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "잊은 향을 찾아 준 조향사 보조",
+  "The Scent She Found Again",
+  "돌아가신 어머니의 향을 찾아 준 조향사 보조. 그 여자가 백화점 바이어였다.",
+  "A perfume assistant recreates a lost scent for a customer. She buys for a department store.",
+  [
+   [
+    "H",
+    "수민",
+    "Ivy",
+    "30대 여성, 흰 조향 가운, 짧은 머리, 섬세한 눈",
+    "woman in her 30s, white lab coat, short hair, delicate eyes"
+   ],
+   [
+    "V",
+    "재석",
+    "Nathan",
+    "50대 남성, 조향 공방 주인, 검은 조끼, 날카로운 눈",
+    "man in his 50s, perfume house owner, black vest, sharp eyes"
+   ],
+   [
+    "A",
+    "가영",
+    "Simone",
+    "40대 여성, 회색 정장, 긴 머리, 차분한 눈",
+    "woman in her 40s, gray suit, long hair, calm eyes"
+   ]
+  ],
+  [
+   [
+    "조향 공방",
+    "perfume atelier",
+    "재석이 수민의 시향지를 빼앗아 찢는다",
+    "Nathan snatches and tears her scent strips",
+    1,
+    "손님 향을 네가 지어?",
+    "You're composing for a customer?",
+    "ms"
+   ],
+   [
+    "조향 공방",
+    "perfume atelier",
+    "재석이 수민의 조향 노트를 바닥에 던진다",
+    "Nathan throws her formula notes on the floor",
+    1,
+    "향 병 반납해.",
+    "Hand in your scent bottles.",
+    "cz"
+   ],
+   [
+    "조향 공방",
+    "perfume atelier",
+    "가영이 오래된 향수병을 꺼내 뚜껑을 연다",
+    "Simone takes out an old bottle and opens the cap",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "조향 공방",
+    "perfume atelier",
+    "가영이 향수병을 들어 재석 앞에 선다",
+    "Simone raises the bottle in front of Nathan",
+    2,
+    "이 향을 찾은 분입니다. 제 매장은 이분 겁니다.",
+    "She found this scent. She gets my store.",
+    "low"
+   ],
+   [
+    "조향 공방",
+    "perfume atelier",
+    "재석의 입점 계약서가 바닥에 떨어진다",
+    "Nathan's store contract slips to the floor",
+    0,
+    "잊은 향 하나가 그렇게 하찮았습니까?",
+    "Was one lost scent that worthless?",
+    "cu"
+   ],
+   [
+    "조향 공방",
+    "perfume atelier",
+    "가영이 수민에게 새 매장 계약서를 건넨다",
+    "Simone hands Ivy the store contract",
+    2,
+    "다음 달부터 제 매장에 당신 향을 올려요.",
+    "Your scents go in my store next month.",
+    "trk"
+   ]
+  ]
+ ]
+]

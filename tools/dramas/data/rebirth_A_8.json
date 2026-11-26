@@ -1,0 +1,926 @@
+[
+ [
+  "트릭을 만든 사람",
+  "The One Who Built the Trick",
+  "장치 담당을 하인 취급한 마술사. 무대에 다시 선 다현은 출원 날짜를 먼저 확인한다.",
+  "A magician treats his stagehand like a servant. Back onstage, Hana checks the filing date first.",
+  [
+   [
+    "H",
+    "고다현",
+    "Hana Ravenscroft",
+    "40대 여성, 검은 작업복, 묶은 머리, 공구 벨트, 조용한 눈",
+    "woman in her 40s, black work clothes, tied hair, tool belt, quiet eyes"
+   ],
+   [
+    "V",
+    "백서진",
+    "Yuto Jarvis",
+    "30대 남성, 반짝이는 무대 의상, 젖은 머리, 비웃는 입",
+    "man in his 30s, glittering stage costume, wet hair, sneering mouth"
+   ],
+   [
+    "A",
+    "유찬희",
+    "Runa Oliphant",
+    "60대 여성, 검은 원피스, 은발, 극장주 완장, 날카로운 눈",
+    "woman in her 60s, black dress, silver hair, theatre owner's armband, sharp eyes"
+   ],
+   [
+    "X",
+    "이도현",
+    "Rolf Pellow",
+    "20대 남성, 후드티, 짧은 머리, 무대를 올려다보는 눈",
+    "man in his 20s, hoodie, short hair, looking up at the stage"
+   ]
+  ],
+  [
+   [
+    "마술 극장 무대 뒤",
+    "backstage",
+    "마술사가 장치 담당의 공구를 발로 차 버린다",
+    "The magician kicks the stagehand's tools away",
+    1,
+    "무대 뒤는 내가 정해",
+    "Backstage is mine to run",
+    "cz"
+   ],
+   [
+    "마술 극장 무대 뒤",
+    "backstage",
+    "마술사가 도면에서 담당의 이름을 찢어 버린다",
+    "He tears her name off the blueprint",
+    1,
+    "이 트릭은 내 거야",
+    "This trick is mine",
+    "trk"
+   ],
+   [
+    "마술 극장 무대 뒤",
+    "backstage",
+    "담당이 도면 접수증의 출원 날짜를 확인한다",
+    "She checks the filing date on the blueprint receipt",
+    0,
+    "출원은 이 년 전이야",
+    "Filed two years ago",
+    "cu"
+   ],
+   [
+    "무대 위",
+    "on stage",
+    "극장주가 출원 서류를 들고 무대에 오른다",
+    "The theatre owner walks onstage holding the filing papers",
+    2,
+    "이 트릭, 출원인이 따로 있습니다",
+    "This trick has a different inventor",
+    "low"
+   ],
+   [
+    "무대 위",
+    "on stage",
+    "마술사의 지팡이가 무대 아래로 굴러떨어진다",
+    "The magician's wand rolls off the stage",
+    0,
+    "트릭은 설계한 사람 거야",
+    "A trick belongs to whoever built it",
+    "cu"
+   ],
+   [
+    "객석",
+    "audience seats",
+    "한 젊은 남자가 무대를 올려다보며 손을 든다",
+    "A young man looks up at the stage and raises his hand",
+    3,
+    "그 트릭, 우리 엄마가 만든 거야",
+    "My mom made that trick",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "점검 없는 쇼",
+  "The Show Without a Check",
+  "부상 경력자를 버린 서커스 단장. 한별의 폰엔 빈 사인 칸 사진이 이미 있다.",
+  "A ringmaster dumps an injured acrobat. Zara already has the blank signature photographed on her phone.",
+  [
+   [
+    "H",
+    "서한별",
+    "Zara Whitcombe",
+    "30대 여성, 붉은 공연복, 단단히 묶은 머리, 붕대 감은 손목, 곧은 눈",
+    "woman in her 30s, red costume, tightly tied hair, bandaged wrist, straight gaze"
+   ],
+   [
+    "V",
+    "구태식",
+    "Otto Brantley",
+    "50대 남성, 금색 단장 재킷, 뒤로 넘긴 머리, 두꺼운 콧수염",
+    "man in his 50s, gold ringmaster jacket, swept hair, thick mustache"
+   ],
+   [
+    "A",
+    "남기석",
+    "Mons Prentiss",
+    "40대 남성, 회색 작업복, 안전모, 클립보드, 무거운 눈",
+    "man in his 40s, gray coveralls, hard hat, clipboard, heavy eyes"
+   ]
+  ],
+  [
+   [
+    "서커스 텐트",
+    "circus tent",
+    "단장이 곡예사의 어깨를 밀어 트램펄린에서 내린다",
+    "The ringmaster shoves the acrobat off the trampoline",
+    1,
+    "부상 경력자가 뭘 또 하겠어",
+    "Another injury waiting to happen",
+    "ws"
+   ],
+   [
+    "서커스 텐트",
+    "circus tent",
+    "단장이 곡예사의 이름표를 공연 명단에서 뜯는다",
+    "He rips her name off the show lineup",
+    1,
+    "네 차례는 없어",
+    "You're off the bill",
+    "ms"
+   ],
+   [
+    "서커스 사무실",
+    "circus office",
+    "곡예사가 안전 점검 일지의 빈 사인 칸을 사진으로 찍는다",
+    "She photographs the blank signature line in the safety log",
+    0,
+    "사인이 비어 있어",
+    "No signature here",
+    "cu"
+   ],
+   [
+    "서커스 사무실",
+    "circus office",
+    "안전 요원이 일지를 펼쳐 단장 앞에 놓는다",
+    "The safety officer opens the log before the ringmaster",
+    2,
+    "점검 없이 공연을 올렸습니다",
+    "You ran the show unchecked",
+    "low"
+   ],
+   [
+    "서커스 텐트",
+    "circus tent",
+    "단장의 모자가 바닥에 떨어진다",
+    "The ringmaster's hat falls to the floor",
+    0,
+    "사람 목숨이 네 쇼보다 무거워",
+    "Lives weigh more than your show",
+    "rx"
+   ],
+   [
+    "서커스 텐트",
+    "circus tent",
+    "안전 요원이 장비 등록판의 다른 이름을 가리킨다",
+    "The safety officer points to another name on the equipment plate",
+    2,
+    "이 장비, 다른 이름으로 등록돼 있어요",
+    "This rig is registered to someone else",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "음치 소문",
+  "The Tone-Deaf Rumor",
+  "편곡을 빼앗은 지휘자. 연습실로 돌아온 소민의 악보 여백엔 자기 필기가 있다.",
+  "A conductor steals an arrangement. Back in the rehearsal room, Tove's notes fill the score's margin.",
+  [
+   [
+    "H",
+    "차소민",
+    "Tove Galloway",
+    "40대 여성, 검은 합창복, 어깨까지 오는 머리, 악보를 든 손, 담담한 눈",
+    "woman in her 40s, black choir dress, shoulder-length hair, score in hand, calm eyes"
+   ],
+   [
+    "V",
+    "정태산",
+    "Rolf Hargreaves",
+    "40대 남성, 검은 턱시도, 짧은 머리, 지휘봉, 오만한 턱",
+    "man in his 40s, black tuxedo, short hair, baton, arrogant chin"
+   ],
+   [
+    "A",
+    "여서윤",
+    "Noor Fairbanks",
+    "50대 여성, 자주색 재킷, 안경, 심사위원 배지, 차분한 얼굴",
+    "woman in her 50s, plum jacket, glasses, adjudicator badge, calm face"
+   ]
+  ],
+  [
+   [
+    "합창단 연습실",
+    "choir room",
+    "지휘자가 단원의 악보를 빼앗아 찢는다",
+    "The conductor snatches her score and tears it",
+    1,
+    "음치가 무슨 합창이야",
+    "A tone-deaf singer in my choir?",
+    "cz"
+   ],
+   [
+    "합창단 연습실",
+    "choir room",
+    "지휘자가 단원을 문밖으로 손가락으로 가리킨다",
+    "He points her to the door",
+    1,
+    "나가. 소리가 다 망가져",
+    "Get out. You're ruining the sound",
+    "ms"
+   ],
+   [
+    "합창단 연습실",
+    "choir room",
+    "단원이 찢긴 악보 여백의 필기를 펼친다",
+    "She spreads the torn score and its margin notes",
+    0,
+    "여기 내 편곡이 적혀 있어",
+    "My arrangement is written here",
+    "cu"
+   ],
+   [
+    "공연장",
+    "concert hall",
+    "심사위원이 악보 사본을 무대 위에 올린다",
+    "The adjudicator places the copied score on the stage",
+    2,
+    "편곡자는 이쪽입니다",
+    "She wrote this arrangement",
+    "low"
+   ],
+   [
+    "공연장",
+    "concert hall",
+    "지휘자의 지휘봉이 바닥에 떨어진다",
+    "The baton drops from his hand",
+    0,
+    "소리는 못 훔쳐",
+    "You can't steal a voice",
+    "rx"
+   ],
+   [
+    "합창단 연습실",
+    "choir room",
+    "심사위원이 지원자 명단을 넘기다 멈춘다",
+    "The adjudicator flips the audition list and stops",
+    2,
+    "이 이름, 십 년 전에도 지원했네요",
+    "This name auditioned ten years ago",
+    "slo"
+   ]
+  ]
+ ],
+ [
+  "알바가 만든 게임",
+  "The Game the Clerk Made",
+  "알바의 게임을 매장 것으로 만든 매니저. 도겸의 등록증엔 자기 이름이 찍혀 있다.",
+  "A manager sells a clerk's game as the shop's. The registration already carries Haru's name.",
+  [
+   [
+    "H",
+    "유도겸",
+    "Haru Kingsley",
+    "20대 후반 남성, 후드티, 짧은 머리, 안경, 게임 상자를 든 손",
+    "man in his late 20s, hoodie, short hair, glasses, holding a game box"
+   ],
+   [
+    "V",
+    "한소미",
+    "Emi Danforth",
+    "40대 여성, 검은 셔츠, 묶은 머리, 계산대 앞, 얄팍한 웃음",
+    "woman in her 40s, black shirt, tied hair, at the counter, thin smile"
+   ],
+   [
+    "A",
+    "권태우",
+    "Clara Quinnell",
+    "50대 남성, 베이지 재킷, 안경, 계약서를 든 투자자",
+    "man in his 50s, beige jacket, glasses, investor holding a contract"
+   ],
+   [
+    "X",
+    "박세훈",
+    "Kettil Ormond",
+    "30대 남성, 회색 니트, 안경, 게임 상자를 든 손",
+    "man in his 30s, gray knit, glasses, holding a game box"
+   ]
+  ],
+  [
+   [
+    "보드게임 카페",
+    "board game cafe",
+    "매니저가 알바의 게임 상자를 바닥에 던진다",
+    "The manager throws the clerk's game box on the floor",
+    1,
+    "이 게임, 네가 만들었다고?",
+    "You made this game?",
+    "ms"
+   ],
+   [
+    "보드게임 카페",
+    "board game cafe",
+    "매니저가 게임 설명서에서 알바 이름을 지운다",
+    "She erases his name from the rulebook",
+    1,
+    "이 게임은 매장 거야",
+    "This game belongs to the shop",
+    "ms"
+   ],
+   [
+    "보드게임 카페",
+    "board game cafe",
+    "알바가 등록증 사본을 계산대 아래에서 꺼낸다",
+    "He pulls a registration copy from under the counter",
+    0,
+    "등록은 내 이름으로 했어",
+    "I registered it in my name",
+    "cu"
+   ],
+   [
+    "보드게임 카페",
+    "board game cafe",
+    "투자자가 라이선스 계약서를 들고 들어온다",
+    "An investor walks in holding the license contract",
+    2,
+    "이 게임, 판권자가 따로 있네요",
+    "This game has a different rights holder",
+    "low"
+   ],
+   [
+    "보드게임 카페",
+    "board game cafe",
+    "매니저가 계산대에 손을 짚고 고개를 숙인다",
+    "The manager grips the counter and lowers her head",
+    0,
+    "게임은 만든 사람 거야",
+    "A game belongs to its maker",
+    "cu"
+   ],
+   [
+    "보드게임 카페",
+    "board game cafe",
+    "한 손님이 상자를 열어 익숙한 카드를 집어 든다",
+    "A customer opens a box and picks up a familiar card",
+    3,
+    "이 게임, 원래 내가 의뢰했어",
+    "I commissioned this game",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "빈자리의 주인",
+  "The Owner of the Empty Space",
+  "주차 관리원을 무시한 소장. 복만은 번호판과 기록을 맞춰 두고 그 주차장에 다시 섰다.",
+  "A manager humiliates an old attendant. Ove stands in the lot again with the plate and log matched.",
+  [
+   [
+    "H",
+    "최복만",
+    "Ove Oliphant",
+    "60대 남성, 남색 경비복, 흰 머리, 짧은 수염, 무뚝뚝한 얼굴",
+    "man in his 60s, navy guard uniform, white hair, short beard, blunt face"
+   ],
+   [
+    "V",
+    "김나정",
+    "Yasmin Ingleby",
+    "40대 여성, 검은 정장, 짧은 단발, 관리소장 배지, 날카로운 눈",
+    "woman in her 40s, black suit, short bob, manager badge, sharp eyes"
+   ],
+   [
+    "A",
+    "송민규",
+    "Rasmus Yeldham",
+    "50대 남성, 회색 니트, 안경, 주차증을 든 입주민",
+    "man in his 50s, gray knit, glasses, resident holding a parking pass"
+   ]
+  ],
+  [
+   [
+    "지하 주차장",
+    "underground parking",
+    "소장이 관리원의 초소 의자를 발로 차 밀어낸다",
+    "The manager kicks the attendant's chair out of the booth",
+    1,
+    "주차장은 젊은 사람이 도는 거야",
+    "Young men run parking lots",
+    "ws"
+   ],
+   [
+    "지하 주차장",
+    "underground parking",
+    "소장이 관리원의 기록장을 찢어 바닥에 뿌린다",
+    "She shreds his logbook onto the floor",
+    1,
+    "차는 내가 배정해",
+    "I assign the spaces",
+    "ms"
+   ],
+   [
+    "지하 주차장",
+    "underground parking",
+    "관리원이 차량 번호판 사진과 기록을 맞춰 본다",
+    "He compares a plate photo with his log",
+    0,
+    "이 번호는 두 번 나와",
+    "This plate shows up twice",
+    "cu"
+   ],
+   [
+    "지하 주차장",
+    "underground parking",
+    "입주민이 관리실 화면에 주차 기록을 띄운다",
+    "A resident pulls the parking log onto the office screen",
+    2,
+    "남의 자리에 손님 차를 세웠네요",
+    "You parked a guest in someone's space",
+    "low"
+   ],
+   [
+    "지하 주차장",
+    "underground parking",
+    "소장의 열쇠 꾸러미가 바닥에 떨어진다",
+    "Her ring of keys clatters to the floor",
+    0,
+    "자리에는 사람 이름이 있어",
+    "Every space has a name",
+    "cu"
+   ],
+   [
+    "지하 주차장",
+    "underground parking",
+    "입주민이 빈자리에 선 검은 세단을 가리킨다",
+    "The resident points at the black sedan in the empty space",
+    2,
+    "이 자리 주인, 아세요?",
+    "Do you know whose space this is?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "부품 번호는 남는다",
+  "A Part Number Stays",
+  "여성 정비사를 무시한 매니저. 수민의 수첩엔 부품 번호가 이미 적혀 있다.",
+  "A manager dismisses a woman mechanic. The part number is already written in Mika's notebook.",
+  [
+   [
+    "H",
+    "오수민",
+    "Mika Jarvis",
+    "30대 여성, 회색 정비복, 묶은 머리, 기름 묻은 장갑, 단단한 눈",
+    "woman in her 30s, gray coveralls, tied hair, greasy gloves, hard eyes"
+   ],
+   [
+    "V",
+    "조현도",
+    "Aksel Corrigan",
+    "40대 남성, 흰 셔츠에 넥타이, 짧은 머리, 태블릿, 비뚠 입",
+    "man in his 40s, white shirt and tie, short hair, tablet, crooked mouth"
+   ],
+   [
+    "A",
+    "윤보영",
+    "Leila Stanhope",
+    "50대 여성, 파란 작업복, 안경, 부품 봉투를 든 담당자",
+    "woman in her 50s, blue overalls, glasses, parts clerk holding a bag"
+   ]
+  ],
+  [
+   [
+    "정비소",
+    "repair shop",
+    "매니저가 정비사의 공구를 작업대에서 쓸어 버린다",
+    "The manager sweeps the mechanic's tools off the bench",
+    1,
+    "손에 기름 묻히고 뭘 하겠어",
+    "What can greasy hands do?",
+    "ms"
+   ],
+   [
+    "정비소",
+    "repair shop",
+    "매니저가 수리 이력 화면을 꺼 버린다",
+    "He shuts off the repair history screen",
+    1,
+    "이 차 이력은 지워",
+    "Wipe this car's history",
+    "ms"
+   ],
+   [
+    "정비소",
+    "repair shop",
+    "정비사가 부품 봉투의 번호를 수첩에 적는다",
+    "She writes the part number from the bag into her notebook",
+    0,
+    "번호는 한 번 더 봐",
+    "Check the number twice",
+    "cu"
+   ],
+   [
+    "정비소",
+    "repair shop",
+    "부품 담당이 봉투와 출고 기록을 나란히 놓는다",
+    "The parts clerk sets the bag beside the dispatch record",
+    2,
+    "이 부품, 다른 차에서 나왔어요",
+    "This part came off another car",
+    "low"
+   ],
+   [
+    "정비소",
+    "repair shop",
+    "매니저가 서류를 바닥에 떨어뜨린다",
+    "The manager drops his papers",
+    0,
+    "차는 거짓말 안 해. 부품도",
+    "Cars don't lie. Neither do parts",
+    "rx"
+   ],
+   [
+    "정비소 앞",
+    "repair shop front",
+    "부품 담당이 트럭에서 내린 상자를 들여다본다",
+    "The parts clerk peers into the crate left by the truck",
+    2,
+    "이 상자, 어디서 온 거죠?",
+    "Where did this crate come from?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "입금은 어제 들어왔다",
+  "The Deposit Cleared Yesterday",
+  "신입 계약을 뺏은 지점장. 전시장에 다시 선 새봄은 입금 문자를 먼저 저장한다.",
+  "A manager steals a rookie's sale. Back in the showroom, Nao saves the deposit message first.",
+  [
+   [
+    "H",
+    "임새봄",
+    "Nao Pemberton",
+    "30대 여성, 검은 정장, 긴 생머리, 명패, 밝지만 단단한 눈",
+    "woman in her 30s, black suit, long hair, name badge, bright but firm eyes"
+   ],
+   [
+    "V",
+    "문태욱",
+    "Doran Stanhope",
+    "50대 남성, 회색 정장, 올백 머리, 커프스 단추, 거만한 웃음",
+    "man in his 50s, gray suit, slicked hair, cuff links, arrogant smile"
+   ],
+   [
+    "A",
+    "한서진",
+    "Hedda Ashdown",
+    "60대 여성, 크림색 코트, 진주 목걸이, 은발, 서류 가방을 든 고객",
+    "woman in her 60s, cream coat, pearl necklace, silver hair, customer with a bag"
+   ]
+  ],
+  [
+   [
+    "전시장",
+    "showroom",
+    "지점장이 신입의 계약서를 빼앗아 찢는다",
+    "The manager snatches the new hire's contract and tears it",
+    1,
+    "이 계약은 내 이름으로 다시 써",
+    "Rewrite this deal under my name",
+    "cz"
+   ],
+   [
+    "전시장",
+    "showroom",
+    "지점장이 신입의 명패를 손님 쪽에서 돌려놓는다",
+    "He turns her name plate away from the customers",
+    1,
+    "손님은 내가 맡아",
+    "I take the customers",
+    "ms"
+   ],
+   [
+    "전시장",
+    "showroom",
+    "신입이 예약금 입금 문자를 캡처해 둔다",
+    "She screenshots the deposit confirmation",
+    0,
+    "입금은 어제 들어왔어요",
+    "The deposit cleared yesterday",
+    "cu"
+   ],
+   [
+    "전시장",
+    "showroom",
+    "VIP 고객이 입금 내역과 계약서 사본을 꺼낸다",
+    "The VIP customer brings out the transfer and a signed copy",
+    2,
+    "계약은 이 직원 이름으로 했어요",
+    "I signed with this salesperson",
+    "pi"
+   ],
+   [
+    "전시장",
+    "showroom",
+    "지점장이 차 키를 바닥에 떨어뜨린다",
+    "The manager drops the keys",
+    0,
+    "계약은 손님이 고른 사람 거예요",
+    "The deal belongs to who the customer chose",
+    "cu"
+   ],
+   [
+    "전시장",
+    "showroom",
+    "VIP가 벽의 옛 사진을 가리킨다",
+    "The VIP points at an old photo on the wall",
+    2,
+    "이 전시장, 네 아버지가 세웠지",
+    "Your father built this showroom",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "벽 속의 도면",
+  "The Plan in the Wall",
+  "무명 디자이너를 무시한 시공사 사장. 하람은 자재를 대조해 두고 그 현장에 다시 섰다.",
+  "A contractor scorns a young designer. Maren stands on the site again with the materials compared.",
+  [
+   [
+    "H",
+    "김하람",
+    "Maren Whitcombe",
+    "30대 여성, 회색 작업복, 안전모, 짧은 머리, 도면 통을 든 손",
+    "woman in her 30s, gray work clothes, hard hat, short hair, blueprint tube in hand"
+   ],
+   [
+    "V",
+    "백동수",
+    "Fenn Craddock",
+    "50대 남성, 갈색 점퍼, 안전모, 굵은 손, 고함치는 입",
+    "man in his 50s, brown jacket, hard hat, thick hands, shouting mouth"
+   ],
+   [
+    "A",
+    "장세영",
+    "Ingrid Stanhope",
+    "40대 여성, 베이지 트렌치코트, 안경, 건축주 가방",
+    "woman in her 40s, beige trench coat, glasses, client's bag"
+   ]
+  ],
+  [
+   [
+    "공사 현장",
+    "construction site",
+    "사장이 디자이너의 도면을 발로 밟는다",
+    "The contractor steps on the designer's plan",
+    1,
+    "도면은 남자가 그리는 거야",
+    "Men draw the plans here",
+    "ws"
+   ],
+   [
+    "공사 현장",
+    "construction site",
+    "사장이 디자이너의 헬멧을 벗겨 벽에 던진다",
+    "He knocks off her helmet and throws it at the wall",
+    1,
+    "현장은 내가 지휘해",
+    "I run this site",
+    "ms"
+   ],
+   [
+    "공사 현장",
+    "construction site",
+    "디자이너가 자재 명세서와 실제 자재를 대조한다",
+    "She compares the material list with the delivered panels",
+    0,
+    "발주서랑 자재가 달라",
+    "The order and the material don't match",
+    "cu"
+   ],
+   [
+    "공사 현장",
+    "construction site",
+    "건축주가 발주서 사본을 들고 들어온다",
+    "The client walks in holding the order copy",
+    2,
+    "자재를 바꿔 납품했네요",
+    "You swapped the materials",
+    "low"
+   ],
+   [
+    "공사 현장",
+    "construction site",
+    "사장이 안전모를 바닥에 떨어뜨린다",
+    "The contractor drops his helmet",
+    0,
+    "집은 사람이 사는 거야",
+    "A house is for living in",
+    "rx"
+   ],
+   [
+    "공사 현장",
+    "construction site",
+    "건축주가 뜯긴 벽 속 도면을 펼친다",
+    "The client opens the plan from inside the wall",
+    2,
+    "이 도면, 우리 집 게 아니에요",
+    "This plan isn't for my house",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "심은 사람의 이름",
+  "The Name of the Planter",
+  "일용직 조경 기사를 무시한 이사. 재현은 나무 번호를 외운 채 정원에 다시 섰다.",
+  "A director dismisses a day-labor gardener. Stellan stands in the garden again, the tree number memorized.",
+  [
+   [
+    "H",
+    "노재현",
+    "Stellan Craddock",
+    "60대 남성, 누더기 작업복, 짚모자, 흙 묻은 손, 조용한 눈",
+    "man in his 60s, patched work clothes, straw hat, dirt-stained hands, quiet eyes"
+   ],
+   [
+    "V",
+    "최민호",
+    "Tariq Kirkland",
+    "40대 남성, 검은 점퍼, 선글라스, 금목걸이, 거만한 턱",
+    "man in his 40s, black jacket, sunglasses, gold chain, arrogant chin"
+   ],
+   [
+    "A",
+    "이정숙",
+    "Marta Harkness",
+    "70대 여성, 연두색 재킷, 흰 머리, 지팡이, 정원 도면을 든 정원주",
+    "woman in her 70s, green jacket, white hair, cane, owner holding a garden plan"
+   ]
+  ],
+  [
+   [
+    "정원 공사 현장",
+    "garden site",
+    "이사가 조경 기사의 삽을 뽑아 던진다",
+    "The director yanks the gardener's spade and throws it",
+    1,
+    "일용직이 무슨 정원이야",
+    "Day labor designing a garden?",
+    "ws"
+   ],
+   [
+    "정원 공사 현장",
+    "garden site",
+    "이사가 기사가 심은 묘목을 뽑아 버린다",
+    "He pulls out the sapling the gardener planted",
+    1,
+    "이 나무는 내가 정해",
+    "I choose the trees",
+    "ms"
+   ],
+   [
+    "정원 공사 현장",
+    "garden site",
+    "기사가 식재 기록에서 나무 번호를 확인한다",
+    "The gardener checks the tree number in the planting log",
+    0,
+    "이 나무, 등록된 거야",
+    "This tree is registered",
+    "cu"
+   ],
+   [
+    "정원",
+    "garden",
+    "정원주가 납품서와 나무 꼬리표를 맞춰 본다",
+    "The owner matches the delivery note to the tree tag",
+    2,
+    "내가 주문한 나무가 아니네요",
+    "This isn't the tree I ordered",
+    "low"
+   ],
+   [
+    "정원",
+    "garden",
+    "이사가 서류를 바닥에 떨어뜨린다",
+    "Papers fall from the director's hands",
+    0,
+    "나무는 심은 사람 이름을 남겨",
+    "A tree keeps the name of the one who planted it",
+    "cu"
+   ],
+   [
+    "정원",
+    "garden",
+    "정원주가 오래된 돌계단을 가리킨다",
+    "The owner points to an old stone step",
+    2,
+    "이 정원, 오십 년 전에도 이랬어요",
+    "This garden looked like this fifty years ago",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "지워진 출입 기록",
+  "The Deleted Entry",
+  "늙은 경비원을 무시한 소장. 만복의 눈엔 새벽 두 시 기록이 이미 남아 있다.",
+  "A manager humiliates an old guard. The 2 a.m. entry is already burned into Gault's mind.",
+  [
+   [
+    "H",
+    "고만복",
+    "Gault Ambrose",
+    "60대 남성, 남색 경비복, 흰 머리, 손전등, 주름진 얼굴",
+    "man in his 60s, navy guard uniform, white hair, flashlight, lined face"
+   ],
+   [
+    "V",
+    "신동은",
+    "Runa Kettlewell",
+    "40대 여성, 검은 정장, 짧은 단발, 관리소장 배지, 차가운 눈",
+    "woman in her 40s, black suit, short bob, manager badge, cold eyes"
+   ],
+   [
+    "A",
+    "배수진",
+    "Thea Wainwright",
+    "30대 여성, 회색 코트, 긴 머리, 이삿짐 상자를 든 새 입주자",
+    "woman in her 30s, gray coat, long hair, new tenant holding a moving box"
+   ]
+  ],
+  [
+   [
+    "아파트 초소",
+    "security booth",
+    "소장이 경비원의 순찰 기록을 집어 던진다",
+    "The manager throws the guard's patrol log at him",
+    1,
+    "늙은이가 무슨 경비야",
+    "An old man on night watch?",
+    "cz"
+   ],
+   [
+    "아파트 초소",
+    "security booth",
+    "소장이 경비원의 초소 난방을 꺼 버린다",
+    "She cuts the heat in his booth",
+    1,
+    "밤새 떨어도 월급은 그대로야",
+    "Freeze all night. Same pay",
+    "ms"
+   ],
+   [
+    "아파트 초소",
+    "security booth",
+    "경비원이 출입 로그에서 새벽 두 시 기록을 확대한다",
+    "He zooms in on the 2 a.m. entry in the access log",
+    0,
+    "이 시간엔 아무도 안 왔어",
+    "Nobody came at that hour",
+    "cu"
+   ],
+   [
+    "아파트 로비",
+    "lobby",
+    "새 입주자가 출입 기록을 출력해 소장 앞에 놓는다",
+    "The new tenant prints the access log for the manager",
+    2,
+    "제 집 출입 기록이 지워졌네요",
+    "My entry was deleted from the log",
+    "low"
+   ],
+   [
+    "아파트 로비",
+    "lobby",
+    "소장의 열쇠가 바닥에 떨어진다",
+    "Her keys drop to the floor",
+    0,
+    "기록은 지워도 밤은 안 지워져",
+    "Erase the log. The night stays",
+    "rx"
+   ],
+   [
+    "아파트 로비",
+    "lobby",
+    "새 입주자가 현관의 낡은 명판을 쓰다듬는다",
+    "The new tenant runs a hand over the worn nameplate",
+    2,
+    "이 건물, 원래 우리 가족 거였어요",
+    "This building belonged to my family",
+    "trk"
+   ]
+  ]
+ ]
+]

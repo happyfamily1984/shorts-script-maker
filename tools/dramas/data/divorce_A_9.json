@@ -1,0 +1,912 @@
+[
+ [
+  "보증인이 사라졌다",
+  "The Guarantor Walked",
+  "대출 심사가 끝난 줄 알았는데, 보증을 서 준 전처가 보증을 해지한다.",
+  "She said he had no head for money. She was the guarantor on his business loan.",
+  [
+   [
+    "H",
+    "윤도경",
+    "Alma",
+    "40대 여성, 회색 정장, 묶은 머리, 차분한 눈",
+    "woman in her 40s, gray suit, tied hair, calm eyes"
+   ],
+   [
+    "V",
+    "배서하",
+    "Emil",
+    "40대 남성, 밝은 정장, 짧은 머리, 들뜬 표정",
+    "man in his 40s, light suit, short hair, elated face"
+   ],
+   [
+    "A",
+    "권서우",
+    "Marden",
+    "50대 남성, 은행 유니폼, 안경, 무표정",
+    "man in his 50s, bank uniform, glasses, blank face"
+   ]
+  ],
+  [
+   [
+    "은행 대기실",
+    "bank waiting area",
+    "서하가 도경의 서류를 손으로 밀어낸다",
+    "Emil pushes Alma's papers aside",
+    1,
+    "여기 왜 와? 심사는 이미 끝났어.",
+    "Why are you here? The review is over.",
+    "cz"
+   ],
+   [
+    "은행 대기실",
+    "bank waiting area",
+    "서하가 창구 쪽을 턱으로 가리키며 웃는다",
+    "Emil jerks his chin toward the counter and laughs",
+    1,
+    "돈 감각 없는 사람이 보증을 서겠다고?",
+    "No head for money, and you'd guarantee a loan?",
+    "ms"
+   ],
+   [
+    "은행 대기실",
+    "bank waiting area",
+    "도경이 가방에서 보증 서류 사본을 꺼낸다",
+    "Alma takes a copy of the guarantee from her bag",
+    0,
+    "보증 서류, 제가 낸 거예요.",
+    "I filed this guarantee myself.",
+    "cu"
+   ],
+   [
+    "은행 창구",
+    "bank counter",
+    "지점장이 해지 접수증을 창구에 올려놓는다",
+    "Marden sets a release slip on the counter",
+    2,
+    "보증인 윤도경 님, 보증 해지 접수됐습니다.",
+    "The guarantor, Alma, has withdrawn.",
+    "low"
+   ],
+   [
+    "은행 창구",
+    "bank counter",
+    "도경이 접수증을 가방에 넣고 일어선다",
+    "Alma tucks the release slip into her bag and stands",
+    0,
+    "대출은 오늘로 끝이에요.",
+    "Your loan ends today.",
+    "cu"
+   ],
+   [
+    "은행 대기실",
+    "bank waiting area",
+    "창구 너머 남자가 서하에게 다가와 어깨를 짚는다",
+    "A man behind the counter steps up and touches Emil's shoulder",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "5퍼센트가 뒤집었다",
+  "Five Percent Flipped the Room",
+  "주주총회 표찰이 뒤집힌다. 회사를 흔드는 5퍼센트가 전처 손에 있다.",
+  "He sneered at her trading. The five percent that decides his company is hers.",
+  [
+   [
+    "H",
+    "진하람",
+    "Elle",
+    "30대 여성, 검은 정장, 짧은 머리, 단호한 눈",
+    "woman in her 30s, black suit, short hair, firm eyes"
+   ],
+   [
+    "V",
+    "강세현",
+    "Blake",
+    "40대 남성, 감색 정장, 짧은 머리, 거만한 입",
+    "man in his 40s, navy suit, short hair, arrogant mouth"
+   ],
+   [
+    "A",
+    "심도겸",
+    "Norrington",
+    "60대 남성, 회색 정장, 은발, 무표정",
+    "man in his 60s, gray suit, silver hair, blank face"
+   ]
+  ],
+  [
+   [
+    "주주총회장",
+    "shareholder meeting hall",
+    "세현이 하람의 의석 표찰을 뒤집어 놓는다",
+    "Blake flips Elle's seat card face down",
+    1,
+    "여긴 주주 자리야. 앉지 마.",
+    "Shareholders only. Don't sit.",
+    "cz"
+   ],
+   [
+    "주주총회장",
+    "shareholder meeting hall",
+    "세현이 좌중을 돌아보며 어깨를 으쓱한다",
+    "Blake looks around the room and shrugs",
+    1,
+    "주식이나 만지던 사람이 총회를 알아?",
+    "You played the market. You know meetings?",
+    "ms"
+   ],
+   [
+    "주주총회장",
+    "shareholder meeting hall",
+    "하람이 주주명부 사본을 펼친다",
+    "Elle opens a copy of the shareholder register",
+    0,
+    "지분 5%, 제 이름으로 있어요.",
+    "Five percent. In my name.",
+    "cu"
+   ],
+   [
+    "주주총회장",
+    "shareholder meeting hall",
+    "의장이 명부를 확인하고 고개를 끄덕인다",
+    "Norrington checks the register and nods",
+    2,
+    "지분 5퍼센트, 진하람 님 확인했습니다.",
+    "Five percent confirmed for Elle.",
+    "low"
+   ],
+   [
+    "주주총회장",
+    "shareholder meeting hall",
+    "하람이 명부를 덮고 자리에서 일어난다",
+    "Elle closes the register and rises from her seat",
+    0,
+    "그 지분은 제 돈으로 산 거예요.",
+    "I bought that stake with my own money.",
+    "cu"
+   ],
+   [
+    "주주총회장",
+    "shareholder meeting hall",
+    "회의장 뒤에서 두 사람이 일어나 천천히 박수를 친다",
+    "Two people at the back rise and clap slowly",
+    -1,
+    "",
+    "",
+    "rx"
+   ]
+  ]
+ ],
+ [
+  "수리비는 그의 계좌로",
+  "The Repair Money Was His",
+  "입주자 총회에서 수리비 횡령이 드러난다. 증거를 모은 사람은 전처였다.",
+  "He told her to save on bills. She gathered the proof of every building flaw.",
+  [
+   [
+    "H",
+    "문하람",
+    "Mona",
+    "40대 여성, 남색 재킷, 묶은 머리, 무표정",
+    "woman in her 40s, navy jacket, tied hair, blank face"
+   ],
+   [
+    "V",
+    "유재현",
+    "Dirk",
+    "50대 남성, 회색 정장, 짧은 머리, 비웃는 입",
+    "man in his 50s, gray suit, short hair, sneering mouth"
+   ],
+   [
+    "A",
+    "배도영",
+    "Quillon",
+    "30대 남성, 관리사무소 유니폼, 명찰, 당황한 얼굴",
+    "man in his 30s, building office uniform, badge, flustered face"
+   ]
+  ],
+  [
+   [
+    "아파트 회의실",
+    "apartment meeting room",
+    "재현이 하람의 마이크를 손으로 꺼 버린다",
+    "Dirk switches off Mona's microphone with his hand",
+    1,
+    "여긴 입주민 대표 자리야.",
+    "Residents' reps only.",
+    "cz"
+   ],
+   [
+    "아파트 회의실",
+    "apartment meeting room",
+    "재현이 좌중을 향해 손바닥을 펼친다",
+    "Dirk opens his palm toward the room",
+    1,
+    "관리비 아끼는 것만 하던 사람이 뭘 알아?",
+    "You only ever saved on bills. What do you know?",
+    "ms"
+   ],
+   [
+    "아파트 회의실",
+    "apartment meeting room",
+    "하람이 서류철을 펼쳐 하자 사진을 늘어놓는다",
+    "Mona opens a file and lays out photos of cracks",
+    0,
+    "수리 기록, 제가 다 모았어요.",
+    "I collected every repair record.",
+    "cu"
+   ],
+   [
+    "아파트 회의실",
+    "apartment meeting room",
+    "관리소장이 서류를 넘기며 손끝을 떤다",
+    "Quillon flips the pages, fingers shaking",
+    2,
+    "수리비가 이사장 계좌로 빠졌습니다.",
+    "The repair money went to the chair's account.",
+    "low"
+   ],
+   [
+    "아파트 회의실",
+    "apartment meeting room",
+    "하람이 서류철을 들고 회의실 문으로 간다",
+    "Mona picks up her file and walks to the door",
+    0,
+    "횡령은 제가 신고했어요.",
+    "I filed the report myself.",
+    "cu"
+   ],
+   [
+    "아파트 회의실",
+    "apartment meeting room",
+    "뒷줄에서 손이 올라가고 사람들이 그쪽을 본다",
+    "A hand rises in the back row and heads turn",
+    -1,
+    "",
+    "",
+    "rx"
+   ]
+  ]
+ ],
+ [
+  "원산지가 바뀌었다",
+  "The Origin Certificate",
+  "수출 선적 직전 서류가 멈춘다. 원산지 증명 발급자는 전처 회사였다.",
+  "She called him a country boy. The origin certificate his exports need is hers.",
+  [
+   [
+    "H",
+    "남도겸",
+    "Rory",
+    "40대 남성, 작업용 점퍼, 짧은 머리, 굳은 표정",
+    "man in his 40s, work jacket, short hair, set face"
+   ],
+   [
+    "V",
+    "최하린",
+    "Luisa",
+    "40대 여성, 흰 트렌치, 긴 생머리, 차가운 눈",
+    "woman in her 40s, white trench, long straight hair, cold eyes"
+   ],
+   [
+    "A",
+    "서재율",
+    "Rennard",
+    "50대 남성, 항만 유니폼, 서류철, 무표정",
+    "man in his 50s, port uniform, folder, blank face"
+   ]
+  ],
+  [
+   [
+    "항만 선적장",
+    "port loading dock",
+    "하린이 도겸의 컨테이너 문을 손으로 닫는다",
+    "Luisa pushes Rory's container door shut",
+    1,
+    "이 컨테이너는 내 회사 거야.",
+    "This container is my company's.",
+    "cz"
+   ],
+   [
+    "항만 선적장",
+    "port loading dock",
+    "하린이 크레인 쪽을 올려다보며 고개를 젓는다",
+    "Luisa looks up at the cranes and shakes her head",
+    1,
+    "촌에서 올라온 사람이 수출을 알아?",
+    "A country boy talking exports?",
+    "ms"
+   ],
+   [
+    "항만 선적장",
+    "port loading dock",
+    "도겸이 원산지 증명서를 펼친다",
+    "Rory unfolds the origin certificate",
+    0,
+    "원산지 증명, 제 회사 이름이에요.",
+    "The certificate carries my firm's name.",
+    "cu"
+   ],
+   [
+    "항만 사무소",
+    "port office",
+    "담당자가 증명서를 스캔하고 선적표에 도장을 찍는다",
+    "Rennard scans it and stamps the loading sheet",
+    2,
+    "발급자가 남도겸 님 회사입니다. 선적 보류합니다.",
+    "The issuer is Rory's firm. Loading is held.",
+    "low"
+   ],
+   [
+    "항만 사무소",
+    "port office",
+    "도겸이 선적표를 접어 주머니에 넣는다",
+    "Rory folds the loading sheet into his pocket",
+    0,
+    "다음 배는 두 달 뒤예요.",
+    "The next ship leaves in two months.",
+    "cu"
+   ],
+   [
+    "항만 입구",
+    "port gate",
+    "검은 승용차가 들어오고 남자가 서류 봉투를 들고 내린다",
+    "A black car pulls in and a man steps out with an envelope",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "세금은 그의 몫이었다",
+  "The Tax Bill Was His",
+  "이혼 때 숨긴 사업체의 체납 고지서가 날아온다. 신고자는 회계를 알던 전처였다.",
+  "She mocked his lack of money sense. The hidden firm he kept now owes the tax office.",
+  [
+   [
+    "H",
+    "장하윤",
+    "Nell",
+    "40대 여성, 회색 니트, 안경, 조용한 눈",
+    "woman in her 40s, gray knit, glasses, quiet eyes"
+   ],
+   [
+    "V",
+    "조도현",
+    "Bram",
+    "40대 남성, 검은 코트, 짧은 머리, 얇게 비웃는 입",
+    "man in his 40s, black coat, short hair, thin sneer"
+   ],
+   [
+    "A",
+    "최도겸",
+    "Taverner",
+    "50대 남성, 세무서 유니폼, 서류철, 무표정",
+    "man in his 50s, tax office uniform, folder, blank face"
+   ]
+  ],
+  [
+   [
+    "세무서 민원실",
+    "tax office",
+    "도현이 하윤의 서류를 바닥으로 떨어뜨린다",
+    "Bram knocks Nell's papers to the floor",
+    1,
+    "회계나 하던 사람이 여기 왜 와?",
+    "You did bookkeeping. Why are you here?",
+    "cz"
+   ],
+   [
+    "세무서 민원실",
+    "tax office",
+    "도현이 손가락으로 하윤을 가리키며 어깨를 흔든다",
+    "Bram points at Nell and shakes his shoulders",
+    1,
+    "이혼할 때 계산 하나 못 했잖아.",
+    "You couldn't add up our divorce, remember?",
+    "ms"
+   ],
+   [
+    "세무서 민원실",
+    "tax office",
+    "하윤이 신고 내역 사본을 조용히 올려놓는다",
+    "Nell quietly sets down a copy of the filings",
+    0,
+    "신고 내역, 제가 정리했어요.",
+    "I sorted out the filings myself.",
+    "cu"
+   ],
+   [
+    "세무서 민원실",
+    "tax office",
+    "담당자가 서류를 넘겨 체납 내역을 읽는다",
+    "Taverner flips through and reads the arrears",
+    2,
+    "체납 3건, 대표 조도현 님 명의입니다.",
+    "Three unpaid filings, all under Bram's name.",
+    "low"
+   ],
+   [
+    "세무서 민원실",
+    "tax office",
+    "하윤이 서류를 정리해 가방에 넣는다",
+    "Nell stacks the papers and puts them in her bag",
+    0,
+    "대표 책임이죠. 세금은 대표 몫이에요.",
+    "It's the CEO's debt. Pay it yourself.",
+    "cu"
+   ],
+   [
+    "사무실 출입문",
+    "office door",
+    "문에 압류 안내문이 붙고 직원들이 복도에 모인다",
+    "A seizure notice goes up on the door as staff gather",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "어머니 입주가 취소됐다",
+  "His Mother Lost the Room",
+  "요양원 대기 명단에서 어머니 이름이 빠진다. 서명할 사람은 전처였다.",
+  "He took everything in the divorce. The care home room his mother needs still requires her signature.",
+  [
+   [
+    "H",
+    "신유하",
+    "Cora",
+    "40대 여성, 흰 블라우스, 단발, 부드러운 눈",
+    "woman in her 40s, white blouse, short hair, gentle eyes"
+   ],
+   [
+    "V",
+    "홍재원",
+    "Curtis",
+    "40대 남성, 짙은 정장, 짧은 머리, 굳은 턱",
+    "man in his 40s, dark suit, short hair, tight jaw"
+   ],
+   [
+    "A",
+    "권도영",
+    "Ulverston",
+    "50대 여성, 시설 유니폼, 명찰, 무표정",
+    "woman in her 50s, facility uniform, badge, blank face"
+   ]
+  ],
+  [
+   [
+    "요양원 로비",
+    "care home lobby",
+    "재원이 유하의 손에서 서류를 낚아챈다",
+    "Curtis snatches the papers from Cora's hand",
+    1,
+    "우리 어머니 자리를 왜 뺐어?",
+    "Why did my mother lose her room?",
+    "cz"
+   ],
+   [
+    "요양원 로비",
+    "care home lobby",
+    "재원이 로비 의자를 발로 밀어 옆으로 치운다",
+    "Curtis kicks a lobby chair aside",
+    1,
+    "이혼할 때 시댁은 다 가져갔잖아.",
+    "You took everything from my family in court.",
+    "ms"
+   ],
+   [
+    "요양원 로비",
+    "care home lobby",
+    "유하가 대기 명단 서류를 펼친다",
+    "Cora opens the waiting list document",
+    0,
+    "대기 명단, 제가 관리해요.",
+    "I manage the waiting list.",
+    "cu"
+   ],
+   [
+    "요양원 로비",
+    "care home lobby",
+    "원장이 서류를 확인하고 고개를 젓는다",
+    "Ulverston checks the file and shakes her head",
+    2,
+    "유하 님 서명 없이는 계약이 성립하지 않습니다.",
+    "Without Cora's signature there is no contract.",
+    "low"
+   ],
+   [
+    "요양원 로비",
+    "care home lobby",
+    "재원이 벽을 짚고 유하를 불러 세운다",
+    "Curtis braces on the wall and calls after Cora",
+    0,
+    "서명은 안 해요. 명단은 그대로예요.",
+    "No signature. The list stays as it is.",
+    "cu"
+   ],
+   [
+    "요양원 정문",
+    "care home entrance",
+    "유리문 밖으로 재원의 어머니가 지팡이를 짚고 들어온다",
+    "Outside, Curtis's mother walks in on a cane",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "실사 보고서의 서명",
+  "The Due Diligence Report",
+  "투자 집행 직전, 실사 보고서 서명란이 비어 있다. 서명자는 전처였다.",
+  "He said she had no business sense. She signed off on the review that funds him.",
+  [
+   [
+    "H",
+    "서유겸",
+    "Selma",
+    "40대 여성, 검은 정장, 안경, 단호한 눈",
+    "woman in her 40s, black suit, glasses, firm eyes"
+   ],
+   [
+    "V",
+    "탁도현",
+    "Roman",
+    "40대 남성, 밝은 회색 정장, 짧은 머리, 들뜬 얼굴",
+    "man in his 40s, light gray suit, short hair, elated face"
+   ],
+   [
+    "A",
+    "윤서율",
+    "Wexley",
+    "50대 남성, 감색 정장, 태블릿, 무표정",
+    "man in his 50s, navy suit, tablet, blank face"
+   ]
+  ],
+  [
+   [
+    "투자 심사장",
+    "investment review room",
+    "도현이 유겸의 의자를 손으로 돌려 세운다",
+    "Roman turns Selma's chair around with his hand",
+    1,
+    "여긴 심사위원 자리야. 나가.",
+    "This is the panel's side. Out.",
+    "cz"
+   ],
+   [
+    "투자 심사장",
+    "investment review room",
+    "도현이 심사위원들 쪽으로 손을 펼쳐 보인다",
+    "Roman opens a hand toward the panel",
+    1,
+    "회사 하나 못 키운 사람이 심사를?",
+    "You never grew a company. You review them?",
+    "ms"
+   ],
+   [
+    "투자 심사장",
+    "investment review room",
+    "유겸이 실사 보고서를 펼쳐 서명란을 가리킨다",
+    "Selma opens the report and points at the signature line",
+    0,
+    "실사 책임자, 제 이름이에요.",
+    "The review lead. That's my name.",
+    "cu"
+   ],
+   [
+    "투자 심사장",
+    "investment review room",
+    "심사역이 태블릿으로 서명을 확인한다",
+    "Wexley checks the signature on his tablet",
+    2,
+    "서명이 없으면 투자 집행은 불가합니다.",
+    "No signature, no funding.",
+    "low"
+   ],
+   [
+    "투자 심사장",
+    "investment review room",
+    "도현이 책상 모서리를 짚고 몸을 숙인다",
+    "Roman braces on the desk corner and leans in",
+    1,
+    "서명만 하면 되는 거잖아.",
+    "Just sign it. That's all.",
+    "cu"
+   ],
+   [
+    "투자 심사장",
+    "investment review room",
+    "유겸이 서류를 덮고 자리에서 일어난다",
+    "Selma closes the file and stands",
+    0,
+    "서명은 안 합니다. 다음 안건 주세요.",
+    "I'm not signing. Next item, please.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "가짜 시계의 주인",
+  "The Fake on His Wrist",
+  "경매에 오른 명품 시계가 취소된다. 감정서의 서명자는 고물이나 만지던 전처였다.",
+  "He mocked her little repairs. The appraisal on his luxury watch carries her signature.",
+  [
+   [
+    "H",
+    "조시연",
+    "June",
+    "40대 여성, 검은 앞치마, 짧은 머리, 무표정한 눈",
+    "woman in her 40s, black apron, short hair, blank eyes"
+   ],
+   [
+    "V",
+    "유시우",
+    "Brett",
+    "40대 남성, 흰 셔츠에 감색 재킷, 짧은 머리, 거만한 턱",
+    "man in his 40s, white shirt and navy jacket, short hair, proud chin"
+   ],
+   [
+    "A",
+    "홍도경",
+    "Yarrow",
+    "50대 남성, 검은 조끼, 흰 장갑, 무표정",
+    "man in his 50s, black vest, white gloves, blank face"
+   ]
+  ],
+  [
+   [
+    "경매장 입구",
+    "auction house entrance",
+    "시우가 시연의 공구 가방을 발로 밀어낸다",
+    "Brett pushes June's tool bag aside with his foot",
+    1,
+    "수리공이 감정을 해? 웃기지 마.",
+    "A repairer appraising watches? Don't make me laugh.",
+    "cz"
+   ],
+   [
+    "경매장 입구",
+    "auction house entrance",
+    "시우가 손목을 내밀어 시계를 빛에 비춘다",
+    "Brett holds out his wrist and turns the watch to the light",
+    1,
+    "이 한 점이면 네 가게 열 개야.",
+    "This one piece is ten of your shops.",
+    "ms"
+   ],
+   [
+    "경매장 안",
+    "auction house",
+    "시연이 루페를 대고 시계 다이얼을 들여다본다",
+    "June looks at the dial through her loupe",
+    0,
+    "시리얼, 한 번만 볼게요.",
+    "Let me see the serial once.",
+    "cu"
+   ],
+   [
+    "경매장 안",
+    "auction house",
+    "경매사가 감정서와 시계를 나란히 놓는다",
+    "Yarrow sets the appraisal beside the watch",
+    2,
+    "시리얼이 감정서와 다릅니다. 출품 취소입니다.",
+    "The serial doesn't match. Withdrawn from sale.",
+    "low"
+   ],
+   [
+    "경매장 안",
+    "auction house",
+    "시연이 루페를 주머니에 넣고 돌아선다",
+    "June pockets her loupe and turns away",
+    0,
+    "감정서에 제 서명이 있어요.",
+    "The appraisal carries my signature.",
+    "cu"
+   ],
+   [
+    "경매장 안",
+    "auction house",
+    "감정서 아래에서 조사관이 조용히 일어난다",
+    "Below the appraisal desk, an investigator quietly stands up",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "통근버스가 끊겼다",
+  "No Bus for Her Staff",
+  "회사 통근버스 계약이 끊긴다. 계약 상대는 운전만 하던 전 남편 회사였다.",
+  "She said he only drove. The staff shuttle his office relies on is her company's contract.",
+  [
+   [
+    "H",
+    "강도현",
+    "Wally",
+    "50대 남성, 회색 작업복, 짧은 머리, 무뚝뚝한 얼굴",
+    "man in his 50s, gray work clothes, short hair, blunt face"
+   ],
+   [
+    "V",
+    "최서아",
+    "Renee",
+    "40대 여성, 흰 셔츠에 검은 재킷, 긴 생머리, 차가운 눈",
+    "woman in her 40s, white shirt and black jacket, long hair, cold eyes"
+   ],
+   [
+    "A",
+    "백시온",
+    "Belknap",
+    "30대 남성, 사무복, 명찰, 당황한 얼굴",
+    "man in his 30s, office clothes, badge, flustered face"
+   ]
+  ],
+  [
+   [
+    "버스 차고지",
+    "bus depot",
+    "서아가 도현의 운전석 문을 손으로 닫는다",
+    "Renee pushes the driver's door shut",
+    1,
+    "여기 차 세울 자리 없어. 나가.",
+    "No space for your bus. Leave.",
+    "cz"
+   ],
+   [
+    "버스 차고지",
+    "bus depot",
+    "서아가 주차선을 발끝으로 문지른다",
+    "Renee scuffs the parking line with her toe",
+    1,
+    "운전이나 하던 사람이 계약을 논해?",
+    "You drive. Contracts aren't your business.",
+    "ms"
+   ],
+   [
+    "버스 차고지",
+    "bus depot",
+    "도현이 노선 계약서를 펼친다",
+    "Wally unfolds the route contract",
+    0,
+    "노선 계약서, 여기 있어요.",
+    "The route contract. Right here.",
+    "cu"
+   ],
+   [
+    "회사 정문",
+    "company front gate",
+    "총무가 계약서를 확인하고 고개를 젓는다",
+    "Belknap checks it and shakes his head",
+    2,
+    "통근버스 계약, 오늘부로 해지됐습니다.",
+    "The shuttle contract is terminated today.",
+    "low"
+   ],
+   [
+    "회사 정문",
+    "company front gate",
+    "도현이 노선 계약서를 접어 가방에 넣는다",
+    "Wally folds the route contract into his bag",
+    0,
+    "내일부터 제 버스가 직원들 태웁니다.",
+    "From tomorrow my buses carry your staff.",
+    "cu"
+   ],
+   [
+    "회사 정문",
+    "company front gate",
+    "정문으로 다른 회사 버스가 들어와 서아 옆에 선다",
+    "A different company's bus pulls in and stops beside Renee",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "결혼식 꽃이 오지 않았다",
+  "The Flowers Never Came",
+  "결혼식 꽃이 오지 않는다. 물량을 낙찰받은 사람은 꽃이나 만지던 전처였다.",
+  "He said she only touched flowers. His wedding flowers came from the lot she won.",
+  [
+   [
+    "H",
+    "문서아",
+    "Flora",
+    "40대 여성, 초록 앞치마, 묶은 머리, 차분한 눈",
+    "woman in her 40s, green apron, tied hair, calm eyes"
+   ],
+   [
+    "V",
+    "심도현",
+    "Roderick",
+    "40대 남성, 회색 정장, 짧은 머리, 비웃는 입",
+    "man in his 40s, gray suit, short hair, sneering mouth"
+   ],
+   [
+    "A",
+    "김도영",
+    "Duvall",
+    "50대 남성, 경매 유니폼, 마이크, 무표정",
+    "man in his 50s, auction uniform, microphone, blank face"
+   ]
+  ],
+  [
+   [
+    "꽃 경매장",
+    "flower auction hall",
+    "도현이 서아의 장갑 낀 손을 뿌리친다",
+    "Roderick shoves Flora's gloved hand away",
+    1,
+    "이 꽃 다 내 결혼식 거야. 손대지 마.",
+    "These flowers are for my wedding. Hands off.",
+    "cz"
+   ],
+   [
+    "꽃 경매장",
+    "flower auction hall",
+    "도현이 꽃 상자 위에 팔을 얹고 웃는다",
+    "Roderick rests his arm on a flower crate and laughs",
+    1,
+    "꽃이나 만지던 사람이 뭘 알아.",
+    "You touch flowers. That's all you do.",
+    "ms"
+   ],
+   [
+    "꽃 경매장",
+    "flower auction hall",
+    "서아가 낙찰 기록을 펼쳐 보인다",
+    "Flora opens the auction record toward him",
+    0,
+    "낙찰 기록, 제 이름이에요.",
+    "The auction record is in my name.",
+    "cu"
+   ],
+   [
+    "꽃 경매장",
+    "flower auction hall",
+    "경매사가 기록을 확인하고 마이크를 든다",
+    "Duvall checks it and lifts the microphone",
+    2,
+    "낙찰자는 문서아 님입니다. 재판매는 금지입니다.",
+    "The buyer is Flora. Resale is barred.",
+    "low"
+   ],
+   [
+    "꽃 경매장",
+    "flower auction hall",
+    "서아가 경매 기록을 접어 가방에 넣는다",
+    "Flora folds the auction record into her bag",
+    0,
+    "제 허락 없이는 어디서도 못 사요.",
+    "Nowhere in this city sells without me.",
+    "cu"
+   ],
+   [
+    "꽃 경매장 입구",
+    "flower auction entrance",
+    "유리문 밖에서 흰 드레스를 입은 여자가 차에서 내린다",
+    "Outside, a woman in a white dress steps out of a car",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ]
+]

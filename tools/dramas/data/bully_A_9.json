@@ -1,0 +1,912 @@
+[
+ [
+  "말 안 듣던 애가 검사",
+  "The Prosecutor He Dismissed",
+  "조사를 받던 피의자가 조서를 찢으며 담당 검사를 조롱한다. 옛 피해자의 진술이 그녀 책상에 올라온다.",
+  "A suspect tears up his statement and sneers at the prosecutor. A statement from an old victim lands on her desk.",
+  [
+   [
+    "H",
+    "가림",
+    "Imogen",
+    "30대 여성, 검은 정장, 검사 배지, 단정한 단발, 서늘한 눈",
+    "woman in her 30s, black suit, prosecutor badge, neat bob, cool eyes"
+   ],
+   [
+    "V",
+    "서정",
+    "Seamus",
+    "40대 남성, 값비싼 코트, 젖은 머리, 비웃는 입",
+    "man in his 40s, expensive coat, wet hair, sneering mouth"
+   ],
+   [
+    "A",
+    "두리",
+    "Esme",
+    "30대 여성, 검찰 수사관, 서류철, 차분한 태도",
+    "woman in her 30s, investigator, case folder, composed manner"
+   ]
+  ],
+  [
+   [
+    "검찰청 조사실",
+    "prosecutor's office",
+    "서정이 탁자를 손바닥으로 치고 가림을 올려다본다",
+    "Seamus strikes the table and looks Imogen up and down",
+    1,
+    "너 같은 애가 나를 조사해?",
+    "A kid like you questions me?",
+    "cz"
+   ],
+   [
+    "검찰청 조사실",
+    "prosecutor's office",
+    "서정이 조서를 찢어 바닥에 던진다",
+    "He tears up the statement and throws it down",
+    1,
+    "변호사 오기 전엔 말 안 해. 다시 써.",
+    "I say nothing till my lawyer comes. Rewrite it.",
+    "ms"
+   ],
+   [
+    "검찰청 조사실",
+    "prosecutor's office",
+    "가림이 찢어진 조서를 주워 테이블에 겹쳐 놓는다",
+    "Imogen gathers the torn statement and stacks it on the table",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "검찰청 조사실",
+    "prosecutor's office",
+    "두리가 문을 열고 다른 사건 철을 가림에게 건넨다",
+    "Esme enters with another case file and hands it to Imogen",
+    2,
+    "이 사건, 옛 피해자 진술이 나왔습니다.",
+    "A statement just came in from an old victim.",
+    "low"
+   ],
+   [
+    "검찰청 조사실",
+    "prosecutor's office",
+    "서정이 코트깃을 여미며 의자를 뒤로 뺀다",
+    "Seamus clutches his coat and pulls his chair back",
+    0,
+    "조서는 그대로 둘게요. 다 읽고 오시죠.",
+    "The statement stays. Read it before you talk.",
+    "cu"
+   ],
+   [
+    "검찰청 조사실",
+    "prosecutor's office",
+    "두리가 철에서 사진 한 장을 꺼내 가림에게 보여 준다",
+    "Esme takes a photo from the file and shows Imogen",
+    2,
+    "진술인 셋인데... 다 같은 반이래요.",
+    "Three statements. All from the same class.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "실험 조교라던 교수",
+  "The Lab Assistant They Mocked",
+  "공동연구를 요구하며 책임연구원을 실험 조교로 부른 연구소장. 데이터를 쥔 사람이 그였다.",
+  "A corporate lab chief dismisses the project lead as a lab assistant. He owns the data and the samples.",
+  [
+   [
+    "H",
+    "서결",
+    "Lukas",
+    "40대 남성, 흰 연구복, 안경, 담담한 눈",
+    "man in his 40s, white lab coat, glasses, level eyes"
+   ],
+   [
+    "V",
+    "다올",
+    "Beatrix",
+    "40대 여성, 검은 정장, 짧은 단발, 날카로운 눈",
+    "woman in her 40s, black suit, short bob, sharp eyes"
+   ],
+   [
+    "A",
+    "서루",
+    "Kai",
+    "30대 남성, 연구원, 실험 노트, 당황한 얼굴",
+    "man in his 30s, researcher, lab notebook, flustered face"
+   ]
+  ],
+  [
+   [
+    "대학 연구실",
+    "university lab",
+    "다올이 실험대 위의 샘플을 밀어 떨어뜨린다",
+    "Beatrix sweeps samples off the lab bench",
+    1,
+    "실험 조교가 뭘 안다고? 그때도 그랬지.",
+    "A lab assistant? You were one back then too.",
+    "cz"
+   ],
+   [
+    "대학 연구실",
+    "university lab",
+    "다올이 공동연구 계획서를 찢어 서결 앞에 던진다",
+    "She tears the joint research plan and throws it at him",
+    1,
+    "우리 돈으로 연구해. 결과는 내 거야.",
+    "My money funds this. The results are mine.",
+    "ms"
+   ],
+   [
+    "대학 연구실",
+    "university lab",
+    "서결이 찢어진 계획서를 주워 조항을 확인한다",
+    "Lukas gathers the torn plan and checks the clauses",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "대학 연구실",
+    "university lab",
+    "서루가 연구 계약서를 들고 와 서결에게 건넨다",
+    "Kai brings the research contract and hands it to Lukas",
+    2,
+    "책임연구원님, 데이터 소유권은 이분에게 있습니다.",
+    "The data belongs to him, not the sponsor.",
+    "low"
+   ],
+   [
+    "대학 연구실",
+    "university lab",
+    "다올이 샘플을 만지다 손을 거둔다",
+    "Beatrix reaches for a sample and pulls her hand back",
+    0,
+    "공동연구는 끝입니다. 샘플은 두고 가세요.",
+    "The partnership is over. Leave the samples.",
+    "cu"
+   ],
+   [
+    "대학 연구실",
+    "university lab",
+    "서루가 폐기 표시가 붙은 샘플을 집어 든다",
+    "Kai lifts a sample marked for disposal",
+    2,
+    "이 샘플, 작년에 폐기된 겁니다.",
+    "This sample was disposed of last year.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "짐이나 싣던 대표",
+  "The Girl Who Loaded Trucks",
+  "배차를 요구하며 운송회사 대표를 짐꾼으로 부른 화주. 그의 화물을 옮길 사람이 그녀뿐이었다.",
+  "A shipper calls the haulage owner a loader while demanding trucks. She is the only one who moves his freight.",
+  [
+   [
+    "H",
+    "하루",
+    "Nora",
+    "30대 여성, 회색 작업복, 짧은 머리, 단호한 눈",
+    "woman in her 30s, gray work clothes, short hair, firm eyes"
+   ],
+   [
+    "V",
+    "서형",
+    "Matthias",
+    "40대 남성, 풀린 셔츠에 가죽 재킷, 굵은 반지",
+    "man in his 40s, open shirt and leather jacket, thick ring"
+   ],
+   [
+    "A",
+    "이슬",
+    "Layla",
+    "30대 여성, 운송회사 직원, 운송장, 긴장한 얼굴",
+    "woman in her 30s, haulage staff, waybill, tense face"
+   ]
+  ],
+  [
+   [
+    "화물 터미널",
+    "freight terminal",
+    "서형이 운송장을 하루의 가슴에 밀어붙인다",
+    "Matthias shoves a waybill into Nora's chest",
+    1,
+    "짐이나 싣던 애가 대표야?",
+    "The loader runs this company?",
+    "cz"
+   ],
+   [
+    "화물 터미널",
+    "freight terminal",
+    "서형이 배차표를 찢어 바닥에 던진다",
+    "He tears the dispatch sheet and throws it down",
+    1,
+    "내 화물부터 태워. 오늘 안에.",
+    "My freight goes first. Today.",
+    "ms"
+   ],
+   [
+    "화물 터미널",
+    "freight terminal",
+    "하루가 찢어진 배차표를 주워 번호를 확인한다",
+    "Nora picks up the torn sheet and checks the numbers",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "화물 터미널",
+    "freight terminal",
+    "이슬이 운송 계약서를 들고 와 하루 옆에 선다",
+    "Layla brings the haulage contract and stands beside Nora",
+    2,
+    "대표님, 이 화주는 미납이 세 건입니다.",
+    "Boss, this client has three unpaid bills.",
+    "low"
+   ],
+   [
+    "화물 터미널",
+    "freight terminal",
+    "서형이 반지를 만지작거리다 손을 내린다",
+    "Matthias fingers his ring and drops his hand",
+    0,
+    "배차는 안 됩니다. 미납부터 정리하세요.",
+    "No trucks. Clear your unpaid bills first.",
+    "cu"
+   ],
+   [
+    "화물 터미널",
+    "freight terminal",
+    "이슬이 운송장의 품목란을 가리킨다",
+    "Layla points at the item column on the waybill",
+    2,
+    "이 화물, 신고된 품목과 다릅니다.",
+    "This cargo doesn't match the declared goods.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "신입 기자로 본 그 얼굴",
+  "The Rookie at the Press Conference",
+  "낡은 코트를 입은 기자를 뒤로 보내려던 임원. 회견이 시작되자 그가 첫 질문을 던졌다.",
+  "An executive waves off a shabby reporter. When the conference starts, he asks the first question.",
+  [
+   [
+    "H",
+    "서산",
+    "Jack",
+    "30대 남성, 낡은 트렌치코트, 안경, 조용한 눈",
+    "man in his 30s, worn trench coat, glasses, quiet eyes"
+   ],
+   [
+    "V",
+    "여름",
+    "Sable",
+    "40대 여성, 하늘색 정장, 긴 머리, 완벽한 미소",
+    "woman in her 40s, sky-blue suit, long hair, perfect smile"
+   ],
+   [
+    "A",
+    "서보",
+    "Dov",
+    "30대 남성, 카메라 기자, 장비 가방, 다급한 표정",
+    "man in his 30s, press photographer, gear bag, urgent face"
+   ]
+  ],
+  [
+   [
+    "기자회견장",
+    "press conference room",
+    "여름이 서산의 낡은 코트를 훑어보고 마이크를 뺏는다",
+    "Sable scans his worn coat and takes his mic",
+    1,
+    "그 옷 입고 질문해? 신입은 뒤에 있어.",
+    "Asking questions in that coat? Rookies in back.",
+    "cz"
+   ],
+   [
+    "기자회견장",
+    "press conference room",
+    "여름이 서산의 명함을 집어 바닥에 떨어뜨린다",
+    "She flicks his press card onto the floor",
+    1,
+    "이 회견, 내가 준비했어. 그때처럼 조용히.",
+    "I arranged this. Stay quiet, like back then.",
+    "ms"
+   ],
+   [
+    "기자회견장",
+    "press conference room",
+    "서산이 명함을 주워 주머니에 넣고 노트를 편다",
+    "Jack picks up the card, pockets it and opens his notebook",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "기자회견장",
+    "press conference room",
+    "서보가 카메라를 세우고 서산에게 자료를 건넨다",
+    "Dov sets up his camera and hands Jack a folder",
+    2,
+    "자료 받으세요. 이 회사 내부 문건입니다.",
+    "Take this. Internal company documents.",
+    "low"
+   ],
+   [
+    "기자회견장",
+    "press conference room",
+    "여름의 미소가 굳고 진행자가 마이크를 내린다",
+    "Sable's smile freezes as the moderator lowers the mic",
+    0,
+    "질문은 제가 할게요. 첫 번째는 이 문건부터.",
+    "I'll ask the questions. Starting with these documents.",
+    "cu"
+   ],
+   [
+    "기자회견장",
+    "press conference room",
+    "서보가 서산의 노트에 적힌 이름을 들여다본다",
+    "Dov peers at a name written in Jack's notebook",
+    2,
+    "이 이름... 이 회사 대표 비서래요.",
+    "That name belongs to the CEO's assistant.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "교정기 차던 치과의사",
+  "The Dentist With Braces",
+  "한밤중 치통에 걸린 옛 선배가 진료실에서 의사를 놀린다. 야간에 남은 사람이 그녀뿐이었다.",
+  "An old classmate laughs at his night dentist, the girl who wore braces. She is the only one on call.",
+  [
+   [
+    "H",
+    "희원",
+    "June",
+    "30대 여성, 흰 진료복, 안경, 차분한 눈",
+    "woman in her 30s, white dental coat, glasses, calm eyes"
+   ],
+   [
+    "V",
+    "서온",
+    "Milo",
+    "30대 남성, 구겨진 셔츠, 볼을 감싼 손, 찡그린 얼굴",
+    "man in his 30s, crumpled shirt, hand on his cheek, pained face"
+   ],
+   [
+    "A",
+    "단비",
+    "Elspeth",
+    "30대 여성, 치과 위생사 유니폼, 놀란 표정",
+    "woman in her 30s, dental hygienist uniform, startled face"
+   ]
+  ],
+  [
+   [
+    "치과 진료실",
+    "dental clinic",
+    "서온이 볼을 감싼 채 희원을 보고 웃음을 터뜨린다",
+    "Milo holds his cheek and bursts out laughing at June",
+    1,
+    "교정기 차던 애가 치과의사야?",
+    "The kid with braces is my dentist?",
+    "cz"
+   ],
+   [
+    "치과 진료실",
+    "dental clinic",
+    "서온이 예약판을 밀어 떨어뜨리고 다리를 뻗는다",
+    "He shoves the appointment board off the desk and stretches his legs",
+    1,
+    "야간에 너밖에 없어? 빨리 치료해.",
+    "Are you the only one on nights? Hurry up.",
+    "ms"
+   ],
+   [
+    "치과 진료실",
+    "dental clinic",
+    "희원이 예약판을 주워 세우고 장갑을 끼며 입을 본다",
+    "June sets the board upright, pulls on gloves and looks at his mouth",
+    0,
+    "입 벌리세요. 그때처럼.",
+    "Open wide. Like back then.",
+    "cu"
+   ],
+   [
+    "치과 진료실",
+    "dental clinic",
+    "단비가 차트를 들고 와 희원에게 조용히 말한다",
+    "Elspeth brings the chart and speaks quietly to June",
+    2,
+    "원장님, 예전에 소란 피운 환자입니다.",
+    "Doctor, he caused a scene here before.",
+    "low"
+   ],
+   [
+    "치과 진료실",
+    "dental clinic",
+    "서온이 입을 벌린 채 눈만 굴린다",
+    "Milo lies with his mouth open, eyes darting",
+    0,
+    "치료는 해 드릴게요. 말은 나중에.",
+    "I'll treat you. The talking can wait.",
+    "cu"
+   ],
+   [
+    "치과 진료실",
+    "dental clinic",
+    "희원이 차트 아래에서 옛 사진을 꺼내 단비에게 보여 준다",
+    "June takes an old photo from under the chart and shows Elspeth",
+    0,
+    "이 사진, 왜 차트에 껴 있죠?",
+    "Why is this photo in his chart?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "우리 청소하던 원장",
+  "The Keeper They Mocked",
+  "야간 관람을 요구하며 원장을 우리 청소 담당으로 부른 후원회장. 행사를 정하는 사람이 그였다.",
+  "A donors' club chair demands a private night tour and calls the zoo director a cage cleaner. He approves events.",
+  [
+   [
+    "H",
+    "서주",
+    "Connor",
+    "40대 남성, 사육사 유니폼에 장화, 짧은 머리, 조용한 눈",
+    "man in his 40s, keeper uniform and boots, short hair, quiet eyes"
+   ],
+   [
+    "V",
+    "노을",
+    "Marian",
+    "50대 여성, 검은 원피스에 큰 목걸이, 치켜든 턱",
+    "woman in her 50s, black dress and large necklace, lifted chin"
+   ],
+   [
+    "A",
+    "서화",
+    "Louis",
+    "30대 남성, 동물원 직원, 무전기, 긴장한 표정",
+    "man in his 30s, zoo staff, radio, tense face"
+   ]
+  ],
+  [
+   [
+    "동물원 우리 앞",
+    "zoo enclosure",
+    "노을이 사료 통을 발로 밀어 서주 앞에서 넘어뜨린다",
+    "Marian kicks a feed bucket over in front of Connor",
+    1,
+    "우리나 청소하던 애가 원장이야?",
+    "The cage cleaner runs this zoo?",
+    "cz"
+   ],
+   [
+    "동물원 우리 앞",
+    "zoo enclosure",
+    "노을이 행사 신청서를 찢어 우리 철망에 걸어 둔다",
+    "She tears the event request and hangs it on the enclosure wire",
+    1,
+    "후원자들만 모아 야간 관람, 오늘 밤.",
+    "A donors-only night tour. Tonight.",
+    "ms"
+   ],
+   [
+    "동물원 우리 앞",
+    "zoo enclosure",
+    "서주가 찢어진 신청서를 철망에서 떼어 낸다",
+    "Connor peels the torn request off the wire",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "동물원 사무실",
+    "zoo office",
+    "서화가 관람 일정표를 들고 와 서주에게 건넨다",
+    "Louis brings the visiting schedule and hands it to Connor",
+    2,
+    "원장님, 오늘 밤은 동물 검진 일정입니다.",
+    "Director, tonight is the animals' checkup.",
+    "low"
+   ],
+   [
+    "동물원 우리 앞",
+    "zoo enclosure",
+    "노을이 목걸이를 만지며 물러선다",
+    "Marian touches her necklace and steps back",
+    0,
+    "야간 관람은 안 됩니다. 낮에 오세요.",
+    "No night tour. Come in daylight.",
+    "cu"
+   ],
+   [
+    "동물원 우리 앞",
+    "zoo enclosure",
+    "서화가 우리 옆에서 사진을 찍는 손님을 가리킨다",
+    "Louis points at a visitor photographing the enclosure",
+    2,
+    "저 손님, 아까부터 우리 안을 찍고 있습니다.",
+    "That visitor keeps filming the enclosure.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "고기 자르던 그녀",
+  "The Butcher They Undervalued",
+  "등급 표시를 요구하며 정육점 주인을 고기 자르는 애로 부른 식당 대표. 인증을 쥔 사람이 그녀였다.",
+  "A restaurant owner demands a premium grade label and sneers at the butcher. She certifies the meat.",
+  [
+   [
+    "H",
+    "서휘",
+    "Juliette",
+    "40대 여성, 흰 앞치마, 묶은 머리, 서늘한 눈",
+    "woman in her 40s, white apron, tied-back hair, cool eyes"
+   ],
+   [
+    "V",
+    "서조",
+    "Charlie",
+    "50대 남성, 값비싼 점퍼, 선글라스, 거만하게 든 턱",
+    "man in his 50s, expensive jacket, sunglasses, arrogant lifted chin"
+   ],
+   [
+    "A",
+    "다래",
+    "Amelie",
+    "30대 여성, 정육점 직원, 위생 장갑, 긴장한 표정",
+    "woman in her 30s, butcher shop staff, hygiene gloves, tense face"
+   ]
+  ],
+  [
+   [
+    "정육점",
+    "butcher shop",
+    "서조가 진열대의 고기 팩을 밀어 바닥에 떨어뜨린다",
+    "Charlie sweeps meat packs off the display onto the floor",
+    1,
+    "고기나 자르던 애가 인증을 해?",
+    "The meat cutter certifies my beef?",
+    "cz"
+   ],
+   [
+    "정육점",
+    "butcher shop",
+    "서조가 인증 신청서를 찢어 서휘 앞에 던진다",
+    "He tears the certification request and throws it at her",
+    1,
+    "우리 식당 간판, 오늘 승인해.",
+    "Approve my restaurant's claim today.",
+    "ms"
+   ],
+   [
+    "정육점",
+    "butcher shop",
+    "서휘가 찢어진 신청서를 주워 등급란을 확인한다",
+    "Juliette picks up the torn request and checks the grade column",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "정육점",
+    "butcher shop",
+    "다래가 축산물 인증 대장을 들고 와 서휘 옆에 선다",
+    "Amelie brings the meat certification ledger and stands beside her",
+    2,
+    "조합장님, 이 식당은 등급 표시를 못 씁니다.",
+    "Chairwoman, this restaurant can't use the grade label.",
+    "low"
+   ],
+   [
+    "정육점",
+    "butcher shop",
+    "서조가 선글라스를 벗고 진열대를 붙잡는다",
+    "Charlie takes off his sunglasses and grips the display",
+    0,
+    "인증은 반려입니다. 메뉴판부터 고치세요.",
+    "Certification denied. Fix your menu first.",
+    "cu"
+   ],
+   [
+    "정육점",
+    "butcher shop",
+    "다래가 신청서에 붙은 사진을 가리킨다",
+    "Amelie points at a photo stapled to the request",
+    2,
+    "이 사진, 다른 정육점 도장입니다.",
+    "That photo shows another butcher's stamp.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "비상구를 막은 건물주",
+  "The Exit She Blocked",
+  "체격을 비웃으며 비상구 앞에 상자를 쌓는 건물주. 점검 합격을 결정하는 사람이 그 점검관이었다.",
+  "A landlord stacks boxes over the fire exit and mocks the inspector. He signs off her building.",
+  [
+   [
+    "H",
+    "서든",
+    "Max",
+    "30대 남성, 소방 점검복, 안전모, 반듯한 자세, 단호한 눈",
+    "man in his 30s, fire inspection gear, hard hat, upright posture, firm eyes"
+   ],
+   [
+    "V",
+    "새벽",
+    "Sabine",
+    "30대 여성, 흰 블라우스와 명품 가방, 긴 머리, 짜증 난 얼굴",
+    "woman in her 30s, white blouse and designer bag, long hair, annoyed face"
+   ],
+   [
+    "A",
+    "서초",
+    "Niall",
+    "30대 남성, 소방 점검 보조, 클립보드, 긴장한 표정",
+    "man in his 30s, inspection assistant, clipboard, tense face"
+   ]
+  ],
+  [
+   [
+    "상가 건물 복도",
+    "shopping arcade hallway",
+    "새벽이 점검 클립보드를 서든의 가슴에 밀어붙인다",
+    "Sabine shoves the clipboard into Max's chest",
+    1,
+    "체격도 안 되는 애가 점검관이야?",
+    "A scrawny kid is my inspector?",
+    "cz"
+   ],
+   [
+    "상가 건물 복도",
+    "shopping arcade hallway",
+    "새벽이 상자를 밀어 비상구 앞을 막는다",
+    "She pushes boxes in front of the emergency exit",
+    1,
+    "여긴 창고야. 비상구는 하나면 돼.",
+    "This is storage. One exit is enough.",
+    "ms"
+   ],
+   [
+    "상가 건물 복도",
+    "shopping arcade hallway",
+    "서든이 상자를 치우고 비상구 표시를 손으로 닦는다",
+    "Max moves the boxes and wipes the exit sign with his sleeve",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "상가 건물 복도",
+    "shopping arcade hallway",
+    "서초가 태블릿을 들어 새벽에게 화면을 보여 준다",
+    "Niall holds up a tablet and shows Sabine the screen",
+    2,
+    "지난 점검에도 같은 적발이 있었습니다.",
+    "The last inspection flagged the same thing.",
+    "low"
+   ],
+   [
+    "상가 건물 복도",
+    "shopping arcade hallway",
+    "새벽이 가방끈을 고쳐 잡고 발끝을 돌린다",
+    "Sabine adjusts her bag and turns on her heel",
+    0,
+    "영업 정지입니다. 상자는 오늘 다 빼세요.",
+    "Business suspended. Clear these boxes today.",
+    "cu"
+   ],
+   [
+    "상가 건물 복도",
+    "shopping arcade hallway",
+    "서초가 클립보드 아래 사진을 꺼내 보여 준다",
+    "Niall shows a photo tucked under the clipboard",
+    2,
+    "이 사진, 신고하신 분이 보낸 겁니다.",
+    "The complainant sent this photo.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "주방을 가린 사장",
+  "The Kitchen He Hid",
+  "위생 점검 수첩을 빼앗으며 점검관을 조롱한 식당 사장. 주방 공개 여부가 그의 영업을 갈랐다.",
+  "A restaurant owner snatches the inspector's notebook and shuts the kitchen door. His license hangs on it.",
+  [
+   [
+    "H",
+    "선담",
+    "Brigitte",
+    "40대 여성, 흰 점검복, 위생모, 또렷한 눈",
+    "woman in her 40s, white inspection coat, hairnet, clear eyes"
+   ],
+   [
+    "V",
+    "서운",
+    "Gabriel",
+    "40대 남성, 앞치마에 셔츠, 기름 묻은 손, 비웃는 얼굴",
+    "man in his 40s, apron over shirt, greasy hands, sneering face"
+   ],
+   [
+    "A",
+    "서시",
+    "Harry",
+    "30대 남성, 점검 보조, 위생 키트, 조용한 태도",
+    "man in his 30s, inspection assistant, hygiene kit, quiet manner"
+   ]
+  ],
+  [
+   [
+    "식당 홀",
+    "restaurant dining room",
+    "서운이 선담의 점검 수첩을 빼앗아 카운터에 던진다",
+    "Gabriel snatches Brigitte's notebook and throws it on the counter",
+    1,
+    "설거지하던 애가 위생 점검을 해?",
+    "The dishwasher does hygiene checks now?",
+    "cz"
+   ],
+   [
+    "식당 홀",
+    "restaurant dining room",
+    "서운이 주방 문을 발로 밀어 닫고 팔짱을 낀다",
+    "He kicks the kitchen door shut and folds his arms",
+    1,
+    "주방은 내 영역이야. 들어오지 마.",
+    "The kitchen is mine. Stay out.",
+    "ms"
+   ],
+   [
+    "식당 홀",
+    "restaurant dining room",
+    "선담이 수첩을 주워 펴고 주방 문을 사진으로 찍는다",
+    "Brigitte retrieves the notebook and photographs the kitchen door",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "식당 홀",
+    "restaurant dining room",
+    "서시가 위생 키트에서 봉인 스티커를 꺼내 건넨다",
+    "Harry takes a seal sticker from the kit and hands it over",
+    2,
+    "위생 등급 보류입니다. 주방 공개 전까지.",
+    "Grade withheld until the kitchen is shown.",
+    "low"
+   ],
+   [
+    "식당 홀",
+    "restaurant dining room",
+    "서운이 앞치마를 풀어 카운터에 내려놓는다",
+    "Gabriel unties his apron and lays it on the counter",
+    0,
+    "주방 문은 열어 두세요. 손님들이 기다립니다.",
+    "Leave the kitchen door open. Your guests are waiting.",
+    "cu"
+   ],
+   [
+    "식당 홀",
+    "restaurant dining room",
+    "서시가 홀 손님 쪽을 보며 선담에게 귓속말한다",
+    "Harry glances at a customer and whispers to Brigitte",
+    2,
+    "저분, 아까부터 주방을 찍고 있습니다.",
+    "That customer has been filming your kitchen.",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "소 먹이 주던 목장주",
+  "The Cow Feeder",
+  "단가를 깎으며 목장주를 소 먹이 담당으로 부른 유제품 구매팀장. 공급을 쥔 사람이 그였다.",
+  "A dairy buyer cuts the price and calls the farm owner a cow feeder. He is the only certified supplier.",
+  [
+   [
+    "H",
+    "서설",
+    "Jeremy",
+    "40대 남성, 작업복에 밀짚모자, 그을린 얼굴, 조용한 눈",
+    "man in his 40s, work clothes and straw hat, weathered face, quiet eyes"
+   ],
+   [
+    "V",
+    "온기",
+    "Jody",
+    "40대 여성, 검은 원피스와 진주 목걸이, 짧은 머리, 오만한 입매",
+    "woman in her 40s, black dress and pearl necklace, short hair, haughty mouth"
+   ],
+   [
+    "A",
+    "서요",
+    "Josh",
+    "30대 남성, 목장 직원, 검사 성적서, 조용한 태도",
+    "man in his 30s, farmhand, test report, quiet manner"
+   ]
+  ],
+  [
+   [
+    "목장",
+    "dairy farm",
+    "온기가 서설의 장갑을 집어 발밑에 떨어뜨린다",
+    "Jody picks up Jeremy's glove and drops it at his feet",
+    1,
+    "소 먹이 주던 애가 계약을 해?",
+    "The cow feeder negotiates supply?",
+    "cz"
+   ],
+   [
+    "목장",
+    "dairy farm",
+    "온기가 납품 단가표를 찢어 서설 앞에 던진다",
+    "She tears the price sheet and throws it at him",
+    1,
+    "이 단가로 맞춰. 아니면 거래 끝.",
+    "Match this price or we're done.",
+    "ms"
+   ],
+   [
+    "목장",
+    "dairy farm",
+    "서설이 찢어진 단가표를 주워 숫자를 맞춰 본다",
+    "Jeremy gathers the torn sheet and checks the numbers",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "목장",
+    "dairy farm",
+    "서요가 유기농 인증서를 들고 와 서설에게 건넨다",
+    "Josh brings the organic certificate and hands it to him",
+    2,
+    "대표님, 이 우유는 저희만 공급합니다.",
+    "Boss, we're the only supplier of this milk.",
+    "low"
+   ],
+   [
+    "목장",
+    "dairy farm",
+    "온기가 단가표 조각을 쥔 채 서 있다",
+    "Jody stands clutching a torn scrap",
+    0,
+    "단가는 그대로입니다. 안 받으시면 다른 곳으로.",
+    "The price stands. If not, buy elsewhere.",
+    "cu"
+   ],
+   [
+    "목장",
+    "dairy farm",
+    "서요가 성적서 아래 사진을 꺼내 보여 준다",
+    "Josh takes a photo from under the test report",
+    2,
+    "이 목장 이름, 우리가 아닙니다.",
+    "That farm name isn't ours.",
+    "pi"
+   ]
+  ]
+ ]
+]

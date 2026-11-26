@@ -1,0 +1,912 @@
+[
+ [
+  "코트를 태운 세탁 직원",
+  "The Cleaner and the Burned Coat",
+  "명품 코트가 손상되자 세탁 직원이 몰린다. 접수 사진에 이미 같은 자국이 찍혀 있었다.",
+  "A designer coat comes back scorched and the cleaner is blamed. The intake photo already shows the same mark.",
+  [
+   [
+    "H",
+    "금순",
+    "Maud",
+    "50대 여성, 파란 앞치마, 짧은 곱슬머리, 깊은 눈",
+    "woman in her 50s, blue apron, short curly hair, deep eyes"
+   ],
+   [
+    "V",
+    "상필",
+    "Mr. Nairn",
+    "40대 남성, 흰 셔츠, 팔 토시, 날카로운 턱",
+    "man in his 40s, white shirt, sleeve guards, sharp jaw"
+   ],
+   [
+    "A",
+    "미래",
+    "Ms. Fenn",
+    "30대 여성, 본사 점퍼, 태블릿, 빠른 손",
+    "woman in her 30s, head office jacket, tablet, quick hands"
+   ]
+  ],
+  [
+   [
+    "세탁소 카운터",
+    "dry cleaner counter",
+    "상필이 그슬린 코트를 금순 앞에 펼친다",
+    "Mr. Nairn spreads the scorched coat in front of Maud",
+    1,
+    "네 다리미 자국이야.",
+    "That's your iron mark.",
+    "low"
+   ],
+   [
+    "세탁소 카운터",
+    "dry cleaner counter",
+    "상필이 금순의 앞치마를 벗겨 카운터에 올린다",
+    "Mr. Nairn takes Maud's apron and drops it on the counter",
+    1,
+    "이 나이에 명품을 만져?",
+    "At your age, touching couture?",
+    "ms"
+   ],
+   [
+    "접수대",
+    "intake desk",
+    "금순이 접수 사진이 저장된 휴대폰을 꺼낸다",
+    "Maud takes out the phone holding the intake photos",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "세탁소 카운터",
+    "dry cleaner counter",
+    "미래가 접수 사진과 지금 코트를 나란히 띄운다",
+    "Ms. Fenn sets the intake photo beside the coat",
+    2,
+    "접수 때 이미 이 자국이 있었어요.",
+    "The mark was already there at intake.",
+    "slo"
+   ],
+   [
+    "세탁소 카운터",
+    "dry cleaner counter",
+    "미래가 상필의 점장 명패를 카운터에 놓는다",
+    "Ms. Fenn sets his manager nameplate on the counter",
+    0,
+    "다리미는 제가 잡습니다. 보상은 점장님이 하세요.",
+    "I hold the iron. You handle the refund.",
+    "cz"
+   ],
+   [
+    "세탁소 카운터",
+    "dry cleaner counter",
+    "가게 문을 열고 본사 사장이 들어온다",
+    "The company president walks into the shop",
+    -1,
+    "",
+    "",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "구두를 바꾼 수선공",
+  "The Cobbler and the Swapped Shoes",
+  "명품 구두가 다른 신발로 바뀌어 수선공이 몰린다. 접수표 번호가 매장의 교환을 보여 준다.",
+  "Designer shoes come back swapped and the cobbler is blamed. The claim ticket number shows the store's exchange.",
+  [
+   [
+    "H",
+    "두칠",
+    "Amos",
+    "60대 남성, 가죽 앞치마, 돋보기, 굽은 등",
+    "man in his 60s, leather apron, loupe, bent back"
+   ],
+   [
+    "V",
+    "세리",
+    "Ms. Adair",
+    "30대 여성, 검은 정장, 명품숍 배지, 높은 구두",
+    "woman in her 30s, black suit, luxury store badge, high heels"
+   ],
+   [
+    "A",
+    "지현",
+    "Ms. Rill",
+    "40대 여성, 회색 코트, 본사 서류, 차분한 목소리",
+    "woman in her 40s, gray coat, head office papers, calm voice"
+   ]
+  ],
+  [
+   [
+    "골목 수선방",
+    "street repair shop",
+    "세리가 신발 상자를 두칠의 작업대에 내려놓는다",
+    "Ms. Adair sets a shoe box on Amos's bench",
+    1,
+    "이건 우리 매장 신발이 아니야.",
+    "These aren't our shoes.",
+    "trk"
+   ],
+   [
+    "골목 수선방",
+    "street repair shop",
+    "세리가 작업대의 공구를 바닥으로 쓸어 버린다",
+    "Ms. Adair sweeps his tools onto the floor",
+    1,
+    "골목 수선공이 명품을?",
+    "A back-alley cobbler and designer shoes?",
+    "ms"
+   ],
+   [
+    "작업대 서랍",
+    "bench drawer",
+    "두칠이 번호가 적힌 접수표 뭉치를 꺼낸다",
+    "Amos pulls out a bundle of numbered claim tickets",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "명품숍 본사",
+    "luxury store office",
+    "지현이 접수표 번호를 교환 기록과 맞춘다",
+    "Ms. Rill matches the ticket number to an exchange record",
+    2,
+    "이 번호, 매장에서 교환된 신발이에요.",
+    "That number was exchanged at your store.",
+    "low"
+   ],
+   [
+    "골목 수선방",
+    "street repair shop",
+    "지현이 세리의 매장 배지를 회수한다",
+    "Ms. Rill takes back the store badge",
+    0,
+    "실밥은 제가 꿰맵니다. 신발은 매장에서 찾으세요.",
+    "I stitch soles. Find the shoes at your store.",
+    "ots"
+   ],
+   [
+    "골목",
+    "alley",
+    "골목 끝에서 다른 신발 상자가 배달된다",
+    "Another shoe box is delivered at the alley's end",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "예약금을 가로챈 웨딩 플래너",
+  "The Planner and the Missing Deposit",
+  "예약금이 사라지자 프리랜서 플래너가 몰린다. 입금 계좌가 예식장 대표의 계좌로 찍혀 있다.",
+  "A wedding deposit vanishes and the freelance planner is blamed. The deposit account belongs to the venue's owner.",
+  [
+   [
+    "H",
+    "보라",
+    "Mara",
+    "30대 여성, 베이지 정장, 태블릿, 묶은 머리",
+    "woman in her 30s, beige suit, tablet, tied hair"
+   ],
+   [
+    "V",
+    "정구",
+    "Mr. Kelt",
+    "50대 남성, 검은 정장, 금 목걸이, 큰 체구",
+    "man in his 50s, black suit, gold chain, large build"
+   ],
+   [
+    "A",
+    "윤재",
+    "Mr. Ivens",
+    "40대 남성, 본사 감사 재킷, 서류 가방, 조용한 걸음",
+    "man in his 40s, head office audit jacket, briefcase, quiet steps"
+   ]
+  ],
+  [
+   [
+    "예식장 로비",
+    "wedding hall lobby",
+    "정구가 예약 장부를 보라 앞에 탁 놓는다",
+    "Mr. Kelt slams the booking book down in front of Mara",
+    1,
+    "이 예약금, 네가 받았지.",
+    "You pocketed this wedding deposit.",
+    "pi"
+   ],
+   [
+    "예식장 홀",
+    "wedding hall",
+    "정구가 보라의 출입 카드를 경비에게 넘긴다",
+    "Mr. Kelt hands Mara's access card to security",
+    1,
+    "프리랜서 주제에 큰돈을?",
+    "A freelancer handling big money?",
+    "ws"
+   ],
+   [
+    "플래너 가방",
+    "planner's bag",
+    "보라가 신부에게 받은 이체 확인서를 꺼낸다",
+    "Mara takes out the transfer receipt from the bride",
+    -1,
+    "",
+    "",
+    "trk"
+   ],
+   [
+    "예식장 사무실",
+    "wedding hall office",
+    "윤재가 계좌 예금주를 출력해 짚는다",
+    "Mr. Ivens prints the account holder's name",
+    2,
+    "이 계좌, 대표님 개인 계좌입니다.",
+    "This account is your personal one.",
+    "low"
+   ],
+   [
+    "예식장 로비",
+    "wedding hall lobby",
+    "윤재가 정구의 대표 명패를 봉투에 넣는다",
+    "Mr. Ivens seals the owner's nameplate in an envelope",
+    0,
+    "행사는 제가 짭니다. 계좌는 대표님이 설명하세요.",
+    "I run the wedding. You explain the account.",
+    "cu"
+   ],
+   [
+    "예식장 입구",
+    "wedding hall entrance",
+    "보라의 가방에서 다른 예식장 계약서가 나온다",
+    "Another venue's contract slides out of Mara's bag",
+    -1,
+    "",
+    "",
+    "cz"
+   ]
+  ]
+ ],
+ [
+  "가방을 턴 여행 가이드",
+  "The Tour Guide and the Missing Bag",
+  "관광객 가방이 사라지자 프리랜서 가이드가 몰린다. 버스 영상이 지사장의 손을 보여 준다.",
+  "A tourist's bag disappears and the freelance guide is blamed. The bus camera shows the branch manager's hand.",
+  [
+   [
+    "H",
+    "태오",
+    "Finn",
+    "30대 남성, 노란 가이드 조끼, 모자, 웃는 얼굴",
+    "man in his 30s, yellow guide vest, cap, smiling face"
+   ],
+   [
+    "V",
+    "명주",
+    "Ms. Culp",
+    "40대 여성, 여행사 재킷, 태블릿, 짧은 말투",
+    "woman in her 40s, travel agency jacket, tablet, clipped speech"
+   ],
+   [
+    "A",
+    "광호",
+    "Mr. Pellow",
+    "50대 남성, 등산 모자, 카메라 가방, 무거운 목소리",
+    "man in his 50s, hiking hat, camera bag, heavy voice"
+   ]
+  ],
+  [
+   [
+    "관광 버스 앞",
+    "tour bus",
+    "명주가 빈 좌석을 태오에게 가리킨다",
+    "Ms. Culp points at the empty seat for Finn",
+    1,
+    "네가 마지막에 봤어.",
+    "You saw it last.",
+    "cz"
+   ],
+   [
+    "관광 버스 앞",
+    "tour bus",
+    "명주가 태오의 가이드 깃발을 빼앗는다",
+    "Ms. Culp takes Finn's tour flag",
+    1,
+    "프리랜서가 손님 가방을?",
+    "A freelancer and a guest's bag?",
+    "trk"
+   ],
+   [
+    "관광 버스",
+    "tour bus",
+    "태오가 버스 천장의 카메라를 올려다본다",
+    "Finn looks up at the camera on the bus ceiling",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "관광 버스 앞",
+    "tour bus",
+    "광호가 자기 휴대폰에 담긴 가방 장면을 보여 준다",
+    "Mr. Pellow shows a bag scene from his phone",
+    2,
+    "가방을 든 손, 지사장님 재킷이에요.",
+    "The hand with the bag is your jacket.",
+    "slo"
+   ],
+   [
+    "관광 버스 앞",
+    "tour bus",
+    "광호가 명주의 지사장 명패를 들고 나온다",
+    "Mr. Pellow carries out her branch manager nameplate",
+    0,
+    "관광객은 제가 모십니다. 가방은 지사장 몫이죠.",
+    "I guide the tourists. You collect the bags.",
+    "low"
+   ],
+   [
+    "관광 버스 앞",
+    "tour bus",
+    "태오의 폰에 관광객 단체 채팅이 뜬다",
+    "The tour group chat lights up Finn's phone",
+    -1,
+    "",
+    "",
+    "cu"
+   ]
+  ]
+ ],
+ [
+  "정비를 빼먹은 정비사",
+  "The Mechanic and the Skipped Check",
+  "정비 누락이 적발되자 여성 정비사가 몰린다. 전자 서명 시각이 총괄의 대리 서명을 보여 준다.",
+  "A skipped inspection is found and the female mechanic is blamed. The sign-off time shows the chief signed in her name.",
+  [
+   [
+    "H",
+    "서우",
+    "Ada",
+    "30대 여성, 정비 작업복, 묶은 머리, 기름때 밴 손",
+    "woman in her 30s, mechanic coveralls, tied hair, grease-stained hands"
+   ],
+   [
+    "V",
+    "기남",
+    "Mr. Hark",
+    "50대 남성, 흰 정비 셔츠, 안전화, 두꺼운 목소리",
+    "man in his 50s, white mechanic shirt, safety boots, thick voice"
+   ],
+   [
+    "A",
+    "혜원",
+    "Ms. Delisle",
+    "40대 여성, 항공청 재킷, 서류철, 무표정",
+    "woman in her 40s, aviation authority jacket, folder, blank face"
+   ]
+  ],
+  [
+   [
+    "격납고",
+    "hangar",
+    "기남이 정비 기록을 서우 앞에 던진다",
+    "Mr. Hark throws the maintenance record at Ada",
+    1,
+    "이 페이지, 서명이 없어.",
+    "This page has no signature.",
+    "ms"
+   ],
+   [
+    "격납고",
+    "hangar",
+    "기남이 서우의 공구 카트를 끌어가고 서명 도장을 압수한다",
+    "Mr. Hark wheels away her tool cart and takes her stamp",
+    1,
+    "여자 정비사는 비행기 만지지 마.",
+    "Women don't touch aircraft.",
+    "pi"
+   ],
+   [
+    "정비 단말",
+    "maintenance terminal",
+    "서우가 서명 시각과 자기 퇴근 시각을 견준다",
+    "Ada compares the sign-off time with her clock-out",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "항공청 사무실",
+    "aviation office",
+    "혜원이 서명 기록의 시각과 계정을 짚는다",
+    "Ms. Delisle taps the time and account on the sign-off",
+    2,
+    "서명 시각, 퇴근 후이고 총괄님 계정입니다.",
+    "Signed after hours, on your account.",
+    "low"
+   ],
+   [
+    "격납고",
+    "hangar",
+    "혜원이 기남의 서명 권한을 정지한다",
+    "Ms. Delisle suspends his sign-off authority",
+    0,
+    "렌치는 제가 듭니다. 서명은 총괄님이 직접 하세요.",
+    "I hold the wrench. Sign with your own hand.",
+    "ots"
+   ],
+   [
+    "격납고",
+    "hangar",
+    "혜원이 서우에게 다른 항공사 명함을 건넨다",
+    "Ms. Delisle hands Ada another airline's card",
+    -1,
+    "",
+    "",
+    "slo"
+   ]
+  ]
+ ],
+ [
+  "봉인을 뜯은 하역 감독",
+  "The Dock Supervisor and the Broken Seal",
+  "컨테이너 봉인이 뜯긴 채 도착하자 하역 감독이 몰린다. 게이트 기록이 운영자의 야간 반입을 보여 준다.",
+  "A container arrives with its seal broken and the dock supervisor is blamed. The gate log shows the operator's night entry.",
+  [
+   [
+    "H",
+    "칠수",
+    "Ross",
+    "40대 남성, 하역 조끼, 안전모, 굵은 팔",
+    "man in his 40s, dock vest, hard hat, thick arms"
+   ],
+   [
+    "V",
+    "덕만",
+    "Mr. Vell",
+    "50대 남성, 흰 셔츠, 선박 회사 배지, 큰 배",
+    "man in his 50s, white shirt, shipping badge, heavy belly"
+   ],
+   [
+    "A",
+    "수민",
+    "Ms. Wold",
+    "40대 여성, 선사 감사 재킷, 태블릿, 낮은 목소리",
+    "woman in her 40s, shipping line audit jacket, tablet, low voice"
+   ]
+  ],
+  [
+   [
+    "부두 게이트",
+    "dock gate",
+    "덕만이 뜯긴 봉인을 칠수 앞에 던진다",
+    "Mr. Vell throws the broken seal at Ross",
+    1,
+    "네 조에서 뜯겼어.",
+    "Your crew opened it.",
+    "low"
+   ],
+   [
+    "부두 게이트",
+    "dock gate",
+    "덕만이 칠수의 무전기를 빼앗고 출입증을 회수한다",
+    "Mr. Vell takes Ross's radio and gate pass",
+    1,
+    "일용직 출신이 감독을?",
+    "A day laborer supervising crews?",
+    "trk"
+   ],
+   [
+    "부두 사무실",
+    "dock office",
+    "칠수가 적하 목록의 봉인 번호를 확인한다",
+    "Ross checks the seal number on the manifest",
+    -1,
+    "",
+    "",
+    "ws"
+   ],
+   [
+    "선사 사무실",
+    "shipping office",
+    "수민이 게이트 기록의 야간 반입을 짚는다",
+    "Ms. Wold taps the night entry in the gate log",
+    2,
+    "봉인은 야간에 반입된 컨테이너 것이에요.",
+    "That seal came in on the night container.",
+    "pi"
+   ],
+   [
+    "부두 게이트",
+    "dock gate",
+    "수민이 덕만의 운영 계약서를 찢는다",
+    "Ms. Wold tears up the operator's contract",
+    0,
+    "컨테이너는 제가 내립니다. 이제 계약서도 없네요.",
+    "I unload the boxes. You just lost the contract.",
+    "ms"
+   ],
+   [
+    "부두 게이트",
+    "dock gate",
+    "부두 입구에 선사 회장의 승용차가 멈춘다",
+    "The shipping chairman's car stops at the gate",
+    -1,
+    "",
+    "",
+    "cz"
+   ]
+  ]
+ ],
+ [
+  "요금을 뺀 배차원",
+  "The Dispatcher and the Missing Fare",
+  "요금 정산이 비자 배차원이 몰린다. 배차 앱 정산 시각이 지점장의 취소를 보여 준다.",
+  "The fare settlement comes up short and the dispatcher is blamed. The dispatch app log shows the manager's cancellations.",
+  [
+   [
+    "H",
+    "윤아",
+    "Dora",
+    "40대 여성, 회사 조끼, 헤드셋, 짧은 머리",
+    "woman in her 40s, company vest, headset, short hair"
+   ],
+   [
+    "V",
+    "성구",
+    "Mr. Roney",
+    "50대 남성, 체크 재킷, 담배 냄새? no — 구김살 진 재킷",
+    "man in his 50s, rumpled jacket, tired collar"
+   ],
+   [
+    "A",
+    "도현",
+    "Mr. Gade",
+    "30대 남성, 본사 정산팀 점퍼, 노트북, 빠른 말투",
+    "man in his 30s, head office settlement jacket, laptop, fast talk"
+   ]
+  ],
+  [
+   [
+    "택시 회사 사무실",
+    "taxi depot office",
+    "성구가 정산표를 윤아 앞에 던진다",
+    "Mr. Roney throws the settlement sheet at Dora",
+    1,
+    "네 배차에서 돈이 비었어.",
+    "Your dispatch is short.",
+    "cz"
+   ],
+   [
+    "택시 회사 사무실",
+    "taxi depot office",
+    "성구가 윤아의 헤드셋을 빼앗아 서랍에 넣는다",
+    "Mr. Roney takes Dora's headset and locks it away",
+    1,
+    "여자는 무급 대기야.",
+    "Women sit unpaid.",
+    "ms"
+   ],
+   [
+    "배차 화면",
+    "dispatch screen",
+    "윤아가 취소된 배차 목록을 넘긴다",
+    "Dora scrolls the cancelled dispatch list",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "본사 정산실",
+    "head office settlement",
+    "도현이 취소 시각과 계정을 나란히 띄운다",
+    "Mr. Gade puts the cancel time and account side by side",
+    2,
+    "이 취소, 지점장님 계정으로 처리됐어요.",
+    "These cancels were processed on your account.",
+    "low"
+   ],
+   [
+    "택시 회사 사무실",
+    "taxi depot office",
+    "도현이 성구의 지점장 카드를 회수한다",
+    "Mr. Gade takes back the manager's card",
+    0,
+    "차는 제가 보냅니다. 정산은 지점장님이 맞추세요.",
+    "I send the cars. You balance the books.",
+    "cu"
+   ],
+   [
+    "택시 회사 사무실",
+    "taxi depot office",
+    "윤아의 배차 화면에 모르는 차량이 뜬다",
+    "An unknown car appears on Dora's dispatch screen",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "부품을 바꾼 정비공",
+  "The Apprentice and the Swapped Part",
+  "고객 차 부품이 바뀌어 견습 정비공이 몰린다. 부품 주문 번호가 공장장의 개인 거래를 보여 준다.",
+  "A customer's car part is swapped and the apprentice is blamed. The part invoice number shows the shop chief's private deal.",
+  [
+   [
+    "H",
+    "강토",
+    "Jem",
+    "20대 남성, 남색 작업복, 기름때 밴 모자, 마른 얼굴",
+    "man in his 20s, navy coveralls, grease-stained cap, thin face"
+   ],
+   [
+    "V",
+    "원철",
+    "Mr. Balch",
+    "50대 남성, 흰 셔츠, 볼펜 꽂은 주머니, 큰 손",
+    "man in his 50s, white shirt, pen in pocket, big hands"
+   ],
+   [
+    "A",
+    "정아",
+    "Ms. Munn",
+    "40대 여성, 부품사 재킷, 서류철, 단호한 표정",
+    "woman in her 40s, parts supplier jacket, folder, firm look"
+   ]
+  ],
+  [
+   [
+    "정비소",
+    "auto shop",
+    "원철이 중고 부품을 강토 앞에 올려놓는다",
+    "Mr. Balch sets a used part in front of Jem",
+    1,
+    "이거 네가 끼웠지.",
+    "You fitted this, didn't you?",
+    "ms"
+   ],
+   [
+    "정비소",
+    "auto shop",
+    "원철이 강토의 공구함을 차고 밖으로 던진다",
+    "Mr. Balch throws Jem's toolbox out of the bay",
+    1,
+    "견습이 부품을 만져?",
+    "An apprentice touching parts?",
+    "ws"
+   ],
+   [
+    "부품 창고",
+    "parts store",
+    "강토가 부품 송장의 주문 번호를 확인한다",
+    "Jem checks the order number on the parts invoice",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "부품사 사무실",
+    "parts office",
+    "정아가 주문 번호의 주문자를 출력한다",
+    "Ms. Munn prints the name on that order number",
+    2,
+    "이 부품, 공장장님 이름으로 주문됐어요.",
+    "This part was ordered under your name.",
+    "pi"
+   ],
+   [
+    "정비소",
+    "auto shop",
+    "정아가 원철의 거래 정지서를 놓고 간다",
+    "Ms. Munn leaves a supply suspension notice",
+    0,
+    "차는 제가 고칩니다. 장부는 공장장님이 고치세요.",
+    "I fix cars. You fix the books.",
+    "ots"
+   ],
+   [
+    "정비소 앞",
+    "auto shop front",
+    "강토의 공구함에 다른 부품 송장이 들어 있다",
+    "Another parts invoice sits in Jem's toolbox",
+    -1,
+    "",
+    "",
+    "cz"
+   ]
+  ]
+ ],
+ [
+  "현금을 훔친 하우스 매니저",
+  "The House Manager and the Missing Cash",
+  "입주민 현금이 사라지자 하우스 매니저가 몰린다. 출입 키 기록이 운영자의 새벽 출입을 보여 준다.",
+  "A resident's cash vanishes and the house manager is blamed. The key log shows the operator entering at dawn.",
+  [
+   [
+    "H",
+    "우주",
+    "Ned",
+    "30대 남성, 회색 후드, 열쇠고리, 피곤한 눈",
+    "man in his 30s, gray hoodie, key ring, tired eyes"
+   ],
+   [
+    "V",
+    "은주",
+    "Ms. Dace",
+    "40대 여성, 검은 원피스, 태블릿, 차가운 말투",
+    "woman in her 40s, black dress, tablet, cold voice"
+   ],
+   [
+    "A",
+    "태산",
+    "Mr. Corliss",
+    "50대 남성, 건물주 코트, 서류 가방, 느린 걸음",
+    "man in his 50s, landlord coat, briefcase, slow steps"
+   ]
+  ],
+  [
+   [
+    "셰어하우스 주방",
+    "shared house kitchen",
+    "은주가 빈 금고를 우주 앞에 놓는다",
+    "Ms. Dace sets the empty safe in front of Ned",
+    1,
+    "마스터 키는 너뿐이야.",
+    "You're the only one with a master key.",
+    "ots"
+   ],
+   [
+    "셰어하우스 복도",
+    "shared house hall",
+    "은주가 우주의 마스터 키를 빼앗고 퇴거 통지를 붙인다",
+    "Ms. Dace takes his master key and posts an eviction notice",
+    1,
+    "관리인 주제에 금고를?",
+    "A caretaker and the safe?",
+    "trk"
+   ],
+   [
+    "현관 출입기",
+    "entry keypad",
+    "우주가 출입 기록을 넘긴다",
+    "Ned scrolls the entry log on the keypad",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "셰어하우스 주방",
+    "shared house kitchen",
+    "태산이 키 기록의 새벽 출입을 짚는다",
+    "Mr. Corliss taps the pre-dawn entry in the log",
+    2,
+    "새벽 네 시, 운영자님 키로 열렸습니다.",
+    "Four in the morning, opened with your key.",
+    "low"
+   ],
+   [
+    "셰어하우스 복도",
+    "shared house hall",
+    "태산이 은주의 관리 계약서를 찢는다",
+    "Mr. Corliss tears up the management contract",
+    0,
+    "문은 제가 엽니다. 계약서는 찢으셨죠.",
+    "I open the doors. You tore up the contract.",
+    "cu"
+   ],
+   [
+    "셰어하우스 현관",
+    "shared house entrance",
+    "새 입주민이 우주에게 봉투를 건넨다",
+    "The new tenant hands Ned an envelope",
+    -1,
+    "",
+    "",
+    "slo"
+   ]
+  ]
+ ],
+ [
+  "스케이트를 부순 대여 직원",
+  "The Skate Rental Kid and the Broken Blade",
+  "대여 스케이트 날이 부러지자 알바가 몰린다. 대여 사이즈 기록이 매니저의 사용을 보여 준다.",
+  "A rental skate's blade snaps and the kid at the counter is blamed. The size log shows the manager rented it herself.",
+  [
+   [
+    "H",
+    "하준",
+    "Kit",
+    "20대 남성, 링크 점퍼, 짧은 머리, 붉은 코",
+    "man in his 20s, rink jacket, short hair, red nose"
+   ],
+   [
+    "V",
+    "세림",
+    "Ms. Hew",
+    "30대 여성, 검은 링크 유니폼, 묶은 머리, 날카로운 눈",
+    "woman in her 30s, black rink uniform, tied hair, sharp eyes"
+   ],
+   [
+    "A",
+    "건호",
+    "Mr. Ordway",
+    "40대 남성, 시설 본부 재킷, 클립보드, 무거운 표정",
+    "man in his 40s, facility office jacket, clipboard, grave face"
+   ]
+  ],
+  [
+   [
+    "아이스링크 대여소",
+    "skate rental booth",
+    "세림이 부러진 스케이트를 하준 앞에 놓는다",
+    "Ms. Hew sets the broken skate in front of Kit",
+    1,
+    "네가 대여한 거야.",
+    "You rented this out.",
+    "cz"
+   ],
+   [
+    "아이스링크 대여소",
+    "skate rental booth",
+    "세림이 대여소 창구를 닫고 하준의 조끼를 벗긴다",
+    "Ms. Hew shuts the booth and takes Kit's vest",
+    1,
+    "시간제 알바가 스케이트를?",
+    "A part-timer and the skates?",
+    "slo"
+   ],
+   [
+    "대여 단말",
+    "rental terminal",
+    "하준이 사이즈별 대여 기록을 넘긴다",
+    "Kit scrolls the rental log by size",
+    -1,
+    "",
+    "",
+    "ots"
+   ],
+   [
+    "시설 본부",
+    "facility office",
+    "건호가 대여 기록의 카드와 시각을 짚는다",
+    "Mr. Ordway taps the card and time in the rental log",
+    2,
+    "이 스케이트, 매니저님 카드로 대여됐어요.",
+    "This skate was rented on your card.",
+    "pi"
+   ],
+   [
+    "아이스링크 대여소",
+    "skate rental booth",
+    "건호가 세림의 매니저 카드를 회수한다",
+    "Mr. Ordway takes back the manager's card",
+    0,
+    "날은 제가 갈아 끼웁니다. 카드는 이제 없네요.",
+    "I change the blades. You're out of cards.",
+    "low"
+   ],
+   [
+    "아이스링크",
+    "ice rink",
+    "세림의 사물함에서 다른 대여 카드가 나온다",
+    "Another rental card falls from Ms. Hew's locker",
+    -1,
+    "",
+    "",
+    "cu"
+   ]
+  ]
+ ]
+]
