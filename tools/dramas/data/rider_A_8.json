@@ -1,0 +1,912 @@
+[
+ [
+  "1면 사진 속 남자를 쫓아낸 편집국장",
+  "The Editor Who Threw Out Page One",
+  "라이더를 뉴스룸에서 쫓아낸 편집국장. 벽에 붙은 1면 사진 속 인물이 그 라이더다.",
+  "An editor throws a rider out of the newsroom, not knowing the man is on page one.",
+  [
+   [
+    "H",
+    "도영수",
+    "Walter",
+    "60대 남성, 회색 헬멧, 남색 배달 조끼, 짧은 흰머리, 차분한 눈빛",
+    "man in his 60s, gray helmet, navy delivery vest, short white hair, calm eyes"
+   ],
+   [
+    "V",
+    "유진아",
+    "Chloe",
+    "40대 여성, 회색 정장, 안경, 날카로운 눈매",
+    "woman in her 40s, gray suit, glasses, sharp eyes"
+   ],
+   [
+    "A",
+    "한두식",
+    "Harold",
+    "50대 남성, 검은 정장, 금테 안경, 단정한 자세",
+    "man in his 50s, black suit, gold-rimmed glasses, neat posture"
+   ]
+  ],
+  [
+   [
+    "신문사 로비",
+    "newspaper lobby",
+    "진아가 배달 봉투를 가리키며 경비실 쪽을 턱으로 민다",
+    "Chloe points at the bag and jerks her chin toward the security desk",
+    1,
+    "뉴스룸엔 배달원 못 들어와요.",
+    "No delivery riders in the newsroom.",
+    "cz"
+   ],
+   [
+    "신문사 로비",
+    "newspaper lobby",
+    "진아가 봉투를 밀어 로비 바닥에 떨어뜨린다",
+    "Chloe shoves the bag and it drops on the lobby floor",
+    1,
+    "밤샘 중인데 정신 사납게.",
+    "We're on deadline. Don't make a scene.",
+    "ms"
+   ],
+   [
+    "신문사 로비",
+    "newspaper lobby",
+    "영수가 벽에 붙은 신문 하단의 발행인 이름을 손끝으로 짚는다",
+    "Walter taps the publisher's name at the bottom of the front page",
+    0,
+    "내 이름, 아직 1면에 있네.",
+    "My name is still on page one.",
+    "pi"
+   ],
+   [
+    "신문사 로비",
+    "newspaper lobby",
+    "한두식이 뛰어와 1면을 가리키며 허리를 굽힌다",
+    "Harold rushes in, points at the front page and bows",
+    2,
+    "발행인님, 편집국장 교체 인사도 준비됐습니다.",
+    "Publisher, the papers for the new editor are ready.",
+    "low"
+   ],
+   [
+    "신문사 로비",
+    "newspaper lobby",
+    "진아가 신문 하단의 이름을 확인하고 입을 가린다",
+    "Chloe reads the name at the bottom and covers her mouth",
+    0,
+    "1면 기사, 내가 쓸게요.",
+    "I'll write the page one story myself.",
+    "cu"
+   ],
+   [
+    "신문사 로비",
+    "newspaper lobby",
+    "한두식이 내일자 1면 시안을 펼쳐 보인다",
+    "Harold unfolds tomorrow's front page mock-up",
+    -1,
+    "",
+    "",
+    "ots"
+   ]
+  ]
+ ],
+ [
+  "약국까지 다녀오라던 손님",
+  "She Wanted Him to Run Her Errands",
+  "배달을 받고 약국 심부름을 시키는 손님. 딸이 문을 열고 어머니를 말린다.",
+  "A customer holds the delivery hostage to send the rider on errands, until her daughter steps in.",
+  [
+   [
+    "H",
+    "하지안",
+    "Nia",
+    "20대 후반 여성, 검은 헬멧, 노란 조끼, 묶은 갈색 머리, 또렷한 눈",
+    "woman in her late 20s, black helmet, yellow vest, tied brown hair, sharp eyes"
+   ],
+   [
+    "V",
+    "민덕자",
+    "Evelyn",
+    "60대 여성, 자주색 카디건, 파마 머리, 새침한 입매",
+    "woman in her 60s, purple cardigan, permed hair, pursed lips"
+   ],
+   [
+    "A",
+    "곽유진",
+    "Sophie",
+    "30대 여성, 흰 약사 가운, 묶은 머리, 당황한 얼굴",
+    "woman in her 30s, white pharmacist coat, tied hair, flustered face"
+   ]
+  ],
+  [
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "덕자가 봉투를 받자마자 처방전을 지안 손에 쥐여준다",
+    "Evelyn takes the bag and presses a prescription into Nia's hand",
+    1,
+    "내려가는 김에 약국 좀 다녀와.",
+    "Since you're going down, stop by the pharmacy.",
+    "cz"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "덕자가 지안의 배달 가방을 잡아 문 앞에 세운다",
+    "Evelyn grabs Nia's delivery bag and holds it by the door",
+    1,
+    "이거 받을 때까지 못 가.",
+    "You don't leave until this is done.",
+    "ms"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "지안이 앱의 배달 완료 화면을 덕자 앞에 띄운다",
+    "Nia holds up the app's delivery complete screen",
+    0,
+    "배달은 여기서 끝났습니다.",
+    "The delivery ended here.",
+    "cu"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "유진이 문을 열고 어머니의 팔을 잡아당긴다",
+    "Sophie opens the door and pulls her mother back by the arm",
+    2,
+    "엄마, 또 기사님 붙잡으셨어요?",
+    "Mom, are you holding up the courier again?",
+    "ots"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "덕자가 처방전을 도로 가져가고 유진이 고개를 숙인다",
+    "Evelyn takes the prescription back as Sophie bows her head",
+    0,
+    "처방전은 약사님께 직접.",
+    "Hand prescriptions to the pharmacist yourself.",
+    "cu"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "유진이 명함을 지안에게 건넨다",
+    "Sophie hands Nia her card",
+    2,
+    "제 약국에 배달 계약하실래요?",
+    "Would you take a delivery contract at my pharmacy?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "시계를 떨어뜨렸다는 라이더",
+  "The Rider and the Stopped Watch",
+  "시계를 떨어뜨렸다며 배상을 요구하는 점장. 라이더가 루페를 들고 톱니를 짚는다.",
+  "A watch shop manager blames the rider for a broken watch, until the rider picks up a loupe.",
+  [
+   [
+    "H",
+    "배준혁",
+    "Marcus",
+    "30대 남성, 흰 헬멧, 검은 배달 재킷, 짧은 스포츠 머리, 단단한 표정",
+    "man in his 30s, white helmet, black delivery jacket, short sporty hair, steady face"
+   ],
+   [
+    "V",
+    "라승호",
+    "Warren",
+    "40대 남성, 조끼 정장, 짧은 머리, 까칠한 눈",
+    "man in his 40s, vest suit, short hair, prickly eyes"
+   ],
+   [
+    "A",
+    "다버스",
+    "Mr. Danvers",
+    "50대 남성, 회색 정장, 은발, 차분한 눈",
+    "man in his 50s, gray suit, silver hair, calm eyes"
+   ]
+  ],
+  [
+   [
+    "시계 매장",
+    "watch shop",
+    "승호가 멈춘 시계를 집어 준혁 코앞에 흔든다",
+    "Warren picks up a stopped watch and waves it in Marcus's face",
+    1,
+    "라이더가 떨어뜨려서 멈췄어요.",
+    "Your drop stopped this watch.",
+    "cz"
+   ],
+   [
+    "시계 매장",
+    "watch shop",
+    "승호가 준혁의 배달 가방을 카운터에 올리고 계산기를 두드린다",
+    "Warren sets Marcus's bag on the counter and taps a calculator",
+    1,
+    "수리비 300만 원, 배상하세요.",
+    "Three million for repairs. Pay up.",
+    "ms"
+   ],
+   [
+    "시계 매장",
+    "watch shop",
+    "준혁이 시계를 귀에 대고 초침 소리를 듣는다",
+    "Marcus holds the watch to his ear and listens",
+    0,
+    "떨어진 소리가 아닌데요.",
+    "That's not the sound of a fall.",
+    "cu"
+   ],
+   [
+    "시계 매장",
+    "watch shop",
+    "준혁이 루페를 꺼내 톱니를 들여다본다",
+    "Marcus takes out a loupe and studies the gears",
+    0,
+    "이 톱니, 원래부터 빠져 있었습니다.",
+    "This gear was missing from the start.",
+    "pi"
+   ],
+   [
+    "시계 매장",
+    "watch shop",
+    "승호가 계산기를 밀어 옆으로 치운다",
+    "Warren pushes the calculator aside",
+    0,
+    "시계 수리사였습니다. 배상은 없습니다.",
+    "I was a watchmaker. No payment.",
+    "cu"
+   ],
+   [
+    "시계 매장",
+    "watch shop",
+    "다버스가 명함을 내밀고 시계를 받아 든다",
+    "Mr. Danvers holds out a card and takes the watch",
+    2,
+    "이 시계, 저희 지사에 맡겨 주시겠습니까?",
+    "Would you let our branch restore this watch?",
+    "low"
+   ]
+  ]
+ ],
+ [
+  "늦은 배달의 이유를 아무도 몰랐다",
+  "Why the Delivery Was Late",
+  "길 잃은 노인을 집까지 데려다주느라 늦은 라이더. 노인은 그 손님의 장인이자 회장이다.",
+  "A rider is late because he walked a lost old man home, who is the customer's father-in-law and boss.",
+  [
+   [
+    "H",
+    "오재식",
+    "Eddie",
+    "50대 남성, 낡은 검은 헬멧, 초록 배달 가방, 희끗한 수염, 무뚝뚝한 얼굴",
+    "man in his 50s, worn black helmet, green delivery bag, gray stubble, blunt face"
+   ],
+   [
+    "V",
+    "문태호",
+    "Brandon",
+    "30대 남성, 흰 셔츠에 넥타이, 짧은 머리, 치켜뜬 눈",
+    "man in his 30s, white shirt and tie, short hair, sneering eyes"
+   ],
+   [
+    "A",
+    "문 회장",
+    "Mr. Whitmore",
+    "70대 남성, 베이지색 점퍼, 흰 머리, 지팡이를 짚은 모습",
+    "man in his 70s, beige windbreaker, white hair, leaning on a cane"
+   ]
+  ],
+  [
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "태호가 현관문을 열고 헬멧 쓴 재식에게 시계를 들이민다",
+    "Brandon opens the door and thrusts his watch at helmeted Eddie",
+    1,
+    "40분 늦었어. 환불해.",
+    "Forty minutes late. Refund it.",
+    "cz"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "태호가 봉투를 현관 밖 계단으로 밀어낸다",
+    "Brandon shoves the bag out onto the entrance steps",
+    1,
+    "다시는 우리 집에 오지 마.",
+    "Don't ever come to my building again.",
+    "ms"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "노인이 뒤에서 재식의 소매를 잡으며 아들의 이름을 부른다",
+    "The old man behind grabs Eddie's sleeve and calls his son-in-law's name",
+    2,
+    "태호야, 이분이 나를 집까지 데려다줬어.",
+    "Brandon, this man walked me all the way home.",
+    "pi"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "태호가 봉투를 떨어뜨리고 노인 쪽으로 몸을 돌린다",
+    "Brandon drops the bag and spins around toward the old man",
+    1,
+    "장인어른, 회장님, 왜 걸어서 오셨어요?",
+    "Sir, you're the chairman. Why did you walk?",
+    "cu"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "노인이 재식의 젖은 어깨를 손으로 가리킨다",
+    "The old man points at Eddie's soaked shoulder",
+    2,
+    "네가 쫓아낸 사람이 나를 바래다줬다.",
+    "The man you threw out is the one who walked me home.",
+    "low"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "노인이 재식 손에 명함을 쥐여주고 태호는 뒷걸음친다",
+    "The old man presses a card into Eddie's hand as Brandon steps back",
+    0,
+    "환불 대신, 걸어온 값을 치르세요.",
+    "No refund. Pay for the walk instead.",
+    "ots"
+   ]
+  ]
+ ],
+ [
+  "구단주를 쫓아낸 운영팀장",
+  "The Owner They Kicked Off the Field",
+  "라이더를 관중석에서 쫓아낸 운영팀장. 전광판에 뜬 이름이 그 라이더의 것이었다.",
+  "A stadium manager kicks a rider out of the stands, then sees the owner's name light up the board.",
+  [
+   [
+    "H",
+    "천만복",
+    "Gilbert",
+    "50대 남성, 남색 헬멧, 구단 점퍼, 짧은 흰머리, 무던한 얼굴",
+    "man in his 50s, navy helmet, team jacket, short white hair, easygoing face"
+   ],
+   [
+    "V",
+    "길상철",
+    "Curtis",
+    "40대 남성, 구단 직원 점퍼, 모자, 깐깐한 눈",
+    "man in his 40s, team staff jacket, cap, fussy eyes"
+   ],
+   [
+    "A",
+    "펜로즈 단장",
+    "Mr. Penrose",
+    "60대 남성, 정장에 구단 목도리, 흰 머리",
+    "man in his 60s, suit and team scarf, white hair"
+   ]
+  ],
+  [
+   [
+    "야구장 입구",
+    "stadium gate",
+    "상철이 만복의 가방을 막고 몸으로 문을 가린다",
+    "Curtis blocks Manbok's bag and covers the gate with his body",
+    1,
+    "라이더는 이 문으로 못 들어와요.",
+    "Riders don't come through this gate.",
+    "cz"
+   ],
+   [
+    "야구장 입구",
+    "stadium gate",
+    "상철이 봉투를 빼앗아 바닥에 내려놓는다",
+    "Curtis takes the bag and sets it on the ground",
+    1,
+    "구단주석? 여기 앉을 사람 아니죠.",
+    "The owner's box? Not for you.",
+    "ms"
+   ],
+   [
+    "관중석",
+    "stadium stands",
+    "만복이 빈 좌석의 놋쇠 명패를 손으로 닦는다",
+    "Manbok wipes the brass nameplate on an empty seat",
+    0,
+    "이 자리, 아직 내 이름이네.",
+    "My name is still on this seat.",
+    "pi"
+   ],
+   [
+    "관중석",
+    "stadium stands",
+    "펜로즈 단장이 뛰어와 만복 앞에 선다",
+    "Mr. Penrose runs over and stops in front of Manbok",
+    2,
+    "구단주님, 시구 준비됐습니다.",
+    "Sir, the first pitch is ready.",
+    "low"
+   ],
+   [
+    "관중석",
+    "stadium stands",
+    "상철이 모자를 벗고 뒷걸음친다",
+    "Curtis takes off his cap and steps back",
+    0,
+    "오늘 시구, 이 자리에서 하죠.",
+    "I'll throw today's first pitch from this seat.",
+    "cu"
+   ],
+   [
+    "관중석",
+    "stadium stands",
+    "전광판에 구단주 이름이 뜨고 상철이 관중석 밖으로 나간다",
+    "The board lights up the owner's name as Curtis is led out",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "비 젖은 우비를 벗으라니",
+  "Take Off That Wet Raincoat",
+  "비에 젖은 라이더에게 물청소를 시키고 음식을 바닥에 버리는 주민. 관리소의 CCTV가 답을 준다.",
+  "A resident makes the soaked rider mop the floor and dumps his food. The building camera saw it all.",
+  [
+   [
+    "H",
+    "진소연",
+    "Denise",
+    "40대 여성, 노란 우비, 투명 헬멧 커버, 젖은 단발머리, 지친 눈",
+    "woman in her 40s, yellow raincoat, clear helmet cover, wet short hair, tired eyes"
+   ],
+   [
+    "V",
+    "황금자",
+    "Miriam",
+    "60대 여성, 자주색 카디건, 파마 머리, 내려보는 눈",
+    "woman in her 60s, purple cardigan, permed hair, looking down her nose"
+   ],
+   [
+    "A",
+    "백 반장",
+    "Mr. Rowan",
+    "40대 남성, 관리소 유니폼, 짧은 머리, 무표정한 얼굴",
+    "man in his 40s, building office uniform, short hair, blank face"
+   ]
+  ],
+  [
+   [
+    "낡은 아파트 현관",
+    "old apartment entrance",
+    "금자가 헬멧 쓴 소연의 우비를 손가락으로 툭툭 친다",
+    "Miriam flicks a finger against helmeted Denise's wet raincoat",
+    1,
+    "그 우비 벗고 걸레부터 들어.",
+    "Take that coat off and grab a mop.",
+    "cz"
+   ],
+   [
+    "낡은 아파트 현관",
+    "old apartment entrance",
+    "금자가 봉투를 빼앗아 바닥에 쏟고 소연이 국물을 닦는다",
+    "Miriam dumps the food on the floor and Denise wipes up the soup",
+    1,
+    "우리 로비가 다 더러워졌잖아.",
+    "Look at the mess you made in our lobby.",
+    "ms"
+   ],
+   [
+    "낡은 아파트 현관",
+    "old apartment entrance",
+    "소연이 천장 구석의 CCTV를 천천히 올려다본다",
+    "Denise slowly looks up at the camera in the ceiling corner",
+    0,
+    "저 카메라, 켜져 있네요.",
+    "That camera is on.",
+    "cu"
+   ],
+   [
+    "관리사무소",
+    "building office",
+    "백 반장이 모니터를 돌려 두 사람 앞에 세운다",
+    "Mr. Rowan turns the monitor toward them both",
+    2,
+    "주문부터 전부 찍혔습니다.",
+    "Everything is on tape, from the order on.",
+    "ots"
+   ],
+   [
+    "관리사무소",
+    "building office",
+    "금자가 손을 저으며 말을 잇지 못한다",
+    "Miriam waves a hand and can't finish a sentence",
+    0,
+    "국물값은 청구하겠습니다.",
+    "I'll be billing you for the food.",
+    "cu"
+   ],
+   [
+    "아파트 1층 상가",
+    "apartment ground-floor shop",
+    "소연이 임대 문의가 붙은 빈 가게 유리창을 들여다본다",
+    "Denise peers through the glass of an empty shop marked for rent",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "결제가 두 번 된 이유",
+  "Charged Twice, Blamed Once",
+  "결제 오류로 라이더를 도둑으로 몰던 직장인. 라이더가 버그를 짚자 앱 본사가 달려온다.",
+  "An office worker calls a rider a thief over a double charge, until someone from the app walks in.",
+  [
+   [
+    "H",
+    "문태강",
+    "Leo",
+    "20대 후반 남성, 파란 헬멧, 검은 후드 위 조끼, 덥수룩한 머리, 편한 미소",
+    "man in his late 20s, blue helmet, delivery vest over a black hoodie, messy hair, easy smile"
+   ],
+   [
+    "V",
+    "심가은",
+    "Tessa",
+    "20대 여성, 하늘색 블라우스, 긴 웨이브 머리, 억울한 듯 치켜뜬 눈",
+    "woman in her 20s, sky blue blouse, long wavy hair, chin up in outrage"
+   ],
+   [
+    "A",
+    "래킨",
+    "Mr. Larkin",
+    "30대 남성, 남색 폴로셔츠, 사원증, 안경",
+    "man in his 30s, navy polo shirt, company badge, glasses"
+   ]
+  ],
+  [
+   [
+    "회사 사무실 입구",
+    "office entrance",
+    "가은이 태강의 가슴팍을 손가락으로 찌르며 소리친다",
+    "Tessa jabs a finger at Leo's chest and raises her voice",
+    1,
+    "두 번 결제됐어요. 당신이 돌려주세요.",
+    "You charged me twice. Give it back.",
+    "cz"
+   ],
+   [
+    "회사 사무실 입구",
+    "office entrance",
+    "가은이 태강의 배달 가방을 잡아당기고 동료들이 몰려온다",
+    "Tessa grabs at Leo's delivery bag as coworkers gather behind her",
+    1,
+    "가방 열어 봐요. 지금.",
+    "Open the bag. Right now.",
+    "ms"
+   ],
+   [
+    "회사 사무실 입구",
+    "office entrance",
+    "태강이 앱의 결제 로그를 천천히 넘기며 고개를 끄덕인다",
+    "Leo scrolls through the app's payment log and nods to himself",
+    0,
+    "재시도가 두 번 돌았네요.",
+    "The retry ran twice.",
+    "cu"
+   ],
+   [
+    "회사 사무실 입구",
+    "office entrance",
+    "래킨이 사원증을 들고 나타나 가은의 휴대폰을 확인한다",
+    "Larkin appears with his badge and checks Tessa's phone",
+    2,
+    "업데이트 버그입니다. 라이더 잘못이 아니에요.",
+    "It's an update bug. Not the rider's fault.",
+    "low"
+   ],
+   [
+    "회사 사무실 입구",
+    "office entrance",
+    "가은이 고개를 숙이고 태강이 헬멧을 다시 쓴다",
+    "Tessa bows her head as Leo puts his helmet back on",
+    0,
+    "환불은 앱이 합니다. 저는 이만.",
+    "The app will refund you. I'm done here.",
+    "cu"
+   ],
+   [
+    "회사 사무실 입구",
+    "office entrance",
+    "래킨이 명함을 건네며 태강의 팔을 잡는다",
+    "Larkin holds out a card and catches Leo by the arm",
+    2,
+    "개발팀장 자리, 아직 비었습니다.",
+    "Our dev lead seat is still empty.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "서버실에 들어온 라이더",
+  "The Rider in the Server Room",
+  "야식을 배달한 라이더를 쫓아낸 개발팀장. 출시 영상 속 얼굴이 바로 그 라이더다.",
+  "A dev lead throws out the rider with late-night food, then sees his face in the launch video.",
+  [
+   [
+    "H",
+    "윤도현",
+    "Adrian",
+    "30대 남성, 검은 헬멧, 후드 위 배달 조끼, 짧은 머리, 편한 눈",
+    "man in his 30s, black helmet, delivery vest over a hoodie, short hair, easy eyes"
+   ],
+   [
+    "V",
+    "노강민",
+    "Bennett",
+    "30대 남성, 검은 티셔츠, 안경, 신경질적인 눈",
+    "man in his 30s, black t-shirt, glasses, jumpy eyes"
+   ],
+   [
+    "A",
+    "아이브스",
+    "Ms. Ives",
+    "30대 여성, 회색 정장, 태블릿, 단정한 머리",
+    "woman in her 30s, gray suit, tablet, neat hair"
+   ]
+  ],
+  [
+   [
+    "게임회사 사무실",
+    "game studio office",
+    "강민이 도현의 가방을 밀어 문가에 세운다",
+    "Bennett pushes Dohyun's bag against the door",
+    1,
+    "라이더는 여기까지. 서버실 근처 오지 마요.",
+    "Riders stop here. Stay away from the server room.",
+    "cz"
+   ],
+   [
+    "게임회사 사무실",
+    "game studio office",
+    "강민이 봉투를 밀어 옆 책상 위에 떨어뜨린다",
+    "Bennett shoves the bag and it lands on a desk",
+    1,
+    "출시 전엔 정신 사나워서.",
+    "We're launching. I don't need this.",
+    "ms"
+   ],
+   [
+    "게임회사 사무실",
+    "game studio office",
+    "도현이 벽 스크린의 출시 영상 속 자신을 본다",
+    "Dohyun sees himself in the launch trailer on the wall screen",
+    0,
+    "저 화면, 나잖아.",
+    "That's me on the screen.",
+    "cu"
+   ],
+   [
+    "게임회사 사무실",
+    "game studio office",
+    "아이브스가 태블릿을 들고 다가와 도현을 본다",
+    "Ms. Ives walks over with her tablet and looks at Dohyun",
+    2,
+    "대표님, 출시 영상 마지막 확인 부탁드려요.",
+    "Sir, final check on the launch trailer.",
+    "low"
+   ],
+   [
+    "게임회사 사무실",
+    "game studio office",
+    "강민이 안경을 고쳐 쓰고 뒷걸음친다",
+    "Bennett pushes his glasses up and steps back",
+    0,
+    "내 얼굴, 3초에 나오는데.",
+    "My face is at the three-second mark.",
+    "cu"
+   ],
+   [
+    "게임회사 사무실",
+    "game studio office",
+    "아이브스가 런칭 행사 초대장을 도현에게 건넨다",
+    "Ms. Ives hands Dohyun a launch event ticket",
+    2,
+    "무대 인사는 대표님이. 강민 씨는 오늘로.",
+    "You give the stage greeting, sir. Bennett, you're done today.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "음식에 뭐 넣었냐던 손님",
+  "She Searched the Food Bag",
+  "봉투를 열어 음식을 휘젓고 환불을 요구하는 손님. 음식점 사장이 전속 라이더를 지킨다.",
+  "A customer tears the sealed bag open and demands a refund, until the restaurant owner steps in.",
+  [
+   [
+    "H",
+    "나윤슬",
+    "Zoe",
+    "20대 여성, 흰 헬멧, 민트색 배달 조끼, 높이 묶은 머리, 또랑또랑한 눈",
+    "woman in her 20s, white helmet, mint delivery vest, high ponytail, bright round eyes"
+   ],
+   [
+    "V",
+    "차미소",
+    "Della",
+    "40대 여성, 회색 코트, 짧은 단발, 날 선 눈",
+    "woman in her 40s, gray coat, short bob, sharp eyes"
+   ],
+   [
+    "A",
+    "양 사장",
+    "Mr. Vance",
+    "50대 남성, 앞치마, 짧은 머리, 화난 얼굴",
+    "man in his 50s, apron, short hair, angry face"
+   ]
+  ],
+  [
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "미소가 윤슬의 헬멧을 손으로 밀치고 봉투를 빼앗는다",
+    "Della shoves Zoe's helmet aside and snatches the bag",
+    1,
+    "혹시 뭐 넣었어? 확인해 봐야겠어.",
+    "Did you put something in here? I need to check.",
+    "cz"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "미소가 봉인 스티커를 찢고 봉투를 바닥에 던진다",
+    "Della rips the seal sticker and throws the bag down",
+    1,
+    "이제 못 먹어. 다시 시켜.",
+    "Now it's ruined. Order it again.",
+    "ms"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "윤슬이 찢긴 봉투와 스티커를 휴대폰으로 찍는다",
+    "Zoe photographs the torn bag and sticker",
+    0,
+    "봉인 훼손은 손님 책임입니다.",
+    "You broke the seal yourself.",
+    "cu"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "양 사장이 새 봉투를 들고 계단을 올라온다",
+    "Mr. Vance comes up the stairs with a fresh bag",
+    2,
+    "새로 만들었습니다. 봉인은 손님이 찢으셨죠.",
+    "Here's a new one. You tore that seal.",
+    "low"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "미소가 봉투를 받지 못한 채 손을 내린다",
+    "Della stands with her hands empty, lowering them",
+    0,
+    "사진은 앱에 올려 둘게요.",
+    "I'll file the photo with the app.",
+    "cu"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "양 사장이 윤슬에게 전속 계약서를 건넨다",
+    "Mr. Vance hands Zoe an exclusive contract",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "젖은 라이더를 내쫓은 미용실 원장",
+  "The Soaked Rider at the Salon",
+  "폭우에 우산을 빌려준 라이더를 원장이 젖었다며 쫓아낸다. 우산 주인이 본사에서 왔다.",
+  "A salon manager throws out a soaked rider who gave his umbrella to the woman from head office.",
+  [
+   [
+    "H",
+    "조만복",
+    "Gus",
+    "60대 남성, 빨간 우비, 낡은 헬멧, 흰 머리, 순한 얼굴",
+    "man in his 60s, red raincoat, worn helmet, white hair, gentle face"
+   ],
+   [
+    "V",
+    "백주연",
+    "Colette",
+    "40대 여성, 검은 원피스, 짧은 단발, 굳은 입매",
+    "woman in her 40s, black dress, short bob, tight lips"
+   ],
+   [
+    "A",
+    "페리스",
+    "Ms. Ferris",
+    "40대 여성, 회색 정장, 젖은 우산, 단정한 머리",
+    "woman in her 40s, gray suit, wet umbrella, neat hair"
+   ]
+  ],
+  [
+   [
+    "미용실 입구",
+    "salon entrance",
+    "주연이 젖은 만복 앞에서 손사래를 치며 문을 가린다",
+    "Colette waves him off and blocks the salon door",
+    1,
+    "젖은 사람은 밖에서 기다려요. 바닥 다 버려요.",
+    "Wet shoes ruin my floor. Wait outside.",
+    "cz"
+   ],
+   [
+    "미용실 입구",
+    "salon entrance",
+    "주연이 만복의 우산을 집어 밖으로 던진다",
+    "Colette grabs his umbrella and throws it outside",
+    1,
+    "이것도 다 젖었네.",
+    "This is soaked too.",
+    "ms"
+   ],
+   [
+    "미용실 입구",
+    "salon entrance",
+    "페리스가 우산을 들고 들어와 만복을 가리킨다",
+    "Ms. Ferris walks in holding an umbrella and points at Gus",
+    2,
+    "이 우산, 이분이 주셨어요.",
+    "This man gave me this umbrella.",
+    "pi"
+   ],
+   [
+    "미용실 입구",
+    "salon entrance",
+    "페리스가 명함을 꺼내 주연 앞에 세운다",
+    "Ms. Ferris takes out a card and holds it up to Colette",
+    2,
+    "본사에서 왔습니다. 이 지점 실적부터 보죠.",
+    "I'm from head office. Let's start with this branch's numbers.",
+    "low"
+   ],
+   [
+    "미용실 입구",
+    "salon entrance",
+    "주연이 두 손으로 입을 가리고 물러선다",
+    "Colette covers her mouth with both hands and backs away",
+    0,
+    "젖은 사람도 들어가도 되나요?",
+    "May the wet man come in now?",
+    "cu"
+   ],
+   [
+    "미용실 입구",
+    "salon entrance",
+    "페리스가 만복에게 지점 배달 계약서를 건넨다",
+    "Ms. Ferris hands Gus a branch delivery contract",
+    2,
+    "우리 지점 배달, 맡으시겠어요?",
+    "Will you take our branch's deliveries?",
+    "ots"
+   ]
+  ]
+ ]
+]

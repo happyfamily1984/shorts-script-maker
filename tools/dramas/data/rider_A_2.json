@@ -1,0 +1,912 @@
+[
+ [
+  "작가가 출판사 회장을 직원으로 불렀다",
+  "The Author and the Publisher",
+  "사인회에서 라이더를 직원 취급한 작가. 그가 다음 책 계약을 쥔 출판사 회장이었다.",
+  "A bestselling author treats a courier like staff. The rider runs the publishing house behind her books.",
+  [
+   [
+    "H",
+    "우진",
+    "Simon",
+    "40대 남성, 배달 조끼 위 낡은 셔츠, 헬멧, 안경, 잔잔한 미소",
+    "man in his 40s, worn shirt under a delivery vest, helmet, glasses, quiet smile"
+   ],
+   [
+    "V",
+    "라희",
+    "Camille",
+    "30대 여성, 흰 블라우스와 긴 스커트, 웨이브 머리, 날 선 눈매",
+    "woman in her 30s, white blouse, long skirt, wavy hair, sharp eyes"
+   ],
+   [
+    "A",
+    "편집장",
+    "Ms. Whitlock",
+    "50대 여성, 회색 정장, 짧은 단발, 단호한 눈",
+    "woman in her 50s, gray suit, short bob, firm eyes"
+   ]
+  ],
+  [
+   [
+    "서점 사인회장",
+    "bookstore signing table",
+    "라희가 우진의 배달 가방을 테이블 밑으로 밀어 넣는다",
+    "Camille shoves Simon's food bag under the signing table",
+    1,
+    "직원은 뒤로 가요. 손님 줄 서 있어요.",
+    "Staff stay behind the table. There's a line.",
+    "cz"
+   ],
+   [
+    "서점 사인회장",
+    "bookstore signing table",
+    "라희가 사인한 책을 우진의 가슴에 밀어붙인다",
+    "Camille presses a signed book against Simon's chest",
+    1,
+    "이거 정리해요.",
+    "Sort these out.",
+    "ms"
+   ],
+   [
+    "서점 사인회장",
+    "bookstore signing table",
+    "우진이 책 날개의 출판사 로고를 본다",
+    "Simon looks at the publisher's logo on the book flap",
+    0,
+    "이 출판사, 제가 세운 곳인데요.",
+    "I founded this publishing house.",
+    "cu"
+   ],
+   [
+    "서점 사인회장",
+    "bookstore signing table",
+    "편집장이 계약서를 들고 달려온다",
+    "Ms. Whitlock rushes over holding a contract",
+    2,
+    "회장님, 다음 책 계약서 준비됐습니다.",
+    "Chairman, next book's contract is ready.",
+    "low"
+   ],
+   [
+    "서점 사인회장",
+    "bookstore signing table",
+    "라희의 펜이 테이블 위로 떨어진다",
+    "Camille's pen drops onto the table",
+    0,
+    "사인은 다음 책부터 받으시죠.",
+    "Save your signature for the next book.",
+    "cu"
+   ],
+   [
+    "서점 사인회장",
+    "bookstore signing table",
+    "편집장이 인세 정산서를 펼친다",
+    "Ms. Whitlock opens the royalty statement",
+    2,
+    "이번 책 인세, 다시 계산해야겠습니다.",
+    "We'll need to recalculate her royalties.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "병원 이사장이 배달 가방을 멨다",
+  "The Hospital Chairman on a Delivery Run",
+  "응급실 쪽으로 가라며 모욕한 원무팀장. 로비의 초상 사진과 똑같은 얼굴이 그 앞에 섰다.",
+  "A clerk humiliates a courier in the lobby. The man's face matches the chairman's portrait.",
+  [
+   [
+    "H",
+    "기석",
+    "Walter",
+    "50대 남성, 회색 배달 재킷, 헬멧, 안경, 반듯한 자세, 인자한 눈",
+    "man in his 50s, gray delivery jacket, helmet, glasses, upright posture, kind eyes"
+   ],
+   [
+    "V",
+    "나경",
+    "Yvonne",
+    "30대 여성, 병원 원무 유니폼, 묶은 머리, 사무적인 얼굴",
+    "woman in her 30s, hospital admin uniform, tied hair, businesslike face"
+   ],
+   [
+    "A",
+    "병원장",
+    "Dr. Mercer",
+    "50대 남성, 흰 가운, 안경, 은발, 침착한 눈",
+    "man in his 50s, white coat, glasses, silver hair, composed eyes"
+   ]
+  ],
+  [
+   [
+    "병원 로비",
+    "hospital lobby",
+    "나경이 기석의 배달 가방을 안내데스크 뒤로 밀어 넣는다",
+    "Yvonne shoves Walter's food bag behind the info desk",
+    1,
+    "배달은 응급실 쪽으로 다니세요.",
+    "Deliveries go through the emergency wing.",
+    "cz"
+   ],
+   [
+    "병원 로비",
+    "hospital lobby",
+    "나경이 기석의 헬멧을 벤치에 던진다",
+    "Yvonne tosses Walter's helmet onto a bench",
+    1,
+    "환자분들이 놀라시잖아요.",
+    "You're frightening the patients.",
+    "ms"
+   ],
+   [
+    "병원 로비",
+    "hospital lobby",
+    "기석이 벽의 이사장 초상 사진 앞에 선다",
+    "Walter stands before the chairman's portrait on the wall",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "병원 로비",
+    "hospital lobby",
+    "병원장이 달려와 기석의 어깨를 잡는다",
+    "Dr. Mercer rushes over and grips Walter's shoulder",
+    2,
+    "이사장님, 이사회가 기다립니다.",
+    "Chairman, the board is waiting for you.",
+    "low"
+   ],
+   [
+    "병원 로비",
+    "hospital lobby",
+    "나경의 손에서 서류가 바닥으로 흩어진다",
+    "Papers scatter from Yvonne's hands",
+    0,
+    "원무팀장, 오늘로 마무리하시죠.",
+    "Head clerk, today will be your last.",
+    "cu"
+   ],
+   [
+    "병원 로비",
+    "hospital lobby",
+    "병원장이 초상 사진을 가리키며 낮게 말한다",
+    "Dr. Mercer points at the portrait and lowers his voice",
+    2,
+    "이 사진, 오늘 아침에 바꿔 걸었습니다.",
+    "We changed that portrait this morning.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "셰프가 오너에게 뒷문을 가리켰다",
+  "The Chef and the Back Door",
+  "식자재는 뒷문으로 넣으라던 셰프. 그가 내친 라이더가 이 식당 체인의 주인이었다.",
+  "A chef orders a supplier's courier to the back door. The rider owns the restaurant chain.",
+  [
+   [
+    "H",
+    "재하",
+    "Martin",
+    "40대 남성, 배달 조끼와 검은 앞치마, 헬멧, 짧은 머리, 무뚝뚝한 눈",
+    "man in his 40s, delivery vest, black apron, helmet, short hair, stoic eyes"
+   ],
+   [
+    "V",
+    "요한",
+    "Fabian",
+    "40대 남성, 흰 셰프 재킷과 검은 앞치마, 삭발, 오만한 턱",
+    "man in his 40s, white chef jacket, black apron, shaved head, arrogant chin"
+   ],
+   [
+    "A",
+    "소미",
+    "Ms. Alvarez",
+    "20대 여성, 검은 유니폼, 묶은 머리, 당찬 눈",
+    "woman in her 20s, black uniform, tied hair, spirited eyes"
+   ]
+  ],
+  [
+   [
+    "레스토랑 주방 입구",
+    "restaurant kitchen door",
+    "요한이 재하의 식자재 상자를 발로 밀어 복도로 보낸다",
+    "Fabian kicks Martin's produce box out into the hallway",
+    1,
+    "주방은 뒷문이야. 손님 보이게 두지 마.",
+    "Kitchen staff use the back. Don't let guests see you.",
+    "cz"
+   ],
+   [
+    "레스토랑 주방 입구",
+    "restaurant kitchen door",
+    "요한이 재하의 배달 가방에서 영수증을 꺼내 찢는다",
+    "Fabian pulls the receipt from Jaeha's bag and tears it",
+    1,
+    "이런 싸구려 재료는 안 받아.",
+    "I don't take cheap ingredients like this.",
+    "ms"
+   ],
+   [
+    "레스토랑 홀",
+    "restaurant dining room",
+    "재하가 벽에 걸린 체인 로고를 손끝으로 닦는다",
+    "Martin wipes the chain's logo on the wall with his fingers",
+    0,
+    "이 로고, 꽤 오래됐네요.",
+    "This logo's been here a long time.",
+    "cu"
+   ],
+   [
+    "레스토랑 주방",
+    "restaurant kitchen",
+    "소미가 주방으로 들어와 재하에게 서류를 건넨다",
+    "Ms. Alvarez walks into the kitchen and hands Martin a document",
+    2,
+    "대표님, 새 메뉴 심사는 내일입니다.",
+    "Mr. Martin, the menu review is tomorrow.",
+    "low"
+   ],
+   [
+    "레스토랑 주방",
+    "restaurant kitchen",
+    "요한이 찢은 영수증 조각을 주워 모은다",
+    "Fabian gathers up the pieces of the receipt he tore",
+    0,
+    "셰프 이름도 내일부터 바꾸시죠.",
+    "Your name comes off the menu tomorrow.",
+    "cu"
+   ],
+   [
+    "레스토랑 주방",
+    "restaurant kitchen",
+    "소미가 재하에게 조용히 속삭인다",
+    "Ms. Alvarez leans in and whispers to Martin",
+    2,
+    "셰프가 몰래 다른 체인과 접촉했어요.",
+    "He's been talking to another chain.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "투자 심사위원이 배달을 왔다",
+  "The Judge Who Delivered Lunch",
+  "명함도 없다며 쫓아낸 창업자. 그가 무시한 배달원이 투자 심사위원장이었다.",
+  "A founder sneers at a courier with no business card. The rider chairs the investment panel.",
+  [
+   [
+    "H",
+    "지환",
+    "Felix",
+    "30대 남성, 배달 조끼 위 낡은 재킷, 헬멧, 안경, 무심한 눈",
+    "man in his 30s, worn jacket over a delivery vest, helmet, glasses, cool eyes"
+   ],
+   [
+    "V",
+    "태리",
+    "Brock",
+    "30대 남성, 몸에 붙는 검정 터틀넥, 올백 머리, 자신만만한 웃음",
+    "man in his 30s, tight black turtleneck, slicked-back hair, confident grin"
+   ],
+   [
+    "A",
+    "유림",
+    "Ms. Brandt",
+    "20대 여성, 핀 마이크와 정장, 높은 포니테일, 또렷한 목소리",
+    "woman in her 20s, pin mic, suit, high ponytail, clear voice"
+   ]
+  ],
+  [
+   [
+    "데모데이 행사장 로비",
+    "startup demo lobby",
+    "태리가 지환의 배달 상자를 등 뒤로 숨기라 손짓한다",
+    "Brock gestures for Felix to hide the delivery box behind him",
+    1,
+    "명함도 없는 사람이 심사장에 와?",
+    "No business card, and you walk into the judging hall?",
+    "cz"
+   ],
+   [
+    "데모데이 행사장 로비",
+    "startup demo lobby",
+    "태리가 지환의 헬멧을 집어 의자 밑에 밀어 넣는다",
+    "Brock takes Felix's helmet and shoves it under a chair",
+    1,
+    "내 피칭 3분 뒤야. 방해하지 마.",
+    "I pitch in three minutes. Stay out of my way.",
+    "ms"
+   ],
+   [
+    "데모데이 행사장 로비",
+    "startup demo lobby",
+    "지환이 무대 옆 좌석표의 이름을 확인한다",
+    "Felix checks the name on a seat card beside the stage",
+    0,
+    "제 자리, 저기네요.",
+    "My seat's right there.",
+    "cu"
+   ],
+   [
+    "데모데이 행사장 무대",
+    "startup demo stage",
+    "유림이 무대로 걸어가 지환의 이름을 부른다",
+    "Ms. Brandt steps to the stage and calls Felix's name",
+    2,
+    "심사위원장, 김지환 님.",
+    "Our panel chair, Mr. Felix.",
+    "low"
+   ],
+   [
+    "데모데이 행사장 무대",
+    "startup demo stage",
+    "태리의 발표 자료가 화면에서 꺼진다",
+    "Brock's pitch slides vanish from the screen",
+    0,
+    "태리 님, 투자 심사는 여기까지입니다.",
+    "Mr. Brock, your funding review ends here.",
+    "cu"
+   ],
+   [
+    "데모데이 행사장 로비",
+    "startup demo lobby",
+    "유림이 지환에게 다음 지원자 명단을 건넨다",
+    "Ms. Brandt hands Felix the list of next presenters",
+    2,
+    "다음 발표자, 태리 님의 경쟁사입니다.",
+    "Next up: his biggest competitor.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "라이더를 짐꾼으로 부린 사모님",
+  "The Suite Guest and Her Errands",
+  "음식 배달 온 라이더에게 짐을 들라던 사모님. 그 방의 법인 카드가 정지된 상태였다.",
+  "A suite guest makes a courier haul her luggage. Her company card has been frozen for weeks.",
+  [
+   [
+    "H",
+    "태성",
+    "Miles",
+    "20대 남성, 파란 배달 재킷, 헬멧, 배달 가방, 곱슬머리, 조용한 눈",
+    "man in his 20s, blue delivery jacket, helmet, food bag, curly hair, quiet eyes"
+   ],
+   [
+    "V",
+    "혜란",
+    "Margot",
+    "50대 여성, 실크 블라우스와 진주 목걸이, 올림머리, 얇은 입술",
+    "woman in her 50s, silk blouse, pearl necklace, updo, thin lips"
+   ],
+   [
+    "A",
+    "서 지배인",
+    "Mr. Okafor",
+    "40대 남성, 검은 정장과 나비넥타이, 짧은 머리, 단호한 눈",
+    "man in his 40s, black suit, bow tie, short hair, firm eyes"
+   ]
+  ],
+  [
+   [
+    "호텔 스위트 거실",
+    "hotel suite",
+    "혜란이 캐리어 손잡이를 태성의 손에 쥐여 준다",
+    "Margot pushes a suitcase handle into Taeseong's hand",
+    1,
+    "이거 로비까지 내려. 배달 온 김에.",
+    "Take this to the lobby. You're here anyway.",
+    "cz"
+   ],
+   [
+    "호텔 스위트 거실",
+    "hotel suite",
+    "혜란이 태성의 배달 가방 위에 쇼핑백을 올린다",
+    "Margot stacks shopping bags on top of Taeseong's food bag",
+    1,
+    "이것도 같이. 조심히 들어.",
+    "These too. Careful with them.",
+    "ms"
+   ],
+   [
+    "호텔 스위트 거실",
+    "hotel suite",
+    "태성이 앱 화면의 주문 시간을 확인한다",
+    "Taeseong checks the order time on his app",
+    0,
+    "음식은 40분 전에 식었는데요.",
+    "The food went cold forty minutes ago.",
+    "cu"
+   ],
+   [
+    "호텔 스위트 문 앞",
+    "hotel suite door",
+    "서 지배인이 문을 두드리고 태블릿을 든다",
+    "Mr. Okafor knocks and holds up a tablet",
+    2,
+    "사모님, 이 방 법인 카드가 정지됐습니다.",
+    "Ma'am, the company card on this suite is frozen.",
+    "low"
+   ],
+   [
+    "호텔 스위트 거실",
+    "hotel suite",
+    "혜란의 손에서 캐리어 손잡이가 빠진다",
+    "The suitcase handle slips from Margot's hand",
+    0,
+    "짐은 지배인에게 맡기세요.",
+    "Leave the luggage with the manager.",
+    "cu"
+   ],
+   [
+    "호텔 복도",
+    "hotel hallway",
+    "서 지배인이 태성에게 방 하나를 가리킨다",
+    "Mr. Okafor points Taeseong toward another suite",
+    2,
+    "이 방, 예약자 이름이 따로 있습니다.",
+    "This suite was booked under a different name.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "배달 오토바이를 밀어 넘어뜨린 발렛 사장",
+  "The Valet Who Pushed Over a Scooter",
+  "오토바이를 밀어 넘어뜨리고 웃던 발렛 사장. 관리소장이 위탁 계약서를 들고 내려왔다.",
+  "A valet shoves a delivery scooter to the ground and laughs. The building manager arrives with the contract.",
+  [
+   [
+    "H",
+    "민재",
+    "Colin",
+    "30대 남성, 검정 배달 재킷, 헬멧, 반사 스트랩, 짧은 머리, 무던한 얼굴",
+    "man in his 30s, black delivery jacket, helmet, reflective strap, short hair, easy face"
+   ],
+   [
+    "V",
+    "우람",
+    "Bruno",
+    "40대 남성, 빨간 발렛 조끼와 검은 장갑, 짧은 삭발, 비웃는 얼굴",
+    "man in his 40s, red valet vest, black gloves, short shaved hair, mocking face"
+   ],
+   [
+    "A",
+    "최 소장",
+    "Mr. Finch",
+    "50대 남성, 관리사무소 정장, 안경, 꼿꼿한 자세",
+    "man in his 50s, management office suit, glasses, upright posture"
+   ]
+  ],
+  [
+   [
+    "지하 주차장",
+    "underground parking",
+    "우람이 민재의 오토바이를 발로 밀어 넘어뜨린다",
+    "Bruno kicks Colin's scooter over",
+    1,
+    "여기 라이더 주차 금지야.",
+    "No rider parking here.",
+    "cz"
+   ],
+   [
+    "지하 주차장",
+    "underground parking",
+    "우람이 민재의 헬멧을 집어 넘어진 오토바이 위에 던진다",
+    "Bruno tosses Minjae's helmet onto the fallen scooter",
+    1,
+    "이거 끌고 나가. 당장.",
+    "Haul this thing out. Now.",
+    "ms"
+   ],
+   [
+    "지하 주차장 기둥",
+    "parking pillar",
+    "민재가 기둥의 위탁 업체 명판을 휴대폰으로 찍는다",
+    "Colin photographs the contractor's plaque on a pillar",
+    0,
+    "위탁 업체 이름, 잘 보이네요.",
+    "The contractor's name is easy to read.",
+    "cu"
+   ],
+   [
+    "지하 주차장",
+    "underground parking",
+    "최 소장이 계약서를 들고 걸어온다",
+    "Mr. Finch walks over holding the contract",
+    2,
+    "우람 씨, 위탁 계약 오늘부로 해지입니다.",
+    "Mr. Bruno, your contract ends today.",
+    "low"
+   ],
+   [
+    "지하 주차장",
+    "underground parking",
+    "우람이 오토바이를 세우려다 헛손질한다",
+    "Bruno grabs for the scooter and misses",
+    0,
+    "오토바이부터 세워 주시죠.",
+    "Pick up the scooter first.",
+    "cu"
+   ],
+   [
+    "지하 주차장",
+    "underground parking",
+    "최 소장이 넘어진 오토바이 옆에서 작은 카메라를 집어 든다",
+    "Mr. Finch picks a small camera off the ground beside the scooter",
+    2,
+    "이거, 누가 오토바이에 붙여 놨지?",
+    "Who strapped this camera to your scooter?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "배달원 출입금지 팻말을 건 상인회장",
+  "The Market Chief's No-Courier Sign",
+  "배달원 출입금지 팻말을 건 상인회장. 소방 통로를 막아 둔 창고 사진이 단속반 손에 들어갔다.",
+  "A market chief hangs a no-courier sign. Photos of his blocked fire exit reach the inspectors.",
+  [
+   [
+    "H",
+    "은찬",
+    "Tobias",
+    "20대 남성, 주황 배달 조끼, 헬멧, 배달 가방, 짧은 머리, 또렷한 눈",
+    "man in his 20s, orange delivery vest, helmet, food bag, short hair, clear eyes"
+   ],
+   [
+    "V",
+    "만복",
+    "Chester",
+    "60대 남성, 앞치마와 팔토시, 흰 머리, 퉁명스러운 얼굴",
+    "man in his 60s, apron, arm sleeves, white hair, gruff face"
+   ],
+   [
+    "A",
+    "순임",
+    "Ms. Holloway",
+    "50대 여성, 시장 앞치마와 고무장갑, 짧은 파마머리, 따뜻한 눈",
+    "woman in her 50s, market apron, rubber gloves, short curled hair, warm eyes"
+   ]
+  ],
+  [
+   [
+    "시장 입구",
+    "market entrance",
+    "만복이 은찬의 배달 가방을 밀어 입구 밖으로 내보낸다",
+    "Chester shoves Tobias's food bag back out the entrance",
+    1,
+    "라이더 출입 금지야. 팻말 못 봤어?",
+    "No couriers. Can't you read the sign?",
+    "cz"
+   ],
+   [
+    "시장 입구",
+    "market entrance",
+    "만복이 팻말을 은찬의 앞에 세워 둔다",
+    "Chester plants the sign right in front of Tobias",
+    1,
+    "다음엔 바퀴부터 막을 거야.",
+    "Next time I'll block your wheels.",
+    "ms"
+   ],
+   [
+    "시장 창고 앞",
+    "market storage",
+    "은찬이 창고 앞에 쌓인 상자 더미를 찍는다",
+    "Tobias photographs the pile of boxes blocking the storage door",
+    0,
+    "소방 통로가 다 막혔네요.",
+    "The fire exit is completely blocked.",
+    "cu"
+   ],
+   [
+    "시장 입구",
+    "market entrance",
+    "순임이 단속반을 데리고 걸어온다",
+    "Ms. Holloway walks up with the inspectors",
+    2,
+    "여기요, 막아 둔 창고가 이 뒤쪽이에요.",
+    "Over here. The blocked storage is right behind.",
+    "low"
+   ],
+   [
+    "시장 입구",
+    "market entrance",
+    "만복이 팻말을 급히 뒤집는다",
+    "Chester hurriedly turns the sign around",
+    0,
+    "팻말은 제가 접어 드릴게요.",
+    "I'll fold up that sign for you.",
+    "cu"
+   ],
+   [
+    "시장 입구",
+    "market entrance",
+    "순임이 은찬에게 시장 지도를 건넨다",
+    "Ms. Holloway hands Tobias the market map",
+    2,
+    "다음 주부터 배달 동선, 네가 정해.",
+    "From next week, you plan the delivery routes.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "가방에서 상품이 사라졌다는 누명",
+  "The Missing Bottle",
+  "영양제가 없다며 라이더를 도둑으로 몰았다. 가방 속 안전 카메라가 점원의 손을 찍었다.",
+  "A customer accuses a courier of stealing vitamins. The safety camera in his bag shows the clerk's hand.",
+  [
+   [
+    "H",
+    "도훈",
+    "Ralph",
+    "20대 남성, 하늘색 배달 재킷, 헬멧, 배달 가방, 짧은 머리, 차분한 눈",
+    "man in his 20s, sky-blue delivery jacket, helmet, food bag, short hair, steady eyes"
+   ],
+   [
+    "V",
+    "상현",
+    "Desmond",
+    "30대 남성, 셔츠에 카디건, 안경, 깔끔한 머리, 의심 많은 눈",
+    "man in his 30s, shirt, cardigan, glasses, neat hair, suspicious eyes"
+   ],
+   [
+    "A",
+    "정 약사",
+    "Ms. Petrov",
+    "60대 여성, 흰 약사 가운, 안경, 짧은 머리, 꼼꼼한 눈",
+    "woman in her 60s, white pharmacist coat, glasses, short hair, meticulous eyes"
+   ]
+  ],
+  [
+   [
+    "약국 앞",
+    "in front of the pharmacy",
+    "상현이 빈 봉투를 도훈의 얼굴 앞에 흔든다",
+    "Desmond waves an empty bag in Ralph's face",
+    1,
+    "영양제 한 통이 없어. 네가 가졌지.",
+    "One bottle is missing. You took it.",
+    "cz"
+   ],
+   [
+    "약국 앞",
+    "in front of the pharmacy",
+    "상현이 도훈의 배달 가방을 열어 안을 쏟는다",
+    "Desmond opens Ralph's bag and dumps everything out",
+    1,
+    "여기서 나오면 끝이야.",
+    "If it's in there, you're done.",
+    "ms"
+   ],
+   [
+    "약국 앞",
+    "in front of the pharmacy",
+    "도훈이 가방 안쪽의 작은 카메라를 가리킨다",
+    "Ralph points to a small camera inside his bag",
+    0,
+    "이거, 안전용으로 켜 둡니다.",
+    "I keep this running for safety.",
+    "cu"
+   ],
+   [
+    "약국 앞",
+    "in front of the pharmacy",
+    "정 약사가 태블릿을 들고 나온다",
+    "Ms. Petrov comes out holding a tablet",
+    2,
+    "점원이 계산대에 두고 왔네요. 여기 있습니다.",
+    "My clerk left it at the counter. Here it is.",
+    "low"
+   ],
+   [
+    "약국 앞",
+    "in front of the pharmacy",
+    "상현이 안경을 만지며 고개를 숙인다",
+    "Desmond lowers his head, fingering his glasses",
+    0,
+    "제 가방부터 다시 채워 주시죠.",
+    "Start by putting my bag back together.",
+    "cu"
+   ],
+   [
+    "약국 앞",
+    "in front of the pharmacy",
+    "정 약사가 도훈에게 봉투를 하나 더 건넨다",
+    "Ms. Petrov hands Ralph one more bag",
+    2,
+    "이건 같은 봉투인데, 주소가 다르네요.",
+    "Same order, different address.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "국물을 쏟았다고 몰린 배달 기사",
+  "The Spilled Soup",
+  "국물을 쏟아 옷을 망쳤다며 라이더를 몰았다. 포장대 영상에 가게 주인의 손이 찍혔다.",
+  "A customer blames a courier for spilled soup. The packing-room video shows the owner's hands.",
+  [
+   [
+    "H",
+    "한결",
+    "Emmett",
+    "30대 남성, 초록 배달 재킷, 헬멧, 배달 가방, 짧은 머리, 성실한 눈",
+    "man in his 30s, green delivery jacket, helmet, food bag, short hair, earnest eyes"
+   ],
+   [
+    "V",
+    "옥란",
+    "Rosalind",
+    "50대 여성, 분식집 앞치마, 짧은 파마, 굳은 입",
+    "woman in her 50s, snack shop apron, short curls, hard mouth"
+   ],
+   [
+    "A",
+    "예린",
+    "Ms. Barrow",
+    "30대 여성, 정장과 태블릿, 묶은 머리, 단호한 눈",
+    "woman in her 30s, suit, tablet, tied hair, decisive eyes"
+   ]
+  ],
+  [
+   [
+    "분식집 앞",
+    "in front of a snack shop",
+    "옥란이 국물 묻은 봉투를 한결의 가슴에 밀어붙인다",
+    "Rosalind presses a soup-stained bag against Emmett's chest",
+    1,
+    "네가 쏟았지. 손님 옷값 물어내.",
+    "You spilled it. Pay for the customer's clothes.",
+    "cz"
+   ],
+   [
+    "분식집 앞",
+    "in front of a snack shop",
+    "옥란이 한결의 배달 가방을 뒤집어 바닥에 털어낸다",
+    "Rosalind upends Emmett's bag onto the ground",
+    1,
+    "오늘 장사 망쳤어.",
+    "You ruined today's business.",
+    "ms"
+   ],
+   [
+    "분식집 카운터",
+    "snack shop counter",
+    "한결이 가게 안쪽 카메라를 가리킨다",
+    "Emmett points at the camera above the counter",
+    0,
+    "포장대도 찍히죠?",
+    "The packing counter's on camera too, right?",
+    "cu"
+   ],
+   [
+    "분식집 카운터",
+    "snack shop counter",
+    "예린이 태블릿을 돌려 옥란에게 보여 준다",
+    "Ms. Barrow turns the tablet toward Rosalind",
+    2,
+    "포장하다 쏟으신 장면, 그대로 있습니다.",
+    "Here's the moment you spilled it while packing.",
+    "low"
+   ],
+   [
+    "분식집 앞",
+    "in front of a snack shop",
+    "옥란이 앞치마로 얼굴을 가린다",
+    "Rosalind covers her face with her apron",
+    0,
+    "손님 옷값은 사장님이 물어내세요.",
+    "You're paying for the customer's clothes.",
+    "cu"
+   ],
+   [
+    "분식집 앞",
+    "in front of a snack shop",
+    "예린이 폐점 신청서를 한결에게 보여 준다",
+    "Ms. Barrow shows Emmett a closure request",
+    2,
+    "폐점 신청서에 다른 이름이 서 있습니다.",
+    "Someone else signed this closure request.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "주차장 벽을 긁었다는 라이더",
+  "The Scratched Wall",
+  "벽을 긁었다며 배상하라던 차주. 헬멧 카메라에 다른 배달 차량의 번호판이 찍혔다.",
+  "A car owner demands payment for a scratched wall. The helmet camera catches another rider's plate.",
+  [
+   [
+    "H",
+    "도겸",
+    "Angus",
+    "20대 남성, 회색 배달 재킷, 헬멧 카메라, 배달 가방, 짧게 친 머리, 영리한 눈",
+    "man in his 20s, gray delivery jacket, helmet camera, food bag, cropped hair, clever eyes"
+   ],
+   [
+    "V",
+    "재범",
+    "Lionel",
+    "40대 남성, 골프 셔츠와 반바지, 짧은 머리, 언성 높은 얼굴",
+    "man in his 40s, golf shirt, shorts, short hair, loud angry face"
+   ],
+   [
+    "A",
+    "보라",
+    "Ms. Osei",
+    "20대 여성, 관리사무소 유니폼, 짧은 머리, 꼼꼼한 눈",
+    "woman in her 20s, management office uniform, short hair, meticulous eyes"
+   ]
+  ],
+  [
+   [
+    "오피스텔 지하주차장",
+    "officetel parking garage",
+    "재범이 도겸의 헬멧을 벽에 밀어 붙인다",
+    "Lionel presses Angus's helmet against the wall",
+    1,
+    "여기 벽, 네가 긁었지.",
+    "You scratched this wall.",
+    "cz"
+   ],
+   [
+    "오피스텔 지하주차장",
+    "officetel parking garage",
+    "재범이 도겸의 오토바이 손잡이를 흔들어 보인다",
+    "Lionel shakes the handlebar of Angus's scooter",
+    1,
+    "배상금 백만 원, 지금 내.",
+    "A thousand for the damage. Now.",
+    "ms"
+   ],
+   [
+    "오피스텔 지하주차장",
+    "officetel parking garage",
+    "도겸이 헬멧 앞쪽의 작은 카메라를 톡톡 두드린다",
+    "Angus taps the small camera on the front of his helmet",
+    0,
+    "이거, 계속 녹화 중인데요.",
+    "This has been recording the whole time.",
+    "cu"
+   ],
+   [
+    "오피스텔 관리사무소",
+    "officetel office",
+    "보라가 모니터 화면을 돌려 재범에게 보여 준다",
+    "Ms. Osei turns the monitor toward Lionel",
+    2,
+    "다른 배달 차량이 긁었습니다. 번호도 찍혔어요.",
+    "Another rider scraped it. We have the plate.",
+    "low"
+   ],
+   [
+    "오피스텔 지하주차장",
+    "officetel parking garage",
+    "재범이 흰 벽의 긁힌 자국을 손으로 문지른다",
+    "Lionel rubs the scratch on the white wall with his hand",
+    0,
+    "제 오토바이는 괜찮냐고 물으셔야죠.",
+    "You should be asking about my scooter.",
+    "cu"
+   ],
+   [
+    "오피스텔 관리사무소",
+    "officetel office",
+    "보라가 도겸의 오토바이 번호판을 가리킨다",
+    "Ms. Osei points at the plate on Angus's scooter",
+    2,
+    "이 번호판, 오늘 아침에 바뀌었어요.",
+    "This plate was swapped this morning.",
+    "pi"
+   ]
+  ]
+ ]
+]

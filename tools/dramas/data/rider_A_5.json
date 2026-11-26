@@ -1,0 +1,954 @@
+[
+ [
+  "불난 주방에 들어간 배달원",
+  "The Rider Who Ran Into the Fire",
+  "늦었다고 쫓아낸 주방장. 불이 나자 배달원이 소화기를 들었다.",
+  "A chef humiliates a late rider, then a kitchen fire traps his staff.",
+  [
+   [
+    "H",
+    "정한결",
+    "Ethan Cole",
+    "30대 남성, 검은 헬멧, 남색 배달 조끼, 짧은 머리, 차분한 눈빛",
+    "man in his 30s, black helmet, navy delivery vest, cropped hair, calm eyes"
+   ],
+   [
+    "V",
+    "방성호",
+    "Vince Doyle",
+    "50대 남성, 흰 주방장복, 붉은 얼굴, 삐딱한 눈매",
+    "man in his 50s, white chef coat, flushed face, crooked glare"
+   ],
+   [
+    "A",
+    "노상철",
+    "Owen Dunn",
+    "40대 남성, 소방 점검복, 회색 헬멧, 반듯한 자세",
+    "man in his 40s, fire inspection uniform, gray helmet, upright posture"
+   ]
+  ],
+  [
+   [
+    "고급 한식당 주방",
+    "upscale restaurant kitchen",
+    "성호가 한결의 배달 가방을 밀고 오토바이를 가리킨다",
+    "Vince shoves Ethan's bag and points at the scooter",
+    1,
+    "넷 늦었어. 손님은 이미 화났어.",
+    "Four minutes late. The guest is already furious.",
+    "cz"
+   ],
+   [
+    "고급 한식당 주방",
+    "upscale restaurant kitchen",
+    "성호가 영수증을 찢어 바닥에 던진다",
+    "Vince tears the receipt and throws it down",
+    1,
+    "라이더가 주방에 들어올 자리는 없어.",
+    "Riders have no place in my kitchen.",
+    "rx"
+   ],
+   [
+    "고급 한식당 주방",
+    "upscale restaurant kitchen",
+    "한결이 튀김기 연기와 소화기 위치를 번갈아 본다",
+    "Ethan looks from the smoking fryer to the empty extinguisher hook",
+    0,
+    "기름 온도, 지금 위험한데요.",
+    "That oil is running too hot.",
+    "cu"
+   ],
+   [
+    "고급 한식당 주방",
+    "upscale restaurant kitchen",
+    "불꽃이 치솟자 점검관이 들어와 한결을 부른다",
+    "Flames burst up as the inspector runs in and calls out to Ethan",
+    2,
+    "한결 씨, 소방대장 때처럼 또 혼자 다 하네.",
+    "Mr. Cole, still doing it alone like your fire captain days.",
+    "low"
+   ],
+   [
+    "고급 한식당 주방",
+    "upscale restaurant kitchen",
+    "한결이 빈 소화기 걸이를 가리키고 성호가 물러난다",
+    "Ethan points at the empty hook and Vince backs away",
+    0,
+    "불은 제가 껐습니다. 영업정지는 사장님이 끄세요.",
+    "I put out the fire. You put out the shutdown.",
+    "slo"
+   ],
+   [
+    "고급 한식당 주방",
+    "upscale restaurant kitchen",
+    "점검관이 봉투를 꺼내 한결에게 건넨다",
+    "The inspector pulls an envelope from his jacket and holds it out",
+    2,
+    "소방서에 네 이름으로 온 편지, 아직 안 열었지?",
+    "A letter came to the station with your name. Still sealed?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "기도 막힌 하객을 살린 배달원",
+  "The Rider Who Saved the Guest",
+  "음식이 늦었다며 쫓아낸 웨딩플래너. 하객이 쓰러지자 배달원이 뛰어들었다.",
+  "A wedding planner chases off a late rider, then a guest chokes at the reception.",
+  [
+   [
+    "H",
+    "고태오",
+    "Toby Reed",
+    "20대 후반 남성, 초록 헬멧, 회색 후드, 배달 가방, 반듯한 이목구비",
+    "man in his late 20s, green helmet, gray hoodie, delivery bag, neat features"
+   ],
+   [
+    "V",
+    "고유라",
+    "Cynthia Wells",
+    "40대 여성, 검은 정장, 단발, 날카로운 눈썹",
+    "woman in her 40s, black suit, short hair, sharp brows"
+   ],
+   [
+    "A",
+    "정바다",
+    "June Halden",
+    "30대 여성, 구급대원 제복, 붉은 조끼, 단단한 표정",
+    "woman in her 30s, paramedic uniform, red vest, steady face"
+   ],
+   [
+    "X",
+    "민경호",
+    "Elder Whitfield",
+    "70대 남성, 회색 정장, 흰 머리, 온화한 얼굴",
+    "man in his 70s, gray suit, white hair, gentle face"
+   ]
+  ],
+  [
+   [
+    "호텔 연회장 입구",
+    "hotel banquet entrance",
+    "유라가 태오의 배달 가방을 밀어내고 오토바이를 가리킨다",
+    "Cynthia shoves Toby's bag and points at his scooter",
+    1,
+    "여긴 결혼식이야. 배달은 뒤로 가.",
+    "This is a wedding. Deliveries go around back.",
+    "cz"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "유라가 태오의 봉투를 찢어 바닥에 던진다",
+    "Cynthia rips his receipt envelope and throws it on the carpet",
+    1,
+    "이 늦은 음식값, 네 월급에서 깔게.",
+    "I'll dock this late order from your pay.",
+    "ots"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "태오가 하객의 붉어진 얼굴과 목을 본다",
+    "Toby stares at a guest's red face and gripping throat",
+    0,
+    "저분, 숨을 못 쉬어요.",
+    "That man can't breathe.",
+    "cu"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "하객이 쓰러지자 태오가 뒤에서 감싸 압박한다",
+    "The guest collapses and Toby catches him from behind, thrusting upward",
+    2,
+    "잠깐, 이분 응급구조사 1급이시잖아요.",
+    "Wait, this man is a certified paramedic.",
+    "low"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "유라가 얼어붙고 신부 어머니가 유라를 노려본다",
+    "Cynthia freezes as the bride's mother turns and glares at her",
+    0,
+    "다음엔 늦은 음식 말고 사람부터 보세요.",
+    "Next time, check the guests before the food.",
+    "rx"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "구조된 노신사가 태오의 손목을 잡는다",
+    "The rescued old man catches Toby by the wrist",
+    3,
+    "우리 병원 응급실, 올래?",
+    "Ever thought about my hospital's ER?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "시계 도둑으로 몰린 배달원",
+  "The Rider They Called a Thief",
+  "룸서비스 배달원에게 시계 도난 누명을 씌운 지배인. 카드키 기록이 달랐다.",
+  "A hotel manager blames a room-service rider for a missing watch, but the key logs say otherwise.",
+  [
+   [
+    "H",
+    "백이안",
+    "Dylan Hart",
+    "30대 남성, 검은 헬멧을 옆에 끼고, 회색 배달 조끼, 무표정한 눈",
+    "man in his 30s, black helmet under his arm, gray vest, blank stare"
+   ],
+   [
+    "V",
+    "노진태",
+    "Roger Simms",
+    "50대 남성, 금색 넥타이, 올백 머리, 비웃는 입꼬리",
+    "man in his 50s, gold tie, slicked-back hair, sneering mouth"
+   ],
+   [
+    "A",
+    "구영수",
+    "Ray Mercer",
+    "40대 남성, 검은 보안 제복, 무전기, 각진 얼굴",
+    "man in his 40s, black security uniform, radio, square jaw"
+   ]
+  ],
+  [
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "진태가 이안의 오토바이 앞에서 가방을 열어 뒤진다",
+    "Roger opens Dylan's bag beside his scooter and digs through it",
+    1,
+    "시계 하나 없어졌어. 네 가방부터 보자.",
+    "A watch is missing. Let's start with your bag.",
+    "cz"
+   ],
+   [
+    "호텔 복도",
+    "hotel corridor",
+    "진태가 이안의 어깨를 밀고 투숙객들이 지켜본다",
+    "Roger shoves Dylan's shoulder as guests watch from their doors",
+    1,
+    "경찰 부르기 전에 자백해.",
+    "Confess before I call the police.",
+    "trk"
+   ],
+   [
+    "호텔 복도",
+    "hotel corridor",
+    "이안이 천장 카메라와 객실 문 카드키를 번갈아 본다",
+    "Dylan looks from the ceiling camera to the key-card reader",
+    0,
+    "그 시계, 9시 12분에 없어졌어요.",
+    "That watch vanished at 9:12.",
+    "cu"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "보안팀장이 카드키 기록지를 펼쳐 든다",
+    "The security chief holds up the key-card log",
+    2,
+    "조카 벨보이가 9시 10분에 두 번 들어갔습니다.",
+    "Your nephew came in twice at 9:10.",
+    "low"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "진태가 조카를 보고 얼굴이 하얗게 굳는다",
+    "Roger looks at his nephew and his face goes white",
+    0,
+    "제 가방엔 음식만 있었습니다. 사과는요?",
+    "My bag only had food. Where's my apology?",
+    "cu"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "보안팀장이 이안에게 오래된 사진을 보여준다",
+    "The security chief shows Dylan an old photo on his phone",
+    2,
+    "형사님, 3년 전 그 사건 기억하세요?",
+    "Detective, remember that case three years ago?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "물에 빠진 손님을 건진 배달원",
+  "The Rider Who Dove In",
+  "수영장 출입을 막은 매니저. 손님이 물속에서 허우적대자 배달원이 뛰어들었다.",
+  "A pool manager blocks a delivery rider, then a guest starts struggling in the water.",
+  [
+   [
+    "H",
+    "서나래",
+    "Nora Blake",
+    "20대 후반 여성, 흰 헬멧, 민트 배달 조끼, 묶은 머리, 또렷한 눈",
+    "woman in her late 20s, white helmet, mint vest, tied hair, clear eyes"
+   ],
+   [
+    "V",
+    "공미란",
+    "Pamela Dodd",
+    "40대 여성, 리조트 유니폼, 파마 머리, 치켜뜬 눈",
+    "woman in her 40s, resort uniform, permed hair, dismissive eyes"
+   ],
+   [
+    "A",
+    "양만석",
+    "Sal Brody",
+    "50대 남성, 빨간 구조대장 조끼, 백발, 선한 얼굴",
+    "man in his 50s, red rescue chief vest, white hair, kind face"
+   ],
+   [
+    "X",
+    "오성재",
+    "Victor Sayles",
+    "50대 남성, 수영복에 타월, 젖은 머리, 놀란 얼굴",
+    "man in his 50s, swim trunks, towel, wet hair, startled face"
+   ]
+  ],
+  [
+   [
+    "리조트 수영장 입구",
+    "resort pool entrance",
+    "미란이 나래의 배달 가방을 밀고 주차된 자전거를 가리킨다",
+    "Pamela shoves Nora's bag and points at her parked bike",
+    1,
+    "수영장에 음식? 나가요.",
+    "Food at the pool? Out.",
+    "ws"
+   ],
+   [
+    "리조트 수영장 데크",
+    "resort pool deck",
+    "미란이 나래의 헬멧을 발끝으로 툭 친다",
+    "Pamela nudges Nora's helmet with her shoe",
+    1,
+    "여긴 회원제야. 배달부 출입 금지.",
+    "Members only. No delivery staff.",
+    "ms"
+   ],
+   [
+    "리조트 수영장",
+    "resort pool",
+    "나래가 물속 손님의 팔 동작과 튜브 위치를 본다",
+    "Nora watches a swimmer's flailing arms and the ring buoy",
+    0,
+    "저 손님, 이상해요.",
+    "Something's wrong with that swimmer.",
+    "cu"
+   ],
+   [
+    "리조트 수영장",
+    "resort pool",
+    "나래가 뛰어들어 손님을 끌어올리고 구조대장이 뛰어온다",
+    "Nora dives in and pulls him to the edge as the rescue chief runs over",
+    2,
+    "이분, 해양구조대 출신이야!",
+    "This one used to be coast guard rescue!",
+    "slo"
+   ],
+   [
+    "리조트 수영장",
+    "resort pool",
+    "미란이 뒷걸음치고 나래가 젖은 채로 선다",
+    "Pamela steps back while Nora stands dripping wet",
+    0,
+    "안전요원 자격증, 있으세요?",
+    "Do you even have a lifeguard license?",
+    "cu"
+   ],
+   [
+    "리조트 수영장",
+    "resort pool",
+    "구조된 손님이 나래에게 명함을 건넨다",
+    "The rescued guest hands Nora his card",
+    3,
+    "우리 요트 클럽, 구조 책임자 어때요?",
+    "How about running safety at my yacht club?",
+    "ws"
+   ]
+  ]
+ ],
+ [
+  "안개 낀 산에서 사람을 찾은 라이더",
+  "The Rider Who Found Them in the Fog",
+  "늦은 배달에 소리친 펜션 사장. 투숙객이 안개 속에서 실종되자 라이더가 나섰다.",
+  "A pension owner berates a late rider, then two guests vanish into the mountain fog.",
+  [
+   [
+    "H",
+    "오건우",
+    "Caleb Stone",
+    "30대 남성, 검은 산악 헬멧, 카키 배달 조끼, 그을린 얼굴",
+    "man in his 30s, black mountain helmet, khaki vest, weathered face"
+   ],
+   [
+    "V",
+    "황보현",
+    "Brett Cooke",
+    "50대 남성, 체크 셔츠, 뚱뚱한 체형, 험한 말투",
+    "man in his 50s, plaid shirt, heavy build, rough voice"
+   ],
+   [
+    "A",
+    "명재호",
+    "Neil Nolan",
+    "40대 남성, 주황 구조복, 검은 비니, 굵은 목소리",
+    "man in his 40s, orange rescue suit, black beanie, booming voice"
+   ],
+   [
+    "X",
+    "윤가람",
+    "Ellie Marsh",
+    "20대 여성, 등산복, 흙 묻은 손, 창백한 얼굴",
+    "woman in her 20s, hiking clothes, muddy hands, pale face"
+   ]
+  ],
+  [
+   [
+    "산속 펜션 마당",
+    "mountain pension yard",
+    "현이 배달 봉투를 걷어차고 오토바이를 발로 민다",
+    "Brett kicks the bag and shoves the scooter with his boot",
+    1,
+    "두 시간 늦었어. 손님 다 갔어.",
+    "Two hours late. My guests are gone.",
+    "cz"
+   ],
+   [
+    "산속 펜션 마당",
+    "mountain pension yard",
+    "현이 손가락으로 건우의 가슴을 찌른다",
+    "Brett jabs a finger at Caleb's chest",
+    1,
+    "밥값 못 받으면 네가 물어내.",
+    "If I lose that money, you pay it.",
+    "ws"
+   ],
+   [
+    "등산로 입구",
+    "trailhead",
+    "건우가 안개 낀 표지판과 무전기를 번갈아 본다",
+    "Caleb looks from the fog-covered trail sign to his radio",
+    0,
+    "저쪽 안개, 위험합니다.",
+    "That fog bank is dangerous.",
+    "cu"
+   ],
+   [
+    "등산로 입구",
+    "trailhead",
+    "구조대장이 지도를 펼치며 건우의 어깨를 친다",
+    "The rescue chief spreads a map and grips Caleb's shoulder",
+    2,
+    "산악구조대 조장님, 지도 좀 봐주세요.",
+    "Mountain rescue lead, take a look at this map.",
+    "low"
+   ],
+   [
+    "등산로 입구",
+    "trailhead",
+    "건우가 지도에 손을 얹고 현이 뒤에서 굳는다",
+    "Caleb plants his hand on the map as Brett stiffens behind him",
+    0,
+    "출입 통제 표지, 왜 안 세웠어요?",
+    "Why wasn't the trail closed off?",
+    "cu"
+   ],
+   [
+    "등산로 입구",
+    "trailhead",
+    "구조된 여성이 건우의 옛 배지를 꺼내 보인다",
+    "The rescued woman holds out an old rescue badge",
+    3,
+    "이 배지, 제 오빠 거예요.",
+    "This badge belonged to my brother.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "수혈을 멈춰 세운 배달원",
+  "The Rider Who Stopped the Transfusion",
+  "응급실에서 쫓겨난 배달원. 수혈 직전 환자 팔찌가 다르다는 걸 알아챘다.",
+  "A rider is thrown out of the ER, then spots the patient's wristband does not match the chart.",
+  [
+   [
+    "H",
+    "윤세림",
+    "Ivy Lawson",
+    "30대 여성, 분홍 헬멧, 검은 배달 재킷, 짧은 단발, 피곤한 눈",
+    "woman in her 30s, pink helmet, black delivery jacket, short bob, tired eyes"
+   ],
+   [
+    "V",
+    "차수경",
+    "Nadia Boone",
+    "30대 여성, 흰 가운, 안경, 차가운 눈빛",
+    "woman in her 30s, white coat, glasses, cold stare"
+   ],
+   [
+    "A",
+    "한명자",
+    "Ruth Hanley",
+    "50대 여성, 수간호사 제복, 회색 머리, 단호한 얼굴",
+    "woman in her 50s, head nurse uniform, gray hair, firm face"
+   ]
+  ],
+  [
+   [
+    "병원 응급실 복도",
+    "hospital ER corridor",
+    "수경이 세림의 오토바이 키를 뽑아 가방에 던진다",
+    "Nadia pulls Ivy's scooter key and tosses it in her bag",
+    1,
+    "복도에 음식 냄새? 나가요.",
+    "Food smells in my corridor? Get out.",
+    "ms"
+   ],
+   [
+    "병원 원무 창구",
+    "hospital admissions desk",
+    "수경이 세림의 서류를 창구 밖으로 밀어낸다",
+    "Nadia slides Ivy's papers back across the counter",
+    1,
+    "환자한테 배달? 병원이 식당이야?",
+    "Delivering to patients? Is this a restaurant?",
+    "ots"
+   ],
+   [
+    "병원 응급실",
+    "hospital ER",
+    "세림이 환자 팔찌와 차트를 번갈아 본다",
+    "Ivy looks from the patient's wristband to the chart",
+    0,
+    "이분, 페니실린 알레르기인데요.",
+    "This patient is allergic to penicillin.",
+    "cu"
+   ],
+   [
+    "병원 응급실",
+    "hospital ER",
+    "수간호사가 차트를 집어 들고 수액을 멈춘다",
+    "The head nurse grabs the chart and stops the IV line",
+    2,
+    "혈액형도 달라요. 수혈 중지!",
+    "The type on the chart is wrong. Stop the IV!",
+    "low"
+   ],
+   [
+    "병원 응급실",
+    "hospital ER",
+    "수경이 뒷걸음치고 세림이 그녀를 똑바로 본다",
+    "Nadia steps back as Ivy looks straight at her",
+    0,
+    "이름 잘못 단 사람, 환자한테 사과하세요.",
+    "Whoever mixed up the names should apologize to the patient.",
+    "cu"
+   ],
+   [
+    "병원 응급실",
+    "hospital ER",
+    "수간호사가 세림의 손을 잡는다",
+    "The head nurse takes Ivy's hand",
+    2,
+    "응급실장 자리, 아직 비었어요.",
+    "The ER director seat is still open.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "부엌에 들어온 배달원",
+  "The Delivery Guy in the Kitchen",
+  "배달원을 부엌에서 쫓아낸 총주방장. 소스가 깨지자 그가 냄비를 잡았다.",
+  "A head chef throws a rider out of his kitchen, then the sauce splits before a VIP dinner.",
+  [
+   [
+    "H",
+    "문도경",
+    "Julian Frost",
+    "30대 남성, 흰 헬멧, 검은 배달 조끼, 긴 앞머리, 무심한 눈",
+    "man in his 30s, white helmet, black vest, long bangs, unreadable eyes"
+   ],
+   [
+    "V",
+    "길대웅",
+    "Bruno Hale",
+    "50대 남성, 더러운 주방장복, 콧수염, 성난 목소리",
+    "man in his 50s, stained chef coat, mustache, angry voice"
+   ],
+   [
+    "A",
+    "성미르",
+    "Eli Ward",
+    "20대 남성, 요리사 모자, 흰 앞치마, 눈물겨운 표정",
+    "man in his 20s, chef hat, white apron, tearful face"
+   ],
+   [
+    "X",
+    "오상헌",
+    "Victor Maes",
+    "50대 남성, 검은 턱시도, 은발, 날카로운 눈",
+    "man in his 50s, black tuxedo, silver hair, sharp eyes"
+   ]
+  ],
+  [
+   [
+    "호텔 주방 입구",
+    "hotel kitchen door",
+    "대웅이 도경의 오토바이 키를 뽑아 상자 위에 던진다",
+    "Bruno yanks out Julian's scooter key and tosses it on the crate",
+    1,
+    "여기 놓고 꺼져.",
+    "Drop it there and get out.",
+    "cz"
+   ],
+   [
+    "호텔 주방",
+    "hotel kitchen",
+    "대웅이 도경의 어깨를 밀어낸다",
+    "Bruno shoves Julian back by the shoulder",
+    1,
+    "배달부가 냄비를 만져?",
+    "A delivery boy touching my pans?",
+    "ms"
+   ],
+   [
+    "호텔 주방",
+    "hotel kitchen",
+    "도경이 소스 냄비를 보고 불을 줄인다",
+    "Julian sniffs the sauce pot and turns the flame down",
+    0,
+    "이거, 지금 분리되는 소리예요.",
+    "That sound means it's splitting.",
+    "cu"
+   ],
+   [
+    "호텔 주방",
+    "hotel kitchen",
+    "소스가 깨지고 주니어 요리사가 도경을 가리킨다",
+    "The sauce splits and the junior cook points at Julian",
+    2,
+    "이분 루멘 호텔 수석 셰프였어요.",
+    "He was the Lumen Hotel's head chef.",
+    "low"
+   ],
+   [
+    "호텔 주방",
+    "hotel kitchen",
+    "도경이 냄비를 잡아 소스를 되살리고 대웅이 굳는다",
+    "Julian rescues the sauce in three strokes as Bruno freezes",
+    0,
+    "신선도 장부, 왜 숨겼어요?",
+    "Why did you hide the freshness log?",
+    "slo"
+   ],
+   [
+    "호텔 주방",
+    "hotel kitchen",
+    "귀빈이 주방 문을 열고 도경에게 다가온다",
+    "The VIP opens the kitchen door and walks up to Julian",
+    3,
+    "내 레스토랑 주방장, 하실래요?",
+    "Would you run my restaurant's kitchen?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "브레이크 소리를 들은 라이더",
+  "The Brake He Heard",
+  "주차장에서 쫓긴 배달원. 여성 운전자의 브레이크가 밀리자 차 앞을 막아섰다.",
+  "A facility manager kicks a rider out of the garage, then a car's brakes start failing.",
+  [
+   [
+    "H",
+    "한채운",
+    "Maya Quinn",
+    "20대 후반 여성, 노란 헬멧, 청록 배달 조끼, 포니테일, 밝은 눈",
+    "woman in her late 20s, yellow helmet, teal vest, ponytail, bright eyes"
+   ],
+   [
+    "V",
+    "표문길",
+    "Duke Marlow",
+    "50대 남성, 시설팀 점퍼, 짧은 머리, 퉁명스러운 입",
+    "man in his 50s, facility team jacket, short hair, sour mouth"
+   ],
+   [
+    "A",
+    "우만길",
+    "Tommy Vaughn",
+    "40대 남성, 견인기사 점퍼, 수염, 넉넉한 웃음",
+    "man in his 40s, tow truck jacket, beard, easy grin"
+   ],
+   [
+    "X",
+    "여민주",
+    "Kelly Pratt",
+    "30대 여성, 회색 정장, 흰 손, 놀란 얼굴",
+    "woman in her 30s, gray suit, pale hands, startled face"
+   ]
+  ],
+  [
+   [
+    "오피스텔 지하주차장",
+    "office building garage",
+    "문길이 채운의 전기자전거를 밀어 넘어뜨린다",
+    "Duke shoves Maya's e-bike over onto the concrete",
+    1,
+    "이거 세워두지 마.",
+    "Don't park that here.",
+    "cz"
+   ],
+   [
+    "오피스텔 지하주차장",
+    "office building garage",
+    "문길이 채운의 배달 앱을 보고 경고판을 세운다",
+    "Duke glances at Maya's delivery app and plants the sign",
+    1,
+    "외부인 주차 금지야. 짐이나 내려.",
+    "No outside vehicles. Just unload and go.",
+    "ms"
+   ],
+   [
+    "오피스텔 지하주차장",
+    "office building garage",
+    "채운이 바닥의 검은 기름 자국과 차 바퀴를 본다",
+    "Maya spots a dark oil trail leading to a parked car's wheel",
+    0,
+    "이 차, 브레이크 오일 새요.",
+    "That car is leaking brake fluid.",
+    "cu"
+   ],
+   [
+    "오피스텔 지하주차장",
+    "office building garage",
+    "차가 밀리자 채운이 앞에 서서 손을 들고 견인기사가 뛰온다",
+    "The car rolls and Maya blocks it with a raised hand as the tow driver runs up",
+    2,
+    "이분, 정비 명장이야!",
+    "This one's a master mechanic!",
+    "low"
+   ],
+   [
+    "오피스텔 지하주차장",
+    "office building garage",
+    "문길이 뒤로 물러나고 채운이 정비 요청서를 든다",
+    "Duke backs off as Maya holds up three repair requests",
+    0,
+    "정비 요청서, 세 번 무시하셨죠?",
+    "You ignored three repair requests.",
+    "rx"
+   ],
+   [
+    "오피스텔 지하주차장",
+    "office building garage",
+    "운전자가 채운에게 명함을 건넨다",
+    "The driver hands Maya her business card",
+    3,
+    "우리 회사 차량 300대, 맡아주세요.",
+    "We have three hundred cars. Take them.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "수어로 창구를 바꾼 배달원",
+  "The Rider Who Spoke With His Hands",
+  "체크인 카운터에서 무시당한 배달원. 청각장애 승객의 수어를 통역해 냈다.",
+  "An airline agent waves off a rider, who then interprets for a deaf passenger at check-in.",
+  [
+   [
+    "H",
+    "임도헌",
+    "Leo Marsh",
+    "30대 남성, 회색 헬멧을 옆에 끼고, 남색 배달 재킷, 검은 장갑",
+    "man in his 30s, gray helmet under his arm, navy jacket, black gloves"
+   ],
+   [
+    "V",
+    "감민숙",
+    "Gail Potter",
+    "40대 여성, 항공사 유니폼, 붉은 스카프, 무뚝뚝한 얼굴",
+    "woman in her 40s, airline uniform, red scarf, blunt face"
+   ],
+   [
+    "A",
+    "권미르",
+    "Ava Blythe",
+    "20대 여성, 항공사 유니폼, 묶은 머리, 당황한 표정",
+    "woman in her 20s, airline uniform, tied hair, flustered face"
+   ],
+   [
+    "X",
+    "김연두",
+    "Jo Weaver",
+    "60대 여성, 베이지 코트, 짧은 퍼머, 불안한 눈",
+    "woman in her 60s, beige coat, short perm, anxious eyes"
+   ]
+  ],
+  [
+   [
+    "공항 체크인 카운터",
+    "airport check-in counter",
+    "민숙이 도헌의 오토바이 헬멧을 가리키며 손등으로 쫓는다",
+    "Gail points at Leo's scooter helmet and waves him off",
+    1,
+    "직원 아니면 여기 서지 마요.",
+    "If you're not staff, don't stand here.",
+    "cz"
+   ],
+   [
+    "공항 체크인 카운터",
+    "airport check-in counter",
+    "민숙이 승객의 서류를 밀어낸다",
+    "Gail slides the passenger's papers back at her",
+    1,
+    "말이 안 되면 다음 사람요.",
+    "If you can't speak, step aside.",
+    "ots"
+   ],
+   [
+    "공항 체크인 카운터",
+    "airport check-in counter",
+    "도헌이 장갑을 벗고 승객 앞에서 손을 들어 수어를 한다",
+    "Leo pulls off a glove and raises his hands to sign",
+    0,
+    "제가 통역할게요. 가방부터 찾아요.",
+    "I'll interpret. Let's find your bag first.",
+    "cu"
+   ],
+   [
+    "공항 체크인 카운터",
+    "airport check-in counter",
+    "직원이 도헌의 명함을 읽고 고개를 든다",
+    "The young agent reads Leo's card and looks up",
+    2,
+    "이분, 공항 수어통역사 협회 이사예요.",
+    "This is our main piece. That's the artist!",
+    "low"
+   ],
+   [
+    "공항 체크인 카운터",
+    "airport check-in counter",
+    "민숙이 창구를 나와 승객 앞에서 고개를 숙인다",
+    "Gail steps out from behind the counter and bows to the passenger",
+    0,
+    "규정집에 장애인 응대 조항, 읽어보세요.",
+    "Read the disability service rules in your own manual.",
+    "cu"
+   ],
+   [
+    "공항 탑승구",
+    "airport gate",
+    "승객이 도헌에게 접힌 쪽지를 건넨다",
+    "The passenger presses a folded note into Leo's hand",
+    3,
+    "우리 회사 면접, 통역 와줄래요?",
+    "Would you interpret at our company interviews?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "하울링을 잡은 배달원",
+  "The Rider Who Fixed the Sound",
+  "무대 뒤에서 쫓긴 배달원. 개관 공연의 스피커가 울부짖자 콘솔을 잡았다.",
+  "A stage director chases a rider off, then feedback howls through the hall on opening night.",
+  [
+   [
+    "H",
+    "신하람",
+    "Tessa Lane",
+    "20대 후반 여성, 보라 헬멧, 검은 배달 조끼, 긴 생머리, 무뚝뚝한 눈",
+    "woman in her late 20s, purple helmet, black vest, long straight hair, flat stare"
+   ],
+   [
+    "V",
+    "태동석",
+    "Vernon Stout",
+    "40대 남성, 검은 무대 감독 조끼, 헤드셋, 신경질적 얼굴",
+    "man in his 40s, black stage vest, headset, irritated face"
+   ],
+   [
+    "A",
+    "고석재",
+    "Arthur Rowe",
+    "60대 남성, 연미복, 흰 머리, 위엄 있는 자세",
+    "man in his 60s, tailcoat, white hair, commanding posture"
+   ]
+  ],
+  [
+   [
+    "공연장 무대 뒤",
+    "concert hall backstage",
+    "동석이 하람의 배달 상자를 발로 차 오토바이 쪽으로 민다",
+    "Vernon kicks Tessa's crate toward her scooter",
+    1,
+    "여기 음료 배달할 데 아니야.",
+    "This isn't a drinks delivery area.",
+    "ms"
+   ],
+   [
+    "공연장 무대",
+    "concert hall stage",
+    "동석이 하람의 어깨를 잡고 무대 밖으로 민다",
+    "Vernon grabs Tessa's shoulder and steers her off the stage",
+    1,
+    "리허설 중이야. 꺼져.",
+    "We're in rehearsal. Get lost.",
+    "trk"
+   ],
+   [
+    "공연장 무대",
+    "concert hall stage",
+    "하람이 스피커 배치와 바닥 케이블을 힐끗 본다",
+    "Tessa glances at the speaker line and the cables taped to the floor",
+    0,
+    "접지가 뒤집혔어요.",
+    "The grounding is reversed.",
+    "cu"
+   ],
+   [
+    "공연장 무대",
+    "concert hall stage",
+    "하울링이 터지자 하람이 콘솔로 달려가 페이더를 내린다",
+    "Feedback screams and Tessa runs to the console, pulling the fader down",
+    2,
+    "이 홀 개관 공연 음향, 이분이 했어요.",
+    "She did the sound for this hall's opening night.",
+    "low"
+   ],
+   [
+    "공연장 무대",
+    "concert hall stage",
+    "동석이 식은땀을 닦고 하람이 장비 영수증을 든다",
+    "Vernon wipes his brow as Tessa holds up the gear invoice",
+    0,
+    "장비 대여료, 두 배로 받으셨죠?",
+    "You billed the rental at double, didn't you?",
+    "cu"
+   ],
+   [
+    "공연장 무대",
+    "concert hall stage",
+    "지휘자가 하람에게 다가와 손을 내민다",
+    "The conductor walks over and offers Tessa his hand",
+    2,
+    "다음 달 내 공연, 음향 총괄 맡아주세요.",
+    "Next month's concert. Be my sound director.",
+    "pi"
+   ]
+  ]
+ ]
+]

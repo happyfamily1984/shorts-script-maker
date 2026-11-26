@@ -1,0 +1,912 @@
+[
+ [
+  "그림을 쫓아낸 관장",
+  "The Collector They Threw Out",
+  "미술관 관장이 작품을 든 라이더를 내쫓는다. 그 작품의 주인이 바로 라이더였다.",
+  "A gallery director throws out the rider carrying a painting, never asking who owns it.",
+  [
+   [
+    "H",
+    "맹수철",
+    "Arnold",
+    "50대 남성, 남색 헬멧, 무지 배달 조끼, 흰머리, 무표정한 눈",
+    "man in his 50s, navy helmet, plain delivery vest, white hair, blank eyes"
+   ],
+   [
+    "V",
+    "여운경",
+    "Camille",
+    "50대 여성, 검은 원피스, 목걸이, 차가운 눈",
+    "woman in her 50s, black dress, necklace, cold eyes"
+   ],
+   [
+    "A",
+    "큐레이터",
+    "Ms. Bright",
+    "30대 여성, 재킷, 안경, 당황한 얼굴",
+    "woman in her 30s, blazer, glasses, flustered face"
+   ]
+  ],
+  [
+   [
+    "미술관 로비",
+    "gallery lobby",
+    "운경이 헬멧 쓴 수철의 상자를 밀어 로비 벽에 부딪히게 한다",
+    "Camille shoves helmeted Arnold's crate against the lobby wall",
+    1,
+    "여긴 작품만 들어옵니다. 사람은 나가요.",
+    "Only art comes in here. People leave.",
+    "cz"
+   ],
+   [
+    "미술관 로비",
+    "gallery lobby",
+    "운경이 상자 위에 팔짱을 끼고 서서 손을 젓는다",
+    "Camille folds her arms over the crate and waves him off",
+    1,
+    "이건 우리가 받은 적 없어요.",
+    "We never ordered this.",
+    "ms"
+   ],
+   [
+    "미술관 로비",
+    "gallery lobby",
+    "수철이 벽에 걸린 그림 앞에 서서 서명을 들여다본다",
+    "Arnold stands before a hanging painting and studies the signature",
+    0,
+    "이 서명, 내 거네.",
+    "That's my signature.",
+    "cu"
+   ],
+   [
+    "미술관 로비",
+    "gallery lobby",
+    "큐레이터가 뛰어와 상자의 라벨을 확인한다",
+    "The curator rushes up and checks the label on the crate",
+    2,
+    "관장님, 이 작품 대여자가 이분입니다.",
+    "Director, this man loaned us the painting.",
+    "low"
+   ],
+   [
+    "미술관 로비",
+    "gallery lobby",
+    "운경이 목걸이를 만지작거리며 물러선다",
+    "Camille fiddles with her necklace and backs away",
+    0,
+    "제 그림, 내일 회수하겠습니다.",
+    "I'll take my painting back tomorrow.",
+    "cu"
+   ],
+   [
+    "미술관 로비",
+    "gallery lobby",
+    "수철의 휴대폰에 경매사 번호가 뜬다",
+    "An auction house number lights up on Arnold's phone",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "배달원 출입금지를 방송한 관리팀장",
+  "The Manager Who Announced a Rider Ban",
+  "로비 방송으로 라이더 출입을 막은 관리팀장. 입주자 대표가 규정집을 펼쳐 든다.",
+  "A manager announces a rider ban over the lobby speakers, until the residents' rep opens the rulebook.",
+  [
+   [
+    "H",
+    "곽단비",
+    "Ruby",
+    "20대 여성, 노란 헬멧, 빨간 배달 가방, 높이 묶은 머리, 발그레한 얼굴",
+    "woman in her 20s, yellow helmet, red delivery bag, high ponytail, flushed face"
+   ],
+   [
+    "V",
+    "주상우",
+    "Grant",
+    "50대 남성, 관리팀 정장, 짧은 머리, 냉정한 얼굴",
+    "man in his 50s, facility team suit, short hair, cold face"
+   ],
+   [
+    "A",
+    "하서윤",
+    "Ms. Hathaway",
+    "40대 여성, 베이지 정장, 안경, 단호한 눈",
+    "woman in her 40s, beige suit, glasses, firm eyes"
+   ]
+  ],
+  [
+   [
+    "오피스 빌딩 로비",
+    "office tower lobby",
+    "상우가 경비실 마이크 앞에서 로비를 향해 방송한다",
+    "Grant speaks into the security desk microphone across the lobby",
+    1,
+    "안내 말씀. 오늘부터 배달원 로비 출입 금지입니다.",
+    "Attention. Riders are banned from this lobby as of today.",
+    "cz"
+   ],
+   [
+    "오피스 빌딩 로비",
+    "office tower lobby",
+    "상우가 단비의 가방을 막고 출입구 밖을 가리킨다",
+    "Grant blocks Ruby's bag and points outside",
+    1,
+    "방송 들었죠? 밖에서 기다리세요.",
+    "You heard it. Wait outside.",
+    "ms"
+   ],
+   [
+    "오피스 빌딩 로비",
+    "office tower lobby",
+    "단비가 천장 스피커를 올려다보고 휴대폰을 든다",
+    "Ruby looks up at the ceiling speaker and lifts her phone",
+    0,
+    "방송, 다시 들려주시겠어요?",
+    "Could you play that again?",
+    "cu"
+   ],
+   [
+    "오피스 빌딩 로비",
+    "office tower lobby",
+    "하서윤이 규정집을 펼쳐 상우 앞에 든다",
+    "Ms. Hathaway opens the rulebook in front of Grant",
+    2,
+    "출입 제한 조항은 없습니다. 방송 취소하세요.",
+    "There's no such clause. Cancel the announcement.",
+    "low"
+   ],
+   [
+    "오피스 빌딩 로비",
+    "office tower lobby",
+    "상우가 마이크를 내려놓는다",
+    "Grant sets the microphone down",
+    0,
+    "다음엔 로비에서 기다리겠습니다.",
+    "Next time, I'll wait in the lobby.",
+    "cu"
+   ],
+   [
+    "오피스 빌딩 로비",
+    "office tower lobby",
+    "하서윤이 총회 안건지를 단비에게 보여준다",
+    "Ms. Hathaway shows Ruby the meeting agenda",
+    2,
+    "배달 규정, 총회에 올릴게요.",
+    "I'll put delivery rules to the vote.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "계약서 3조를 읽은 라이더",
+  "He Read Clause Three",
+  "세탁소 사장이 사기 계약서에 서명하려는 순간, 배달 온 라이더가 3조 2항을 짚는다.",
+  "A cleaner is about to sign a crooked contract when the rider at the counter reads clause three.",
+  [
+   [
+    "H",
+    "위성락",
+    "Dennis",
+    "50대 남성, 검은 헬멧, 회색 배달 조끼, 짧은 머리, 뚜렷한 눈매",
+    "man in his 50s, black helmet, gray delivery vest, short hair, clear eyes"
+   ],
+   [
+    "V",
+    "마동철",
+    "Stanley",
+    "60대 남성, 세탁소 앞치마, 안경, 순한 얼굴",
+    "man in his 60s, laundry apron, glasses, mild face"
+   ],
+   [
+    "A",
+    "슬론",
+    "Mr. Sloane",
+    "40대 남성, 값비싼 양복, 가죽 가방, 능글맞은 미소",
+    "man in his 40s, expensive suit, leather bag, oily smile"
+   ]
+  ],
+  [
+   [
+    "동네 세탁소",
+    "neighborhood laundry",
+    "슬론이 계약서를 동철 앞으로 밀며 펜을 쥐여준다",
+    "Sloane slides the contract to Stanley and presses a pen into his hand",
+    2,
+    "여기만 쓰시면 됩니다. 서둘러요.",
+    "Just sign here. Let's hurry.",
+    "ms"
+   ],
+   [
+    "동네 세탁소",
+    "neighborhood laundry",
+    "성락이 배달 가방을 내려놓고 계약서를 힐끗 본다",
+    "Dennis sets down his bag and glances at the contract",
+    0,
+    "잠깐, 3조 2항이 이상합니다.",
+    "Hold on. Clause three, section two looks wrong.",
+    "cz"
+   ],
+   [
+    "동네 세탁소",
+    "neighborhood laundry",
+    "슬론이 성락을 손등으로 밀어내고 계약서를 덮는다",
+    "Sloane pushes Dennis back with the back of his hand and closes the file",
+    2,
+    "넌 상관 마. 넌 배달이나 해.",
+    "Mind your own business. Just deliver.",
+    "ots"
+   ],
+   [
+    "동네 세탁소",
+    "neighborhood laundry",
+    "동철이 계약서를 다시 펼쳐 조항을 손가락으로 짚는다",
+    "Stanley reopens the contract and traces the clause with a finger",
+    0,
+    "이 조항이면 가게가 통째로 넘어갑니다.",
+    "This clause hands over the whole shop.",
+    "low"
+   ],
+   [
+    "동네 세탁소",
+    "neighborhood laundry",
+    "슬론이 가죽 가방을 챙겨 문밖으로 물러난다",
+    "Sloane grabs his leather bag and backs out the door",
+    0,
+    "회계사 했습니다. 서명은 아직 늦지 않았어요.",
+    "I was an accountant. It's not too late to not sign.",
+    "cu"
+   ],
+   [
+    "동네 세탁소",
+    "neighborhood laundry",
+    "동철이 성락의 손을 두 손으로 잡는다",
+    "Stanley takes Dennis's hand in both of his",
+    1,
+    "우리 가게 회계, 맡아 주실래요?",
+    "Would you handle the books for my shop?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "휠체어를 밀어준 라이더",
+  "He Held the Elevator Door",
+  "지하철역에서 휠체어를 도와준 라이더를 팀장이 로비에서 내쫓는다. 회의실의 대표가 그를 안다.",
+  "A team lead throws a rider out of the lobby, unaware the CEO just met her at the station.",
+  [
+   [
+    "H",
+    "진달래",
+    "Rosa",
+    "30대 여성, 흰 헬멧, 하늘색 배달 조끼, 긴 머리, 부드러운 미소",
+    "woman in her 30s, white helmet, sky blue delivery vest, long hair, soft smile"
+   ],
+   [
+    "V",
+    "표기훈",
+    "Neil",
+    "30대 남성, 흰 셔츠, 느슨한 넥타이, 얄미운 눈",
+    "man in his 30s, white shirt, loose tie, mean eyes"
+   ],
+   [
+    "A",
+    "로 대표",
+    "Ms. Rowe",
+    "40대 여성, 회색 정장, 휠체어, 짧은 머리",
+    "woman in her 40s, gray suit, wheelchair, short hair"
+   ]
+  ],
+  [
+   [
+    "회사 로비",
+    "company lobby",
+    "기훈이 헬멧 쓴 달래의 봉투를 받아 로비 바닥에 내려놓는다",
+    "Neil takes helmeted Rosa's bag and sets it on the lobby floor",
+    1,
+    "배달은 경비실에 두고 가. 얼굴도 보기 싫어.",
+    "Leave it with security. I don't want to see you.",
+    "cz"
+   ],
+   [
+    "회사 로비",
+    "company lobby",
+    "기훈이 봉투를 발로 밀어 안내판에 부딪히게 한다",
+    "Neil kicks the bag so it hits the lobby sign",
+    1,
+    "경비실에 두고 가. 대표실은 네 자리가 아니야.",
+    "Leave it at security. You don't belong on the CEO's floor.",
+    "ms"
+   ],
+   [
+    "회사 로비",
+    "company lobby",
+    "로 대표의 휠체어가 자동문을 지나고 달래가 문을 잡아준다",
+    "Ms. Rowe's wheelchair rolls in and Rosa holds the door open",
+    2,
+    "아까 역에서 저를 도와주신 분이죠.",
+    "You're the one who helped me at the station.",
+    "pi"
+   ],
+   [
+    "회사 로비",
+    "company lobby",
+    "로 대표가 기훈을 보고 손을 든다",
+    "Ms. Rowe looks at Neil and raises one hand",
+    2,
+    "이분은 제 은인입니다. 제가 이 회사 대표고요.",
+    "She's my helper, and I run this company.",
+    "low"
+   ],
+   [
+    "회사 로비",
+    "company lobby",
+    "기훈이 명찰을 떼고 달래에게 고개를 숙인다",
+    "Neil pulls off his badge and bows his head to Rosa",
+    2,
+    "내일부터 출근하지 마세요.",
+    "Don't come in tomorrow.",
+    "cu"
+   ],
+   [
+    "회사 로비",
+    "company lobby",
+    "로 대표가 계약서를 건네고 달래가 문을 잡아준 채 웃는다",
+    "Ms. Rowe holds out a contract as Rosa smiles, still holding the door",
+    0,
+    "문은 계속 잡아드릴게요.",
+    "I'll keep holding the door for you.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "식품관에서 쫓겨난 백화점 사장",
+  "The Owner Kicked Out of His Food Hall",
+  "식품관 매니저가 라이더를 내쫓는다. 매장 오픈 사진 속 인물이 바로 그 라이더다.",
+  "A food hall manager throws out a rider who appears in the store's own opening photo.",
+  [
+   [
+    "H",
+    "표정우",
+    "Ian",
+    "50대 남성, 검은 헬멧, 회색 배달 조끼, 짧은 흰머리, 담백한 얼굴",
+    "man in his 50s, black helmet, gray delivery vest, short white hair, plain face"
+   ],
+   [
+    "V",
+    "석호필",
+    "Clive",
+    "40대 남성, 체크 셔츠, 볼에 수염, 험한 말투",
+    "man in his 40s, plaid shirt, stubble, rough manner"
+   ],
+   [
+    "A",
+    "아들러",
+    "Ms. Adler",
+    "30대 여성, 검은 정장, 태블릿, 단정한 머리",
+    "woman in her 30s, black suit, tablet, neat hair"
+   ]
+  ],
+  [
+   [
+    "백화점 식품관",
+    "department store food hall",
+    "호필이 정우의 가방을 막고 직원 통로를 가리킨다",
+    "Clive blocks Ian's bag and points to the staff corridor",
+    1,
+    "라이더는 직원 통로로만 다녀요.",
+    "Riders use the staff corridor only.",
+    "cz"
+   ],
+   [
+    "백화점 식품관",
+    "department store food hall",
+    "호필이 봉투를 카운터 아래로 밀어 넣는다",
+    "Clive shoves the bag under the counter",
+    1,
+    "여긴 VIP 고객만 다닙니다.",
+    "VIP customers only in this hall.",
+    "ms"
+   ],
+   [
+    "백화점 식품관",
+    "department store food hall",
+    "정우가 벽의 오픈 기념 액자를 올려다본다",
+    "Ian looks up at the opening ceremony photo on the wall",
+    0,
+    "이 사진, 30년 전이네.",
+    "That photo is thirty years old.",
+    "cu"
+   ],
+   [
+    "백화점 식품관",
+    "department store food hall",
+    "아들러가 액자를 가리키며 정우 앞에 선다",
+    "Ms. Adler points at the frame and stands before Ian",
+    2,
+    "사장님, 이 사진 다시 걸어야겠습니다.",
+    "Sir, we should rehang this photo.",
+    "low"
+   ],
+   [
+    "백화점 식품관",
+    "department store food hall",
+    "호필이 카운터 아래에서 봉투를 꺼내 두 손으로 건넨다",
+    "Clive pulls the bag out from under the counter and hands it over",
+    0,
+    "사진, 잘 나왔더군요.",
+    "The photo came out well.",
+    "cu"
+   ],
+   [
+    "백화점 식품관",
+    "department store food hall",
+    "아들러가 신규 식품관 오픈 서류를 펼친다",
+    "Ms. Adler opens the new food hall plans",
+    2,
+    "식품관 재계약, 다시 심사하겠습니다.",
+    "We'll review the food hall contract again.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "초인종 세 번 울렸다는 누명",
+  "Three Rings He Never Made",
+  "초인종을 세 번 울렸다며 음식을 던지는 이웃. 옆집 초인종 영상엔 한 번만 찍혀 있었다.",
+  "A neighbor swears the bell rang three times and dumps the food. The next door camera disagrees.",
+  [
+   [
+    "H",
+    "용이슬",
+    "Skylar",
+    "20대 여성, 민트 헬멧, 회색 배달 가방, 짧은 단발, 또렷한 눈",
+    "woman in her 20s, mint helmet, gray delivery bag, short bob, clear eyes"
+   ],
+   [
+    "V",
+    "황보라",
+    "Bianca",
+    "30대 여성, 분홍 잠옷, 긴 머리, 화난 얼굴",
+    "woman in her 30s, pink pajamas, long hair, angry face"
+   ],
+   [
+    "A",
+    "노진우",
+    "Mr. Novak",
+    "40대 남성, 회색 맨투맨, 짧은 머리, 차분한 얼굴",
+    "man in his 40s, gray sweatshirt, short hair, calm face"
+   ]
+  ],
+  [
+   [
+    "오피스텔 복도",
+    "studio apartment hallway",
+    "보라가 문을 열고 이슬의 어깨를 손바닥으로 민다",
+    "Bianca opens the door and shoves Skylar's shoulder with her palm",
+    1,
+    "벨 세 번이나 울렸어요. 무섭게.",
+    "You rang three times. Like a creep.",
+    "cz"
+   ],
+   [
+    "오피스텔 복도",
+    "studio apartment hallway",
+    "보라가 봉투를 빼앗아 복도 바닥에 던진다",
+    "Bianca snatches the bag and throws it on the hallway floor",
+    1,
+    "이딴 배달, 다시 받아.",
+    "Take this back and bring it properly.",
+    "ms"
+   ],
+   [
+    "오피스텔 복도",
+    "studio apartment hallway",
+    "이슬이 옆집 문 위의 초인종 카메라를 힐끗 본다",
+    "Skylar glances at the doorbell camera above the next door",
+    0,
+    "영상 보시면 알 겁니다.",
+    "The video will tell you.",
+    "cu"
+   ],
+   [
+    "오피스텔 복도",
+    "studio apartment hallway",
+    "노진우가 문을 열고 휴대폰 영상을 들이민다",
+    "Mr. Novak opens his door and holds up his phone video",
+    2,
+    "한 번만 찍혔습니다. 소리도 하나예요.",
+    "One ring. One sound. That's all.",
+    "low"
+   ],
+   [
+    "오피스텔 복도",
+    "studio apartment hallway",
+    "보라가 봉투를 주워 두 손으로 건넨다",
+    "Bianca picks up the bag and holds it out with both hands",
+    0,
+    "다음엔 문자로 알려주세요.",
+    "Text me next time.",
+    "cu"
+   ],
+   [
+    "오피스텔 복도",
+    "studio apartment hallway",
+    "이슬의 앱에 고객 보호 신고 접수 알림이 뜬다",
+    "A complaint-received notice appears on Skylar's app",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "정장을 망쳤다던 양복점 점장",
+  "The Rider Who Fixed the Suit",
+  "라이더가 정장을 망쳤다며 몰아세우는 점장. 라이더가 소매 길이를 짚고 바늘을 든다.",
+  "A tailor shop manager blames the rider for a ruined suit, until the rider picks up a needle.",
+  [
+   [
+    "H",
+    "형정훈",
+    "Andre",
+    "30대 남성, 회색 헬멧, 검은 배달 조끼, 짧은 머리, 차분한 눈",
+    "man in his 30s, gray helmet, black delivery vest, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "탁만수",
+    "Roland",
+    "50대 남성, 조끼 양복, 안경, 깐깐한 얼굴",
+    "man in his 50s, vest suit, glasses, fussy face"
+   ],
+   [
+    "A",
+    "도현우",
+    "Colin",
+    "30대 남성, 신랑 예복, 짧은 머리, 당황한 얼굴",
+    "man in his 30s, groom suit, short hair, flustered face"
+   ]
+  ],
+  [
+   [
+    "맞춤 양복점",
+    "tailor shop",
+    "만수가 현우의 소매를 잡아 올리며 눈을 흘긴다",
+    "Roland lifts Colin's sleeve and glares at the rider",
+    1,
+    "라이더가 만졌으니 이 정장 못 팝니다. 물어내세요.",
+    "A rider touched it. This suit is ruined. Pay for it.",
+    "cz"
+   ],
+   [
+    "맞춤 양복점",
+    "tailor shop",
+    "만수가 정훈의 배달 가방을 카운터 위에 올려놓는다",
+    "Roland sets Jeonghun's delivery bag up on the counter",
+    1,
+    "가방 열어서 뭐가 나오는지 봅시다.",
+    "Open the bag. Let's see what's inside.",
+    "ms"
+   ],
+   [
+    "맞춤 양복점",
+    "tailor shop",
+    "정훈이 현우의 소맷단을 접어 길이를 재어 본다",
+    "Jeonghun folds Colin's cuff and measures the length",
+    0,
+    "이 소매, 3센티 깁니다.",
+    "This sleeve is three fingers too long.",
+    "cu"
+   ],
+   [
+    "맞춤 양복점",
+    "tailor shop",
+    "정훈이 바늘을 들어 소맷단을 빠르게 감친다",
+    "Jeonghun takes a needle and stitches the cuff in quick passes",
+    -1,
+    "",
+    "",
+    "slo"
+   ],
+   [
+    "맞춤 양복점",
+    "tailor shop",
+    "정훈이 소맷단을 감치자 현우가 팔을 들어 본다",
+    "Jeonghun stitches the cuff as Colin lifts his arm to check",
+    2,
+    "어? 이제 딱 맞네요.",
+    "Wait. This fits perfectly now.",
+    "low"
+   ],
+   [
+    "맞춤 양복점",
+    "tailor shop",
+    "만수가 계산대 뒤로 물러나고 현우가 명함을 정훈에게 건넨다",
+    "Roland retreats behind the counter as Colin hands Jeonghun his card",
+    0,
+    "재단사였습니다. 정장은 제가 봐도 됩니다.",
+    "I was a tailor. Let me handle the suits.",
+    "cu"
+   ]
+  ]
+ ],
+ [
+  "여권을 주운 라이더",
+  "The Rider Who Found the Passport",
+  "바람에 날린 여권을 주우러 갔다가 늦은 라이더. 그 여권 주인이 오늘 출국하는 대표였다.",
+  "A rider is late after chasing a blown-away passport, and its owner is a CEO flying out today.",
+  [
+   [
+    "H",
+    "도경완",
+    "Felix",
+    "40대 남성, 초록 헬멧, 노란 배달 가방, 짧은 머리, 순한 눈",
+    "man in his 40s, green helmet, yellow delivery bag, short hair, gentle eyes"
+   ],
+   [
+    "V",
+    "제갈민",
+    "Spencer",
+    "30대 남성, 흰 셔츠, 짧은 머리, 얄미운 미소",
+    "man in his 30s, white shirt, short hair, mean smirk"
+   ],
+   [
+    "A",
+    "게이블",
+    "Mr. Gable",
+    "50대 남성, 짙은 정장, 안경, 차분한 얼굴",
+    "man in his 50s, dark suit, glasses, calm face"
+   ]
+  ],
+  [
+   [
+    "오피스 빌딩 로비",
+    "office tower lobby",
+    "제갈민이 손목시계를 가리키며 경완의 가방을 발로 민다",
+    "Spencer taps his watch and kicks at Kyungwan's bag",
+    1,
+    "30분 늦었어. 여권 들고 온 사람 찾는데.",
+    "Thirty minutes late. We are waiting on a passport.",
+    "cz"
+   ],
+   [
+    "오피스 빌딩 로비",
+    "office tower lobby",
+    "제갈민이 경완의 가방을 밀어 바닥에 눕힌다",
+    "Spencer shoves the bag and it topples to the floor",
+    1,
+    "핑계 대지 말고 나가.",
+    "Save the excuses and get out.",
+    "ms"
+   ],
+   [
+    "오피스 빌딩 로비",
+    "office tower lobby",
+    "경완이 품에서 젖은 여권을 꺼내 소매로 닦는다",
+    "Kyungwan pulls a damp passport from his jacket and wipes it on his sleeve",
+    0,
+    "바람에 날려서 주웠습니다.",
+    "The wind took it. I chased it down.",
+    "cu"
+   ],
+   [
+    "오피스 빌딩 로비",
+    "office tower lobby",
+    "게이블이 엘리베이터에서 내려 여권을 받아 든다",
+    "Mr. Gable steps out of the elevator and takes the passport",
+    2,
+    "이 여권, 제 거잖아요.",
+    "This passport is mine.",
+    "low"
+   ],
+   [
+    "오피스 빌딩 로비",
+    "office tower lobby",
+    "제갈민이 가방을 두 손으로 다시 세운다",
+    "Spencer stands the bag back up with both hands",
+    2,
+    "이 사람이 없었으면 비행기 놓쳤어요.",
+    "Without him I would have missed my flight.",
+    "cu"
+   ],
+   [
+    "오피스 빌딩 로비",
+    "office tower lobby",
+    "게이블이 전속 배달 계약서를 경완에게 건넨다",
+    "Mr. Gable hands Kyungwan an exclusive delivery contract",
+    0,
+    "다음엔 지퍼백에 넣으세요.",
+    "Next time, use a zip bag.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "손님이 두고 간 가방을 쫓아간 라이더",
+  "The Bag He Ran Back For",
+  "가방을 훔쳤다는 누명을 쓴 라이더. 두 블록을 쫓아가 주인에게 돌려준 사람이었다.",
+  "A flower shop owner accuses a rider of stealing a bag the rider just ran two blocks to return.",
+  [
+   [
+    "H",
+    "석다인",
+    "Hailey",
+    "30대 여성, 흰 헬멧, 보라 배달 조끼, 어깨까지 오는 머리, 또렷한 눈",
+    "woman in her 30s, white helmet, purple delivery vest, shoulder-length hair, clear eyes"
+   ],
+   [
+    "V",
+    "고만석",
+    "Duke",
+    "40대 남성, 꽃집 앞치마, 짧은 머리, 신경질적인 눈",
+    "man in his 40s, flower shop apron, short hair, jumpy eyes"
+   ],
+   [
+    "A",
+    "펨버턴",
+    "Mr. Pemberton",
+    "50대 남성, 회색 코트, 짧은 흰머리, 단정한 인상",
+    "man in his 50s, gray coat, short white hair, neat appearance"
+   ]
+  ],
+  [
+   [
+    "꽃집 카운터",
+    "flower shop counter",
+    "만석이 다인의 가방을 뒤지려고 손을 뻗는다",
+    "Duke reaches for Dain's delivery bag to search it",
+    1,
+    "손님이 가방 잃어버렸어. 네가 챙겼지?",
+    "A customer lost his bag. You took it, right?",
+    "cz"
+   ],
+   [
+    "꽃집 카운터",
+    "flower shop counter",
+    "다인이 손을 뿌리치고 밖을 가리킨다",
+    "Dain shakes his hand off and points outside",
+    0,
+    "제 가방 아닙니다. 저기요.",
+    "Not my bag. Look outside.",
+    "ms"
+   ],
+   [
+    "꽃집 앞 거리",
+    "street outside flower shop",
+    "펨버턴이 다인의 손에 들린 가방을 보고 달려온다",
+    "Mr. Pemberton spots the bag in Dain's hand and hurries over",
+    -1,
+    "",
+    "",
+    "pi"
+   ],
+   [
+    "꽃집 카운터",
+    "flower shop counter",
+    "펨버턴이 가방을 받아 들고 다인을 가리킨다",
+    "Mr. Pemberton takes the bag and points at Dain",
+    2,
+    "이 분이 두 블록 쫓아와 돌려줬습니다.",
+    "She chased me two blocks to give this back.",
+    "low"
+   ],
+   [
+    "꽃집 카운터",
+    "flower shop counter",
+    "만석이 앞치마를 만지작거리며 고개를 숙인다",
+    "Duke fiddles with his apron and bows his head",
+    0,
+    "남의 가방은 열지 마세요.",
+    "Maybe don't open other people's bags.",
+    "cu"
+   ],
+   [
+    "꽃집 카운터",
+    "flower shop counter",
+    "펨버턴이 명함을 다인에게 건넨다",
+    "Mr. Pemberton hands Dain his card",
+    2,
+    "제 물류 회사에 오실래요?",
+    "Would you come work for my logistics firm?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "쓰레기 봉투를 들고 가라던 손님",
+  "Take My Trash Down With You",
+  "쓰레기를 대신 버리라 강요하고 음식을 뺏는 손님. 앱 규정 한 장이 답이 된다.",
+  "A customer demands the rider carry her trash and takes his food, until the app's rules show up.",
+  [
+   [
+    "H",
+    "명하윤",
+    "Nadia",
+    "20대 여성, 빨간 헬멧, 검은 배달 조끼, 짧은 머리, 발랄한 눈",
+    "woman in her 20s, red helmet, black delivery vest, short hair, bright eyes"
+   ],
+   [
+    "V",
+    "반석희",
+    "Harriet",
+    "50대 여성, 꽃무늬 블라우스, 짧은 파마, 무뚝뚝한 입",
+    "woman in her 50s, floral blouse, short perm, flat mouth"
+   ],
+   [
+    "A",
+    "도시",
+    "Mr. Dorsey",
+    "30대 남성, 앱 로고 폴로셔츠, 짧은 머리, 단호한 얼굴",
+    "man in his 30s, app logo polo shirt, short hair, firm face"
+   ]
+  ],
+  [
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "석희가 문가의 쓰레기 봉투를 하윤 가방 위에 올린다",
+    "Harriet drops a trash bag on top of Hayoon's delivery bag",
+    1,
+    "내려가는 김에 이거 버려.",
+    "Take this down with you.",
+    "cz"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "하윤이 봉투를 도로 내려놓자 석희가 음식을 뺏는다",
+    "Hayoon sets the trash down and Harriet snatches the food",
+    1,
+    "그럼 이것도 못 가져가.",
+    "Then you don't get to take this.",
+    "ms"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "하윤이 앱의 배달 규정 화면을 천천히 연다",
+    "Hayoon slowly opens the app's delivery rules page",
+    0,
+    "규정에 이런 건 없는데요.",
+    "There's no rule about this.",
+    "cu"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "도시가 계단을 올라와 명찰을 보여준다",
+    "Mr. Dorsey comes up the stairs and shows his badge",
+    2,
+    "규정 위반으로 접수됐습니다.",
+    "This was filed as a rule violation.",
+    "low"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "석희가 음식을 도로 건네고 봉투를 발로 밀어둔다",
+    "Harriet hands the food back and nudges the trash aside with her foot",
+    0,
+    "봉투는 경비실에 맡기세요.",
+    "Leave the trash with security.",
+    "cu"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "도시가 하윤에게 위원회 안내문을 건넨다",
+    "Mr. Dorsey hands Hayoon a committee notice",
+    2,
+    "라이더 위원회에서 발표하실래요?",
+    "Would you speak at our rider committee?",
+    "pi"
+   ]
+  ]
+ ]
+]
