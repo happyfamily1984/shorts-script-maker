@@ -195,7 +195,7 @@ public class KlingService extends AccessibilityService {
             status(prefix(Math.max(i, 0), n) + say);
             boolean ok;
             try { ok = exec(st, sh, i, n); } catch (Exception e) { ok = false; }
-            if (!ok && !st.optBoolean("optional")) throw new StepFail(prefix(Math.max(i, 0), n) + "\"" + say + "\" 단계에서 대상을 찾지 못했습니다");
+            if (!ok && !st.optBoolean("optional")) throw new StepFail(st.has("fail") ? st.optString("fail") : prefix(Math.max(i, 0), n) + "\"" + say + "\" 단계에서 대상을 찾지 못했습니다");
             Thread.sleep(st.optInt("after", pause));
         }
     }
