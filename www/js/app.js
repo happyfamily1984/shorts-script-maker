@@ -4,7 +4,7 @@ const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const TH = Object.fromEntries(THEMES.map(t => [t.id, t]));
-const APP_VERSION = '2.0.0';
+const APP_VERSION = '2.0.1';
 
 const store = {
   get(k, d) { try { const v = localStorage.getItem('sdm.' + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
