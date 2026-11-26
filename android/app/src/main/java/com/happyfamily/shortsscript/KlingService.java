@@ -78,6 +78,7 @@ public class KlingService extends AccessibilityService {
     /* ---------- 클링 앱 찾기 ---------- */
     static String findKling(Context c, String preferred) { return findApp(c, preferred, new String[]{"kling", "클링", "可灵"}); }
     static String findGrok(Context c, String preferred) { return findApp(c, preferred, new String[]{"grok", "그록"}); }
+    static String findPickle(Context c, String preferred) { return findApp(c, preferred, new String[]{"피클", "pickle"}); }
     static String findApp(Context c, String preferred, String[] keys) {
         PackageManager pm = c.getPackageManager();
         if (preferred != null && !preferred.isEmpty() && pm.getLaunchIntentForPackage(preferred) != null) return preferred;
@@ -160,6 +161,15 @@ public class KlingService extends AccessibilityService {
                 runSteps(flow.optJSONArray("shot"), sh, i, n);
                 if (i < n - 1) runSteps(flow.optJSONArray("between"), sh, i, n);
             }
+            if (job.optBoolean("collect") && flow.has("collect")) {
+                status("생성이 끝나길 기다렸다가 영상을 내려받습니다");
+                runSteps(flow.optJSONArray("collectStart"), null, -1, n);
+                for (int i = 0; i < n; i++) {
+                    if (cancel) throw new StepFail("사용자가 중지했습니다");
+                    runSteps(flow.optJSONArray("collect"), shots.getJSONObject(i), i, n);
+                }
+                runSteps(flow.optJSONArray("collectEnd"), null, n - 1, n);
+            }
             runSteps(flow.optJSONArray("end"), shots != null && n > 0 ? shots.getJSONObject(n - 1) : null, n - 1, n);
             job.put("returned", flow.toString().contains("\"returnApp\""));
             status(job.optString("doneMsg", "끝났습니다. " + n + "개 입력. " + (job.optBoolean("autoGenerate") ? "클링에서 생성 결과를 확인하세요." : "클링에서 내용을 확인하고 생성을 누르세요.")));
@@ -198,11 +208,13 @@ public class KlingService extends AccessibilityService {
         int imgs = sh != null && sh.optJSONArray("images") != null ? sh.optJSONArray("images").length() : 0;
         return s.replace("${prompt}", sh != null ? sh.optString("prompt") : "").replace("${neg}", job.optString("neg"))
                 .replace("${shot}", String.valueOf(i + 1)).replace("${total}", String.valueOf(n)).replace("${imageCount}", String.valueOf(imgs))
-                .replace("${duration}", sh != null ? sh.optString("sec", "5") : "5");
+                .replace("${duration}", sh != null ? sh.optString("sec", "5") : "5")
+                .replace("${i0}", String.valueOf(Math.max(i, 0))).replace("${ri}", String.valueOf(Math.max(0, n - 1 - i)));
     }
     private boolean exec(JSONObject st, JSONObject sh, int i, int n) throws Exception {
         String d = st.optString("do");
         JSONObject f = st.optJSONObject("find");
+        if (f != null && f.opt("index") instanceof String) { f = new JSONObject(f.toString()); f.put("index", parseInt(expand(f.getString("index"), sh, i, n), 0)); }
         int to = st.optInt("timeout", 6000);
         DisplayMetrics dm = getResources().getDisplayMetrics();
         switch (d) {

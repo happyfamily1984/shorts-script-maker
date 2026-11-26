@@ -24,6 +24,7 @@ import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import android.window.OnBackInvokedDispatcher;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
@@ -37,6 +38,8 @@ import java.nio.charset.StandardCharsets;
 public class MainActivity extends Activity {
     private static final int REQ_SAVE = 11;
     private static final int REQ_PICK = 12;
+    private static final int REQ_VIDEOS = 13;
+    private VideoMaker maker;
 
     private WebView web;
     private FrameLayout root;
@@ -150,6 +153,14 @@ public class MainActivity extends Activity {
                 fileCallback.onReceiveValue(u != null ? new Uri[]{u} : null);
                 fileCallback = null;
             }
+        } else if (req == REQ_VIDEOS) {
+            JSONArray out = new JSONArray();
+            if (res == RESULT_OK && data != null) {
+                if (data.getClipData() != null) for (int k = 0; k < data.getClipData().getItemCount(); k++) out.put(data.getClipData().getItemAt(k).getUri().toString());
+                else if (data.getData() != null) out.put(data.getData().toString());
+                for (int k = 0; k < out.length(); k++) try { getContentResolver().takePersistableUriPermission(Uri.parse(out.optString(k)), Intent.FLAG_GRANT_READ_URI_PERMISSION); } catch (Exception ignored) { }
+            }
+            web.evaluateJavascript("window.onVideosPicked && window.onVideosPicked(" + out.toString() + ")", null);
         } else if (req == REQ_SAVE) {
             boolean ok = false;
             if (res == RESULT_OK && data != null && data.getData() != null && pendingBytes != null) {
@@ -322,7 +333,9 @@ public class MainActivity extends Activity {
 
         /* ---------- 그록 등 다른 앱 (target: kling | grok) ---------- */
         private String findTarget(String target, String preferred) {
-            return "grok".equals(target) ? KlingService.findGrok(MainActivity.this, preferred) : KlingService.findKling(MainActivity.this, preferred);
+            if ("grok".equals(target)) return KlingService.findGrok(MainActivity.this, preferred);
+            if ("pickle".equals(target)) return KlingService.findPickle(MainActivity.this, preferred);
+            return KlingService.findKling(MainActivity.this, preferred);
         }
 
         @JavascriptInterface
@@ -364,13 +377,124 @@ public class MainActivity extends Activity {
         }
 
         /* ---------- 갤러리에서 방금 저장된 사진 가져오기 ---------- */
-        private String mediaPerm() { return Build.VERSION.SDK_INT >= 33 ? "android.permission.READ_MEDIA_IMAGES" : "android.permission.READ_EXTERNAL_STORAGE"; }
+        private String[] mediaPerms() { return Build.VERSION.SDK_INT >= 33 ? new String[]{"android.permission.READ_MEDIA_IMAGES", "android.permission.READ_MEDIA_VIDEO"} : new String[]{"android.permission.READ_EXTERNAL_STORAGE"}; }
 
         @JavascriptInterface
-        public boolean hasMediaPerm() { return checkSelfPermission(mediaPerm()) == android.content.pm.PackageManager.PERMISSION_GRANTED; }
+        public boolean hasMediaPerm() {
+            for (String p : mediaPerms()) if (checkSelfPermission(p) != android.content.pm.PackageManager.PERMISSION_GRANTED) return false;
+            return true;
+        }
 
         @JavascriptInterface
-        public void requestMediaPerm() { runOnUiThread(() -> requestPermissions(new String[]{mediaPerm()}, 21)); }
+        public void requestMediaPerm() { runOnUiThread(() -> requestPermissions(mediaPerms(), 21)); }
+
+        /* ---------- 완성 영상 만들기 ---------- */
+        /* sinceMs 이후 새로 저장된 동영상(이 앱이 만든 결과는 제외), 오래된 것부터 */
+        @JavascriptInterface
+        public String listVideosSince(double sinceMs) {
+            JSONArray out = new JSONArray();
+            String[] proj = {MediaStore.Video.Media._ID, MediaStore.Video.Media.DISPLAY_NAME, MediaStore.Video.Media.DURATION, MediaStore.Video.Media.DATE_ADDED};
+            String[] args = {String.valueOf((long) (sinceMs / 1000) - 2)};
+            try (android.database.Cursor c = getContentResolver().query(MediaStore.Video.Media.EXTERNAL_CONTENT_URI, proj, MediaStore.Video.Media.DATE_ADDED + ">=?", args, MediaStore.Video.Media.DATE_ADDED + " ASC")) {
+                while (c != null && c.moveToNext()) {
+                    String name = c.getString(1);
+                    if (name != null && name.contains("_assembled")) continue;
+                    JSONObject o = new JSONObject();
+                    o.put("uri", android.content.ContentUris.withAppendedId(MediaStore.Video.Media.EXTERNAL_CONTENT_URI, c.getLong(0)).toString());
+                    o.put("name", name); o.put("dur", c.getLong(2)); o.put("date", c.getLong(3) * 1000);
+                    out.put(o);
+                }
+            } catch (Exception ignored) { }
+            return out.toString();
+        }
+
+        /* 동영상 1초 지점 작은 미리보기 */
+        @JavascriptInterface
+        public String videoThumb(String uri) {
+            android.media.MediaMetadataRetriever r = new android.media.MediaMetadataRetriever();
+            try {
+                r.setDataSource(MainActivity.this, Uri.parse(uri));
+                android.graphics.Bitmap bm = r.getFrameAtTime(1_000_000, android.media.MediaMetadataRetriever.OPTION_CLOSEST_SYNC);
+                if (bm == null) return "";
+                int w = 200, h = Math.max(1, bm.getHeight() * w / Math.max(1, bm.getWidth()));
+                android.graphics.Bitmap s = android.graphics.Bitmap.createScaledBitmap(bm, w, h, true);
+                ByteArrayOutputStream bo = new ByteArrayOutputStream();
+                s.compress(android.graphics.Bitmap.CompressFormat.JPEG, 80, bo);
+                return "data:image/jpeg;base64," + Base64.encodeToString(bo.toByteArray(), Base64.NO_WRAP);
+            } catch (Exception e) { return ""; }
+            finally { try { r.release(); } catch (Exception ignored) { } }
+        }
+
+        /* 직접 고르기: 결과는 window.onVideosPicked([uri...]) */
+        @JavascriptInterface
+        public void pickVideos() {
+            runOnUiThread(() -> {
+                Intent i = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+                i.addCategory(Intent.CATEGORY_OPENABLE);
+                i.setType("video/*");
+                i.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
+                try { startActivityForResult(i, REQ_VIDEOS); } catch (Exception ignored) { }
+            });
+        }
+
+        @JavascriptInterface
+        public boolean assemble(String jobJson) {
+            try {
+                if (maker == null) maker = new VideoMaker(MainActivity.this);
+                if (maker.busy()) return false;
+                JSONObject job = new JSONObject(jobJson);
+                maker.start(job, o -> runOnUiThread(() -> web.evaluateJavascript("window.onAssemble && window.onAssemble(" + o.toString() + ")", null)));
+                return true;
+            } catch (Exception e) { return false; }
+        }
+
+        @JavascriptInterface
+        public void cancelAssemble() { if (maker != null) maker.cancel(); }
+
+        @JavascriptInterface
+        public void shareVideo(String uri, String title, String text) {
+            runOnUiThread(() -> {
+                Intent i = new Intent(Intent.ACTION_SEND);
+                i.setType("video/mp4");
+                i.putExtra(Intent.EXTRA_STREAM, Uri.parse(uri));
+                i.putExtra(Intent.EXTRA_TITLE, title);
+                i.putExtra(Intent.EXTRA_SUBJECT, title);
+                i.putExtra(Intent.EXTRA_TEXT, text);
+                i.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                ((android.content.ClipboardManager) getSystemService(CLIPBOARD_SERVICE)).setPrimaryClip(android.content.ClipData.newPlainText("upload", text));
+                startActivity(Intent.createChooser(i, "업로드할 앱 고르기"));
+            });
+        }
+
+        /* 피클 같은 특정 앱으로 영상(있으면)과 지시문을 바로 보낸다. 결과: ok | noapp | noshare */
+        @JavascriptInterface
+        public String shareToApp(String target, String uri, String text) {
+            String pk = findTarget(target, "");
+            if (pk.isEmpty()) return "noapp";
+            Intent i = new Intent(Intent.ACTION_SEND);
+            boolean hasVideo = uri != null && !uri.isEmpty();
+            i.setType(hasVideo ? "video/mp4" : "text/plain");
+            if (hasVideo) { i.putExtra(Intent.EXTRA_STREAM, Uri.parse(uri)); i.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION); }
+            i.putExtra(Intent.EXTRA_TEXT, text);
+            i.setPackage(pk);
+            ((android.content.ClipboardManager) getSystemService(CLIPBOARD_SERVICE)).setPrimaryClip(android.content.ClipData.newPlainText("instruction", text));
+            if (i.resolveActivity(getPackageManager()) == null) {
+                if (hasVideo) { i.setType("text/plain"); i.removeExtra(Intent.EXTRA_STREAM); if (i.resolveActivity(getPackageManager()) == null) return "noshare"; }
+                else return "noshare";
+            }
+            runOnUiThread(() -> { try { startActivity(i); } catch (Exception ignored) { } });
+            return "ok";
+        }
+
+        @JavascriptInterface
+        public void openVideo(String uri) {
+            runOnUiThread(() -> {
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setDataAndType(Uri.parse(uri), "video/mp4");
+                i.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                try { startActivity(i); } catch (Exception ignored) { }
+            });
+        }
 
         /* sinceMs 이후 추가된 가장 최근 사진(이 앱이 저장한 참조 사진은 제외)을 줄여서 data URL 로 */
         @JavascriptInterface
