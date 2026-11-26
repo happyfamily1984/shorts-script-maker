@@ -1,0 +1,947 @@
+[
+ [
+  "길 잃은 바이어를 데려간 라이더",
+  "The Rider Who Guided the Buyer",
+  "부스에서 쫓아낸 직원. 배달원이 길 잃은 바이어를 부스까지 데려다줬다.",
+  "A booth manager kicks out a rider, who then walks a lost buyer back to the right hall.",
+  [
+   [
+    "H",
+    "성지완",
+    "Felix Arden",
+    "30대 남성, 회색 헬멧, 남색 배달 조끼, 짧은 머리, 온화한 눈",
+    "man in his 30s, gray helmet, navy vest, short hair, gentle eyes"
+   ],
+   [
+    "V",
+    "탁건",
+    "Hank Dobbs",
+    "30대 남성, 정장에 사원증, 올백 머리, 거만한 말투",
+    "man in his 30s, suit and badge, slicked-back hair, smug tone"
+   ],
+   [
+    "A",
+    "어수환",
+    "Oscar Lind",
+    "50대 남성, 전시장 운영 정장, 무전기, 반듯한 자세",
+    "man in his 50s, exhibition staff suit, radio, upright posture"
+   ],
+   [
+    "X",
+    "반두헌",
+    "Walter Bream",
+    "60대 남성, 베이지 정장, 안경, 지친 눈",
+    "man in his 60s, beige suit, glasses, weary eyes"
+   ]
+  ],
+  [
+   [
+    "무역 박람회 부스",
+    "trade show booth",
+    "탁건이 지완의 오토바이 헬멧을 밀어 떨어뜨린다",
+    "Hank shoves Felix's scooter helmet off the counter",
+    1,
+    "여기 직원만 들어와.",
+    "Staff only past this point.",
+    "cz"
+   ],
+   [
+    "무역 박람회 부스",
+    "trade show booth",
+    "탁건이 샘플을 닦으며 지완을 손짓으로 쫓는다",
+    "Hank wipes the samples and flicks his hand at Felix",
+    1,
+    "샘플 만지지 마, 비싼 거야.",
+    "Don't touch the samples. They're expensive.",
+    "ms"
+   ],
+   [
+    "전시장 통로",
+    "exhibition aisle",
+    "지완이 지친 노신사에게 물을 건넨다",
+    "Felix hands a bottle of water to a tired old man",
+    0,
+    "찾으시는 부스, 제가 알아봤어요.",
+    "I found the booth you're looking for.",
+    "cu"
+   ],
+   [
+    "무역 박람회 부스",
+    "trade show booth",
+    "운영본부장이 노신사 앞에 서서 명함을 든다",
+    "The operations chief steps up and holds out his card",
+    2,
+    "구매총괄님! 이분 없으면 계약도 없습니다.",
+    "Sir! Without this man, there's no contract.",
+    "low"
+   ],
+   [
+    "무역 박람회 부스",
+    "trade show booth",
+    "탁건이 얼굴이 굳고 지완이 부스 계약서를 본다",
+    "Hank's face hardens as Felix glances at the booth contract",
+    0,
+    "이 부스, 계약 취소됐다고 들었어요.",
+    "I heard this booth's contract was cancelled.",
+    "rx"
+   ],
+   [
+    "무역 박람회 부스",
+    "trade show booth",
+    "노신사가 지완에게 명함을 건넨다",
+    "The old man holds out his card to Felix",
+    3,
+    "우리 그룹 물류, 네가 맡아줄래?",
+    "Would you take over our group's logistics?",
+    "cu"
+   ]
+  ]
+ ],
+ [
+  "한 짝뿐인 드레스를 받아낸 라이더",
+  "The Dress the Rider Caught",
+  "드레스 배달원을 쫓아낸 실장. 넘어질 뻔한 드레스를 배달원이 붙잡았다.",
+  "A bridal shop manager shoos out a rider, then a one-of-a-kind dress starts to fall.",
+  [
+   [
+    "H",
+    "반소윤",
+    "Chloe Barrett",
+    "20대 후반 여성, 분홍 헬멧, 흰 배달 조끼, 긴 머리 묶음",
+    "woman in her late 20s, pink helmet, white vest, long hair tied up"
+   ],
+   [
+    "V",
+    "피안나",
+    "Gwen Ashby",
+    "40대 여성, 검은 정장, 하이힐, 날카로운 눈",
+    "woman in her 40s, black suit, high heels, sharp eyes"
+   ],
+   [
+    "A",
+    "천다올",
+    "Mina Ford",
+    "30대 여성, 흰 셔츠, 짧은 머리, 재단 가위를 든 손",
+    "woman in her 30s, white shirt, short hair, holding fabric shears"
+   ]
+  ],
+  [
+   [
+    "웨딩숍",
+    "bridal shop",
+    "피안나가 소윤의 오토바이를 가리키며 드레스 가방을 민다",
+    "Gwen points at Chloe's scooter and shoves the dress bag",
+    1,
+    "이거 만지면 얼마인 줄 알아?",
+    "Do you know what this costs?",
+    "cz"
+   ],
+   [
+    "웨딩숍",
+    "bridal shop",
+    "피안나가 소윤의 손을 뿌리친다",
+    "Gwen swats Chloe's hand away",
+    1,
+    "드레스는 직원만 만져. 넌 밖에서 기다려.",
+    "Only staff touch the dresses. Wait outside.",
+    "ms"
+   ],
+   [
+    "웨딩숍",
+    "bridal shop",
+    "소윤이 넘어지는 드레스걸이를 붙잡는다",
+    "Chloe catches the toppling dress rack with both arms",
+    0,
+    "이거, 바닥에 닿으면 안 돼요.",
+    "This can't touch the floor.",
+    "cu"
+   ],
+   [
+    "웨딩숍",
+    "bridal shop",
+    "디자이너가 들어와 드레스를 펼쳐 본다",
+    "The designer walks in and spreads the dress open",
+    2,
+    "이 드레스, 내 컬렉션 메인이에요.",
+    "That dress is the centerpiece of my collection.",
+    "low"
+   ],
+   [
+    "웨딩숍",
+    "bridal shop",
+    "피안나가 굳고 소윤이 젖은 장갑을 벗는다",
+    "Gwen stiffens as Chloe peels off her wet gloves",
+    0,
+    "다음엔 사람부터 붙잡으세요.",
+    "Next time, catch the person first.",
+    "cu"
+   ],
+   [
+    "웨딩숍",
+    "bridal shop",
+    "디자이너가 소윤에게 백스테이지 출입증을 건넨다",
+    "The designer clips a backstage pass onto Chloe's vest",
+    2,
+    "내 패션쇼 백스테이지, 네가 총괄해.",
+    "Run the backstage at my show.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "전 여자친구의 결혼식에 간 라이더",
+  "The Rider at His Ex's Wedding",
+  "라이더를 버린 여자의 결혼식. 꽃을 배달한 그는 이 예식장의 꽃을 독점한 사장이었다.",
+  "He delivers flowers to the wedding of the woman who dumped him, and he owns the hall's flower contract.",
+  [
+   [
+    "H",
+    "구태겸",
+    "Ryan Pierce",
+    "30대 남성, 검은 헬멧, 짙은 초록 배달 조끼, 단정한 머리",
+    "man in his 30s, black helmet, dark green vest, neat hair"
+   ],
+   [
+    "V",
+    "하구남",
+    "Blake Sutton",
+    "30대 남성, 흰 턱시도, 헤어젤, 비웃는 얼굴",
+    "man in his 30s, white tuxedo, hair gel, sneering face"
+   ],
+   [
+    "A",
+    "진하나",
+    "Sara Whitlock",
+    "30대 여성, 흰 웨딩드레스, 올림머리, 굳은 표정",
+    "woman in her 30s, white wedding dress, updo, frozen face"
+   ],
+   [
+    "X",
+    "감초아",
+    "Iris Bloom",
+    "30대 여성, 검은 정장, 태블릿, 당황한 표정",
+    "woman in her 30s, black suit, tablet, flustered face"
+   ]
+  ],
+  [
+   [
+    "예식장 입구",
+    "wedding hall entrance",
+    "하구남이 태겸의 오토바이를 손가락으로 가리키며 꽃 상자를 민다",
+    "Blake points at Ryan's scooter and pushes the flower crate",
+    1,
+    "배달은 뒤로. 신부가 꽃가루 앓아.",
+    "Deliveries go around back. The bride has allergies.",
+    "cz"
+   ],
+   [
+    "예식장",
+    "wedding hall",
+    "하구남이 꽃병을 들어 바닥에 내려놓는다",
+    "Blake sets a vase down on the floor and lets go",
+    1,
+    "이 꽃 다 반품. 우리 예식엔 필요 없어.",
+    "Send all these back. My wedding doesn't need them.",
+    "ots"
+   ],
+   [
+    "예식장",
+    "wedding hall",
+    "도겸이 높이 쌓인 택배와 안전 표지를 번갈아 본다",
+    "Colin eyes the towering parcel stack and the safety notice",
+    2,
+    "왜... 여기 왔어.",
+    "Why... are you here.",
+    "cu"
+   ],
+   [
+    "예식장",
+    "wedding hall",
+    "예식 매니저가 계약서를 펼쳐 든다",
+    "The wedding manager opens the supplier contract",
+    3,
+    "이 꽃 전부 이분 회사 겁니다. 취소하면 끝이에요.",
+    "Every flower here is from his company. Cancel, and there's no wedding.",
+    "low"
+   ],
+   [
+    "예식장",
+    "wedding hall",
+    "하구남이 굳고 태겸이 꽃을 정리한다",
+    "Blake goes rigid as Ryan straightens the flowers",
+    0,
+    "꽃은 두죠. 이 예식장 꽃 계약, 제 회삽니다.",
+    "Leave the flowers. This hall's flower contract is mine.",
+    "cu"
+   ],
+   [
+    "예식장",
+    "wedding hall",
+    "신부가 태겸의 소매를 잡는다",
+    "The bride catches Ryan by the sleeve",
+    2,
+    "잠깐, 나 할 말 있어.",
+    "Wait. I have something to say.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "해고했던 센터장 앞에 선 라이더",
+  "The Rider Who Came Back as the Boss",
+  "라이더를 사람 취급도 안 한 식당 사장. 그 라이더가 이 지역 배달 계약을 쥔 이사장이었다.",
+  "The center chief who fired a rider finds him back at the same desk as head of operations.",
+  [
+   [
+    "H",
+    "표도겸",
+    "Colin Hayes",
+    "30대 남성, 흰 헬멧, 회색 배달 조끼, 짧은 머리, 무표정",
+    "man in his 30s, white helmet, gray vest, short hair, blank face"
+   ],
+   [
+    "V",
+    "천도식",
+    "Dale Kroft",
+    "40대 남성, 물류센터 점퍼, 체크 셔츠, 고함치는 입",
+    "man in his 40s, logistics jacket, plaid shirt, shouting mouth"
+   ],
+   [
+    "A",
+    "감보민",
+    "Dana Cross",
+    "30대 여성, 검은 정장, 태블릿, 단호한 표정",
+    "woman in her 30s, black suit, tablet, firm face"
+   ]
+  ],
+  [
+   [
+    "물류센터 입구",
+    "logistics center entrance",
+    "도식이 도겸의 오토바이를 걷어차고 가방을 밀친다",
+    "Dale kicks Colin's scooter and shoves his bag",
+    1,
+    "또 왔어? 여기 네 자리 없어.",
+    "You again? You don't work here.",
+    "cz"
+   ],
+   [
+    "물류센터",
+    "logistics center",
+    "도식이 도겸의 어깨를 밀고 라이더들이 웃는다",
+    "Dale shoves his shoulder as riders laugh behind them",
+    1,
+    "라이더는 라이더야. 상전이 되진 마.",
+    "A rider's a rider. Don't act like my boss.",
+    "ms"
+   ],
+   [
+    "물류센터",
+    "logistics center",
+    "보라가 배달 앱의 계약 종료 알림을 확인한다",
+    "Sadie checks the contract-ending alert on her delivery app",
+    0,
+    "이 줄, 무너지겠는데요.",
+    "That stack is going to come down.",
+    "cu"
+   ],
+   [
+    "물류센터",
+    "logistics center",
+    "인사팀장이 서류를 들고 도겸 옆에 선다",
+    "The HR lead steps up beside Colin with a document",
+    2,
+    "오늘부터 이분이 본사 운영총괄입니다.",
+    "As of today, he runs head office operations.",
+    "low"
+   ],
+   [
+    "물류센터",
+    "logistics center",
+    "도식이 뒷걸음치고 도겸이 장부를 든다",
+    "Dale backs away as Colin lifts a ledger",
+    0,
+    "수수료 떼어낸 장부, 제가 다 봤습니다.",
+    "I've read the ledger where you skimmed the fees.",
+    "rx"
+   ],
+   [
+    "물류센터",
+    "logistics center",
+    "도식의 서랍에서 다른 센터 명단이 나온다",
+    "A list of other centers slides out of Dale's drawer",
+    2,
+    "이 명단, 뭐죠?",
+    "What is this list?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "배달을 끊긴 식당 사장",
+  "The Rider Who Cancelled the Contract",
+  "라이더를 개 취급한 식당 사장. 그 라이더가 이 지역 배달 계약을 쥔 이사장이었다.",
+  "A diner owner treats a rider like dirt, not knowing she chairs the local delivery cooperative.",
+  [
+   [
+    "H",
+    "감보라",
+    "Sadie Monroe",
+    "30대 여성, 검은 헬멧, 초록 배달 조끼, 짧은 단발, 차분한 눈",
+    "woman in her 30s, black helmet, green vest, short bob, calm eyes"
+   ],
+   [
+    "V",
+    "추남기",
+    "Harold Semm",
+    "50대 남성, 앞치마, 뚱뚱한 체형, 비웃는 입",
+    "man in his 50s, apron, heavy build, sneering mouth"
+   ],
+   [
+    "A",
+    "설단비",
+    "Tess Ferris",
+    "20대 여성, 조끼에 배지, 클립보드, 단호한 표정",
+    "woman in her 20s, vest with a badge, clipboard, firm face"
+   ]
+  ],
+  [
+   [
+    "동네 식당",
+    "neighborhood diner",
+    "남기가 보라의 전기자전거를 발로 차고 가방을 민다",
+    "Harold kicks Sadie's e-bike and shoves her bag",
+    1,
+    "여자 라이더는 느려. 다른 데 불러.",
+    "Lady riders are slow. I'll call someone else.",
+    "cz"
+   ],
+   [
+    "동네 식당",
+    "neighborhood diner",
+    "남기가 보라의 어깨를 툭 치고 주방으로 간다",
+    "Harold taps her shoulder hard and walks into the kitchen",
+    1,
+    "음식 흘리면 네가 물어. 알겠어?",
+    "Spill the food and you pay. Understood?",
+    "ms"
+   ],
+   [
+    "동네 식당",
+    "neighborhood diner",
+    "보라가 카운터의 계약서 서명란을 본다",
+    "Sadie looks at the signature line on the counter contract",
+    0,
+    "이 계약, 오늘로 끝이네요.",
+    "This contract ends today.",
+    "cu"
+   ],
+   [
+    "동네 식당",
+    "neighborhood diner",
+    "조합 직원이 중단 통보서를 카운터에 올린다",
+    "The cooperative officer lays a suspension notice on the counter",
+    2,
+    "이분이 저희 조합 이사장입니다. 배달 중단입니다.",
+    "This is our chairwoman. Your delivery service is suspended.",
+    "low"
+   ],
+   [
+    "동네 식당",
+    "neighborhood diner",
+    "남기가 계산기를 놓치고 보라가 휴대폰을 든다",
+    "Harold drops the calculator as Sadie checks her phone",
+    0,
+    "다른 식당들은 이미 새 앱에 들어갔어요.",
+    "The other diners already joined our new app.",
+    "cu"
+   ],
+   [
+    "동네 식당",
+    "neighborhood diner",
+    "남기가 전화를 걸고 보라의 휴대폰에 모르는 번호가 뜬다",
+    "Harold dials as an unknown number lights up Sadie's phone",
+    1,
+    "우리 본사 회장님이 직접 온대.",
+    "Our chairman says he's coming himself.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "약혼 파티에 케이터링을 온 라이더",
+  "The Caterer at Her Engagement",
+  "라이더를 조롱한 약혼자. 파티 음식은 그가 세운 케이터링 회사의 것이었다.",
+  "Classmates laugh at the rider delivering to their reunion, the day she buys the restaurant.",
+  [
+   [
+    "H",
+    "석이든",
+    "Trevor Lang",
+    "30대 남성, 흰 헬멧, 검은 배달 조끼, 긴 머리, 조용한 눈",
+    "man in his 30s, white helmet, black vest, long hair, quiet eyes"
+   ],
+   [
+    "V",
+    "독고필",
+    "Julian Verne",
+    "30대 남성, 흰 정장, 나비넥타이, 비웃는 입",
+    "man in his 30s, white suit, bow tie, sneering mouth"
+   ],
+   [
+    "A",
+    "정새온",
+    "Nora Snow",
+    "40대 여성, 호텔 지배인 정장, 태블릿, 당황한 표정",
+    "woman in her 40s, hotel manager suit, tablet, flustered face"
+   ],
+   [
+    "X",
+    "고은결",
+    "Elise Warren",
+    "30대 여성, 은색 드레스, 긴 머리, 창백한 얼굴",
+    "woman in her 30s, silver dress, long hair, pale face"
+   ]
+  ],
+  [
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "필이 이든의 오토바이 앞을 막고 트롤리를 발로 민다",
+    "Julian blocks Trevor's scooter and kicks the trolley",
+    1,
+    "케이터링? 내가 시킨 적 없어.",
+    "Catering? I never ordered this.",
+    "cz"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "필이 이든의 앞치마를 집어 던진다",
+    "Julian yanks off Trevor's apron and tosses it aside",
+    1,
+    "라이더가 약혼 파티에? 웃기지 마.",
+    "A rider at my engagement? Don't be absurd.",
+    "ots"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "은결이 이든을 보고 샴페인 잔을 놓친다",
+    "Elise sees Trevor and her champagne glass slips",
+    3,
+    "이 음식... 네가 만든 거야?",
+    "This food... you made it?",
+    "cu"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "지배인이 계약서를 들고 나선다",
+    "The hotel manager comes forward with the contract",
+    2,
+    "이 케이터링, 이분 회사 독점 계약입니다.",
+    "This catering is his company's exclusive contract.",
+    "low"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "필이 굳고 이든이 트롤리를 밀어 넣는다",
+    "Julian goes rigid as Trevor pushes the trolley through",
+    0,
+    "음식은 그대로 두죠. 취소 조항은 없으니까.",
+    "The food stays. There's no cancellation clause.",
+    "cu"
+   ],
+   [
+    "호텔 연회장",
+    "hotel banquet hall",
+    "은결이 이든의 팔을 잡는다",
+    "Elise catches Trevor by the arm",
+    3,
+    "잠깐, 나 그때 왜 헤어졌는지 알아?",
+    "Wait. Do you know why I really left?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "동창회에 배달 간 라이더",
+  "The Rider at the Reunion",
+  "동창들 앞에서 무시당한 라이더. 그 식당의 새 주인이 바로 그였다.",
+  "Classmates laugh at the rider delivering to their reunion, on the day he buys the restaurant.",
+  [
+   [
+    "H",
+    "옥나정",
+    "Bella Cross",
+    "30대 여성, 검은 헬멧, 남색 배달 조끼, 긴 생머리",
+    "woman in her 30s, black helmet, navy vest, long straight hair"
+   ],
+   [
+    "V",
+    "남궁대수",
+    "Chad Wilkes",
+    "30대 남성, 명품 정장, 손목시계, 거만한 웃음",
+    "man in his 30s, designer suit, wristwatch, smug grin"
+   ],
+   [
+    "A",
+    "옥단비",
+    "Tia Brooks",
+    "40대 여성, 검은 정장, 안경, 당황한 표정",
+    "woman in her 40s, black suit, glasses, flustered face"
+   ],
+   [
+    "X",
+    "진상필",
+    "Owen Ash",
+    "30대 남성, 캐주얼 재킷, 안경, 놀란 얼굴",
+    "man in his 30s, casual jacket, glasses, startled face"
+   ]
+  ],
+  [
+   [
+    "고급 레스토랑",
+    "upscale restaurant",
+    "대수가 나정의 오토바이 헬멧을 밀어 바닥에 떨어뜨린다",
+    "Chad knocks Bella's scooter helmet onto the floor",
+    1,
+    "동창회에 배달부라니, 웃기네.",
+    "A delivery girl at our reunion. Hilarious.",
+    "cz"
+   ],
+   [
+    "고급 레스토랑",
+    "upscale restaurant",
+    "대수가 동창들을 향해 나정을 손가락으로 가리킨다",
+    "Chad points at Bella for the whole table",
+    1,
+    "얘 봐, 아직도 오토바이래.",
+    "Look at her. Still riding a scooter.",
+    "rx"
+   ],
+   [
+    "고급 레스토랑 사장실 앞",
+    "restaurant office door",
+    "나정이 인수 서류에 서명하고 사장과 악수한다",
+    "Bella signs the purchase papers and shakes the owner's hand",
+    0,
+    "사인만 하면 되죠?",
+    "I just sign here, right?",
+    "cu"
+   ],
+   [
+    "고급 레스토랑",
+    "upscale restaurant",
+    "매니저가 인수 계약서를 테이블에 올린다",
+    "The manager sets the purchase contract on the table",
+    2,
+    "신관 장비 전부, 이 회사가 납품했습니다.",
+    "Every machine in the new wing came from his company.",
+    "low"
+   ],
+   [
+    "고급 레스토랑",
+    "upscale restaurant",
+    "대수가 잔을 놓치고 나정이 자리에서 일어난다",
+    "Chad drops his glass as Bella rises from her seat",
+    0,
+    "신관 계약 조건, 리베이트였죠?",
+    "That new wing contract came with a kickback, didn't it?",
+    "cu"
+   ],
+   [
+    "고급 레스토랑",
+    "upscale restaurant",
+    "동창 하나가 나정의 어깨를 잡는다",
+    "One classmate catches Bella by the shoulder",
+    3,
+    "너, 그때 내 가게 살려준 사람이지?",
+    "You're the one who saved my shop back then.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "전 여자친구의 병원에 온 라이더",
+  "The Rider at Her Hospital",
+  "라이더를 무시한 의사. 그 병원 신관 장비는 전부 그 라이더 회사의 것이었다.",
+  "A doctor sneers at a delivery rider, whose company supplied every machine in the new wing.",
+  [
+   [
+    "H",
+    "탁시온",
+    "Adam Voss",
+    "30대 남성, 회색 헬멧, 흰 배달 조끼, 짧은 머리, 담담한 눈",
+    "man in his 30s, gray helmet, white vest, short hair, steady eyes"
+   ],
+   [
+    "V",
+    "황보문",
+    "Dr. Evan Kane",
+    "30대 남성, 흰 가운, 청진기, 비웃는 입",
+    "man in his 30s, white coat, stethoscope, sneering mouth"
+   ],
+   [
+    "A",
+    "여운석",
+    "Paul Wren",
+    "50대 남성, 정장, 안경, 부드러운 눈",
+    "man in his 50s, suit, glasses, gentle eyes"
+   ],
+   [
+    "X",
+    "윤슬비",
+    "Dr. Hana Weiss",
+    "30대 여성, 흰 가운, 묶은 머리, 굳은 표정",
+    "woman in her 30s, white coat, tied hair, tight face"
+   ]
+  ],
+  [
+   [
+    "병원 로비",
+    "hospital lobby",
+    "황보문이 시온의 오토바이 열쇠를 뽑아 던진다",
+    "Evan yanks out Adam's scooter key and tosses it aside",
+    1,
+    "여기 환자 있어. 밖에서 기다려.",
+    "Patients here. Wait outside.",
+    "ws"
+   ],
+   [
+    "병원 로비",
+    "hospital lobby",
+    "에반이 시온의 가슴을 손바닥으로 막는다",
+    "Evan stops Adam with a palm to the chest",
+    1,
+    "라이더가 신관에 들어와? 규정 위반이야.",
+    "Riders in the new wing? That's a violation.",
+    "ms"
+   ],
+   [
+    "병원 신관 복도",
+    "new wing corridor",
+    "시온이 장비 라벨의 회사명을 읽고 윤슬비가 멈춰 선다",
+    "Adam reads the equipment label as Hana stops walking",
+    3,
+    "시온...? 이 장비, 네 회사 거야?",
+    "Adam...? These machines are your company's?",
+    "cu"
+   ],
+   [
+    "병원 신관 복도",
+    "new wing corridor",
+    "병원장이 다가와 시온의 어깨를 잡는다",
+    "The hospital director comes over and grips Adam's shoulder",
+    2,
+    "10억 기부하신 분입니다. 우리 졸업생이고요.",
+    "She donated a hundred million. And she's our alumna.",
+    "low"
+   ],
+   [
+    "병원 신관 복도",
+    "new wing corridor",
+    "에반이 굳고 시온이 휴대폰을 든다",
+    "Evan goes still as Adam lifts his phone",
+    0,
+    "리베이트 요구, 녹음돼 있습니다.",
+    "Your kickback demand is on record.",
+    "cu"
+   ],
+   [
+    "병원 신관 복도",
+    "new wing corridor",
+    "윤슬비가 장비 검수 서류를 꺼낸다",
+    "Hana pulls out the equipment inspection file",
+    3,
+    "그 장비 검수, 내가 맡았어.",
+    "I signed off on that equipment myself.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "자퇴를 권한 교수 앞에 선 라이더",
+  "The Rider Who Came Back to Campus",
+  "라이더를 자퇴시킨 교수. 10년 뒤 그 학생은 캠퍼스에 장학금을 들고 돌아왔다.",
+  "A professor pushed her out of school, and ten years later she returns with a scholarship fund.",
+  [
+   [
+    "H",
+    "감사랑",
+    "Jade Hollis",
+    "30대 여성, 검은 헬멧, 회색 배달 조끼, 단발, 차분한 눈",
+    "woman in her 30s, black helmet, gray vest, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "동방현",
+    "Miles Corbin",
+    "50대 남성, 트위드 재킷, 안경, 비웃는 입",
+    "man in his 50s, tweed jacket, glasses, sneering mouth"
+   ],
+   [
+    "A",
+    "국태오",
+    "Clyde Rowan",
+    "60대 남성, 총장 예복, 흰 머리, 위엄 있는 자세",
+    "man in his 60s, president's robes, white hair, commanding posture"
+   ]
+  ],
+  [
+   [
+    "캠퍼스 강의동 앞",
+    "campus lecture hall",
+    "교수가 사랑의 오토바이 앞을 막는다",
+    "The professor steps in front of Jade's scooter",
+    1,
+    "캠퍼스에 이거 타고 들어와?",
+    "You ride this onto campus?",
+    "cz"
+   ],
+   [
+    "강의실",
+    "lecture room",
+    "교수가 사랑의 어깨를 돌려 세운다",
+    "The professor spins Jade around by the shoulder",
+    1,
+    "자퇴했으면 학교엔 오지 마.",
+    "You dropped out. Don't come back here.",
+    "ms"
+   ],
+   [
+    "강의동 계단",
+    "lecture hall steps",
+    "사랑이 봉투에서 장학 증서를 꺼낸다",
+    "Jade pulls a scholarship certificate from an envelope",
+    2,
+    "여기 서명만 하시면 됩니다.",
+    "Just sign right here.",
+    "trk"
+   ],
+   [
+    "강의동 앞",
+    "lecture hall entrance",
+    "총장이 내려와 사랑에게 악수를 청한다",
+    "The president comes down and offers Jade his hand",
+    2,
+    "이분이 10억 기부자입니다. 우리 졸업생이에요.",
+    "She donated a hundred million. She's our alumna.",
+    "low"
+   ],
+   [
+    "강의동 앞",
+    "lecture hall entrance",
+    "교수가 굳고 사랑이 연구비 서류를 든다",
+    "The professor freezes as Jade holds up grant papers",
+    0,
+    "교수님 연구비, 어디로 갔는지 아세요?",
+    "Do you know where your research grant went?",
+    "cu"
+   ],
+   [
+    "강의동 앞",
+    "lecture hall entrance",
+    "총장이 사랑에게 명함을 건넨다",
+    "The president hands Jade his card",
+    2,
+    "이사 추천하려는데, 관심 있나?",
+    "I'd like to nominate you to the board. Interested?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "배달부를 쫓아낸 골프 회원",
+  "The Rider They Threw Off the Course",
+  "배달 온 라이더를 쫓아낸 골프 회원. 그 클럽을 인수한 새 사장이 바로 그였다.",
+  "A club member throws out a delivery rider, who turns out to have just bought the club.",
+  [
+   [
+    "H",
+    "국도하",
+    "Wes Dalton",
+    "30대 남성, 흰 헬멧, 검정 배달 조끼, 짧은 머리, 무표정",
+    "man in his 30s, white helmet, black vest, short hair, blank face"
+   ],
+   [
+    "V",
+    "추억수",
+    "Rex Calloway",
+    "50대 남성, 골프웨어, 선글라스, 거만한 웃음",
+    "man in his 50s, golf wear, sunglasses, arrogant grin"
+   ],
+   [
+    "A",
+    "감초록",
+    "Eve Stanton",
+    "40대 여성, 클럽 유니폼, 태블릿, 당황한 표정",
+    "woman in her 40s, club uniform, tablet, flustered face"
+   ]
+  ],
+  [
+   [
+    "골프클럽 클럽하우스",
+    "golf club house",
+    "억수가 도하의 오토바이 헬멧을 발로 차 굴린다",
+    "Rex kicks Wes's scooter helmet across the floor",
+    1,
+    "회원 전용이야. 나가.",
+    "Members only. Get out.",
+    "cz"
+   ],
+   [
+    "골프클럽 클럽하우스",
+    "golf club house",
+    "억수가 캐디들을 향해 도하를 손가락으로 가리킨다",
+    "Rex points Wes out to the caddies",
+    1,
+    "캐디도 아니고 배달부가 여기 와?",
+    "Not even a caddie. A delivery boy in here?",
+    "ms"
+   ],
+   [
+    "골프클럽 클럽하우스",
+    "golf club house",
+    "지배인이 도하에게 인수 서류를 건넨다",
+    "The club manager slides the purchase papers to Wes",
+    0,
+    "사인만 하시면 됩니다.",
+    "Just sign at the bottom.",
+    "cu"
+   ],
+   [
+    "골프클럽 클럽하우스",
+    "golf club house",
+    "지배인이 회원들에게 도하를 소개한다",
+    "The manager introduces Wes to the members",
+    2,
+    "오늘부터 이 클럽 새 사장입니다.",
+    "As of today, he's this club's new owner.",
+    "low"
+   ],
+   [
+    "골프클럽 클럽하우스",
+    "golf club house",
+    "억수가 모자를 벗고 도하가 태블릿을 든다",
+    "Rex takes off his cap as Wes lifts the tablet",
+    0,
+    "회원 자격 심사, 다시 하겠습니다.",
+    "We'll be re-reviewing all memberships.",
+    "cu"
+   ],
+   [
+    "골프클럽 클럽하우스",
+    "golf club house",
+    "지배인이 회원 명단을 넘기고 도하가 한 줄을 짚는다",
+    "The manager hands over the member list and Wes taps one line",
+    0,
+    "이 사람, 아직 회원이네요.",
+    "This one is still a member.",
+    "pi"
+   ]
+  ]
+ ]
+]

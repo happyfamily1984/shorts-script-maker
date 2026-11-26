@@ -1,0 +1,919 @@
+[
+ [
+  "물류회장이 말단 라이더로 왔다",
+  "The Chairman in the Ranks",
+  "말단 라이더라며 무시한 센터장. 본사 회장 비서가 그 앞에서 명패를 바꿔 들었다.",
+  "A hub manager sneers at a rank-and-file courier. The chairman's aide swaps the nameplate in front of him.",
+  [
+   [
+    "H",
+    "일우",
+    "Graham",
+    "60대 남성, 회색 배달 조끼, 헬멧, 흰 머리, 주름 깊은 얼굴, 맑은 눈",
+    "man in his 60s, gray delivery vest, helmet, white hair, deeply lined face, clear eyes"
+   ],
+   [
+    "V",
+    "성락",
+    "Hector",
+    "40대 남성, 물류센터 정장 조끼와 무전기, 짧은 머리, 고압적인 눈",
+    "man in his 40s, logistics vest, radio, short hair, domineering eyes"
+   ],
+   [
+    "A",
+    "하영",
+    "Ms. Dalton",
+    "30대 여성, 검은 정장과 서류 가방, 단발머리, 정확한 태도",
+    "woman in her 30s, black suit, briefcase, short bob, precise manner"
+   ]
+  ],
+  [
+   [
+    "물류센터 하차장",
+    "logistics hub dock",
+    "성락이 일우의 배달 가방을 컨베이어 옆에 내팽개친다",
+    "Hector flings Graham's food bag beside the conveyor",
+    1,
+    "말단 라이더는 여기서 기다려.",
+    "Rank-and-file couriers wait over there.",
+    "cz"
+   ],
+   [
+    "물류센터 하차장",
+    "logistics hub dock",
+    "성락이 일우의 사원증을 뽑아 바닥에 던진다",
+    "Hector yanks off Graham's staff badge and throws it down",
+    1,
+    "이런 사람 뽑은 팀장이 문제야.",
+    "Whoever hired you is the real problem.",
+    "ms"
+   ],
+   [
+    "물류센터 하차장 벽",
+    "hub dock wall",
+    "일우가 벽의 회사 연혁 사진을 올려다본다",
+    "Graham looks up at the company history photos on the wall",
+    0,
+    "이 사진, 30년 전이네요.",
+    "This photo's thirty years old.",
+    "cu"
+   ],
+   [
+    "물류센터 하차장",
+    "logistics hub dock",
+    "하영이 새 명패를 들고 걸어온다",
+    "Ms. Dalton walks over carrying a new nameplate",
+    2,
+    "회장님, 현장 명패 교체하겠습니다.",
+    "Chairman, we're replacing the floor nameplate.",
+    "low"
+   ],
+   [
+    "물류센터 하차장",
+    "logistics hub dock",
+    "성락이 무전기를 떨어뜨린다",
+    "Hector drops his radio",
+    0,
+    "내일부터 하차장에서 직접 뛰세요.",
+    "Start working the loading dock tomorrow.",
+    "cu"
+   ],
+   [
+    "물류센터 하차장",
+    "logistics hub dock",
+    "하영이 일우에게 장부를 건넨다",
+    "Ms. Dalton hands Graham a ledger",
+    2,
+    "센터장이 지운 배차 기록이 여기 다 있습니다.",
+    "All the dispatch records he deleted are here.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "신부 앞에서 라이더를 민 플래너",
+  "Shoved Aside on Her Wedding Day",
+  "신부가 보면 안 된다며 라이더를 민 플래너. 신부가 달려와 그 라이더를 오빠라고 불렀다.",
+  "A planner shoves a courier from the bride's sight. The bride runs over and calls him her brother.",
+  [
+   [
+    "H",
+    "시우",
+    "Joel",
+    "30대 남성, 검은 배달 재킷, 헬멧, 배달 가방, 짧은 머리, 온순한 눈",
+    "man in his 30s, black delivery jacket, helmet, food bag, short hair, gentle eyes"
+   ],
+   [
+    "V",
+    "유진",
+    "Tabitha",
+    "30대 여성, 검은 플래너 정장과 이어피스, 높은 올림머리, 신경질적 눈",
+    "woman in her 30s, black planner suit, earpiece, high updo, edgy eyes"
+   ],
+   [
+    "A",
+    "나린",
+    "Amelia",
+    "20대 여성, 흰 드레스와 베일, 긴 웨이브 머리, 환한 얼굴",
+    "woman in her 20s, white dress, veil, long wavy hair, radiant face"
+   ],
+   [
+    "X",
+    "예식장 지배인",
+    "Mr. Cadwell",
+    "50대 남성, 검은 예복과 나비넥타이, 은발, 단호한 얼굴",
+    "man in his 50s, black formal coat, bow tie, silver hair, firm face"
+   ]
+  ],
+  [
+   [
+    "웨딩홀 대기실 복도",
+    "wedding hall corridor",
+    "유진이 시우의 어깨를 밀어 벽 쪽으로 붙인다",
+    "Tabitha shoves Joel's shoulder back against the wall",
+    1,
+    "신부 얼굴 보이면 안 돼요. 나가요.",
+    "The bride can't see you. Get out.",
+    "cz"
+   ],
+   [
+    "웨딩홀 대기실 복도",
+    "wedding hall corridor",
+    "유진이 시우의 배달 가방을 발로 차 복도 끝으로 보낸다",
+    "Tabitha kicks Joel's food bag to the end of the corridor",
+    1,
+    "예식 30분 남았어요. 방해하지 마요.",
+    "Thirty minutes to the ceremony. Don't ruin it.",
+    "ms"
+   ],
+   [
+    "웨딩홀 대기실 복도",
+    "wedding hall corridor",
+    "시우가 가슴 주머니의 작은 봉투를 손으로 감춘다",
+    "Joel covers a small envelope in his breast pocket",
+    0,
+    "축가 악보입니다. 예식 끝나고 드리려고요.",
+    "It's sheet music. I'll give it after the ceremony.",
+    "cu"
+   ],
+   [
+    "웨딩홀 대기실 복도",
+    "wedding hall corridor",
+    "나린이 드레스를 끌며 복도로 나온다",
+    "Amelia steps into the corridor, dragging her dress",
+    2,
+    "오빠, 왜 복도에 서 있어요?",
+    "Joel, why are you standing in the hallway?",
+    "low"
+   ],
+   [
+    "웨딩홀 대기실 복도",
+    "wedding hall corridor",
+    "지배인이 예식장 문을 열고 유진에게 손짓한다",
+    "Mr. Cadwell opens the hall doors and beckons Tabitha",
+    3,
+    "플래너님은 오늘로 계약 종료입니다.",
+    "Your contract ends today, planner.",
+    "cu"
+   ],
+   [
+    "웨딩홀 대기실 복도",
+    "wedding hall corridor",
+    "나린이 시우의 헬멧 안쪽에서 오래된 사진을 꺼낸다",
+    "Amelia pulls an old photo from inside Joel's helmet",
+    2,
+    "이 사진, 왜 갖고 다녀요?",
+    "Why do you carry this photo?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "라이더를 몰래 찍어 조롱한 유튜버",
+  "Filmed Without Consent",
+  "라이더를 몰래 찍어 조롱 영상을 올린 유튜버. 초상권 신고와 함께 협찬까지 끊겼다.",
+  "A prank channel films a courier for laughs. A takedown and a lost sponsor land the same day.",
+  [
+   [
+    "H",
+    "민혁",
+    "Troy",
+    "20대 남성, 주황 배달 재킷, 헬멧, 배달 가방, 짧은 머리, 무던한 얼굴",
+    "man in his 20s, orange delivery jacket, helmet, food bag, short hair, easygoing face"
+   ],
+   [
+    "V",
+    "도진",
+    "Kyle",
+    "20대 남성, 노란 후드와 셀카봉, 염색 머리, 들뜬 얼굴",
+    "man in his 20s, yellow hoodie, selfie stick, dyed hair, excited face"
+   ],
+   [
+    "A",
+    "나연",
+    "Ms. Ferreira",
+    "30대 여성, 회사 유니폼과 태블릿, 안경, 단호한 눈",
+    "woman in her 30s, company uniform, tablet, glasses, firm eyes"
+   ]
+  ],
+  [
+   [
+    "공원 산책로",
+    "park path",
+    "도진이 셀카봉을 민혁의 얼굴에 들이민다",
+    "Kyle thrusts a selfie stick in Troy's face",
+    1,
+    "이거 봐요, 라이더가 이렇게 뛰네!",
+    "Look at this guy run!",
+    "cz"
+   ],
+   [
+    "공원 산책로",
+    "park path",
+    "도진이 민혁의 배달 가방을 툭툭 치며 카메라를 돌린다",
+    "Kyle taps Troy's food bag and swings the camera around",
+    1,
+    "조회수 터지면 이분 덕분이네요.",
+    "If this goes viral, it's all thanks to you.",
+    "ms"
+   ],
+   [
+    "공원 산책로",
+    "park path",
+    "민혁이 휴대폰으로 도진의 채널을 검색한다",
+    "Troy searches Kyle's channel on his phone",
+    0,
+    "구독자 십만 명이네요.",
+    "A hundred thousand subscribers.",
+    "cu"
+   ],
+   [
+    "공원 산책로",
+    "park path",
+    "나연이 걸어와 태블릿을 도진에게 보여 준다",
+    "Ms. Ferreira walks up and shows Kyle a tablet",
+    2,
+    "촬영 동의 없는 영상, 오늘 삭제됩니다.",
+    "Your video comes down today. No consent was given.",
+    "low"
+   ],
+   [
+    "공원 산책로",
+    "park path",
+    "도진이 셀카봉을 내리고 카메라를 끈다",
+    "Kyle lowers the selfie stick and turns the camera off",
+    0,
+    "다음엔 동의부터 받으세요.",
+    "Get consent next time.",
+    "cu"
+   ],
+   [
+    "공원 산책로",
+    "park path",
+    "나연이 태블릿의 영상 하나를 재생한다",
+    "Ms. Ferreira plays a video on her tablet",
+    2,
+    "이 영상, 저희 회사 광고에 쓰려고 했어요.",
+    "We wanted this footage for our ad.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "라이더를 위험 직업이라며 모욕한 설계사",
+  "A Dangerous Job, She Said",
+  "라이더를 위험 직업이라며 쫓아낸 설계사. 본사 감사팀이 특약 오안내를 적발했다.",
+  "An agent calls delivery work too risky to insure and shows a rider the door. Head office finds the mis-selling.",
+  [
+   [
+    "H",
+    "정욱",
+    "Bram",
+    "30대 남성, 파란 배달 재킷, 헬멧, 서류 봉투, 짧은 머리, 담담한 눈",
+    "man in his 30s, blue delivery jacket, helmet, document envelope, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "혜정",
+    "Iris",
+    "40대 여성, 회색 정장과 스카프, 짧은 파마, 무시하는 눈",
+    "woman in her 40s, gray suit, scarf, short curls, dismissive eyes"
+   ],
+   [
+    "A",
+    "석훈",
+    "Mr. Langley",
+    "50대 남성, 검은 정장과 명찰, 안경, 엄격한 눈",
+    "man in his 50s, black suit, name badge, glasses, stern eyes"
+   ]
+  ],
+  [
+   [
+    "보험사 상담창구",
+    "insurance service desk",
+    "혜정이 정욱의 서류와 헬멧을 창구 밖으로 밀어낸다",
+    "Hyejeong pushes Jeonguk's papers and helmet across the desk",
+    1,
+    "배달 기사한테는 보험 안 팔아요.",
+    "We don't insure delivery riders.",
+    "cz"
+   ],
+   [
+    "보험사 상담창구",
+    "insurance service desk",
+    "혜정이 옆 손님에게 정욱을 가리키며 웃는다",
+    "Iris points at Bram and laughs to the next customer",
+    1,
+    "위험한 일 하는 분들이라서요.",
+    "Their kind of work is far too risky.",
+    "ms"
+   ],
+   [
+    "보험사 상담창구",
+    "insurance service desk",
+    "정욱이 창구 위의 안내문을 사진으로 찍는다",
+    "Bram photographs the notice on the counter",
+    0,
+    "이 특약, 라이더도 된다고 적혀 있는데요.",
+    "This clause says riders qualify.",
+    "cu"
+   ],
+   [
+    "보험사 상담창구",
+    "insurance service desk",
+    "석훈이 명찰을 내밀며 창구에 선다",
+    "Mr. Langley steps to the desk holding up his badge",
+    2,
+    "혜정 님, 특약 오안내로 감사 들어왔습니다.",
+    "Ms. Iris, we're auditing you for mis-selling.",
+    "low"
+   ],
+   [
+    "보험사 상담창구",
+    "insurance service desk",
+    "혜정이 스카프를 고쳐 맨다",
+    "Hyejeong tightens her scarf",
+    0,
+    "보험료는 제가 직접 계산하겠습니다.",
+    "I'll work out my own premium, thanks.",
+    "cu"
+   ],
+   [
+    "보험사 상담창구",
+    "insurance service desk",
+    "석훈이 정욱에게 다른 창구를 가리킨다",
+    "Mr. Langley points Bram toward another desk",
+    2,
+    "지점장이 직접 상담하겠답니다.",
+    "The branch manager wants to handle you himself.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "자릿세를 뜯던 선배 라이더",
+  "The Senior Rider's Turf Tax",
+  "신입 라이더에게 자릿세를 뜯던 선배. 앱 본사가 다중 계정과 대리 주문을 찾아냈다.",
+  "A veteran rider charges newcomers for turf. The app finds his duplicate accounts and ghost orders.",
+  [
+   [
+    "H",
+    "승민",
+    "Corey",
+    "20대 남성, 새 배달 재킷과 깨끗한 헬멧, 배달 가방, 짧은 머리, 긴장한 눈",
+    "man in his 20s, new delivery jacket, clean helmet, food bag, short hair, nervous eyes"
+   ],
+   [
+    "V",
+    "만길",
+    "Duke",
+    "40대 남성, 낡은 배달 재킷과 팔토시, 반삭, 거친 얼굴",
+    "man in his 40s, worn delivery jacket, arm sleeves, shaved head, rough face"
+   ],
+   [
+    "A",
+    "세림",
+    "Ms. Bowen",
+    "30대 여성, 앱 유니폼과 태블릿, 묶은 머리, 차가운 눈",
+    "woman in her 30s, app uniform, tablet, tied hair, cold eyes"
+   ]
+  ],
+  [
+   [
+    "식당 앞 배달 대기 구역",
+    "rider waiting zone",
+    "만길이 승민의 오토바이 열쇠를 뽑아 든다",
+    "Duke pulls the key from Corey's scooter",
+    1,
+    "이 구역은 내 거야. 하루 만 원.",
+    "This block is mine. Ten thousand a day.",
+    "cz"
+   ],
+   [
+    "식당 앞 배달 대기 구역",
+    "rider waiting zone",
+    "만길이 승민의 배달 가방에서 주문서를 빼 간다",
+    "Duke slips an order slip out of Corey's food bag",
+    1,
+    "안 내면 주문 다 내가 가져가.",
+    "Don't pay, and I take your orders.",
+    "ms"
+   ],
+   [
+    "식당 앞 배달 대기 구역",
+    "rider waiting zone",
+    "승민이 앱 화면의 같은 사진 프로필 두 개를 본다",
+    "Corey sees two profiles with the same photo on the app",
+    0,
+    "저 선배, 계정이 두 개네요.",
+    "He's running two accounts.",
+    "cu"
+   ],
+   [
+    "식당 앞 배달 대기 구역",
+    "rider waiting zone",
+    "세림이 태블릿을 들고 대기 구역에 선다",
+    "Ms. Bowen walks into the waiting zone with a tablet",
+    2,
+    "만길 님, 다중 계정과 대리 주문 확인됐습니다.",
+    "Mr. Duke, duplicate accounts and ghost orders confirmed.",
+    "low"
+   ],
+   [
+    "식당 앞 배달 대기 구역",
+    "rider waiting zone",
+    "만길이 승민의 열쇠를 바닥에 떨어뜨린다",
+    "Duke lets Corey's key fall to the ground",
+    0,
+    "열쇠부터 주시죠. 구역은 공용입니다.",
+    "Keys first. And this block belongs to everyone.",
+    "cu"
+   ],
+   [
+    "식당 앞 배달 대기 구역",
+    "rider waiting zone",
+    "만길이 구석에서 휴대폰을 귀에 댄다",
+    "Duke puts his phone to his ear in the corner",
+    1,
+    "형님, 여기 일이 잘못됐어요.",
+    "Boss, things went wrong here.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "현관 비밀번호를 봤다는 누명",
+  "The Door Code Accusation",
+  "비밀번호를 훔쳐봤다며 라이더를 몰았다. 헬멧 카메라엔 이웃집 비번을 누르는 손이 찍혔다.",
+  "A resident accuses a courier of stealing a door code. His helmet camera shows her using the neighbor's.",
+  [
+   [
+    "H",
+    "재이",
+    "Reed",
+    "20대 남성, 초록 배달 재킷, 헬멧 카메라, 배달 가방, 짧은 머리, 조용한 눈",
+    "man in his 20s, green delivery jacket, helmet camera, food bag, short hair, quiet eyes"
+   ],
+   [
+    "V",
+    "경자",
+    "Vera",
+    "50대 여성, 점퍼와 장바구니, 짧은 파마, 의심 많은 눈",
+    "woman in her 50s, windbreaker, shopping basket, short curls, suspicious eyes"
+   ],
+   [
+    "A",
+    "오 씨",
+    "Mr. Diaz",
+    "60대 남성, 경비 유니폼, 흰 머리, 무뚝뚝한 얼굴",
+    "man in his 60s, guard uniform, white hair, blunt face"
+   ]
+  ],
+  [
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "경자가 재이의 손에서 배달 봉투를 빼앗는다",
+    "Vera snatches the delivery bag from Reed's hand",
+    1,
+    "비밀번호 눌러 놓고 어디 가?",
+    "You pressed our door code. Where are you going?",
+    "cz"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "경자가 재이의 헬멧을 벽에 내려놓게 한다",
+    "Vera makes Reed set his helmet down on the wall",
+    1,
+    "다음 집 비번도 알아 뒀겠지.",
+    "You've probably memorized the whole floor.",
+    "ms"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "재이의 헬멧 카메라가 벽면의 손자국을 비춘다",
+    "Reed's helmet camera catches hand marks on the wall panel",
+    0,
+    "제 손은 봉투만 잡았는데요.",
+    "My hands only held the bag.",
+    "cu"
+   ],
+   [
+    "아파트 경비실",
+    "apartment guard room",
+    "오 씨가 영상을 돌려 경자에게 보여 준다",
+    "Mr. Diaz turns the footage toward Vera",
+    2,
+    "이웃집 비번 누른 사람, 경자 님이시네요.",
+    "You're the one using the neighbor's code, ma'am.",
+    "low"
+   ],
+   [
+    "아파트 현관",
+    "apartment entrance",
+    "경자가 장바구니를 떨어뜨린다",
+    "Vera drops her shopping basket",
+    0,
+    "비밀번호는 이웃집에 물어보세요.",
+    "Ask the neighbors about their code.",
+    "cu"
+   ],
+   [
+    "아파트 경비실",
+    "apartment guard room",
+    "오 씨가 재이에게 출입 카드 하나를 보여 준다",
+    "Mr. Diaz shows Reed an access card",
+    2,
+    "이 카드, 경자 님이 만든 겁니다.",
+    "Vera had this card made.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "반려견을 찼다는 누명",
+  "The Dog They Said He Kicked",
+  "개를 발로 찼다며 라이더를 신고한 견주. 공원 화면엔 견주가 목줄을 놓친 장면이 찍혔다.",
+  "A dog owner reports a courier for kicking her pet. The park camera shows the owner dropping the leash.",
+  [
+   [
+    "H",
+    "시현",
+    "Wade",
+    "30대 남성, 노란 배달 재킷, 헬멧, 배달 가방, 짧은 머리, 억울한 눈",
+    "man in his 30s, yellow delivery jacket, helmet, food bag, short hair, wronged eyes"
+   ],
+   [
+    "V",
+    "예나",
+    "Sasha",
+    "30대 여성, 트렌치코트와 목줄, 긴 생머리, 노려보는 눈",
+    "woman in her 30s, trench coat, dog leash, long straight hair, glaring eyes"
+   ],
+   [
+    "A",
+    "은실",
+    "Ms. Warrick",
+    "50대 여성, 관리인 조끼와 모자, 짧은 머리, 무뚝뚝한 눈",
+    "woman in her 50s, park keeper vest, cap, short hair, blunt eyes"
+   ]
+  ],
+  [
+   [
+    "공원 산책로",
+    "park path",
+    "예나가 시현의 배달 가방을 잡아당긴다",
+    "Sasha grabs and pulls Wade's food bag",
+    1,
+    "우리 개를 찼지! 신고할 거야.",
+    "You kicked my dog! I'm reporting you.",
+    "cz"
+   ],
+   [
+    "공원 산책로",
+    "park path",
+    "예나가 시현의 배달 가방을 발로 차 옆길로 굴린다",
+    "Sasha kicks Wade's bag rolling into the side path",
+    1,
+    "가방에 개가 놀랐어.",
+    "Your bag scared my dog.",
+    "ms"
+   ],
+   [
+    "공원 산책로",
+    "park path",
+    "시현이 산책로 기둥의 카메라를 가리킨다",
+    "Wade points at the camera on the path's lamp post",
+    0,
+    "저 카메라, 여기 다 보이는데요.",
+    "That camera covers the whole path.",
+    "cu"
+   ],
+   [
+    "공원 관리소",
+    "park office",
+    "은실이 휴대폰 영상을 보여 준다",
+    "Ms. Warrick shows them the camera footage",
+    2,
+    "목줄을 놓치신 건 견주님 쪽입니다.",
+    "You're the one who dropped the leash.",
+    "low"
+   ],
+   [
+    "공원 산책로",
+    "park path",
+    "예나가 목줄을 두 손으로 감는다",
+    "Sasha winds the leash around both hands",
+    0,
+    "신고는 제가 할게요. 가방값이나 물어내세요.",
+    "I'll file the report. Now pay for my bag.",
+    "cu"
+   ],
+   [
+    "공원 관리소",
+    "park office",
+    "은실이 시현에게 목줄 하나를 건넨다",
+    "Ms. Warrick hands Wade a dog leash",
+    2,
+    "이 목줄, 아침에 누가 두고 갔어요.",
+    "Someone left this leash here this morning.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "차를 막았다는 누명",
+  "Blocked In",
+  "차를 막았다며 배상하라던 차주. 블랙박스엔 다른 배달 차량이 먼저 세워 둔 장면이 찍혔다.",
+  "A driver demands money for a blocked car. The dashcam shows another scooter parked there first.",
+  [
+   [
+    "H",
+    "건호",
+    "Boyd",
+    "20대 남성, 파란 배달 재킷, 헬멧, 배달 가방, 짧은 머리, 순한 눈",
+    "man in his 20s, blue delivery jacket, helmet, food bag, short hair, gentle eyes"
+   ],
+   [
+    "V",
+    "경철",
+    "Sherman",
+    "50대 남성, 흰 셔츠와 정장 바지, 짧은 머리, 팽팽한 얼굴",
+    "man in his 50s, white shirt, dress pants, short hair, tense face"
+   ],
+   [
+    "A",
+    "두만",
+    "Mr. Ashby",
+    "40대 남성, 형광 조끼와 모자, 수염, 느긋한 눈",
+    "man in his 40s, neon vest, cap, beard, relaxed eyes"
+   ]
+  ],
+  [
+   [
+    "상가 앞 도로변",
+    "street by the shops",
+    "경철이 건호의 오토바이 손잡이를 잡아당긴다",
+    "Sherman yanks the handlebar of Boyd's scooter",
+    1,
+    "내 차 앞에 세워 놨어? 당장 치워.",
+    "You parked in front of my car? Move it.",
+    "cz"
+   ],
+   [
+    "상가 앞 도로변",
+    "street by the shops",
+    "경철이 건호의 헬멧을 도로변에 던진다",
+    "Sherman throws Boyd's helmet onto the roadside",
+    1,
+    "차 긁히면 네가 물어.",
+    "If my car's scratched, you pay.",
+    "ms"
+   ],
+   [
+    "상가 앞 도로변",
+    "street by the shops",
+    "건호가 경철 차의 블랙박스를 가리킨다",
+    "Boyd points at the dashcam in Sherman's car",
+    0,
+    "블랙박스, 앞을 보고 있죠?",
+    "Your dashcam faces forward, right?",
+    "cu"
+   ],
+   [
+    "상가 앞 도로변",
+    "street by the shops",
+    "두만이 휴대폰 영상을 돌려 보여 준다",
+    "Mr. Ashby turns his phone toward them",
+    2,
+    "먼저 세운 건 다른 배달 차량입니다.",
+    "Another scooter parked there first.",
+    "low"
+   ],
+   [
+    "상가 앞 도로변",
+    "street by the shops",
+    "경철이 헬멧을 주워 건호에게 건넨다",
+    "Sherman picks up the helmet and holds it out",
+    0,
+    "차는 제가 옮겨 드릴게요.",
+    "I'll move my scooter out of your way.",
+    "cu"
+   ],
+   [
+    "상가 앞 도로변",
+    "street by the shops",
+    "두만이 경철 차 앞유리에 붙은 종이를 떼어 든다",
+    "Mr. Ashby peels a paper note off Sherman's windshield",
+    2,
+    "이 차, 번호판이 두 개입니다.",
+    "This car has two plates.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "쿠폰을 위조했다고 몰린 라이더",
+  "The Forged Coupon",
+  "쿠폰을 위조해 정산을 가로챘다며 계정을 정지시킨 지사장. 앱 로그가 반대로 말했다.",
+  "A branch manager suspends a courier for forged coupons. The app logs point straight back at him.",
+  [
+   [
+    "H",
+    "경호",
+    "Arnie",
+    "30대 남성, 회색 배달 재킷, 헬멧, 정산서 뭉치, 짧은 머리, 피곤한 눈",
+    "man in his 30s, gray delivery jacket, helmet, stack of pay sheets, short hair, tired eyes"
+   ],
+   [
+    "V",
+    "성필",
+    "Ronnie",
+    "40대 남성, 지사 유니폼 셔츠와 넥타이, 짧은 머리, 능글맞은 눈",
+    "man in his 40s, branch uniform shirt, tie, short hair, sly eyes"
+   ],
+   [
+    "A",
+    "서희",
+    "Ms. Adler",
+    "30대 여성, 정장과 노트북, 안경, 냉정한 눈",
+    "woman in her 30s, suit, laptop, glasses, cool eyes"
+   ]
+  ],
+  [
+   [
+    "배달 지사 사무실",
+    "delivery branch office",
+    "성필이 경호의 정산서에 빨간 도장을 찍는다",
+    "Ronnie stamps Arnie's pay sheet in red",
+    1,
+    "쿠폰 위조, 계정 정지야.",
+    "Forged coupons. Your account's frozen.",
+    "cz"
+   ],
+   [
+    "배달 지사 사무실",
+    "delivery branch office",
+    "성필이 경호의 배달 가방을 사무실 밖으로 밀어낸다",
+    "Ronnie shoves Arnie's food bag out of the office",
+    1,
+    "이번 주 수입은 없어.",
+    "No pay for you this week.",
+    "ms"
+   ],
+   [
+    "배달 지사 사무실",
+    "delivery branch office",
+    "경호가 앱 정산 화면의 쿠폰 번호를 적어 둔다",
+    "Arnie writes down the coupon number on his settlement screen",
+    0,
+    "쿠폰 번호, 제가 쓴 적 없는 거예요.",
+    "I never used this coupon code.",
+    "cu"
+   ],
+   [
+    "배달 지사 사무실",
+    "delivery branch office",
+    "서희가 노트북을 돌려 성필에게 보여 준다",
+    "Ms. Adler turns her laptop toward Ronnie",
+    2,
+    "쿠폰 발급 계정은 지사장님 아이디입니다.",
+    "That coupon was issued under your ID.",
+    "low"
+   ],
+   [
+    "배달 지사 사무실",
+    "delivery branch office",
+    "성필의 도장이 책상 아래로 굴러떨어진다",
+    "Ronnie's stamp rolls under the desk",
+    0,
+    "정산서, 처음부터 다시 찍으시죠.",
+    "Stamp the whole ledger again. From the start.",
+    "cu"
+   ],
+   [
+    "배달 지사 사무실",
+    "delivery branch office",
+    "서희가 성필의 서랍에서 나온 카드를 보여 준다",
+    "Ms. Adler holds up a card from Ronnie's drawer",
+    2,
+    "이 카드, 다른 지사 이름으로 돼 있어요.",
+    "This card is registered to another branch.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "음식에 이물질을 넣었다는 누명",
+  "Something in the Food",
+  "음식에 이물질이 나왔다며 라이더를 몰았다. 포장 봉인 영상엔 주방의 손이 찍혔다.",
+  "A customer blames a courier for something in her food. The sealing video shows the kitchen's hands.",
+  [
+   [
+    "H",
+    "도윤",
+    "Colby",
+    "20대 남성, 초록 배달 재킷, 헬멧, 배달 가방, 짧은 머리, 차분한 눈",
+    "man in his 20s, green delivery jacket, helmet, food bag, short hair, steady eyes"
+   ],
+   [
+    "V",
+    "정아",
+    "Miriam",
+    "30대 여성, 오피스 정장과 명찰, 묶은 머리, 날 선 눈",
+    "woman in her 30s, office suit, name badge, tied hair, sharp eyes"
+   ],
+   [
+    "A",
+    "현식",
+    "Mr. Reyes",
+    "40대 남성, 흰 셔츠와 앞치마, 짧은 머리, 당황한 얼굴",
+    "man in his 40s, white shirt, apron, short hair, flustered face"
+   ]
+  ],
+  [
+   [
+    "오피스 회의실",
+    "office meeting room",
+    "정아가 도시락을 도윤의 배달 가방 위에 엎어 놓는다",
+    "Jeonga tips the lunch box over onto Doyun's food bag",
+    1,
+    "이거 봐요. 이물질이 나왔어요.",
+    "Look at this. There's something in my food.",
+    "cz"
+   ],
+   [
+    "오피스 회의실",
+    "office meeting room",
+    "정아가 회의실 사람들에게 도윤을 가리킨다",
+    "Miriam points at Colby for the whole meeting room",
+    1,
+    "이 사람이 넣었을 거예요.",
+    "He must have put it in.",
+    "ms"
+   ],
+   [
+    "오피스 회의실",
+    "office meeting room",
+    "도윤이 봉투 겉면의 봉인 스티커를 들어 보인다",
+    "Colby holds up the seal sticker on the bag",
+    0,
+    "봉인, 제가 뜯은 게 아닌데요.",
+    "I never opened this seal.",
+    "cu"
+   ],
+   [
+    "오피스 회의실",
+    "office meeting room",
+    "현식이 휴대폰 영상을 보여 준다",
+    "Mr. Reyes shows them a video on his phone",
+    2,
+    "포장 영상입니다. 저희 주방에서 나왔네요.",
+    "Our packing video. It came from our kitchen.",
+    "low"
+   ],
+   [
+    "오피스 회의실",
+    "office meeting room",
+    "정아가 의자에 주저앉는다",
+    "Miriam sinks back into her chair",
+    0,
+    "환불은 가게에 요청하세요.",
+    "Ask the restaurant for your refund.",
+    "cu"
+   ],
+   [
+    "오피스 회의실",
+    "office meeting room",
+    "현식이 도윤에게 주문 사진을 보여 준다",
+    "Mr. Reyes shows Colby a photo of the order",
+    2,
+    "이 주문, 다른 이름으로 들어왔어요.",
+    "This order came in under a different name.",
+    "pi"
+   ]
+  ]
+ ]
+]

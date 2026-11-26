@@ -1,0 +1,975 @@
+[
+ [
+  "정전의 진범을 찾은 라이더",
+  "The Blackout the Rider Solved",
+  "충전기 때문에 정전이라 몰아붙인 소장. 배전반 앞에서 원인이 딴 데 있었다.",
+  "A building manager blames a rider's charger for a blackout, but the real cause is upstairs.",
+  [
+   [
+    "H",
+    "류건",
+    "Owen Pike",
+    "30대 남성, 주황 헬멧, 회색 배달 조끼, 짧은 수염, 차분한 눈",
+    "man in his 30s, orange helmet, gray vest, short beard, calm eyes"
+   ],
+   [
+    "V",
+    "양수철",
+    "Alan Pryce",
+    "50대 남성, 관리사무소 점퍼, 안경, 고압적 말투",
+    "man in his 50s, management office jacket, glasses, bullying tone"
+   ],
+   [
+    "A",
+    "천만길",
+    "Dale Rourke",
+    "40대 남성, 전기안전 점검복, 노란 헬멧, 무뚝뚝한 얼굴",
+    "man in his 40s, electrical inspection suit, yellow helmet, flat face"
+   ],
+   [
+    "X",
+    "황보덕",
+    "Charles Pyle",
+    "70대 남성, 회색 양복, 지팡이, 온화한 눈",
+    "man in his 70s, gray suit, cane, gentle eyes"
+   ]
+  ],
+  [
+   [
+    "아파트 로비",
+    "apartment lobby",
+    "수철이 전기자전거 충전기를 뽑아 바닥에 던진다",
+    "Alan rips out the e-bike charger and throws it down",
+    1,
+    "네 충전기 때문에 단지가 정전이야.",
+    "Your charger caused this blackout.",
+    "cz"
+   ],
+   [
+    "아파트 로비",
+    "apartment lobby",
+    "수철이 멈춘 엘리베이터를 가리키며 소리친다",
+    "Alan points at the stalled elevator and shouts",
+    1,
+    "사람 갇혔어. 네가 책임져.",
+    "Someone's stuck in there. Your fault.",
+    "ms"
+   ],
+   [
+    "아파트 기계실",
+    "apartment utility room",
+    "건이 충전기 콘센트의 검은 자국을 손끝으로 짚는다",
+    "Owen touches the scorched outlet with one fingertip",
+    0,
+    "여기 말고, 3층 에어컨 결선이에요.",
+    "Not this. The third floor AC wiring.",
+    "cu"
+   ],
+   [
+    "아파트 기계실",
+    "apartment utility room",
+    "점검원이 배전반을 열고 무단 결선을 손전등으로 비춘다",
+    "The inspector opens the panel and lights up an illegal splice",
+    2,
+    "무단 증설입니다. 이분 산업기사 출제위원이었어요.",
+    "Illegal wiring. This man used to set the licensing exam.",
+    "low"
+   ],
+   [
+    "아파트 로비",
+    "apartment lobby",
+    "수철이 뒷걸음치고 건이 엘리베이터를 가리킨다",
+    "Alan steps back as Owen points at the elevator doors",
+    0,
+    "엘리베이터부터 살리고, 그다음 얘기하죠.",
+    "Let's free the elevator first. Then we talk.",
+    "rx"
+   ],
+   [
+    "아파트 로비",
+    "apartment lobby",
+    "엘리베이터 문이 열리고 노인이 내려 건에게 다가온다",
+    "The elevator opens and an old man steps out toward Owen",
+    3,
+    "우리 빌딩 설비, 다 맡아줄래요?",
+    "Would you take over my building's systems?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "균열을 만진 배달원",
+  "The Crack the Rider Touched",
+  "도시락 배달원을 밀어낸 현장 소장. 기둥의 균열을 본 배달원이 공사를 세웠다.",
+  "A site manager shoves a lunch rider away, but the crack in his pillar is not cosmetic.",
+  [
+   [
+    "H",
+    "장세빈",
+    "Ruby Vance",
+    "30대 여성, 안전모 위에 흰 헬멧, 베이지 배달 조끼, 단발",
+    "woman in her 30s, hard hat over white helmet, beige vest, short hair"
+   ],
+   [
+    "V",
+    "제갈흥수",
+    "Curtis McCabe",
+    "50대 남성, 안전모, 회색 작업복, 굵은 팔, 고함치는 입",
+    "man in his 50s, hard hat, gray work clothes, thick arms, shouting mouth"
+   ],
+   [
+    "A",
+    "은덕기",
+    "Grant Stafford",
+    "40대 남성, 정장에 안전모, 서류 가방, 깐깐한 눈",
+    "man in his 40s, suit and hard hat, briefcase, strict eyes"
+   ],
+   [
+    "X",
+    "국태산",
+    "Harold Kessler",
+    "60대 남성, 검은 코트, 은발, 위엄 있는 눈",
+    "man in his 60s, black coat, silver hair, imposing eyes"
+   ]
+  ],
+  [
+   [
+    "신축 공사장 입구",
+    "construction site gate",
+    "흥수가 세빈의 오토바이를 공사장 밖으로 밀어낸다",
+    "Curtis pushes Ruby's scooter back out of the site",
+    1,
+    "여기 들어오면 위험해. 꺼져.",
+    "It's dangerous in here. Get lost.",
+    "ws"
+   ],
+   [
+    "신축 공사장",
+    "construction site",
+    "흥수가 안전 펜스를 발로 차 세빈을 막는다",
+    "Curtis kicks the safety fence across Ruby's path",
+    1,
+    "배달부가 공사장에 훈수야?",
+    "A delivery girl giving me advice?",
+    "ms"
+   ],
+   [
+    "신축 공사장",
+    "construction site",
+    "세빈이 기둥의 사선 균열에 손바닥을 댄다",
+    "Ruby presses her palm against a diagonal crack in the pillar",
+    0,
+    "이거, 아래에서 올라온 균열이에요.",
+    "That crack is climbing from the base.",
+    "cu"
+   ],
+   [
+    "신축 공사장",
+    "construction site",
+    "감리원이 균열을 촬영하고 세빈을 가리킨다",
+    "The inspector photographs the crack and points at Ruby",
+    2,
+    "전단 균열입니다. 이분 구조기술사예요.",
+    "That's shear cracking. She's a structural engineer.",
+    "low"
+   ],
+   [
+    "신축 공사장",
+    "construction site",
+    "세빈이 안전선을 잡아당기고 흥수가 소리친다",
+    "Ruby pulls the safety line shut as Curtis yells",
+    0,
+    "사고 나기 전에 멈추세요.",
+    "Stop this before someone gets hurt.",
+    "cu"
+   ],
+   [
+    "신축 공사장",
+    "construction site",
+    "검은 코트의 회장이 현장에 들어와 세빈 앞에 선다",
+    "A chairman in a black coat walks in and stands before Ruby",
+    3,
+    "우리 감리단장, 하실래요?",
+    "Would you be my head of inspection?",
+    "low"
+   ]
+  ]
+ ],
+ [
+  "107동을 찾아준 배달원",
+  "The Rider Who Found 107",
+  "단지 출입을 막고 리뷰로 협박한 직원. 배달원은 노인을 107동까지 모셔다드렸다.",
+  "A complex officer blocks a rider and threatens his rating, while an old man cannot find his building.",
+  [
+   [
+    "H",
+    "차우진",
+    "Nate Hall",
+    "30대 남성, 남색 헬멧, 검정 배달 조끼, 안경, 부드러운 눈",
+    "man in his 30s, navy helmet, black vest, glasses, soft eyes"
+   ],
+   [
+    "V",
+    "사공명숙",
+    "Lorraine Beck",
+    "40대 여성, 관리사무소 유니폼, 파마 머리, 무뚝뚝한 입",
+    "woman in her 40s, management uniform, permed hair, hard mouth"
+   ],
+   [
+    "A",
+    "마정팔",
+    "Otto Weiss",
+    "60대 남성, 경비 제복, 흰 머리, 온화한 얼굴",
+    "man in his 60s, guard uniform, white hair, gentle face"
+   ],
+   [
+    "X",
+    "남기철",
+    "Elder Whitmore",
+    "80대 남성, 회색 정장, 지팡이, 흐린 눈",
+    "man in his 80s, gray suit, cane, cloudy eyes"
+   ]
+  ],
+  [
+   [
+    "아파트 단지 정문",
+    "apartment complex gate",
+    "명숙이 우진의 오토바이 앞을 가로막는다",
+    "Lorraine plants herself in front of Nate's scooter",
+    1,
+    "단지 내 이륜차 금지야.",
+    "No two-wheelers inside this complex.",
+    "cz"
+   ],
+   [
+    "아파트 단지 정문",
+    "apartment complex gate",
+    "명숙이 휴대폰을 들어 촬영하며 우진을 밀어낸다",
+    "Lorraine films him on her phone and pushes him back",
+    1,
+    "리뷰 테러하면 바로 신고할 거야.",
+    "One bad review and I report you.",
+    "ms"
+   ],
+   [
+    "아파트 단지 길",
+    "apartment walkway",
+    "우진이 지팡이 든 노인에게 지도 앱을 보여준다",
+    "Nate shows the old man with the cane his map app",
+    0,
+    "107동, 제가 모셔다드릴게요.",
+    "Building 107? Let me walk you there.",
+    "cu"
+   ],
+   [
+    "107동 앞",
+    "building 107 entrance",
+    "경비반장이 뛰어와 노인 앞에 허리를 숙인다",
+    "The guard chief runs over and bows low before the old man",
+    2,
+    "이사장님! 어디 계셨어요?",
+    "Chairman! Where have you been?",
+    "low"
+   ],
+   [
+    "107동 앞",
+    "building 107 entrance",
+    "명숙이 굳고 우진이 오토바이 헬멧을 든다",
+    "Lorraine freezes as Nate picks up his helmet",
+    0,
+    "저는 그냥 문 앞까지 모셨습니다.",
+    "I just walked him to his door.",
+    "cu"
+   ],
+   [
+    "107동 앞",
+    "building 107 entrance",
+    "노인이 우진에게 명함을 건넨다",
+    "The old man holds out his card to Nate",
+    3,
+    "우리 재단, 배달 사업 좀 해볼까.",
+    "Shall my foundation try a delivery business?",
+    "trk"
+   ]
+  ]
+ ],
+ [
+  "장바구니를 들어준 라이더",
+  "The Rider Who Carried Their Bags",
+  "직원용 엘리베이터를 막은 지배인. 배달원은 노부부의 장바구니를 20층까지 들었다.",
+  "A hotel manager blocks the staff elevator, so a rider carries an old couple's groceries to the top floor.",
+  [
+   [
+    "H",
+    "권소리",
+    "Clara Boyd",
+    "20대 후반 여성, 초록 헬멧, 베이지 배달 조끼, 묶은 머리, 밝은 눈",
+    "woman in her late 20s, green helmet, beige vest, tied hair, bright eyes"
+   ],
+   [
+    "V",
+    "선우용태",
+    "Bertram Lowe",
+    "50대 남성, 검은 정장, 나비넥타이, 얇은 미소",
+    "man in his 50s, black suit, bow tie, thin smile"
+   ],
+   [
+    "A",
+    "육창렬",
+    "Aide Morrison",
+    "50대 남성, 회색 정장, 안경, 당황한 표정",
+    "man in his 50s, gray suit, glasses, flustered face"
+   ],
+   [
+    "X",
+    "복순임",
+    "Mrs. Alder",
+    "70대 여성, 베이지 코트, 은발 단발, 인자한 눈",
+    "woman in her 70s, beige coat, silver bob, kind eyes"
+   ]
+  ],
+  [
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "용태가 소리의 카트와 오토바이를 로비에서 막아선다",
+    "Bertram blocks Clara's cart and scooter in the lobby",
+    1,
+    "직원용 엘리베이터야. 계단 써.",
+    "That's the staff elevator. Take the stairs.",
+    "cz"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "용태가 장바구니 든 노부부를 지나치며 손을 젓는다",
+    "Bertram waves off the old couple struggling with grocery bags",
+    1,
+    "택배는 카운터로.",
+    "Parcels go to the counter.",
+    "ots"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "소리가 노부부의 장바구니를 두 손으로 든다",
+    "Clara lifts both grocery bags with both hands",
+    0,
+    "2001호까지, 제가 들고 갈게요.",
+    "I'll carry these up to 2001.",
+    "cu"
+   ],
+   [
+    "호텔 엘리베이터 앞",
+    "hotel elevator",
+    "비서실장이 달려와 노부부 앞에 허리를 숙인다",
+    "The chief aide rushes over and bows to the old couple",
+    2,
+    "회장님, 회장님! 여기 계셨습니까.",
+    "Chairman! There you are.",
+    "low"
+   ],
+   [
+    "호텔 엘리베이터 앞",
+    "hotel elevator",
+    "용태가 굳고 소리가 장바구니를 들어 보인다",
+    "Bertram stiffens as Clara lifts the bags slightly",
+    0,
+    "이 짐은 제가 들었습니다. 지배인은 뭐 하셨어요?",
+    "I carried these. What did the manager do?",
+    "cu"
+   ],
+   [
+    "호텔 스위트 앞",
+    "hotel suite door",
+    "할머니가 소리의 손등을 두드린다",
+    "The old woman pats the back of Clara's hand",
+    3,
+    "우리 호텔 배달 동선, 네가 설계해봐.",
+    "Redesign our hotel's delivery routes for me.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "비에 젖은 그림을 살린 라이더",
+  "The Painting the Rider Saved",
+  "하역장으로 쫓아낸 관장. 쓰러진 캔버스를 배달원이 몸으로 받아냈다.",
+  "A gallery director sends a rider to the loading dock, right as a canvas slides off a cart.",
+  [
+   [
+    "H",
+    "남궁결",
+    "Simon Vale",
+    "30대 남성, 검은 헬멧, 차콜 배달 조끼, 긴 머리 묶음",
+    "man in his 30s, black helmet, charcoal vest, long hair tied back"
+   ],
+   [
+    "V",
+    "편관수",
+    "Gareth Lyle",
+    "40대 남성, 회색 정장, 안경, 비웃는 입",
+    "man in his 40s, gray suit, glasses, sneering mouth"
+   ],
+   [
+    "A",
+    "소미란",
+    "Ines Foy",
+    "30대 여성, 검은 원피스, 안경, 당황한 표정",
+    "woman in her 30s, black dress, glasses, flustered face"
+   ],
+   [
+    "X",
+    "한지우",
+    "August Kirk",
+    "70대 남성, 물감 묻은 작업복, 흰 수염, 깊은 눈",
+    "man in his 70s, paint-stained work clothes, white beard, deep eyes"
+   ]
+  ],
+  [
+   [
+    "갤러리 입구",
+    "gallery entrance",
+    "관수가 결의 오토바이를 하역장으로 밀어붙인다",
+    "Gareth pushes Simon's scooter toward the loading dock",
+    1,
+    "배달은 하역장으로. 여긴 전시장이야.",
+    "Deliveries use the loading dock. This is a gallery.",
+    "cz"
+   ],
+   [
+    "갤러리 입구",
+    "gallery entrance",
+    "관수가 팔꿈치로 캔버스를 쳐 넘어뜨린다",
+    "Gareth knocks a canvas off the cart with his elbow",
+    1,
+    "이건 폐작이야. 상관 마.",
+    "That's scrap. Leave it.",
+    "ms"
+   ],
+   [
+    "갤러리 입구",
+    "gallery entrance",
+    "결이 비 오는 하늘을 보고 비닐로 캔버스를 감싼다",
+    "Simon glances at the rain and wraps the canvas in plastic",
+    0,
+    "비 맞으면 안 되는데요.",
+    "It can't get wet.",
+    "cu"
+   ],
+   [
+    "갤러리 입구",
+    "gallery entrance",
+    "큐레이터가 캔버스를 들고 작가를 부른다",
+    "The curator lifts the canvas and calls for the artist",
+    2,
+    "이번 전시 메인 작품이에요. 작가님!",
+    "This is our main piece. August!",
+    "low"
+   ],
+   [
+    "갤러리 입구",
+    "gallery entrance",
+    "작가가 관수 앞에 서고 관수가 뒷걸음친다",
+    "The artist steps in front of Gareth, who backs away",
+    0,
+    "다음엔 그림부터 드세요, 전시장이니까.",
+    "Next time, catch the art first. It's a gallery.",
+    "cu"
+   ],
+   [
+    "갤러리 입구",
+    "gallery entrance",
+    "작가가 결에게 작업실 열쇠를 건넨다",
+    "The artist presses a studio key into Simon's hand",
+    3,
+    "내 작업실, 드나들 사람 필요해.",
+    "My studio needs someone I can trust.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "잃어버린 강아지를 데려온 라이더",
+  "The Rider Who Brought the Dog Home",
+  "개 냄새 난다고 신고한 입주민. 배달원은 실종된 강아지를 주인에게 돌려줬다.",
+  "A resident reports a rider for the smell of a dog he found, and the dog belongs to a movie star.",
+  [
+   [
+    "H",
+    "탁이레",
+    "Dana Fox",
+    "20대 후반 여성, 노란 헬멧, 회색 배달 조끼, 짧은 꼬리머리",
+    "woman in her late 20s, yellow helmet, gray vest, short ponytail"
+   ],
+   [
+    "V",
+    "모재근",
+    "Curt Deal",
+    "40대 남성, 골프웨어, 선글라스, 비웃는 입",
+    "man in his 40s, golf clothes, sunglasses, sneering mouth"
+   ],
+   [
+    "A",
+    "옥연두",
+    "Sue Aiken",
+    "30대 여성, 검은 정장, 태블릿, 다급한 표정",
+    "woman in her 30s, black suit, tablet, urgent face"
+   ],
+   [
+    "X",
+    "백주하",
+    "Vera Holt",
+    "30대 여성, 선글라스, 트렌치코트, 창백한 얼굴",
+    "woman in her 30s, sunglasses, trench coat, pale face"
+   ]
+  ],
+  [
+   [
+    "아파트 엘리베이터",
+    "apartment elevator",
+    "재근이 코를 막으며 이레의 오토바이를 발로 민다",
+    "Hank covers his nose and kicks Dana's scooter",
+    1,
+    "개 냄새 나잖아.",
+    "That thing reeks of dog.",
+    "cz"
+   ],
+   [
+    "아파트 엘리베이터",
+    "apartment elevator",
+    "재근이 이레의 가방 지퍼를 잡아당긴다",
+    "Hank grabs the zipper of Dana's delivery bag",
+    1,
+    "열어봐. 강아지면 신고할 거야.",
+    "Open it. If it's a dog, I'm reporting you.",
+    "ms"
+   ],
+   [
+    "아파트 엘리베이터",
+    "apartment elevator",
+    "이레가 강아지 목걸이의 이름표를 읽는다",
+    "Dana reads the name tag on the puppy's collar",
+    0,
+    "몽이... 이 집이네요.",
+    "Mongi. This is her building.",
+    "cu"
+   ],
+   [
+    "아파트 복도",
+    "apartment hallway",
+    "매니저가 실종 신고서를 들고 달려온다",
+    "The manager runs up holding a missing pet report",
+    2,
+    "실종 신고 들어왔어요. 이 배우님 강아지예요.",
+    "A missing dog report came in. She's the actress's.",
+    "low"
+   ],
+   [
+    "아파트 복도",
+    "apartment hallway",
+    "재근이 후들거리고 이레가 휴대폰을 든다",
+    "Hank's legs wobble as Dana raises her phone",
+    0,
+    "신고는 제가 할게요. 허위 신고로요.",
+    "I'll file the report. For a false one.",
+    "cu"
+   ],
+   [
+    "아파트 복도",
+    "apartment hallway",
+    "배우가 이레에게 대본을 건넨다",
+    "The actress hands Dana a script",
+    3,
+    "내 다음 작품에 라이더로 나와볼래요?",
+    "Want to play a rider in my next film?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "지갑 하나로 은행을 뒤집은 라이더",
+  "The Wallet That Flipped the Bank",
+  "은행에서 쫓아낸 지점장. 배달원이 주워 온 지갑 주인은 본사 감사팀장이었다.",
+  "A bank manager throws a rider out, not knowing the wallet he returned belongs to the head office auditor.",
+  [
+   [
+    "H",
+    "여상혁",
+    "Dean Ellis",
+    "30대 남성, 빨간 헬멧, 남색 배달 조끼, 덥수룩한 머리",
+    "man in his 30s, red helmet, navy vest, shaggy hair"
+   ],
+   [
+    "V",
+    "은창호",
+    "Karl Ostrow",
+    "50대 남성, 은행 점장 정장, 안경, 차가운 눈",
+    "man in his 50s, bank manager suit, glasses, cold eyes"
+   ],
+   [
+    "A",
+    "황보결",
+    "Martin Finch",
+    "60대 남성, 회색 정장, 은발, 꼿꼿한 자세",
+    "man in his 60s, gray suit, silver hair, rigid posture"
+   ]
+  ],
+  [
+   [
+    "은행 로비",
+    "bank lobby",
+    "창호가 은행 앞 상혁의 오토바이를 가리키며 봉투를 민다",
+    "Karl points at Dean's scooter and pushes the bag back",
+    1,
+    "은행에서 음식 배달? 나가요.",
+    "Food delivery in a bank? Out.",
+    "ms"
+   ],
+   [
+    "은행 로비",
+    "bank lobby",
+    "창호가 대기 줄 앞을 가로막아 세운다",
+    "Karl plants himself across the queue line",
+    1,
+    "대기 고객 줄에 끼어들지 마세요.",
+    "Don't cut into the customer line.",
+    "ots"
+   ],
+   [
+    "은행 입구 계단",
+    "bank entrance steps",
+    "상혁이 떨어진 지갑을 주워 사원증을 본다",
+    "Dean picks up a dropped wallet and reads the ID card",
+    0,
+    "본사 감사실...",
+    "Head office audit...",
+    "cu"
+   ],
+   [
+    "은행 로비",
+    "bank lobby",
+    "감사팀장이 지갑을 받고 상혁의 손을 잡는다",
+    "The auditor takes the wallet and shakes Dean's hand",
+    2,
+    "이분이 제 지갑을 주웠습니다. 본사 감사팀장입니다.",
+    "This man returned my wallet. I run head office audit.",
+    "low"
+   ],
+   [
+    "은행 로비",
+    "bank lobby",
+    "창호가 굳고 상혁이 창구를 가리킨다",
+    "Karl freezes as Dean points at the teller counter",
+    0,
+    "고객 응대 교육, 다시 받으셔야겠네요.",
+    "You may need to retake customer service training.",
+    "cu"
+   ],
+   [
+    "은행 로비",
+    "bank lobby",
+    "감사팀장이 지갑 속 영수증을 꺼내 든다",
+    "The auditor pulls a receipt from the wallet",
+    2,
+    "이 영수증, 우리가 찾던 겁니다.",
+    "This receipt is what we've been looking for.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "이삿짐을 들어준 배달원",
+  "The Rider Who Moved the Boxes",
+  "엘리베이터를 막고 쫓아낸 입주민. 배달원은 새로 온 병원장의 이삿짐을 들어줬다.",
+  "A tenant blocks the elevator for a rider, who then helps the new clinic director carry his boxes in.",
+  [
+   [
+    "H",
+    "진소담",
+    "Lena Brandt",
+    "20대 후반 여성, 하늘색 헬멧, 흰 배달 조끼, 긴 머리",
+    "woman in her late 20s, sky blue helmet, white vest, long hair"
+   ],
+   [
+    "V",
+    "독고진",
+    "Piers Alton",
+    "40대 남성, 줄무늬 셔츠, 배 나온 체형, 짜증 섞인 말투",
+    "man in his 40s, striped shirt, heavy build, irritated tone"
+   ],
+   [
+    "A",
+    "정해든",
+    "Sloane Kerr",
+    "40대 여성, 병원 간호 제복, 안경, 다급한 표정",
+    "woman in her 40s, clinic nurse uniform, glasses, urgent face"
+   ],
+   [
+    "X",
+    "함태산",
+    "Dr. Weller",
+    "50대 남성, 정장에 운동화, 안경, 부드러운 눈",
+    "man in his 50s, suit and sneakers, glasses, kind eyes"
+   ]
+  ],
+  [
+   [
+    "오피스텔 엘리베이터",
+    "office building elevator",
+    "진이 소담의 오토바이 앞을 막고 손수레를 민다",
+    "Piers blocks Lena's scooter and shoves her cart",
+    1,
+    "이사짐 때문에 엘리베이터 못 써.",
+    "Your moving boxes are blocking the elevator.",
+    "cz"
+   ],
+   [
+    "오피스텔 1층 로비",
+    "office building lobby",
+    "진이 계단을 가리키며 팔짱을 낀다",
+    "Piers points at the stairs and folds his arms",
+    1,
+    "여기 상가야. 배달은 계단으로 다녀.",
+    "This is a commercial floor. Deliveries use the stairs.",
+    "ots"
+   ],
+   [
+    "오피스텔 로비",
+    "office building lobby",
+    "소담이 무거운 상자를 든 함태산의 팔을 받아낸다",
+    "Lena takes the heavy box out of the director's arms",
+    0,
+    "3층이죠? 제가 들게요.",
+    "Third floor? I'll carry it.",
+    "cu"
+   ],
+   [
+    "오피스텔 3층 복도",
+    "office building third floor",
+    "간호팀장이 뛰어와 원장에게 서류를 건넨다",
+    "The head nurse runs up and hands the director a document",
+    2,
+    "원장님, 개원 준비 다 됐습니다.",
+    "Director, the clinic is ready to open.",
+    "low"
+   ],
+   [
+    "오피스텔 3층 복도",
+    "office building third floor",
+    "진이 굳고 소담이 엘리베이터 버튼을 누른다",
+    "Piers stiffens as Lena presses the elevator button",
+    0,
+    "엘리베이터, 이제 양보하시죠?",
+    "Now will you share the elevator?",
+    "cu"
+   ],
+   [
+    "오피스텔 3층 복도",
+    "office building third floor",
+    "원장이 소담에게 명함을 건넨다",
+    "The director hands Lena his card",
+    3,
+    "우리 병원 홍보, 라이더들과 같이 하고 싶어요.",
+    "I'd like to promote the clinic with your riders.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "노인 밥값을 대신 낸 라이더",
+  "The Rider Who Paid for Lunch",
+  "쫓아내려던 식당 사장. 배달원이 대신 계산한 노인은 이 건물 주인이었다.",
+  "A restaurant owner humiliates an old man who cannot pay, and the rider covers his meal.",
+  [
+   [
+    "H",
+    "우도진",
+    "Milo Drake",
+    "30대 남성, 초록 헬멧, 검정 배달 조끼, 둥근 안경",
+    "man in his 30s, green helmet, black vest, round glasses"
+   ],
+   [
+    "V",
+    "경필두",
+    "Sal Dorsey",
+    "50대 남성, 앞치마, 걷어붙인 소매, 험한 말투",
+    "man in his 50s, apron, rolled sleeves, rough tone"
+   ],
+   [
+    "A",
+    "추연두",
+    "Ada Poole",
+    "40대 여성, 회색 정장, 서류 가방, 무표정",
+    "woman in her 40s, gray suit, briefcase, blank face"
+   ],
+   [
+    "X",
+    "길상운",
+    "Mr. Coulter",
+    "80대 남성, 낡은 점퍼, 모자, 주름진 얼굴",
+    "man in his 80s, worn jacket, cap, wrinkled face"
+   ]
+  ],
+  [
+   [
+    "동네 식당",
+    "neighborhood diner",
+    "필두가 도진의 오토바이를 발로 차고 노인을 계산대로 민다",
+    "Sal kicks Milo's scooter and marches the old man to the counter",
+    1,
+    "돈 없으면 그릇이라도 씻어.",
+    "No money? Wash dishes.",
+    "cz"
+   ],
+   [
+    "동네 식당",
+    "neighborhood diner",
+    "필두가 도진의 의자를 빼고 턱짓한다",
+    "Sal pulls out Milo's chair and jerks his chin",
+    1,
+    "너도 오래 앉아 있지 마.",
+    "You too. Don't sit around here.",
+    "ms"
+   ],
+   [
+    "동네 식당",
+    "neighborhood diner",
+    "도진이 노인의 계산서를 집어 든다",
+    "Milo picks up the old man's bill",
+    0,
+    "제가 계산할게요.",
+    "I'll pay for his meal.",
+    "cu"
+   ],
+   [
+    "동네 식당",
+    "neighborhood diner",
+    "세무사가 서류 봉투를 들고 들어온다",
+    "An accountant walks in with a document envelope",
+    2,
+    "건물주님, 임대 갱신 서류 왔습니다.",
+    "Landlord, the lease renewal papers are here.",
+    "low"
+   ],
+   [
+    "동네 식당",
+    "neighborhood diner",
+    "필두가 계산기를 놓치고 도진이 봉투를 본다",
+    "Sal drops the calculator as Milo reads the envelope",
+    0,
+    "이 건물, 다음 달부터 주인 바뀌네요.",
+    "This building changes hands next month.",
+    "cu"
+   ],
+   [
+    "동네 식당",
+    "neighborhood diner",
+    "노인이 도진의 어깨를 두드린다",
+    "The old man pats Milo on the shoulder",
+    3,
+    "이 가게, 네가 해볼래?",
+    "Want to run this place?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "눈길에서 첼로를 지킨 라이더",
+  "The Cello in the Snow",
+  "리허설을 망쳤다며 소리친 기획자. 배달원이 눈길에 갇힌 첼리스트를 도왔다.",
+  "A concert planner screams at a late rider, while the soloist's car is stuck in snow.",
+  [
+   [
+    "H",
+    "복유진",
+    "Iris Wade",
+    "20대 후반 여성, 흰 헬멧, 코랄 배달 조끼, 짧은 단발",
+    "woman in her late 20s, white helmet, coral vest, short bob"
+   ],
+   [
+    "V",
+    "감두칠",
+    "Clive Hanson",
+    "40대 남성, 검은 코트, 헤드셋, 신경질적 얼굴",
+    "man in his 40s, black coat, headset, irritated face"
+   ],
+   [
+    "A",
+    "설강두",
+    "Olek Barnes",
+    "50대 남성, 작업복, 무전기, 무뚝뚝한 얼굴",
+    "man in his 50s, work clothes, radio, flat face"
+   ],
+   [
+    "X",
+    "차하늘",
+    "Mira Bell",
+    "20대 후반 여성, 검은 연주복, 첼로 케이스, 창백한 얼굴",
+    "woman in her late 20s, black concert dress, cello case, pale face"
+   ]
+  ],
+  [
+   [
+    "공연장 주차장",
+    "concert hall parking lot",
+    "두칠이 유진의 오토바이 앞을 막아선다",
+    "Clive steps in front of Iris's scooter",
+    1,
+    "하역장 막지 마!",
+    "Don't block the loading bay!",
+    "ws"
+   ],
+   [
+    "공연장 주차장",
+    "concert hall parking lot",
+    "두칠이 눈을 털며 첼리스트를 재촉한다",
+    "Clive shakes snow off his coat and snaps at the cellist",
+    1,
+    "30분 늦으면 공연 취소야.",
+    "Thirty minutes late and the show is off.",
+    "ms"
+   ],
+   [
+    "공연장 주차장",
+    "concert hall parking lot",
+    "유진이 눈에 갇힌 차를 밀고 케이스를 든다",
+    "Iris pushes the stuck car free and lifts the cello case",
+    0,
+    "이거, 제가 들게요.",
+    "Let me carry that.",
+    "cu"
+   ],
+   [
+    "공연장 무대 뒤",
+    "concert hall backstage",
+    "무대감독이 케이스를 든 유진을 보고 고개를 든다",
+    "The stage manager looks up at Iris holding the case",
+    2,
+    "오늘 협연자세요? 초청 첼리스트십니다.",
+    "That's tonight's soloist. Our guest cellist.",
+    "low"
+   ],
+   [
+    "공연장 주차장",
+    "concert hall parking lot",
+    "두칠이 굳고 유진이 하역장을 가리킨다",
+    "Clive freezes as Iris points at the loading bay",
+    0,
+    "차 빼드릴까요? 여기 하역장이니까요.",
+    "Want me to move your car? It's a loading bay.",
+    "cu"
+   ],
+   [
+    "공연장 무대 뒤",
+    "concert hall backstage",
+    "첼리스트가 유진에게 티켓을 건넨다",
+    "The cellist slips a ticket into Iris's hand",
+    3,
+    "오늘 무대, 제 옆자리 비어 있어요.",
+    "There's an empty seat beside me tonight.",
+    "pi"
+   ]
+  ]
+ ]
+]
