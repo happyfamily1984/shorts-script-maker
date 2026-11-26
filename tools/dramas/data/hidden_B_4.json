@@ -18,7 +18,7 @@
   ["A", "철민", "Greg", "40대 남성, 구겨진 회색 정장, 서류 가방, 지친 얼굴", "man in his 40s, wrinkled gray suit, briefcase, tired face"]],
  [["아파트 복도", "apartment hallway", "미경이 가윤이 든 상자 위에 쓰레기봉투를 올려놓는다", "Deborah drops a trash bag on top of the box Stella is carrying", 1, "이삿짐 아줌마, 내려가는 김에 이것도 버려.", "Hey, mover lady. Take my trash down while you're at it.", "cz"],
   ["아파트 복도", "apartment hallway", "미경이 복도에 쌓인 상자를 발로 밀어 넘어뜨린다", "Deborah shoves a stack of boxes over with her foot", 1, "복도 막지 마. 일꾼이면 계단으로 다녀.", "Stop blocking my hallway. Workers take the stairs.", "ms"],
-  ["아파트 복도", "apartment hallway", "쏟아진 상자에서 경영 대상 트로피가 굴러 미경의 발 앞에 멈춘다", "A CEO of the Year trophy rolls out of a fallen box and stops at Deborah's feet", -1, "", "", "cu"],
+  ["아파트 복도", "apartment hallway", "쏟아진 상자에서 경영 대상 트로피 하나가 굴러 미경의 발 앞에 멈춘다", "A CEO of the Year trophy rolls out of a fallen box and stops at Deborah's feet", -1, "", "", "cu"],
   ["아파트 엘리베이터 앞", "apartment elevator hall", "철민이 엘리베이터에서 내리다 가윤을 보고 90도로 허리를 숙인다", "Greg steps off the elevator, sees Stella and bows at ninety degrees", 2, "대, 대표님! 저희 옆집으로 이사 오셨습니까?", "M-Madam CEO! You're moving in next door to us?", "low"],
   ["아파트 복도", "apartment hallway", "미경이 팔짱을 풀고 남편과 가윤을 번갈아 본다", "Deborah uncrosses her arms and looks between her husband and Stella", 0, "쓰레기는 직접 버리시죠. 계단으로요.", "Take out your own trash. Use the stairs.", "rx"],
   ["아파트 복도", "apartment hallway", "철민이 미경 몰래 가윤에게 접힌 쪽지를 건넨다", "Greg secretly slips Stella a folded note behind Deborah's back", -1, "", "", "pi"]]],

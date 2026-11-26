@@ -110,6 +110,6 @@
   ["공사 현장 비계 아래", "under scaffolding at a construction site", "동팔이 칠성의 일당 봉투에서 지폐를 빼낸다", "Hank pulls bills out of Otis's pay envelope", 1, "느린 값이야. 싫으면 내일부터 쉬어.", "Slow tax. Don't like it? Don't come back.", "ms"],
   ["공사 현장 벽돌 더미 옆", "beside a stack of bricks on site", "재희가 벽돌을 내려놓고 조끼에 달린 작은 렌즈를 톡 건드린다", "Ruth sets down her bricks and taps a tiny lens on her vest", 0, "방금 그것도 잘 찍혔네요.", "Got that on camera too. Thanks.", "cu"],
   ["공사 현장 비계 아래", "under scaffolding at a construction site", "재희가 안전모를 벗고 신분증을 동팔의 눈앞에 든다", "Ruth removes her hard hat and holds an ID up to Hank's eyes", 0, "산업안전 감독관입니다. 사흘째 잠입 중이죠.", "Safety inspector. I've been undercover here for three days.", "low"],
-  ["공사 현장 비계 아래", "under scaffolding at a construction site", "재희가 비계에 빨간 '작업 중지' 딱지를 붙이고 동팔이 주저앉는다", "Ruth slaps a red STOP WORK notice on the scaffold and Hank sinks down", 0, "현장은 중지, 소장님은 고발입니다.", "Site's shut down. And you're being charged.", "rx"],
+  ["공사 현장 비계 아래", "under scaffolding at a construction site", "재희가 비계에 빨간 '작업 중지' 딱지를 붙이고 동팔이 주저앉는다", "Ruth sticks a red STOP WORK notice on the scaffold and Hank sinks down", 0, "현장은 중지, 소장님은 고발입니다.", "Site's shut down. And you're being charged.", "rx"],
   ["공사 현장 구석", "corner of the construction site", "칠성이 구겨진 설계도를 재희에게 몰래 건넨다", "Otis quietly slips Ruth a crumpled blueprint", 2, "감독관님, 진짜 문제는 지하에 있어요.", "Inspector, the real problem is in the basement.", "pi"]]]
 ]

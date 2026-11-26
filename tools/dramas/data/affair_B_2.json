@@ -125,7 +125,7 @@
  [["이사회 회의실", "boardroom", "서영이 준기와 손을 맞잡은 채 석현의 명패를 엎는다", "Regina, hand clasped with Spencer's, flips Julian's nameplate face down", 1, "기술자는 필요 없어. 이사직 내놔.", "We don't need a tinkerer. Give up your seat.", "cz"],
   ["이사회 회의실", "boardroom", "준기가 해임안을 석현 앞으로 밀고 이사들이 손을 든다", "Spencer slides the removal motion to Julian as directors raise their hands", 2, "아내도 회사도, 이제 제가 맡죠.", "Your wife and your company. I'll take both.", "ms"],
   ["이사회 회의실", "boardroom", "석현이 낡은 가방에서 특허증 묶음을 꺼내 올려놓는다", "Julian pulls a bundle of patent certificates from his worn bag and sets it down", -1, "", "", "cu"],
-  ["이사회 회의실", "boardroom", "오 이사가 특허증을 넘겨 보다 벌떡 일어선다", "Mr. Whitfield flips through the patents and shoots to his feet", 3, "핵심 특허 전부, 석현 씨 개인 명의요!", "Every core patent is in Julian's own name!", "pi"],
+  ["이사회 회의실", "boardroom", "오 이사가 특허증을 넘겨 보다 벌떡 일어선다", "Mr. Whitfield flips through the patents and jumps to his feet", 3, "핵심 특허 전부, 석현 씨 개인 명의요!", "Every core patent is in Julian's own name!", "pi"],
   ["이사회 회의실", "boardroom", "이사들이 손을 내리고 서영이 준기의 손을 놓는다", "The directors lower their hands as Regina lets go of Spencer's", 0, "특허 사용 계약, 오늘로 끝냅니다.", "The patent license ends today. Good luck.", "rx"],
   ["이사회 회의실", "boardroom", "석현의 휴대폰에 경쟁사 회장 이름으로 전화가 걸려 온다", "Julian's phone rings with the rival company's chairman on the caller ID", 0, "네, 방금 자유의 몸이 됐습니다.", "Yes. I just became a free man.", "trk"]]]
 ]

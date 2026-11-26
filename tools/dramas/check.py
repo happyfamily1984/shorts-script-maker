@@ -3,7 +3,8 @@ import json, re, sys
 
 CAMS = {'cu', 'ms', 'ws', 'pi', 'cz', 'ots', 'low', 'trk', 'rx', 'slo'}
 ROLES = {'H', 'V', 'A', 'X'}
-BAN_KO = ['피를', '피가', '칼로', '칼을', '총을', '총으로', '죽여', '죽이', '살인', '자살', '시체', '마약', '알몸', '벗기', '성폭', '뺨을 때', '뺨을 친', '따귀']
+BAN_KO_RE = [r'(^|[^가-힣])피(를|가|투성이)']
+BAN_KO = [ '칼로', '칼을', '총을', '총으로', '죽여', '죽이', '살인', '자살', '시체', '마약', '알몸', '벗기', '성폭', '뺨을 때', '뺨을 친', '따귀']
 BAN_EN = [r'\bblood', r'\bknife', r'\bgun\b', r'\bkill', r'\bmurder', r'\bsuicide', r'\bcorpse', r'\bdrug', r'\bnaked', r'\bnude', r'\bslap', r'\bstab', r'\bshoot', r'\bsex']
 HANGUL = re.compile('[가-힣]')
 words = lambda s: len(s.split())
@@ -58,6 +59,8 @@ def check_script(s, tag, errs, titles):
         if words(ae) > 26: errs.append(f'{t}: 영어 화면 묘사 {words(ae)}단어 (22단어 이내)')
         if HANGUL.search(pe + ae + de): errs.append(f'{t}: 영어 칸에 한글')
         if not HANGUL.search(ak): errs.append(f'{t}: 한국어 화면 묘사에 한글 없음')
+        for b in BAN_KO_RE:
+            if re.search(b, ak + ' ' + dk): errs.append(f'{t}: 금지 표현 /{b}/')
         for b in BAN_KO:
             if b in ak + dk: errs.append(f'{t}: 금지 표현 "{b}"')
         for b in BAN_EN:

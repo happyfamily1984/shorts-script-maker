@@ -4,7 +4,7 @@
  [["H", "유나", "Stella", "30대 여성, 겨자색 블레이저, 검은 티셔츠, 어깨 길이 곱슬머리, 노트북을 낀 모습", "woman in her 30s, mustard blazer, black tee, shoulder-length curls, laptop under arm"],
   ["V", "방 팀장", "Denise", "40대 여성, 흰 정장, 날 선 단발, 빨간 손톱, 꾸며 낸 미소", "woman in her 40s, white power suit, sharp bob, red nails, fake smile"],
   ["A", "한결", "Mr. Ortega", "30대 남성, 하늘색 셔츠, 걷은 소매, 목에 건 사원증, 서글서글한 얼굴", "man in his 30s, light blue shirt, rolled sleeves, lanyard, friendly face"]],
- [["광고 회사 회의실", "ad agency conference room", "방 팀장이 유나의 노트북을 손바닥으로 탁 덮어 버린다", "Denise slaps Stella's laptop shut with her palm", 1, "자료 훔쳐보러 왔니? 넌 여기서 잘렸어.", "Here to spy? You were fired from this place.", "cz"],
+ [["광고 회사 회의실", "ad agency conference room", "방 팀장이 유나의 노트북을 손바닥으로 탁 덮어 버린다", "Denise snaps Stella's laptop shut with her palm", 1, "자료 훔쳐보러 왔니? 넌 여기서 잘렸어.", "Here to spy? You were fired from this place.", "cz"],
   ["광고 회사 회의실", "ad agency conference room", "방 팀장이 유나를 문 쪽으로 밀치고 리모컨을 집어 든다", "Denise pushes Stella toward the door and picks up the remote", 1, "재능 없는 애는 구경도 사치야.", "No talent, no seat. Even watching is too good for you.", "ms"],
   ["광고 회사 회의실", "ad agency conference room", "스크린에 뜬 시안 구석의 작은 별 표식을 유나가 가리킨다", "Stella points at a tiny star mark in the corner of the design on screen", 0, "구석의 별 표시, 제 서명인 건 아세요?", "That little star in the corner? It's my signature.", "cu"],
   ["광고 회사 회의실", "ad agency conference room", "한결이 들어와 유나를 상석으로 안내한다", "Mr. Ortega enters and guides Stella to the head seat", 2, "브랜드 총괄님, 발표 들을 준비되셨나요?", "Brand Director, ready to hear the pitch?", "low"],
