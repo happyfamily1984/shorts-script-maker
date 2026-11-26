@@ -542,7 +542,7 @@ function scoreOf(p) {
 const scoreList = sc => sc.items.map(i => `<li><span class="m ${i.ok ? '' : 'x'}">${ic(i.ok ? 'check' : 'x')}</span><span>${i.label}${i.ok ? '' : `<small>${i.tip}</small>`}</span></li>`).join('');
 function promptBox(p, key, title) {
   const m = MODE(), ov = p.over && p.over[key + ':' + m] != null;
-  return `<div class="pbox"><div class="ph"><b>${title}</b><span class="sp"></span>${ov ? `<button class="pbtn" data-act="resetP" data-k="${key}">${ic('refresh')}원래대로</button>` : ''}<button class="pbtn blue" data-act="copyP" data-k="${key}">${ic('copy')}복사</button></div>
+  return `<div class="pbox"><div class="ph"><b>${title}</b><span class="sp"></span>${ov ? `<button class="pbtn" data-act="resetP" data-k="${key}">${ic('refresh')}원래대로</button>` : ''}<button class="ib sm cpy" data-act="copyP" data-k="${key}" aria-label="복사" title="복사">${ic('copy')}</button><button class="pbtn blue" data-act="shareP" data-k="${key}" data-t="${title}">${ic('share')}내보내기</button></div>
     <textarea class="ag ptx" data-ov="${key}" spellcheck="false" aria-label="${title}">${esc(promptText(p, key, m))}</textarea>
     ${m === 'en' ? `<details class="kox"><summary>${ic('info')}한국어 설명 보기</summary><p>${esc(promptBase(p, key, 'kr'))}</p></details>` : ''}</div>`;
 }
@@ -814,6 +814,7 @@ const A = {
   genChar: d => { const key = `${d.i}:${d.kind}`, o = cur().p.cp = cur().p.cp || {}; o[key] = 1; render(); copyText(promptText(draft, `c:${d.i}:${d.kind}`), '프롬프트를 만들어 복사했습니다. 그록·챗GPT에 붙여넣으세요'); },
   copyAllChars: () => copyText(draft.chars.map((c, i) => `[${cname(c)}]\n${promptText(draft, `c:${i}:full`)}`).join('\n\n'), '모든 인물 프롬프트를 복사했습니다'),
   copyP: d => copyText(promptText(draft, d.k), '프롬프트를 복사했습니다'),
+  shareP: d => Native.share(d.t || '프롬프트', promptText(draft, d.k)),
   resetP: d => { delete draft.over[d.k + ':' + MODE()]; touch(); render(); },
   addChar: () => { if (draft.chars.length >= 4) return toast('인물은 4명까지입니다'); draft.chars.push({ r: 'X', nk: '새 인물', ne: 'New Character', dk: '', de: '' }); touch(); render(); },
   delChar: d => { const i = +d.i; if (draft.chars.length <= 2) return toast('인물은 최소 2명입니다'); dialog('이 인물을 삭제할까요?', cname(draft.chars[i]), [['취소', null], ['삭제', () => { draft.chars.splice(i, 1); draft.shots.forEach(s => { if (s.sp === i) { s.sp = -1; s.dk = s.de = ''; } else if (s.sp > i) s.sp--; }); draft.over = {}; touch(); render(); }, 'pri']]); },

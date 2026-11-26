@@ -439,3 +439,4 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display
 .hit .aih b{white-space:normal}
 #top{gap:6px}
 #top h1{font-size:17px}
+.ib.sm.cpy{color:var(--blue);background:var(--blue-soft);border:1px solid #C9D8FF}
