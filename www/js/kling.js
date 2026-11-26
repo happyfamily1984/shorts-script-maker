@@ -1,9 +1,9 @@
 /* 자동 입력 기본 순서. 저장소 kling/flow.json, grok/flow.json, pickle/flow.json 과 같은 내용 */
 'use strict';
 const KLING_FLOW_DEFAULT = {
- "version": "0.5-partial",
+ "version": "0.6-partial",
  "verified": false,
- "note": "홈 '창작 시작'은 스크린샷으로, 만들기 화면은 2026-11-26 화면 기록(kling.ai.video.chat)으로 확인: 사진 추가 id kling_omni_asset_add, 모드 '비디오 생성·4.0'(omni_edit_preview_cur_model), 길이·화질 omni_edit_ratio_value, 생성 버튼 id omni_edit_preview_submit(글자 없이 크레딧 숫자만). 사진 고르기 화면, 생성 뒤 애셋 화면은 아직 추측. 2026-11-26 기록 3: '창작 시작' 뒤 화면('기본 창작')은 입력칸이 접힌 상태(omni_edit_preview_text)라 눌러서 펼쳐야 '+'와 프롬프트 칸이 나온다. 같은 화면 위쪽에 작품 목록('작품 없음')이 있다.",
+ "note": "홈 '창작 시작'은 스크린샷으로, 만들기 화면은 2026-11-26 화면 기록(kling.ai.video.chat)으로 확인: 사진 추가 id kling_omni_asset_add, 모드 '비디오 생성·4.0'(omni_edit_preview_cur_model), 길이·화질 omni_edit_ratio_value, 생성 버튼 id omni_edit_preview_submit(글자 없이 크레딧 숫자만). 사진 고르기 화면, 생성 뒤 애셋 화면은 아직 추측. 2026-11-26 기록 3: '창작 시작' 뒤 화면('기본 창작')은 입력칸이 접힌 상태(omni_edit_preview_text)라 눌러서 펼쳐야 '+'와 프롬프트 칸이 나온다. 같은 화면 위쪽에 작품 목록('작품 없음')이 있다. 기록 4: 클링이 이미 '기본 창작' 화면에서 열리면 '창작 시작'이 없다. 만들기 화면 표시는 id omni_edit_preview_submit(접힘·펼침 모두 있음).",
  "package": "kling.ai.video.chat",
  "after": 900,
  "start": [
@@ -16,20 +16,100 @@ const KLING_FLOW_DEFAULT = {
    "ms": 3500
   },
   {
-   "do": "click",
-   "say": "창작 시작 누르기",
+   "do": "unless",
+   "say": "만들기 화면인지 확인",
    "find": {
-    "any": [
-     "창작 시작",
-     "Create",
-     "Start creating"
-    ]
+    "id": "omni_edit_preview_submit"
    },
-   "timeout": 10000
-  },
-  {
-   "do": "wait",
-   "ms": 2000
+   "timeout": 2500,
+   "steps": [
+    {
+     "do": "click",
+     "say": "창작 시작 누르기",
+     "find": {
+      "any": [
+       "창작 시작",
+       "Create",
+       "Start creating"
+      ]
+     },
+     "timeout": 4000,
+     "optional": true
+    },
+    {
+     "do": "wait",
+     "ms": 2000
+    },
+    {
+     "do": "unless",
+     "say": "만들기 화면인지 확인",
+     "find": {
+      "id": "omni_edit_preview_submit"
+     },
+     "timeout": 2000,
+     "steps": [
+      {
+       "do": "back",
+       "say": "이전 화면으로"
+      },
+      {
+       "do": "wait",
+       "ms": 1500
+      },
+      {
+       "do": "click",
+       "say": "창작 시작 누르기",
+       "find": {
+        "any": [
+         "창작 시작",
+         "Create",
+         "Start creating"
+        ]
+       },
+       "timeout": 4000,
+       "optional": true
+      },
+      {
+       "do": "wait",
+       "ms": 2000
+      },
+      {
+       "do": "unless",
+       "say": "만들기 화면인지 확인",
+       "find": {
+        "id": "omni_edit_preview_submit"
+       },
+       "timeout": 2000,
+       "steps": [
+        {
+         "do": "back",
+         "say": "이전 화면으로"
+        },
+        {
+         "do": "wait",
+         "ms": 1500
+        },
+        {
+         "do": "click",
+         "say": "창작 시작 누르기",
+         "find": {
+          "any": [
+           "창작 시작",
+           "Create",
+           "Start creating"
+          ]
+         },
+         "timeout": 6000
+        },
+        {
+         "do": "wait",
+         "ms": 2000
+        }
+       ]
+      }
+     ]
+    }
+   ]
   }
  ],
  "shot": [
