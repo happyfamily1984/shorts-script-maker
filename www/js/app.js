@@ -833,7 +833,7 @@ function tabFinish(p) {
     <div class="sec">${h2('film', `${stills.length ? '②' : '①'} 클링 영상 클립 ${f.clips.length}/${needClips}${stills.length ? ` (${vidShots(p).map(i => i + 1).join(', ')}번 샷)` : ''}`)}
       ${stills.length ? `<div class="chips">${vidShots(p).map(i => `<span class="chip ${clipOf(p, i) ? 'on' : ''}">${i + 1}번 · ${clipOf(p, i) ? '영상 있음' : sentOf(p, i) ? '생성 요청함 (내려받기만 남음)' : '아직'}</span>`).join('')}</div>
       ${vidShots(p).some(i => sentOf(p, i) && !clipOf(p, i)) ? `<p class="hint">이미 클링에 생성 요청한 샷은 원클릭을 다시 눌러도 새로 만들지 않고 내려받기만 합니다. 다시 생성하려면 <button class="pbtn" data-act="sentReset">${ic('refresh')}생성 기록 지우기</button></p>` : ''}` : ''}
-      <div class="aiacts"><button class="btn sm blue" data-act="findClips">${ic('search')}방금 받은 영상 찾기</button><button class="btn sm" data-act="pickClips">${ic('folder')}직접 고르기</button></div>
+      <div class="aiacts">${stills.length && klingPlan(p).need.length ? `<button class="btn sm" data-act="klingFetchOnly">${ic('download')}클링에서 내려받기만</button>` : ''}<button class="btn sm blue" data-act="findClips">${ic('search')}방금 받은 영상 찾기</button><button class="btn sm" data-act="pickClips">${ic('folder')}직접 고르기</button></div>
       ${f.clips.length ? `<div class="list">${f.clips.map(clipRow).join('')}</div>` : '<p class="hint">클링에서 내려받은 영상을 찾거나 직접 골라 샷 순서대로 놓으세요. "방금 받은 영상 찾기"는 최근 30분 안에 저장된 영상을 오래된 것부터 가져옵니다.</p>'}</div>
     <div class="sec">${h2('caption', `${num(2)} 자막`)}
       ${seg('p_burn', [[1, '자막 넣기'], [0, '자막 없이']], f.burn ? 1 : 0)}
@@ -1327,6 +1327,13 @@ const A = {
   hitsFetch: () => fetchHits(),
   oneClick: () => oneClick(),
   shotKind: d => { const i = +d.i, v = vidShots(draft).filter(x => x !== i); draft.vids = d.v === 'v' ? v.concat(i).sort((a, b) => a - b) : v; touch(); render(); },
+  klingFetchOnly: () => {
+    if (needPhone()) return; const info = kInfo(); if (klingNeedSetup(info)) return;
+    const need = klingPlan(draft).need; if (!need.length) return toast('영상 샷이 모두 들어 있습니다');
+    dialog('클링에서 내려받기만 할까요?', `${need.map(i => i + 1).join(', ')}번 샷 영상을 새로 만들지 않고, 클링 작품 목록에서 찾아 내려받습니다. 크레딧이 들지 않습니다. 클링에서 이미 만든 영상이어야 합니다.`, [['취소', null], ['내려받기', () => {
+      const f = finOf(draft); f.sent = f.sent || {}; need.forEach(i => { f.sent[i] = Date.now(); }); saveDraft(); startKlingStage(draft);
+    }, 'pri']]);
+  },
   sentReset: () => dialog('클링 생성 기록을 지울까요?', '이미 클링에 생성 요청한 샷도 다음 원클릭 때 다시 생성합니다. 크레딧이 또 듭니다.', [['취소', null], ['지우기', () => { finOf(draft).sent = {}; touch(); render(); }, 'pri']]),
   grokStills: () => { if (needPhone()) return; const need = stillShots(draft).filter(i => !stillOf(draft, i)); const idx = need.length ? need : stillShots(draft); if (!idx.length) return toast('이미지 샷이 없습니다'); saveDraft(); startGrokStills(draft, idx, true); },
   stillPick: d => { pendingImg = { still: +d.i }; $('#imgFile').click(); },
