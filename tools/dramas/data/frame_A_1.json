@@ -1,0 +1,172 @@
+[
+[
+ "시계 도둑으로 몰린 재고 담당", "Framed for the Missing Watch",
+ "매장 시계가 사라지자 재고 담당이 범인으로 몰린다. CCTV 속 손목에는 지점장의 시계가 있었다.", "A watch vanishes and the stock clerk is blamed. On the security footage, the manager's own wrist gives him away.",
+ [
+  ["H", "다솔", "Nina", "30대 여성, 남색 매장 유니폼, 묶은 머리, 단단한 눈빛", "woman in her 30s, navy store uniform, tied hair, steady eyes"],
+  ["V", "규태", "Grant", "40대 남성, 검은 정장 조끼, 짧은 머리, 능글맞은 얼굴", "man in his 40s, black suit vest, short hair, smirking face"],
+  ["A", "조 실장", "Mr. Foster", "50대 남성, 검은 정장, 무전기, 무표정", "man in his 50s, black suit, radio in hand, expressionless"]
+ ],
+ [
+  ["보석 매장", "jewelry store", "규태가 다솔의 사물함을 열어 젖히고 직원들을 부른다", "Grant yanks open Nina's locker and calls the staff over", 1, "사라진 시계, 네 사물함에서 나왔어.", "The missing watch was in your locker.", "ms"],
+  ["보석 매장", "jewelry store", "규태가 다솔의 사원증을 카운터에 던진다", "Grant throws Nina's badge onto the counter", 1, "오늘로 끝이야. 경찰 부를게.", "You're done today. I'm calling the police.", "ots"],
+  ["보석 매장", "jewelry store", "다솔이 천장의 카메라 렌즈를 조용히 올려다본다", "Nina quietly looks up at the ceiling camera", -1, "", "", "pi"],
+  ["보석 매장", "jewelry store", "조 실장이 화면을 돌려 규태의 손목을 확대한다", "Mr. Foster turns the monitor and zooms on Grant's wrist", 2, "시계를 옮긴 건 규태 씨 손입니다.", "The hand that moved it was Grant's.", "low"],
+  ["보석 매장", "jewelry store", "규태가 카운터를 짚고 몸을 숙인다", "Grant grips the counter and bends over", 0, "사물함 열쇠는 당신이 갖고 있었죠.", "You had the locker key, remember?", "rx"],
+  ["매장 밖", "outside the store", "여자가 다솔에게 다가와 악수를 청한다", "A woman walks up and offers Nina a handshake", -1, "", "", "cu"]
+ ]
+],
+[
+ "기밀 유출범으로 몰린 신입", "The New Hire Blamed for the Leak",
+ "광고 시안이 새기 전에 유출되자 신입이 몰린다. 파일 워터마크가 팀장의 이름을 찍었다.", "A campaign leaks before launch and the new hire takes the blame. The file watermark carries the team leader's name.",
+ [
+  ["H", "준서", "Eli", "20대 후반 남성, 흰 셔츠, 짧은 머리, 억울한 눈빛", "man in his late 20s, white shirt, short hair, wronged eyes"],
+  ["V", "나경", "Priscilla", "40대 여성, 회색 정장, 안경, 차가운 표정", "woman in her 40s, gray suit, glasses, cold expression"],
+  ["A", "감사팀장", "Ms. Hahn", "30대 여성, 검은 재킷, 태블릿, 단호한 태도", "woman in her 30s, black jacket, tablet in hand, firm manner"]
+ ],
+ [
+  ["디자인 사무실", "design office", "나경이 준서의 모니터를 끄고 서류를 집어 던진다", "Priscilla switches off Eli's monitor and tosses papers", 1, "네 파일에서만 새 나갔어.", "The leak came from your file only.", "ms"],
+  ["디자인 사무실", "design office", "나경이 준서의 가방을 뒤져 노트북을 빼앗는다", "Priscilla searches Eli's bag and takes his laptop", 1, "짐 싸. 보안팀이 올 거야.", "Pack up. Security is coming.", "cu"],
+  ["디자인 사무실", "design office", "준서가 인쇄 기록의 시간을 손끝으로 짚는다", "Eli points at the timestamp on the print log", -1, "", "", "cz"],
+  ["디자인 사무실", "design office", "감사팀장이 워터마크를 확대해 화면에 띄운다", "Ms. Hahn enlarges a watermark on the screen", 2, "파일을 연 사람은 나경 씨입니다.", "The file was opened by Priscilla.", "low"],
+  ["디자인 사무실", "design office", "나경이 의자에 앉은 채 얼굴을 감싼다", "Priscilla sits down and covers her face", 0, "제 노트북, 이제 돌려주세요.", "I'd like my laptop back now.", "rx"],
+  ["사무실 복도", "office corridor", "낯선 남자가 준서에게 회사 명함을 건넨다", "A stranger hands Eli a company card", -1, "", "", "pi"]
+ ]
+],
+[
+ "부정행위로 몰린 응시생", "Caught Cheating, But Innocent",
+ "옆자리 답안이 똑같다며 부정행위로 몰린다. 좌석표에는 자리를 바꾼 사람이 찍혀 있었다.", "Her answers match the seat beside her, so they call it cheating. The seating chart shows who moved.",
+ [
+  ["H", "윤아", "Talia", "20대 후반 여성, 흰 블라우스, 묶은 머리, 결연한 눈빛", "woman in her late 20s, white blouse, tied hair, resolute eyes"],
+  ["V", "만식", "Mr. Petrov", "50대 남성, 회색 정장, 안경, 차가운 표정", "man in his 50s, gray suit, glasses, cold expression"],
+  ["A", "하 주무관", "Ms. Weber", "30대 여성, 베이지 재킷, 태블릿, 단호한 태도", "woman in her 30s, beige jacket, tablet, firm manner"]
+ ],
+ [
+  ["자격 시험장", "certification exam hall", "만식이 윤아의 답안지를 빼앗아 들어 보인다", "Mr. Petrov snatches Talia's answer sheet and holds it up", 1, "옆자리와 답이 똑같아. 부정행위야.", "Your answers match the seat beside you. That's cheating.", "cz"],
+  ["자격 시험장", "certification exam hall", "만식이 출입문을 가리키며 퇴장을 명령한다", "Mr. Petrov points at the door and orders Talia out", 1, "올해 자격은 끝났어. 나가.", "Your license is done this year. Out.", "ms"],
+  ["자격 시험장", "certification exam hall", "윤아가 좌석표 사진을 조용히 꺼내 보여 준다", "Talia quietly holds up a photo of the seating chart", -1, "", "", "pi"],
+  ["자격 시험장", "certification exam hall", "하 주무관이 태블릿 영상을 돌려 좌석을 확대한다", "Ms. Weber replays the footage and zooms on the seats", 2, "자리를 바꾼 건 그쪽 응시생입니다.", "The candidate who switched seats was him.", "ws"],
+  ["자격 시험장", "certification exam hall", "만식이 안경을 벗고 윤아에게 고개를 숙인다", "Mr. Petrov takes off his glasses and bows to Talia", 0, "제 답안지, 돌려주세요.", "My answer sheet, please.", "rx"],
+  ["시험장 밖", "outside the exam hall", "계단에서 윤아를 기다리던 여자가 손을 든다", "A woman waiting on the stairs raises a hand to Talia", -1, "", "", "cz"]
+ ]
+],
+[
+ "차를 긁었다고 몰린 주차 요원", "The Valet Blamed for the Scratch",
+ "주차 요원이 외제차를 긁었다고 몰린다. 차주 아들의 블랙박스에 진범이 찍혀 있었다.", "A valet is blamed for a scratch on a luxury car. The owner's son's dash camera holds the truth.",
+ [
+  ["H", "지훈", "Cole", "20대 후반 남성, 발렛 유니폼, 짧은 머리, 억울한 눈빛", "man in his late 20s, valet uniform, short hair, wronged eyes"],
+  ["V", "상철", "Mr. Brandt", "50대 남성, 회색 양복, 금시계, 고압적인 태도", "man in his 50s, gray suit, gold watch, overbearing manner"],
+  ["A", "노 관리", "Ms. Ellis", "40대 여성, 남색 작업복, 무전기, 무표정", "woman in her 40s, navy work clothes, radio, blank face"]
+ ],
+ [
+  ["호텔 주차장", "hotel parking garage", "상철이 지훈의 어깨를 밀며 차 문을 가리킨다", "Mr. Brandt shoves Cole's shoulder and points at the car door", 1, "네가 긁었어. 수리비 내.", "You scratched it. Pay for it.", "ms"],
+  ["호텔 주차장", "hotel parking garage", "상철이 지훈의 발렛 조끼를 잡아당긴다", "Mr. Brandt grabs the front of Cole's valet vest", 1, "이 차값, 평생 벌어도 못 갚아.", "You'll never pay this off in your life.", "ots"],
+  ["호텔 주차장", "hotel parking garage", "지훈이 옆 차의 블랙박스를 손끝으로 가리킨다", "Cole points at the dash camera in the next car", -1, "", "", "cu"],
+  ["호텔 주차장", "hotel parking garage", "노 관리가 블랙박스 화면을 돌려 상철에게 보여 준다", "Ms. Ellis turns the dash cam screen toward Mr. Brandt", 2, "긁은 차는 아들 차입니다, 사장님.", "The car that scratched it is your son's, sir.", "low"],
+  ["호텔 주차장", "hotel parking garage", "상철이 손에서 열쇠를 떨어뜨리고 뒷걸음친다", "Mr. Brandt drops his keys and steps back", 0, "수리비는 아들한테 받으세요.", "Get the repair money from your son.", "cu"],
+  ["주차장 출구", "parking garage exit", "남자가 지훈에게 다가와 손을 내민다", "A man approaches Cole and offers his hand", -1, "", "", "pi"]
+ ]
+],
+[
+ "반지 도둑으로 몰린 서버", "The Server Accused of Theft",
+ "식당에서 반지가 사라지자 서버가 몰린다. 주방 카메라가 손님 일행의 손을 찍었다.", "A ring disappears at the restaurant and the server is blamed. The kitchen camera catches the guest's companion.",
+ [
+  ["H", "아린", "June", "20대 후반 여성, 검은 서버 유니폼, 묶은 머리, 차분한 눈빛", "woman in her late 20s, black server uniform, tied hair, calm eyes"],
+  ["V", "도희", "Mrs. Vaughn", "50대 여성, 흰 블라우스, 진주 목걸이, 날카로운 눈", "woman in her 50s, white blouse, pearl necklace, sharp eyes"],
+  ["A", "리브스 매니저", "Mr. Reeves", "40대 남성, 검은 정장, 나비넥타이, 침착한 태도", "man in his 40s, black suit, bow tie, composed manner"]
+ ],
+ [
+  ["레스토랑", "restaurant", "도희가 아린의 앞치마 주머니를 뒤지며 소리친다", "Mrs. Vaughn searches June's apron pocket and shouts", 1, "내 반지, 네 주머니에 있었어.", "My ring was in your pocket.", "cz"],
+  ["레스토랑", "restaurant", "도희가 아린의 쟁반을 쳐 바닥에 떨어뜨린다", "Mrs. Vaughn knocks the tray out of June's hands", 1, "점장 불러. 넌 해고야.", "Get the manager. You're fired.", "cu"],
+  ["레스토랑", "restaurant", "아린이 주방 벽의 카메라를 조용히 가리킨다", "June quietly points at the camera on the kitchen wall", -1, "", "", "pi"],
+  ["레스토랑", "restaurant", "리브스 매니저가 화면을 돌려 도희 일행을 확대한다", "Mr. Reeves turns the screen and zooms on the companion", 2, "반지를 옮긴 사람은 옆자리 손님입니다.", "The person who moved the ring was your guest.", "slo"],
+  ["레스토랑", "restaurant", "도희가 식탁을 짚고 아린에게 고개를 숙인다", "Mrs. Vaughn grips the table and bows to June", 0, "계산서는 두 분이 나눠 주세요.", "You two can split the check.", "rx"],
+  ["레스토랑 입구", "restaurant entrance", "문가에 선 남자가 아린에게 명함을 내민다", "A man at the door holds out a card to June", -1, "", "", "cu"]
+ ]
+],
+[
+ "차트를 조작했다는 간호사", "The Nurse Who Changed the Chart",
+ "환자 기록이 바뀐 책임이 신입 간호사에게 몰린다. 접속 기록에는 과장의 이름이 남아 있었다.", "A patient's record is altered and the new nurse takes the blame. The login log carries the doctor's name.",
+ [
+  ["H", "세영", "Alma", "30대 여성, 흰 간호복, 짧은 단발, 단호한 눈빛", "woman in her 30s, white nurse uniform, short bob, firm eyes"],
+  ["V", "문 과장", "Dr. Whitmore", "50대 남성, 흰 가운, 안경, 권위적인 태도", "man in his 50s, white coat, glasses, authoritative manner"],
+  ["A", "류 주임", "Mr. Novak", "30대 남성, 회색 셔츠, 태블릿, 차분한 목소리", "man in his 30s, gray shirt, tablet, calm voice"]
+ ],
+ [
+  ["병동", "hospital ward", "문 과장이 세영의 손에서 차트를 빼앗아 흔든다", "Dr. Whitmore snatches the chart from Alma's hands", 1, "네 계정으로 기록이 바뀌었어.", "The record changed under your login.", "ms"],
+  ["병동", "hospital ward", "문 과장이 세영의 출입증을 책상에 던진다", "Dr. Whitmore throws Alma's badge onto the desk", 1, "면허 걸 문제야. 짐 싸.", "This could cost your license. Pack up.", "ws"],
+  ["병동", "hospital ward", "세영이 컴퓨터의 접속 기록 화면을 띄운다", "Alma opens the system's access log on the screen", -1, "", "", "cu"],
+  ["병동", "hospital ward", "류 주임이 태블릿을 돌려 과장의 이름을 보여 준다", "Mr. Novak turns his tablet to show the doctor's name", 2, "기록을 고친 계정은 과장님 것입니다.", "The account that edited it is yours, Doctor.", "pi"],
+  ["병동", "hospital ward", "문 과장이 벽을 짚고 고개를 떨어뜨린다", "Dr. Whitmore leans on the wall and drops his head", 0, "환자분께는 제가 직접 말씀드릴게요.", "I'll explain it to the patient myself.", "rx"],
+  ["병동 복도", "ward corridor", "환자 가족이 세영에게 다가와 허리를 숙인다", "A patient's family member approaches Alma and bows", -1, "", "", "cu"]
+ ]
+],
+[
+ "욕설로 신고당한 알바", "The Barista Reported for Swearing",
+ "손님이 알바에게 욕설을 들었다고 신고한다. 알바가 켠 녹음에서 손님 목소리가 그대로 나온다.", "A customer reports the barista for swearing at her. The recording the barista plays is the customer's own voice.",
+ [
+  ["H", "다희", "Josie", "20대 후반 여성, 카페 앞치마, 묶은 머리, 담담한 눈빛", "woman in her late 20s, cafe apron, tied hair, composed eyes"],
+  ["V", "혜숙", "Mrs. Dabney", "50대 여성, 크림색 코트, 큰 선글라스, 새침한 입", "woman in her 50s, cream coat, big sunglasses, pursed mouth"],
+  ["A", "우석 사장", "Mr. Osei", "40대 남성, 검은 앞치마, 팔짱, 무거운 표정", "man in his 40s, black apron, arms crossed, heavy expression"]
+ ],
+ [
+  ["카페", "cafe", "혜숙이 다희를 손가락으로 가리키며 사장을 부른다", "Mrs. Dabney points at Josie and calls for the owner", 1, "이 알바가 나한테 욕했어.", "This barista swore at me.", "ots"],
+  ["카페", "cafe", "혜숙이 다희의 앞치마를 잡아당긴다", "Mrs. Dabney grabs the front of Josie's apron", 1, "당장 징계해요.", "I want her disciplined now.", "ms"],
+  ["카페", "cafe", "다희가 주머니에서 작은 녹음기를 꺼내 든다", "Josie takes a small recorder from her pocket", -1, "", "", "cz"],
+  ["카페", "cafe", "우석 사장이 녹음기를 들어 녹음된 소리를 재생한다", "Mr. Osei holds up the recorder and plays it back", 2, "욕한 목소리는 이쪽이네요.", "The swearing voice is hers.", "low"],
+  ["카페", "cafe", "혜숙이 선글라스를 벗고 문 쪽으로 물러난다", "Mrs. Dabney takes off her sunglasses and backs toward the door", 0, "다음부터는 다른 카페로 가세요.", "Please find another cafe next time.", "cu"],
+  ["카페 창밖", "outside the cafe window", "창밖에서 다희에게 명함을 건네는 여자가 있다", "A woman outside the window holds a card out to Josie", -1, "", "", "pi"]
+ ]
+],
+[
+ "장비를 부쉈다는 현장 기사", "The Worker Blamed for the Wreck",
+ "장비가 망가지자 말단 기사가 몰린다. 드론 영상에 다른 사람의 손이 찍혀 있었다.", "Equipment breaks and the lowest worker is blamed. A drone shot catches a different hand at the machine.",
+ [
+  ["H", "도현", "Ronan", "30대 남성, 안전모와 형광 조끼, 그을린 얼굴", "man in his 30s, hard hat and bright vest, soot-marked face"],
+  ["V", "길수", "Mr. Duffy", "50대 남성, 흰 안전모, 클립보드, 고압적인 태도", "man in his 50s, white hard hat, clipboard, overbearing manner"],
+  ["A", "예린", "Ms. Boyd", "20대 후반 여성, 검은 후드, 드론 조종기, 침착한 태도", "woman in her late 20s, black hoodie, drone controller, composed"]
+ ],
+ [
+  ["건설 현장", "construction site", "길수가 도현의 안전모를 벗겨 바닥에 던진다", "Mr. Duffy knocks off Ronan's helmet and throws it down", 1, "장비값 천만 원, 네 몫이야.", "Ten grand in damage. That's on you.", "cz"],
+  ["건설 현장", "construction site", "길수가 도현의 출입 카드를 접어 주머니에 넣는다", "Mr. Duffy folds Ronan's site card and pockets it", 1, "오늘부로 나와.", "You're off this site today.", "trk"],
+  ["건설 현장", "construction site", "도현이 하늘을 도는 드론을 손끝으로 가리킨다", "Ronan points up at a drone circling overhead", -1, "", "", "cu"],
+  ["건설 현장", "construction site", "예린이 조종기 화면을 돌려 장비 옆 사람을 확대한다", "Ms. Boyd turns the controller screen and zooms on a man by the machine", 2, "장비를 만진 사람은 소장님 조카입니다.", "The man who touched it is your nephew, sir.", "pi"],
+  ["건설 현장", "construction site", "길수가 클립보드를 떨어뜨리고 뒷걸음친다", "Mr. Duffy drops his clipboard and steps back", 0, "제 출입 카드, 돌려주세요.", "My site card, please.", "cu"],
+  ["현장 정문", "site gate", "차에서 내린 여자가 도현에게 서류를 건넨다", "A woman steps out of a car and hands Ronan a document", -1, "", "", "slo"]
+ ]
+],
+[
+ "그림을 망쳤다는 경비원", "The Guard and the Torn Canvas",
+ "전시 그림이 찢어지자 경비원이 몰린다. 전시장 카메라가 후원자 일행을 찍고 있었다.", "A canvas tears and the guard is blamed. The gallery camera was filming the sponsor's guest.",
+ [
+  ["H", "승민", "Felix", "30대 남성, 경비 유니폼, 짧은 머리, 차분한 눈빛", "man in his 30s, guard uniform, short hair, calm eyes"],
+  ["V", "혜진", "Ms. Ashford", "50대 여성, 검은 정장, 안경, 날카로운 목소리", "woman in her 50s, black suit, glasses, sharp voice"],
+  ["A", "라온", "Ms. Ibarra", "40대 여성, 흰 작업복, 돋보기, 침착한 태도", "woman in her 40s, white work coat, loupe, composed manner"]
+ ],
+ [
+  ["미술관 전시장", "museum gallery", "혜진이 승민의 완장을 잡아당기며 그림을 가리킨다", "Ms. Ashford pulls at Felix's armband and points at the canvas", 1, "네 순찰 시간에 찢어졌어.", "It tore during your patrol.", "cz"],
+  ["미술관 전시장", "museum gallery", "혜진이 승민의 무전기를 빼앗아 바닥에 놓는다", "Ms. Ashford takes Felix's radio and sets it down", 1, "출입 금지야. 당장 나가.", "You're banned. Get out now.", "ots"],
+  ["미술관 전시장", "museum gallery", "승민이 천장 모서리의 카메라를 올려다본다", "Felix looks up at the camera in the corner", -1, "", "", "cu"],
+  ["미술관 전시장", "museum gallery", "라온이 태블릿 영상을 돌려 후원자 일행을 확대한다", "Ms. Ibarra replays the footage and zooms on the sponsor's guest", 2, "그림 옆에 선 사람은 후원자 일행입니다.", "The one beside the canvas was your sponsor's guest.", "slo"],
+  ["미술관 전시장", "museum gallery", "혜진이 안경을 고쳐 쓰고 승민에게 고개를 숙인다", "Ms. Ashford adjusts her glasses and bows to Felix", 0, "완장은 제가 다시 채울게요.", "I'll put my armband back on.", "cu"],
+  ["미술관 입구", "museum entrance", "계단을 올라오는 남자가 승민에게 손을 흔든다", "A man climbing the steps waves to Felix", -1, "", "", "trk"]
+ ]
+],
+[
+ "가방을 털었다는 수하물 기사", "The Baggage Handler Accused",
+ "여행객 가방에서 물건이 사라지자 수하물 기사가 몰린다. 검색대 기록이 시간을 뒤집었다.", "A traveller's bag comes up short and the baggage handler is blamed. The scanner log flips the timeline.",
+ [
+  ["H", "태이", "Silas", "20대 후반 남성, 공항 작업복, 짧은 머리, 순한 얼굴", "man in his late 20s, airport work uniform, short hair, gentle face"],
+  ["V", "상훈", "Mr. Kessler", "40대 남성, 하와이안 셔츠, 선글라스, 거만한 태도", "man in his 40s, Hawaiian shirt, sunglasses, arrogant manner"],
+  ["A", "미주", "Ms. Arden", "30대 여성, 공항 유니폼, 태블릿, 단호한 태도", "woman in her 30s, airport uniform, tablet, firm manner"]
+ ],
+ [
+  ["공항 수하물 구역", "airport baggage area", "상훈이 태이 앞에 가방을 내려놓고 소리친다", "Mr. Kessler slams the bag down in front of Silas and shouts", 1, "내 가방에서 시계가 없어졌어.", "My watch is gone from this bag.", "cz"],
+  ["공항 수하물 구역", "airport baggage area", "상훈이 태이의 장갑을 벗겨 바닥에 던진다", "Mr. Kessler strips off Silas's gloves and throws them down", 1, "네가 마지막으로 만졌어.", "You were the last one to touch it.", "ms"],
+  ["공항 수하물 구역", "airport baggage area", "태이가 검색대 모니터의 시각을 가리킨다", "Silas points at the timestamp on the scanner monitor", -1, "", "", "cu"],
+  ["공항 수하물 구역", "airport baggage area", "미주가 태블릿 영상을 돌려 상훈의 손을 확대한다", "Ms. Arden replays the footage and zooms on Mr. Kessler's hand", 2, "가방을 열었던 건 본인입니다.", "You were the one who opened the bag.", "low"],
+  ["공항 수하물 구역", "airport baggage area", "상훈이 선글라스를 벗고 가방을 끌어안는다", "Mr. Kessler takes off his sunglasses and clutches the bag", 0, "시계는 세관에 맡기세요.", "Leave the watch with customs.", "cu"],
+  ["공항 출구", "airport exit", "여자가 탑승권을 흔들며 태이를 부른다", "A woman at the exit waves a boarding pass at Silas", -1, "", "", "pi"]
+ ]
+]
+]
