@@ -255,6 +255,11 @@ public class KlingService extends AccessibilityService {
                 finally { repK = sk; repN = sn; }
                 return true;
             }
+            case "when": {   /* 대상이 보이면 steps 실행 (unless 의 반대) */
+                if (find(f, st.optInt("timeout", 1500)) == null) return true;
+                runSteps(st.optJSONArray("steps"), sh, i, n);
+                return true;
+            }
             case "unless": {
                 if (find(f, st.optInt("timeout", 1500)) != null) return true;
                 runSteps(st.optJSONArray("steps"), sh, i, n);
