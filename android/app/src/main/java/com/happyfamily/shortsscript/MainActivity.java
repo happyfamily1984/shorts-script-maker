@@ -319,6 +319,7 @@ public class MainActivity extends Activity {
                 o.put("pkg", pk);
                 if (!pk.isEmpty()) o.put("label", String.valueOf(getPackageManager().getApplicationLabel(getPackageManager().getApplicationInfo(pk, 0))));
                 o.put("status", KlingService.lastStatus);
+                o.put("done", new org.json.JSONArray(KlingService.lastDone)); o.put("jobId", KlingService.lastJobId);
                 o.put("sdk", Build.VERSION.SDK_INT);
                 return o.toString();
             } catch (Exception e) { return "{}"; }

@@ -546,11 +546,12 @@ const pickleFlow = () => newerFlow(settings.pickleFlow, PICKLE_FLOW_DEFAULT);
 const pInfo = () => { if (!Native.has() || !window.AndroidBridge.autoInfo) return null; try { return JSON.parse(window.AndroidBridge.autoInfo('pickle', pickleFlow().package || '')); } catch (e) { return null; } };
 const flowUrl = () => String(settings.klingFlowUrl || '').trim() || KLING_FLOW_URL_DEFAULT;
 const kInfo = () => { if (!Native.has() || !window.AndroidBridge.klingInfo) return null; try { return JSON.parse(window.AndroidBridge.klingInfo(flowNow().package || '')); } catch (e) { return null; } };
-async function buildKlingJob(p, range) {
+async function buildKlingJob(p, range, skipSet) {
   const m = MODE(), pick = c => c.imgFull || c.imgFace, miss = new Set(), shots = [];
   const imgsFor = async ids => { const out = []; for (const i of ids) { const v = await imgGet(pick(p.chars[i])); if (v) out.push(v); else miss.add(cname(p.chars[i], m)); } return out; };
   if (range === 'multi') shots.push({ prompt: promptText(p, `m:0:${p.shots.length}`, m), images: await imgsFor(p.chars.map((c, i) => i)), sec: totalSec(p) });
-  else for (const i of (range === 'all' ? p.shots.map((x, n) => n) : range === 'vid' ? vidShots(p) : [+range])) {
+  else for (const i of (range === 'all' ? p.shots.map((x, n) => n) : range === 'vid' ? vidShots(p) : Array.isArray(range) ? range : [+range])) {
+    if (skipSet && skipSet.has(i)) { shots.push({ skip: true, prompt: '', images: [], sec: p.shots[i].sec || 5 }); continue; }
     const ov = p.over && p.over[`k:${i}:${m}`];
     const ids = inShot(p, p.shots[i]), has = []; for (const c of ids) if (await imgGet(pick(p.chars[c]))) has.push(c);
     shots.push({ prompt: ov != null ? ov : klingPrompt(p, i, m, has), images: await imgsFor(ids), sec: p.shots[i].sec || 5 });
@@ -655,15 +656,27 @@ const vidShots = p => (Array.isArray(p.vids) ? p.vids : vidDefault(p)).filter(i 
 const isVid = (p, i) => vidShots(p).includes(i);
 const stillShots = p => p.shots.map((x, i) => i).filter(i => !isVid(p, i));
 const stillOf = (p, i) => finOf(p).stills[i] || '';
+/* 이어 하기: 샷별 영상(clip.shot), 클링에 생성 요청한 시각(fin.sent) */
+const SENT_FRESH = 12 * 3600e3;
+const sentOf = (p, i) => { const t = (finOf(p).sent || {})[i]; return t && Date.now() - t < SENT_FRESH ? t : 0; };
+const clipOf = (p, i) => finOf(p).clips.find(c => c.shot === i) || null;
+function klingPlan(p) {
+  const vids = vidShots(p), have = vids.filter(i => clipOf(p, i)), need = vids.filter(i => !clipOf(p, i));
+  return { vids, have, need, gen: need.filter(i => !sentOf(p, i)), get: need.filter(i => sentOf(p, i)) };
+}
 const finLang = p => finOf(p).lang || (isEn() ? 'en' : 'ko');
 const vThumb = uri => { if (thumbCache[uri] == null) { try { thumbCache[uri] = window.AndroidBridge.videoThumb(uri) || ''; } catch (e) { thumbCache[uri] = ''; } } return thumbCache[uri]; };
 const needPhone = () => { if (Native.has() && window.AndroidBridge.assemble) return false; dialog('휴대폰 앱에서만 됩니다', '영상 모으기, 합치기, 업로드는 휴대폰에 설치한 앱에서 동작합니다.', [['닫기', null]]); return true; };
-function findClips(p, since, need, auto) {
+/* since 뒤로 받은 영상을 idx(샷 번호들)에 순서대로 붙인다. idx 가 없으면 예전처럼 목록 전체 */
+function findClips(p, since, idx, auto) {
   let list = []; try { list = JSON.parse(window.AndroidBridge.listVideosSince(since) || '[]'); } catch (e) {}
   const f = finOf(p);
   if (!list.length) { if (!auto) dialog('새 영상을 찾지 못했습니다', '클링에서 영상을 내려받았는지 확인하세요. "직접 고르기"로 골라도 됩니다.', [['닫기', null], ['직접 고르기', () => A.pickClips(), 'pri']]); return 0; }
-  f.clips = list.slice(-need || undefined).map(v => ({ uri: v.uri, name: v.name, dur: v.dur }));
-  dirty = true; render(); return f.clips.length;
+  if (!Array.isArray(idx)) { f.clips = list.slice(-idx || undefined).map(v => ({ uri: v.uri, name: v.name, dur: v.dur })); dirty = true; render(); return f.clips.length; }
+  const take = list.slice(-idx.length);
+  take.forEach((v, k) => { const i = idx[k]; f.clips = f.clips.filter(c => c.shot !== i).concat({ uri: v.uri, name: v.name, dur: v.dur, shot: i }); });
+  f.clips.sort((a, b) => (a.shot == null ? 99 : a.shot) - (b.shot == null ? 99 : b.shot));
+  dirty = true; saveDraft(); render(); return take.length;
 }
 async function startAssemble(p, auto, skipCheck) {
   if (needPhone()) return;
@@ -674,7 +687,7 @@ async function startAssemble(p, auto, skipCheck) {
   } else {
     let k = 0;
     for (let i = 0; i < p.shots.length; i++) {
-      if (isVid(p, i)) { const c = f.clips[k++]; if (!c) { miss.push(i + 1); continue; } items.push({ video: c.uri }); }
+      if (isVid(p, i)) { const c = clipOf(p, i) || f.clips.filter(x => x.shot == null)[k++]; if (!c) { miss.push(i + 1); continue; } items.push({ video: c.uri }); }
       else { const d = await imgGet(stillOf(p, i)); if (!d) { miss.push(i + 1); continue; } items.push({ image: d, ms: (+p.shots[i].sec || 5) * 1000 }); }
       subs.push(f.burn ? (lines[i] || '') : '');
     }
@@ -698,10 +711,11 @@ function startGrokStills(p, idx, only) {
   return true;
 }
 function startKlingStage(p) {
-  return buildKlingJob(p, 'vid').then(({ job }) => {
-    if (!job.shots.length) { store.set('pipeline', null); return startAssemble(p, true); }
-    job.autoGenerate = true; job.collect = true;
-    store.set('pipeline', { pid: p.id, stage: 'kling', since: Date.now(), n: job.shots.length });
+  const pl = klingPlan(p);
+  if (!pl.need.length) { store.set('pipeline', null); return startAssemble(p, true); }
+  return buildKlingJob(p, pl.need, new Set(pl.get)).then(({ job }) => {
+    job.id = uid(); job.autoGenerate = true; job.collect = true; if (!pl.gen.length) job.collectOnly = true;
+    store.set('pipeline', { pid: p.id, stage: 'kling', since: Date.now(), idx: pl.need, n: pl.need.length, jobId: job.id });
     const r = window.AndroidBridge.startKling(JSON.stringify(job), JSON.stringify(flowNow()));
     if (r !== 'ok') { store.set('pipeline', null); dialog('클링을 시작하지 못했습니다', r, [['닫기', null]]); }
   });
@@ -761,8 +775,14 @@ function oneClick() {
   if (!window.AndroidBridge.hasMediaPerm()) return dialog('사진·동영상 접근을 허용해 주세요', '그록 이미지와 클링 영상을 찾으려면 접근 권한이 필요합니다. "모두 허용"을 골라 주세요.', [['취소', null], ['허용하기', () => window.AndroidBridge.requestMediaPerm(), 'pri']]);
   const need = stillShots(p).filter(i => !stillOf(p, i)), vids = vidShots(p);
   buildKlingJob(p, 'vid').then(({ miss }) => {
-    const steps = [need.length ? `그록으로 장면 이미지 ${need.length}장 만들기 (무료)` : '', `클링으로 핵심 ${vids.length}샷(${vids.map(i => i + 1).join(', ')}번) 영상 만들기 · 약 ${vids.length * KLING_COST}크레딧`, '생성이 끝나면 영상 내려받기 (몇 분 걸립니다)', '이 앱으로 돌아와 이미지·영상을 잇고 자막 새기기', settings.upWay === 'pickle' ? '피클에게 영상과 업로드 지시 보내기' : '업로드할 앱을 고르는 창 열기'].filter(Boolean);
-    const go1 = () => dialog('원클릭 제작을 시작합니다', `${steps.map((t, n) => `${'①②③④⑤⑥'[n]} ${t}`).join('\n')}\n\n진행 중에는 화면을 만지지 마세요. 클링은 "비디오 생성·01, 720p · 5s"로 맞춰 두세요.`,
+    const kp = klingPlan(p), doneSt = stillShots(p).length - need.length;
+    const steps = [need.length ? `그록으로 장면 이미지 ${need.length}장 만들기 (무료)${doneSt ? ` · ${doneSt}장은 이미 있어 건너뜀` : ''}` : '',
+      kp.gen.length ? `클링으로 ${kp.gen.map(i => i + 1).join(', ')}번 샷 영상 만들기 · 약 ${kp.gen.length * KLING_COST}크레딧` : '',
+      kp.get.length ? `${kp.get.map(i => i + 1).join(', ')}번 샷은 이미 생성 요청함 → 다시 만들지 않고 내려받기만` : '',
+      kp.have.length ? `${kp.have.map(i => i + 1).join(', ')}번 샷 영상은 이미 있어 건너뜀` : '',
+      kp.need.length ? '생성이 끝나면 영상 내려받기 (몇 분 걸립니다)' : '', '이 앱으로 돌아와 이미지·영상을 잇고 자막 새기기', settings.upWay === 'pickle' ? '피클에게 영상과 업로드 지시 보내기' : '업로드할 앱을 고르는 창 열기'].filter(Boolean);
+    const resumed = doneSt || kp.have.length || kp.get.length;
+    const go1 = () => dialog(resumed ? '이어서 제작합니다' : '원클릭 제작을 시작합니다', `${steps.map((t, n) => `${'①②③④⑤⑥⑦⑧'[n]} ${t}`).join('\n')}\n\n진행 중에는 화면을 만지지 마세요. 클링은 "비디오 생성·01, 720p · 5s"로 맞춰 두세요.`,
       [['취소', null], ['시작', () => { saveDraft(); if (need.length) startGrokStills(p, need, false); else startKlingStage(p); }, 'pri']]);
     if (miss.length) dialog('사진이 없는 인물이 있습니다', `${miss.join(', ')}의 사진이 없습니다. 인물 탭에서 그록으로 만들거나 첨부하면 얼굴이 일정하게 나옵니다.`, [['취소', null], ['사진 없이 진행', go1, 'pri']]);
     else go1();
@@ -780,19 +800,25 @@ async function pipelineResume() {
     render();
     return dialog(`장면 이미지 ${got}/${n}장을 받았습니다`, '그록에서 일부를 만들지 못했거나 저장하지 못했습니다. 빈 칸은 직접 첨부해도 됩니다.', [['그만두기', () => store.set('pipeline', null)], ['다시 만들기', () => startGrokStills(draft, stillShots(draft).filter(i => !stillOf(draft, i)), pl.only)], [pl.only ? '닫기' : '빈 칸 두고 계속', () => { if (pl.only) store.set('pipeline', null); else startKlingStage(draft); }, 'pri']]);
   }
-  const got = findClips(draft, pl.since, pl.n, true);
+  if (info && pl.jobId && info.jobId === pl.jobId && Array.isArray(info.done) && pl.idx) {
+    const f = finOf(draft); f.sent = f.sent || {};
+    info.done.forEach(d => { if (pl.idx[d] != null) f.sent[pl.idx[d]] = Date.now(); }); dirty = true; saveDraft();
+  }
+  const got = findClips(draft, pl.since, pl.idx || pl.n, true);
   if (got >= pl.n) return startAssemble(draft, true);
   render();
   dialog(`영상 ${got}/${pl.n}개를 찾았습니다`, '아직 생성 중이거나 내려받기가 멈췄을 수 있습니다.', [['그만두기', () => store.set('pipeline', null)], ['다시 찾기', pipelineResume], [got ? '찾은 것으로 계속' : '직접 고르기', () => { if (got) { store.set('pipeline', null); startAssemble(draft, true); } else A.pickClips(); }, 'pri']]);
 }
 window.onVideosPicked = uris => {
   if (!draft || !uris || !uris.length) return;
-  const f = finOf(draft); f.clips = f.clips.concat(uris.map(u => ({ uri: u, name: decodeURIComponent(u.split('/').pop()), dur: 0 }))); dirty = true; render();
+  const f = finOf(draft), open = stillShots(draft).length ? vidShots(draft).filter(i => !clipOf(draft, i)) : [];
+  f.clips = f.clips.concat(uris.map((u, k) => ({ uri: u, name: decodeURIComponent(u.split('/').pop()), dur: 0, ...(open[k] != null ? { shot: open[k] } : {}) })));
+  f.clips.sort((a, b) => (a.shot == null ? 99 : a.shot) - (b.shot == null ? 99 : b.shot)); dirty = true; render();
 };
 function tabFinish(p) {
   const f = finOf(p), lang = finLang(p), lines = subLines(p, lang), on = Native.has() && window.AndroidBridge.assemble, running = asm && asm.state === 'running';
   const stills = stillShots(p), needClips = stills.length ? vidShots(p).length : p.shots.length, num = n => '①②③④⑤'[stills.length ? n : n - 1];
-  const clipRow = (c, i) => `<div class="row clip"><span class="cthumb">${on && vThumb(c.uri) ? `<img src="${vThumb(c.uri)}" alt="">` : ic('film')}</span><span class="grow"><b>${stills.length ? `${vidShots(p)[i] != null ? vidShots(p)[i] + 1 + '번 샷' : '남는 클립'}` : `샷 ${i + 1}${p.shots[i] ? ' · ' + beatOf(p, i)[0] : ''}`}</b><small>${esc(c.name || '')}${c.dur ? ` · ${Math.round(c.dur / 100) / 10}초` : ''}</small></span>
+  const clipRow = (c, i) => `<div class="row clip"><span class="cthumb">${on && vThumb(c.uri) ? `<img src="${vThumb(c.uri)}" alt="">` : ic('film')}</span><span class="grow"><b>${c.shot != null ? `${c.shot + 1}번 샷 · ${beatOf(p, c.shot)[0]}` : stills.length ? '샷 미지정 클립' : `샷 ${i + 1}${p.shots[i] ? ' · ' + beatOf(p, i)[0] : ''}`}</b><small>${esc(c.name || '')}${c.dur ? ` · ${Math.round(c.dur / 100) / 10}초` : ''}</small></span>
     <button class="ib sm" data-act="clipMove" data-i="${i}" data-d="-1" aria-label="위로">${ic('back')}</button><button class="ib sm" data-act="clipDel" data-i="${i}" aria-label="빼기">${ic('x')}</button></div>`;
   return `
     <div class="card aicard kling"><div class="aih"><span class="glyph" style="--h:350">${ic('bolt')}</span><span class="grow"><b>원클릭 제작</b><small>그록 장면 이미지 → 클링 핵심 ${vidShots(p).length}샷(약 ${vidShots(p).length * KLING_COST}크레딧) → 자막 넣어 합치기 → ${settings.upWay === 'pickle' ? '피클에게 업로드 맡기기' : '업로드 창'}까지</small></span>${flowNow().verified ? '' : '<span class="tag warn">시험 중</span>'}</div>
@@ -805,6 +831,8 @@ function tabFinish(p) {
       <div class="aiacts"><button class="btn sm grok" data-act="grokStills">${ic('sparkle')}그록으로 ${stills.some(i => !stillOf(p, i)) ? '빈 칸' : '모두 다시'} 만들기</button>${stills.map(i => `<button class="btn sm" data-act="stillPrompt" data-i="${i}">${ic('share')}${i + 1}번 프롬프트</button>`).join('')}</div>
       <p class="hint">움직이지 않는 샷은 그록 장면 이미지에 천천히 확대되는 효과와 자막을 넣어 영상 사이에 이어 붙입니다. 칸을 눌러 직접 첨부해도 됩니다. 장면이 이상하게 나오면 그 칸의 ✦ 버튼으로 그 장면만 다시 만드세요.</p></div>` : ''}
     <div class="sec">${h2('film', `${stills.length ? '②' : '①'} 클링 영상 클립 ${f.clips.length}/${needClips}${stills.length ? ` (${vidShots(p).map(i => i + 1).join(', ')}번 샷)` : ''}`)}
+      ${stills.length ? `<div class="chips">${vidShots(p).map(i => `<span class="chip ${clipOf(p, i) ? 'on' : ''}">${i + 1}번 · ${clipOf(p, i) ? '영상 있음' : sentOf(p, i) ? '생성 요청함 (내려받기만 남음)' : '아직'}</span>`).join('')}</div>
+      ${vidShots(p).some(i => sentOf(p, i) && !clipOf(p, i)) ? `<p class="hint">이미 클링에 생성 요청한 샷은 원클릭을 다시 눌러도 새로 만들지 않고 내려받기만 합니다. 다시 생성하려면 <button class="pbtn" data-act="sentReset">${ic('refresh')}생성 기록 지우기</button></p>` : ''}` : ''}
       <div class="aiacts"><button class="btn sm blue" data-act="findClips">${ic('search')}방금 받은 영상 찾기</button><button class="btn sm" data-act="pickClips">${ic('folder')}직접 고르기</button></div>
       ${f.clips.length ? `<div class="list">${f.clips.map(clipRow).join('')}</div>` : '<p class="hint">클링에서 내려받은 영상을 찾거나 직접 골라 샷 순서대로 놓으세요. "방금 받은 영상 찾기"는 최근 30분 안에 저장된 영상을 오래된 것부터 가져옵니다.</p>'}</div>
     <div class="sec">${h2('caption', `${num(2)} 자막`)}
@@ -1298,14 +1326,15 @@ const A = {
   subOut: d => outSheet('자막 파일', toSrt(draft, d.v), fileName(T(draft) + '_' + d.v, 'srt'), 'application/x-subrip'),
   hitsFetch: () => fetchHits(),
   oneClick: () => oneClick(),
-  shotKind: d => { const i = +d.i, v = vidShots(draft).filter(x => x !== i); draft.vids = d.v === 'v' ? v.concat(i).sort((a, b) => a - b) : v; finOf(draft).clips = []; touch(); render(); },
+  shotKind: d => { const i = +d.i, v = vidShots(draft).filter(x => x !== i); draft.vids = d.v === 'v' ? v.concat(i).sort((a, b) => a - b) : v; touch(); render(); },
+  sentReset: () => dialog('클링 생성 기록을 지울까요?', '이미 클링에 생성 요청한 샷도 다음 원클릭 때 다시 생성합니다. 크레딧이 또 듭니다.', [['취소', null], ['지우기', () => { finOf(draft).sent = {}; touch(); render(); }, 'pri']]),
   grokStills: () => { if (needPhone()) return; const need = stillShots(draft).filter(i => !stillOf(draft, i)); const idx = need.length ? need : stillShots(draft); if (!idx.length) return toast('이미지 샷이 없습니다'); saveDraft(); startGrokStills(draft, idx, true); },
   stillPick: d => { pendingImg = { still: +d.i }; $('#imgFile').click(); },
   stillRegen: d => { if (needPhone()) return; saveDraft(); startGrokStills(draft, [+d.i], true); },
   stillRm: d => { delete finOf(draft).stills[+d.i]; touch(); render(); },
   stillPrompt: d => { const m = MODE(); const t = `${+d.i + 1}번 샷 장면 이미지 프롬프트`; outSheet(t, GROK_PREFIX[m] + stillPrompt(draft, +d.i, m), fileName(t, 'txt')); },
   goFinish: () => { cur().p.tab = 'finish'; render(true); },
-  findClips: () => { if (needPhone()) return; if (!window.AndroidBridge.hasMediaPerm()) return dialog('동영상 접근을 허용해 주세요', '내려받은 영상을 찾으려면 접근 권한이 필요합니다.', [['취소', null], ['허용하기', () => window.AndroidBridge.requestMediaPerm(), 'pri']]); const pl = store.get('pipeline', null); const n = findClips(draft, pl && pl.pid === draft.id ? pl.since : Date.now() - 30 * 60e3, stillShots(draft).length ? vidShots(draft).length : draft.shots.length, false); if (n) toast(`영상 ${n}개를 가져왔습니다`); },
+  findClips: () => { if (needPhone()) return; if (!window.AndroidBridge.hasMediaPerm()) return dialog('동영상 접근을 허용해 주세요', '내려받은 영상을 찾으려면 접근 권한이 필요합니다.', [['취소', null], ['허용하기', () => window.AndroidBridge.requestMediaPerm(), 'pri']]); const pl = store.get('pipeline', null); const n = findClips(draft, pl && pl.pid === draft.id ? pl.since : Date.now() - 30 * 60e3, stillShots(draft).length ? (klingPlan(draft).need.length ? klingPlan(draft).need : vidShots(draft)) : draft.shots.length, false); if (n) toast(`영상 ${n}개를 가져왔습니다`); },
   pickClips: () => { if (!needPhone()) window.AndroidBridge.pickVideos(); },
   clipMove: d => { const a = finOf(draft).clips, i = +d.i; if (i > 0) { a.splice(i - 1, 0, a.splice(i, 1)[0]); dirty = true; render(); } },
   clipDel: d => { finOf(draft).clips.splice(+d.i, 1); dirty = true; render(); },

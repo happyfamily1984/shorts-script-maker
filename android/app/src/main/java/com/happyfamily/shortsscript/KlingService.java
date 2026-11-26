@@ -53,6 +53,8 @@ import java.util.concurrent.TimeUnit;
 public class KlingService extends AccessibilityService {
     static volatile KlingService self;
     static volatile String lastStatus = "";
+    /* 이번 작업에서 끝까지 입력(생성 요청)한 샷 번호들 — 원클릭 이어 하기에 쓴다 */
+    static volatile String lastDone = "[]", lastJobId = "";
     static final String DUMP_FILE = "kling_dumps.json";
 
     private Handler ui;
@@ -146,6 +148,7 @@ public class KlingService extends AccessibilityService {
     boolean startJob(JSONObject j, JSONObject f) {
         if (running) return false;
         job = j; flow = f; cancel = false; running = true;
+        lastDone = "[]"; lastJobId = j.optString("id", "");
         showPanel(null, null, "중지", () -> { cancel = true; status("중지하는 중…"); });
         new Thread(this::runJob).start();
         return true;
@@ -156,12 +159,15 @@ public class KlingService extends AccessibilityService {
         try {
             status("클링 앱을 여는 중…");
             runSteps(flow.optJSONArray("start"), null, -1, n);
-            for (int i = 0; i < n; i++) {
+            JSONArray done = new JSONArray();
+            for (int i = 0; i < n && !job.optBoolean("collectOnly"); i++) {
                 if (cancel) throw new StepFail("사용자가 중지했습니다");
                 JSONObject sh = shots.getJSONObject(i);
+                if (sh.optBoolean("skip")) continue;   /* 이미 생성 요청한 샷: 내려받기만 */
                 JSONArray imgs = sh.optJSONArray("images");
                 if (imgs != null && imgs.length() > 0) { status(prefix(i, n) + "사진 준비 중"); saveImages(imgs); }
                 runSteps(flow.optJSONArray("shot"), sh, i, n);
+                done.put(i); lastDone = done.toString();
                 if (i < n - 1) runSteps(flow.optJSONArray("between"), sh, i, n);
             }
             if (job.optBoolean("collect") && flow.has("collect")) {
