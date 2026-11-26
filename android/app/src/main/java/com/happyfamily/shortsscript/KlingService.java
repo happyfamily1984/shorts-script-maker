@@ -194,6 +194,8 @@ public class KlingService extends AccessibilityService {
             String cond = st.optString("if", "");
             if (!cond.isEmpty() && !truthy(cond, sh)) continue;
             String say = st.optString("say", st.optString("do"));
+            String dd = st.optString("do");
+            if (!"launch".equals(dd) && !"wait".equals(dd) && !"returnApp".equals(dd)) waitForTarget();
             status(prefix(Math.max(i, 0), n) + say);
             boolean ok;
             try { ok = exec(st, sh, i, n); } catch (Exception e) { ok = false; }
@@ -314,9 +316,32 @@ public class KlingService extends AccessibilityService {
         if (match(n, f)) out.add(n);
         for (int k = 0; k < n.getChildCount(); k++) collect(n.getChild(k), f, out, depth + 1);
     }
+    /* 배달 콜 같은 다른 앱이 앞에 뜨면 멈추지 않고, 대상 앱이 다시 앞에 올 때까지 기다린다 (최대 20분) */
+    private String activePkg() {
+        try { AccessibilityNodeInfo r = getRootInActiveWindow(); return r == null || r.getPackageName() == null ? null : r.getPackageName().toString(); }
+        catch (Exception e) { return null; }
+    }
+    private boolean targetAway() {
+        String t = job == null ? "" : job.optString("package"); if (t.isEmpty()) return false;
+        String a = activePkg(); return a != null && !a.equals(t);
+    }
+    private long waitForTarget() throws InterruptedException {
+        if (!targetAway()) return 0;
+        long t0 = System.currentTimeMillis(); String keep = lastStatus;
+        String name = job.optString("appName", "작업하던 앱");
+        while (targetAway() && !cancel && System.currentTimeMillis() - t0 < 20 * 60_000L) {
+            status("다른 화면이 떠서 잠시 기다리는 중 · " + name + ("피클".equals(name) ? "로" : "으로") + " 돌아오면 이어서 합니다");
+            Thread.sleep(700);
+        }
+        if (cancel) return System.currentTimeMillis() - t0;
+        Thread.sleep(1500);   /* 돌아온 화면이 자리 잡을 때까지 */
+        status(keep);
+        return System.currentTimeMillis() - t0;
+    }
     private AccessibilityNodeInfo find(JSONObject f, int timeout) throws InterruptedException {
         long end = System.currentTimeMillis() + timeout;
         do {
+            end += waitForTarget();
             List<AccessibilityNodeInfo> all = findAll(f);
             int idx = f == null ? 0 : f.optInt("index", 0);
             if (idx < 0) idx = all.size() + idx;

@@ -332,6 +332,7 @@ public class MainActivity extends Activity {
                 String pk = KlingService.findKling(MainActivity.this, flow.optString("package"));
                 if (pk.isEmpty()) return "클링 앱을 찾지 못했습니다. 클링 앱이 설치되어 있는지 확인하세요.";
                 job.put("package", pk);
+                job.put("appName", "클링");
                 return KlingService.self.startJob(job, flow) ? "ok" : "이미 자동 입력이 진행 중입니다.";
             } catch (Exception e) { return "자동 입력을 시작하지 못했습니다: " + e.getMessage(); }
         }
@@ -377,6 +378,7 @@ public class MainActivity extends Activity {
                 String pk = findTarget(target, flow.optString("package"));
                 if (pk.isEmpty()) return ("grok".equals(target) ? "그록" : "클링") + " 앱을 찾지 못했습니다. 설치되어 있는지 확인하세요.";
                 job.put("package", pk);
+                job.put("appName", "grok".equals(target) ? "그록" : "pickle".equals(target) ? "피클" : "클링");
                 return KlingService.self.startJob(job, flow) ? "ok" : "이미 자동 입력이 진행 중입니다.";
             } catch (Exception e) { return "자동 입력을 시작하지 못했습니다: " + e.getMessage(); }
         }
