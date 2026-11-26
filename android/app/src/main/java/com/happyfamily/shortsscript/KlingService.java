@@ -385,8 +385,16 @@ public class KlingService extends AccessibilityService {
     }
 
     /* 사진은 갤러리 맨 앞에 보이도록 순서를 거꾸로, 1초 간격으로 저장한다 (첫 번째 인물이 가장 최신) */
+    /* 지난번에 클링용으로 저장한 인물 사진(kling_ref_)을 지운다. 이 앱이 만든 파일이라 권한 없이 지울 수 있다 */
+    private void clearOldRefs() {
+        try {
+            getContentResolver().delete(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
+                    MediaStore.Images.Media.DISPLAY_NAME + " LIKE ?", new String[]{"kling_ref_%"});
+        } catch (Exception ignored) { }
+    }
     private void saveImages(JSONArray imgs) throws InterruptedException {
         if (Build.VERSION.SDK_INT < 29) return;
+        clearOldRefs(); Thread.sleep(600);
         for (int k = imgs.length() - 1; k >= 0; k--) {
             try {
                 String s = imgs.getString(k); int c = s.indexOf(',');
@@ -394,13 +402,14 @@ public class KlingService extends AccessibilityService {
                 ContentValues v = new ContentValues();
                 v.put(MediaStore.Images.Media.DISPLAY_NAME, "kling_ref_" + System.currentTimeMillis() + ".jpg");
                 v.put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg");
-                v.put(MediaStore.Images.Media.RELATIVE_PATH, Environment.DIRECTORY_PICTURES + "/ShortDramaMaker");
+                v.put(MediaStore.Images.Media.RELATIVE_PATH, Environment.DIRECTORY_DCIM + "/Camera");
                 v.put(MediaStore.Images.Media.DATE_TAKEN, System.currentTimeMillis());
                 Uri u = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, v);
                 if (u != null) try (OutputStream os = getContentResolver().openOutputStream(u)) { os.write(b); }
             } catch (Exception ignored) { }
             if (k > 0) Thread.sleep(1100);
         }
+        Thread.sleep(1500);   /* 클링 사진 목록에 새 사진이 잡힐 시간 */
     }
 
     /* ---------- 화면 기록 ---------- */
