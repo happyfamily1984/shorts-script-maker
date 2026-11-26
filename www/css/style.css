@@ -440,3 +440,31 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display
 #top{gap:6px}
 #top h1{font-size:17px}
 .ib.sm.cpy{color:var(--blue);background:var(--blue-soft);border:1px solid #C9D8FF}
+
+/* 인물 사진 칸·내 캐릭터 */
+.slots{display:grid;grid-template-columns:3fr 2fr;gap:10px}
+.slots.big{grid-template-columns:3fr 2fr}
+.slot{position:relative;border-radius:16px;overflow:hidden;background:var(--surface2);border:1px solid var(--line);aspect-ratio:9/16;max-height:340px;width:100%}
+.slot.face{aspect-ratio:3/4;align-self:start}
+.slot .slab{position:absolute;left:8px;top:8px;font-size:11.5px;font-weight:750;color:#fff;background:rgba(20,26,46,.55);padding:2px 8px;border-radius:99px;pointer-events:none}
+.sadd{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;border:2px dashed #C9D8FF;border-radius:16px;color:var(--blue);text-align:center;padding:8px}
+.sadd svg.i{width:26px;height:26px}
+.sadd b{font-size:13.5px}
+.sadd small{font-size:11.5px;color:var(--muted)}
+.sthumb{position:absolute;inset:0;width:100%;height:100%}
+.sthumb img{width:100%;height:100%;object-fit:cover;display:block}
+.slot.miss .sthumb::after{content:"사진을 찾을 수 없음";position:absolute;inset:0;display:grid;place-items:center;font-size:12px;color:var(--muted)}
+.sacts{position:absolute;right:6px;bottom:6px;display:flex;gap:6px}
+.sacts .ib.sm{background:rgba(255,255,255,.92);color:var(--ink2);box-shadow:var(--shadow-s)}
+.lchars{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.lchar{display:flex;flex-direction:column;gap:6px;padding:10px 10px 14px;cursor:pointer}
+.lchar .lthumb{display:grid;place-items:center;aspect-ratio:3/4;border-radius:14px;overflow:hidden;background:var(--surface2);color:var(--muted)}
+.lchar .lthumb img{width:100%;height:100%;object-fit:cover}
+.lchar .lthumb svg.i{width:36px;height:36px}
+.lchar b{font-size:15px;font-weight:780}
+.lchar .tag{align-self:flex-start}
+.lchar small{font-size:12px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.imgview{width:100%;max-width:420px;display:flex;flex-direction:column;gap:12px}
+.imgview img{width:100%;max-height:70vh;object-fit:contain;border-radius:18px;background:#000}
+.imgview .acts{display:flex;gap:8px}
+.imgview .acts .btn{flex:1;min-height:48px;font-size:14.5px}

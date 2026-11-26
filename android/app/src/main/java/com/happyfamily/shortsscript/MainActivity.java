@@ -1,12 +1,16 @@
 package com.happyfamily.shortsscript;
 
 import android.app.Activity;
+import android.content.ContentValues;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
+import android.util.Base64;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowInsets;
@@ -36,7 +40,7 @@ public class MainActivity extends Activity {
 
     private WebView web;
     private FrameLayout root;
-    private String pendingText;
+    private byte[] pendingBytes;
     private ValueCallback<Uri[]> fileCallback;
     private boolean dark = false;
 
@@ -79,7 +83,9 @@ public class MainActivity extends Activity {
                 fileCallback = cb;
                 Intent i = new Intent(Intent.ACTION_OPEN_DOCUMENT);
                 i.addCategory(Intent.CATEGORY_OPENABLE);
-                i.setType("*/*");
+                boolean img = false;
+                if (params != null && params.getAcceptTypes() != null) for (String t : params.getAcceptTypes()) if (t != null && t.startsWith("image")) img = true;
+                i.setType(img ? "image/*" : "*/*");
                 try { startActivityForResult(i, REQ_PICK); } catch (Exception e) { fileCallback = null; return false; }
                 return true;
             }
@@ -140,15 +146,36 @@ public class MainActivity extends Activity {
             }
         } else if (req == REQ_SAVE) {
             boolean ok = false;
-            if (res == RESULT_OK && data != null && data.getData() != null && pendingText != null) {
+            if (res == RESULT_OK && data != null && data.getData() != null && pendingBytes != null) {
                 try (OutputStream os = getContentResolver().openOutputStream(data.getData())) {
-                    os.write(pendingText.getBytes(StandardCharsets.UTF_8));
+                    os.write(pendingBytes);
                     ok = true;
                 } catch (Exception ignored) { }
             }
-            pendingText = null;
+            pendingBytes = null;
             web.evaluateJavascript("window.onNativeSaved && window.onNativeSaved(" + ok + ")", null);
         }
+    }
+
+    private void createDocument(String name, String type, byte[] bytes) {
+        pendingBytes = bytes;
+        Intent i = new Intent(Intent.ACTION_CREATE_DOCUMENT);
+        i.addCategory(Intent.CATEGORY_OPENABLE);
+        i.setType(type);
+        i.putExtra(Intent.EXTRA_TITLE, name);
+        try { startActivityForResult(i, REQ_SAVE); }
+        catch (Exception e) { pendingBytes = null; notifySaved(false); }
+    }
+
+    private void notifySaved(boolean ok) {
+        web.evaluateJavascript("window.onNativeSaved && window.onNativeSaved(" + ok + ")", null);
+    }
+
+    private static byte[] decodeDataUrl(String dataUrl) {
+        try {
+            int c = dataUrl.indexOf(',');
+            return Base64.decode(c >= 0 ? dataUrl.substring(c + 1) : dataUrl, Base64.DEFAULT);
+        } catch (Exception e) { return null; }
     }
 
     private class Bridge {
@@ -165,15 +192,43 @@ public class MainActivity extends Activity {
 
         @JavascriptInterface
         public void saveFile(String name, String mime, String text) {
-            runOnUiThread(() -> {
-                pendingText = text;
-                Intent i = new Intent(Intent.ACTION_CREATE_DOCUMENT);
-                i.addCategory(Intent.CATEGORY_OPENABLE);
-                i.setType(mime.startsWith("text/") || mime.equals("application/json") ? mime : "application/octet-stream");
-                i.putExtra(Intent.EXTRA_TITLE, name);
-                try { startActivityForResult(i, REQ_SAVE); }
-                catch (Exception e) { pendingText = null; web.evaluateJavascript("window.onNativeSaved && window.onNativeSaved(false)", null); }
-            });
+            String type = mime.startsWith("text/") || mime.equals("application/json") ? mime : "application/octet-stream";
+            runOnUiThread(() -> createDocument(name, type, text.getBytes(StandardCharsets.UTF_8)));
+        }
+
+        /* data:image/...;base64,... 를 사용자가 고른 위치에 저장 */
+        @JavascriptInterface
+        public void saveImage(String name, String dataUrl) {
+            byte[] b = decodeDataUrl(dataUrl);
+            runOnUiThread(() -> { if (b == null) notifySaved(false); else createDocument(name, "image/jpeg", b); });
+        }
+
+        /* 사진 앱의 Pictures/ShortDramaMaker 에 저장한 뒤 앱을 골라 공유 */
+        @JavascriptInterface
+        public void shareImage(String name, String dataUrl) {
+            byte[] b = decodeDataUrl(dataUrl);
+            if (b == null) return;
+            if (Build.VERSION.SDK_INT < 29) { runOnUiThread(() -> createDocument(name, "image/jpeg", b)); return; }
+            new Thread(() -> {
+                Uri uri = null;
+                try {
+                    ContentValues v = new ContentValues();
+                    v.put(MediaStore.Images.Media.DISPLAY_NAME, name);
+                    v.put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg");
+                    v.put(MediaStore.Images.Media.RELATIVE_PATH, Environment.DIRECTORY_PICTURES + "/ShortDramaMaker");
+                    uri = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, v);
+                    if (uri != null) try (OutputStream os = getContentResolver().openOutputStream(uri)) { os.write(b); }
+                } catch (Exception e) { uri = null; }
+                final Uri u = uri;
+                runOnUiThread(() -> {
+                    if (u == null) { createDocument(name, "image/jpeg", b); return; }
+                    Intent i = new Intent(Intent.ACTION_SEND);
+                    i.setType("image/jpeg");
+                    i.putExtra(Intent.EXTRA_STREAM, u);
+                    i.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                    startActivity(Intent.createChooser(i, "사진 보내기"));
+                });
+            }).start();
         }
 
         @JavascriptInterface

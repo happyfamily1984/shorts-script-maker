@@ -13,6 +13,29 @@ const store = {
 let settings = Object.assign({ theme: 'light', mode: 'kr', style: 'real', castKr: CAST_DEFAULT.kr, castEn: CAST_DEFAULT.en, checks: [], myThemes: [], aiKeys: '', aiModel: '', hitsUrl: '' }, store.get('settings', {}));
 let projects = store.get('projects', []);
 const saveProjects = () => store.set('projects', projects);
+let charLib = store.get('chars', []);
+const saveCharLib = () => store.set('chars', charLib);
+/* 사진은 용량이 커서 IndexedDB 에 줄여서 저장한다. 인물에는 사진 id 만 둔다 */
+const imgCache = {};
+const IDB = (() => {
+  let op;
+  const open = () => op || (op = new Promise((res, rej) => { try { const r = indexedDB.open('sdm-images', 1); r.onupgradeneeded = () => r.result.createObjectStore('img'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); } catch (e) { rej(e); } }));
+  const tx = (mode, fn) => open().then(db => new Promise((res, rej) => { const t = db.transaction('img', mode), q = fn(t.objectStore('img')); t.oncomplete = () => res(q && q.result); t.onerror = () => rej(t.error); }));
+  return { put: (k, v) => tx('readwrite', st => st.put(v, k)), get: k => tx('readonly', st => st.get(k)), del: k => tx('readwrite', st => st.delete(k)), keys: () => tx('readonly', st => st.getAllKeys()) };
+})();
+async function imgGet(id) { if (!id) return null; if (imgCache[id]) return imgCache[id]; try { const v = await IDB.get(id); if (v) imgCache[id] = v; return v || null; } catch (e) { return null; } }
+const sessionImgs = new Set();
+async function imgPut(dataUrl, id) { id = id || 'img_' + uid(); imgCache[id] = dataUrl; sessionImgs.add(id); await IDB.put(id, dataUrl); return id; }
+function hydrateImgs(root) { $$('img[data-img]', root).forEach(el => imgGet(el.dataset.img).then(v => { if (v) el.src = v; else { const sl = el.closest('.slot'); if (sl) sl.classList.add('miss'); } })); }
+function shrinkImage(file, max) {
+  return new Promise((res, rej) => {
+    const r = new FileReader();
+    r.onload = () => { const im = new Image(); im.onload = () => { const sc = Math.min(1, max / Math.max(im.width, im.height)), c = document.createElement('canvas'); c.width = Math.round(im.width * sc); c.height = Math.round(im.height * sc); const g = c.getContext('2d'); g.fillStyle = '#fff'; g.fillRect(0, 0, c.width, c.height); g.drawImage(im, 0, 0, c.width, c.height); res(c.toDataURL('image/jpeg', 0.9)); }; im.onerror = () => rej(new Error('이미지를 읽지 못했습니다')); im.src = r.result; };
+    r.onerror = () => rej(r.error); r.readAsDataURL(file);
+  });
+}
+const usedImgIds = list => { const u = new Set(); list.forEach(p => (p.chars || []).forEach(c => { if (c.imgFull) u.add(c.imgFull); if (c.imgFace) u.add(c.imgFace); })); return u; };
+async function gcImages() { try { const used = usedImgIds([...projects, { chars: charLib }, draft || {}]); for (const k of await IDB.keys()) if (!used.has(k) && !sessionImgs.has(k)) await IDB.del(k); } catch (e) {} }
 const saveSettings = () => { store.set('settings', settings); applyTheme(); };
 function applyTheme() {
   const r = document.documentElement;
@@ -226,9 +249,14 @@ const EXPORTS = [
   { id: 'pack', name: '제작 팩 전체', sub: '대본, 인물·샷·클링 프롬프트, 업로드 문구', ext: 'txt', mime: 'text/plain', one: p => toPack(p, MODE()), join: '\n\n████████████████████\n\n' },
   { id: 'script', name: '대본만', sub: '인물과 샷별 대본', ext: 'txt', mime: 'text/plain', one: p => toScriptText(p, MODE()), join: '\n\n════════════════\n\n' },
   { id: 'srt', name: '자막 파일 (SRT)', sub: '지금 모드의 언어, 한 편씩', ext: 'srt', mime: 'application/x-subrip', one: p => toSrt(p, isEn() ? 'en' : 'ko'), single: true },
-  { id: 'json', name: '백업 파일 (JSON)', sub: '다른 기기로 옮기거나 복원할 때', ext: 'json', mime: 'application/json', all: list => JSON.stringify({ app: 'short-drama-maker', version: 2, projects: list }, null, 2) }
+  { id: 'json', name: '백업 파일 (JSON)', sub: '작업, 내 캐릭터, 첨부 사진까지. 다른 기기로 옮길 때', ext: 'json', mime: 'application/json', backup: true }
 ];
-const buildExport = (fmt, list) => fmt.all ? fmt.all(list) : list.map(fmt.one).join(fmt.join || '\n\n');
+const buildExport = (fmt, list) => list.map(fmt.one).join(fmt.join || '\n\n');
+async function buildBackup(list) {
+  const images = {};
+  for (const id of usedImgIds([...list, { chars: charLib }])) { const v = await imgGet(id); if (v) images[id] = v; }
+  return JSON.stringify({ app: 'short-drama-maker', version: 3, projects: list, chars: charLib, images });
+}
 const Native = {
   has: () => typeof window.AndroidBridge !== 'undefined',
   share(title, text) {
@@ -241,6 +269,14 @@ const Native = {
     const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type: mime + ';charset=utf-8' })); a.download = name;
     document.body.appendChild(a); a.click(); a.remove(); toast('파일로 저장했습니다');
   },
+  shareImage(name, dataUrl) {
+    if (this.has() && window.AndroidBridge.shareImage) return window.AndroidBridge.shareImage(name, dataUrl);
+    fetch(dataUrl).then(r => r.blob()).then(b => { const f = new File([b], name, { type: 'image/jpeg' }); if (navigator.canShare && navigator.canShare({ files: [f] })) return navigator.share({ files: [f], title: name }).catch(() => {}); this.saveImage(name, dataUrl); }).catch(() => this.saveImage(name, dataUrl));
+  },
+  saveImage(name, dataUrl) {
+    if (this.has() && window.AndroidBridge.saveImage) return window.AndroidBridge.saveImage(name, dataUrl);
+    const a = document.createElement('a'); a.href = dataUrl; a.download = name; document.body.appendChild(a); a.click(); a.remove(); toast('사진을 저장했습니다');
+  },
   exit() { if (this.has()) window.AndroidBridge.exitApp(); else { exiting = true; history.go(-2); } }
 };
 window.onNativeSaved = ok => toast(ok ? '파일로 저장했습니다' : '저장하지 않았습니다');
@@ -250,12 +286,15 @@ function copyText(text, msg = '복사했습니다') {
   if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, fallback); else fallback();
 }
 const fileName = (label, ext) => `숏드라마_${String(label).replace(/[^가-힣0-9a-zA-Z]+/g, '_').slice(0, 24)}_${dateStr().replace(/\./g, '')}.${ext}`;
-function outSheet(title, text, name, mime) {
-  sheet(title, [['복사하기', '클립보드에 복사', () => copyText(text)], ['공유하기', '메신저, 메일, 메모 앱으로 보내기', () => Native.share(title, text)], ['파일로 저장', name, () => Native.save(name, mime || 'text/plain', text)]]);
+function outSheet(title, text, name, mime, fileOnly) {
+  const save = ['파일로 저장', name, () => Native.save(name, mime || 'text/plain', text)];
+  sheet(title, fileOnly ? [save] : [['공유하기', '앱을 골라 보내기 (그록, 챗GPT, 메신저 등)', () => Native.share(title, text)], save, ['복사하기', '클립보드에 복사', () => copyText(text)]]);
 }
 function exportFlow(list, label) {
   if (!list.length) return toast('내보낼 대본이 없습니다');
-  sheet(`${label} 내보내기`, EXPORTS.filter(f => !(f.single && list.length > 1)).map(f => [f.name, f.sub, () => outSheet(f.name, buildExport(f, list), fileName(label, f.ext), f.mime)]));
+  sheet(`${label} 내보내기`, EXPORTS.filter(f => !(f.single && list.length > 1)).map(f => [f.name, f.sub, () => f.backup
+    ? buildBackup(list).then(t => outSheet(f.name, t, fileName(label, f.ext), f.mime, true))
+    : outSheet(f.name, buildExport(f, list), fileName(label, f.ext), f.mime)]));
 }
 
 /* ---------- 화면 전환과 뒤로가기 ---------- */
@@ -540,6 +579,43 @@ function scoreOf(p) {
   return { items, score: Math.round(items.filter(i => i.ok).length / items.length * 100) };
 }
 const scoreList = sc => sc.items.map(i => `<li><span class="m ${i.ok ? '' : 'x'}">${ic(i.ok ? 'check' : 'x')}</span><span>${i.label}${i.ok ? '' : `<small>${i.tip}</small>`}</span></li>`).join('');
+const KIND_NAME = { full: '전신', face: '얼굴' };
+function imgSlot(ctx, ref, c, kind) {
+  const id = c[kind === 'full' ? 'imgFull' : 'imgFace'], nm = esc(cname(c));
+  return `<div class="slot ${kind}">${id
+    ? `<button class="sthumb" data-act="viewImg" data-id="${id}" data-n="${nm}_${KIND_NAME[kind]}" aria-label="${nm} ${KIND_NAME[kind]} 사진 크게 보기"><img data-img="${id}" alt=""></button><div class="sacts"><button class="ib sm" data-act="attachImg" data-ctx="${ctx}" data-ref="${ref}" data-kind="${kind}" aria-label="사진 바꾸기">${ic('refresh')}</button><button class="ib sm" data-act="rmImg" data-ctx="${ctx}" data-ref="${ref}" data-kind="${kind}" aria-label="사진 빼기">${ic('trash')}</button></div>`
+    : `<button class="sadd" data-act="attachImg" data-ctx="${ctx}" data-ref="${ref}" data-kind="${kind}">${ic('plus')}<b>${KIND_NAME[kind]} 사진</b><small>AI로 만든 이미지 첨부</small></button>`}<span class="slab">${KIND_NAME[kind]}</span></div>`;
+}
+const libProj = c => ({ style: settings.style, chars: [c], shots: [], over: {} });
+const charFields = c => ({ r: c.r, nk: c.nk, ne: c.ne, dk: c.dk, de: c.de, imgFull: c.imgFull || '', imgFace: c.imgFace || '' });
+const charTarget = (ctx, ref) => ctx === 'd' ? draft && draft.chars[+ref] : charLib.find(c => c.id === ref);
+function swapName(p, from, to) {
+  if (!from || !to || from === to) return;
+  p.shots.forEach(s => ['ak', 'ae', 'dk', 'de', 'pk', 'pe'].forEach(f => { if (s[f]) s[f] = s[f].split(from).join(to); }));
+  ['lk', 'le'].forEach(f => { if (p[f]) p[f] = p[f].split(from).join(to); });
+}
+function putLibChar(i, lc) {
+  const p = draft, nc = Object.assign(charFields(lc), { libId: lc.id });
+  if (i >= p.chars.length) { p.chars.push(nc); }
+  else { const old = p.chars[i]; nc.r = old.r; swapName(p, old.nk, nc.nk); swapName(p, old.ne, nc.ne); p.chars[i] = nc; }
+  p.over = {}; dirty = true; render(); toast(`${cname(nc)}${josa(cname(nc), '을')} 넣었습니다`);
+}
+const charCard = c => `<div class="card lchar" role="button" tabindex="0" data-act="go" data-v="char" data-id="${c.id}">
+  <span class="lthumb">${c.imgFull || c.imgFace ? `<img data-img="${c.imgFull || c.imgFace}" alt="">` : ic('user')}</span>
+  <b>${esc(cname(c))}</b><span class="tag ${c.r === 'V' ? 'a' : c.r === 'H' ? '' : 'pur'}">${ROLE_NAME[c.r] || '인물'}</span><small>${esc(clook(c) || c.dk || c.de)}</small></div>`;
+function viewChar(p) {
+  const c = charLib.find(x => x.id === p.id);
+  if (!c) return { title: '내 캐릭터', back: true, html: '<div class="card empty"><b>캐릭터를 찾을 수 없습니다</b>삭제되었을 수 있습니다.</div>' };
+  const f = (k, l, ph, ta) => `<div class="field"><label>${l}</label>${ta ? `<textarea class="in ag" rows="2" data-lc="${c.id}:${k}" placeholder="${ph}">${esc(c[k])}</textarea>` : `<input class="in" data-lc="${c.id}:${k}" value="${esc(c[k])}" placeholder="${ph}">`}</div>`;
+  return { title: cname(c) || '내 캐릭터', back: true, acts: `${modeSeg()}<button class="ib" data-act="delLibChar" data-id="${c.id}" aria-label="캐릭터 삭제">${ic('trash')}</button>`, html: `
+    <div class="slots big">${imgSlot('l', c.id, c, 'full')}${imgSlot('l', c.id, c, 'face')}</div>
+    <div class="card ccard">
+      <div class="field"><label>역할</label><select class="sel" data-lc="${c.id}:r">${Object.entries(ROLE_NAME).map(([r, n]) => `<option value="${r}" ${c.r === r ? 'selected' : ''}>${n}</option>`).join('')}</select></div>
+      ${f('nk', '이름 (국내용)', '예: 서윤')}${f('ne', '이름 (해외용)', 'e.g. Grace')}
+      ${f('dk', '외형·복장 (국내용 프롬프트)', '예: 30대 여성, 검은 롱코트, 긴 생머리, 차가운 눈빛', 1)}${f('de', '외형·복장 (해외용 프롬프트, 영어)', 'e.g. woman in her 30s, long black coat, ...', 1)}
+      <div class="aiacts"><button class="btn sm blue" data-act="shareLibPrompt" data-id="${c.id}" data-kind="full">${ic('share')}전신 프롬프트</button><button class="btn sm" data-act="shareLibPrompt" data-id="${c.id}" data-kind="face">${ic('share')}얼굴 프롬프트</button></div>
+      <p class="hint">지금 모드(${isEn() ? '해외용' : '국내용'})의 이름과 외형으로 프롬프트를 만듭니다. 고친 내용은 바로 저장됩니다.</p></div>` };
+}
 function promptBox(p, key, title) {
   const m = MODE(), ov = p.over && p.over[key + ':' + m] != null;
   return `<div class="pbox"><div class="ph"><b>${title}</b><span class="sp"></span>${ov ? `<button class="pbtn" data-act="resetP" data-k="${key}">${ic('refresh')}원래대로</button>` : ''}<button class="ib sm cpy" data-act="copyP" data-k="${key}" aria-label="복사" title="복사">${ic('copy')}</button><button class="pbtn blue" data-act="shareP" data-k="${key}" data-t="${title}">${ic('share')}내보내기</button></div>
@@ -549,6 +625,7 @@ function promptBox(p, key, title) {
 
 /* ---------- 화면들 ---------- */
 const V = {};
+V.char = viewChar;
 V.home = p => {
   const recent = [...projects].sort((a, b) => b.updated - a.updated).slice(0, 3), d = doneSet(), daily = dailyDramas(5, p.seed);
   return { nav: 'home', top: `<div class="brand"><img src="img/icon.png" alt="">숏드라마 메이커</div>${modeSeg()}<button class="ib" data-act="go" data-v="settings" aria-label="설정">${ic('gear')}</button>`,
@@ -635,17 +712,20 @@ function tabScript(p) {
 function tabCast(p) {
   const k = sfx(), en = isEn(), open = cur().p.cp || {};
   return `
-    <div class="card guide"><b>${ic('info')}인물 이미지 만드는 법</b><p>인물마다 "전신 프롬프트"를 눌러 복사한 뒤 그록이나 챗GPT 이미지 생성에 붙여넣으세요. 나온 이미지를 저장해 두고 클링에서 인물 참조 이미지로 씁니다. 같은 인물은 끝까지 같은 이미지를 쓰세요.</p>
+    <div class="card guide"><b>${ic('info')}인물 이미지 만드는 법</b><ol><li>"전신 프롬프트"를 누르고 그록이나 챗GPT 앱을 골라 보냅니다.</li><li>만들어진 이미지를 휴대폰에 저장한 뒤 "전신 사진" 칸에 첨부합니다. 얼굴도 같은 방법으로 만듭니다.</li><li>"내 캐릭터에 저장"을 누르면 설정과 사진이 앱에 남아 다른 대본에서도 불러올 수 있습니다.</li></ol>
+      <button class="btn sm" data-act="loadChar">${ic('users')}내 캐릭터 불러오기${charLib.length ? ` (${charLib.length})` : ''}</button>
       <div class="frow wide"><span>${ic('globe')}인물 분위기</span><input data-set="${en ? 'castEn' : 'castKr'}" value="${esc(castOf(MODE()))}" aria-label="인물 분위기" placeholder="${en ? 'American' : '한국인'}"></div>
       <p class="hint">${en ? '해외용은 서양권 인물로 만듭니다. British, Latina처럼 바꿀 수 있습니다.' : '국내용은 한국 인물로 만듭니다.'} 모든 인물 프롬프트 앞에 붙습니다.</p></div>
     ${p.chars.map((c, i) => `<div class="card ccard" data-ci="${i}">
       <div class="chd"><span class="glyph" style="--h:${{ H: 218, V: 350, A: 150, X: 42 }[c.r] || 42}">${ic('user')}</span><input class="cname" data-cf="${i}:n${k}" value="${esc(c['n' + k])}" aria-label="이름" placeholder="${en ? 'Name' : '이름'}"><select class="sel" data-cf="${i}:r" aria-label="역할">${Object.entries(ROLE_NAME).map(([r, n]) => `<option value="${r}" ${c.r === r ? 'selected' : ''}>${n}</option>`).join('')}</select><button class="ib sm" data-act="delChar" data-i="${i}" aria-label="인물 삭제">${ic('trash')}</button></div>
       <div class="field"><label>${ic('edit')}외형·복장 설명 ${en ? '(영어, 프롬프트에 그대로 들어갑니다)' : '(프롬프트에 그대로 들어갑니다)'}</label><textarea class="in ag" rows="2" data-cf="${i}:d${k}" placeholder="${en ? 'woman in her 30s, long black coat, ...' : '예: 30대 여성, 검은 롱코트, 긴 생머리, 차가운 눈빛'}">${esc(c['d' + k])}</textarea></div>
       ${en ? `<div class="ko"><span>한국어 설명</span><textarea rows="1" class="ag" data-cf="${i}:dk" aria-label="외형 한국어 설명">${esc(c.dk)}</textarea></div><div class="ko"><span>한국어 이름</span><input data-cf="${i}:nk" value="${esc(c.nk)}" aria-label="한국어 이름"></div>` : ''}
-      <div class="aiacts"><button class="btn sm blue" data-act="genChar" data-i="${i}" data-kind="full">${ic('user')}전신 프롬프트</button><button class="btn sm" data-act="genChar" data-i="${i}" data-kind="face">${ic('camera')}얼굴 프롬프트</button></div>
+      <div class="aiacts"><button class="btn sm blue" data-act="genChar" data-i="${i}" data-kind="full">${ic('share')}전신 프롬프트</button><button class="btn sm" data-act="genChar" data-i="${i}" data-kind="face">${ic('share')}얼굴 프롬프트</button></div>
+      <div class="slots">${imgSlot('d', i, c, 'full')}${imgSlot('d', i, c, 'face')}</div>
+      <button class="btn sm ${c.libId ? '' : 'blue'}" data-act="saveChar" data-i="${i}">${ic(c.libId ? 'check' : 'download')}${c.libId ? '내 캐릭터에 저장됨 · 다시 저장' : '내 캐릭터에 저장'}</button>
       ${open[`${i}:full`] ? promptBox(p, `c:${i}:full`, `${esc(cname(c))} · 전신 이미지 프롬프트`) : ''}${open[`${i}:face`] ? promptBox(p, `c:${i}:face`, `${esc(cname(c))} · 얼굴 이미지 프롬프트`) : ''}
     </div>`).join('')}
-    <div class="aiacts"><button class="btn sm" data-act="addChar">${ic('plus')}인물 추가</button><button class="btn sm" data-act="copyAllChars">${ic('copy')}전신 프롬프트 모두 복사</button></div>`;
+    <div class="aiacts"><button class="btn sm" data-act="addChar">${ic('plus')}인물 추가</button><button class="btn sm" data-act="shareAllChars">${ic('share')}전신 프롬프트 모두 내보내기</button></div>`;
 }
 function tabVideo(p) {
   const vt = cur().p.vt || 'shot', half = Math.ceil(p.shots.length / 2), k = sfx();
@@ -708,13 +788,22 @@ V.hits = p => {
 };
 
 V.library = p => {
-  const q = (p.q || '').trim().toLowerCase(), tf = p.th || '';
+  const q = (p.q || '').trim().toLowerCase(), tf = p.th || '', lt = p.lt || 'proj';
+  if (lt === 'char' && !sel) {
+    const cl = charLib.filter(c => !q || [c.nk, c.ne, c.dk, c.de].join(' ').toLowerCase().includes(q)).sort((a, b) => (b.updated || 0) - (a.updated || 0));
+    return { nav: 'library', title: '보관함', ticon: 'folder', big: true, acts: modeSeg(), html: `
+      ${seg('p_lt', [['proj', `작업 ${projects.length}`, 'list'], ['char', `내 캐릭터 ${charLib.length}`, 'users']], lt)}
+      <div class="search">${ic('search')}<input class="in" id="cq" type="search" data-q="1" placeholder="이름이나 외형으로 찾기" value="${esc(p.q || '')}" aria-label="검색">${q ? `<button class="ib sm" data-act="qclear" aria-label="검색어 지우기">${ic('x')}</button>` : ''}</div>
+      ${cl.length ? `<div class="lchars">${cl.map(charCard).join('')}</div>` : `<div class="card empty"><b>${charLib.length ? '찾는 캐릭터가 없습니다' : '저장한 캐릭터가 없습니다'}</b>${charLib.length ? '다른 단어로 찾아보세요.' : '대본의 인물 탭에서 "내 캐릭터에 저장"을 누르면 설정과 사진이 여기 모입니다.'}</div>`}
+      <button class="btn block" data-act="newLibChar">${ic('plus')}새 캐릭터 만들기</button>` };
+  }
   const list = projects.filter(x => (!tf || x.theme === tf) && (!p.fav || x.fav) && (!q || (x.tk + x.te + x.lk + x.le).toLowerCase().includes(q))).sort((a, b) => b.updated - a.updated);
   const counts = {}; projects.forEach(x => counts[x.theme] = (counts[x.theme] || 0) + 1);
   if (sel) return { nav: 'library', title: `${sel.size}개 선택`, back: true, flush: true, acts: `<button class="tb" data-act="selAll">${ic('check')}전체 선택</button>`, html: `
     <div class="list">${list.map(x => projRow(x, `<span class="ck ${sel.has(x.id) ? 'on' : ''}">${ic('check')}</span>`)).join('')}</div>
     <div class="sticky"><button class="btn" data-act="selDelete">${ic('trash')}삭제</button><button class="btn pri" data-act="selExport">${ic('share')}내보내기</button></div>` };
   return { nav: 'library', title: '보관함', ticon: 'folder', big: true, acts: `${modeSeg()}${projects.length ? `<button class="tb" data-act="selStart">${ic('check')}선택</button>` : ''}`, html: `
+    ${seg('p_lt', [['proj', `작업 ${projects.length}`, 'list'], ['char', `내 캐릭터 ${charLib.length}`, 'users']], lt)}
     <div class="search">${ic('search')}<input class="in" id="lq" type="search" data-q="1" placeholder="제목이나 줄거리로 찾기" value="${esc(p.q || '')}" aria-label="검색">${q ? `<button class="ib sm" data-act="qclear" aria-label="검색어 지우기">${ic('x')}</button>` : ''}</div>
     <div class="chips"><button class="chip ${!tf && !p.fav ? 'on' : ''}" data-act="lth" data-v="">${ic('grid')}전체 ${projects.length}</button><button class="chip ${p.fav ? 'on' : ''}" style="--h:40" data-act="lfav">${ic('star')}즐겨찾기</button>${THEMES.filter(t => counts[t.id]).map(t => `<button class="chip ${tf === t.id ? 'on' : ''}" style="--h:${t.hue}" data-act="lth" data-v="${t.id}">${ic(t.icon)}${t.name} ${counts[t.id]}</button>`).join('')}</div>
     <div class="sec">${h2('clock', tf ? TH[tf].name : p.fav ? '즐겨찾기' : '모든 작업', list.length ? `<button class="pbtn blue" data-act="exportShown">${ic('share')}이 목록 내보내기</button>` : '')}
@@ -767,17 +856,31 @@ function render(resetScroll) {
   $('#nav').innerHTML = NAV.map(([v, l, i]) => v === 'aiNew' ? `<button class="nav make" data-act="make" aria-label="새 대본 만들기"><span>${ic(i)}</span><em>${l}</em></button>` : `<button class="nav ${r.nav === v ? 'on' : ''}" data-act="tab" data-v="${v}">${ic(i)}${l}</button>`).join('');
   view.scrollTop = resetScroll ? 0 : keep;
   $$('textarea.ag', view).forEach(autoGrow);
+  hydrateImgs(view);
 }
 const autoGrow = ta => { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; };
 
 function importBackup(text) {
   try {
     const data = JSON.parse(text), arr = Array.isArray(data) ? data : data.projects; if (!Array.isArray(arr)) throw 0;
-    const ids = new Set(projects.map(p => p.id)); let n = 0;
+    const ids = new Set(projects.map(p => p.id)), cids = new Set(charLib.map(c => c.id)); let n = 0, m = 0;
     arr.forEach(p => { if (p && p.id && !ids.has(p.id) && Array.isArray(p.shots) && Array.isArray(p.chars)) { if (!TH[p.theme]) p.theme = 'hidden'; projects.push(p); n++; } });
-    saveProjects(); toast(n ? `작업 ${n}편을 불러왔습니다` : '새로 추가할 작업이 없습니다'); render();
+    (data.chars || []).forEach(c => { if (c && c.id && !cids.has(c.id)) { charLib.push(c); m++; } });
+    Object.entries(data.images || {}).forEach(([id, v]) => { if (typeof v === 'string' && v.startsWith('data:image')) imgPut(v, id).catch(() => {}); });
+    saveProjects(); saveCharLib(); toast(n || m ? `작업 ${n}편, 캐릭터 ${m}명을 불러왔습니다` : '새로 추가할 내용이 없습니다'); render();
   } catch (e) { toast('백업 파일을 읽지 못했습니다'); }
 }
+let pendingImg = null;
+$('#imgFile').addEventListener('change', async e => {
+  const f = e.target.files[0], d = pendingImg; e.target.value = ''; pendingImg = null; if (!f || !d) return;
+  try {
+    const c = charTarget(d.ctx, d.ref); if (!c) return;
+    const id = await imgPut(await shrinkImage(f, d.kind === 'full' ? 1400 : 1000));
+    c[d.kind === 'full' ? 'imgFull' : 'imgFace'] = id;
+    if (d.ctx === 'd') touch(); else { c.updated = Date.now(); saveCharLib(); }
+    render(); toast(`${KIND_NAME[d.kind]} 사진을 첨부했습니다`);
+  } catch (err) { dialog('사진을 저장하지 못했습니다', String(err.message || err), [['닫기', null]]); }
+});
 $('#importFile').addEventListener('change', e => { const f = e.target.files[0]; if (!f) return; const r = new FileReader(); r.onload = () => importBackup(r.result); r.readAsText(f); e.target.value = ''; });
 
 /* ---------- 동작 ---------- */
@@ -811,8 +914,29 @@ const A = {
   exportOne: () => exportFlow([draft], T(draft)),
   exportPack: () => outSheet('제작 팩', toPack(draft, MODE()), fileName(T(draft), 'txt')),
   pstyle: d => { draft.style = d.v; touch(); render(); },
-  genChar: d => { const key = `${d.i}:${d.kind}`, o = cur().p.cp = cur().p.cp || {}; o[key] = 1; render(); copyText(promptText(draft, `c:${d.i}:${d.kind}`), '프롬프트를 만들어 복사했습니다. 그록·챗GPT에 붙여넣으세요'); },
-  copyAllChars: () => copyText(draft.chars.map((c, i) => `[${cname(c)}]\n${promptText(draft, `c:${i}:full`)}`).join('\n\n'), '모든 인물 프롬프트를 복사했습니다'),
+  genChar: d => { const key = `${d.i}:${d.kind}`, o = cur().p.cp = cur().p.cp || {}; o[key] = 1; render(); Native.share(`${cname(draft.chars[+d.i])} · ${KIND_NAME[d.kind]} 이미지 프롬프트`, promptText(draft, `c:${d.i}:${d.kind}`)); },
+  shareAllChars: () => Native.share('인물 전신 이미지 프롬프트', draft.chars.map((c, i) => `[${cname(c)}]\n${promptText(draft, `c:${i}:full`)}`).join('\n\n')),
+  attachImg: d => { pendingImg = d; $('#imgFile').click(); },
+  rmImg: d => { const c = charTarget(d.ctx, d.ref); if (!c) return; c[d.kind === 'full' ? 'imgFull' : 'imgFace'] = ''; if (d.ctx === 'd') touch(); else { c.updated = Date.now(); saveCharLib(); } render(); toast('사진을 뺐습니다'); },
+  viewImg: d => imgGet(d.id).then(v => {
+    if (!v) return toast('사진을 찾을 수 없습니다');
+    layerActs = { i0: () => Native.shareImage(`${d.n}.jpg`, v), i1: () => Native.saveImage(`${d.n}.jpg`, v) };
+    layer(`<div class="imgview"><img src="${v}" alt="${esc(d.n)}"><div class="acts"><button class="btn" data-lact="x">${ic('x')}닫기</button><button class="btn" data-lact="i1">${ic('download')}저장</button><button class="btn pri" data-lact="i0">${ic('share')}내보내기</button></div></div>`, true);
+  }),
+  saveChar: d => {
+    const c = draft.chars[+d.i], ex = c.libId && charLib.find(x => x.id === c.libId), now = Date.now();
+    if (ex) Object.assign(ex, charFields(c), { updated: now }); else { const lc = Object.assign({ id: 'ch_' + uid(), created: now, updated: now }, charFields(c)); charLib.unshift(lc); c.libId = lc.id; touch(); }
+    saveCharLib(); render(); toast(ex ? '내 캐릭터를 업데이트했습니다' : '내 캐릭터에 저장했습니다');
+  },
+  loadChar: () => {
+    if (!charLib.length) return dialog('저장한 캐릭터가 없습니다', '인물 카드의 "내 캐릭터에 저장"을 누르면 다음부터 여기서 불러올 수 있습니다.', [['닫기', null]]);
+    sheet('불러올 캐릭터', charLib.map(lc => [`${cname(lc)} · ${ROLE_NAME[lc.r] || '인물'}${lc.imgFull || lc.imgFace ? ' · 사진 있음' : ''}`, clook(lc) || lc.dk, () =>
+      sheet(`${cname(lc)}${josa(cname(lc), '을')} 어디에 넣을까요?`, [...draft.chars.map((c, i) => [`${cname(c)} 자리에 넣기`, `${ROLE_NAME[c.r]} · 대본 속 이름도 바뀝니다`, () => putLibChar(i, lc)]),
+        ...(draft.chars.length < 4 ? [['새 인물로 추가', '', () => putLibChar(draft.chars.length, lc)]] : [])])]));
+  },
+  newLibChar: () => { const now = Date.now(), lc = { id: 'ch_' + uid(), r: 'H', nk: '새 캐릭터', ne: 'New Character', dk: '', de: '', imgFull: '', imgFace: '', created: now, updated: now }; charLib.unshift(lc); saveCharLib(); go('char', { id: lc.id }); },
+  delLibChar: d => dialog('이 캐릭터를 삭제할까요?', '대본에 이미 넣은 인물은 그대로 남습니다.', [['취소', null], ['삭제', () => { charLib = charLib.filter(c => c.id !== d.id); saveCharLib(); pop(); toast('삭제했습니다'); }, 'pri']]),
+  shareLibPrompt: d => { const c = charLib.find(x => x.id === d.id); if (c) Native.share(`${cname(c)} · ${KIND_NAME[d.kind]} 이미지 프롬프트`, charPrompt(libProj(c), 0, MODE(), d.kind)); },
   copyP: d => copyText(promptText(draft, d.k), '프롬프트를 복사했습니다'),
   shareP: d => Native.share(d.t || '프롬프트', promptText(draft, d.k)),
   resetP: d => { delete draft.over[d.k + ':' + MODE()]; touch(); render(); },
@@ -866,6 +990,7 @@ function onField(e) {
   const grow = () => { if (t.classList.contains('ag')) autoGrow(t); };
   if (d.pf) { draft[d.pf] = d.pf === 'ep' ? Math.max(1, parseInt(t.value) || 1) : t.value; touch(); grow(); if (d.pf === 'ep' && e.type === 'change') render(); }
   else if (d.sf) { const [i, f] = d.sf.split(':'), s = draft.shots[+i]; s[f] = f === 'sp' ? +t.value : t.value; if (f === 'sp' && s.sp < 0) s.dk = s.de = ''; ['f', 'k'].forEach(x => ['kr', 'en'].forEach(m => delete draft.over[`${x}:${i}:${m}`])); touch(); grow(); if (isSel) render(); }
+  else if (d.lc) { const [id, f] = d.lc.split(':'), c = charLib.find(x => x.id === id); if (c) { c[f] = t.value; c.updated = Date.now(); saveCharLib(); } grow(); if (isSel) render(); }
   else if (d.cf) { const [i, f] = d.cf.split(':'); draft.chars[+i][f] = t.value; touch(); grow(); if (isSel) render(); }
   else if (d.ov) { draft.over[d.ov + ':' + MODE()] = t.value; touch(); grow(); }
   else if (d.set) { settings[d.set] = t.value; store.set('settings', settings); }
@@ -889,3 +1014,4 @@ document.addEventListener('pointerdown', e => {
 /* ---------- 시작 ---------- */
 applyTheme();
 render(true);
+setTimeout(gcImages, 3000);
