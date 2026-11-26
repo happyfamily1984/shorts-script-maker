@@ -186,12 +186,22 @@ function framePrompt(p, i, m) {
   if (m === 'kr') return `세로 9:16 드라마 스틸 컷 한 장 (샷 ${i + 1}의 첫 프레임).\n장소: ${sh.pk}.\n장면: ${sh.ak}.\n등장인물: ${ids.length ? refList(p, ids, m) : '없음'}.\n구도: ${cam}.\n분위기: ${moodOf(p, i, m)}.\n${st}.\n첨부한 인물 기준 이미지와 얼굴·머리·복장을 똑같이 유지한다. 화면 속 글자·자막·워터마크 없음.`;
   return `One vertical 9:16 cinematic drama still (first frame of shot ${i + 1}).\nLocation: ${sh.pe}.\nMoment: ${sh.ae}.\nCharacters: ${ids.length ? refList(p, ids, m) : 'none'}.\nFraming: ${cam}.\nMood: ${moodOf(p, i, m)}.\nStyle: ${st}.\nKeep faces, hair and outfits identical to the attached character reference images. No on-screen text, subtitles or watermark.`;
 }
-/* 그록 장면 이미지(움직이지 않는 샷)용: 인물 생김새를 글로 모두 적는다 */
+/* 그록 장면 이미지(움직이지 않는 샷)용: 인물 생김새를 글로 모두 적고, 사진에 맞는 고정 구도를 쓴다 */
+const STILL_CAM = {
+  cu: ['얼굴과 어깨가 보이는 클로즈업', 'Close-up on the face and shoulders'], ms: ['허리 위 미디엄 샷', 'Medium shot from the waist up'],
+  ws: ['장소 전체가 보이는 와이드 샷', 'Wide shot showing the whole location'], pi: ['상반신 미디엄 클로즈업', 'Medium close-up from the chest up'],
+  cz: ['얼굴 클로즈업', 'Tight close-up on the face'], ots: ['상대 어깨 너머로 잡은 샷', 'Over-the-shoulder shot'],
+  low: ['아래에서 올려다보는 로우앵글', 'Low-angle shot looking up'], trk: ['걷는 인물의 전신이 옆에서 보이는 샷', 'Full-body side view of the walking subject'],
+  rx: ['놀란 구경꾼들의 표정이 함께 보이는 샷', 'Shot including shocked bystanders\' faces'], slo: ['허리 위 미디엄 샷', 'Medium shot from the waist up']
+};
+const FLOOR_RE = /바닥|발밑|발 밑|땅에|떨어진|떨어뜨|무릎을 꿇|엎드|쓰러|floor|ground|kneel|dropped|fallen/i;
 function stillPrompt(p, i, m) {
-  const sh = p.shots[i], ids = inShot(p, sh), cam = (CAMS[sh.cam] || CAMS.ms)[m === 'kr' ? 1 : 2], st = styleOf(p, m);
+  const sh = p.shots[i], ids = inShot(p, sh), st = styleOf(p, m), kr = m === 'kr', act = String(kr ? sh.ak : sh.ae || '').replace(/[.。]\s*$/, '');
+  const floor = FLOOR_RE.test(sh.ak || '') || FLOOR_RE.test(sh.ae || '');
+  const cam = floor ? (kr ? '인물의 머리부터 발끝, 바닥까지 모두 보이는 풀샷' : 'Full shot showing the characters from head to toe and the floor') : (STILL_CAM[sh.cam] || STILL_CAM.ms)[kr ? 0 : 1];
   const who = ids.map(c => `${cname(p.chars[c], m)}: ${castOf(m)} ${clook(p.chars[c], m)}`.trim()).join(' / ');
-  if (m === 'kr') return `세로 9:16 드라마 장면 사진 한 장.\n장소: ${sh.pk}.\n장면: ${sh.ak}.\n등장인물: ${who || '없음'}.\n구도: ${cam}.\n분위기: ${moodOf(p, i, m)}.\n${st}.\n표정과 몸짓으로 감정이 분명히 드러나게. 화면 속 글자·자막·워터마크 없음.`;
-  return `One vertical 9:16 cinematic drama scene photo.\nLocation: ${sh.pe}.\nMoment: ${sh.ae}.\nCharacters: ${who || 'none'}.\nFraming: ${cam}.\nMood: ${moodOf(p, i, m)}.\nStyle: ${st}.\nEmotion clearly visible in faces and body language. No on-screen text, subtitles or watermark.`;
+  if (kr) return `세로 9:16 드라마 장면 사진 한 장.\n가장 중요: 아래 '장면'을 글자 그대로 정확하게 보여 준다.\n장소: ${sh.pk}.\n장면: ${act}.\n등장인물: ${who || '없음'}.\n구도: ${cam}.\n분위기: ${moodOf(p, i, m)}.\n${st}.\n지킬 것: 물건은 설명된 자리에 그대로 둔다(바닥이면 바닥 위, 손이면 손에). 설명에 없는 탁자·카운터·소품을 새로 만들지 않는다. 공간 크기와 원근, 사람의 몸과 손 모양이 현실처럼 자연스럽게. 인물의 시선과 몸짓이 장면 속 행동과 맞게. 표정으로 감정이 드러나게. 화면 속 글자·자막·워터마크 없음.`;
+  return `One vertical 9:16 cinematic drama scene photo.\nMost important: show the 'Moment' below exactly as written.\nLocation: ${sh.pe}.\nMoment: ${act}.\nCharacters: ${who || 'none'}.\nFraming: ${cam}.\nMood: ${moodOf(p, i, m)}.\nStyle: ${st}.\nRules: keep every object exactly where it is described (on the floor means on the floor, in a hand means in the hand). Do not invent tables, counters or props that are not described. Realistic scale, perspective, bodies and hands. Gaze and body language must match the action. Emotion visible on faces. No on-screen text, subtitles or watermark.`;
 }
 function klingPrompt(p, i, m, local) {
   const sh = p.shots[i], ids0 = inShot(p, sh), ids = Array.isArray(local) ? local : ids0, cam = (CAMS[sh.cam] || CAMS.ms)[m === 'kr' ? 1 : 2], st = styleOf(p, m), n = p.shots.length;
@@ -786,10 +796,10 @@ function tabFinish(p) {
       <p class="hint">중간에 멈추면 아래 ①~⑤를 하나씩 눌러 이어 할 수 있습니다. 인물 사진을 먼저 넣어 두면 얼굴이 일정하게 나옵니다. 어느 샷을 영상으로 할지는 영상 탭의 "샷 구성"에서 바꿉니다.</p></div>
     ${stills.length ? `<div class="sec">${h2('camera', `① 장면 이미지 ${stills.filter(i => stillOf(p, i)).length}/${stills.length} (그록 · 무료)`)}
       <div class="slots still">${stills.map(i => { const id = stillOf(p, i); return `<div class="slot full">${id
-        ? `<button class="sthumb" data-act="viewImg" data-id="${id}" data-n="${i + 1}번_장면" aria-label="${i + 1}번 샷 장면 이미지 크게 보기"><img data-img="${id}" alt=""></button><div class="sacts"><button class="ib sm" data-act="stillPick" data-i="${i}" aria-label="바꾸기">${ic('refresh')}</button><button class="ib sm" data-act="stillRm" data-i="${i}" aria-label="빼기">${ic('trash')}</button></div>`
+        ? `<button class="sthumb" data-act="viewImg" data-id="${id}" data-n="${i + 1}번_장면" aria-label="${i + 1}번 샷 장면 이미지 크게 보기"><img data-img="${id}" alt=""></button><div class="sacts"><button class="ib sm" data-act="stillRegen" data-i="${i}" aria-label="그록으로 다시 만들기">${ic('sparkle')}</button><button class="ib sm" data-act="stillPick" data-i="${i}" aria-label="직접 바꾸기">${ic('refresh')}</button><button class="ib sm" data-act="stillRm" data-i="${i}" aria-label="빼기">${ic('trash')}</button></div>`
         : `<button class="sadd" data-act="stillPick" data-i="${i}">${ic('plus')}<b>${i + 1}번 샷</b><small>${esc(beatOf(p, i)[0])}</small></button>`}<span class="slab">${i + 1}번</span></div>`; }).join('')}</div>
       <div class="aiacts"><button class="btn sm grok" data-act="grokStills">${ic('sparkle')}그록으로 ${stills.some(i => !stillOf(p, i)) ? '빈 칸' : '모두 다시'} 만들기</button>${stills.map(i => `<button class="btn sm" data-act="stillPrompt" data-i="${i}">${ic('share')}${i + 1}번 프롬프트</button>`).join('')}</div>
-      <p class="hint">움직이지 않는 샷은 그록 장면 이미지에 천천히 확대되는 효과와 자막을 넣어 영상 사이에 이어 붙입니다. 칸을 눌러 직접 첨부해도 됩니다.</p></div>` : ''}
+      <p class="hint">움직이지 않는 샷은 그록 장면 이미지에 천천히 확대되는 효과와 자막을 넣어 영상 사이에 이어 붙입니다. 칸을 눌러 직접 첨부해도 됩니다. 장면이 이상하게 나오면 그 칸의 ✦ 버튼으로 그 장면만 다시 만드세요.</p></div>` : ''}
     <div class="sec">${h2('film', `${stills.length ? '②' : '①'} 클링 영상 클립 ${f.clips.length}/${needClips}${stills.length ? ` (${vidShots(p).map(i => i + 1).join(', ')}번 샷)` : ''}`)}
       <div class="aiacts"><button class="btn sm blue" data-act="findClips">${ic('search')}방금 받은 영상 찾기</button><button class="btn sm" data-act="pickClips">${ic('folder')}직접 고르기</button></div>
       ${f.clips.length ? `<div class="list">${f.clips.map(clipRow).join('')}</div>` : '<p class="hint">클링에서 내려받은 영상을 찾거나 직접 골라 샷 순서대로 놓으세요. "방금 받은 영상 찾기"는 최근 30분 안에 저장된 영상을 오래된 것부터 가져옵니다.</p>'}</div>
@@ -1287,6 +1297,7 @@ const A = {
   shotKind: d => { const i = +d.i, v = vidShots(draft).filter(x => x !== i); draft.vids = d.v === 'v' ? v.concat(i).sort((a, b) => a - b) : v; finOf(draft).clips = []; touch(); render(); },
   grokStills: () => { if (needPhone()) return; const need = stillShots(draft).filter(i => !stillOf(draft, i)); const idx = need.length ? need : stillShots(draft); if (!idx.length) return toast('이미지 샷이 없습니다'); saveDraft(); startGrokStills(draft, idx, true); },
   stillPick: d => { pendingImg = { still: +d.i }; $('#imgFile').click(); },
+  stillRegen: d => { if (needPhone()) return; saveDraft(); startGrokStills(draft, [+d.i], true); },
   stillRm: d => { delete finOf(draft).stills[+d.i]; touch(); render(); },
   stillPrompt: d => { const m = MODE(); const t = `${+d.i + 1}번 샷 장면 이미지 프롬프트`; outSheet(t, GROK_PREFIX[m] + stillPrompt(draft, +d.i, m), fileName(t, 'txt')); },
   goFinish: () => { cur().p.tab = 'finish'; render(true); },
