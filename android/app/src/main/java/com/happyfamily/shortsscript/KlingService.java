@@ -149,6 +149,7 @@ public class KlingService extends AccessibilityService {
         if (running) return false;
         job = j; flow = f; cancel = false; running = true;
         lastDone = "[]"; lastJobId = j.optString("id", "");
+        dumps = new JSONArray(); writeDumps(); lastDumpUri = null; lastDumpName = "";   /* 예전 화면 기록은 새 작업을 시작할 때 비운다 */
         showPanel(null, null, "중지", () -> { cancel = true; status("중지하는 중…"); });
         new Thread(this::runJob).start();
         return true;
