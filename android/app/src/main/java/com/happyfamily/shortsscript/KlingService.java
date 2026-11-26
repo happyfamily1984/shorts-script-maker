@@ -402,7 +402,7 @@ public class KlingService extends AccessibilityService {
                 ContentValues v = new ContentValues();
                 v.put(MediaStore.Images.Media.DISPLAY_NAME, "kling_ref_" + System.currentTimeMillis() + ".jpg");
                 v.put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg");
-                v.put(MediaStore.Images.Media.RELATIVE_PATH, Environment.DIRECTORY_DCIM + "/Camera");
+                v.put(MediaStore.Images.Media.RELATIVE_PATH, Environment.DIRECTORY_PICTURES + "/SDMRef");   /* 클링 앨범 목록에 "SDMRef"로 따로 보인다 */
                 v.put(MediaStore.Images.Media.DATE_TAKEN, System.currentTimeMillis());
                 Uri u = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, v);
                 if (u != null) try (OutputStream os = getContentResolver().openOutputStream(u)) { os.write(b); }
