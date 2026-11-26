@@ -260,6 +260,11 @@ public class KlingService extends AccessibilityService {
                 return true;
             }
             case "setText": { AccessibilityNodeInfo nd = find(f, to); return nd != null && setText(nd, expand(st.optString("value"), sh, i, n)); }
+            case "tapIn": {   /* 찾은 칸 안의 상대 위치(rx, ry: 0~1)를 누른다. 화면 크기와 상관없음 */
+                AccessibilityNodeInfo nd = find(f, to); if (nd == null) return false;
+                Rect r = new Rect(); nd.getBoundsInScreen(r);
+                return tap(r.left + (float) st.optDouble("rx", .5) * r.width(), r.top + (float) st.optDouble("ry", .5) * r.height());
+            }
             case "tap": return tap((float) st.optDouble("x", .5) * dm.widthPixels, (float) st.optDouble("y", .5) * dm.heightPixels);
             case "swipe": return swipe((float) st.optDouble("x1", .5) * dm.widthPixels, (float) st.optDouble("y1", .7) * dm.heightPixels,
                     (float) st.optDouble("x2", .5) * dm.widthPixels, (float) st.optDouble("y2", .3) * dm.heightPixels, st.optInt("ms", 350));
