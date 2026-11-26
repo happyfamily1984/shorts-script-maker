@@ -75,6 +75,7 @@ class VideoMaker {
     private final List<int[]> stillJobs = new ArrayList<>();   /* {parts 위치, 길이 ms} */
     private final List<File> stillFiles = new ArrayList<>();
     private JSONObject job;
+    private String baseVideo;   /* 사진 샷의 바탕으로 쓸 영상 (소리는 뺀다) */
     private int stillsDone = 0;
     private boolean cancelled = false;
 
@@ -102,7 +103,9 @@ class VideoMaker {
                     }
                 }
                 send("running", 0, null, null);
-                nextStill();
+                baseVideo = null;
+                for (int i = 0; i < parts.size(); i++) { final int fi = i; boolean isStill = false; for (int[] sj : stillJobs) if (sj[0] == fi) isStill = true; if (!isStill) { baseVideo = parts.get(i); break; } }
+                if (baseVideo != null) finalExport(); else nextStill();
             } catch (Exception e) {
                 transformer = null;
                 send("error", 0, null, "영상을 만들지 못했습니다: " + e.getMessage());
@@ -117,7 +120,7 @@ class VideoMaker {
         int[] sj = stillJobs.get(stillsDone);
         final long durUs = sj[1] * 1000L;
         try {
-            MediaItem mi = new MediaItem.Builder().setUri(Uri.parse(parts.get(sj[0]))).setImageDurationMs(sj[1]).build();
+            MediaItem mi = new MediaItem.Builder().setUri(Uri.parse(parts.get(sj[0]))).setMimeType(MimeTypes.IMAGE_JPEG).setImageDurationMs(sj[1]).build();
             List<Effect> fx = new ArrayList<>();
             fx.add(Presentation.createForWidthAndHeight(1080, 1920, Presentation.LAYOUT_SCALE_TO_FIT_WITH_CROP));
             fx.add((MatrixTransformation) t -> { android.graphics.Matrix mx = new android.graphics.Matrix(); float k = 1f + 0.08f * Math.min(1f, Math.max(0f, t / (float) durUs)); mx.postScale(k, k); return mx; });
@@ -131,7 +134,7 @@ class VideoMaker {
                             send("running", Math.round(40f * stillsDone / stillJobs.size()), null, null);
                             nextStill();
                         }
-                        @Override public void onError(Composition c, ExportResult r, ExportException e) { transformer = null; cleanup(); send("error", 0, null, "장면 이미지를 영상으로 바꾸지 못했습니다: " + e.getMessage()); }
+                        @Override public void onError(Composition c, ExportResult r, ExportException e) { transformer = null; cleanup(); send("error", 0, null, "장면 이미지를 영상으로 바꾸지 못했습니다: " + why(e)); }
                     }).build();
             transformer.start(em, out.getAbsolutePath());
         } catch (Exception e) { transformer = null; cleanup(); send("error", 0, null, "장면 이미지를 영상으로 바꾸지 못했습니다: " + e.getMessage()); }
@@ -144,16 +147,26 @@ class VideoMaker {
             float size = (float) job.optDouble("size", 58), pos = (float) job.optDouble("pos", -0.62);
             List<EditedMediaItem> items = new ArrayList<>();
             for (int i = 0; i < parts.size(); i++) {
+                int stillMs = 0; for (int[] sj : stillJobs) if (sj[0] == i) stillMs = sj[1];
+                boolean overStill = stillMs > 0 && baseVideo != null && !parts.get(i).startsWith("file:") ? false : stillMs > 0 && baseVideo != null;
                 List<Effect> fx = new ArrayList<>();
                 fx.add(Presentation.createForWidthAndHeight(1080, 1920, Presentation.LAYOUT_SCALE_TO_FIT));
+                List<TextureOverlay> ov = new ArrayList<>();
+                if (overStill) ov.add(new ZoomOverlay(coverBitmap(parts.get(i)), stillMs * 1000L));
                 String line = subs != null && i < subs.length() ? subs.optString(i, "").trim() : "";
                 if (burn && !line.isEmpty()) {
                     Bitmap bm = subtitleBitmap(line, size);
                     OverlaySettings os = new OverlaySettings.Builder().setBackgroundFrameAnchor(0f, pos).build();
-                    fx.add(new OverlayEffect(ImmutableList.<TextureOverlay>of(BitmapOverlay.createStaticBitmapOverlay(bm, os))));
+                    ov.add(BitmapOverlay.createStaticBitmapOverlay(bm, os));
                 }
-                items.add(new EditedMediaItem.Builder(MediaItem.fromUri(Uri.parse(parts.get(i))))
-                        .setEffects(new Effects(ImmutableList.of(), fx)).build());
+                if (!ov.isEmpty()) fx.add(new OverlayEffect(ImmutableList.copyOf(ov)));
+                EditedMediaItem.Builder eb;
+                if (overStill) {
+                    MediaItem mi = new MediaItem.Builder().setUri(Uri.parse(baseVideo))
+                            .setClippingConfiguration(new MediaItem.ClippingConfiguration.Builder().setEndPositionMs(stillMs).build()).build();
+                    eb = new EditedMediaItem.Builder(mi).setRemoveAudio(true);
+                } else eb = new EditedMediaItem.Builder(MediaItem.fromUri(Uri.parse(parts.get(i))));
+                items.add(eb.setEffects(new Effects(ImmutableList.of(), fx)).build());
             }
             Composition comp = new Composition.Builder(new EditedMediaItemSequence(items))
                     .experimentalSetForceAudioTrack(true).build();
@@ -165,7 +178,7 @@ class VideoMaker {
                     .setAudioMimeType(MimeTypes.AUDIO_AAC)
                     .addListener(new Transformer.Listener() {
                         @Override public void onCompleted(Composition c, ExportResult r) { transformer = null; cleanup(); new Thread(VideoMaker.this::publish).start(); }
-                        @Override public void onError(Composition c, ExportResult r, ExportException e) { transformer = null; cleanup(); send("error", 0, null, "영상을 만들지 못했습니다: " + e.getMessage()); }
+                        @Override public void onError(Composition c, ExportResult r, ExportException e) { transformer = null; cleanup(); send("error", 0, null, "영상을 만들지 못했습니다: " + why(e)); }
                     }).build();
             transformer.start(comp, outFile.getAbsolutePath());
             send("running", base, null, null);
@@ -176,6 +189,35 @@ class VideoMaker {
         }
     }
     private int progBase = 0;
+    private static String why(ExportException e) {
+        String m = e.getErrorCodeName(); Throwable c = e.getCause();
+        if (e.getMessage() != null) m += " · " + e.getMessage();
+        if (c != null) m += " · " + c.getClass().getSimpleName() + (c.getMessage() != null ? ": " + c.getMessage() : "");
+        return m;
+    }
+    /* 사진을 1080x1920 에 꽉 차게 잘라 맞춘다 */
+    private static Bitmap coverBitmap(String uri) {
+        Bitmap src = android.graphics.BitmapFactory.decodeFile(Uri.parse(uri).getPath());
+        Bitmap out = Bitmap.createBitmap(1080, 1920, Bitmap.Config.ARGB_8888);
+        Canvas c = new Canvas(out); c.drawColor(Color.BLACK);
+        if (src != null) {
+            float sc = Math.max(1080f / src.getWidth(), 1920f / src.getHeight());
+            float w = src.getWidth() * sc, h = src.getHeight() * sc;
+            c.drawBitmap(src, null, new android.graphics.RectF((1080 - w) / 2, (1920 - h) / 2, (1080 + w) / 2, (1920 + h) / 2), new Paint(Paint.FILTER_BITMAP_FLAG));
+        }
+        return out;
+    }
+    /* 사진 샷: 바탕 영상 위에 사진을 덮고 천천히 8% 확대 */
+    private static class ZoomOverlay extends BitmapOverlay {
+        private final Bitmap bm; private final long durUs; private long t0 = -1;
+        ZoomOverlay(Bitmap b, long d) { bm = b; durUs = Math.max(1, d); }
+        @Override public Bitmap getBitmap(long t) { return bm; }
+        @Override public OverlaySettings getOverlaySettings(long t) {
+            if (t0 < 0) t0 = t;
+            float k = 1f + 0.08f * Math.min(1f, Math.max(0f, (t - t0) / (float) durUs));
+            return new OverlaySettings.Builder().setScale(k, k).build();
+        }
+    }
     private void cleanup() { for (File f : stillFiles) f.delete(); stillFiles.clear(); }
 
     private void pollProgress() {

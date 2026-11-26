@@ -839,10 +839,10 @@ function tabFinish(p) {
       ${seg('p_burn', [[1, '자막 넣기'], [0, '자막 없이']], f.burn ? 1 : 0)}
       ${f.burn ? `<div class="chips">${SUB_LANGS.filter(([id]) => subLines(p, id)).map(([id, n]) => `<button class="chip ${lang === id ? 'on' : ''}" data-act="finSet" data-k="lang" data-v="${id}">${n}</button>`).join('')}</div>
       ${seg('p_fsize', [[48, '작게'], [58, '보통'], [70, '크게']], f.size)}${seg('p_fpos', [['-0.62', '아래'], ['-0.3', '조금 위'], ['0', '가운데']], String(f.pos))}
-      <p class="hint">${lines ? `샷마다 대사 한 줄이 그 클립 위에 새겨집니다. 예: "${esc((lines.find(Boolean) || '').slice(0, 30))}"` : '이 언어 자막이 없습니다. 자막·문구 탭에서 만드세요.'}</p>` : ''}</div>
+      <p class="hint">${lines ? `여기서 고른 대로, 아래 "완성 영상 만들기"를 누를 때 샷마다 대사 한 줄이 영상에 새겨집니다 (따로 누를 것 없음). 예: "${esc((lines.find(Boolean) || '').slice(0, 30))}"` : '이 언어 자막이 없습니다. 자막·문구 탭에서 만드세요.'}</p>` : ''}</div>
     <div class="sec">${h2('bolt', `${num(3)} 완성 영상`)}
       ${running ? `<div class="card asm"><span id="asmTxt">영상 만드는 중… ${asm.progress || 0}%</span><div class="pbar"><i id="asmBar" style="width:${asm.progress || 0}%"></i></div><button class="btn sm" data-act="asmCancel">${ic('x')}멈추기</button></div>`
-        : `<button class="btn blue block" data-act="assemble">${ic('film')}${f.out ? '다시 만들기' : '완성 영상 만들기'}</button>`}
+        : `<button class="btn blue block" data-act="assemble">${ic('film')}${f.out ? '다시 만들기' : `완성 영상 만들기${f.burn ? ' (자막 넣어 합치기)' : ''}`}</button>`}
       ${f.out && !running ? `<div class="card done"><b>${ic('checkc')}완성 영상이 있습니다</b><small>동영상 앱 > ShortDramaMaker 폴더</small><div class="aiacts"><button class="btn sm" data-act="openOut">${ic('play')}열어 보기</button></div></div>` : ''}</div>
     <div class="sec">${h2('share', `${num(4)} 업로드`)}
       <div class="seg">${[['share', '앱 직접 고르기'], ['pickle', '피클에게 맡기기']].map(([id, n]) => `<button class="${(settings.upWay || 'share') === id ? 'on' : ''}" data-act="upWay" data-v="${id}">${n}</button>`).join('')}</div>
