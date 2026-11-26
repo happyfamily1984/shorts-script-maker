@@ -20,6 +20,7 @@ import androidx.media3.common.Effect;
 import androidx.media3.common.MediaItem;
 import androidx.media3.common.MimeTypes;
 import androidx.media3.effect.BitmapOverlay;
+import androidx.media3.effect.MatrixTransformation;
 import androidx.media3.effect.OverlayEffect;
 import androidx.media3.effect.OverlaySettings;
 import androidx.media3.effect.Presentation;
@@ -61,46 +62,47 @@ class VideoMaker {
 
     VideoMaker(Activity a) { act = a; }
 
-    boolean busy() { return transformer != null; }
+    private volatile boolean active = false;
+    boolean busy() { return active || transformer != null; }
 
     void cancel() {
-        main.post(() -> { if (transformer != null) { transformer.cancel(); transformer = null; send("cancelled", 0, null, null); } });
+        main.post(() -> { cancelled = true; if (transformer != null) { transformer.cancel(); transformer = null; cleanup(); send("cancelled", 0, null, null); } });
     }
 
-    void start(JSONObject job, Callback callback) {
-        cb = callback;
+    /* job.clips(영상 uri 목록) 또는 job.items([{video:uri} | {image:dataURL, ms}]) 를 받는다.
+       사진은 먼저 천천히 확대되는 짧은 영상으로 만든 뒤, 영상들과 이어 붙인다. */
+    private final List<String> parts = new ArrayList<>();
+    private final List<int[]> stillJobs = new ArrayList<>();   /* {parts 위치, 길이 ms} */
+    private final List<File> stillFiles = new ArrayList<>();
+    private JSONObject job;
+    private int stillsDone = 0;
+    private boolean cancelled = false;
+
+    void start(JSONObject j, Callback callback) {
+        cb = callback; job = j; cancelled = false; active = true;
         main.post(() -> {
             try {
-                JSONArray clips = job.getJSONArray("clips"), subs = job.optJSONArray("subs");
-                boolean burn = job.optBoolean("burn", true);
-                float size = (float) job.optDouble("size", 58), pos = (float) job.optDouble("pos", -0.62);
+                parts.clear(); stillJobs.clear(); stillFiles.clear(); stillsDone = 0;
                 title = job.optString("title", "short-drama");
-                List<EditedMediaItem> items = new ArrayList<>();
-                for (int i = 0; i < clips.length(); i++) {
-                    List<Effect> fx = new ArrayList<>();
-                    fx.add(Presentation.createForWidthAndHeight(1080, 1920, Presentation.LAYOUT_SCALE_TO_FIT));
-                    String line = subs != null && i < subs.length() ? subs.optString(i, "").trim() : "";
-                    if (burn && !line.isEmpty()) {
-                        Bitmap bm = subtitleBitmap(line, size);
-                        OverlaySettings os = new OverlaySettings.Builder().setBackgroundFrameAnchor(0f, pos).build();
-                        fx.add(new OverlayEffect(ImmutableList.<TextureOverlay>of(BitmapOverlay.createStaticBitmapOverlay(bm, os))));
+                JSONArray items = job.optJSONArray("items");
+                if (items == null) {
+                    JSONArray clips = job.getJSONArray("clips");
+                    for (int i = 0; i < clips.length(); i++) parts.add(clips.getString(i));
+                } else {
+                    for (int i = 0; i < items.length(); i++) {
+                        JSONObject it = items.getJSONObject(i);
+                        if (it.has("image")) {
+                            String d = it.getString("image"); d = d.substring(d.indexOf(',') + 1);
+                            File f = new File(act.getCacheDir(), "still_" + System.currentTimeMillis() + "_" + i + ".jpg");
+                            try (java.io.FileOutputStream os = new java.io.FileOutputStream(f)) { os.write(android.util.Base64.decode(d, android.util.Base64.DEFAULT)); }
+                            stillFiles.add(f);
+                            stillJobs.add(new int[]{parts.size(), it.optInt("ms", 5000)});
+                            parts.add(Uri.fromFile(f).toString());
+                        } else parts.add(it.getString("video"));
                     }
-                    items.add(new EditedMediaItem.Builder(MediaItem.fromUri(Uri.parse(clips.getString(i))))
-                            .setEffects(new Effects(ImmutableList.of(), fx)).build());
                 }
-                Composition comp = new Composition.Builder(new EditedMediaItemSequence(items))
-                        .experimentalSetForceAudioTrack(true).build();
-                outFile = new File(act.getCacheDir(), "assemble_" + System.currentTimeMillis() + ".mp4");
-                transformer = new Transformer.Builder(act)
-                        .setVideoMimeType(MimeTypes.VIDEO_H264)
-                        .setAudioMimeType(MimeTypes.AUDIO_AAC)
-                        .addListener(new Transformer.Listener() {
-                            @Override public void onCompleted(Composition c, ExportResult r) { transformer = null; new Thread(VideoMaker.this::publish).start(); }
-                            @Override public void onError(Composition c, ExportResult r, ExportException e) { transformer = null; send("error", 0, null, "영상을 만들지 못했습니다: " + e.getMessage()); }
-                        }).build();
-                transformer.start(comp, outFile.getAbsolutePath());
                 send("running", 0, null, null);
-                pollProgress();
+                nextStill();
             } catch (Exception e) {
                 transformer = null;
                 send("error", 0, null, "영상을 만들지 못했습니다: " + e.getMessage());
@@ -108,11 +110,79 @@ class VideoMaker {
         });
     }
 
+    /* 사진 한 장 → 1080x1920 영상 (가운데로 천천히 8% 확대) */
+    private void nextStill() {
+        if (cancelled) return;
+        if (stillsDone >= stillJobs.size()) { finalExport(); return; }
+        int[] sj = stillJobs.get(stillsDone);
+        final long durUs = sj[1] * 1000L;
+        try {
+            MediaItem mi = new MediaItem.Builder().setUri(Uri.parse(parts.get(sj[0]))).setImageDurationMs(sj[1]).build();
+            List<Effect> fx = new ArrayList<>();
+            fx.add(Presentation.createForWidthAndHeight(1080, 1920, Presentation.LAYOUT_SCALE_TO_FIT_WITH_CROP));
+            fx.add((MatrixTransformation) t -> { android.graphics.Matrix mx = new android.graphics.Matrix(); float k = 1f + 0.08f * Math.min(1f, Math.max(0f, t / (float) durUs)); mx.postScale(k, k); return mx; });
+            EditedMediaItem em = new EditedMediaItem.Builder(mi).setFrameRate(30).setEffects(new Effects(ImmutableList.of(), fx)).build();
+            File out = new File(act.getCacheDir(), "stillv_" + System.currentTimeMillis() + "_" + stillsDone + ".mp4");
+            transformer = new Transformer.Builder(act).setVideoMimeType(MimeTypes.VIDEO_H264)
+                    .addListener(new Transformer.Listener() {
+                        @Override public void onCompleted(Composition c, ExportResult r) {
+                            transformer = null; stillFiles.add(out);
+                            parts.set(sj[0], Uri.fromFile(out).toString()); stillsDone++;
+                            send("running", Math.round(40f * stillsDone / stillJobs.size()), null, null);
+                            nextStill();
+                        }
+                        @Override public void onError(Composition c, ExportResult r, ExportException e) { transformer = null; cleanup(); send("error", 0, null, "장면 이미지를 영상으로 바꾸지 못했습니다: " + e.getMessage()); }
+                    }).build();
+            transformer.start(em, out.getAbsolutePath());
+        } catch (Exception e) { transformer = null; cleanup(); send("error", 0, null, "장면 이미지를 영상으로 바꾸지 못했습니다: " + e.getMessage()); }
+    }
+
+    private void finalExport() {
+        try {
+            JSONArray subs = job.optJSONArray("subs");
+            boolean burn = job.optBoolean("burn", true);
+            float size = (float) job.optDouble("size", 58), pos = (float) job.optDouble("pos", -0.62);
+            List<EditedMediaItem> items = new ArrayList<>();
+            for (int i = 0; i < parts.size(); i++) {
+                List<Effect> fx = new ArrayList<>();
+                fx.add(Presentation.createForWidthAndHeight(1080, 1920, Presentation.LAYOUT_SCALE_TO_FIT));
+                String line = subs != null && i < subs.length() ? subs.optString(i, "").trim() : "";
+                if (burn && !line.isEmpty()) {
+                    Bitmap bm = subtitleBitmap(line, size);
+                    OverlaySettings os = new OverlaySettings.Builder().setBackgroundFrameAnchor(0f, pos).build();
+                    fx.add(new OverlayEffect(ImmutableList.<TextureOverlay>of(BitmapOverlay.createStaticBitmapOverlay(bm, os))));
+                }
+                items.add(new EditedMediaItem.Builder(MediaItem.fromUri(Uri.parse(parts.get(i))))
+                        .setEffects(new Effects(ImmutableList.of(), fx)).build());
+            }
+            Composition comp = new Composition.Builder(new EditedMediaItemSequence(items))
+                    .experimentalSetForceAudioTrack(true).build();
+            outFile = new File(act.getCacheDir(), "assemble_" + System.currentTimeMillis() + ".mp4");
+            final int base = stillJobs.isEmpty() ? 0 : 40;
+            progBase = base;
+            transformer = new Transformer.Builder(act)
+                    .setVideoMimeType(MimeTypes.VIDEO_H264)
+                    .setAudioMimeType(MimeTypes.AUDIO_AAC)
+                    .addListener(new Transformer.Listener() {
+                        @Override public void onCompleted(Composition c, ExportResult r) { transformer = null; cleanup(); new Thread(VideoMaker.this::publish).start(); }
+                        @Override public void onError(Composition c, ExportResult r, ExportException e) { transformer = null; cleanup(); send("error", 0, null, "영상을 만들지 못했습니다: " + e.getMessage()); }
+                    }).build();
+            transformer.start(comp, outFile.getAbsolutePath());
+            send("running", base, null, null);
+            pollProgress();
+        } catch (Exception e) {
+            transformer = null; cleanup();
+            send("error", 0, null, "영상을 만들지 못했습니다: " + e.getMessage());
+        }
+    }
+    private int progBase = 0;
+    private void cleanup() { for (File f : stillFiles) f.delete(); stillFiles.clear(); }
+
     private void pollProgress() {
         main.postDelayed(() -> {
             if (transformer == null) return;
             ProgressHolder ph = new ProgressHolder();
-            if (transformer.getProgress(ph) == Transformer.PROGRESS_STATE_AVAILABLE) send("running", ph.progress, null, null);
+            if (transformer.getProgress(ph) == Transformer.PROGRESS_STATE_AVAILABLE) send("running", progBase + Math.round(ph.progress * (100 - progBase) / 100f), null, null);
             pollProgress();
         }, 700);
     }
@@ -162,6 +232,7 @@ class VideoMaker {
     private void send(String state, int progress, String uri, String error) {
         try {
             JSONObject o = new JSONObject();
+            if (!"running".equals(state)) active = false;
             o.put("state", state); o.put("progress", progress);
             if (uri != null) o.put("uri", uri);
             if (error != null) o.put("error", error);

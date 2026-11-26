@@ -464,9 +464,9 @@ const KLING_FLOW_DEFAULT = {
  ]
 };
 const GROK_FLOW_DEFAULT = {
- "version": "0.3",
+ "version": "0.4",
  "verified": false,
- "note": "2026-11-26 사용자 화면 기록(ai.x.grok) 두 장으로 확인: 채팅 화면(입력칸 id chat_text_input, '새 채팅 시작하기', 결과 이미지 'Generated Image'), 이미지 화면('닫기', '다운로드', '공유'). 그록이 이미지 화면에서 열려도 닫고 채팅으로 돌아간다.",
+ "note": "2026-11-26 사용자 화면 기록(ai.x.grok) 두 장으로 확인: 채팅 화면(입력칸 id chat_text_input, '새 채팅 시작하기', 결과 이미지 'Generated Image'), 이미지 화면('닫기', '다운로드', '공유'). 그록이 이미지 화면에서 열려도 닫고 채팅으로 돌아간다. 0.4: 장면 이미지 여러 장을 한 번에 만들 수 있게 샷마다 새 채팅을 연다.",
  "package": "ai.x.grok",
  "after": 900,
  "start": [
@@ -523,6 +523,12 @@ const GROK_FLOW_DEFAULT = {
    ]
   },
   {
+   "do": "wait",
+   "ms": 1500
+  }
+ ],
+ "shot": [
+  {
    "do": "click",
    "say": "새 채팅 열기",
    "find": {
@@ -539,9 +545,7 @@ const GROK_FLOW_DEFAULT = {
   {
    "do": "wait",
    "ms": 1500
-  }
- ],
- "shot": [
+  },
   {
    "do": "setText",
    "say": "이미지 프롬프트 입력",

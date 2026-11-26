@@ -103,6 +103,23 @@ public class MainActivity extends Activity {
         else web.loadUrl("file:///android_asset/index.html");
     }
 
+    /* 사진 하나를 1600px 안쪽 JPEG dataURL 로 */
+    String imageDataUrl(Uri u) {
+        try {
+            android.graphics.BitmapFactory.Options o = new android.graphics.BitmapFactory.Options();
+            o.inJustDecodeBounds = true;
+            try (java.io.InputStream in = getContentResolver().openInputStream(u)) { android.graphics.BitmapFactory.decodeStream(in, null, o); }
+            int sc = 1; while (Math.max(o.outWidth, o.outHeight) / (sc * 2) >= 1600) sc *= 2;
+            android.graphics.BitmapFactory.Options o2 = new android.graphics.BitmapFactory.Options(); o2.inSampleSize = sc;
+            android.graphics.Bitmap bm;
+            try (java.io.InputStream in = getContentResolver().openInputStream(u)) { bm = android.graphics.BitmapFactory.decodeStream(in, null, o2); }
+            if (bm == null) return "";
+            java.io.ByteArrayOutputStream bo = new java.io.ByteArrayOutputStream();
+            bm.compress(android.graphics.Bitmap.CompressFormat.JPEG, 90, bo);
+            return "data:image/jpeg;base64," + android.util.Base64.encodeToString(bo.toByteArray(), android.util.Base64.NO_WRAP);
+        } catch (Exception e) { return ""; }
+    }
+
     @Override
     protected void onResume() {
         super.onResume();
@@ -497,6 +514,25 @@ public class MainActivity extends Activity {
         }
 
         /* sinceMs 이후 추가된 가장 최근 사진(이 앱이 저장한 참조 사진은 제외)을 줄여서 data URL 로 */
+        /* sinceMs 뒤로 저장된 사진들을 오래된 것부터 (그록 장면 이미지 여러 장 가져오기) */
+        @JavascriptInterface
+        public String imagesSince(double sinceMs, int max) {
+            org.json.JSONArray out = new org.json.JSONArray();
+            String[] proj = {MediaStore.Images.Media._ID, MediaStore.Images.Media.DISPLAY_NAME};
+            String sel = MediaStore.Images.Media.DATE_ADDED + ">=?";
+            String[] args = {String.valueOf((long) (sinceMs / 1000) - 2)};
+            try (android.database.Cursor c = getContentResolver().query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, proj, sel, args, MediaStore.Images.Media.DATE_ADDED + " ASC")) {
+                while (c != null && c.moveToNext() && out.length() < Math.max(1, max)) {
+                    String name = c.getString(1);
+                    if (name != null && name.startsWith("kling_ref_")) continue;
+                    Uri u = android.content.ContentUris.withAppendedId(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, c.getLong(0));
+                    String d = imageDataUrl(u);
+                    if (!d.isEmpty()) out.put(d);
+                }
+            } catch (Exception ignored) { }
+            return out.toString();
+        }
+
         @JavascriptInterface
         public String latestImageSince(double sinceMs) {
             String[] proj = {MediaStore.Images.Media._ID, MediaStore.Images.Media.DISPLAY_NAME};

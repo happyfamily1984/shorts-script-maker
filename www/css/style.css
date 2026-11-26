@@ -481,3 +481,11 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display
 .done b{display:flex;gap:7px;align-items:center;color:var(--ok)}
 .done small{color:var(--muted)}
 .btn:disabled{opacity:.45;pointer-events:none}
+/* 샷 구성·장면 이미지 */
+.row.plan{align-items:center;gap:10px}
+.seg.mini{flex:none;padding:3px;gap:2px;box-shadow:none}
+.seg.mini button{padding:7px 12px;font-size:13px}
+.slots.still{grid-template-columns:repeat(4,1fr);gap:8px}
+.slots.still .slot{max-height:none;border-radius:12px}
+.slots.still .sadd small{font-size:10.5px}
+.slots.still .sacts{transform:scale(.85);transform-origin:bottom right}
