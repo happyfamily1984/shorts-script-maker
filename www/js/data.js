@@ -23,7 +23,9 @@ const THEMES = [
   { id:'makeover', name:'외모 무시에서 변신 역전', en:'The Glow-Up', icon:'sparkle', hue:300, punch:'비웃던 사람들이 못 알아보고 매달린다', tags:['glowup','makeover','regret'] },
   { id:'frame', name:'누명 벗기', en:'Framed No More', icon:'scale', hue:222, punch:'몰아세우던 사람이 화면 속 진범이다', tags:['framed','truth','justice'] },
   { id:'audition', name:'면접·오디션 실력 한 방', en:'They Laughed Until', icon:'mic', hue:96, punch:'비웃던 심사위원이 일어나 박수 친다', tags:['audition','talent','underdog'] },
-  { id:'test', name:'위장 테스트', en:'The Undercover Boss', icon:'search', hue:186, punch:'친절했던 한 사람만 보상받는다', tags:['undercoverboss','test','kindness'] }
+  { id:'test', name:'위장 테스트', en:'The Undercover Boss', icon:'search', hue:186, punch:'친절했던 한 사람만 보상받는다', tags:['undercoverboss','test','kindness'] },
+  /* 직업 숏드라마 (group:'job'). 주인공의 직업이 고정되고 도파민 공식은 위 주제들을 섞어 쓴다 */
+  { id:'rider', group:'job', name:'배달라이더', en:'The Delivery Rider', icon:'bike', hue:24, punch:'무시당하던 배달라이더가 정체·실력·정의로 판을 뒤집는다', tags:['deliveryrider','delivery','karma'] }
 ];
 
 /* 6샷 구조 이름과 역할 */

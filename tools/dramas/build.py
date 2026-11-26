@@ -2,7 +2,7 @@
 import glob, json, os, re
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, '..', '..', 'www', 'js', 'dramas.js')
-ORDER = ['hidden', 'gapjil', 'guardian', 'affair', 'comeback', 'inlaws', 'bully', 'divorce', 'karma', 'scam', 'master', 'heir', 'rebirth', 'contract', 'credit', 'family', 'makeover', 'frame', 'audition', 'test']
+ORDER = ['hidden', 'gapjil', 'guardian', 'affair', 'comeback', 'inlaws', 'bully', 'divorce', 'karma', 'scam', 'master', 'heir', 'rebirth', 'contract', 'credit', 'family', 'makeover', 'frame', 'audition', 'test', 'rider']
 
 
 def ok(s):

@@ -114,6 +114,7 @@ const ICON = {
   globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>',
   trophy: '<path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8.5 20h7M10 17h4"/>',
   link: '<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3A4 4 0 0 0 11 18.700l1-1"/>',
+  bike: '<circle cx="5.5" cy="17" r="3"/><circle cx="18.5" cy="17" r="3"/><path d="M5.5 17l4-7h6l3 7M9.5 10L8 7H6M15.5 10l-1.5-4h3"/>',
   exit: '<path d="M14 4h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-5M10 8l-4 4 4 4M6 12h10"/>'
 };
 const ic = n => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ICON[n] || ''}</svg>`;
@@ -691,9 +692,8 @@ V.home = p => {
     </section>
     ${daily.length ? `<section class="sec">${h2('sparkle', '오늘 만들기 좋은 대본', `<button class="pbtn" data-act="reshuffle">${ic('refresh')}다른 대본</button>`)}
       <div class="list">${daily.map(([th, i]) => dramaRow(th, i, true, d)).join('')}</div></section>` : ''}
-    <section class="sec">${h2('flame', '도파민 주제 20')}
-      <div class="card"><div class="cats">${THEMES.map((t, n) => `<button class="cat" data-act="go" data-v="theme" data-id="${t.id}"><span class="gw">${glyph(t, 1)}${settings.myThemes.includes(t.id) ? `<span class="mine">${ic('star')}</span>` : `<span class="rk num ${n < 3 ? 'top' : ''}">${n + 1}</span>`}</span>${t.name}<small class="cnt num">${dramasOf(t.id).length}편</small></button>`).join('')}</div></div>
-    </section>
+    ${[['flame', '도파민 주제', THEMES.filter(t => !t.group)], ['bike', '직업 숏드라마', THEMES.filter(t => t.group === 'job')]].filter(g => g[2].length).map(([icon, title, list]) => `<section class="sec">${h2(icon, `${title} ${list.length}`)}
+      <div class="card"><div class="cats">${list.map(t => { const n = THEMES.indexOf(t); return `<button class="cat" data-act="go" data-v="theme" data-id="${t.id}"><span class="gw">${glyph(t, 1)}${settings.myThemes.includes(t.id) ? `<span class="mine">${ic('star')}</span>` : `<span class="rk num ${n < 3 ? 'top' : ''}">${n + 1}</span>`}</span>${t.name}<small class="cnt num">${dramasOf(t.id).length ? dramasOf(t.id).length + '편' : '준비 중'}</small></button>`; }).join('')}</div></div></section>`).join('')}
     <section class="sec">${h2('clock', '최근 작업', `<button class="pbtn" data-act="tab" data-v="library">전체 보기${ic('chevron')}</button>`)}
       ${recent.length ? `<div class="list">${recent.map(x => projRow(x)).join('')}</div>` : `<div class="card empty"><b>아직 작업한 대본이 없습니다</b>주제를 골라 대본을 열고 저장해 보세요.</div>`}
     </section>` };
