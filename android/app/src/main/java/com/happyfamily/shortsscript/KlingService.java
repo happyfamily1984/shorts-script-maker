@@ -203,6 +203,7 @@ public class KlingService extends AccessibilityService {
             String say = st.optString("say", st.optString("do"));
             String dd = st.optString("do");
             if (!"launch".equals(dd) && !"wait".equals(dd) && !"returnApp".equals(dd)) waitForTarget();
+            say = expand(say, sh, i, n);
             status(prefix(Math.max(i, 0), n) + say);
             boolean ok;
             try { ok = exec(st, sh, i, n); } catch (Exception e) { ok = false; }
@@ -223,12 +224,13 @@ public class KlingService extends AccessibilityService {
                 .replace("${shot}", String.valueOf(i + 1)).replace("${total}", String.valueOf(n)).replace("${imageCount}", String.valueOf(imgs))
                 .replace("${duration}", sh != null ? sh.optString("sec", "5") : "5")
                 .replace("${i0}", String.valueOf(Math.max(i, 0))).replace("${ri}", String.valueOf(Math.max(0, n - 1 - i)))
-                .replace("${k}", String.valueOf(repK)).replace("${rk}", String.valueOf(Math.max(0, repN - 1 - repK)));
+                .replace("${tag}", sh != null ? sh.optString("tag") : "").replace("${k}", String.valueOf(repK)).replace("${rk}", String.valueOf(Math.max(0, repN - 1 - repK)));
     }
     private boolean exec(JSONObject st, JSONObject sh, int i, int n) throws Exception {
         String d = st.optString("do");
         JSONObject f = st.optJSONObject("find");
-        if (f != null && f.opt("index") instanceof String) { f = new JSONObject(f.toString()); f.put("index", parseInt(expand(f.getString("index"), sh, i, n), 0)); }
+        if (f != null && f.toString().contains("${")) f = new JSONObject(expand(f.toString(), sh, i, n));   /* ${tag} 같은 변수를 찾기 조건에도 */
+        if (f != null && f.opt("index") instanceof String) { f = new JSONObject(f.toString()); f.put("index", parseInt(f.getString("index"), 0)); }
         int to = st.optInt("timeout", 6000);
         DisplayMetrics dm = getResources().getDisplayMetrics();
         switch (d) {
@@ -279,7 +281,9 @@ public class KlingService extends AccessibilityService {
             case "tapIn": {   /* 찾은 칸 안의 상대 위치(rx, ry: 0~1)를 누른다. 화면 크기와 상관없음 */
                 AccessibilityNodeInfo nd = find(f, to); if (nd == null) return false;
                 Rect r = new Rect(); nd.getBoundsInScreen(r);
-                return tap(r.left + (float) st.optDouble("rx", .5) * r.width(), r.top + (float) st.optDouble("ry", .5) * r.height());
+                float dpx = getResources().getDisplayMetrics().density;
+                return tap(r.left + (float) st.optDouble("rx", .5) * r.width() + (float) st.optDouble("dx", 0) * dpx,
+                        r.top + (float) st.optDouble("ry", .5) * r.height() + (float) st.optDouble("dy", 0) * dpx);
             }
             case "tap": return tap((float) st.optDouble("x", .5) * dm.widthPixels, (float) st.optDouble("y", .5) * dm.heightPixels);
             case "swipe": return swipe((float) st.optDouble("x1", .5) * dm.widthPixels, (float) st.optDouble("y1", .7) * dm.heightPixels,
@@ -287,7 +291,8 @@ public class KlingService extends AccessibilityService {
             case "scrollTo": {
                 for (int k = 0; k < st.optInt("max", 6); k++) {
                     if (find(f, 600) != null) return true;
-                    if (!swipe(dm.widthPixels * .5f, dm.heightPixels * .72f, dm.widthPixels * .5f, dm.heightPixels * .35f, 350)) return false;
+                    boolean up = st.optBoolean("up");
+                    if (!swipe(dm.widthPixels * .5f, dm.heightPixels * (up ? .35f : .72f), dm.widthPixels * .5f, dm.heightPixels * (up ? .72f : .35f), 350)) return false;
                     Thread.sleep(600);
                 }
                 return find(f, 600) != null;

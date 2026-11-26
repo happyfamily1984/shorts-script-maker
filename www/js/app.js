@@ -551,10 +551,10 @@ async function buildKlingJob(p, range, skipSet) {
   const imgsFor = async ids => { const out = []; for (const i of ids) { const v = await imgGet(pick(p.chars[i])); if (v) out.push(v); else miss.add(cname(p.chars[i], m)); } return out; };
   if (range === 'multi') shots.push({ prompt: promptText(p, `m:0:${p.shots.length}`, m), images: await imgsFor(p.chars.map((c, i) => i)), sec: totalSec(p) });
   else for (const i of (range === 'all' ? p.shots.map((x, n) => n) : range === 'vid' ? vidShots(p) : Array.isArray(range) ? range : [+range])) {
-    if (skipSet && skipSet.has(i)) { shots.push({ skip: true, prompt: '', images: [], sec: p.shots[i].sec || 5 }); continue; }
+    if (skipSet && skipSet.has(i)) { shots.push({ skip: true, prompt: '', images: [], sec: p.shots[i].sec || 5, tag: m === 'kr' ? `[샷 ${i + 1}/${p.shots.length}` : `[Shot ${i + 1}/${p.shots.length}` }); continue; }
     const ov = p.over && p.over[`k:${i}:${m}`];
     const ids = inShot(p, p.shots[i]), has = []; for (const c of ids) if (await imgGet(pick(p.chars[c]))) has.push(c);
-    shots.push({ prompt: ov != null ? ov : klingPrompt(p, i, m, has), images: await imgsFor(ids), sec: p.shots[i].sec || 5 });
+    shots.push({ prompt: ov != null ? ov : klingPrompt(p, i, m, has), images: await imgsFor(ids), sec: p.shots[i].sec || 5, tag: m === 'kr' ? `[샷 ${i + 1}/${p.shots.length}` : `[Shot ${i + 1}/${p.shots.length}` });
   }
   return { job: { shots, neg: promptText(p, 'n', m), mode: m }, miss: [...miss] };
 }
