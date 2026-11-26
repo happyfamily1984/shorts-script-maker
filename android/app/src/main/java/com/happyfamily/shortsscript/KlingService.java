@@ -64,6 +64,7 @@ public class KlingService extends AccessibilityService {
     private volatile boolean running = false, cancel = false;
     private JSONArray dumps = new JSONArray();
     private Uri dumpUri; private String dumpName;
+    static volatile Uri lastDumpUri; static volatile String lastDumpName = "";
     private int repK = 0, repN = 0;
     private JSONObject job, flow;
 
@@ -466,6 +467,7 @@ public class KlingService extends AccessibilityService {
                 v.put(MediaStore.Downloads.MIME_TYPE, "application/json");
                 v.put(MediaStore.Downloads.RELATIVE_PATH, Environment.DIRECTORY_DOWNLOADS + "/ShortDramaMaker");
                 dumpUri = getContentResolver().insert(MediaStore.Downloads.EXTERNAL_CONTENT_URI, v);
+                lastDumpUri = dumpUri; lastDumpName = dumpName;
                 if (dumpUri == null) return false;
             }
             JSONObject o = new JSONObject();

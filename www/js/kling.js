@@ -1,9 +1,9 @@
 /* 자동 입력 기본 순서. 저장소 kling/flow.json, grok/flow.json, pickle/flow.json 과 같은 내용 */
 'use strict';
 const KLING_FLOW_DEFAULT = {
- "version": "1.2-partial",
+ "version": "1.3-partial",
  "verified": false,
- "note": "홈 '창작 시작'은 스크린샷으로, 만들기 화면은 2026-11-26 화면 기록(kling.ai.video.chat)으로 확인: 사진 추가 id kling_omni_asset_add, 모드 '비디오 생성·4.0'(omni_edit_preview_cur_model), 길이·화질 omni_edit_ratio_value, 생성 버튼 id omni_edit_preview_submit(글자 없이 크레딧 숫자만). 사진 고르기 화면, 생성 뒤 애셋 화면은 아직 추측. 2026-11-26 기록 3: '창작 시작' 뒤 화면('기본 창작')은 입력칸이 접힌 상태(omni_edit_preview_text)라 눌러서 펼쳐야 '+'와 프롬프트 칸이 나온다. 같은 화면 위쪽에 작품 목록('작품 없음')이 있다. 기록 4: 클링이 이미 '기본 창작' 화면에서 열리면 '창작 시작'이 없다. 만들기 화면 표시는 id omni_edit_preview_submit(접힘·펼침 모두 있음). 기록 5: 사진을 고르면 '사용' 버튼(글자 '사용', 아래쪽 넓은 버튼)이 있는 확인 화면이 뜬다. 사진은 한 장씩: + → 사진 → 사용 을 장수만큼 반복. 사진 목록 화면 자체는 아직 기록 없음(추측). 스크린샷(2026-11-26): 사진 고르기는 '갤러리' 탭, 첫 칸은 '카메라 촬영', 그 뒤로 최신 사진 순. 여러 장 동그라미 선택 후 아래 초록 '완료 N' 버튼(글자에 숫자가 붙음). 넣은 사진은 '이미지 1', '이미지 2'로 표시됨. 모델 '비디오 생성·4.0'은 1080p·10s 150크레딧, '2.5 Turbo'는 720p·5s 15크레딧(스타트/엔드 프레임 방식). 스크린샷 2: 사진을 누르면 '사용' 화면 → 사용 누르면 한 장 추가. 샷마다 사진이 쌓여(이미지 1~4) 앞 샷 사진을 먼저 지워야 함(카드 오른쪽 위 X, 약 x0.18 y0.308). 쓰기로 한 모델: '비디오 생성·01' 720p·5s 30크레딧(여러 장 참조 가능). 0.9: 캡처는 상태바·내비게이션 바가 잘려 비율 좌표가 어긋남 → X는 첫 사진 카드(kling_omni_asset_card) 안 상대 위치(오른쪽 위 0.81, 0.19)로 누름. 기록 6: 모델 글자는 '비디오 생성·O1'(영문 O). 0크레딧 표시 대신 '생성' 글자(omni_submit_btn_text)가 보일 때도 있음. 1080p 선택 가능. 기록 7: 사진 목록 화면 확인 — 첫 칸 '카메라 촬영'(ksa_take_photo_layout), 사진마다 선택 동그라미 media_pick_num_area, 아래 '완료 N'(kling_picker_done_button). 앱은 인물 사진을 1번이 가장 최근이 되게 저장하므로 동그라미를 앞에서부터 장수만큼 누르면 이미지 1, 2… 순서가 된다. 사진 자체(media_preview)를 누르면 '사용' 미리보기 화면이 뜨므로 쓰지 않는다. 기록 8: '갤러리 ⌄'(iv_arrow)를 누르면 앨범 목록(label: Recent, Screenshots, Pictures, Camera, Download…)이 뜬다. 앨범 이름은 사진 폴더 이름. 앱은 인물 사진을 Pictures/SDMRef 에만 저장하고(예전 것은 지움) 'SDMRef' 앨범을 열어 고른다.",
+ "note": "홈 '창작 시작'은 스크린샷으로, 만들기 화면은 2026-11-26 화면 기록(kling.ai.video.chat)으로 확인: 사진 추가 id kling_omni_asset_add, 모드 '비디오 생성·4.0'(omni_edit_preview_cur_model), 길이·화질 omni_edit_ratio_value, 생성 버튼 id omni_edit_preview_submit(글자 없이 크레딧 숫자만). 사진 고르기 화면, 생성 뒤 애셋 화면은 아직 추측. 2026-11-26 기록 3: '창작 시작' 뒤 화면('기본 창작')은 입력칸이 접힌 상태(omni_edit_preview_text)라 눌러서 펼쳐야 '+'와 프롬프트 칸이 나온다. 같은 화면 위쪽에 작품 목록('작품 없음')이 있다. 기록 4: 클링이 이미 '기본 창작' 화면에서 열리면 '창작 시작'이 없다. 만들기 화면 표시는 id omni_edit_preview_submit(접힘·펼침 모두 있음). 기록 5: 사진을 고르면 '사용' 버튼(글자 '사용', 아래쪽 넓은 버튼)이 있는 확인 화면이 뜬다. 사진은 한 장씩: + → 사진 → 사용 을 장수만큼 반복. 사진 목록 화면 자체는 아직 기록 없음(추측). 스크린샷(2026-11-26): 사진 고르기는 '갤러리' 탭, 첫 칸은 '카메라 촬영', 그 뒤로 최신 사진 순. 여러 장 동그라미 선택 후 아래 초록 '완료 N' 버튼(글자에 숫자가 붙음). 넣은 사진은 '이미지 1', '이미지 2'로 표시됨. 모델 '비디오 생성·4.0'은 1080p·10s 150크레딧, '2.5 Turbo'는 720p·5s 15크레딧(스타트/엔드 프레임 방식). 스크린샷 2: 사진을 누르면 '사용' 화면 → 사용 누르면 한 장 추가. 샷마다 사진이 쌓여(이미지 1~4) 앞 샷 사진을 먼저 지워야 함(카드 오른쪽 위 X, 약 x0.18 y0.308). 쓰기로 한 모델: '비디오 생성·01' 720p·5s 30크레딧(여러 장 참조 가능). 0.9: 캡처는 상태바·내비게이션 바가 잘려 비율 좌표가 어긋남 → X는 첫 사진 카드(kling_omni_asset_card) 안 상대 위치(오른쪽 위 0.81, 0.19)로 누름. 기록 6: 모델 글자는 '비디오 생성·O1'(영문 O). 0크레딧 표시 대신 '생성' 글자(omni_submit_btn_text)가 보일 때도 있음. 1080p 선택 가능. 기록 7: 사진 목록 화면 확인 — 첫 칸 '카메라 촬영'(ksa_take_photo_layout), 사진마다 선택 동그라미 media_pick_num_area, 아래 '완료 N'(kling_picker_done_button). 앱은 인물 사진을 1번이 가장 최근이 되게 저장하므로 동그라미를 앞에서부터 장수만큼 누르면 이미지 1, 2… 순서가 된다. 사진 자체(media_preview)를 누르면 '사용' 미리보기 화면이 뜨므로 쓰지 않는다. 기록 8: '갤러리 ⌄'(iv_arrow)를 누르면 앨범 목록(label: Recent, Screenshots, Pictures, Camera, Download…)이 뜬다. 앨범 이름은 사진 폴더 이름. 앱은 인물 사진을 Pictures/SDMRef 에만 저장하고(예전 것은 지움) 'SDMRef' 앨범을 열어 고른다. 기록 9: '⌄'(iv_arrow)는 눌리는 칸이 아니라 클릭 동작을 보내면 '갤러리' 탭만 눌림 → 화살표 위치를 직접 탭(tapIn).",
  "package": "kling.ai.video.chat",
  "after": 900,
  "start": [
@@ -277,15 +277,13 @@ const KLING_FLOW_DEFAULT = {
    "if": "imageCount"
   },
   {
-   "do": "click",
+   "do": "tapIn",
    "say": "앨범 목록 열기",
    "find": {
     "id": "iv_arrow"
    },
-   "orTap": {
-    "x": 0.188,
-    "y": 0.157
-   },
+   "rx": 0.5,
+   "ry": 0.5,
    "timeout": 4000,
    "if": "imageCount"
   },
@@ -515,9 +513,9 @@ const KLING_FLOW_DEFAULT = {
  ]
 };
 const GROK_FLOW_DEFAULT = {
- "version": "0.4",
+ "version": "0.5",
  "verified": false,
- "note": "2026-11-26 사용자 화면 기록(ai.x.grok) 두 장으로 확인: 채팅 화면(입력칸 id chat_text_input, '새 채팅 시작하기', 결과 이미지 'Generated Image'), 이미지 화면('닫기', '다운로드', '공유'). 그록이 이미지 화면에서 열려도 닫고 채팅으로 돌아간다. 0.4: 장면 이미지 여러 장을 한 번에 만들 수 있게 샷마다 새 채팅을 연다.",
+ "note": "2026-11-26 사용자 화면 기록(ai.x.grok) 두 장으로 확인: 채팅 화면(입력칸 id chat_text_input, '새 채팅 시작하기', 결과 이미지 'Generated Image'), 이미지 화면('닫기', '다운로드', '공유'). 그록이 이미지 화면에서 열려도 닫고 채팅으로 돌아간다. 0.4: 장면 이미지 여러 장을 한 번에 만들 수 있게 샷마다 새 채팅을 연다. 0.5: 프롬프트가 길면 결과 이미지가 화면 밖에 있어 못 찾음 → 기다리는 동안 '아래로 스크롤' 버튼·위로 쓸기로 맨 아래를 보이게 한다.",
  "package": "ai.x.grok",
  "after": 900,
  "start": [
@@ -628,12 +626,52 @@ const GROK_FLOW_DEFAULT = {
    "ms": 4000
   },
   {
-   "do": "waitFor",
+   "do": "repeat",
    "say": "이미지가 만들어지길 기다리는 중",
+   "count": "40",
+   "steps": [
+    {
+     "do": "unless",
+     "say": "이미지가 만들어지길 기다리는 중",
+     "find": {
+      "desc": "Generated Image"
+     },
+     "timeout": 3500,
+     "steps": [
+      {
+       "do": "click",
+       "say": "아래로 스크롤",
+       "find": {
+        "any": [
+         "아래로 스크롤",
+         "Scroll to bottom"
+        ]
+       },
+       "timeout": 500,
+       "optional": true
+      },
+      {
+       "do": "swipe",
+       "say": "아래로 내리기",
+       "x1": 0.5,
+       "y1": 0.62,
+       "x2": 0.5,
+       "y2": 0.3,
+       "ms": 300,
+       "optional": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "do": "waitFor",
+   "say": "이미지 확인",
    "find": {
     "desc": "Generated Image"
    },
-   "timeout": 150000
+   "timeout": 5000,
+   "fail": "그록 이미지가 3분 안에 나오지 않았습니다. 그록에서 생성이 됐는지 확인하세요"
   },
   {
    "do": "wait",

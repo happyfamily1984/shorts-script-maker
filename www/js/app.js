@@ -636,7 +636,11 @@ window.onAppResume = () => {
   const info = kInfo(); if (!info) return;
   if (info.status && info.status !== seenStatus && !info.running) { seenStatus = info.status; toast(info.status.slice(0, 60)); }
   const d = klingDumps().length;
-  if (d && d !== seenDumps) { seenDumps = d; dialog(`클링 화면 ${d}개를 기록했습니다`, '이 파일을 보내 주시면 자동 입력 순서를 클링 화면에 맞춰 고칠 수 있습니다.', [['나중에', null], ['파일로 저장', () => A.dumpOut(), 'pri']]); }
+  if (d && d !== seenDumps) {
+    seenDumps = d; const nm = window.AndroidBridge.lastDumpName ? window.AndroidBridge.lastDumpName() : '';
+    if (nm) dialog(`화면 ${d}개를 기록했습니다`, `내 파일 > 다운로드 > ShortDramaMaker > ${nm} 에 자동 저장했습니다. 이 파일을 보내 주시면 자동 입력 순서를 화면에 맞춰 고칠 수 있습니다.`, [['닫기', null], ['바로 보내기', () => window.AndroidBridge.shareLastDump(), 'pri']]);
+    else dialog(`화면 ${d}개를 기록했습니다`, '이 파일을 보내 주시면 자동 입력 순서를 화면에 맞춰 고칠 수 있습니다.', [['나중에', null], ['파일로 저장', () => A.dumpOut(), 'pri']]);
+  }
   if (cur().v === 'settings') render();
 };
 

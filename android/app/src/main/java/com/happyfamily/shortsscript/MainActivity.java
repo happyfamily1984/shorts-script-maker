@@ -559,6 +559,18 @@ public class MainActivity extends Activity {
             return "";
         }
 
+        /* 마지막으로 다운로드 폴더에 자동 저장한 화면 기록 파일 이름 / 바로 보내기 */
+        @JavascriptInterface
+        public String lastDumpName() { return KlingService.lastDumpUri == null ? "" : KlingService.lastDumpName; }
+        @JavascriptInterface
+        public boolean shareLastDump() {
+            Uri u = KlingService.lastDumpUri; if (u == null) return false;
+            Intent i = new Intent(Intent.ACTION_SEND); i.setType("application/json");
+            i.putExtra(Intent.EXTRA_STREAM, u); i.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            runOnUiThread(() -> { try { startActivity(Intent.createChooser(i, "화면 기록 보내기")); } catch (Exception ignored) { } });
+            return true;
+        }
+
         @JavascriptInterface
         public String readKlingDumps() {
             try { return new String(java.nio.file.Files.readAllBytes(new java.io.File(getFilesDir(), KlingService.DUMP_FILE).toPath()), StandardCharsets.UTF_8); }
