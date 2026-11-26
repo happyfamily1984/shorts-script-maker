@@ -4,7 +4,7 @@
 
 - `start` → 샷마다 (`shot` → `between`) → (원클릭 제작일 때) `collectStart` → 샷마다 `collect` → `collectEnd` → `end`
 - `collect` 는 생성이 끝난 영상을 샷 순서대로 내려받는 단계. `find.index` 에 `${ri}`(뒤에서부터 순번: 최신 목록에서 먼저 넣은 샷이 아래에 있을 때) 또는 `${i0}`(0부터 순번)를 쓸 수 있다
-- 단계: `returnApp`(이 앱으로 돌아오기), `repeat{count,steps}`(steps를 count번 반복, 안에서 `${k}`=0부터 순번, `${rk}`=거꾸로 순번), `unless{find,steps}`(대상이 이미 있으면 건너뛰고 없으면 steps 실행), `when{find,steps}`(대상이 보이면 steps 실행), `launch`, `wait{ms}`, `waitFor{find}`, `waitGone{find}`, `click{find}`, `longClick{find}`, `clickEach{find,count}`, `setText{find,value}`, `tap{x,y}`(화면 비율 0~1), `tapIn{find,rx,ry}`(찾은 칸 안의 상대 위치 0~1), `swipe{x1,y1,x2,y2,ms}`, `scrollTo{find}`, `back`
+- 단계: `returnApp`(이 앱으로 돌아오기), `repeat{count,steps,until}`(until 대상이 보이면 바로 끝냄)(steps를 count번 반복, 안에서 `${k}`=0부터 순번, `${rk}`=거꾸로 순번), `unless{find,steps}`(대상이 이미 있으면 건너뛰고 없으면 steps 실행), `when{find,steps}`(대상이 보이면 steps 실행), `launch`, `wait{ms}`, `waitFor{find}`, `waitGone{find}`, `click{find}`, `longClick{find}`, `clickEach{find,count}`, `setText{find,value}`, `tap{x,y}`(화면 비율 0~1), `tapIn{find,rx,ry}`(찾은 칸 안의 상대 위치 0~1), `swipe{x1,y1,x2,y2,ms}`, `scrollTo{find}`, `back`
 - `click` 에 `orTap{x,y}` 를 주면 대상을 못 찾았을 때 그 화면 위치를 누른다
 - 공통: `say`(진행 막대 문구), `timeout`(ms), `optional`(못 찾아도 계속), `fail`(못 찾으면 멈추며 보여 줄 문구), `if`(`imageCount`, `autoGenerate`, 앞에 `!` 붙이면 반대), `after`(단계 뒤 대기 ms)
 - `find`: `text`, `desc`, `any`(글자 또는 설명), `id`(뷰 id 끝부분), `cls`(클래스 끝부분), `pkg`, `editable`, `clickable`, `area`([왼,위,오른,아래] 비율), `minW`(dp), `index`(몇 번째, 음수는 뒤에서)

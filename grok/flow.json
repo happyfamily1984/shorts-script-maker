@@ -1,5 +1,5 @@
 {
-  "version": "0.5",
+  "version": "0.6",
   "verified": false,
   "note": "2026-11-26 사용자 화면 기록(ai.x.grok) 두 장으로 확인: 채팅 화면(입력칸 id chat_text_input, '새 채팅 시작하기', 결과 이미지 'Generated Image'), 이미지 화면('닫기', '다운로드', '공유'). 그록이 이미지 화면에서 열려도 닫고 채팅으로 돌아간다. 0.4: 장면 이미지 여러 장을 한 번에 만들 수 있게 샷마다 새 채팅을 연다. 0.5: 프롬프트가 길면 결과 이미지가 화면 밖에 있어 못 찾음 → 기다리는 동안 '아래로 스크롤' 버튼·위로 쓸기로 맨 아래를 보이게 한다.",
   "package": "ai.x.grok",
@@ -117,38 +117,31 @@
       "count": "40",
       "steps": [
         {
-          "do": "unless",
-          "say": "이미지가 만들어지길 기다리는 중",
+          "do": "click",
+          "say": "아래로 스크롤",
           "find": {
-            "desc": "Generated Image"
+            "any": [
+              "아래로 스크롤",
+              "Scroll to bottom"
+            ]
           },
-          "timeout": 3500,
-          "steps": [
-            {
-              "do": "click",
-              "say": "아래로 스크롤",
-              "find": {
-                "any": [
-                  "아래로 스크롤",
-                  "Scroll to bottom"
-                ]
-              },
-              "timeout": 500,
-              "optional": true
-            },
-            {
-              "do": "swipe",
-              "say": "아래로 내리기",
-              "x1": 0.5,
-              "y1": 0.62,
-              "x2": 0.5,
-              "y2": 0.3,
-              "ms": 300,
-              "optional": true
-            }
-          ]
+          "timeout": 500,
+          "optional": true
+        },
+        {
+          "do": "swipe",
+          "say": "아래로 내리기",
+          "x1": 0.5,
+          "y1": 0.62,
+          "x2": 0.5,
+          "y2": 0.3,
+          "ms": 300,
+          "optional": true
         }
-      ]
+      ],
+      "until": {
+        "desc": "Generated Image"
+      }
     },
     {
       "do": "waitFor",

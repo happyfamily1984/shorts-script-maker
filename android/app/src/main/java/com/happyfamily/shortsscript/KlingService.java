@@ -256,9 +256,16 @@ public class KlingService extends AccessibilityService {
             case "repeat": {
                 int cnt = parseInt(expand(st.optString("count", "1"), sh, i, n), 1);
                 int sk = repK, sn = repN;
-                try { repN = cnt; for (repK = 0; repK < cnt; repK++) runSteps(st.optJSONArray("steps"), sh, i, n); }
-                finally { repK = sk; repN = sn; }
-                return true;
+                JSONObject until = st.optJSONObject("until");   /* 이 대상이 보이면 바로 반복을 끝낸다 */
+                if (until != null && until.toString().contains("${")) until = new JSONObject(expand(until.toString(), sh, i, n));
+                try {
+                    repN = cnt;
+                    for (repK = 0; repK < cnt; repK++) {
+                        if (until != null && find(until, 400) != null) return true;
+                        runSteps(st.optJSONArray("steps"), sh, i, n);
+                    }
+                } finally { repK = sk; repN = sn; }
+                return until == null || find(until, 1500) != null;
             }
             case "when": {   /* 대상이 보이면 steps 실행 (unless 의 반대) */
                 if (find(f, st.optInt("timeout", 1500)) == null) return true;
