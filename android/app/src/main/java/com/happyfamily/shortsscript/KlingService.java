@@ -205,9 +205,11 @@ public class KlingService extends AccessibilityService {
             if (!"launch".equals(dd) && !"wait".equals(dd) && !"returnApp".equals(dd)) waitForTarget();
             say = expand(say, sh, i, n);
             status(prefix(Math.max(i, 0), n) + say);
-            boolean ok;
-            try { ok = exec(st, sh, i, n); } catch (Exception e) { ok = false; }
-            if (!ok && !st.optBoolean("optional")) throw new StepFail(st.has("fail") ? st.optString("fail") : prefix(Math.max(i, 0), n) + "\"" + say + "\" 단계에서 대상을 찾지 못했습니다");
+            boolean ok; String err = "";
+            try { ok = exec(st, sh, i, n); }
+            catch (StepFail sf) { if (st.optBoolean("optional")) ok = false; else throw sf; }   /* 안쪽 단계의 멈춘 이유를 그대로 */
+            catch (Exception e) { ok = false; err = " (" + e.getClass().getSimpleName() + ": " + e.getMessage() + ")"; }
+            if (!ok && !st.optBoolean("optional")) throw new StepFail((st.has("fail") ? st.optString("fail") : prefix(Math.max(i, 0), n) + "\"" + say + "\" 단계에서 대상을 찾지 못했습니다") + err);
             Thread.sleep(st.optInt("after", pause));
         }
     }
