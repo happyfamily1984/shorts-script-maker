@@ -1,0 +1,172 @@
+[
+[
+ "학력 없다고 자른 면접", "Rejected for Having No Degree",
+ "서류에 학력이 없다며 면접관이 지원자를 자른다. 그 지원자는 그 제품을 만든 엔지니어였다.", "The panel cuts a candidate for having no degree. He is the engineer who built the product they sell.",
+ [
+  ["H", "민규", "Aaron", "30대 남성, 낡은 남색 재킷, 안경, 차분한 눈빛", "man in his 30s, worn navy jacket, glasses, calm eyes"],
+  ["V", "성진", "Mr. Draper", "40대 남성, 회색 정장, 면접 서류, 거만한 표정", "man in his 40s, gray suit, interview papers, arrogant look"],
+  ["A", "서 이사", "Ms. Kwan", "40대 여성, 검은 정장, 서류철, 단호한 태도", "woman in her 40s, black suit, document folder, firm manner"]
+ ],
+ [
+  ["면접실", "interview room", "성진이 민규의 이력서를 탁자에 던진다", "Mr. Draper tosses Aaron's resume onto the table", 1, "학력 칸이 비었네. 끝났어.", "Your education section is blank. We're done.", "ms"],
+  ["면접실", "interview room", "성진이 문을 가리키며 다음 지원자를 부른다", "Mr. Draper points at the door and calls the next candidate", 1, "다음 분 들어오세요.", "Next candidate, please.", "ots"],
+  ["면접실", "interview room", "민규가 가방에서 설계 도면 한 장을 꺼낸다", "Aaron takes a single blueprint from his bag", -1, "", "", "cu"],
+  ["면접실", "interview room", "서 이사가 문을 열고 들어와 민규 앞에 선다", "Ms. Kwan walks in and stands before Aaron", 2, "이 제품 설계자, 민규 씨 맞죠?", "You designed this product, Aaron?", "low"],
+  ["면접실", "interview room", "성진이 이력서를 다시 집어 들고 일어난다", "Mr. Draper picks the resume back up and stands", 0, "면접은 제가 볼게요. 다음 분은 나가 주세요.", "I'll run this interview. Next candidate, out.", "cu"],
+  ["면접실 밖", "outside the interview room", "복도 끝에서 민규에게 손을 드는 사람이 있다", "Someone at the end of the hall raises a hand to Aaron", -1, "", "", "pi"]
+ ]
+],
+[
+ "무대에 못 올린 참가자", "The Contestant They Cut",
+ "옷차림이 초라하다며 무대에 못 올린다. 그 참가자가 심사위원이 부른 노래의 작곡가였다.", "They keep him off the stage for his shabby clothes. He wrote the song the judge is famous for.",
+ [
+  ["H", "하람", "Micah", "20대 후반 남성, 낡은 후드티, 모자, 조용한 눈빛", "man in his late 20s, worn hoodie, cap, quiet eyes"],
+  ["V", "세훈", "Mr. Vance", "30대 남성, 흰 재킷, 선글라스, 건방진 태도", "man in his 30s, white jacket, sunglasses, cocky manner"],
+  ["A", "오 PD", "Ms. Sloane", "40대 여성, 헤드셋, 클립보드, 단호한 표정", "woman in her 40s, headset, clipboard, firm expression"]
+ ],
+ [
+  ["오디션장", "audition hall", "세훈이 하람의 후드티를 손끝으로 집어 든다", "Mr. Vance pinches Micah's hoodie", 1, "저 옷으로 무대에 서겠다고?", "You'd go on stage in that?", "ms"],
+  ["오디션장", "audition hall", "세훈이 하람의 번호표를 접어 탁자에 던진다", "Mr. Vance folds Micah's number and tosses it down", 1, "다음 번호 불러.", "Call the next number.", "ots"],
+  ["오디션장", "audition hall", "하람이 악보 첫 장의 작곡가 이름을 짚는다", "Micah taps the composer's name on the first page", -1, "", "", "pi"],
+  ["오디션장", "audition hall", "오 PD가 세훈의 마이크를 끄고 하람에게 무대를 가리킨다", "Ms. Sloane cuts Mr. Vance's mic and points Micah to the stage", 2, "이 곡 작곡가, 하람 님입니다.", "The composer of this song — Micah.", "low"],
+  ["오디션장", "audition hall", "세훈이 선글라스를 벗고 무대 아래로 물러난다", "Mr. Vance takes off his sunglasses and steps back from the stage", 0, "제 노래는 제가 부르겠습니다.", "I'll sing my own song now.", "rx"],
+  ["오디션장 뒤편", "backstage", "어두운 통로에서 하람을 부르는 목소리가 들린다", "A voice calls Micah from the dark backstage hallway", -1, "", "", "cu"]
+ ]
+],
+[
+ "국자를 보고 웃은 심사위원", "They Laughed at His Ladle",
+ "싼 국자를 보고 심사위원이 웃는다. 그가 이 식당 대표 메뉴를 만든 원조 셰프였다.", "The judges laugh at his cheap knife. He created the signature dish this restaurant is known for.",
+ [
+  ["H", "진욱", "Bruno", "40대 남성, 흰 조리복, 짧은 머리, 무뚝뚝한 표정", "man in his 40s, white chef coat, short hair, deadpan face"],
+  ["V", "우식", "Mr. Alton", "30대 남성, 검은 조리복, 손목시계, 비웃는 얼굴", "man in his 30s, black chef coat, wristwatch, sneering face"],
+  ["A", "백 오너", "Ms. Delgado", "50대 여성, 짙은 정장, 안경, 놀란 표정", "woman in her 50s, dark suit, glasses, startled look"]
+ ],
+ [
+  ["주방", "restaurant kitchen", "우식이 진욱의 낡은 국자를 집어 들어 흔든다", "Mr. Alton picks up Bruno's worn ladle and waves it", 1, "이 국자로 요리하겠다고?", "You cook with this?", "ots"],
+  ["주방", "restaurant kitchen", "우식이 진욱의 도마를 옆으로 밀어 버린다", "Mr. Alton shoves Bruno's cutting board aside", 1, "집에 가서 연습해.", "Go home and practice.", "ms"],
+  ["주방", "restaurant kitchen", "진욱이 메뉴판 첫 줄을 손끝으로 짚는다", "Bruno taps the first line of the menu board", -1, "", "", "cz"],
+  ["주방", "restaurant kitchen", "백 오너가 메뉴판을 들고 진욱 옆에 선다", "Ms. Delgado lifts the menu board and stands beside Bruno", 2, "이 대표 메뉴, 진욱 님 작품입니다.", "That signature dish is Bruno's.", "low"],
+  ["주방", "restaurant kitchen", "우식이 국자를 조리대 위에 조용히 내려놓는다", "Mr. Alton sets the ladle down quietly on the counter", 0, "도마는 제가 쓰던 자리예요.", "That board is where I used to work.", "cu"],
+  ["주방 문", "kitchen door", "문가에 선 여자가 진욱에게 조리복을 건넨다", "A woman at the door holds out a chef coat to Bruno", -1, "", "", "pi"]
+ ]
+],
+[
+ "발표를 끊긴 창업자", "The Pitch They Cut Short",
+ "발표 도중 마이크를 끄고 내보낸다. 그 창업자의 특허가 앞서 발표한 제품의 원본이었다.", "They cut his mic mid-pitch and send him out. His patent is the original behind the product pitched before him.",
+ [
+  ["H", "지원", "Otto", "30대 남성, 낡은 셔츠, 짧은 머리, 담담한 눈빛", "man in his 30s, worn shirt, short hair, composed eyes"],
+  ["V", "재경", "Mr. Sutter", "40대 남성, 파란 정장, 태블릿, 무심한 표정", "man in his 40s, blue suit, tablet, indifferent look"],
+  ["A", "윤 파트너", "Ms. Whitlock", "50대 여성, 검은 수트, 안경, 냉정한 태도", "woman in her 50s, black suit, glasses, cool manner"]
+ ],
+ [
+  ["피칭 룸", "pitch room", "재경이 지원의 마이크를 끄고 손을 든다", "Mr. Sutter cuts Otto's mic and raises a hand", 1, "다음 분으로 넘어가죠.", "Let's move to the next one.", "ms"],
+  ["피칭 룸", "pitch room", "재경이 지원의 노트북을 닫아 버린다", "Mr. Sutter closes Otto's laptop", 1, "이런 건 이미 나왔어요.", "This already exists.", "cu"],
+  ["피칭 룸", "pitch room", "지원이 봉투에서 특허증 사본을 꺼낸다", "Otto takes a copy of a patent from his folder", -1, "", "", "cz"],
+  ["피칭 룸", "pitch room", "윤 파트너가 특허증을 읽고 앞 발표자를 돌아본다", "Ms. Whitlock reads the patent and turns to the earlier presenter", 2, "앞 발표 제품, 이 특허를 쓴 겁니다.", "The last pitch used this patent.", "low"],
+  ["피칭 룸", "pitch room", "재경이 태블릿을 내려놓고 자리에서 일어난다", "Mr. Sutter sets his tablet down and rises", 0, "특허료는 따로 청구할게요.", "I'll invoice the licensing fee separately.", "rx"],
+  ["피칭 룸 밖", "outside the pitch room", "복도에서 지원을 기다리던 남자가 악수하러 온다", "A man waiting in the hall steps up to shake Otto's hand", -1, "", "", "pi"]
+ ]
+],
+[
+ "낡은 구두의 바이올리니스트", "The Violinist in Worn Shoes",
+ "낡은 구두를 보고 심사위원이 고개를 젓는다. 그녀는 지휘자의 스승이 지목한 제자였다.", "The panel shakes its head at her worn shoes. She is the student the maestro's mentor personally chose.",
+ [
+  ["H", "연우", "Alice", "20대 후반 여성, 검은 원피스, 낡은 구두, 단단한 눈빛", "woman in her late 20s, black dress, worn shoes, resolute eyes"],
+  ["V", "두진", "Mr. Falk", "50대 남성, 검은 정장, 나비넥타이, 차가운 표정", "man in his 50s, black suit, bow tie, cold expression"],
+  ["A", "마에스트로 한", "Maestro Ruiz", "60대 남성, 검은 연미복, 흰 머리, 위엄 있는 자세", "man in his 60s, black tailcoat, white hair, commanding posture"]
+ ],
+ [
+  ["콘서트홀", "concert hall", "두진이 연우의 낡은 구두를 내려다보고 고개를 젓는다", "Mr. Falk looks down at Alice's worn shoes and shakes his head", 1, "무대 발끝부터 틀렸어.", "Wrong from the toes up.", "cz"],
+  ["콘서트홀", "concert hall", "두진이 연우의 악보를 덮고 손을 젓는다", "Mr. Falk closes Alice's score and waves her off", 1, "다음 지원자.", "Next candidate.", "cu"],
+  ["콘서트홀", "concert hall", "연우가 케이스 안쪽의 편지를 꺼내 든다", "Alice takes a letter from inside her violin case", -1, "", "", "pi"],
+  ["콘서트홀", "concert hall", "마에스트로 한이 무대 앞으로 나와 연우를 가리킨다", "Maestro Ruiz walks to the front of the stage and points at Alice", 2, "제 스승이 지목한 제자입니다.", "She's the student my mentor chose.", "slo"],
+  ["콘서트홀", "concert hall", "두진이 악보를 다시 펼쳐 보이며 물러선다", "Mr. Falk reopens the score and steps back", 0, "첫 소절부터 다시 들려주세요.", "Play it again from the first bar.", "rx"],
+  ["콘서트홀 로비", "concert hall lobby", "새 명함이 연우의 바이올린 케이스 위에 놓인다", "A new card is placed on Alice's violin case", -1, "", "", "cu"]
+ ]
+],
+[
+ "대사 못 외운다며 쫓겨난 배우", "The Actor They Sent Home",
+ "대사를 더듬자 감독이 내보낸다. 그 배우가 이 드라마 대본을 쓴 작가였다.", "He stumbles on a line and the director sends him out. He wrote the drama they are casting.",
+ [
+  ["H", "규민", "Emmett", "30대 남성, 낡은 재킷, 안경, 조용한 눈빛", "man in his 30s, worn jacket, glasses, quiet eyes"],
+  ["V", "태식", "Mr. Corbin", "50대 남성, 낡은 모자, 클립보드, 무뚝뚝한 태도", "man in his 50s, worn cap, clipboard, blunt manner"],
+  ["A", "권 대표", "Ms. Hargrove", "40대 여성, 흰 셔츠, 서류철, 단호한 표정", "woman in her 40s, white shirt, document folder, firm expression"]
+ ],
+ [
+  ["오디션장", "audition room", "태식이 규민의 대사를 끊고 손을 내젓는다", "Mr. Corbin cuts off Emmett's line and waves his hand", 1, "대사도 못 외웠어? 나가.", "Can't even remember lines? Out.", "ms"],
+  ["오디션장", "audition room", "태식이 규민의 대본을 찢어 바닥에 던진다", "Mr. Corbin tears the script and throws it down", 1, "이 역할은 너한테 사치야.", "This role is wasted on you.", "ws"],
+  ["오디션장", "audition room", "규민이 바닥의 대본 한 장을 집어 든다", "Emmett picks up one page from the floor", -1, "", "", "cu"],
+  ["오디션장", "audition room", "권 대표가 규민에게 다가가 어깨를 잡는다", "Ms. Hargrove walks over and takes Emmett by the shoulder", 2, "이 드라마 작가, 규민 님입니다.", "He wrote this drama — Emmett.", "pi"],
+  ["오디션장", "audition room", "태식이 모자를 벗고 규민 앞에 고개를 숙인다", "Mr. Corbin takes off his cap and bows to Emmett", 0, "배역은 작가님이 정하세요.", "Let the writer cast the part.", "rx"],
+  ["오디션장 밖", "outside the audition room", "엘리베이터 앞에서 규민을 부르는 목소리가 들린다", "A voice calls Emmett by the elevator", -1, "", "", "cu"]
+ ]
+],
+[
+ "키가 작다며 떨어뜨린 모델", "Too Short to Model",
+ "키가 작다며 심사위원이 지원자를 뺀다. 그 지원자는 캠페인을 촬영할 사진작가였다.", "They drop her for being short. She is the photographer shooting the campaign they are casting.",
+ [
+  ["H", "시온", "Nell", "20대 후반 여성, 검은 터틀넥과 청바지, 짧은 머리", "woman in her late 20s, black turtleneck and jeans, short hair"],
+  ["V", "문 실장", "Mr. Rowe", "40대 남성, 흰 셔츠, 선글라스, 거만한 태도", "man in his 40s, white shirt, sunglasses, arrogant manner"],
+  ["A", "차 디렉터", "Ms. Fontaine", "40대 여성, 검은 정장, 태블릿, 냉정한 표정", "woman in her 40s, black suit, tablet, cool expression"]
+ ],
+ [
+  ["캐스팅 스튜디오", "casting studio", "문 실장이 시온의 키를 손으로 재며 웃는다", "Mr. Rowe measures Nell's height with his hand and laughs", 1, "이 키로 런웨이?", "Runway at this height?", "cz"],
+  ["캐스팅 스튜디오", "casting studio", "문 실장이 시온의 번호표를 바닥에 떨어뜨린다", "Mr. Rowe drops Nell's number on the floor", 1, "다음 사람 들어와.", "Send in the next one.", "ots"],
+  ["캐스팅 스튜디오", "casting studio", "시온이 가방에서 카메라를 꺼내 렌즈를 닦는다", "Nell takes a camera from her bag and wipes the lens", -1, "", "", "cu"],
+  ["캐스팅 스튜디오", "casting studio", "차 디렉터가 시온에게 캠페인 보드를 건넨다", "Ms. Fontaine hands Nell the campaign board", 2, "이번 캠페인 촬영은 시온 님입니다.", "Nell is the photographer for this campaign.", "slo"],
+  ["캐스팅 스튜디오", "casting studio", "문 실장이 선글라스를 벗고 뒷걸음친다", "Mr. Rowe takes off his sunglasses and steps back", 0, "키는 렌즈가 맞춰 줄게요.", "Let the lens fix the height.", "cu"],
+  ["스튜디오 밖", "outside the studio", "차 옆에 선 여자가 시온에게 손을 흔든다", "A woman by a car waves to Nell", -1, "", "", "trk"]
+ ]
+],
+[
+ "나이가 많다며 자른 발레 오디션", "Too Old for the Ballet",
+ "나이가 많다며 심사위원이 지원자를 자른다. 그녀는 그 심사위원의 옛 스승이었다.", "They cut her for being too old. She is the retired teacher of the judge cutting her.",
+ [
+  ["H", "유리", "Greta", "30대 후반 여성, 검은 레오타드, 묶은 머리, 곧은 자세", "woman in her late 30s, black leotard, hair in a bun, straight posture"],
+  ["V", "서린", "Ms. Kovac", "30대 여성, 회색 카디건, 클립보드, 차가운 눈빛", "woman in her 30s, gray cardigan, clipboard, cold eyes"],
+  ["A", "고 단장", "Mr. Berg", "60대 남성, 검은 정장, 흰 머리, 온화한 얼굴", "man in his 60s, black suit, white hair, gentle face"]
+ ],
+ [
+  ["발레 연습실", "ballet studio", "서린이 유리의 나이를 적고 고개를 젓는다", "Ms. Kovac writes down Greta's age and shakes her head", 1, "서른아홉? 무대는 끝났어.", "Thirty-nine? Your stage days are over.", "cz"],
+  ["발레 연습실", "ballet studio", "서린이 유리의 발레 슈즈를 옆으로 밀어 버린다", "Ms. Kovac pushes Greta's ballet shoes aside", 1, "다음 지원자 불러.", "Call the next dancer.", "ms"],
+  ["발레 연습실", "ballet studio", "유리가 오래된 공연 사진을 가슴에서 꺼낸다", "Greta takes an old performance photo from her chest", -1, "", "", "pi"],
+  ["발레 연습실", "ballet studio", "고 단장이 사진을 들어 유리 옆에 선다", "Mr. Berg holds up the photo and stands beside Greta", 2, "이분이 감독님의 스승이십니다.", "This is your teacher, Ms. Kovac.", "ws"],
+  ["발레 연습실", "ballet studio", "서린이 클립보드를 내려놓고 유리에게 고개를 숙인다", "Ms. Kovac sets down the clipboard and bows to Greta", 0, "음악 틀어 주세요. 처음부터.", "Music, please. From the top.", "cu"],
+  ["연습실 문", "studio door", "문가에서 박수 소리가 터지고 유리가 돌아본다", "Applause breaks out at the door and Greta turns", -1, "", "", "rx"]
+ ]
+],
+[
+ "나이 많다며 뺀 트라이아웃", "Cut From the Tryout",
+ "나이와 몸을 이유로 코치가 지원자를 뺀다. 그 선수의 등번호는 구단 천장에 걸려 있었다.", "The coach drops him for his age and build. That player's number hangs retired in the rafters.",
+ [
+  ["H", "준호", "Miles", "30대 남성, 낡은 트레이닝복, 짧은 머리, 조용한 눈빛", "man in his 30s, worn tracksuit, short hair, quiet eyes"],
+  ["V", "동철", "Coach Barlow", "40대 남성, 검은 점퍼, 휘슬, 고압적인 태도", "man in his 40s, black warm-up jacket, whistle, overbearing"],
+  ["A", "한 매니저", "Ms. Duarte", "30대 여성, 구단 유니폼, 태블릿, 차분한 태도", "woman in her 30s, team uniform, tablet, composed manner"]
+ ],
+ [
+  ["체육관", "sports gym", "동철이 준호의 몸무게를 적고 휘슬을 분다", "Coach Barlow writes Miles's weight and blows his whistle", 1, "이 나이에 이 몸으로?", "That age, that body?", "cz"],
+  ["체육관", "sports gym", "동철이 준호의 유니폼을 벤치에 던진다", "Coach Barlow throws Miles's jersey onto the bench", 1, "돌아가. 다음.", "Go home. Next.", "trk"],
+  ["체육관", "sports gym", "준호가 천장에 걸린 등번호 현수막을 올려다본다", "Miles looks up at a retired jersey banner in the rafters", -1, "", "", "cu"],
+  ["체육관", "sports gym", "한 매니저가 태블릿을 돌려 동철에게 기록을 보여 준다", "Ms. Duarte turns her tablet to show the coach the record", 2, "저 등번호, 준호 님 것입니다.", "That number belongs to Miles.", "pi"],
+  ["체육관", "sports gym", "동철이 휘슬을 떨어뜨리고 준호에게 다가간다", "Coach Barlow drops his whistle and steps toward Miles", 0, "코트는 제가 뛰고 싶은 자리예요.", "The court is where I want to be.", "cu"],
+  ["체육관 출입구", "gym entrance", "문가에 선 아이가 준호의 등번호를 가리킨다", "A kid at the entrance points at Miles's number", -1, "", "", "slo"]
+ ]
+],
+[
+ "표절이라 몰린 공모전", "Called a Copycat at the Contest",
+ "남의 작품을 베꼈다며 심사위원이 자른다. 그녀가 그 브랜드 베스트셀러의 익명 디자이너였다.", "A judge disqualified her for copying. She is the anonymous designer behind the brand's bestseller.",
+ [
+  ["H", "미르", "Zoe", "30대 여성, 물감 묻은 셔츠, 길게 묶은 머리, 무표정", "woman in her 30s, paint-stained shirt, long tied hair, blank face"],
+  ["V", "재범", "Mr. Yates", "40대 남성, 갈색 정장, 안경, 비웃는 입", "man in his 40s, brown suit, glasses, sneering mouth"],
+  ["A", "선 창립자", "Ms. Iverson", "50대 여성, 흰 셔츠, 짧은 금발, 단호한 태도", "woman in her 50s, white shirt, short blond hair, firm manner"]
+ ],
+ [
+  ["공모전 심사장", "design contest hall", "재범이 미르의 작품을 내려다보며 고개를 젓는다", "Mr. Yates looks down at Zoe's work and shakes his head", 1, "이건 이미 있는 디자인이야.", "This design already exists.", "cz"],
+  ["공모전 심사장", "design contest hall", "재범이 미르의 작품을 바닥에 내려놓는다", "Mr. Yates sets Zoe's work down on the floor", 1, "표절은 실격이야.", "Copying means disqualification.", "ms"],
+  ["공모전 심사장", "design contest hall", "미르가 작품 모서리의 서명을 손끝으로 짚는다", "Zoe taps the signature in the corner of her work", -1, "", "", "cu"],
+  ["공모전 심사장", "design contest hall", "선 창립자가 벽의 베스트셀러 포스터를 가리킨다", "Ms. Iverson points at the bestseller poster on the wall", 2, "이 디자인 원작자입니다.", "She created this design.", "low"],
+  ["공모전 심사장", "design contest hall", "재범이 안경을 벗고 작품을 다시 집어 든다", "Mr. Yates takes off his glasses and picks the work back up", 0, "심사는 계속하시죠. 제 작품으로.", "Carry on with the judging. With my entry.", "cu"],
+  ["심사장 밖", "outside the hall", "미르를 기다리던 남자가 꽃다발을 내민다", "A man waiting outside holds out a bouquet to Zoe", -1, "", "", "pi"]
+ ]
+]
+]

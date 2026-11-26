@@ -1,0 +1,172 @@
+[
+[
+ "소개팅에서 쫓겨난 그녀", "Ditched on the Blind Date",
+ "소개팅 남자가 옷차림을 비웃고 자리를 뜬다. 그 여자는 식당의 생사를 쥔 평론가였다.", "Her blind date sneers at her coat and walks out. She is the critic who decides if this restaurant lives.",
+ [
+  ["H", "다인", "Nora", "30대 여성, 낡은 회색 코트, 둥근 안경, 단정히 묶은 머리", "woman in her 30s, old gray coat, round glasses, neatly tied hair"],
+  ["V", "준혁", "Chad", "30대 남성, 몸에 붙는 검정 슈트, 젤 바른 머리, 비웃는 표정", "man in his 30s, tight black suit, gelled hair, sneering face"],
+  ["A", "봉 사장", "Mr. Rossi", "50대 남성, 흰 셔츠에 앞치마, 긴장한 얼굴", "man in his 50s, white shirt and apron, tense face"]
+ ],
+ [
+  ["카페", "cafe", "준혁이 다인의 낡은 코트를 위아래로 훑고 일어난다", "Chad looks Nora's old coat up and down and stands", 1, "사진이랑 너무 다른데.", "You look nothing like your photo.", "cz"],
+  ["카페", "cafe", "준혁이 계산서를 다인 앞에 두고 문 쪽으로 걸어간다", "Chad drops the bill in front of Nora and walks to the door", 1, "커피값은 네가 내.", "You can get the coffee.", "ms"],
+  ["카페", "cafe", "다인이 안경을 벗고 작은 수첩에 한 줄을 적는다", "Nora takes off her glasses and writes a line in a notebook", -1, "", "", "cu"],
+  ["카페", "cafe", "봉 사장이 뛰어나와 다인 앞에서 허리를 숙인다", "Mr. Rossi rushes out and bows low before Nora", 2, "선생님, 리뷰만은 제발요.", "Ma'am, please. Not the review.", "low"],
+  ["카페", "cafe", "준혁이 문손잡이를 놓지 못하고 굳어 선다", "Chad freezes with his hand still on the door handle", 0, "별점은 정직하게 매길게요.", "I'll score it honestly.", "cu"],
+  ["카페 창가", "cafe window", "낯선 남자의 명함이 다인의 수첩 위로 내려앉는다", "A stranger's business card lands on Nora's notebook", -1, "", "", "pi"]
+ ]
+],
+[
+ "옷차림으로 무시한 명품 매장", "Ignored in the Luxury Store",
+ "낡은 코트를 입은 손님을 점원이 쫓아낸다. 그 손님은 브랜드의 새 크리에이티브 디렉터였다.", "A clerk throws out a customer in an old coat. That customer is the brand's new creative director.",
+ [
+  ["H", "유진", "Delia", "30대 여성, 헐렁한 회색 코트, 운동화, 짧은 단발", "woman in her 30s, loose gray coat, sneakers, short bob"],
+  ["V", "소미", "Bianca", "20대 후반 여성, 검은 유니폼, 하이힐, 차가운 눈빛", "woman in her late 20s, black uniform, high heels, cold eyes"],
+  ["A", "최 매니저", "Mr. Klein", "40대 남성, 짙은 정장, 안경, 당황한 표정", "man in his 40s, dark suit, glasses, flustered look"]
+ ],
+ [
+  ["명품 매장", "luxury boutique", "소미가 유진의 코트 자락을 손끝으로 집어 든다", "Bianca pinches the hem of Delia's coat", 1, "이거 어디서 났어? 시장?", "Where'd you get that? A flea market?", "ms"],
+  ["명품 매장", "luxury boutique", "소미가 출입문을 열어 보이며 턱짓한다", "Bianca opens the door and jerks her chin at the street", 1, "여긴 구경하는 데 아니야.", "This isn't a place for window shopping.", "ws"],
+  ["명품 매장", "luxury boutique", "유진이 주머니에서 검은 봉인 봉투를 꺼낸다", "Delia takes a sealed black envelope from her pocket", -1, "", "", "cu"],
+  ["명품 매장", "luxury boutique", "최 매니저가 봉투를 열고 유진에게 고개를 숙인다", "Mr. Klein opens the envelope and bows to Delia", 2, "새 컬렉션 디자이너, 유진 님입니다.", "Our new designer, Delia.", "pi"],
+  ["명품 매장", "luxury boutique", "소미의 하이힐이 미끄러져 진열대를 붙잡는다", "Bianca's heel slips and she grabs the display rack", 0, "이 코트, 새 컬렉션 첫 작품이에요.", "This coat opens the new collection.", "rx"],
+  ["명품 매장 밖", "outside the boutique", "낯선 기사가 유진의 차 문을 열어 준다", "A stranger holds the car door open for Delia", -1, "", "", "cu"]
+ ]
+],
+[
+ "낡은 구두를 비웃은 파티", "The Gallery Party Snub",
+ "갤러리 파티에서 낡은 구두를 비웃는다. 전시장 한가운데 걸린 그림의 작가가 그 사람이었다.", "They mock his worn shoes at the gallery party. He painted the piece hanging center stage.",
+ [
+  ["H", "승우", "Elias", "30대 남성, 물감 묻은 작업 셔츠, 덥수룩한 머리, 무심한 눈빛", "man in his 30s, paint-stained work shirt, shaggy hair, indifferent eyes"],
+  ["V", "라희", "Camille", "40대 여성, 금색 드레스, 긴 귀걸이, 비웃는 입", "woman in her 40s, gold dress, long earrings, sneering mouth"],
+  ["A", "서 관장", "Ms. Novak", "50대 여성, 검은 터틀넥, 짧은 머리, 냉정한 표정", "woman in her 50s, black turtleneck, short hair, cool expression"]
+ ],
+ [
+  ["갤러리 홀", "gallery hall", "라희가 승우의 낡은 구두를 가리키며 옆 사람과 웃는다", "Camille points at Elias's worn shoes and laughs with a guest", 1, "여기 발도 못 들인 신발이네.", "Those shoes shouldn't be on this floor.", "ms"],
+  ["갤러리 홀", "gallery hall", "라희가 승우 앞에 잔을 밀어놓고 돌아선다", "Camille slides a glass toward Elias and turns away", 1, "음식은 저쪽. 직원한테 물어봐.", "Food's over there. Ask the staff.", "ots"],
+  ["갤러리 홀", "gallery hall", "승우가 큰 그림 아래 명패를 손끝으로 닦는다", "Elias wipes the nameplate under a huge painting", -1, "", "", "pi"],
+  ["갤러리 홀", "gallery hall", "서 관장이 승우의 어깨에 손을 얹고 객석을 향한다", "Ms. Novak rests a hand on Elias's shoulder and faces the room", 2, "이 그림의 작가, 승우 님입니다.", "The artist of this piece — Elias.", "low"],
+  ["갤러리 홀", "gallery hall", "라희가 자기 구두를 내려다보며 얼굴이 굳는다", "Camille stares down at her own shoes, face frozen", 0, "제 구두, 오늘 밤 경매에 나옵니다.", "These shoes go to auction tonight.", "cu"],
+  ["갤러리 입구", "gallery entrance", "경매사가 승우에게 번호판을 건네며 귀띔한다", "An auctioneer hands Elias a paddle and leans in", -1, "", "", "cu"]
+ ]
+],
+[
+ "사인회에서 쫓겨난 남자", "Thrown Out of My Own Signing",
+ "낡은 스웨터를 입은 남자를 행사 직원이 쫓아낸다. 그가 사인회 주인공인 작가였다.", "A staffer shoos away a man in an old sweater. He is the author headlining the signing.",
+ [
+  ["H", "태윤", "Owen", "40대 남성, 낡은 회색 스웨터, 뿔테 안경, 무뚝뚝한 인상", "man in his 40s, worn gray sweater, thick glasses, deadpan look"],
+  ["V", "하늘", "Tessa", "20대 후반 여성, 흰 셔츠와 검은 조끼, 높은 포니테일", "woman in her late 20s, white shirt and black vest, high ponytail"],
+  ["A", "오 편집장", "Ms. Barrett", "40대 여성, 베이지 재킷, 서류를 낀 손, 반가운 미소", "woman in her 40s, beige jacket, papers in hand, warm smile"]
+ ],
+ [
+  ["서점 행사장", "bookstore event hall", "하늘이 태윤의 스웨터 소매를 잡아 뒤로 끈다", "Tessa grabs Owen's sweater sleeve and pulls him back", 1, "줄 서려면 뒤로 가요.", "If you're in line, go to the back.", "ms"],
+  ["서점 행사장", "bookstore event hall", "하늘이 태윤의 책을 탁자에 내려놓고 손을 젓는다", "Tessa sets Owen's book down and waves him off", 1, "여긴 예약 손님만 들어와요.", "Reserved guests only.", "cu"],
+  ["서점 행사장", "bookstore event hall", "태윤이 책 날개에 적힌 필명을 손끝으로 짚는다", "Owen taps the pen name printed on the book's flap", -1, "", "", "cz"],
+  ["서점 행사장", "bookstore event hall", "오 편집장이 무대 마이크를 잡고 태윤을 부른다", "Ms. Barrett takes the stage mic and calls Owen up", 2, "오늘 사인회 작가, 태윤 님 모셔요.", "Please welcome today's author, Owen.", "low"],
+  ["서점 행사장", "bookstore event hall", "하늘이 태윤의 책을 두 손으로 받쳐 든다", "Tessa holds Owen's book up with both hands", 0, "첫 줄은 여기서 읽어 드릴게요.", "I'll read the first line right here.", "rx"],
+  ["서점 앞", "outside the bookstore", "새 책을 안은 여자가 태윤에게 다가온다", "A woman holding a new book walks toward Owen", -1, "", "", "pi"]
+ ]
+],
+[
+ "몸매를 비웃은 트레이너", "The Trainer Who Mocked My Shape",
+ "헬스장에서 뚱뚱한 남자를 트레이너가 비웃는다. 그는 이 지점을 인수한 새 주인이었다.", "A trainer mocks a heavy man at the gym. He is the new owner who just bought the place.",
+ [
+  ["H", "기훈", "Walter", "30대 남성, 헐렁한 회색 맨투맨, 안경, 순한 인상", "man in his 30s, loose gray sweatshirt, glasses, gentle face"],
+  ["V", "재성", "Trent", "20대 후반 남성, 타이트한 반팔, 근육질 몸, 비웃는 얼굴", "man in his late 20s, tight T-shirt, muscular build, sneering face"],
+  ["A", "문 지점장", "Ms. Chan", "30대 여성, 검은 유니폼, 짧은 머리, 단호한 표정", "woman in her 30s, black uniform, short hair, firm look"]
+ ],
+ [
+  ["헬스장", "gym", "재성이 기훈의 배를 손가락으로 가리키며 크게 웃는다", "Trent points at Walter's belly and laughs loudly", 1, "여긴 살 빼러 오는 곳이야.", "People come here to lose that.", "ms"],
+  ["헬스장", "gym", "재성이 기훈의 회원권을 카운터에 던진다", "Trent tosses Walter's membership card onto the counter", 1, "체험권이나 받아 가.", "Grab a free trial and go.", "ots"],
+  ["헬스장", "gym", "기훈이 가방에서 인수 계약서를 꺼내 펼친다", "Walter takes a purchase contract from his bag", -1, "", "", "cu"],
+  ["헬스장", "gym", "문 지점장이 기훈 앞에 서서 두 손을 모은다", "Ms. Chan stands before Walter with her hands folded", 2, "새로 인수하신 대표님입니다.", "He's the new owner of this gym.", "low"],
+  ["헬스장", "gym", "재성이 덤벨을 내려놓고 고개를 숙인다", "Trent sets down a dumbbell and lowers his head", 0, "트레이너 교육은 내가 직접 할게요.", "I'll handle the trainer training myself.", "cu"],
+  ["헬스장 입구", "gym entrance", "운동복을 든 여자가 기훈의 차에서 내린다", "A woman with gym clothes steps out of Walter's car", -1, "", "", "pi"]
+ ]
+],
+[
+ "동창회에 늦게 온 그녀", "Late to the Reunion",
+ "동창들이 옛 모습을 비웃으며 늦은 그녀를 놀린다. 그녀는 그들이 동경하는 배우의 스타일리스트였다.", "Classmates mock her old photos and plain dress. She styles the actress whose poster hangs behind them.",
+ [
+  ["H", "소연", "Lena", "30대 여성, 검은 니트 원피스, 긴 생머리, 차분한 미소", "woman in her 30s, black knit dress, long straight hair, calm smile"],
+  ["V", "미란", "Holly", "30대 여성, 형광 분홍 원피스, 큰 귀걸이, 비웃는 입", "woman in her 30s, hot pink dress, big earrings, sneering mouth"],
+  ["A", "정 실장", "Mr. Vega", "30대 남성, 검은 후드, 모자, 다급한 표정", "man in his 30s, black hoodie, cap pulled low, rushed look"]
+ ],
+ [
+  ["동창회 홀", "reunion hall", "미란이 소연의 옛 졸업사진을 들어 모두에게 보여 준다", "Holly holds up an old class photo of Lena for everyone", 1, "얘 그때도 저랬지.", "She looked like this back then too.", "cz"],
+  ["동창회 홀", "reunion hall", "미란이 소연의 검은 원피스 자락을 집어 든다", "Holly pinches the fabric of Lena's black dress", 1, "아직도 스타일은 그대로네.", "Still zero style, I see.", "cu"],
+  ["동창회 홀", "reunion hall", "소연이 벽의 배우 광고판을 조용히 올려다본다", "Lena quietly looks up at an actress poster on the wall", -1, "", "", "pi"],
+  ["동창회 홀", "reunion hall", "정 실장이 뛰어들어와 소연에게 명함을 건넨다", "Mr. Vega rushes in and hands Lena a card", 2, "광고판 의상, 소연 님이 입히신 거죠?", "That poster outfit — you styled it, right?", "slo"],
+  ["동창회 홀", "reunion hall", "미란이 광고판과 소연을 번갈아 보고 입을 가린다", "Holly looks from the poster to Lena and covers her mouth", 0, "다음 화보, 제가 도와드릴까요?", "Need styling help for your next event?", "rx"],
+  ["동창회 입구", "reunion entrance", "검은 차에서 내린 배우가 소연에게 손을 흔든다", "An actress steps from a black car and waves to Lena", -1, "", "", "cu"]
+ ]
+],
+[
+ "예산이라며 무시한 드레스숍", "The Bridal Shop That Sneered",
+ "예산이 적다며 점원이 싼 드레스만 내민다. 그 신부는 이 컬렉션을 만든 디자이너였다.", "A clerk offers only the cheapest dress for her budget. The bride designed the whole collection.",
+ [
+  ["H", "은서", "Mia", "30대 여성, 편한 흰 셔츠와 청바지, 짧은 단발, 차분한 눈빛", "woman in her 30s, white shirt and jeans, short bob, calm eyes"],
+  ["V", "지아", "Renee", "30대 여성, 검은 정장, 하이힐, 얕보는 미소", "woman in her 30s, black suit, high heels, condescending smile"],
+  ["A", "차 원장", "Ms. Lowe", "50대 여성, 회색 정장, 안경, 놀란 표정", "woman in her 50s, gray suit, glasses, startled look"]
+ ],
+ [
+  ["드레스숍", "bridal shop", "지아가 은서에게 가장 싼 드레스 하나만 걸어 준다", "Renee pulls out the cheapest dress and holds it up", 1, "예산이 그쪽이라면 이거예요.", "On your budget, this is it.", "ots"],
+  ["드레스숍", "bridal shop", "지아가 은서의 청바지를 가리키며 옆 직원과 웃는다", "Renee points at Mia's jeans and laughs with a coworker", 1, "여기 오려면 옷은 갖춰 오지.", "Dress properly before coming here.", "ms"],
+  ["드레스숍", "bridal shop", "은서가 드레스 안쪽 라벨을 뒤집어 보여 준다", "Mia turns the dress inside out to show its label", -1, "", "", "cz"],
+  ["드레스숍", "bridal shop", "차 원장이 뛰어나와 은서 앞에서 허리를 숙인다", "Ms. Lowe hurries out and bows before Mia", 2, "이 컬렉션 디자이너, 은서 님입니다.", "This collection's designer — Mia.", "low"],
+  ["드레스숍", "bridal shop", "지아가 드레스를 두 손으로 받쳐 들고 물러선다", "Renee holds the dress with both hands and steps back", 0, "제 드레스, 제가 골라 입을게요.", "My dress. I'll pick it myself.", "cu"],
+  ["드레스숍 밖", "outside the bridal shop", "유리문 밖의 남자가 은서를 보고 손을 든다", "A man outside the glass door raises a hand to Mia", -1, "", "", "pi"]
+ ]
+],
+[
+ "유니폼 입은 사람을 쫓아낸 라운지", "Kicked Out of the Hotel Lounge",
+ "청소부로 오해받은 메이크업 아티스트. 그녀가 분장한 배우가 옆 테이블에 앉아 있다.", "A guest mistakes a makeup artist for a cleaner and has her thrown out. The actress she styled is two tables away.",
+ [
+  ["H", "민서", "Ivy", "30대 여성, 검은 작업복, 화장품 가방, 묶은 머리", "woman in her 30s, black work clothes, makeup case, tied hair"],
+  ["V", "도경", "Blair", "40대 여성, 흰 팬츠 수트, 큰 선글라스, 거만한 표정", "woman in her 40s, white pantsuit, big sunglasses, haughty look"],
+  ["A", "가은", "Sierra", "20대 여성, 빨간 드레스, 긴 웨이브 머리", "woman in her 20s, red dress, long wavy hair"]
+ ],
+ [
+  ["호텔 라운지", "hotel lounge", "도경이 민서의 화장품 가방을 발끝으로 민다", "Blair nudges Ivy's makeup case with her foot", 1, "직원은 직원 식당 가.", "Staff eat in the staff room.", "cz"],
+  ["호텔 라운지", "hotel lounge", "도경이 경비를 불러 민서를 가리킨다", "Blair waves a guard over and points at Ivy", 1, "여기서 나가 달라고 해요.", "Get her out of here.", "trk"],
+  ["호텔 라운지", "hotel lounge", "민서가 가방에서 배우와 찍은 사진을 꺼낸다", "Ivy pulls a photo of herself with the actress from her bag", -1, "", "", "cu"],
+  ["호텔 라운지", "hotel lounge", "가은이 일어나 민서를 끌어안고 볼에 손을 댄다", "Sierra stands, hugs Ivy and touches her cheek", 2, "이 얼굴, 다 민서 씨가 만든 거예요.", "This face is all Ivy's work.", "pi"],
+  ["호텔 라운지", "hotel lounge", "도경이 선글라스를 벗고 자기 얼굴을 만진다", "Blair takes off her sunglasses and touches her own face", 0, "제 얼굴도 부탁드릴 수 있을까요?", "Could you do my face too?", "cu"],
+  ["호텔 로비", "hotel lobby", "새 명함이 민서의 화장품 가방 위로 떨어진다", "A new business card drops onto Ivy's makeup case", -1, "", "", "slo"]
+ ]
+],
+[
+ "수수한 차림으로 들어간 라운지", "The Plain Woman in the Lounge",
+ "후드티 차림을 비웃은 인플루언서들. 그들이 광고 찍는 브랜드의 주인이 그 여자였다.", "Influencers laugh at her hoodie. She owns the beauty brand they are filming a campaign for.",
+ [
+  ["H", "진아", "Ruth", "40대 여성, 회색 후드티, 운동화, 안경, 편안한 표정", "woman in her 40s, gray hoodie, sneakers, glasses, easy expression"],
+  ["V", "새롬", "Kylie", "20대 후반 여성, 분홍 크롭 재킷, 긴 인조 속눈썹", "woman in her late 20s, pink cropped jacket, long false lashes"],
+  ["A", "백 실장", "Mr. Dean", "30대 남성, 검은 정장, 태블릿, 당황한 얼굴", "man in his 30s, black suit, tablet in hand, flustered face"]
+ ],
+ [
+  ["공항 라운지", "airport lounge", "새롬이 진아의 후드티를 휴대폰 카메라에 담으며 웃는다", "Kylie films Ruth's hoodie on her phone and laughs", 1, "이분 뭐 하러 라운지에 왔대?", "What's she even doing in a lounge?", "cz"],
+  ["공항 라운지", "airport lounge", "새롬이 진아 앞으로 다리를 뻗어 길을 막는다", "Kylie stretches her leg across Ruth's path", 1, "여기 앉지 마요. 화면에 잡혀.", "Don't sit here. You'll ruin the shot.", "ots"],
+  ["공항 라운지", "airport lounge", "진아가 태블릿의 광고 시안을 손끝으로 넘긴다", "Ruth swipes through an ad mockup on her tablet", -1, "", "", "cu"],
+  ["공항 라운지", "airport lounge", "백 실장이 새롬의 카메라를 가리고 진아를 가리킨다", "Mr. Dean covers Kylie's camera and points at Ruth", 2, "이 브랜드 주인, 진아 님입니다.", "The owner of this brand — Ruth.", "slo"],
+  ["공항 라운지", "airport lounge", "새롬이 휴대폰을 내리고 자리에서 일어난다", "Kylie lowers her phone and rises from her seat", 0, "광고 계약, 다시 생각해 볼게요.", "I'll reconsider your ad contract.", "cu"],
+  ["탑승구", "boarding gate", "진아에게 다가와 명함을 내미는 여자가 있다", "A woman walks up to Ruth and offers a card", -1, "", "", "trk"]
+ ]
+],
+[
+ "수영복이 촌스럽다던 사람들", "They Laughed at Her Swimsuit",
+ "수수한 수영복을 비웃던 무리. 그 여자는 이 호텔 수영팀을 만든 올림픽 메달리스트였다.", "A group laughs at her plain swimsuit. She is the Olympic medalist who built this hotel's swim team.",
+ [
+  ["H", "유나", "Fiona", "30대 여성, 남색 원피스 수영복, 짧은 머리, 선명한 눈빛", "woman in her 30s, navy one-piece swimsuit, short hair, vivid eyes"],
+  ["V", "채린", "Brittany", "20대 후반 여성, 금색 수영복, 큰 챙모자, 비웃는 얼굴", "woman in her late 20s, gold swimsuit, wide sun hat, sneering face"],
+  ["A", "마 지배인", "Mr. Lang", "40대 남성, 흰 정장, 나비넥타이, 정중한 태도", "man in his 40s, white suit, bow tie, courteous manner"]
+ ],
+ [
+  ["호텔 수영장", "hotel pool", "채린이 유나의 수영복을 손가락으로 가리키며 웃는다", "Brittany points at Fiona's swimsuit and laughs", 1, "그거 어디서 빌려 입었어?", "Where'd you rent that thing?", "cz"],
+  ["호텔 수영장", "hotel pool", "채린이 유나 앞 물을 발로 차 물보라를 만든다", "Brittany kicks water at Fiona's feet", 1, "수영은 우리한테 배워.", "Let us teach you how to swim.", "ms"],
+  ["호텔 수영장", "hotel pool", "유나가 목에 건 낡은 메달을 만지작거린다", "Fiona touches an old medal hanging at her neck", -1, "", "", "pi"],
+  ["호텔 수영장", "hotel pool", "마 지배인이 수건을 유나 어깨에 걸치고 무리를 본다", "Mr. Lang drapes a towel on Fiona's shoulders and looks at the group", 2, "올림픽 메달리스트, 유나 님입니다.", "Olympic medalist, Fiona.", "ws"],
+  ["호텔 수영장", "hotel pool", "채린이 모자를 벗고 물속에서 뒷걸음친다", "Brittany takes off her hat and steps back in the water", 0, "레인 하나 비워 드릴까요?", "Shall I clear a lane for you?", "rx"],
+  ["수영장 데크", "pool deck", "공을 든 아이가 유나에게 달려온다", "A child runs up to Fiona holding a ball", -1, "", "", "cz"]
+ ]
+]
+]
