@@ -1,0 +1,182 @@
+[
+[
+ "답례품 값 안 준 올케", "The Sister-in-Law Who Skipped the Favors",
+ "올케는 결혼식 답례품 500개를 공짜로 받고 초콜릿이나 녹이는 애라 한다. 주문서 잔금이 남았다.",
+ "The bride takes five hundred wedding favors for free and calls her a chocolate melter. The balance is still unpaid.",
+ [
+  ["H", "아린", "Zoe", "20대 후반 여성, 갈색 앞치마, 묶은 머리, 밝은 눈빛", "woman in her late 20s, brown apron, tied hair, bright eyes"],
+  ["V", "선영", "Monica", "30대 여성, 흰 투피스, 큰 귀걸이, 얕보는 미소", "woman in her 30s, white two-piece, big earrings, condescending smile"],
+  ["A", "랭글리 디렉터", "Mr. Langley", "40대 남성, 검은 정장, 태블릿, 단호한 태도", "man in his 40s, black suit, tablet, firm manner"]
+ ],
+ [
+  ["초콜릿 공방", "chocolate shop", "선영이 아린의 초콜릿 상자를 열어 맛보고 덮는다", "Sunyoung opens a box, tastes one, and shuts it", 1, "초콜릿이나 녹이는 애가 뭘.", "You melt chocolate. What would you know?", "ms"],
+  ["초콜릿 공방", "chocolate shop", "선영이 주문서를 찢어 카운터에 놓는다", "Sunyoung tears the order sheet and drops it on the counter", 1, "가족 거니까 서비스.", "It's family. Call it service.", "ots"],
+  ["초콜릿 공방", "chocolate shop", "아린이 주문서 사본의 잔금란을 짚는다", "Arin points at the balance on her copy of the order", -1, "", "", "cu"],
+  ["예식장", "wedding hall", "랭글리가 주문서를 들고 선영 앞에 선다", "Mr. Langley holds the order sheet before Sunyoung", 2, "답례품 잔금 미납, 오늘까지입니다.", "The favor balance is due today.", "low"],
+  ["예식장", "wedding hall", "선영이 지갑을 열며 초콜릿 상자를 내려놓는다", "Sunyoung opens her purse and sets the chocolate box down", 0, "값이 맞아야 답례품도 완성돼요.", "The favors are finished when the bill is.", "rx"],
+  ["공방 밖", "outside the shop", "공방 밖에서 여자가 꽃다발을 들고 기다린다", "A woman waits outside the shop with a bouquet", -1, "", "", "pi"]
+ ]
+],
+[
+ "가방 공짜로 가져간 형", "The Brother Who Took the Bags for Free",
+ "형은 임원 승진 선물로 가방 다섯 개를 가져가고 값을 안 준다. 주문서에 직급과 이름이 적혀 있다.",
+ "His brother takes five bags as promotion gifts and pays nothing. The order sheet lists every name and title.",
+ [
+  ["H", "태경", "Ezra", "30대 남성, 가죽 앞치마, 짧은 수염, 조용한 눈빛", "man in his 30s, leather apron, short beard, quiet eyes"],
+  ["V", "기석", "Lonnie", "40대 남성, 회색 정장, 금시계, 비웃는 얼굴", "man in his 40s, gray suit, gold watch, sneering face"],
+  ["A", "둘리 팀장", "Ms. Dooley", "40대 여성, 검은 정장, 안경, 무표정", "woman in her 40s, black suit, glasses, blank face"]
+ ],
+ [
+  ["가죽 공방", "leather workshop", "기석이 완성된 가방을 어깨에 메고 거울을 본다", "Giseok slings a finished bag over his shoulder and checks the mirror", 1, "가방이나 꿰매는 애가 값을 불러?", "A bag stitcher quoting prices?", "ms"],
+  ["가죽 공방", "leather workshop", "기석이 가방을 챙겨 나가며 손을 흔든다", "Giseok gathers the bags and waves as he leaves", 1, "승진 선물이야. 고맙다고 해.", "Promotion gifts. Say thanks.", "trk"],
+  ["가죽 공방", "leather workshop", "태경이 주문서에서 이름과 직급을 짚는다", "Taegyeong points at the names and titles on the order", -1, "", "", "cu"],
+  ["사무실", "office", "둘리가 주문서를 들고 기석 앞에 선다", "Ms. Dooley holds the order sheet before Giseok", 2, "임원 선물, 회사 예산으로 결제됐습니다.", "The gifts were paid from the company budget.", "low"],
+  ["사무실", "office", "기석이 가방을 내려놓고 뒷걸음친다", "Giseok sets the bags down and steps back", 0, "회사에 청구했어요. 제 이름으로.", "I billed the company. In my name.", "rx"],
+  ["공방 앞", "outside the workshop", "공방 앞에서 여자가 간판을 올려다본다", "A woman outside looks up at the workshop sign", -1, "", "", "pi"]
+ ]
+],
+[
+ "어머니 진료비 미룬 형", "The Brother Who Left Mom's Dental Bills",
+ "형은 어머니 치과 치료비를 동생에게 미루고 이빨 닦는 애라 부른다. 진료 기록에 형 차례만 비어 있다.",
+ "Her brother leaves Mom's dental bills to her and calls her a tooth cleaner. Only his payments are missing.",
+ [
+  ["H", "예나", "Sally", "30대 여성, 하늘색 유니폼, 묶은 머리, 담담한 눈빛", "woman in her 30s, light blue uniform, tied hair, composed eyes"],
+  ["V", "광재", "Hugo", "50대 남성, 갈색 점퍼, 목도리, 무심한 얼굴", "man in his 50s, brown jacket, scarf, indifferent face"],
+  ["A", "브라이스 원장", "Mr. Brice", "50대 남성, 흰 가운, 안경, 엄격한 표정", "man in his 50s, white coat, glasses, stern face"]
+ ],
+ [
+  ["치과", "dental clinic", "광재가 예나의 진료 예약표를 밀어 옆으로 치운다", "Gwangjae shoves Yena's appointment sheet aside", 1, "이빨이나 닦는 애가 말이 많아.", "A tooth cleaner with opinions.", "ms"],
+  ["치과", "dental clinic", "광재가 어머니를 두고 먼저 나가며 손을 든다", "Gwangjae leaves his mother behind and raises a hand", 1, "비용은 네가 해.", "You cover the cost.", "ots"],
+  ["치과", "dental clinic", "예나가 진료 기록에서 형 차례의 공백을 짚는다", "Yena points at the blank rows under her brother's name", -1, "", "", "cu"],
+  ["치과", "dental clinic", "브라이스가 기록을 들고 광재 앞에 선다", "Mr. Brice holds the records before Gwangjae", 2, "어머니 진료, 2년째 예나 씨가 냈습니다.", "Yena has paid for two years of Mom's care.", "low"],
+  ["치과", "dental clinic", "광재가 지갑을 꺼내 계산대에 놓는다", "Gwangjae takes out his wallet and puts it on the counter", 0, "오늘부터 형이 모시고 오세요.", "From now on, you bring her.", "rx"],
+  ["대기실", "waiting room", "대기실 문가에서 어머니가 고개를 든다", "In the waiting room doorway, their mother lifts her head", -1, "", "", "pi"]
+ ]
+],
+[
+ "프라이빗 룸 독차지한 형", "The Brother Who Took Over the Private Room",
+ "형은 동생이 일하는 레스토랑 룸을 독차지하고 물이나 따르는 애라 부른다. 예약금 미납이 남아 있다.",
+ "His brother takes the restaurant's private room and calls him a water server. The booking deposit was never paid.",
+ [
+  ["H", "시우", "Eli", "30대 남성, 검은 조끼, 단정한 머리, 차분한 눈빛", "man in his 30s, black vest, neat hair, calm eyes"],
+  ["V", "원택", "Boyd", "50대 남성, 흰 셔츠, 금목걸이, 거만한 얼굴", "man in his 50s, white shirt, gold chain, smug face"],
+  ["A", "브랜트 지배인", "Ms. Brandt", "40대 여성, 검은 정장, 이어피스, 단호한 표정", "woman in her 40s, black suit, earpiece, firm look"]
+ ],
+ [
+  ["레스토랑", "restaurant", "원택이 시우의 와인 잔을 밀어 쏟는다", "Wontaek knocks over Siu's wine glass", 1, "물이나 따르는 애가 와인을 알아?", "A water server talking about wine?", "ms"],
+  ["레스토랑", "restaurant", "원택이 시우를 룸 밖으로 내보내고 문을 닫는다", "Wontaek pushes Siu out and shuts the room door", 1, "여긴 우리끼리 마실 거야.", "We're drinking in here alone.", "ots"],
+  ["레스토랑", "restaurant", "시우가 예약 장부의 미납란을 짚는다", "Siu taps the unpaid line in the booking book", -1, "", "", "cu"],
+  ["레스토랑", "restaurant", "브랜트가 장부를 들고 룸 앞에 선다", "Ms. Brandt holds the book at the private room door", 2, "이 룸 예약금, 아직 미납입니다.", "The deposit on this room is unpaid.", "low"],
+  ["레스토랑", "restaurant", "원택이 룸 문을 열고 나와 시우를 본다", "Wontaek opens the door and looks at Siu", 0, "와인값은 따로 계산해 드릴게요.", "The wine will be billed separately.", "rx"],
+  ["복도 끝", "end of the corridor", "복도 끝에서 여자가 와인 병을 들고 서 있다", "At the end of the corridor, a woman holds a bottle of wine", -1, "", "", "pi"]
+ ]
+],
+[
+ "재활 기록 다 지운 큰어머니", "The Aunt Who Erased My Rehab Records",
+ "큰어머니는 재활 치료를 조카에게 다 맡기고 마사지하는 애라 부른다. 치료 기록이 300일치 남아 있다.",
+ "The aunt leaves all her rehab to her niece and calls her a masseuse. Three hundred days of records say otherwise.",
+ [
+  ["H", "기연", "Hope", "30대 여성, 흰 유니폼, 짧은 머리, 부드러운 눈빛", "woman in her 30s, white uniform, short hair, gentle eyes"],
+  ["V", "정옥", "Estelle", "60대 여성, 회색 니트, 큰 안경, 까다로운 얼굴", "woman in her 60s, gray knit, big glasses, fussy face"],
+  ["A", "파일 원장", "Mr. Pyle", "40대 남성, 흰 가운, 클립보드, 온화한 표정", "man in his 40s, white coat, clipboard, mild expression"]
+ ],
+ [
+  ["재활센터", "rehab center", "정옥이 기연의 치료 일지를 밀어 의자 아래로 떨어뜨린다", "Jeongok sweeps Kiyun's therapy log off the chair", 1, "마사지하는 애가 뭘 적어.", "A masseuse keeping notes?", "ms"],
+  ["재활센터", "rehab center", "정옥이 다른 치료사를 불러 기연을 밀어낸다", "Jeongok calls another therapist and waves Kiyun away", 1, "너 말고 다른 사람 불러.", "Get me someone else.", "ots"],
+  ["재활센터", "rehab center", "기연이 치료 일지의 300일 기록을 펼친다", "Kiyun opens the log to three hundred days of entries", -1, "", "", "cu"],
+  ["재활센터", "rehab center", "파일이 일지를 들고 정옥 앞에 선다", "Mr. Pyle holds the log before Jeongok", 2, "재활 기록 전부 기연 씨가 남긴 겁니다.", "Every one of these sessions was Kiyun's.", "low"],
+  ["재활센터", "rehab center", "정옥이 안경을 벗고 기연을 다시 본다", "Jeongok takes off her glasses and looks again at Kiyun", 0, "다음 달부터 예약이 꽉 찼어요.", "My schedule is full from next month.", "rx"],
+  ["복도", "corridor", "복도에서 남자가 기연을 부른다", "In the corridor, a man calls to Kiyun", -1, "", "", "trk"]
+ ]
+],
+[
+ "사회 공짜로 시킨 사촌", "The Cousin Who Wanted a Free Host",
+ "사촌은 개관식 사회를 무료로 시키고 말이나 하는 애라 부른다. 행사 대행 계약서에 출연료가 적혀 있다.",
+ "His cousin wants him to host the gallery opening for free. The event contract lists his fee.",
+ [
+  ["H", "재원", "Cole", "30대 남성, 검은 정장, 나비넥타이, 밝은 인상", "man in his 30s, black suit, bow tie, bright face"],
+  ["V", "소희", "Tricia", "30대 여성, 연분홍 원피스, 긴 머리, 얕보는 얼굴", "woman in her 30s, light pink dress, long hair, dismissive face"],
+  ["A", "분 관장", "Mr. Boone", "50대 남성, 검은 정장, 무표정", "man in his 50s, black suit, blank face"]
+ ],
+ [
+  ["미술관 개관식", "gallery opening", "소희가 재원의 마이크를 빼앗아 내려놓는다", "Sohee snatches Jaewon's microphone and sets it down", 1, "말이나 하는 애가 무슨 진행을.", "A talker hosting my event?", "ms"],
+  ["미술관 개관식", "gallery opening", "소희가 재원을 연단에서 내려오게 손짓한다", "Sohee waves Jaewon down from the podium", 1, "우리 사회자가 따로 있어.", "I already have a host.", "ots"],
+  ["미술관 개관식", "gallery opening", "재원이 행사 대행 계약서를 꺼낸다", "Jaewon takes out the event service contract", -1, "", "", "cu"],
+  ["미술관 개관식", "gallery opening", "분이 계약서를 들고 소희 앞에 선다", "Mr. Boone holds the contract before Sohee", 2, "이 개관식 진행자, 재원 씨로 계약됐습니다.", "The host for tonight is contracted as Jaewon.", "low"],
+  ["미술관 개관식", "gallery opening", "소희가 연단을 올려다보며 굳는다", "Sohee stares up at the podium and freezes", 0, "출연료부터 정산해 주세요.", "Start with my fee.", "rx"],
+  ["미술관 입구", "gallery entrance", "미술관 입구에서 관장이 재원에게 박수를 친다", "At the entrance, the director applauds Jaewon", -1, "", "", "pi"]
+ ]
+],
+[
+ "목소리만 빌려 간 사촌", "The Cousin Who Only Borrowed My Voice",
+ "사촌은 광고 내레이션을 무료로 녹음해 가고 목소리나 내는 애라 부른다. 계약서에 사용 기간이 있다.",
+ "His cousin records a free ad voiceover and calls him a voice. The contract has an expiry date.",
+ [
+  ["H", "시현", "Rory", "30대 남성, 헤드폰을 건 목, 편한 셔츠, 차분한 눈빛", "man in his 30s, headphones around his neck, casual shirt, calm eyes"],
+  ["V", "미라", "Gina", "40대 여성, 흰 수트, 큰 선글라스, 거만한 얼굴", "woman in her 40s, white suit, big sunglasses, haughty face"],
+  ["A", "케슬러 광고주", "Mr. Kessler", "40대 남성, 회색 정장, 서류철, 단호한 태도", "man in his 40s, gray suit, document folder, firm manner"]
+ ],
+ [
+  ["녹음실", "recording studio", "미라가 시현의 헤드폰을 벗겨 옆에 놓는다", "Mira pulls off Sihyeon's headphones and sets them aside", 1, "목소리나 내는 애가 조건을 걸어?", "A voice putting conditions on me?", "ms"],
+  ["녹음실", "recording studio", "미라가 녹음 파일을 챙겨 나가며 손을 든다", "Mira grabs the recording and waves on her way out", 1, "잘 쓸게. 가족이잖아.", "I'll use it well. We're family.", "ots"],
+  ["녹음실", "recording studio", "시현이 녹음 사용 계약서를 펼친다", "Sihyeon unfolds the voice usage contract", -1, "", "", "cu"],
+  ["광고주 사무실", "client office", "케슬러가 계약서를 들고 미라 앞에 선다", "Mr. Kessler holds the contract before Mira", 2, "이 목소리 사용권, 3개월짜리입니다.", "The voice rights run three months.", "low"],
+  ["광고주 사무실", "client office", "미라가 파일을 다시 꺼내 놓는다", "Mira puts the file back on the desk", 0, "3개월 지나면 광고도 끝나요.", "In three months, the ad ends.", "cu"],
+  ["녹음실 유리창", "studio glass", "녹음실 유리창 너머로 여자가 손을 흔든다", "Beyond the studio glass, a woman waves", -1, "", "", "pi"]
+ ]
+],
+[
+ "도장값 안 준 큰아버지", "The Uncle Who Never Paid for the Paint",
+ "큰아버지는 상가 도장 공사를 조카에게 다 맡기고 페인트나 칠하는 애라 부른다. 공사 계약서가 남아 있다.",
+ "His uncle hands over the shop repainting and pays nothing. The work contract is still in the drawer.",
+ [
+  ["H", "경수", "Hank", "40대 남성, 흰 작업복에 페인트 자국, 모자, 무표정", "man in his 40s, white work clothes with paint marks, cap, blank face"],
+  ["V", "봉수", "Stan", "60대 남성, 갈색 재킷, 지팡이, 거만한 얼굴", "man in his 60s, brown jacket, walking cane, smug face"],
+  ["A", "파이크 관리인", "Ms. Pike", "40대 여성, 회색 유니폼, 클립보드, 단호한 표정", "woman in her 40s, gray uniform, clipboard, firm look"]
+ ],
+ [
+  ["상가 건물", "shop building", "봉수가 경수의 페인트 통을 발로 밀어 넘어뜨린다", "Bongsu kicks over Gyeongsu's paint can", 1, "페인트나 칠하는 애가 값을 불러?", "A painter quoting prices?", "ms"],
+  ["상가 건물", "shop building", "봉수가 완성된 벽을 손가락으로 훑고 돌아선다", "Bongsu runs a finger along the finished wall and turns away", 1, "다음 달에 나머지도 해.", "Do the rest next month.", "ots"],
+  ["상가 건물", "shop building", "경수가 공사 계약서의 잔금란을 짚는다", "Gyeongsu points at the balance line on the work contract", -1, "", "", "cu"],
+  ["상가 건물", "shop building", "파이크가 계약서를 들고 봉수 앞에 선다", "Ms. Pike holds the contract before Bongsu", 2, "도장 공사 계약자, 경수 씨입니다.", "The painting contract is Gyeongsu's.", "low"],
+  ["상가 건물", "shop building", "봉수가 지팡이를 고쳐 잡고 물러선다", "Bongsu grips his cane and steps back", 0, "나머지 벽은 잔금 넣으시면요.", "The other walls come after the balance.", "rx"],
+  ["건물 입구", "building entrance", "건물 입구에서 여자가 사진을 찍는다", "At the entrance, a woman takes a photo", -1, "", "", "pi"]
+ ]
+],
+[
+ "수리비 안 준 이모", "The Aunt Who Never Paid the Repairs",
+ "이모는 마트 냉장고를 여름마다 고쳐 놓고 값을 안 준다. 유지보수 계약서에 이모 서명이 있다.",
+ "His aunt has her store coolers fixed every summer and never pays. Her signature is on the service contract.",
+ [
+  ["H", "태욱", "Ned", "30대 남성, 회색 작업복, 공구 벨트, 무표정", "man in his 30s, gray work clothes, tool belt, blank face"],
+  ["V", "춘자", "Doris", "60대 여성, 흰 앞치마, 짧은 곱슬머리, 새침한 얼굴", "woman in her 60s, white apron, short curls, prim face"],
+  ["A", "게인스 관리자", "Mr. Gaines", "40대 남성, 베이지 재킷, 태블릿, 단호한 표정", "man in his 40s, beige jacket, tablet, firm look"]
+ ],
+ [
+  ["마트", "grocery store", "춘자가 태욱의 공구를 빼앗아 카운터에 놓는다", "Chunja takes Taewook's wrench and sets it on the counter", 1, "고쳐 주는 게 가족인데 무슨 값.", "Family fixes things for free.", "ms"],
+  ["마트", "grocery store", "춘자가 냉장고 문을 닫아 태욱의 손을 밀어낸다", "Chunja shuts the cooler door on Taewook's hand", 1, "이번엔 그냥 해 줘.", "Just do it for free this time.", "ots"],
+  ["마트", "grocery store", "태욱이 유지보수 계약서를 꺼낸다", "Taewook takes out the maintenance contract", -1, "", "", "cu"],
+  ["마트", "grocery store", "게인스가 계약서를 들고 춘자 앞에 선다", "Mr. Gaines holds the contract before Chunja", 2, "냉동 설비 계약자, 태욱 씨입니다.", "The cooler contract is Taewook's.", "low"],
+  ["마트", "grocery store", "춘자가 앞치마 주머니를 뒤진다", "Chunja digs through her apron pocket", 0, "여름 전에 정산하셔야 해요.", "Settle it before summer.", "rx"],
+  ["마트 입구", "store entrance", "마트 입구에서 남자가 태욱에게 손을 흔든다", "At the entrance, a man waves to Taewook", -1, "", "", "pi"]
+ ]
+],
+[
+ "점검 기록 지운 형", "The Brother Who Ignored the Inspection",
+ "형은 동생이 점검하는 엘리베이터를 고장 나면 부르면 되지라 한다. 점검표에 불합격이 찍혀 있다.",
+ "His brother says he'll call when the elevator breaks. The inspection sheet says it already failed.",
+ [
+  ["H", "현석", "Ross", "30대 남성, 남색 작업복, 안전모, 단호한 눈빛", "man in his 30s, navy work uniform, hard hat, firm eyes"],
+  ["V", "승철", "Murray", "50대 남성, 검은 정장, 굵은 반지, 거만한 얼굴", "man in his 50s, black suit, thick ring, smug face"],
+  ["A", "닷슨 안전 관리자", "Ms. Dotson", "30대 여성, 회색 정장, 안전모를 든 손, 엄격한 표정", "woman in her 30s, gray suit, holding a hard hat, stern look"]
+ ],
+ [
+  ["건물 로비", "building lobby", "승철이 현석의 점검표를 낚아채 접는다", "Seungcheol snatches Hyeonseok's inspection sheet and folds it", 1, "기계 만지는 애가 뭘 알아.", "A repair kid. What do you know?", "ms"],
+  ["건물 로비", "building lobby", "승철이 엘리베이터 문을 손으로 막고 현석을 밀어낸다", "Seungcheol blocks the elevator door and pushes Hyeonseok away", 1, "점검은 됐고, 손님 와.", "Inspection's done. Guests are here.", "ots"],
+  ["건물 로비", "building lobby", "현석이 점검표의 불합격 도장을 보여 준다", "Hyeonseok shows the failed inspection stamp", -1, "", "", "cu"],
+  ["건물 로비", "building lobby", "닷슨이 점검표를 들고 승철 앞에 선다", "Ms. Dotson holds the sheet before Seungcheol", 2, "이 엘리베이터, 운행 정지입니다.", "This elevator is out of service.", "low"],
+  ["건물 로비", "building lobby", "승철이 반지를 만지며 계단을 본다", "Seungcheol touches his ring and looks at the stairs", 0, "수리는 제가 합니다. 계약대로.", "I do the repairs. Per contract.", "rx"],
+  ["로비 회전문", "lobby revolving door", "로비 회전문으로 여자가 들어온다", "A woman comes through the revolving door", -1, "", "", "pi"]
+ ]
+]
+]

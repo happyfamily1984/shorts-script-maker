@@ -1,0 +1,912 @@
+[
+ [
+  "재고 조사일로 돌아왔다",
+  "Back to the Stock Count",
+  "재고를 뒤집어쓸 조사일로 돌아왔다. 이번엔 입출고 기록이 먼저 뽑혀 있다.",
+  "He wakes on audit morning with missing stock blamed on him, and the records already printed.",
+  [
+   [
+    "H",
+    "재웅",
+    "Bruno",
+    "40대 남성, 회색 작업 조끼와 안전모, 짧은 머리, 무거운 눈",
+    "man in his 40s, gray work vest and hard hat, short hair, heavy eyes"
+   ],
+   [
+    "V",
+    "명석",
+    "Mr. Geddes",
+    "50대 남성, 흰 셔츠와 센터 배지, 짧은 백발, 비뚠 입가",
+    "man in his 50s, white shirt and center badge, short white hair, twisted mouth"
+   ],
+   [
+    "A",
+    "알바라도",
+    "Ms. Alvarado",
+    "30대 여성, 남색 정장과 서류철, 단정한 머리, 무표정",
+    "woman in her 30s, navy suit and folder, neat hair, blank face"
+   ]
+  ],
+  [
+   [
+    "물류센터",
+    "logistics center",
+    "명석이 재웅의 재고 장부를 적재 랙 아래로 밀어 버린다",
+    "Mr. Geddes shoves Bruno's ledger under a rack",
+    1,
+    "관리자가 감사 앞에 뭘 내?",
+    "A manager with excuses for the auditor?",
+    "cz"
+   ],
+   [
+    "물류센터",
+    "logistics center",
+    "명석이 재웅의 안전모를 벗겨 컨베이어에 걸고 창고 문을 연다",
+    "Mr. Geddes hangs his hard hat on the belt and opens the gate",
+    1,
+    "빠진 재고는 네 책임이야.",
+    "The missing stock is on you.",
+    "ms"
+   ],
+   [
+    "물류센터",
+    "logistics center",
+    "재웅이 팔의 출고 스티커를 떼어 대장과 맞춰 본다",
+    "Bruno peels a shipping sticker off his sleeve and checks it",
+    0,
+    "입출고 기록, 어제 다 뽑아 뒀어요.",
+    "I printed the shipping records yesterday.",
+    "cu"
+   ],
+   [
+    "물류센터",
+    "logistics center",
+    "알바라도가 장부를 펴 계정별 출고 줄을 짚는다",
+    "Ms. Alvarado opens the ledger and taps the account shipments",
+    2,
+    "빠진 재고가 명석 씨 계정에서 나갔습니다.",
+    "The missing stock left on Mr. Geddes's account.",
+    "low"
+   ],
+   [
+    "물류센터",
+    "logistics center",
+    "명석이 안전모를 머리에 다시 쓴다",
+    "Mr. Geddes puts the hard hat back on",
+    0,
+    "출고는 제 서명으로 나갑니다.",
+    "Shipments go out on my signature.",
+    "cu"
+   ],
+   [
+    "물류센터",
+    "logistics center",
+    "지게차가 첫 팔레트를 들어 올린다",
+    "A forklift lifts the first pallet",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "수확 계약일로 돌아왔다",
+  "Back to the Harvest Deal",
+  "계약서를 위조당할 수확일로 돌아왔다. 이번엔 계약 사본이 먼저 있다.",
+  "She wakes on harvest day with forged contracts waiting, and her own copy already tucked away.",
+  [
+   [
+    "H",
+    "복순",
+    "Hattie",
+    "40대 여성, 작업 바지와 밀짚모자, 묶은 머리, 햇볕에 그을린 얼굴",
+    "woman in her 40s, work pants and straw hat, tied hair, sun-weathered face"
+   ],
+   [
+    "V",
+    "상두",
+    "Mr. Farrow",
+    "50대 남성, 값비싼 점퍼와 선글라스, 짧은 머리, 거만한 턱",
+    "man in his 50s, expensive jacket and sunglasses, short hair, haughty chin"
+   ],
+   [
+    "A",
+    "겔러",
+    "Ms. Geller",
+    "30대 여성, 회색 점퍼와 클립보드, 짧은 단발, 무표정",
+    "woman in her 30s, gray jacket and clipboard, short bob, blank face"
+   ]
+  ],
+  [
+   [
+    "농장 마당",
+    "farmyard",
+    "상두가 복순의 계약서를 트랙터 바퀴 앞 흙에 떨어뜨린다",
+    "Mr. Farrow drops her contract in the dirt by the tractor wheel",
+    1,
+    "농부가 계약 조건을 따져?",
+    "A farmer arguing terms?",
+    "cz"
+   ],
+   [
+    "농장 마당",
+    "farmyard",
+    "상두가 복순의 밀짚모자를 벗겨 트랙터 거울에 걸고 창고를 닫는다",
+    "Mr. Farrow hangs her hat on the mirror and shuts the shed",
+    1,
+    "이 농산물은 내가 다 사.",
+    "I buy every crate you grow.",
+    "ms"
+   ],
+   [
+    "농장 마당",
+    "farmyard",
+    "복순이 부츠에서 계약 사본을 꺼내 먼지를 털어 편다",
+    "Hattie pulls the contract copy from her boot and shakes off dust",
+    0,
+    "계약, 어제 제가 복사해 뒀어요.",
+    "I copied the contract yesterday.",
+    "cu"
+   ],
+   [
+    "농장 마당",
+    "farmyard",
+    "겔러가 계약서를 펴 단가란을 상두 쪽으로 돌린다",
+    "Ms. Geller opens the contract and turns the price line to him",
+    2,
+    "단가를 고친 건 상두 씨 쪽 계약서입니다.",
+    "The altered price is on Mr. Farrow's copy.",
+    "low"
+   ],
+   [
+    "농장 마당",
+    "farmyard",
+    "상두가 신발의 흙을 턴다",
+    "Mr. Farrow stamps the dirt off his boots",
+    0,
+    "이 땅의 수확은 제가 책임집니다.",
+    "I'm responsible for what this land grows.",
+    "cu"
+   ],
+   [
+    "농장 창고",
+    "farm shed",
+    "창고 문이 열리고 수확물 상자가 가득 쌓여 있다",
+    "The shed doors open on crates stacked to the roof",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "신제품 출시일로 돌아왔다",
+  "Back to the Bake-Off",
+  "배합을 빼앗길 출시일로 돌아왔다. 이번엔 배합 등록증이 먼저 있다.",
+  "She wakes on launch morning, and her dough formula is already registered.",
+  [
+   [
+    "H",
+    "미르",
+    "Josie",
+    "30대 여성, 흰 제과복과 앞치마, 짧은 머리, 밝은 눈",
+    "woman in her 30s, white baker's coat and apron, short hair, bright eyes"
+   ],
+   [
+    "V",
+    "창규",
+    "Mr. Nadeau",
+    "40대 남성, 검은 셔츠와 금 반지, 짧은 머리, 능글맞은 얼굴",
+    "man in his 40s, black shirt and gold rings, short hair, smug face"
+   ],
+   [
+    "A",
+    "버트럼",
+    "Ms. Bertram",
+    "50대 여성, 회색 정장과 안경, 단정한 은발, 무표정",
+    "woman in her 50s, gray suit and glasses, neat silver hair, blank face"
+   ]
+  ],
+  [
+   [
+    "베이커리",
+    "bakery",
+    "창규가 미르의 반죽 통을 작업대에서 밀어 바닥에 쏟는다",
+    "Mr. Nadeau shoves her dough bowl off the worktable",
+    1,
+    "제빵사가 신제품을 정해?",
+    "A baker deciding our new line?",
+    "cz"
+   ],
+   [
+    "베이커리",
+    "bakery",
+    "창규가 미르의 배합 노트를 서랍에 넣고 진열장을 잠근다",
+    "Mr. Nadeau locks her formula notes in a drawer and the display",
+    1,
+    "이 빵은 내 이름으로 나가.",
+    "This bread goes out under my name.",
+    "ms"
+   ],
+   [
+    "베이커리",
+    "bakery",
+    "미르가 오븐 옆에 붙은 등록증을 떼어 든다",
+    "Josie peels the registration off the wall by the oven",
+    0,
+    "배합, 어제 등록했어요.",
+    "I registered the formula yesterday.",
+    "cu"
+   ],
+   [
+    "베이커리",
+    "bakery",
+    "버트럼이 등록증을 펴 등록자 칸을 읽는다",
+    "Ms. Bertram opens the filing and reads the registrant line",
+    2,
+    "배합 등록자는 미르 씨입니다.",
+    "The registrant is Ms. Josie.",
+    "low"
+   ],
+   [
+    "베이커리",
+    "bakery",
+    "창규가 밀가루 묻은 앞치마를 벗는다",
+    "Mr. Nadeau unties his floury apron",
+    0,
+    "오븐은 제 온도로 돌아갑니다.",
+    "The oven runs at my temperature.",
+    "cu"
+   ],
+   [
+    "베이커리",
+    "bakery",
+    "셔터가 올라가고 밖에 손님들이 줄을 서 있다",
+    "The shutter rolls up on a line of customers",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "살롱 오픈일로 돌아왔다",
+  "Back to Salon Opening",
+  "단골 명단을 빼앗길 오픈일로 돌아왔다. 이번엔 예약 기록이 먼저 복사돼 있다.",
+  "She wakes on opening day, and the booking records are already copied.",
+  [
+   [
+    "H",
+    "나리",
+    "Coco",
+    "30대 여성, 검은 미용 유니폼과 가위집, 묶은 머리, 또렷한 눈",
+    "woman in her 30s, black salon uniform and shear case, tied hair, clear eyes"
+   ],
+   [
+    "V",
+    "옥자",
+    "Mrs. Kovel",
+    "40대 여성, 흰 정장과 진주 목걸이, 짧은 퍼머, 찬 눈",
+    "woman in her 40s, white suit and pearl necklace, short perm, cold eyes"
+   ],
+   [
+    "A",
+    "톨리버",
+    "Ms. Tolliver",
+    "30대 여성, 남색 정장과 태블릿, 단정한 머리, 무표정",
+    "woman in her 30s, navy suit and tablet, neat hair, blank face"
+   ]
+  ],
+  [
+   [
+    "미용실",
+    "hair salon",
+    "옥자가 나리의 가위를 카운터에서 쳐내 바닥에 떨어뜨린다",
+    "Mrs. Kovel knocks Coco's shears off the counter",
+    1,
+    "보조가 오픈 인사를 해?",
+    "An assistant giving the opening speech?",
+    "cz"
+   ],
+   [
+    "미용실",
+    "hair salon",
+    "옥자가 나리의 예약 장부를 뜯어 거울 앞에 뿌린다",
+    "Mrs. Kovel rips up the booking book in front of the mirror",
+    1,
+    "단골은 내가 데려가.",
+    "The regulars are coming with me.",
+    "ms"
+   ],
+   [
+    "미용실",
+    "hair salon",
+    "나리가 거울 뒤에 붙여 둔 예약표를 떼어 든다",
+    "Coco peels her backup booking sheet from behind the mirror",
+    0,
+    "예약 기록, 어제 백업했어요.",
+    "I backed up the bookings yesterday.",
+    "cu"
+   ],
+   [
+    "미용실",
+    "hair salon",
+    "톨리버가 태블릿으로 예약 계정 화면을 거울에 비춘다",
+    "Ms. Tolliver holds the booking account up to the mirror",
+    2,
+    "예약 계정 소유자가 나리 씨로 돼 있습니다.",
+    "The booking account is in Ms. Coco's name.",
+    "low"
+   ],
+   [
+    "미용실",
+    "hair salon",
+    "옥자가 거울 조명을 켠다",
+    "Mrs. Kovel switches on the mirror lights",
+    0,
+    "이 가위는 제 손에 맞습니다.",
+    "These shears fit my hand.",
+    "cu"
+   ],
+   [
+    "미용실",
+    "hair salon",
+    "유리문이 열리고 손님들이 들어온다",
+    "The glass door opens and clients walk in",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "준공일로 돌아왔다",
+  "Back to Handover Day",
+  "자재를 바꿔치기당할 준공일로 돌아왔다. 이번엔 자재 명세가 먼저 복사돼 있다.",
+  "She wakes on handover day, and the material list is already copied.",
+  [
+   [
+    "H",
+    "승민",
+    "Alec",
+    "30대 남성, 흰 셔츠와 도면 통, 짧은 머리, 성실한 눈",
+    "man in his 30s, white shirt and blueprint tube, short hair, earnest eyes"
+   ],
+   [
+    "V",
+    "두철",
+    "Mr. Prine",
+    "50대 남성, 먼지 묻은 작업 점퍼와 모자, 짧은 머리, 굳은 턱",
+    "man in his 50s, dusty work jacket and cap, short hair, set jaw"
+   ],
+   [
+    "A",
+    "로른",
+    "Ms. Lorne",
+    "40대 여성, 회색 정장과 서류철, 안경, 무표정",
+    "woman in her 40s, gray suit and folder, glasses, blank face"
+   ]
+  ],
+  [
+   [
+    "인테리어 현장",
+    "renovation site",
+    "두철이 승민의 자재 샘플을 시멘트 포대 위에 쏟는다",
+    "Mr. Prine dumps Alec's material samples on a cement sack",
+    1,
+    "디자이너가 현장에서 뭘 해?",
+    "A designer giving orders on site?",
+    "cz"
+   ],
+   [
+    "인테리어 현장",
+    "renovation site",
+    "두철이 승민의 도면을 말아 공구함에 넣고 출입문을 잠근다",
+    "Mr. Prine rolls up the blueprints, locks them away, and bolts the door",
+    1,
+    "이 공사는 내 방식대로 해.",
+    "This build goes my way.",
+    "ms"
+   ],
+   [
+    "인테리어 현장",
+    "renovation site",
+    "승민이 벽에 붙은 자재 라벨을 떼어 명세와 맞춰 본다",
+    "Alec peels a material label off the wall and checks the list",
+    0,
+    "자재 명세, 어제 복사해 뒀어요.",
+    "I copied the material list yesterday.",
+    "cu"
+   ],
+   [
+    "인테리어 현장",
+    "renovation site",
+    "로른이 명세서를 펴 바뀐 자재 줄을 두철에게 돌린다",
+    "Ms. Lorne opens the list and turns the swapped items to Mr. Prine",
+    2,
+    "바뀐 자재는 두철 씨 발주서에 있습니다.",
+    "The swapped materials are on Mr. Prine's order sheet.",
+    "low"
+   ],
+   [
+    "인테리어 현장",
+    "renovation site",
+    "두철이 샘플을 상자에 담는다",
+    "Mr. Prine boxes the samples",
+    0,
+    "자재는 명세대로 돌아갑니다.",
+    "The materials go back to the spec.",
+    "cu"
+   ],
+   [
+    "인테리어 현장",
+    "renovation site",
+    "창문으로 첫 햇빛이 들어온다",
+    "The first sunlight comes through the window",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "준공 검사일로 돌아왔다",
+  "Back to the Inspection",
+  "부실 시공을 뒤집어쓸 검사일로 돌아왔다. 이번엔 검사 기록이 먼저 남아 있다.",
+  "He wakes on inspection day, blamed for a faulty build, with his records already filed.",
+  [
+   [
+    "H",
+    "두한",
+    "Gordon",
+    "50대 남성, 회색 작업복과 안전모, 짧은 백발, 무뚝뚝한 얼굴",
+    "man in his 50s, gray work clothes and hard hat, short white hair, blunt face"
+   ],
+   [
+    "V",
+    "상필",
+    "Mr. Rusk",
+    "40대 남성, 검은 점퍼와 현장 배지, 짧은 머리, 비뚠 입",
+    "man in his 40s, black jacket and site badge, short hair, twisted mouth"
+   ],
+   [
+    "A",
+    "필",
+    "Ms. Peale",
+    "30대 여성, 주황 안전 조끼와 서류철, 묶은 머리, 무표정",
+    "woman in her 30s, orange safety vest and folder, tied hair, blank face"
+   ]
+  ],
+  [
+   [
+    "건설 현장",
+    "construction site",
+    "상필이 두한의 검사 도구를 콘크리트 바닥에 떨어뜨린다",
+    "Mr. Rusk drops Gordon's testing kit on the concrete",
+    1,
+    "전기 기사가 검사에 참견해?",
+    "An electrician second-guessing my build?",
+    "cz"
+   ],
+   [
+    "건설 현장",
+    "construction site",
+    "상필이 두한의 배선 도면을 찢어 분전함 위에 뿌린다",
+    "Mr. Rusk tears the wiring plans over the breaker box",
+    1,
+    "이 건물은 내가 끝냈어.",
+    "I finished this building.",
+    "ms"
+   ],
+   [
+    "건설 현장",
+    "construction site",
+    "두한이 분전함 안의 검사 스티커를 떼어 보인다",
+    "Gordon peels the inspection sticker from inside the breaker box",
+    0,
+    "검사 기록, 어제 남겨 뒀어요.",
+    "I filed the inspection log yesterday.",
+    "cu"
+   ],
+   [
+    "건설 현장",
+    "construction site",
+    "필이 기록을 펴 지적 사항 목록을 넘긴다",
+    "Ms. Peale opens the log and flips to the flagged defects",
+    2,
+    "부실 시공 지적은 상필 씨가 무시한 겁니다.",
+    "Mr. Rusk ignored every defect note.",
+    "low"
+   ],
+   [
+    "건설 현장",
+    "construction site",
+    "상필이 안전모를 벗어 난간에 놓는다",
+    "Mr. Rusk takes off his hard hat and sets it on the rail",
+    0,
+    "검사 도장은 제가 찍습니다.",
+    "I stamp the inspection.",
+    "cu"
+   ],
+   [
+    "건설 현장",
+    "construction site",
+    "건물 전체의 조명이 한꺼번에 켜진다",
+    "Every light in the building comes on at once",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "론칭일로 돌아왔다",
+  "Back to Launch Morning",
+  "코드를 빼앗길 론칭일로 돌아왔다. 이번엔 커밋 기록이 먼저 남아 있다.",
+  "She wakes on launch morning, and the commit history already bears her name.",
+  [
+   [
+    "H",
+    "하윤",
+    "Dana",
+    "30대 여성, 회색 후드와 사원증, 묶은 머리, 또렷한 눈",
+    "woman in her 30s, gray hoodie and badge, tied hair, clear eyes"
+   ],
+   [
+    "V",
+    "준모",
+    "Mr. Stahl",
+    "40대 남성, 검은 셔츠와 금 시계, 짧은 머리, 차가운 눈",
+    "man in his 40s, black shirt and gold watch, short hair, cold eyes"
+   ],
+   [
+    "A",
+    "오어",
+    "Ms. Orr",
+    "30대 여성, 남색 정장과 태블릿, 단정한 머리, 무표정",
+    "woman in her 30s, navy suit and tablet, neat hair, blank face"
+   ]
+  ],
+  [
+   [
+    "사무실",
+    "office",
+    "준모가 하윤의 노트북을 덮어 모니터를 끈다",
+    "Mr. Stahl slams her laptop shut and the monitor goes dark",
+    1,
+    "개발자가 론칭 무대에 올라와?",
+    "A developer on the launch stage?",
+    "cz"
+   ],
+   [
+    "사무실",
+    "office",
+    "준모가 하윤의 사원증을 떼어 서랍에 넣고 출입문을 가리킨다",
+    "Mr. Stahl locks her badge in a drawer and points at the door",
+    1,
+    "이 코드는 내가 등록했어.",
+    "I registered this code.",
+    "ms"
+   ],
+   [
+    "사무실",
+    "office",
+    "하윤이 휴대폰의 커밋 알림을 열어 시각을 보여 준다",
+    "Dana opens a commit alert on her phone and shows the time",
+    0,
+    "커밋 기록, 어제 받아 뒀어요.",
+    "I pulled the commit history yesterday.",
+    "cu"
+   ],
+   [
+    "사무실",
+    "office",
+    "오어가 태블릿을 들어 작성자와 시각을 스크린에 띄운다",
+    "Ms. Orr raises her tablet and puts the author and times on screen",
+    2,
+    "코드 작성자와 시각이 하윤 씨로 남아 있습니다.",
+    "The code's author and timestamps are Ms. Dana's.",
+    "low"
+   ],
+   [
+    "사무실",
+    "office",
+    "준모가 의자를 밀어 넣는다",
+    "Mr. Stahl pushes in his chair",
+    0,
+    "첫 화면은 제 이름으로 뜹니다.",
+    "The first screen loads under my name.",
+    "cu"
+   ],
+   [
+    "사무실",
+    "office",
+    "사무실 스크린에 앱 첫 화면이 뜬다",
+    "The app's opening screen fills the office display",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "출시일로 돌아왔다",
+  "Back to Release Day",
+  "기획을 빼앗길 출시일로 돌아왔다. 이번엔 기획서가 먼저 등록돼 있다.",
+  "He wakes on release morning, and the design document is already registered.",
+  [
+   [
+    "H",
+    "시온",
+    "Wes",
+    "20대 후반 남성, 초록 후드와 사원증, 짧은 머리, 총명한 눈",
+    "man in his late 20s, green hoodie and badge, short hair, clever eyes"
+   ],
+   [
+    "V",
+    "병호",
+    "Mr. Kade",
+    "50대 남성, 검은 정장과 금 배지, 짧은 머리, 능글맞은 얼굴",
+    "man in his 50s, black suit and gold badge, short hair, smug face"
+   ],
+   [
+    "A",
+    "그로트",
+    "Ms. Groat",
+    "40대 여성, 회색 정장과 계약서철, 단정한 머리, 무표정",
+    "woman in her 40s, gray suit and contract folder, neat hair, blank face"
+   ]
+  ],
+  [
+   [
+    "게임사 사무실",
+    "game studio",
+    "병호가 시온의 기획서를 사무실 바닥에 흩뿌린다",
+    "Mr. Kade scatters Wes's design document across the floor",
+    1,
+    "신입이 출시를 결정해?",
+    "A junior calling the release?",
+    "cz"
+   ],
+   [
+    "게임사 사무실",
+    "game studio",
+    "병호가 시온의 명찰을 떼어 모니터에 붙이고 회의실 문을 연다",
+    "Mr. Kade sticks his badge on a monitor and opens the meeting room",
+    1,
+    "이 게임은 내 아이디어야.",
+    "This game is my idea.",
+    "ms"
+   ],
+   [
+    "게임사 사무실",
+    "game studio",
+    "시온이 서랍에서 기획서 등록증을 꺼내 표지에 붙여 든다",
+    "Wes takes the design filing from a drawer and holds it to the cover",
+    0,
+    "기획서, 지난달에 등록했어요.",
+    "I registered the design last month.",
+    "cu"
+   ],
+   [
+    "게임사 사무실",
+    "game studio",
+    "그로트가 등록증을 펴 기획자 칸을 읽는다",
+    "Ms. Groat opens the filing and reads the designer line",
+    2,
+    "기획자 이름이 시온 씨로 남아 있습니다.",
+    "The designer is logged as Mr. Wes.",
+    "low"
+   ],
+   [
+    "게임사 사무실",
+    "game studio",
+    "병호가 기획서를 정리한다",
+    "Mr. Kade gathers the design pages",
+    0,
+    "서버는 제가 엽니다. 출시일에.",
+    "I open the servers on launch day.",
+    "cu"
+   ],
+   [
+    "게임사 사무실",
+    "game studio",
+    "직원들이 사무실 스크린 앞에 모인다",
+    "The staff gather in front of the office screen",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "대회 출전일로 돌아왔다",
+  "Back to Fight Day",
+  "회원 명단을 빼앗길 출전일로 돌아왔다. 이번엔 명단 사본이 먼저 있다.",
+  "She wakes on tournament day, and the member list is already backed up.",
+  [
+   [
+    "H",
+    "하람",
+    "Blair",
+    "30대 여성, 검은 운동복과 손목 붕대, 묶은 머리, 단단한 눈",
+    "woman in her 30s, black workout suit and wrist wraps, tied hair, firm eyes"
+   ],
+   [
+    "V",
+    "형철",
+    "Mr. Sayer",
+    "40대 남성, 빨간 트레이너 셔츠와 호루라기, 짧은 머리, 굳은 턱",
+    "man in his 40s, red trainer shirt and whistle, short hair, set jaw"
+   ],
+   [
+    "A",
+    "인그럼",
+    "Ms. Ingram",
+    "50대 여성, 회색 정장과 서류철, 짧은 퍼머, 무표정",
+    "woman in her 50s, gray suit and folder, short perm, blank face"
+   ]
+  ],
+  [
+   [
+    "체육관",
+    "gym",
+    "형철이 하람의 출전 신청서를 매트에 던진다",
+    "Mr. Sayer throws her entry form onto the mat",
+    1,
+    "트레이너가 대회에 나가?",
+    "A trainer entering the tournament?",
+    "cz"
+   ],
+   [
+    "체육관",
+    "gym",
+    "형철이 하람의 수건을 빼앗아 벤치에 걸고 링을 가리킨다",
+    "Mr. Sayer hangs her towel on the bench and points at the ring",
+    1,
+    "이 체육관 이름으로 나가지 마.",
+    "Don't fight under this gym's name.",
+    "ms"
+   ],
+   [
+    "체육관",
+    "gym",
+    "하람이 락커에 붙여 둔 회원 명단 사본을 떼어 온다",
+    "Blair peels a member list copy from inside her locker",
+    0,
+    "회원 명단, 어제 백업해 뒀어요.",
+    "I backed up the member list yesterday.",
+    "cu"
+   ],
+   [
+    "체육관",
+    "gym",
+    "인그럼이 명단을 펴 이체 메모 줄을 짚는다",
+    "Ms. Ingram opens the list and taps the transfer notes",
+    2,
+    "회원들을 다른 체육관에 넘긴 건 관장입니다.",
+    "Selling members to another gym was the owner's doing.",
+    "low"
+   ],
+   [
+    "체육관",
+    "gym",
+    "형철이 벤치를 정리한다",
+    "Mr. Sayer straightens the bench",
+    0,
+    "이 체육관 이름은 제가 지킵니다.",
+    "I'm keeping this gym's name.",
+    "cu"
+   ],
+   [
+    "체육관",
+    "gym",
+    "문이 열리고 회원들이 우르르 들어온다",
+    "The doors open and members stream in",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "개장일로 돌아왔다",
+  "Back to the Campsite Gate",
+  "땅 문서를 위조당할 개장일로 돌아왔다. 이번엔 등기 사본이 먼저 떼어져 있다.",
+  "He wakes on opening day with forged deeds in play, and a fresh copy of the registry in hand.",
+  [
+   [
+    "H",
+    "복만",
+    "Stan",
+    "50대 남성, 카키 작업복과 모자, 흰 수염, 순한 눈",
+    "man in his 50s, khaki work clothes and cap, white beard, mild eyes"
+   ],
+   [
+    "V",
+    "재일",
+    "Mr. Hascombe",
+    "40대 남성, 짙은 정장과 금 시계, 짧은 머리, 비뚠 입",
+    "man in his 40s, dark suit and gold watch, short hair, twisted mouth"
+   ],
+   [
+    "A",
+    "페렐",
+    "Ms. Ferrell",
+    "30대 여성, 회색 정장과 등기 서류, 안경, 무표정",
+    "woman in her 30s, gray suit and registry papers, glasses, blank face"
+   ]
+  ],
+  [
+   [
+    "캠핑장 입구",
+    "campsite entrance",
+    "재일이 복만의 등기 서류를 야영지 화로 옆에 떨어뜨린다",
+    "Mr. Hascombe drops Stan's registry papers by the fire pit",
+    1,
+    "야영장 주인이 서류를 봐?",
+    "A campsite owner with paperwork?",
+    "cz"
+   ],
+   [
+    "캠핑장 입구",
+    "campsite entrance",
+    "재일이 복만의 안내판을 뽑아 텐트 옆에 던진다",
+    "Mr. Hascombe pulls up the sign and throws it by a tent",
+    1,
+    "이 땅은 내가 살 거야.",
+    "I'm buying this land.",
+    "ms"
+   ],
+   [
+    "캠핑장 입구",
+    "campsite entrance",
+    "복만이 등기 사본을 꺼내 필지 번호를 안내판에 맞춰 본다",
+    "Stan checks the plot number on his copy against the sign",
+    0,
+    "등기, 어제 다시 떼어 뒀어요.",
+    "I pulled the registry again yesterday.",
+    "cu"
+   ],
+   [
+    "캠핑장 입구",
+    "campsite entrance",
+    "페렐이 서류를 펴 소유자와 서명란을 짚는다",
+    "Ms. Ferrell opens the papers and taps the owner and signature",
+    2,
+    "소유자는 복만 씨, 위조 서명은 재일 씨 쪽입니다.",
+    "The owner is Mr. Stan; the forged signature is Hascombe's.",
+    "low"
+   ],
+   [
+    "캠핑장 입구",
+    "campsite entrance",
+    "재일이 안내판 못을 다시 박는다",
+    "Mr. Hascombe hammers the sign post back in",
+    0,
+    "야영지는 이름 그대로 둡니다.",
+    "The campsite keeps its name.",
+    "cu"
+   ],
+   [
+    "캠핑장 입구",
+    "campsite entrance",
+    "입구로 차들이 줄지어 들어온다",
+    "Cars roll through the entrance one after another",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ]
+]

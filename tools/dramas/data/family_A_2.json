@@ -1,0 +1,182 @@
+[
+[
+ "차용증을 찢은 이모부", "The Uncle Who Tore My Loan Note",
+ "10년 전 빌린 돈을 가족이라며 떼먹는 이모부. 공증 차용증이 법원 지급명령으로 돌아온다.",
+ "An uncle refuses to repay a ten-year-old loan, calling it family business. The notarized note returns as a court order.",
+ [
+  ["H", "도현", "Nathan", "30대 남성, 남색 셔츠에 안경, 단정한 머리, 무표정한 얼굴", "man in his 30s, navy shirt, glasses, neat hair, blank face"],
+  ["V", "광팔", "Gerald", "50대 남성, 낡은 트레이닝복, 삐뚤빼뚤한 모자, 비웃는 입", "man in his 50s, worn tracksuit, crooked cap, sneering mouth"],
+  ["A", "오 집행관", "Mr. Vance", "40대 남성, 남색 제복, 각진 얼굴, 무거운 표정", "man in his 40s, navy uniform, square jaw, heavy stare"]
+ ],
+ [
+  ["이모부 집 마당", "uncle's front yard", "광팔이 차용증 사본을 찢어 도현 발밑에 던진다", "Gerald tears up a copy of the note and drops it at Dohyun's feet", 1, "돈 몇 푼 빌렸다고 가족을 쫓아다녀?", "Chasing family over pocket change?", "cz"],
+  ["이모부 집 마당", "uncle's front yard", "광팔이 대문을 닫으려 도현의 어깨를 민다", "Gerald shoves Dohyun's shoulder to shut the gate", 1, "가족끼리 무슨 돈이야. 꺼져.", "Family doesn't do money. Get lost.", "ms"],
+  ["이모부 집 마당", "uncle's front yard", "도현이 가방에서 공증 차용증과 이자 계산서를 꺼낸다", "Dohyun pulls a notarized note and an interest statement from his bag", -1, "", "", "cu"],
+  ["이모부 집 마당", "uncle's front yard", "오 집행관이 지급명령서를 펼쳐 광팔 앞에 세운다", "Mr. Vance opens a court order and holds it up to Gerald", 2, "법원 지급명령서입니다. 원금에 이자까지.", "Court order. Principal plus interest.", "low"],
+  ["이모부 집 마당", "uncle's front yard", "광팔이 계산서를 보며 뒷걸음친다", "Gerald walks backward, staring at the statement", 0, "이모부, 다음 주까지 갚아 주세요.", "Uncle, I need it back by next week.", "cu"],
+  ["이모부 집 골목", "alley by the house", "낯선 여자가 봉투를 들고 도현에게 다가온다", "A woman with an envelope walks up to Dohyun", -1, "", "", "pi"]
+ ]
+],
+[
+ "동생 보험금을 가로챈 형", "The Brother Who Took the Payout",
+ "아버지 병간호를 동생에게만 맡긴 형이 보험금을 가로챈다. 수익자 변경 서류가 진짜 이름을 부른다.",
+ "A brother leaves all the nursing to his sister, then takes the payout. The beneficiary form names someone else.",
+ [
+  ["H", "하린", "Dana", "30대 여성, 베이지 니트, 묶은 머리, 지친 눈빛", "woman in her 30s, beige knit, tied hair, tired eyes"],
+  ["V", "상철", "Dennis", "40대 남성, 검은 패딩 조끼, 금반지, 비웃는 얼굴", "man in his 40s, black padded vest, gold ring, sneering face"],
+  ["A", "윤 지점장", "Ms. Grant", "40대 여성, 회색 정장, 안경, 단호한 표정", "woman in her 40s, gray suit, glasses, firm look"]
+ ],
+ [
+  ["보험사 지점", "insurance office", "상철이 하린의 서류를 낚아채 자기 가방에 넣는다", "Dennis snatches Dana's papers and stuffs them in his bag", 1, "간병은 네가 했어도 돈은 장남이야.", "You nursed him, but the money goes to the eldest.", "cz"],
+  ["보험사 지점", "insurance office", "상철이 하린의 의자를 발로 밀고 창구로 나선다", "Dennis kicks Dana's chair aside and steps to the counter", 1, "넌 여기서 기다려.", "You wait here.", "ots"],
+  ["보험사 지점", "insurance office", "하린이 아버지 서명이 담긴 수익자 변경 신청서를 꺼낸다", "Dana takes out a beneficiary change form signed by their father", -1, "", "", "cu"],
+  ["보험사 지점", "insurance office", "윤 지점장이 서류를 들고 상철 앞에 선다", "Ms. Grant holds up the form and stands before Dennis", 2, "수익자는 하린 님으로 변경됐습니다.", "The beneficiary was changed to Dana.", "low"],
+  ["보험사 지점", "insurance office", "상철이 가방을 놓고 입을 벌린다", "Dennis drops his bag and his mouth falls open", 0, "병원비도 제가 냈어요. 이제 그만.", "I paid the hospital bills too. It ends here.", "cu"],
+  ["보험사 지점 앞", "outside the insurance office", "유리문 밖에서 남자가 하린에게 손을 흔든다", "A man outside the glass door waves to Dana", -1, "", "", "pi"]
+ ]
+],
+[
+ "조상 땅 가로챈 큰아버지", "The Uncle Who Took the Family Land",
+ "큰아버지가 조상 땅을 혼자 팔아넘긴다. 측량사인 조카의 지적도가 경계를 다시 그린다.",
+ "An uncle sells off the family land alone. His surveyor nephew redraws the boundary lines.",
+ [
+  ["H", "준서", "Caleb", "30대 남성, 형광 조끼, 안전모를 든 손, 무뚝뚝한 얼굴", "man in his 30s, hi-vis vest, holding a hard hat, deadpan face"],
+  ["V", "학수", "Roland", "50대 남성, 밀짚모자, 헐렁한 셔츠, 거만한 웃음", "man in his 50s, straw hat, loose shirt, smug grin"],
+  ["A", "한 지적 담당", "Ms. Porter", "30대 여성, 회색 정장, 서류철, 차분한 표정", "woman in her 30s, gray suit, document folder, calm look"]
+ ],
+ [
+  ["산기슭 땅", "hillside lot", "학수가 준서의 측량 기구를 발로 밀어 넘어뜨린다", "Haksoo kicks over Junseo's survey tripod", 1, "땅이나 재는 애가 무슨 땅을 알아?", "You measure dirt. What do you know about land?", "ms"],
+  ["산기슭 땅", "hillside lot", "학수가 땅 문서를 품에 넣고 돌아선다", "Haksoo tucks the land papers into his coat and turns away", 1, "여긴 내가 정리한다. 꺼져.", "I'm settling this land. Get lost.", "trk"],
+  ["산기슭 땅", "hillside lot", "준서가 지적도와 등기 사본을 펼친다", "Junseo unfolds a land map and a copy of the deed", -1, "", "", "pi"],
+  ["산기슭 땅", "hillside lot", "한 담당이 문서를 들어 학수 앞에 보인다", "Ms. Porter raises the documents in front of Haksoo", 2, "이 필지 소유자는 준서 씨입니다.", "This plot belongs to Junseo.", "low"],
+  ["산기슭 땅", "hillside lot", "학수가 모자를 벗고 땅을 내려다본다", "Haksoo takes off his hat and stares at the ground", 0, "경계는 제가 정합니다. 사용료부터.", "I set the boundary. Start with the rent.", "rx"],
+  ["능선", "ridge line", "능선에서 낯선 남자가 땅을 향해 사진을 찍는다", "A stranger on the ridge takes photos of the land", -1, "", "", "slo"]
+ ]
+],
+[
+ "캠핑장에서 부려먹은 사촌들", "The Cousins Who Used Me at the Campsite",
+ "장비를 다 빌려 쓰고 값을 안 내는 사촌들. 캠핑장 장부의 임대인이 그를 부른다.",
+ "The cousins borrow every bit of gear and never pay. The campsite ledger names the real owner.",
+ [
+  ["H", "민규", "Ethan", "30대 남성, 카키 작업복, 모자, 차분한 눈빛", "man in his 30s, khaki work clothes, cap, calm eyes"],
+  ["V", "세웅", "Brent", "40대 남성, 등산 조끼, 선글라스, 얕보는 표정", "man in his 40s, hiking vest, sunglasses, dismissive look"],
+  ["A", "미숙 관리인", "Lorraine", "50대 여성, 앞치마, 짧은 머리, 단호한 눈빛", "woman in her 50s, apron, short hair, firm eyes"]
+ ],
+ [
+  ["캠핑장", "campsite", "세웅이 텐트 팩을 민규의 발밑에 던진다", "Brent tosses a tent stake at Mingyu's feet", 1, "장비 빌려 주는 알바가 어디 앉아?", "Gear boy, who told you to sit?", "ms"],
+  ["캠핑장", "campsite", "세웅이 민규의 장갑을 벗겨 자기 손에 낀다", "Brent pulls off Mingyu's gloves and puts them on", 1, "다음엔 밥도 해 와.", "Next time, cook for us too.", "ots"],
+  ["캠핑장", "campsite", "민규가 예약 장부의 임대인란을 손끝으로 짚는다", "Mingyu taps the owner line in the reservation ledger", -1, "", "", "cu"],
+  ["캠핑장", "campsite", "미숙이 장부를 들고 사촌들 앞에 선다", "Lorraine holds up the ledger in front of the cousins", 2, "이 캠핑장 장비, 전부 민규 씨 겁니다.", "All this gear belongs to Mingyu.", "low"],
+  ["캠핑장", "campsite", "세웅이 장갑을 벗어 민규에게 내민다", "Brent peels off the gloves and hands them back", 0, "장비는 반납하시고, 값은 카드로.", "Return the gear. Pay by card.", "rx"],
+  ["캠핑장 입구", "campsite entrance", "입구에 검은 차가 멈추고 남자가 내린다", "A black car stops at the gate and a man steps out", -1, "", "", "trk"]
+ ]
+],
+[
+ "세무사 조카를 쫓아낸 고모", "The Aunt Who Fired Her Accountant",
+ "가게 장부를 없앴다며 세무사 조카를 쫓아낸 고모. 장부 원본이 세무서 앞에서 되살아난다.",
+ "An aunt fires her accountant nephew and hides the books. The original ledger surfaces at the tax office.",
+ [
+  ["H", "재하", "Simon", "30대 남성, 남색 정장, 얇은 안경, 차분한 인상", "man in his 30s, navy suit, thin glasses, calm face"],
+  ["V", "옥자", "Deborah", "50대 여성, 보라 원피스, 큰 목걸이, 새침한 얼굴", "woman in her 50s, purple dress, big necklace, prim face"],
+  ["A", "배 조사관", "Mr. Baines", "40대 남성, 검은 코트, 서류 가방, 무표정", "man in his 40s, black coat, briefcase, blank face"]
+ ],
+ [
+  ["세무사 사무소", "tax office", "옥자가 재하의 노트북 덮개를 닫는다", "Deborah snaps Jaeha's laptop shut", 1, "장부는 내가 알아서 해. 넌 나가.", "I'll handle my books. You're out.", "cz"],
+  ["세무사 사무소", "tax office", "옥자가 재하의 명패를 집어 서랍에 넣는다", "Deborah takes Jaeha's nameplate and drops it in a drawer", 1, "가족 회사에 세무사가 무슨.", "Family business doesn't need an accountant.", "ms"],
+  ["세무사 사무소", "tax office", "재하가 서랍 밑에 붙여 둔 장부 사본을 꺼낸다", "Jaeha pulls a copy of the ledger taped under the drawer", -1, "", "", "cu"],
+  ["세무사 사무소", "tax office", "배 조사관이 장부를 펼치며 옥자 앞에 선다", "Mr. Baines opens the ledger and stands before Deborah", 2, "3년치 매출 누락, 여기 다 있습니다.", "Three years of missing sales. All here.", "low"],
+  ["세무사 사무소", "tax office", "옥자가 목걸이를 만지며 물러선다", "Deborah touches her necklace and steps back", 0, "고모, 이제 혼자 계산하세요.", "Aunt, do your own math now.", "cu"],
+  ["사무소 문 앞", "office doorway", "문 앞에서 남자가 재하에게 명함을 든다", "A man at the door holds a card out to Jaeha", -1, "", "", "pi"]
+ ]
+],
+[
+ "외상값 떼먹은 형", "The Brother Who Never Paid for the Meat",
+ "형은 3년째 고기를 외상으로 가져가고 동생을 고기 장수라 부른다. 호텔 납품 계약서가 그 앞에 놓인다.",
+ "The brother takes meat on credit for three years and calls him a butcher. Then the hotel supply contract appears.",
+ [
+  ["H", "동혁", "Ryan", "30대 남성, 흰 앞치마, 짧은 머리, 굳은 표정", "man in his 30s, white apron, short hair, set jaw"],
+  ["V", "성진", "Gary", "40대 남성, 검은 가죽 재킷, 금목걸이, 거만한 얼굴", "man in his 40s, black leather jacket, gold chain, smug face"],
+  ["A", "허 담당", "Ms. Delgado", "40대 여성, 검은 정장, 태블릿, 단호한 표정", "woman in her 40s, black suit, tablet, firm look"]
+ ],
+ [
+  ["정육점", "butcher shop", "성진이 진열대 고기를 집어 봉투에 담는다", "Gary grabs meat off the display and bags it", 1, "가족 값으로 좀 깎아 줘.", "Give me the family discount.", "ms"],
+  ["정육점", "butcher shop", "성진이 계산대 위 장부를 손바닥으로 덮는다", "Gary covers the ledger on the counter with his palm", 1, "형이야. 나중에.", "I'm your brother. Later.", "ots"],
+  ["정육점", "butcher shop", "동혁이 호텔 납품 계약서를 꺼내 세운다", "Donghyuk holds up the hotel supply contract", -1, "", "", "cu"],
+  ["정육점", "butcher shop", "허 담당이 계약서를 가리키며 성진을 본다", "Ms. Delgado points at the contract and looks at Gary", 2, "이 가게 고기가 없으면 호텔도 없어요.", "No meat from this shop, no hotel menu.", "low"],
+  ["정육점", "butcher shop", "성진이 봉투를 도로 진열대에 내려놓는다", "Gary sets the bag back on the display", 0, "외상 380만 원, 오늘 정리해요.", "You owe 3.8 million. Settle today.", "rx"],
+  ["정육점 앞", "outside the butcher shop", "유리문 밖에서 여자가 동혁에게 손을 든다", "A woman outside the glass raises a hand to Donghyuk", -1, "", "", "pi"]
+ ]
+],
+[
+ "이삿날 가구를 뺏은 처남", "The Brother-in-Law Who Took My Furniture",
+ "처남은 새집 가구를 전부 공짜로 가져간다. 식탁 다리에 새겨진 공방 이름이 값을 부른다.",
+ "The brother-in-law loads up free furniture for his new flat. The workshop mark sets the price.",
+ [
+  ["H", "지훈", "Colin", "30대 남성, 가죽 앞치마, 짧은 수염, 조용한 눈빛", "man in his 30s, leather apron, short beard, quiet eyes"],
+  ["V", "병호", "Troy", "40대 남성, 줄무늬 셔츠, 손목시계, 비웃는 입", "man in his 40s, striped shirt, wristwatch, sneering mouth"],
+  ["A", "수진", "Elaine", "30대 여성, 흰 블라우스, 긴 머리, 단호한 표정", "woman in her 30s, white blouse, long hair, firm look"]
+ ],
+ [
+  ["아파트 현관", "apartment entrance", "병호가 지훈의 공구 가방을 발로 민다", "Troy kicks Jihun's tool bag aside", 1, "가구나 만드는 사람이 뭘 알아.", "You build furniture. What would you know?", "ms"],
+  ["아파트 현관", "apartment entrance", "병호가 식탁을 들어 운반 기사에게 넘긴다", "Troy lifts the dining table and hands it to a mover", 1, "이건 새집 거야. 가져가.", "This goes to my new place. Take it.", "trk"],
+  ["아파트 현관", "apartment entrance", "지훈이 식탁 다리 안쪽 각인을 손끝으로 짚는다", "Jihun taps the workshop mark under the table leg", -1, "", "", "cu"],
+  ["아파트 현관", "apartment entrance", "수진이 주문서를 펼쳐 병호 앞에 든다", "Elaine unfolds the order sheet and holds it to Troy", 2, "이 가구 전부 우리 공방 작품이에요.", "Every piece here came from our workshop.", "low"],
+  ["아파트 현관", "apartment entrance", "병호가 식탁을 내려놓고 뒷걸음친다", "Troy sets the table down and steps back", 0, "값은 2천만 원. 반은 착불입니다.", "Twenty million won. Half on delivery.", "rx"],
+  ["아파트 엘리베이터", "apartment elevator", "엘리베이터에서 정장 남자가 내려 지훈에게 손을 든다", "A man in a suit steps off the elevator and greets Jihun", -1, "", "", "pi"]
+ ]
+],
+[
+ "어머니 약값 미룬 형제들", "The Siblings Who Skipped Mom's Medicine",
+ "형은 어머니 약값을 동생에게 미루고 약사가 다 해라 한다. 조제 기록이 6개월 공백을 보여 준다.",
+ "Her brother leaves Mom's medicine bills to her. Six months are missing from the pharmacy records.",
+ [
+  ["H", "보영", "Claire", "30대 여성, 흰 가운, 안경, 차분한 눈빛", "woman in her 30s, white coat, glasses, calm eyes"],
+  ["V", "상우", "Karl", "40대 남성, 남색 점퍼, 목도리, 무심한 얼굴", "man in his 40s, navy jacket, scarf, indifferent face"],
+  ["A", "어머니 정순", "Eleanor", "70대 여성, 회색 카디건, 짧은 흰머리, 단단한 눈빛", "woman in her 70s, gray cardigan, short white hair, steady eyes"]
+ ],
+ [
+  ["약국", "pharmacy", "상우가 처방전을 보영 앞으로 밀친다", "Sangwoo slides the prescription across to Boyoung", 1, "약사가 알아서 해. 난 바빠.", "The pharmacist can handle it. I'm busy.", "cz"],
+  ["약국", "pharmacy", "상우가 계산대 위 카드를 도로 주머니에 넣는다", "Sangwoo slips his card back into his pocket at the counter", 1, "이번 달도 네가 내.", "You pay this month too.", "ots"],
+  ["약국", "pharmacy", "보영이 조제 기록장을 넘겨 6개월 공백을 짚는다", "Boyoung flips the dispensing log and points at six blank months", -1, "", "", "pi"],
+  ["약국", "pharmacy", "어머니가 문을 열고 들어와 상우의 손을 본다", "Eleanor opens the door and looks at her son's hands", 2, "약은 한 번도 네가 안 찾아갔더라.", "You never once picked up my medicine.", "low"],
+  ["약국", "pharmacy", "상우가 처방전을 두 손으로 고쳐 잡는다", "Sangwoo grips the prescription with both hands", 0, "오늘부터 제가 어머니 모실게요.", "I'll take care of Mom from today.", "rx"],
+  ["약국 앞", "outside the pharmacy", "약국 밖에서 남자가 어머니께 고개를 숙인다", "Outside, a man bows to Eleanor", -1, "", "", "trk"]
+ ]
+],
+[
+ "개업식 꽃값 안 준 형", "The Brother Who Never Paid for the Flowers",
+ "형은 개업식 꽃 장식을 전부 무료로 시키고 꽃집이 뭘 안다고 한다. 주문서의 잔금란이 남아 있다.",
+ "Her brother orders every flower for his grand opening and pays nothing. The balance line is still empty.",
+ [
+  ["H", "예린", "Lily", "30대 여성, 린넨 앞치마, 짧은 단발, 담담한 얼굴", "woman in her 30s, linen apron, short bob, composed face"],
+  ["V", "철용", "Vince", "40대 남성, 검은 정장, 금시계, 비웃는 얼굴", "man in his 40s, black suit, gold watch, sneering face"],
+  ["A", "박 매니저", "Ms. Tanner", "30대 여성, 검은 유니폼, 이어피스, 단호한 표정", "woman in her 30s, black uniform, earpiece, firm look"]
+ ],
+ [
+  ["개업식장", "grand opening hall", "철용이 예린의 꽃다발을 받아 바닥에 내려놓는다", "Cheolyong takes Yerin's bouquet and sets it on the floor", 1, "꽃집이 뭘 안다고 여기 와?", "A flower shop? Why are you even here?", "ms"],
+  ["개업식장", "grand opening hall", "철용이 꽃 장식 계산서를 접어 주머니에 넣는다", "Cheolyong folds the flower invoice into his pocket", 1, "형 가게인데 무슨 값.", "It's my shop. Why would I pay?", "ots"],
+  ["개업식장", "grand opening hall", "예린이 주문서의 미결제 잔금란을 짚는다", "Yerin points at the unpaid balance on the order form", -1, "", "", "cu"],
+  ["개업식장", "grand opening hall", "박 매니저가 주문서를 들고 철용 앞에 선다", "Ms. Tanner holds the order form up to Cheolyong", 2, "잔금 미납이라 장식 철거합니다.", "Balance unpaid. We're clearing the flowers.", "low"],
+  ["개업식장", "grand opening hall", "철용이 꽃을 다시 세우려 손을 뻗는다", "Cheolyong reaches out to prop the flowers back up", 0, "값부터 계산하시죠, 사장님.", "Let's settle the bill first, boss.", "cu"],
+  ["개업식장 입구", "hall entrance", "입구에서 낯선 여자가 예린에게 박수를 친다", "At the entrance, a woman claps for Yerin", -1, "", "", "pi"]
+ ]
+],
+[
+ "호텔 연회비 안 낸 오빠들", "The Brothers Who Skipped the Banquet Bill",
+ "형제들은 호텔 연회를 3년째 외상으로 열고 막내를 예약 받는 애라 부른다. 장부에 이름이 남아 있다.",
+ "The brothers have run banquet tabs for three years and call their sister a booking clerk. Their names are in the ledger.",
+ [
+  ["H", "민아", "Julie", "30대 여성, 검은 유니폼, 묶은 머리, 단정한 태도", "woman in her 30s, black uniform, tied hair, neat manner"],
+  ["V", "종민", "Brett", "40대 남성, 베이지 점퍼, 목에 건 선글라스, 거만한 표정", "man in his 40s, beige jacket, sunglasses on a cord, smug look"],
+  ["A", "총지배인", "Mr. Ashford", "50대 남성, 검은 정장, 은발, 꼿꼿한 자세", "man in his 50s, black suit, silver hair, upright posture"]
+ ],
+ [
+  ["호텔 연회장", "hotel banquet hall", "종민이 민아의 예약 장부를 덮고 직원들을 부른다", "Jongmin closes Mina's booking ledger and waves the staff over", 1, "여기 직원한테 물어보지 마.", "Don't ask the staff. Ask me.", "ms"],
+  ["호텔 연회장", "hotel banquet hall", "종민이 민아를 홀 밖으로 손짓해 내보낸다", "Jongmin waves Mina out of the hall", 1, "네 자리는 주방이야.", "Your place is the kitchen.", "trk"],
+  ["호텔 연회장", "hotel banquet hall", "민아가 3년치 외상 장부를 펼친다", "Mina opens three years of unpaid banquet records", -1, "", "", "cu"],
+  ["호텔 연회장", "hotel banquet hall", "총지배인이 장부를 들고 종민 앞에 선다", "Mr. Ashford holds the ledger before Jongmin", 2, "미결제 3년치, 오늘 정산 부탁드립니다.", "Three years unpaid. Settlement is due today.", "low"],
+  ["호텔 연회장", "hotel banquet hall", "종민이 지갑을 꺼내며 손이 떨린다", "Jongmin pulls out his wallet, hands trembling", 0, "이번 연회는 제가 취소할게요.", "I'll cancel this year's banquet.", "rx"],
+  ["호텔 연회장 문가", "banquet hall door", "문가에서 여자가 민아를 부르며 손을 든다", "At the door, a woman calls to Mina and waves", -1, "", "", "pi"]
+ ]
+]
+]

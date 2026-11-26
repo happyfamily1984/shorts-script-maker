@@ -1,0 +1,912 @@
+[
+ [
+  "만년필에 새긴 이름",
+  "The Name on the Pen",
+  "출판사 기념 파티에서 쫓긴 교정자. 회장의 만년필 명판에 그녀 이름이 새겨져 있었다.",
+  "A proofreader is thrown out of a publisher's party. The chairman's fountain pen bears her name.",
+  [
+   [
+    "H",
+    "혜숙",
+    "Ruth",
+    "50대 여성, 회색 카디건과 돋보기, 짧은 파마, 차분한 눈",
+    "woman in her 50s, gray cardigan and reading glasses, short perm, calm eyes"
+   ],
+   [
+    "V",
+    "재석",
+    "Blake",
+    "40대 남성, 검은 터틀넥과 안경, 짧은 머리, 얇은 입술",
+    "man in his 40s, black turtleneck and glasses, short hair, thin lips"
+   ],
+   [
+    "A",
+    "노 선생",
+    "Ms. Winslow",
+    "60대 여성, 남색 투피스와 은빛 단발, 곧은 자세",
+    "woman in her 60s, navy suit and silver bob, upright posture"
+   ]
+  ],
+  [
+   [
+    "출판사 파티장",
+    "publisher's party",
+    "재석이 혜숙의 교정지를 팔에 끼고 와인잔 위에서 흔든다",
+    "Blake waves Ruth's proofs over a wine glass",
+    1,
+    "교정자가 무슨 손님 자리에?",
+    "A proofreader among the guests?",
+    "cz"
+   ],
+   [
+    "출판사 파티장",
+    "publisher's party",
+    "재석이 혜숙의 돋보기를 게시판에 걸고 파티장 문을 가리킨다",
+    "Blake hangs her glasses on the board and points to the door",
+    1,
+    "이 자리는 작가들 자리야.",
+    "These seats are for authors.",
+    "ms"
+   ],
+   [
+    "출판사 파티장",
+    "publisher's party",
+    "혜숙이 만년필 캡을 열어 명판을 테이블 조명에 비춘다",
+    "Ruth uncaps the fountain pen and holds the engraving to the lamp",
+    0,
+    "이 만년필, 제 이름이 새겨져 있어요.",
+    "This pen has my name engraved on it.",
+    "cu"
+   ],
+   [
+    "출판사 파티장",
+    "publisher's party",
+    "노 선생이 손수건으로 만년필을 닦아 파티장을 돌아본다",
+    "Ms. Winslow polishes the pen with a handkerchief and faces the room",
+    2,
+    "회장님이 혜숙 씨에게 새긴 겁니다. 지분도 함께요.",
+    "The chairman engraved it for Ms. Ruth. With his shares.",
+    "low"
+   ],
+   [
+    "출판사 파티장",
+    "publisher's party",
+    "재석이 넥타이를 풀어 손에 쥔다",
+    "Blake loosens his tie into his hand",
+    0,
+    "다음 달 책은 제가 정합니다.",
+    "I pick next month's book.",
+    "cu"
+   ],
+   [
+    "출판사 파티장",
+    "publisher's party",
+    "무대 조명이 켜지고 새 책 표지가 스크린을 채운다",
+    "The stage lights rise on a new cover filling the screen",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "펜던트 안쪽의 탄생석",
+  "The Birthstone Inside",
+  "보석 갈라에서 쫓긴 판매원. 펜던트 안쪽엔 회장이 새긴 딸의 탄생석이 있었다.",
+  "A jewelry clerk is sent out of a gala; the pendant holds the birthstone of the chairman's daughter.",
+  [
+   [
+    "H",
+    "하린",
+    "June",
+    "20대 후반 여성, 검은 판매 유니폼과 장갑, 긴 생머리, 맑은 눈",
+    "woman in her late 20s, black sales uniform and gloves, long straight hair, clear eyes"
+   ],
+   [
+    "V",
+    "수정",
+    "Denise",
+    "40대 여성, 은색 재킷과 다이아 귀걸이, 짧은 컬, 날선 눈",
+    "woman in her 40s, silver jacket and diamond earrings, short curls, sharp eyes"
+   ],
+   [
+    "A",
+    "백 감정사",
+    "Mr. Arnaud",
+    "50대 남성, 검은 정장과 루페, 회색 머리, 무표정",
+    "man in his 50s, black suit and loupe, gray hair, blank face"
+   ]
+  ],
+  [
+   [
+    "보석 갈라",
+    "jewelry gala",
+    "수정이 하린의 벨벳 트레이를 쓸어 목걸이를 유리에 흩뿌린다",
+    "Denise sweeps June's velvet tray and necklaces skitter on glass",
+    1,
+    "판매원이 쇼케이스 앞에 서?",
+    "A clerk standing at the showcase?",
+    "cz"
+   ],
+   [
+    "보석 갈라",
+    "jewelry gala",
+    "수정이 하린의 장갑을 벗겨 진열대에 걸고 경비를 부른다",
+    "Denise strips off her glove, hooks it on the case, and calls security",
+    1,
+    "이 사람 오늘 나가요.",
+    "This one leaves tonight.",
+    "ms"
+   ],
+   [
+    "보석 갈라",
+    "jewelry gala",
+    "하린이 목의 펜던트를 열어 카운터 조명 아래 세운다",
+    "June opens the pendant at her neck under the counter light",
+    0,
+    "안쪽에 제 탄생석이 박혀 있어요.",
+    "My birthstone is set inside it.",
+    "cu"
+   ],
+   [
+    "보석 갈라",
+    "jewelry gala",
+    "백 감정사가 루페를 끼고 펜던트를 돌려 본다",
+    "Mr. Arnaud fits his loupe and turns the pendant over",
+    2,
+    "회장님이 딸의 탄생석으로 주문한 겁니다.",
+    "The chairman ordered this for his daughter's birthstone.",
+    "low"
+   ],
+   [
+    "보석 갈라",
+    "jewelry gala",
+    "수정이 목걸이 하나를 집어 진열대에 되돌린다",
+    "Denise returns a necklace to the display",
+    0,
+    "이 컬렉션 이름은 제가 붙이죠.",
+    "I'll name this collection.",
+    "cu"
+   ],
+   [
+    "보석 갈라",
+    "jewelry gala",
+    "갈라장 조명이 꺼지고 붉은 상자 하나만 남아 빛난다",
+    "The gala lights drop, leaving one red box glowing",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "30년 된 통장",
+  "The Account in Her Name",
+  "은행 개점식에서 쫓긴 창구 직원. 30년 된 통장의 이름이 그녀였다.",
+  "A teller is thrown out of a branch opening. A thirty-year-old account carries her name.",
+  [
+   [
+    "H",
+    "은비",
+    "Elise",
+    "30대 여성, 은행 유니폼과 이름표, 묶은 머리, 단정한 눈",
+    "woman in her 30s, bank uniform and name tag, tied hair, tidy eyes"
+   ],
+   [
+    "V",
+    "정한",
+    "Mr. Fitch",
+    "50대 남성, 감색 정장과 금 시계줄, 짧은 머리, 비뚠 입가",
+    "man in his 50s, navy suit and gold watch band, short hair, twisted mouth"
+   ],
+   [
+    "A",
+    "서 감사역",
+    "Ms. Ibarra",
+    "40대 여성, 회색 정장과 서류철, 안경, 무표정",
+    "woman in her 40s, gray suit and folder, glasses, blank face"
+   ]
+  ],
+  [
+   [
+    "은행 로비",
+    "bank lobby",
+    "정한이 은비의 통장 묶음을 계산대 위에 엎어 부채를 흩뿌린다",
+    "Mr. Fitch flips her stack of passbooks open across the counter",
+    1,
+    "창구 직원이 개점식에 나와?",
+    "A teller at the branch opening?",
+    "cz"
+   ],
+   [
+    "은행 로비",
+    "bank lobby",
+    "정한이 은비의 이름표를 창구 유리에 붙이고 번호표를 쥐여 준다",
+    "Mr. Fitch sticks her tag to the window and hands her a queue ticket",
+    1,
+    "넌 창구로 돌아가.",
+    "Get back behind your window.",
+    "ms"
+   ],
+   [
+    "은행 로비",
+    "bank lobby",
+    "은비가 통장 한 권을 펴 첫 장을 금고 조명 아래 든다",
+    "Elise opens a passbook and holds the first page under the vault light",
+    0,
+    "이 통장, 제 이름으로 30년째예요.",
+    "This account has been in my name for thirty years.",
+    "cu"
+   ],
+   [
+    "은행 로비",
+    "bank lobby",
+    "서 감사역이 입금 기록을 넘기며 창구 직원들을 돌아본다",
+    "Ms. Ibarra flips through the deposits and faces the tellers",
+    2,
+    "회장님이 매달 입금하셨습니다. 은비 씨 이름으로요.",
+    "The chairman deposited every month. In Ms. Elise's name.",
+    "low"
+   ],
+   [
+    "은행 로비",
+    "bank lobby",
+    "정한이 명패를 뒤집어 놓는다",
+    "Mr. Fitch turns the nameplate face down",
+    0,
+    "다음 달부터 이 지점은 제가 봅니다.",
+    "From next month, this branch answers to me.",
+    "cu"
+   ],
+   [
+    "은행 로비",
+    "bank lobby",
+    "자동문이 열리고 우산 쓴 손님들이 몰려온다",
+    "The sliding doors part on a crowd of umbrellas",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "계약서의 매수인",
+  "The Buyer on the Contract",
+  "분양 설명회에서 쫓긴 중개 보조. 계약서 매수인란에 그의 이름이 있었다.",
+  "A broker's assistant is thrown off the sales stage. His name is written as the buyer.",
+  [
+   [
+    "H",
+    "성진",
+    "Tobias",
+    "30대 남성, 남색 정장과 명함집, 짧은 머리, 성실한 눈",
+    "man in his 30s, navy suit and card case, short hair, earnest eyes"
+   ],
+   [
+    "V",
+    "우철",
+    "Mr. Renner",
+    "40대 남성, 밝은 회색 정장과 마이크, 짧은 머리, 얇은 미소",
+    "man in his 40s, light gray suit with a mic, short hair, thin smile"
+   ],
+   [
+    "A",
+    "최 실장",
+    "Ms. Solberg",
+    "30대 여성, 검은 정장과 태블릿, 단정한 머리, 무표정",
+    "woman in her 30s, black suit and tablet, neat hair, blank face"
+   ]
+  ],
+  [
+   [
+    "분양 설명회장",
+    "sales presentation hall",
+    "우철이 성진의 명함을 접어 모형도 아래에 끼워 넣는다",
+    "Mr. Renner folds Tobias's card and slides it under the model",
+    1,
+    "중개 보조가 설명회 무대에?",
+    "An assistant on the sales stage?",
+    "cz"
+   ],
+   [
+    "분양 설명회장",
+    "sales presentation hall",
+    "우철이 성진의 서류를 마이크 스탠드에 올려놓는다",
+    "Mr. Renner sets his papers on the mic stand",
+    1,
+    "계약서에 네 이름은 없어.",
+    "Your name isn't on any contract.",
+    "ms"
+   ],
+   [
+    "분양 설명회장",
+    "sales presentation hall",
+    "성진이 계약서 사본을 펴 매수인란을 모형도 조명에 비춘다",
+    "Tobias opens a contract and holds the buyer line to the model light",
+    0,
+    "이 계약서, 매수인이 저예요.",
+    "I'm the buyer on this contract.",
+    "cu"
+   ],
+   [
+    "분양 설명회장",
+    "sales presentation hall",
+    "최 실장이 계약서를 받아 도장 자국을 확인한다",
+    "Ms. Solberg takes the contract and checks the stamp",
+    2,
+    "회장님이 생전에 성진 씨 이름으로 계약하셨습니다.",
+    "The chairman signed it in Mr. Tobias's name himself.",
+    "low"
+   ],
+   [
+    "분양 설명회장",
+    "sales presentation hall",
+    "우철이 마이크 케이블을 감는다",
+    "Mr. Renner coils the mic cable",
+    0,
+    "설명회는 주인이 하는 겁니다.",
+    "The owner gives the presentation.",
+    "cu"
+   ],
+   [
+    "분양 설명회장",
+    "sales presentation hall",
+    "무대 뒤 모형도에 조명이 켜지고 건물이 솟는다",
+    "Behind the stage, the model lights up tower by tower",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "액자 뒤의 가훈",
+  "The Words Behind the Frame",
+  "저택에서 쫓긴 표구 장인. 액자 뒷면엔 회장이 쓴 아들의 이름이 있었다.",
+  "A frame maker is thrown out of the mansion. Behind the frame, the chairman wrote his son's name.",
+  [
+   [
+    "H",
+    "영수",
+    "Harold",
+    "60대 남성, 베이지 작업복과 앞치마, 흰 머리, 깊은 주름",
+    "man in his 60s, beige work clothes and apron, white hair, deep lines"
+   ],
+   [
+    "V",
+    "기훈",
+    "Damon",
+    "40대 남성, 검은 정장과 금 손목시계, 짧은 머리, 거만한 턱",
+    "man in his 40s, black suit and gold watch, short hair, arrogant chin"
+   ],
+   [
+    "A",
+    "박 집사",
+    "Mr. Ashby",
+    "50대 남성, 검은 조끼와 나비넥타이, 은발, 곧은 자세",
+    "man in his 50s, black vest and bow tie, silver hair, upright posture"
+   ]
+  ],
+  [
+   [
+    "저택 응접실",
+    "mansion drawing room",
+    "기훈이 영수의 액자를 벽에서 떼어 마루에 세워 둔다",
+    "Damon lifts Harold's frame off the wall and leans it on the floor",
+    1,
+    "표구쟁이가 상속 얘기에 끼어?",
+    "A frame maker in an inheritance talk?",
+    "cz"
+   ],
+   [
+    "저택 응접실",
+    "mansion drawing room",
+    "기훈이 영수의 붓을 부러뜨려 휴지통에 넣는다",
+    "Damon snaps Harold's brush and drops it in the bin",
+    1,
+    "이 집 물건은 이제 내 거야.",
+    "Everything in this house is mine now.",
+    "ms"
+   ],
+   [
+    "저택 응접실",
+    "mansion drawing room",
+    "영수가 액자를 돌려 뒷면의 글씨를 창가 빛에 띄운다",
+    "Harold turns the frame and holds the writing to the window light",
+    0,
+    "액자 뒤에 회장님 글이 있어요.",
+    "The chairman wrote on the back of this frame.",
+    "cu"
+   ],
+   [
+    "저택 응접실",
+    "mansion drawing room",
+    "박 집사가 안경을 고쳐 쓰고 그 글을 소리 내어 읽는다",
+    "Mr. Ashby settles his glasses and reads the writing aloud",
+    2,
+    "영수에게 이 집을 준다, 라고 적혀 있습니다.",
+    "It says: this house goes to Harold.",
+    "low"
+   ],
+   [
+    "저택 응접실",
+    "mansion drawing room",
+    "기훈이 계단 난간을 잡는다",
+    "Damon grips the stair rail",
+    0,
+    "이 집은 제가 지키면 됩니다. 이제.",
+    "I'll take care of this house now.",
+    "cu"
+   ],
+   [
+    "저택 계단",
+    "mansion staircase",
+    "계단 위 초상화에만 조명이 남아 빛난다",
+    "On the staircase, only the portrait stays lit",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "회장의 일기장",
+  "The Chairman's Diary",
+  "이사회에서 쫓긴 비서. 회장의 일기장이 그녀를 후계자로 적고 있었다.",
+  "A secretary is thrown out of the boardroom; the chairman's diary names her his heir.",
+  [
+   [
+    "H",
+    "지안",
+    "Mia",
+    "30대 여성, 검은 정장과 서류철, 단정한 묶은 머리, 또렷한 눈",
+    "woman in her 30s, black suit and folder, neat bun, clear eyes"
+   ],
+   [
+    "V",
+    "상민",
+    "Mr. Sterling",
+    "50대 남성, 짙은 회색 정장과 금 커프스, 짧은 머리, 차가운 눈",
+    "man in his 50s, charcoal suit and gold cufflinks, short hair, cold eyes"
+   ],
+   [
+    "A",
+    "민 사외이사",
+    "Ms. Barlow",
+    "60대 여성, 남색 정장과 진주 목걸이, 은발, 깊은 눈",
+    "woman in her 60s, navy suit and pearl necklace, silver hair, deep eyes"
+   ]
+  ],
+  [
+   [
+    "이사회실",
+    "boardroom",
+    "상민이 지안의 서류를 회의 테이블 끝으로 밀어 버린다",
+    "Mr. Sterling pushes Mia's papers off the end of the table",
+    1,
+    "비서가 이사회에 들어와?",
+    "A secretary in the boardroom?",
+    "cz"
+   ],
+   [
+    "이사회실",
+    "boardroom",
+    "상민이 지안의 의자를 문가로 밀고 회의록 노트북을 덮는다",
+    "Mr. Sterling shoves her chair to the door and shuts the laptop",
+    1,
+    "회의록은 네가 쓸 필요 없어.",
+    "Nobody needs your minutes.",
+    "ms"
+   ],
+   [
+    "이사회실",
+    "boardroom",
+    "지안이 품의 일기장을 펴 한 페이지를 회의실 조명에 든다",
+    "Mia opens the diary and holds a page under the boardroom light",
+    0,
+    "회장님 일기예요. 제 이름이 나옵니다.",
+    "It's the chairman's diary. My name is in it.",
+    "cu"
+   ],
+   [
+    "이사회실",
+    "boardroom",
+    "민 사외이사가 일기장을 받아 안경을 고쳐 쓰고 읽는다",
+    "Ms. Barlow takes the diary, settles her glasses, and reads",
+    2,
+    "내 딸 지안에게 지분을 넘긴다, 라고 쓰셨습니다.",
+    "It says: my shares go to my daughter Mia.",
+    "low"
+   ],
+   [
+    "이사회실",
+    "boardroom",
+    "상민이 의자를 테이블에 붙인다",
+    "Mr. Sterling pulls his chair in",
+    0,
+    "다음 안건은 제가 올리겠습니다.",
+    "I'll table the next item.",
+    "cu"
+   ],
+   [
+    "이사회실",
+    "boardroom",
+    "회의실 유리에 바깥 사람들의 그림자가 늘어선다",
+    "Shadows of people fill the glass wall",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "30년 태운 기사의 증언",
+  "Thirty Years Behind the Wheel",
+  "기념식에서 쫓긴 리무진 기사. 회장을 30년 태운 노인이 그를 증언했다.",
+  "A chauffeur is thrown off the anniversary stage, and the man who drove the chairman for thirty years speaks.",
+  [
+   [
+    "H",
+    "두식",
+    "Raymond",
+    "50대 남성, 검은 제복과 장갑, 짧은 회색 머리, 무뚝뚝한 얼굴",
+    "man in his 50s, black chauffeur uniform and gloves, short gray hair, stoic face"
+   ],
+   [
+    "V",
+    "태섭",
+    "Mr. Warwick",
+    "40대 남성, 파란 정장과 은 넥타이, 짧은 머리, 비뚠 입가",
+    "man in his 40s, blue suit and silver tie, short hair, twisted mouth"
+   ],
+   [
+    "A",
+    "황 씨",
+    "Mr. Ives",
+    "70대 남성, 회색 정장과 지팡이, 흰 머리, 맑은 눈",
+    "man in his 70s, gray suit and walking stick, white hair, clear eyes"
+   ]
+  ],
+  [
+   [
+    "기념식장",
+    "anniversary hall",
+    "태섭이 두식의 기사 모자를 연단 계단에 걸어 두고 손님들을 웃긴다",
+    "Mr. Warwick hangs the chauffeur cap on the steps and grins",
+    1,
+    "기사가 단상에 올라와?",
+    "A driver on the anniversary stage?",
+    "cz"
+   ],
+   [
+    "기념식장",
+    "anniversary hall",
+    "태섭이 두식의 열쇠를 받아 연단 아래 바닥에 떨어뜨린다",
+    "Mr. Warwick takes his keys and drops them below the stage",
+    1,
+    "차는 오늘부로 회수야.",
+    "The car comes back to me today.",
+    "ms"
+   ],
+   [
+    "기념식장",
+    "anniversary hall",
+    "두식이 옆의 노인에게 팔을 내어 주며 마이크 쪽으로 나선다",
+    "Raymond offers his arm to the old man and steps toward the mic",
+    0,
+    "이분이 회장님을 30년 태우셨어요.",
+    "This man drove the chairman for thirty years.",
+    "cu"
+   ],
+   [
+    "기념식장",
+    "anniversary hall",
+    "황 씨가 지팡이를 세우고 쪽지를 펴 읽는다",
+    "Mr. Ives plants his stick and reads from a slip of paper",
+    2,
+    "회장님이 두식을 아들로 적으셨습니다. 제가 봤어요.",
+    "The chairman wrote Raymond down as his son. I saw it.",
+    "low"
+   ],
+   [
+    "기념식장",
+    "anniversary hall",
+    "태섭이 단상 옆으로 비켜선다",
+    "Mr. Warwick steps aside off the stage",
+    0,
+    "차는 오늘부터 제가 부릅니다.",
+    "The car answers to me now.",
+    "cu"
+   ],
+   [
+    "기념식장",
+    "anniversary hall",
+    "무대 스크린에 옛 흑백 사진이 떠오르고 홀에 박수가 터진다",
+    "An old black-and-white photo fills the screen and applause breaks out",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "창간호 사진 속 아기",
+  "The Baby on Page One",
+  "신문사 기념식에서 쫓긴 배달원. 창간호 1면 사진 속 아기가 그였다.",
+  "A paperboy is thrown out of the anniversary; the baby on page one was him.",
+  [
+   [
+    "H",
+    "동하",
+    "Arlo",
+    "20대 중반 남성, 파란 배달 재킷과 모자, 짧은 머리, 밝은 눈",
+    "man in his mid 20s, blue delivery jacket and cap, short hair, bright eyes"
+   ],
+   [
+    "V",
+    "범수",
+    "Mr. Kingsley",
+    "50대 남성, 갈색 정장과 나비넥타이, 짧은 백발, 거만한 표정",
+    "man in his 50s, brown suit and bow tie, short white hair, haughty look"
+   ],
+   [
+    "A",
+    "오 기록관",
+    "Ms. Ferrante",
+    "40대 여성, 회색 니트와 흰 장갑, 단정한 머리, 무표정",
+    "woman in her 40s, gray knit and white gloves, neat hair, blank face"
+   ]
+  ],
+  [
+   [
+    "신문사 로비",
+    "newspaper lobby",
+    "범수가 동하의 자전거를 접수대에 기대 세우고 바구니를 엎는다",
+    "Mr. Kingsley leans the bike on the desk and tips the basket",
+    1,
+    "배달원이 기념식에 왜 들어와?",
+    "A paperboy at the anniversary?",
+    "cz"
+   ],
+   [
+    "신문사 로비",
+    "newspaper lobby",
+    "범수가 동하의 모자를 벗겨 신문 더미 위에 놓고 문지기를 부른다",
+    "Mr. Kingsley drops his cap on the papers and calls the doorman",
+    1,
+    "이 신문사에서 넌 끝이야.",
+    "You're finished at this paper.",
+    "ms"
+   ],
+   [
+    "신문사 로비",
+    "newspaper lobby",
+    "동하가 신문 더미에서 창간호를 뽑아 1면 사진을 들어 보인다",
+    "Arlo pulls the first issue from the stack and holds up page one",
+    0,
+    "이 사진, 제가 태어난 날 기사예요.",
+    "That photo ran the day I was born.",
+    "cu"
+   ],
+   [
+    "신문사 로비",
+    "newspaper lobby",
+    "오 기록관이 원판 필름과 기사를 나란히 놓고 대조한다",
+    "Ms. Ferrante lays the plate beside the article and compares",
+    2,
+    "회장님이 아기 이름을 동하로 적어 두셨습니다.",
+    "The chairman wrote the baby's name as Arlo.",
+    "low"
+   ],
+   [
+    "신문사 로비",
+    "newspaper lobby",
+    "범수가 신문 한 장을 개어 겨드랑이에 끼운다",
+    "Mr. Kingsley folds a paper under his arm",
+    0,
+    "창간호부터 다시 배달하죠.",
+    "I'll start deliveries from the first issue.",
+    "cu"
+   ],
+   [
+    "인쇄실",
+    "press room",
+    "인쇄기가 돌아가고 새 신문이 쏟아져 나온다",
+    "The press rolls and fresh papers pour out",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "묘역의 빈자리",
+  "The Empty Plot",
+  "가족 묘역 추도식에서 쫓긴 묘지기. 빈자리 명판에 그의 이름이 새겨져 있었다.",
+  "A groundskeeper is thrown out of the memorial; the empty plot already bears his name.",
+  [
+   [
+    "H",
+    "정복",
+    "Stanley",
+    "60대 남성, 짙은 작업복과 장갑, 흰 머리, 깊은 눈",
+    "man in his 60s, dark work clothes and gloves, white hair, deep eyes"
+   ],
+   [
+    "V",
+    "재만",
+    "Mr. Thorne",
+    "40대 남성, 검은 정장과 검은 넥타이, 짧은 머리, 굳은 턱",
+    "man in his 40s, black suit and black tie, short hair, set jaw"
+   ],
+   [
+    "A",
+    "문 변호사",
+    "Ms. Voss",
+    "50대 여성, 검은 코트와 서류 봉투, 은발, 무표정",
+    "woman in her 50s, black coat and document envelope, silver hair, blank face"
+   ]
+  ],
+  [
+   [
+    "가족 묘역",
+    "family cemetery",
+    "재만이 정복의 꽃다발을 받아 옆 묘비에 내려놓는다",
+    "Mr. Thorne takes the bouquet and sets it on another grave",
+    1,
+    "묘지기가 추도식에 끼어?",
+    "A groundskeeper at the family memorial?",
+    "cz"
+   ],
+   [
+    "가족 묘역",
+    "family cemetery",
+    "재만이 정복의 삽을 빼앗아 흙더미에 꽂는다",
+    "Mr. Thorne takes the shovel and drives it into the soil",
+    1,
+    "이 자리에서 나가.",
+    "Leave this plot.",
+    "ms"
+   ],
+   [
+    "가족 묘역",
+    "family cemetery",
+    "정복이 빈자리 명판 앞에 무릎을 굽혀 손으로 닦는다",
+    "Stanley kneels at the empty plot and wipes the nameplate",
+    0,
+    "여기, 제 이름이 새겨져 있어요.",
+    "My name is carved here.",
+    "cu"
+   ],
+   [
+    "가족 묘역",
+    "family cemetery",
+    "문 변호사가 검은 장갑을 벗고 명판을 읽는다",
+    "Ms. Voss pulls off her black glove and reads the plate",
+    2,
+    "회장님이 정복 씨를 아들로 묻히게 하셨습니다.",
+    "The chairman had him buried here as a son.",
+    "low"
+   ],
+   [
+    "가족 묘역",
+    "family cemetery",
+    "재만이 묘비의 이끼를 손으로 닦는다",
+    "Mr. Thorne wipes moss off the stone",
+    0,
+    "묘역 관리는 제가 계속하죠.",
+    "I'll go on tending this ground.",
+    "cu"
+   ],
+   [
+    "가족 묘역",
+    "family cemetery",
+    "저편 언덕에서 삽 든 사람이 다가온다",
+    "A man with a shovel walks up the far hill",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "앨범 뒷면의 글씨",
+  "The Writing on the Back",
+  "가족 사진전에서 쫓긴 복원사. 앨범 뒷면에 회장의 손글씨가 남아 있었다.",
+  "A photo restorer is thrown out of a family exhibit. The chairman's handwriting is on the back.",
+  [
+   [
+    "H",
+    "보영",
+    "Meg",
+    "40대 여성, 흰 셔츠와 앞치마, 묶은 머리, 안경, 차분한 눈",
+    "woman in her 40s, white shirt and apron, tied hair, glasses, calm eyes"
+   ],
+   [
+    "V",
+    "선화",
+    "Mrs. Delacour",
+    "50대 여성, 검은 원피스와 진주 귀걸이, 짧은 파마, 찬 눈",
+    "woman in her 50s, black dress and pearl earrings, short perm, cold eyes"
+   ],
+   [
+    "A",
+    "고 씨",
+    "Mr. Lowry",
+    "60대 남성, 갈색 재킷과 카메라, 흰 머리, 온화한 눈",
+    "man in his 60s, brown jacket and camera, white hair, gentle eyes"
+   ]
+  ],
+  [
+   [
+    "저택 사진전",
+    "mansion gallery",
+    "선화가 보영의 사진 액자를 벽에서 떼어 마루에 세운다",
+    "Mrs. Delacour lifts Meg's framed photo off the wall",
+    1,
+    "복원사가 가족 사진전에 왜?",
+    "A restorer at a family exhibit?",
+    "cz"
+   ],
+   [
+    "저택 사진전",
+    "mansion gallery",
+    "선화가 보영의 장갑을 벗겨 사진 위에 떨어뜨린다",
+    "Mrs. Delacour strips off her glove and drops it on a photo",
+    1,
+    "이 사진들은 네 것이 아니야.",
+    "None of these photos are yours.",
+    "ms"
+   ],
+   [
+    "저택 사진전",
+    "mansion gallery",
+    "보영이 앨범을 뒤집어 뒷면 글씨를 사진등 아래 든다",
+    "Meg turns the album over and holds the writing under the lamp",
+    0,
+    "뒷면에 회장님 글이 있어요.",
+    "The chairman wrote on the back.",
+    "cu"
+   ],
+   [
+    "저택 사진전",
+    "mansion gallery",
+    "고 씨가 사진등을 옮겨 글씨를 비추고 소리 내어 읽는다",
+    "Mr. Lowry angles the lamp onto the writing and reads it aloud",
+    2,
+    "보영, 이 사람이 내 딸이다, 라고 쓰셨습니다.",
+    "It says: this is my daughter, Meg.",
+    "low"
+   ],
+   [
+    "저택 사진전",
+    "mansion gallery",
+    "선화가 액자를 벽에 다시 건다",
+    "Mrs. Delacour hangs the frame back up",
+    0,
+    "사진은 이름을 찾아 줄 겁니다.",
+    "The photos will find their names.",
+    "cu"
+   ],
+   [
+    "저택 사진전",
+    "mansion gallery",
+    "전시장 조명이 꺼지고 한 장만 남아 빛난다",
+    "The gallery lights drop, leaving one photo glowing",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ]
+]

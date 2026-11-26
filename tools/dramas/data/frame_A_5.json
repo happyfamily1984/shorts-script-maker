@@ -1,0 +1,182 @@
+[
+[
+ "밀수를 놓쳤다는 세관원", "The Customs Officer and the Missed Case",
+ "수상한 가방이 그냥 통과되자 세관원이 몰린다. 엑스레이 기록이 감독관의 승인을 찍었다.",
+ "A suspicious bag clears the line and the customs officer is blamed. The scanner log shows who approved it.",
+ [
+  ["H", "지완", "Ellis", "30대 남성, 세관 제복, 짧은 머리, 무표정", "man in his 30s, customs uniform, short hair, deadpan face"],
+  ["V", "태섭", "Mr. Grange", "50대 남성, 정장, 안경, 권위적인 태도", "man in his 50s, suit, glasses, overbearing manner"],
+  ["A", "수사관", "Ms. Dole", "40대 여성, 검은 재킷, 가슴의 배지, 단호한 태도", "woman in her 40s, black jacket, badge on her chest, firm manner"]
+ ],
+ [
+  ["세관 검색대", "customs checkpoint", "태섭이 통과된 가방 사진을 지완 앞에 놓는다", "Mr. Grange sets the cleared bag's photo in front of Ellis", 1, "네 선에서 그냥 통과됐어.", "It went straight through your lane.", "cz"],
+  ["세관 검색대", "customs checkpoint", "태섭이 지완의 검색대 자리를 닫아 버린다", "Mr. Grange shuts down Ellis's inspection lane", 1, "오늘로 정직이야.", "You're suspended as of today.", "ms"],
+  ["검색대 단말", "scanner terminal", "지완이 엑스레이 저장 기록을 조용히 연다", "Ellis quietly opens the scanner's archives", -1, "", "", "pi"],
+  ["세관 사무실", "customs office", "수사관이 기록의 승인자 칸을 손끝으로 짚는다", "Ms. Dole taps the approver field on the log", 2, "엑스레이 기록에 감독관 승인이 찍혔어요.", "The scanner archive shows your approval.", "low"],
+  ["세관 사무실", "customs office", "태섭이 안경을 벗고 한 걸음 물러난다", "Mr. Grange takes off his glasses and steps back", 0, "배지는 제 겁니다. 정직은 그쪽 몫.", "My badge. Your suspension.", "cu"],
+  ["엑스레이 화면", "scanner screen", "같은 가방이 화면에 또 나타나 멈춘다", "The same bag freezes on the scanner screen again", -1, "", "", "cz"]
+ ]
+],
+[
+ "환자를 넘어뜨렸다는 물리치료사", "The Therapist and the Fall",
+ "환자가 치료 중 넘어지자 물리치료사가 몰린다. 치료실 카메라가 원장의 발을 찍었다.",
+ "A patient falls during treatment and the therapist is blamed. The treatment room camera catches the director's foot.",
+ [
+  ["H", "소현", "Gwen", "20대 후반 여성, 흰 치료복, 묶은 머리, 침착한 눈빛", "woman in her late 20s, white therapy uniform, tied hair, calm eyes"],
+  ["V", "경일", "Dr. Marsh", "50대 남성, 흰 가운, 안경, 고압적인 태도", "man in his 50s, white coat, glasses, overbearing manner"],
+  ["A", "보호자", "Mrs. Polk", "60대 여성, 짙은 코트, 손가방, 단호한 표정", "woman in her 60s, dark coat, handbag, firm expression"]
+ ],
+ [
+  ["치료실", "therapy room", "경일이 넘어진 환자 옆에서 소현을 부른다", "Dr. Marsh calls Gwen over beside the fallen patient", 1, "네가 손을 놨지. 네 책임이야.", "You let go. That's on you.", "cz"],
+  ["치료실", "therapy room", "경일이 소현의 예약 명단을 지운다", "Dr. Marsh wipes Gwen's appointment list", 1, "면허 걸 문제야. 나가.", "This could cost your license. Out.", "ms"],
+  ["치료실", "therapy room", "소현이 천장 모서리의 카메라를 올려다본다", "Gwen looks up at the camera in the ceiling corner", -1, "", "", "pi"],
+  ["대기실", "waiting area", "보호자가 휴대폰 영상을 돌려 한 장면을 멈춘다", "Mrs. Polk replays a clip and freezes a frame", 2, "영상에 원장님 발이 찍혔습니다.", "The footage shows your foot, Doctor.", "low"],
+  ["치료실", "therapy room", "경일이 안경을 고쳐 쓰고 물러난다", "Dr. Marsh adjusts his glasses and backs away", 0, "치료는 계속할게요. 원장실은 비우세요.", "I'll keep treating. Clear out your office.", "cu"],
+  ["치료실 카메라", "therapy camera", "치료실 카메라가 저절로 녹화를 시작한다", "The therapy room camera starts recording on its own", -1, "", "", "cz"]
+ ]
+],
+[
+ "장비를 망가뜨린 치과 위생사", "The Hygienist and the Broken Drill",
+ "진료 장비가 망가지자 위생사가 몰린다. 진료실 카메라가 원장의 손을 찍었다.",
+ "A dental tool breaks and the hygienist is blamed. The treatment room camera catches the dentist's hand.",
+ [
+  ["H", "미소", "Lily", "30대 여성, 흰 위생사복, 묶은 머리, 차분한 눈빛", "woman in her 30s, white hygienist uniform, tied hair, calm eyes"],
+  ["V", "정민", "Dr. Boyle", "40대 남성, 흰 가운, 목에 건 마스크, 신경질적인 얼굴", "man in his 40s, white coat, mask at his neck, tense face"],
+  ["A", "데스크 매니저", "Ms. Ruff", "30대 여성, 유니폼, 태블릿, 단호한 태도", "woman in her 30s, clinic uniform, tablet, firm manner"]
+ ],
+ [
+  ["치과 진료실", "dental room", "정민이 망가진 장비를 미소 앞에 놓는다", "Dr. Boyle sets the broken tool in front of Lily", 1, "네가 마지막으로 썼어.", "You used it last.", "cz"],
+  ["치과 진료실", "dental room", "정민이 미소의 진료실 열쇠를 회수한다", "Dr. Boyle takes back Lily's treatment room key", 1, "수리비 네 몫이야.", "The repair bill is yours.", "ms"],
+  ["치과 진료실", "dental room", "미소가 진료실 구석의 카메라를 본다", "Lily looks at the camera in the corner of the room", -1, "", "", "pi"],
+  ["접수 데스크", "front desk", "데스크 매니저가 태블릿 영상을 돌린다", "Ms. Ruff replays the footage on her tablet", 2, "카메라에 떨어뜨린 손이 찍혔어요.", "The camera caught the hand that dropped it.", "low"],
+  ["치과 진료실", "dental room", "정민이 마스크를 내리며 물러난다", "Dr. Boyle lowers his mask and steps back", 0, "장비는 제가 세팅해요. 수리비는 원장님.", "I'll reset the tool. You pay the repair.", "cu"],
+  ["진료실 서랍", "treatment drawer", "서랍 안에서 같은 장비가 하나 더 나온다", "A second identical tool is sitting in the drawer", -1, "", "", "cz"]
+ ]
+],
+[
+ "약품을 잃어버린 동물병원 간호사", "The Vet Nurse and the Missing Vial",
+ "약품이 사라지자 간호사가 몰린다. 냉장고 출입 기록이 원장의 손을 찍었다.",
+ "A vial goes missing and the nurse is blamed. The fridge access log catches the vet's own hand.",
+ [
+  ["H", "예림", "Dora", "20대 후반 여성, 수술복, 짧은 머리, 조용한 눈빛", "woman in her late 20s, surgical scrubs, short hair, quiet eyes"],
+  ["V", "창우", "Dr. Pryce", "50대 남성, 흰 가운, 안경, 권위적인 태도", "man in his 50s, white coat, glasses, overbearing manner"],
+  ["A", "수의사", "Dr. Ferro", "30대 여성, 수술복, 태블릿, 차분한 태도", "woman in her 30s, surgical scrubs, tablet, composed manner"]
+ ],
+ [
+  ["처치실", "treatment room", "창우가 빈 약품 선반을 예림 앞에 연다", "Dr. Pryce pulls open the empty shelf in front of Dora", 1, "네가 마지막으로 썼지.", "You were the last one in here.", "cz"],
+  ["처치실", "treatment room", "창우가 예림의 근무표에 결근을 적는다", "Dr. Pryce marks Dora absent on the roster", 1, "오늘로 끝이야.", "You're done here today.", "ots"],
+  ["처치실", "treatment room", "예림이 냉장고 옆 출입 기록계를 본다", "Dora looks at the access logger beside the fridge", -1, "", "", "pi"],
+  ["처치실", "treatment room", "수의사가 기록의 시각과 이름을 읽는다", "Dr. Ferro reads the time and name on the log", 2, "냉장고 기록에 원장님 이름이 남았어요.", "The fridge log kept your name, Doctor.", "low"],
+  ["처치실", "treatment room", "창우가 안경을 벗고 한 걸음 물러난다", "Dr. Pryce takes off his glasses and steps back", 0, "열쇠는 제가 받을게요. 냉장고 열쇠도요.", "My keys back. Including the fridge key.", "cu"],
+  ["약품 냉장고", "medicine fridge", "냉장고 뒤에서 약품 상자가 하나 더 나온다", "Another vial box slides out from behind the fridge", -1, "", "", "cz"]
+ ]
+],
+[
+ "작품에 낙서한 화랑 인턴", "The Gallery Intern and the Mark",
+ "전시 작품에 자국이 생기자 인턴이 몰린다. 관람객이 찍은 사진이 후원자의 손을 찍었다.",
+ "A mark appears on a work and the intern is blamed. A visitor's photo catches the sponsor's hand.",
+ [
+  ["H", "세아", "Tilly", "20대 후반 여성, 검은 셔츠, 짧은 머리, 조용한 눈빛", "woman in her late 20s, black shirt, short hair, quiet eyes"],
+  ["V", "병국", "Mr. Ashby", "50대 남성, 검은 정장, 안경, 차가운 표정", "man in his 50s, black suit, glasses, cold expression"],
+  ["A", "관람객", "Mr. Lund", "60대 남성, 트위드 재킷, 목에 건 카메라, 무뚝뚝한 얼굴", "man in his 60s, tweed jacket, camera at his neck, stony face"]
+ ],
+ [
+  ["화랑", "gallery", "병국이 작품 옆 자국을 손가락으로 가리킨다", "Mr. Ashby points a finger at the mark beside the work", 1, "네 순찰 시간이야. 네 짓이지.", "It happened on your watch. Your doing.", "cz"],
+  ["화랑", "gallery", "병국이 세아의 이름을 전시 명단에서 지운다", "Mr. Ashby crosses Tilly's name off the exhibition list", 1, "출입 금지야.", "You're banned from here.", "ms"],
+  ["화랑", "gallery", "세아가 관람객의 카메라를 가리킨다", "Tilly points at the visitor's camera", -1, "", "", "pi"],
+  ["화랑", "gallery", "관람객이 카메라 화면을 돌려 손을 확대한다", "Mr. Lund turns his camera screen and zooms on a hand", 2, "관람객 사진에 그 손이 찍혔습니다.", "A visitor's photo caught that hand.", "low"],
+  ["화랑", "gallery", "병국이 바닥의 출입증을 집어 든다", "Mr. Ashby picks the badge up off the floor", 0, "출입증은 제가 답니다. 후원자는 밖에서.", "I wear my badge. The sponsor waits outside.", "cu"],
+  ["작품 설명판", "work label", "설명판에 다른 이름이 붙어 있는 게 보인다", "A different name is fixed to the work's label", -1, "", "", "cz"]
+ ]
+],
+[
+ "가방을 바꿔치기한 판매원", "The Sales Clerk and the Swapped Bag",
+ "명품 가방이 모조품으로 바뀌어 판매원이 몰린다. 매장 카메라가 팀장의 손을 찍었다.",
+ "A designer bag turns out to be a fake and the sales clerk is blamed. The store camera catches the team leader.",
+ [
+  ["H", "하린", "Cora", "20대 후반 여성, 검은 매장 유니폼, 묶은 머리, 단단한 눈빛", "woman in her late 20s, black store uniform, tied hair, resolute eyes"],
+  ["V", "숙자", "Ms. Pett", "50대 여성, 회색 정장, 진주 목걸이, 날카로운 눈", "woman in her 50s, gray suit, pearl necklace, sharp eyes"],
+  ["A", "본사 감사", "Ms. York", "40대 여성, 검은 정장, 태블릿, 냉정한 표정", "woman in her 40s, black suit, tablet, cool expression"]
+ ],
+ [
+  ["백화점 매장", "department store", "숙자가 모조 가방을 하린 앞에 놓는다", "Ms. Pett sets the fake bag down in front of Cora", 1, "이 가방, 네가 포장했지.", "You wrapped this bag, didn't you.", "cz"],
+  ["백화점 매장", "department store", "숙자가 하린의 판매 실적을 0으로 고친다", "Ms. Pett sets Cora's sales record to zero", 1, "본사에 보고할게.", "I'm reporting this to head office.", "ms"],
+  ["백화점 매장", "department store", "하린이 천장의 매장 카메라를 올려다본다", "Cora looks up at the store camera in the ceiling", -1, "", "", "pi"],
+  ["매장 사무실", "store office", "본사 감사가 영상을 돌려 손을 확대한다", "Ms. York replays the footage and zooms on a hand", 2, "매장 카메라에 바꿔 든 손이 있어요.", "The store camera has the hand that swapped it.", "low"],
+  ["백화점 매장", "department store", "숙자가 진주 목걸이를 만지며 물러난다", "Ms. Pett touches her pearls and backs away", 0, "포장은 제가 해요. 진품으로.", "I'll do the wrapping. With the real one.", "cu"],
+  ["진열대", "display shelf", "진열대 뒤에서 같은 가방이 하나 더 나온다", "An identical bag appears from behind the display", -1, "", "", "cz"]
+ ]
+],
+[
+ "렌즈를 바꿔치기한 수리공", "The Repairman and the Swapped Lens",
+ "맡긴 렌즈가 다른 것으로 바뀌어 수리공이 몰린다. 접수 사진이 사장의 손을 찍었다.",
+ "A lens comes back swapped and the repairman is blamed. The intake photo catches the shop owner's hand.",
+ [
+  ["H", "유찬", "Milo", "30대 남성, 가죽 작업 앞치마, 짧은 머리, 무표정", "man in his 30s, leather work apron, short hair, deadpan face"],
+  ["V", "석봉", "Mr. Dace", "50대 남성, 흰 셔츠, 목에 건 돋보기, 고압적인 태도", "man in his 50s, white shirt, loupe at his neck, overbearing manner"],
+  ["A", "고객", "Ms. Bright", "30대 여성, 카메라 가방, 청바지, 날카로운 눈", "woman in her 30s, camera bag, jeans, sharp eyes"]
+ ],
+ [
+  ["카메라 수리점", "camera repair shop", "석봉이 다른 렌즈를 유찬 앞에 놓는다", "Mr. Dace sets a different lens down in front of Milo", 1, "이 렌즈가 네 손에서 나왔어.", "This lens came out of your hands.", "cz"],
+  ["카메라 수리점", "camera repair shop", "석봉이 유찬의 수리 접수 장부를 찢는다", "Mr. Dace tears up Milo's repair intake book", 1, "보상은 네 몫이야.", "You're covering the cost.", "ms"],
+  ["카메라 수리점", "camera repair shop", "유찬이 접수대의 사진 파일을 연다", "Milo opens the intake photo file on the counter", -1, "", "", "pi"],
+  ["카메라 수리점", "camera repair shop", "고객이 사진 속 손과 일련번호를 짚는다", "Ms. Bright points at a hand and a serial number", 2, "접수 사진에 사장님 손이 찍혔어요.", "The intake photo shows your hand.", "low"],
+  ["카메라 수리점", "camera repair shop", "석봉이 돋보기를 내려놓고 물러난다", "Mr. Dace sets his loupe down and steps back", 0, "보상은 사장님이 하세요. 사진이 증거죠.", "You pay the compensation. The photo proves it.", "cu"],
+  ["접수대 화면", "intake screen", "접수 사진 속 손이 화면에 다시 떠오른다", "The hand from the intake photo reappears on screen", -1, "", "", "cz"]
+ ]
+],
+[
+ "구명환을 잃어버린 라이프가드", "The Lifeguard and the Missing Buoy",
+ "구명 장비가 사라지자 라이프가드가 몰린다. 수영장 카메라가 지배인의 손을 찍었다.",
+ "A rescue buoy goes missing and the lifeguard is blamed. The pool camera catches the hotel manager's hand.",
+ [
+  ["H", "민아", "Sky", "20대 후반 여성, 빨간 구조 유니폼, 묶은 머리, 단단한 눈빛", "woman in her late 20s, red rescue uniform, tied hair, resolute eyes"],
+  ["V", "진우", "Mr. Cobbs", "50대 남성, 흰 셔츠와 조끼, 무뚝뚝한 얼굴", "man in his 50s, white shirt and vest, stony face"],
+  ["A", "수영 강사", "Ms. Orr", "30대 여성, 수영복 위에 걸친 트레이닝복, 호루라기", "woman in her 30s, tracksuit over a swimsuit, whistle in hand"]
+ ],
+ [
+  ["호텔 수영장", "hotel pool", "진우가 빈 장비함을 민아 앞에 연다", "Mr. Cobbs opens the empty equipment box in front of Sky", 1, "네 근무조에 없어졌어.", "It went missing on your shift.", "cz"],
+  ["호텔 수영장", "hotel pool", "진우가 민아의 이름을 구조조 명단에서 뺀다", "Mr. Cobbs takes Mina's name off the rescue rota", 1, "오늘로 면직이야.", "You're off duty for good today.", "ms"],
+  ["호텔 수영장", "hotel pool", "민아가 수영장 모서리의 카메라를 올려다본다", "Sky looks up at the camera on the pool corner", -1, "", "", "pi"],
+  ["수영장 사무실", "pool office", "수영 강사가 태블릿 영상을 돌려 손을 확대한다", "Ms. Orr replays the footage and zooms on a hand", 2, "수영장 카메라가 그 장면을 찍었어요.", "The pool camera caught that moment.", "low"],
+  ["호텔 수영장", "hotel pool", "진우가 조끼 단추를 풀며 물러난다", "Mr. Cobbs unbuttons his vest and backs away", 0, "호루라기는 제 겁니다. 지배인은 사무실로.", "My whistle. You go back to the office.", "cu"],
+  ["장비함", "equipment box", "함바닥에 다른 호텔의 이름이 새겨져 있다", "Another hotel's name is engraved inside the box", -1, "", "", "cz"]
+ ]
+],
+[
+ "요트를 긁었다는 정박 요원", "The Dockhand and the Scratched Hull",
+ "정박한 요트에 흠집이 나자 요원이 몰린다. 마리나 카메라가 관리인의 손을 찍었다.",
+ "A moored yacht comes back scratched and the dockhand is blamed. The marina camera catches the club manager.",
+ [
+  ["H", "준영", "Axel", "20대 후반 남성, 마리나 작업복, 짧은 머리, 순한 얼굴", "man in his late 20s, marina work clothes, short hair, gentle face"],
+  ["V", "명석", "Mr. Baird", "50대 남성, 폴로 셔츠, 선글라스, 거만한 태도", "man in his 50s, polo shirt, sunglasses, arrogant manner"],
+  ["A", "보트 주인", "Ms. Hobart", "40대 여성, 흰 셔츠, 요트 모자, 날카로운 눈", "woman in her 40s, white shirt, boat cap, sharp eyes"]
+ ],
+ [
+  ["부두", "marina dock", "명석이 요트 옆 흠집을 손가락으로 가리킨다", "Mr. Baird points a finger at the scratch on the hull", 1, "네가 밧줄을 잡았지.", "You took the line, didn't you.", "cz"],
+  ["부두", "marina dock", "명석이 준영의 정박 일지를 찢어 버린다", "Mr. Baird tears up Axel's mooring log", 1, "수리비 네 몫이야.", "You're paying for the repair.", "ms"],
+  ["부두", "marina dock", "준영이 기둥 위쪽의 카메라를 올려다본다", "Axel looks up at the camera on the dock post", -1, "", "", "pi"],
+  ["마리나 사무실", "marina office", "보트 주인이 태블릿 영상을 돌려 손을 확대한다", "Ms. Hobart replays the footage and zooms on a hand", 2, "마리나 카메라에 그 손이 찍혔습니다.", "The marina camera caught that hand.", "low"],
+  ["부두", "marina dock", "명석이 선글라스를 벗고 뒷걸음친다", "Mr. Baird takes off his sunglasses and backs away", 0, "밧줄은 제가 감아요. 흠집은 관리인 몫.", "I take the line. The scratch is yours.", "cu"],
+  ["마리나 무전", "marina radio", "무전에서 다른 정박지가 다급하게 호출된다", "The marina radio calls another berth in a hurry", -1, "", "", "cu"]
+ ]
+],
+[
+ "리프트를 세웠다는 안전 요원", "The Lift Operator and the Long Stop",
+ "리프트가 멈춰 손님이 갇히자 직원이 몰린다. 운행 기록이 안전 관리자의 조작을 찍었다.",
+ "The ski lift stops with guests stuck on it and the operator is blamed. The run log catches the safety manager.",
+ [
+  ["H", "태윤", "Knox", "30대 남성, 스키장 유니폼, 이마의 고글, 무표정", "man in his 30s, ski resort uniform, goggles on his forehead, blank face"],
+  ["V", "상길", "Mr. Stine", "50대 남성, 검은 점퍼, 무전기, 고압적인 태도", "man in his 50s, black jacket, radio in hand, overbearing manner"],
+  ["A", "리프트 정비사", "Mr. Ott", "40대 남성, 작업복, 공구 벨트, 침착한 태도", "man in his 40s, work clothes, tool belt, composed manner"]
+ ],
+ [
+  ["리프트 승강장", "ski lift station", "상길이 멈춰 선 리프트를 가리키며 태윤을 부른다", "Mr. Stine points at the stalled lift and calls Knox over", 1, "네가 버튼을 눌렀지.", "You hit that button, didn't you.", "cz"],
+  ["리프트 승강장", "ski lift station", "상길이 태윤의 출입 카드를 회수한다", "Mr. Stine takes back Knox's access card", 1, "오늘로 해고야.", "You're fired as of today.", "ms"],
+  ["리프트 기계실", "lift machine room", "태윤이 운행 기록판을 조용히 연다", "Knox quietly opens the lift run log", -1, "", "", "pi"],
+  ["리프트 기계실", "lift machine room", "정비사가 기록의 버튼 시각과 카드를 짚는다", "Mr. Ott taps the stop time and the card used", 2, "운행 기록에 관리자 카드가 남았어요.", "The run log kept a manager's card.", "low"],
+  ["리프트 승강장", "ski lift station", "상길이 무전기를 내려놓고 물러난다", "Mr. Stine sets his radio down and backs away", 0, "리프트는 제가 돌리죠. 관리자 카드 없이.", "I'll run the lift. Without your card.", "cu"],
+  ["리프트 승강장", "ski lift station", "멈춰 있던 리프트가 저절로 다시 멈춘다", "The lift stops again on its own", -1, "", "", "ws"]
+ ]
+]
+]

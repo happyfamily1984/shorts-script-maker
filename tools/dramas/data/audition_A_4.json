@@ -1,0 +1,182 @@
+[
+[
+ "대형 로펌 경력 없다고 자른 면접", "The Lawyer Without a Big Firm",
+ "대형 로펌 경력이 없다며 자른다. 그녀가 판례 하나로 회사의 패소를 막자 대표가 사건을 맡긴다.",
+ "They cut her for having no big-firm experience. One precedent saves the firm's case, and the head partner gives it to her.",
+ [
+  ["H", "서하", "Ingrid", "30대 여성, 남색 정장, 짧은 머리, 단단한 눈빛", "woman in her 30s, navy suit, short hair, resolute eyes"],
+  ["V", "재홍", "Mr. Hasp", "50대 남성, 검은 정장, 안경, 거만한 태도", "man in his 50s, black suit, glasses, arrogant manner"],
+  ["A", "대표 변호사", "Ms. Stray", "50대 여성, 회색 정장, 침착한 태도", "woman in her 50s, gray suit, composed manner"]
+ ],
+ [
+  ["회의실", "meeting room", "재홍이 서하의 경력 칸을 손가락으로 짚고 웃는다", "Mr. Hasp taps the empty firm line and laughs", 1, "대형 로펌 경력이 없네.", "No big-firm experience here.", "cz"],
+  ["회의실", "meeting room", "재홍이 서하의 서류철을 의자에 던진다", "Mr. Hasp tosses Seoha's case file onto a chair", 1, "다음 분.", "Next.", "ms"],
+  ["회의실", "meeting room", "서하가 화이트보드의 사건 개요를 본다", "Seoha studies the case outline on the whiteboard", -1, "", "", "pi"],
+  ["회의실", "meeting room", "서하가 판례 번호를 말하고 모두가 조용해진다", "Seoha cites a case number and the room goes quiet", 0, "이 판례는 반대로 쓸 수 있어요.", "That precedent works in reverse for us.", "cu"],
+  ["회의실", "meeting room", "대표가 재홍의 이름표를 빼고 서류철을 서하 앞에 놓는다", "Ms. Stray takes Mr. Hasp's name card and sets the file before Seoha", 2, "이 사건은 서하 씨가 맡아요.", "Seoha takes this case, not you.", "low"],
+  ["서하의 책상", "Seoha's desk", "봉인된 판결문이 책상 위에 놓여 있다", "A sealed ruling is lying on Seoha's desk", -1, "", "", "cz"]
+ ]
+],
+[
+ "공백기 있다고 자른 회계사", "The Accountant With a Gap Year",
+ "경력에 공백이 있다며 자른다. 그가 화이트보드 숫자에서 분식회계를 찾아내자 감사 파트너가 그를 부른다.",
+ "They cut him for a gap in his record. He finds cooked books in the whiteboard numbers, and the audit partner calls him in.",
+ [
+  ["H", "도진", "Anton", "30대 남성, 회색 셔츠, 안경, 무표정", "man in his 30s, gray shirt, glasses, deadpan face"],
+  ["V", "명규", "Mr. Hoban", "50대 남성, 정장, 넥타이, 고압적인 태도", "man in his 50s, suit, tie, overbearing manner"],
+  ["A", "감사 파트너", "Ms. Odum", "40대 여성, 흰 셔츠, 서류철, 냉정한 표정", "woman in her 40s, white shirt, document folder, cool face"]
+ ],
+ [
+  ["면접실", "interview room", "명규가 도진의 공백 칸을 동그라미 친다", "Mr. Hoban circles the gap in Dojin's record", 1, "일 년 공백, 설명이 안 돼.", "A one-year gap. You can't explain it.", "cz"],
+  ["면접실", "interview room", "명규가 도진의 계산기를 책상 끝으로 민다", "Mr. Hoban pushes Dojin's calculator to the desk edge", 1, "다음 분 들어와.", "Send the next one in.", "ms"],
+  ["면접실", "interview room", "도진이 화이트보드의 숫자 두 줄을 본다", "Dojin studies two rows of numbers on the board", -1, "", "", "pi"],
+  ["면접실", "interview room", "도진이 두 숫자를 동그라미 치고 이유를 말한다", "Dojin circles two figures and explains why", 0, "이 두 줄은 맞지 않아요.", "These two lines don't add up.", "cu"],
+  ["면접실", "interview room", "감사 파트너가 명규의 서류를 덮고 도진을 부른다", "Ms. Odum closes Mr. Hoban's folder and calls Dojin over", 2, "이 감사는 도진 씨가 맡아요.", "Dojin takes this audit, not you.", "low"],
+  ["화이트보드 아래", "under the whiteboard", "보드 밑에서 다른 장부가 미끄러져 나온다", "Another ledger slides out from under the whiteboard", -1, "", "", "cz"]
+ ]
+],
+[
+ "나이 많다며 자른 레지던트", "Too Old for the Residency",
+ "나이와 출신 병원을 이유로 자른다. 그가 마네킹 응급 훈련을 지휘하자 원장이 그를 뽑는다.",
+ "They cut him for his age and his small hospital. He leads the dummy emergency drill, and the director takes him.",
+ [
+  ["H", "병우", "Viktor", "40대 남성, 수술복, 짧은 머리, 차분한 눈빛", "man in his 40s, surgical scrubs, short hair, calm eyes"],
+  ["V", "기철", "Dr. Sorrel", "50대 남성, 흰 가운, 안경, 고압적인 태도", "man in his 50s, white coat, glasses, overbearing manner"],
+  ["A", "원장", "Dr. Austen", "60대 여성, 흰 가운, 은발, 위엄 있는 자세", "woman in her 60s, white coat, silver hair, commanding posture"]
+ ],
+ [
+  ["시뮬레이션실", "simulation room", "기철이 병우의 나이를 지원서 위에 크게 적는다", "Dr. Sorrel writes Byungwoo's age across the form", 1, "이 나이에 레지던트?", "A resident at your age?", "cz"],
+  ["시뮬레이션실", "simulation room", "기철이 병우의 청진기를 탁자에 놓는다", "Dr. Sorrel sets Byungwoo's stethoscope on the table", 1, "다음 지원자.", "Next candidate.", "ms"],
+  ["시뮬레이션실", "simulation room", "병우가 마네킹 옆 모니터를 조용히 본다", "Byungwoo quietly looks at the monitor beside the dummy", -1, "", "", "pi"],
+  ["시뮬레이션실", "simulation room", "병우가 훈련 팀의 순서를 바로잡으며 지휘한다", "Byungwoo takes over and corrects the drill team's order", 0, "순서가 틀렸어요. 제가 할게요.", "The order is wrong. Let me run it.", "cu"],
+  ["시뮬레이션실", "simulation room", "원장이 기철의 추천서를 접고 병우 이름을 쓴다", "Dr. Austen folds Dr. Sorrel's reference and writes Byungwoo's name", 2, "이번 기수는 병우 씨부터예요.", "This class starts with Byungwoo.", "low"],
+  ["수술실 문", "theater door", "문에 병우의 이름이 먼저 붙어 있다", "Byungwoo's name is already on the operating theater door", -1, "", "", "cu"]
+ ]
+],
+[
+ "학위 없다고 자른 조종사", "The Pilot Without a Degree",
+ "학위가 없다며 자른다. 패널의 지원자가 시뮬레이터를 세워 버리자 그가 이어받아 착륙을 마친다.",
+ "They cut him for having no degree. When the panel's pick stalls the simulator, he takes the seat and lands it.",
+ [
+  ["H", "진호", "Marek", "30대 남성, 흰 셔츠, 짧은 머리, 무표정", "man in his 30s, white shirt, short hair, deadpan face"],
+  ["V", "학수", "Mr. Fitch", "50대 남성, 정장, 클립보드, 고압적인 태도", "man in his 50s, suit, clipboard, overbearing manner"],
+  ["A", "교육원장", "Capt. Bohr", "60대 남성, 조종사 제복, 흰 머리, 침착한 태도", "man in his 60s, pilot uniform, white hair, composed manner"]
+ ],
+ [
+  ["시뮬레이터실", "simulator room", "학수가 진호의 학위 칸이 비었음을 지적한다", "Mr. Fitch points out the empty degree box", 1, "학위가 없으면 안 돼.", "No degree, no seat.", "cz"],
+  ["시뮬레이터실", "simulator room", "학수가 진호의 헤드셋을 좌석에 던진다", "Mr. Fitch throws Jinho's headset onto the seat", 1, "다음 분.", "Next.", "ms"],
+  ["시뮬레이터실", "simulator room", "진호가 계기판의 경고등을 본다", "Jinho looks at the warning light on the panel", -1, "", "", "pi"],
+  ["시뮬레이터실", "simulator room", "지원자가 조작을 놓쳐 화면이 멈추고 진호가 좌석에 앉는다", "The pick fumbles and the screens freeze as Jinho takes the seat", 0, "착륙은 제가 해볼게요.", "Let me try the landing.", "cu"],
+  ["시뮬레이터실", "simulator room", "원장이 학수의 심사 카드를 회수하고 점수판을 든다", "Capt. Bohr takes Mr. Fitch's examiner card and lifts the scoreboard", 2, "합격입니다. 심사관은 교체해요.", "You pass. The examiner is replaced.", "low"],
+  ["시뮬레이터 화면", "simulator screen", "화면에 다른 비행편 번호가 새로 뜬다", "Another flight number appears on the simulator screen", -1, "", "", "cz"]
+ ]
+],
+[
+ "흉터 있다고 자른 승무원", "The Scar They Wouldn't Hire",
+ "팔의 흉터를 이유로 자른다. 모의 비상 탈출에서 최단 기록을 세우자 훈련원장이 명단에 올린다.",
+ "They cut her over a scar on her arm. She sets the fastest mock evacuation, and the training chief puts her on the list.",
+ [
+  ["H", "수아", "Rita", "20대 후반 여성, 흰 셔츠와 스커트, 묶은 머리, 단단한 눈빛", "woman in her late 20s, white shirt and skirt, tied hair, resolute eyes"],
+  ["V", "미경", "Ms. Tull", "40대 여성, 승무원 유니폼, 클립보드, 차가운 눈", "woman in her 40s, cabin crew uniform, clipboard, cold eyes"],
+  ["A", "훈련원장", "Capt. Ford", "50대 남성, 제복, 짧은 머리, 침착한 태도", "man in his 50s, uniform, short hair, composed manner"]
+ ],
+ [
+  ["훈련실", "training cabin", "미경이 수아의 팔을 보고 서류를 덮는다", "Ms. Tull looks at Sua's arm and closes the file", 1, "이 흉터로 객실은 어려워.", "That scar rules out the cabin.", "cz"],
+  ["훈련실", "training cabin", "미경이 수아의 지원서를 접어 옆에 놓는다", "Ms. Tull folds Sua's application and sets it aside", 1, "다음.", "Next.", "ms"],
+  ["훈련실", "training cabin", "수아가 모의 객실의 비상문 손잡이를 본다", "Sua looks at the emergency door handle in the mock cabin", -1, "", "", "pi"],
+  ["훈련실", "training cabin", "수아가 모의 탈출을 최단 시간에 마친다", "Sua finishes the mock evacuation in record time", 0, "문은 이렇게 열어요.", "The door opens like this.", "trk"],
+  ["훈련실", "training cabin", "훈련원장이 미경의 클립보드를 받아 수아에게 기록판을 준다", "Capt. Ford takes Ms. Tull's clipboard and hands Sua the time board", 2, "합격입니다. 면접관은 교체해요.", "You pass. The interviewer is replaced.", "low"],
+  ["객실 명단", "cabin roster", "명단 맨 앞에 수아의 이름이 적혀 있다", "Sua's name is already first on the cabin roster", -1, "", "", "cu"]
+ ]
+],
+[
+ "모텔 출신이라 자른 지배인", "The Manager From a Motel",
+ "모텔 출신이라며 면접에서 자른다. 면접 도중 귀빈 불만을 한마디로 풀자 오너가 총지배인을 맡긴다.",
+ "They cut her for coming from a motel. She settles a VIP complaint in one line mid-interview, and the owner hands her the hotel.",
+ [
+  ["H", "유경", "Sonia", "30대 여성, 검은 정장, 짧은 머리, 차분한 눈빛", "woman in her 30s, black suit, short hair, calm eyes"],
+  ["V", "승구", "Mr. Vern", "50대 남성, 정장, 나비넥타이, 고압적인 태도", "man in his 50s, suit, bow tie, overbearing manner"],
+  ["A", "호텔 오너", "Ms. Hoyle", "60대 여성, 짙은 드레스, 진주 목걸이, 위엄 있는 자세", "woman in her 60s, dark dress, pearl necklace, commanding posture"]
+ ],
+ [
+  ["호텔 라운지", "hotel lounge", "승구가 유경의 근무처 이름을 소리 내어 읽는다", "Mr. Vern reads Yookyung's motel name aloud", 1, "모텔 출신은 안 돼.", "A motel background won't do.", "cz"],
+  ["호텔 라운지", "hotel lounge", "승구가 유경의 명함을 집어 옆으로 밀어 버린다", "Mr. Vern picks up Yookyung's card and pushes it aside", 1, "다음 분.", "Next.", "ms"],
+  ["호텔 라운지", "hotel lounge", "유경이 로비에서 목소리를 높이는 손님을 본다", "Yookyung notices a guest raising his voice in the lobby", -1, "", "", "pi"],
+  ["호텔 로비", "hotel lobby", "유경이 손님에게 다가가 한마디로 상황을 정리한다", "Yookyung walks over and settles the guest in one line", 0, "방은 제가 바꿔 드릴게요.", "I'll change your room myself.", "cu"],
+  ["호텔 라운지", "hotel lounge", "오너가 승구의 이름표를 테이블에 놓는다", "Ms. Hoyle sets Mr. Vern's name card on the table", 2, "총지배인은 유경 씨예요.", "The general manager is Yookyung.", "low"],
+  ["로비 전광판", "lobby screen", "전광판에 유경의 이름과 직함이 뜬다", "Yookyung's name and title appear on the lobby screen", -1, "", "", "cz"]
+ ]
+],
+[
+ "팔로워 없다고 뺀 바텐더", "The Bartender With No Followers",
+ "팔로워가 없다며 뺀다. 블라인드 칵테일 대결에서 1위를 하자 바 오너가 인플루언서 심사를 내보낸다.",
+ "They drop him for having no followers. He wins the blind cocktail round, and the bar owner sends the influencer judge out.",
+ [
+  ["H", "도영", "Casey", "20대 후반 남성, 검은 조끼, 짧은 머리, 무표정", "man in his late 20s, black vest, short hair, deadpan face"],
+  ["V", "준태", "Mr. Lyle", "20대 후반 남성, 화려한 셔츠, 선글라스, 건방진 태도", "man in his late 20s, loud shirt, sunglasses, cocky manner"],
+  ["A", "바 오너", "Ms. Quist", "40대 여성, 검은 셔츠, 단호한 태도", "woman in her 40s, black shirt, firm manner"]
+ ],
+ [
+  ["칵테일 바", "cocktail bar", "준태가 도영의 팔로워 수를 화면에 띄운다", "Mr. Lyle puts Doyoung's follower count on screen", 1, "팔로워도 없는 사람이?", "You don't even have followers?", "cz"],
+  ["칵테일 바", "cocktail bar", "준태가 도영의 앞치마를 벗겨 카운터에 놓는다", "Mr. Lyle pulls off Doyoung's apron and sets it down", 1, "다음.", "Next.", "ms"],
+  ["칵테일 바", "cocktail bar", "도영이 블라인드 심사 테이블의 번호를 본다", "Doyoung looks at the numbers on the blind judging table", -1, "", "", "pi"],
+  ["칵테일 바", "cocktail bar", "도영이 잔을 내고 심사위원들이 조용히 비운다", "Doyoung sets down his glass and the judges empty it in silence", 0, "이 잔은 이름 없이 내겠습니다.", "This glass comes without a name.", "slo"],
+  ["칵테일 바", "cocktail bar", "오너가 점수판에서 준태의 이름을 지운다", "Ms. Quist crosses Mr. Lyle's name off the board", 2, "오늘 1위는 이름 없는 잔이에요.", "Today's winner is the nameless glass.", "low"],
+  ["카운터", "bar counter", "이름 없는 잔이 하나 더 놓여 있다", "Another nameless glass is set on the counter", -1, "", "", "cu"]
+ ]
+],
+[
+ "체격 안 된다고 자른 소방관", "Too Small for the Fire Service",
+ "체격을 이유로 자른다. 인명 구조 코스에서 최고 기록을 내자 서장이 명단을 다시 쓴다.",
+ "They cut him over his build. He posts the best time on the rescue course, and the chief rewrites the list.",
+ [
+  ["H", "민석", "Nils", "20대 후반 남성, 소방 훈련복, 짧은 머리, 무표정", "man in his late 20s, fire training gear, short hair, deadpan face"],
+  ["V", "광재", "Chief Moser", "50대 남성, 소방 제복, 고압적인 태도", "man in his 50s, fire service uniform, overbearing manner"],
+  ["A", "서장", "Chief Bianchi", "60대 남성, 제복, 흰 머리, 위엄 있는 자세", "man in his 60s, uniform, white hair, commanding posture"]
+ ],
+ [
+  ["소방 훈련장", "fire training yard", "광재가 민석의 키와 몸무게를 명단에 적는다", "Chief Moser writes Minsuk's height and weight down", 1, "이 체격으론 무리야.", "That build won't carry a pack.", "cz"],
+  ["소방 훈련장", "fire training yard", "광재가 민석의 헬멧을 바닥에 놓는다", "Chief Moser sets Minsuk's helmet on the ground", 1, "다음.", "Next.", "ms"],
+  ["소방 훈련장", "fire training yard", "민석이 구조 코스의 인형과 로프를 본다", "Minsuk looks at the dummy and rope on the course", -1, "", "", "pi"],
+  ["소방 훈련장", "fire training yard", "민석이 인형을 메고 코스를 최단 시간에 통과한다", "Minsuk carries the dummy through the course in record time", 0, "무게는 중심으로 옮기면 돼요.", "You move the weight to your center.", "trk"],
+  ["소방 훈련장", "fire training yard", "서장이 광재의 추천 명단을 접고 민석 이름을 쓴다", "Chief Bianchi folds Chief Moser's list and writes Minsuk's name", 2, "합격입니다. 추천은 다시 받아요.", "You pass. We'll take new recommendations.", "low"],
+  ["훈련장 게시판", "training board", "게시판에 새 명단이 붙고 첫 줄이 비어 있다", "A new roster goes up with its top line blank", -1, "", "", "cu"]
+ ]
+],
+[
+ "학위 없다고 자른 통역사", "The Interpreter Without a Degree",
+ "학위가 없다며 자른다. 빠른 연설을 한 호흡에 통역하자 대표단장이 그 자리에서 계약한다.",
+ "They cut her for having no degree. She renders a fast speech in one breath, and the delegation chief signs her on the spot.",
+ [
+  ["H", "지혜", "Claudia", "30대 여성, 검은 정장, 짧은 머리, 침착한 눈빛", "woman in her 30s, black suit, short hair, composed eyes"],
+  ["V", "인호", "Mr. Sable", "50대 남성, 정장, 안경, 고압적인 태도", "man in his 50s, suit, glasses, overbearing manner"],
+  ["A", "대표단장", "Amb. Roux", "60대 남성, 회색 정장, 단호한 태도", "man in his 60s, gray suit, firm manner"]
+ ],
+ [
+  ["회의실", "conference room", "인호가 지혜의 학위 칸이 비어 있다고 말한다", "Mr. Sable calls out the empty degree box", 1, "학위가 없으면 안 돼.", "No degree, no booth.", "cz"],
+  ["회의실", "conference room", "인호가 지혜의 헤드셋을 테이블에 놓는다", "Mr. Sable sets Jihye's headset on the table", 1, "다음.", "Next.", "ms"],
+  ["회의실", "conference room", "지혜가 연단 옆 속도 표시를 본다", "Jihye looks at the speed readout beside the podium", -1, "", "", "pi"],
+  ["회의실", "conference room", "연설이 빨라지고 지혜가 끊김 없이 통역한다", "The speech speeds up and Jihye renders it without a break", 0, "속도는 따라갈 수 있어요.", "I can keep up with the speed.", "cu"],
+  ["회의실", "conference room", "대표단장이 인호의 헤드셋을 거두고 계약서를 지혜에게 준다", "Amb. Roux takes Mr. Sable's headset and hands Jihye the contract", 2, "이 회의는 지혜 씨가 맡아요.", "Jihye takes this meeting, not you.", "low"],
+  ["회의록 첫 줄", "first line of the minutes", "회의록 첫 줄에 지혜의 이름이 없다", "Jihye's name is missing from the minutes", -1, "", "", "cz"]
+ ]
+],
+[
+ "가림막 걷히자 뺀 오디션", "They Cut Her When the Screen Fell",
+ "가림막이 걷히자 여자라며 뺀다. 그녀가 멈추지 않고 끝까지 연주하자 악장이 심사를 멈춘다.",
+ "They cut her when the screen drops and they see a woman. She plays to the last bar, and the concertmaster stops the audition.",
+ [
+  ["H", "서영", "Anya", "30대 여성, 검은 연주복, 긴 머리, 단단한 눈빛", "woman in her 30s, black concert wear, long hair, resolute eyes"],
+  ["V", "준석", "Mr. Weill", "50대 남성, 검은 정장, 안경, 차가운 표정", "man in his 50s, black suit, glasses, cold expression"],
+  ["A", "악장", "Ms. Tobin", "50대 여성, 검은 드레스, 은발, 위엄 있는 자세", "woman in her 50s, black dress, silver hair, commanding posture"]
+ ],
+ [
+  ["오디션장", "audition hall", "가림막이 걷히고 준석이 서영의 나이를 짐작한다", "The screen drops and Mr. Weill guesses her age", 1, "여자는 우리 파트에 안 맞아.", "A woman doesn't fit our section.", "cz"],
+  ["오디션장", "audition hall", "준석이 서영의 악보를 덮는다", "Mr. Weill closes Seoyoung's score", 1, "다음.", "Next.", "ms"],
+  ["오디션장", "audition hall", "서영이 활을 다시 줄 위에 올린다", "Seoyoung lifts her bow back onto the strings", -1, "", "", "pi"],
+  ["오디션장", "audition hall", "서영이 멈추지 않고 마지막 소절까지 연주한다", "Seoyoung plays straight through to the final bar", 0, "끝까지 듣고 정하세요.", "Judge me after the last bar.", "slo"],
+  ["오디션장", "audition hall", "악장이 심사 테이블을 향해 손을 든다", "Ms. Tobin raises a hand toward the judging table", 2, "심사는 여기서 멈춥니다.", "This audition stops here.", "low"],
+  ["빈 무대", "empty stage", "빈 무대에 서영의 악보만 남아 있다", "Seoyoung's score is left alone on the empty stage", -1, "", "", "ws"]
+ ]
+]
+]

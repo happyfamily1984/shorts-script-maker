@@ -1,0 +1,912 @@
+[
+ [
+  "출발 브리핑으로 돌아왔다",
+  "Back to the Flight Briefing",
+  "기록을 조작당할 출발일로 돌아왔다. 이번엔 비행 일지 사본이 먼저 있다.",
+  "He wakes on the morning his flight logs were wiped, and the copies are already in his bag.",
+  [
+   [
+    "H",
+    "정우",
+    "Clive",
+    "40대 남성, 남색 기장 제복과 모자, 짧은 머리, 단단한 눈",
+    "man in his 40s, navy captain uniform and cap, short hair, resolute eyes"
+   ],
+   [
+    "V",
+    "승태",
+    "Mr. Grieves",
+    "50대 남성, 회색 정장과 항공사 배지, 짧은 백발, 찬 눈",
+    "man in his 50s, gray suit and airline badge, short white hair, cold eyes"
+   ],
+   [
+    "A",
+    "애시",
+    "Ms. Ash",
+    "30대 여성, 검은 정장과 서류철, 묶은 머리, 무표정",
+    "woman in her 30s, black suit and folder, tied hair, blank face"
+   ]
+  ],
+  [
+   [
+    "공항 브리핑룸",
+    "airport briefing room",
+    "승태가 정우의 비행 일지를 브리핑 테이블에서 밀어 바닥에 떨어뜨린다",
+    "Mr. Grieves shoves Clive's flight log off the briefing table",
+    1,
+    "기장이 내 결정에 말대꾸해?",
+    "A captain questioning my call?",
+    "cz"
+   ],
+   [
+    "공항 브리핑룸",
+    "airport briefing room",
+    "승태가 정우의 출입증을 빼앗아 서류함에 넣고 문을 연다",
+    "Mr. Grieves locks his badge in a drawer and opens the door",
+    1,
+    "오늘 비행은 다른 기장이 한다.",
+    "Another captain flies today.",
+    "ms"
+   ],
+   [
+    "공항 브리핑룸",
+    "airport briefing room",
+    "정우가 벽시계 날짜를 휴대폰과 맞춰 본다",
+    "Clive matches the wall clock's date against his phone",
+    0,
+    "일지, 어제 제가 복사해 뒀어요.",
+    "I copied the log last night.",
+    "cu"
+   ],
+   [
+    "공항 브리핑룸",
+    "airport briefing room",
+    "애시가 원본 일지를 펴 지워진 정비 기록 페이지를 넘긴다",
+    "Ms. Ash opens the original log to the erased maintenance page",
+    2,
+    "기록을 지운 건 승태 씨 지시였습니다.",
+    "Erasing that record was Mr. Grieves's order.",
+    "low"
+   ],
+   [
+    "공항 브리핑룸",
+    "airport briefing room",
+    "승태가 출입증을 서류함에 다시 넣는다",
+    "Mr. Grieves puts the badge back in the drawer",
+    0,
+    "기장석은 원래 제 자리였습니다.",
+    "The left seat was always mine.",
+    "cu"
+   ],
+   [
+    "탑승구",
+    "departure gate",
+    "유리창 너머로 여객기가 활주로에 서 있다",
+    "Beyond the glass, an airliner waits on the apron",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "레이스 출발일로 돌아왔다",
+  "Back to the Starting Gun",
+  "항로를 뒤집어쓸 출발일로 돌아왔다. 이번엔 항해 일지가 먼저 백업돼 있다.",
+  "He wakes on race morning, blamed for a route he never set. The log is already backed up.",
+  [
+   [
+    "H",
+    "도진",
+    "Sven",
+    "30대 남성, 흰 선장 셔츠와 모자, 짧은 금발, 조용한 눈",
+    "man in his 30s, white captain shirt and cap, short blond hair, quiet eyes"
+   ],
+   [
+    "V",
+    "우람",
+    "Mr. Barlow",
+    "50대 남성, 값비싼 요트 재킷과 선글라스, 짧은 머리, 거만한 턱",
+    "man in his 50s, expensive yachting jacket and sunglasses, short hair, haughty chin"
+   ],
+   [
+    "A",
+    "페티",
+    "Ms. Petty",
+    "30대 여성, 흰 심판 셔츠와 클립보드, 묶은 머리, 무표정",
+    "woman in her 30s, white race official shirt and clipboard, tied hair, blank face"
+   ]
+  ],
+  [
+   [
+    "마리나 선착장",
+    "marina dock",
+    "우람이 도진의 항해 일지를 갑판에 던져 바람에 넘긴다",
+    "Mr. Barlow throws the log on deck and wind flips the pages",
+    1,
+    "선장이 내 지시를 무시해?",
+    "A captain ignoring my orders?",
+    "cz"
+   ],
+   [
+    "마리나 선착장",
+    "marina dock",
+    "우람이 도진의 선장 모자를 물에 던지고 키를 돌린다",
+    "Mr. Barlow throws his cap in the water and spins the wheel",
+    1,
+    "이 배는 내 거야.",
+    "This boat is mine.",
+    "ms"
+   ],
+   [
+    "마리나 선착장",
+    "marina dock",
+    "도진이 항로 메모를 펴 등대 불빛에 비춘다",
+    "Sven holds his route notes to the lighthouse beam",
+    0,
+    "일지, 어제 백업했어요. 항로까지.",
+    "I backed up the log. Route and all.",
+    "cu"
+   ],
+   [
+    "마리나 선착장",
+    "marina dock",
+    "페티가 일지 사본을 펴 항로 변경란을 우람에게 돌린다",
+    "Ms. Petty opens the copy and turns the route change to Mr. Barlow",
+    2,
+    "항로를 바꾼 건 우람 씨 지시였습니다.",
+    "The route change came from Mr. Barlow.",
+    "low"
+   ],
+   [
+    "마리나 선착장",
+    "marina dock",
+    "우람이 선글라스를 벗어 주머니에 넣는다",
+    "Mr. Barlow pockets his sunglasses",
+    0,
+    "돛은 제가 올리죠. 신호가 오면.",
+    "I'll raise the sails when the signal sounds.",
+    "cu"
+   ],
+   [
+    "마리나 방파제",
+    "marina breakwater",
+    "방파제 너머로 경주 요트들이 돛을 올린다",
+    "Beyond the breakwater, racing yachts raise their sails",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "시즌 개막일로 돌아왔다",
+  "Back to the Season Opener",
+  "사고 누명을 쓸 개막일로 돌아왔다. 이번엔 강습 기록이 먼저 복사돼 있다.",
+  "She wakes on the season's opening day, framed for a crash she warned about. The records are copied.",
+  [
+   [
+    "H",
+    "하늬",
+    "Lottie",
+    "30대 여성, 빨간 스키 강습복과 고글, 묶은 머리, 밝은 눈",
+    "woman in her 30s, red ski instructor suit and goggles, tied hair, bright eyes"
+   ],
+   [
+    "V",
+    "재범",
+    "Mr. Kappel",
+    "40대 남성, 검은 스키 재킷과 스쿨 배지, 짧은 머리, 비뚠 입",
+    "man in his 40s, black ski jacket and school badge, short hair, twisted mouth"
+   ],
+   [
+    "A",
+    "버드",
+    "Ms. Bird",
+    "50대 여성, 주황 안전 조끼와 무전기, 짧은 회색 머리, 무표정",
+    "woman in her 50s, orange safety vest and radio, short gray hair, blank face"
+   ]
+  ],
+  [
+   [
+    "스키장 베이스",
+    "ski resort base",
+    "재범이 하늬의 강습 명단을 눈 위에 던져 바람에 날린다",
+    "Mr. Kappel throws her lesson list into the wind",
+    1,
+    "강사가 안전 회의에 끼어?",
+    "An instructor in the safety meeting?",
+    "cz"
+   ],
+   [
+    "스키장 베이스",
+    "ski resort base",
+    "재범이 하늬의 무전기를 빼앗아 리프트 기둥에 걸어 둔다",
+    "Mr. Kappel takes her radio and hangs it on a lift pylon",
+    1,
+    "사고는 네 책임이야.",
+    "The accident is on you.",
+    "ms"
+   ],
+   [
+    "스키장 베이스",
+    "ski resort base",
+    "하늬가 리프트 기둥의 점검 스티커를 손톱으로 긁어 보인다",
+    "Lottie scrapes frost off the lift inspection sticker",
+    0,
+    "점검 기록, 어제 복사해 뒀어요.",
+    "I copied the inspection records yesterday.",
+    "cu"
+   ],
+   [
+    "스키장 베이스",
+    "ski resort base",
+    "버드가 점검표를 펴 빈 서명란을 원장에게 돌린다",
+    "Ms. Bird opens the checklist and turns the blank signature line",
+    2,
+    "점검을 건너뛴 건 원장 지시였습니다.",
+    "Skipping the lift check was the director's order.",
+    "low"
+   ],
+   [
+    "스키장 베이스",
+    "ski resort base",
+    "재범이 리프트 기둥의 스티커를 다시 붙인다",
+    "Mr. Kappel presses the sticker back on",
+    0,
+    "리프트는 점검부터 다시 돌립니다.",
+    "The lift runs again after a full check.",
+    "cu"
+   ],
+   [
+    "스키장 정상",
+    "ski summit",
+    "리프트가 돌아가고 정상에 조명이 켜진다",
+    "The lift starts moving and lights come on at the summit",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "출간일로 돌아왔다",
+  "Back to Publication Day",
+  "원고를 빼앗길 출간일로 돌아왔다. 이번엔 등록증이 먼저 제 이름으로 있다.",
+  "She wakes on the day her editor claimed her book, and the copyright is already in her name.",
+  [
+   [
+    "H",
+    "은주",
+    "Harriet",
+    "40대 여성, 베이지 재킷과 안경, 어깨까지 오는 머리, 차분한 눈",
+    "woman in her 40s, beige jacket and glasses, shoulder-length hair, calm eyes"
+   ],
+   [
+    "V",
+    "광원",
+    "Mr. Sable",
+    "50대 남성, 검은 터틀넥과 금테 안경, 짧은 머리, 얇은 입술",
+    "man in his 50s, black turtleneck and gold glasses, short hair, thin lips"
+   ],
+   [
+    "A",
+    "보그트",
+    "Ms. Vogt",
+    "30대 여성, 회색 정장과 계약서철, 단정한 머리, 무표정",
+    "woman in her 30s, gray suit and contract folder, neat hair, blank face"
+   ]
+  ],
+  [
+   [
+    "출판사 회의실",
+    "publisher's office",
+    "광원이 은주의 원고를 회의실 바닥에 쏟는다",
+    "Mr. Sable dumps Harriet's manuscript across the office floor",
+    1,
+    "편집자가 무슨 작가야.",
+    "An editor calling himself a writer?",
+    "cz"
+   ],
+   [
+    "출판사 회의실",
+    "publisher's office",
+    "광원이 은주의 명찰을 떼어 책상에 놓고 사무실 문을 열어 둔다",
+    "Mr. Sable drops her badge on the desk and props the door open",
+    1,
+    "이 책은 내 이름으로 나가.",
+    "This book comes out under my name.",
+    "ms"
+   ],
+   [
+    "출판사 회의실",
+    "publisher's office",
+    "은주가 서랍에서 원고 등록증을 꺼내 표지에 대고 펼친다",
+    "Harriet takes the copyright filing from a drawer and opens it",
+    0,
+    "원고, 지난달에 등록했어요.",
+    "I registered the manuscript last month.",
+    "cu"
+   ],
+   [
+    "출판사 회의실",
+    "publisher's office",
+    "보그트가 등록증을 들어 저작자 칸을 넘긴다",
+    "Ms. Vogt holds up the filing and turns to the author box",
+    2,
+    "저작자와 등록일이 은주 씨로 남아 있습니다.",
+    "The author and date are logged as Ms. Harriet.",
+    "low"
+   ],
+   [
+    "출판사 회의실",
+    "publisher's office",
+    "광원이 원고를 정리해 탁자에 놓는다",
+    "Mr. Sable stacks the pages on the table",
+    0,
+    "출간일은 제가 정합니다. 다음 달로.",
+    "I set the publication date. Next month.",
+    "cu"
+   ],
+   [
+    "출판사 로비",
+    "publisher's lobby",
+    "서점 유리에 새 책 표지가 걸린다",
+    "A new cover goes up in the bookshop window",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "특종 게시일로 돌아왔다",
+  "Back to the Front Page",
+  "기사를 빼앗길 게시일로 돌아왔다. 이번엔 녹음 파일이 두 개로 남아 있다.",
+  "He wakes the morning his editor stole his scoop, and the recording exists twice.",
+  [
+   [
+    "H",
+    "민탁",
+    "Archer",
+    "30대 남성, 베이지 재킷과 녹음기, 짧은 머리, 날카로운 눈",
+    "man in his 30s, beige jacket and voice recorder, short hair, sharp eyes"
+   ],
+   [
+    "V",
+    "선미",
+    "Ms. Crandall",
+    "50대 여성, 검은 정장과 독서 안경, 짧은 단발, 차가운 눈",
+    "woman in her 50s, black suit and reading glasses, short bob, cold eyes"
+   ],
+   [
+    "A",
+    "페로",
+    "Mr. Ferro",
+    "40대 남성, 회색 셔츠와 헤드폰, 짧은 머리, 무표정",
+    "man in his 40s, gray shirt and headphones, short hair, blank face"
+   ]
+  ],
+  [
+   [
+    "신문사 편집국",
+    "newsroom",
+    "선미가 민탁의 녹음기를 책상에서 쓸어 바닥에 떨어뜨린다",
+    "Ms. Crandall sweeps his recorder off the desk",
+    1,
+    "신입이 특종을 써?",
+    "A rookie writing the scoop?",
+    "cz"
+   ],
+   [
+    "신문사 편집국",
+    "newsroom",
+    "선미가 민탁의 초안을 모니터에서 지우고 데스크를 가리킨다",
+    "Ms. Crandall deletes his draft and points at the desk",
+    1,
+    "이 기사는 내 이름으로 나가.",
+    "This story runs under my byline.",
+    "ms"
+   ],
+   [
+    "신문사 편집국",
+    "newsroom",
+    "민탁이 주머니의 두 번째 녹음기를 꺼내 재생 버튼에 손을 얹는다",
+    "Archer takes a second recorder from his pocket and hovers a finger",
+    0,
+    "녹음, 어제 두 개 만들어 뒀어요.",
+    "I made two recordings last night.",
+    "cu"
+   ],
+   [
+    "신문사 편집국",
+    "newsroom",
+    "페로가 헤드폰을 끼고 녹음을 돌려 질문 목소리를 확인한다",
+    "Mr. Ferro plays the file and checks whose voice asks the questions",
+    2,
+    "인터뷰 질문자, 민탁 씨로 남아 있습니다.",
+    "The interviewer's voice is on record as Mr. Archer.",
+    "low"
+   ],
+   [
+    "신문사 편집국",
+    "newsroom",
+    "선미가 초안을 인쇄해 책상에 놓는다",
+    "Ms. Crandall prints the draft and sets it down",
+    0,
+    "1면은 쓴 사람 이름으로 나갑니다.",
+    "Page one runs under the byline that wrote it.",
+    "cu"
+   ],
+   [
+    "신문사 편집국",
+    "newsroom",
+    "편집국 스크린에 속보가 뜬다",
+    "A breaking headline fills the newsroom screen",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "전시 오픈일로 돌아왔다",
+  "Back to the Gallery Opening",
+  "작품을 빼앗길 오픈일로 돌아왔다. 이번엔 작품 번호가 먼저 찍혀 있다.",
+  "She wakes on the gallery's opening night, and every piece is already photographed with its number.",
+  [
+   [
+    "H",
+    "명옥",
+    "Celia",
+    "50대 여성, 흙 묻은 작업복과 앞치마, 짧은 은발, 온화한 눈",
+    "woman in her 50s, clay-stained work clothes and apron, short silver hair, warm eyes"
+   ],
+   [
+    "V",
+    "규현",
+    "Mr. Ambler",
+    "40대 남성, 검은 정장과 흰 장갑, 짧은 머리, 비뚠 입",
+    "man in his 40s, black suit and white gloves, short hair, twisted mouth"
+   ],
+   [
+    "A",
+    "던",
+    "Ms. Dunne",
+    "60대 여성, 남색 투피스와 브로치, 단정한 은발, 무표정",
+    "woman in her 60s, navy suit and brooch, neat silver hair, blank face"
+   ]
+  ],
+  [
+   [
+    "갤러리",
+    "gallery",
+    "규현이 명옥의 작품을 받침째 옆으로 밀어 유리에 부딪히게 한다",
+    "Mr. Ambler shoves her piece into the glass case",
+    1,
+    "공예가가 오픈식에 왜?",
+    "A potter at the opening?",
+    "cz"
+   ],
+   [
+    "갤러리",
+    "gallery",
+    "규현이 명옥의 명패를 떼어 계산대에 넣고 손님들을 안내한다",
+    "Mr. Ambler pockets her nameplate and steers the guests inside",
+    1,
+    "이 전시 작가는 내가 정해.",
+    "I decide whose name is on this show.",
+    "ms"
+   ],
+   [
+    "갤러리",
+    "gallery",
+    "명옥이 앞치마에서 작품 번호 사진을 꺼내 받침대에 놓는다",
+    "Celia takes photos of the piece numbers from her apron",
+    0,
+    "작품 번호, 어제 다 찍어 뒀어요.",
+    "I photographed every number yesterday.",
+    "cu"
+   ],
+   [
+    "갤러리",
+    "gallery",
+    "던이 작품 대장을 펴 번호와 제작자를 대조한다",
+    "Ms. Dunne opens the inventory and matches numbers to makers",
+    2,
+    "제작자와 번호가 명옥 씨로 등록돼 있습니다.",
+    "The maker and numbers are logged as Ms. Celia.",
+    "low"
+   ],
+   [
+    "갤러리",
+    "gallery",
+    "규현이 작품 받침을 고쳐 놓는다",
+    "Mr. Ambler sets the pedestal straight",
+    0,
+    "작품은 제 손으로 다시 빚습니다.",
+    "I'll rebuild the pieces with my own hands.",
+    "cu"
+   ],
+   [
+    "갤러리",
+    "gallery",
+    "조명이 꺼지고 작품 하나만 남아 빛난다",
+    "The lights drop, leaving a single piece glowing",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "컵팅 대회로 돌아왔다",
+  "Back to the Cupping Table",
+  "배합을 빼앗길 대회로 돌아왔다. 이번엔 배합 등록증이 먼저 있다.",
+  "He wakes on competition morning, and his blend is already registered in his name.",
+  [
+   [
+    "H",
+    "원준",
+    "Ezra",
+    "30대 남성, 갈색 앞치마와 셔츠, 짧은 머리, 진지한 눈",
+    "man in his 30s, brown apron and shirt, short hair, serious eyes"
+   ],
+   [
+    "V",
+    "동석",
+    "Mr. Coyle",
+    "40대 남성, 검은 셔츠와 금 손목시계, 짧은 머리, 능글맞은 얼굴",
+    "man in his 40s, black shirt and gold watch, short hair, smug face"
+   ],
+   [
+    "A",
+    "야들리",
+    "Ms. Yardley",
+    "30대 여성, 흰 셔츠와 클립보드, 묶은 머리, 무표정",
+    "woman in her 30s, white shirt and clipboard, tied hair, blank face"
+   ]
+  ],
+  [
+   [
+    "컵팅 대회장",
+    "cupping competition",
+    "동석이 원준의 샘플 트레이를 대회 테이블에서 밀어 컵을 깬다",
+    "Mr. Coyle shoves the sample tray and a cup breaks",
+    1,
+    "로스터가 심사대에 올라와?",
+    "A roaster at the judges' table?",
+    "cz"
+   ],
+   [
+    "컵팅 대회장",
+    "cupping competition",
+    "동석이 원준의 배합 노트를 당겨 심사 테이블에 앉는다",
+    "Mr. Coyle pulls the blend notes over and sits at the judges' table",
+    1,
+    "이 배합은 내가 출품해.",
+    "I'm entering this blend.",
+    "ms"
+   ],
+   [
+    "컵팅 대회장",
+    "cupping competition",
+    "원준이 주머니의 등록증을 꺼내 출품 번호를 조명에 비춘다",
+    "Ezra holds up the registration and the entry number to the light",
+    0,
+    "배합표, 어제 등록했어요.",
+    "I registered the blend sheet yesterday.",
+    "cu"
+   ],
+   [
+    "컵팅 대회장",
+    "cupping competition",
+    "야들리가 등록증을 받아 출품자 칸을 읽는다",
+    "Ms. Yardley takes the filing and reads the entrant line",
+    2,
+    "출품자 등록은 원준 씨가 먼저입니다.",
+    "Mr. Ezra filed first.",
+    "low"
+   ],
+   [
+    "컵팅 대회장",
+    "cupping competition",
+    "동석이 자기 노트를 가방에 넣는다",
+    "Mr. Coyle puts his notes back in his bag",
+    0,
+    "배합표는 제 이름으로 남습니다.",
+    "The blend stays under my name.",
+    "cu"
+   ],
+   [
+    "컵팅 대회장",
+    "cupping competition",
+    "심사 테이블에 컵 여섯 개가 놓인다",
+    "Six cups are set on the judging table",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "화보 촬영일로 돌아왔다",
+  "Back to the Shoot",
+  "사진을 빼앗길 촬영일로 돌아왔다. 이번엔 파일 기록이 먼저 남아 있다.",
+  "She wakes on shoot day, and the file stamps already carry her name.",
+  [
+   [
+    "H",
+    "소율",
+    "Nadia",
+    "30대 여성, 검은 셔츠와 카메라 스트랩, 짧은 단발, 강한 눈",
+    "woman in her 30s, black shirt and camera strap, short bob, fierce eyes"
+   ],
+   [
+    "V",
+    "재홍",
+    "Mr. Beale",
+    "50대 남성, 회색 정장과 금 반지, 짧은 머리, 비뚠 입가",
+    "man in his 50s, gray suit and gold rings, short hair, twisted mouth"
+   ],
+   [
+    "A",
+    "퀴스트",
+    "Ms. Quist",
+    "40대 여성, 흰 블라우스와 태블릿, 단정한 머리, 무표정",
+    "woman in her 40s, white blouse and tablet, neat hair, blank face"
+   ]
+  ],
+  [
+   [
+    "촬영 스튜디오",
+    "photo studio",
+    "재홍이 소율의 카메라를 삼각대에서 떼어 소파에 던진다",
+    "Mr. Beale pulls her camera off the tripod and throws it on the sofa",
+    1,
+    "작가가 세트에 들어와?",
+    "The photographer on my set?",
+    "cz"
+   ],
+   [
+    "촬영 스튜디오",
+    "photo studio",
+    "재홍이 소율의 메모리카드를 빼앗아 재킷에 넣고 조명을 끈다",
+    "Mr. Beale pockets her memory card and cuts the set lights",
+    1,
+    "이 화보는 내가 팔아.",
+    "I'm selling this spread.",
+    "ms"
+   ],
+   [
+    "촬영 스튜디오",
+    "photo studio",
+    "소율이 노트북을 열어 파일 목록의 시각을 띄운다",
+    "Nadia opens her laptop and brings up the file list with timestamps",
+    0,
+    "파일 기록, 어제 백업했어요.",
+    "I backed up the file log last night.",
+    "cu"
+   ],
+   [
+    "촬영 스튜디오",
+    "photo studio",
+    "퀴스트가 태블릿을 들어 촬영자와 시각을 보여 준다",
+    "Ms. Quist holds up her tablet with the photographer and times",
+    2,
+    "촬영자와 파일 시각이 소율 씨로 찍혀 있습니다.",
+    "The photographer and timestamps are logged as Ms. Nadia.",
+    "low"
+   ],
+   [
+    "촬영 스튜디오",
+    "photo studio",
+    "재홍이 메모리카드를 카메라에 넣는다",
+    "Mr. Beale slides the card into the camera",
+    0,
+    "표지는 제가 찍은 걸로 갑니다.",
+    "The cover runs with my shot.",
+    "cu"
+   ],
+   [
+    "촬영 스튜디오",
+    "photo studio",
+    "조명이 켜지고 세트 전체가 드러난다",
+    "The lights come up and the whole set appears",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "데뷔 무대 날로 돌아왔다",
+  "Back to the Debut",
+  "주역을 빼앗길 데뷔 날로 돌아왔다. 이번엔 계약서 사본이 먼저 가방에 있다.",
+  "She wakes on her debut night, and the signed contract is already in her bag.",
+  [
+   [
+    "H",
+    "채린",
+    "Lisette",
+    "20대 후반 여성, 흰 발레복과 토슈즈, 올림머리, 단단한 눈",
+    "woman in her late 20s, white ballet dress and pointe shoes, updo, firm eyes"
+   ],
+   [
+    "V",
+    "성욱",
+    "Mr. Petrossian",
+    "50대 남성, 검은 정장과 실크 스카프, 짧은 머리, 차가운 눈",
+    "man in his 50s, black suit and silk scarf, short hair, cold eyes"
+   ],
+   [
+    "A",
+    "에이디어",
+    "Ms. Adair",
+    "40대 여성, 회색 연습복과 안경, 묶은 머리, 온화한 눈",
+    "woman in her 40s, gray rehearsal clothes and glasses, tied hair, gentle eyes"
+   ]
+  ],
+  [
+   [
+    "극장 무대 뒤",
+    "theater backstage",
+    "성욱이 채린의 토슈즈를 연습실 바닥에 던진다",
+    "Mr. Petrossian throws her pointe shoes across the rehearsal floor",
+    1,
+    "군무가 주역을 서?",
+    "A corps dancer taking the lead?",
+    "cz"
+   ],
+   [
+    "극장 무대 뒤",
+    "theater backstage",
+    "성욱이 채린의 계약서를 찢어 휴지통에 넣는다",
+    "Mr. Petrossian tears up her contract and drops it in the bin",
+    1,
+    "이 무대는 내가 정해.",
+    "I decide who dances here.",
+    "ms"
+   ],
+   [
+    "극장 무대 뒤",
+    "theater backstage",
+    "채린이 가방에서 계약 사본을 꺼내 주역란을 거울에 비춘다",
+    "Lisette takes a contract copy and holds the lead line to the mirror",
+    0,
+    "계약, 어제 제 이름으로 확정됐어요.",
+    "The contract was confirmed in my name yesterday.",
+    "cu"
+   ],
+   [
+    "극장 무대 뒤",
+    "theater backstage",
+    "에이디어가 계약 사본을 펴 주역 이름과 서명을 읽는다",
+    "Ms. Adair opens the copy and reads the lead and signature",
+    2,
+    "주역 이름은 채린, 서명도 단장 것입니다.",
+    "The lead is Ms. Lisette, signed by the director himself.",
+    "low"
+   ],
+   [
+    "극장 무대 뒤",
+    "theater backstage",
+    "성욱이 휴지통에서 계약서 조각을 꺼낸다",
+    "Mr. Petrossian fishes the torn contract out",
+    0,
+    "주역은 이름으로 정해집니다.",
+    "The lead is decided by name.",
+    "cu"
+   ],
+   [
+    "극장 객석",
+    "theater auditorium",
+    "막이 올라가고 객석 조명이 어두워진다",
+    "The curtain rises as the house lights dim",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "콩쿠르 결선 날로 돌아왔다",
+  "Back to the Final Round",
+  "무대를 빼앗길 결선 날로 돌아왔다. 이번엔 편곡 악보가 먼저 등록돼 있다.",
+  "He wakes on finals morning, and his arrangement is already filed under his name.",
+  [
+   [
+    "H",
+    "태성",
+    "Rafael",
+    "20대 후반 남성, 검은 연주복과 나비넥타이, 짧은 머리, 조용한 눈",
+    "man in his late 20s, black concert suit and bow tie, short hair, quiet eyes"
+   ],
+   [
+    "V",
+    "렌",
+    "Maestro Renn",
+    "60대 남성, 회색 정장과 지휘봉, 흰 머리, 권위적인 얼굴",
+    "man in his 60s, gray suit and baton, white hair, authoritative face"
+   ],
+   [
+    "A",
+    "카듀",
+    "Ms. Cardew",
+    "50대 여성, 남색 정장과 안경, 은발, 무표정",
+    "woman in her 50s, navy suit and glasses, silver hair, blank face"
+   ]
+  ],
+  [
+   [
+    "콘서트홀 무대 뒤",
+    "concert hall backstage",
+    "렌이 태성의 악보를 피아노 위에서 쳐내 바닥에 흩뿌린다",
+    "Maestro Renn sweeps Rafael's sheet music off the piano",
+    1,
+    "제자가 나보다 먼저?",
+    "A student before his teacher?",
+    "cz"
+   ],
+   [
+    "콘서트홀 무대 뒤",
+    "concert hall backstage",
+    "렌이 태성의 소매를 잡아 무대 옆으로 밀고 악보대를 접는다",
+    "Maestro Renn pulls his sleeve, pushes him aside, folds the stand",
+    1,
+    "이 무대는 내 제자들 것이야.",
+    "This stage belongs to my students.",
+    "ms"
+   ],
+   [
+    "콘서트홀 무대 뒤",
+    "concert hall backstage",
+    "태성이 악보 원본을 펴 편곡자 이름을 무대 조명에 든다",
+    "Rafael opens the original score and holds the arranger line to the light",
+    0,
+    "악보 원본, 제 이름으로 등록했어요.",
+    "I registered the original score in my name.",
+    "cu"
+   ],
+   [
+    "콘서트홀 무대 뒤",
+    "concert hall backstage",
+    "카듀가 악보를 받아 편곡자 칸을 손가락으로 짚는다",
+    "Ms. Cardew takes the score and taps the arranger box",
+    2,
+    "편곡자 이름이 태성 씨로 적혀 있습니다.",
+    "The arranger is written as Mr. Rafael.",
+    "low"
+   ],
+   [
+    "콘서트홀 무대 뒤",
+    "concert hall backstage",
+    "렌이 지휘봉을 케이스에 넣는다",
+    "Maestro Renn puts his baton away",
+    0,
+    "첫 음은 제 손에서 시작됩니다.",
+    "The first note starts under my hands.",
+    "cu"
+   ],
+   [
+    "콘서트홀 무대",
+    "concert hall stage",
+    "무대 조명이 그랜드 피아노 위로 내려앉는다",
+    "The stage light settles on the grand piano",
+    -1,
+    "",
+    "",
+    "pi"
+   ]
+  ]
+ ]
+]

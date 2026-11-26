@@ -1,0 +1,182 @@
+[
+[
+ "소속 무용단 없다고 뺀 오디션", "The Dancer With No Company",
+ "무용단 경력이 없다며 뺀다. 패널이 끝내 못 넘긴 동작을 그녀가 무대에서 완성한다.",
+ "They drop her for having no company credits. She finishes the phrase the panel never managed to teach.",
+ [
+  ["H", "가영", "Lila", "20대 후반 여성, 검은 레오타드, 묶은 머리, 곧은 자세", "woman in her late 20s, black leotard, hair in a bun, straight posture"],
+  ["V", "인숙", "Ms. Ravel", "50대 여성, 회색 카디건, 클립보드, 차가운 눈", "woman in her 50s, gray cardigan, clipboard, cold eyes"],
+  ["A", "안무가", "Mr. Okada", "40대 남성, 검은 티셔츠, 짧은 머리, 침착한 태도", "man in his 40s, black t-shirt, short hair, composed manner"]
+ ],
+ [
+  ["무용 연습실", "dance studio", "인숙이 가영의 무용단 경력을 소리 내어 읽는다", "Ms. Ravel reads Gayoung's company credits aloud", 1, "무용단 경력이 없네.", "No company credits here.", "cz"],
+  ["무용 연습실", "dance studio", "인숙이 가영의 슬리퍼를 옆으로 밀어 버린다", "Ms. Ravel pushes Gayoung's slippers aside with her foot", 1, "다음 지원자 들어와.", "Next dancer, please.", "ms"],
+  ["무용 연습실", "dance studio", "가영이 무대 바닥의 테이프 표시를 들여다본다", "Gayoung studies the tape marks on the studio floor", -1, "", "", "pi"],
+  ["무용 연습실", "dance studio", "가영이 패널이 못 넘긴 동작을 이어 완성한다", "Gayoung carries the unfinished phrase through to its last turn", 0, "이 동작, 끝까지 가야 해요.", "This move has to finish.", "low"],
+  ["무용 연습실", "dance studio", "안무가가 명단에서 한 이름을 손으로 지운다", "Mr. Okada crosses one name off the list", 2, "이 안무는 가영 씨 겁니다.", "This piece belongs to Gayoung.", "cu"],
+  ["연습실 문", "studio door", "문에 새 오디션 공고가 붙어 있고 이름이 가려져 있다", "A new audition notice hangs on the door, one name covered", -1, "", "", "cu"]
+ ]
+],
+[
+ "코치 없다고 뺀 트라이아웃", "The Skater With No Coach",
+ "코치가 없다며 명단에서 뺀다. 패널의 유망주가 못 뛴 점프를 그녀가 깔끔하게 해낸다.",
+ "They cut her from the list for having no coach. She lands the jump the panel's favorite could not.",
+ [
+  ["H", "유하", "Petra", "20대 후반 여성, 남색 스케이트 복, 묶은 머리, 단단한 눈빛", "woman in her late 20s, navy skating dress, tied hair, resolute eyes"],
+  ["V", "명자", "Ms. Corl", "50대 여성, 회색 코트, 클립보드, 날카로운 눈", "woman in her 50s, gray coat, clipboard, sharp eyes"],
+  ["A", "연맹 심사", "Mr. Ladoux", "60대 남성, 정장, 안경, 침착한 태도", "man in his 60s, suit, glasses, composed manner"]
+ ],
+ [
+  ["아이스링크", "ice rink", "명자가 유하의 코치 이름을 찾다가 손을 젓는다", "Ms. Corl looks for a coach's name and waves her hand", 1, "코치가 없으면 못 나가.", "No coach, no ice time.", "cz"],
+  ["아이스링크", "ice rink", "명자가 유하의 스케이트 커버를 벤치에 던진다", "Ms. Corl throws Yuna's skate guards onto the bench", 1, "다음 선수 준비해.", "Get the next skater ready.", "ms"],
+  ["아이스링크", "ice rink", "유하가 링크 반대편의 유망주를 바라본다", "Yuna watches the favorite across the rink", -1, "", "", "pi"],
+  ["아이스링크", "ice rink", "유망주가 점프에서 넘어지고 유하가 같은 점프를 깔끔히 해낸다", "The favorite falls, and Yuna lands the same jump clean", 0, "그 점프는 이렇게 뛰어요.", "That jump goes like this.", "slo"],
+  ["아이스링크", "ice rink", "연맹 심사가 명단에서 유망주 이름을 지우고 유하를 쓴다", "Mr. Ladoux crosses out the favorite and writes Yuna's name", 2, "유하 씨로 갑니다. 다른 이름은 뺍니다.", "Yuna goes on the list. The other name comes off.", "low"],
+  ["링크 스코어보드", "rink scoreboard", "스코어보드에 유하의 이름이 먼저 뜬다", "Yuna's name goes up first on the rink scoreboard", -1, "", "", "cz"]
+ ]
+],
+[
+ "나이 많다며 뺀 서커스 오디션", "Too Old for the Circus",
+ "나이와 체격을 이유로 뺀다. 디렉터의 액트가 무대에서 무너지자 그가 이어받아 마무리한다.",
+ "They cut him for age and build. When the director's act falls apart on stage, he steps in and finishes it.",
+ [
+  ["H", "범수", "Ivo", "40대 남성, 낡은 트레이닝복, 짧은 머리, 무표정", "man in his 40s, worn tracksuit, short hair, deadpan face"],
+  ["V", "재순", "Mr. Pell", "50대 남성, 화려한 조끼, 모자, 거만한 태도", "man in his 50s, bright vest, cap, arrogant manner"],
+  ["A", "단장", "Ms. Karr", "60대 여성, 짙은 재킷, 단호한 표정", "woman in her 60s, dark jacket, firm expression"]
+ ],
+ [
+  ["연습 텐트", "circus tent", "재순이 범수의 나이를 프로그램에 적어 보인다", "Mr. Pell writes Bumsu's age on the program", 1, "이 나이에 곡예를 해?", "Acrobatics at your age?", "cz"],
+  ["연습 텐트", "circus tent", "재순이 범수의 공 세 개를 옆으로 차 버린다", "Mr. Pell kicks Bumsu's three balls aside", 1, "나가. 다음.", "Get out. Next.", "ms"],
+  ["연습 텐트", "circus tent", "범수가 바닥에 굴러온 공 하나를 집어 든다", "Bumsu picks up one ball rolling past his feet", -1, "", "", "pi"],
+  ["연습 텐트", "circus tent", "재순의 액트가 무너지고 범수가 공을 받아 이어 돌린다", "Mr. Pell's act collapses and Bumsu catches the balls and keeps them spinning", 0, "공은 떨어뜨리면 안 되죠.", "You can't drop the balls.", "trk"],
+  ["연습 텐트", "circus tent", "단장이 프로그램에서 한 이름을 지운다", "Ms. Karr crosses a name off the program", 2, "무대는 범수 씨 차례예요.", "The stage is yours, Bumsu.", "low"],
+  ["연습 텐트", "circus tent", "프로그램 첫 줄이 비어 있는 채로 돌아온다", "The program comes back with its top line left blank", -1, "", "", "cu"]
+ ]
+],
+[
+ "TV 경력 없다고 뺀 마술사", "The Magician With No TV Credits",
+ "방송 경력이 없다며 뺀다. 그가 봉인된 봉투에서 표식 카드를 꺼내자 극장주가 계약서를 쓴다.",
+ "They cut him for having no TV credits. He pulls the marked card from a sealed envelope, and the theater owner signs.",
+ [
+  ["H", "도담", "Ezra", "20대 후반 남성, 검은 정장, 짧은 머리, 조용한 눈빛", "man in his late 20s, black suit, short hair, quiet eyes"],
+  ["V", "상엽", "Mr. Quill", "40대 남성, 보라 셔츠, 선글라스, 건방진 태도", "man in his 40s, purple shirt, sunglasses, cocky manner"],
+  ["A", "극장주", "Ms. Vary", "50대 여성, 검은 드레스, 짧은 머리, 단호한 태도", "woman in her 50s, black dress, short hair, firm manner"]
+ ],
+ [
+  ["극장 무대", "theater stage", "상엽이 도담의 방송 경력을 소리 내어 확인한다", "Mr. Quill reads Doham's TV credits out loud", 1, "방송도 안 나온 애한테 무대는 없어.", "No TV credits, no stage here.", "cz"],
+  ["극장 무대", "theater stage", "상엽이 도담의 의자를 무대 아래로 내린다", "Mr. Quill drops Dodam's chair off the stage", 1, "다음 지원자.", "Next candidate.", "ms"],
+  ["극장 무대", "theater stage", "도담이 무대 옆의 봉인 봉투를 집어 든다", "Dodam picks up a sealed envelope at the stage side", -1, "", "", "pi"],
+  ["극장 무대", "theater stage", "도담이 봉투를 뜯자 표식 카드가 나오고 객석이 술렁인다", "Dodam opens the envelope and the marked card is inside", 0, "봉투는 뜯지 않은 채였어요.", "That envelope was never opened.", "slo"],
+  ["극장 무대", "theater stage", "극장주가 포스터에서 상엽의 이름을 지우고 계약서를 놓는다", "Ms. Vary crosses Mr. Quill's name off the poster and sets a contract", 2, "이 무대는 도담 씨 겁니다.", "This stage is Dodam's now.", "low"],
+  ["객석 맨 앞", "front row", "맨 앞자리 남자가 봉인된 봉투를 들어 보인다", "A man in the front row holds up a sealed envelope", -1, "", "", "cz"]
+ ]
+],
+[
+ "경력 없다고 뺀 목소리", "The Voice With No Credits",
+ "더빙 경력이 없다며 뺀다. 그가 악역 한 줄을 읽자 감독이 주연 성우를 바꾼다.",
+ "They cut him for having no dubbing credits. He reads one villain line, and the director replaces the lead voice.",
+ [
+  ["H", "현우", "Bram", "30대 남성, 회색 후드티, 짧은 머리, 무표정", "man in his 30s, gray hoodie, short hair, deadpan face"],
+  ["V", "길자", "Ms. Pym", "50대 여성, 헤드셋, 클립보드, 차가운 표정", "woman in her 50s, headset, clipboard, cold expression"],
+  ["A", "애니메이션 감독", "Mr. Pinter", "40대 남성, 검은 셔츠, 안경, 침착한 태도", "man in his 40s, black shirt, glasses, composed manner"]
+ ],
+ [
+  ["녹음실", "recording booth", "길자가 현우의 경력 칸을 손가락으로 두 번 친다", "Ms. Pym taps the empty credits box twice", 1, "경력이 없네. 나가.", "No credits. Out.", "cz"],
+  ["녹음실", "recording booth", "길자가 현우의 헤드폰을 스탠드에 걸어 버린다", "Ms. Pym hangs Hyunwoo's headphones on the stand", 1, "다음 분 불러.", "Call the next one.", "ms"],
+  ["녹음실", "recording booth", "현우가 모니터의 악역 장면을 조용히 본다", "Hyunwoo quietly watches the villain scene on the monitor", -1, "", "", "pi"],
+  ["녹음실", "recording booth", "현우가 마이크 앞에서 악역 한 줄을 읽고 감독이 헤드폰을 내린다", "Hyunwoo reads one villain line and the director lowers his headphones", 0, "이 대사, 한 번만 더 할게요.", "Let me do that line once more.", "cu"],
+  ["녹음실", "recording booth", "감독이 대본의 주연 이름에 줄을 긋는다", "Mr. Pinter draws a line through the lead's name", 2, "이 역할은 현우 씨 목소리예요.", "This role is his voice now.", "low"],
+  ["모니터", "monitor", "모니터에 다른 배역의 이름이 새로 뜬다", "Another role's name appears on the monitor", -1, "", "", "cu"]
+ ]
+],
+[
+ "목소리 평범하다고 뺀 DJ", "The Voice They Called Plain",
+ "목소리가 평범하다며 뺀다. 생방송 데모에서 청취자 전화를 받아 웃기자 PD가 시간을 내준다.",
+ "They drop her for a plain voice. She takes a listener's call live, and the producer hands her an hour.",
+ [
+  ["H", "소라", "Meg", "20대 후반 여성, 목에 건 헤드폰, 후드, 차분한 눈빛", "woman in her late 20s, headphones at her neck, hoodie, calm eyes"],
+  ["V", "중식", "Mr. Webb", "50대 남성, 흰 셔츠, 안경, 무뚝뚝한 얼굴", "man in his 50s, white shirt, glasses, stony face"],
+  ["A", "방송 PD", "Ms. Ferrer", "40대 여성, 헤드셋, 클립보드, 단호한 태도", "woman in her 40s, headset, clipboard, firm manner"]
+ ],
+ [
+  ["방송 부스", "radio booth", "중식이 소라의 데모 파일 이름을 보고 웃는다", "Mr. Webb reads Sora's demo filename and laughs", 1, "목소리가 평범해.", "Your voice is plain.", "cz"],
+  ["방송 부스", "radio booth", "중식이 소라의 헤드폰을 책상에 던진다", "Mr. Webb throws Sora's headphones onto the desk", 1, "다음 분.", "Next.", "ms"],
+  ["방송 부스", "radio booth", "소라가 켜진 생방송 표시등을 본다", "Sora looks at the live on-air light", -1, "", "", "pi"],
+  ["방송 부스", "radio booth", "소라가 켜진 마이크로 청취자 전화를 받아 웃긴다", "Sora takes a listener call on the live mic and makes him laugh", 0, "오늘 밤은 제가 받을게요.", "I'll take the calls tonight.", "cu"],
+  ["방송 부스", "radio booth", "PD가 편성표에서 중식의 이름을 지우고 소라를 쓴다", "Ms. Ferrer crosses Mr. Webb's name off and writes Sora's", 2, "두 시간은 소라 씨 겁니다.", "Those two hours are Sora's.", "low"],
+  ["편성표", "schedule board", "소라의 이름 밑에 모르는 이름이 하나 더 있다", "One more unknown name sits under Sora's on the board", -1, "", "", "cu"]
+ ]
+],
+[
+ "지방 출신이라 자른 앵커", "The Anchor From a Small Station",
+ "지방 방송 출신이라 자른다. 프롬프터가 꺼진 속보를 그녀가 정확히 읽자 국장이 오늘 방송을 맡긴다.",
+ "They cut her for coming from a small station. When the prompter dies, she reads the bulletin clean, and the news chief hands her tonight.",
+ [
+  ["H", "지안", "Elise", "30대 여성, 남색 정장, 단발, 차분한 눈빛", "woman in her 30s, navy suit, short bob, calm eyes"],
+  ["V", "성호", "Mr. Wex", "50대 남성, 정장, 안경, 고압적인 태도", "man in his 50s, suit, glasses, overbearing manner"],
+  ["A", "보도국장", "Ms. Garrick", "50대 여성, 회색 정장, 단호한 표정", "woman in her 50s, gray suit, firm expression"]
+ ],
+ [
+  ["뉴스 스튜디오", "news studio", "성호가 지안의 출신 방송사 이름을 크게 읽는다", "Mr. Wex reads the small station's name aloud", 1, "지방 방송 목소리는 안 돼.", "We don't put small-station voices on air.", "cz"],
+  ["뉴스 스튜디오", "news studio", "성호가 지안의 대본을 앵커 데스크에서 치운다", "Mr. Wex sweeps Jian's script off the anchor desk", 1, "다음 지원자.", "Next candidate.", "ms"],
+  ["뉴스 스튜디오", "news studio", "지안이 카메라 옆 프롬프터 선을 본다", "Jian looks at the prompter cable beside the camera", -1, "", "", "pi"],
+  ["뉴스 스튜디오", "news studio", "프롬프터가 꺼지고 지안이 기상 속보를 정확히 읽는다", "The prompter dies and Jian reads the weather bulletin clean", 0, "속보는 외워 두었습니다.", "I already memorized the bulletin.", "cu"],
+  ["뉴스 스튜디오", "news studio", "국장이 성호의 이름표를 데스크에 놓는다", "Ms. Garrick sets Mr. Wex's name card on the desk", 2, "오늘 밤은 지안 씨가 해요.", "Jian anchors tonight.", "low"],
+  ["앵커 데스크", "anchor desk", "데스크 위에 다른 방송사의 명함이 놓여 있다", "A rival network's card is lying on the anchor desk", -1, "", "", "cz"]
+ ]
+],
+[
+ "웃기지 못한다고 자른 코미디", "They Said She Wasn't Funny",
+ "무대에 세우지도 않고 뺀다. 그녀가 오 분을 채우고 클럽 오너가 헤드라인 자리를 준다.",
+ "They cut her without letting her on stage. She fills five minutes, and the club owner hands her the headline slot.",
+ [
+  ["H", "보미", "Dina", "20대 후반 여성, 검은 셔츠, 짧은 머리, 담담한 눈빛", "woman in her late 20s, black shirt, short hair, steady eyes"],
+  ["V", "승표", "Mr. Zell", "40대 남성, 체크 셔츠, 모자, 비웃는 얼굴", "man in his 40s, plaid shirt, cap, sneering face"],
+  ["A", "클럽 오너", "Mr. Bate", "50대 남성, 검은 셔츠, 팔짱, 무표정", "man in his 50s, black shirt, arms crossed, blank face"]
+ ],
+ [
+  ["코미디 클럽", "comedy club", "승표가 보미의 이름을 게시판에서 지운다", "Mr. Zell wipes Bomi's name off the board", 1, "너는 무대에 안 올라.", "You don't go on stage.", "cz"],
+  ["코미디 클럽", "comedy club", "승표가 보미의 노트를 집어 바닥에 떨어뜨린다", "Mr. Zell picks up Bomi's notebook and drops it", 1, "다음 사람.", "Next.", "ms"],
+  ["코미디 클럽", "comedy club", "보미가 무대의 마이크 스탠드를 바라본다", "Bomi looks at the mic stand on stage", -1, "", "", "pi"],
+  ["코미디 클럽", "comedy club", "보미가 스탠드 앞에서 첫 문장을 던지고 객석이 웃는다", "Bomi steps up, throws her first line, and the room laughs", 0, "제 얘기부터 할게요.", "Let me start with me.", "cu"],
+  ["코미디 클럽", "comedy club", "클럽 오너가 게시판의 헤드라인 이름을 바꾼다", "Mr. Bate changes the headline name on the board", 2, "오늘 헤드라인은 보미 씨예요.", "Bomi headlines tonight.", "low"],
+  ["객석 뒤", "back row", "누군가 일어나 무대를 가리킨다", "Someone stands in the back row and points at the stage", -1, "", "", "rx"]
+ ]
+],
+[
+ "스튜디오 없다고 자른 피칭", "The Pitch With No Studio",
+ "소속 스튜디오가 없다며 발표를 끊는다. 데모가 멈추자 그가 즉석에서 고치고 퍼블리셔가 계약한다.",
+ "They cut his pitch for having no studio. When the demo freezes, he fixes it live and the publisher signs.",
+ [
+  ["H", "시우", "Remy", "20대 후반 남성, 회색 후드, 짧은 머리, 차분한 눈빛", "man in his late 20s, gray hoodie, short hair, calm eyes"],
+  ["V", "광호", "Mr. Stang", "40대 남성, 파란 셔츠, 태블릿, 무심한 태도", "man in his 40s, blue shirt, tablet, indifferent manner"],
+  ["A", "퍼블리셔", "Ms. Delany", "40대 여성, 흰 재킷, 태블릿, 냉정한 표정", "woman in her 40s, white jacket, tablet, cool expression"]
+ ],
+ [
+  ["피칭룸", "pitch room", "광호가 시우의 소속 칸이 비어 있는 걸 가리킨다", "Mr. Stang points at the empty studio line", 1, "스튜디오도 없는 데모잖아.", "A demo with no studio behind it.", "cz"],
+  ["피칭룸", "pitch room", "광호가 시우의 컨트롤러를 옆으로 치운다", "Mr. Stang shoves Siwoo's controller aside", 1, "다음 발표자.", "Next presenter.", "ms"],
+  ["피칭룸", "pitch room", "시우가 데모의 멈춘 화면을 들여다본다", "Siwoo stares at the frozen demo screen", -1, "", "", "pi"],
+  ["피칭룸", "pitch room", "시우가 콘솔을 열어 고치자 데모가 다시 돌아간다", "Siwoo opens the console, fixes it, and the demo runs again", 0, "이건 실행 중에 고칠 수 있어요.", "This one can be fixed live.", "slo"],
+  ["피칭룸", "pitch room", "퍼블리셔가 광호의 태블릿을 닫고 계약서를 시우 앞에 놓는다", "Ms. Delany closes Mr. Stang's tablet and sets a contract before Siwoo", 2, "계약 상대는 시우 씨예요.", "The contract is with Siwoo.", "low"],
+  ["계약서 아래", "under the contract", "퍼블리셔가 서류를 한 장 더 끼워 준다", "The publisher slips one more document under the contract", -1, "", "", "cz"]
+ ]
+],
+[
+ "지방 대학이라 자른 면접", "The Applicant From a Small School",
+ "출신 학교가 시시하다며 자른다. 그가 수상 모형의 구조 오류를 짚자 대표가 그 자리에서 채용한다.",
+ "They cut him for his small school. He spots a structural fault in the award model, and the principal hires him on the spot.",
+ [
+  ["H", "의준", "Fabian", "30대 남성, 낡은 재킷, 안경, 차분한 눈빛", "man in his 30s, worn jacket, glasses, calm eyes"],
+  ["V", "동하", "Mr. Krig", "50대 남성, 검은 정장, 넥타이, 고압적인 태도", "man in his 50s, black suit, tie, overbearing manner"],
+  ["A", "대표", "Ms. Sandoval", "50대 여성, 흰 셔츠, 단호한 표정", "woman in her 50s, white shirt, firm expression"]
+ ],
+ [
+  ["건축 사무소", "architecture office", "동하가 의준의 학교 이름을 소리 내어 읽는다", "Mr. Krig reads Uijun's school name out loud", 1, "이 학교 출신은 안 뽑아.", "We don't hire from that school.", "cz"],
+  ["건축 사무소", "architecture office", "동하가 모형 옆 의자를 빼 버린다", "Mr. Krig pulls the chair away from the model", 1, "다음 분 들어오세요.", "Next candidate, please.", "ms"],
+  ["건축 사무소", "architecture office", "의준이 벽에 걸린 수상 모형을 바라본다", "Uijun looks at the award-winning model on the shelf", -1, "", "", "pi"],
+  ["건축 사무소", "architecture office", "의준이 모형의 기둥 위치를 손가락으로 짚는다", "Uijun points at the column placement on the model", 0, "이 기둥은 하중을 못 버텨요.", "This column can't carry the load.", "cu"],
+  ["건축 사무소", "architecture office", "대표가 모형을 들고 의준에게 자리를 가리킨다", "Ms. Sandoval lifts the model and points Uijun to a seat", 2, "오늘부터 이 프로젝트예요.", "You start on this project today.", "low"],
+  ["모형 옆", "beside the model", "모형 옆에 다른 사무소의 명패가 놓인다", "Another firm's nameplate is set beside the model", -1, "", "", "cz"]
+ ]
+]
+]
