@@ -611,12 +611,111 @@ const klingDumps = () => { if (!Native.has() || !window.AndroidBridge.readKlingD
 let seenStatus = '', seenDumps = 0;
 window.onAppResume = () => {
   if (store.get('pendingGrok', null)) setTimeout(() => grokCollect(false), 600);
+  if (store.get('pipeline', null)) setTimeout(pipelineResume, 800);
   const info = kInfo(); if (!info) return;
   if (info.status && info.status !== seenStatus && !info.running) { seenStatus = info.status; toast(info.status.slice(0, 60)); }
   const d = klingDumps().length;
   if (d && d !== seenDumps) { seenDumps = d; dialog(`클링 화면 ${d}개를 기록했습니다`, '이 파일을 보내 주시면 자동 입력 순서를 클링 화면에 맞춰 고칠 수 있습니다.', [['나중에', null], ['파일로 저장', () => A.dumpOut(), 'pri']]); }
   if (cur().v === 'settings') render();
 };
+
+/* ---------- 완성 영상 (클립 모으기 → 자막 새기기 → 업로드) ---------- */
+let asm = null;            /* 진행 중인 합치기 상태 { state, progress, uri, error } */
+const thumbCache = {};
+const finOf = p => (p.fin = p.fin || { clips: [], burn: true, lang: '', size: 58, pos: -0.62, out: '' });
+const finLang = p => finOf(p).lang || (isEn() ? 'en' : 'ko');
+const vThumb = uri => { if (thumbCache[uri] == null) { try { thumbCache[uri] = window.AndroidBridge.videoThumb(uri) || ''; } catch (e) { thumbCache[uri] = ''; } } return thumbCache[uri]; };
+const needPhone = () => { if (Native.has() && window.AndroidBridge.assemble) return false; dialog('휴대폰 앱에서만 됩니다', '영상 모으기, 합치기, 업로드는 휴대폰에 설치한 앱에서 동작합니다.', [['닫기', null]]); return true; };
+function findClips(p, since, need, auto) {
+  let list = []; try { list = JSON.parse(window.AndroidBridge.listVideosSince(since) || '[]'); } catch (e) {}
+  const f = finOf(p);
+  if (!list.length) { if (!auto) dialog('새 영상을 찾지 못했습니다', '클링에서 영상을 내려받았는지 확인하세요. "직접 고르기"로 골라도 됩니다.', [['닫기', null], ['직접 고르기', () => A.pickClips(), 'pri']]); return 0; }
+  f.clips = list.slice(-need || undefined).map(v => ({ uri: v.uri, name: v.name, dur: v.dur }));
+  dirty = true; render(); return f.clips.length;
+}
+function startAssemble(p, auto) {
+  if (needPhone()) return;
+  const f = finOf(p); if (!f.clips.length) return toast('먼저 영상 클립을 모으세요');
+  const lines = subLines(p, finLang(p)) || [], subs = f.clips.map((c, i) => f.burn ? (lines[i] || '') : '');
+  const ok = window.AndroidBridge.assemble(JSON.stringify({ clips: f.clips.map(c => c.uri), subs, burn: f.burn, size: f.size, pos: f.pos, title: T(p) }));
+  if (!ok) return toast('이미 영상을 만들고 있습니다');
+  asm = { state: 'running', progress: 0, auto: !!auto, pid: p.id }; render();
+}
+window.onAssemble = o => {
+  asm = Object.assign(asm || {}, o);
+  const bar = $('#asmBar'), txt = $('#asmTxt');
+  if (o.state === 'running' && bar) { bar.style.width = (o.progress || 0) + '%'; if (txt) txt.textContent = `영상 만드는 중… ${o.progress || 0}%`; return; }
+  if (o.state === 'done') {
+    const p = draft && draft.id === asm.pid ? draft : null;
+    if (p) { finOf(p).out = o.uri; saveDraft(); }
+    const auto = asm.auto; asm = null; render();
+    if (auto && p) uploadOut(p); else toast('완성 영상을 동영상 앱의 ShortDramaMaker 폴더에 저장했습니다');
+    store.set('pipeline', null);
+  } else if (o.state === 'error') { asm = null; render(); dialog('영상을 만들지 못했습니다', o.error || '', [['닫기', null]]); store.set('pipeline', null); }
+  else if (o.state === 'cancelled') { asm = null; render(); toast('영상 만들기를 멈췄습니다'); }
+};
+function uploadOut(p) {
+  const f = finOf(p); if (!f.out) return toast('먼저 완성 영상을 만드세요');
+  const k = uploadKit(p, MODE());
+  window.AndroidBridge.shareVideo(f.out, k.title, `${k.title}\n\n${k.desc}`);
+  toast('제목·설명 복사됨 · AI 생성 표시를 켜세요');
+}
+/* 원클릭: 클링 생성 → 영상 내려받기 → 돌아오면 합치기 → 업로드 창 */
+function oneClick() {
+  if (needPhone()) return;
+  const p = draft, info = kInfo(); if (klingNeedSetup(info)) return;
+  if (!window.AndroidBridge.hasMediaPerm()) return dialog('사진·동영상 접근을 허용해 주세요', '클링에서 내려받은 영상을 찾으려면 접근 권한이 필요합니다. "모두 허용"을 골라 주세요.', [['취소', null], ['허용하기', () => window.AndroidBridge.requestMediaPerm(), 'pri']]);
+  buildKlingJob(p, 'all').then(({ job, miss }) => {
+    const go1 = () => dialog('원클릭 제작을 시작합니다', `① 클링에 ${job.shots.length}개 샷을 넣고 생성합니다 (크레딧 사용)\n② 생성이 끝나면 영상을 내려받습니다 (몇 분 걸립니다)\n③ 이 앱으로 돌아와 영상을 잇고 자막을 새깁니다\n④ 업로드할 앱을 고르는 창을 엽니다\n\n진행 중에는 화면을 만지지 마세요.${flowNow().verified ? '' : '\n\n클링 순서가 아직 완전히 맞춰지지 않아 중간에 멈출 수 있습니다. 멈추면 그 단계부터 이 화면의 버튼으로 이어 하세요.'}`,
+      [['취소', null], ['시작', () => {
+        saveDraft();
+        job.autoGenerate = true; job.collect = true;
+        store.set('pipeline', { pid: p.id, since: Date.now(), n: job.shots.length });
+        const r = window.AndroidBridge.startKling(JSON.stringify(job), JSON.stringify(flowNow()));
+        if (r !== 'ok') { store.set('pipeline', null); dialog('시작하지 못했습니다', r, [['닫기', null]]); }
+      }, 'pri']]);
+    if (miss.length) dialog('사진이 없는 인물이 있습니다', `${miss.join(', ')}의 사진이 없습니다. 인물 탭에서 그록으로 만들거나 첨부하면 얼굴이 일정하게 나옵니다.`, [['취소', null], ['사진 없이 진행', go1, 'pri']]);
+    else go1();
+  });
+}
+function pipelineResume() {
+  const pl = store.get('pipeline', null); if (!pl || !Native.has()) return;
+  const info = kInfo(); if (info && info.running) return;
+  if (!draft || draft.id !== pl.pid) { const pr = projects.find(x => x.id === pl.pid); if (!pr) return store.set('pipeline', null); draft = JSON.parse(JSON.stringify(pr)); dirty = false; stack = [{ v: 'home', p: {} }, { v: 'editor', p: { tab: 'finish' } }]; }
+  else cur().p.tab = 'finish';
+  const got = findClips(draft, pl.since, pl.n, true);
+  if (got >= pl.n) return startAssemble(draft, true);
+  render();
+  dialog(`영상 ${got}/${pl.n}개를 찾았습니다`, '아직 생성 중이거나 내려받기가 멈췄을 수 있습니다.', [['그만두기', () => store.set('pipeline', null)], ['다시 찾기', pipelineResume], [got ? '찾은 것으로 계속' : '직접 고르기', () => { if (got) { store.set('pipeline', null); startAssemble(draft, true); } else A.pickClips(); }, 'pri']]);
+}
+window.onVideosPicked = uris => {
+  if (!draft || !uris || !uris.length) return;
+  const f = finOf(draft); f.clips = f.clips.concat(uris.map(u => ({ uri: u, name: decodeURIComponent(u.split('/').pop()), dur: 0 }))); dirty = true; render();
+};
+function tabFinish(p) {
+  const f = finOf(p), lang = finLang(p), lines = subLines(p, lang), on = Native.has() && window.AndroidBridge.assemble, running = asm && asm.state === 'running';
+  const clipRow = (c, i) => `<div class="row clip"><span class="cthumb">${on && vThumb(c.uri) ? `<img src="${vThumb(c.uri)}" alt="">` : ic('film')}</span><span class="grow"><b>샷 ${i + 1}${p.shots[i] ? ' · ' + beatOf(p, i)[0] : ''}</b><small>${esc(c.name || '')}${c.dur ? ` · ${Math.round(c.dur / 100) / 10}초` : ''}</small></span>
+    <button class="ib sm" data-act="clipMove" data-i="${i}" data-d="-1" aria-label="위로">${ic('back')}</button><button class="ib sm" data-act="clipDel" data-i="${i}" aria-label="빼기">${ic('x')}</button></div>`;
+  return `
+    <div class="card aicard kling"><div class="aih"><span class="glyph" style="--h:350">${ic('bolt')}</span><span class="grow"><b>원클릭 제작</b><small>클링 생성 → 영상 내려받기 → 자막 넣어 합치기 → 업로드 창까지</small></span>${flowNow().verified ? '' : '<span class="tag warn">시험 중</span>'}</div>
+      <button class="btn pri block" data-act="oneClick" ${running ? 'disabled' : ''}>${ic('bolt')}원클릭 제작 시작</button>
+      <p class="hint">중간에 멈추면 아래 ①~④를 하나씩 눌러 이어 할 수 있습니다. 인물 사진을 먼저 넣어 두면 얼굴이 일정하게 나옵니다.</p></div>
+    <div class="sec">${h2('film', `① 영상 클립 ${f.clips.length}/${p.shots.length}`)}
+      <div class="aiacts"><button class="btn sm blue" data-act="findClips">${ic('search')}방금 받은 영상 찾기</button><button class="btn sm" data-act="pickClips">${ic('folder')}직접 고르기</button></div>
+      ${f.clips.length ? `<div class="list">${f.clips.map(clipRow).join('')}</div>` : '<p class="hint">클링에서 내려받은 영상을 찾거나 직접 골라 샷 순서대로 놓으세요. "방금 받은 영상 찾기"는 최근 30분 안에 저장된 영상을 오래된 것부터 가져옵니다.</p>'}</div>
+    <div class="sec">${h2('caption', '② 자막')}
+      ${seg('p_burn', [[1, '자막 넣기'], [0, '자막 없이']], f.burn ? 1 : 0)}
+      ${f.burn ? `<div class="chips">${SUB_LANGS.filter(([id]) => subLines(p, id)).map(([id, n]) => `<button class="chip ${lang === id ? 'on' : ''}" data-act="finSet" data-k="lang" data-v="${id}">${n}</button>`).join('')}</div>
+      ${seg('p_fsize', [[48, '작게'], [58, '보통'], [70, '크게']], f.size)}${seg('p_fpos', [['-0.62', '아래'], ['-0.3', '조금 위'], ['0', '가운데']], String(f.pos))}
+      <p class="hint">${lines ? `샷마다 대사 한 줄이 그 클립 위에 새겨집니다. 예: "${esc((lines.find(Boolean) || '').slice(0, 30))}"` : '이 언어 자막이 없습니다. 자막·문구 탭에서 만드세요.'}</p>` : ''}</div>
+    <div class="sec">${h2('bolt', '③ 완성 영상')}
+      ${running ? `<div class="card asm"><span id="asmTxt">영상 만드는 중… ${asm.progress || 0}%</span><div class="pbar"><i id="asmBar" style="width:${asm.progress || 0}%"></i></div><button class="btn sm" data-act="asmCancel">${ic('x')}멈추기</button></div>`
+        : `<button class="btn blue block" data-act="assemble">${ic('film')}${f.out ? '다시 만들기' : '완성 영상 만들기'}</button>`}
+      ${f.out && !running ? `<div class="card done"><b>${ic('checkc')}완성 영상이 있습니다</b><small>동영상 앱 > ShortDramaMaker 폴더</small><div class="aiacts"><button class="btn sm" data-act="openOut">${ic('play')}열어 보기</button></div></div>` : ''}</div>
+    <div class="sec">${h2('share', '④ 업로드')}
+      <button class="btn pri block" data-act="uploadOut" ${f.out ? '' : 'disabled'}>${ic('share')}유튜브·틱톡·인스타로 보내기</button>
+      <p class="hint">업로드할 앱을 고르면 완성 영상이 그 앱의 업로드 화면으로 넘어가고, 제목·설명·해시태그가 복사됩니다. 붙여넣은 뒤 "AI 생성 콘텐츠" 표시를 켜고 직접 올리세요. 하루 1~2편으로 시작하세요.</p></div>`;
+}
 
 /* ---------- 공통 조각 ---------- */
 let artN = 0;
@@ -785,7 +884,7 @@ V.aiNew = p => {
 };
 
 /* ----- 편집: 대본 / 인물 / 영상 / 자막·업로드 ----- */
-const ETABS = [['script', '대본', 'list'], ['cast', '인물', 'user'], ['video', '영상', 'film'], ['sub', '자막·업로드', 'caption']];
+const ETABS = [['script', '대본', 'list'], ['cast', '인물', 'user'], ['video', '영상', 'film'], ['sub', '자막·문구', 'caption'], ['finish', '완성', 'bolt']];
 function shotCard(p, i, start) {
   const s = p.shots[i], k = sfx(), en = isEn(), b = beatOf(p, i), cls = i === 0 ? 'h' : i === p.shots.length - 1 ? 'c' : '';
   return `<div class="beat ${cls}" data-i="${i}">
@@ -835,7 +934,7 @@ function tabVideo(p) {
   const vt = cur().p.vt || 'shot', half = Math.ceil(p.shots.length / 2), k = sfx(), info = kInfo();
   return `
     <div class="card aicard kling"><div class="aih"><span class="glyph" style="--h:350">${ic('bolt')}</span><span class="grow"><b>클링으로 보내기</b><small>${!Native.has() ? '휴대폰 앱에서 쓸 수 있습니다' : !info || !info.on ? '설정에서 클링 자동 입력을 켜야 합니다' : !info.pkg ? '클링 앱을 찾지 못했습니다' : `${esc(info.label || '클링')} 앱에 사진과 프롬프트를 자동으로 넣습니다`}</small></span>${flowNow().verified ? '' : '<span class="tag warn">시험 중</span>'}</div>
-      <button class="btn pri block" data-act="klingSend">${ic('bolt')}클링으로 보내기</button>
+      <div class="aiacts"><button class="btn sm" data-act="klingSend">${ic('bolt')}클링에 입력만</button><button class="btn sm blue" data-act="goFinish">${ic('bolt')}원클릭 제작</button></div>
       <p class="hint">인물 탭에 첨부한 사진을 샷마다 골라 올리고, 지금 모드(${isEn() ? '해외용 영어' : '국내용 한국어'}) 프롬프트를 입력합니다. 켜는 방법과 순서 업데이트는 설정에 있습니다.</p></div>
     <div class="card guide"><b>${ic('film')}클링으로 영상 만드는 순서</b><ol><li>인물 탭에서 만든 인물 이미지를 클링의 참조 이미지(Elements)로 올립니다. 번호는 인물 순서와 같습니다: ${p.chars.map((c, i) => `${i + 1} = ${esc(cname(c))}`).join(', ')}.</li><li>샷마다 "첫 프레임 프롬프트"로 장면 이미지를 만들면 구도가 고정됩니다. (건너뛰어도 됩니다)</li><li>"클링 영상 프롬프트"를 붙여넣고 길이 5초, 비율 9:16으로 생성합니다.</li><li>6샷을 편집 앱에서 이어 붙이고 자막 탭의 자막 파일을 넣습니다.</li></ol></div>
     <div class="sec"><span class="lab">${ic('sparkle')}영상 스타일</span><div class="chips">${Object.entries(STYLES).map(([id, v]) => `<button class="chip ${(p.style || 'real') === id ? 'on' : ''}" data-act="pstyle" data-v="${id}">${v[0]}</button>`).join('')}</div></div>
@@ -867,7 +966,7 @@ V.editor = () => {
     <textarea class="logline ag" rows="1" data-pf="l${k}" aria-label="한 줄 줄거리" placeholder="${en ? 'One-line logline' : '한 줄 줄거리'}">${esc(p['l' + k])}</textarea>
     ${en ? `<div class="ko top"><span>한국어 제목·줄거리</span><p>${esc(p.tk)} · ${esc(p.lk)}</p></div>` : ''}
     <div class="chips etabs">${ETABS.map(([v, l, i]) => `<button class="chip ${et === v ? 'on' : ''}" data-act="set" data-k="p_tab" data-v="${v}">${ic(i)}${l}</button>`).join('')}</div>
-    ${{ script: tabScript, cast: tabCast, video: tabVideo, sub: tabSub }[et](p)}
+    ${{ script: tabScript, cast: tabCast, video: tabVideo, sub: tabSub, finish: tabFinish }[et](p)}
     <div class="sticky"><button class="btn" data-act="exportOne">${ic('share')}내보내기</button><button class="btn pri" data-act="save">${ic('check')}저장</button></div>` };
 };
 
@@ -1021,6 +1120,9 @@ const A = {
     const k = d.k, v = /^-?\d+$/.test(d.v) ? +d.v : d.v;
     if (k === 'mode') return A.mode({ v });
     if (k === 'theme' || k === 'style') { settings[k] = v; saveSettings(); }
+    else if (k === 'p_burn' && draft) { finOf(draft).burn = !!v; dirty = true; }
+    else if (k === 'p_fsize' && draft) { finOf(draft).size = +v; dirty = true; }
+    else if (k === 'p_fpos' && draft) { finOf(draft).pos = parseFloat(d.v); dirty = true; }
     else if (k.startsWith('p_')) cur().p[k.slice(2)] = v;
     render(k === 'p_tab');
   },
@@ -1076,6 +1178,17 @@ const A = {
   aiClear: () => dialog('API 키를 모두 지울까요?', '이 기기에 저장된 키만 지워집니다.', [['취소', null], ['지우기', () => { settings.aiKeys = ''; settings.aiCheck = []; saveSettings(); render(); toast('키를 지웠습니다'); }, 'pri']]),
   subOut: d => outSheet('자막 파일', toSrt(draft, d.v), fileName(T(draft) + '_' + d.v, 'srt'), 'application/x-subrip'),
   hitsFetch: () => fetchHits(),
+  oneClick: () => oneClick(),
+  goFinish: () => { cur().p.tab = 'finish'; render(true); },
+  findClips: () => { if (needPhone()) return; if (!window.AndroidBridge.hasMediaPerm()) return dialog('동영상 접근을 허용해 주세요', '내려받은 영상을 찾으려면 접근 권한이 필요합니다.', [['취소', null], ['허용하기', () => window.AndroidBridge.requestMediaPerm(), 'pri']]); const pl = store.get('pipeline', null); const n = findClips(draft, pl && pl.pid === draft.id ? pl.since : Date.now() - 30 * 60e3, draft.shots.length, false); if (n) toast(`영상 ${n}개를 가져왔습니다`); },
+  pickClips: () => { if (!needPhone()) window.AndroidBridge.pickVideos(); },
+  clipMove: d => { const a = finOf(draft).clips, i = +d.i; if (i > 0) { a.splice(i - 1, 0, a.splice(i, 1)[0]); dirty = true; render(); } },
+  clipDel: d => { finOf(draft).clips.splice(+d.i, 1); dirty = true; render(); },
+  finSet: d => { finOf(draft)[d.k] = d.v; dirty = true; render(); },
+  assemble: () => startAssemble(draft, false),
+  asmCancel: () => window.AndroidBridge.cancelAssemble(),
+  openOut: () => window.AndroidBridge.openVideo(finOf(draft).out),
+  uploadOut: () => { if (!needPhone()) uploadOut(draft); },
   klingSend: () => klingSend(),
   openAcc: () => { if (Native.has()) window.AndroidBridge.openAccessibility(); else toast('휴대폰 앱에서만 됩니다'); },
   openAppInfo: () => { if (Native.has()) window.AndroidBridge.openAppInfo(); else toast('휴대폰 앱에서만 됩니다'); },

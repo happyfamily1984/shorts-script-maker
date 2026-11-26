@@ -1,9 +1,9 @@
 /* 자동 입력 기본 순서. 저장소 kling/flow.json, grok/flow.json 과 같은 내용 */
 'use strict';
 const KLING_FLOW_DEFAULT = {
- "version": "0.2-partial",
+ "version": "0.3-partial",
  "verified": false,
- "note": "홈 '창작 시작'과 만들기 화면(+, 프롬프트 칸, 모드 '이미지 생성·4.0', '생성')은 사용자 스크린샷으로 확인함. 모드 메뉴, 사진 고르기 화면, 생성 뒤 화면은 아직 추측.",
+ "note": "홈 '창작 시작'과 만들기 화면(+, 프롬프트 칸, 모드 '이미지 생성·4.0', '생성')은 사용자 스크린샷으로 확인함. 모드 메뉴, 사진 고르기 화면, 생성 뒤 화면은 아직 추측. 생성 뒤 영상 내려받기(collect)는 화면을 보지 않은 추측.",
  "package": "",
  "after": 900,
  "start": [
@@ -182,7 +182,116 @@ const KLING_FLOW_DEFAULT = {
    "ms": 1500
   }
  ],
- "end": []
+ "end": [],
+ "collectStart": [
+  {
+   "do": "wait",
+   "ms": 2000
+  },
+  {
+   "do": "click",
+   "say": "애셋 화면 열기",
+   "find": {
+    "any": [
+     "=애셋",
+     "=Assets",
+     "=내 작품",
+     "=My Creations"
+    ]
+   },
+   "timeout": 8000
+  },
+  {
+   "do": "wait",
+   "ms": 2500
+  },
+  {
+   "do": "waitGone",
+   "say": "영상이 모두 만들어지길 기다리는 중 (몇 분 걸립니다)",
+   "find": {
+    "any": [
+     "생성 중",
+     "대기 중",
+     "Generating",
+     "Queued",
+     "Processing"
+    ]
+   },
+   "timeout": 1200000
+  }
+ ],
+ "collect": [
+  {
+   "do": "click",
+   "say": "${shot}번째 영상 열기",
+   "find": {
+    "cls": "ImageView",
+    "minW": 120,
+    "area": [
+     0,
+     0.12,
+     1,
+     0.9
+    ],
+    "index": "${ri}"
+   },
+   "timeout": 8000
+  },
+  {
+   "do": "wait",
+   "ms": 2000
+  },
+  {
+   "do": "click",
+   "say": "${shot}번째 영상 내려받기",
+   "find": {
+    "any": [
+     "다운로드",
+     "저장",
+     "Download",
+     "Save"
+    ]
+   },
+   "timeout": 8000
+  },
+  {
+   "do": "wait",
+   "ms": 4000
+  },
+  {
+   "do": "click",
+   "say": "워터마크 없이 받기 고르기",
+   "find": {
+    "any": [
+     "워터마크 없음",
+     "워터마크 없이",
+     "Without watermark",
+     "No watermark"
+    ]
+   },
+   "timeout": 2500,
+   "optional": true
+  },
+  {
+   "do": "wait",
+   "ms": 3000
+  },
+  {
+   "do": "back",
+   "say": "목록으로",
+   "optional": true
+  },
+  {
+   "do": "wait",
+   "ms": 1500
+  }
+ ],
+ "collectEnd": [
+  {
+   "do": "returnApp",
+   "say": "숏드라마 메이커로 돌아가 영상 합치기"
+  }
+ ]
 };
 const GROK_FLOW_DEFAULT = {
  "version": "0.1-guess",

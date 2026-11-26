@@ -471,3 +471,13 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display
 .kling{background:linear-gradient(135deg,var(--surface),var(--red-soft))}
 .btn.grok{background:linear-gradient(120deg,#1d1f27,#3a3f52);color:#fff;border-color:transparent}
 .btn.grok svg.i{color:#FFC53D}
+.clip .cthumb{flex:none;width:44px;height:64px;border-radius:10px;overflow:hidden;background:var(--surface2);display:grid;place-items:center;color:var(--muted)}
+.clip .cthumb img{width:100%;height:100%;object-fit:cover}
+.clip .ib.sm:first-of-type svg.i{transform:rotate(90deg)}
+.asm{display:flex;flex-direction:column;gap:10px}
+.pbar{height:10px;border-radius:99px;background:var(--line);overflow:hidden}
+.pbar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--blue2));transition:width .4s}
+.done{display:flex;flex-direction:column;gap:6px}
+.done b{display:flex;gap:7px;align-items:center;color:var(--ok)}
+.done small{color:var(--muted)}
+.btn:disabled{opacity:.45;pointer-events:none}
