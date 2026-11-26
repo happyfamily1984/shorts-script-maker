@@ -1,0 +1,954 @@
+[
+ [
+  "발표 자료를 훔친 팀장",
+  "The Team Lead Who Stole His Code",
+  "신입 개발자의 코드를 자기 성과로 발표한 팀장. 화면에 뜬 커밋 기록이 모든 걸 뒤집는다.",
+  "A team lead presents a junior developer's code as her own, until the commit history on screen tells the truth.",
+  [
+   [
+    "H",
+    "태규",
+    "Owen Barrett",
+    "30대 초반 남성, 회색 후드티, 짧은 검은 머리, 무표정한 눈",
+    "man in his early 30s, gray hoodie, short black hair, blank calm eyes"
+   ],
+   [
+    "V",
+    "은영",
+    "Delia Vance",
+    "30대 후반 여성, 검은 정장 재킷, 짧은 단발, 날카로운 눈매",
+    "woman in her late 30s, black blazer, short bob, sharp cold eyes"
+   ],
+   [
+    "A",
+    "지희",
+    "Nora Whitfield",
+    "40대 여성, 베이지 트렌치코트, 안경, 차분한 표정",
+    "woman in her 40s, beige trench coat, glasses, calm expression"
+   ],
+   [
+    "X",
+    "문 본부장",
+    "Mr. Hale",
+    "50대 남성, 남색 정장, 은발, 굳은 표정",
+    "man in his 50s, navy suit, silver hair, stiff face"
+   ]
+  ],
+  [
+   [
+    "회사 회의실",
+    "company meeting room",
+    "은영이 스크린에 태규의 자료를 자기 이름으로 띄운다",
+    "Delia puts Owen's slides on screen under her own name",
+    1,
+    "한남이 만든 코드가 뭐 대단하다고.",
+    "So what if a loser wrote this code?",
+    "cz"
+   ],
+   [
+    "회사 회의실",
+    "company meeting room",
+    "은영이 태규의 노트북을 탁자 끝으로 민다",
+    "Delia shoves his laptop to the edge of the table",
+    1,
+    "여기서 나가. 남자 개발자는 필요 없어.",
+    "Get out. We don't need male developers.",
+    "ms"
+   ],
+   [
+    "회사 회의실",
+    "company meeting room",
+    "태규가 조용히 휴대폰을 열어 커밋 기록을 확인한다",
+    "Owen calmly opens his phone and checks the commit log",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "회사 회의실",
+    "company meeting room",
+    "지희가 문을 열고 들어와 스크린에 기록을 띄운다",
+    "Nora walks in and puts the commit log on screen",
+    2,
+    "이 코드 전부 태규 님이 올린 겁니다.",
+    "Every line of this code was uploaded by Owen.",
+    "low"
+   ],
+   [
+    "회사 회의실",
+    "company meeting room",
+    "은영의 얼굴이 하얗게 질리고 서류가 바닥에 떨어진다",
+    "Delia's face drains pale as her papers hit the floor",
+    0,
+    "팀장 자리는 실력이 앉는 자리예요.",
+    "That seat belongs to whoever earned it.",
+    "cu"
+   ],
+   [
+    "회사 복도",
+    "company hallway",
+    "문 본부장이 다가와 태규에게 고개를 숙인다",
+    "Mr. Hale approaches and bows his head to Owen",
+    3,
+    "대표님, 주주총회 준비됐습니다.",
+    "Mr. Barrett, the shareholders are waiting.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "남자라서 탈락시킨 인사팀장",
+  "The HR Head Who Rejected Him",
+  "면접장에서 성별만 보고 서류를 찢은 인사팀장. 지원자는 회사 최대 고객사의 심사역이었다.",
+  "An HR head tears up a male applicant's resume, not knowing he audits the company's biggest client.",
+  [
+   [
+    "H",
+    "승원",
+    "Miles Alden",
+    "30대 초반 남성, 흰 셔츠에 회색 재킷, 단정한 머리, 담담한 눈",
+    "man in his early 30s, white shirt, gray jacket, neat hair, steady eyes"
+   ],
+   [
+    "V",
+    "다영",
+    "Priscilla Vane",
+    "40대 여성, 보라색 블라우스, 올림머리, 얇은 입술",
+    "woman in her 40s, purple blouse, hair in a bun, thin lips"
+   ],
+   [
+    "A",
+    "혜림",
+    "Iris Calder",
+    "30대 후반 여성, 회색 정장, 긴 생머리, 온화한 눈",
+    "woman in her late 30s, gray suit, long straight hair, gentle eyes"
+   ]
+  ],
+  [
+   [
+    "면접장",
+    "interview room",
+    "다영이 승원의 이력서를 반으로 찢는다",
+    "Priscilla rips the applicant's resume in half",
+    1,
+    "남자 면접자는 시간 낭비예요.",
+    "Male applicants are a waste of my time.",
+    "cz"
+   ],
+   [
+    "면접장",
+    "interview room",
+    "다영이 찢은 서류를 승원 앞에 던진다",
+    "Priscilla tosses the torn pages onto his desk",
+    1,
+    "우린 감성 있는 사람을 뽑아요.",
+    "We hire people with real sensitivity.",
+    "ms"
+   ],
+   [
+    "면접장",
+    "interview room",
+    "혜림이 서류철에서 명함을 꺼내 승원의 이름과 맞춰 본다",
+    "Iris pulls a business card and matches it to his name",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "면접장",
+    "interview room",
+    "혜림이 승원에게 명함을 건네며 자리에서 일어난다",
+    "Iris hands him the card and rises from her chair",
+    2,
+    "이분은 저희 최대 고객사 심사역입니다.",
+    "He's the auditor for our biggest client.",
+    "low"
+   ],
+   [
+    "면접장",
+    "interview room",
+    "다영이 의자를 붙잡고 휘청인다",
+    "Priscilla grabs the chair and staggers",
+    0,
+    "면접은 제가 볼게요. 자격이 있으니까.",
+    "I'll run this interview. I'm qualified.",
+    "cu"
+   ],
+   [
+    "면접장",
+    "interview room",
+    "혜림이 승원에게 조용히 묻는다",
+    "Iris leans in and asks him quietly",
+    2,
+    "그런데 왜 지원하셨어요?",
+    "So why did you apply here at all?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "소개팅에서 계산서를 던진 여자",
+  "She Insulted the Chef on a Blind Date",
+  "소개팅 상대가 비싼 음식만 시키고 계산을 떠넘긴다. 그 남자는 이 식당 주인이었다.",
+  "A blind date orders the priciest dishes, calls him a loser, and expects him to pay. He owns the restaurant.",
+  [
+   [
+    "H",
+    "현도",
+    "Grant Ellery",
+    "30대 중반 남성, 검은 셔츠에 앞치마, 짧은 머리, 부드러운 눈",
+    "man in his mid 30s, black shirt, apron, short hair, soft eyes"
+   ],
+   [
+    "V",
+    "유란",
+    "Tessa Boone",
+    "20대 후반 여성, 분홍 원피스, 긴 웨이브 머리, 새침한 표정",
+    "woman in her late 20s, pink dress, long wavy hair, prim expression"
+   ],
+   [
+    "A",
+    "소림",
+    "Maeve Hollis",
+    "20대 후반 여성, 베이지 니트, 어깨 길이 머리, 미안한 표정",
+    "woman in her late 20s, beige knit, shoulder-length hair, apologetic face"
+   ],
+   [
+    "X",
+    "주방장",
+    "Daniel Frost",
+    "40대 남성, 흰 조리복, 짧은 머리, 무뚝뚝한 얼굴",
+    "man in his 40s, white chef coat, short hair, blunt face"
+   ]
+  ],
+  [
+   [
+    "레스토랑",
+    "restaurant",
+    "유란이 메뉴를 덮으며 현도를 위아래로 훑는다",
+    "Tessa closes the menu and looks him up and down",
+    1,
+    "한남이라던데, 얼굴은 그럭저럭이네.",
+    "You're one of those guys. Your face is passable.",
+    "cz"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "유란이 가장 비싼 코스만 골라 주문한다",
+    "Tessa orders only the most expensive courses",
+    1,
+    "계산은 남자가 하는 거죠?",
+    "You're paying, right? That's the man's job.",
+    "ms"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "현도가 조용히 주방을 향해 손짓한다",
+    "Grant quietly signals toward the kitchen",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "주방장이 나와 현도에게 앞치마를 건넨다",
+    "The chef steps out and hands Grant an apron",
+    3,
+    "셰프님, 이 테이블은 직접 하시겠습니까?",
+    "Chef, are you taking this table yourself?",
+    "low"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "유란의 얼굴이 굳고 소림이 자리에서 일어난다",
+    "Tessa freezes as Maeve pushes back her chair",
+    0,
+    "이 집은 제가 운영합니다. 계산은 각자 하시죠.",
+    "I run this place. Let's split the bill.",
+    "cu"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "소림이 현도에게 다가와 낮게 속삭인다",
+    "Maeve steps closer and whispers to him",
+    2,
+    "저, 요리 배우고 싶어요.",
+    "I'd really love to learn to cook.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "조별과제 이름을 지운 조장",
+  "The Team Leader Who Erased His Name",
+  "발표 전날 조장이 남자 조원의 이름을 지운다. 원본 파일 기록이 강의실 스크린에 떠오른다.",
+  "A group leader erases the only male member's name from the project, until the file history appears on screen.",
+  [
+   [
+    "H",
+    "창현",
+    "Toby Ellison",
+    "20대 초반 남성, 회색 후드집업, 검은 뿔테 안경, 조용한 눈빛",
+    "man in his early 20s, gray hoodie, black glasses, quiet eyes"
+   ],
+   [
+    "V",
+    "세연",
+    "Blair Sloane",
+    "20대 초반 여성, 크림색 니트, 긴 생머리, 도도한 표정",
+    "woman in her early 20s, cream knit, long straight hair, haughty face"
+   ],
+   [
+    "A",
+    "은아",
+    "Lucy Prescott",
+    "20대 초반 여성, 청자켓, 묶은 머리, 겁먹은 얼굴",
+    "woman in her early 20s, denim jacket, tied hair, nervous face"
+   ],
+   [
+    "X",
+    "차 교수",
+    "Professor Dunn",
+    "50대 남성, 회색 정장, 짧은 백발, 무거운 표정",
+    "man in his 50s, gray suit, short white hair, heavy face"
+   ]
+  ],
+  [
+   [
+    "강의실",
+    "lecture hall",
+    "세연이 발표 자료에서 창현의 이름을 지운다",
+    "Blair deletes Toby's name from the slides",
+    1,
+    "남자는 발표 못 하잖아요.",
+    "Guys like you can't present. Everyone knows.",
+    "cz"
+   ],
+   [
+    "강의실",
+    "lecture hall",
+    "세연이 창현의 노트북을 닫고 앞자리로 걸어간다",
+    "Blair snaps his laptop shut and walks to the front",
+    1,
+    "이름 없는 게 편할 거야.",
+    "It's cleaner with your name off it.",
+    "ms"
+   ],
+   [
+    "강의실",
+    "lecture hall",
+    "창현이 조용히 노트북을 다시 열어 저장 기록을 띄운다",
+    "Toby reopens the laptop and shows the file history",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "강의실",
+    "lecture hall",
+    "차 교수가 스크린을 가리키며 창현을 부른다",
+    "Professor Dunn points at the screen and calls his name",
+    3,
+    "작성 기록 342건, 전부 창현 학생이네요.",
+    "Three hundred edits, every one by Mr. Ellison.",
+    "low"
+   ],
+   [
+    "강의실",
+    "lecture hall",
+    "세연이 발표 자료를 떨어뜨리고 은아가 입을 가린다",
+    "Blair drops the slides as Lucy covers her mouth",
+    0,
+    "이름은 지워도 기록은 안 지워집니다.",
+    "You can erase a name, not the record.",
+    "cu"
+   ],
+   [
+    "강의실",
+    "lecture hall",
+    "차 교수가 창현에게 봉투를 건넨다",
+    "Professor Dunn hands Toby a sealed envelope",
+    3,
+    "연구실로 와요. 논문 제안서 봤습니다.",
+    "Come by my office. I read your paper.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "예식장 사장을 무시한 신부",
+  "The Bride Who Mocked the Groom",
+  "결혼 준비 자리에서 신부가 신랑을 비웃는다. 신랑은 그 예식장의 주인이었다.",
+  "At a wedding planning meeting, a bride calls her groom a loser, not knowing he owns the venue.",
+  [
+   [
+    "H",
+    "진웅",
+    "Desmond Clarke",
+    "30대 초반 남성, 밝은 회색 정장, 짧은 머리, 차분한 표정",
+    "man in his early 30s, light gray suit, short hair, composed face"
+   ],
+   [
+    "V",
+    "나림",
+    "Camille Frost",
+    "20대 후반 여성, 흰 원피스, 긴 생머리, 날카로운 눈",
+    "woman in her late 20s, white dress, long straight hair, sharp eyes"
+   ],
+   [
+    "A",
+    "채림",
+    "Rosa Lindqvist",
+    "30대 중반 여성, 검은 정장, 묶은 머리, 실무적인 태도",
+    "woman in her mid 30s, black suit, tied hair, businesslike manner"
+   ],
+   [
+    "X",
+    "다음 신부",
+    "Next Bride",
+    "20대 후반 여성, 하늘색 원피스, 단발, 밝은 표정",
+    "woman in her late 20s, sky blue dress, bob cut, bright face"
+   ]
+  ],
+  [
+   [
+    "예식장 상담실",
+    "wedding hall office",
+    "나림이 진웅의 의자를 밀어내고 채림 앞에 앉는다",
+    "Camille pushes his chair aside and sits across from Rosa",
+    1,
+    "한남 의견은 듣지 않아요.",
+    "I don't need a loser's opinion.",
+    "cz"
+   ],
+   [
+    "예식장 상담실",
+    "wedding hall office",
+    "나림이 하객 명단에서 진웅의 가족 칸을 지운다",
+    "Camille crosses his family off the guest list",
+    1,
+    "당신 쪽 하객은 다 빼요.",
+    "Cut your side of the guest list.",
+    "ms"
+   ],
+   [
+    "예식장 상담실",
+    "wedding hall office",
+    "진웅이 조용히 채림에게 고개를 끄덕인다",
+    "Desmond gives Rosa a small silent nod",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "예식장 상담실",
+    "wedding hall office",
+    "채림이 계약서를 진웅 앞으로 돌려놓는다",
+    "Rosa slides the contract back in front of him",
+    2,
+    "대표님, 예약 취소 처리하겠습니다.",
+    "Mr. Clarke, I'll cancel the booking now.",
+    "low"
+   ],
+   [
+    "예식장 상담실",
+    "wedding hall office",
+    "나림이 계약서를 집어 들고 손을 떤다",
+    "Camille picks up the contract with trembling hands",
+    0,
+    "예식장도, 신부도 다시 고르세요.",
+    "You can find another venue. And another groom.",
+    "cu"
+   ],
+   [
+    "예식장 로비",
+    "wedding hall lobby",
+    "하늘색 원피스 여성이 진웅 앞에 서서 웃는다",
+    "A woman in a sky blue dress steps up and smiles at him",
+    3,
+    "대표님, 다음 상담은 제 차례예요.",
+    "Mr. Clarke, my appointment is next.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "상견례에서 사업을 무시한 여자",
+  "She Insulted His Mother at Dinner",
+  "상견례 자리에서 예비 신부가 신랑 어머니의 식당을 비웃는다. 그 건물은 신랑 명의였다.",
+  "A bride-to-be mocks her future mother-in-law's small restaurant, unaware the building belongs to the groom.",
+  [
+   [
+    "H",
+    "인표",
+    "Roland Pike",
+    "30대 중반 남성, 남색 니트, 짧은 머리, 온화한 눈빛",
+    "man in his mid 30s, navy knit, short hair, gentle eyes"
+   ],
+   [
+    "V",
+    "유연",
+    "Helena Voss",
+    "20대 후반 여성, 검은 원피스, 긴 생머리, 차가운 미소",
+    "woman in her late 20s, black dress, long straight hair, cold smile"
+   ],
+   [
+    "A",
+    "보연",
+    "Grace Nolan",
+    "30대 후반 여성, 회색 정장, 검은 안경, 단호한 눈",
+    "woman in her late 30s, gray suit, black glasses, resolute eyes"
+   ],
+   [
+    "X",
+    "유연의 아버지",
+    "Mr. Voss",
+    "60대 남성, 갈색 정장, 흰 머리, 굳은 얼굴",
+    "man in his 60s, brown suit, white hair, stiff face"
+   ]
+  ],
+  [
+   [
+    "한정식 식당",
+    "Korean restaurant",
+    "유연이 수저를 내려놓고 인표의 어머니 쪽을 본다",
+    "Helena sets down her spoon and looks at his mother",
+    1,
+    "이런 동네 식당이 우리 집안과 어울립니까?",
+    "Does this tiny restaurant really match my family?",
+    "cz"
+   ],
+   [
+    "한정식 식당",
+    "Korean restaurant",
+    "유연이 인표의 어머니 앞에 냅킨을 던진다",
+    "Helena tosses a napkin in front of his mother",
+    1,
+    "아드님이 월급쟁이라던데, 한남이죠?",
+    "Your son's just a salaried man, right? A loser.",
+    "ms"
+   ],
+   [
+    "한정식 식당",
+    "Korean restaurant",
+    "보연이 조용히 서류 봉투를 연다",
+    "Grace quietly opens a document envelope",
+    0,
+    "누나, 됐어요. 그냥 나가죠.",
+    "Sis, let it go. Let's just leave.",
+    "cu"
+   ],
+   [
+    "한정식 식당",
+    "Korean restaurant",
+    "보연이 건물 등기부를 식탁 위에 펼친다",
+    "Grace spreads the building registry across the table",
+    2,
+    "이 건물, 우리 어머니 명의예요.",
+    "This building is in our mother's name.",
+    "low"
+   ],
+   [
+    "한정식 식당",
+    "Korean restaurant",
+    "유연의 아버지가 딸의 팔을 잡아 끌어낸다",
+    "Her father grabs his daughter's arm and pulls her up",
+    3,
+    "혼사는 없던 걸로 하겠습니다.",
+    "We'll call off the wedding.",
+    "cu"
+   ],
+   [
+    "한정식 식당",
+    "Korean restaurant",
+    "보연이 인표에게 낮게 말한다",
+    "Grace leans in and speaks softly to him",
+    2,
+    "저 여자, 회사 감사팀에도 문제 있어요.",
+    "That woman has a problem at her firm too.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "학부모 총회에서 쫓겨난 아빠",
+  "The Dad They Tried to Remove",
+  "학부모 총회에서 아빠라는 이유로 퇴장당한다. 그 아빠는 이 교육재단의 감사였다.",
+  "A father is thrown out of a parents' meeting for being a man. He audits the education foundation.",
+  [
+   [
+    "H",
+    "대훈",
+    "Colin Ashby",
+    "30대 후반 남성, 베이지 셔츠, 얇은 안경, 얌전한 인상",
+    "man in his late 30s, beige shirt, thin glasses, mild face"
+   ],
+   [
+    "V",
+    "민영",
+    "Wanda Kessler",
+    "30대 후반 여성, 분홍 트위드 재킷, 짧은 단발, 날 선 말투",
+    "woman in her late 30s, pink tweed jacket, short bob, cutting tone"
+   ],
+   [
+    "A",
+    "수란",
+    "Harriet Doyle",
+    "40대 후반 여성, 남색 원피스, 묶은 머리, 온화한 미소",
+    "woman in her late 40s, navy dress, tied hair, warm smile"
+   ]
+  ],
+  [
+   [
+    "학부모 총회",
+    "parents meeting",
+    "민영이 대훈의 명찰을 떼어 책상에 놓는다",
+    "Wanda peels off his name tag and sets it down",
+    1,
+    "남자 학부모는 조용히 나가 주세요.",
+    "Male parents, please step outside.",
+    "cz"
+   ],
+   [
+    "학부모 총회",
+    "parents meeting",
+    "민영이 대훈의 의자를 뒤로 밀어낸다",
+    "Wanda shoves his chair back from the table",
+    1,
+    "남자가 육아를 안다고요?",
+    "What would a man know about raising kids?",
+    "ms"
+   ],
+   [
+    "학부모 총회",
+    "parents meeting",
+    "대훈이 조용히 명함을 꺼내 탁자에 세운다",
+    "Colin quietly stands a business card on the table",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "학부모 총회",
+    "parents meeting",
+    "수란 원장이 명함을 집어 들고 일어난다",
+    "Director Doyle picks up the card and stands",
+    2,
+    "이분은 저희 재단 감사님입니다.",
+    "He's the auditor of our foundation.",
+    "low"
+   ],
+   [
+    "학부모 총회",
+    "parents meeting",
+    "민영이 명찰을 떨어뜨리고 뒷걸음친다",
+    "Wanda drops the name tag and steps back",
+    0,
+    "학부모 회장도 다시 뽑아야겠네요.",
+    "Maybe we should re-elect the chair too.",
+    "cu"
+   ],
+   [
+    "학부모 총회",
+    "parents meeting",
+    "수란 원장이 대훈에게 서류를 건넨다",
+    "Director Doyle hands him a thick file",
+    2,
+    "감사님, 이번 감사는 깊게 봐 주세요.",
+    "Mr. Ashby, please look into this one closely.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "거짓 신고로 내쫓은 트레이너",
+  "The Trainer Who Framed the Loser",
+  "트레이너가 남자 회원에게 거짓 신고를 한다. 헬스장 카메라가 모든 걸 되돌려 놓는다.",
+  "A trainer brands a male member a creep and files a false report, until the gym camera shows the truth.",
+  [
+   [
+    "H",
+    "승한",
+    "Gavin Pryce",
+    "30대 초반 남성, 검은 반팔 티셔츠, 짧은 머리, 무뚝뚝한 얼굴",
+    "man in his early 30s, black t-shirt, short hair, blunt face"
+   ],
+   [
+    "V",
+    "희연",
+    "Kendra Boyd",
+    "20대 후반 여성, 형광색 레깅스, 높이 묶은 머리, 도발적인 눈",
+    "woman in her late 20s, neon leggings, high ponytail, bold eyes"
+   ],
+   [
+    "A",
+    "예은",
+    "Ivy Sandoval",
+    "30대 여성, 회색 후드티, 짧은 머리, 차분한 인상",
+    "woman in her 30s, gray hoodie, short hair, calm bearing"
+   ],
+   [
+    "X",
+    "우혁 관장",
+    "Mr. Pyle",
+    "40대 남성, 검은 운동복, 삭발, 근엄한 표정",
+    "man in his 40s, black tracksuit, shaved head, stern face"
+   ]
+  ],
+  [
+   [
+    "헬스장",
+    "gym",
+    "희연이 승한의 회원권을 바닥에 던진다",
+    "Kendra throws his membership card on the floor",
+    1,
+    "찐따가 여기서 뭘 해요?",
+    "What's a loser like you doing here?",
+    "cz"
+   ],
+   [
+    "헬스장",
+    "gym",
+    "희연이 승한의 가방을 발로 밀어낸다",
+    "Kendra kicks his gym bag out of the way",
+    1,
+    "신고했어요. 당신 나가요.",
+    "I filed a report. You're out.",
+    "ms"
+   ],
+   [
+    "헬스장",
+    "gym",
+    "승한이 조용히 천장의 카메라를 올려다본다",
+    "Gavin quietly looks up at the ceiling camera",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "헬스장 카운터",
+    "gym counter",
+    "예은이 카운터 화면을 돌려 CCTV를 재생한다",
+    "Ivy turns the screen around and plays the footage",
+    2,
+    "이 영상 보세요. 돈 낸 사람이 회원님이에요.",
+    "Watch. He's the one who paid.",
+    "low"
+   ],
+   [
+    "헬스장 카운터",
+    "gym counter",
+    "희연이 카운터를 붙잡고 고개를 떨군다",
+    "Kendra grips the counter and lowers her head",
+    0,
+    "환불은 제가 직접 받으러 오죠.",
+    "I'll come collect my refund myself.",
+    "cu"
+   ],
+   [
+    "헬스장",
+    "gym",
+    "우혁 관장이 승한에게 조용히 묻는다",
+    "The gym owner asks him quietly",
+    3,
+    "선수 복귀 생각 없으세요?",
+    "Ever think about competing again?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "정모에서 몰아낸 운영진",
+  "The Moderator Who Destroyed Him",
+  "동호회 정모에서 캡처 한 장으로 몰아낸다. 그 캡처는 조작이었고, 그는 이 모임을 만든 사람이었다.",
+  "A club moderator uses a fake screenshot to expel a member, who happens to have built the platform.",
+  [
+   [
+    "H",
+    "태임",
+    "Simon Radley",
+    "30대 중반 남성, 카키 재킷, 검은 안경, 차분한 눈",
+    "man in his mid 30s, khaki jacket, black glasses, calm eyes"
+   ],
+   [
+    "V",
+    "혜빈",
+    "Fiona Marsh",
+    "20대 후반 여성, 흰 셔츠, 긴 생머리, 비웃는 입가",
+    "woman in her late 20s, white shirt, long straight hair, smirking"
+   ],
+   [
+    "A",
+    "나솔",
+    "Chloe Duval",
+    "20대 후반 여성, 노란 카디건, 단발, 조심스러운 눈",
+    "woman in her late 20s, yellow cardigan, bob cut, careful eyes"
+   ]
+  ],
+  [
+   [
+    "동네 카페",
+    "local cafe",
+    "혜빈이 휴대폰을 들어 단톡방 캡처를 보여준다",
+    "Fiona holds up a phone showing a captured chat",
+    1,
+    "이 발언, 한남충 그 자체죠.",
+    "This message? Total incel energy.",
+    "cz"
+   ],
+   [
+    "동네 카페",
+    "local cafe",
+    "혜빈이 태임의 이름 옆 강퇴 버튼을 누른다",
+    "Fiona taps the remove button beside his name",
+    1,
+    "오늘부로 강퇴입니다.",
+    "You're out of the group as of today.",
+    "ms"
+   ],
+   [
+    "동네 카페",
+    "local cafe",
+    "태임이 조용히 노트북을 열어 관리자 화면을 띄운다",
+    "Simon opens his laptop and shows the admin panel",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "동네 카페",
+    "local cafe",
+    "나솔이 화면을 들여다보며 자리에서 일어난다",
+    "Chloe leans in at the screen and stands up",
+    2,
+    "이 캡처, 원본엔 없는 문장이에요.",
+    "That line isn't in the original post.",
+    "low"
+   ],
+   [
+    "동네 카페",
+    "local cafe",
+    "혜빈의 손에서 휴대폰이 미끄러진다",
+    "The phone slips out of Fiona's hand",
+    0,
+    "이 모임, 제가 만든 겁니다. 운영진부터 정리하죠.",
+    "I built this group. Time to clean house.",
+    "cu"
+   ],
+   [
+    "동네 카페",
+    "local cafe",
+    "나솔이 태임에게 조용히 말한다",
+    "Chloe speaks to him in a low voice",
+    2,
+    "그런데 왜 계속 숨어 계셨어요?",
+    "So why did you keep hiding?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "생방송에서 편집된 남자",
+  "The Man They Edited Out",
+  "생방송 토론에서 발언을 조작당해 몰린다. 원본 타임코드가 전국에 공개된다.",
+  "A panelist twists his words on live TV to brand him a bigot. The raw footage airs a minute later.",
+  [
+   [
+    "H",
+    "시환",
+    "Nolan Draper",
+    "30대 후반 남성, 진회색 정장, 짧은 머리, 단단한 표정",
+    "man in his late 30s, dark gray suit, short hair, firm face"
+   ],
+   [
+    "V",
+    "채연",
+    "Bianca Thorne",
+    "30대 후반 여성, 빨간 재킷, 긴 생머리, 비웃는 입가",
+    "woman in her late 30s, red jacket, long straight hair, smirking"
+   ],
+   [
+    "A",
+    "주영",
+    "Dana Whitmore",
+    "40대 여성, 검은 블라우스, 헤드셋, 침착한 진행자",
+    "woman in her 40s, black blouse, headset, composed host"
+   ]
+  ],
+  [
+   [
+    "방송 스튜디오",
+    "TV studio",
+    "채연이 시환의 발언 화면을 가리키며 웃는다",
+    "Bianca points at his clip on the wall screen and laughs",
+    1,
+    "이 발언 보세요. 한남 그대로죠.",
+    "Look at this clip. Typical man-child.",
+    "cz"
+   ],
+   [
+    "방송 스튜디오",
+    "TV studio",
+    "채연이 시환 앞으로 대본을 밀어 던진다",
+    "Bianca shoves her script across his desk",
+    1,
+    "이런 사람이 토론에 왜 나와요?",
+    "Why is a guy like this even on air?",
+    "ms"
+   ],
+   [
+    "방송 스튜디오",
+    "TV studio",
+    "주영이 조용히 손을 들어 감독에게 신호를 보낸다",
+    "Dana raises a hand and signals the director",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "방송 스튜디오",
+    "TV studio",
+    "스튜디오 화면에 원본 타임코드 영상이 뜬다",
+    "The raw timecoded footage appears on the studio screen",
+    2,
+    "방금 발언, 앞뒤가 잘려 있었습니다.",
+    "That clip was cut. Here's what he said.",
+    "low"
+   ],
+   [
+    "방송 스튜디오",
+    "TV studio",
+    "채연이 헤드셋을 벗어 책상에 놓는다",
+    "Bianca takes off her headset and sets it down",
+    0,
+    "편집으로 사람을 만들지 마세요.",
+    "You don't get to edit people.",
+    "cu"
+   ],
+   [
+    "방송 스튜디오",
+    "TV studio",
+    "주영이 시환에게 조용히 묻는다",
+    "Dana leans over and asks him quietly",
+    2,
+    "다음 주 진행자 자리, 관심 있으세요?",
+    "Interested in hosting next week?",
+    "pi"
+   ]
+  ]
+ ]
+]

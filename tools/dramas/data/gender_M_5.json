@@ -1,0 +1,982 @@
+[
+ [
+  "남자 의사를 거부한 환자",
+  "The Patient Who Refused the Dentist",
+  "남자 의사라며 진료를 거부한 환자. 그 의사는 이 치과의 원장이었다.",
+  "A patient refuses treatment from a male dentist and demands the owner, who is the man in front of her.",
+  [
+   [
+    "H",
+    "은석",
+    "Dexter Coyle",
+    "30대 중반 남성, 흰 진료복, 짧은 머리, 차분한 눈",
+    "man in his mid 30s, white clinical coat, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "윤진",
+    "Blair Combs",
+    "30대 여성, 회색 원피스, 긴 생머리, 날선 눈썹",
+    "woman in her 30s, gray dress, long straight hair, sharp brows"
+   ],
+   [
+    "A",
+    "나예",
+    "Lucy Standish",
+    "20대 후반 여성, 하늘색 위생복, 묶은 머리, 밝은 눈",
+    "woman in her late 20s, light blue scrubs, tied hair, bright eyes"
+   ],
+   [
+    "X",
+    "대학병원 교수",
+    "Professor Hale",
+    "50대 남성, 흰 가운, 은발, 온화한 얼굴",
+    "man in his 50s, white coat, silver hair, warm face"
+   ]
+  ],
+  [
+   [
+    "치과",
+    "dental clinic",
+    "윤진이 진료 의자에서 일어나 장갑을 벗어 던진다",
+    "Blair gets up from the chair and flings off the gloves",
+    1,
+    "남자 의사한테 입을 맡겨?",
+    "A male dentist? In my mouth?",
+    "cz"
+   ],
+   [
+    "치과",
+    "dental clinic",
+    "윤진이 진료 기록을 집어 은석 쪽에 던진다",
+    "Blair throws the chart at him",
+    1,
+    "원장 불러.",
+    "Get me the owner of this clinic.",
+    "ms"
+   ],
+   [
+    "치과",
+    "dental clinic",
+    "은석이 조용히 진료실 서가의 학회지를 집어 든다",
+    "Dexter quietly picks a journal off the shelf",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "치과",
+    "dental clinic",
+    "나예가 학회지 표지와 명패를 함께 가리킨다",
+    "Lucy points at the journal cover and his nameplate",
+    2,
+    "이분이 원장님이세요.",
+    "He's the director of this clinic.",
+    "low"
+   ],
+   [
+    "치과",
+    "dental clinic",
+    "윤진이 가방을 챙기다 손을 멈춘다",
+    "Blair stops mid-motion, bag in hand",
+    0,
+    "다음 예약은 다른 곳에서 하시죠.",
+    "Book your next visit somewhere else.",
+    "cu"
+   ],
+   [
+    "치과",
+    "dental clinic",
+    "대학병원 교수가 은석에게 서류를 건넨다",
+    "The professor hands him a document",
+    3,
+    "왜 여기서 진료하세요?",
+    "Why are you practicing here?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "무대에서 내린 남자 DJ",
+  "The DJ They Pulled Off Stage",
+  "남자라서 무대에서 내리라 한 기획자. 그 남자는 이 축제의 헤드라이너였다.",
+  "An organizer pulls the DJ off stage for being a man, not knowing he is tonight's headliner.",
+  [
+   [
+    "H",
+    "용진",
+    "Marcus Pike",
+    "20대 후반 남성, 검은 후드, 헤드폰, 짧은 머리, 무표정한 눈",
+    "man in his late 20s, black hoodie, headphones, short hair, blank eyes"
+   ],
+   [
+    "V",
+    "지린",
+    "Tessa Beck",
+    "30대 여성, 은색 재킷, 짧은 단발, 날카로운 눈",
+    "woman in her 30s, silver jacket, short bob, sharp eyes"
+   ],
+   [
+    "A",
+    "미선",
+    "Maeve Corrigan",
+    "20대 초반 여성, 노란 티셔츠, 묶은 머리, 밝은 표정",
+    "woman in her early 20s, yellow t-shirt, tied hair, bright face"
+   ],
+   [
+    "X",
+    "축제 총괄",
+    "Mr. Rowe",
+    "50대 남성, 검은 셔츠, 안경, 무거운 표정",
+    "man in his 50s, black shirt, glasses, grave face"
+   ]
+  ],
+  [
+   [
+    "야외 축제 무대",
+    "festival stage",
+    "지린이 용진의 헤드폰을 낚아채 목에 건다",
+    "Tessa snatches his headphones and hangs them on his neck",
+    1,
+    "여자 DJ 불러. 남자는 분위기 못 살려.",
+    "Get a female DJ. Men can't read a crowd.",
+    "cz"
+   ],
+   [
+    "야외 축제 무대",
+    "festival stage",
+    "지린이 선곡 목록을 뽑아 바닥에 뿌린다",
+    "Tessa yanks out the set list and scatters it",
+    1,
+    "무대에서 내려와.",
+    "Get off this stage.",
+    "ms"
+   ],
+   [
+    "야외 축제 무대",
+    "festival stage",
+    "용진이 조용히 무대 뒤 포스터를 올려다본다",
+    "Marcus quietly looks up at the poster backstage",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "야외 축제 무대",
+    "festival stage",
+    "미선이 포스터 맨 윗줄을 가리킨다",
+    "Maeve points at the top line of the poster",
+    2,
+    "헤드라이너, 용진 님이에요.",
+    "He's the headliner tonight.",
+    "low"
+   ],
+   [
+    "야외 축제 무대",
+    "festival stage",
+    "지린이 흩어진 목록을 주우며 굳는다",
+    "Tessa freezes, gathering the scattered list",
+    0,
+    "음악은 성별로 나뉘지 않아요.",
+    "Music doesn't come in genders.",
+    "cu"
+   ],
+   [
+    "야외 축제 무대",
+    "festival stage",
+    "축제 총괄이 용진에게 악수를 청한다",
+    "The festival director offers him a handshake",
+    3,
+    "내년 무대, 용진 님에게 맡기죠.",
+    "Let's hand next year's stage to him.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "남자 승무원을 부린 승객",
+  "The Passenger Who Summoned the Steward",
+  "남자 승무원에게 담요를 주워 오라 명령한 승객. 그 승무원은 이 기종 안전 담당관이었다.",
+  "A passenger orders the male flight attendant to pick up her blanket. He's the safety officer on this aircraft.",
+  [
+   [
+    "H",
+    "혁준",
+    "Elliot Marsh",
+    "20대 후반 남성, 항공사 제복, 짧은 머리, 단정한 인상",
+    "man in his late 20s, airline uniform, short hair, neat bearing"
+   ],
+   [
+    "V",
+    "은린",
+    "Camille Rook",
+    "30대 여성, 크림색 니트, 긴 생머리, 치켜든 턱",
+    "woman in her 30s, cream knit, long straight hair, lifted chin"
+   ],
+   [
+    "A",
+    "희선",
+    "Rosa Petrie",
+    "30대 여성, 같은 제복, 묶은 머리, 침착한 눈",
+    "woman in her 30s, matching uniform, tied hair, calm eyes"
+   ],
+   [
+    "X",
+    "기장",
+    "Captain Doyle",
+    "50대 남성, 기장 제복, 짧은 백발, 무거운 표정",
+    "man in his 50s, pilot uniform, short white hair, grave face"
+   ]
+  ],
+  [
+   [
+    "기내",
+    "airplane cabin",
+    "은린이 혁준의 손에서 물컵을 쳐낸다",
+    "Camille swats the water cup out of his hand",
+    1,
+    "남자는 서비스 마인드가 없잖아요.",
+    "Men just don't have the service touch.",
+    "cz"
+   ],
+   [
+    "기내",
+    "airplane cabin",
+    "은린이 담요를 발치에 떨어뜨린다",
+    "Camille drops her blanket at his feet",
+    1,
+    "이거 주워 와.",
+    "Pick that up for me.",
+    "ms"
+   ],
+   [
+    "기내",
+    "airplane cabin",
+    "혁준이 조용히 객실 안전 점검 카드를 꺼낸다",
+    "Elliot quietly takes out the cabin safety card",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "기내",
+    "airplane cabin",
+    "희선이 카드의 직책란을 가리킨다",
+    "Rosa points to the title on the card",
+    2,
+    "이분, 이 기종 안전 담당관이에요.",
+    "He's the safety officer for this aircraft.",
+    "low"
+   ],
+   [
+    "기내",
+    "airplane cabin",
+    "은린이 담요를 집어 들고 얼굴이 굳는다",
+    "Camille picks up the blanket, her face stiff",
+    0,
+    "안전 벨트부터 확인하시죠.",
+    "Let's start with your seatbelt.",
+    "cu"
+   ],
+   [
+    "기내",
+    "airplane cabin",
+    "기장이 혁준에게 점검표를 내민다",
+    "The captain holds out a checklist to him",
+    3,
+    "이륙 전 점검, 혁준 님 사인 필요합니다.",
+    "I need his sign-off before takeoff.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "오디션에서 노래를 끊은 심사위원",
+  "The Judge Who Cut His Song",
+  "남자 배우는 필요 없다며 노래를 끊은 심사위원. 그 곡은 지원자가 쓴 것이었다.",
+  "A judge stops his audition because they need no male lead. He wrote the song she was humming.",
+  [
+   [
+    "H",
+    "성주",
+    "Jack Ferris",
+    "20대 후반 남성, 검은 셔츠, 짧은 머리, 담담한 눈",
+    "man in his late 20s, black shirt, short hair, composed eyes"
+   ],
+   [
+    "V",
+    "수희",
+    "Iris Bowden",
+    "40대 여성, 빨간 원피스, 올림머리, 차가운 눈",
+    "woman in her 40s, red dress, updo, cold eyes"
+   ],
+   [
+    "A",
+    "채희",
+    "Grace Keel",
+    "20대 후반 여성, 흰 블라우스, 단발, 밝은 눈",
+    "woman in her late 20s, white blouse, bob cut, bright eyes"
+   ],
+   [
+    "X",
+    "연출가",
+    "Mr. Grieves",
+    "50대 남성, 검은 터틀넥, 안경, 온화한 얼굴",
+    "man in his 50s, black turtleneck, glasses, warm face"
+   ]
+  ],
+  [
+   [
+    "오디션장",
+    "audition hall",
+    "수희가 노래하는 성주를 향해 손을 든다",
+    "Iris raises a hand to stop him singing",
+    1,
+    "남자 배우는 필요 없어요.",
+    "We don't need another male lead.",
+    "cz"
+   ],
+   [
+    "오디션장",
+    "audition hall",
+    "수희가 악보를 접어 옆 의자에 던진다",
+    "Iris folds the sheet music onto the next chair",
+    1,
+    "다음 사람 들어와요.",
+    "Next, please.",
+    "ms"
+   ],
+   [
+    "오디션장",
+    "audition hall",
+    "성주가 조용히 악보 첫 장의 서명을 본다",
+    "Jack quietly looks at the signature on page one",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "오디션장",
+    "audition hall",
+    "채희가 악보를 집어 서명을 보여준다",
+    "Grace picks up the page and shows the signature",
+    2,
+    "이 곡, 성주 님이 쓴 거예요.",
+    "He wrote this score.",
+    "low"
+   ],
+   [
+    "오디션장",
+    "audition hall",
+    "수희가 안경을 벗고 자리에서 일어난다",
+    "Iris takes off her glasses and stands up",
+    0,
+    "주인공은 실력으로 정하시죠.",
+    "Let the best voice win the role.",
+    "cu"
+   ],
+   [
+    "오디션장",
+    "audition hall",
+    "연출가가 성주에게 대본을 건넨다",
+    "The director hands him a script",
+    3,
+    "초연 무대, 성주 님으로 하고 싶습니다.",
+    "I want him for the premiere.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "남자 집주인을 무시한 세입자",
+  "The Tenant Who Doubted the Landlord",
+  "남자가 집주인이라며 보증금을 깎으라 한 세입자. 계약서엔 반려동물 금지 조항이 있었다.",
+  "A tenant refuses to believe a man owns the apartment and demands a discount, until the contract is read aloud.",
+  [
+   [
+    "H",
+    "현호",
+    "Nathan Hoyle",
+    "30대 초반 남성, 흰 셔츠, 짧은 머리, 차분한 표정",
+    "man in his early 30s, white shirt, short hair, composed face"
+   ],
+   [
+    "V",
+    "미희",
+    "Wanda Pike",
+    "30대 여성, 분홍 재킷, 긴 생머리, 날선 목소리",
+    "woman in her 30s, pink jacket, long straight hair, sharp voice"
+   ],
+   [
+    "A",
+    "예란",
+    "Harriet Crowe",
+    "40대 여성, 회색 정장, 짧은 단발, 실무적인 태도",
+    "woman in her 40s, gray suit, short bob, businesslike manner"
+   ],
+   [
+    "X",
+    "대기 손님",
+    "Mr. Lowe",
+    "30대 남성, 베이지 코트, 짧은 머리, 온화한 얼굴",
+    "man in his 30s, beige coat, short hair, warm face"
+   ]
+  ],
+  [
+   [
+    "부동산",
+    "real estate office",
+    "미희가 현호의 등기부를 밀어 옆으로 치운다",
+    "Wanda shoves the property deed aside",
+    1,
+    "집주인이 남자면 계약이 불안하죠.",
+    "A male landlord? I don't trust the contract.",
+    "cz"
+   ],
+   [
+    "부동산",
+    "real estate office",
+    "미희가 계약서 위에 펜을 던진다",
+    "Wanda throws a pen onto the contract",
+    1,
+    "보증금부터 깎아.",
+    "Lower the deposit first.",
+    "ms"
+   ],
+   [
+    "부동산",
+    "real estate office",
+    "현호가 조용히 계약서 조항을 넘긴다",
+    "Nathan quietly flips to a clause in the contract",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "부동산",
+    "real estate office",
+    "예란이 조항을 손가락으로 짚는다",
+    "Harriet taps the clause with one finger",
+    2,
+    "여기, 반려동물 금지 조항이에요.",
+    "This clause bans pets in the unit.",
+    "low"
+   ],
+   [
+    "부동산",
+    "real estate office",
+    "미희가 계약서를 밀어내고 일어난다",
+    "Wanda pushes the contract away and stands",
+    0,
+    "계약은 원하는 분께 드리죠.",
+    "I'll sign with someone else.",
+    "cu"
+   ],
+   [
+    "부동산",
+    "real estate office",
+    "대기하던 남자가 현호에게 다가온다",
+    "A waiting client walks up to him",
+    3,
+    "이 집, 제가 계약할게요.",
+    "I'll take this unit.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "남자 정비사를 의심한 차주",
+  "The Driver Who Doubted the Mechanic",
+  "바가지를 씌운다며 소란을 피운 차주. 그 정비사는 제조사 기술사였다.",
+  "A driver accuses the mechanic of overcharging, not knowing he is a certified master technician.",
+  [
+   [
+    "H",
+    "영섭",
+    "Gavin Loomis",
+    "40대 남성, 파란 정비복, 짧은 머리, 무뚝뚝한 얼굴",
+    "man in his 40s, blue mechanic suit, short hair, blunt face"
+   ],
+   [
+    "V",
+    "혜희",
+    "Kendra Frayne",
+    "30대 여성, 흰 코트, 긴 웨이브 머리, 날카로운 눈",
+    "woman in her 30s, white coat, long wavy hair, sharp eyes"
+   ],
+   [
+    "A",
+    "희란",
+    "Dana Rourke",
+    "30대 여성, 사무 직원, 묶은 머리, 차분한 눈",
+    "woman in her 30s, office staff, tied hair, calm eyes"
+   ],
+   [
+    "X",
+    "새 손님",
+    "Mr. Ives",
+    "50대 남성, 남색 점퍼, 짧은 머리, 온화한 얼굴",
+    "man in his 50s, navy jacket, short hair, warm face"
+   ]
+  ],
+  [
+   [
+    "정비소",
+    "auto shop",
+    "혜희가 영섭의 공구를 옆으로 밀어낸다",
+    "Kendra sweeps his tools aside",
+    1,
+    "여자 정비사 없어요? 남자는 못 믿어.",
+    "Any female mechanics? I don't trust men.",
+    "cz"
+   ],
+   [
+    "정비소",
+    "auto shop",
+    "혜희가 견적서를 찢어 던진다",
+    "Kendra tears up the estimate",
+    1,
+    "바가지 씌우지 마.",
+    "Don't try to overcharge me.",
+    "ms"
+   ],
+   [
+    "정비소",
+    "auto shop",
+    "영섭이 조용히 태블릿의 기술 지원 기록을 연다",
+    "Gavin quietly opens the tech support log",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "정비소",
+    "auto shop",
+    "희란이 태블릿의 담당자 이름을 가리킨다",
+    "Dana points at the specialist name on screen",
+    2,
+    "이 차량, 이분이 직접 진단했어요.",
+    "He's the one who diagnosed this car.",
+    "low"
+   ],
+   [
+    "정비소",
+    "auto shop",
+    "혜희가 찢은 견적서를 주우며 굳는다",
+    "Kendra freezes over the torn estimate",
+    0,
+    "차는 다른 곳에서 보시죠.",
+    "Get your car checked somewhere else.",
+    "cu"
+   ],
+   [
+    "정비소",
+    "auto shop",
+    "새 손님이 영섭에게 차 키를 건넨다",
+    "A new customer hands him his car keys",
+    3,
+    "제 차도 이분께 맡길게요.",
+    "I want him to work on my car.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "남자 운영자를 무시한 회원",
+  "The Member Who Mocked the Owner",
+  "컵을 쏟고 치우라 명령한 회원. 그 남자는 이 체인의 운영이사였다.",
+  "A member spills her drink and orders him to clean it. He runs operations for the whole chain.",
+  [
+   [
+    "H",
+    "재호",
+    "Simon Ainsley",
+    "30대 중반 남성, 회색 셔츠, 짧은 머리, 차분한 눈",
+    "man in his mid 30s, gray shirt, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "라윤",
+    "Bianca Frayne",
+    "20대 후반 여성, 검은 트렌치, 긴 생머리, 새침한 표정",
+    "woman in her late 20s, black trench, long straight hair, prim face"
+   ],
+   [
+    "A",
+    "나라",
+    "Ivy Merrick",
+    "20대 초반 여성, 아르바이트 유니폼, 묶은 머리, 밝은 눈",
+    "woman in her early 20s, part-time uniform, tied hair, bright eyes"
+   ],
+   [
+    "X",
+    "본사 직원",
+    "Mr. Calder",
+    "30대 남성, 검은 정장, 안경, 정중한 태도",
+    "man in his 30s, black suit, glasses, courteous manner"
+   ]
+  ],
+  [
+   [
+    "스터디카페",
+    "study cafe",
+    "라윤이 재호의 안내판을 손으로 밀어 넘어뜨린다",
+    "Bianca shoves the signboard over",
+    1,
+    "관리하는 사람이 남자면 불편하죠.",
+    "A man managing this place? Uncomfortable.",
+    "cz"
+   ],
+   [
+    "스터디카페",
+    "study cafe",
+    "라윤이 컵을 바닥에 쏟고 발끝으로 민다",
+    "Bianca tips her cup onto the floor",
+    1,
+    "치워. 직원이 하겠지.",
+    "Clean it up. That's your job.",
+    "ms"
+   ],
+   [
+    "스터디카페",
+    "study cafe",
+    "재호가 조용히 본사 앱의 운영자 화면을 연다",
+    "Simon quietly opens the operator screen on the app",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "스터디카페",
+    "study cafe",
+    "나라가 앱 화면을 돌려 보여준다",
+    "Ivy turns the app screen around",
+    2,
+    "이 지점 운영이사, 재호 님이에요.",
+    "He's the operations director for this chain.",
+    "low"
+   ],
+   [
+    "스터디카페",
+    "study cafe",
+    "라윤이 컵을 주우며 고개를 숙인다",
+    "Bianca picks up the cup and bows her head",
+    0,
+    "이용 규정은 다 같이 지킵니다.",
+    "The rules apply to everyone.",
+    "cu"
+   ],
+   [
+    "스터디카페",
+    "study cafe",
+    "본사 직원이 재호에게 서류를 건넨다",
+    "The head office rep hands him a file",
+    3,
+    "이 앱, 왜 직접 만드셨어요?",
+    "Why did you build this app yourself?",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "남자 세무사를 의심한 의뢰인",
+  "The Client Who Doubted the Accountant",
+  "남자 세무사라며 위임장을 찢은 의뢰인. 그 세무사는 국세청 자문위원이었다.",
+  "A client tears up the power of attorney because her accountant is a man. He advises the tax service.",
+  [
+   [
+    "H",
+    "성규",
+    "Colin Spence",
+    "40대 남성, 남색 정장, 안경, 차분한 눈",
+    "man in his 40s, navy suit, glasses, calm eyes"
+   ],
+   [
+    "V",
+    "유린",
+    "Delia Spence",
+    "30대 여성, 베이지 트위드, 긴 생머리, 날선 눈썹",
+    "woman in her 30s, beige tweed, long straight hair, sharp brows"
+   ],
+   [
+    "A",
+    "보린",
+    "Nora Ainsley",
+    "20대 후반 여성, 사무 유니폼, 묶은 머리, 차분한 표정",
+    "woman in her late 20s, office uniform, tied hair, composed face"
+   ],
+   [
+    "X",
+    "조사관",
+    "Mr. Gable",
+    "40대 남성, 회색 정장, 짧은 머리, 무거운 표정",
+    "man in his 40s, gray suit, short hair, grave face"
+   ]
+  ],
+  [
+   [
+    "세무사무소",
+    "tax office",
+    "유린이 성규의 서류를 탁자 밖으로 밀어낸다",
+    "Delia pushes his documents off the desk",
+    1,
+    "세무는 꼼꼼한 여자가 맞아요.",
+    "Tax work needs a careful woman.",
+    "cz"
+   ],
+   [
+    "세무사무소",
+    "tax office",
+    "유린이 위임장을 반으로 접어 던진다",
+    "Delia folds the letter in half and tosses it",
+    1,
+    "다른 데 맡길게.",
+    "I'll hire someone else.",
+    "ms"
+   ],
+   [
+    "세무사무소",
+    "tax office",
+    "성규가 조용히 서류철에서 위촉장을 꺼낸다",
+    "Colin quietly takes an appointment letter from the file",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "세무사무소",
+    "tax office",
+    "보린이 위촉장을 펼쳐 보여준다",
+    "Nora unfolds the letter for her to see",
+    2,
+    "이분, 국세청 자문위원이에요.",
+    "He advises the national tax service.",
+    "low"
+   ],
+   [
+    "세무사무소",
+    "tax office",
+    "유린이 접힌 위임장을 주우며 굳는다",
+    "Delia freezes over the folded letter",
+    0,
+    "자료는 제가 정리해 두죠.",
+    "I'll keep your records ready.",
+    "cu"
+   ],
+   [
+    "세무사무소",
+    "tax office",
+    "조사관이 성규에게 명함을 건넨다",
+    "The inspector hands him a card",
+    3,
+    "이번 조사, 자문위원님 의견 들을게요.",
+    "We'll follow the adviser's guidance.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "남자 가이드를 거부한 고객",
+  "The Traveler Who Refused the Guide",
+  "남자 가이드라며 일정표를 찢은 고객. 그 코스를 만든 사람이 바로 그였다.",
+  "A traveler tears up the itinerary because her guide is a man, unaware he designed the route.",
+  [
+   [
+    "H",
+    "윤호",
+    "Theo Rourke",
+    "30대 중반 남성, 카키 재킷, 짧은 머리, 온화한 눈",
+    "man in his mid 30s, khaki jacket, short hair, gentle eyes"
+   ],
+   [
+    "V",
+    "혜연",
+    "Priscilla Oakes",
+    "30대 여성, 흰 셔츠, 긴 생머리, 치켜든 턱",
+    "woman in her 30s, white shirt, long straight hair, lifted chin"
+   ],
+   [
+    "A",
+    "우연",
+    "Jolene Merrick",
+    "20대 후반 여성, 여행사 유니폼, 묶은 머리, 밝은 눈",
+    "woman in her late 20s, travel agency uniform, tied hair, bright eyes"
+   ],
+   [
+    "X",
+    "관광청 직원",
+    "Ms. Lowe",
+    "40대 여성, 회색 정장, 짧은 단발, 단호한 눈",
+    "woman in her 40s, gray suit, short bob, firm eyes"
+   ]
+  ],
+  [
+   [
+    "여행사",
+    "travel agency",
+    "혜연이 윤호의 지도를 밀어 바닥에 떨어뜨린다",
+    "Priscilla pushes his map off the table",
+    1,
+    "남자 가이드면 차라리 혼자 다니죠.",
+    "A male guide? I'd rather go alone.",
+    "cz"
+   ],
+   [
+    "여행사",
+    "travel agency",
+    "혜연이 일정표를 구겨 바닥에 던진다",
+    "Priscilla crumples the itinerary and throws it down",
+    1,
+    "환불해요.",
+    "Refund the whole trip.",
+    "ms"
+   ],
+   [
+    "여행사",
+    "travel agency",
+    "윤호가 조용히 가방에서 책 한 권을 꺼낸다",
+    "Theo quietly takes a book from his bag",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "여행사",
+    "travel agency",
+    "우연이 책의 목차를 펼쳐 보여준다",
+    "Jolene opens the book to its contents page",
+    2,
+    "이 코스, 윤호 님이 만든 거예요.",
+    "He designed this entire route.",
+    "low"
+   ],
+   [
+    "여행사",
+    "travel agency",
+    "혜연이 구겨진 일정표를 주우며 굳는다",
+    "Priscilla freezes over the crumpled itinerary",
+    0,
+    "여행은 발이 아니라 눈으로 하죠.",
+    "Travel is about what you see, not who leads.",
+    "cu"
+   ],
+   [
+    "여행사",
+    "travel agency",
+    "관광청 직원이 윤호에게 서류를 건넨다",
+    "The tourism officer hands him a document",
+    3,
+    "이 책, 절판된 줄 알았는데요.",
+    "I thought this book was out of print.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "남자 심사역을 막은 지점장",
+  "The Manager Who Blocked the Claim",
+  "보험금을 막으려 서류를 숨긴 지점장. 그 서류의 서명은 위조였다.",
+  "A branch manager hides a claim to stop the payout. The signature on it was forged, and he finds out.",
+  [
+   [
+    "H",
+    "훈석",
+    "Elliot Spence",
+    "30대 후반 남성, 검은 정장, 짧은 머리, 무표정한 눈",
+    "man in his late 30s, black suit, short hair, blank eyes"
+   ],
+   [
+    "V",
+    "연진",
+    "Fiona Corrigan",
+    "40대 여성, 흰 블라우스, 짧은 단발, 차가운 눈",
+    "woman in her 40s, white blouse, short bob, cold eyes"
+   ],
+   [
+    "A",
+    "유영",
+    "Ruth Meredith",
+    "20대 후반 여성, 회색 니트, 묶은 머리, 조심스러운 눈",
+    "woman in her late 20s, gray knit, tied hair, careful eyes"
+   ],
+   [
+    "X",
+    "본사 임원",
+    "Mr. Kade",
+    "50대 남성, 짙은 정장, 은발, 냉정한 표정",
+    "man in his 50s, dark suit, silver hair, cool face"
+   ]
+  ],
+  [
+   [
+    "보험사 지점",
+    "insurance branch",
+    "연진이 훈석의 심사 서류를 빼내 서랍에 넣는다",
+    "Fiona pulls his claim file and locks it away",
+    1,
+    "청구 심사에 남자를 붙이다니.",
+    "They put a man on my claim?",
+    "cz"
+   ],
+   [
+    "보험사 지점",
+    "insurance branch",
+    "연진이 청구서를 구겨 훈석 앞에 던진다",
+    "Fiona crumples the claim and throws it at him",
+    1,
+    "돈은 안 나와요.",
+    "You're not getting a cent.",
+    "ms"
+   ],
+   [
+    "보험사 지점",
+    "insurance branch",
+    "훈석이 조용히 서류의 서명란을 들여다본다",
+    "Elliot quietly studies the signature line",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "보험사 지점",
+    "insurance branch",
+    "유영이 서명을 확대해 화면에 띄운다",
+    "Ruth zooms the signature onto the screen",
+    2,
+    "이 서명, 지점장님 것이 아니에요.",
+    "That signature isn't the branch manager's.",
+    "low"
+   ],
+   [
+    "보험사 지점",
+    "insurance branch",
+    "연진이 의자에서 일어나 뒷걸음친다",
+    "Fiona rises from her chair and backs away",
+    0,
+    "보험금은 오늘 지급됩니다.",
+    "Your claim is paid today.",
+    "cu"
+   ],
+   [
+    "보험사 지점",
+    "insurance branch",
+    "본사 임원이 훈석에게 서류를 건넨다",
+    "The head office executive hands him a file",
+    3,
+    "지점 감사, 오늘부터 시작하죠.",
+    "The branch audit starts today.",
+    "pi"
+   ]
+  ]
+ ]
+]

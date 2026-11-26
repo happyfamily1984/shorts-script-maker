@@ -1,0 +1,982 @@
+[
+ [
+  "회식에서 캡처를 띄운 동료",
+  "The Coworker Who Leaked the Chat",
+  "회식 자리에서 단톡방 캡처로 남자 동료를 몰아낸 여자. 원본 대화엔 그 문장이 없었다.",
+  "A coworker projects a cropped chat screenshot to humiliate him at a company dinner. The original has no such line.",
+  [
+   [
+    "H",
+    "형규",
+    "Colin Rigby",
+    "30대 초반 남성, 흰 셔츠, 짧은 머리, 담담한 눈",
+    "man in his early 30s, white shirt, short hair, level eyes"
+   ],
+   [
+    "V",
+    "유별",
+    "Dana Vick",
+    "30대 여성, 빨간 블라우스, 긴 생머리, 비웃는 입가",
+    "woman in her 30s, red blouse, long straight hair, smirking"
+   ],
+   [
+    "A",
+    "희영",
+    "Ruth Novak",
+    "20대 후반 여성, 회색 니트, 단발, 조심스러운 눈",
+    "woman in her late 20s, gray knit, bob cut, careful eyes"
+   ],
+   [
+    "X",
+    "상무",
+    "Mr. Ridley",
+    "50대 남성, 검은 정장, 짧은 백발, 무거운 표정",
+    "man in his 50s, black suit, short white hair, heavy face"
+   ]
+  ],
+  [
+   [
+    "고깃집",
+    "grill restaurant",
+    "유별이 노트북을 열어 단톡방 캡처를 띄운다",
+    "Dana opens a laptop and projects the chat capture",
+    1,
+    "이거 보세요. 한남 발언.",
+    "Look at this. Classic man-child talk.",
+    "cz"
+   ],
+   [
+    "고깃집",
+    "grill restaurant",
+    "유별이 형규의 술잔을 옆으로 치운다",
+    "Dana slides his glass out of reach",
+    1,
+    "이 자리에선 조용히 해요.",
+    "Keep quiet at this table.",
+    "ms"
+   ],
+   [
+    "고깃집",
+    "grill restaurant",
+    "형규가 조용히 휴대폰의 원본 대화를 연다",
+    "Colin quietly opens the original chat on his phone",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "고깃집",
+    "grill restaurant",
+    "희영이 노트북을 돌려 원본 대화를 띄운다",
+    "Ruth turns the laptop around to show the full chat",
+    2,
+    "원본엔 이 문장이 없어요.",
+    "That sentence isn't in the original chat.",
+    "low"
+   ],
+   [
+    "고깃집",
+    "grill restaurant",
+    "유별이 노트북을 닫으며 손을 떤다",
+    "Dana closes the laptop with trembling hands",
+    0,
+    "감사팀에 그대로 보고하죠.",
+    "I'll report this to the audit team.",
+    "cu"
+   ],
+   [
+    "고깃집",
+    "grill restaurant",
+    "상무가 형규의 어깨를 두드린다",
+    "The executive taps him on the shoulder",
+    3,
+    "팀장님, 내일 발령서 나옵니다.",
+    "Director, your transfer papers come tomorrow.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "동창회에서 별명을 부른 여자",
+  "The Classmate Who Kept the Nickname",
+  "동창회에서 학창시절 별명으로 조롱한 여자. 그 모임 회비와 강당 증축비를 낸 사람이 그였다.",
+  "A classmate revives his old nickname at the reunion, unaware he paid for the event and the new hall.",
+  [
+   [
+    "H",
+    "태준",
+    "Julian Reeves",
+    "30대 중반 남성, 짙은 회색 재킷, 짧은 머리, 조용한 미소",
+    "man in his mid 30s, dark gray jacket, short hair, quiet smile"
+   ],
+   [
+    "V",
+    "은봄",
+    "Marla Quinn",
+    "30대 중반 여성, 흰 원피스, 긴 웨이브 머리, 치켜든 턱",
+    "woman in her mid 30s, white dress, long wavy hair, lifted chin"
+   ],
+   [
+    "A",
+    "은빛",
+    "Sophie Trent",
+    "30대 여성, 하늘색 셔츠, 짧은 머리, 밝은 눈",
+    "woman in her 30s, sky blue shirt, short hair, bright eyes"
+   ],
+   [
+    "X",
+    "교감",
+    "Mr. Ashdown",
+    "50대 남성, 회색 정장, 안경, 온화한 얼굴",
+    "man in his 50s, gray suit, glasses, warm face"
+   ]
+  ],
+  [
+   [
+    "연회장",
+    "banquet hall",
+    "은봄이 태준의 옷깃을 툭툭 치며 웃는다",
+    "Marla flicks his collar and laughs",
+    1,
+    "찐따는 여전하네.",
+    "Still a loser, I see.",
+    "cz"
+   ],
+   [
+    "연회장",
+    "banquet hall",
+    "은봄이 태준의 이름표를 뽑아 바닥에 던진다",
+    "Marla pulls his name card and drops it on the floor",
+    1,
+    "여기 앉지 마.",
+    "Don't sit here.",
+    "ms"
+   ],
+   [
+    "연회장",
+    "banquet hall",
+    "태준이 조용히 입구의 후원 명패를 올려다본다",
+    "Julian quietly looks up at the sponsor wall",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "연회장",
+    "banquet hall",
+    "은빛이 명패를 가리키며 자리에서 일어난다",
+    "Sophie points at the wall and stands up",
+    2,
+    "이 모임 회비, 태준 님이 다 냈어요.",
+    "He paid for this whole reunion.",
+    "low"
+   ],
+   [
+    "연회장",
+    "banquet hall",
+    "은봄이 이름표를 주우며 얼굴이 굳는다",
+    "Marla picks up the card, her face frozen",
+    0,
+    "별명은 두고 왔습니다.",
+    "I left that nickname behind.",
+    "cu"
+   ],
+   [
+    "연회장",
+    "banquet hall",
+    "교감이 태준에게 다가와 악수한다",
+    "The vice principal walks over and shakes his hand",
+    3,
+    "강당 증축도 태준 님 후원이죠.",
+    "The new hall? Also his donation.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "대회 명단에서 뺀 길드장",
+  "The Guild Leader Who Benched Him",
+  "남자라서 팀에서 뺀 길드장. 그 전략은 전부 그가 짠 것이었다.",
+  "A guild leader benches him for being a man, right before his own strategy wins the match.",
+  [
+   [
+    "H",
+    "문혁",
+    "Dexter Knox",
+    "20대 후반 남성, 검은 후드티, 안경, 무표정한 눈",
+    "man in his late 20s, black hoodie, glasses, blank eyes"
+   ],
+   [
+    "V",
+    "채현",
+    "Vanessa Quinn",
+    "20대 후반 여성, 보라색 크롭 재킷, 높은 포니테일, 날카로운 눈",
+    "woman in her late 20s, purple cropped jacket, high ponytail, sharp eyes"
+   ],
+   [
+    "A",
+    "보아",
+    "Hazel Novak",
+    "20대 초반 여성, 흰 후드티, 짧은 머리, 밝은 표정",
+    "woman in her early 20s, white hoodie, short hair, bright face"
+   ],
+   [
+    "X",
+    "심판",
+    "Head Referee",
+    "30대 남성, 검은 polo 셔츠, 모자, 무뚝뚝한 얼굴",
+    "man in his 30s, black polo shirt, cap, blunt face"
+   ]
+  ],
+  [
+   [
+    "PC방 대회장",
+    "gaming arena",
+    "채현이 문혁의 마우스를 빼앗아 선반에 올린다",
+    "Vanessa takes his mouse and puts it on a shelf",
+    1,
+    "한남은 관전이나 해.",
+    "Losers sit and watch.",
+    "cz"
+   ],
+   [
+    "PC방 대회장",
+    "gaming arena",
+    "채현이 모니터에서 문혁의 이름표를 뗀다",
+    "Vanessa peels his name tag off the monitor",
+    1,
+    "팀 명단에서 빠져.",
+    "You're off the roster.",
+    "ms"
+   ],
+   [
+    "PC방 대회장",
+    "gaming arena",
+    "문혁이 조용히 경기 리플레이를 저장한다",
+    "Dexter quietly saves the match replay",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "PC방 대회장",
+    "gaming arena",
+    "보아가 대회 화면에 리플레이를 띄운다",
+    "Hazel puts the replay on the arena screen",
+    2,
+    "이 전략, 문혁 님이 짠 거예요.",
+    "He's the one who built this strategy.",
+    "low"
+   ],
+   [
+    "PC방 대회장",
+    "gaming arena",
+    "채현이 헤드셋을 벗고 의자에 주저앉는다",
+    "Vanessa drops her headset and sinks into a chair",
+    0,
+    "실력은 성별로 안 나뉘어요.",
+    "Skill doesn't come with a gender.",
+    "cu"
+   ],
+   [
+    "PC방 대회장",
+    "gaming arena",
+    "심판이 문혁에게 명함을 건넨다",
+    "The referee walks over and hands him a card",
+    3,
+    "다음 시즌 감독 제안 들어왔습니다.",
+    "We have a coaching offer for next season.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "남자 창구를 거부한 고객",
+  "The Customer Who Refused the Male Teller",
+  "남자 창구 직원이라며 지점장을 부르짖은 고객. 그 직원은 본점 감사팀장이었다.",
+  "A customer refuses service from a male teller and demands the manager, who happens to be his subordinate.",
+  [
+   [
+    "H",
+    "인구",
+    "Victor Shane",
+    "30대 초반 남성, 은행 유니폼, 짧은 머리, 반듯한 태도",
+    "man in his early 30s, bank uniform, short hair, crisp manner"
+   ],
+   [
+    "V",
+    "수인",
+    "Delia Finch",
+    "40대 여성, 회색 정장, 짧은 단발, 날선 목소리",
+    "woman in her 40s, gray suit, short bob, sharp voice"
+   ],
+   [
+    "A",
+    "영은",
+    "Margaret Shore",
+    "30대 후반 여성, 지점장 정장, 묶은 머리, 침착한 눈",
+    "woman in her late 30s, branch manager suit, tied hair, calm eyes"
+   ],
+   [
+    "X",
+    "본점 이사",
+    "Mr. Dalton",
+    "50대 남성, 짙은 정장, 은발, 냉정한 표정",
+    "man in his 50s, dark suit, silver hair, cool face"
+   ]
+  ],
+  [
+   [
+    "은행 창구",
+    "bank counter",
+    "수인이 인구의 명패를 손으로 밀어 뒤집는다",
+    "Delia flips his nameplate over with one hand",
+    1,
+    "이 지점, 남자 직원은 안 받아요.",
+    "This branch shouldn't hire men at all.",
+    "cz"
+   ],
+   [
+    "은행 창구",
+    "bank counter",
+    "수인이 서류를 구겨 인구 쪽에 던진다",
+    "Delia crumples the forms and throws them at him",
+    1,
+    "지점장 불러.",
+    "Bring me your branch manager.",
+    "ms"
+   ],
+   [
+    "은행 창구",
+    "bank counter",
+    "인구가 조용히 가슴의 배지를 바로 세운다",
+    "Victor quietly straightens the badge on his chest",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "은행 창구",
+    "bank counter",
+    "영은이 배지를 읽고 자리에서 일어난다",
+    "Margaret reads the badge and rises from her desk",
+    2,
+    "이분은 본점 감사팀장입니다.",
+    "He leads the audit team from head office.",
+    "low"
+   ],
+   [
+    "은행 창구",
+    "bank counter",
+    "수인이 구겨진 서류를 주우며 손을 멈춘다",
+    "Delia stops mid-motion, picking up the crumpled forms",
+    0,
+    "계좌는 규정대로 확인하겠습니다.",
+    "I'll verify your account as the rules require.",
+    "cu"
+   ],
+   [
+    "은행 창구",
+    "bank counter",
+    "지점장이 인구에게 다가와 고개 숙인다",
+    "The branch manager approaches and bows to him",
+    3,
+    "감사 일정, 내일부터 시작하죠.",
+    "Let's start the audit tomorrow.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "벨보이를 무시한 투숙객",
+  "The Guest Who Mocked the Bellboy",
+  "짐을 던지고 팁을 밟은 투숙객. 그 벨보이는 본사에서 온 호텔 인스펙터였다.",
+  "A guest throws her luggage at the bellboy and steps on his tip. He's the chain's inspector.",
+  [
+   [
+    "H",
+    "남혁",
+    "Gavin Rusk",
+    "20대 후반 남성, 호텔 제복, 짧은 머리, 조용한 눈",
+    "man in his late 20s, hotel uniform, short hair, quiet eyes"
+   ],
+   [
+    "V",
+    "은연",
+    "Camille Best",
+    "40대 여성, 검은 원피스, 긴 생머리, 차가운 눈",
+    "woman in her 40s, black dress, long straight hair, cold eyes"
+   ],
+   [
+    "A",
+    "희아",
+    "Nora Wynn",
+    "30대 여성, 호텔 정장, 묶은 머리, 단정한 태도",
+    "woman in her 30s, hotel suit, tied hair, neat manner"
+   ],
+   [
+    "X",
+    "총지배인",
+    "Mr. Kessler",
+    "50대 남성, 검은 정장, 은발, 정중한 태도",
+    "man in his 50s, black suit, silver hair, courteous manner"
+   ]
+  ],
+  [
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "은연이 남혁의 손에서 캐리어를 밀어낸다",
+    "Camille shoves the suitcase out of his hands",
+    1,
+    "이 호텔, 남자 직원 교육이 엉망이네.",
+    "This hotel clearly doesn't train its male staff.",
+    "cz"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "은연이 팁 봉투를 떨어뜨리고 발로 밟는다",
+    "Camille drops a tip envelope and steps on it",
+    1,
+    "발밑이나 챙겨.",
+    "Pick that up.",
+    "ms"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "남혁이 조용히 가슴의 인스펙터 배지를 만진다",
+    "Gavin touches the inspector badge on his chest",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "희아가 배지를 가리키며 고개 숙여 인사한다",
+    "Nora points at the badge and bows to her",
+    2,
+    "이분은 본사 인스펙터입니다.",
+    "He's an inspector from head office.",
+    "low"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "은연이 봉투를 집어 들고 얼굴이 붉어진다",
+    "Camille picks up the envelope, her face flushed",
+    0,
+    "이 호텔 점수는 제가 매깁니다.",
+    "I'm the one who scores this hotel.",
+    "cu"
+   ],
+   [
+    "호텔 로비",
+    "hotel lobby",
+    "총지배인이 남혁에게 카드키를 건넨다",
+    "The general manager hands him a key card",
+    3,
+    "스위트 준비했습니다, 인스펙터님.",
+    "Your suite is ready, Inspector.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "남자 셰프를 부른 손님",
+  "The Diner Who Sent the Dish Back",
+  "접시를 밀어내며 셰프를 부른 손님. 그 셰프는 세계 대회 우승자였다.",
+  "A diner sends the dish back and demands the chef, who is a world cooking champion.",
+  [
+   [
+    "H",
+    "광혁",
+    "Marcus Bell",
+    "30대 중반 남성, 흰 조리복, 짧은 머리, 담담한 표정",
+    "man in his mid 30s, white chef coat, short hair, composed face"
+   ],
+   [
+    "V",
+    "주은",
+    "Priscilla Grey",
+    "30대 후반 여성, 베이지 원피스, 긴 생머리, 예민한 눈",
+    "woman in her late 30s, beige dress, long straight hair, tense eyes"
+   ],
+   [
+    "A",
+    "라아",
+    "Iris Crane",
+    "20대 후반 여성, 검은 앞치마, 묶은 머리, 차분한 눈",
+    "woman in her late 20s, black apron, tied hair, calm eyes"
+   ],
+   [
+    "X",
+    "평론가",
+    "Mr. Sinclair",
+    "60대 남성, 갈색 재킷, 안경, 느긋한 태도",
+    "man in his 60s, brown jacket, glasses, unhurried manner"
+   ]
+  ],
+  [
+   [
+    "레스토랑",
+    "restaurant",
+    "주은이 접시를 테이블 끝으로 밀어낸다",
+    "Priscilla pushes the plate to the edge of the table",
+    1,
+    "남자가 만든 음식이 이래서야.",
+    "This is why men shouldn't cook.",
+    "cz"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "주은이 포크를 접시에 내려놓고 손을 든다",
+    "Priscilla drops her fork and raises a hand",
+    1,
+    "셰프 불러. 다시 만들어.",
+    "Get the chef. Remake this now.",
+    "ms"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "광혁이 조용히 조리복 소매의 휘장을 만진다",
+    "Marcus touches the emblem on his sleeve",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "라아가 벽면의 대회 사진을 가리킨다",
+    "Iris points at the championship photo on the wall",
+    2,
+    "이 대회 우승자, 저 셰프예요.",
+    "That world champion? He's our chef.",
+    "low"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "주은이 냅킨으로 입을 가린다",
+    "Priscilla covers her mouth with her napkin",
+    0,
+    "다시 만들 필요는 없을 것 같네요.",
+    "I don't think a remake is needed.",
+    "cu"
+   ],
+   [
+    "레스토랑",
+    "restaurant",
+    "평론가가 광혁에게 명함을 건넨다",
+    "The critic offers him a business card",
+    3,
+    "다음 달 리뷰, 이 식당으로 하겠습니다.",
+    "My next review will cover this place.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "남자 사진작가를 거부한 모델",
+  "The Model Who Rejected the Photographer",
+  "남자 사진작가라며 촬영을 거부하고 인화물을 찢은 모델. 그 사진은 계약서에 그의 이름으로 남아 있었다.",
+  "A model tears up his prints and demands a female photographer, unaware the session is under his name.",
+  [
+   [
+    "H",
+    "비호",
+    "Elliot Brooks",
+    "30대 중반 남성, 검은 니트, 짧은 머리, 차분한 눈",
+    "man in his mid 30s, black knit, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "민현",
+    "Fiona Ash",
+    "20대 후반 여성, 분홍 재킷, 긴 웨이브 머리, 새침한 표정",
+    "woman in her late 20s, pink jacket, long wavy hair, prim face"
+   ],
+   [
+    "A",
+    "혜현",
+    "Grace Lind",
+    "30대 여성, 검은 셔츠, 안경, 실무적인 태도",
+    "woman in her 30s, black shirt, glasses, businesslike manner"
+   ],
+   [
+    "X",
+    "편집장",
+    "Ms. Rowe",
+    "40대 여성, 흰 블라우스, 짧은 단발, 단호한 눈",
+    "woman in her 40s, white blouse, short bob, decisive eyes"
+   ]
+  ],
+  [
+   [
+    "사진 스튜디오",
+    "photo studio",
+    "민현이 비호의 카메라를 조명대 위로 밀어 놓는다",
+    "Fiona shoves his camera onto the light stand",
+    1,
+    "여자 작가 없어요? 남자는 싫어요.",
+    "No female photographer? I don't want a man.",
+    "cz"
+   ],
+   [
+    "사진 스튜디오",
+    "photo studio",
+    "민현이 인화물을 찢어 바닥에 던진다",
+    "Fiona tears the prints and throws them down",
+    1,
+    "다시 찍어. 아니면 환불해.",
+    "Reshoot it, or refund me.",
+    "ms"
+   ],
+   [
+    "사진 스튜디오",
+    "photo studio",
+    "비호가 조용히 노트북의 촬영 기록을 연다",
+    "Elliot quietly opens the session log on his laptop",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "사진 스튜디오",
+    "photo studio",
+    "혜현이 화면을 돌려 촬영 기록을 보여준다",
+    "Grace turns the screen to show the file log",
+    2,
+    "이 사진들, 촬영 기록에 다 남아 있어요.",
+    "Every shot is time-stamped in the file log.",
+    "low"
+   ],
+   [
+    "사진 스튜디오",
+    "photo studio",
+    "민현이 찢은 사진을 주우며 고개를 숙인다",
+    "Fiona picks up the torn prints and bows her head",
+    0,
+    "게시물엔 출처부터 적으세요.",
+    "Credit the source on your page.",
+    "cu"
+   ],
+   [
+    "사진 스튜디오",
+    "photo studio",
+    "편집장이 비호에게 표지 시안을 건넨다",
+    "The editor hands him a cover layout",
+    3,
+    "다음 화보, 비호 님 이름으로 걸겠습니다.",
+    "Next cover runs under his name.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "남자 강사를 거부한 회원",
+  "The Swimmer Who Refused a Male Coach",
+  "남자 수영 강사라며 명단에서 지운 회원. 그 강사는 이 수영장 기록 보유자였다.",
+  "A swimmer deletes the male coach from her schedule, not knowing he holds the pool's record.",
+  [
+   [
+    "H",
+    "보검",
+    "Nathan Shore",
+    "30대 초반 남성, 검은 수영복, 짧은 머리, 반듯한 어깨",
+    "man in his early 30s, black swimsuit, short hair, square shoulders"
+   ],
+   [
+    "V",
+    "윤솔",
+    "Jolene Marsh",
+    "30대 여성, 분홍 수영복, 묶은 머리, 날카로운 눈",
+    "woman in her 30s, pink swimsuit, tied hair, sharp eyes"
+   ],
+   [
+    "A",
+    "수원",
+    "Clara Penn",
+    "40대 여성, 파란 수영복, 짧은 머리, 온화한 눈",
+    "woman in her 40s, blue swimsuit, short hair, warm eyes"
+   ],
+   [
+    "X",
+    "지범 관장",
+    "Mr. Fitch",
+    "50대 남성, 흰 polo 셔츠, 안경, 차분한 태도",
+    "man in his 50s, white polo shirt, glasses, calm manner"
+   ]
+  ],
+  [
+   [
+    "실내 수영장",
+    "indoor pool",
+    "윤솔이 보검의 호루라기를 낚아챈다",
+    "Jolene snatches the whistle from his hand",
+    1,
+    "물에서까지 남자한테 배우긴 싫어요.",
+    "I won't take lessons from a man in the water.",
+    "cz"
+   ],
+   [
+    "실내 수영장",
+    "indoor pool",
+    "윤솔이 수강 명단에서 보검의 이름을 지운다",
+    "Jolene erases his name from the class list",
+    1,
+    "다른 강사로 바꿔.",
+    "Switch me to another instructor.",
+    "ms"
+   ],
+   [
+    "실내 수영장",
+    "indoor pool",
+    "보검이 조용히 벽의 기록 게시판을 올려다본다",
+    "Nathan quietly looks up at the records board",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "실내 수영장",
+    "indoor pool",
+    "수원이 게시판의 한 줄을 손가락으로 짚는다",
+    "Clara points at a line on the records board",
+    2,
+    "이 기록, 보검 님이 세운 거예요.",
+    "He set that record on this board.",
+    "low"
+   ],
+   [
+    "실내 수영장",
+    "indoor pool",
+    "윤솔이 명단을 떨어뜨리고 물가에 선다",
+    "Jolene drops the list and stands at the water's edge",
+    0,
+    "물은 성별을 가리지 않습니다.",
+    "The water doesn't care who you are.",
+    "cu"
+   ],
+   [
+    "실내 수영장",
+    "indoor pool",
+    "지범 관장이 보검에게 서류를 건넨다",
+    "The pool director hands him a document",
+    3,
+    "대표팀 코치 자리, 아직 비어 있습니다.",
+    "The national team coaching job is still open.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "안개 속에서 길을 찾은 남자",
+  "The Man Who Found the Way",
+  "남자라서 못 따라올 거라며 앞서간 일행. 안개 속에서 길을 찾은 사람은 그였다.",
+  "A hiker mocks him and walks ahead, until fog rolls in and only he knows the way down.",
+  [
+   [
+    "H",
+    "기용",
+    "Theo Grant",
+    "30대 후반 남성, 등산 재킷, 짧은 머리, 차분한 눈",
+    "man in his late 30s, hiking jacket, short hair, calm eyes"
+   ],
+   [
+    "V",
+    "하아",
+    "Wanda Fitch",
+    "30대 여성, 빨간 등산복, 묶은 머리, 거만한 표정",
+    "woman in her 30s, red hiking gear, tied hair, haughty face"
+   ],
+   [
+    "A",
+    "지림",
+    "Lucy Sterne",
+    "20대 후반 여성, 초록 등산복, 짧은 머리, 겁먹은 눈",
+    "woman in her late 20s, green hiking gear, short hair, frightened eyes"
+   ],
+   [
+    "X",
+    "구조대원",
+    "Rescue Ranger",
+    "30대 남성, 주황 구조복, 헬멧, 무거운 표정",
+    "man in his 30s, orange rescue suit, helmet, grave face"
+   ]
+  ],
+  [
+   [
+    "등산로 입구",
+    "trailhead",
+    "하아가 기용의 지도를 쳐서 떨어뜨린다",
+    "Wanda swats the map out of his hands",
+    1,
+    "찐따는 입구나 지켜.",
+    "Losers stay at the trailhead.",
+    "cz"
+   ],
+   [
+    "등산로 입구",
+    "trailhead",
+    "하아가 기용의 물병을 옆으로 밀어 버린다",
+    "Wanda knocks his water bottle aside",
+    1,
+    "따라오지 마.",
+    "Don't follow us.",
+    "ms"
+   ],
+   [
+    "등산로",
+    "mountain trail",
+    "기용이 조용히 배낭에서 구조대 무전기를 꺼낸다",
+    "Theo quietly takes a rescue radio from his pack",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "안개 낀 능선",
+    "foggy ridge",
+    "지림이 무전 소리에 고개를 돌린다",
+    "Lucy turns her head toward the radio crackle",
+    2,
+    "이분, 산악구조대 대장이에요.",
+    "He leads the mountain rescue team.",
+    "low"
+   ],
+   [
+    "안개 낀 능선",
+    "foggy ridge",
+    "하아가 안개 속에서 발을 멈춘다",
+    "Wanda stops dead in the fog",
+    0,
+    "제 뒤로 붙으세요. 길을 압니다.",
+    "Stay behind me. I know the way.",
+    "cu"
+   ],
+   [
+    "구조대 초소",
+    "rescue station",
+    "구조대원이 기용에게 보고서를 건넨다",
+    "A ranger hands him a report",
+    3,
+    "대장님, 오늘 구조 요청 세 건입니다.",
+    "Chief, three rescue calls today.",
+    "pi"
+   ]
+  ]
+ ],
+ [
+  "꽃을 무시한 웨딩 플래너",
+  "The Planner Who Took Her Flowers",
+  "남자 플로리스트의 디자인을 가로채고 주문서를 찢은 플래너. 그 웨딩의 총괄 디자이너가 그였다.",
+  "A wedding planner steals his floral design and rips the order, unaware he leads the wedding's design.",
+  [
+   [
+    "H",
+    "진오",
+    "Simon Gale",
+    "30대 중반 남성, 앞치마, 짧은 머리, 부드러운 눈",
+    "man in his mid 30s, apron, short hair, soft eyes"
+   ],
+   [
+    "V",
+    "소빈",
+    "Nadia Kerr",
+    "30대 여성, 회색 정장, 긴 생머리, 차가운 눈",
+    "woman in her 30s, gray suit, long straight hair, cold eyes"
+   ],
+   [
+    "A",
+    "시라",
+    "Rosa Klein",
+    "20대 후반 여성, 연두색 원피스, 단발, 밝은 표정",
+    "woman in her late 20s, light green dress, bob cut, bright face"
+   ],
+   [
+    "X",
+    "신부",
+    "Ms. Adair",
+    "20대 후반 여성, 흰 셔츠, 긴 생머리, 단호한 눈",
+    "woman in her late 20s, white shirt, long straight hair, firm eyes"
+   ]
+  ],
+  [
+   [
+    "플라워숍",
+    "flower shop",
+    "소빈이 진오의 꽃다발을 카운터 밖으로 밀어낸다",
+    "Nadia pushes his bouquet off the counter",
+    1,
+    "꽃은 여자 감성인데, 남자가 왜?",
+    "Flowers are a woman's touch. Why him?",
+    "cz"
+   ],
+   [
+    "플라워숍",
+    "flower shop",
+    "소빈이 주문서를 접어 쓰레기통에 넣는다",
+    "Nadia folds the order sheet into the bin",
+    1,
+    "이 디자인, 다른 데 맡길게.",
+    "I'll give this design to someone else.",
+    "ms"
+   ],
+   [
+    "플라워숍",
+    "flower shop",
+    "진오가 조용히 휴대폰의 계약 메일을 연다",
+    "Simon quietly opens the contract email on his phone",
+    -1,
+    "",
+    "",
+    "cu"
+   ],
+   [
+    "플라워숍",
+    "flower shop",
+    "시라가 모니터를 돌려 계약서를 보여준다",
+    "Rosa turns the monitor around to show the contract",
+    2,
+    "이 웨딩 총괄 디자이너, 진오 님이에요.",
+    "He's the lead designer for this wedding.",
+    "low"
+   ],
+   [
+    "플라워숍",
+    "flower shop",
+    "소빈이 쓰레기통을 보며 굳어 선다",
+    "Nadia freezes, staring at the bin",
+    0,
+    "꽃은 다시 피면 됩니다. 계약은 아니죠.",
+    "Flowers regrow. Contracts don't.",
+    "cu"
+   ],
+   [
+    "플라워숍",
+    "flower shop",
+    "신부가 진오에게 다가와 웃는다",
+    "The bride walks up and smiles at him",
+    3,
+    "제 부케는 이분이 만들어 주세요.",
+    "I want him to make my bouquet.",
+    "pi"
+   ]
+  ]
+ ]
+]
