@@ -333,7 +333,9 @@ public class MainActivity extends Activity {
 
         /* ---------- 그록 등 다른 앱 (target: kling | grok) ---------- */
         private String findTarget(String target, String preferred) {
-            return "grok".equals(target) ? KlingService.findGrok(MainActivity.this, preferred) : KlingService.findKling(MainActivity.this, preferred);
+            if ("grok".equals(target)) return KlingService.findGrok(MainActivity.this, preferred);
+            if ("pickle".equals(target)) return KlingService.findPickle(MainActivity.this, preferred);
+            return KlingService.findKling(MainActivity.this, preferred);
         }
 
         @JavascriptInterface
@@ -462,6 +464,26 @@ public class MainActivity extends Activity {
                 ((android.content.ClipboardManager) getSystemService(CLIPBOARD_SERVICE)).setPrimaryClip(android.content.ClipData.newPlainText("upload", text));
                 startActivity(Intent.createChooser(i, "업로드할 앱 고르기"));
             });
+        }
+
+        /* 피클 같은 특정 앱으로 영상(있으면)과 지시문을 바로 보낸다. 결과: ok | noapp | noshare */
+        @JavascriptInterface
+        public String shareToApp(String target, String uri, String text) {
+            String pk = findTarget(target, "");
+            if (pk.isEmpty()) return "noapp";
+            Intent i = new Intent(Intent.ACTION_SEND);
+            boolean hasVideo = uri != null && !uri.isEmpty();
+            i.setType(hasVideo ? "video/mp4" : "text/plain");
+            if (hasVideo) { i.putExtra(Intent.EXTRA_STREAM, Uri.parse(uri)); i.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION); }
+            i.putExtra(Intent.EXTRA_TEXT, text);
+            i.setPackage(pk);
+            ((android.content.ClipboardManager) getSystemService(CLIPBOARD_SERVICE)).setPrimaryClip(android.content.ClipData.newPlainText("instruction", text));
+            if (i.resolveActivity(getPackageManager()) == null) {
+                if (hasVideo) { i.setType("text/plain"); i.removeExtra(Intent.EXTRA_STREAM); if (i.resolveActivity(getPackageManager()) == null) return "noshare"; }
+                else return "noshare";
+            }
+            runOnUiThread(() -> { try { startActivity(i); } catch (Exception ignored) { } });
+            return "ok";
         }
 
         @JavascriptInterface

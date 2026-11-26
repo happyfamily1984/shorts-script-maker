@@ -1,4 +1,4 @@
-/* 자동 입력 기본 순서. 저장소 kling/flow.json, grok/flow.json 과 같은 내용 */
+/* 자동 입력 기본 순서. 저장소 kling/flow.json, grok/flow.json, pickle/flow.json 과 같은 내용 */
 'use strict';
 const KLING_FLOW_DEFAULT = {
  "version": "0.3-partial",
@@ -418,4 +418,59 @@ const GROK_FLOW_DEFAULT = {
    "say": "숏드라마 메이커로 돌아가기"
   }
  ]
+};
+const PICKLE_FLOW_DEFAULT = {
+ "version": "0.1-guess",
+ "verified": false,
+ "note": "피클 채팅 화면(아래 '메시지 보내기' 입력칸, 마이크·전화 버튼)은 사용자 스크린샷으로 확인함. 보내기 버튼 위치는 추측.",
+ "package": "",
+ "after": 800,
+ "start": [
+  {
+   "do": "launch",
+   "say": "피클 앱 여는 중"
+  },
+  {
+   "do": "wait",
+   "ms": 3000
+  }
+ ],
+ "shot": [
+  {
+   "do": "setText",
+   "say": "지시문 입력",
+   "find": {
+    "editable": true
+   },
+   "value": "${prompt}",
+   "timeout": 8000
+  },
+  {
+   "do": "wait",
+   "ms": 800
+  },
+  {
+   "do": "click",
+   "say": "보내기 누르기",
+   "find": {
+    "any": [
+     "=보내기",
+     "=전송",
+     "=Send",
+     "메시지 전송"
+    ]
+   },
+   "orTap": {
+    "x": 0.895,
+    "y": 0.893
+   },
+   "timeout": 3000
+  },
+  {
+   "do": "wait",
+   "ms": 1500
+  }
+ ],
+ "between": [],
+ "end": []
 };

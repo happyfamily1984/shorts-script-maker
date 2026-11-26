@@ -523,6 +523,8 @@ function researchPrompt(n, platform) {
 const flowNow = () => (settings.klingFlow && Array.isArray(settings.klingFlow.shot)) ? settings.klingFlow : KLING_FLOW_DEFAULT;
 const grokFlow = () => (settings.grokFlow && Array.isArray(settings.grokFlow.shot)) ? settings.grokFlow : GROK_FLOW_DEFAULT;
 const gInfo = () => { if (!Native.has() || !window.AndroidBridge.autoInfo) return null; try { return JSON.parse(window.AndroidBridge.autoInfo('grok', grokFlow().package || '')); } catch (e) { return null; } };
+const pickleFlow = () => (settings.pickleFlow && Array.isArray(settings.pickleFlow.shot)) ? settings.pickleFlow : PICKLE_FLOW_DEFAULT;
+const pInfo = () => { if (!Native.has() || !window.AndroidBridge.autoInfo) return null; try { return JSON.parse(window.AndroidBridge.autoInfo('pickle', pickleFlow().package || '')); } catch (e) { return null; } };
 const flowUrl = () => String(settings.klingFlowUrl || '').trim() || KLING_FLOW_URL_DEFAULT;
 const kInfo = () => { if (!Native.has() || !window.AndroidBridge.klingInfo) return null; try { return JSON.parse(window.AndroidBridge.klingInfo(flowNow().package || '')); } catch (e) { return null; } };
 async function buildKlingJob(p, range) {
@@ -558,7 +560,7 @@ function klingSend() {
 async function fetchFlow() {
   toast('순서를 불러오는 중…');
   const got = [], bad = [];
-  for (const [key, url, name] of [['klingFlow', flowUrl(), '클링'], ['grokFlow', String(settings.grokFlowUrl || '').trim() || GROK_FLOW_URL_DEFAULT, '그록']]) {
+  for (const [key, url, name] of [['klingFlow', flowUrl(), '클링'], ['grokFlow', String(settings.grokFlowUrl || '').trim() || GROK_FLOW_URL_DEFAULT, '그록'], ['pickleFlow', String(settings.pickleFlowUrl || '').trim() || PICKLE_FLOW_URL_DEFAULT, '피클']]) {
     const r = await httpReq(url + (url.includes('?') ? '&' : '?') + 't=' + Date.now());
     try { if (r.status !== 200) throw r.status; const f = JSON.parse(r.text); if (!Array.isArray(f.shot)) throw 0; settings[key] = f; got.push(`${name} ${f.version || ''}`); }
     catch (e) { bad.push(`${name}: ${e === 404 ? '파일 없음 (저장소 비공개이거나 main 브랜치에 없음)' : e === 0 && r.status === 0 ? '인터넷 연결 확인' : '읽지 못함'}`); }
@@ -649,7 +651,7 @@ window.onAssemble = o => {
     const p = draft && draft.id === asm.pid ? draft : null;
     if (p) { finOf(p).out = o.uri; saveDraft(); }
     const auto = asm.auto; asm = null; render();
-    if (auto && p) uploadOut(p); else toast('완성 영상을 동영상 앱의 ShortDramaMaker 폴더에 저장했습니다');
+    if (auto && p) { if (settings.upWay === 'pickle') pickleUpload(p, true); else uploadOut(p); } else toast('완성 영상을 동영상 앱의 ShortDramaMaker 폴더에 저장했습니다');
     store.set('pipeline', null);
   } else if (o.state === 'error') { asm = null; render(); dialog('영상을 만들지 못했습니다', o.error || '', [['닫기', null]]); store.set('pipeline', null); }
   else if (o.state === 'cancelled') { asm = null; render(); toast('영상 만들기를 멈췄습니다'); }
@@ -660,13 +662,35 @@ function uploadOut(p) {
   window.AndroidBridge.shareVideo(f.out, k.title, `${k.title}\n\n${k.desc}`);
   toast('제목·설명 복사됨 · AI 생성 표시를 켜세요');
 }
+/* ---------- 피클(텍스트로 지시하는 AI 에이전트 앱)에게 업로드 맡기기 ---------- */
+const PLATS = [['yt', '유튜브 쇼츠'], ['tt', '틱톡'], ['ig', '인스타그램 릴스']];
+const upPlats = () => { const v = (settings.upPlats || ['yt']).filter(x => PLATS.some(([id]) => id === x)); return v.length ? v : ['yt']; };
+function pickleText(p) {
+  const k = uploadKit(p, MODE()), names = upPlats().map(x => PLATS.find(([id]) => id === x)[1]);
+  return [`방금 보낸 세로 영상(동영상 앱 > Movies/ShortDramaMaker 폴더의 가장 최근 "${T(p)}_assembled" 파일)을 ${names.join(', ')}에 올려 줘.`,
+    '', `제목: ${k.title}`, '', '설명:', k.desc, '', `고정 댓글: ${k.pin}`, '',
+    '지켜 줄 것:', '1. "AI 생성 콘텐츠(변경되거나 합성된 콘텐츠)" 표시를 꼭 켜 줘.', '2. 공개 범위는 "공개", 아동용 아님으로 해 줘.', '3. 올린 뒤 고정 댓글을 달아 줘.', '4. 끝나면 올라간 영상 링크를 알려 줘.'].join('\n');
+}
+function pickleUpload(p, auto) {
+  if (needPhone()) return;
+  const f = finOf(p); if (!f.out) return toast('먼저 완성 영상을 만드세요');
+  const text = pickleText(p), via = window.AndroidBridge.shareToApp ? window.AndroidBridge.shareToApp('pickle', f.out, text) : 'noshare';
+  if (via === 'ok') return toast('피클에 영상과 지시문을 보냈습니다 · 피클에서 보내기를 누르세요 (지시문은 복사도 됨)');
+  if (via === 'noapp') return dialog('피클 앱을 찾지 못했습니다', '피클 앱이 설치되어 있는지 확인하세요. 지금은 업로드할 앱을 직접 고르는 창을 엽니다.', [['닫기', null], ['앱 고르기', () => uploadOut(p), 'pri']]);
+  const info = pInfo();
+  if (!info || !info.on) { Native.share('업로드 지시문', text); return toast('피클이 영상 공유를 받지 않습니다 · 지시문을 보내니 피클을 고르세요 (자동 입력을 켜면 바로 입력)'); }
+  if (info.running) return toast('이미 자동 입력이 진행 중입니다');
+  const r = window.AndroidBridge.startAuto('pickle', JSON.stringify({ shots: [{ prompt: text, images: [] }], doneMsg: '피클에 업로드 지시를 보냈습니다.' }), JSON.stringify(pickleFlow()));
+  if (r !== 'ok') dialog('피클에 보내지 못했습니다', r, [['닫기', null]]);
+  else if (!auto) toast('피클 채팅에 지시문을 입력합니다');
+}
 /* 원클릭: 클링 생성 → 영상 내려받기 → 돌아오면 합치기 → 업로드 창 */
 function oneClick() {
   if (needPhone()) return;
   const p = draft, info = kInfo(); if (klingNeedSetup(info)) return;
   if (!window.AndroidBridge.hasMediaPerm()) return dialog('사진·동영상 접근을 허용해 주세요', '클링에서 내려받은 영상을 찾으려면 접근 권한이 필요합니다. "모두 허용"을 골라 주세요.', [['취소', null], ['허용하기', () => window.AndroidBridge.requestMediaPerm(), 'pri']]);
   buildKlingJob(p, 'all').then(({ job, miss }) => {
-    const go1 = () => dialog('원클릭 제작을 시작합니다', `① 클링에 ${job.shots.length}개 샷을 넣고 생성합니다 (크레딧 사용)\n② 생성이 끝나면 영상을 내려받습니다 (몇 분 걸립니다)\n③ 이 앱으로 돌아와 영상을 잇고 자막을 새깁니다\n④ 업로드할 앱을 고르는 창을 엽니다\n\n진행 중에는 화면을 만지지 마세요.${flowNow().verified ? '' : '\n\n클링 순서가 아직 완전히 맞춰지지 않아 중간에 멈출 수 있습니다. 멈추면 그 단계부터 이 화면의 버튼으로 이어 하세요.'}`,
+    const go1 = () => dialog('원클릭 제작을 시작합니다', `① 클링에 ${job.shots.length}개 샷을 넣고 생성합니다 (크레딧 사용)\n② 생성이 끝나면 영상을 내려받습니다 (몇 분 걸립니다)\n③ 이 앱으로 돌아와 영상을 잇고 자막을 새깁니다\n④ ${settings.upWay === 'pickle' ? '피클에게 영상과 업로드 지시를 보냅니다' : '업로드할 앱을 고르는 창을 엽니다'}\n\n진행 중에는 화면을 만지지 마세요.${flowNow().verified ? '' : '\n\n클링 순서가 아직 완전히 맞춰지지 않아 중간에 멈출 수 있습니다. 멈추면 그 단계부터 이 화면의 버튼으로 이어 하세요.'}`,
       [['취소', null], ['시작', () => {
         saveDraft();
         job.autoGenerate = true; job.collect = true;
@@ -697,7 +721,7 @@ function tabFinish(p) {
   const clipRow = (c, i) => `<div class="row clip"><span class="cthumb">${on && vThumb(c.uri) ? `<img src="${vThumb(c.uri)}" alt="">` : ic('film')}</span><span class="grow"><b>샷 ${i + 1}${p.shots[i] ? ' · ' + beatOf(p, i)[0] : ''}</b><small>${esc(c.name || '')}${c.dur ? ` · ${Math.round(c.dur / 100) / 10}초` : ''}</small></span>
     <button class="ib sm" data-act="clipMove" data-i="${i}" data-d="-1" aria-label="위로">${ic('back')}</button><button class="ib sm" data-act="clipDel" data-i="${i}" aria-label="빼기">${ic('x')}</button></div>`;
   return `
-    <div class="card aicard kling"><div class="aih"><span class="glyph" style="--h:350">${ic('bolt')}</span><span class="grow"><b>원클릭 제작</b><small>클링 생성 → 영상 내려받기 → 자막 넣어 합치기 → 업로드 창까지</small></span>${flowNow().verified ? '' : '<span class="tag warn">시험 중</span>'}</div>
+    <div class="card aicard kling"><div class="aih"><span class="glyph" style="--h:350">${ic('bolt')}</span><span class="grow"><b>원클릭 제작</b><small>클링 생성 → 영상 내려받기 → 자막 넣어 합치기 → ${settings.upWay === 'pickle' ? '피클에게 업로드 맡기기' : '업로드 창'}까지</small></span>${flowNow().verified ? '' : '<span class="tag warn">시험 중</span>'}</div>
       <button class="btn pri block" data-act="oneClick" ${running ? 'disabled' : ''}>${ic('bolt')}원클릭 제작 시작</button>
       <p class="hint">중간에 멈추면 아래 ①~④를 하나씩 눌러 이어 할 수 있습니다. 인물 사진을 먼저 넣어 두면 얼굴이 일정하게 나옵니다.</p></div>
     <div class="sec">${h2('film', `① 영상 클립 ${f.clips.length}/${p.shots.length}`)}
@@ -713,8 +737,13 @@ function tabFinish(p) {
         : `<button class="btn blue block" data-act="assemble">${ic('film')}${f.out ? '다시 만들기' : '완성 영상 만들기'}</button>`}
       ${f.out && !running ? `<div class="card done"><b>${ic('checkc')}완성 영상이 있습니다</b><small>동영상 앱 > ShortDramaMaker 폴더</small><div class="aiacts"><button class="btn sm" data-act="openOut">${ic('play')}열어 보기</button></div></div>` : ''}</div>
     <div class="sec">${h2('share', '④ 업로드')}
-      <button class="btn pri block" data-act="uploadOut" ${f.out ? '' : 'disabled'}>${ic('share')}유튜브·틱톡·인스타로 보내기</button>
-      <p class="hint">업로드할 앱을 고르면 완성 영상이 그 앱의 업로드 화면으로 넘어가고, 제목·설명·해시태그가 복사됩니다. 붙여넣은 뒤 "AI 생성 콘텐츠" 표시를 켜고 직접 올리세요. 하루 1~2편으로 시작하세요.</p></div>`;
+      <div class="seg">${[['share', '앱 직접 고르기'], ['pickle', '피클에게 맡기기']].map(([id, n]) => `<button class="${(settings.upWay || 'share') === id ? 'on' : ''}" data-act="upWay" data-v="${id}">${n}</button>`).join('')}</div>
+      ${settings.upWay === 'pickle' ? `<div class="chips">${PLATS.map(([id, n]) => `<button class="chip ${upPlats().includes(id) ? 'on' : ''}" data-act="upPlat" data-v="${id}">${n}</button>`).join('')}</div>
+      <button class="btn pri block" data-act="pickleUp" ${f.out ? '' : 'disabled'}>${ic('bolt')}피클에게 업로드 맡기기</button>
+      <button class="btn sm" data-act="pickleCopy">${ic('copy')}지시문만 복사</button>
+      <p class="hint">완성 영상과 업로드 지시문(제목·설명·해시태그·고정 댓글·AI 생성 표시·링크 보고)을 피클 앱으로 보냅니다. 피클이 공유를 받지 않으면 자동 입력으로 피클 채팅에 지시문을 넣고 보냅니다. 원클릭 제작도 끝에 이 방식으로 넘깁니다.</p>`
+      : `<button class="btn pri block" data-act="uploadOut" ${f.out ? '' : 'disabled'}>${ic('share')}유튜브·틱톡·인스타로 보내기</button>
+      <p class="hint">업로드할 앱을 고르면 완성 영상이 그 앱의 업로드 화면으로 넘어가고, 제목·설명·해시태그가 복사됩니다. 붙여넣은 뒤 "AI 생성 콘텐츠" 표시를 켜고 직접 올리세요. 하루 1~2편으로 시작하세요.</p>`}</div>`;
 }
 
 /* ---------- 공통 조각 ---------- */
@@ -1040,17 +1069,18 @@ V.settings = () => ({ title: '설정', back: true, html: `
     <div class="aiacts"><button class="btn sm" data-act="aiClear">${ic('trash')}키 지우기</button><button class="btn sm blue" data-act="aiTest">${ic('checkc')}키 확인·모델</button></div>
     <div id="aiStatus" class="aistat">${(settings.aiCheck || []).map(([ok, t]) => `<div class="${ok ? 'ok' : 'bad'}">${ic(ok ? 'checkc' : 'x')}<span>${esc(t)}</span></div>`).join('')}</div>
     <p class="hint">키는 이 기기에만 저장되며, AI 기능을 쓸 때 대본 내용과 함께 Google Gemini API로만 전송됩니다.</p></div></div>
-  <div class="sec">${h2('bolt', '자동 입력 (클링·그록)')}${(() => { const info = kInfo(), gi = gInfo(), f = flowNow(), g = grokFlow(), nd = klingDumps().length, row = (ok, t) => `<div class="${ok ? 'ok' : 'bad'}">${ic(ok ? 'checkc' : 'x')}<span>${t}</span></div>`; return `<div class="card aibox">
-    <div class="aistat">${Native.has() ? row(info && info.on, `접근성 서비스 ${info && info.on ? '켜짐' : '꺼짐'}`) + row(info && info.pkg, info && info.pkg ? `클링 앱: ${esc(info.label || info.pkg)}` : '클링 앱을 찾지 못함') + row(gi && gi.pkg, gi && gi.pkg ? `그록 앱: ${esc(gi.label || gi.pkg)}` : '그록 앱을 찾지 못함') + row(window.AndroidBridge.hasMediaPerm && window.AndroidBridge.hasMediaPerm(), '사진 접근 권한 (그록 이미지 가져오기)') : '<div class="bad">' + ic('x') + '<span>휴대폰 앱에서만 쓸 수 있습니다</span></div>'}
+  <div class="sec">${h2('bolt', '자동 입력 (클링·그록·피클)')}${(() => { const info = kInfo(), gi = gInfo(), pi = pInfo(), f = flowNow(), g = grokFlow(), pf = pickleFlow(), nd = klingDumps().length, row = (ok, t) => `<div class="${ok ? 'ok' : 'bad'}">${ic(ok ? 'checkc' : 'x')}<span>${t}</span></div>`; return `<div class="card aibox">
+    <div class="aistat">${Native.has() ? row(info && info.on, `접근성 서비스 ${info && info.on ? '켜짐' : '꺼짐'}`) + row(info && info.pkg, info && info.pkg ? `클링 앱: ${esc(info.label || info.pkg)}` : '클링 앱을 찾지 못함') + row(gi && gi.pkg, gi && gi.pkg ? `그록 앱: ${esc(gi.label || gi.pkg)}` : '그록 앱을 찾지 못함') + row(pi && pi.pkg, pi && pi.pkg ? `피클 앱: ${esc(pi.label || pi.pkg)}` : '피클 앱을 찾지 못함') + row(window.AndroidBridge.hasMediaPerm && window.AndroidBridge.hasMediaPerm(), '사진 접근 권한 (그록 이미지 가져오기)') : '<div class="bad">' + ic('x') + '<span>휴대폰 앱에서만 쓸 수 있습니다</span></div>'}
       <div class="${f.verified ? 'ok' : 'bad'}">${ic(f.verified ? 'checkc' : 'info')}<span>클링 순서 ${esc(f.version || '')}${f.verified ? '' : ' · 아직 일부만 맞춰짐'}</span></div>
-      <div class="${g.verified ? 'ok' : 'bad'}">${ic(g.verified ? 'checkc' : 'info')}<span>그록 순서 ${esc(g.version || '')}${g.verified ? '' : ' · 아직 그록 화면에 맞춰지지 않음'}</span></div></div>
+      <div class="${g.verified ? 'ok' : 'bad'}">${ic(g.verified ? 'checkc' : 'info')}<span>그록 순서 ${esc(g.version || '')}${g.verified ? '' : ' · 아직 그록 화면에 맞춰지지 않음'}</span></div>
+      <div class="${pf.verified ? 'ok' : 'bad'}">${ic(pf.verified ? 'checkc' : 'info')}<span>피클 순서 ${esc(pf.version || '')}${pf.verified ? '' : ' · 보내기 버튼 위치는 추측'}</span></div></div>
     ${Native.has() && window.AndroidBridge.hasMediaPerm && !window.AndroidBridge.hasMediaPerm() ? `<button class="btn sm" data-act="mediaPerm">${ic('shield')}사진 접근 허용하기</button>` : ''}
     <div class="aiacts"><button class="btn sm blue" data-act="openAcc">${ic('gear')}접근성 설정</button><button class="btn sm" data-act="openAppInfo">${ic('info')}앱 정보</button></div>
     <p class="hint">켜는 방법: 접근성 설정 > 설치된 앱 > "숏드라마 메이커 · 자동 입력" 켜기. 회색으로 막혀 있으면 앱 정보 > 오른쪽 위 ⋮ > "제한된 설정 허용"을 먼저 누르세요.</p>
     <div class="aiacts"><button class="btn sm" data-act="flowFetch">${ic('refresh')}순서 업데이트</button></div>
-    <div class="aiacts"><button class="btn sm" data-act="inspect" data-t="kling">${ic('camera')}클링 화면 기록</button><button class="btn sm" data-act="inspect" data-t="grok">${ic('camera')}그록 화면 기록</button></div>
+    <div class="aiacts"><button class="btn sm" data-act="inspect" data-t="kling">${ic('camera')}클링 화면 기록</button><button class="btn sm" data-act="inspect" data-t="grok">${ic('camera')}그록 화면 기록</button><button class="btn sm" data-act="inspect" data-t="pickle">${ic('camera')}피클 화면 기록</button></div>
     ${nd ? `<button class="btn sm blue" data-act="dumpOut">${ic('download')}기록한 화면 ${nd}개 파일로 저장</button>` : ''}
-    <p class="hint">"화면 기록"을 누르면 그 앱이 열리고 위쪽에 막대가 뜹니다. 클링은 만들기 화면, 모드 메뉴, 사진 고르는 화면, 생성 뒤 화면에서, 그록은 첫 화면, 프롬프트를 보낸 뒤 이미지가 나온 화면, 이미지를 눌러 연 화면(저장 버튼이 보이는 화면)에서 각각 "이 화면 기록"을 누른 뒤 "끝내기"를 누르세요. 저장한 파일을 보내 주시면 순서를 맞춰 드립니다.</p>
+    <p class="hint">"화면 기록"을 누르면 그 앱이 열리고 위쪽에 막대가 뜹니다. 클링은 만들기 화면, 모드 메뉴, 사진 고르는 화면, 생성 뒤 화면에서, 그록은 첫 화면, 프롬프트를 보낸 뒤 이미지가 나온 화면, 이미지를 눌러 연 화면(저장 버튼이 보이는 화면), 피클은 채팅 화면(지시문을 입력한 상태)에서 각각 "이 화면 기록"을 누른 뒤 "끝내기"를 누르세요. 저장한 파일을 보내 주시면 순서를 맞춰 드립니다.</p>
     <p class="hint">클링 앱 화면을 대신 누르는 기능이라 클링 앱이 업데이트되면 멈출 수 있고, 클링 이용약관상 자동 조작이 문제가 될 수 있습니다. 본인 계정에서 본인 책임으로 쓰세요.</p></div>`; })()}</div>
   <div class="sec">${h2('shield', '백업')}<div class="list">
     ${setRow('download', 218, '모든 작업 백업하기', `작업 ${projects.length}편을 파일 하나로 저장`, 'backup')}
@@ -1189,11 +1219,15 @@ const A = {
   asmCancel: () => window.AndroidBridge.cancelAssemble(),
   openOut: () => window.AndroidBridge.openVideo(finOf(draft).out),
   uploadOut: () => { if (!needPhone()) uploadOut(draft); },
+  upWay: d => { settings.upWay = d.v; saveSettings(); render(); },
+  upPlat: d => { const v = upPlats(), on = v.includes(d.v); settings.upPlats = on ? v.filter(x => x !== d.v) : v.concat(d.v); if (!settings.upPlats.length) settings.upPlats = [d.v]; saveSettings(); render(); },
+  pickleUp: () => pickleUpload(draft, false),
+  pickleCopy: () => copyText(pickleText(draft)),
   klingSend: () => klingSend(),
   openAcc: () => { if (Native.has()) window.AndroidBridge.openAccessibility(); else toast('휴대폰 앱에서만 됩니다'); },
   openAppInfo: () => { if (Native.has()) window.AndroidBridge.openAppInfo(); else toast('휴대폰 앱에서만 됩니다'); },
   flowFetch: () => fetchFlow(),
-  inspect: d => { const info = kInfo(); if (!Native.has() || !info || !info.on) return klingNeedSetup(info); window.AndroidBridge.clearKlingDumps(); seenDumps = 0; const t = d.t === 'grok' ? 'grok' : 'kling'; const r = window.AndroidBridge.startAutoInspect(t, (t === 'grok' ? grokFlow() : flowNow()).package || ''); if (r !== 'ok') toast(r); },
+  inspect: d => { const info = kInfo(); if (!Native.has() || !info || !info.on) return klingNeedSetup(info); window.AndroidBridge.clearKlingDumps(); seenDumps = 0; const t = ['grok', 'pickle'].includes(d.t) ? d.t : 'kling'; const r = window.AndroidBridge.startAutoInspect(t, (t === 'grok' ? grokFlow() : t === 'pickle' ? pickleFlow() : flowNow()).package || ''); if (r !== 'ok') toast(r); },
   grokMake: d => grokMake(d.ctx, d.ref, d.kind),
   mediaPerm: () => window.AndroidBridge.requestMediaPerm(),
   dumpOut: () => { const d = klingDumps(); if (!d.length) return toast('기록한 화면이 없습니다'); Native.save(`kling_screens_${dateStr().replace(/\./g, '')}.json`, 'application/json', JSON.stringify({ app: 'short-drama-maker', flow: flowNow().version, screens: d })); },

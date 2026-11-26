@@ -1,6 +1,6 @@
-# 자동 입력 순서 (kling/flow.json, grok/flow.json)
+# 자동 입력 순서 (kling/flow.json, grok/flow.json, pickle/flow.json)
 
-앱의 "클링으로 보내기"는 kling/flow.json, "그록으로 생성"은 grok/flow.json 의 순서대로 그 앱을 조작한다. 그록 순서는 끝에 `returnApp` 으로 이 앱에 돌아오고, 앱은 그 사이 갤러리에 새로 저장된 사진을 인물 칸에 첨부한다. 앱 설정의 "순서 업데이트"를 누르면 이 파일을 다시 읽으므로, 클링 앱이 바뀌어도 APK를 새로 만들 필요가 없다.
+앱의 "클링으로 보내기"는 kling/flow.json, "그록으로 생성"은 grok/flow.json 의 순서대로 그 앱을 조작한다. 그록 순서는 끝에 `returnApp` 으로 이 앱에 돌아오고, 앱은 그 사이 갤러리에 새로 저장된 사진을 인물 칸에 첨부한다. "피클에게 업로드 맡기기"는 먼저 완성 영상과 지시문을 피클 앱에 바로 공유하고, 피클이 공유를 받지 않으면 pickle/flow.json 순서로 피클 채팅에 지시문(`${prompt}`)을 입력해 보낸다. 앱 설정의 "순서 업데이트"를 누르면 이 파일을 다시 읽으므로, 클링 앱이 바뀌어도 APK를 새로 만들 필요가 없다.
 
 - `start` → 샷마다 (`shot` → `between`) → (원클릭 제작일 때) `collectStart` → 샷마다 `collect` → `collectEnd` → `end`
 - `collect` 는 생성이 끝난 영상을 샷 순서대로 내려받는 단계. `find.index` 에 `${ri}`(뒤에서부터 순번: 최신 목록에서 먼저 넣은 샷이 아래에 있을 때) 또는 `${i0}`(0부터 순번)를 쓸 수 있다

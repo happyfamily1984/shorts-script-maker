@@ -120,3 +120,4 @@ const CHECKLIST = [
 const HITS_URL_DEFAULT = 'https://raw.githubusercontent.com/happyfamily1984/shorts-script-maker/main/hits/hits.json';
 const KLING_FLOW_URL_DEFAULT = 'https://raw.githubusercontent.com/happyfamily1984/shorts-script-maker/main/kling/flow.json';
 const GROK_FLOW_URL_DEFAULT = 'https://raw.githubusercontent.com/happyfamily1984/shorts-script-maker/main/grok/flow.json';
+const PICKLE_FLOW_URL_DEFAULT = 'https://raw.githubusercontent.com/happyfamily1984/shorts-script-maker/main/pickle/flow.json';

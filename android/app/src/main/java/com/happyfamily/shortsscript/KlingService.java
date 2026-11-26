@@ -78,6 +78,7 @@ public class KlingService extends AccessibilityService {
     /* ---------- 클링 앱 찾기 ---------- */
     static String findKling(Context c, String preferred) { return findApp(c, preferred, new String[]{"kling", "클링", "可灵"}); }
     static String findGrok(Context c, String preferred) { return findApp(c, preferred, new String[]{"grok", "그록"}); }
+    static String findPickle(Context c, String preferred) { return findApp(c, preferred, new String[]{"피클", "pickle"}); }
     static String findApp(Context c, String preferred, String[] keys) {
         PackageManager pm = c.getPackageManager();
         if (preferred != null && !preferred.isEmpty() && pm.getLaunchIntentForPackage(preferred) != null) return preferred;
