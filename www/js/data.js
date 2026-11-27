@@ -1,5 +1,5 @@
 /* 숏드라마 대본메이커 기본 데이터
-   대본 본문은 dramas.js(tools/dramas/data 에서 생성), 히트작 벤치마킹은 hits.js 와 깃허브 저장소에서 온다. */
+   대본 본문은 dramas.js(tools/dramas/data 에서 생성), 유행 리포트는 short-form-report 저장소에서 새로고침으로 받아 온다. */
 'use strict';
 
 /* 도파민 주제 20. punch = 무엇이 통쾌한가, beats = 이 주제의 6샷 공식 */
@@ -117,7 +117,6 @@ const CHECKLIST = [
 ];
 
 /* 히트작 벤치마킹 기본 주소 (설정에서 바꿀 수 있다) */
-const HITS_URL_DEFAULT = 'https://raw.githubusercontent.com/happyfamily1984/shorts-script-maker/main/hits/hits.json';
 const KLING_FLOW_URL_DEFAULT = 'https://raw.githubusercontent.com/happyfamily1984/shorts-script-maker/main/kling/flow.json';
 const GROK_FLOW_URL_DEFAULT = 'https://raw.githubusercontent.com/happyfamily1984/shorts-script-maker/main/grok/flow.json';
 const PICKLE_FLOW_URL_DEFAULT = 'https://raw.githubusercontent.com/happyfamily1984/shorts-script-maker/main/pickle/flow.json';

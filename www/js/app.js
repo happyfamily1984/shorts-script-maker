@@ -483,57 +483,43 @@ async function aiTest() {
   const ok = lines.filter(l => l[0]).length; toast(ok ? `키 ${keys.length}개 중 ${ok}개 사용 가능` : '사용 가능한 키가 없습니다');
 }
 
-/* ---------- 히트작 벤치마킹 (깃허브 저장소에서 읽기) ---------- */
-const hitsUrl = () => String(settings.hitsUrl || '').trim() || HITS_URL_DEFAULT;
-const validScript = s => Array.isArray(s) && s.length === 6 && Array.isArray(s[4]) && s[4].length >= 2 && Array.isArray(s[5]) && s[5].length >= 3 && s[5].every(x => Array.isArray(x) && x.length === 8) && s[4].every(c => Array.isArray(c) && c.length === 5);
-const validHit = h => h && typeof h.id === 'string' && validScript(h.script);
-function allHits() {
-  const map = new Map();
-  ((typeof HITS_LOCAL !== 'undefined' && HITS_LOCAL.items) || []).filter(validHit).forEach(h => map.set(h.id, h));
-  ((store.get('hits', {}).items) || []).filter(validHit).forEach(h => map.set(h.id, h));
-  return [...map.values()];
+/* ---------- 유튜브 인기 숏드라마 리포트 (short-form-report 저장소가 매일 아침 자동 수집·분석) ---------- */
+const TRENDS_BASE = 'https://raw.githubusercontent.com/happyfamily1984/short-form-report/main/trends/data/';
+const trendsBase = () => (String(settings.trendsUrl || '').trim() || TRENDS_BASE).replace(/\/?$/, '/');
+const TREND_THEME = { '복수극': 'comeback', '회귀·환생': 'rebirth', '신분 반전': 'hidden', '계약 로맨스': 'contract', '직장·현실 사이다': 'gapjil' };
+const BG_THEME = [[/배달|라이더/, 'rider'], [/부동산|건물|빌라/, 'hidden'], [/사돈|시댁|처가|시어머니/, 'inlaws'], [/회사|직장|부장|상사/, 'credit'], [/학교|학폭|동창/, 'bully'], [/이혼/, 'divorce'], [/불륜|외도/, 'affair'], [/회귀|환생/, 'rebirth'], [/계약/, 'contract'], [/가장|가족|형제/, 'family'], [/누명/, 'frame'], [/사기/, 'scam']];
+const themeFor = (genre, text) => { const b = BG_THEME.find(([re]) => re.test(text || '')); return b ? b[1] : TREND_THEME[genre] || 'hidden'; };
+const trends = () => store.get('trends', { dates: [], days: {}, fetched: 0 });
+const slimVideo = v => ({ id: v.video_id, url: v.url, title: v.title, channel: v.channel, views: v.views, likes: v.likes, dur: v.duration_sec, genre: v.genre, rank: v.rank, vel: v.velocity, ratio: v.view_sub_ratio, comments: (v.top_comments || []).slice(0, 3).map(c => c.text) });
+const man = n => n >= 1e8 ? `${(n / 1e8).toFixed(1)}억` : n >= 1e4 ? `${(n / 1e4).toFixed(n >= 1e5 ? 0 : 1)}만` : String(n || 0);
+async function fetchTrends(date) {
+  toast('유행 리포트를 불러오는 중…');
+  const base = trendsBase(), bust = '?t=' + Date.now(), t = trends();
+  let dates = t.dates;
+  if (!date) {
+    const h = await httpReq(base + 'history.csv' + bust);
+    if (h.status !== 200) return dialog('리포트를 읽지 못했습니다', h.status === 0 ? '인터넷 연결을 확인하세요.' : `저장소의 기록 파일을 찾지 못했습니다 (응답 ${h.status}). 저장소가 공개인지, 자동 수집이 한 번 이상 돌았는지 확인하세요.`, [['닫기', null]]);
+    dates = [...new Set(h.text.split('\n').slice(1).map(l => l.split(',')[0].trim()).filter(d => /^\d{4}-\d\d-\d\d$/.test(d)))].sort().reverse().slice(0, 14);
+    if (!dates.length) return dialog('아직 수집된 리포트가 없습니다', '저장소의 자동 수집(매일 아침 6시)이 한 번 돈 뒤에 다시 눌러 주세요.', [['닫기', null]]);
+    date = dates[0];
+  }
+  const [a, r] = await Promise.all([httpReq(base + date + '/analysis.json' + bust), httpReq(base + date + '/raw.json' + bust)]);
+  let analysis = null, raw = null;
+  try { if (a.status === 200) analysis = JSON.parse(a.text); } catch (e) {}
+  try { if (r.status === 200) raw = JSON.parse(r.text); } catch (e) {}
+  if (!analysis && !raw) return dialog(`${date} 리포트를 읽지 못했습니다`, a.status === 0 ? '인터넷 연결을 확인하세요.' : '그날 분석 파일이 없거나 형식이 올바르지 않습니다.', [['닫기', null]]);
+  const days = Object.assign({}, t.days);
+  days[date] = { analysis, videos: raw && Array.isArray(raw.videos) ? raw.videos.map(slimVideo) : [] };
+  Object.keys(days).sort().reverse().slice(7).forEach(k => delete days[k]);
+  store.set('trends', { dates, days, fetched: Date.now() });
+  if (cur().v === 'hits') cur().p.d = date;
+  render(); toast(`${date} 리포트를 불러왔습니다`);
 }
-async function fetchHits() {
-  toast('저장소에서 불러오는 중…');
-  const r = await httpReq(hitsUrl() + (hitsUrl().includes('?') ? '&' : '?') + 't=' + Date.now());
-  if (r.status !== 200) return dialog('저장소를 읽지 못했습니다', r.status === 404 ? '주소에 파일이 없습니다. 저장소가 비공개이거나 파일이 아직 올라가지 않았을 수 있습니다. 아래 주소를 확인하세요.' : r.status === 0 ? '인터넷 연결을 확인하세요.' : `응답 코드 ${r.status}`, [['닫기', null]]);
-  try {
-    const data = JSON.parse(r.text), items = (Array.isArray(data) ? data : data.items || []).filter(validHit);
-    store.set('hits', { items, updated: data.updated || '', fetched: Date.now() }); render(); toast(`벤치마킹 ${items.length}편을 불러왔습니다`);
-  } catch (e) { dialog('파일 형식이 올바르지 않습니다', 'hits.json 이 올바른 JSON인지 확인하세요.', [['닫기', null]]); }
+function trendIdeaText(it) {
+  return [it.title, it.background ? `배경: ${it.background}` : '', it.hook ? `첫 장면(훅): ${it.hook}` : '', it.structure ? `구조: ${it.structure}` : ''].filter(Boolean).join('\n');
 }
-function researchPrompt(n, platform) {
-  return `너는 숏드라마(세로형 마이크로 드라마) 시장 조사원이자 작가다. 아래 순서대로 작업해라.
-
-[1] 조사
-- ${platform || 'ReelShort, DramaBox, ShortMax, 유튜브 쇼츠, 틱톡'}에서 조회수 5천만~1억 이상으로 보도되었거나 플랫폼 인기 순위 최상위에 오른 숏드라마 ${n}편을 찾는다.
-- 작품마다 제목, 플랫폼, 조회수·순위 근거(출처 주소 포함)를 확인한다. 확인하지 못한 수치는 지어내지 말고 "확인 불가"라고 적는다.
-
-[2] 분석 (공식만 뽑는다)
-- 작품마다 "왜 터졌는지"를 2~3문장으로 정리한다: 첫 3초 훅, 굴욕과 반전의 구조, 통쾌한 지점, 다음 화로 넘기는 방식.
-- 원작의 대사, 인물 이름, 제목, 고유한 장면을 옮겨 적지 않는다. 구조와 공식만 가져온다.
-
-[3] 새 대본 쓰기 (오리지널)
-- 분석한 공식만 빌려서 인물, 직업, 배경, 대사, 제목이 모두 다른 새 6샷 대본을 한국어·영어로 쓴다. 원작과 나란히 놓았을 때 같은 작품으로 보이면 안 된다.
-- 6샷 순서: 훅·굴욕 → 고조 → 복선 → 반전 공개 → 참교육 → 클리프행어. 샷마다 눈에 보이는 동작 하나, 대사는 한 줄(한국어 28자, 영어 14단어 이내).
-- 피, 흉기, 성적 묘사, 실존 인물, 실제 브랜드는 쓰지 않는다(AI 영상 생성이 거부된다). 응징은 지위·법·증거·공개 망신으로 한다.
-- 설정은 한국과 해외 어디서나 통해야 한다. 한국어 칸은 한국 이름, 영어 칸은 서양 이름을 쓴다.
-
-[4] 저장 형식
-깃허브 저장소의 hits/hits.json 파일에 있는 "items" 배열 끝에 아래 형식으로 추가한다. 기존 항목은 지우지 않는다. "updated"는 오늘 날짜로 바꾼다.
-{
-  "id": "영문-소문자-고유값",
-  "src": { "title": "참고한 작품 제목", "platform": "플랫폼", "note": "조회수·순위 근거 한 줄", "url": "출처 주소" },
-  "formula": "왜 터졌는지 분석 2~3문장 (한국어)",
-  "theme": "${THEMES.map(t => t.id).join(' | ')} 중 하나",
-  "script": [
-    "한국어 제목", "English Title", "한국어 한 줄 줄거리", "English logline",
-    [["H", "한국 이름", "English name", "한국어 외형·복장", "English look and outfit"], ["V", "…", "…", "…", "…"]],
-    [["한국어 장소", "English place", "한국어 화면 묘사", "English visible action", 화자번호(인물 순번, 없으면 -1), "한국어 대사", "English line", "카메라코드"], … 정확히 6개]
-  ]
-}
-- 역할코드: H 주인공, V 악역, A 조력자, X 기타. 카메라코드: ${Object.keys(CAMS).join(', ')}.
-- 저장 전에 JSON 문법 오류가 없는지 확인한다.`;
+function trendVideoText(v, va) {
+  return [`유튜브 인기 쇼츠의 형식만 참고한 새 이야기 (원작의 대사·인물·제목은 쓰지 않는다)`, va && va.hook ? `훅: ${va.hook.replace(/\s*\(추정\)/g, '')}` : '', va && va.structure ? `구조: ${va.structure.replace(/\s*\(추정\)/g, '')}` : '', va && va.take ? `살릴 점: ${va.take}` : '', va && va.change ? `더 좋게: ${va.change}` : ''].filter(Boolean).join('\n');
 }
 
 /* ---------- 클링 자동 입력 (접근성 서비스) ---------- */
@@ -1116,26 +1102,35 @@ V.editor = () => {
 };
 
 V.hits = p => {
-  const items = allHits(), meta = store.get('hits', {}), q = (p.q || '').trim().toLowerCase(), n = p.n || 10, k = isEn() ? 1 : 0;
-  const list = items.filter(h => !q || (h.script.slice(0, 4).join(' ') + (h.formula || '') + ((h.src || {}).title || '')).toLowerCase().includes(q));
-  const rp = researchPrompt(n, p.pf || '');
-  return { nav: 'hits', title: '히트작 벤치마킹', ticon: 'trophy', big: true, acts: modeSeg(), html: `
-    ${pageHead({ eyebrow: '세계 히트 숏드라마', eicon: 'globe', lead: '크게 터진 작품의 공식만 분석해 새로 쓴 대본입니다. 대사와 인물은 모두 새로 만든 것이라 그대로 제작할 수 있습니다.', icon: 'trophy', hue: 42 })}
-    <div class="card guide"><b>${ic('link')}저장소에서 불러오기</b><p>깃허브 저장소의 hits.json 파일을 읽습니다. 저장소에 새 분석을 추가한 뒤 새로고침을 누르면 목록에 반영됩니다.</p>
-      <div class="frow wide"><span>주소</span><input class="mono" data-set="hitsUrl" value="${esc(settings.hitsUrl || '')}" placeholder="${esc(HITS_URL_DEFAULT)}" aria-label="hits.json 주소" autocapitalize="off" spellcheck="false"></div>
-      <div class="aiacts"><button class="btn sm blue" data-act="hitsFetch">${ic('refresh')}새로고침</button><button class="btn sm" data-act="hitsOut">${ic('share')}목록 내보내기</button></div>
-      <p class="hint">${meta.fetched ? `마지막으로 불러온 날: ${dateStr(meta.fetched)} · ` : ''}비워 두면 기본 주소를 씁니다. 비공개 저장소는 읽을 수 없습니다.</p></div>
-    <div class="search">${ic('search')}<input class="in" id="hq" type="search" data-q="1" placeholder="제목, 원작, 공식으로 찾기" value="${esc(p.q || '')}" aria-label="검색">${q ? `<button class="ib sm" data-act="qclear" aria-label="검색어 지우기">${ic('x')}</button>` : ''}</div>
-    <div class="sec">${h2('trophy', `벤치마킹 대본 ${list.length}편`)}
-      ${list.length ? list.map(h => { const t = TH[h.theme] || THEMES[0], s = h.src || {}; return `<div class="card hit" role="button" tabindex="0" data-act="openHit" data-id="${esc(h.id)}"><div class="aih">${glyph(t)}<span class="grow"><b>${esc(h.script[k])}</b><small>${esc(h.script[2 + k])}</small></span>${chev}</div>
-        ${s.title ? `<p class="src">${ic('film')}참고한 히트작: <b>${esc(s.title)}</b>${s.platform ? ` · ${esc(s.platform)}` : ''}${s.note ? ` · ${esc(s.note)}` : ''}</p>` : ''}${h.formula ? `<p class="fx">${ic('flame')}${esc(h.formula)}</p>` : ''}</div>`; }).join('')
-        : `<div class="card empty"><b>${items.length ? '찾는 대본이 없습니다' : '아직 벤치마킹 대본이 없습니다'}</b>${items.length ? '다른 단어로 찾아보세요.' : '아래 조사 지시 프롬프트로 AI에게 조사를 시키고, 결과를 저장소에 넣은 뒤 새로고침을 누르세요.'}</div>`}</div>
-    <div class="sec">${h2('edit', '조사 지시 프롬프트')}
-      <div class="card guide"><p>이 프롬프트를 다른 AI(클로드, 챗GPT, 제미나이 등)에 붙여넣으면 히트작을 조사하고, 공식만 분석해, 새 대본을 저장소 형식으로 만들어 줍니다. 결과를 저장소의 hits/hits.json에 넣으세요.</p>
-        <span class="lab">조사할 작품 수</span>${seg('p_n', [[5, '5편'], [10, '10편'], [20, '20편']], n)}
-        <div class="frow wide"><span>플랫폼</span><input data-p="pf" value="${esc(p.pf || '')}" placeholder="비우면 ReelShort, DramaBox, 쇼츠, 틱톡" aria-label="조사할 플랫폼"></div>
-        <textarea class="ptx tall" readonly aria-label="조사 지시 프롬프트">${esc(rp)}</textarea>
-        <div class="aiacts"><button class="btn sm blue" data-act="copy" data-t="${esc(rp)}">${ic('copy')}복사하기</button><button class="btn sm" data-act="rpOut">${ic('share')}내보내기</button></div></div></div>` };
+  const t = trends(), date = p.d || t.dates[0] || '', day = t.days[date], an = day && day.analysis, vids = (day && day.videos) || [];
+  const genres = an && an.genres ? Object.keys(an.genres) : [...new Set(vids.map(v => v.genre))], g = genres.includes(p.g) ? p.g : '';
+  const vaOf = (gn, id) => ((an && an.genres && an.genres[gn] && an.genres[gn].videos) || []).find(x => x.video_id === id);
+  const sm = (an && an.summary) || {}, clean = x => esc(String(x || '').replace(/\s*\(추정\)\.?/g, ''));
+  const vcard = v => { const va = vaOf(v.genre, v.id); return `<div class="card tv"><div class="tvh"><span class="rk">${v.rank || ''}</span><span class="grow"><b>${esc(v.title)}</b><small>${esc(v.channel || '')} · 조회 ${man(v.views)} · ${v.dur || '?'}초${v.vel ? ` · 하루 +${man(v.vel)}` : ''}</small></span></div>
+    ${va ? `<dl class="tvk">${[['훅', va.hook], ['구조', va.structure], ['반응', va.reaction], ['살릴 점', va.take], ['더 좋게', va.change]].filter(x => x[1]).map(([k, x]) => `<dt>${k}</dt><dd>${clean(x)}</dd>`).join('')}</dl>` : ''}
+    ${v.comments && v.comments.length ? `<p class="hint">댓글: ${v.comments.map(c => `"${esc(String(c).replace(/\s+/g, ' ').slice(0, 40))}"`).join(' · ')}</p>` : ''}
+    <div class="aiacts"><button class="btn sm blue" data-act="trendVideo" data-id="${esc(v.id)}">${ic('sparkle')}이 형식으로 대본 쓰기</button><button class="btn sm" data-act="openUrl" data-u="${esc(v.url || '')}">${ic('play')}유튜브에서 보기</button></div></div>`; };
+  const shown = genres.filter(x => !g || x === g);
+  return { nav: 'hits', title: '유행 리포트', ticon: 'trophy', big: true, acts: modeSeg(), html: `
+    ${pageHead({ eyebrow: '유튜브 인기 숏드라마 · 매일 자동 수집', eicon: 'globe', lead: '매일 아침 장르별 인기 쇼츠를 모아 훅·구조·길이를 분석한 결과입니다. 아이디어나 영상의 형식으로 바로 새 대본을 쓸 수 있습니다.', icon: 'trophy', hue: 42 })}
+    <div class="card guide"><div class="aiacts"><button class="btn sm blue" data-act="trendsFetch">${ic('refresh')}새로고침</button>${date ? `<span class="hint" style="margin:0">${date} 리포트${t.fetched ? ` · ${dateStr(t.fetched)} 받음` : ''}</span>` : ''}</div>
+      ${t.dates.length > 1 ? `<div class="chips">${t.dates.slice(0, 7).map(d => `<button class="chip ${d === date ? 'on' : ''}" data-act="trendDay" data-v="${d}">${d.slice(5).replace('-', '/')}</button>`).join('')}</div>` : ''}
+      <p class="hint">새 리포트는 매일 아침 6시쯤 저장소에 올라옵니다. 앱을 고치지 않아도 새로고침만 누르면 최신 결과를 받습니다.</p></div>
+    ${!day ? `<div class="card empty"><b>${t.dates.length ? '이 날짜는 아직 받지 않았습니다' : '아직 받은 리포트가 없습니다'}</b>위의 새로고침을 눌러 받아오세요.</div>` : `
+    ${(sm.common || []).length || (sm.rising || []).length ? `<div class="sec">${h2('flame', '오늘의 흐름')}
+      <div class="card kv">${(sm.common || []).map(c => `<div class="item"><p><span class="lab">${esc(c.name)}</span><span class="pre">${clean(c.detail)}</span></p></div>`).join('')}
+      ${(sm.rising || []).length ? `<div class="item"><p><span class="lab">뜨는 형식</span><span class="pre">${sm.rising.map(clean).join('\n')}</span></p></div>` : ''}
+      ${(sm.cooling || []).length ? `<div class="item"><p><span class="lab">식는 형식</span><span class="pre">${sm.cooling.map(clean).join('\n')}</span></p></div>` : ''}</div></div>` : ''}
+    ${(sm.ideas || []).length ? `<div class="sec">${h2('sparkle', '회차 아이디어')}
+      ${sm.ideas.map((it, i) => `<div class="card tv"><div class="tvh"><span class="grow"><b>${esc(it.title)}</b><small>${esc(it.background || '')}${it.length ? ` · ${esc(it.length)}` : ''}</small></span></div>
+        <dl class="tvk">${it.hook ? `<dt>훅</dt><dd>${clean(it.hook)}</dd>` : ''}${it.structure ? `<dt>구조</dt><dd>${clean(it.structure)}</dd>` : ''}</dl>
+        <div class="aiacts"><button class="btn sm blue" data-act="trendIdea" data-i="${i}">${ic('sparkle')}이 아이디어로 대본 쓰기</button></div></div>`).join('')}</div>` : ''}
+    ${genres.length ? `<div class="chips">${[['', '전체'], ...genres.map(x => [x, x])].map(([v, n]) => `<button class="chip ${g === v ? 'on' : ''}" data-act="set" data-k="p_g" data-v="${esc(v)}">${esc(n)}</button>`).join('')}</div>` : ''}
+    ${shown.map(gn => { const pt = an && an.genres && an.genres[gn] && an.genres[gn].patterns, th = TH[themeFor(gn, '')], list = vids.filter(v => v.genre === gn).sort((x, y) => (x.rank || 99) - (y.rank || 99));
+      return `<div class="sec">${h2('trophy', `${esc(gn)} · 인기 ${list.length}편`)}
+        ${th ? `<p class="hint">우리 주제와 가장 가까운 것: <button class="pbtn" data-act="go" data-v="theme" data-id="${th.id}">${ic(th.icon)}${esc(th.name)}</button></p>` : ''}
+        ${pt ? `<div class="card kv">${[['제목', pt.title], ['길이', pt.length], ['이야기', pt.story], ['리듬', pt.rhythm]].filter(x => x[1]).map(([k, x]) => `<div class="item"><p><span class="lab">${k}</span><span class="pre">${clean(x)}</span></p></div>`).join('')}</div>` : ''}
+        ${list.map(vcard).join('')}</div>`; }).join('')}`}` };
 };
 
 V.library = p => {
@@ -1207,11 +1202,11 @@ V.settings = () => ({ title: '설정', back: true, html: `
 V.privacy = () => ({ title: '개인정보 처리방침', back: true, html: `${pageHead({ lead: '숏드라마 메이커는 개인정보를 수집하지 않습니다.', icon: 'shield', hue: 262 })}<div class="card" style="display:flex;flex-direction:column;gap:10px">
   <p style="margin:0">작성한 대본, 설정, Gemini API 키는 이 기기 안에만 저장됩니다. 앱을 삭제하면 함께 지워집니다.</p>
   <p style="margin:0">AI 기능은 사용자가 직접 넣은 Gemini API 키로 동작합니다. AI 버튼을 누를 때만 대본 내용이 Google Gemini API로 전송되며, 이 전송에는 Google의 약관과 개인정보 처리방침이 적용됩니다.</p>
-  <p style="margin:0">히트작 벤치마킹의 새로고침은 설정된 깃허브 주소에서 공개 파일을 읽어 올 뿐, 기기의 정보를 보내지 않습니다. 앱 제작자의 서버로는 아무것도 전송되지 않습니다.</p>
+  <p style="margin:0">유행 리포트의 새로고침은 깃허브 공개 저장소의 파일을 읽어 올 뿐, 기기의 정보를 보내지 않습니다. 앱 제작자의 서버로는 아무것도 전송되지 않습니다.</p>
   <p style="margin:0">문의: happyfamily1984.3@gmail.com</p></div>` });
 
 /* ---------- 그리기 ---------- */
-const NAV = [['home', '홈', 'home'], ['hits', '히트작', 'trophy'], ['aiNew', '만들기', 'plus'], ['library', '보관함', 'folder'], ['info', '안내', 'book']];
+const NAV = [['home', '홈', 'home'], ['hits', '유행', 'trophy'], ['aiNew', '만들기', 'plus'], ['library', '보관함', 'folder'], ['info', '안내', 'book']];
 function render(resetScroll) {
   const c = cur(), r = V[c.v](c.p), view = $('#view'), keep = view.scrollTop;
   $('#nav').hidden = !!r.back;
@@ -1255,13 +1250,16 @@ const A = {
   go: d => go(d.v, d.id ? { id: d.id } : {}),
   tab: d => tab(d.v),
   mode: d => { settings.mode = d.v; saveSettings(); render(); toast(d.v === 'en' ? '해외용: 영어 프롬프트, 서양권 인물' : '국내용: 한국어 프롬프트, 한국 인물'); },
-  make: () => sheet('새 대본 만들기', [['주제에서 고르기', `완성 대본 ${DRAMA_COUNT.toLocaleString()}편에서 찾기`, () => go('browse')], ['AI로 새 대본 쓰기', '아이디어 한 줄로 6샷 대본 만들기', () => go('aiNew')], ['빈 대본으로 시작', '처음부터 직접 쓰기', () => A.blankNew()], ['히트작 벤치마킹', '세계 히트작의 공식으로 쓴 대본', () => tab('hits')]]),
+  make: () => sheet('새 대본 만들기', [['주제에서 고르기', `완성 대본 ${DRAMA_COUNT.toLocaleString()}편에서 찾기`, () => go('browse')], ['AI로 새 대본 쓰기', '아이디어 한 줄로 6샷 대본 만들기', () => go('aiNew')], ['빈 대본으로 시작', '처음부터 직접 쓰기', () => A.blankNew()], ['유행 리포트', '오늘 유튜브에서 뜨는 숏드라마 형식으로 쓰기', () => tab('hits')]]),
   quick: () => go('browse', { q: $('#quick').value.trim() }),
   reshuffle: () => { cur().p.seed = (cur().p.seed || 0) + 1; render(); },
   qclear: () => { cur().p.q = ''; render(); },
   openDrama: d => openDrama(d.th, +d.i),
   open: d => { if (sel) { sel.has(d.id) ? sel.delete(d.id) : sel.add(d.id); return render(); } openProject(d.id); },
-  openHit: d => { const h = allHits().find(x => x.id === d.id); if (!h) return; draft = toProject(h.script, TH[h.theme] ? h.theme : 'hidden', 'hit:' + h.id); draft.memo = h.src && h.src.title ? `벤치마킹 참고: ${h.src.title}${h.formula ? '\n공식: ' + h.formula : ''}` : ''; dirty = true; go('editor'); },
+  trendDay: d => { const t = trends(); cur().p.d = d.v; if (!t.days[d.v]) fetchTrends(d.v); else render(); },
+  trendIdea: d => { const t = trends(), day = t.days[cur().p.d || t.dates[0]], it = day && day.analysis && day.analysis.summary && day.analysis.summary.ideas[+d.i]; if (!it) return; go('aiNew', { th: themeFor('', `${it.background || ''} ${it.title || ''}`), idea: trendIdeaText(it) }); },
+  trendVideo: d => { const t = trends(), day = t.days[cur().p.d || t.dates[0]], v = day && day.videos.find(x => x.id === d.id); if (!v) return; const ga = day.analysis && day.analysis.genres && day.analysis.genres[v.genre], va = ga && (ga.videos || []).find(x => x.video_id === v.id); go('aiNew', { th: themeFor(v.genre, v.title), idea: trendVideoText(v, va) }); },
+  openUrl: d => { const u = d.u || ''; if (!/^https:\/\//.test(u)) return; if (Native.has() && window.AndroidBridge.openUrl) window.AndroidBridge.openUrl(u); else window.open(u, '_blank'); },
   myTheme: d => { const a = settings.myThemes, on = a.includes(d.id); if (on) a.splice(a.indexOf(d.id), 1); else a.push(d.id); saveSettings(); render(); toast(on ? '내 주제에서 뺐습니다' : '내 주제로 고정했습니다'); },
   set: d => {
     const k = d.k, v = /^-?\d+$/.test(d.v) ? +d.v : d.v;
@@ -1324,7 +1322,7 @@ const A = {
   aiPick: d => { settings.aiModel = d.v; saveSettings(); render(); toast(`모델을 ${d.v}로 바꿨습니다`); },
   aiClear: () => dialog('API 키를 모두 지울까요?', '이 기기에 저장된 키만 지워집니다.', [['취소', null], ['지우기', () => { settings.aiKeys = ''; settings.aiCheck = []; saveSettings(); render(); toast('키를 지웠습니다'); }, 'pri']]),
   subOut: d => outSheet('자막 파일', toSrt(draft, d.v), fileName(T(draft) + '_' + d.v, 'srt'), 'application/x-subrip'),
-  hitsFetch: () => fetchHits(),
+  trendsFetch: () => fetchTrends(),
   oneClick: () => oneClick(),
   shotKind: d => { const i = +d.i, v = vidShots(draft).filter(x => x !== i); draft.vids = d.v === 'v' ? v.concat(i).sort((a, b) => a - b) : v; touch(); render(); },
   klingFetchOnly: () => {
@@ -1362,8 +1360,6 @@ const A = {
   grokMake: d => grokMake(d.ctx, d.ref, d.kind),
   mediaPerm: () => window.AndroidBridge.requestMediaPerm(),
   dumpOut: () => { const d = klingDumps(); if (!d.length) return toast('기록한 화면이 없습니다'); Native.save(`kling_screens_${dateStr().replace(/\./g, '')}.json`, 'application/json', JSON.stringify({ app: 'short-drama-maker', flow: flowNow().version, screens: d })); },
-  hitsOut: () => outSheet('벤치마킹 목록', JSON.stringify({ version: 1, updated: dateStr().replace(/\./g, '-'), items: allHits() }, null, 2), 'hits.json', 'application/json'),
-  rpOut: () => outSheet('조사 지시 프롬프트', researchPrompt(cur().p.n || 10, cur().p.pf || ''), fileName('조사지시프롬프트', 'txt')),
   lth: d => { const p = cur().p; p.th = d.v || ''; p.fav = false; render(true); },
   lfav: () => { const p = cur().p; p.fav = !p.fav; p.th = ''; render(true); },
   fav: d => { const p = projects.find(x => x.id === d.id); if (!p) return; p.fav = !p.fav; saveProjects(); render(); toast(p.fav ? '즐겨찾기에 넣었습니다' : '즐겨찾기에서 뺐습니다'); },

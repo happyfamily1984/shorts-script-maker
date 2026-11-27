@@ -489,3 +489,12 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display
 .slots.still .slot{max-height:none;border-radius:12px}
 .slots.still .sadd small{font-size:10.5px}
 .slots.still .sacts{transform:scale(.85);transform-origin:bottom right}
+/* 유행 리포트 */
+.card.tv{display:flex;flex-direction:column;gap:10px}
+.tvh{display:flex;gap:10px;align-items:flex-start}
+.tvh b{display:block;font-size:15px;line-height:1.35;word-break:break-all}
+.tvh small{display:block;color:var(--muted);font-size:12.5px;margin-top:3px}
+.tvh .rk{flex:none;min-width:26px;height:26px;border-radius:8px;display:grid;place-items:center;font-weight:800;font-size:13px;background:var(--surface2);color:var(--ink2)}
+.tvk{display:grid;grid-template-columns:auto 1fr;gap:6px 10px;margin:0;font-size:13.5px;line-height:1.45}
+.tvk dt{font-weight:750;color:var(--ink2);white-space:nowrap}
+.tvk dd{margin:0;color:var(--ink)}

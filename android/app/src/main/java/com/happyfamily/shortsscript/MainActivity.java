@@ -506,6 +506,13 @@ public class MainActivity extends Activity {
             return "ok";
         }
 
+        /* 유튜브 등 https 주소를 다른 앱(브라우저·유튜브)으로 연다 */
+        @JavascriptInterface
+        public void openUrl(String url) {
+            if (url == null || !url.startsWith("https://")) return;
+            runOnUiThread(() -> { try { startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)); } catch (Exception ignored) { } });
+        }
+
         @JavascriptInterface
         public void openVideo(String uri) {
             runOnUiThread(() -> {
