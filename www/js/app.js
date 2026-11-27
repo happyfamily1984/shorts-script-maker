@@ -428,7 +428,7 @@ function aiRun(label, job, apply) {
 function aiNew(themeId, idea) {
   const th = TH[themeId];
   aiRun('AI가 새 대본을 쓰는 중', token => gemini(`Write one original 6-shot short-drama script.\nTheme: ${th.en} (${th.name}). The satisfying payoff of this theme: ${th.punch}.\nCreator's idea (may be Korean): ${idea || 'none, invent a fresh premise'}.\n${AI_FIELDS}`, S_SCRIPT, token),
-    r => { const p = blankProject(themeId); if (!applyScript(p, r)) return toast('AI 응답이 비어 있습니다'); p.ai = true; draft = p; dirty = true; go('editor', {}, cur().v === 'aiNew'); toast('AI가 대본을 썼습니다'); });
+    r => { const p = blankProject(themeId); if (!applyScript(p, r)) return toast('AI 응답이 비어 있습니다'); p.ai = true; draft = p; dirty = true; go('editor', {}, cur().v === 'aiNew' || cur().v === 'remix'); toast('AI가 대본을 썼습니다'); });
 }
 function aiRewriteAll() {
   const p = draft, th = TH[p.theme] || THEMES[0];
@@ -488,9 +488,10 @@ const TRENDS_BASE = 'https://raw.githubusercontent.com/happyfamily1984/short-for
 const trendsBase = () => (String(settings.trendsUrl || '').trim() || TRENDS_BASE).replace(/\/?$/, '/');
 const TREND_THEME = { '복수극': 'comeback', '회귀·환생': 'rebirth', '신분 반전': 'hidden', '계약 로맨스': 'contract', '직장·현실 사이다': 'gapjil' };
 const BG_THEME = [[/배달|라이더/, 'rider'], [/부동산|건물|빌라/, 'hidden'], [/사돈|시댁|처가|시어머니/, 'inlaws'], [/회사|직장|부장|상사/, 'credit'], [/학교|학폭|동창/, 'bully'], [/이혼/, 'divorce'], [/불륜|외도/, 'affair'], [/회귀|환생/, 'rebirth'], [/계약/, 'contract'], [/가장|가족|형제/, 'family'], [/누명/, 'frame'], [/사기/, 'scam']];
-const themeFor = (genre, text) => { const b = BG_THEME.find(([re]) => re.test(text || '')); return b ? b[1] : TREND_THEME[genre] || 'hidden'; };
+const themeFor = (genre, text) => { const b = BG_THEME.find(([re]) => re.test(text || '')); return b ? b[1] : TREND_THEME[String(genre || '').replace(/^해외\s*/, '')] || 'hidden'; };
 const trends = () => store.get('trends', { dates: [], days: {}, fetched: 0 });
-const slimVideo = v => ({ id: v.video_id, url: v.url, title: v.title, channel: v.channel, views: v.views, likes: v.likes, dur: v.duration_sec, genre: v.genre, rank: v.rank, vel: v.velocity, ratio: v.view_sub_ratio, comments: (v.top_comments || []).slice(0, 3).map(c => c.text) });
+const mktOf = x => (x && x.market) || (/^해외/.test((x && x.genre) || x || '') ? 'global' : 'kr');
+const slimVideo = v => ({ mkt: mktOf(v), id: v.video_id, url: v.url, title: v.title, channel: v.channel, views: v.views, likes: v.likes, dur: v.duration_sec, genre: v.genre, rank: v.rank, vel: v.velocity, ratio: v.view_sub_ratio, comments: (v.top_comments || []).slice(0, 3).map(c => c.text) });
 const man = n => n >= 1e8 ? `${(n / 1e8).toFixed(1)}억` : n >= 1e4 ? `${(n / 1e4).toFixed(n >= 1e5 ? 0 : 1)}만` : String(n || 0);
 async function fetchTrends(date) {
   toast('유행 리포트를 불러오는 중…');
@@ -514,6 +515,23 @@ async function fetchTrends(date) {
   store.set('trends', { dates, days, fetched: Date.now() });
   if (cur().v === 'hits') cur().p.d = date;
   render(); toast(`${date} 리포트를 불러왔습니다`);
+}
+/* 유행 형식 바꿔 쓰기: 원본의 등장인물·흐름·결말 (새 리포트는 cast/flow/ending 을 따로 준다) */
+const noGuess = x => String(x || '').replace(/\s*\(추정[^)]*\)\.?/g, '').trim();
+const splitFlow = x => noGuess(x).split(/\s*(?:→|->|⇒|>)\s*/).map(t => t.trim()).filter(Boolean);
+function remixSrc(o, extra) {
+  const fl = Array.isArray(o.flow) && o.flow.length ? o.flow.map(noGuess) : splitFlow(o.structure);
+  const ending = noGuess(o.ending) || (fl.length > 1 ? fl[fl.length - 1] : '');
+  const flow = o.ending || fl.length < 2 ? fl : fl.slice(0, -1);
+  const cast = Array.isArray(o.cast) && o.cast.length ? o.cast.map(c => ({ role: noGuess(c.role) || '인물', who: noGuess(c.who || c.desc) })) : [{ role: '주인공', who: '' }, { role: '상대(악역)', who: '' }];
+  return Object.assign({ hook: noGuess(o.hook), cast, flow: flow.length ? flow : [''], ending }, extra || {});
+}
+function remixIdea(p) {
+  const s = p.src, cast = s.cast.map((c, i) => `- ${c.role}: 원본 "${c.who || '정보 없음'}" → ${String(p['c' + i] || '').trim() || '원본과 비슷하되 새 인물로'}`);
+  const flow = s.flow.map((f, i) => `${i + 1}. 원본 "${f || '정보 없음'}" → ${String(p['f' + i] || '').trim() || '원본 흐름과 비슷한 새 사건으로'}`);
+  return ['유튜브 인기 쇼츠의 흐름을 따라 새 이야기를 쓴다. 단계 순서·반전 위치·리듬은 원본과 같게 하고, 인물·사건·결말은 "→" 뒤의 내용으로 바꾼다. 원작의 대사·이름·제목은 쓰지 않는다.',
+    s.hook ? `원본 훅: ${s.hook}` : '', '[등장인물]', ...cast, '[스토리 흐름]', ...flow,
+    `[결말] 원본 "${s.ending || '정보 없음'}" → ${String(p.end || '').trim() || '원본처럼 통쾌하지만 새로운 결말로'}`, p.more ? `[추가 요청] ${p.more}` : ''].filter(Boolean).join('\n');
 }
 function trendIdeaText(it) {
   return [it.title, it.background ? `배경: ${it.background}` : '', it.hook ? `첫 장면(훅): ${it.hook}` : '', it.structure ? `구조: ${it.structure}` : ''].filter(Boolean).join('\n');
@@ -1101,12 +1119,28 @@ V.editor = () => {
     <div class="sticky"><button class="btn" data-act="exportOne">${ic('share')}내보내기</button><button class="btn pri" data-act="save">${ic('check')}저장</button></div>` };
 };
 
+V.remix = p => {
+  const s = p.src || { cast: [], flow: [] }, row = (lab, orig, key, ph) => `<div class="rx"><div class="ro"><span class="lab">${esc(lab)}</span><p>${orig ? esc(orig) : '<i>원본 정보 없음</i>'}</p></div><textarea class="in" rows="3" data-p="${key}" placeholder="${esc(ph)}" aria-label="${esc(lab)} 바꿔 쓰기">${esc(p[key] || '')}</textarea></div>`;
+  return { title: '유행 형식으로 새 대본', back: true, html: `
+    <div class="card guide"><b>${ic('trophy')}${esc(s.from || '유행 리포트')}</b><p>${esc(s.title || '')}</p>${s.hook ? `<p class="hint" style="margin:0">훅: ${esc(s.hook)}</p>` : ''}
+      <p class="hint" style="margin:6px 0 0">흐름은 원본처럼 두고, 오른쪽 칸에 적은 대로 인물·스토리·결말을 바꿔 씁니다. 비운 칸은 원본과 비슷한 새 내용으로 채웁니다.</p></div>
+    <div class="rxh"><span>원본</span><span>내가 바꿀 내용</span></div>
+    <div class="sec">${h2('users', '등장인물')}${s.cast.map((c, i) => row(c.role, c.who, 'c' + i, '예: 40대 배달 라이더, 사실 건물주')).join('')}<button class="btn sm" data-act="remixAdd" data-k="c">${ic('plus')}인물 추가</button></div>
+    <div class="sec">${h2('list', '스토리 흐름')}${s.flow.map((f, i) => row(`${i + 1}단계`, f, 'f' + i, '이 단계에서 일어날 일')).join('')}<button class="btn sm" data-act="remixAdd" data-k="f">${ic('plus')}단계 추가</button></div>
+    <div class="sec">${h2('flame', '결말')}${row('결말', s.ending, 'end', '예: 입주민이 건물 관리 규정으로 쫓겨남')}</div>
+    <div class="field"><label>${ic('edit')}더 바라는 점 (선택)</label><textarea class="in" rows="2" data-p="more" placeholder="예: 대사를 더 짧고 세게">${esc(p.more || '')}</textarea></div>
+    <div class="frow wide"><span>주제</span><select class="sel" data-p="th" aria-label="주제">${THEMES.map(t => `<option value="${t.id}" ${p.th === t.id ? 'selected' : ''}>${t.name}</option>`).join('')}</select></div>
+    <button class="btn pri block" data-act="remixGo">${ic('sparkle')}${aiKeys().length ? '대본 만들기' : 'API 키 넣으러 가기'}</button>
+    ${s.url ? `<button class="btn block" data-act="openUrl" data-u="${esc(s.url)}">${ic('play')}원본 영상 보기</button>` : ''}` };
+};
+
 V.hits = p => {
   const t = trends(), date = p.d || t.dates[0] || '', day = t.days[date], an = day && day.analysis, vids = (day && day.videos) || [];
-  const genres = an && an.genres ? Object.keys(an.genres) : [...new Set(vids.map(v => v.genre))], g = genres.includes(p.g) ? p.g : '';
+  const allG = an && an.genres ? Object.keys(an.genres) : [...new Set(vids.map(v => v.genre))], hasGl = allG.some(x => mktOf(x) === 'global');
+  const mk = p.mk === 'global' && hasGl ? 'global' : 'kr', genres = allG.filter(x => mktOf(x) === mk), g = genres.includes(p.g) ? p.g : '';
   const vaOf = (gn, id) => ((an && an.genres && an.genres[gn] && an.genres[gn].videos) || []).find(x => x.video_id === id);
   const sm = (an && an.summary) || {}, clean = x => esc(String(x || '').replace(/\s*\(추정\)\.?/g, ''));
-  const vcard = v => { const va = vaOf(v.genre, v.id); return `<div class="card tv"><div class="tvh"><span class="rk">${v.rank || ''}</span><span class="grow"><b>${esc(v.title)}</b><small>${esc(v.channel || '')} · 조회 ${man(v.views)} · ${v.dur || '?'}초${v.vel ? ` · 하루 +${man(v.vel)}` : ''}</small></span></div>
+  const vcard = v => { const va = vaOf(v.genre, v.id), ko = va && va.title_ko; return `<div class="card tv"><div class="tvh"><span class="rk">${v.rank || ''}</span><span class="grow"><b>${esc(ko || v.title)}</b>${ko ? `<small class="orig">${esc(v.title)}</small>` : ''}<small>${esc(v.channel || '')} · 조회 ${man(v.views)} · ${v.dur || '?'}초${v.vel ? ` · 하루 +${man(v.vel)}` : ''}</small></span></div>
     ${va ? `<dl class="tvk">${[['훅', va.hook], ['구조', va.structure], ['반응', va.reaction], ['살릴 점', va.take], ['더 좋게', va.change]].filter(x => x[1]).map(([k, x]) => `<dt>${k}</dt><dd>${clean(x)}</dd>`).join('')}</dl>` : ''}
     ${v.comments && v.comments.length ? `<p class="hint">댓글: ${v.comments.map(c => `"${esc(String(c).replace(/\s+/g, ' ').slice(0, 40))}"`).join(' · ')}</p>` : ''}
     <div class="aiacts"><button class="btn sm blue" data-act="trendVideo" data-id="${esc(v.id)}">${ic('sparkle')}이 형식으로 대본 쓰기</button><button class="btn sm" data-act="openUrl" data-u="${esc(v.url || '')}">${ic('play')}유튜브에서 보기</button></div></div>`; };
@@ -1125,7 +1159,9 @@ V.hits = p => {
       ${sm.ideas.map((it, i) => `<div class="card tv"><div class="tvh"><span class="grow"><b>${esc(it.title)}</b><small>${esc(it.background || '')}${it.length ? ` · ${esc(it.length)}` : ''}</small></span></div>
         <dl class="tvk">${it.hook ? `<dt>훅</dt><dd>${clean(it.hook)}</dd>` : ''}${it.structure ? `<dt>구조</dt><dd>${clean(it.structure)}</dd>` : ''}</dl>
         <div class="aiacts"><button class="btn sm blue" data-act="trendIdea" data-i="${i}">${ic('sparkle')}이 아이디어로 대본 쓰기</button></div></div>`).join('')}</div>` : ''}
-    ${genres.length ? `<div class="chips">${[['', '전체'], ...genres.map(x => [x, x])].map(([v, n]) => `<button class="chip ${g === v ? 'on' : ''}" data-act="set" data-k="p_g" data-v="${esc(v)}">${esc(n)}</button>`).join('')}</div>` : ''}
+    ${hasGl ? seg('p_mk', [['kr', '한국 유행'], ['global', '해외 유행 (한국식으로)']], mk) : ''}
+    ${mk === 'global' ? '<p class="hint">해외 인기 쇼츠를 한국어로 옮기고, 인물·흐름·결말을 한국식 설정으로 바꿔 적은 결과입니다. 바꿔 쓰기를 누르면 이 한국식 설정이 원본으로 들어갑니다.</p>' : ''}
+    ${genres.length ? `<div class="chips">${[['', '전체'], ...genres.map(x => [x, x.replace(/^해외\s*/, '')])].map(([v, n]) => `<button class="chip ${g === v ? 'on' : ''}" data-act="set" data-k="p_g" data-v="${esc(v)}">${esc(n)}</button>`).join('')}</div>` : ''}
     ${shown.map(gn => { const pt = an && an.genres && an.genres[gn] && an.genres[gn].patterns, th = TH[themeFor(gn, '')], list = vids.filter(v => v.genre === gn).sort((x, y) => (x.rank || 99) - (y.rank || 99));
       return `<div class="sec">${h2('trophy', `${esc(gn)} · 인기 ${list.length}편`)}
         ${th ? `<p class="hint">우리 주제와 가장 가까운 것: <button class="pbtn" data-act="go" data-v="theme" data-id="${th.id}">${ic(th.icon)}${esc(th.name)}</button></p>` : ''}
@@ -1257,8 +1293,10 @@ const A = {
   openDrama: d => openDrama(d.th, +d.i),
   open: d => { if (sel) { sel.has(d.id) ? sel.delete(d.id) : sel.add(d.id); return render(); } openProject(d.id); },
   trendDay: d => { const t = trends(); cur().p.d = d.v; if (!t.days[d.v]) fetchTrends(d.v); else render(); },
-  trendIdea: d => { const t = trends(), day = t.days[cur().p.d || t.dates[0]], it = day && day.analysis && day.analysis.summary && day.analysis.summary.ideas[+d.i]; if (!it) return; go('aiNew', { th: themeFor('', `${it.background || ''} ${it.title || ''}`), idea: trendIdeaText(it) }); },
-  trendVideo: d => { const t = trends(), day = t.days[cur().p.d || t.dates[0]], v = day && day.videos.find(x => x.id === d.id); if (!v) return; const ga = day.analysis && day.analysis.genres && day.analysis.genres[v.genre], va = ga && (ga.videos || []).find(x => x.video_id === v.id); go('aiNew', { th: themeFor(v.genre, v.title), idea: trendVideoText(v, va) }); },
+  trendIdea: d => { const t = trends(), day = t.days[cur().p.d || t.dates[0]], it = day && day.analysis && day.analysis.summary && day.analysis.summary.ideas[+d.i]; if (!it) return; go('remix', { th: themeFor('', `${it.background || ''} ${it.title || ''}`), src: remixSrc(it, { title: it.title, from: `회차 아이디어${it.background ? ' · ' + it.background : ''}` }) }); },
+  trendVideo: d => { const t = trends(), day = t.days[cur().p.d || t.dates[0]], v = day && day.videos.find(x => x.id === d.id); if (!v) return; const ga = day.analysis && day.analysis.genres && day.analysis.genres[v.genre], va = ga && (ga.videos || []).find(x => x.video_id === v.id); go('remix', { th: themeFor(v.genre, v.title), src: remixSrc(va || {}, { title: (va && va.title_ko) || v.title, from: `${v.genre} 인기 영상 · 조회 ${man(v.views)}`, url: v.url }) }); },
+  remixAdd: d => { const p = cur().p, k = d.k; if (k === 'c') p.src.cast.push({ role: '추가 인물', who: '' }); else p.src.flow.push(''); render(); },
+  remixGo: () => { if (!aiKeys().length) return go('settings'); const p = cur().p; aiNew(p.th || 'hidden', remixIdea(p)); },
   openUrl: d => { const u = d.u || ''; if (!/^https:\/\//.test(u)) return; if (Native.has() && window.AndroidBridge.openUrl) window.AndroidBridge.openUrl(u); else window.open(u, '_blank'); },
   myTheme: d => { const a = settings.myThemes, on = a.includes(d.id); if (on) a.splice(a.indexOf(d.id), 1); else a.push(d.id); saveSettings(); render(); toast(on ? '내 주제에서 뺐습니다' : '내 주제로 고정했습니다'); },
   set: d => {
@@ -1272,7 +1310,7 @@ const A = {
     render(k === 'p_tab');
   },
   aiNewGo: () => { if (!aiKeys().length) return go('settings'); const p = cur().p; aiNew(p.th || 'hidden', (p.idea || '').trim()); },
-  blankNew: () => { draft = blankProject((cur().p && cur().p.th) || 'hidden'); dirty = true; go('editor', {}, cur().v === 'aiNew'); },
+  blankNew: () => { draft = blankProject((cur().p && cur().p.th) || 'hidden'); dirty = true; go('editor', {}, cur().v === 'aiNew' || cur().v === 'remix'); },
   save: () => { saveDraft(); render(); },
   copy: d => copyText(d.t),
   settings: () => go('settings'),
