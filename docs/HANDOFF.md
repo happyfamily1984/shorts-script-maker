@@ -3,9 +3,9 @@
 새 세션이 이 파일부터 읽으면 이어서 작업할 수 있습니다.
 
 ## 저장소·브랜치
-- 앱: `happyfamily1984/shorts-script-maker` — 작업 브랜치 `ccr-b696e9f7-fudha3` (main에는 아직 합치지 않음)
+- 앱: `happyfamily1984/shorts-script-maker` — main에 합침(2026-11-27). 이전 작업 브랜치 `ccr-b696e9f7-fudha3` 와 같은 내용
 - 유행 리포트: `happyfamily1984/short-form-report` (main, 매일 아침 6시 GitHub Actions)
-- 앱이 순서 파일(kling/grok/pickle flow.json)을 `main`에서 읽으므로, main에 합치기 전에는 앱 설정의 "순서 업데이트"가 404가 난다. 지금은 순서 기본값이 `www/js/kling.js`에 들어 있어 APK에 포함된다.
+- 앱 설정의 "순서 업데이트"는 main의 kling/grok/pickle `flow.json` 을 읽는다. 순서만 고칠 때는 main의 flow.json을 고치면 APK 없이 반영된다(앱은 버전 숫자가 더 높은 쪽을 쓴다).
 
 ## 서명 키 (git에 없음)
 - `android/upload.jks`, `android/keystore.properties` 는 .gitignore 대상. 사용자에게 채팅으로 전달함(ShortDramaMaker-signing-key.zip).
@@ -35,4 +35,3 @@
 ## 남은 일
 - 클링 내려받기·완성 영상 합치기 실기기 확인
 - 추가 주제 2개 더 (21 라이더, 22 남녀갈등 다음)
-- main 합치기 여부 결정
